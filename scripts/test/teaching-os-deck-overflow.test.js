@@ -189,7 +189,12 @@ function shellFor(key) {
             // heading on purpose, so Topic 2.4 read as 18 slides of 21.
             // The slide under any Key Concept band: two slides teaching the
             // same KC open with the same band, which is not the same slide.
-            sig: ((stage.querySelector('.bhkc-slide') || stage).innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
+            // Its picture files count too: a frame-full slide is one picture
+            // and no text, so Topic 4.5's two rulers' tools graphics (both
+            // KC-4.1.IV.C) read as the same empty slide on 2026-11-04. A walk
+            // that never advances still repeats one signature, pictures and all.
+            sig: [...(stage.querySelector('.bhkc-slide') || stage).querySelectorAll('img')].map(im => im.getAttribute('src')).join(' ') + ' | ' +
+              ((stage.querySelector('.bhkc-slide') || stage).innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
             overY, overX, worst,
             imgs: [...stage.querySelectorAll('img')].filter(im => im.naturalWidth > 0).length
           };

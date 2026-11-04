@@ -1,0 +1,44 @@
+/* Shared look for finished slide graphics, rendered to PNG by
+   scripts/build-slide-graphics.js and shown whole by the frame-full template.
+   The board is 1600x900 design pixels; the builder renders it at 2.4x, 3840x2160.
+   BeHistorical palette and faces: steel, bronze and gold on parchment;
+   Cinzel for names, Libre Baskerville for reading, Montserrat for labels. */
+:root{
+  --steel:#1A1C1D; --charcoal:#2B2F31; --gunmetal:#3E4447; --iron:#5A5F5C;
+  --sandstone:#D2B48C; --bronze:#8C5A2B; --oxidized:#6B3E1F; --gold:#C9A46A;
+  --paper:#F5F0E7; --clean:#FFFDF7; --tint:#F6EFE3; --line:#DED6C8; --ink:#151718;
+  --display:'Cinzel','Trajan Pro','Times New Roman',Georgia,serif;
+  --body:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --ui:'Montserrat','Inter',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--clean)}
+.board{width:1600px;height:900px;overflow:hidden;background:var(--clean);color:var(--ink);font-family:var(--body);display:grid;grid-template-rows:132px 104px 1fr 112px}
+
+.head{background:linear-gradient(180deg,var(--steel),var(--charcoal));border-bottom:4px solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:0 60px}
+.eyebrow{font-family:var(--ui);font-weight:800;font-size:18px;letter-spacing:.22em;text-transform:uppercase;color:var(--sandstone)}
+.head h1{font-family:var(--display);font-weight:900;font-size:68px;line-height:1;margin:10px 0 0;color:var(--gold)}
+.head .when{font-family:var(--ui);font-weight:700;font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:#E6DED1;text-align:right;line-height:1.6}
+.head .when b{color:var(--gold);font-weight:800}
+
+.strip{background:var(--tint);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:30px;padding:0 60px}
+.tag{font-family:var(--ui);font-weight:900;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--clean);background:var(--bronze);padding:10px 14px;white-space:nowrap}
+.strip p{margin:0;font-size:25px;font-weight:700;line-height:1.35;color:var(--steel)}
+
+.body{display:grid;grid-template-columns:900px 1fr;gap:44px;padding:26px 60px 22px;min-height:0}
+.diagram{border:1px solid var(--line);border-top:7px solid var(--iron);background:var(--clean);display:flex;min-height:0}
+.diagram svg{width:100%;height:100%;display:block}
+.cards{display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-width:0}
+.card{border-top:1px solid var(--line);padding-top:14px;display:grid;gap:8px}
+.card:first-child{border-top:0;padding-top:0}
+.chip{display:flex;align-items:baseline;gap:12px;border-left:6px solid var(--gold);background:#EFE4D2;padding:8px 12px}
+.chip b{font-family:var(--ui);font-weight:900;font-size:22px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel)}
+.chip span{font-family:var(--ui);font-weight:700;font-size:16px;color:var(--oxidized)}
+.card p{margin:0;font-size:20.5px;line-height:1.42;color:var(--ink)}
+.card p strong{color:var(--steel)}
+
+.foot{background:linear-gradient(180deg,var(--charcoal),var(--steel));border-top:4px solid var(--gold);display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:0 60px}
+.foot .k{font-family:var(--ui);font-weight:800;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.foot p{margin:0;font-size:19px;line-height:1.42;color:#ECE5DA}
+.foot p strong{color:var(--clean)}
+.foot p.q{font-size:23px;font-weight:700;color:var(--clean)}

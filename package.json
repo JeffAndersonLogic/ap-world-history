@@ -18,6 +18,7 @@
     "build:maps": "node scripts/build-instructional-maps.js",
     "build:art": "node scripts/build-module-art.js",
     "build:logo-on-dark": "node scripts/build-logo-on-dark.js",
+    "build:slide-graphics": "node scripts/build-slide-graphics.js",
     "build:announcements": "node scripts/build-announcements.js",
     "build:skills-map": "node scripts/build-skills-map.js",
     "build:skills-lens": "node scripts/build-skills-lens.js",

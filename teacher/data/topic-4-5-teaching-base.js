@@ -53,28 +53,29 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Making Empires Pay" in class.', students: 'For every part: what was new, what kept going.', slide: 4 },
     { id: 'mercantilism', label: 'Tool 1: An Idea', range: '17-19', minutes: 2, teacher: 'Mercantilism, and the laws that came from it.', students: 'Say what a colony was for.', slide: 5 },
     { id: 'mun', label: 'Claim It: Mun', range: '19-21', minutes: 2, teacher: 'Model 3.A: the claim in one sentence.', students: 'Restate the claim.', slide: 6 },
-    { id: 'company', label: 'Tool 2: A Company', range: '21-23', minutes: 2, teacher: 'Shares, a monopoly charter, forts and soldiers.', students: 'Say why a ruler would want one.', slide: 7 },
-    { id: 'coen', label: 'Claim It: Coen', range: '23-25', minutes: 2, teacher: 'Coen\'s claim about trade and war.', students: 'Find the claim and the reason.', slide: 8 },
-    { id: 'rivals', label: 'Disputes Become Wars', range: '25-28', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 9 },
-    { id: 'map', label: 'Follow the Silver', range: '28-29', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 10 },
-    { id: 'silver', label: 'Why China', range: '29-32', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 11 },
-    { id: 'manila', label: 'Silk for Silver', range: '32-33', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 12 },
-    { id: 'atlantic', label: 'The Atlantic System', range: '33-35', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 13 },
-    { id: 'regional', label: 'Old Markets Keep Going', range: '35-37', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 14 },
-    { id: 'work', label: 'More Work', range: '37-39', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 15 },
-    { id: 'families', label: 'Families in Africa', range: '39-41', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 16 },
-    { id: 'mixing', label: 'A Mixed Atlantic World', range: '41-43', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 17 },
-    { id: 'faith', label: 'Spread, Clash, Blend', range: '43-45', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 18 },
-    { id: 'virgin', label: 'The Virgin of the Mountain', range: '45-46', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 19 },
-    { id: 'sahagun', label: 'Claim It: Sahagún', range: '46-48', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 20 },
-    { id: 'myths', label: 'Myth and Evidence', range: '48-50', minutes: 2, teacher: 'Four things people get wrong.', students: 'Correct each myth.', slide: 21 },
-    { id: 'ledger', label: 'What Was New, What Kept Going', range: '50-54', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 22 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '54-56', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 23 },
-    { id: 'skill', label: 'Skill Builder', range: '56-62', minutes: 6, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find Sahagún\'s claim.', slide: 24 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: tools and exchange.', students: 'Work without the coach.', slide: 25 },
-    { id: 'evidence', label: 'Evidence Lab', range: '62-69', minutes: 7, teacher: 'Module 07: something new and something that kept going, from two sources.', students: 'Observe, then infer, then name a limit.', slide: 26 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '69-79', minutes: 10, teacher: 'Module 10: society and belief. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 27 },
-    { id: 'close', label: 'Landing Sentence', range: '79-80', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 28 }
+    { id: 'shares', label: 'Tool 2: How It Works', range: '21-23', minutes: 2, teacher: 'Shares, one pool, the risk split; the charter; finance and compete.', students: 'Say why many investors would share one voyage.', slide: 7 },
+    { id: 'company', label: 'Tool 2: A Company', range: '23-25', minutes: 2, teacher: 'The VOC as the case: the charter, its powers, a real share.', students: 'Say why a ruler would want one.', slide: 8 },
+    { id: 'coen', label: 'Claim It: Coen', range: '25-27', minutes: 2, teacher: 'Coen\'s claim about trade and war.', students: 'Find the claim and the reason.', slide: 9 },
+    { id: 'rivals', label: 'Disputes Become Wars', range: '27-30', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 10 },
+    { id: 'map', label: 'Follow the Silver', range: '30-31', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 11 },
+    { id: 'silver', label: 'Why China', range: '31-34', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 12 },
+    { id: 'manila', label: 'Silk for Silver', range: '34-35', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 13 },
+    { id: 'atlantic', label: 'The Atlantic System', range: '35-37', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 14 },
+    { id: 'regional', label: 'Old Markets Keep Going', range: '37-39', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 15 },
+    { id: 'work', label: 'More Work', range: '39-41', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 16 },
+    { id: 'families', label: 'Families in Africa', range: '41-43', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 17 },
+    { id: 'mixing', label: 'A Mixed Atlantic World', range: '43-45', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 18 },
+    { id: 'faith', label: 'Spread, Clash, Blend', range: '45-47', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 19 },
+    { id: 'virgin', label: 'The Virgin of the Mountain', range: '47-48', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 20 },
+    { id: 'sahagun', label: 'Claim It: Sahagún', range: '48-50', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 21 },
+    { id: 'myths', label: 'Myth and Evidence', range: '50-52', minutes: 2, teacher: 'Four things people get wrong.', students: 'Correct each myth.', slide: 22 },
+    { id: 'ledger', label: 'What Was New, What Kept Going', range: '52-56', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 23 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '56-58', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 24 },
+    { id: 'skill', label: 'Skill Builder', range: '58-64', minutes: 6, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find Sahagún\'s claim.', slide: 25 },
+    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: tools and exchange.', students: 'Work without the coach.', slide: 26 },
+    { id: 'evidence', label: 'Evidence Lab', range: '64-71', minutes: 7, teacher: 'Module 07: something new and something that kept going, from two sources.', students: 'Observe, then infer, then name a limit.', slide: 27 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '71-81', minutes: 10, teacher: 'Module 10: society and belief. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 28 },
+    { id: 'close', label: 'Landing Sentence', range: '81-82', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 29 }
   ],
 
   quickLaunch: [
@@ -113,7 +114,8 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: mercantilism and joint-stock companies, rivalries from economic disputes (including Europeans against each other), silver and the Atlantic system, regional markets, peasant and artisan labor, African family change, Atlantic cultural mixing, religions spreading, clashing and blending.',
           'Bridge only: the mit’a and the colonial labor systems (4.4; Potosí appears as silver\'s source); Tondibi as a battle (3.1; 4.5 gives its economic motive); the size of the slave trade and the plantations (4.4); Japan\'s ban on Christianity (4.4, one clause); casta (4.7, not mentioned); resistance (4.6, the hand-off).',
           'Four myths: "Europe paid for Asian goods with better products"; "the Atlantic trade was a neat triangle"; "global trade replaced the old markets"; "European culture simply replaced the others in the Americas."',
-          'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 10. None is AI-generated.'
+          'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 11. None is AI-generated.',
+          'Slides 5 and 7 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (added 2026-11-04). Slide 8 is the case: the VOC, with the real 1606 share receipt.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Rulers built tools to make their empires pay (mercantilist laws, chartered companies), and the silver, goods and people those tools moved changed work, families and faith, while old markets and old religions kept going.',
@@ -195,16 +197,14 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'mercantilism', kind: 'equation', eyebrow: 'Rulers\' Tool 1 · An Idea',
+      /* A finished graphic shown whole (2026-11-04, Jeff: the two rulers' tools as two
+         infographic slides). Source: scripts/lib/slide-graphics/topic-4-5-mercantilism.html,
+         rendered by scripts/build-slide-graphics.js. The alt text says everything the picture
+         says; change one and change the other. */
+      phase: 'mercantilism', kind: 'frame-full', eyebrow: 'Rulers\' Tool 1 · An Idea',
       kc: 'KC-4.1.IV.C', title: 'Mercantilism: how a state grows strong.',
-      footer: 'Rulers turned the idea into laws: the Casa de Contratación (Spain, 1503), the Navigation Act (England, 1651).',
       template: {
-        terms: [
-          { word: 'Gold and silver', note: 'collect it and keep it at home' },
-          { word: 'Sell more', note: 'than you buy, so money flows in' },
-          { word: 'Colonies', note: 'raw goods home, finished goods out' }
-        ],
-        result: { word: 'A strong state', note: 'in the mercantilist view' }
+        visual: { url: '../assets/images/topics/4-5/mercantilism-tool-1.png', alt: 'Slide graphic titled Mercantilism: Rulers\' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England\'s Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country\'s goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the "mercantile system" in 1776. Think: in this way of thinking, what is a colony for?' }
       },
       notes: {
         minutes: 2,
@@ -219,7 +219,9 @@ window.BEHISTORICAL_TEACHING = {
           'The word "mercantilism" was coined by its critics afterward (the "mercantile system" in Adam Smith, 1776); the people who held these ideas did not call themselves mercantilists. It was a set of shared ideas, not one doctrine.',
           'Spain: the Casa de Contratación, founded in Seville in 1503, licensed and registered trade with the Americas, and silver crossed in convoyed fleets.',
           'England: the Navigation Act of 1651 said goods from Asia, Africa and the Americas could enter England only in English ships; it was aimed at Dutch shippers. Later acts (1660) listed colonial goods such as sugar and tobacco that could be shipped only to England.',
-          'The colony\'s job in this way of thinking: send raw goods home, buy the home country\'s goods, and trade with no one else.'
+          'The colony\'s job in this way of thinking: send raw goods home, buy the home country\'s goods, and trade with no one else.',
+          'The slide is one picture. The three rows on the right are the CED\'s own verbs: rulers used mercantilism to expand and control their economies and to claim overseas territories. The diagram answers the Think question at the bottom.',
+          'The goods on the arrows are examples, not CED requirements. Wine: Spain\'s 1595 order against new vineyards in the Americas was meant to protect Spanish wine sales, but it was widely ignored, and Peru made wine anyway. Use it to show the rule and the gap between rule and practice.'
         ],
         ask: 'In this way of thinking, what is a colony for?',
         listenFor: 'To send raw goods home and buy the home country\'s goods, so money stays inside the empire.',
@@ -253,6 +255,39 @@ window.BEHISTORICAL_TEACHING = {
         ask: 'Put Mun\'s claim in your own words in one sentence.',
         listenFor: 'England gets rich by selling more to other countries than it buys from them.',
         ap: 'Claims and Evidence in Sources 3.A: find the claim before you use the source.'
+      }
+    },
+    {
+      /* A finished graphic shown whole (2026-11-04): how a joint-stock company worked, before
+         the VOC case slide that follows it. Source:
+         scripts/lib/slide-graphics/topic-4-5-joint-stock-company.html, rendered by
+         scripts/build-slide-graphics.js. The alt text says everything the picture says. */
+      phase: 'shares', kind: 'frame-full', eyebrow: 'Rulers\' Tool 2 · How It Works',
+      kc: 'KC-4.1.IV.C', title: 'The joint-stock company: many investors, one voyage.',
+      template: {
+        visual: { url: '../assets/images/topics/4-5/joint-stock-company-tool-2.png', alt: 'Slide graphic titled The Joint-Stock Company: Rulers\' Tool 2, a new kind of company, Topic 4.5, 1450 to 1750. Tool 1 shaped Tool 2: mercantilism said win trade and keep it at home, and rulers and merchants built a company to do both. A diagram. The problem: one voyage to Asia cost a fortune, and ships were often lost. The answer, sell shares: many investors each buy shares, their money goes into one pool, the pool pays for one voyage to Asia, and the profits and losses come back split by share. If a ship was lost, many investors shared the loss instead of one. Finance exploration: rulers and merchants raised the money for long voyages, the English East India Company (chartered 1600) and the Dutch East India Company, the VOC (1602). Charter from the ruler: the charter gave one company the only right, in its own country, to trade with Asia. Compete against rival rulers: each state sent its company to win trade from the others, and the VOC could even build forts, keep soldiers and fight wars. Continuity and change. Old: merchants had pooled money for voyages for centuries. New: a company with a government\'s monopoly, its own soldiers and the right to make war, sent by one state to compete with another.' }
+      },
+      notes: {
+        minutes: 2,
+        keys: [
+          'Problem: costly voyages, ships often lost',
+          'Answer: sell shares, pool the money',
+          'Profits and losses split by share',
+          'Charter: only right to trade with Asia',
+          'CED uses: finance exploration, compete with rivals',
+          'Old: pooling money. New: monopoly, soldiers, war'
+        ],
+        land: [
+          'Start from the problem on the slide: a voyage to Asia cost a fortune and ships were often lost, so one merchant who paid for a whole voyage could be ruined by one wreck.',
+          'A joint-stock company sold shares to many investors, who split the profits and the losses by how many shares each held. That spread the risk.',
+          'The strip at the top is the CED\'s link: joint-stock companies were "influenced by these mercantilist principles." The charter gave one company the only right, in its own country, to trade with Asia, which is the mercantilist rule of keeping trade at home, made into a company.',
+          'KC-4.1.IV.C names two uses, and the two right-hand rows carry them: rulers and merchants used these companies to finance exploration, and rulers used them to compete against one another in global trade.',
+          'The footer is the First & 10\'s Continuity and Change callout: merchants had pooled money for voyages for centuries; what was new was a company with a government\'s monopoly, its own soldiers and the right to make war.',
+          'The next slide is the case: the VOC, with a real share receipt from 1606.'
+        ],
+        ask: 'Why would many investors share one voyage instead of one rich merchant paying for all of it?',
+        listenFor: 'A voyage cost a fortune and ships were often lost, so sharing spread the risk: one wreck did not ruin one person.',
+        ap: 'Continuity and Change: name what was old about the company and what was new.'
       }
     },
     {
@@ -781,7 +816,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.A: identify and describe a claim or argument in a source.',
-          'It models Coen\'s 1614 letter (slide 8), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
+          'It models Coen\'s 1614 letter (slide 9), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
           'Push students to state the claim in their own words, in one sentence, before they quote anything.'
         ],
         ask: 'After students have written: is Sahagún\'s evidence enough to prove his claim?',
