@@ -295,6 +295,23 @@ for (const deck of DECKS.filter(d => KEYS_DECKS.has(d.key))) {
   const page = `teacher/topic-${deck.key.replace('.', '-')}-story-os.html`;
   check(`${deck.key} cockpit shows keys on top and LAND in a drop-down`, exists(page) && keyPage(read(page)));
 }
+// The 4.1 + 4.2 catch-up overview is not in DECKS (no student deck, on
+// purpose), so it is named here. Jeff teaches from it, so it carries keys too,
+// and its Tordesillas slide (added 2026-11-04) must stay with the map it shows.
+{
+  const data = 'teacher/data/topic-4-1-4-2-overview.js', page = 'teacher/topic-4-1-4-2-os.html';
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  vm.runInContext(read(data), sandbox, { filename: data });
+  const T = sandbox.window.BEHISTORICAL_TEACHING, problems = keyProblems(T.slides);
+  check('4.1 + 4.2 overview every slide has short MUST LAND keys', problems.length === 0, problems.slice(0, 3).join('; ') || `${T.slides.length} slides`);
+  check('4.1 + 4.2 overview cockpit shows keys on top and LAND in a drop-down', keyPage(read(page)));
+  const line = T.slides.find(s => s.phase === 'line');
+  const mapFile = line && line.visual && line.visual.url.replace(/^\.\.\//, '');
+  check('4.1 + 4.2 overview has the Tordesillas slide, and its map exists', !!(line && mapFile && exists(mapFile)), mapFile || 'missing');
+  const flowOk = T.flow.every(f => T.slides[f.slide - 1] && T.slides[f.slide - 1].phase === f.id);
+  check('4.1 + 4.2 overview run of show points at the right slides', flowOk);
+}
 
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';

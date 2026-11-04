@@ -1,5 +1,5 @@
 /*
- * Topics 4.1 and 4.2, a 13-minute teacher overview. Teacher-only, standalone.
+ * Topics 4.1 and 4.2, a 14-minute teacher overview. Teacher-only, standalone.
  *
  * Why it exists: Jeff could not teach 4.1 or 4.2 to the class (2026-11-03) and
  * asked for one short teacher presentation that touches the must-haves of both
@@ -25,6 +25,10 @@
  * not a lesson. Students already have both full lessons and both generated
  * class presentations. It is linked from the command center under Unit 4.
  *
+ * Tordesillas (slide 13) was added on 2026-11-04 at Jeff's request: the full
+ * 4.2 deck's 'line' slide, its map, keys and notes copied unchanged, with a
+ * STORY line condensed from those notes.
+ *
  * Retelling slide: the five-link cause chain (phase 'retell'), which joins the
  * 4.1 chain to the 4.2 pattern.
  *
@@ -41,7 +45,7 @@ const AI=(dir,name,alt,extra)=>Object.assign({url:dir+encodeURIComponent(name),a
 window.BEHISTORICAL_TEACHING = {
   meta: {
     topic: '4.1 + 4.2',
-    minutes: 13,
+    minutes: 14,
     title: 'Overview: Technology and Exploration',
     subtitle: 'Borrowed tools got the ships home. Rulers paid because the voyages paid back.',
     essentialQuestion: 'How did knowledge from older worlds let European ships cross the ocean and come home, and why did rulers pay for the voyages?',
@@ -57,12 +61,12 @@ window.BEHISTORICAL_TEACHING = {
       'Land the retelling chain: borrowed tools, plus ships and wind, so rulers back voyages, so voyages pay, so rivals join.'
     ],
     should: [
-      'Say "Historical Reconstruction" when an AI picture is on screen. Six of the eight pictures are.',
+      'Say "Historical Reconstruction" when an AI picture is on screen. Eight of the ten pictures are.',
       'Correct the one big misconception on the way: Europe did not invent these tools. It combined them.'
     ],
     could: [
       'Point students to the 4.1 and 4.2 First & 10 readings and class presentations on their lesson pages for the full story.',
-      'Open the full 4.2 deck for Tordesillas (slide 12) or the myths slide (slide 16) if 4.3 needs them.'
+      'Open the full 4.2 deck for the myths slide (slide 16) if 4.3 needs it.'
     ]
   },
 
@@ -79,9 +83,10 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'state', label: '4.2 The Role of States', range: '7:30-8:30', minutes: 1, teacher: 'Paid for it, or gave permission.', students: 'Say what the ruler got.', slide: 10 },
     { id: 'portugal', label: '4.2 Portugal', range: '8:30-9:15', minutes: 0.75, teacher: 'A trading-post empire.', students: 'Ports, not lands.', slide: 11 },
     { id: 'spain', label: '4.2 Spain', range: '9:15-10:15', minutes: 1, teacher: 'Three ships, then seventeen, then the Pacific.', students: 'Name the effect.', slide: 12 },
-    { id: 'north', label: '4.2 The Northern Crossings', range: '10:15-11:15', minutes: 1, teacher: 'England, France, the Dutch.', students: 'Looked for, found instead.', slide: 13 },
-    { id: 'retell', label: 'Retell Both Topics', range: '11:15-12:45', minutes: 1.5, teacher: 'Show the chain, hide it, students rebuild it.', students: 'Retell from memory.', slide: 14 },
-    { id: 'close', label: 'Landing', range: '12:45-13:15', minutes: 0.5, teacher: 'Land it and hand off to 4.3.', students: 'Say it in one sentence.', slide: 15 }
+    { id: 'line', label: '4.2 Tordesillas', range: '10:15-11:15', minutes: 1, teacher: 'Two crowns split the claims.', students: 'Say what England would do.', slide: 13 },
+    { id: 'north', label: '4.2 The Northern Crossings', range: '11:15-12:15', minutes: 1, teacher: 'England, France, the Dutch.', students: 'Looked for, found instead.', slide: 14 },
+    { id: 'retell', label: 'Retell Both Topics', range: '12:15-13:45', minutes: 1.5, teacher: 'Show the chain, hide it, students rebuild it.', students: 'Retell from memory.', slide: 15 },
+    { id: 'close', label: 'Landing', range: '13:45-14:15', minutes: 0.5, teacher: 'Land it and hand off to 4.3.', students: 'Say it in one sentence.', slide: 16 }
   ],
 
   quickLaunch: [
@@ -103,16 +108,25 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · Read Before Class',
       title: 'Borrowed tools got the ships home. Rulers paid because the voyages paid back.',
-      subtitle: 'Two topics in about 13 minutes. 4.1 is how the ships got there and back; 4.2 is who paid, and why. One reasoning move for both: causation.',
+      subtitle: 'Two topics in about 14 minutes. 4.1 is how the ships got there and back; 4.2 is who paid, and why. One reasoning move for both: causation.',
       notes: {
         minutes: 1,
+        keys: [
+          'Spine: borrowed tools got ships home; rulers paid',
+          'Slides 3 to 8: 4.1. Slides 9 to 14: 4.2',
+          'Gold bands are CED wording: read aloud',
+          'About a minute a slide',
+          'Short on time: one line each for 5 and 9',
+          'Left out: BeReady, myths, contract, modules',
+          'Eight of ten pictures are AI'
+        ],
         land: [
           '4.1, CED p. 78, Learning Objective A: explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750. Slides 3 to 8.',
-          '4.2, CED pp. 79 and 80, Learning Objective B: describe the role of states in the expansion of maritime exploration. Learning Objective C: explain the economic causes and effects of maritime exploration by the various European states. Slides 9 to 13.',
+          '4.2, CED pp. 79 and 80, Learning Objective B: describe the role of states in the expansion of maritime exploration. Learning Objective C: explain the economic causes and effects of maritime exploration by the various European states. Slides 9 to 14.',
           'Every Key Concept of both topics is in a gold band at the top of the slide that teaches it: KC-4.1.II and II.A for 4.1; KC-4.1.III and III.A, B and C for 4.2. The band is the CED\'s own wording, so you can read it aloud.',
           'About a minute a slide. If you are short, slide 5 (knowledge moved) and slide 9 (the spice chain) are the two to say in one sentence each, not skip.',
-          'Left out on purpose, all still in the full decks: BeReady, the myths slides, the Columbus contract, Tordesillas, and every module. Ships are illustrative examples, optional in the CED; the Key Concept sentences are what is required.',
-          'Six of the eight pictures are AI Historical Reconstructions, labeled on screen. None is evidence.'
+          'Left out on purpose, all still in the full decks: BeReady, the myths slides, the Columbus contract, and every module. Ships are illustrative examples, optional in the CED; the Key Concept sentences are what is required.',
+          'Eight of the ten pictures are AI Historical Reconstructions, labeled on screen. None is evidence. The other two are BeHistorical maps: the three voyages (slide 8) and Tordesillas (slide 13).'
         ]
       }
     },
@@ -128,6 +142,12 @@ window.BEHISTORICAL_TEACHING = {
         story: 'We missed two topics, so here they are as one story. The first half is how: how ships learned to go out across an ocean and get back. The second half is why: who paid for it, and what they wanted.',
         ask: 'Before we start: what would you need to sail somewhere with no land in sight, and get back?',
         listenFor: 'A way to find your direction and position, a ship that can last, and a wind that will carry you home.',
+        keys: [
+          'Two missed topics, one story',
+          'First half: how ships went and came back',
+          'Second half: who paid, and why',
+          'AI scene, not evidence'
+        ],
         land: ['Historical Reconstruction, AI generated: one caravel alone in open ocean. It shows the Order of Christ cross on the sail; its use this early is uncertain.']
       }
     },
@@ -142,6 +162,13 @@ window.BEHISTORICAL_TEACHING = {
         story: 'In the Indian Ocean, which we studied in 2.3, the monsoon turns around each season: ride one wind out, wait, ride it back. Off West Africa the trade wind blows from the northeast nearly all year, and the Canary Current runs south. Going out was easy. Getting home was the problem.',
         ask: 'Why is getting home harder than getting there?',
         listenFor: 'The wind and the current both push the ship south, and they never turn around.',
+        keys: [
+          'Indian Ocean: the monsoon turns each season',
+          'Off Africa: the trade wind never turns',
+          'Canary Current also pushes south',
+          'Getting home was the problem',
+          'AI scene, not evidence'
+        ],
         land: ['Historical Reconstruction, AI generated. It sets the scene; it is not evidence.']
       }
     },
@@ -161,6 +188,14 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1.25,
         story: 'Most of the tools European sailors used were not European. The compass came from China. The astrolabe was a Greek idea made precise in the Islamic world, and Islamic astronomers built the tables of where the sun and stars would be. The triangular lateen sail sailed the Mediterranean in Roman times.',
+        keys: [
+          'Europe combined the tools; it did not invent them',
+          'Asian: compass, China, about 1100',
+          'Islamic: astrolabe, astronomical charts',
+          'Classical: Ptolemy, the lateen sail',
+          'Say all three worlds',
+          'Lateen sail: Roman, not Arab-invented'
+        ],
         land: [
           'KC-4.1.II names exactly these three worlds: Classical, Islamic and Asian. Say all three.',
           'Compass: the earliest record of one used at sea is Chinese, c. 1111 to 1117; it is mentioned in Europe c. 1190. How it traveled west is debated, so do not teach "via Arab traders" as fact.',
@@ -190,6 +225,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         story: 'Here is how one piece of knowledge traveled. A Greek astronomer writes it down in Egypt. Scholars in Baghdad translate it into Arabic and improve it. In Spain, Christian and Jewish translators turn the Arabic books, many by Muslim scholars, into Latin. Three centuries later Portuguese pilots use it at sea: measure the noon sun, check the table, know how far north or south you are.',
+        keys: [
+          'Knowledge moved with people',
+          'Alexandria → Baghdad → Toledo → Portugal',
+          'Greek, then Arabic, then Latin, then sailors',
+          'Noon sun plus tables = latitude',
+          'Both AI scenes; their errors are in full notes'
+        ],
         land: [
           'This is the cross-cultural interaction in Learning Objective A: the knowledge crossed languages and religions before it reached the ship.',
           'Both pictures are AI Historical Reconstructions. Toledo: the Arabic writing is invented by the generator, and the friar\'s habit fits the 1200s translators better than the 1100s. The pilot: the sail behind him reads as square, and the young sailor\'s writing tool looks like a pencil.'
@@ -214,6 +256,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         story: 'Europe\'s own contribution was building ships around the borrowed tools. The caravel explores. The carrack hauls months of supplies. A century later the Dutch fluyt makes ocean trade cheap.',
+        keys: [
+          'Europe’s part: ships built around the tools',
+          'Caravel explores',
+          'Carrack hauls months of supplies',
+          'Fluyt (Dutch, about 1600) carries cargo cheaply',
+          'AI scene: never together; modern flags'
+        ],
         land: [
           'KC-4.1.II.A: "innovations in ship designs." The three ships are the CED\'s illustrative examples, optional, but they make the idea concrete.',
           'Historical Reconstruction, AI generated. The three never sailed together: the fluyt is about a century later. The caravel and carrack fly today\'s Portuguese flag, adopted in 1911; the Dutch flag is right for about 1600.'
@@ -237,6 +286,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1.25,
         story: 'This is the answer to the problem on slide 3. To get home, do not fight the wind along the coast. Sail away from land, out into the open ocean, until you reach the westerlies, and ride them home. With no coast in sight, pilots trusted the compass and their latitude readings. Columbus used the same wheel in 1492: trade winds out, westerlies home.',
+        keys: [
+          'The one thing not borrowed',
+          'Sail away from land to get home',
+          'Catch the westerlies back to Europe',
+          'Volta do mar: "turn of the sea"',
+          'Columbus: trade winds out, westerlies home'
+        ],
         land: [
           'KC-4.1.II.A: "an improved understanding of regional wind and currents patterns." This is the one item that could not be borrowed.',
           'Volta do mar means roughly "the turn of the sea." It is a wind route, not the same as latitude sailing.'
@@ -262,6 +318,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 0.75,
         story: 'Put it together and the ocean becomes a road both ways. Dias reaches the tip of Africa in 1488. Columbus crosses the Atlantic in 1492. Da Gama reaches India in 1498. That is the "changes in patterns of trade and travel" the College Board asks about. But voyages cost a fortune. Who paid for them, and why? That is 4.2.',
+        keys: [
+          'The ocean became a road both ways',
+          'Dias 1488; Columbus 1492; da Gama 1498',
+          'Map numbers follow the key, not dates',
+          'All three fleets came home',
+          'Bridge: voyages cost a fortune. Who paid?'
+        ],
         land: [
           'The numbers follow the map\'s own key, not the calendar: Columbus (3) sailed in 1492, before da Gama (2). Read them in date order.',
           'The map draws outward routes only. All three fleets came home: Dias in 1488, Columbus in 1493, da Gama in 1499.'
@@ -287,6 +350,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         story: 'Why would a ruler pay for a dangerous voyage? Follow the pepper. It is cheap where it grows in India. Every merchant who carries it on toward Europe adds a cut. By the time it reaches a European table it costs many times more. Sail straight to India yourself and you skip every one of them.',
+        keys: [
+          'Economic cause: every middleman’s cut',
+          'Pepper cheap in India, costly in Europe',
+          'Sail straight there: skip them all',
+          '"They wanted spices" is only a label',
+          'AI scene (Calicut), not evidence'
+        ],
         land: [
           'Learning Objective C, the economic cause, stated as a mechanism rather than a label. If a student wants a number: a kilo of pepper cost about 1 to 2 grams of silver where it grew and 20 to 30 elsewhere in Europe (M. N. Pearson).',
           'The picture is the 4.1 AI Historical Reconstruction of Calicut: da Gama\'s ships arriving among traders who had sailed these waters for centuries.'
@@ -312,6 +382,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         story: 'This is the role of states. A ruler could pay for the voyage, the way Spain\'s rulers paid for Columbus. Or a ruler could give permission and let the sailor and his backers pay, the way England\'s Henry VII did for Cabot. Either way the ruler set the terms and claimed what was found.',
+        keys: [
+          'Role of states: paid, or gave permission',
+          'Paid: Spain for Columbus, 1492',
+          'Permission: Henry VII for Cabot, 1496',
+          'Either way the ruler set terms, claimed results',
+          'Skip "God, Glory, Gold"'
+        ],
         land: [
           'Learning Objective B and KC-4.1.III: "state-supported" exploration. The CED says supported and sponsored, not paid for by rulers alone, and the sources show both kinds.',
           'Rulers had other motives too, spreading Christianity and beating rival kingdoms among them. Do not teach "God, Glory, and Gold" as the answer; it names three categories and explains nothing.'
@@ -330,6 +407,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 0.75,
         story: 'Portugal went first, step by step down the coast of Africa from 1415, each return paying for the next voyage, until da Gama reached India in 1498. Portugal did not conquer big territories. It took ports and built forts, Elmina in West Africa in 1482, Goa in 1510, Malacca in 1511, to control the sea trade between them.',
+        keys: [
+          'Went first, step by step from 1415',
+          'Each return paid for the next voyage',
+          'Ports, not lands: Elmina, Goa, Malacca',
+          'CED: "global trading-post empire"',
+          'AI scene; its modern flag is an error'
+        ],
         land: [
           'KC-4.1.III.A: Portugal\'s maritime technology and navigation led to more travel and trade with Africa and Asia and "resulted in the construction of a global trading-post empire."',
           'Historical Reconstruction, AI generated. One fault, if a sharp student notices: the fort flies today\'s Portuguese flag, adopted in 1911. How the posts worked, and how Asian and African rulers answered them, is 4.4.'
@@ -355,6 +439,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         story: 'Portugal already held the route around Africa, so Spain\'s rulers paid Columbus to try sailing west. He found little gold, but his letter about new lands was printed across Europe, and the next year at least seventeen ships sailed. In 1519 Spain sent Magellan across the Pacific; Elcano brought one ship home in 1522.',
+        keys: [
+          'Portugal held Africa, so Spain went west',
+          'Little gold, but the news spread',
+          'Three ships 1492; at least 17 in 1493',
+          'Magellan died 1521; Elcano finished 1522',
+          'Reached the Caribbean, not Asia'
+        ],
         land: [
           'KC-4.1.III.B: Spanish sponsorship of Columbus and later voyages across the Atlantic and Pacific "dramatically increased European interest in transoceanic travel and trade." The ship count is that effect.',
           'Magellan was killed in the Philippines in 1521; Elcano finished the voyage. The 1492 fleet reached the Caribbean, not Asia.'
@@ -362,6 +453,30 @@ window.BEHISTORICAL_TEACHING = {
         ask: 'Columbus found little gold. Why did Spain send a much bigger fleet the next year?',
         listenFor: 'The news of new lands made the rulers and investors want more.',
         ap: 'Making Connections: Portugal held the African route, so Spain had to go west.'
+      }
+    },
+    {
+      phase: 'line', kind: 'map', eyebrow: '4.2 · Rivals · 1494', kc: 'KC-4.1.III',
+      title: 'Two crowns split the claims.',
+      footer: 'Nobody asked the people who lived in those lands, and the northern states ignored the line.',
+      visual: { url: P42+'treaty-of-tordesillas.png', alt: 'BeHistorical map of Treaty of Tordesillas claims: Spain west of the approximate 1494 line, Portugal east including eastern Brazil; 370 leagues west of Cape Verde. Shading shows claimed spheres, not actual control in 1494.' },
+      notes: {
+        minutes: 1,
+        story: 'Spain and Portugal now wanted the same ocean. In 1494, at Tordesillas, their ambassadors agreed on a line: Spain could claim the lands west of it, Portugal the lands east. The line later put Brazil on Portugal\'s side. Nobody asked the people who lived in those lands, and everyone else, England, France and the Dutch, had to look somewhere else.',
+        keys: [
+          'Tordesillas 1494: ambassadors, not the pope',
+          'The line put Brazil on Portugal’s side',
+          'Nobody asked the people living there',
+          'Everyone else had to look north'
+        ],
+        land: [
+          'Tordesillas, 7 June 1494, was negotiated by ambassadors of the two crowns (UNESCO Memory of the World). It moved a line the pope had drawn in 1493 to 370 leagues west of the Cape Verde Islands. Do not say the pope drew the Tordesillas line; the old 4.2 reading did.',
+          'The line later put Brazil on Portugal\'s side: Cabral reached it in 1500 on his way to India and claimed it.',
+          'Set up the northern crossings: two states had split the southern routes between them. Everyone else had to look elsewhere.',
+          'Copied from the full 4.2 deck, slide 12. The map is a BeHistorical map, not an AI picture; its shading shows claimed spheres, not control.'
+        ],
+        ask: 'If you were the king of England, what would this treaty make you do?',
+        listenFor: 'Look for a different route, one Spain and Portugal did not hold.'
       }
     },
     {
@@ -380,6 +495,14 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         story: 'Spain and Portugal had the southern routes, so England, France and the Dutch looked north for another way to Asia. Nobody found one. What they found instead was cod, furs, and coasts they could claim, and those paid too.',
+        keys: [
+          'Shut out of the south, they looked north',
+          'England: Cabot 1497, cod',
+          'France: Verrazzano, Cartier, furs',
+          'Dutch: Barentsz, Hudson, river furs',
+          'No route to Asia; fish, furs, claims paid',
+          'Same weight as Portugal and Spain'
+        ],
         land: [
           'KC-4.1.III.C: northern Atlantic crossings under English, French and Dutch sponsorship, "often with the goal of finding alternative sailing routes to Asia." Give it the same weight as Portugal and Spain.',
           'No ship sailed through the Northwest Passage until 1903 to 1906.'
@@ -406,6 +529,12 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1.5,
         story: 'Here are both topics in five links. Show it, then hide it and have students rebuild the five links from memory, out loud or on paper.',
+        keys: [
+          'Show it, hide it, rebuild five links',
+          'Links 1 and 2: 4.1. Links 3 to 5: 4.2',
+          'Key link: ships and wind',
+          'Every link is needed'
+        ],
         land: [
           'The first two links are 4.1 (Learning Objective A). The last three are 4.2 (Learning Objectives B and C). No Key Concept band here because the slide spans all of them.',
           'The key link is the second: Europe\'s own contribution was the assembly, new ships and the wind wheel. It is the link students most often skip.'
@@ -431,6 +560,12 @@ window.BEHISTORICAL_TEACHING = {
         story: 'One sentence for both topics: borrowed tools got the ships home, and rulers paid because the voyages paid back.',
         ask: 'Say both topics in one sentence, to the person next to you.',
         listenFor: 'A tool or ship or the wind, plus who paid and why.',
+        keys: [
+          'One sentence for both topics',
+          'Tool, ship or wind, plus who paid and why',
+          'AI scene: ship name, sack labels invented',
+          'Next: 4.3, an exchange nobody planned'
+        ],
         land: ['Historical Reconstruction, AI generated. It sets the scene; it is not evidence. The ship\'s name and the "India - Pimenta" (pepper) labels on the sacks are invented by the generator.']
       }
     }

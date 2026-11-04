@@ -50,7 +50,7 @@ const TOOLS = [
   // (2026-11-03) and asked for one short deck touching the must-haves of both.
   // `overview` puts it in its unit's list without entering INTERACTIVE_TOPICS,
   // so the Today panel keeps routing real topics only.
-  { kind: 'overview', unit: '4', label: 'Topics 4.1 and 4.2 overview', pill: '4.1 + 4.2', title: 'Overview: Technology and Exploration', note: '13-minute catch-up', href: 'topic-4-1-4-2-os.html' },
+  { kind: 'overview', unit: '4', label: 'Topics 4.1 and 4.2 overview', pill: '4.1 + 4.2', title: 'Overview: Technology and Exploration', note: '14-minute catch-up', href: 'topic-4-1-4-2-os.html' },
   // Unit 5. Jeff asked on 2026-11-02 for every built Unit 5 deck to be in the
   // library now, not only the dated ones. 5.1 to 5.3 have class dates (Green
   // Nov 30 to Silver Dec 7), so Today routes to them. 5.4 to 5.8 are built and
