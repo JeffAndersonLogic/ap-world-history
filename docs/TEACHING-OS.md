@@ -118,7 +118,7 @@ A future Topic 2.3+ Teaching OS should load this shared layer rather than copyin
 
 **The teacher reads short keys mid-class, not paragraphs** (Jeff, 2026-11-04). The LAND notes had grown into full sentences, citations and paragraphs, too much to teach from. A slide's `notes.keys` is two to seven short phrases, ten words or fewer each, naming the points of the story that slide must land, drawn from that slide's own LAND notes and never adding a fact. The cockpit shows them first, under **MUST LAND**, in large type, and puts the full LAND notes in a drop-down beneath them, closed by default and kept open from slide to slide once the teacher opens it. A slide without keys shows LAND as before.
 
-Topics 4.3 and 4.4 carry keys. `KEYS_DECKS` in `scripts/test/teaching-os-architecture.test.js` lists the decks that carry them; for each it fails a slide with no keys or a key that has grown into a sentence, and a cockpit that does not draw keys on top with LAND in a drop-down. Add a deck to the list when its keys are written. Keys live inside `notes`, so the student generator strips them with the rest of the teacher notes.
+Topics 4.3, 4.4 and 4.5 carry keys. `KEYS_DECKS` in `scripts/test/teaching-os-architecture.test.js` lists the decks that carry them; for each it fails a slide with no keys or a key that has grown into a sentence, and a cockpit that does not draw keys on top with LAND in a drop-down. Add a deck to the list when its keys are written. Keys live inside `notes`, so the student generator strips them with the rest of the teacher notes.
 
 ### The Briefing
 
