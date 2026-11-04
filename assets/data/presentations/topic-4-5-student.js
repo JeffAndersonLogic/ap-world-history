@@ -53,29 +53,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "equation",
+      "kind": "frame-full",
       "eyebrow": "Rulers' Tool 1 · An Idea",
       "title": "Mercantilism: how a state grows strong.",
-      "footer": "Rulers turned the idea into laws: the Casa de Contratación (Spain, 1503), the Navigation Act (England, 1651).",
       "kc": "KC-4.1.IV.C",
       "template": {
-        "terms": [
-          {
-            "word": "Gold and silver",
-            "note": "collect it and keep it at home"
-          },
-          {
-            "word": "Sell more",
-            "note": "than you buy, so money flows in"
-          },
-          {
-            "word": "Colonies",
-            "note": "raw goods home, finished goods out"
-          }
-        ],
-        "result": {
-          "word": "A strong state",
-          "note": "in the mercantilist view"
+        "visual": {
+          "url": "../assets/images/topics/4-5/mercantilism-tool-1.png",
+          "alt": "Slide graphic titled Mercantilism: Rulers' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England's Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country's goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the \"mercantile system\" in 1776. Think: in this way of thinking, what is a colony for?"
         }
       }
     },
@@ -93,6 +78,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "year": "written 1620s or 1630s"
         },
         "notice": "What does Mun want his reader to believe? What would a ruler do if he believed it?"
+      }
+    },
+    {
+      "kind": "frame-full",
+      "eyebrow": "Rulers' Tool 2 · How It Works",
+      "title": "The joint-stock company: many investors, one voyage.",
+      "kc": "KC-4.1.IV.C",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/4-5/joint-stock-company-tool-2.png",
+          "alt": "Slide graphic titled The Joint-Stock Company: Rulers' Tool 2, a new kind of company, Topic 4.5, 1450 to 1750. Tool 1 shaped Tool 2: mercantilism said win trade and keep it at home, and rulers and merchants built a company to do both. A diagram. The problem: one voyage to Asia cost a fortune, and ships were often lost. The answer, sell shares: many investors each buy shares, their money goes into one pool, the pool pays for one voyage to Asia, and the profits and losses come back split by share. If a ship was lost, many investors shared the loss instead of one. Finance exploration: rulers and merchants raised the money for long voyages, the English East India Company (chartered 1600) and the Dutch East India Company, the VOC (1602). Charter from the ruler: the charter gave one company the only right, in its own country, to trade with Asia. Compete against rival rulers: each state sent its company to win trade from the others, and the VOC could even build forts, keep soldiers and fight wars. Continuity and change. Old: merchants had pooled money for voyages for centuries. New: a company with a government's monopoly, its own soldiers and the right to make war, sent by one state to compete with another."
+        }
       }
     },
     {

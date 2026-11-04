@@ -44,6 +44,14 @@ Every script below also has an `npm run` alias; see `package.json`.
   globe left untouched and a soft glow behind it (`--glow=none|soft|medium|strong`
   tries another strength). Run `build-wordmark.js` after it so Canvas follows. Needs playwright to render,
   so it is not in any suite; it exits 2 when playwright is absent.
+- `node scripts/build-slide-graphics.js [name]`, render each finished slide graphic in
+  `scripts/lib/slide-graphics/` (one HTML page on a 1600x900 board, its output named by a
+  `bh-output` meta tag) to a 3840x2160 PNG under `assets/images/topics/X-Y/`, for a `frame-full`
+  slide. Edit the HTML, never the PNG, and change the slide's `alt` with it: the alt text must say
+  everything the picture says. It refuses to write when a brand font did not load or any text
+  overflows its region; `--selftest` proves both refusals fire. Needs playwright and the Google
+  Fonts host, so it is not in any suite; it exits 2 when playwright is absent. First used for
+  Topic 4.5's two rulers' tools slides, 2026-11-04.
 - `node scripts/build-canvas-events.js`, rebuild both paste-ready Canvas documents from the same schedule: the calendar events in `docs/canvas/calendar-events.md`, one per class day, and the assignment bodies in `docs/canvas/assignments.md`, one per topic. `--check` fails on drift in either. One generator, because the two objects share the masthead, the overview, the targets, the criteria, the cohort seals and the row markup, and two scripts would mean two copies of all of it. See "Green and Silver" and "Today's Required Modules" below.
 - `node scripts/test/announcements-refresh.test.js`, prove the classroom board re-reads `announcements.js` when the date rolls over, re-fetches once rather than once per clock tick, and keeps the day it has when the network is down or the file comes back unusable. In the browser suite. See "Today's Required Modules" below.
 - `node scripts/test/schedule-cohorts.test.js`, prove the alternating block contract: every day names a cohort, cohorts alternate, every topic is scheduled for both, and every due date is the assigning cohort's own next meeting. In the offline suite.
