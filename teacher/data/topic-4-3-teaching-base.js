@@ -556,9 +556,11 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         keys: [
           'Arrows = directions, not voyages',
-          'Arrows 1 and 2 go west',
-          'Arrows 3 and 4 go east',
-          'Arrow 1 carried the germs'
+          'Dashed arrows west, solid arrows east',
+          'Two lanes: trade winds, then westerlies (4.1)',
+          'West (1 to 3): animals and crops, disease, enslaved Africans',
+          'East (4 and 5): American foods, cash crops',
+          'Arrow 2 carried the germs'
         ],
         land: [
           'Arrows show the direction things moved, not single voyages.',
