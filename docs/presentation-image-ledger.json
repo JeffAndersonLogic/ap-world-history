@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "description": "Reviewed upload blob hashes and canonical teacher placements. Student slides are generated, not separately authored.",
+  "images": [
+    {
+      "path": "assets/images/topics/4-4/4.4 - Barbados Sugar.JPG",
+      "blobSha": "b7626d3117eecaa7d8e00139f72ac6fb547e54d2",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "d007f3423d4c7afb372946fd44e44387a1930882",
+      "placements": [
+        {
+          "topic": "4.4",
+          "phase": "plantation",
+          "template": "scene-case",
+          "purpose": "What the plantations changed."
+        },
+        {
+          "topic": "4.8",
+          "phase": "barbados",
+          "template": "scene-case",
+          "purpose": "One crop remade a whole island."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-4/4.4 - Merchants of Surat.JPG",
+      "blobSha": "361eb632f609a7401cee8bc0bb159de7f424dc1e",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "d007f3423d4c7afb372946fd44e44387a1930882",
+      "placements": [
+        {
+          "topic": "4.4",
+          "phase": "close",
+          "template": "frame-subtitle",
+          "purpose": "Europeans built empires from the sea, but much of the world kept its own rules."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-4/4.4 - Nagasaki Bay.jpg",
+      "blobSha": "41ade55a5278904f6b081effbe9b46511a4942ee",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "d007f3423d4c7afb372946fd44e44387a1930882",
+      "placements": [
+        {
+          "topic": "4.4",
+          "phase": "asia",
+          "template": "scene-case",
+          "purpose": "China and Japan decided how far Europeans could reach."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-4/4.4 - Portuguese Maritime Empire.jpg",
+      "blobSha": "baa96cf4555ff142277eb3c7af5a29e0140b324a",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "d007f3423d4c7afb372946fd44e44387a1930882",
+      "placements": [
+        {
+          "topic": "4.4",
+          "phase": "question",
+          "template": "frame-subtitle",
+          "purpose": "Europeans built empires from the sea. What changed, and what kept going?"
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-4/4.4 - VOC.jpg",
+      "blobSha": "3801965511eb4164166632861066b9609e322b88",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "d007f3423d4c7afb372946fd44e44387a1930882",
+      "placements": [
+        {
+          "topic": "4.4",
+          "phase": "rivals",
+          "template": "story-scene",
+          "purpose": "Rivals built empires from the sea."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-5/4.5 - Brazil Cultural Interactions.JPG",
+      "blobSha": "e412b3a6c28efc9dab5487359851612b548bc5dd",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-28",
+      "placements": [
+        {
+          "topic": "4.5",
+          "phase": "mixing",
+          "template": "story-scene",
+          "purpose": "Everyone contributed to the new culture."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-5/4.5 - Indian Cotton Textiles.JPG",
+      "blobSha": "1e8b2d28d31798c7cf070f84c2068bf5dac242dd",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-28",
+      "placements": [
+        {
+          "topic": "4.5",
+          "phase": "work",
+          "template": "frame-triptych",
+          "purpose": "The same work, more of it, for buyers farther away."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-5/4.5 - Potosi.JPG",
+      "blobSha": "8f543f4b866c98581e0990b1896e47c50ef9214d",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-28",
+      "placements": [
+        {
+          "topic": "4.5",
+          "phase": "virgin",
+          "template": "frame-evidence",
+          "purpose": "Two traditions in one painting."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-5/4.5 - Silver for Silk.JPG",
+      "blobSha": "eca1ead35ded72ebbf74f78fe648a0756c7a476e",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-28",
+      "placements": [
+        {
+          "topic": "4.5",
+          "phase": "manila",
+          "template": "frame-subtitle",
+          "purpose": "Who ran the silk-for-silver trade at Manila?"
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-5/4.5 - The VOC.JPG",
+      "blobSha": "46ba4260048c558747f41c18e4c0879175d64d70",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-28",
+      "placements": [
+        {
+          "topic": "4.5",
+          "phase": "company",
+          "template": "scene-case",
+          "purpose": "A company that could go to war."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-6/4.6 - Marathas.JPG",
+      "blobSha": "7083ec2f055503484d6cf933a193b3570e6d041d",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-29",
+      "placements": [
+        {
+          "topic": "4.6",
+          "phase": "deccan",
+          "template": "scene-case",
+          "purpose": "An emperor pushes south. A warrior kingdom pushes back."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-6/4.6 - Maroon Resistance.JPG",
+      "blobSha": "b1407934fcb3e6d8c890228a4c49109ca5eb5269",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-29",
+      "placements": [
+        {
+          "topic": "4.6",
+          "phase": "palmares",
+          "template": "scene-case",
+          "purpose": "Palmares: a free state in the hills."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-6/4.6 - Pueblo Revolts.JPG",
+      "blobSha": "aefdb77fbef04e5d4565e29b01f19cbea866128b",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-29",
+      "placements": [
+        {
+          "topic": "4.6",
+          "phase": "revolt",
+          "template": "story-scene",
+          "purpose": "The Pueblo Revolt, and what changed after."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-6/4.6 - Queen Njinga.JPG",
+      "blobSha": "75f7bca0286e101fbc26d6f09556ac3d64e9c3a1",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-29",
+      "placements": [
+        {
+          "topic": "4.6",
+          "phase": "njinga",
+          "template": "scene-case",
+          "purpose": "A queen fights and bargains with Portugal."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-6/4.6 - The Fronde.JPG",
+      "blobSha": "311dad96c4ac36c807f5b6d69d2741ec8a443f31",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "JeffAndersonLogic-patch-29",
+      "placements": [
+        {
+          "topic": "4.6",
+          "phase": "fronde",
+          "template": "scene-case",
+          "purpose": "Judges, Paris and nobles against the crown."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-7/4.7 - Akbars Court.JPG",
+      "blobSha": "3b1d50fcfc254fc978eb4c255b02b02360061032",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "6f23e7ed58ecbb55749b45c1b91c0de03e5f67bd",
+      "placements": [
+        {
+          "topic": "4.7",
+          "phase": "question",
+          "template": "frame-subtitle",
+          "purpose": "Between 1450 and 1750, who could belong, who could rise, and who got squeezed?"
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-7/4.7 - Casta System.JPG",
+      "blobSha": "09cceb303ee6fd6212a0e100ff0c18271cefbe46",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "6f23e7ed58ecbb55749b45c1b91c0de03e5f67bd",
+      "placements": [
+        {
+          "topic": "4.7",
+          "phase": "castapainting",
+          "template": "frame-evidence",
+          "purpose": "A chart on canvas, not a census."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-7/4.7 - Jewish Refugees Ottoman.JPG",
+      "blobSha": "0320aae9cc2b8a2ac97c6e95966d9ecf91718eb9",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "6f23e7ed58ecbb55749b45c1b91c0de03e5f67bd",
+      "placements": [
+        {
+          "topic": "4.7",
+          "phase": "expelled",
+          "template": "story-scene",
+          "purpose": "Pushed out, and taken in."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-7/4.7 - Manchu Elite.JPG",
+      "blobSha": "5685cb6b0e79c935051f87cc0ddd8cd285906ce3",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "6f23e7ed58ecbb55749b45c1b91c0de03e5f67bd",
+      "placements": [
+        {
+          "topic": "4.7",
+          "phase": "qing",
+          "template": "story-scene",
+          "purpose": "New rulers at the top. The old system kept running."
+        }
+      ]
+    },
+    {
+      "path": "assets/images/topics/4-7/4.7 - Peter the Great.JPG",
+      "blobSha": "276ef333d3d4d8051902a6f30af9e89f0f4894b4",
+      "reviewedAt": "2026-11-04",
+      "classification": "ai-reconstruction",
+      "sourceRef": "6f23e7ed58ecbb55749b45c1b91c0de03e5f67bd",
+      "placements": [
+        {
+          "topic": "4.7",
+          "phase": "boyars",
+          "template": "scene-case",
+          "purpose": "Squeezed into service, and still privileged."
+        }
+      ]
+    }
+  ]
+}

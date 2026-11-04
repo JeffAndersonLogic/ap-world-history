@@ -737,6 +737,7 @@ function sentenceFrame(s){
    and `caption` are the one-picture shorthand. `side: 'left'` puts the
    pictures on the left. A tall slice of a wide picture is a heavy crop, so
    give each visual a `position` that keeps its subject. */
+function sceneCase(s){const t=s.template||{},steps=arr(t.steps||t.rows).slice(0,5),sources=arr(t.sources).slice(0,3);const strip=sources.length?`<div class="bht-sc-sources" style="grid-template-columns:repeat(${sources.length},minmax(0,1fr))">${sources.map(p=>`<div class="bht-sc-source">${frame(p.visual,'bht-sc-object',{fit:'contain',tagPos:'bl'})}${p.caption?`<p class="bht-sc-caption">${esc(p.caption)}</p>`:''}</div>`).join('')}</div>`:'';const media=`<div class="bht-sc-media${sources.length?' with-sources':''}">${frame(t.visual,'bht-sc-scene',{fit:'contain',tagPos:'tl'})}${strip}</div>`;const rows=`<div class="bht-sc-copy" style="--sc-text:${steps.length>=5?20:22}">${steps.map(x=>`<div class="bht-sc-row${x.key?' key':''}"><b>${esc(x.label)}</b><p>${rich(x.text)}</p></div>`).join('')}</div>`;return board('scene-case',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-sc">${media}${rows}</div>`)+foot(t.proves||s.footer),'tight'));}
 function storyScene(s){
   const t=s.template||{},st=arr(t.steps).slice(0,5),n=Math.max(1,st.length);
   const pics=(arr(t.pictures).length?arr(t.pictures):(t.visual?[{visual:t.visual,caption:t.caption}]:[])).slice(0,2);
@@ -819,6 +820,7 @@ function balance(s){
 }
 
 const KINDS={
+'scene-case':sceneCase,
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
   'split-contrast':splitContrast,'split-mirror':splitMirror,'split-matrix':splitMatrix,'split-diagonal':splitDiagonal,
@@ -1666,6 +1668,22 @@ const CSS=`
 .bht-lg.open .bht-lg-row:last-child{border-bottom:0}
 .bht-lg.open .bht-lg-row .nm{letter-spacing:0}
 .bht-ledger .ledger-open .bht-foot p{font-size:28u;line-height:1.3}
+
+.bht-sc{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:30u;height:100%;min-height:0}
+.bht-sc-media{display:grid;grid-template-rows:minmax(0,1fr);gap:12u;min-height:0}
+.bht-sc-media.with-sources{grid-template-rows:minmax(0,1fr) 142u}
+.bht-sc-scene,.bht-sc-object{position:relative;overflow:hidden;background:#050606;min-height:0}
+.bht-sc-sources{display:grid;gap:12u;min-height:0}
+.bht-sc-source{display:flex;flex-direction:column;gap:5u;min-height:0}
+.bht-sc-object{flex:1}
+.bht-sc-object .bht-tag{white-space:normal;left:5u;right:5u;bottom:5u;font-size:8u;letter-spacing:0;line-height:1.2}
+.bht-sc-caption{font:600 11u/1.2 'Montserrat',Helvetica,sans-serif;color:var(--fg)}
+.bht-sc-copy{display:flex;flex-direction:column;justify-content:space-around;gap:12u;min-height:0}
+.bht-sc-row{padding:0 0 10u;border-bottom:1u solid #65513a;min-width:0}
+.bht-sc-row:last-child{border:0}
+.bht-sc-row>b{display:block;font:800 17u/1.2 'Montserrat',Helvetica,sans-serif;color:var(--acc);margin-bottom:6u}
+.bht-sc-row>p{font:400 calc(var(--sc-text)*var(--u))/1.28 'Libre Baskerville',Georgia,serif;color:var(--fg)}
+.bht-sc-row.key>b{color:#f1ce8f}
 
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which

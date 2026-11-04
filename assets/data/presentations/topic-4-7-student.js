@@ -32,15 +32,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "",
       "title": "Between 1450 and 1750, who could belong, who could rise, and who got squeezed?",
-      "subtitle": "A Rajput ruler bows to the emperor Akbar in 1569, painted for Akbar's own history of his reign, about 1590 to 1595.",
+      "subtitle": "Conquest and negotiation brought new people into imperial service.",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg",
-          "alt": "A Mughal painting: the emperor sits on a throne under a red and yellow canopy while a man bows low before him, nobles stand around the throne, a crowd with trays and weapons gathers below, and a fortress stands on the rocky hill behind",
-          "credit": "A Rajput ruler submits to Akbar, 1569, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
-          "ratio": 0.624,
-          "position": "50% 45%"
-        }
+          "ai": true,
+          "url": "../assets/images/topics/4-7/4.7%20-%20Akbars%20Court.JPG",
+          "alt": "Reconstruction of an emperor receiving nobles and tribute beneath a canopy at a Mughal court",
+          "fit": "contain"
+        },
+        "place": "top"
       }
     },
     {
@@ -102,26 +102,33 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective M"
     },
     {
-      "kind": "balance",
+      "kind": "story-scene",
       "eyebrow": "Who Belongs · 1492 to 1497",
       "title": "Pushed out, and taken in.",
       "kc": "KC-4.3.I.B",
       "template": {
-        "job": "Who belongs",
-        "left": {
-          "tag": "Spain and Portugal",
-          "name": "Pushed out",
-          "when": "1492 to 1497",
-          "text": "Jews must convert or leave. Portugal forces most to be baptized."
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-7/4.7%20-%20Jewish%20Refugees%20Ottoman.JPG",
+          "alt": "Reconstruction of a refugee family carrying belongings at an Ottoman port, with cargo boats and a city behind them",
+          "fit": "contain"
         },
-        "right": {
-          "tag": "Ottoman Empire",
-          "name": "Taken in",
-          "when": "1490s",
-          "text": "Bayezid II lets the refugees settle in Istanbul, Salonica and other cities."
-        },
-        "claimLabel": "Ask why",
-        "claim": "Same people, **opposite policies**: what did each state want?"
+        "steps": [
+          {
+            "label": "Spain, 1492",
+            "text": "Jews who would not convert were ordered to leave."
+          },
+          {
+            "label": "Portugal, 1497",
+            "text": "Most Jews were forcibly baptized rather than allowed to leave."
+          },
+          {
+            "label": "Ottoman cities",
+            "text": "Bayezid II allowed refugees to settle in Istanbul, Salonica and other cities.",
+            "key": true
+          }
+        ],
+        "caption": "Opposite state policies toward religious difference"
       }
     },
     {
@@ -211,36 +218,34 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "continuity-change",
+      "kind": "story-scene",
       "eyebrow": "New Elites · China, 1644",
       "title": "New rulers at the top. The old system kept running.",
       "footer": "A new elite, limits on the majority, and a continuity, all in one empire.",
       "kc": "KC-4.2.III.A",
       "template": {
-        "date": "1644",
-        "before": {
-          "tag": "Ming",
-          "items": [
-            "Han Chinese emperors",
-            "Scholar-officials run the government"
-          ]
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-7/4.7%20-%20Manchu%20Elite.JPG",
+          "alt": "Reconstruction of a mounted banner officer and other soldiers appearing before Qing officials in a palace courtyard",
+          "fit": "contain"
         },
-        "after": {
-          "tag": "Qing",
-          "items": [
-            "Manchu emperors and the **banners**, a new elite",
-            "Han men must wear the **queue** (1645)",
-            "Many top posts shared: one Manchu, one Han"
-          ]
-        },
-        "continued": {
-          "tag": "Continued",
-          "items": [
-            "The civil service exams",
-            "Confucian officials and law codes",
-            "Han scholars fill most government jobs"
-          ]
-        }
+        "steps": [
+          {
+            "label": "Ming",
+            "text": "Han Chinese emperors; Scholar-officials run the government."
+          },
+          {
+            "label": "Qing, 1644",
+            "text": "Manchu emperors and the **banners**, a new elite; Han men must wear the **queue** (1645); Many top posts shared: one Manchu, one Han.",
+            "key": true
+          },
+          {
+            "label": "Continued",
+            "text": "The civil service exams; Confucian officials and law codes; Han scholars fill most government jobs."
+          }
+        ],
+        "caption": "Conquest created a new elite; institutions continued"
       }
     },
     {
@@ -301,20 +306,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-letterbox",
+      "kind": "frame-evidence",
       "eyebrow": "New Elites · A Casta Painting · Mexico, about 1715 to 1720",
       "title": "A chart on canvas, not a census.",
       "subtitle": "In Spanish, the label says: from a mestizo and an Indian woman comes a coyote. Most casta labels never appear in official records.",
       "kc": "KC-4.2.III.A",
       "template": {
-        "visual": {
+        "scene": {
+          "ai": true,
+          "url": "../assets/images/topics/4-7/4.7%20-%20Casta%20System.JPG",
+          "alt": "Reconstruction of a colonial artist painting a family while an elite patron watches, with a busy street outside",
+          "fit": "contain"
+        },
+        "evidence": {
           "url": "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
           "alt": "A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right",
-          "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 to 1720 · Hispanic Society of America · Public domain",
+          "credit": "Juan Rodríguez Juárez, c.1715 to 1720 · Hispanic Society · Public domain",
           "ratio": 1.424,
           "fit": "contain",
           "tagPos": "bl"
-        }
+        },
+        "sceneLabel": "Reconstruction: an artist and a patron",
+        "evidenceLabel": "Historical painting: the classification to question"
       }
     },
     {
@@ -425,11 +438,29 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-scene",
+      "kind": "scene-case",
       "eyebrow": "Old Elites · Russia",
       "title": "Squeezed into service, and still privileged.",
       "kc": "KC-4.2.III.B",
       "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-7/4.7%20-%20Peter%20the%20Great.JPG",
+          "alt": "Reconstruction of Russian nobles working at desks with ledgers in an office under Peter the Great's service reforms",
+          "fit": "contain"
+        },
+        "sources": [
+          {
+            "visual": {
+              "url": "../assets/images/topics/4-7/peter-the-great-russia-c1700.jpg",
+              "alt": "A painted half-length portrait of a man with dark curly hair and a small mustache, in a steel breastplate over a yellow coat, with a blue sash, one hand on a staff and the other on his hip",
+              "credit": "Peter the Great, probably by a Russian painter, first half of the 1700s · Rijksmuseum · Public domain",
+              "ratio": 0.822,
+              "position": "50% 30%"
+            },
+            "caption": "A historical portrait of Peter the Great"
+          }
+        ],
         "steps": [
           {
             "label": "1682",
@@ -453,14 +484,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Nobles keep their estates and their power over serfs."
           }
         ],
-        "visual": {
-          "url": "../assets/images/topics/4-7/peter-the-great-russia-c1700.jpg",
-          "alt": "A painted half-length portrait of a man with dark curly hair and a small mustache, in a steel breastplate over a yellow coat, with a blue sash, one hand on a staff and the other on his hip",
-          "credit": "Peter the Great, probably by a Russian painter, first half of the 1700s · Rijksmuseum · Public domain",
-          "ratio": 0.822,
-          "position": "50% 30%"
-        },
-        "caption": "Peter the Great, first half of the 1700s"
+        "proves": "Nobles lost independence while keeping estates and power over serfs."
       }
     },
     {

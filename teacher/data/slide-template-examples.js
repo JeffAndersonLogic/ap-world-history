@@ -228,4 +228,11 @@ window.BH_SLIDE_TEMPLATE_EXAMPLES=[
     kind:'frame-full',eyebrow:'Topic 4.3 · The Whole Exchange on One Map',title:'What the ships carried, and which way.',
     template:{visual:exchangeMap}}}
 ];
+
+window.BH_SLIDE_TEMPLATE_EXAMPLES.push({round:8,group:'Image frames',name:'Scene and case',note:'A reconstruction orients the class, up to three real source objects sit below it, and three to five flat rows explain the case. Keep the sources real and use ai:true on reconstructions. Good for a revolt with causes and outcomes, or a company with charter powers.',slide:{
+kind:'scene-case',eyebrow:'Topic 4.6 · The Fronde',title:'Judges, Paris and nobles against the crown',
+template:{visual:AI('4-6','4.6 - The Fronde.JPG','Reconstruction of a Paris street barricade with townspeople and soldiers'),
+sources:[{visual:{url:img('4-6','broussel-paris-1648.jpg'),alt:'Printed portrait of Pierre Broussel',credit:'Pierre Broussel, portrait printed in 1648 · Rijksmuseum · Public domain'},caption:'A judge, printed in 1648'},{visual:{url:img('4-6','parlement-arrest-luyken-1699.jpg'),alt:'Dutch etching of an arrest in Paris',credit:'Caspar Luyken, arrest in Paris, published 1699 · Rijksmuseum · Public domain'},caption:'An arrest, imagined later'}],
+steps:[{label:'Push',text:'The crown demands new taxes to pay for war.'},{label:'Pushback',text:'Judges refuse, Paris builds barricades, and nobles rise.'},{label:'Outcome',text:'The rebels split; the crown wins in 1653.',key:true}],proves:'Centralization cost groups money and power; they pushed back.'}}});
+
 })();

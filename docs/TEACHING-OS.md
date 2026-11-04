@@ -208,3 +208,8 @@ npm run test:browser
 ## Shipping
 
 Follow the repository `CLAUDE.md` / `ship-to-main` contract: working branch, both required Validate jobs green on the exact commit, then fast-forward `main` to that commit. Do not use a pull-request merge as the deployment mechanism.
+
+
+### Scene case template
+
+`scene-case` pairs a large illustrative `template.visual` with up to five `template.steps` (`label`, `text`, optional `key`) and optional `template.proves`. Up to three `template.sources` (`visual`, optional `caption`) appear below the scene, fitted whole and credited. Use it for a case whose mechanism needs both a reconstructed setting and historical source objects. Mark reconstructed visuals `ai:true`; sources retain their provenance. See the catalog example and `docs/PRESENTATION-IMAGE-WORKFLOW.md`.

@@ -28,11 +28,8 @@
  * - batavia-beeckman-c1662.jpg: Andries Beeckman, The Castle of Batavia,
  *   about 1662, Rijksmuseum SK-A-19 (public domain)
  *
- * No AI-generated picture is used (no generator key was set, and a real object
- * existed for every beat that needed one). The question and landing slides open
- * and close on real historical scenes, under Jeff's standard of 2026-10-14.
- * Most visuals are set in the teaching base beside the slide they belong to;
- * the four full-board pictures are set here.
+ * Reviewed uploads added 2026-11-04. The inventory above describes the
+ * historical sources; the labeled reconstructions are assigned below.
  */
 (function(){
 'use strict';
@@ -50,3 +47,20 @@ setTemplate('manila',{visual:MANILA});
 setTemplate('virgin',{visual:VIRGEN});
 setTemplate('close',{visual:BATAVIA});
 })();
+
+/* Reviewed reconstruction assignments, 2026-11-04. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
+const by=p=>T.slides.find(s=>s.phase===p), ai=(name,alt)=>({ai:true,url:'../assets/images/topics/4-5/'+encodeURIComponent(name),alt,fit:'contain'}), note=(s,x)=>s.notes.land.push(x);
+let s=by('company'), source=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.5 - The VOC.JPG','Reconstruction of workers building a Dutch company ship at a large shipyard while merchants review papers'),sources:[{visual:source,caption:'VOC share receipt, Enkhuizen, 1606'}],steps:s.template.rows,proves:s.template.proves};
+note(s,'The shipyard is a reconstruction of the scale of a trading company. The receipt is real evidence of investment. The charter, not a pictured cannon or official, establishes the company\'s legal powers.');
+s=by('manila');s.template={visual:ai('4.5 - Silver for Silk.JPG','Reconstruction of Chinese and other merchants inspecting silk, porcelain and silver at a busy Manila waterfront'),place:'top'};s.subtitle='Chinese merchants supplied silk and porcelain; American silver paid for them.';s.notes.land=s.notes.land.filter(x=>!x.includes('Vingboons'));note(s,'Historical Reconstruction - AI Generated. The scene illustrates exchange, not an observed bargain. Do not count the pictured coins or infer national identities from invented cargo marks.');
+s=by('work');s.template.panels[1].visual=ai('4.5 - Indian Cotton Textiles.JPG','Reconstruction of Indian artisans spinning, weaving and dyeing cotton cloth in a workshop');note(s,'The India workshop is reconstructed; the European painting and Chinese print are historical sources. Use the scene to imagine labor and the real objects to observe period evidence. The palampore remains a real source in the course.');
+s=by('mixing');const rows=s.template.rows;s.kind='story-scene';s.template={visual:ai('4.5 - Brazil Cultural Interactions.JPG','Reconstruction of a Brazilian colonial market with African, Indigenous and European people trading food and goods'),steps:rows.map(r=>({label:r.name,text:r.result})),caption:'An imagined market; the contributions come from the history'};
+note(s,'The market reconstructs cultural interaction under colonial inequality, not an equal or voluntary meeting. Appearance cannot identify a person\'s ancestry or legal status. Name contributions from the reading rather than treating generated clothing as proof.');
+s=by('virgin');source=Object.assign({},s.template.visual,{credit:'La Virgen del Cerro, Potosí, 1700s · Photo Dan Lundberg · CC BY-SA 2.0'});s.kind='frame-evidence';s.template={scene:ai('4.5 - Potosi.JPG','Reconstruction of an artist painting Mary as the mountain of Potosí, with Cerro Rico visible outside his workshop'),evidence:source,sceneLabel:'Reconstruction: imagine the workshop',evidenceLabel:'Historical painting: reason from this'};
+note(s,'The upload called Potosi shows an imagined artist making the Virgin of the Mountain. It belongs here, with religious blending, not on the mine or labor slide. The right-hand historical painting is the evidence; the left-hand reconstruction cannot establish who painted it or how.');
+by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions support company finance, Manila trade, Indian labor, Atlantic cultural interaction and religious blending. Historical source objects remain available; none of the reconstructions enters Evidence Lab.');
+})();
+
+(function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();

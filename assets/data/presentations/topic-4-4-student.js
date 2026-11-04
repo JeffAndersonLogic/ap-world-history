@@ -32,14 +32,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "",
       "title": "Europeans built empires from the sea. What changed, and what kept going?",
-      "subtitle": "Portuguese traders arriving in Japan, about 1600, as a Japanese painter imagined them for Japanese buyers.",
+      "subtitle": "Forts and ships brought Europeans into trading networks that already had merchants and rulers.",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-4/nanban-screen-kano-naizen-c1600.jpg",
-          "alt": "Japanese folding screen painted in gold and color: a large Portuguese ship at anchor on the left, and Portuguese merchants, officers and servants in wide trousers walking up the shore toward Jesuit priests in black and a Japanese house",
-          "credit": "Kano Naizen, Arrival of the Southern Barbarians, about 1600 · Kobe City Museum · Public domain",
-          "position": "40% 50%"
-        }
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Portuguese%20Maritime%20Empire.jpg",
+          "alt": "Reconstruction of Portuguese carracks and a coastal fort beside Indian merchants and dockworkers at a busy trading port",
+          "fit": "contain"
+        },
+        "place": "top"
       }
     },
     {
@@ -53,41 +54,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "branch-tree",
+      "kind": "story-scene",
       "eyebrow": "Why Build Empires",
       "title": "Rivals built empires from the sea.",
       "footer": "Portugal, Spain, the Dutch, France and England: when one found a route or a rich coast, the others came after it.",
       "kc": "KC-4.3.II.C",
       "template": {
-        "claimLabel": "The cause",
-        "claim": "European states built maritime empires because they were **rivals**.",
-        "branches": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20VOC.jpg",
+          "alt": "Reconstruction of Dutch company officials, cargo boats and ocean-going ships beside a fortified Asian harbor",
+          "fit": "contain"
+        },
+        "steps": [
           {
             "label": "Political",
-            "note": "Each wanted the power the others had",
-            "items": [
-              "Portugal and Spain",
-              "Dutch against Spain",
-              "England and France"
-            ]
+            "text": "Portugal, Spain, the Dutch, France and England competed for power."
           },
           {
             "label": "Religious",
-            "note": "A mission, and wars between churches",
-            "items": [
-              "War on Islam",
-              "Spreading Christianity",
-              "Protestant against Catholic"
-            ]
+            "text": "Christian missions and conflicts among religious powers accompanied expansion."
           },
           {
             "label": "Economic",
-            "note": "The goods and the trade that carried them",
-            "items": [
-              "Gold",
-              "Spices",
-              "Sugar"
-            ]
+            "text": "Gold, spices and sugar made the trade worth competing for.",
+            "key": true
           }
         ]
       }
@@ -140,18 +131,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-scene",
+      "kind": "scene-case",
       "eyebrow": "Asia Sets the Terms",
       "title": "China and Japan decided how far Europeans could reach.",
       "kc": "KC-4.3.II.A.i",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
-          "alt": "Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks",
-          "credit": "Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain",
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Nagasaki%20Bay.jpg",
+          "alt": "Reconstruction of Japanese officials and Dutch merchants inspecting cargo above a fenced waterfront compound at Nagasaki",
           "fit": "contain"
         },
-        "caption": "Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks",
+        "sources": [
+          {
+            "visual": {
+              "url": "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
+              "alt": "Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks",
+              "credit": "Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain",
+              "fit": "contain"
+            },
+            "caption": "Nagasaki and Dejima, engraving published 1744"
+          }
+        ],
         "steps": [
           {
             "label": "China, 1557",
@@ -170,7 +171,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "The Dutch must trade only on the island of Dejima. Chinese merchants trade in the city."
           }
-        ]
+        ],
+        "proves": "China and Japan set the terms for foreign merchants."
       }
     },
     {
@@ -397,18 +399,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-scene",
+      "kind": "scene-case",
       "eyebrow": "Slavery: Change",
       "title": "What the plantations changed.",
       "kc": "KC-4.2.II.C",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg",
-          "alt": "Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane",
-          "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain",
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Barbados%20Sugar.JPG",
+          "alt": "Reconstruction of Black and white laborers cutting cane on a Caribbean sugar plantation, with a supervisor and a mill behind them",
           "fit": "contain"
         },
-        "caption": "A sugar works in the French Caribbean, 1667",
+        "sources": [
+          {
+            "visual": {
+              "url": "../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg",
+              "alt": "Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane",
+              "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain",
+              "fit": "contain"
+            },
+            "caption": "French Caribbean sugar works, printed 1667"
+          }
+        ],
         "steps": [
           {
             "label": "Demand",
@@ -427,7 +439,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Cultural",
             "text": "African languages, beliefs and foods crossed with them."
           }
-        ]
+        ],
+        "proves": "Plantations changed the scale and inherited racial structure of slavery."
       }
     },
     {
@@ -555,12 +568,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Next: the empires exist. How did rulers make them pay, and what did the money do to the people inside them?",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-4/dejima-kawahara-keiga-c1836.jpg",
-          "alt": "Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay",
-          "credit": "Kawahara Keiga, View of Dejima in Nagasaki Bay, painted about 1836, after this period · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0",
-          "position": "50% 0%",
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Merchants%20of%20Surat.JPG",
+          "alt": "Reconstruction of Indian merchants, scribes and dockworkers trading cloth and other goods along the waterfront at Surat",
           "fit": "contain"
-        }
+        },
+        "place": "top"
       }
     }
   ]

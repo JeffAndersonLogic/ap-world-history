@@ -239,15 +239,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective N"
     },
     {
-      "kind": "case-file",
+      "kind": "scene-case",
       "eyebrow": "What Changed · Barbados, 1647 to 1679",
       "title": "One crop remade a whole island.",
       "kc": "KC-4.2",
       "template": {
-        "tag": "Case",
-        "place": "Barbados",
-        "date": "1647 to 1679",
-        "rows": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Barbados%20Sugar.JPG",
+          "alt": "Reconstruction of laborers cutting sugarcane on a Caribbean plantation, with a supervisor and a mill behind them",
+          "fit": "contain"
+        },
+        "steps": [
           {
             "label": "Sugar",
             "text": "Sugar-making was **still new** in 1647, with plants from Brazil."

@@ -26,12 +26,8 @@
  *   Nagasaki Bay, folding screen, about 1836, Museum Volkenkunde; photograph
  *   René Gerritsen, CC BY-SA 4.0
  *
- * No AI-generated picture is used (no generator key was set, and a real object
- * existed for every beat that needed one). The question and landing slides open
- * and close on real historical scenes, under Jeff's standard of 2026-10-14.
- * Most visuals are set in the teaching base beside the slide they belong to; the
- * two bookends are set here. The landing screen is shown whole (fit:'contain')
- * and pinned to the top, so the words sit under Dejima instead of over it.
+ * Reviewed uploads added 2026-11-04. The inventory above describes the
+ * historical sources; the labeled reconstructions are assigned below.
  */
 (function(){
 'use strict';
@@ -45,3 +41,25 @@ const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign(
 setTemplate('question',{visual:NANBAN});
 setTemplate('close',{visual:DEJIMA});
 })();
+
+/* Reviewed reconstruction assignments, 2026-11-04. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
+const by=p=>T.slides.find(s=>s.phase===p), ai=(name,alt)=>({ai:true,url:'../assets/images/topics/4-4/'+encodeURIComponent(name),alt,fit:'contain'});
+const note=(s,x)=>{s.notes.land.push(x);};
+let s=by('question');s.template={visual:ai('4.4 - Portuguese Maritime Empire.jpg','Reconstruction of Portuguese carracks and a coastal fort beside Indian merchants and dockworkers at a busy trading port'),place:'top'};s.subtitle='Forts and ships brought Europeans into trading networks that already had merchants and rulers.';
+s.notes.keys=['Reconstruction: a Portuguese trading port','Forts and ships alongside an existing market','Predict one change and one continuity'];
+s.notes.land=s.notes.land.slice(2);note(s,'Historical Reconstruction - AI Generated. This scene evokes a Portuguese trading port such as Goa; it cannot establish a particular ship, building or transaction. Ask what the ships might change and what local merchants might keep doing.');
+s=by('rivals');s.kind='story-scene';s.template={visual:ai('4.4 - VOC.jpg','Reconstruction of Dutch company officials, cargo boats and ocean-going ships beside a fortified Asian harbor'),steps:[{label:'Political',text:'Portugal, Spain, the Dutch, France and England competed for power.'},{label:'Religious',text:'Christian missions and conflicts among religious powers accompanied expansion.'},{label:'Economic',text:'Gold, spices and sugar made the trade worth competing for.',key:true}]};
+note(s,'The VOC harbor is a labeled reconstruction, a scene of one European rival at work. It does not prove an exact charter, date or monopoly. Topic 4.5 explains joint-stock finance; here it illustrates rivalry.');
+s=by('asia');const harbor=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.4 - Nagasaki Bay.jpg','Reconstruction of Japanese officials and Dutch merchants inspecting cargo above a fenced waterfront compound at Nagasaki'),sources:[{visual:harbor,caption:'Nagasaki and Dejima, engraving published 1744'}],steps:s.template.steps,proves:'China and Japan set the terms for foreign merchants.'};
+note(s,'The large image is a reconstruction; the small engraving is the historical source. Dates and restrictions come from the edict and the case, not from generated flags, crate marks or the imagined harbor layout.');
+s=by('plantation');const source=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.4 - Barbados Sugar.JPG','Reconstruction of Black and white laborers cutting cane on a Caribbean sugar plantation, with a supervisor and a mill behind them'),sources:[{visual:source,caption:'French Caribbean sugar works, printed 1667'}],steps:s.template.steps,proves:'Plantations changed the scale and inherited racial structure of slavery.'};
+note(s,'The Barbados reconstruction orients the class to cane, labor and supervision. The engraving below it is a real French Caribbean source, not a view of Barbados. Neither picture alone proves the demographic figures or a particular worker\'s legal status.');
+s=by('close');s.template={visual:ai('4.4 - Merchants of Surat.JPG','Reconstruction of Indian merchants, scribes and dockworkers trading cloth and other goods along the waterfront at Surat'),place:'top'};
+s.notes.keys=['Surat: Asian merchants keep trading','Reconstruction, not source evidence','Return to the spine, then hand off to 4.5'];
+s.notes.land=s.notes.land.slice(1);note(s,'The Surat scene returns to continuity and local agency: European ships joined a commercial world they did not replace. Its buildings and business records are imagined; do not read them as a dated historical source.');
+by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions support the story; historical sources remain in the deck and Evidence Lab. Reconstructions illustrate cases and do not supply source evidence.');
+})();
+
+(function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();

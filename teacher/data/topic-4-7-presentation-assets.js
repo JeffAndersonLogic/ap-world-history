@@ -1,7 +1,7 @@
 /* Topic 4.7 data-only visual assignments. Safe to evaluate in Node: no DOM.
  * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
  *
- * Every picture in this deck is a real historical object, checked on
+ * The original source pictures in this deck were checked on
  * 2026-10-18 (each file downloaded from the holding museum's own image
  * server, or from Wikimedia Commons where the museum's own server could not
  * be reached, looked at, and read against the catalogue record) and saved
@@ -38,9 +38,8 @@
  *   d'Armes, 1722, Château de Versailles, from Wikimedia Commons (CC BY-SA 4.0
  *   for the photograph). Cropped inside the frame. Evidence Lab only.
  *
- * No AI-generated picture is used (no generator key was set). The question and
- * landing slides open and close on real historical objects, under Jeff's
- * standard of 2026-10-14.
+ * Reviewed uploads added 2026-11-04. The inventory above describes the
+ * historical sources; the labeled reconstructions are assigned below.
  */
 (function(){
 'use strict';
@@ -64,3 +63,18 @@ setTemplate('castapainting',{visual:Object.assign({},CASTA,{fit:'contain',tagPos
 setTemplate('boyars',{visual:PETER,caption:'Peter the Great, first half of the 1700s'});
 setTemplate('close',{visual:CASTA});
 })();
+
+/* Reviewed reconstruction assignments, 2026-11-04. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
+const by=p=>T.slides.find(s=>s.phase===p), ai=(name,alt)=>({ai:true,url:'../assets/images/topics/4-7/'+encodeURIComponent(name),alt,fit:'contain'}), note=(s,x)=>s.notes.land.push(x);
+let s=by('question');s.template={visual:ai('4.7 - Akbars Court.JPG','Reconstruction of an emperor receiving nobles and tribute beneath a canopy at a Mughal court'),place:'top'};s.subtitle='Conquest and negotiation brought new people into imperial service.';s.notes.land=s.notes.land.slice(1);note(s,'The opening court is reconstructed, not a portrait of Akbar or a record of a particular submission. The Akbarnama painting remains on the Mughal case slide and supplies the source evidence.');
+s=by('mughal');s.notes.land=s.notes.land.map(x=>x.replace('The picture is the Akbarnama painting from slide 3:','The historical picture is an Akbarnama painting:'));
+s=by('expelled');s.kind='story-scene';s.template={visual:ai('4.7 - Jewish Refugees Ottoman.JPG','Reconstruction of a refugee family carrying belongings at an Ottoman port, with cargo boats and a city behind them'),steps:[{label:'Spain, 1492',text:'Jews who would not convert were ordered to leave.'},{label:'Portugal, 1497',text:'Most Jews were forcibly baptized rather than allowed to leave.'},{label:'Ottoman cities',text:'Bayezid II allowed refugees to settle in Istanbul, Salonica and other cities.',key:true}],caption:'Opposite state policies toward religious difference'};note(s,'The harbor and family are reconstructed. The skyline is a composite, not evidence of which buildings stood in the 1490s; do not read the invented writing on luggage as a source. Many exiles settled outside the Ottoman Empire too.');
+s=by('qing');const old=s.template;s.kind='story-scene';s.template={visual:ai('4.7 - Manchu Elite.JPG','Reconstruction of a mounted banner officer and other soldiers appearing before Qing officials in a palace courtyard'),steps:[{label:'Ming',text:old.before.items.join('; ')+'.'},{label:'Qing, 1644',text:old.after.items.join('; ')+'.',key:true},{label:'Continued',text:old.continued.items.join('; ')+'.'}],caption:'Conquest created a new elite; institutions continued'};note(s,'The display of banner power is reconstructed. Its flag designs and uniforms do not establish exact Eight Banner arrangements. The following historical handscroll is the source to observe and question.');
+s=by('castapainting');const source=Object.assign({},s.template.visual,{credit:'Juan Rodríguez Juárez, c.1715 to 1720 · Hispanic Society · Public domain'});s.kind='frame-evidence';s.template={scene:ai('4.7 - Casta System.JPG','Reconstruction of a colonial artist painting a family while an elite patron watches, with a busy street outside'),evidence:source,sceneLabel:'Reconstruction: an artist and a patron',evidenceLabel:'Historical painting: the classification to question'};note(s,'The workshop is reconstructed. The actual Rodríguez Juárez painting is on the right, and the quoted family label refers to it alone. Ask what its elite audience wanted to see; do not treat the generated family or workshop as a historical record.');
+s=by('boyars');const portrait=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.7 - Peter the Great.JPG','Reconstruction of Russian nobles working at desks with ledgers in an office under Peter the Great\'s service reforms'),sources:[{visual:portrait,caption:'A historical portrait of Peter the Great'}],steps:s.template.steps,proves:'Nobles lost independence while keeping estates and power over serfs.'};note(s,'The uploaded scene depicts officials at work, not a verified likeness of Peter. The small historical portrait identifies the ruler; the scene makes service and paperwork concrete.');
+by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions support court hierarchy, refugees, the Manchu elite, casta patronage and Russian service. The actual Mughal painting, Qing handscroll and casta painting continue to carry source reasoning.');
+})();
+
+(function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();

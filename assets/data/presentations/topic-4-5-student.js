@@ -96,21 +96,29 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "case-file",
+      "kind": "scene-case",
       "eyebrow": "Rulers' Tool 2 · A Company",
       "title": "A company that could go to war.",
       "kc": "KC-4.1.IV.C",
       "template": {
-        "tag": "Joint-stock company",
-        "place": "The Dutch Republic",
-        "date": "1602",
         "visual": {
-          "url": "../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg",
-          "alt": "A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom",
-          "credit": "Receipt for a VOC share, Enkhuizen, 1606 · Public domain",
-          "position": "50% 30%"
+          "ai": true,
+          "url": "../assets/images/topics/4-5/4.5%20-%20The%20VOC.JPG",
+          "alt": "Reconstruction of workers building a Dutch company ship at a large shipyard while merchants review papers",
+          "fit": "contain"
         },
-        "rows": [
+        "sources": [
+          {
+            "visual": {
+              "url": "../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg",
+              "alt": "A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom",
+              "credit": "Receipt for a VOC share, Enkhuizen, 1606 · Public domain",
+              "position": "50% 30%"
+            },
+            "caption": "VOC share receipt, Enkhuizen, 1606"
+          }
+        ],
+        "steps": [
           {
             "label": "Shares",
             "text": "**Many investors** bought shares and split the profits and the losses"
@@ -231,15 +239,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "",
       "title": "Who ran the silk-for-silver trade at Manila?",
-      "subtitle": "Manila and its bay, in a Dutch view painted about 1665. The Dutch were Spain's rivals here.",
+      "subtitle": "Chinese merchants supplied silk and porcelain; American silver paid for them.",
       "kc": "KC-4.1.IV",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-5/manila-vingboons-c1665.jpg",
-          "alt": "Hand-colored bird's-eye view of a walled city on a wide bay, green hills behind, and sailing ships at anchor in the water",
-          "credit": "Johannes Vingboons, view of Manila, about 1665, painted in the Netherlands · Nationaal Archief · Public domain",
-          "position": "50% 60%"
-        }
+          "ai": true,
+          "url": "../assets/images/topics/4-5/4.5%20-%20Silver%20for%20Silk.JPG",
+          "alt": "Reconstruction of Chinese and other merchants inspecting silk, porcelain and silver at a busy Manila waterfront",
+          "fit": "contain"
+        },
+        "place": "top"
       }
     },
     {
@@ -325,10 +334,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "visual": {
-              "url": "../assets/images/topics/4-5/palampore-india-early-1700s.jpg",
-              "alt": "A large painted cotton bed cover from India: a flowering tree rising from a small hill, with a patterned border of flowers",
-              "credit": "Painted cotton bed cover (palampore), India, early 1700s · Metropolitan Museum of Art · Public domain",
-              "position": "50% 40%"
+              "ai": true,
+              "url": "../assets/images/topics/4-5/4.5%20-%20Indian%20Cotton%20Textiles.JPG",
+              "alt": "Reconstruction of Indian artisans spinning, weaving and dyeing cotton cloth in a workshop",
+              "fit": "contain"
             },
             "title": "India: cotton"
           },
@@ -375,34 +384,33 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "ledger",
+      "kind": "story-scene",
       "eyebrow": "Society · A Mixed Atlantic World",
       "title": "Everyone contributed to the new culture.",
       "footer": "No one group designed it, and much of it happened under force: \"with all parties contributing.\"",
       "kc": "KC-4.1.IV.D.ii",
       "template": {
-        "rows": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-5/4.5%20-%20Brazil%20Cultural%20Interactions.JPG",
+          "alt": "Reconstruction of a Brazilian colonial market with African, Indigenous and European people trading food and goods",
+          "fit": "contain"
+        },
+        "steps": [
           {
-            "name": "Africans",
-            "mark": "A",
-            "tool": "Contributed",
-            "result": "farming skills, music, beliefs, and languages."
+            "label": "Africans",
+            "text": "farming skills, music, beliefs, and languages."
           },
           {
-            "name": "Indigenous Americans",
-            "mark": "I",
-            "tool": "Contributed",
-            "result": "foods, farming and local knowledge."
+            "label": "Indigenous Americans",
+            "text": "foods, farming and local knowledge."
           },
           {
-            "name": "Europeans",
-            "mark": "E",
-            "tool": "Contributed",
-            "result": "languages, Christianity, and goods."
+            "label": "Europeans",
+            "text": "languages, Christianity, and goods."
           }
         ],
-        "payoffLabel": "Together they made",
-        "payoff": "New Atlantic cultures: foods, creole languages, music, faith"
+        "caption": "An imagined market; the contributions come from the history"
       }
     },
     {
@@ -442,19 +450,27 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-subtitle",
+      "kind": "frame-evidence",
       "eyebrow": "",
       "title": "Two traditions in one painting.",
       "subtitle": "The Virgin of the Mountain, painted in Potosí in the 1700s: Mary is the silver mountain itself.",
       "kc": "KC-4.1.VI",
       "template": {
-        "visual": {
+        "scene": {
+          "ai": true,
+          "url": "../assets/images/topics/4-5/4.5%20-%20Potosi.JPG",
+          "alt": "Reconstruction of an artist painting Mary as the mountain of Potosí, with Cerro Rico visible outside his workshop",
+          "fit": "contain"
+        },
+        "evidence": {
           "url": "../assets/images/topics/4-5/virgen-del-cerro-potosi.jpg",
           "alt": "Painting of a great red mountain with the face, hands and crown of the Virgin Mary at its top and tiny people and animals on its slopes; two crowned figures and a dove above, and a pope, churchmen and a king kneeling below around a blue globe",
-          "credit": "La Virgen del Cerro, unknown painter, Potosí, 1700s · Casa Nacional de Moneda, Potosí · Photo Dan Lundberg, CC BY-SA 2.0",
+          "credit": "La Virgen del Cerro, Potosí, 1700s · Photo Dan Lundberg · CC BY-SA 2.0",
           "position": "50% 30%",
           "fit": "contain"
-        }
+        },
+        "sceneLabel": "Reconstruction: imagine the workshop",
+        "evidenceLabel": "Historical painting: reason from this"
       }
     },
     {

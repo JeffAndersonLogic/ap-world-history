@@ -95,12 +95,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective L"
     },
     {
-      "kind": "frame-pair",
+      "kind": "scene-case",
       "eyebrow": "Inside the State · France, 1648 to 1653",
       "title": "Judges, Paris and nobles against the crown.",
       "kc": "KC-4.3.III.iii",
       "template": {
-        "panels": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-6/4.6%20-%20The%20Fronde.JPG",
+          "alt": "Reconstruction of townspeople building a barricade across a French city street while armed soldiers approach",
+          "fit": "contain"
+        },
+        "sources": [
           {
             "visual": {
               "url": "../assets/images/topics/4-6/broussel-paris-1648.jpg",
@@ -108,8 +114,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "credit": "Portrait of Pierre Broussel, printed in 1648 with the French king's license · Rijksmuseum · Public domain",
               "ratio": 0.822
             },
-            "tag": "Printed in 1648",
-            "text": "The judge **Pierre Broussel**, whose arrest set off the barricades."
+            "caption": "Printed in 1648"
           },
           {
             "visual": {
@@ -118,11 +123,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "credit": "Caspar Luyken, arrest of a member of the Parlement of Paris, for a book published in Leiden, 1699 · Rijksmuseum · Public domain",
               "ratio": 0.633
             },
-            "tag": "Dutch print, Leiden, 1699",
-            "text": "A Dutch artist pictures the **arrest**, fifty years later."
+            "caption": "Dutch print, Leiden, 1699"
           }
         ],
-        "rows": [
+        "steps": [
           {
             "label": "Push",
             "text": "War with Spain: the crown demands **new taxes** (1648)"
@@ -167,12 +171,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-pair",
+      "kind": "scene-case",
       "eyebrow": "At the Edges · The Deccan, 1660s to 1707",
       "title": "An emperor pushes south. A warrior kingdom pushes back.",
       "kc": "KC-4.3.III.iii",
       "template": {
-        "panels": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-6/4.6%20-%20Marathas.JPG",
+          "alt": "Reconstruction of Maratha riders leaving a hill fort above a distant army camp in the Deccan",
+          "fit": "contain"
+        },
+        "sources": [
           {
             "visual": {
               "url": "../assets/images/topics/4-6/aurangzeb-golconda-c1686.jpg",
@@ -180,8 +190,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "credit": "Aurangzeb, painted in Golconda, about 1686 · Rijksmuseum · Public domain",
               "ratio": 0.706
             },
-            "tag": "The Mughal emperor",
-            "text": "**Aurangzeb** moved his court south in **1681** to conquer the Deccan."
+            "caption": "The Mughal emperor"
           },
           {
             "visual": {
@@ -190,11 +199,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "credit": "Shivaji, painted in Golconda, about 1680 · Rijksmuseum · Public domain",
               "ratio": 0.793
             },
-            "tag": "The Maratha king",
-            "text": "**Shivaji**, crowned in **1674**, built a kingdom of hill forts."
+            "caption": "The Maratha king"
           }
         ],
-        "rows": [
+        "steps": [
+          {
+            "label": "Mughal expansion",
+            "text": "**Aurangzeb** moved his court south in **1681** to conquer the Deccan."
+          },
+          {
+            "label": "Maratha power",
+            "text": "**Shivaji**, crowned in **1674**, built a kingdom of hill forts."
+          },
           {
             "label": "Pushback",
             "text": "Forts and fast raids, never one big battle"
@@ -208,15 +224,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "case-file",
+      "kind": "scene-case",
       "eyebrow": "At the Edges · West Central Africa, 1622 to 1663",
       "title": "A queen fights and bargains with Portugal.",
       "kc": "KC-4.3.III.iii",
       "template": {
-        "tag": "Ruler of Ndongo and Matamba",
-        "place": "Inland from Luanda",
-        "date": "1624 to 1663",
-        "rows": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-6/4.6%20-%20Queen%20Njinga.JPG",
+          "alt": "Reconstruction of an African queen negotiating with seated Portuguese officials in a colonial room at Luanda",
+          "fit": "contain"
+        },
+        "steps": [
           {
             "label": "Push",
             "text": "Portugal pushes inland from **Luanda**, largely for **captives**"
@@ -291,7 +310,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-steps",
+      "kind": "story-scene",
       "eyebrow": "At the Edges · New Mexico, 1675 to 1690s",
       "title": "The Pueblo Revolt, and what changed after.",
       "kc": "KC-4.3.III.iii",
@@ -314,7 +333,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "Spain returns, but without the encomienda, and the friars press far less hard."
           }
-        ]
+        ],
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-6/4.6%20-%20Pueblo%20Revolts.JPG",
+          "alt": "Reconstruction of Pueblo people passing a knotted cord between towns, with adobe buildings and ladders behind them",
+          "fit": "contain"
+        },
+        "caption": "Knotted cords: coordination across towns"
       }
     },
     {
@@ -375,15 +401,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "case-file",
+      "kind": "scene-case",
       "eyebrow": "Maroon Communities · Brazil",
       "title": "Palmares: a free state in the hills.",
       "kc": "KC-5.3.III.C",
       "template": {
-        "tag": "Quilombo",
-        "place": "Hills behind the sugar coast",
-        "date": "c. 1600 to 1695",
-        "rows": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-6/4.6%20-%20Maroon%20Resistance.JPG",
+          "alt": "Reconstruction of a fortified maroon settlement with houses, planted fields, watchtowers and a palisade in forested hills",
+          "fit": "contain"
+        },
+        "steps": [
           {
             "label": "People",
             "text": "**Thousands**, in a cluster of fortified towns"

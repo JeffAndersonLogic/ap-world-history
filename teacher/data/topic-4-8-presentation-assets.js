@@ -28,10 +28,8 @@
  *   and an Indian Woman, a Coyote, about 1715 to 1720, Hispanic Society of
  *   America LA2122.
  *
- * No AI-generated picture is used (no generator key was set). No picture of a
- * Barbados sugar works from the 1600s was found, so the Barbados case file has
- * none. The question and landing slides open and close on real historical
- * objects, under Jeff's standard of 2026-10-14.
+ * Reviewed uploads added 2026-11-04. The inventory above describes the
+ * historical sources; the labeled reconstructions are assigned below.
  */
 (function(){
 'use strict';
@@ -58,3 +56,10 @@ if(same&&same.template&&Array.isArray(same.template.panels)){
 }
 setTemplate('close',{visual:Object.assign({},POTOSI,{tagPos:'bl'})});
 })();
+
+/* Reviewed reconstruction assignments, 2026-11-04. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;const s=T.slides.find(s=>s.phase==='barbados');if(!s)return;const old=s.template;s.kind='scene-case';s.template={visual:{ai:true,url:'../assets/images/topics/4-4/'+encodeURIComponent('4.4 - Barbados Sugar.JPG'),alt:'Reconstruction of laborers cutting sugarcane on a Caribbean plantation, with a supervisor and a mill behind them',fit:'contain'},steps:old.rows,proves:old.proves};s.notes.land.push('The Barbados scene intentionally returns from Topic 4.4 so students can reuse a familiar case in the unit argument. It is a reconstruction, not evidence for a population count or the legal status of a pictured worker. Ligon\'s historical text on the next slide supplies the source evidence.');T.slides.find(s=>s.phase==='preflight').notes.land.push('Visual update, 2026-11-04: the Barbados reconstruction is reused intentionally for synthesis. No new 4.8-specific image was uploaded. The other unit-review sources remain historical objects.');
+})();
+
+(function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();
