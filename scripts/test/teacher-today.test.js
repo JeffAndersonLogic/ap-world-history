@@ -173,10 +173,17 @@ for (const t of rosOnly) {
     page.includes(String(resolveTeacherSurface)));
   ok('teacher command center keeps the AP World hero heading',
     page.includes('AP World Command Center'));
-  ok('teacher command center reuses the Module 01 globe artwork',
-    page.includes('../assets/images/module-art/unit-1/topic-1-1/map.svg'));
+  const hasBrandWordmark = html => html.includes('class="tc-brand-logo"') && html.includes('src="../assets/logos/behistorical-wordmark-on-dark.png"') && html.includes('alt="BeHistorical"');
+  const hasBrandGlobe = html => html.includes('class="tc-hero-globe"') && html.includes('src="../assets/logos/behistorical-globe.png" alt="" aria-hidden="true"');
+  ok('teacher command center uses the Globe-O brand wordmark', hasBrandWordmark(page));
+  ok('teacher command center uses the decorative gold brand globe', hasBrandGlobe(page));
+  ok('control: replacing the wordmark with the old treatment is caught',
+    !hasBrandWordmark(page.replace('behistorical-wordmark-on-dark.png', 'old-wordmark.png')));
+  ok('control: replacing the brand globe with the old map is caught',
+    !hasBrandGlobe(page.replace('behistorical-globe.png', 'map.svg')));
 }
 
 console.log('');
 if (failed) { console.log(`${R}${W}${failed} check(s) failed.${X}\n`); process.exit(1); }
 console.log(`${G}${W}Today routing: all checks passed.${X}\n`);
+

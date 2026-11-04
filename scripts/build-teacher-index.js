@@ -66,7 +66,7 @@ const TOOLS = [
   { kind: 'lesson', unit: '5', key: '5.7', title: 'Economic Developments and Innovations in the Industrial Age', href: 'topic-5-7-os.html', undated: true },
   { kind: 'lesson', unit: '5', key: '5.8', title: 'Reactions to the Industrial Economy from 1750 to 1900', href: 'topic-5-8-os.html', undated: true },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
-  { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
+  { kind: 'authoring', label: 'Slide Templates', desc: 'Explore every Teaching OS layout, including 10 new reasoning templates, with examples and slide data to copy.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
 ];
 
@@ -109,3 +109,4 @@ if (CHECK) {
   fs.writeFileSync(outPath, html);
   console.log('Wrote teacher/index.html');
 }
+

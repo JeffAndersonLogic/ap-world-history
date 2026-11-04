@@ -652,6 +652,15 @@ function measureAnnotatedFit({ label, ratio }) {
         return new Promise(res => requestAnimationFrame(() => requestAnimationFrame(res)));
       }, sl);
       const boards = [], vennBad = [];
+      // Unused catalog layouts still need to fit in the real brand fonts.
+      // The overflow/collision controls below exercise this same measurement.
+      for (const e of EX.filter(e => e.round === 9)) {
+        await draw(e.slide);
+        for (const size of [[1280,720],[1024,768]]) {
+          await page.evaluate(([w,h]) => { document.querySelector('#stage').style.cssText = `width:${w}px;height:${h}px;aspect-ratio:auto`; },size);
+          boards.push(...(await page.evaluate(measureBoards, 'new catalog')).map(x => ({...x,id:`${e.slide.kind} ${size.join('x')}`})));
+        }
+      }
       for (const deck of DECKS) {
         const file = path.join(ROOT, `assets/data/presentations/topic-${deck.key.replace('.', '-')}-student.js`);
         if (!fs.existsSync(file)) continue;
@@ -683,3 +692,4 @@ function measureAnnotatedFit({ label, ratio }) {
   console.log(`\n  ${failed.length ? 'FAIL' : 'PASS'}  ${results.length} assertion(s), ${failed.length} failed`);
   process.exit(failed.length ? 1 : 0);
 })().catch(e => { console.error(e); process.exit(1); });
+

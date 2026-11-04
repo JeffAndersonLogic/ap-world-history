@@ -101,7 +101,8 @@ a{color:inherit}
 .tc-shell{display:flex;flex-direction:column;min-height:100vh}
 .tc-header{background:rgba(26,28,29,.96);border-bottom:1px solid rgba(201,164,106,.34);box-shadow:0 10px 28px rgba(0,0,0,.18)}
 .tc-header-inner{max-width:1120px;margin:0 auto;padding:.85rem 1.6rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.tc-brand-lockup{display:flex;align-items:center;gap:.75rem;min-width:0}
+.tc-brand-lockup{display:flex;align-items:center;gap:.9rem;min-width:0;text-decoration:none}
+.tc-brand-logo{display:block;width:238px;max-width:52vw;height:auto}
 .tc-mark{width:42px;height:42px;flex:0 0 auto;border-radius:11px;background:linear-gradient(145deg,var(--antique-gold),var(--burnished-bronze));box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),0 8px 20px rgba(0,0,0,.24)}
 .tc-brand-copy{min-width:0}
 .tc-brand-kicker{font-family:var(--ui);font-size:.58rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-sandstone)}
@@ -110,7 +111,9 @@ a{color:inherit}
 .tc-body{flex:1;max-width:1120px;margin:0 auto;width:100%;padding:1.35rem 1.6rem 2.5rem}
 .tc-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.72fr);gap:1rem;margin-bottom:2.1rem}
 .tc-hero-main{position:relative;min-height:270px;overflow:hidden;border:1px solid rgba(201,164,106,.34);border-radius:18px;background:var(--blackened-steel);box-shadow:0 18px 45px rgba(0,0,0,.24)}
-.tc-hero-main::before{content:'';position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(26,28,29,.96) 0%,rgba(26,28,29,.82) 46%,rgba(26,28,29,.28) 100%),url("../assets/images/module-art/unit-1/topic-1-1/map.svg");background-size:cover;background-position:center 46%}
+.tc-hero-main::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 94% 42%,rgba(201,164,106,.13),transparent 65%);pointer-events:none}
+.tc-hero-globe{position:absolute;right:-36px;top:50%;width:330px;height:330px;object-fit:contain;transform:translateY(-50%);opacity:.34;pointer-events:none;user-select:none}
+.tc-hero-content{background:linear-gradient(90deg,rgba(26,28,29,.72),rgba(26,28,29,.30) 65%,transparent)}
 .tc-hero-main::after{content:'';position:absolute;left:1.7rem;top:1.25rem;width:76px;height:3px;border-radius:999px;background:var(--antique-gold);opacity:.88}
 .tc-hero-content{position:relative;z-index:1;min-height:270px;padding:3.1rem 2rem 1.8rem;display:flex;flex-direction:column;justify-content:flex-end}
 .tc-hero-kicker{font-family:var(--ui);font-size:.66rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.55rem}
@@ -189,25 +192,27 @@ a{color:inherit}
   .tc-unit summary span{align-items:flex-start;flex-direction:column;gap:.15rem}
 }
 .tc-footer-note{padding:.6rem 1.4rem;font-size:.68rem;color:var(--muted-sandstone);border-top:1px solid var(--gunmetal-gray)}
+@media(max-width:520px){.tc-brand-copy{display:none}.tc-brand-logo{width:238px;max-width:calc(100vw - 2rem)}.tc-hero-globe{right:-90px;width:300px;height:300px;opacity:.26}}
 </style>
 </head>
 <body>
 <div class="tc-shell">
   <header class="tc-header">
     <div class="tc-header-inner">
-      <div class="tc-brand-lockup">
-        <span class="tc-mark" aria-hidden="true"></span>
+      <a class="tc-brand-lockup" href="../index.html" aria-label="BeHistorical home">
+        <img class="tc-brand-logo" src="../assets/logos/behistorical-wordmark-on-dark.png" alt="BeHistorical" width="1428" height="220">
         <div class="tc-brand-copy">
-          <div class="tc-brand-kicker">BeHistorical &middot; Teaching</div>
+          <div class="tc-brand-kicker">Teaching</div>
           <div class="tc-brand-title">AP World History</div>
         </div>
-      </div>
+      </a>
       <div class="tc-header-context">Teacher Command Center</div>
     </div>
   </header>
   <main class="tc-body">
     <section class="tc-hero" aria-labelledby="tc-page-title">
       <div class="tc-hero-main">
+        <img class="tc-hero-globe" src="../assets/logos/behistorical-globe.png" alt="" aria-hidden="true" width="392" height="395">
         <div class="tc-hero-content">
           <div class="tc-hero-kicker">AP World &middot; Teacher Operations</div>
           <h1 id="tc-page-title">AP World Command Center</h1>
@@ -317,3 +322,4 @@ ${String(resolveTeacherSurface)}
 }
 
 module.exports = { renderTeacherIndex };
+
