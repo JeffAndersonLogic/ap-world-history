@@ -243,6 +243,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "frame-full",
+      "eyebrow": "The Indian Ocean Story · On the Map",
+      "title": "Find the gates, and the gate that got away.",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/2-3/2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.jpg",
+          "credit": "Simeon Netchev, World History Encyclopedia (worldhistory.org/image/20178) · CC BY-NC-ND",
+          "tagPos": "bl",
+          "alt": "Map titled Trade in the Indian Ocean, 15th to 16th century, from East Africa and the Red Sea to China, Japan and the spice islands. White lines show the principal Indian Ocean trade routes connecting the Swahili coast, the Red Sea, the Persian Gulf, India, Southeast Asia and China, with icons for goods such as spices, cotton, textiles, gold, ivory, porcelain, silk and enslaved people. Purple dots mark Portuguese trading posts with the year each was set up, among them Sofala and Kilwa 1505, Mozambique 1507, Hormuz 1515, Muscat 1550, Diu 1535, Goa 1510, Cochin 1503, Colombo 1518, Malacca 1511, Ambon 1511, Macau 1555 and Ternate 1522. Aden, at the mouth of the Red Sea, has no Portuguese date. Purple lines trace Vasco da Gama's 1498 route around Africa to Calicut and Pero da Covilha's mission of 1487 to 1490; green lines trace Zheng He's voyages of 1405 to 1433 and Spanish voyages across the Pacific. Empires labeled include the Ottoman, Safavid and Mughal empires and the Ming dynasty."
+        }
+      }
+    },
+    {
       "kind": "continuity-change",
       "eyebrow": "The Indian Ocean Story · 4",
       "title": "The Portuguese changed the Indian Ocean. They did not replace it.",

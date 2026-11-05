@@ -67,20 +67,21 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'calicut', label: 'Calicut, 1498', range: '21-24', minutes: 3, teacher: 'The gifts that got laughed at: Portugal had little Asia wanted.', students: 'Who wrote it down, and why?', slide: 8 },
     { id: 'force', label: 'Traders to a Navy', range: '24-26', minutes: 2, teacher: '1500 and 1502: Portugal turns to force.', students: 'Name the cause, then the result.', slide: 9 },
     { id: 'gates', label: 'The Three Gates', range: '26-28', minutes: 2, teacher: 'Malacca and Hormuz taken, Aden missed, Goa the base.', students: 'Say which gate stayed open.', slide: 10 },
-    { id: 'ocean', label: 'The Old Ocean', range: '28-30', minutes: 2, teacher: 'The cartaz changed things; the merchants kept trading.', students: 'Name one change and one continuity.', slide: 11 },
-    { id: 'asia', label: 'Asia Sets the Terms', range: '30-32', minutes: 2, teacher: 'Macau under Ming rules; Japan, 1635 to 1641.', students: 'Say who made the rules.', slide: 12 },
-    { id: 'source1635', label: 'Source It: 1635', range: '32-35', minutes: 3, teacher: 'Model 2.A: author, audience, purpose, situation.', students: 'Name the four.', slide: 13 },
-    { id: 'africa', label: 'Kongo and Asante', range: '35-37', minutes: 2, teacher: 'Two African states that grew stronger through the trade.', students: 'Say what each gained.', slide: 14 },
-    { id: 'afonso', label: 'Source It: Afonso', range: '37-40', minutes: 3, teacher: 'Students source the 1526 letter themselves.', students: 'Audience, purpose, and what it changes.', slide: 15 },
-    { id: 'labor', label: 'Work in the Americas', range: '40-43', minutes: 3, teacher: 'One old system, four new ones.', students: 'Sort each as old or new.', slide: 16 },
-    { id: 'oldslavery', label: 'Slavery in Africa', range: '43-45', minutes: 2, teacher: 'The older forms that continued.', students: 'Name two older forms.', slide: 17 },
-    { id: 'plantation', label: 'What the Plantations Changed', range: '45-48', minutes: 3, teacher: 'The jump in numbers, then demographic, social and cultural change.', students: 'Name one of each.', slide: 18 },
-    { id: 'ledger', label: 'What Changed, What Kept Going', range: '48-52', minutes: 4, teacher: 'Students redraw the ledger from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 19 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '52-54', minutes: 2, teacher: 'Model one continuity-and-change claim.', students: 'Upgrade a weak claim.', slide: 20 },
-    { id: 'cp1', label: 'Checkpoint 1 and Primary Source', range: '54-64', minutes: 10, teacher: 'Modules 06 and 08: Checkpoint 1 on its own, then Afonso\'s full letter.', students: 'Work without the coach.', slide: 21 },
-    { id: 'room', label: 'BeInTheRoom', range: '64-76', minutes: 12, teacher: 'Module 09: the Goa Fort Council, just after the gates were taken.', students: 'Decide what kind of empire Goa builds.', slide: 22 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '76-86', minutes: 10, teacher: 'Module 10: labor and slavery, change and continuity. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 23 },
-    { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and leave the 4.5 question open.', students: 'Say the topic in one sentence.', slide: 24 }
+    { id: 'oceanmap', label: 'On the Map', range: '28-29', minutes: 1, teacher: 'Find the three gates on a real map; Aden has no Portuguese post.', students: 'Point to the gate that got away.', slide: 11 },
+    { id: 'ocean', label: 'The Old Ocean', range: '29-31', minutes: 2, teacher: 'The cartaz changed things; the merchants kept trading.', students: 'Name one change and one continuity.', slide: 12 },
+    { id: 'asia', label: 'Asia Sets the Terms', range: '31-33', minutes: 2, teacher: 'Macau under Ming rules; Japan, 1635 to 1641.', students: 'Say who made the rules.', slide: 13 },
+    { id: 'source1635', label: 'Source It: 1635', range: '33-36', minutes: 3, teacher: 'Model 2.A: author, audience, purpose, situation.', students: 'Name the four.', slide: 14 },
+    { id: 'africa', label: 'Kongo and Asante', range: '36-38', minutes: 2, teacher: 'Two African states that grew stronger through the trade.', students: 'Say what each gained.', slide: 15 },
+    { id: 'afonso', label: 'Source It: Afonso', range: '38-41', minutes: 3, teacher: 'Students source the 1526 letter themselves.', students: 'Audience, purpose, and what it changes.', slide: 16 },
+    { id: 'labor', label: 'Work in the Americas', range: '41-44', minutes: 3, teacher: 'One old system, four new ones.', students: 'Sort each as old or new.', slide: 17 },
+    { id: 'oldslavery', label: 'Slavery in Africa', range: '44-46', minutes: 2, teacher: 'The older forms that continued.', students: 'Name two older forms.', slide: 18 },
+    { id: 'plantation', label: 'What the Plantations Changed', range: '46-49', minutes: 3, teacher: 'The jump in numbers, then demographic, social and cultural change.', students: 'Name one of each.', slide: 19 },
+    { id: 'ledger', label: 'What Changed, What Kept Going', range: '49-53', minutes: 4, teacher: 'Students redraw the ledger from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 20 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '53-55', minutes: 2, teacher: 'Model one continuity-and-change claim.', students: 'Upgrade a weak claim.', slide: 21 },
+    { id: 'cp1', label: 'Checkpoint 1 and Primary Source', range: '55-64', minutes: 9, teacher: 'Modules 06 and 08: Checkpoint 1 on its own, then Afonso\'s full letter.', students: 'Work without the coach.', slide: 22 },
+    { id: 'room', label: 'BeInTheRoom', range: '64-76', minutes: 12, teacher: 'Module 09: the Goa Fort Council, just after the gates were taken.', students: 'Decide what kind of empire Goa builds.', slide: 23 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '76-86', minutes: 10, teacher: 'Module 10: labor and slavery, change and continuity. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 24 },
+    { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and leave the 4.5 question open.', students: 'Say the topic in one sentence.', slide: 25 }
   ],
 
   quickLaunch: [
@@ -396,6 +397,32 @@ window.BEHISTORICAL_TEACHING = {
         ask: 'Which gate stayed open, and what did that mean?',
         listenFor: 'Aden and the Red Sea: Portugal disrupted that route for years but never closed it, so spices still reached Egypt and Venice.',
         ap: 'A change with a limit: Portugal held ports and passes, not the ocean.'
+      }
+    },
+    {
+      phase: 'oceanmap', kind: 'frame-full', eyebrow: 'The Indian Ocean Story · On the Map',
+      title: 'Find the gates, and the gate that got away.',
+      template: {
+        visual: { url: '../assets/images/topics/2-3/' + encodeURIComponent('2.3 - Indian Ocean Trade Map Detailed.jpg'), credit: 'Simeon Netchev, World History Encyclopedia (worldhistory.org/image/20178) · CC BY-NC-ND', tagPos: 'bl', alt: 'Map titled Trade in the Indian Ocean, 15th to 16th century, from East Africa and the Red Sea to China, Japan and the spice islands. White lines show the principal Indian Ocean trade routes connecting the Swahili coast, the Red Sea, the Persian Gulf, India, Southeast Asia and China, with icons for goods such as spices, cotton, textiles, gold, ivory, porcelain, silk and enslaved people. Purple dots mark Portuguese trading posts with the year each was set up, among them Sofala and Kilwa 1505, Mozambique 1507, Hormuz 1515, Muscat 1550, Diu 1535, Goa 1510, Cochin 1503, Colombo 1518, Malacca 1511, Ambon 1511, Macau 1555 and Ternate 1522. Aden, at the mouth of the Red Sea, has no Portuguese date. Purple lines trace Vasco da Gama\'s 1498 route around Africa to Calicut and Pero da Covilha\'s mission of 1487 to 1490; green lines trace Zheng He\'s voyages of 1405 to 1433 and Spanish voyages across the Pacific. Empires labeled include the Ottoman, Safavid and Mughal empires and the Ming dynasty.' }
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'Purple dots: Portuguese posts, with founding years',
+          'Find Goa 1510, Malacca 1511, Hormuz 1515',
+          'Aden: no Portuguese date, the missed gate',
+          'White lines: the Asian routes kept running',
+          'Mughal label means after 1526, not 1498',
+          'A modern map, not a primary source'
+        ],
+        land: [
+          'The map is Simeon Netchev\'s "Trade in the Indian Ocean 15th-16th century," World History Encyclopedia, worldhistory.org/image/20178, published under Creative Commons Attribution-NonCommercial-NoDerivs: free to show with credit, not to alter or use commercially. That is why it is shown whole, uncropped, with nothing drawn on it, and why its credit stays on the slide. It is the same copy the Topic 2.3 map module uses.',
+          'Point out the pattern from the last slide: the purple dots (Portuguese posts) sit on coasts and at the narrow places, Hormuz at the mouth of the Persian Gulf and Malacca on its strait, with Goa between them. Aden, at the mouth of the Red Sea, has no purple dot: the gate Portugal attacked in 1513 and never took.',
+          'Then the continuity: the white lines are the Asian trade routes, and they run everywhere the purple dots do not. That is the next slide\'s claim, that the Portuguese changed the Indian Ocean but did not replace it.',
+          'Two cautions. The map covers the whole 1400s and 1500s, so it labels the Safavid Empire (from 1501) and the Mughal Empire (from 1526), which did not exist when da Gama reached Calicut in 1498; a student who spots the Mughal label is catching exactly the mistake today\'s story corrects. And treat the map\'s smaller post dates as approximate; the dates to teach are the slide\'s, Goa 1510, Malacca 1511 and Hormuz 1515.'
+        ],
+        ask: 'Put your finger on the three gates. Which one has no purple dot?',
+        listenFor: 'Aden, at the mouth of the Red Sea.'
       }
     },
     {
@@ -728,7 +755,7 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Checkpoint 1 first, with no coach. Then the Primary Source: Afonso I\'s full letter to the king of Portugal.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
-        minutes: 10,
+        minutes: 9,
         keys: [
           'Both required today: 06 and 08',
           'Checkpoint 1: rivalry, change in power, continuity',
