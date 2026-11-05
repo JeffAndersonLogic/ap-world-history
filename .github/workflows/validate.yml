@@ -72,7 +72,10 @@ jobs:
       # chrome-linux64 and the assumed path stopped existing.
       - name: Install Chromium
         run: |
-          npm install --no-save playwright
+          # Pinned 2026-11-05: playwright 1.65.0 was published needing a
+          # playwright-core 1.65.0 the registry did not have, and every browser
+          # job failed at install. Raise the pin on purpose, not by default.
+          npm install --no-save playwright@1.64.1
           npx playwright install --with-deps chromium
 
       - name: Unit 4 and Unit 5 map interactions

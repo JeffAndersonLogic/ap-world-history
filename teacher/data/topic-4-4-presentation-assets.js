@@ -57,9 +57,35 @@ note(s,'The large image is a reconstruction; the small engraving is the historic
 s=by('plantation');const source=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.4 - Barbados Sugar.JPG','Reconstruction of Black and white laborers cutting cane on a Caribbean sugar plantation, with a supervisor and a mill behind them'),sources:[{visual:source,caption:'French Caribbean sugar works, printed 1667'}],steps:s.template.steps,proves:'Plantations changed the scale and inherited racial structure of slavery.'};
 note(s,'The Barbados reconstruction orients the class to cane, labor and supervision. The engraving below it is a real French Caribbean source, not a view of Barbados. Neither picture alone proves the demographic figures or a particular worker\'s legal status.');
 s=by('close');s.template={visual:ai('4.4 - Merchants of Surat.JPG','Reconstruction of Indian merchants, scribes and dockworkers trading cloth and other goods along the waterfront at Surat'),place:'top'};
-s.notes.keys=['Surat: Asian merchants keep trading','Reconstruction, not source evidence','Return to the spine, then hand off to 4.5'];
+s.notes.keys=['Surat: Asian merchants keep trading','Reconstruction, not source evidence','Return to the spine','Leave the 4.5 question open: how did the Dutch win?'];
 s.notes.land=s.notes.land.slice(1);note(s,'The Surat scene returns to continuity and local agency: European ships joined a commercial world they did not replace. Its buildings and business records are imagined; do not read them as a dated historical source.');
 by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions support the story; historical sources remain in the deck and Evidence Lab. Reconstructions illustrate cases and do not supply source evidence.');
+})();
+
+/* The Indian Ocean story, 2026-11-05 (Jeff). Jeff's three uploads of that
+   day, reviewed in photo-review-165 (docs/presentation-image-ledger.json),
+   each a labeled reconstruction. Like the deck's other uploads, each is
+   shown whole, so its small generator mark stays in the corner. All three are wide, and the escalation picture is a three-part
+   composite that a crop would ruin, so all three slides use scene-case: the
+   whole picture beside the story steps, which keep the base file's words. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
+const by=p=>T.slides.find(x=>x.phase===p);
+const ai=(name,alt)=>({ai:true,url:'../assets/images/topics/4-4/'+encodeURIComponent(name),alt,fit:'contain'});
+const land=(s,x)=>{s.notes.land.push(x);};
+let s=by('calicut');
+if(s){s.kind='scene-case';s.template={visual:ai('4.4 - da Gama in Calicut.jpg','Reconstruction of two Calicut officials in white cloth and turbans smiling as they handle red cloth beside a table of striped cloth, basins, coral and small casks, while a bearded Portuguese captain stands stiffly beside them and a scribe writes at a desk in the shadows'),steps:s.template.steps};
+s.notes.keys.push('Picture: imagined, not the real audience');
+land(s,'The picture is Jeff\'s labeled reconstruction. The officials\' faces, the gifts on the table, the clothes and the building are imagined, and so is the scribe; the journal is the evidence, not the picture. The scribe is a useful prompt for the sourcing question: someone in that room wrote it down.');}
+s=by('force');
+if(s){s.kind='scene-case';s.template={visual:ai('4.4 - Portuguese Naval Escalation.jpg','Reconstruction in three parts: Portuguese officers under a banner of the Order of Christ planning over a map with sacks of pepper, a burning waterfront building above a crowded Indian Ocean quay, and Portuguese ships with red-cross sails firing cannon'),steps:s.template.steps};
+s.notes.keys.push('Composite picture: illustration, not dated views');
+land(s,'The picture is a labeled three-part composite: planning, a burning waterfront and cannon fire. It illustrates the turn to force; it is not a view of 1498, 1500 or 1502, and it does not show the pilgrim ship. Read the steps, not the picture, for what happened when.');}
+s=by('gates');
+if(s){const R=s.template.rows,pay=s.template.payoff;s.kind='scene-case';s.subtitle=s.footer;
+s.template={visual:ai('4.4 - Portuguese Strategy.jpg','Reconstruction of four Portuguese officers in dark doublets leaning over a large sea chart with small model ships, inside a stone fort whose arched doorway opens on a harbor with sailing ships and palm trees'),steps:R.map(r=>({label:r.name,key:r.mark==='✗',text:r.tool+': '+r.result})),proves:pay};
+s.notes.keys.push('Imagined meeting, not a real portrait');
+land(s,'The picture is a labeled reconstruction of an imagined strategy meeting: not a portrait of Albuquerque, and its chart is not an accurate map. It sets the scene for a plan; the four rows carry the history, and Aden, the gate Portugal missed, is the highlighted row.');}
 })();
 
 (function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();

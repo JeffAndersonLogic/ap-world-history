@@ -307,29 +307,22 @@
           "purpose": "Squeezed into service, and still privileged."
         }
       ]
-    }
-  ],
-  "pendingReviews": [
+    },
     {
       "path": "assets/images/topics/4-4/4.4 - da Gama in Calicut.jpg",
       "blobSha": "346f5790ff321a989d7270d49608613078ee7c79",
       "reviewedAt": "2026-11-05",
       "classification": "ai-reconstruction",
       "sourceRef": "b0f8030b59d10d774e9b054df6d625e3e3968379",
-      "status": "held-missing-story-phases",
-      "dependency": "PR #164 is open; calicut, force and gates are absent from main aa3f134f4341e4dbfe934d72c29da3325c8a3a26. Do not treat these pending entries as published or skip their later integration.",
-      "observedSubject": "Two local officials examine modest gifts beside a European visitor and a scribe.",
-      "ai": true,
-      "label": "Historical Reconstruction - AI Generated",
-      "plannedPlacements": [
+      "placements": [
         {
           "topic": "4.4",
           "phase": "calicut",
-          "template": "story-scene",
+          "template": "scene-case",
           "purpose": "Keep the four existing story steps beside the scene. The imagined faces, gifts, clothing, architecture and ledger are not source evidence; preserve the voyage-journal quotation and sourcing question."
         }
       ],
-      "limits": "Reconstruction, never a primary source or Evidence Lab object. Small generator mark remains in the original. Recheck composition, all teacher notes, generated student sync and both CI gates after the story phases land."
+      "limits": "Reconstruction, never a primary source or Evidence Lab object. Shown whole, so the small generator mark remains, as on the deck's other uploads. Placed 2026-11-05 as scene-case (the whole wide picture beside the steps)."
     },
     {
       "path": "assets/images/topics/4-4/4.4 - Portuguese Naval Escalation.jpg",
@@ -337,20 +330,15 @@
       "reviewedAt": "2026-11-05",
       "classification": "ai-reconstruction",
       "sourceRef": "b0f8030b59d10d774e9b054df6d625e3e3968379",
-      "status": "held-missing-story-phases",
-      "dependency": "PR #164 is open; calicut, force and gates are absent from main aa3f134f4341e4dbfe934d72c29da3325c8a3a26. Do not treat these pending entries as published or skip their later integration.",
-      "observedSubject": "Composite scene of planning, a burning waterfront and naval cannon fire.",
-      "ai": true,
-      "label": "Historical Reconstruction - AI Generated",
-      "plannedPlacements": [
+      "placements": [
         {
           "topic": "4.4",
           "phase": "force",
-          "template": "story-scene",
+          "template": "scene-case",
           "purpose": "Show the five existing chronological steps beside the composite. The panels are illustrative, not dated views of 1498, 1500 or 1502; they do not document the pilgrim ship or prove the causes. Preserve all steps, causal caution and pacing."
         }
       ],
-      "limits": "Reconstruction, never a primary source or Evidence Lab object. Small generator mark remains in the original. Recheck composition, all teacher notes, generated student sync and both CI gates after the story phases land."
+      "limits": "Reconstruction, never a primary source or Evidence Lab object. Shown whole, so the small generator mark remains, as on the deck's other uploads. Placed 2026-11-05 as scene-case (the whole wide picture beside the steps)."
     },
     {
       "path": "assets/images/topics/4-4/4.4 - Portuguese Strategy.jpg",
@@ -358,12 +346,7 @@
       "reviewedAt": "2026-11-05",
       "classification": "ai-reconstruction",
       "sourceRef": "b0f8030b59d10d774e9b054df6d625e3e3968379",
-      "status": "held-missing-story-phases",
-      "dependency": "PR #164 is open; calicut, force and gates are absent from main aa3f134f4341e4dbfe934d72c29da3325c8a3a26. Do not treat these pending entries as published or skip their later integration.",
-      "observedSubject": "Four European figures plan over a map inside a coastal fort.",
-      "ai": true,
-      "label": "Historical Reconstruction - AI Generated",
-      "plannedPlacements": [
+      "placements": [
         {
           "topic": "4.4",
           "phase": "gates",
@@ -371,7 +354,7 @@
           "purpose": "Use the existing four place rows and payoff beside the scene, retaining dates and the failed Aden attack. This is an imagined strategy meeting, not a portrait of Albuquerque or a geographically accurate map; it cannot prove control of any gate."
         }
       ],
-      "limits": "Reconstruction, never a primary source or Evidence Lab object. Small generator mark remains in the original. Recheck composition, all teacher notes, generated student sync and both CI gates after the story phases land."
+      "limits": "Reconstruction, never a primary source or Evidence Lab object. Shown whole, so the small generator mark remains, as on the deck's other uploads. Placed 2026-11-05 as scene-case (the whole wide picture beside the steps)."
     }
   ]
 }
