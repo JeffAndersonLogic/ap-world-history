@@ -14,7 +14,18 @@
  * Retelling slide: the continuity-and-change ledger (phase 'ledger').
  *
  * Class dates: Green Thursday 2026-11-05, Silver Friday 2026-11-06. Required
- * modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab, 10 Checkpoint 2.
+ * modules, from the schedule (Jeff's Unit 4 module review, 2026-10-23): 02
+ * First & 10, 06 Checkpoint 1, 08 Primary Source (Afonso I's letter), 09
+ * BeInTheRoom (the Goa Fort Council) and 10 Checkpoint 2. Skill Builder and
+ * Evidence Lab are optional, so they have no slide.
+ *
+ * Revised 2026-11-05 (Jeff): the Indian Ocean story told as three slides,
+ * Calicut 1498, from traders to a navy, and Albuquerque's three gates (two
+ * taken, Aden missed), leading into the Goa Fort Council. Five slides trimmed
+ * as repetitive or optional today: Labor on the Page, How Many (its number
+ * moved into the plantation slide), Myth and Evidence (its corrections live on
+ * the ledger), Skill Builder and Evidence Lab. How the Dutch took Portugal's
+ * posts stays in 4.5, which owns joint-stock companies.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -35,12 +46,12 @@ window.BEHISTORICAL_TEACHING = {
       'Land the spine with the ledger slide: Europeans built empires from the sea, but much of the world kept its own rules.'
     ],
     should: [
+      'Tell the Indian Ocean story: at Calicut in 1498 Portugal had little Asia wanted to buy, so it competed with warships and forts, and took two of the three gates of the ocean (Malacca, Hormuz) but not Aden.',
       'Model 2.A once on the 1635 Tokugawa memorandum, then let students source Afonso\'s 1526 letter themselves.',
-      'Correct three myths: "Europe took over the world after 1500," "slavery began with the Atlantic trade," and "African rulers had no power in the trade."',
+      'Correct three myths on the ledger slide: "Europe took over the world after 1500," "slavery began with the Atlantic trade," and "African rulers had no power in the trade."',
       'Name the rivalries (political, religious, economic) as the cause of the empires (KC-4.3.II.C).'
     ],
     could: [
-      'Use the BeInTheRoom Goa Fort Council as an extension for students who finish early.',
       'Point students who want more depth to the eBook chapter, "Empires from the Sea."'
     ]
   },
@@ -52,25 +63,24 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Empires from the Sea" in class.', students: 'For every case: what changed, what kept going.', slide: 4 },
     { id: 'rivals', label: 'Why Build Empires', range: '17-19', minutes: 2, teacher: 'Political, religious, economic rivalries; five empires.', students: 'Sort a motive into a branch.', slide: 5 },
     { id: 'map', label: 'Where They Reached', range: '19-20', minutes: 1, teacher: 'Forts on coasts, colonies in the Americas, places with their own rules.', students: 'Find one fort and one place that set its own terms.', slide: 6 },
-    { id: 'posts', label: 'Forts on the Coast', range: '20-22', minutes: 2, teacher: 'Elmina as the case: what a trading post was and who it paid.', students: 'Say who made money.', slide: 7 },
-    { id: 'asia', label: 'Asia Sets the Terms', range: '22-24', minutes: 2, teacher: 'Macau under Ming rules; Japan, 1635 to 1641.', students: 'Say who made the rules.', slide: 8 },
-    { id: 'source1635', label: 'Source It: 1635', range: '24-27', minutes: 3, teacher: 'Model 2.A: author, audience, purpose, situation.', students: 'Name the four.', slide: 9 },
-    { id: 'ocean', label: 'The Old Ocean', range: '27-30', minutes: 3, teacher: 'The cartaz changed things; the merchants kept trading.', students: 'Name one change and one continuity.', slide: 10 },
-    { id: 'africa', label: 'Kongo and Asante', range: '30-32', minutes: 2, teacher: 'Two African states that grew stronger through the trade.', students: 'Say what each gained.', slide: 11 },
-    { id: 'afonso', label: 'Source It: Afonso', range: '32-35', minutes: 3, teacher: 'Students source the 1526 letter themselves.', students: 'Audience, purpose, and what it changes.', slide: 12 },
-    { id: 'labor', label: 'Work in the Americas', range: '35-38', minutes: 3, teacher: 'One old system, four new ones.', students: 'Sort each as old or new.', slide: 13 },
-    { id: 'pages', label: 'Labor on the Page', range: '38-40', minutes: 2, teacher: 'Potosí, 1553, and the Codex Kingsborough.', students: 'Notice, then infer.', slide: 14 },
-    { id: 'oldslavery', label: 'Slavery in Africa', range: '40-42', minutes: 2, teacher: 'The older forms that continued.', students: 'Name two older forms.', slide: 15 },
-    { id: 'scale', label: 'How Many', range: '42-43', minutes: 1, teacher: 'The 1500s against 1701 to 1750, as estimates.', students: 'Say what changed.', slide: 16 },
-    { id: 'plantation', label: 'What the Plantations Changed', range: '43-46', minutes: 3, teacher: 'Demographic, social and cultural change.', students: 'Name one of each.', slide: 17 },
-    { id: 'myths', label: 'Myth and Evidence', range: '46-48', minutes: 2, teacher: 'Europe took over; slavery began in 1500; Africans had no power.', students: 'Correct each myth.', slide: 18 },
-    { id: 'ledger', label: 'What Changed, What Kept Going', range: '48-53', minutes: 5, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 19 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '53-55', minutes: 2, teacher: 'Model one continuity-and-change claim.', students: 'Upgrade a weak claim.', slide: 20 },
-    { id: 'skill', label: 'Skill Builder', range: '55-61', minutes: 6, teacher: 'Module 05: Sourcing and Situation.', students: 'Source the 1639 order.', slide: 21 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: who ruled.', students: 'Work without the coach.', slide: 22 },
-    { id: 'evidence', label: 'Evidence Lab', range: '61-68', minutes: 7, teacher: 'Module 07: one change and one continuity from two sources.', students: 'Observe, then infer, then name a limit.', slide: 23 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '68-78', minutes: 10, teacher: 'Module 10: labor and slavery, change and continuity. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 24 },
-    { id: 'close', label: 'Landing Sentence', range: '78-80', minutes: 2, teacher: 'Land the answer and hand off to 4.5.', students: 'Say the topic in one sentence.', slide: 25 }
+    { id: 'posts', label: 'Forts on the Coast', range: '20-21', minutes: 1, teacher: 'Elmina as the case: what a trading post was and who it paid.', students: 'Say who made money.', slide: 7 },
+    { id: 'calicut', label: 'Calicut, 1498', range: '21-24', minutes: 3, teacher: 'The gifts that got laughed at: Portugal had little Asia wanted.', students: 'Who wrote it down, and why?', slide: 8 },
+    { id: 'force', label: 'Traders to a Navy', range: '24-26', minutes: 2, teacher: '1500 and 1502: Portugal turns to force.', students: 'Name the cause, then the result.', slide: 9 },
+    { id: 'gates', label: 'The Three Gates', range: '26-28', minutes: 2, teacher: 'Malacca and Hormuz taken, Aden missed, Goa the base.', students: 'Say which gate stayed open.', slide: 10 },
+    { id: 'ocean', label: 'The Old Ocean', range: '28-30', minutes: 2, teacher: 'The cartaz changed things; the merchants kept trading.', students: 'Name one change and one continuity.', slide: 11 },
+    { id: 'asia', label: 'Asia Sets the Terms', range: '30-32', minutes: 2, teacher: 'Macau under Ming rules; Japan, 1635 to 1641.', students: 'Say who made the rules.', slide: 12 },
+    { id: 'source1635', label: 'Source It: 1635', range: '32-35', minutes: 3, teacher: 'Model 2.A: author, audience, purpose, situation.', students: 'Name the four.', slide: 13 },
+    { id: 'africa', label: 'Kongo and Asante', range: '35-37', minutes: 2, teacher: 'Two African states that grew stronger through the trade.', students: 'Say what each gained.', slide: 14 },
+    { id: 'afonso', label: 'Source It: Afonso', range: '37-40', minutes: 3, teacher: 'Students source the 1526 letter themselves.', students: 'Audience, purpose, and what it changes.', slide: 15 },
+    { id: 'labor', label: 'Work in the Americas', range: '40-43', minutes: 3, teacher: 'One old system, four new ones.', students: 'Sort each as old or new.', slide: 16 },
+    { id: 'oldslavery', label: 'Slavery in Africa', range: '43-45', minutes: 2, teacher: 'The older forms that continued.', students: 'Name two older forms.', slide: 17 },
+    { id: 'plantation', label: 'What the Plantations Changed', range: '45-48', minutes: 3, teacher: 'The jump in numbers, then demographic, social and cultural change.', students: 'Name one of each.', slide: 18 },
+    { id: 'ledger', label: 'What Changed, What Kept Going', range: '48-52', minutes: 4, teacher: 'Students redraw the ledger from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 19 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '52-54', minutes: 2, teacher: 'Model one continuity-and-change claim.', students: 'Upgrade a weak claim.', slide: 20 },
+    { id: 'cp1', label: 'Checkpoint 1 and Primary Source', range: '54-64', minutes: 10, teacher: 'Modules 06 and 08: Checkpoint 1 on its own, then Afonso\'s full letter.', students: 'Work without the coach.', slide: 21 },
+    { id: 'room', label: 'BeInTheRoom', range: '64-76', minutes: 12, teacher: 'Module 09: the Goa Fort Council, just after the gates were taken.', students: 'Decide what kind of empire Goa builds.', slide: 22 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '76-86', minutes: 10, teacher: 'Module 10: labor and slavery, change and continuity. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 23 },
+    { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and leave the 4.5 question open.', students: 'Say the topic in one sentence.', slide: 24 }
   ],
 
   quickLaunch: [
@@ -100,7 +110,7 @@ window.BEHISTORICAL_TEACHING = {
           'Teach the Ming and Tokugawa limits',
           'Kongo and Asante grew stronger',
           'Save VOC, silver, casta for later',
-          'Three myths to correct'
+          'New story: Calicut, force, two of three gates'
         ],
         land: [
           'CED pp. 83 and 84. Three learning objectives. E (Governance): explain the process of state building and expansion among various empires and states, 1450 to 1750. F (Economic Systems): explain the continuities and changes in economic and labor systems. G (Social Interactions and Organization): explain changes and continuities in systems of slavery.',
@@ -108,7 +118,8 @@ window.BEHISTORICAL_TEACHING = {
           'The CED\'s illustrative examples (optional): Ming China and Tokugawa Japan; Swahili Arabs, Omanis, Gujaratis and Javanese. All six are in this deck because each carries a Key Concept sentence.',
           'Owns: trading posts and the rivalries behind them, Ming and Tokugawa limits, Kongo and Asante, Indian Ocean continuity, colonial labor systems old and new, slavery old and new.',
           'Bridge only: joint-stock companies and the VOC (4.5; the Dutch appear as a rival and as the traders on Dejima, not as a company); silver\'s global flow (4.5; Potosí appears only as where the mit’a sent workers); casta (4.7, not mentioned); cultural mixing and gender and family change (4.5); resistance and Maroons (4.6).',
-          'Three myths: "Europe took over the world after 1500"; "slavery began with the Atlantic trade"; "African rulers had no power in the trade."',
+          'Three myths, corrected on the ledger slide: "Europe took over the world after 1500"; "slavery began with the Atlantic trade"; "African rulers had no power in the trade."',
+          'Revision, 2026-11-05: three slides tell the Indian Ocean story (Calicut 1498; from traders to a navy, 1500 and 1502; Albuquerque\'s three gates, with Aden missed in 1513), and lead into the Goa Fort Council (Module 09). Correction to a common classroom version: the court that embarrassed da Gama was that of the Zamorin of Calicut, a Hindu king; his officials laughed at the gifts, and the king reproached da Gama the next day. The Mughal Empire did not exist until 1526. Why the Dutch took Portugal\'s posts is 4.5 (joint-stock companies); today ends on that question.',
           'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 6. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -255,30 +266,167 @@ window.BEHISTORICAL_TEACHING = {
         visual: { url: '../assets/images/topics/4-4/elmina-dapper-c1668.jpg', alt: 'Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground', credit: 'Elmina, Dapper, Amsterdam, 1668 · Public domain', position: '50% 60%' },
         rows: [
           { label: 'Built by', text: '**Portugal**, to buy gold on the coast of West Africa' },
-          { label: 'Then', text: 'Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not whole countries' },
+          { label: 'Then', text: 'Portugal carried the same idea to **India**: forts on coasts, not whole countries' },
           { label: 'Paid', text: 'The **kings** who backed the posts and the **merchants** who traded through them' },
           { label: 'Taken', text: 'The Dutch captured Elmina in **1637**: rivals took each other\'s posts' }
         ],
         proves: 'A trading post was a small fortified base where a foreign state\'s merchants bought and sold.'
       },
       notes: {
-        minutes: 2,
+        minutes: 1,
         keys: [
           'A fort controlled trade, not a country',
           'Few men could hold a fort',
           'Elmina, 1482: the gold trade',
-          'Goa, Malacca, Hormuz: Albuquerque',
+          'Portugal had this model before India',
           'Profit for rulers and merchants',
           'Elmina later a slave-trade center'
         ],
         land: [
           'São Jorge da Mina (Elmina) was built by Diogo de Azambuja in 1482 to control the gold trade of the Gold Coast. The Dutch West India Company took it in 1637. The engraving, from Olfert Dapper\'s description of Africa (Amsterdam, 1668), is titled "Casteel del Mina" and shows the castle in Dutch hands, with the Dutch fort Coenraadsburg on the hill behind (Atlas of Mutual Heritage 6856). Dapper never saw Africa himself; he compiled his book from others\' reports.',
-          'Afonso de Albuquerque took Goa (1510), Malacca (1511) and Hormuz (1515). The Portuguese crown held the pepper trade as a royal monopoly and drew customs from its ports: profit for rulers and merchants, the CED\'s words.',
+          'Portugal had built Elmina sixteen years before da Gama reached India, so it arrived in the Indian Ocean already knowing how to run a fort for trade. The next three slides carry that model to Calicut, Goa, Malacca and Hormuz. The Portuguese crown held the pepper trade as a royal monopoly and drew customs from its ports: profit for rulers and merchants, the CED\'s words.',
           'Elmina later became a center of the Atlantic slave trade; that is the scale slide, later in the lesson.'
         ],
         ask: 'Why a fort on a coast and not a conquered province?',
         listenFor: 'A fort could control trade with a few hundred men; conquering a country took an army they did not have.',
         ap: 'The first change in the ledger: Europeans now held posts on the coasts of Africa and Asia.'
+      }
+    },
+    {
+      phase: 'calicut', kind: 'story-scene', eyebrow: 'The Indian Ocean Story · 1',
+      title: 'Calicut, 1498: the gifts that got laughed at.',
+      footer: 'A Portuguese sailor wrote this down. Why would he record his own side being laughed at?',
+      template: {
+        caption: 'Calicut\'s harbor, 1498',
+        steps: [
+          { label: 'May 1498', text: 'Da Gama reaches **Calicut**, a rich pepper port ruled by the **Zamorin**, a Hindu king.' },
+          { label: 'The gifts', text: 'Striped cloth, hats, hoods, coral, washbasins, sugar, oil and honey.' },
+          { label: 'The laugh', key: true, text: 'The king\'s officials laughed: "the poorest merchant from Mecca" gave more.' },
+          { label: 'The problem', key: true, text: 'Portugal had little to sell that Asian buyers wanted.' }
+        ]
+      },
+      notes: {
+        minutes: 3,
+        keys: [
+          'The Zamorin, a Hindu king, not a Mughal',
+          'Mughal Empire begins 1526, 28 years later',
+          'Gifts: cloth, hats, basins, sugar, honey',
+          'Poorest Mecca merchant gave more',
+          'Portugal had little Asia wanted',
+          'Source: a Portuguese sailor\'s journal'
+        ],
+        land: [
+          'The ruler was the Zamorin (Samoothiri) of Calicut, the Hindu king of a trading city on the Malabar coast of southwest India. He was not a Mughal emperor: Babur founded the Mughal Empire in 1526, and the Mughals never ruled Calicut. If a student has heard the Mughal version, correct it here.',
+          'The source is the journal of an unnamed member of da Gama\'s crew, translated by E. G. Ravenstein, A Journal of the First Voyage of Vasco da Gama, 1497-1499 (Hakluyt Society, 1898), entry for Tuesday, May 29, 1498. The present was "twelve pieces of lambel [striped cloth], four scarlet hoods, six hats, four strings of coral, a case containing six wash-hand basins, a case of sugar, two casks of oil, and two of honey."',
+          'The reaction, in the journal\'s words: the king\'s Muslim factor and a local official "laughed at it, saying that it was not a thing to offer to a king, that the poorest merchant from Mecca, or any other part of India, gave more, and that if he wanted to make a present it should be in gold ..." At his audience the next day, the king said da Gama claimed to come from "a very rich kingdom, and yet had brought him nothing."',
+          'Why it matters: Asian markets sold fine cotton cloth, pepper and other spices, silk and porcelain. Portugal had little that Asian buyers wanted except gold and silver. It could not out-trade the Gujarati and Arab merchants of Calicut, so it would try to win another way. That is the next slide.',
+          'Sourcing (2.A): the writer was Portuguese, and he blamed the "Moors," the Muslim merchants, for Portugal\'s troubles at Calicut. Point of view shapes who gets blamed. That he recorded his own side being laughed at makes the scene more believable, not less.',
+          'The picture is a labeled reconstruction, the Calicut harbor scene from Topic 4.1. It shows the setting, not the audience with the king.'
+        ],
+        ask: 'A Portuguese sailor wrote this down. Why would he record his own side being laughed at?',
+        listenFor: 'It explained why the trade went badly and let him blame the Muslim merchants. An embarrassing detail is less likely to be invented.',
+        ap: 'Sourcing and Situation 2.A: point of view and purpose, on a source students first meet as a story.'
+      }
+    },
+    {
+      phase: 'force', kind: 'cause-chain', eyebrow: 'The Indian Ocean Story · 2',
+      kc: 'KC-4.3.II.C', title: 'From traders to a navy.',
+      footer: 'The laugh did not cause the violence by itself. It showed Portugal it could not win by trading alone.',
+      template: {
+        steps: [
+          { label: 'The goal', text: 'Spices, a monopoly, and war on Muslim rivals' },
+          { label: '1498', text: 'At Calicut: little to sell, and the Muslim merchants against them' },
+          { label: '1500', text: 'Fighting at a new Portuguese trading post; the fleet shells Calicut' },
+          { label: '1502', key: true, text: 'Da Gama returns with warships, burns a pilgrim ship, shells Calicut' },
+          { label: 'The result', key: true, text: 'Win by force: forts, warships, and passes sold to Asian ships' }
+        ],
+        links: ['then', 'then', 'then', 'so']
+      },
+      notes: {
+        minutes: 2,
+        keys: [
+          'The goal came first: spices, monopoly, crusade',
+          '1500: Cabral\'s trading post attacked, city shelled',
+          '1502: da Gama burns the Miri, shells Calicut',
+          'Could not out-trade them, so out-gunned them',
+          'Rivalry, economic and religious: the CED\'s cause'
+        ],
+        land: [
+          'KC-4.3.II.C: maritime empires were "driven largely by political, religious, and economic rivalries." This slide is that sentence as a story. The economic rival was the Muslim merchant community that ran Calicut\'s pepper trade; the religious rivalry is why the Portuguese crown treated the competition as a war.',
+          'The goal came before the insult. King Manuel I wanted Asian spices without Muslim and Venetian middlemen, and saw the voyages as part of a war against Islam. The Calicut audience showed he could not reach that goal by trading, because Portugal had little to sell.',
+          '1500: Pedro Álvares Cabral opened a Portuguese trading post at Calicut. After the Portuguese seized a Muslim merchant ship they said was loading pepper ahead of them, a crowd attacked the post in December 1500 and killed dozens of Portuguese, including the man in charge of it. Cabral seized and burned ships in the harbor and bombarded the city.',
+          '1502: da Gama returned with a war fleet. Off the Malabar coast he captured the Miri, a ship carrying Muslim pilgrims home from Mecca, and burned it with most of its passengers aboard; accounts give several hundred people. He then bombarded Calicut. Say it plainly and briefly: this is the turn to force.',
+          'Then the system: the Portuguese allied with the Zamorin\'s rival, the ruler of Cochin, built their first fort in India there in 1503, and began requiring Asian ships to buy a pass, the cartaz.'
+        ],
+        ask: 'Did the laugh at Calicut cause the violence?',
+        listenFor: 'Partly. It showed Portugal it could not compete by trading, but the crown already wanted a monopoly and a war on its Muslim rivals.',
+        ap: 'A trigger and a longer goal: the cause of a change, which is where Continuity and Change starts.'
+      }
+    },
+    {
+      phase: 'gates', kind: 'ledger', eyebrow: 'The Indian Ocean Story · 3',
+      kc: 'KC-4.3.II.A.i', title: 'Hold the gates of the ocean.',
+      footer: 'Albuquerque\'s plan: hold the narrow places long-distance ships had to pass, and tax the trade.',
+      template: {
+        rows: [
+          { name: 'Goa', mark: 'B', tool: 'The base, taken **1510**', result: 'Portugal\'s capital in India' },
+          { name: 'Malacca', mark: '✓', tool: 'Taken **1511**', result: 'the strait to China' },
+          { name: 'Hormuz', mark: '✓', tool: 'Taken **1515**', result: 'the mouth of the Persian Gulf' },
+          { name: 'Aden', mark: '✗', tool: 'Attack failed, **1513**', result: 'the mouth of the Red Sea' }
+        ],
+        payoffLabel: 'The result',
+        payoff: 'Two of the three gates. The Red Sea stayed open.'
+      },
+      notes: {
+        minutes: 2,
+        keys: [
+          'A gate: a narrow place long-distance ships pass',
+          'Goa 1510: the base',
+          'Malacca 1511 and Hormuz 1515: taken',
+          'Aden 1513: failed, Red Sea stayed open',
+          'Ports and passes, not the ocean',
+          'Leads straight into the Goa Fort Council'
+        ],
+        land: [
+          'KC-4.3.II.A.i: Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved. This is how Portugal did it in the Indian Ocean.',
+          'Afonso de Albuquerque, governor of Portuguese India from 1509 to 1515, aimed to hold the narrow passages that long-distance ocean trade had to pass (much coastal trade never passed them): the mouth of the Red Sea (Aden), the mouth of the Persian Gulf (Hormuz) and the strait between the Indian Ocean and the South China Sea (Malacca), with Goa as the base. He took Goa in 1510 and Malacca in 1511, and secured Hormuz in 1515 after a first attempt in 1507. His attack on Aden in 1513 failed.',
+          'Why Aden matters: Portuguese patrols cut the Red Sea pepper trade sharply for about two decades, but with Aden unconquered they never closed it, and by the middle of the 1500s pepper was again reaching Egypt and Venice in large amounts. Portugal never closed the ocean; it taxed the parts it could reach. On the slide, Goa is marked B because it was the base, not a gate.',
+          'Students meet this exact moment in the Goa Fort Council (Module 09): Albuquerque is dead, Portugal holds Goa, Malacca and Hormuz, and it lacks the people and money to conquer the lands behind them.',
+          'Leave the ending for 4.5. The Dutch took Malacca in 1641, and Persian and English forces took Hormuz in 1622. How a small country like the Dutch Republic did it is the joint-stock company story of 4.5.'
+        ],
+        ask: 'Which gate stayed open, and what did that mean?',
+        listenFor: 'Aden and the Red Sea: Portugal disrupted that route for years but never closed it, so spices still reached Egypt and Venice.',
+        ap: 'A change with a limit: Portugal held ports and passes, not the ocean.'
+      }
+    },
+    {
+      phase: 'ocean', kind: 'continuity-change', eyebrow: 'The Indian Ocean Story · 4',
+      kc: 'KC-4.3.II.A.iii', title: 'The Portuguese changed the Indian Ocean. They did not replace it.',
+      footer: 'The College Board\'s words: existing trade networks "continued to flourish."',
+      template: {
+        date: 'After 1498',
+        before: { tag: 'Before', items: ['Merchants from East Africa, Arabia, India, Southeast Asia and China', 'Ports open to many traders'] },
+        after: { tag: 'Changed', items: ['Portuguese forts at Goa, Hormuz and Malacca', 'Many Asian ships made to buy a pass, the cartaz'] },
+        continued: { tag: 'Continued', items: ['Gujarati merchants kept shipping cloth', 'Swahili Arab and Javanese traders kept trading', 'Asian powers pushed back: Oman took Muscat (1650) and Mombasa (1698)'] }
+      },
+      notes: {
+        minutes: 2,
+        keys: [
+          'Changed: the cartaz, a Portuguese pass',
+          'Continued: Gujaratis bought passes, traded on',
+          'Most trade stayed intra-Asian',
+          'Oman pushed Portugal out, 1650 and 1698',
+          'CED merchants: Swahili, Omani, Gujarati, Javanese'
+        ],
+        land: [
+          'The cartaz was a Portuguese pass: Asian ships were to buy one, call at Portuguese ports and avoid goods Portugal claimed for itself, or risk seizure. Pearson (Merchants and Rulers in Gujarat, 1976) shows Gujarati merchants buying passes and trading on.',
+          'Much of the ocean\'s trade stayed intra-Asian: between Asian ports, in Asian goods, and European merchants often made their money by carrying it.',
+          'Oman\'s Ya\'rubid rulers drove the Portuguese from Muscat in 1650 and took Fort Jesus at Mombasa in 1698 after a siege begun in 1696. An Arabian power pushing Portugal back is continuity with a twist.',
+          'The CED\'s merchant examples are all here: Swahili Arabs, Omanis, Gujaratis, Javanese.'
+        ],
+        ask: 'Which lasted longer, the cartaz or the merchants?',
+        listenFor: 'The merchants: the networks were older and outlived Portuguese control.',
+        ap: 'One case, a change and a continuity: name both and say which one lasted.'
       }
     },
     {
@@ -348,36 +496,6 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'ocean', kind: 'continuity-change', eyebrow: 'The Old Ocean Keeps Trading',
-      kc: 'KC-4.3.II.A.iii', title: 'The Portuguese changed the Indian Ocean. They did not replace it.',
-      footer: 'The College Board\'s words: existing trade networks "continued to flourish."',
-      template: {
-        date: 'After 1498',
-        before: { tag: 'Before', items: ['Merchants from East Africa, Arabia, India, Southeast Asia and China', 'Ports open to many traders'] },
-        after: { tag: 'Changed', items: ['Portuguese forts at Goa, Hormuz and Malacca', 'Ships forced to buy a pass, the cartaz'] },
-        continued: { tag: 'Continued', items: ['Gujarati merchants kept shipping cloth', 'Swahili Arab and Javanese traders kept trading', 'Omanis took Muscat (1650) and Mombasa (1698)'] }
-      },
-      notes: {
-        minutes: 3,
-        keys: [
-          'Changed: the cartaz, a Portuguese pass',
-          'Continued: Gujaratis bought passes, traded on',
-          'Most trade stayed intra-Asian',
-          'Oman pushed Portugal out, 1650 and 1698',
-          'CED merchants: Swahili, Omani, Gujarati, Javanese'
-        ],
-        land: [
-          'The cartaz was a Portuguese pass: Asian ships were to buy one, call at Portuguese ports and avoid goods Portugal claimed for itself, or risk seizure. Pearson (Merchants and Rulers in Gujarat, 1976) shows Gujarati merchants buying passes and trading on.',
-          'Much of the ocean\'s trade stayed intra-Asian: between Asian ports, in Asian goods, and European merchants often made their money by carrying it.',
-          'Oman\'s Ya\'rubid rulers drove the Portuguese from Muscat in 1650 and took Fort Jesus at Mombasa in 1698 after a siege begun in 1696. An Arabian power pushing Portugal back is continuity with a twist.',
-          'The CED\'s merchant examples are all here: Swahili Arabs, Omanis, Gujaratis, Javanese.'
-        ],
-        ask: 'Which lasted longer, the cartaz or the merchants?',
-        listenFor: 'The merchants: the networks were older and outlived Portuguese control.',
-        ap: 'One case, a change and a continuity: name both and say which one lasted.'
-      }
-    },
-    {
       phase: 'africa', kind: 'story-scene', eyebrow: 'African States Grow',
       kc: 'KC-4.3.II.A.ii', title: 'Kongo and Asante grew stronger through the new trade.',
       template: {
@@ -413,7 +531,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'afonso', kind: 'source-quote', eyebrow: 'Source It · Your Turn',
-      kc: 'KC-4.3.II.A.ii', title: 'A king writes to a king, 1526.',
+      kc: 'Unit 4: Learning Objective G', title: 'A king writes to a king, 1526.',
       footer: 'Afonso sold war captives from outside Kongo himself. Read his letter with that in mind.',
       template: {
         quote: '[T]hese traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. ... Please instruct your trading agents to send neither traders nor trading goods here.',
@@ -428,7 +546,8 @@ window.BEHISTORICAL_TEACHING = {
           'Purpose: stop kidnapping of his subjects',
           'Situation: traders going around the king',
           'He sold foreign captives himself',
-          'About control, not ending slavery'
+          'About control, not ending slavery',
+          'Full letter: Module 08, required today'
         ],
         land: [
           'Letter of 6 July 1526, translated by Luís Madureira in John K. Thornton, Afonso I Mvemba a Nzinga, King of Kongo: His Life and Correspondence (2023), p. 203, as reprinted in Dunn and Willoughby, Panorama (2026). Ellipsis marks the cut.',
@@ -443,7 +562,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'labor', kind: 'ledger', eyebrow: 'Work in the Americas',
-      kc: 'Unit 4: Learning Objective F', title: 'One old labor system, four new ones.',
+      kc: 'KC-4.2.II.D', title: 'One old labor system, four new ones.',
       footer: 'The colonies made money mostly from farming, and from mining. Each system found the workers.',
       template: {
         rows: [
@@ -479,34 +598,6 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'pages', kind: 'frame-compare', eyebrow: 'Labor on the Page',
-      kc: 'KC-4.2.II.D', title: 'Two pages from the 1550s, one from each side.',
-      template: {
-        panels: [
-          { visual: { url: '../assets/images/topics/4-4/potosi-cieza-1553.jpg', alt: 'Woodcut of a tall mountain labeled Cero de Potosí, with tiny figures climbing paths to mine entrances and a town with churches at its foot', credit: 'Cerro de Potosí, woodcut in Pedro Cieza de León, Crónica del Perú, Seville, 1553 · Public domain', fit: 'contain' }, tag: 'Printed in Spain, 1553', text: 'The silver mountain where the mit’a later sent its workers.' },
-          { visual: { url: '../assets/images/topics/4-4/codex-kingsborough-1550s.jpg', alt: 'Painting from a Nahua codex: a Spaniard in a red cloak and black hat grabs an Indigenous man by the hair, and the man bleeds', credit: 'Codex Kingsborough (Tepetlaoztoc), about 1550s · British Museum · Public domain', fit: 'contain' }, tag: 'Painted by Nahua artists, 1550s', text: 'A town\'s complaint against its encomenderos, made to be sent to Spain.' }
-        ],
-        question: 'Which page was made by the people who did the work? **What can each one tell you that the other cannot?**'
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Left: Potosí, where the mit’a sent workers',
-          'Right: Nahua codex made for a lawsuit',
-          'Encomendero beating a Nahua man',
-          'Made by the workers, for a Spanish court',
-          'Silver itself is 4.5'
-        ],
-        land: [
-          'Left: the woodcut of Potosí in Pedro Cieza de León\'s Crónica del Perú (Seville, 1553), which the historian Kris Lane calls the mountain\'s "first iconic image." Show it as the place the mit’a served; what the silver did in the world is Topic 4.5.',
-          'Right: the Codex Kingsborough, or Codex of Tepetlaoztoc (British Museum), painted by Nahua artists about the 1550s for a lawsuit: the people of Tepetlaoztoc, near Texcoco, complained to the Spanish crown about the tribute and labor demanded by their encomenderos. This page shows a Spaniard named Espinosa, who had charge of the town, beating a Nahua man.',
-          'Sourcing in one move: the codex was made by the people who owed the labor, for a Spanish court. The woodcut was made in Spain by a Spanish chronicler.'
-        ],
-        ask: 'What did the people of Tepetlaoztoc want the Spanish king to do?',
-        listenFor: 'Stop the abuse and the extra demands; enforce the law against the encomendero.'
-      }
-    },
-    {
       phase: 'oldslavery', kind: 'case-file', eyebrow: 'Slavery: Continuity',
       kc: 'KC-4.2.II.B', title: 'Slavery in Africa went on in its older forms.',
       template: {
@@ -539,42 +630,15 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'scale', kind: 'frame-number', eyebrow: 'Slavery: Change',
-      kc: 'Unit 4: Learning Objective G',
-      template: {
-        visual: { url: '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg', alt: 'Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor', credit: 'Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving printed in London, 1732 · Public domain', position: '50% 80%' },
-        number: '2.5+', unit: 'million', range: '1701 to 1750',
-        text: 'Africans forced onto ships bound for the Americas, by historians\' estimates. In the whole 1500s: fewer than 300,000.'
-      },
-      notes: {
-        minutes: 1,
-        keys: [
-          '1500s: about 277,000 captives embarked',
-          '1701 to 1750: more than 2.5 million',
-          'About nine times as many',
-          'This is the CED’s "increased demand"',
-          'African traders inside; European ships across',
-          'Say "estimates"'
-        ],
-        land: [
-          'Slave Voyages (the Trans-Atlantic Slave Trade Database) estimates of captives embarked: 277,505 in 1501 to 1600; 1,088,909 in 1701 to 1725 and 1,471,725 in 1726 to 1750, together 2,560,634. Say "more than 2.5 million" and "estimates."',
-          'About nine times as many in fifty years as in the whole sixteenth century: that is the change the CED means by "increased the demand for enslaved labor."',
-          'The engraving, from a 1732 English collection of voyages (from Jean Barbot\'s account of the Guinea coast), shows the lower scene\'s canoes carrying enslaved people out to ships at Manfroe, on the Gold Coast. African canoemen and traders worked inside the trade; European ships carried it across the ocean.'
-        ],
-        ask: 'Why does the number grow so fast after 1700?',
-        listenFor: 'More plantations, more sugar and tobacco, more demand for workers.'
-      }
-    },
-    {
       phase: 'plantation', kind: 'story-scene', eyebrow: 'Slavery: Change',
       kc: 'KC-4.2.II.C', title: 'What the plantations changed.',
       template: {
         visual: { url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg', alt: 'Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane', credit: 'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain', fit: 'contain' },
         caption: 'A sugar works in the French Caribbean, 1667',
         steps: [
-          { label: 'Demand', text: 'Sugar, and later tobacco, needed huge numbers of workers.' },
+          { label: 'Demand', text: 'Under 300,000 captives shipped in the 1500s; over 2.5 million in 1701 to 1750.' },
           { label: 'Demographic', text: 'Africans and their descendants became most of the people in the British, French and Dutch Caribbean colonies.' },
-          { label: 'Social', key: true, text: 'Slavery for life, inherited, and tied to race.' },
+          { label: 'Social', key: true, text: 'Passed to children, now tied to race, with almost no way out.' },
           { label: 'Cultural', text: 'African languages, beliefs and foods crossed with them.' }
         ]
       },
@@ -582,49 +646,23 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         keys: [
           'Plantations raised demand for enslaved labor',
+          'Estimates: 277,000 in 1500s; 2.5 million, 1701-1750',
           'Demographic: Africans outnumbered Europeans',
-          'Social: for life, inherited, tied to race',
+          'Social: tied to race, almost no way out',
           'Cultural: one sentence; mixing is 4.5',
           'Engraving shows the work, not the lives'
         ],
         land: [
           'KC-4.2.II.C: the growth of the plantation economy increased the demand for enslaved labor in the Americas, "leading to significant demographic, social, and cultural changes." The three steps after Demand are those three words, in order.',
+          'Demand, as numbers: Slave Voyages (the Trans-Atlantic Slave Trade Database) estimates 277,505 captives embarked in 1501 to 1600, and 1,088,909 in 1701 to 1725 plus 1,471,725 in 1726 to 1750, together 2,560,634. About nine times as many in fifty years as in the whole sixteenth century, driven above all by sugar, and in Brazil also by gold mining. Say "estimates." (This was its own slide until 2026-11-05.)',
           'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the British, French and Dutch Caribbean (Spanish islands had smaller African shares); in Brazil, Africans and their descendants were a large part of the population.',
-          'Social: chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
+          'Social: lifelong slavery passed to children existed before, in Mediterranean, Islamic and some African systems. What the plantations made new was the scale, the brutal gang labor, the near-total tie to race, and how few routes led out of it. Chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
           'Cultural: name it in one sentence. How African, American and European cultures mixed is 4.5.',
           'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): its printed key names the mill (1. Moulin), the furnaces and kettles (2. Fourneaux et Chaudieres) and the huts of the enslaved workers (10. Cases de Negres). It shows the work, not the workers\' lives; a European artist made it for European readers.'
         ],
         ask: 'Which of the three changes would a person born on a plantation feel first?',
         listenFor: 'The social one: born enslaved, for life.',
         ap: 'The largest change in the ledger: scale, and the kind of slavery.'
-      }
-    },
-    {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence tells a more useful story than the myths.',
-      template: {
-        rows: [
-          { myth: 'After 1500, Europe took over the world.', evidence: 'Europeans held coasts in Asia and Africa. China and Japan set the terms, and Asian merchants kept trading.', source: 'Japan, 1635 to 1641; Gujarati merchants' },
-          { myth: 'Slavery began with the Atlantic slave trade.', evidence: 'Older forms continued in Africa. The plantations changed its scale and kind.', source: 'Households; the Sahara; the Indian Ocean' },
-          { myth: 'African rulers had no power in the trade.', evidence: 'Kongo and Asante grew stronger, and set terms for traders.', source: 'Afonso I, 1526; Feyiase, 1701' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Myth 1: Europe took over → own rules',
-          'Myth 2: slavery began 1500 → older forms',
-          'Myth 3: Africans powerless → Kongo, Asante',
-          'Power is not innocence: they sold captives'
-        ],
-        land: [
-          'Row 1 is the spine\'s second half: much of the world kept its own rules.',
-          'Row 2: KC-4.2.II.B and II.C together. Do not let a student write that slavery was invented after 1500.',
-          'Row 3: power is not innocence. African states that grew through the trade also sold captives into it; Afonso protected his own subjects and sold foreigners. Both halves are true, and the evidence for both is the same letter.'
-        ],
-        ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'The third: African states had power, and some used it to sell captives.'
       }
     },
     {
@@ -635,7 +673,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Who ruled', cells: ['Rival European empires built forts on coasts and colonies in the Americas; Kongo and Asante grew stronger', 'China and Japan set the terms; Europeans mostly held coasts, not Asia'] },
           { label: 'Trade and work', cells: ['The cartaz; encomienda, hacienda, indentured servitude, chattel slavery', 'Asian merchants kept the Indian Ocean trading; the Inca mit’a reused'] },
-          { label: 'Slavery', cells: ['Plantations made it far larger, lifelong, inherited and tied to race', 'Older forms in Africa: households, the Sahara, the Indian Ocean'] }
+          { label: 'Slavery', cells: ['Plantations made it far larger and tied it to race, with almost no way out', 'Older forms in Africa: households, the Sahara, the Indian Ocean'] }
         ],
         result: { label: 'So', text: 'Europeans built empires from the sea, but much of the world kept its own rules.' }
       },
@@ -646,12 +684,14 @@ window.BEHISTORICAL_TEACHING = {
           'Rows = the three objectives',
           'Columns = change and continuity',
           'Ask "why" in every row',
-          'Biggest change: slavery in the Americas'
+          'Biggest change: slavery in the Americas',
+          'Correct the three myths from these rows'
         ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the six cells from memory.',
           'The three rows are the three learning objectives (E, F, G); the two columns are the reasoning move.',
-          'Push for the "why" in each row: rivalry caused the empires; Asian states were strong enough to set terms; the plantations caused the change in slavery.'
+          'Push for the "why" in each row: rivalry caused the empires; Asian states were strong enough to set terms; the plantations caused the change in slavery.',
+          'The three myths are corrected from these rows (they had their own slide until 2026-11-05). "After 1500, Europe took over the world": the Who ruled row, where China and Japan set the terms and Europeans held coasts and two of three gates. "Slavery began with the Atlantic trade": the Slavery row, older forms in Africa. "African rulers had no power": Kongo and Asante grew stronger. Power is not innocence: African states that grew through the trade also sold captives into it, and Afonso protected his own subjects while selling foreigners.'
         ],
         ask: 'Which row has the biggest change, and which the biggest continuity?',
         listenFor: 'Biggest change: slavery in the Americas. Biggest continuity: Asian states and merchants.'
@@ -659,7 +699,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      kc: 'KC-4.3.II.A.iii',
+      kc: 'Unit 4: Learning Objective F',
       footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
         weak: 'Indian Ocean trade changed.',
@@ -684,40 +724,21 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Who wrote it, for whom, and why?',
-      subtitle: 'Name a source\'s point of view, purpose and situation, and say how they change what it means.',
+      phase: 'cp1', kind: 'action', eyebrow: 'Modules 06 and 08 · On Your Own',
+      title: 'Checkpoint 1, then Afonso\'s letter.',
+      subtitle: 'Checkpoint 1 first, with no coach. Then the Primary Source: Afonso I\'s full letter to the king of Portugal.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
-        minutes: 6,
+        minutes: 10,
         keys: [
-          'Skill 2.A: who, for whom, why',
-          'Modeled on 1635, practiced on 1639',
-          'Tie answers to words in the source'
-        ],
-        land: [
-          'The Skill Builder practices the CED\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience.',
-          'It models the 1635 memorandum (the slide students just saw), then gives the 1639 order banning Portuguese ships and asks for its point of view, purpose and situation, and how the situation explains why Japan limited trade with the Portuguese.',
-          'Push students to tie each answer to words in the source, not to facts from elsewhere.'
-        ],
-        ask: 'What words in the source show its purpose?',
-        listenFor: 'It says the Portuguese "secretly transported" missionaries, so the purpose is to stop Christianity coming in.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'Who ruled?',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
-      notes: {
-        minutes: 0,
-        keys: [
-          'Optional: early finishers or diagnostic',
-          'Rivalry, change in power, continuity',
+          'Both required today: 06 and 08',
+          'Checkpoint 1: rivalry, change in power, continuity',
+          'No coach on Checkpoint 1',
+          'Module 08: source Afonso\'s full letter',
           'Give feedback in the room'
         ],
         land: [
-          'Checkpoint 1 is not required for 4.4. Use it for early finishers or as a quick diagnostic if the room is ahead.',
+          'Checkpoint 1 (Module 06) and the Primary Source (Module 08, Afonso I\'s 1526 letter, whose questions are 2.A Sourcing and Situation) are both required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23).',
           'It asks for one cause of the empires, one change in who held power (a trading post, or Kongo or Asante) and one continuity (China or Japan, or Asian merchants trading on in the Indian Ocean). Give feedback in the room: on an alternating block nothing carries over.'
         ],
         ask: 'Name a rivalry, a change in who held power and a continuity.',
@@ -725,25 +746,25 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Build one claim from two sources.',
-      subtitle: 'One change and one continuity, from two real objects. Name one limit.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
+      phase: 'room', kind: 'action', eyebrow: 'Module 09 · BeInTheRoom',
+      title: 'The Goa Fort Council.',
+      subtitle: 'Albuquerque is dead. Portugal holds Goa, Malacca and Hormuz, but not enough people to conquer the lands behind them. What kind of empire does it build now?',
+      action: { label: 'Open the Goa Fort Council', url: '../beintheroom/unit-4/the-goa-fort-council.html' },
       notes: {
-        minutes: 7,
+        minutes: 12,
         keys: [
-          'One claim, two sources',
-          'One change, one continuity',
-          'Five real historical objects',
-          'Observe → infer → name a limit'
+          'Set just after the three gates',
+          'Forts and passes, colony, or a partner?',
+          'Every option needs local allies',
+          'Ask who is forced, who keeps profit'
         ],
         land: [
-          'Five real objects: the Nanban screen (about 1600), Nagasaki and Dejima (1735 to 1744), Mombasa (Braun and Hogenberg, 1572), the Codex Kingsborough (1550s) and the Du Tertre sugar works (1667).',
-          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you (a European engraving shows the work, not the workers\' view; a Japanese screen shows what its painter saw from the shore).',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
+          'Module 09 is required today. The council meets in Goa after Albuquerque\'s death in 1515, with Goa, Malacca and Hormuz held: the moment the three gates slide ends on.',
+          'Its three choices are the topic\'s argument in a decision: a chain of forts and sea passes, a wider territorial colony, or a negotiated place inside markets that already exist. Every option depends on local allies.',
+          'Debrief with the spine: whatever Goa chose, Asian rulers and merchants kept much of their own power.'
         ],
-        ask: 'What does the source show before you tell me what it means?',
-        listenFor: 'A concrete detail, then the inference, then a limit.'
+        ask: 'Which choice did Portugal actually make, and what did it cost Asian merchants?',
+        listenFor: 'Forts and passes: the cartaz taxed Asian ships, but the merchants kept trading.'
       }
     },
     {
@@ -772,7 +793,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'close', kind: 'frame-subtitle',
       title: 'Europeans built empires from the sea, but much of the world kept its own rules.',
-      subtitle: 'Next: the empires exist. How did rulers make them pay, and what did the money do to the people inside them?',
+      subtitle: 'Next: by the 1660s the Dutch had taken many of Portugal\'s ports in Asia. How did a country no larger than Portugal do it?',
       notes: {
         minutes: 2,
         keys: [
@@ -784,7 +805,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The picture: Kawahara Keiga\'s folding screen of Nagasaki harbor, painted about 1836 (Museum Volkenkunde, Leiden). Dejima, the fan-shaped island in the foreground, is where the Dutch were confined from 1641; the island\'s shape was the same in this period. A whole European trading empire\'s foothold in Japan is that small island, inside a Japanese harbor, under Japanese rules: the spine in one picture. It was painted almost a century after 1750; say so.',
           'This sentence answers all three learning objectives: Europeans built empires from the sea (E), and much of the world kept its own rules (E, F, G), while some things changed fast (labor and slavery).',
-          'Hand off to 4.5 in the words of the unit story map.'
+          'Leave the 4.5 question open; do not answer it. By the 1660s the Dutch had taken many of Portugal\'s posts in Asia (Malacca in 1641, the Ceylon ports by 1658, Cochin in 1663), and Persian and English forces had taken Hormuz in 1622. Portugal kept Goa, Diu and Macau, among others. The Dutch Republic was smaller than Portugal in area, with about as many people, so population alone does not explain it: the answer is a joint-stock company, the VOC, and how rulers used such companies to compete. That is 4.5.'
         ],
         ask: 'What is the one-sentence answer to Topic 4.4?',
         listenFor: 'Europeans built forts and colonies, but Asian states and merchants and African states kept their own power, older labor and slavery continued, and plantations changed slavery in the Americas.'

@@ -57,9 +57,19 @@ note(s,'The large image is a reconstruction; the small engraving is the historic
 s=by('plantation');const source=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.4 - Barbados Sugar.JPG','Reconstruction of Black and white laborers cutting cane on a Caribbean sugar plantation, with a supervisor and a mill behind them'),sources:[{visual:source,caption:'French Caribbean sugar works, printed 1667'}],steps:s.template.steps,proves:'Plantations changed the scale and inherited racial structure of slavery.'};
 note(s,'The Barbados reconstruction orients the class to cane, labor and supervision. The engraving below it is a real French Caribbean source, not a view of Barbados. Neither picture alone proves the demographic figures or a particular worker\'s legal status.');
 s=by('close');s.template={visual:ai('4.4 - Merchants of Surat.JPG','Reconstruction of Indian merchants, scribes and dockworkers trading cloth and other goods along the waterfront at Surat'),place:'top'};
-s.notes.keys=['Surat: Asian merchants keep trading','Reconstruction, not source evidence','Return to the spine, then hand off to 4.5'];
+s.notes.keys=['Surat: Asian merchants keep trading','Reconstruction, not source evidence','Return to the spine','Leave the 4.5 question open: how did the Dutch win?'];
 s.notes.land=s.notes.land.slice(1);note(s,'The Surat scene returns to continuity and local agency: European ships joined a commercial world they did not replace. Its buildings and business records are imagined; do not read them as a dated historical source.');
 by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions support the story; historical sources remain in the deck and Evidence Lab. Reconstructions illustrate cases and do not supply source evidence.');
+})();
+
+/* The Indian Ocean story, 2026-11-05 (Jeff). The Calicut slide reuses the
+   reviewed Topic 4.1 reconstruction of Calicut's harbor in 1498 until Jeff's
+   own "4.4 - Gifts at Calicut" picture is uploaded; swap the file name and alt
+   text here when it is. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
+const s=T.slides.find(x=>x.phase==='calicut');if(!s)return;
+s.template.visual={ai:true,url:'../assets/images/topics/4-1/'+encodeURIComponent('4.1 - Arriving at Calicut 1498.jpg'),alt:'Reconstruction of two large European ships at anchor off a palm-lined shore crowded with Indian Ocean sailing ships, small boats and a busy waterfront town below green hills',position:'30% 50%'};
 })();
 
 (function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();

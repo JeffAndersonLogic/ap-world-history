@@ -319,3 +319,36 @@ findings were mostly answer leakage and readability. That says what is systemic:
 correction step itself is a source of new errors, so every pass 3 fix was checked against the
 picture or the primary record, not a summary. All pass 3 findings are fixed or logged above. No
 fourth pass was run.
+
+## Revision of 2026-11-05: the Indian Ocean story
+
+Jeff asked for the story he used to tell (da Gama embarrassed at court, the turn to force, the
+three chokepoints, too few people to hold them, the Dutch replacing Portugal) to be checked and
+built into the 4.4 deck for that day's class. Three slides were added (`calicut`, `force`,
+`gates`), the BeInTheRoom slide (`room`) was added, and five were trimmed. One fresh independent
+reviewer read every new and changed slide against the CED source file, the primary source and the
+scholarship. Time allowed one round before class, not the full loop; that is recorded here so the
+next revision can run a second.
+
+**Source added: Ravenstein 1898.** E. G. Ravenstein, trans., *A Journal of the First Voyage of
+Vasco da Gama, 1497-1499* (Hakluyt Society, 1898), the anonymous crew member's journal, read in the
+Project Gutenberg text (ebook 46440), entries for May 29 and 30, 1498. Every quotation on the
+Calicut slide and in its notes was checked word for word against it, by the builder and again by
+the reviewer.
+
+| # | Claim | Status | Note |
+|---|---|---|---|
+| IO1 | Da Gama was embarrassed by "the Mughal emperor" (Jeff's earlier classroom version) | REMOVED | The Mughal Empire began in 1526 and never ruled Calicut. The court was the Zamorin's, a Hindu king; his Muslim factor and a local official laughed at the gifts, and the king reproached da Gama the next day (Ravenstein). |
+| IO2 | The gifts list and "the poorest merchant from Mecca ... gave more" | VERIFIED | Ravenstein, May 29, 1498, verbatim. The notes' quotation now closes with an ellipsis, as the sentence continues. |
+| IO3 | The insult caused the turn to force | NARROWED | The slide gives the crown's prior goal (spices, a monopoly, war on Muslim rivals) as the longer cause and the insult as what showed trade alone would fail. Cabral 1500 and the *Miri* 1502 verified. |
+| IO4 | Portugal took the three chokepoints | NARROWED | Albuquerque took Malacca (1511) and Hormuz (1515, after 1507) and failed at Aden (1513). The slide says two of the three; Goa is marked as the base, not a gate. |
+| IO5 | "The narrow places every ship must pass" | NARROWED | Reviewer: much coastal trade never passed a chokepoint. Now "long-distance ships." |
+| IO6 | "The Red Sea stayed open; spices kept reaching Venice" | NARROWED | Reviewer: patrols cut the Red Sea pepper flow for about two decades before it recovered. The notes now say Portugal disrupted the route but never closed it. |
+| IO7 | Close: "By the 1660s the Dutch had taken many of them [the gates]" | NARROWED | Reviewer ERROR: the Dutch took only Malacca of the three; Hormuz fell to Safavid and English forces in 1622. Now "many of Portugal's ports in Asia." |
+| IO8 | Close: "a country not much bigger than Portugal" | NARROWED | Reviewer ERROR: the Dutch Republic was smaller in area, with about as many people. Now "a country no larger than Portugal." Jeff's "not enough people" reason is kept as half the answer; joint-stock finance is 4.5's. |
+| IO9 | Plantation and ledger: slavery "for life, inherited and tied to race" as the change | NARROWED | Reviewer: lifelong, inherited slavery existed elsewhere before. The change is the scale, the tie to race and the few ways out. |
+| IO10 | Plantation notes: the 1701 to 1750 surge "driven by sugar and later tobacco" | NARROWED | Now "above all by sugar, and in Brazil also by gold mining." Slave Voyages figures verified. |
+| IO11 | Ocean: "ships forced to buy a pass" | NARROWED | Now "many Asian ships": the cartaz bound only where patrols reached. |
+| IO12 | Ocean: Oman's Muscat (1650) and Mombasa (1698) under Continued | NARROWED | Dates verified; now worded as Asian powers pushing back, which keeps it a continuity of Asian power. |
+| IO13 | Ocean: "merchants from ... China" before 1498 | NEEDS JEFF | Reviewer quibble: Chinese junks rarely sailed west of Malacca after 1433. Left as it stands, since Chinese merchants traded at Malacca, an Indian Ocean port; Jeff can narrow it. |
+| IO14 | Close notes: "Portugal kept Goa, Diu and Macau" | NARROWED | Now "among others." |
