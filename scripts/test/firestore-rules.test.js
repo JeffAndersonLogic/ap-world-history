@@ -262,6 +262,74 @@ async function assertContracts(env, report) {
   // every assertion above would also be consistent with.
   report('the other student can still read their own record', await can(getDoc(doc(britDb, BRIT_CP2))));
 
+  // ── Class Pulse, added 2026-10-31 ────────────────────────────────────────
+  //
+  // A teacher reads the work of students on their own class list, one document
+  // at a time, and keeps ratings only they can read. The list is written with
+  // administrator credentials only, seeded here with rules off for that reason.
+  const UID_TEACH = 'uid-teach';
+  const TEACH = Object.assign({ email: 'teach@zcs.k12.in.us', email_verified: true }, GOOGLE);
+  await env.withSecurityRulesDisabled(async ctx => {
+    const db = ctx.firestore();
+    const now = new Date();
+    await setDoc(doc(db, `tenants/${ZCS}/rosters/${UID_TEACH}`), { classLabel: 'G4' });
+    await setDoc(doc(db, `tenants/${ZCS}/rosters/${UID_TEACH}/students/${UID_SAM}`), { label: 'Sam' });
+    // A list under a STUDENT's own id, which a student must still not be able to use.
+    await setDoc(doc(db, `tenants/${ZCS}/rosters/${UID_SAM}/students/${UID_BRIT}`), { label: 'Brit' });
+    await setDoc(doc(db, pathFor(ZCS, idFor(UID_SAM, '3-2', 'checkpoint-one-response'))),
+      Object.assign(response({ studentId: UID_SAM, topicKey: '3-2', slotId: 'checkpoint-one-response' }), { createdAt: now, updatedAt: now }));
+  });
+  const teachDb = env.authenticatedContext(UID_TEACH, TEACH).firestore();
+  const SAM_32 = pathFor(ZCS, idFor(UID_SAM, '3-2', 'checkpoint-one-response'));
+  const rosterOf = (uid) => `tenants/${ZCS}/rosters/${uid}`;
+
+  report('a teacher can read their own class list',
+    await can(getDoc(doc(teachDb, rosterOf(UID_TEACH)))) && await can(getDocs(collection(teachDb, rosterOf(UID_TEACH) + '/students'))));
+  report('another teacher cannot read it', await cannot(getDocs(collection(britDb, rosterOf(UID_TEACH) + '/students'))));
+  report('a student cannot read it', await cannot(getDocs(collection(samDb, rosterOf(UID_TEACH) + '/students'))));
+  report('a teacher cannot add a student to their own list',
+    await cannot(setDoc(doc(teachDb, rosterOf(UID_TEACH) + '/students/' + UID_BRIT), { label: 'Brit' })));
+  report('a teacher can read the work of a student on their list', await can(getDoc(doc(teachDb, SAM_32))));
+  report('and look for work that student has not written yet',
+    await can(getDoc(doc(teachDb, pathFor(ZCS, idFor(UID_SAM, '3-2', 'checkpoint-two-response'))))));
+  report('a teacher cannot read the work of a student not on their list', await cannot(getDoc(doc(teachDb, BRIT_CP2))));
+  report('a teacher cannot read anything but the checkpoints, even for a student on their list',
+    await cannot(getDoc(doc(teachDb, pathFor(ZCS, idFor(UID_SAM, '3-2', 'map-check-response'))))));
+  report('a teacher cannot query student work, even for a student on their list',
+    await cannot(getDocs(query(collection(teachDb, `tenants/${ZCS}/responses`), where('studentId', '==', UID_SAM)))));
+  report('a student with a list under their own id still cannot read a classmate',
+    await cannot(getDoc(doc(samDb, BRIT_CP2))));
+  report('a teacher cannot change a student\'s work',
+    await cannot(updateDoc(doc(teachDb, SAM_32), { text: 'teacher edit', updatedAt: serverTimestamp() })));
+
+  const ratingsOf = (uid) => `tenants/${ZCS}/pulse/${uid}/ratings`;
+  const rating = (o) => Object.assign({
+    studentId: UID_SAM, topicKey: '3-2', slotId: 'checkpoint-one-response', codes: 'DPN',
+    reading: JSON.stringify({ criteria: [] }), reader: 'claude-for-teachers-pasted', rubricVersion: '2026-10-30-draft-2',
+    answerFingerprint: 'k2j3h4g5', ratedAt: serverTimestamp(), schemaVersion: 1
+  }, o || {});
+  const RATING = ratingsOf(UID_TEACH) + '/' + idFor(UID_SAM, '3-2', 'checkpoint-one-response');
+  report('a teacher can save a rating for a student on their list', await can(setDoc(doc(teachDb, RATING), rating())));
+  report('and replace it', await can(setDoc(doc(teachDb, RATING), rating({ codes: 'DDN' }))));
+  report('and read their ratings for a topic',
+    await can(getDocs(query(collection(teachDb, ratingsOf(UID_TEACH)), where('topicKey', '==', '3-2')))));
+  report('a teacher cannot save a rating for a student not on their list',
+    await cannot(setDoc(doc(teachDb, ratingsOf(UID_TEACH) + '/' + idFor(UID_BRIT, '1-4', 'checkpoint-two-response')),
+      rating({ studentId: UID_BRIT, topicKey: '1-4', slotId: 'checkpoint-two-response' }))));
+  report('another teacher cannot read a teacher\'s ratings', await cannot(getDoc(doc(britDb, RATING))));
+  report('a student cannot read ratings, their own included', await cannot(getDoc(doc(samDb, RATING))));
+  report('nobody can write into another teacher\'s ratings',
+    await cannot(setDoc(doc(britDb, RATING), rating())));
+  report('a rating with an unexpected field is refused', await cannot(setDoc(doc(teachDb, RATING), rating({ grade: 'A' }))));
+  report('a rating whose id disagrees with its contents is refused',
+    await cannot(setDoc(doc(teachDb, ratingsOf(UID_TEACH) + '/whatever'), rating())));
+  report('a rating with a level outside D, P, N and U is refused', await cannot(setDoc(doc(teachDb, RATING), rating({ codes: 'A+' }))));
+  report('a rating for a slot that is not a checkpoint is refused',
+    await cannot(setDoc(doc(teachDb, ratingsOf(UID_TEACH) + '/' + idFor(UID_SAM, '3-2', 'map-check-response')),
+      rating({ slotId: 'map-check-response' }))));
+  report('a backdated rating is refused', await cannot(setDoc(doc(teachDb, RATING), rating({ ratedAt: new Date(2020, 0, 1) }))));
+  report('a rating cannot be deleted', await cannot(deleteDoc(doc(teachDb, RATING))));
+
   await assertRemoteSessions(env, report, { alexDb, britDb, samDb, outsiderDb, anonDb, can, cannot });
 }
 
@@ -406,7 +474,7 @@ async function makeEnv(rules) {
     ['remote sessions never expire',
       s => s.replace(/return resource\.data\.createdAt \+ duration\.value\(16, 'h'\) > request\.time;/, 'return true;')],
     ['a student account may start a remote session',
-      s => s.replace(/== 'zcs\.k12\.in\.us';/, "in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'];")],
+      s => s.replace(/(function isStaff\(\) \{[\s\S]*?)== 'zcs\.k12\.in\.us';/, "$1in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'];")],
     ['the iPad write cap is removed',
       s => s.replace(/\n\s*&& request\.resource\.data\.ipadWrites <= \d+/, '')],
     ['the iPad may write the laptop\'s side',
@@ -414,7 +482,21 @@ async function makeEnv(rules) {
     ['the iPad counter is trusted from the client',
       s => s.replace(/request\.resource\.data\.ipadWrites == resource\.data\.ipadWrites \+ 1/, 'request.resource.data.ipadWrites is int')],
     ['any staff member may report to any session',
-      s => s.replace(/&& ownsSession\(\)/, '&& isStaff()')]
+      s => s.replace(/&& ownsSession\(\)/, '&& isStaff()')],
+    ['students count as staff',
+      s => s.replace(/split\('@'\)\[1\] == 'zcs\.k12\.in\.us'/, "split('@')[1] in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us']")],
+    ['a teacher may add students to their own class list',
+      s => s.replace(/(rosters\/\{teacherUid\}\/students\/\{studentUid\} \{[\s\S]*?)allow write: if false;/, '$1allow write: if inTenant(tenantId) && ownsRoster(tenantId, teacherUid);')],
+    ['any teacher may read any student',
+      s => s.replace(/return rosterHolds\(tenantId, responseId\.split\('__'\)\[0\]\)/, 'return isStaffIn(tenantId)')],
+    ['the class list is looked up under the student, not the caller',
+      s => s.replace(/rosters\/\$\(request\.auth\.uid\)\/students\/\$\(studentUid\)/, 'rosters/$(studentUid)/students/$(studentUid)')],
+    ['a teacher may read every slot of a student on their list',
+      s => s.replace(/&& responseId\.split\('__'\)\[2\] in \[[^\]]*\]/, '')],
+    ['ratings are readable by any staff',
+      s => s.replace(/allow get, list: if inTenant\(tenantId\) && ownsPulse\(\);/, 'allow get, list: if isStaffIn(tenantId);')],
+    ['a rating may be saved for anyone',
+      s => s.replace(/&& rosterHolds\(tenantId, request\.resource\.data\.studentId\)\n/, '\n')]
   ];
 
   for (const [name, mutate] of MUTATIONS) {
@@ -441,6 +523,10 @@ async function makeEnv(rules) {
       : `  ${R}FAIL${X} ${name} ${D}(NOT caught, these assertions cannot fail)${X}`);
     if (!sawFailure) failures++;
   }
+
+  // Leave the emulator holding the real rules, not the last broken copy, for the
+  // suites that run after this one (sync-transport, class-pulse-live).
+  try { const restore = await makeEnv(rules); await restore.cleanup(); } catch (e) { /* the next suite loads them itself if it must */ }
 
   console.log('');
   if (failures) {

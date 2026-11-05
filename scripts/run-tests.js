@@ -52,6 +52,9 @@ const SUITES = {
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
     ['scripts/test/sync-engine.test.js', 'backup engine: restore, never overwrite, never write empty, bounded writes, sign-in domains'],
+    ['scripts/test/class-pulse-engine.test.js', 'Class Pulse reader: every topic\'s checkpoint contract verbatim, no identifiers sent, fail-closed replies'],
+    ['scripts/test/class-pulse-roster.test.js', 'Class Pulse class-list setup: private file, students only, nothing written on a dry run'],
+    ['scripts/test/class-pulse-handoff.test.js', 'Class Pulse by copy and paste: off for real writing, nothing identifying copied, every pasted rating checked'],
     ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
     ['scripts/test/slide-templates.test.js', 'slide templates: one library, wired into every renderer, AI label enforced'],
     ['scripts/test/deck-key-concepts.test.js', 'Key Concept band: every deck tags its own topic\'s KCs, and every renderer draws the band'],
@@ -79,6 +82,8 @@ const SUITES = {
   ],
   browser: [
     ['scripts/test/sync-page.test.js', 'backup on the real lesson pages: off by default, restore, typing, conflicts, Foundations'],
+    ['scripts/test/class-pulse-submit.test.js', 'Class Pulse Submit: off as shipped, receipt fingerprint, kept out of Canvas, restored with the answer'],
+    ['scripts/test/class-pulse-page.test.js', 'Class Pulse teacher page: every topic\'s criteria, no network, projector safe, every student counted'],
     ['scripts/test/unit45-atlases.browser.test.js', 'Units 4–5 atlases: all views, keyboard, responsive hubs, and negative controls'],
     ['scripts/test/unit3-atlas.browser.test.js', 'Unit 3 atlas: direct clicks, keyboard, touch, and responsive hub'],
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
@@ -123,7 +128,8 @@ const SUITES = {
   // gates a push today, and it is textual.
   rules: [
     ['scripts/test/firestore-rules.test.js', 'security rules against the real Firestore engine'],
-    ['scripts/test/sync-transport.test.js', 'backup requests and engine against the real rules in the emulator']
+    ['scripts/test/sync-transport.test.js', 'backup requests and engine against the real rules in the emulator'],
+    ['scripts/test/class-pulse-live.test.js', 'Class Pulse live: class list, submitted answers and saved ratings against the real rules']
   ]
 };
 

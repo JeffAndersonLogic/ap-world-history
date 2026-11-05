@@ -870,6 +870,7 @@ const byId=id=>document.getElementById(id);
 window.BH_SYNC_CONFIG = Object.freeze({
   "enabled": true,
   "pilot": false,
+  "submit": false,
   "tenantId": "zcs",
   "courseId": "apwh",
   "allowedDomains": [

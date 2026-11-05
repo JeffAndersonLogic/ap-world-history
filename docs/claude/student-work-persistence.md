@@ -442,3 +442,202 @@ Foundations, with its own controls. `sync-transport.test.js` (the `rules` suite)
 runs the real requests and the engine against the emulator with the real rules.
 `firestore-rules.test.js` holds the rules. The last two need the emulator and
 SKIP without it; a SKIP is not a pass.
+
+## Class Pulse submission, added 2026-10-28
+
+Class Pulse, the teacher view of Checkpoint 1 and 2 by criterion, reads only work
+a student has **submitted**, because a backup snapshot can be half a sentence.
+The build spec is AndersonLogic-OS
+`04_PRODUCTS/BeHistorical/Class-Pulse-Spec-2026-10-27.md`.
+
+**It is off.** `submit` in `scripts/lib/sync-config.js` is false, so no student
+sees a Submit button, and it stays false until ZCS approves teacher reads of
+submitted work. Like the rest of the config it is inlined by `build-sync.js`.
+
+**The receipt is a fingerprint, not a copy.** Pressing Submit stores
+`Submitted <date> · fingerprint <hash>` under `behistorical-submit-<topic>-<slot>`,
+where the hash is the backup engine's own `valueHash` of the trimmed answer and its
+confidence. The teacher side recomputes `valueHash` from the backed-up answer and
+compares: equal means submitted and unchanged; different means changed since
+submitted. Editing never unsubmits anything by itself, and confidence stays
+optional, as it is everywhere else on the page.
+
+**It rides the backup as an ordinary slot, so the engine and the rules did not
+change.** The renderer appends receipts to `slots()` as `<checkpoint>-submitted`
+and `syncApplyLocal` routes one back to its own key on restore. That slot has the
+same derived document id, size ceiling and 30-second write window as every other,
+so a receipt is at most one more document per checkpoint per student per topic,
+and it needed no change to `firestore.rules` and no new ZCS review of them.
+
+**The key prefix is load-bearing again.** `behistorical-submit-` sits outside the
+`behistorical-draft-` prefix `collectLessonWork()` sweeps, so a receipt is never
+pasted into Canvas as an answer. The browser test has a negative control that
+moves it under the draft prefix and goes red.
+
+**One check, in the browser suite.** `scripts/test/class-pulse-submit.test.js` runs
+the real lesson page against the stand-in transport: off as shipped, the
+fingerprint, the receipt reaching the backup, the teacher's reading of it, edits
+and rating changes reading as changed, and a wiped device getting the receipt back
+with the answer. Five negative controls.
+
+### Class Pulse readers and calibration, added 2026-10-29
+
+**Which AI reads the work is a setting.** `teacher/data/class-pulse-readers.js` lists the
+readers (Claude's fast, everyday and most capable tiers, named by tier rather than model
+version) and the readings each has recorded on the calibration page. The teacher page's
+Reader menu replays a recorded reader through the real engine, offers a reader only for a
+topic it has read, and the drawer shows every reader's level for the open criterion side by
+side. In real use the menu lists only readers ZCS approves, and changing it reads the work
+again.
+
+**Calibration answers carry no levels.** `teacher/data/class-pulse-calibration-u3.js` is the
+Unit 3 set, 104 invented answers judged against the Topic 3.1 to 3.4 descriptors in
+`teacher/data/class-pulse-rubrics.js`. Their levels are settled on the calibration page by
+review: where all four readers (three Claude tiers and ChatGPT, the last by copy and paste)
+agree, that level stands; where they split, Jeff decides; ten unanimous answers are blind
+spot checks. No other level may sit beside them, so the engine test fails if a row ever
+gains a field beyond its id, topic, checkpoint and text, and Unit 3 readings stay out of the
+readers file until the review is done. The calibration
+page itself, and the scripts that rebuild it from this repository, live in AndersonLogic-OS
+`04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.
+
+### Class Pulse by copy and paste, added 2026-10-30
+
+**The pilot reads by copy and paste, not through a server.** Claude for Teachers and
+ChatGPT for Teachers, the free accounts Jeff asked ZCS about on 2026-10-28, are chat apps
+with no developer access, so no page can call them. On After class the teacher page offers
+each checkpoint's submitted answers in batches of 15: **Copy batch**, paste into a new chat,
+paste the reply back, **Read this reply**. The replies become one more reader, "Claude for
+Teachers, pasted", and are kept for that page load only. The page still cannot reach the
+network (`connect-src 'none'`); copying is the clipboard, not a request.
+
+**What is copied is what the engine would send a model.** `teacher/class-pulse-handoff.js`
+builds the text from the engine's own `INSTRUCTIONS`, the checkpoint contract with its
+rubric, and the answer text, numbered A01, A02 and so on in fingerprint order. No name,
+response key, class, confidence or timestamp, and two students with the same words are one
+answer. Only work the engine's `eligibility()` accepts is copied, so drafts never are.
+
+**The reply is never trusted.** It is read answer by answer with the engine's
+`validateOutput()`, then run through the engine as a provider, so an invented quote, a
+missing criterion, an answer left out or a rating given twice shows as Can't tell, and a
+reply pasted next to the wrong batch is refused.
+
+**A name off the record is not a name out of the writing, so each batch is checked
+before it can be copied** (added the same day). `flagsFor()` in the handoff file flags what
+a student may write about themselves: a capitalized word the course never uses as a name,
+a family or life detail, a teacher's name, contact details, the school or class, and a
+name signed at the end. The teacher removes each from the copy (it becomes `[removed]`;
+a personal detail takes its whole sentence) or keeps it, and Copy waits until every flag
+is decided. The student's work is unchanged, and the reading lands on the original
+answer. "The course never uses" comes from `teacher/data/class-pulse-course-words.js`,
+built by `node scripts/build-class-pulse-words.js` from the skills map, the CED source,
+the readings, the lesson data and the decks, counting only words the course capitalizes
+mid-sentence. A stale list only adds flags, so it is not a drift check in the gate;
+rebuild it after adding a unit. Its limit: a student name that is also a history name
+(Henry, Victoria, Madison) is caught only as a signature, after a title, or in a personal
+sentence. On the 144 invented answers it flags three, all real history names the course
+does not use (Blue Mosque, Counter Reformation, Francis Xavier).
+
+**Real writing is off.** `APPROVAL` in the handoff file is `{ realWork: false }`. Invented
+answers need no approval; real ones are offered for copying only once ZCS approves in
+writing and `APPROVAL.reference` names who and when, and `privacy.html` must say what is
+sent and where before that change reaches students.
+
+**Checks.** `scripts/test/class-pulse-handoff.test.js` in the offline suite (thirteen
+negative controls), and copy-and-paste and check-before-copying sections in
+`scripts/test/class-pulse-page.test.js` (four more). The calibration practice that measures how Claude for Teachers reads a batch lives in
+AndersonLogic-OS `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.
+
+### Class Pulse, My class: reading submitted work and keeping ratings, added 2026-10-31
+
+**What it does.** On the Class Pulse page, **My class** signs the teacher in with a school
+staff account (the backup's own sign-in code, `createAuth` in
+`assets/js/behistorical-sync-transport.js`) and reads, through Firestore's REST API with the
+teacher's token, the Checkpoint 1 and 2 answers and Submit receipts of the students on that
+teacher's class list (`teacher/class-pulse-live.js`). An answer counts as submitted only while
+its receipt's fingerprint still matches it. Ratings pasted back are saved under
+`tenants/zcs/pulse/{teacherUid}/ratings/{studentUid__topic__slot}` and read back on every
+pull; a rating counts only for the exact answer it was made from (`answerFingerprint`). A
+submitted answer with no rating shows as "not read yet", never as a level. Across the course
+and One student stay demo-only and are switched off in My class. The project settings come
+from `scripts/lib/sync-config.js` through `scripts/build-sync.js`, which also writes
+`teacher/data/class-pulse-config.js` (staff domains only) and drift-checks it.
+
+**What the rules allow** (`firestore/firestore.rules`, Jeff and Dan's process: summary and
+exact file to Dan before publishing). A staff account (the staff domain exactly, never
+stumail) may: read its own class list (`rosters/{teacherUid}` and `/students`); read, one
+document at a time and never by query, the four checkpoint slots (`checkpoint-one-response`,
+`checkpoint-two-response` and their `-submitted` receipts) of a student on its own list;
+create and update its own ratings for students on its own list, shape-checked, with the
+server's time. No browser can write a class list, the teacher's own included; it is written
+with administrator credentials by `scripts/class-pulse-roster.js`. Student access is
+unchanged. Each teacher read costs one extra read for the list lookup, so one pull of a
+class of 25 is about 200 reads of the free plan's 50,000 a day.
+
+**The page's network.** `connect-src` names Firestore and Google's two sign-in hosts and
+nothing else; scripts may come from `www.gstatic.com` (the pinned sign-in library) and
+`apis.google.com` (its popup helper). Demo contacts no Google host; the library loads only
+when My class is chosen. AI reading stays copy and paste: no AI host is reachable.
+
+**Checks.** `scripts/test/class-pulse-live.test.js` (rules suite) runs the module against
+the real rules in the emulator, and loads the real rules first: the rules suite's negative
+controls used to leave their last broken copy loaded for the suites after it, which
+`firestore-rules.test.js` now also undoes when it finishes. `firestore-rules.test.js` gains
+the Class Pulse assertions and seven mutations; `check-firestore-rules.js` gains six
+invariants. `class-pulse-page.test.js` runs My class end to end against a stand-in for Google
+served on Google's own addresses, so the real policy and requests run unchanged.
+`class-pulse-roster.test.js` (offline) covers the setup script; it was also run against the
+Auth and Firestore emulators with the real admin library on 2026-10-31. It has not been run
+against the real project.
+
+#### Setting up the class list (Jeff, once per class)
+
+You need: your school staff account, which co-owns the `behistoric` Firebase project, and a
+list of the class's students as a file with two columns, `email,name`, one student per line,
+student addresses ending `@stumail.zcs.k12.in.us`. Each student must have signed in to
+BeHistorical at least once. Keep the file on your own computer, never in this repository.
+
+1. Open **shell.cloud.google.com**, signed in with your school staff account.
+2. In the Cloud Shell window, open the three-dot menu, choose **Upload**, and upload the
+   file, for example `g4.csv`. It lands in your home folder.
+3. Paste these lines, one at a time (until Class Pulse ships, the branch is
+   `claude/busy-pasteur-d7c0wl`; afterwards leave out `-b` and the branch name):
+
+   ```
+   git clone --depth 1 -b claude/busy-pasteur-d7c0wl https://github.com/JeffAndersonLogic/ap-world-history.git
+   cd ap-world-history
+   npm install --no-save firebase-admin
+   gcloud config set project behistoric
+   node scripts/class-pulse-roster.js ~/g4.csv --teacher YOUR-STAFF-EMAIL@zcs.k12.in.us --class G4 --approval "Dan Layton, email of 2026-10-22"
+   ```
+
+4. Read what it prints: how many students it found, and who has not signed in yet. Nothing
+   is written yet.
+5. Run the last line again with ` --apply` at the end. It says **Done**.
+6. Delete the uploaded file from Cloud Shell when you are finished: `rm ~/g4.csv`.
+
+If it stops with a message about credentials or a quota project, run
+`gcloud auth application-default login`, follow the link it prints, and try step 5 again.
+Run it again any time to add students who have since signed in.
+
+#### What has to happen, in order, before My class works for real
+
+1. Dan approves the rules change (summary and exact file, AndersonLogic-OS
+   `04_PRODUCTS/BeHistorical/Rules-Change-Class-Pulse-2026-10-31.md`).
+2. Jeff publishes the rules: Firebase console, Firestore Database, Rules, paste the whole of
+   `firestore/firestore.rules`, Publish. A file in this repository is not a deployed rule.
+3. Jeff sets up the G4 class list (above).
+4. Jeff says "ship it": `submit` in `scripts/lib/sync-config.js` goes true so students see
+   **Submit to your teacher**, the renderers are rebuilt, and the page ships to `main`.
+5. Reading by AI waits for Dan's written yes: then `APPROVAL` in
+   `teacher/class-pulse-handoff.js` names the reference and the service ids it covers
+   (`claude-for-teachers`, `chatgpt-for-teachers`, or both), and `privacy.html` says what
+   is sent and where, before that change ships. Approving one service never opens the
+   other.
+
+**Which AI, added 2026-10-31.** The paste panel has a **Pasting into** choice: Claude for
+Teachers or ChatGPT for Teachers. Both get the same text and the same checks; the choice
+is remembered on the device, recorded with every saved rating (`reader`, for example
+`chatgpt-for-teachers-pasted`), and shown in the drawer as "Read by ...". Only a personal
+account's practice with invented answers needs no approval; real writing needs the
+district's approval of that specific service, and a teacher (not personal) account.

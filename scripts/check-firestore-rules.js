@@ -48,7 +48,9 @@ const RESPONSE_PATH = 'match /tenants/{tenantId}/responses/{responseId}';
 
 // A condition that does not name one of these is not constrained by identity.
 // `false` is the other acceptable answer, and it is checked separately.
-const OWNERSHIP_TOKENS = ['ownsStored', 'ownsIncoming'];
+// The Class Pulse helpers (2026-10-31) name a record too: the teacher's own list,
+// the teacher's own ratings, a student on the teacher's own list.
+const OWNERSHIP_TOKENS = ['ownsStored', 'ownsIncoming', 'ownsRoster', 'ownsPulse', 'rosterHolds'];
 const TENANT_TOKENS = ['inTenant'];
 
 // Comments are stripped before anything is parsed, and this is not tidiness.
@@ -83,7 +85,7 @@ function allowStatements(source) {
   return out;
 }
 
-// The two collections the rules may protect, and nothing else. Stated here so
+// The collections the rules may protect, and nothing else. Stated here so
 // a rules file that quietly starts protecting some other collection fails
 // rather than passing on a technicality.
 const REMOTE_PATH = 'match /tenants/{tenantId}/remoteSessions/{sessionId}';
@@ -104,6 +106,19 @@ function blockBody(source, header) {
   return depth ? null : source.slice(start, i - 1);
 }
 
+// Class Pulse, added 2026-10-31: the teacher's class list (two levels) and the
+// teacher's own ratings. The trailing space keeps the list header from matching
+// the students header it is a prefix of.
+const ROSTER_PATH = 'match /tenants/{tenantId}/rosters/{teacherUid} ';
+const ROSTER_STUDENTS_PATH = 'match /tenants/{tenantId}/rosters/{teacherUid}/students/{studentUid}';
+const PULSE_PATH = 'match /tenants/{tenantId}/pulse/{teacherUid}/ratings/{ratingId}';
+
+// The body of one rules function, up to the closing brace on its own line.
+function fnBody(source, name) {
+  const m = new RegExp('function ' + name + '\\([^)]*\\)\\s*\\{([\\s\\S]*?)\\n\\s*\\}').exec(source);
+  return m ? m[1] : '';
+}
+
 // The assertions, factored out so the negative controls below can run the exact
 // same set against a mutated file. A check whose negative control tests a
 // different thing than the real run is not a negative control.
@@ -117,16 +132,18 @@ function assertRules(rawSource, report) {
 
   const responses = blockBody(source, RESPONSE_PATH) || '';
   const remote = blockBody(source, REMOTE_PATH) || '';
+  const pulse = [ROSTER_PATH, ROSTER_STUDENTS_PATH, PULSE_PATH].map(p => blockBody(source, p) || '');
 
-  // Every grant lives in one of the two named blocks. A third block, or an
-  // allow outside both, is a collection nobody reviewed.
+  // Every grant lives in a named block. Another block, or an allow outside
+  // them, is a collection nobody reviewed.
   const total = allowStatements(source).length;
-  const named = allowStatements(responses).length + allowStatements(remote).length;
+  const named = [responses, remote, ...pulse].reduce((n, b) => n + allowStatements(b).length, 0);
   report('every allow statement is inside a reviewed collection', total === named,
-    `${total} in the file, ${named} in the response and remote-session blocks`);
+    `${total} in the file, ${named} in the response, remote-session and Class Pulse blocks`);
 
   assertResponses(source, responses, report);
   assertRemote(remote, report);
+  assertClassPulse(source, pulse, report);
 
   // A wildcard match that grants anything reaches every collection in the
   // project at once, including ones nobody has written yet.
@@ -282,6 +299,46 @@ function assertRemote(block, report) {
     /m\.keys\(\)\.hasOnly\(/.test(block) && /m\.title\.size\(\)\s*<=\s*\d+/.test(block));
 }
 
+// ── Class Pulse, added 2026-10-31 ──────────────────────────────────────────
+  //
+  // A teacher reads a student's work only when that student is on the teacher's
+  // own class list, and the list is written with administrator credentials only.
+  // Each of these is silent if it goes: the rules still compile and still keep
+  // students out of each other's work.
+function assertClassPulse(source, blocks, report) {
+  report('the Class Pulse blocks exist', blocks.every(b => b.length > 0), 'class list, its students, ratings');
+  for (const block of blocks) {
+    for (const a of allowStatements(block)) {
+      const cond = a.condition;
+      if (cond === 'false') continue;
+      const label = `Class Pulse: allow ${a.verbs.join(', ')}`;
+      report(`${label} names whose record it is`, OWNERSHIP_TOKENS.some(t => cond.includes(t)), cond);
+      report(`${label} names which tenant`, TENANT_TOKENS.some(t => cond.includes(t)), cond);
+      report(`${label} is not satisfiable by authentication alone`,
+        !/^\s*(true|signedIn\(\)|request\.auth\s*!=\s*null)\s*$/.test(cond), cond);
+    }
+  }
+  report('ratings are validated against a closed field allowlist',
+    /\.keys\(\)\.hasOnly\(/.test(fnBody(source, 'ratingShapeIsValid')));
+  report('ratings may never be deleted', /allow\s+delete\s*:\s*if\s+false\s*;/.test(blocks[2]));
+  const body = name => fnBody(source, name);
+  report('staff means the staff domain exactly, never the student domain',
+    /split\('@'\)\[1\]\s*==\s*'zcs\.k12\.in\.us'/.test(body('isStaffIn')) && body('isStaffIn').includes('inTenant('));
+  report('every Class Pulse grant requires staff',
+    ['rosterHolds', 'ownsRoster', 'ownsPulse'].every(f => body(f).includes('isStaffIn(')));
+  report('a teacher reads only students on their own list, by the caller\'s own id',
+    /rosters\/\$\(request\.auth\.uid\)\/students\//.test(body('rosterHolds')));
+  const lists = /match \/tenants\/\{tenantId\}\/rosters\/\{teacherUid\} \{([\s\S]*?)\n\s*\}/.exec(source);
+  const students = /match \/tenants\/\{tenantId\}\/rosters\/\{teacherUid\}\/students\/\{studentUid\} \{([\s\S]*?)\n\s*\}/.exec(source);
+  report('no browser can write a class list',
+    !!lists && !!students && [lists[1], students[1]].every(b => /allow write: if false;/.test(b)
+      && allowStatements(b).every(a => a.condition === 'false' || !a.verbs.some(v => ['write', 'create', 'update', 'delete'].includes(v)))));
+  report('a teacher reads checkpoint answers only, not everything a student has saved',
+    /responseId\.split\('__'\)\[2\] in \['checkpoint-one-response'/.test(fnBody(source, 'rosterHoldsAuthor')));
+  report('a teacher\'s read of student work is one document at a time, never a query',
+    /allow get: if [^;]*rosterHoldsAuthor\(\)/.test(source) && !/allow [a-z, ]*list[a-z, ]*: if [^;]*rosterHoldsAuthor/.test(source));
+}
+
 // ── The run ──────────────────────────────────────────────────────────────────
 
 let failures = 0;
@@ -333,16 +390,32 @@ const MUTATIONS = [
     s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
   ['delete is opened up to the author',
     s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')],
+  ['a teacher may add students to their own class list',
+    s => s.replace(/(rosters\/\{teacherUid\}\/students\/\{studentUid\} \{[\s\S]*?)allow write: if false;/, '$1allow write: if inTenant(tenantId) && ownsRoster(tenantId, teacherUid);')],
+  ['students count as staff',
+    s => s.replace(/split\('@'\)\[1\] == 'zcs\.k12\.in\.us'/, "split('@')[1] in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us']")],
+  ['the staff check is dropped from the class-list lookup',
+    s => s.replace(/return isStaffIn\(tenantId\)\n(\s*)&& exists/, 'return inTenant(tenantId)\n$1&& exists')],
+  ['the class list is looked up under any teacher, not the caller',
+    s => s.replace(/rosters\/\$\(request\.auth\.uid\)\/students\//, 'rosters/$(studentUid)/students/')],
+  ['a teacher may read every slot of a student on their list',
+    s => s.replace(/&& responseId\.split\('__'\)\[2\] in \[[^\]]*\]/, '')],
+  ['a teacher may query all student work',
+    s => s.replace(/allow get: if inTenant\(tenantId\) && rosterHoldsAuthor\(\);/, 'allow get, list: if inTenant(tenantId) && rosterHoldsAuthor();')],
   ['a wildcard match is added "temporarily" while debugging',
     s => s.replace(/service cloud\.firestore \{\n(\s*)match \/databases\/\{database\}\/documents \{/,
       'service cloud.firestore {\n$1match /databases/{database}/documents {\n      match /{document=**} {\n        allow read, write: if request.auth != null;\n      }')],
+  ['a teacher may delete the ratings they keep',
+    s => s.replace(/(ratings\/\{ratingId\} \{[\s\S]*?)allow delete: if false;/, '$1allow delete: if inTenant(tenantId) && ownsPulse();')],
+  ['the ratings allowlist becomes a floor',
+    s => s.replace(/(function ratingShapeIsValid\(\) \{\s*return request\.resource\.data\.keys\(\)\.)hasOnly\(/, '$1hasAny(')],
   // The remote-session block, where the id is the permission.
   ['remote sessions become listable, so ids can be discovered',
     s => s.replace(/allow get: if idIsCapability\(\) && live\(\);/, 'allow get, list: if idIsCapability() && live();')],
   ['remote sessions never expire',
     s => s.replace(/allow get: if idIsCapability\(\) && live\(\);/, 'allow get: if idIsCapability();')],
   ['a student account may start a remote session',
-    s => s.replace(/== 'zcs\.k12\.in\.us';/, "in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'];")],
+    s => s.replace(/(function isStaff\(\) \{[\s\S]*?)== 'zcs\.k12\.in\.us';/, "$1in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'];")],
   ['anyone may start a remote session',
     s => s.replace(/allow create: if idIsCapability\(\)\n(\s*)&& isStaff\(\)/, 'allow create: if idIsCapability()\n$1&& true')],
   ['the iPad write cap is removed',
