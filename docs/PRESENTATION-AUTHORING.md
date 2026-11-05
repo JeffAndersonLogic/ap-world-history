@@ -143,6 +143,17 @@ Do not add a slide because a template expects one. Do not split examples into se
 
 One projected slide should usually carry one argument.
 
+### Big rocks only (Jeff, 2026-11-05)
+
+**The projected deck carries the big ideas, not every detail.** Jeff found Topic 4.7 at 27 slides "way too detailed" and set this as the theme for every presentation from then on: focus on the big rocks, the ideas that need to be addressed and that matter, and leave the small details off the projector. The First & 10 has already told the full story, the teacher notes carry the depth, and the modules carry the practice, so a slide that repeats a detail from any of them is a slide the class can lose.
+
+- **One slide per big idea.** A big idea is about the size of one Key Concept. When a Key Concept has two halves (a state welcomes a group, or pushes it out), both halves share one comparison slide rather than taking a slide each.
+- **Named cases are evidence on that slide, not slides of their own.** A case earns its own slide only when the Key Concept itself names it and it needs its own mechanism. Topic 4.7 keeps the Qing and the casta ranking, the two cases KC-4.2.III.A names, and folds every other case into its big idea.
+- **A picture does not earn a slide.** Source pictures to observe belong in the Evidence Lab. On a slide, a picture serves the claim beside it.
+- **No slide for a job another surface already does:** the map (Module 01), an optional module, a myths list (each correction goes in the AVOID note of the slide it belongs to), or a quotation on one slide and its model on the next.
+- **Keep the required functions** in section 7 and the handoffs to the modules the class uses that day. Everything else that is detail goes to the notes.
+- **The count is still a diagnostic, not a quota, but read it.** A deck that runs well past its big ideas plus its required functions and module handoffs is carrying detail. Topic 4.7 went from 27 slides to 16 with every Key Concept still banded and every CED example still in the First & 10. Decks built before this rule are revised to it the next time they are touched.
+
 ## 7. Reconcile required functions with flexible structure
 
 A finished BeHistorical presentation should contain these instructional functions:
@@ -510,7 +521,7 @@ When this standard must be reduced to a few lines, preserve these ideas:
 2. Tell the ninth-grade story and find the spine before designing slides.
 3. Every example needs a "so what"; examples serve claims rather than becoming trivia slides.
 4. Start the student-facing sequence with a fast BeReady retrieval + bridge when prior learning exists.
-5. The story decides the order and slide count.
+5. The story decides the order and slide count, and the projector carries only the big rocks: one slide per big idea, cases as evidence inside it.
 6. Approve the story, name the retelling slide, then let assets and code enter.
 7. One canonical teacher source generates the student deck.
 8. Verify instruction and software separately, prove new checks can fail, report adjacent findings, then ship.

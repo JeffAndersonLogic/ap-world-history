@@ -270,7 +270,7 @@ for (const deck of DECKS) {
 // because a key that grows back into a sentence, or a slide that loses its
 // keys, still renders and looks fine.
 console.log('\n  MUST LAND keys\n');
-const KEYS_DECKS = new Set(['4.1', '4.2', '4.3', '4.4', '4.5']);
+const KEYS_DECKS = new Set(['4.1', '4.2', '4.3', '4.4', '4.5', '4.7']);
 const KEY_MAX_WORDS = 10;
 function keyProblems(slides) {
   const out = [];

@@ -55,7 +55,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The Frame · Continuity and Change",
+      "eyebrow": "The Frame · Three Big Ideas",
       "title": "The ladder stayed. The people on it moved.",
       "footer": "Continuity: rulers who inherited power, privileged nobles, most people at the bottom. Change: who stood where.",
       "kc": "Unit 4: Learning Objective M",
@@ -91,137 +91,52 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
-      "eyebrow": "Where It Happened",
-      "title": "Who belonged, who rose, who was squeezed.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-4-7.svg",
-        "alt": "World map with labeled dots at England, Versailles, Spain and Portugal, Salonica, Anatolia, Russia, Mughal India, Beijing and Mexico City, each with a date, shaded in three colors explained in the key"
-      },
-      "footer": "The key sorts every case: who could belong, new elites, or old elites squeezed.",
-      "kc": "Unit 4: Learning Objective M"
-    },
-    {
-      "kind": "story-scene",
-      "eyebrow": "Who Belongs · 1492 to 1497",
-      "title": "Pushed out, and taken in.",
+      "kind": "split-scenes",
+      "eyebrow": "Big Idea 1 of 3 · Who Belongs",
+      "title": "Welcomed and used, or pushed out and limited.",
       "kc": "KC-4.3.I.B",
       "template": {
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-7/4.7%20-%20Jewish%20Refugees%20Ottoman.JPG",
-          "alt": "Reconstruction of a refugee family carrying belongings at an Ottoman port, with cargo boats and a city behind them",
-          "fit": "contain"
-        },
-        "steps": [
-          {
-            "label": "Spain, 1492",
-            "text": "Jews who would not convert were ordered to leave."
-          },
-          {
-            "label": "Portugal, 1497",
-            "text": "Most Jews were forcibly baptized rather than allowed to leave."
-          },
-          {
-            "label": "Ottoman cities",
-            "text": "Bayezid II allowed refugees to settle in Istanbul, Salonica and other cities.",
-            "key": true
+        "left": {
+          "name": "Welcomed or used",
+          "items": [
+            "The **Ottomans** settle Jews expelled from Spain, 1490s",
+            "Christians and Jews protected, but they pay the **jizya**",
+            "**Akbar** ends the jizya, 1564, and makes Rajput princes generals"
+          ],
+          "visual": {
+            "url": "../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg",
+            "alt": "A Mughal painting: the emperor sits on a throne under a red and yellow canopy while a man bows low before him, nobles stand around the throne, a crowd with trays and weapons gathers below, and a fortress stands on the rocky hill behind",
+            "credit": "A Rajput ruler submits to Akbar, 1569, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
+            "ratio": 0.624,
+            "position": "50% 40%"
           }
-        ],
-        "caption": "Opposite state policies toward religious difference"
-      }
-    },
-    {
-      "kind": "story-scene",
-      "eyebrow": "Who Belongs · The Ottoman Empire",
-      "title": "Room for difference, but not equality.",
-      "kc": "KC-4.3.I.B",
-      "template": {
-        "steps": [
-          {
-            "label": "Protected",
-            "text": "Christians and Jews may practice their religion."
-          },
-          {
-            "label": "Self-run",
-            "text": "Their own leaders run marriage, inheritance, schools and family courts."
-          },
-          {
-            "label": "The price",
-            "text": "They pay a special tax, the jizya."
-          },
-          {
-            "label": "The limits",
-            "key": true,
-            "text": "In Islamic courts, generally no testimony against a Muslim; top jobs go to Muslims."
-          }
-        ],
-        "visual": {
-          "url": "../assets/images/topics/4-7/armenian-wedding-vanmour-c1720.jpg",
-          "alt": "A painting of a wedding procession outdoors by the water: musicians and men in long robes and fur hats lead the way, with a crowd of veiled women in colored robes on the right beside a domed building",
-          "credit": "Jean Baptiste Vanmour, Armenian Wedding, about 1720 to 1737 · Rijksmuseum · Public domain",
-          "ratio": 1.325,
-          "position": "38% 60%"
         },
-        "caption": "An Armenian wedding in the Ottoman Empire, painted about 1720 to 1737"
-      }
-    },
-    {
-      "kind": "story-scene",
-      "eyebrow": "Who Belongs · Mughal India",
-      "title": "Same empire, opposite policies.",
-      "kc": "KC-4.3.I.B",
-      "template": {
-        "steps": [
-          {
-            "label": "1556",
-            "text": "Akbar, a Muslim, begins to rule a mostly Hindu empire."
-          },
-          {
-            "label": "1564",
-            "text": "He ends the jizya, the tax on non-Muslims."
-          },
-          {
-            "label": "Rajputs",
-            "text": "He marries into Rajput royal families and makes their princes top commanders."
-          },
-          {
-            "label": "1679",
-            "key": true,
-            "text": "Aurangzeb brings the jizya back, but still employs many Hindu officers."
+        "right": {
+          "name": "Pushed out or limited",
+          "items": [
+            "**Spain** orders Jews to convert or leave, 1492",
+            "**Portugal** forces most to be baptized, 1497",
+            "The **Qing** order Han men to wear the queue, 1645"
+          ],
+          "visual": {
+            "ai": true,
+            "url": "../assets/images/topics/4-7/4.7%20-%20Jewish%20Refugees%20Ottoman.JPG",
+            "alt": "Reconstruction of a refugee family carrying belongings at an Ottoman port, with cargo boats and a city behind them",
+            "position": "50% 45%"
           }
-        ],
-        "visual": {
-          "url": "../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg",
-          "alt": "A Mughal painting: the emperor sits on a throne under a red and yellow canopy while a man bows low before him, nobles stand around the throne, a crowd with trays and weapons gathers below, and a fortress stands on the rocky hill behind",
-          "credit": "A Rajput ruler submits to Akbar, 1569, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
-          "ratio": 0.624,
-          "position": "50% 45%"
         },
-        "caption": "Rai Surjan Hada bows to Akbar, 1569"
-      }
-    },
-    {
-      "kind": "frame-letterbox",
-      "eyebrow": "Who Belongs · Ottoman Women, by Class · Istanbul, about 1720 to 1737",
-      "title": "Who has a say in this household?",
-      "subtitle": "A wealthy mother receives visitors after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.",
-      "kc": "KC-4.3.I.B",
-      "template": {
-        "visual": {
-          "url": "../assets/images/topics/4-7/lying-in-room-vanmour-c1720.jpg",
-          "alt": "A painting of a richly decorated room: a woman sits up in a red bed under green curtains on the right, women in colored robes sit and stand around her, one carries a tray, coffee brews on a brass brazier in the middle, and a woman at the lower left prepares drinks",
-          "credit": "Jean Baptiste Vanmour, Lying-in Room of a Distinguished Turkish Woman, about 1720 to 1737 · Rijksmuseum · Public domain",
-          "ratio": 1.626,
-          "fit": "contain"
-        }
+        "bothLabel": "Why",
+        "both": [
+          "The state wanted taxes, soldiers, skills or one faith",
+          "The next ruler could reverse it: Aurangzeb, 1679"
+        ]
       }
     },
     {
       "kind": "story-scene",
-      "eyebrow": "New Elites · China, 1644",
+      "eyebrow": "Big Idea 2 of 3 · New Elites · China, 1644",
       "title": "New rulers at the top. The old system kept running.",
-      "footer": "A new elite, limits on the majority, and a continuity, all in one empire.",
+      "footer": "A new elite on top, and the old system running underneath.",
       "kc": "KC-4.2.III.A",
       "template": {
         "visual": {
@@ -233,39 +148,24 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "Ming",
-            "text": "Han Chinese emperors; Scholar-officials run the government."
+            "text": "Han Chinese emperors. Scholar-officials run the government."
           },
           {
             "label": "Qing, 1644",
-            "text": "Manchu emperors and the **banners**, a new elite; Han men must wear the **queue** (1645); Many top posts shared: one Manchu, one Han.",
+            "text": "Manchu emperors and the **banners**, a new elite. Many top posts shared: one Manchu, one Han.",
             "key": true
           },
           {
             "label": "Continued",
-            "text": "The civil service exams; Confucian officials and law codes; Han scholars fill most government jobs."
+            "text": "The civil service exams. Confucian officials and law codes. Han scholars fill most government jobs."
           }
         ],
         "caption": "Conquest created a new elite; institutions continued"
       }
     },
     {
-      "kind": "frame-subtitle",
-      "eyebrow": "",
-      "title": "Painted in 1662, eighteen years after the Qing emperor entered Beijing: banner horsemen at one of the celebrations held for him.",
-      "kc": "KC-4.2.III.A",
-      "template": {
-        "visual": {
-          "url": "../assets/images/topics/4-7/banner-horsemanship-1662.jpg",
-          "alt": "A section of a painted handscroll: a man stands on a galloping horse playing a flute, while rows of men in blue and yellow carry triangular flame-edged banners and others ride horses; a yellow label on the right carries Chinese characters",
-          "credit": "Nardunbu, Horsemanship Competition for the Shunzhi Emperor, dated 1662 · Metropolitan Museum of Art · Public domain",
-          "ratio": 1.716,
-          "position": "50% 50%"
-        }
-      }
-    },
-    {
       "kind": "ledger",
-      "eyebrow": "New Elites · Spanish America",
+      "eyebrow": "Big Idea 2 of 3 · New Elites · Spanish America",
       "title": "A new top, ranked by birthplace and ancestry.",
       "kc": "KC-4.2.III.A",
       "template": {
@@ -306,232 +206,47 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-evidence",
-      "eyebrow": "New Elites · A Casta Painting · Mexico, about 1715 to 1720",
-      "title": "A chart on canvas, not a census.",
-      "subtitle": "In Spanish, the label says: from a mestizo and an Indian woman comes a coyote. Most casta labels never appear in official records.",
-      "kc": "KC-4.2.III.A",
-      "template": {
-        "scene": {
-          "ai": true,
-          "url": "../assets/images/topics/4-7/4.7%20-%20Casta%20System.JPG",
-          "alt": "Reconstruction of a colonial artist painting a family while an elite patron watches, with a busy street outside",
-          "fit": "contain"
-        },
-        "evidence": {
-          "url": "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
-          "alt": "A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right",
-          "credit": "Juan Rodríguez Juárez, c.1715 to 1720 · Hispanic Society · Public domain",
-          "ratio": 1.424,
-          "fit": "contain",
-          "tagPos": "bl"
-        },
-        "sceneLabel": "Reconstruction: an artist and a patron",
-        "evidenceLabel": "Historical painting: the classification to question"
-      }
-    },
-    {
-      "kind": "timeline-fortunes",
-      "eyebrow": "Old Elites · Rise and Fall",
-      "title": "Sipahis and boyars fell. Others rose in their place.",
-      "footer": "The lines show direction only, not measured power.",
-      "kc": "KC-4.2.III.B",
-      "template": {
-        "range": [
-          1450,
-          1750
-        ],
-        "tick": 50,
-        "cases": [
-          {
-            "name": "Ottoman sipahis",
-            "note": "Cavalry who held timars",
-            "points": [
-              {
-                "year": 1450,
-                "level": 3.4
-              },
-              {
-                "year": 1550,
-                "level": 3.4
-              },
-              {
-                "year": 1650,
-                "level": 2
-              },
-              {
-                "year": 1750,
-                "level": 1
-              }
-            ],
-            "events": [
-              {
-                "year": 1600,
-                "label": "c. 1600",
-                "text": "guns and cash matter more"
-              }
-            ]
-          },
-          {
-            "name": "Tax farmers and local families",
-            "note": "Ottoman provinces",
-            "points": [
-              {
-                "year": 1450,
-                "level": 0.8
-              },
-              {
-                "year": 1580,
-                "level": 1.2
-              },
-              {
-                "year": 1695,
-                "level": 2.4
-              },
-              {
-                "year": 1750,
-                "level": 3.4
-              }
-            ],
-            "events": [
-              {
-                "year": 1695,
-                "label": "1695",
-                "text": "tax farms sold for life"
-              }
-            ]
-          },
-          {
-            "name": "Russian boyars",
-            "note": "Great noble families",
-            "points": [
-              {
-                "year": 1450,
-                "level": 3.2
-              },
-              {
-                "year": 1600,
-                "level": 2.8
-              },
-              {
-                "year": 1682,
-                "level": 2.2
-              },
-              {
-                "year": 1722,
-                "level": 1
-              },
-              {
-                "year": 1750,
-                "level": 0.8
-              }
-            ],
-            "events": [
-              {
-                "year": 1722,
-                "label": "1722",
-                "text": "Table of Ranks"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "kind": "scene-case",
-      "eyebrow": "Old Elites · Russia",
-      "title": "Squeezed into service, and still privileged.",
+      "eyebrow": "Big Idea 3 of 3 · Old Elites Squeezed",
+      "title": "Squeezed in most places. Winning in England.",
       "kc": "KC-4.2.III.B",
       "template": {
+        "steps": [
+          {
+            "label": "Ottoman sipahis",
+            "text": "Guns and cash matter more; timar land becomes tax farms."
+          },
+          {
+            "label": "Russian boyars",
+            "text": "Must serve the tsar for life, but keep their estates and serfs."
+          },
+          {
+            "label": "French nobles",
+            "text": "Keep titles, land and tax freedom; lose the power to defy the king."
+          },
+          {
+            "label": "English nobles",
+            "key": true,
+            "text": "Invite William of Orange in 1688; Parliament limits the monarchs after."
+          }
+        ],
+        "proves": "Fluctuated: old elites lost some powers, kept others, and in England gained.",
         "visual": {
           "ai": true,
           "url": "../assets/images/topics/4-7/4.7%20-%20Peter%20the%20Great.JPG",
           "alt": "Reconstruction of Russian nobles working at desks with ledgers in an office under Peter the Great's service reforms",
           "fit": "contain"
-        },
-        "sources": [
-          {
-            "visual": {
-              "url": "../assets/images/topics/4-7/peter-the-great-russia-c1700.jpg",
-              "alt": "A painted half-length portrait of a man with dark curly hair and a small mustache, in a steel breastplate over a yellow coat, with a blue sash, one hand on a staff and the other on his hip",
-              "credit": "Peter the Great, probably by a Russian painter, first half of the 1700s · Rijksmuseum · Public domain",
-              "ratio": 0.822,
-              "position": "50% 30%"
-            },
-            "caption": "A historical portrait of Peter the Great"
-          }
-        ],
-        "steps": [
-          {
-            "label": "1682",
-            "text": "The old system of seats by family rank is ended."
-          },
-          {
-            "label": "Peter",
-            "text": "Replaces the boyar council with a Senate he appoints."
-          },
-          {
-            "label": "Service",
-            "text": "Nobles must shave, dress like western Europeans, and serve for life."
-          },
-          {
-            "label": "1722",
-            "text": "The Table of Ranks: place depends on rank earned."
-          },
-          {
-            "label": "Kept",
-            "key": true,
-            "text": "Nobles keep their estates and their power over serfs."
-          }
-        ],
-        "proves": "Nobles lost independence while keeping estates and power over serfs."
-      }
-    },
-    {
-      "kind": "balance",
-      "eyebrow": "Old Elites · France and England",
-      "title": "Squeezed in one kingdom, winning in another.",
-      "kc": "KC-4.2.III.B",
-      "template": {
-        "job": "Face the king",
-        "left": {
-          "tag": "France",
-          "name": "Versailles",
-          "when": "1682",
-          "text": "Nobles keep titles, land and tax freedom, and lose the power to defy the king."
-        },
-        "right": {
-          "tag": "England",
-          "name": "Parliament",
-          "when": "1688",
-          "text": "Nobles invite William of Orange; James II flees; Parliament limits the monarchs after him."
-        },
-        "claimLabel": "Fluctuated",
-        "claim": "The power of old elites could fall **or rise**."
-      }
-    },
-    {
-      "kind": "source-quote",
-      "eyebrow": "A Claim to Test · 1555",
-      "title": "An ambassador writes home about the Ottomans.",
-      "footer": "Busbecq wanted reforms at home. Keep that in mind.",
-      "template": {
-        "quote": "No distinction is attached to birth among the Turks ... It is by merit that men rise in the service ... with us there is no opening left for merit; birth is the standard for everything.",
-        "attribution": {
-          "author": "Ogier Ghiselin de Busbecq, Habsburg ambassador to Suleiman",
-          "work": "Turkish Letters, translated 1881",
-          "year": "describing 1555"
-        },
-        "notice": "In your own words: what is Busbecq's argument?"
+        }
       }
     },
     {
       "kind": "claim-evidence",
       "eyebrow": "Claims and Evidence in Sources 3.D · Model",
       "title": "Support, modify, or refute?",
-      "footer": "Most strong answers modify: true, but only for some people.",
+      "footer": "Busbecq wanted reforms at home. Most strong answers modify: true, but only for some people.",
       "template": {
-        "claim": "Busbecq: among the Ottomans, **men rise by merit, not birth**.",
+        "claimLabel": "Busbecq, Habsburg ambassador to Suleiman, 1555",
+        "claim": "\"No distinction is attached to birth among the Turks ... It is by merit that men rise in the service ...\"",
         "evidence": [
           {
             "text": "Boys taken by the devshirme rose to be generals and grand viziers.",
@@ -547,31 +262,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "reasoning": "Merit opened the sultan's service, but only to Muslims, and **the throne itself passed by birth**, so the claim is true for officials and not for the whole empire."
-      }
-    },
-    {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "The Ottomans gave everyone equal rights.",
-            "evidence": "Christians and Jews were protected but paid the jizya and generally could not testify against a Muslim in an Islamic court.",
-            "source": "Ottoman law"
-          },
-          {
-            "myth": "Casta was a fixed chart everyone was locked into.",
-            "evidence": "How a person was recorded could change with wealth, job and reputation.",
-            "source": "Colonial records"
-          },
-          {
-            "myth": "Old elites simply disappeared.",
-            "evidence": "Russian and French nobles kept land and privilege; English nobles gained power.",
-            "source": "Russia, France, England"
-          }
-        ]
       }
     },
     {
@@ -622,16 +312,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Module 05 · Skill Builder",
       "title": "Test a source's argument.",
       "subtitle": "Support, modify, or refute: Busbecq's claim that in Europe \"birth is the standard for everything.\"",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-7-changing-social-hierarchies.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "Who could belong.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-7-changing-social-hierarchies.html#modules"
