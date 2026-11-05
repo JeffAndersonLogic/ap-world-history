@@ -6,7 +6,7 @@
  * and the check on the reply that comes back.
  *
  * What it proves:
- *   - real student writing cannot be copied out as shipped: APPROVAL is off, and
+ *   - real student writing cannot be copied out without a named approval, and
  *     turning it on needs a named reference;
  *   - the copied text carries the engine's instructions and the topic's contract
  *     word for word, and every answer, but no student name, response key, class,
@@ -77,10 +77,9 @@ function reply(batch, k, change) {
 const checks = [];
 const check = (name, fn) => checks.push({ name, fn });
 
-check('real student writing cannot be copied out as shipped', async (M) => {
-  assert.equal(M.APPROVAL.realWork, false, 'APPROVAL.realWork must stay false until ZCS approves in writing');
+check('real student writing cannot be copied out without a named approval', async (M) => {
   const real = [{ text: 'A real answer.', completionState: 'verified-submission' }];
-  assert.equal(M.gate(real).ok, false);
+  assert.equal(M.gate(real, { realWork: false, reference: '', services: [] }, 'claude-for-teachers').ok, false, 'no approval, no copy');
   assert.equal(M.gate(real, { realWork: true, reference: '', services: ['claude-for-teachers'] }).ok, false, 'approval needs a named reference');
   const claudeOnly = { realWork: true, reference: 'Dan Layton, email of 2026-11-02', services: ['claude-for-teachers'] };
   assert.equal(M.gate(real, claudeOnly, 'claude-for-teachers').ok, true);
@@ -90,7 +89,7 @@ check('real student writing cannot be copied out as shipped', async (M) => {
 });
 
 check('the shipped approval names who approved it whenever it is on', async (M) => {
-  const a = H.APPROVAL;
+  const a = M.APPROVAL;
   assert.ok(a.realWork === false || (typeof a.reference === 'string' && a.reference.trim().length >= 8 && Array.isArray(a.services) && a.services.length > 0));
   assert.ok((a.services || []).every(id => M.SERVICES.some(x => x.id === id)), 'every approved service is one the page knows');
 });
@@ -229,9 +228,10 @@ async function run(M, quiet) {
   console.log('\n\x1b[1mNegative controls\x1b[0m');
   const src = fs.readFileSync(SOURCE, 'utf8');
   const controls = [
-    { name: 'approval switched on with no reference', from: 'const APPROVAL = { realWork: false', to: 'const APPROVAL = { realWork: true', expect: /cannot be copied out as shipped/ },
-    { name: 'approving one service opens the other', from: '&& Array.isArray(a.services) && a.services.includes(sid))', to: ')', expect: /cannot be copied out as shipped/ },
-    { name: 'the gate waves real writing through', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: 'if (true)', expect: /cannot be copied out as shipped/ },
+    { name: 'the shipped approval loses its reference', from: "reference: 'Dan Layton, email of 2026-11-05'", to: "reference: ''", expect: /names who approved it/ },
+    { name: 'the shipped approval names a service the page does not know', from: "services: ['claude-for-teachers'] };", to: "services: ['some-other-ai'] };", expect: /names who approved it/ },
+    { name: 'approving one service opens the other', from: '&& Array.isArray(a.services) && a.services.includes(sid))', to: ')', expect: /without a named approval/ },
+    { name: 'the gate waves real writing through', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: 'if (true)', expect: /without a named approval/ },
     { name: 'the response key travels with the answer', from: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text })", to: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text, row: rowKeys.get(fp) })", extra: ['const seen = new Map();', 'const seen = new Map(), rowKeys = new Map();\n    for (const r of rows) rowKeys.set(await E.digest(r.text), r.key);'], expect: /no name, response key/ },
     { name: 'answers numbered in roster order', from: '.sort((a, b) => a[0].localeCompare(b[0]))', to: '', expect: /fingerprints, not the roster/ },
     { name: 'drafts are copied too', from: 'if (E.eligibility(r)) continue;', to: 'if (!r.text.trim()) continue;', expect: /unfinished and empty/ },

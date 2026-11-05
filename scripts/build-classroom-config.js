@@ -63,20 +63,28 @@ function generatedSource() {
   var CLASSROOMS = ${JSON.stringify(CLASSROOMS)};
   var TEACH_ME_URL = ${JSON.stringify(TEACH_ME_URL)};
 
-  function currentClassroomUrl() {
+  // The key of a named classroom (for example 'kelly'), or null for the
+  // default one. Class Pulse uses it: its Submit button is for the default
+  // classroom's students only.
+  function currentClassroom() {
     try {
       var params = new URLSearchParams(global.location.search);
       var fromLink = params.get('classroom');
       if (fromLink && CLASSROOMS[fromLink]) {
         global.localStorage.setItem(STORAGE_KEY, fromLink);
-        return CLASSROOMS[fromLink];
+        return fromLink;
       }
       var remembered = global.localStorage.getItem(STORAGE_KEY);
-      if (remembered && CLASSROOMS[remembered]) return CLASSROOMS[remembered];
+      if (remembered && CLASSROOMS[remembered]) return remembered;
     } catch (error) {
       // Private browsing, or localStorage blocked: fall through to the default.
     }
     return null;
+  }
+
+  function currentClassroomUrl() {
+    var key = currentClassroom();
+    return key ? CLASSROOMS[key] : null;
   }
 
   function resolveMagicSchoolUrl(defaultUrl) {
@@ -89,7 +97,8 @@ function generatedSource() {
 
   global.BHClassroom = {
     resolveMagicSchoolUrl: resolveMagicSchoolUrl,
-    resolveTeachMeUrl: resolveTeachMeUrl
+    resolveTeachMeUrl: resolveTeachMeUrl,
+    currentClassroom: currentClassroom
   };
 })(window);
 `;

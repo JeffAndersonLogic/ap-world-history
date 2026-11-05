@@ -19,20 +19,28 @@
   var CLASSROOMS = {"kelly":"https://student.magicschool.ai/s/login?joinCode=a4fGJw"};
   var TEACH_ME_URL = "https://student.magicschool.ai/s/login?joinCode=KbZuaA";
 
-  function currentClassroomUrl() {
+  // The key of a named classroom (for example 'kelly'), or null for the
+  // default one. Class Pulse uses it: its Submit button is for the default
+  // classroom's students only.
+  function currentClassroom() {
     try {
       var params = new URLSearchParams(global.location.search);
       var fromLink = params.get('classroom');
       if (fromLink && CLASSROOMS[fromLink]) {
         global.localStorage.setItem(STORAGE_KEY, fromLink);
-        return CLASSROOMS[fromLink];
+        return fromLink;
       }
       var remembered = global.localStorage.getItem(STORAGE_KEY);
-      if (remembered && CLASSROOMS[remembered]) return CLASSROOMS[remembered];
+      if (remembered && CLASSROOMS[remembered]) return remembered;
     } catch (error) {
       // Private browsing, or localStorage blocked: fall through to the default.
     }
     return null;
+  }
+
+  function currentClassroomUrl() {
+    var key = currentClassroom();
+    return key ? CLASSROOMS[key] : null;
   }
 
   function resolveMagicSchoolUrl(defaultUrl) {
@@ -45,6 +53,7 @@
 
   global.BHClassroom = {
     resolveMagicSchoolUrl: resolveMagicSchoolUrl,
-    resolveTeachMeUrl: resolveTeachMeUrl
+    resolveTeachMeUrl: resolveTeachMeUrl,
+    currentClassroom: currentClassroom
   };
 })(window);

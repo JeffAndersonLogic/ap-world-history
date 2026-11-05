@@ -345,20 +345,28 @@ const SUBMIT_SUFFIX = '-submitted';
   var CLASSROOMS = {"kelly":"https://student.magicschool.ai/s/login?joinCode=a4fGJw"};
   var TEACH_ME_URL = "https://student.magicschool.ai/s/login?joinCode=KbZuaA";
 
-  function currentClassroomUrl() {
+  // The key of a named classroom (for example 'kelly'), or null for the
+  // default one. Class Pulse uses it: its Submit button is for the default
+  // classroom's students only.
+  function currentClassroom() {
     try {
       var params = new URLSearchParams(global.location.search);
       var fromLink = params.get('classroom');
       if (fromLink && CLASSROOMS[fromLink]) {
         global.localStorage.setItem(STORAGE_KEY, fromLink);
-        return CLASSROOMS[fromLink];
+        return fromLink;
       }
       var remembered = global.localStorage.getItem(STORAGE_KEY);
-      if (remembered && CLASSROOMS[remembered]) return CLASSROOMS[remembered];
+      if (remembered && CLASSROOMS[remembered]) return remembered;
     } catch (error) {
       // Private browsing, or localStorage blocked: fall through to the default.
     }
     return null;
+  }
+
+  function currentClassroomUrl() {
+    var key = currentClassroom();
+    return key ? CLASSROOMS[key] : null;
   }
 
   function resolveMagicSchoolUrl(defaultUrl) {
@@ -371,7 +379,8 @@ const SUBMIT_SUFFIX = '-submitted';
 
   global.BHClassroom = {
     resolveMagicSchoolUrl: resolveMagicSchoolUrl,
-    resolveTeachMeUrl: resolveTeachMeUrl
+    resolveTeachMeUrl: resolveTeachMeUrl,
+    currentClassroom: currentClassroom
   };
 })(window);
 // ── END INLINED CLASSROOM CONFIG ────────────────────────────────────────────
@@ -904,7 +913,7 @@ const SUBMIT_SUFFIX = '-submitted';
 window.BH_SYNC_CONFIG = Object.freeze({
   "enabled": true,
   "pilot": false,
-  "submit": false,
+  "submit": true,
   "tenantId": "zcs",
   "courseId": "apwh",
   "allowedDomains": [
@@ -3008,9 +3017,14 @@ function responseBlock(id, prompt, responseType, terms = []) {
 // sends something nobody reads. SUBMIT_IDS and SUBMIT_SUFFIX are declared at the
 // top of the file, for the temporal-dead-zone reason given there.
 
+// Class Pulse reads Jeff's classes only, so a student in a named classroom
+// (Kelly's link, ?classroom=kelly) never sees a Submit button that no teacher
+// can read.
 function submitOn() {
   return !!(window.BH_SYNC_CONFIG && window.BH_SYNC_CONFIG.submit === true
-    && window.BHSync && typeof window.BHSync.valueHash === 'function');
+    && window.BHSync && typeof window.BHSync.valueHash === 'function'
+    && !(window.BHClassroom && typeof window.BHClassroom.currentClassroom === 'function'
+         && window.BHClassroom.currentClassroom()));
 }
 
 function submitKey(id) {

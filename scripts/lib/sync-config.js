@@ -49,12 +49,15 @@ module.exports = {
   pilot: false,
 
   // Class Pulse: the Submit button on Checkpoint 1 and 2 of unit lessons, which
-  // backs up a fingerprint of the finished answer as its own slot. FALSE until the
-  // teacher-read rules are approved by ZCS and published, and the class list is set
-  // up (docs/claude/student-work-persistence.md, "What has to happen, in order"), so
-  // no student sees a button whose result nobody can read. It does nothing while
-  // `enabled` is false.
-  submit: false,
+  // backs up a fingerprint of the finished answer as its own slot. On since
+  // 2026-11-05, when Dan Layton (ZCS CTO) accepted the teacher-read rules in
+  // writing. Shown in Jeff's classes only, never in a named classroom such as
+  // Kelly's (submitOn in the unit renderer). The student's own write is unchanged
+  // by the Class Pulse rules, so a Submit works under the rules already published;
+  // Jeff can read it once the new rules are published and his class list is set up
+  // (docs/claude/student-work-persistence.md, "What has to happen, in order"). It
+  // does nothing while `enabled` is false.
+  submit: true,
 
   tenantId: 'zcs',
   courseId: 'apwh',

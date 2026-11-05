@@ -330,7 +330,12 @@ async function suite(browser) {
 
   section('My class, from the database');
   const store = liveStore();
+  // This run is the approval switched OFF, so the lock is proved even though the
+  // shipped approval (2026-11-05) is on. The run after it uses an approval.
+  const kept1 = patches;
+  patches = kept1.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: true, reference: 'Dan Layton, email of 2026-11-05', services: ['claude-for-teachers'] };", to: "const APPROVAL = { realWork: false, reference: '', services: [] };" }]);
   const L = await open(browser, 1280, ctx => fakeGoogle(ctx, store));
+  patches = kept1;
   await L.p.waitForTimeout(300);
   check('nothing is asked of Google until My class is chosen', !store.googleLoaded && store.requests.length === 0);
   await L.p.click('#source [data-v="live"]');
@@ -348,14 +353,14 @@ async function suite(browser) {
     store.requests.length > 0 && !store.requests.some(r => /responses:runQuery|POST .*responses/.test(r)), store.requests.slice(0, 4).join(' ; '));
   check('Across the course and One student are off in My class', await L.p.$eval('#tab-course', b => b.disabled) && await L.p.$eval('#tab-student', b => b.disabled));
   await L.p.click('#tab-pulse');
-  check('copying real answers stays locked until the district approves', /Locked/.test(await L.p.$eval('#paste-batches', e => e.textContent)) && (await L.p.$$('#paste-batches [data-copy]')).length === 0);
+  check('with the approval off, copying real answers stays locked', /Locked/.test(await L.p.$eval('#paste-batches', e => e.textContent)) && (await L.p.$$('#paste-batches [data-copy]')).length === 0);
   check('My class raises no script error', L.errors.length === 0, L.errors.join(' | '));
   await L.context.close();
 
   // The same class once the approval is recorded in the code.
   const store2 = liveStore();
   const kept2 = patches;
-  patches = kept2.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: false, reference: '', services: [] };", to: "const APPROVAL = { realWork: true, reference: 'Test approval, not real', services: ['claude-for-teachers', 'chatgpt-for-teachers'] };" }]);
+  patches = kept2.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: true, reference: 'Dan Layton, email of 2026-11-05', services: ['claude-for-teachers'] };", to: "const APPROVAL = { realWork: true, reference: 'Test approval, not real', services: ['claude-for-teachers', 'chatgpt-for-teachers'] };" }]);
   const A = await open(browser, 1280, ctx => fakeGoogle(ctx, store2));
   patches = kept2;
   await A.p.click('#source [data-v="live"]');

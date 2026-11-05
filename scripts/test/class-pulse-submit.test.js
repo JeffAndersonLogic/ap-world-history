@@ -7,7 +7,9 @@
  * that the test can seed and read (the same stand-in sync-page.test.js uses).
  *
  * What it proves:
- *   - as shipped, with `submit` false in sync-config, no student sees a button;
+ *   - switched off, with `submit` false in sync-config, no student sees a button;
+ *   - as shipped (on since 2026-11-05) a student in Jeff's classes sees one, and a
+ *     student in Kelly's classroom (?classroom=kelly) never does;
  *   - switched on, a finished answer gets a receipt whose fingerprint is the
  *     backup engine's own valueHash of the text and confidence, so a teacher
  *     reading the backed-up record can tell it was submitted and not changed;
@@ -104,12 +106,14 @@ window.BHSyncTransport = { create: function () {
 } };`;
 
 const PAGE = '/unit-1/lesson-1-3-south-southeast-asia.html';
+// What actually ships, read from the source rather than the page the test patches.
+const SHIPPED_ON = /submit:\s*true,/.test(require('fs').readFileSync(require('path').join(__dirname, '..', 'lib', 'sync-config.js'), 'utf8'));
 const CP1 = 'checkpoint-one-response';
 const RECEIPT_KEY = 'behistorical-submit-topic-1.3-' + CP1;
 const ANSWER = 'Hindu and Buddhist ideas spread along Indian Ocean trade routes, and rulers in Southeast Asia used them to legitimize their power.';
 
 let open = async function (browser, opts) {
-  const o = Object.assign({ submit: true, docs: {}, patch: null }, opts || {});
+  const o = Object.assign({ submit: true, docs: {}, patch: null, query: '' }, opts || {});
   const context = await browser.newContext();
   const p = await context.newPage();
   await p.addInitScript(({ docs }) => {
@@ -119,12 +123,12 @@ let open = async function (browser, opts) {
   await p.route('**/behistorical-topic-renderer-v1.js*', async route => {
     const res = await route.fetch();
     let body = (await res.text()).replace('"windowMs": 30000', '"windowMs": 400');
-    if (o.submit) body = body.replace('"submit": false', '"submit": true');
+    body = o.submit ? body.replace('"submit": false', '"submit": true') : body.replace('"submit": true', '"submit": false');
     if (o.patch) body = o.patch(body);
     await route.fulfill({ response: res, body });
   });
   await p.route('**/behistorical-sync-transport.js*', route => route.fulfill({ contentType: 'text/javascript', body: STUB_TRANSPORT }));
-  await p.goto(`http://127.0.0.1:${server.address().port}${PAGE}`, { waitUntil: 'load' });
+  await p.goto(`http://127.0.0.1:${server.address().port}${PAGE}${o.query}`, { waitUntil: 'load' });
   return { context, p };
 };
 
@@ -146,14 +150,20 @@ const teacherSees = p => p.evaluate(id => {
 }, CP1);
 
 async function suite(browser) {
-  section('Off as shipped');
+  section('Switched off, and in Kelly\'s classroom');
   {
     const s = await open(browser, { submit: false });
     await s.p.evaluate(() => openModule('checkpoint1'));
-    check('no Submit button as shipped', await s.p.evaluate(id => !document.getElementById(id + '-submit-btn'), CP1));
-    check('and the shipped config says submit is off', await s.p.evaluate(() => window.BH_SYNC_CONFIG && window.BH_SYNC_CONFIG.submit === false));
+    check('no Submit button when switched off', await s.p.evaluate(id => !document.getElementById(id + '-submit-btn'), CP1));
     await s.context.close();
   }
+  {
+    const s = await open(browser, { query: '?classroom=kelly' });
+    await s.p.evaluate(() => openModule('checkpoint1'));
+    check('no Submit button in Kelly\'s classroom', await s.p.evaluate(id => !document.getElementById(id + '-submit-btn'), CP1));
+    await s.context.close();
+  }
+  if (!SHIPPED_ON) check('the shipped config says submit is on', false, 'scripts/lib/sync-config.js');
 
   section('Submitting a finished answer');
   let receiptDocs = null;
@@ -218,7 +228,8 @@ async function suite(browser) {
   section('Negative controls');
   if (!quiet) console.log('  \x1b[2meach mutation must turn a check above red\x1b[0m');
   const controls = [
-    { name: 'the switch is ignored', patch: b => b.replace('window.BH_SYNC_CONFIG.submit === true', 'true'), expect: /no Submit button as shipped/ },
+    { name: 'the switch is ignored', patch: b => b.replace('window.BH_SYNC_CONFIG.submit === true', 'true'), expect: /no Submit button when switched off/ },
+    { name: 'Kelly\'s classroom gets a Submit button too', patch: b => b.replace("&& window.BHClassroom.currentClassroom()));", '&& false));'), expect: /Kelly/ },
     { name: 'receipts are not handed to the backup', patch: b => b.replace('.concat(submitSlots())', ''), expect: /reaches the backup as its own slot/ },
     { name: 'receipts are stored under the draft prefix', patch: b => b.replace('return `behistorical-submit-${topic}-${id}`;', 'return `behistorical-draft-${topic}-${id}-submitted`;'), expect: /stays out of Gather All My Work/ },
     { name: 'the fingerprint leaves out the rating', patch: b => b.replace('fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}', "fingerprint ${window.BHSync.valueHash(answer.text, '')}"), expect: /fingerprints the trimmed answer|teacher reading the backup sees it as submitted/ },

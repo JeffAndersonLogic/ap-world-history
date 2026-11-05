@@ -44,14 +44,16 @@
   ];
   const serviceLabel = id => (SERVICES.find(x => x.id === id) || SERVICES[0]).label;
 
-  // FALSE until ZCS approves, in writing, pasting submitted checkpoint writing into a
-  // named service. Set realWork to true, reference to who approved it and when (for
-  // example 'Dan Layton, email of 2026-11-02'), and services to the ids the approval
-  // names, and update privacy.html to say what is sent and where, before the change
-  // reaches students. The privacy page promises that order. Approving one service
-  // never opens the other. scripts/test/class-pulse-handoff.test.js fails if realWork
-  // is true without a reference and at least one service.
-  const APPROVAL = { realWork: false, reference: '', services: [] };
+  // Pasting submitted checkpoint writing into a named service, approved in writing
+  // by ZCS. On since 2026-11-05: Dan Layton (ZCS CTO) accepted, in writing, the
+  // 2026-11-04 request for Claude for Teachers once Jeff confirmed that Class Pulse
+  // is formative only and never used for grades. Only Claude for Teachers is named;
+  // approving one service never opens the other, so ChatGPT for Teachers stays shut.
+  // privacy.html says what is sent and where. To switch it off again:
+  //   const APPROVAL = { realWork: false, reference: '', services: [] };
+  // scripts/test/class-pulse-handoff.test.js fails if realWork is true without a
+  // reference and at least one service.
+  const APPROVAL = { realWork: true, reference: 'Dan Layton, email of 2026-11-05', services: ['claude-for-teachers'] };
 
   // The default service, and the reader every pasted reply becomes on the page.
   const SERVICE = SERVICES[0].label;

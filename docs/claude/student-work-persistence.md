@@ -600,15 +600,15 @@ BeHistorical at least once. Keep the file on your own computer, never in this re
 1. Open **shell.cloud.google.com**, signed in with your school staff account.
 2. In the Cloud Shell window, open the three-dot menu, choose **Upload**, and upload the
    file, for example `g4.csv`. It lands in your home folder.
-3. Paste these lines, one at a time (until Class Pulse ships, the branch is
-   `claude/busy-pasteur-d7c0wl`; afterwards leave out `-b` and the branch name):
+3. Paste these lines, one at a time (once Class Pulse is on `main`; before that,
+   add `-b claude/epic-ride-hc1gle` after `--depth 1`):
 
    ```
-   git clone --depth 1 -b claude/busy-pasteur-d7c0wl https://github.com/JeffAndersonLogic/ap-world-history.git
+   git clone --depth 1 https://github.com/JeffAndersonLogic/ap-world-history.git
    cd ap-world-history
    npm install --no-save firebase-admin
    gcloud config set project behistoric
-   node scripts/class-pulse-roster.js ~/g4.csv --teacher YOUR-STAFF-EMAIL@zcs.k12.in.us --class G4 --approval "Dan Layton, email of 2026-10-22"
+   node scripts/class-pulse-roster.js ~/g4.csv --teacher YOUR-STAFF-EMAIL@zcs.k12.in.us --class G4 --approval "Dan Layton, emails of 2026-10-22 and 2026-11-05"
    ```
 
 4. Read what it prints: how many students it found, and who has not signed in yet. Nothing
@@ -622,18 +622,28 @@ Run it again any time to add students who have since signed in.
 
 #### What has to happen, in order, before My class works for real
 
-1. Dan approves the rules change (summary and exact file, AndersonLogic-OS
-   `04_PRODUCTS/BeHistorical/Rules-Change-Class-Pulse-2026-10-31.md`).
+1. Done 2026-11-05: Dan Layton approved, in writing, the rules change (summary and exact
+   file, AndersonLogic-OS `04_PRODUCTS/BeHistorical/Rules-Change-Class-Pulse-2026-10-31.md`)
+   and Claude for Teachers, once Jeff confirmed Class Pulse is formative only and never
+   used for grades (Jeff's reading of the reply; record in AndersonLogic-OS
+   `04_PRODUCTS/BeHistorical/Decisions.md`, 2026-11-05).
 2. Jeff publishes the rules: Firebase console, Firestore Database, Rules, paste the whole of
    `firestore/firestore.rules`, Publish. A file in this repository is not a deployed rule.
+   The file also carries the iPad remote block of 2026-11-04, beside the Class Pulse
+   blocks, so publishing it publishes both.
 3. Jeff sets up the G4 class list (above).
-4. Jeff says "ship it": `submit` in `scripts/lib/sync-config.js` goes true so students see
-   **Submit to your teacher**, the renderers are rebuilt, and the page ships to `main`.
-5. Reading by AI waits for Dan's written yes: then `APPROVAL` in
-   `teacher/class-pulse-handoff.js` names the reference and the service ids it covers
-   (`claude-for-teachers`, `chatgpt-for-teachers`, or both), and `privacy.html` says what
-   is sent and where, before that change ships. Approving one service never opens the
-   other.
+4. Shipped with the go-live release: `submit` in `scripts/lib/sync-config.js` is true, so
+   students in Jeff's classes (never a named classroom such as Kelly's) see **Submit to
+   your teacher**. A Submit works under the rules already published, because the
+   student's own write is unchanged; it waits only on steps 2 and 3 to be read.
+5. Shipped with the same release: `APPROVAL` in `teacher/class-pulse-handoff.js` is on for
+   `claude-for-teachers` only, and `privacy.html` says what is sent and where. ChatGPT for
+   Teachers stays shut; approving one service never opens the other.
+6. Before the first paste of real writing, the district's acceptance of Anthropic's K-12
+   terms (https://www.anthropic.com/legal/k12-dpa) is in place on Jeff's Claude for
+   Teachers account. Then the first real checkpoint: compare Jeff's own levels with the
+   AI's on that checkpoint and send Dan the results before going further, as the
+   2026-11-04 email promised.
 
 **Which AI, added 2026-10-31.** The paste panel has a **Pasting into** choice: Claude for
 Teachers or ChatGPT for Teachers. Both get the same text and the same checks; the choice
