@@ -131,12 +131,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-scene",
+      "kind": "scene-case",
       "eyebrow": "The Indian Ocean Story · 1",
       "title": "Calicut, 1498: the gifts that got laughed at.",
       "footer": "A Portuguese sailor wrote this down. Why would he record his own side being laughed at?",
       "template": {
-        "caption": "Calicut's harbor, 1498",
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20da%20Gama%20in%20Calicut.jpg",
+          "alt": "Reconstruction of two Calicut officials in white cloth and turbans smiling as they handle red cloth beside a table of striped cloth, basins, coral and small casks, while a bearded Portuguese captain stands stiffly beside them and a scribe writes at a desk in the shadows",
+          "fit": "contain"
+        },
         "steps": [
           {
             "label": "May 1498",
@@ -156,22 +161,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "Portugal had little to sell that Asian buyers wanted."
           }
-        ],
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-1/4.1%20-%20Arriving%20at%20Calicut%201498.jpg",
-          "alt": "Reconstruction of two large European ships at anchor off a palm-lined shore crowded with Indian Ocean sailing ships, small boats and a busy waterfront town below green hills",
-          "position": "30% 50%"
-        }
+        ]
       }
     },
     {
-      "kind": "cause-chain",
+      "kind": "scene-case",
       "eyebrow": "The Indian Ocean Story · 2",
       "title": "From traders to a navy.",
       "footer": "The laugh did not cause the violence by itself. It showed Portugal it could not win by trading alone.",
       "kc": "KC-4.3.II.C",
       "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Portuguese%20Naval%20Escalation.jpg",
+          "alt": "Reconstruction in three parts: Portuguese officers under a banner of the Order of Christ planning over a map with sacks of pepper, a burning waterfront building above a crowded Indian Ocean quay, and Portuguese ships with red-cross sails firing cannon",
+          "fit": "contain"
+        },
         "steps": [
           {
             "label": "The goal",
@@ -195,50 +200,46 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "Win by force: forts, warships, and passes sold to Asian ships"
           }
-        ],
-        "links": [
-          "then",
-          "then",
-          "then",
-          "so"
         ]
       }
     },
     {
-      "kind": "ledger",
+      "kind": "scene-case",
       "eyebrow": "The Indian Ocean Story · 3",
       "title": "Hold the gates of the ocean.",
+      "subtitle": "Albuquerque's plan: hold the narrow places long-distance ships had to pass, and tax the trade.",
       "footer": "Albuquerque's plan: hold the narrow places long-distance ships had to pass, and tax the trade.",
       "kc": "KC-4.3.II.A.i",
       "template": {
-        "rows": [
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.4%20-%20Portuguese%20Strategy.jpg",
+          "alt": "Reconstruction of four Portuguese officers in dark doublets leaning over a large sea chart with small model ships, inside a stone fort whose arched doorway opens on a harbor with sailing ships and palm trees",
+          "fit": "contain"
+        },
+        "steps": [
           {
-            "name": "Goa",
-            "mark": "B",
-            "tool": "The base, taken **1510**",
-            "result": "Portugal's capital in India"
+            "label": "Goa",
+            "key": false,
+            "text": "The base, taken **1510**: Portugal's capital in India"
           },
           {
-            "name": "Malacca",
-            "mark": "✓",
-            "tool": "Taken **1511**",
-            "result": "the strait to China"
+            "label": "Malacca",
+            "key": false,
+            "text": "Taken **1511**: the strait to China"
           },
           {
-            "name": "Hormuz",
-            "mark": "✓",
-            "tool": "Taken **1515**",
-            "result": "the mouth of the Persian Gulf"
+            "label": "Hormuz",
+            "key": false,
+            "text": "Taken **1515**: the mouth of the Persian Gulf"
           },
           {
-            "name": "Aden",
-            "mark": "✗",
-            "tool": "Attack failed, **1513**",
-            "result": "the mouth of the Red Sea"
+            "label": "Aden",
+            "key": true,
+            "text": "Attack failed, **1513**: the mouth of the Red Sea"
           }
         ],
-        "payoffLabel": "The result",
-        "payoff": "Two of the three gates. The Red Sea stayed open."
+        "proves": "Two of the three gates. The Red Sea stayed open."
       }
     },
     {
