@@ -84,396 +84,158 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
-      "eyebrow": "Where People Pushed Back",
-      "title": "Pushback, inside states and at their edges.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-4-6.svg",
-        "alt": "World map with labeled dots at Paris, the Volga, the Deccan, Ndongo and Matamba, New Mexico, New England, Palmares in Brazil, Jamaica and the Stono River in South Carolina, each with a date"
-      },
-      "footer": "The key sorts every case: pushback inside a state, at the edge of an expanding state, or organized resistance by enslaved people.",
-      "kc": "Unit 4: Learning Objective L"
-    },
-    {
-      "kind": "scene-case",
-      "eyebrow": "Inside the State · France, 1648 to 1653",
-      "title": "Judges, Paris and nobles against the crown.",
+      "kind": "split-scenes",
+      "eyebrow": "Big Idea 1 of 3 · Pushback Inside the State",
+      "title": "Rulers centralized. Their own people pushed back.",
+      "footer": "Judges, nobles, peasants and Cossacks: an array of groups, not only colonized peoples.",
       "kc": "KC-4.3.III.iii",
       "template": {
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-6/4.6%20-%20The%20Fronde.JPG",
-          "alt": "Reconstruction of townspeople building a barricade across a French city street while armed soldiers approach",
-          "fit": "contain"
+        "left": {
+          "name": "The Fronde, France",
+          "items": [
+            "War with Spain: the crown demands **new taxes**, 1648",
+            "The **Parlement** refuses; Paris builds **barricades**; nobles rise",
+            "The rebels split; the **crown wins**, 1653"
+          ],
+          "visual": {
+            "ai": true,
+            "url": "../assets/images/topics/4-6/4.6%20-%20The%20Fronde.JPG",
+            "alt": "Reconstruction of townspeople building a barricade across a French city street while armed soldiers approach"
+          }
         },
-        "sources": [
-          {
-            "visual": {
-              "url": "../assets/images/topics/4-6/broussel-paris-1648.jpg",
-              "alt": "An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris",
-              "credit": "Portrait of Pierre Broussel, printed in 1648 with the French king's license · Rijksmuseum · Public domain",
-              "ratio": 0.822
-            },
-            "caption": "Printed in 1648"
-          },
-          {
-            "visual": {
-              "url": "../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg",
-              "alt": "An etching of soldiers with a halberd at a doorway seizing a man in a long robe, with a city street, a cathedral and marching soldiers behind",
-              "credit": "Caspar Luyken, arrest of a member of the Parlement of Paris, for a book published in Leiden, 1699 · Rijksmuseum · Public domain",
-              "ratio": 0.633
-            },
-            "caption": "Dutch print, Leiden, 1699"
+        "right": {
+          "name": "Razin, Russia",
+          "items": [
+            "The **Law Code of 1649** binds peasants to the land",
+            "Runaways join the **Cossacks**; Razin leads a revolt, 1670",
+            "The army wins, 1671; **serfdom stays**"
+          ],
+          "visual": {
+            "url": "../assets/images/topics/4-6/razin-moscow-luyken-1700.jpg",
+            "alt": "An etching of a crowd outside a walled city gate with towers: a man in chains sits in a wooden cart under a tall wooden frame, surrounded by guards with pikes and long guns, a rider on horseback and a dog",
+            "credit": "Jan Luyken, Razin brought into Moscow, 1671, for a book published in Leiden, 1700 · Rijksmuseum · Public domain",
+            "position": "50% 55%"
           }
-        ],
-        "steps": [
-          {
-            "label": "Push",
-            "text": "War with Spain: the crown demands **new taxes** (1648)"
-          },
-          {
-            "label": "Pushback",
-            "text": "The **Parlement** refuses; Paris builds **barricades**; nobles rise"
-          },
-          {
-            "label": "Next",
-            "text": "The rebels split; the **crown wins** (1653)"
-          }
-        ],
-        "proves": "Centralization pushed back by judges, a city and nobles."
-      }
-    },
-    {
-      "kind": "story-steps",
-      "eyebrow": "Inside the State · Russia, 1649 to 1671",
-      "title": "Peasants and Cossacks against the tsar.",
-      "kc": "KC-4.3.III.iii",
-      "template": {
-        "steps": [
-          {
-            "label": "1649",
-            "text": "The tsar's Law Code binds peasants to the land as serfs."
-          },
-          {
-            "label": "Runaways",
-            "text": "Many flee south to the Don River and the Cossacks."
-          },
-          {
-            "label": "1670",
-            "text": "Stenka Razin leads a revolt up the Volga; towns open their gates."
-          },
-          {
-            "label": "1671",
-            "key": true,
-            "text": "The army wins; Razin is executed in Moscow. Serfdom stays."
-          }
+        },
+        "bothLabel": "Same push",
+        "both": [
+          "A ruler pulls power and money inward",
+          "The state won, and came out stronger"
         ]
-      }
-    },
-    {
-      "kind": "scene-case",
-      "eyebrow": "At the Edges · The Deccan, 1660s to 1707",
-      "title": "An emperor pushes south. A warrior kingdom pushes back.",
-      "kc": "KC-4.3.III.iii",
-      "template": {
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-6/4.6%20-%20Marathas.JPG",
-          "alt": "Reconstruction of Maratha riders leaving a hill fort above a distant army camp in the Deccan",
-          "fit": "contain"
-        },
-        "sources": [
-          {
-            "visual": {
-              "url": "../assets/images/topics/4-6/aurangzeb-golconda-c1686.jpg",
-              "alt": "A painted portrait of an elderly man with a white beard in a white robe and turban, in profile, holding a flower in one hand and resting the other on a sword, with a golden halo, against a green background",
-              "credit": "Aurangzeb, painted in Golconda, about 1686 · Rijksmuseum · Public domain",
-              "ratio": 0.706
-            },
-            "caption": "The Mughal emperor"
-          },
-          {
-            "visual": {
-              "url": "../assets/images/topics/4-6/shivaji-golconda-c1680.jpg",
-              "alt": "A painted portrait of a bearded man in profile in a gold turban with a black plume and a patterned white robe, holding a sword, inside an oval frame on a page with a gold flower border and a handwritten Dutch caption below",
-              "credit": "Shivaji, painted in Golconda, about 1680 · Rijksmuseum · Public domain",
-              "ratio": 0.793
-            },
-            "caption": "The Maratha king"
-          }
-        ],
-        "steps": [
-          {
-            "label": "Mughal expansion",
-            "text": "**Aurangzeb** moved his court south in **1681** to conquer the Deccan."
-          },
-          {
-            "label": "Maratha power",
-            "text": "**Shivaji**, crowned in **1674**, built a kingdom of hill forts."
-          },
-          {
-            "label": "Pushback",
-            "text": "Forts and fast raids, never one big battle"
-          },
-          {
-            "label": "Next",
-            "text": "Aurangzeb died in the Deccan in **1707** without defeating them"
-          }
-        ],
-        "proves": "Expansion pushed back by a regional power, and the empire wore itself down."
-      }
-    },
-    {
-      "kind": "scene-case",
-      "eyebrow": "At the Edges · West Central Africa, 1622 to 1663",
-      "title": "A queen fights and bargains with Portugal.",
-      "kc": "KC-4.3.III.iii",
-      "template": {
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-6/4.6%20-%20Queen%20Njinga.JPG",
-          "alt": "Reconstruction of an African queen negotiating with seated Portuguese officials in a colonial room at Luanda",
-          "fit": "contain"
-        },
-        "steps": [
-          {
-            "label": "Push",
-            "text": "Portugal pushes inland from **Luanda**, largely for **captives**"
-          },
-          {
-            "label": "Bargain",
-            "text": "**1622**: Njinga negotiates in Luanda and is baptized **Ana de Sousa**"
-          },
-          {
-            "label": "Fight",
-            "text": "Rules from **1624**; conquers **Matamba**; allies with the **Dutch** (1641)"
-          },
-          {
-            "label": "Peace",
-            "text": "Makes **peace** with Portugal in the **1650s**; dies ruling, **1663**"
-          }
-        ],
-        "proves": "An African ruler held off an expanding colony with war and diplomacy."
-      }
-    },
-    {
-      "kind": "branch-tree",
-      "eyebrow": "At the Edges · New Mexico, 1598 to 1680",
-      "title": "Why the Pueblos rose: causes come in kinds.",
-      "footer": "On top of all three came drought and famine. Strong answers name more than one kind of cause.",
-      "kc": "KC-4.3.III.iii",
-      "template": {
-        "claimLabel": "The Pueblo Revolt, 1680",
-        "claim": "Spanish rule since **1598** pressed on Pueblo towns in three ways.",
-        "branches": [
-          {
-            "label": "Religious",
-            "note": "Friars tried to stamp out Pueblo religion",
-            "items": [
-              "Dances banned, masks burned",
-              "1675: 47 leaders arrested"
-            ]
-          },
-          {
-            "label": "Economic",
-            "note": "Work and crops taken",
-            "items": [
-              "Encomienda tribute",
-              "Forced labor"
-            ]
-          },
-          {
-            "label": "Political",
-            "note": "Spanish rule by force, and its failures",
-            "items": [
-              "Men hanged for plotting",
-              "Raids not stopped"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "kind": "source-quote",
-      "eyebrow": "A Witness · 1681",
-      "title": "How the towns kept the same day.",
-      "footer": "A first look. The Primary Source module (08) reads more of his testimony.",
-      "kc": "KC-4.3.III.iii",
-      "template": {
-        "quote": "[T]he cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.",
-        "attribution": {
-          "author": "Pedro Naranjo, of San Felipe Pueblo, questioned by Spanish officials",
-          "work": "Declaration, translated by C. C. Shelby (1942)",
-          "year": "19 December 1681"
-        },
-        "notice": "What did the cord do? Why would a revolt across many towns need it?"
       }
     },
     {
       "kind": "story-scene",
-      "eyebrow": "At the Edges · New Mexico, 1675 to 1690s",
-      "title": "The Pueblo Revolt, and what changed after.",
+      "eyebrow": "Big Idea 2 of 3 · Pushback at the Edges",
+      "title": "Empires expanded. The people in their way pushed back.",
+      "footer": "Same push, different endings: an empire worn down, a bargain, a defeat.",
       "kc": "KC-4.3.III.iii",
       "template": {
         "steps": [
           {
-            "label": "1675",
-            "text": "Popé is whipped with the arrested religious leaders, then released."
+            "label": "Marathas",
+            "text": "**Aurangzeb** pushes south, 1681; hill forts and raids wear him down until he dies there, **1707**."
           },
           {
-            "label": "Cords",
-            "text": "Runners carry knotted cords; towns count down together."
+            "label": "Njinga",
+            "text": "Bargains in Luanda, 1622; fights Portugal from **Matamba**; makes **peace** in the 1650s."
+          },
+          {
+            "label": "Metacom",
+            "key": true,
+            "text": "Burns over a dozen English towns, 1675; **crushed**, captives enslaved."
+          }
+        ],
+        "pictures": [
+          {
+            "visual": {
+              "ai": true,
+              "url": "../assets/images/topics/4-6/4.6%20-%20Marathas.JPG",
+              "alt": "Reconstruction of Maratha riders leaving a hill fort above a distant army camp in the Deccan"
+            },
+            "caption": "Maratha hill fort"
+          },
+          {
+            "visual": {
+              "ai": true,
+              "url": "../assets/images/topics/4-6/4.6%20-%20Queen%20Njinga.JPG",
+              "alt": "Reconstruction of an African queen negotiating with seated Portuguese officials in a colonial room at Luanda"
+            },
+            "caption": "Njinga negotiates"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "scene-case",
+      "eyebrow": "Big Idea 2 of 3 · Pushback at the Edges · New Mexico, 1680",
+      "title": "The Pueblo Revolt: causes come in kinds.",
+      "kc": "KC-4.3.III.iii",
+      "template": {
+        "steps": [
+          {
+            "label": "Religious",
+            "text": "Dances banned, masks burned; 47 leaders arrested, 1675."
+          },
+          {
+            "label": "Economic",
+            "text": "Crops taken as tribute; forced labor without pay."
+          },
+          {
+            "label": "Political",
+            "text": "Rule by force; Spanish soldiers do not stop raids."
           },
           {
             "label": "10 August 1680",
-            "text": "The Pueblos strike early; Santa Fe is besieged; settlers flee to El Paso."
+            "text": "Knotted cords count down; the towns rise together and drive the Spanish out."
           },
           {
-            "label": "1690s",
+            "label": "After",
             "key": true,
-            "text": "Spain returns, but without the encomienda, and the friars press far less hard."
+            "text": "Spain returns in 1692, but without the encomienda."
           }
         ],
+        "proves": "Causes came in kinds and combined, and the revolt changed the terms even after Spain returned.",
         "visual": {
           "ai": true,
           "url": "../assets/images/topics/4-6/4.6%20-%20Pueblo%20Revolts.JPG",
           "alt": "Reconstruction of Pueblo people passing a knotted cord between towns, with adobe buildings and ladders behind them",
           "fit": "contain"
-        },
-        "caption": "Knotted cords: coordination across towns"
-      }
-    },
-    {
-      "kind": "balance",
-      "eyebrow": "Same Decade, Opposite Ends",
-      "title": "Two revolts against two expanding colonies.",
-      "kc": "KC-4.3.III.iii",
-      "template": {
-        "job": "Push back",
-        "left": {
-          "tag": "New England",
-          "name": "Metacom's War",
-          "when": "1675 to 1676",
-          "text": "Burned more than a dozen English towns. Crushed: Metacom killed; captives sold into slavery."
-        },
-        "right": {
-          "tag": "New Mexico",
-          "name": "Pueblo Revolt",
-          "when": "1680",
-          "text": "Drove the Spanish out for twelve years. They came back on new terms."
-        },
-        "claimLabel": "Ask why",
-        "claim": "Same push, **opposite outcomes**: what was different about each colony and each alliance?"
-      }
-    },
-    {
-      "kind": "branch-tree",
-      "eyebrow": "Enslaved People Organize",
-      "title": "Not one person running. Many people acting together.",
-      "footer": "The College Board's word is organized: resistance that challenged the authorities.",
-      "kc": "KC-5.3.III.C",
-      "template": {
-        "claimLabel": "Organized resistance",
-        "claim": "Enslaved people in the Americas **organized** to challenge the authorities over them.",
-        "branches": [
-          {
-            "label": "Build a free town",
-            "note": "Maroon communities",
-            "items": [
-              "Palmares, Brazil"
-            ]
-          },
-          {
-            "label": "Force a treaty",
-            "note": "Win freedom on paper",
-            "items": [
-              "Jamaica, 1739"
-            ]
-          },
-          {
-            "label": "Rise and march",
-            "note": "Armed revolt",
-            "items": [
-              "Stono, 1739"
-            ]
-          }
-        ]
+        }
       }
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Maroon Communities · Brazil",
-      "title": "Palmares: a free state in the hills.",
+      "eyebrow": "Big Idea 3 of 3 · Enslaved People Organize",
+      "title": "Enslaved people organized, and challenged the colony itself.",
       "kc": "KC-5.3.III.C",
       "template": {
+        "steps": [
+          {
+            "label": "Palmares, Brazil",
+            "text": "For most of a century, thousands in fortified towns farm, trade and beat back expeditions."
+          },
+          {
+            "label": "Jamaica, 1739",
+            "text": "Maroons force a treaty: freedom and land, but they must return runaways."
+          },
+          {
+            "label": "Stono, 1739",
+            "text": "Rebels seize guns and march for Spanish Florida; militia break the march."
+          },
+          {
+            "label": "The answer",
+            "key": true,
+            "text": "Colonies fight, bargain or tighten the law: South Carolina's Negro Act, 1740."
+          }
+        ],
+        "proves": "Organized: leaders, plans, places, and a challenge to the authorities themselves.",
         "visual": {
           "ai": true,
           "url": "../assets/images/topics/4-6/4.6%20-%20Maroon%20Resistance.JPG",
           "alt": "Reconstruction of a fortified maroon settlement with houses, planted fields, watchtowers and a palisade in forested hills",
           "fit": "contain"
-        },
-        "steps": [
-          {
-            "label": "People",
-            "text": "**Thousands**, in a cluster of fortified towns"
-          },
-          {
-            "label": "Life",
-            "text": "Farms, and **trade** with nearby settlers"
-          },
-          {
-            "label": "Defense",
-            "text": "Beat back expedition after expedition"
-          },
-          {
-            "label": "Leaders",
-            "text": "**Ganga Zumba** accepts a treaty (1678); **Zumbi** rejects it, fights on; main town falls 1694; Zumbi killed 1695"
-          }
-        ],
-        "proves": "What makes this organized resistance, and not just running away?"
-      }
-    },
-    {
-      "kind": "source-quote",
-      "eyebrow": "Maroon Communities · Jamaica, 1739",
-      "title": "Freedom on paper, and its price.",
-      "footer": "Freedom for one community, and a promise to guard slavery for others.",
-      "kc": "KC-5.3.III.C",
-      "template": {
-        "quote": "[Cudjoe's people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe's hands, they shall immediately be sent back.",
-        "attribution": {
-          "author": "Treaty with Cudjoe's Maroons",
-          "work": "Articles 2 and 9 (Dallas, 1803)",
-          "year": "signed 1 March 1739"
-        },
-        "notice": "What did the Maroons gain? What did they have to promise?"
-      }
-    },
-    {
-      "kind": "story-steps",
-      "eyebrow": "North America · South Carolina, 1739",
-      "title": "The Stono Rebellion, and the colony's answer.",
-      "kc": "KC-5.3.III.C",
-      "template": {
-        "steps": [
-          {
-            "label": "9 September 1739",
-            "text": "About twenty enslaved people seize guns from a store near the Stono River."
-          },
-          {
-            "label": "The march",
-            "text": "They head south for Spanish Florida, which promised freedom; the group grows to as many as a hundred."
-          },
-          {
-            "label": "That afternoon",
-            "text": "Militia break the march and hunt survivors for months; 20 to 40 colonists and dozens of rebels die."
-          },
-          {
-            "label": "1740",
-            "key": true,
-            "text": "The Negro Act tightens control over every enslaved person in the colony."
-          }
-        ]
+        }
       }
     },
     {
@@ -486,60 +248,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "frame": "{{The event}} happened as part of {{a bigger development of the period}}, which helps explain it because {{how the bigger development caused or shaped it}}.",
         "exampleLabel": "Modeled on the Fronde",
         "example": "**The Fronde** happened as part of **European rulers pulling power into their own hands and paying for long wars with new taxes**, which helps explain it because **the judges, the city and the nobles were the people who lost money and power when the crown centralized**."
-      }
-    },
-    {
-      "kind": "ledger",
-      "eyebrow": "What Came Next",
-      "title": "Resistance had effects too.",
-      "template": {
-        "rows": [
-          {
-            "name": "Crushed",
-            "mark": "C",
-            "tool": "The Fronde, Razin, Metacom, Stono:",
-            "result": "the state won, and often came out stronger."
-          },
-          {
-            "name": "Bargained",
-            "mark": "B",
-            "tool": "Njinga, the Jamaica Maroons, New Mexico:",
-            "result": "the state had to make terms."
-          },
-          {
-            "name": "Worn down",
-            "mark": "W",
-            "tool": "The Marathas:",
-            "result": "the empire spent itself and never won."
-          }
-        ],
-        "payoffLabel": "So",
-        "payoff": "Resistance is an effect of state power, and it changed states too"
-      }
-    },
-    {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence tells a more interesting story than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Only colonized peoples resisted states.",
-            "evidence": "French judges and nobles and Russian peasants pushed back against their own rulers.",
-            "source": "The Fronde; Razin"
-          },
-          {
-            "myth": "Maroons were just runaways hiding in the woods.",
-            "evidence": "Palmares had towns, farms, trade, an army and a treaty.",
-            "source": "Palmares, 1600s"
-          },
-          {
-            "myth": "Resisting a European empire meant opposing slavery.",
-            "evidence": "Njinga's wars took captives to sell; the Maroons agreed to return runaways.",
-            "source": "Matamba; the 1739 treaty"
-          }
-        ]
       }
     },
     {
@@ -590,16 +298,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Module 05 · Skill Builder",
       "title": "Put a revolt in its bigger story.",
       "subtitle": "Name the bigger development, then explain how it helps explain the event.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-6-internal-external-challenges.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "Local resistance.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-6-internal-external-challenges.html#modules"

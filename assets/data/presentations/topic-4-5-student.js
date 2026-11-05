@@ -56,28 +56,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-full",
       "eyebrow": "Rulers' Tool 1 · An Idea",
       "title": "Mercantilism: how a state grows strong.",
-      "kc": "KC-4.1.IV.C",
+      "kc": "Unit 4: Learning Objective H",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-5/mercantilism-tool-1.png",
           "alt": "Slide graphic titled Mercantilism: Rulers' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England's Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country's goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the \"mercantile system\" in 1776. Think: in this way of thinking, what is a colony for?"
         }
-      }
-    },
-    {
-      "kind": "source-quote",
-      "eyebrow": "Claim It · Model",
-      "title": "An English merchant states a rule.",
-      "footer": "A claim is what the author wants you to believe. Say it in your own words.",
-      "kc": "Unit 4: Learning Objective H",
-      "template": {
-        "quote": "The ordinary means therefore to encrease our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.",
-        "attribution": {
-          "author": "Thomas Mun, director of the English East India Company",
-          "work": "England's Treasure by Forraign Trade, printed 1664",
-          "year": "written 1620s or 1630s"
-        },
-        "notice": "What does Mun want his reader to believe? What would a ruler do if he believed it?"
       }
     },
     {
@@ -93,119 +77,44 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "scene-case",
-      "eyebrow": "Rulers' Tool 2 · A Company",
-      "title": "A company that could go to war.",
-      "kc": "KC-4.1.IV.C",
-      "template": {
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-5/4.5%20-%20The%20VOC.JPG",
-          "alt": "Reconstruction of workers building a Dutch company ship at a large shipyard while merchants review papers",
-          "fit": "contain"
-        },
-        "sources": [
-          {
-            "visual": {
-              "url": "../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg",
-              "alt": "A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom",
-              "credit": "Receipt for a VOC share, Enkhuizen, 1606 · Public domain",
-              "position": "50% 30%"
-            },
-            "caption": "VOC share receipt, Enkhuizen, 1606"
-          }
-        ],
-        "steps": [
-          {
-            "label": "Shares",
-            "text": "**Many investors** bought shares and split the profits and the losses"
-          },
-          {
-            "label": "Charter",
-            "text": "The Dutch government gave the VOC the **only right** to Dutch trade with Asia"
-          },
-          {
-            "label": "Powers",
-            "text": "Build **forts**, keep **soldiers**, make **treaties**, fight **wars**"
-          },
-          {
-            "label": "Rivals",
-            "text": "England had chartered its own **East India Company** in **1600**"
-          }
-        ],
-        "proves": "A ruler could send a company to compete with another ruler's company."
-      }
-    },
-    {
-      "kind": "source-quote",
-      "eyebrow": "Claim It · Model",
-      "title": "A company leader writes home, 1614.",
-      "footer": "Find the claim, then the reason the author gives for it.",
-      "kc": "KC-4.3.III.ii",
-      "template": {
-        "quote": "[T]he weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.",
-        "attribution": {
-          "author": "Jan Pieterszoon Coen, VOC official in Asia",
-          "work": "Letter to the company's directors",
-          "year": "1614"
-        },
-        "notice": "What does Coen claim about trade and war? What reason does he give?"
-      }
-    },
-    {
-      "kind": "branch-tree",
-      "eyebrow": "Rivals · Old Fights, New Tools",
+      "kind": "claim-evidence",
+      "eyebrow": "Claims and Evidence in Sources 3.A · Rivals",
       "title": "Economic disputes became wars.",
-      "footer": "States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.",
+      "footer": "Fighting over trade was old. The new tools were the laws and the companies they fought with.",
       "kc": "KC-4.3.III.ii",
       "template": {
-        "claimLabel": "The pattern",
-        "claim": "Rival states fought over **who would control a trade**.",
-        "branches": [
+        "claimLabel": "Jan Pieterszoon Coen, VOC official in Asia, 1614",
+        "claim": "\"[T]he weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.\"",
+        "evidence": [
           {
-            "label": "Indian Ocean",
-            "note": "Spices: Portugal against Muslim states",
-            "items": [
-              "Diu, 1509",
-              "Ottoman fleets, 1500s"
-            ]
+            "text": "Portugal fights Muslim fleets for the spice trade: Diu, 1509.",
+            "source": "Indian Ocean"
           },
           {
-            "label": "The Sahara",
-            "note": "Gold and salt: Morocco against Songhai",
-            "items": [
-              "Tondibi, 1591"
-            ]
+            "text": "Morocco crosses the Sahara for gold and salt: Tondibi, 1591.",
+            "source": "The Sahara"
           },
           {
-            "label": "Europe's rivals",
-            "note": "Spices and shipping: Dutch against English",
-            "items": [
-              "Ambon, 1623",
-              "Three wars, 1652 to 1674"
-            ]
+            "text": "The VOC may build forts and wage war; England and the Dutch fight three wars, 1652 to 1674.",
+            "source": "Europe's rivals"
           }
-        ]
+        ],
+        "reasoning": "Coen's claim is about his own company, and the evidence shows a wider pattern: rival states fought over **who would control a trade**."
       }
     },
     {
-      "kind": "map",
-      "eyebrow": "Follow the Silver",
-      "title": "Two roads for silver, both toward Asia.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-4-5.svg",
-        "alt": "World map showing silver from Potosí to Seville and on around Africa to Asia, silver from New Spain by galleon to Manila and into China, enslaved Africans carried west across the Atlantic, and dots at Diu, Tondibi, Ambon and Manila"
-      },
-      "footer": "Diu, Tondibi and Ambon are places where economic disputes turned violent. Manila marks where silver met silk.",
-      "kc": "Unit 4: Learning Objective I"
-    },
-    {
-      "kind": "cause-chain",
+      "kind": "story-scene",
       "eyebrow": "Exchange · Silver",
       "title": "Why the silver went to China.",
       "footer": "Spain had the mines. China's demand pulled the silver around the world.",
       "kc": "KC-4.1.IV",
       "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-5/4.5%20-%20Silver%20for%20Silk.JPG",
+          "alt": "Reconstruction of Chinese and other merchants inspecting silk, porcelain and silver at a busy Manila waterfront",
+          "fit": "contain"
+        },
         "steps": [
           {
             "label": "Mines, 1545 and 1546",
@@ -225,27 +134,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Chinese merchants trade silk and porcelain for silver"
           }
         ],
-        "links": [
-          "while",
-          "so",
-          "so"
-        ]
-      }
-    },
-    {
-      "kind": "frame-subtitle",
-      "eyebrow": "",
-      "title": "Who ran the silk-for-silver trade at Manila?",
-      "subtitle": "Chinese merchants supplied silk and porcelain; American silver paid for them.",
-      "kc": "KC-4.1.IV",
-      "template": {
-        "visual": {
-          "ai": true,
-          "url": "../assets/images/topics/4-5/4.5%20-%20Silver%20for%20Silk.JPG",
-          "alt": "Reconstruction of Chinese and other merchants inspecting silk, porcelain and silver at a busy Manila waterfront",
-          "fit": "contain"
-        },
-        "place": "top"
+        "caption": "Manila: silk and porcelain for American silver"
       }
     },
     {
@@ -287,7 +176,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Exchange · Markets That Kept Going",
       "title": "The new trade joined the old markets. It did not replace them.",
       "footer": "The College Board's words: regional markets \"continued to flourish.\"",
-      "kc": "KC-4.1.IV",
+      "kc": "Unit 4: Learning Objective I",
       "template": {
         "date": "After 1550",
         "before": {
@@ -448,7 +337,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-evidence",
-      "eyebrow": "",
+      "eyebrow": "Faith · Blending",
       "title": "Two traditions in one painting.",
       "subtitle": "The Virgin of the Mountain, painted in Potosí in the 1700s: Mary is the silver mountain itself.",
       "kc": "KC-4.1.VI",
@@ -463,52 +352,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-5/virgen-del-cerro-potosi.jpg",
           "alt": "Painting of a great red mountain with the face, hands and crown of the Virgin Mary at its top and tiny people and animals on its slopes; two crowned figures and a dove above, and a pope, churchmen and a king kneeling below around a blue globe",
           "credit": "La Virgen del Cerro, Potosí, 1700s · Photo Dan Lundberg · CC BY-SA 2.0",
-          "position": "50% 30%",
-          "fit": "contain"
+          "fit": "contain",
+          "position": "50% 30%"
         },
         "sceneLabel": "Reconstruction: imagine the workshop",
         "evidenceLabel": "Historical painting: reason from this"
-      }
-    },
-    {
-      "kind": "source-quote",
-      "eyebrow": "Claim It · Your Turn",
-      "title": "A friar is suspicious, in the 1570s.",
-      "footer": "Find his claim. Does his own evidence prove it?",
-      "kc": "KC-4.1.VI",
-      "template": {
-        "quote": "[T]hey also call her Tonantzin, taking the occasion from the preachers, who called Our Lady ... Tonantzin. ... It seems to be a satanic invention to cover up idolatry ... and they now come ... from very far away.",
-        "attribution": {
-          "author": "Bernardino de Sahagún, Franciscan friar in Mexico",
-          "work": "General History of the Things of New Spain",
-          "year": "1570s"
-        },
-        "notice": "\"Her\" is the Virgin of Guadalupe at Tepeyac. What is his claim? What is his evidence?"
-      }
-    },
-    {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence tells a more useful story than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Europe bought Asian goods with better products.",
-            "evidence": "Europeans had few goods Asians wanted, so they paid in American silver.",
-            "source": "Silver around Africa; Manila"
-          },
-          {
-            "myth": "Global trade replaced the old markets.",
-            "evidence": "Regional markets kept flourishing, and Europeans joined them as carriers.",
-            "source": "Gujarati, Chinese, Armenian merchants"
-          },
-          {
-            "myth": "European culture simply replaced the others.",
-            "evidence": "Africans, Indigenous Americans, and Europeans all made the new Atlantic cultures.",
-            "source": "Creole languages; Vodou; Guadalupe"
-          }
-        ]
       }
     },
     {
@@ -576,16 +424,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Module 05 · Skill Builder",
       "title": "What does the author want you to believe?",
       "subtitle": "Find the claim in a source, say it in one sentence, and name the evidence the author gives.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-5-maritime-empires-maintained.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "Tools and exchange.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-5-maritime-empires-maintained.html#modules"

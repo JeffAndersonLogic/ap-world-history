@@ -47,35 +47,27 @@ window.BEHISTORICAL_TEACHING = {
   },
 
   flow: [
-    { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the four objectives, the owns and bridge-only split, the four myths.', students: 'Not projected.', slide: 1 },
+    { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the four objectives, owns and bridge-only, the big ideas.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.4. Bridge to how rulers made the empires pay.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over the VOC shipyard.', students: 'Predict one way to make an empire pay.', slide: 3 },
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Making Empires Pay" in class.', students: 'For every part: what was new, what kept going.', slide: 4 },
     { id: 'mercantilism', label: 'Tool 1: An Idea', range: '17-19', minutes: 2, teacher: 'Mercantilism, and the laws that came from it.', students: 'Say what a colony was for.', slide: 5 },
-    { id: 'mun', label: 'Claim It: Mun', range: '19-21', minutes: 2, teacher: 'Model 3.A: the claim in one sentence.', students: 'Restate the claim.', slide: 6 },
-    { id: 'shares', label: 'Tool 2: How It Works', range: '21-23', minutes: 2, teacher: 'Shares, one pool, the risk split; the charter; finance and compete.', students: 'Say why many investors would share one voyage.', slide: 7 },
-    { id: 'company', label: 'Tool 2: A Company', range: '23-25', minutes: 2, teacher: 'The VOC as the case: the charter, its powers, a real share.', students: 'Say why a ruler would want one.', slide: 8 },
-    { id: 'coen', label: 'Claim It: Coen', range: '25-27', minutes: 2, teacher: 'Coen\'s claim about trade and war.', students: 'Find the claim and the reason.', slide: 9 },
-    { id: 'rivals', label: 'Disputes Become Wars', range: '27-30', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 10 },
-    { id: 'map', label: 'Follow the Silver', range: '30-31', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 11 },
-    { id: 'silver', label: 'Why China', range: '31-34', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 12 },
-    { id: 'manila', label: 'Silk for Silver', range: '34-35', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 13 },
-    { id: 'atlantic', label: 'The Atlantic System', range: '35-37', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 14 },
-    { id: 'regional', label: 'Old Markets Keep Going', range: '37-39', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 15 },
-    { id: 'work', label: 'More Work', range: '39-41', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 16 },
-    { id: 'families', label: 'Families in Africa', range: '41-43', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 17 },
-    { id: 'mixing', label: 'A Mixed Atlantic World', range: '43-45', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 18 },
-    { id: 'faith', label: 'Spread, Clash, Blend', range: '45-47', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 19 },
-    { id: 'virgin', label: 'The Virgin of the Mountain', range: '47-48', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 20 },
-    { id: 'sahagun', label: 'Claim It: Sahagún', range: '48-50', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 21 },
-    { id: 'myths', label: 'Myth and Evidence', range: '50-52', minutes: 2, teacher: 'Four things people get wrong.', students: 'Correct each myth.', slide: 22 },
-    { id: 'ledger', label: 'What Was New, What Kept Going', range: '52-56', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 23 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '56-58', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 24 },
-    { id: 'skill', label: 'Skill Builder', range: '58-64', minutes: 6, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find Sahagún\'s claim.', slide: 25 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: tools and exchange.', students: 'Work without the coach.', slide: 26 },
-    { id: 'evidence', label: 'Evidence Lab', range: '64-71', minutes: 7, teacher: 'Module 07: something new and something that kept going, from two sources.', students: 'Observe, then infer, then name a limit.', slide: 27 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '71-81', minutes: 10, teacher: 'Module 10: society and belief. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 28 },
-    { id: 'close', label: 'Landing Sentence', range: '81-82', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 29 }
+    { id: 'shares', label: 'Tool 2: How It Works', range: '19-22', minutes: 3, teacher: 'Shares, one pool, the risk split; the VOC charter; finance and compete.', students: 'Say why many investors would share one voyage.', slide: 6 },
+    { id: 'rivals', label: 'Claim It: Trade and War', range: '22-26', minutes: 4, teacher: 'Model 3.A on Coen; his evidence is the rivalries.', students: 'Find the claim, the reason, the trade.', slide: 7 },
+    { id: 'silver', label: 'Why China', range: '26-29', minutes: 3, teacher: 'Mines, the Single Whip, Manila: silk for silver.', students: 'Explain the pull.', slide: 8 },
+    { id: 'atlantic', label: 'The Atlantic System', range: '29-31', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 9 },
+    { id: 'regional', label: 'Old Markets Keep Going', range: '31-33', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 10 },
+    { id: 'work', label: 'More Work', range: '33-35', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 11 },
+    { id: 'families', label: 'Families in Africa', range: '35-37', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 12 },
+    { id: 'mixing', label: 'A Mixed Atlantic World', range: '37-39', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 13 },
+    { id: 'faith', label: 'Spread, Clash, Blend', range: '39-41', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 14 },
+    { id: 'blend', label: 'The Virgin of the Mountain', range: '41-44', minutes: 3, teacher: 'Two traditions in one painting; Sahagún waits for Module 05.', students: 'Find the Christian and the Andean.', slide: 15 },
+    { id: 'ledger', label: 'What Was New, What Kept Going', range: '44-48', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 16 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '48-50', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 17 },
+    { id: 'skill', label: 'Skill Builder', range: '50-58', minutes: 8, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find Sahagún\'s claim.', slide: 18 },
+    { id: 'evidence', label: 'Evidence Lab', range: '58-66', minutes: 8, teacher: 'Module 07: something new and something that kept going, from two sources.', students: 'Observe, then infer, then name a limit.', slide: 19 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '66-78', minutes: 12, teacher: 'Module 10: society and belief. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 20 },
+    { id: 'close', label: 'Landing Sentence', range: '78-79', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 21 }
   ],
 
   quickLaunch: [
@@ -114,8 +106,8 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: mercantilism and joint-stock companies, rivalries from economic disputes (including Europeans against each other), silver and the Atlantic system, regional markets, peasant and artisan labor, African family change, Atlantic cultural mixing, religions spreading, clashing and blending.',
           'Bridge only: the mit’a and the colonial labor systems (4.4; Potosí appears as silver\'s source); Tondibi as a battle (3.1; 4.5 gives its economic motive); the size of the slave trade and the plantations (4.4); Japan\'s ban on Christianity (4.4, one clause); casta (4.7, not mentioned); resistance (4.6, the hand-off).',
           'Four myths: "Europe paid for Asian goods with better products"; "the Atlantic trade was a neat triangle"; "global trade replaced the old markets"; "European culture simply replaced the others in the Americas."',
-          'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 11. None is AI-generated.',
-          'Slides 5 and 7 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (added 2026-11-04). Slide 8 is the case: the VOC, with the real 1606 share receipt.'
+          'Slides 5 and 6 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (Jeff, 2026-11-04). They stay whole on the big-rocks deck.',
+          'Big rocks (Jeff, 2026-11-05): this deck was cut from 29 slides to 21. 4.5 carries eight Key Concepts and four learning objectives, each needing its own banded slide, so it stays longer than 4.6 or 4.7. Removed: Mun\'s quotation (now in the mercantilism notes), the VOC case (into the shares notes and the rivalry evidence), Coen\'s quotation as its own slide (now the claim on the rivalry slide, which models 3.A), the map (Module 01), the Manila slide (into the silver slide), the Sahagún slide (into the Virgin of the Mountain slide\'s notes and the Skill Builder), the myths slide (now AVOID notes on slides 8, 10 and 15) and the optional Checkpoint 1 slide.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Rulers built tools to make their empires pay (mercantilist laws, chartered companies), and the silver, goods and people those tools moved changed work, families and faith, while old markets and old religions kept going.',
@@ -202,7 +194,7 @@ window.BEHISTORICAL_TEACHING = {
          rendered by scripts/build-slide-graphics.js. The alt text says everything the picture
          says; change one and change the other. */
       phase: 'mercantilism', kind: 'frame-full', eyebrow: 'Rulers\' Tool 1 · An Idea',
-      kc: 'KC-4.1.IV.C', title: 'Mercantilism: how a state grows strong.',
+      kc: 'Unit 4: Learning Objective H', title: 'Mercantilism: how a state grows strong.',
       template: {
         visual: { url: '../assets/images/topics/4-5/mercantilism-tool-1.png', alt: 'Slide graphic titled Mercantilism: Rulers\' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England\'s Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country\'s goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the "mercantile system" in 1776. Think: in this way of thinking, what is a colony for?' }
       },
@@ -221,40 +213,12 @@ window.BEHISTORICAL_TEACHING = {
           'England: the Navigation Act of 1651 said goods from Asia, Africa and the Americas could enter England only in English ships; it was aimed at Dutch shippers. Later acts (1660) listed colonial goods such as sugar and tobacco that could be shipped only to England.',
           'The colony\'s job in this way of thinking: send raw goods home, buy the home country\'s goods, and trade with no one else.',
           'The slide is one picture. The three rows on the right are the CED\'s own verbs: rulers used mercantilism to expand and control their economies and to claim overseas territories. The diagram answers the Think question at the bottom.',
-          'The goods on the arrows are examples, not CED requirements. Wine: Spain\'s 1595 order against new vineyards in the Americas was meant to protect Spanish wine sales, but it was widely ignored, and Peru made wine anyway. Use it to show the rule and the gap between rule and practice.'
+          'The goods on the arrows are examples, not CED requirements. Wine: Spain\'s 1595 order against new vineyards in the Americas was meant to protect Spanish wine sales, but it was widely ignored, and Peru made wine anyway. Use it to show the rule and the gap between rule and practice.',
+          'Big-rocks revision, 2026-11-05: Thomas Mun\'s quotation no longer has its own slide. Read it aloud here if you want the mercantilist rule in a merchant\'s own words: "The ordinary means therefore to encrease our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value." Mun (1571 to 1641) was a director of the English East India Company; England\'s Treasure by Forraign Trade was published by his son in 1664, probably written in the 1620s or 1630s. A ruler who believed it would tax imports, support exports and keep colonial trade at home. First & 10 question 02 asks for his claim.'
         ],
         ask: 'In this way of thinking, what is a colony for?',
         listenFor: 'To send raw goods home and buy the home country\'s goods, so money stays inside the empire.',
         ap: 'LO H: an economic strategy rulers used to consolidate and maintain power.'
-      }
-    },
-    {
-      phase: 'mun', kind: 'source-quote', eyebrow: 'Claim It · Model',
-      kc: 'Unit 4: Learning Objective H', title: 'An English merchant states a rule.',
-      footer: 'A claim is what the author wants you to believe. Say it in your own words.',
-      template: {
-        quote: 'The ordinary means therefore to encrease our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.',
-        attribution: { author: 'Thomas Mun, director of the English East India Company', work: 'England\'s Treasure by Forraign Trade, printed 1664', year: 'written 1620s or 1630s' },
-        notice: 'What does Mun want his reader to believe? What would a ruler do if he believed it?'
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Model skill 3.A: find the claim',
-          'Mun: East India Company director',
-          'Claim: sell more to foreigners than you buy',
-          'Ruler’s tools: tariffs, exports, closed colonies',
-          'Published 1664, after his death'
-        ],
-        land: [
-          'Thomas Mun (1571 to 1641), a London merchant and a director of the English East India Company. England\'s Treasure by Forraign Trade was published in 1664 by his son John, after his death; it was probably written in the 1620s or 1630s. The quotation is from chapter 2, in its original spelling ("strangers" means foreigners).',
-          'Model the suggested skill, 3.A: identify and describe a claim in a source. The claim: a country grows rich by selling more to foreigners each year than it buys from them. That is the mercantilist rule in one line.',
-          'Then one more step: what would a ruler do with it? Tariffs on imports, support for exports, and laws keeping colonial trade at home.',
-          'Mun also defended his company\'s practice of sending silver to Asia, arguing that what it bought there was resold in Europe for more. Keep that for the deep reading.'
-        ],
-        ask: 'Put Mun\'s claim in your own words in one sentence.',
-        listenFor: 'England gets rich by selling more to other countries than it buys from them.',
-        ap: 'Claims and Evidence in Sources 3.A: find the claim before you use the source.'
       }
     },
     {
@@ -268,7 +232,7 @@ window.BEHISTORICAL_TEACHING = {
         visual: { url: '../assets/images/topics/4-5/joint-stock-company-tool-2.png', alt: 'Slide graphic titled The Joint-Stock Company: Rulers\' Tool 2, a new kind of company, Topic 4.5, 1450 to 1750. Tool 1 shaped Tool 2: mercantilism said win trade and keep it at home, and rulers and merchants built a company to do both. A diagram. The problem: one voyage to Asia cost a fortune, and ships were often lost. The answer, sell shares: many investors each buy shares, their money goes into one pool, the pool pays for one voyage to Asia, and the profits and losses come back split by share. If a ship was lost, many investors shared the loss instead of one. Finance exploration: rulers and merchants raised the money for long voyages, the English East India Company (chartered 1600) and the Dutch East India Company, the VOC (1602). Charter from the ruler: the charter gave one company the only right, in its own country, to trade with Asia. Compete against rival rulers: each state sent its company to win trade from the others, and the VOC could even build forts, keep soldiers and fight wars. Continuity and change. Old: merchants had pooled money for voyages for centuries. New: a company with a government\'s monopoly, its own soldiers and the right to make war, sent by one state to compete with another.' }
       },
       notes: {
-        minutes: 2,
+        minutes: 3,
         keys: [
           'Problem: costly voyages, ships often lost',
           'Answer: sell shares, pool the money',
@@ -283,7 +247,8 @@ window.BEHISTORICAL_TEACHING = {
           'The strip at the top is the CED\'s link: joint-stock companies were "influenced by these mercantilist principles." The charter gave one company the only right, in its own country, to trade with Asia, which is the mercantilist rule of keeping trade at home, made into a company.',
           'KC-4.1.IV.C names two uses, and the two right-hand rows carry them: rulers and merchants used these companies to finance exploration, and rulers used them to compete against one another in global trade.',
           'The footer is the First & 10\'s Continuity and Change callout: merchants had pooled money for voyages for centuries; what was new was a company with a government\'s monopoly, its own soldiers and the right to make war.',
-          'The next slide is the case: the VOC, with a real share receipt from 1606.'
+          'The VOC is the case, in the note below; its war powers are evidence on the next slide.',
+          'Big-rocks revision, 2026-11-05: the VOC case slide is folded in here and into slide 7. The English East India Company was chartered by Elizabeth I on 31 December 1600. The VOC was chartered by the States General on 20 March 1602 with a 21-year monopoly on Dutch trade east of the Cape of Good Hope and powers to build forts, keep soldiers, make treaties and wage war. Its capital stayed in the company rather than being paid out after each voyage, and its shares were traded in Amsterdam. A share receipt of 9 September 1606, from the Enkhuizen chamber, is often called the oldest surviving share certificate (Westfries Archief).'
         ],
         ask: 'Why would many investors share one voyage instead of one rich merchant paying for all of it?',
         listenFor: 'A voyage cost a fortune and ships were often lost, so sharing spread the risk: one wreck did not ruin one person.',
@@ -291,123 +256,40 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'company', kind: 'case-file', eyebrow: 'Rulers\' Tool 2 · A Company',
-      kc: 'KC-4.1.IV.C', title: 'A company that could go to war.',
-      template: {
-        tag: 'Joint-stock company', place: 'The Dutch Republic', date: '1602',
-        visual: { url: '../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg', alt: 'A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom', credit: 'Receipt for a VOC share, Enkhuizen, 1606 · Public domain', position: '50% 30%' },
-        rows: [
-          { label: 'Shares', text: '**Many investors** bought shares and split the profits and the losses' },
-          { label: 'Charter', text: 'The Dutch government gave the VOC the **only right** to Dutch trade with Asia' },
-          { label: 'Powers', text: 'Build **forts**, keep **soldiers**, make **treaties**, fight **wars**' },
-          { label: 'Rivals', text: 'England had chartered its own **East India Company** in **1600**' }
-        ],
-        proves: 'A ruler could send a company to compete with another ruler\'s company.'
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'English company 1600; Dutch VOC 1602',
-          'VOC: monopoly, forts, soldiers, treaties, war',
-          'Joint-stock: shareholders share profit and risk',
-          'Share receipt, 1606: often called the oldest',
-          'Rulers used them to finance and compete'
-        ],
-        land: [
-          'The English East India Company was chartered by Elizabeth I on 31 December 1600. The VOC (Verenigde Oostindische Compagnie) was chartered by the States General of the Dutch Republic on 20 March 1602 with a monopoly, for 21 years, on Dutch trade east of the Cape of Good Hope and west of the Strait of Magellan, and powers to build forts, keep soldiers, make treaties with Asian rulers and wage war.',
-          'Joint-stock: investors bought shares and shared profit and risk. The VOC\'s capital stayed in the company rather than being paid out after each voyage, and its shares were bought and sold in Amsterdam.',
-          'The picture is a share receipt of 9 September 1606, from the VOC\'s Enkhuizen chamber, often called the oldest surviving share certificate (Westfries Archief). It records a payment on a share.',
-          'KC-4.1.IV.C names two uses: rulers and merchants used these companies to finance exploration, and rulers used them to compete against one another in global trade.'
-        ],
-        ask: 'Why would a government want a company to be able to fight a war?',
-        listenFor: 'So the company could fight rivals and hold trade without the state paying for the war itself.',
-        ap: 'LO H: the second tool, and the reason it was new.'
-      }
-    },
-    {
-      phase: 'coen', kind: 'source-quote', eyebrow: 'Claim It · Model',
-      kc: 'KC-4.3.III.ii', title: 'A company leader writes home, 1614.',
-      footer: 'Find the claim, then the reason the author gives for it.',
-      template: {
-        quote: '[T]he weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.',
-        attribution: { author: 'Jan Pieterszoon Coen, VOC official in Asia', work: 'Letter to the company\'s directors', year: '1614' },
-        notice: 'What does Coen claim about trade and war? What reason does he give?'
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'VOC leader to his directors, 1614',
-          'Claim: no trade without war',
-          'Reason: trade pays for the weapons',
-          'Purpose: he wants money and soldiers',
-          'Company as weapon; dispute becomes conflict'
-        ],
-        land: [
-          'Jan Pieterszoon Coen (1587 to 1629) was the VOC\'s director-general of trade in Asia in 1614 and became governor-general in 1618. He wrote this from Bantam to the company\'s directors, the Heeren XVII (Gentlemen Seventeen), on 27 December 1614. The Dutch is printed in H. T. Colenbrander, ed., Jan Pieterszoon Coen: Bescheiden omtrent zijn bedrijf in Indië, vol. 1 (1919), pp. 97 to 98; the English is translated for BeHistorical from it. C. R. Boxer\'s often-quoted English (The Dutch Seaborne Empire, 1965) words it slightly differently: "we cannot carry on trade without war nor war without trade."',
-          'Claim: trade and war cannot be separated. Reason: the weapons are paid for by the trade. The full sentence (in the Skill Builder) adds the other half: trade in the Indies "must be carried on and kept up under the protection and favor of your own weapons."',
-          'This is the company as a weapon (KC-4.1.IV.C) and economic dispute turning into conflict (KC-4.3.III.ii) in one sentence. Coen later took Jakarta by force (1619) and renamed it Batavia; keep that for the deep reading.',
-          'Sourcing note for later: Coen was arguing for more money and soldiers from his directors. That is his purpose, and it is why he states the claim so strongly.'
-        ],
-        ask: 'Coen is writing to the people who pay for the company. What does he want from them?',
-        listenFor: 'Money and support for soldiers and ships: he wants them to accept war as part of trade.',
-        ap: 'Claims and Evidence in Sources 3.A: a claim, and the reason the source gives for it.'
-      }
-    },
-    {
-      phase: 'rivals', kind: 'branch-tree', eyebrow: 'Rivals · Old Fights, New Tools',
+      phase: 'rivals', kind: 'claim-evidence', eyebrow: 'Claims and Evidence in Sources 3.A · Rivals',
       kc: 'KC-4.3.III.ii', title: 'Economic disputes became wars.',
-      footer: 'States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.',
+      footer: 'Fighting over trade was old. The new tools were the laws and the companies they fought with.',
       template: {
-        claimLabel: 'The pattern',
-        claim: 'Rival states fought over **who would control a trade**.',
-        branches: [
-          { label: 'Indian Ocean', note: 'Spices: Portugal against Muslim states', items: ['Diu, 1509', 'Ottoman fleets, 1500s'] },
-          { label: 'The Sahara', note: 'Gold and salt: Morocco against Songhai', items: ['Tondibi, 1591'] },
-          { label: 'Europe\'s rivals', note: 'Spices and shipping: Dutch against English', items: ['Ambon, 1623', 'Three wars, 1652 to 1674'] }
-        ]
+        claimLabel: 'Jan Pieterszoon Coen, VOC official in Asia, 1614',
+        claim: '"[T]he weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade."',
+        evidence: [
+          { text: 'Portugal fights Muslim fleets for the spice trade: Diu, 1509.', source: 'Indian Ocean' },
+          { text: 'Morocco crosses the Sahara for gold and salt: Tondibi, 1591.', source: 'The Sahara' },
+          { text: 'The VOC may build forts and wage war; England and the Dutch fight three wars, 1652 to 1674.', source: 'Europe\'s rivals' }
+        ],
+        reasoning: 'Coen\'s claim is about his own company, and the evidence shows a wider pattern: rival states fought over **who would control a trade**.'
       },
       notes: {
-        minutes: 3,
+        minutes: 4,
         keys: [
-          'Fighting over trade was old; tools new',
-          'Indian Ocean: Portugal vs. Muslim powers, spices',
-          'Sahara: Morocco vs. Songhai, gold and salt',
+          'Model 3.A: find the claim, then the reason',
+          'Claim: no trade without war',
+          'Reason: the trade pays for the weapons',
+          'Purpose: Coen wants money and soldiers',
+          'Indian Ocean, Sahara, Europe: who controls a trade',
           'Tondibi 1591: teach the motive (battle was 3.1)',
-          'Europe: English vs. Dutch, spices and shipping',
-          'Ambon 1623; three Anglo-Dutch wars'
+          'Fighting over trade was old; tools new'
         ],
         land: [
-          'Indian Ocean (CED example: Muslim–European rivalry): in 1509 the Portuguese under Francisco de Almeida defeated a fleet of Mamluk Egypt, the sultan of Gujarat and the Zamorin of Calicut off Diu (3 February 1509). After the Ottomans conquered Egypt in 1517, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, including the siege of Diu in 1538. The dispute was over the spice trade and its routes: around Africa, or through the Red Sea to the Mediterranean.',
-          'Sahara (CED example: Moroccan conflict with Songhai): Sultan Ahmad al-Mansur sent an army of about 4,000 with firearms, under Judar Pasha, across the desert, which defeated Songhai at Tondibi on 13 March 1591. His aims included West Africa\'s gold (he seems to have believed Songhai controlled the gold mines, which it did not) and the Saharan salt mines (he had demanded Taghaza\'s revenues in the 1580s). 3.1 taught the battle; here, the motive.',
-          'Europe: on 9 March 1623 VOC officials on Ambon executed ten English East India Company men, nine Japanese soldiers in VOC service and a Portuguese man, accusing them, on confessions taken under torture, of a plot to seize the fort; historians still argue over whether a plot existed (Alison Games, Inventing the English Massacre, 2020). England and the Dutch Republic fought three wars at sea, 1652 to 1654, 1665 to 1667 and 1672 to 1674, largely over trade and shipping; the 1651 Navigation Act was one cause of the first.',
-          'Continuity and change in one slide: fighting over trade was old (Unit 2 is full of it); the tools were new.'
+          'Big-rocks revision, 2026-11-05: this one slide replaces four (Mun\'s quotation, the VOC case, Coen\'s letter and the rivalry tree). It models the suggested skill, 3.A, on Coen, and its evidence is the rivalry Key Concept. Mun\'s claim is in the mercantilism slide\'s notes; the VOC\'s charter is in the shares slide\'s notes.',
+          'Coen (1587 to 1629) was the VOC\'s director-general of trade in Asia and became governor-general in 1618. He wrote from Bantam to the company\'s directors, the Heeren XVII, on 27 December 1614 (H. T. Colenbrander, ed., Jan Pieterszoon Coen: Bescheiden omtrent zijn bedrijf in Indië, vol. 1, 1919, pp. 97 to 98; translated for BeHistorical). C. R. Boxer\'s often-quoted English words it "we cannot carry on trade without war nor war without trade." Claim: trade and war cannot be separated. Reason: the trade pays for the weapons. Purpose: he was arguing for more money and soldiers from the people who paid for the company, which is why he states it so strongly.',
+          'Indian Ocean (CED example: Muslim-European rivalry): on 3 February 1509 the Portuguese under Francisco de Almeida defeated a fleet of Mamluk Egypt, the sultan of Gujarat and the Zamorin of Calicut off Diu. After 1517 Ottoman fleets fought the Portuguese in the Red Sea, the Gulf and the western Indian Ocean, including the siege of Diu in 1538. The dispute was the spice trade and its routes.',
+          'Sahara (CED example: Moroccan conflict with Songhai): Ahmad al-Mansur sent about 4,000 soldiers with firearms under Judar Pasha, who defeated Songhai at Tondibi on 13 March 1591. His aims included West Africa\'s gold (he seems to have believed Songhai controlled the mines, which it did not) and the Saharan salt mines. 3.1 taught the battle; here, the motive.',
+          'Europe: the VOC\'s 1602 charter let it build forts, keep soldiers, make treaties and wage war. On 9 March 1623 VOC officials on Ambon executed ten English East India Company men and others on confessions taken under torture (Alison Games, 2020). England and the Dutch Republic fought three wars at sea, 1652 to 1654, 1665 to 1667 and 1672 to 1674, largely over trade and shipping; the 1651 Navigation Act was one cause of the first.'
         ],
-        ask: 'For each branch, which trade were the rivals fighting over?',
-        listenFor: 'Spices; gold and salt; spices and shipping.',
-        ap: 'KC-4.3.III.ii: economic disputes led to rivalries and conflict between states.'
-      }
-    },
-    {
-      phase: 'map', kind: 'map', eyebrow: 'Follow the Silver',
-      kc: 'Unit 4: Learning Objective I', title: 'Two roads for silver, both toward Asia.',
-      footer: 'Diu, Tondibi and Ambon are places where economic disputes turned violent. Manila marks where silver met silk.',
-      visual: { url: '../assets/images/instructional-maps/topic-4-5.svg', alt: 'World map showing silver from Potosí to Seville and on around Africa to Asia, silver from New Spain by galleon to Manila and into China, enslaved Africans carried west across the Atlantic, and dots at Diu, Tondibi, Ambon and Manila' },
-      notes: {
-        minutes: 1,
-        keys: [
-          'Shading is schematic, not borders',
-          'Two silver roads, both ending in Asia',
-          'East: arrows 1 and 4, around Africa',
-          'West: arrows 2 and 3, Acapulco to Manila',
-          'Arrow 5: enslaved Africans (size was 4.4)'
-        ],
-        land: [
-          'The course\'s own instructional map, rebuilt for this story. Shaded regions are schematic, not borders.',
-          'Point out the pattern: silver went east across the Atlantic and west across the Pacific, and much of both streams ended in Asia. Arrows 1 and 4 are the eastern road (Seville, then around Africa); arrows 2 and 3 the western road (Acapulco to Manila to China).',
-          'Arrow 5 is the Atlantic trade in enslaved Africans (4.4 taught its size).'
-        ],
-        ask: 'Trace both routes from Spanish America to China.',
-        listenFor: 'East across the Atlantic and around Africa; west across the Pacific through Manila.'
+        ask: 'What does Coen claim, and what reason does he give? Then: for each piece of evidence, which trade were the rivals fighting over?',
+        listenFor: 'No trade without war, because the trade pays for the weapons. Spices; gold and salt; spices and shipping.',
+        ap: 'Claims and Evidence in Sources 3.A: a claim and the reason the source gives for it. KC-4.3.III.ii: economic disputes led to rivalries and conflict between states.'
       }
     },
     {
@@ -438,34 +320,13 @@ window.BEHISTORICAL_TEACHING = {
           'Potosí (1545) and Zacatecas (1546). Spanish America produced most of the world\'s silver in this period; Flynn and Giráldez, citing Barrett and Cross, put Spanish America\'s output at about 150,000 tons between 1500 and 1800, "perhaps exceeding 80%" of world production. Japan was the other great source, perhaps 30 percent of world output in the late 1500s and early 1600s. The old map key\'s "60%" was the viceroyalty of Peru\'s share in Cross (1983), not Potosí\'s alone; do not give Potosí alone a share of world output.',
           'The Single Whip (yitiao bianfa) combined land taxes and labor service into payments in silver. It spread through the 1500s and was applied across the empire under Zhang Juzheng around 1580. Tens of millions of Chinese households now needed silver, and China mined little.',
           'Silver was worth more against gold in China than elsewhere: in the early 1500s an ounce of gold bought about six ounces of silver in China against about eleven or twelve in Europe, and in the 1590s about five and a half to seven at Canton against twelve and a half to fourteen in Spain (Von Glahn, 1996, and Flynn and Giráldez, 1995). Merchants who moved silver to China profited on the metal itself.',
-          'Manila was founded in 1571; the galleon route across the Pacific had been opened in 1565. Chinese junks from Fujian brought silk and porcelain to trade for the silver. The cause runs from China\'s side as much as Spain\'s: KC-4.1.IV\'s "satisfy Chinese demand for silver."'
+          'Manila was founded in 1571; the galleon route across the Pacific had been opened in 1565. Chinese junks from Fujian brought silk and porcelain to trade for the silver. The cause runs from China\'s side as much as Spain\'s: KC-4.1.IV\'s "satisfy Chinese demand for silver."',
+          'Big-rocks revision, 2026-11-05: the Manila slide is folded in here, and its picture with it. The Spanish galleon brought silver, but Chinese merchants from Fujian brought the goods (Morga, 1609: thirty or forty junks a year, which took only silver in return), and Chinese craftsmen and traders in the Parián, Manila\'s Chinese quarter, far outnumbered the Spanish. The regional trade was older than the city: the hinge to slide 10. The picture is a labeled reconstruction of a Manila waterfront; it illustrates the exchange, not an observed bargain, so do not count its coins or read its cargo marks.'
         ],
         ask: 'If China had not taxed in silver, what would have happened to the silver?',
         listenFor: 'Much less would have gone to Asia; its value would have been lower, and the trade would have been smaller.',
-        ap: 'Change: one metal moving through Europe, Asia, Africa and the Americas.'
-      }
-    },
-    {
-      phase: 'manila', kind: 'frame-subtitle',
-      kc: 'KC-4.1.IV',
-      title: 'Who ran the silk-for-silver trade at Manila?',
-      subtitle: 'Manila and its bay, in a Dutch view painted about 1665. The Dutch were Spain\'s rivals here.',
-      notes: {
-        minutes: 1,
-        keys: [
-          'Spain brought silver; Chinese brought goods',
-          'Fujian junks took only silver',
-          'Chinese far outnumbered the Spanish',
-          'Dutch view, from sailors’ reports',
-          'Hinge: silver (change) to markets (continuity)'
-        ],
-        land: [
-          'The picture is a real historical object: a bird\'s-eye view of Manila by Johannes Vingboons, a Dutch mapmaker, painted about 1665 (Nationaal Archief, The Hague). Vingboons never went to Manila; he worked from the reports of Dutch sailors, whose company was Spain\'s rival in these seas. It shows the walled Spanish city, the bay and the ships. The lecture card shows a Chinese man and woman labeled "Sangley" in the Boxer Codex, painted in Manila about 1590 (Lilly Library, Indiana University); that picture is too small to project.',
-          'The point: the Spanish galleon brought silver, but Chinese merchants from Fujian brought the goods (Morga, 1609: thirty or forty junks a year, which took only silver in return), and Chinese craftsmen and traders filled the Parián, Manila\'s Chinese quarter, and far outnumbered the Spanish. The regional trade was older than the city.',
-          'It is the hinge from silver (the change) to regional markets (the continuity).'
-        ],
-        ask: 'Who needed whom at Manila?',
-        listenFor: 'Both: the Spanish needed the Chinese goods and craftsmen; the Chinese merchants wanted the silver.'
+        ap: 'Change: one metal moving through Europe, Asia, Africa and the Americas.',
+        avoid: 'Myth: "Europe bought Asian goods with better products." Europeans had few goods Asians wanted, so they paid in American silver.'
       }
     },
     {
@@ -503,7 +364,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'regional', kind: 'continuity-change', eyebrow: 'Exchange · Markets That Kept Going',
-      kc: 'KC-4.1.IV', title: 'The new trade joined the old markets. It did not replace them.',
+      kc: 'Unit 4: Learning Objective I', title: 'The new trade joined the old markets. It did not replace them.',
       footer: 'The College Board\'s words: regional markets "continued to flourish."',
       template: {
         date: 'After 1550',
@@ -524,10 +385,12 @@ window.BEHISTORICAL_TEACHING = {
           'Second sentence of KC-4.1.IV: regional markets continued to flourish in Afro-Eurasia "by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."',
           'Established practices: credit and bills of exchange, partnerships, merchant families with agents in distant ports. Armenian merchants of New Julfa (Isfahan) traded from the Indian Ocean to Europe through family firms; Gujarati and Chinese merchants kept trading too.',
           'European shipping services: Dutch ships carried Japanese silver to Taiwan to buy Chinese silk, Japanese silver and copper to India, and Indian cloth to Southeast Asia, earning money from trade between Asian ports.',
-          '4.4 taught the Indian Ocean merchants as continuity (KC-4.3.II.A.iii). Here the point is how the new silver and the old markets fit together.'
+          '4.4 taught the Indian Ocean merchants as continuity (KC-4.3.II.A.iii). Here the point is how the new silver and the old markets fit together.',
+          'Big-rocks revision, 2026-11-05: the map slide is gone (Module 01 has it). Trace the two silver roads, across the Pacific to Manila and around Africa to Asia, there.'
         ],
         ask: 'Which column is the change, and which the continuity?',
-        listenFor: 'Silver and European carriers are the change; the merchants and their practices are the continuity.'
+        listenFor: 'Silver and European carriers are the change; the merchants and their practices are the continuity.',
+        avoid: 'Myth: "global trade replaced the old markets." Regional markets kept flourishing, and Europeans joined them as carriers.'
       }
     },
     {
@@ -655,93 +518,38 @@ window.BEHISTORICAL_TEACHING = {
           'KC-4.1.VI: increased contact "expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices." LO K asks for similarities and differences: the three branches are the comparison.',
           'Spread: Christianity in the Americas, in the Philippines from 1565, and in Kongo; Matteo Ricci and other Jesuits lived in Beijing from 1601. Islam kept spreading in Southeast Asia along older trade routes.',
           'Clashed: in the archdiocese of Lima, from about 1609 to 1610, priests led by Francisco de Ávila ran "extirpation of idolatry" campaigns, destroying Andean sacred objects and punishing religious specialists. Japan\'s rulers banned Christianity (4.4).',
-          'Blended: Guadalupe (next slides), Kongo crucifixes made by Kongo artists in Kongo style, and Vodou, formed among enslaved Africans in the French colony of Saint-Domingue (Haiti) in the 1700s from West and Central African religions and Catholic saints. Santería took its familiar form in Cuba in the 1800s, after this period; do not use it as a 1450 to 1750 example.'
+          'Blended: the Virgin of the Mountain and Guadalupe (next slide), Kongo crucifixes made by Kongo artists in Kongo style, and Vodou, formed among enslaved Africans in the French colony of Saint-Domingue (Haiti) in the 1700s from West and Central African religions and Catholic saints. Santería took its familiar form in Cuba in the 1800s, after this period; do not use it as a 1450 to 1750 example.'
         ],
         ask: 'Give one similarity and one difference between two branches.',
         listenFor: 'Similar: each came from contact. Different: in Peru the old religion was attacked; at Tepeyac it blended.'
       }
     },
     {
-      phase: 'virgin', kind: 'frame-subtitle',
-      kc: 'KC-4.1.VI',
-      title: 'Two traditions in one painting.',
+      phase: 'blend', kind: 'frame-evidence', eyebrow: 'Faith · Blending',
+      kc: 'KC-4.1.VI', title: 'Two traditions in one painting.',
       subtitle: 'The Virgin of the Mountain, painted in Potosí in the 1700s: Mary is the silver mountain itself.',
       notes: {
-        minutes: 1,
+        minutes: 3,
         keys: [
-          'Real painting, Potosí, 1700s',
+          'Real painting, Potosí, 1700s: on the right',
           'Mary is the silver mountain',
           'Christian: Mary, Trinity, pope, king',
           'Andean: sacred mountain, earth as mother',
           'Say "art historians read it as"',
-          'Ties back to the silver'
-        ],
-        land: [
-          'The picture is a real historical painting: La Virgen del Cerro, by an unknown painter in Potosí, 1700s, in the Casa Nacional de Moneda, Potosí (photograph by Dan Lundberg, 2017, CC BY-SA 2.0; other versions survive, including one in La Paz). Mary\'s face and hands appear on the Cerro Rico, the silver mountain, whose slopes carry tiny figures of people and animals; the Father and the Son crown her, with the Holy Spirit above, and a pope, a cardinal and a bishop kneel at the left and a king at the right, around a globe.',
-          'It blends Christian painting with the Andean idea of sacred mountains and of the earth as a mother (Pachamama). Art historians read it that way; some caution that the painter\'s own intention is not recorded. Say "art historians read it as."',
-          'It also ties the day together: the silver mountain of Potosí, the source of the silver that went to China, shown as a Christian and Andean holy figure.'
-        ],
-        ask: 'Find one Christian thing and one Andean thing in the painting.',
-        listenFor: 'Christian: Mary, the Trinity, a pope. Andean: the mountain as a sacred mother.'
-      }
-    },
-    {
-      phase: 'sahagun', kind: 'source-quote', eyebrow: 'Claim It · Your Turn',
-      kc: 'KC-4.1.VI', title: 'A friar is suspicious, in the 1570s.',
-      footer: 'Find his claim. Does his own evidence prove it?',
-      template: {
-        quote: '[T]hey also call her Tonantzin, taking the occasion from the preachers, who called Our Lady ... Tonantzin. ... It seems to be a satanic invention to cover up idolatry ... and they now come ... from very far away.',
-        attribution: { author: 'Bernardino de Sahagún, Franciscan friar in Mexico', work: 'General History of the Things of New Spain', year: '1570s' },
-        notice: '"Her" is the Virgin of Guadalupe at Tepeyac. What is his claim? What is his evidence?'
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'First look only: do not settle it',
-          'Friar, 1570s, worried about hidden idolatry',
-          'His word: Tonantzin, "our mother"',
-          'Preachers themselves called Mary Tonantzin',
-          'Claim and verdict wait for Module 05',
+          'Sahagún waits for Module 05',
           'Apparition story published 1648, not 1531'
         ],
         land: [
-          'Bernardino de Sahagún (about 1499 to 1590), a Franciscan friar who worked with Nahua scholars for decades on a history of Nahua life and belief. The passage is from the appendix to Book 11 of his General History of the Things of New Spain, finished in the 1570s. The English is translated for BeHistorical from the Spanish text in Carlos María de Bustamante\'s edition (Mexico, 1830), vol. 3, pp. 321 to 322. Ellipsis marks the cut. Note what students usually miss: Sahagún says the Spanish preachers themselves had called Mary Tonantzin.',
-          'For you, not to say yet: the Skill Builder (Module 05, required) asks students to write this claim and judge it, so this slide is a first look and the class does not settle it here. Sahagún claims that the Nahua who come to Tepeyac may still be honoring their old goddess under a Christian name. His evidence is the name they use, Tonantzin, and that people come from far away, as they did before.',
-          'Push one step further: a claim is not the same as proof. Sahagún was a missionary worried about hidden idolatry; Nahua Christians may simply have used an old word for "our mother" for Mary. That is why this is a source about syncretism, and about what a Spanish friar feared.',
-          'The apparition story of Juan Diego (dated 1531) was first published in 1648 and 1649; the shrine was already a center of devotion by the 1550s. Do not teach the apparition as an event of 1531.'
+          'Big-rocks revision, 2026-11-05: this one slide replaces two (the Virgin of the Mountain and Sahagún\'s quotation). The painting is still here as the slide\'s source; Sahagún is the Skill Builder\'s, so nothing is lost.',
+          'The real painting, on the right: La Virgen del Cerro, unknown painter, Potosí, 1700s (Casa Nacional de Moneda, Potosí; photograph Dan Lundberg, 2017, CC BY-SA 2.0; other versions survive, including one in La Paz). Mary\'s face and hands appear on the Cerro Rico, the silver mountain, whose slopes carry tiny people and animals; the Father and the Son crown her, with the Holy Spirit above, and a pope, a cardinal and a bishop kneel at the left and a king at the right, around a globe.',
+          'Art historians read it as blending Christian painting with the Andean idea of sacred mountains and of the earth as a mother (Pachamama); some caution that the painter\'s intention is not recorded. Say "art historians read it as." It ties the day together: the mountain whose silver went to China.',
+          'The left picture is a labeled reconstruction of an artist\'s workshop; it cannot show who painted the real picture or how. Reason from the right-hand painting.',
+          'Guadalupe: the shrine at Tepeyac was a center of devotion by the 1550s; the apparition story of Juan Diego (dated 1531) was first published in 1648 and 1649, so do not teach the apparition as an event of 1531. In the Skill Builder (Module 05, required) students read Bernardino de Sahagún\'s 1570s complaint that Nahua pilgrims "also call her Tonantzin," which he calls "a satanic invention to cover up idolatry," and judge whether his evidence proves his claim. He also says the Spanish preachers themselves had called Mary Tonantzin. Do not settle it here.'
         ],
-        ask: 'What word does Sahagún keep coming back to? Hold your answer for Module 05.',
-        listenFor: 'First reactions only (the name Tonantzin). Do not give the claim or the verdict here; students write both in Module 05, and the debrief comes after.',
-        ap: 'Claims and Evidence in Sources 3.A: identify the claim, and describe the evidence the source gives for it.'
-      }
-    },
-    {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence tells a more useful story than the myths.',
-      template: {
-        rows: [
-          { myth: 'Europe bought Asian goods with better products.', evidence: 'Europeans had few goods Asians wanted, so they paid in American silver.', source: 'Silver around Africa; Manila' },
-          { myth: 'Global trade replaced the old markets.', evidence: 'Regional markets kept flourishing, and Europeans joined them as carriers.', source: 'Gujarati, Chinese, Armenian merchants' },
-          { myth: 'European culture simply replaced the others.', evidence: 'Africans, Indigenous Americans, and Europeans all made the new Atlantic cultures.', source: 'Creole languages; Vodou; Guadalupe' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Silver, not better products, bought Asian goods',
-          'Old markets kept flourishing',
-          'All contributed, but not as equals',
-          'Mixing often happened under force',
-          'Triangle myth: fixed on the Atlantic slide'
-        ],
-        land: [
-          'Row 1 is KC-4.1.IV\'s silver sentence: silver bought Asian goods.',
-          'Row 2 is KC-4.1.IV\'s second sentence: regional markets "continued to flourish."',
-          'Row 3 is KC-4.1.IV.D.ii: "with all parties contributing." Do not swing to the opposite myth: the mixing often happened under force and slavery.'
-        ],
-        ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'The third: all parties contributed, but not as equals. (The fourth myth, the neat triangle, is corrected on the Atlantic slide.)'
+        ask: 'Find one Christian thing and one Andean thing in the painting.',
+        listenFor: 'Christian: Mary, the Trinity, a pope. Andean: the mountain as a sacred mother.',
+        ap: 'KC-4.1.VI: the development of syncretic belief systems and practices.',
+        avoid: 'Myth: "European culture simply replaced the others." Traditions blended, and all parties contributed, though not as equals: the blending often happened under force.'
       }
     },
     {
@@ -807,7 +615,7 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Find the claim in a source, say it in one sentence, and name the evidence the author gives.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
       notes: {
-        minutes: 6,
+        minutes: 8,
         keys: [
           'Skill 3.A: the claim in one sentence',
           'Modeled on Coen, practiced on Sahagún',
@@ -816,31 +624,11 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.A: identify and describe a claim or argument in a source.',
-          'It models Coen\'s 1614 letter (slide 9), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
+          'It models Coen\'s 1614 letter (slide 7), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
           'Push students to state the claim in their own words, in one sentence, before they quote anything.'
         ],
         ask: 'After students have written: is Sahagún\'s evidence enough to prove his claim?',
         listenFor: 'Debrief only after the module: a name and a crowd do not prove what people believed; the source shows what he suspected.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'Tools and exchange.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
-      notes: {
-        minutes: 0,
-        keys: [
-          'Optional: early finishers or diagnostic',
-          'A tool, a change in exchange, a continuity',
-          'Give feedback in the room'
-        ],
-        land: [
-          'Checkpoint 1 is not required for 4.5. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It asks for one way a ruler used mercantilism or a chartered company, one change in exchange (silver or the Atlantic system) and one continuity (regional markets, or peasant and artisan work). Give feedback in the room: on an alternating block nothing carries over.'
-        ],
-        ask: 'Name a tool, a change in exchange, and a continuity.',
-        listenFor: 'The VOC, silver pulled to China, and Gujarati or Chinese merchants trading on.'
       }
     },
     {
@@ -849,7 +637,7 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Something new and something that kept going, from two sources. Name one limit.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
       notes: {
-        minutes: 7,
+        minutes: 8,
         keys: [
           'One claim, two sources',
           'Something new, something kept going',
@@ -872,7 +660,7 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
       notes: {
-        minutes: 10,
+        minutes: 12,
         keys: [
           'Family change in Africa, and why',
           'One mixing example: who contributed',

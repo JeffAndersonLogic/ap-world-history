@@ -318,6 +318,15 @@ Named examples are evidence inside a claim. None earns its own slide unless the 
     hand off to 4.7.
 19. **Landing, over a real historical scene.**
 
+**Deck revision, 2026-11-05 (Jeff's big-rocks rule).** The story above is unchanged and the First &
+10 still tells every beat. The projected deck now carries it in 16 slides instead of 28, as three big
+ideas under one chain: pushback inside the state (the Fronde and Razin on one slide), at the edges
+(the Marathas, Njinga and Metacom on one slide, and the Pueblo Revolt on its own, the CED's
+sample-activity case, with Naranjo's cord in its notes), and organized resistance by enslaved people
+(Palmares, Jamaica and Stono on one slide). The outcomes slide becomes the retelling chain's last
+link and its notes; the myths become AVOID notes. The map and the optional Checkpoint 1 slide are
+gone (Module 01 and the lesson page carry them).
+
 ## 7. Retelling slide
 
 A cause chain a student can redraw from memory, four links:

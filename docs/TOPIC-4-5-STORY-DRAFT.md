@@ -341,6 +341,16 @@ Named examples are evidence inside a claim. None earns its own slide unless the 
     continuity, then hand off to 4.6.
 19. **Landing, over a real historical scene.**
 
+**Deck revision, 2026-11-05 (Jeff's big-rocks rule).** The story above is unchanged and the First &
+10 still tells every beat. The projected deck now carries it in 21 slides instead of 29. It stays the
+longest of the three revised decks because 4.5 has eight Key Concepts and four learning objectives,
+and each needs a projected slide. Mun's quotation moves to the mercantilism notes; the VOC case folds
+into the shares notes and the rivalry evidence; Coen's quotation becomes the claim on the rivalry
+slide, which models 3.A; the Manila picture moves onto the silver slide; Sahagún's quotation stays
+in the Skill Builder and the notes; the myths become AVOID notes. The two rulers'-tools graphics Jeff
+asked for on 2026-11-04 stay whole. The map and the optional Checkpoint 1 slide are gone (Module 01
+and the lesson page carry them).
+
 ## 7. Retelling slide
 
 A continuity-and-change ledger a student can redraw from memory: four rows, one per learning

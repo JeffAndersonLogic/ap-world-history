@@ -41,18 +41,23 @@ setTemplate('question',{visual:RAZIN});
 setTemplate('close',{visual:ARREST});
 })();
 
-/* Reviewed reconstruction assignments, 2026-11-04. */
+/* Reviewed reconstruction assignments, 2026-11-04, placed on the big-rocks
+   slides of 2026-11-05: all five reconstructions are kept. */
 (function(){
 'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
-const by=p=>T.slides.find(s=>s.phase===p), ai=(name,alt)=>({ai:true,url:'../assets/images/topics/4-6/'+encodeURIComponent(name),alt,fit:'contain'}), note=(s,x)=>s.notes.land.push(x);
-let s=by('fronde'), old=s.template;s.kind='scene-case';s.template={visual:ai('4.6 - The Fronde.JPG','Reconstruction of townspeople building a barricade across a French city street while armed soldiers approach'),sources:old.panels.map(p=>({visual:p.visual,caption:p.tag})),steps:old.rows,proves:old.proves};
-note(s,'The large barricade is reconstructed; the two small prints are historical sources. The invented shop lettering, street details and generic clothing are not evidence of Paris in 1648. Use the case to explain taxes, the groups resisting, and the outcome.');
-s=by('deccan');old=s.template;s.kind='scene-case';s.template={visual:ai('4.6 - Marathas.JPG','Reconstruction of Maratha riders leaving a hill fort above a distant army camp in the Deccan'),sources:old.panels.map(p=>({visual:p.visual,caption:p.tag})),steps:[{label:'Mughal expansion',text:old.panels[0].text},{label:'Maratha power',text:old.panels[1].text},...old.rows],proves:old.proves};
-note(s,'The fort and riders are reconstructed, not a verified named fortress or a portrait of Shivaji. The portraits below remain the real objects. Connect terrain and fast raids to the cost of the Mughal campaign.');
-s=by('njinga');old=s.template;s.kind='scene-case';s.template={visual:ai('4.6 - Queen Njinga.JPG','Reconstruction of an African queen negotiating with seated Portuguese officials in a colonial room at Luanda'),steps:old.rows,proves:old.proves};note(s,'This is an imagined negotiation, not a portrait or an eyewitness record of the 1622 meeting. Do not use it to teach the disputed chair anecdote. Njinga\'s bargaining, warfare and changing alliances are established by the case.');
-s=by('revolt');s.kind='story-scene';s.template=Object.assign({},s.template,{visual:ai('4.6 - Pueblo Revolts.JPG','Reconstruction of Pueblo people passing a knotted cord between towns, with adobe buildings and ladders behind them'),caption:'Knotted cords: coordination across towns'});note(s,'The cord scene is reconstructed. Naranjo\'s testimony on the preceding source slide supplies evidence of coordination; the generated scene cannot verify a particular runner or town.');
-s=by('palmares');old=s.template;s.kind='scene-case';s.template={visual:ai('4.6 - Maroon Resistance.JPG','Reconstruction of a fortified maroon settlement with houses, planted fields, watchtowers and a palisade in forested hills'),steps:old.rows,proves:old.proves};note(s,'The settlement is a reconstruction, not a surveyed plan of Palmares. Houses, food production and defenses help students imagine organized resistance; the case\'s historical evidence establishes the actual community.');
-by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions accompany the Fronde, Marathas, Njinga, Pueblo coordination and Palmares. The new scene-case layout keeps source objects beside the explanation when they are part of the existing case.');
+const by=p=>T.slides.find(s=>s.phase===p), ai=(name,alt,extra)=>Object.assign({ai:true,url:'../assets/images/topics/4-6/'+encodeURIComponent(name),alt},extra||{});
+const RAZIN={url:'../assets/images/topics/4-6/razin-moscow-luyken-1700.jpg',alt:'An etching of a crowd outside a walled city gate with towers: a man in chains sits in a wooden cart under a tall wooden frame, surrounded by guards with pikes and long guns, a rider on horseback and a dog',credit:'Jan Luyken, Razin brought into Moscow, 1671, for a book published in Leiden, 1700 · Rijksmuseum · Public domain',position:'50% 55%'};
+let s=by('inside');
+s.template.left.visual=ai('4.6 - The Fronde.JPG','Reconstruction of townspeople building a barricade across a French city street while armed soldiers approach');
+s.template.right.visual=RAZIN;
+s=by('edges');
+s.template.pictures=[
+  {visual:ai('4.6 - Marathas.JPG','Reconstruction of Maratha riders leaving a hill fort above a distant army camp in the Deccan'),caption:'Maratha hill fort'},
+  {visual:ai('4.6 - Queen Njinga.JPG','Reconstruction of an African queen negotiating with seated Portuguese officials in a colonial room at Luanda'),caption:'Njinga negotiates'}
+];
+by('pueblo').template.visual=ai('4.6 - Pueblo Revolts.JPG','Reconstruction of Pueblo people passing a knotted cord between towns, with adobe buildings and ladders behind them',{fit:'contain'});
+by('enslaved').template.visual=ai('4.6 - Maroon Resistance.JPG','Reconstruction of a fortified maroon settlement with houses, planted fields, watchtowers and a palisade in forested hills',{fit:'contain'});
+by('preflight').notes.land.push('Visual update, 2026-11-05: five labeled reconstructions (a Paris barricade, a Maratha hill fort, Njinga negotiating, the knotted cord, a maroon settlement) set scenes on the big-idea slides. The real prints of Razin (slides 3 and 6) and of a judge\'s arrest (slide 16) are historical sources; the real Golconda portraits and the Broussel print are in the Evidence Lab.');
 })();
 
 (function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();

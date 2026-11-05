@@ -38,29 +38,27 @@ if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/4-5/';
 const SHIPYARD={url:IMG+'voc-shipyard-bakhuysen-1696.jpg',alt:'Oil painting of a busy harbor: a long brick warehouse and shipyard behind the water, a large ship\'s hull on the slip, and tall Dutch sailing ships and small boats in front, flying flags and firing a salute',credit:'Ludolf Bakhuysen, The Shipyard of the Dutch East India Company at Amsterdam, 1696 · Mauritshuis · Public domain',position:'50% 55%'};
-const MANILA={url:IMG+'manila-vingboons-c1665.jpg',alt:'Hand-colored bird\'s-eye view of a walled city on a wide bay, green hills behind, and sailing ships at anchor in the water',credit:'Johannes Vingboons, view of Manila, about 1665, painted in the Netherlands · Nationaal Archief · Public domain',position:'50% 60%'};
 const VIRGEN={url:IMG+'virgen-del-cerro-potosi.jpg',alt:'Painting of a great red mountain with the face, hands and crown of the Virgin Mary at its top and tiny people and animals on its slopes; two crowned figures and a dove above, and a pope, churchmen and a king kneeling below around a blue globe',credit:'La Virgen del Cerro, unknown painter, Potosí, 1700s · Casa Nacional de Moneda, Potosí · Photo Dan Lundberg, CC BY-SA 2.0',position:'50% 30%',fit:'contain'};
 const BATAVIA={url:IMG+'batavia-beeckman-c1662.jpg',alt:'Oil painting of tall palm trees in front of the long white walls of a fortress, with a crowd of Javanese, Chinese and Dutch people along the bottom edge',credit:'Andries Beeckman, The Castle of Batavia, about 1662 · Rijksmuseum · Public domain',position:'50% 88%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{visual:SHIPYARD});
-setTemplate('manila',{visual:MANILA});
-setTemplate('virgin',{visual:VIRGEN});
 setTemplate('close',{visual:BATAVIA});
 })();
 
-/* Reviewed reconstruction assignments, 2026-11-04. */
+/* Reviewed reconstruction assignments, 2026-11-04, placed on the big-rocks
+   slides of 2026-11-05. "4.5 - The VOC.JPG" went with the VOC case slide and
+   is no longer on a slide; the file stays in the folder. */
 (function(){
 'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;
 const by=p=>T.slides.find(s=>s.phase===p), ai=(name,alt)=>({ai:true,url:'../assets/images/topics/4-5/'+encodeURIComponent(name),alt,fit:'contain'}), note=(s,x)=>s.notes.land.push(x);
-let s=by('company'), source=s.template.visual;s.kind='scene-case';s.template={visual:ai('4.5 - The VOC.JPG','Reconstruction of workers building a Dutch company ship at a large shipyard while merchants review papers'),sources:[{visual:source,caption:'VOC share receipt, Enkhuizen, 1606'}],steps:s.template.rows,proves:s.template.proves};
-note(s,'The shipyard is a reconstruction of the scale of a trading company. The receipt is real evidence of investment. The charter, not a pictured cannon or official, establishes the company\'s legal powers.');
-s=by('manila');s.template={visual:ai('4.5 - Silver for Silk.JPG','Reconstruction of Chinese and other merchants inspecting silk, porcelain and silver at a busy Manila waterfront'),place:'top'};s.subtitle='Chinese merchants supplied silk and porcelain; American silver paid for them.';s.notes.land=s.notes.land.filter(x=>!x.includes('Vingboons'));note(s,'Historical Reconstruction - AI Generated. The scene illustrates exchange, not an observed bargain. Do not count the pictured coins or infer national identities from invented cargo marks.');
+const VIRGEN={url:'../assets/images/topics/4-5/virgen-del-cerro-potosi.jpg',alt:'Painting of a great red mountain with the face, hands and crown of the Virgin Mary at its top and tiny people and animals on its slopes; two crowned figures and a dove above, and a pope, churchmen and a king kneeling below around a blue globe',credit:'La Virgen del Cerro, Potosí, 1700s · Photo Dan Lundberg · CC BY-SA 2.0'};
+let s=by('silver');const old=s.template;s.kind='story-scene';
+s.template={visual:ai('4.5 - Silver for Silk.JPG','Reconstruction of Chinese and other merchants inspecting silk, porcelain and silver at a busy Manila waterfront'),steps:old.steps,caption:'Manila: silk and porcelain for American silver'};
 s=by('work');s.template.panels[1].visual=ai('4.5 - Indian Cotton Textiles.JPG','Reconstruction of Indian artisans spinning, weaving and dyeing cotton cloth in a workshop');note(s,'The India workshop is reconstructed; the European painting and Chinese print are historical sources. Use the scene to imagine labor and the real objects to observe period evidence. The palampore remains a real source in the course.');
 s=by('mixing');const rows=s.template.rows;s.kind='story-scene';s.template={visual:ai('4.5 - Brazil Cultural Interactions.JPG','Reconstruction of a Brazilian colonial market with African, Indigenous and European people trading food and goods'),steps:rows.map(r=>({label:r.name,text:r.result})),caption:'An imagined market; the contributions come from the history'};
 note(s,'The market reconstructs cultural interaction under colonial inequality, not an equal or voluntary meeting. Appearance cannot identify a person\'s ancestry or legal status. Name contributions from the reading rather than treating generated clothing as proof.');
-s=by('virgin');source=Object.assign({},s.template.visual,{credit:'La Virgen del Cerro, Potosí, 1700s · Photo Dan Lundberg · CC BY-SA 2.0'});s.kind='frame-evidence';s.template={scene:ai('4.5 - Potosi.JPG','Reconstruction of an artist painting Mary as the mountain of Potosí, with Cerro Rico visible outside his workshop'),evidence:source,sceneLabel:'Reconstruction: imagine the workshop',evidenceLabel:'Historical painting: reason from this'};
-note(s,'The upload called Potosi shows an imagined artist making the Virgin of the Mountain. It belongs here, with religious blending, not on the mine or labor slide. The right-hand historical painting is the evidence; the left-hand reconstruction cannot establish who painted it or how.');
-by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconstructions support company finance, Manila trade, Indian labor, Atlantic cultural interaction and religious blending. Historical source objects remain available; none of the reconstructions enters Evidence Lab.');
+s=by('blend');s.template={scene:ai('4.5 - Potosi.JPG','Reconstruction of an artist painting Mary as the mountain of Potosí, with Cerro Rico visible outside his workshop'),evidence:Object.assign({},VIRGEN,{fit:'contain',position:'50% 30%'}),sceneLabel:'Reconstruction: imagine the workshop',evidenceLabel:'Historical painting: reason from this'};
+by('preflight').notes.land.push('Visual update, 2026-11-05: four labeled reconstructions set scenes (the Manila waterfront on slide 8, an Indian cotton workshop on slide 11, a Brazilian market on slide 13, a Potosí workshop on slide 15). The two rulers\' tools are the course\'s own graphics; the question and landing pictures, the work paintings and the Virgin of the Mountain are real historical objects. None of the reconstructions enters the Evidence Lab.');
 })();
 
 (function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();
