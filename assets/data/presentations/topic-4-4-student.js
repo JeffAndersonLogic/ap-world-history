@@ -168,6 +168,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "frame-full",
+      "eyebrow": "I · Why Europeans Went to Sea · Trading Posts",
+      "title": "A trading post: one fort, one quay, and the sea trade around it.",
+      "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-2/4.2%20-%20Trading%20Post%20Empire.jpg",
+          "alt": "Reconstruction of a busy tropical harbor town seen from a hillside: a stone fort with cannon on a rocky point flying a flag, a stone quay stacked with sacks, crates and barrels, two large European ships with red crosses on their sails at anchor among many small sailing boats and rowing boats, and a crowded town of tiled roofs along the shore"
+        }
+      }
+    },
+    {
       "kind": "scene-case",
       "eyebrow": "II · Portugal in the Indian Ocean · 1",
       "title": "Calicut, 1498: the gifts that got laughed at.",
