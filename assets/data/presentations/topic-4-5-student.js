@@ -43,6 +43,43 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Tools to make empires pay. What they moved, and what it changed.",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Rulers' tools: mercantilism and companies"
+          },
+          {
+            "label": "II",
+            "text": "Trade disputes become wars"
+          },
+          {
+            "label": "III",
+            "text": "Silver and the Atlantic system"
+          },
+          {
+            "label": "IV",
+            "text": "Work, families and a mixed Atlantic"
+          },
+          {
+            "label": "V",
+            "text": "Religions spread, clash and blend"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: what was new, what kept going",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Evidence Lab · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
       "eyebrow": "Module 02 · First & 10 · 12 Minutes",
       "title": "Read with two questions in mind.",
@@ -54,19 +91,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-full",
-      "eyebrow": "Rulers' Tool 1 · An Idea",
+      "eyebrow": "I · Rulers' Tools · Tool 1, An Idea",
       "title": "Mercantilism: how a state grows strong.",
       "kc": "KC-4.1.IV.C",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-5/mercantilism-tool-1.png",
-          "alt": "Slide graphic titled Mercantilism: Rulers' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England's Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country's goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the \"mercantile system\" in 1776. Think: in this way of thinking, what is a colony for?"
+          "alt": "Slide graphic titled Mercantilism: Rulers' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England's Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country's goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the \"mercantile system\" in 1776. Two purposes of a colony: 1, to provide cheap raw materials; 2, to serve as a market for the home country's goods."
         }
       }
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claim It · Model",
+      "eyebrow": "I · Rulers' Tools · Claim It, Model",
       "title": "An English merchant states a rule.",
       "footer": "A claim is what the author wants you to believe. Say it in your own words.",
       "kc": "Unit 4: Learning Objective H",
@@ -82,7 +119,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-full",
-      "eyebrow": "Rulers' Tool 2 · How It Works",
+      "eyebrow": "I · Rulers' Tools · Tool 2, How It Works",
       "title": "The joint-stock company: many investors, one voyage.",
       "kc": "KC-4.1.IV.C",
       "template": {
@@ -94,7 +131,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Rulers' Tool 2 · A Company",
+      "eyebrow": "I · Rulers' Tools · Tool 2, A Company",
       "title": "A company that could go to war.",
       "kc": "KC-4.1.IV.C",
       "template": {
@@ -138,7 +175,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claim It · Model",
+      "eyebrow": "I · Rulers' Tools · Claim It, Model",
       "title": "A company leader writes home, 1614.",
       "footer": "Find the claim, then the reason the author gives for it.",
       "kc": "KC-4.3.III.ii",
@@ -154,7 +191,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "Rivals · Old Fights, New Tools",
+      "eyebrow": "II · Trade Disputes Become Wars",
       "title": "Economic disputes became wars.",
       "footer": "States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.",
       "kc": "KC-4.3.III.ii",
@@ -190,7 +227,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Follow the Silver",
+      "eyebrow": "III · Silver and the Atlantic · Map",
       "title": "Two roads for silver, both toward Asia.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-5.svg",
@@ -201,7 +238,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "Exchange · Silver",
+      "eyebrow": "III · Silver and the Atlantic · Silver",
       "title": "Why the silver went to China.",
       "footer": "Spain had the mines. China's demand pulled the silver around the world.",
       "kc": "KC-4.1.IV",
@@ -250,7 +287,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "exchange-hub",
-      "eyebrow": "Exchange · The Atlantic System",
+      "eyebrow": "III · Silver and the Atlantic · The Atlantic System",
       "title": "Goods, wealth, and people, from everywhere.",
       "footer": "Not a neat triangle: many ships sailed straight between Brazil and Angola, and the goods came from all over the world.",
       "kc": "KC-4.1.IV.D.i",
@@ -284,7 +321,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "continuity-change",
-      "eyebrow": "Exchange · Markets That Kept Going",
+      "eyebrow": "III · Silver and the Atlantic · Markets That Kept Going",
       "title": "The new trade joined the old markets. It did not replace them.",
       "footer": "The College Board's words: regional markets \"continued to flourish.\"",
       "kc": "KC-4.1.IV",
@@ -315,7 +352,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-triptych",
-      "eyebrow": "Work · Continued and Intensified",
+      "eyebrow": "IV · Work, Families, Culture · Work",
       "title": "The same work, more of it, for buyers farther away.",
       "kc": "KC-4.2.II.A",
       "template": {
@@ -352,7 +389,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Society · Families in Africa",
+      "eyebrow": "IV · Work, Families, Culture · Families in Africa",
       "title": "Who the trade took, and what it changed.",
       "kc": "KC-4.2.III.C",
       "template": {
@@ -382,7 +419,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Society · A Mixed Atlantic World",
+      "eyebrow": "IV · Work, Families, Culture · A Mixed Atlantic World",
       "title": "Everyone contributed to the new culture.",
       "footer": "No one group designed it, and much of it happened under force: \"with all parties contributing.\"",
       "kc": "KC-4.1.IV.D.ii",
@@ -412,7 +449,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "Faith · Compare",
+      "eyebrow": "V · Religions · Compare",
       "title": "Three things religions did.",
       "footer": "To compare, ask the same questions of two branches: what do they share, and where do they part ways?",
       "kc": "Unit 4: Learning Objective K",
@@ -472,7 +509,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claim It · Your Turn",
+      "eyebrow": "V · Religions · Claim It, Your Turn",
       "title": "A friar is suspicious, in the 1570s.",
       "footer": "Find his claim. Does his own evidence prove it?",
       "kc": "KC-4.1.VI",
@@ -488,7 +525,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
+      "eyebrow": "Put It Together · Myth and Evidence",
       "title": "Three things people get wrong.",
       "footer": "The evidence tells a more useful story than the myths.",
       "template": {
@@ -513,7 +550,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "New, or kept going?",
       "template": {
         "columns": [
@@ -562,7 +599,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
+      "eyebrow": "Put It Together · Sharpen the Claim",
       "title": "",
       "footer": "A change and a continuity, each with a named example and the reason.",
       "kc": "Unit 4: Learning Objective J",
