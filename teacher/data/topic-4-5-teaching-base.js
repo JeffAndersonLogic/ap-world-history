@@ -59,7 +59,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'rivals', label: 'Disputes Become Wars', range: '27-30', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 10 },
     { id: 'map', label: 'Follow the Silver', range: '30-31', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 11 },
     { id: 'silver', label: 'Why China', range: '31-34', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 12 },
-    { id: 'manila', label: 'Silk for Silver', range: '34-35', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 13 },
+    { id: 'manila', label: 'Silk for Silver', range: '34-35', minutes: 1, teacher: 'Chinese merchants brought silk and porcelain; American silver paid for them.', students: 'Say who ran this trade.', slide: 13 },
     { id: 'atlantic', label: 'The Atlantic System', range: '35-37', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 14 },
     { id: 'regional', label: 'Old Markets Keep Going', range: '37-39', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 15 },
     { id: 'work', label: 'More Work', range: '39-41', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 16 },
@@ -68,7 +68,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'faith', label: 'Spread, Clash, Blend', range: '45-47', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 19 },
     { id: 'virgin', label: 'The Virgin of the Mountain', range: '47-48', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 20 },
     { id: 'sahagun', label: 'Claim It: Sahagún', range: '48-50', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 21 },
-    { id: 'myths', label: 'Myth and Evidence', range: '50-52', minutes: 2, teacher: 'Four things people get wrong.', students: 'Correct each myth.', slide: 22 },
+    { id: 'myths', label: 'Myth and Evidence', range: '50-52', minutes: 2, teacher: 'Three things people get wrong (the triangle is corrected on slide 14).', students: 'Correct each myth.', slide: 22 },
     { id: 'ledger', label: 'What Was New, What Kept Going', range: '52-56', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 23 },
     { id: 'sharpen', label: 'Sharpen the Claim', range: '56-58', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 24 },
     { id: 'skill', label: 'Skill Builder', range: '58-64', minutes: 6, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find Sahagún\'s claim.', slide: 25 },
@@ -456,7 +456,7 @@ window.BEHISTORICAL_TEACHING = {
           'Spain brought silver; Chinese brought goods',
           'Fujian junks took only silver',
           'Chinese far outnumbered the Spanish',
-          'Dutch view, from sailors’ reports',
+          'Reconstruction, not evidence',
           'Hinge: silver (change) to markets (continuity)'
         ],
         land: [

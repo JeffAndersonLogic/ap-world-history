@@ -46,10 +46,10 @@ in this folder, the schedule, and git history.
 | 4.1 | 2026-10-28 | 2026-10-29 | Stale | 2026-10-12 | `topic-4-1-2026-10-12.md` |
 | 4.2 | 2026-10-30 | 2026-11-02 | Stale | 2026-10-13 | `topic-4-2-2026-10-13.md` |
 | 4.3 | 2026-11-03 | 2026-11-04 | Stale | 2026-10-14 | `topic-4-3-2026-10-14.md` |
-| 4.4 | 2026-11-05 | 2026-11-06 | Stale | 2026-10-15 | `topic-4-4-2026-10-15.md` |
+| 4.4 | 2026-11-05 | 2026-11-06 | Fresh | 2026-11-05 | `topic-4-4-2026-11-05.md` |
 | 4.5 | 2026-11-09 | 2026-11-10 | Fresh | 2026-11-05 | `topic-4-5-2026-11-05.md` |
-| 4.6 | 2026-11-11 | 2026-11-12 | Stale | 2026-10-17 | `topic-4-6-2026-10-17.md` |
-| 4.7 | 2026-11-13 | 2026-11-16 | Stale | 2026-10-18 | `topic-4-7-2026-10-18.md` |
+| 4.6 | 2026-11-11 | 2026-11-12 | Fresh | 2026-11-05 | `topic-4-6-2026-11-05.md` |
+| 4.7 | 2026-11-13 | 2026-11-16 | Fresh | 2026-11-05 | `topic-4-7-2026-11-05.md` |
 | 4.8 | 2026-11-17 | 2026-11-18 | Stale | 2026-10-18 | `topic-4-8-2026-10-18.md` |
 | 5.1 | 2026-11-30 | 2026-12-01 | Fresh | 2026-10-20 | `topic-5-1-2026-10-20.md` |
 | 5.2 | 2026-12-02 | 2026-12-03 | Stale | 2026-10-21 | `topic-5-2-2026-10-21.md` |
@@ -59,16 +59,14 @@ in this folder, the schedule, and git history.
 
 | State | Topics | Meaning |
 |---|---|---|
-| Fresh | 2 | audited, and nothing has changed since |
-| Stale | 13 | the topic changed after its audit |
+| Fresh | 5 | audited, and nothing has changed since |
+| Stale | 10 | the topic changed after its audit |
 | Review | 0 | a file shared across the unit changed after its audit |
 | Never | 20 | no audit record exists |
 
 ## Is the weekly sweep alive?
 
-**No sweep marker exists yet.** The weekly sweep writes one every time it
-runs, including on a week with nothing scheduled, so a missing marker means
-the automation did not run, never that there was nothing to do.
+Most recent sweep marker: **2026-11-05**, of 1 on record.
 
 `scripts/check-audit-freshness.js` is what fails when that marker goes stale.
 It runs nightly rather than in the push gate, because an overdue audit must

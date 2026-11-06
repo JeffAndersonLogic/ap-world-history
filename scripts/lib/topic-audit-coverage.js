@@ -90,6 +90,10 @@ function topicFiles(key, allFiles) {
     for (const file of allFiles) {
       if (file.startsWith('assets/images/module-art/')) continue;
       if (file.startsWith('assets/images/topics/')) continue;
+      // An audit record describes the topic; it is not the topic. Counting it made a
+      // record committed in the evening from a UTC-clock cloud session read as content
+      // changed the day after its own audit (Topic 4.5, 2026-11-05).
+      if (file.startsWith('docs/topic-audits/')) continue;
       // Boundary-matched so 2-6 never matches 12-6 or 2-60.
       if (new RegExp(`(^|[^0-9])${unit}-${topic}([^0-9]|$)`).test(file)) own.push(file);
     }
@@ -99,6 +103,7 @@ function topicFiles(key, allFiles) {
     const n = f[1];
     for (const file of allFiles) {
       if (file.startsWith('assets/images/maps/')) continue;
+      if (file.startsWith('docs/topic-audits/')) continue;
       if (new RegExp(`foundations-${n}([^0-9]|$)`).test(file)) own.push(file);
     }
     const sharedF10 = 'scripts/lib/foundations-f10-content.js';

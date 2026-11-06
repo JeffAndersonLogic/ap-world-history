@@ -240,6 +240,18 @@ check('generated module art is excluded, so an art rebuild never marks a topic s
   assert.deepStrictEqual(own, ['assets/data/lesson-2-6-real.js']);
 });
 
+check('an audit record is never topic content, so committing an audit cannot make it stale', () => {
+  // 2026-11-05: the Topic 4.5 record was committed at 23:2x Indiana time from a cloud
+  // session whose committer clock is UTC, so git dated it 11-06, one day after its own
+  // `audited: 2026-11-05`, and the topic read as stale the moment its audit landed.
+  const { own } = cov.topicFiles('2.6', [
+    'docs/topic-audits/topic-2-6-2026-09-30.md',
+    'docs/topic-audits/sweeps/2026-09-30.md',
+    'assets/data/lesson-2-6-real.js'
+  ]);
+  assert.deepStrictEqual(own, ['assets/data/lesson-2-6-real.js']);
+});
+
 check('a unit-wide reading module is reported as shared, not as the topic itself', () => {
   const { own, shared } = cov.topicFiles('2.6', [
     'scripts/lib/reading-content/2.js', 'assets/data/lesson-2-6-real.js'
