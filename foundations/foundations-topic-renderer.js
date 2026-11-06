@@ -2064,6 +2064,9 @@ if(_deep&&_deep.url&&_lectureSection&&_lectureGrid&&!byId('deep-reading-banner')
 // disappears entirely when they do not, so a topic with none shows no gap.
 const _videoGrid=byId('content-video-clips')||byId('video-grid');
 const _videos=T.videos||[];
+// Videos button beside Concept Cards in the hero, only when this topic has
+// clips, so it never jumps to a hidden block (same rule as the unit renderer).
+(function(){const nav=document.querySelector('.hero .quick-nav');if(!nav)return;const ex=nav.querySelector('a[data-quick-nav="videos"]');if(!_videos.length){if(ex)ex.remove();return;}if(ex)return;const b=document.createElement('a');b.className='btn secondary';b.href='#'+(_videoGrid?_videoGrid.id:'content-video-clips');b.dataset.quickNav='videos';b.textContent='Videos';const c=nav.querySelector('a[href="#lecture"]');if(c)c.after(b);else nav.appendChild(b);})();
 if(_videoGrid&&!_videos.length){_videoGrid.innerHTML='';_videoGrid.hidden=true;}
 else if(_videoGrid){_videoGrid.hidden=false;_videoGrid.innerHTML=`<article class="foundation-card video-intro" style="grid-column:1/-1"><h3>Video Clips</h3><p>Optional reinforcement for this topic. Your teacher may play one of these in class, and you can watch them on your own any time you want another pass at the material. Watch for the guiding question under each clip rather than taking down everything.</p></article>`+_videos.map(v=>`<article class="video-card"><div class="video-thumb" ${v.youtubeId?`style="background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg');background-size:cover;background-position:center"`:''}><span>Video Clip</span></div><h3>${v.title}</h3><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></article>`).join('');}
 function jumpToSection(selector){const el=document.querySelector(selector);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
