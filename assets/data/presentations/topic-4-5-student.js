@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull Topic 4.4 back from memory.",
       "template": {
         "questions": [
@@ -43,8 +43,41 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Rulers built tools to make their empires pay. What did those tools move, and what did it change?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "How rulers made empires pay"
+          },
+          {
+            "label": "II",
+            "text": "What trade moved: silver, the Atlantic, old markets"
+          },
+          {
+            "label": "III",
+            "text": "Families and cultures changed"
+          },
+          {
+            "label": "IV",
+            "text": "Religions spread, clashed and blended"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: what was new, what kept going",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with two questions in mind.",
       "subtitle": "For every part: what was new, and what kept going the way it already had?",
       "action": {
@@ -54,7 +87,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-full",
-      "eyebrow": "Rulers' Tool 1 · An Idea",
+      "eyebrow": "I · How Rulers Made Empires Pay · Mercantilism",
       "title": "Mercantilism: how a state grows strong.",
       "kc": "KC-4.1.IV.C",
       "template": {
@@ -66,7 +99,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claim It · Model",
+      "eyebrow": "I · Making Empires Pay · Claim It, Model",
       "title": "An English merchant states a rule.",
       "footer": "A claim is what the author wants you to believe. Say it in your own words.",
       "kc": "Unit 4: Learning Objective H",
@@ -82,7 +115,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-full",
-      "eyebrow": "Rulers' Tool 2 · How It Works",
+      "eyebrow": "I · How Rulers Made Empires Pay · Joint-Stock Companies",
       "title": "The joint-stock company: many investors, one voyage.",
       "kc": "KC-4.1.IV.C",
       "template": {
@@ -94,7 +127,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Rulers' Tool 2 · A Company",
+      "eyebrow": "I · How Rulers Made Empires Pay · A Company",
       "title": "A company that could go to war.",
       "kc": "KC-4.1.IV.C",
       "template": {
@@ -138,7 +171,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claim It · Model",
+      "eyebrow": "I · Making Empires Pay · Claim It, Model",
       "title": "A company leader writes home, 1614.",
       "footer": "Find the claim, then the reason the author gives for it.",
       "kc": "KC-4.3.III.ii",
@@ -154,7 +187,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "Rivals · Old Fights, New Tools",
+      "eyebrow": "I · How Rulers Made Empires Pay · Rivals",
       "title": "Economic disputes became wars.",
       "footer": "States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.",
       "kc": "KC-4.3.III.ii",
@@ -190,7 +223,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Follow the Silver",
+      "eyebrow": "II · What Trade Moved · Follow the Silver",
       "title": "Two roads for silver, both toward Asia.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-5.svg",
@@ -201,7 +234,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "Exchange · Silver",
+      "eyebrow": "II · What Trade Moved · Silver",
       "title": "Why the silver went to China.",
       "footer": "Spain had the mines. China's demand pulled the silver around the world.",
       "kc": "KC-4.1.IV",
@@ -250,7 +283,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "exchange-hub",
-      "eyebrow": "Exchange · The Atlantic System",
+      "eyebrow": "II · What Trade Moved · The Atlantic System",
       "title": "Goods, wealth, and people, from everywhere.",
       "footer": "Not a neat triangle: many ships sailed straight between Brazil and Angola, and the goods came from all over the world.",
       "kc": "KC-4.1.IV.D.i",
@@ -284,7 +317,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "continuity-change",
-      "eyebrow": "Exchange · Markets That Kept Going",
+      "eyebrow": "II · What Trade Moved · Markets That Kept Going",
       "title": "The new trade joined the old markets. It did not replace them.",
       "footer": "The College Board's words: regional markets \"continued to flourish.\"",
       "kc": "KC-4.1.IV",
@@ -315,7 +348,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-triptych",
-      "eyebrow": "Work · Continued and Intensified",
+      "eyebrow": "II · What Trade Moved · Work, Continued and Intensified",
       "title": "The same work, more of it, for buyers farther away.",
       "kc": "KC-4.2.II.A",
       "template": {
@@ -352,7 +385,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Society · Families in Africa",
+      "eyebrow": "III · Families and Cultures · Families in Africa",
       "title": "Who the trade took, and what it changed.",
       "kc": "KC-4.2.III.C",
       "template": {
@@ -382,7 +415,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Society · A Mixed Atlantic World",
+      "eyebrow": "III · Families and Cultures · A Mixed Atlantic World",
       "title": "Everyone contributed to the new culture.",
       "footer": "No one group designed it, and much of it happened under force: \"with all parties contributing.\"",
       "kc": "KC-4.1.IV.D.ii",
@@ -412,7 +445,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "Faith · Compare",
+      "eyebrow": "IV · Religions · Compare",
       "title": "Three things religions did.",
       "footer": "To compare, ask the same questions of two branches: what do they share, and where do they part ways?",
       "kc": "Unit 4: Learning Objective K",
@@ -472,7 +505,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claim It · Your Turn",
+      "eyebrow": "IV · Religions · Claim It, Your Turn",
       "title": "A friar is suspicious, in the 1570s.",
       "footer": "Find his claim. Does his own evidence prove it?",
       "kc": "KC-4.1.VI",
@@ -487,33 +520,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence tells a more useful story than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Europe bought Asian goods with better products.",
-            "evidence": "Europeans had few goods Asians wanted, so they paid in American silver.",
-            "source": "Silver around Africa; Manila"
-          },
-          {
-            "myth": "Global trade replaced the old markets.",
-            "evidence": "Regional markets kept flourishing, and Europeans joined them as carriers.",
-            "source": "Gujarati, Chinese, Armenian merchants"
-          },
-          {
-            "myth": "European culture simply replaced the others.",
-            "evidence": "Africans, Indigenous Americans, and Europeans all made the new Atlantic cultures.",
-            "source": "Creole languages; Vodou; Guadalupe"
-          }
-        ]
-      }
-    },
-    {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "New, or kept going?",
       "template": {
         "columns": [
@@ -562,7 +570,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
+      "eyebrow": "Put It Together · Sharpen the Claim",
       "title": "",
       "footer": "A change and a continuity, each with a named example and the reason.",
       "kc": "Unit 4: Learning Objective J",
@@ -572,43 +580,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "What does the author want you to believe?",
-      "subtitle": "Find the claim in a source, say it in one sentence, and name the evidence the author gives.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-5-maritime-empires-maintained.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "Tools and exchange.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-5-maritime-empires-maintained.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Build one claim from two sources.",
-      "subtitle": "Something new and something that kept going, from two sources. Name one limit.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-5-maritime-empires-maintained.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Families, cultures and faith: what changed, why, and how religions compared.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-5-maritime-empires-maintained.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 09, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Find Sahagún's claim, in one sentence.",
+            "url": "../unit-4/lesson-4-5-maritime-empires-maintained.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-5-maritime-empires-maintained.html#modules"
+          },
+          {
+            "code": "Module 09",
+            "name": "BeInTheRoom",
+            "note": "The Manila Silver Council, 1594.",
+            "url": "../beintheroom/unit-4/the-manila-silver-council.html"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-5-maritime-empires-maintained.html#modules"
+          }
+        ]
       }
     },
     {

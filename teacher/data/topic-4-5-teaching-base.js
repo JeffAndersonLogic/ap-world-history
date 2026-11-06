@@ -15,7 +15,20 @@
  * Retelling slide: the continuity-and-change ledger (phase 'ledger').
  *
  * Class dates: Green Monday 2026-11-09, Silver Tuesday 2026-11-10. Required
- * modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab, 10 Checkpoint 2.
+ * modules (the schedule's, reset by Jeff 2026-10-23, after this deck was
+ * built): 02 First & 10, 05 Skill Builder, 06 Checkpoint 1, 09 BeInTheRoom (the
+ * Manila Silver Council), 10 Checkpoint 2. Evidence Lab and Primary Source
+ * optional.
+ *
+ * Outline and road map, 2026-11-06 (Jeff, after the Topic 4.4 pilot): the
+ * briefing opens on `outline` below and folds the run of show away; a road-map
+ * slide before the First & 10 shows students the same four section headers;
+ * every story slide's eyebrow names its section; minute counts are off the
+ * projected slides; the Myth and Evidence slide moved into the outline's Watch
+ * for list and the ledger notes; and one Work Time slide (05, 06, 09, 10)
+ * replaced the four module slides. The Sharpen slide stays: it is the only
+ * slide that can carry Learning Objective J without dropping a Key Concept.
+ * No story slide changed.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -37,45 +50,129 @@ window.BEHISTORICAL_TEACHING = {
     ],
     should: [
       'Model 3.A on Mun and Coen, then let students find Sahagún\'s claim themselves.',
-      'Correct four myths: "Europe paid for Asian goods with better products," "the Atlantic trade was a neat triangle" (on the Atlantic slide), "global trade replaced the old markets," and "European culture simply replaced the others in the Americas."',
+      'Correct four myths (Watch for, in the outline; the triangle on the Atlantic slide, the rest from the ledger): "Europe paid for Asian goods with better products," "the Atlantic trade was a neat triangle," "global trade replaced the old markets," and "European culture simply replaced the others in the Americas."',
       'Use both CED rivalry examples (the Indian Ocean; Morocco and Songhai) beside a European one.'
     ],
     could: [
-      'Use the BeInTheRoom Manila Silver Council as an extension for students who finish early.',
+      'Offer the Evidence Lab (Module 07, optional today) to students who finish the required modules early.',
       'Point students who want more depth to the eBook chapter, "What Made Empires Pay."'
     ]
   },
 
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes or the First & 10; nothing is new. Required modules
+  // are the schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '09 BeInTheRoom', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'How rulers made empires pay', kc: 'KC-4.1.IV.C · KC-4.3.III.ii', groups: [
+        { name: 'Mercantilism', points: [
+          'A strong state keeps wealth at home: sell more abroad than you buy',
+          'Spain: Casa de Contratación, 1503; England: Navigation Act, 1651, against the Dutch',
+          'Colonies send raw goods and buy home goods; the name came later (1776)'
+        ] },
+        { name: 'Joint-stock companies', points: [
+          'Voyages cost a fortune: sell shares, pool the money, split profit and risk',
+          'English East India Company 1600; Dutch VOC 1602: chartered monopolies',
+          'The VOC could build forts, keep soldiers, make treaties, fight wars'
+        ] },
+        { name: 'Rivalries', points: [
+          'Fighting over trade was old; the tools were new',
+          'Indian Ocean: Portugal vs. Muslim powers (Diu, 1509)',
+          'Sahara: Morocco vs. Songhai over gold and salt (Tondibi, 1591)',
+          'Europe: English vs. Dutch (Ambon, 1623; three wars, 1652 to 1674)'
+        ] }
+      ], skill: 'You model finding the claim (3.A) on Mun ("sell more to strangers yearly than wee consume of theirs") and Coen, 1614 ("trade cannot be kept up without war, nor war without trade").' },
+      { label: 'II', title: 'What trade moved: silver, the Atlantic, old markets', kc: 'KC-4.1.IV · KC-4.1.IV.D.i · KC-4.2.II.A', groups: [
+        { name: 'Silver', points: [
+          'Potosí 1545, Zacatecas 1546: Spanish America, the world\'s largest silver source',
+          'Single Whip: Ming China collects most taxes in silver, so silver buys more in China',
+          'Two silver roads, both to Asia: around Africa, and Acapulco to Manila',
+          'Manila, 1571: Chinese silk and porcelain for American silver; Chinese merchants ran it',
+          'China pulled the silver as much as Spain pushed it'
+        ] },
+        { name: 'The Atlantic system', points: [
+          'Moved goods, wealth and people, including enslaved people',
+          'Indian cotton and Maldive cowries bought captives in West Africa',
+          '"Triangle" is too simple: Brazil traded directly with Africa'
+        ] },
+        { name: 'What kept going', points: [
+          'Regional markets kept flourishing: Gujarati, Chinese, Armenian merchants',
+          'Old practices: credit, partnerships, family firms; Europeans joined as carriers',
+          'Peasant and artisan work: the same work, more of it, for buyers farther away',
+          'Wool and linen in Europe, cotton in India, silk in China; much of it by women and girls'
+        ] }
+      ] },
+      { label: 'III', title: 'Families and cultures changed', kc: 'KC-4.2.III.C · KC-4.1.IV.D.ii', points: [
+        'About two of every three captives carried across the Atlantic were male',
+        'Hardest-hit regions: more women than men; historians argue women did more farming',
+        'Historians argue more women and girls were enslaved inside Africa; effects varied by region',
+        'Cultural synthesis: African, Indigenous American and European, all contributing',
+        'Foods, creole languages, music, religion; all contributed, but not as equals',
+        'Casta is 4.7'
+      ] },
+      { label: 'IV', title: 'Religions spread, clashed and blended', kc: 'KC-4.1.VI', points: [
+        'Spread: Christianity to the Americas, the Philippines, Kongo; Islam in Southeast Asia',
+        'Clashed: Peru\'s campaigns against idolatry (c. 1610); Japan\'s ban',
+        'Blended (syncretism): the Virgin of Guadalupe, Kongo crucifixes, Vodou',
+        'Virgin of the Mountain, Potosí, 1700s: art historians read Mary as the silver mountain',
+        'Compare: one similarity, one difference'
+      ], skill: 'Students find Sahagún\'s claim (1570s) themselves: first look only; the claim and the verdict wait for the Skill Builder (Module 05). The apparition story was published in 1648, not 1531.' }
+    ],
+    wrap: { title: 'Put it together', columns: ['What was new', 'What kept going'], rows: [
+      { label: 'Rulers\' tools', cells: ['Mercantilist laws; companies that could go to war', 'States fighting over trade routes'] },
+      { label: 'Exchange', cells: ['Silver pulled toward China; the Atlantic system', 'Regional markets; more peasant and artisan work'] },
+      { label: 'Society', cells: ['African families reshaped; mixed Atlantic cultures', 'Old ways of life, carried into the mix'] },
+      { label: 'Faith', cells: ['Religions in new places; conflict; blending', 'Christianity, Islam and older faiths'] }
+    ] },
+    vocabulary: [
+      { term: 'Mercantilism', def: 'The idea that a country grows strong by selling more abroad than it buys and keeping its colonies\' trade for itself.' },
+      { term: 'Joint-stock company', def: 'A company that spreads risk by selling shares to many investors, who split the profits and the losses.' },
+      { term: 'Chartered monopoly company', def: 'A company whose charter gave it the only right, in its own country, to trade with Asia.' },
+      { term: 'VOC', def: 'The Dutch East India Company, chartered 1602. It could build forts, keep soldiers, make treaties and fight wars.' },
+      { term: 'Single Whip', def: 'The Ming reform that collected most taxes in silver, so millions of Chinese families needed silver.' },
+      { term: 'Atlantic trading system', def: 'Ships moving goods, wealth and people, including enslaved people, around the Atlantic.' },
+      { term: 'Regional markets', def: 'The older trade across Africa and Asia, with its own merchants and ways of doing business. It kept flourishing.' },
+      { term: 'Peasant and artisan labor', def: 'Farming and making things by hand at home and in workshops: old work, more of it, for buyers farther away.' },
+      { term: 'Cultural synthesis', def: 'New cultures made by mixing, with all parties contributing.' },
+      { term: 'Syncretism', def: 'The blending of two or more religions into new beliefs and practices.' }
+    ],
+    watch: [
+      { myth: '"Europe bought Asian goods with better products."', fix: 'Europeans had few goods Asians wanted, so they paid in American silver.' },
+      { myth: '"The Atlantic trade was a neat triangle."', fix: 'Goods came from everywhere, and Brazil traded directly with Africa (on the Atlantic slide).' },
+      { myth: '"Global trade replaced the old markets."', fix: 'Regional markets kept flourishing; Europeans joined them as carriers.' },
+      { myth: '"European culture simply replaced the others."', fix: 'All parties contributed, though not as equals; the mixing often happened under force.' }
+    ]
+  },
   flow: [
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the four objectives, the owns and bridge-only split, the four myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.4. Bridge to how rulers made the empires pay.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over the VOC shipyard.', students: 'Predict one way to make an empire pay.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Making Empires Pay" in class.', students: 'For every part: what was new, what kept going.', slide: 4 },
-    { id: 'mercantilism', label: 'Tool 1: An Idea', range: '17-19', minutes: 2, teacher: 'Mercantilism, and the laws that came from it.', students: 'Say what a colony was for.', slide: 5 },
-    { id: 'mun', label: 'Claim It: Mun', range: '19-21', minutes: 2, teacher: 'Model 3.A: the claim in one sentence.', students: 'Restate the claim.', slide: 6 },
-    { id: 'shares', label: 'Tool 2: How It Works', range: '21-23', minutes: 2, teacher: 'Shares, one pool, the risk split; the charter; finance and compete.', students: 'Say why many investors would share one voyage.', slide: 7 },
-    { id: 'company', label: 'Tool 2: A Company', range: '23-25', minutes: 2, teacher: 'The VOC as the case: the charter, its powers, a real share.', students: 'Say why a ruler would want one.', slide: 8 },
-    { id: 'coen', label: 'Claim It: Coen', range: '25-27', minutes: 2, teacher: 'Coen\'s claim about trade and war.', students: 'Find the claim and the reason.', slide: 9 },
-    { id: 'rivals', label: 'Disputes Become Wars', range: '27-30', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 10 },
-    { id: 'map', label: 'Follow the Silver', range: '30-31', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 11 },
-    { id: 'silver', label: 'Why China', range: '31-34', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 12 },
-    { id: 'manila', label: 'Silk for Silver', range: '34-35', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 13 },
-    { id: 'atlantic', label: 'The Atlantic System', range: '35-37', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 14 },
-    { id: 'regional', label: 'Old Markets Keep Going', range: '37-39', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 15 },
-    { id: 'work', label: 'More Work', range: '39-41', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 16 },
-    { id: 'families', label: 'Families in Africa', range: '41-43', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 17 },
-    { id: 'mixing', label: 'A Mixed Atlantic World', range: '43-45', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 18 },
-    { id: 'faith', label: 'Spread, Clash, Blend', range: '45-47', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 19 },
-    { id: 'virgin', label: 'The Virgin of the Mountain', range: '47-48', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 20 },
-    { id: 'sahagun', label: 'Claim It: Sahagún', range: '48-50', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 21 },
-    { id: 'myths', label: 'Myth and Evidence', range: '50-52', minutes: 2, teacher: 'Four things people get wrong.', students: 'Correct each myth.', slide: 22 },
-    { id: 'ledger', label: 'What Was New, What Kept Going', range: '52-56', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 23 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '56-58', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 24 },
-    { id: 'skill', label: 'Skill Builder', range: '58-64', minutes: 6, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find Sahagún\'s claim.', slide: 25 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: tools and exchange.', students: 'Work without the coach.', slide: 26 },
-    { id: 'evidence', label: 'Evidence Lab', range: '64-71', minutes: 7, teacher: 'Module 07: something new and something that kept going, from two sources.', students: 'Observe, then infer, then name a limit.', slide: 27 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '71-81', minutes: 10, teacher: 'Module 10: society and belief. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 28 },
-    { id: 'close', label: 'Landing Sentence', range: '81-82', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 29 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the four sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "Making Empires Pay" in class.', students: 'For every part: what was new, what kept going.', slide: 5 },
+    { id: 'mercantilism', label: 'Tool 1: An Idea', range: '18-20', minutes: 2, teacher: 'Mercantilism, and the laws that came from it.', students: 'Say what a colony was for.', slide: 6 },
+    { id: 'mun', label: 'Claim It: Mun', range: '20-22', minutes: 2, teacher: 'Model 3.A: the claim in one sentence.', students: 'Restate the claim.', slide: 7 },
+    { id: 'shares', label: 'Tool 2: How It Works', range: '22-24', minutes: 2, teacher: 'Shares, one pool, the risk split; the charter; finance and compete.', students: 'Say why many investors would share one voyage.', slide: 8 },
+    { id: 'company', label: 'Tool 2: A Company', range: '24-26', minutes: 2, teacher: 'The VOC as the case: the charter, its powers, a real share.', students: 'Say why a ruler would want one.', slide: 9 },
+    { id: 'coen', label: 'Claim It: Coen', range: '26-28', minutes: 2, teacher: 'Coen\'s claim about trade and war.', students: 'Find the claim and the reason.', slide: 10 },
+    { id: 'rivals', label: 'Disputes Become Wars', range: '28-31', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 11 },
+    { id: 'map', label: 'Follow the Silver', range: '31-32', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 12 },
+    { id: 'silver', label: 'Why China', range: '32-35', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 13 },
+    { id: 'manila', label: 'Silk for Silver', range: '35-36', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 14 },
+    { id: 'atlantic', label: 'The Atlantic System', range: '36-38', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 15 },
+    { id: 'regional', label: 'Old Markets Keep Going', range: '38-40', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 16 },
+    { id: 'work', label: 'More Work', range: '40-42', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 17 },
+    { id: 'families', label: 'Families in Africa', range: '42-44', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 18 },
+    { id: 'mixing', label: 'A Mixed Atlantic World', range: '44-46', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 19 },
+    { id: 'faith', label: 'Spread, Clash, Blend', range: '46-48', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 20 },
+    { id: 'virgin', label: 'The Virgin of the Mountain', range: '48-49', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 21 },
+    { id: 'sahagun', label: 'Claim It: Sahagún', range: '49-51', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 22 },
+    { id: 'ledger', label: 'What Was New, What Kept Going', range: '51-55', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 23 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '55-57', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 24 },
+    { id: 'worktime', label: 'Work Time', range: '57-87', minutes: 30, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder on Sahagún, Checkpoint 1 with no coach, the Manila Silver Council, then Checkpoint 2. Four modules is more than 30 minutes: Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, the Manila Silver Council, Checkpoint 2.', slide: 25 },
+    { id: 'close', label: 'Landing Sentence', range: '87-88', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 26 }
   ],
 
   quickLaunch: [
@@ -93,7 +190,7 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'Tools to make empires pay. What they moved, and what it changed.',
       subtitle: 'Continuity and Change, with Claims and Evidence in Sources 3.A. Four objectives: rulers\' tools, exchange, society, belief. For each, something new and something that kept going.',
       notes: {
@@ -123,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull Topic 4.4 back from memory.',
       template: {
         questions: [
@@ -173,10 +270,40 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'Rulers built tools to make their empires pay. What did those tools move, and what did it change?',
+        stops: [
+          { label: 'I', text: 'How rulers made empires pay' },
+          { label: 'II', text: 'What trade moved: silver, the Atlantic, old markets' },
+          { label: 'III', text: 'Families and cultures changed' },
+          { label: 'IV', text: 'Religions spread, clashed and blended' },
+          { label: '✓', text: 'Put it together: what was new, what kept going', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Four sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the four headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s and the ledger\'s four rows (rulers\' tools, exchange, society, faith), and every story slide\'s eyebrow names its section (I to IV).',
+          'The question at the top is the topic question: in each section, students watch for what was new and what kept going.'
+        ],
+        ask: 'Which section do you expect the biggest change in?',
+        listenFor: 'Any reasoned guess; return to it at the ledger.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read with two questions in mind.',
       subtitle: 'For every part: what was new, and what kept going the way it already had?',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-5-maritime-empires-maintained-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
@@ -201,7 +328,7 @@ window.BEHISTORICAL_TEACHING = {
          infographic slides). Source: scripts/lib/slide-graphics/topic-4-5-mercantilism.html,
          rendered by scripts/build-slide-graphics.js. The alt text says everything the picture
          says; change one and change the other. */
-      phase: 'mercantilism', kind: 'frame-full', eyebrow: 'Rulers\' Tool 1 · An Idea',
+      phase: 'mercantilism', kind: 'frame-full', eyebrow: 'I · How Rulers Made Empires Pay · Mercantilism',
       kc: 'KC-4.1.IV.C', title: 'Mercantilism: how a state grows strong.',
       template: {
         visual: { url: '../assets/images/topics/4-5/mercantilism-tool-1.png', alt: 'Slide graphic titled Mercantilism: Rulers\' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England\'s Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country\'s goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the "mercantile system" in 1776. Think: in this way of thinking, what is a colony for?' }
@@ -229,7 +356,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'mun', kind: 'source-quote', eyebrow: 'Claim It · Model',
+      phase: 'mun', kind: 'source-quote', eyebrow: 'I · Making Empires Pay · Claim It, Model',
       kc: 'Unit 4: Learning Objective H', title: 'An English merchant states a rule.',
       footer: 'A claim is what the author wants you to believe. Say it in your own words.',
       template: {
@@ -262,7 +389,7 @@ window.BEHISTORICAL_TEACHING = {
          the VOC case slide that follows it. Source:
          scripts/lib/slide-graphics/topic-4-5-joint-stock-company.html, rendered by
          scripts/build-slide-graphics.js. The alt text says everything the picture says. */
-      phase: 'shares', kind: 'frame-full', eyebrow: 'Rulers\' Tool 2 · How It Works',
+      phase: 'shares', kind: 'frame-full', eyebrow: 'I · How Rulers Made Empires Pay · Joint-Stock Companies',
       kc: 'KC-4.1.IV.C', title: 'The joint-stock company: many investors, one voyage.',
       template: {
         visual: { url: '../assets/images/topics/4-5/joint-stock-company-tool-2.png', alt: 'Slide graphic titled The Joint-Stock Company: Rulers\' Tool 2, a new kind of company, Topic 4.5, 1450 to 1750. Tool 1 shaped Tool 2: mercantilism said win trade and keep it at home, and rulers and merchants built a company to do both. A diagram. The problem: one voyage to Asia cost a fortune, and ships were often lost. The answer, sell shares: many investors each buy shares, their money goes into one pool, the pool pays for one voyage to Asia, and the profits and losses come back split by share. If a ship was lost, many investors shared the loss instead of one. Finance exploration: rulers and merchants raised the money for long voyages, the English East India Company (chartered 1600) and the Dutch East India Company, the VOC (1602). Charter from the ruler: the charter gave one company the only right, in its own country, to trade with Asia. Compete against rival rulers: each state sent its company to win trade from the others, and the VOC could even build forts, keep soldiers and fight wars. Continuity and change. Old: merchants had pooled money for voyages for centuries. New: a company with a government\'s monopoly, its own soldiers and the right to make war, sent by one state to compete with another.' }
@@ -291,7 +418,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'company', kind: 'case-file', eyebrow: 'Rulers\' Tool 2 · A Company',
+      phase: 'company', kind: 'case-file', eyebrow: 'I · How Rulers Made Empires Pay · A Company',
       kc: 'KC-4.1.IV.C', title: 'A company that could go to war.',
       template: {
         tag: 'Joint-stock company', place: 'The Dutch Republic', date: '1602',
@@ -325,7 +452,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'coen', kind: 'source-quote', eyebrow: 'Claim It · Model',
+      phase: 'coen', kind: 'source-quote', eyebrow: 'I · Making Empires Pay · Claim It, Model',
       kc: 'KC-4.3.III.ii', title: 'A company leader writes home, 1614.',
       footer: 'Find the claim, then the reason the author gives for it.',
       template: {
@@ -354,7 +481,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'rivals', kind: 'branch-tree', eyebrow: 'Rivals · Old Fights, New Tools',
+      phase: 'rivals', kind: 'branch-tree', eyebrow: 'I · How Rulers Made Empires Pay · Rivals',
       kc: 'KC-4.3.III.ii', title: 'Economic disputes became wars.',
       footer: 'States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.',
       template: {
@@ -388,7 +515,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'map', kind: 'map', eyebrow: 'Follow the Silver',
+      phase: 'map', kind: 'map', eyebrow: 'II · What Trade Moved · Follow the Silver',
       kc: 'Unit 4: Learning Objective I', title: 'Two roads for silver, both toward Asia.',
       footer: 'Diu, Tondibi and Ambon are places where economic disputes turned violent. Manila marks where silver met silk.',
       visual: { url: '../assets/images/instructional-maps/topic-4-5.svg', alt: 'World map showing silver from Potosí to Seville and on around Africa to Asia, silver from New Spain by galleon to Manila and into China, enslaved Africans carried west across the Atlantic, and dots at Diu, Tondibi, Ambon and Manila' },
@@ -411,7 +538,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'silver', kind: 'cause-chain', eyebrow: 'Exchange · Silver',
+      phase: 'silver', kind: 'cause-chain', eyebrow: 'II · What Trade Moved · Silver',
       kc: 'KC-4.1.IV', title: 'Why the silver went to China.',
       footer: 'Spain had the mines. China\'s demand pulled the silver around the world.',
       template: {
@@ -469,7 +596,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'atlantic', kind: 'exchange-hub', eyebrow: 'Exchange · The Atlantic System',
+      phase: 'atlantic', kind: 'exchange-hub', eyebrow: 'II · What Trade Moved · The Atlantic System',
       kc: 'KC-4.1.IV.D.i', title: 'Goods, wealth, and people, from everywhere.',
       footer: 'Not a neat triangle: many ships sailed straight between Brazil and Angola, and the goods came from all over the world.',
       template: {
@@ -502,7 +629,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'regional', kind: 'continuity-change', eyebrow: 'Exchange · Markets That Kept Going',
+      phase: 'regional', kind: 'continuity-change', eyebrow: 'II · What Trade Moved · Markets That Kept Going',
       kc: 'KC-4.1.IV', title: 'The new trade joined the old markets. It did not replace them.',
       footer: 'The College Board\'s words: regional markets "continued to flourish."',
       template: {
@@ -531,7 +658,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'work', kind: 'frame-triptych', eyebrow: 'Work · Continued and Intensified',
+      phase: 'work', kind: 'frame-triptych', eyebrow: 'II · What Trade Moved · Work, Continued and Intensified',
       kc: 'KC-4.2.II.A', title: 'The same work, more of it, for buyers farther away.',
       template: {
         panels: [
@@ -562,7 +689,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'families', kind: 'case-file', eyebrow: 'Society · Families in Africa',
+      phase: 'families', kind: 'case-file', eyebrow: 'III · Families and Cultures · Families in Africa',
       kc: 'KC-4.2.III.C', title: 'Who the trade took, and what it changed.',
       template: {
         tag: 'Demographic change', place: 'Especially West Central Africa', date: '1500s to 1700s',
@@ -596,7 +723,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'mixing', kind: 'ledger', eyebrow: 'Society · A Mixed Atlantic World',
+      phase: 'mixing', kind: 'ledger', eyebrow: 'III · Families and Cultures · A Mixed Atlantic World',
       kc: 'KC-4.1.IV.D.ii', title: 'Everyone contributed to the new culture.',
       footer: 'No one group designed it, and much of it happened under force: "with all parties contributing."',
       template: {
@@ -628,7 +755,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'faith', kind: 'branch-tree', eyebrow: 'Faith · Compare',
+      phase: 'faith', kind: 'branch-tree', eyebrow: 'IV · Religions · Compare',
       kc: 'Unit 4: Learning Objective K', title: 'Three things religions did.',
       footer: 'To compare, ask the same questions of two branches: what do they share, and where do they part ways?',
       template: {
@@ -686,7 +813,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'sahagun', kind: 'source-quote', eyebrow: 'Claim It · Your Turn',
+      phase: 'sahagun', kind: 'source-quote', eyebrow: 'IV · Religions · Claim It, Your Turn',
       kc: 'KC-4.1.VI', title: 'A friar is suspicious, in the 1570s.',
       footer: 'Find his claim. Does his own evidence prove it?',
       template: {
@@ -716,36 +843,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence tells a more useful story than the myths.',
-      template: {
-        rows: [
-          { myth: 'Europe bought Asian goods with better products.', evidence: 'Europeans had few goods Asians wanted, so they paid in American silver.', source: 'Silver around Africa; Manila' },
-          { myth: 'Global trade replaced the old markets.', evidence: 'Regional markets kept flourishing, and Europeans joined them as carriers.', source: 'Gujarati, Chinese, Armenian merchants' },
-          { myth: 'European culture simply replaced the others.', evidence: 'Africans, Indigenous Americans, and Europeans all made the new Atlantic cultures.', source: 'Creole languages; Vodou; Guadalupe' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Silver, not better products, bought Asian goods',
-          'Old markets kept flourishing',
-          'All contributed, but not as equals',
-          'Mixing often happened under force',
-          'Triangle myth: fixed on the Atlantic slide'
-        ],
-        land: [
-          'Row 1 is KC-4.1.IV\'s silver sentence: silver bought Asian goods.',
-          'Row 2 is KC-4.1.IV\'s second sentence: regional markets "continued to flourish."',
-          'Row 3 is KC-4.1.IV.D.ii: "with all parties contributing." Do not swing to the opposite myth: the mixing often happened under force and slavery.'
-        ],
-        ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'The third: all parties contributed, but not as equals. (The fourth myth, the neat triangle, is corrected on the Atlantic slide.)'
-      }
-    },
-    {
-      retelling: true, phase: 'ledger', kind: 'split-matrix', eyebrow: 'The Whole Topic',
+      retelling: true, phase: 'ledger', kind: 'split-matrix', eyebrow: 'Put It Together · The Whole Topic',
       title: 'New, or kept going?',
       template: {
         columns: [{ name: 'What was new' }, { name: 'What kept going' }],
@@ -764,19 +862,21 @@ window.BEHISTORICAL_TEACHING = {
           'Rows = the four objectives',
           'Columns = new and kept going',
           'Ask "why" in every row',
-          'China’s demand pulled the silver'
+          'China’s demand pulled the silver',
+          'Correct the myths from these rows',
         ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the eight cells from memory.',
           'The four rows are the four learning objectives (H, I, J, K); the two columns are the reasoning move.',
-          'Push for the "why" in each row: rulers wanted wealth and an edge on rivals; China\'s demand pulled the silver; the slave trade took more men; contact carried religions to new people.'
+          'Push for the "why" in each row: rulers wanted wealth and an edge on rivals; China\'s demand pulled the silver; the slave trade took more men; contact carried religions to new people.',
+          'The myths are corrected from these rows (they had their own slide until 2026-11-06; they are also in the outline\'s Watch for list). Rulers\' tools and Exchange: Europe did not buy Asian goods with better products; it paid in American silver, and regional markets kept flourishing with Europeans as carriers. Society: European culture did not simply replace the others; all parties contributed, but not as equals, and the mixing often happened under force and slavery. The fourth myth, the neat triangle, is corrected on the Atlantic slide.'
         ],
         ask: 'Which row has the biggest change, and which the biggest continuity?',
         listenFor: 'Biggest change: silver around the world, or families in Africa. Biggest continuity: regional markets, or the old work.'
       }
     },
     {
-      phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
+      phase: 'sharpen', kind: 'sharpen', eyebrow: 'Put It Together · Sharpen the Claim',
       kc: 'Unit 4: Learning Objective J',
       footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
@@ -802,91 +902,37 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'What does the author want you to believe?',
-      subtitle: 'Find the claim in a source, say it in one sentence, and name the evidence the author gives.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 09, 10',
+      title: 'Now you do the history.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
+      template: {
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Find Sahagún\'s claim, in one sentence.', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Manila Silver Council, 1594.', url: '../beintheroom/unit-4/the-manila-silver-council.html' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' }
+        ]
+      },
       notes: {
-        minutes: 6,
+        minutes: 30,
         keys: [
-          'Skill 3.A: the claim in one sentence',
-          'Modeled on Coen, practiced on Sahagún',
-          'Own words before quoting',
-          'Debrief after: suspicion is not proof'
+          'All four required today, in order',
+          'Skill Builder: Sahagún\'s claim in one sentence',
+          'Checkpoint 1: no coach',
+          'Manila Council: keep the silver trade paying',
+          'Checkpoint 2 unfinished = homework',
+          'Evidence Lab optional for early finishers'
         ],
         land: [
-          'The Skill Builder practices the CED\'s suggested skill, 3.A: identify and describe a claim or argument in a source.',
-          'It models Coen\'s 1614 letter (slide 9), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
-          'Push students to state the claim in their own words, in one sentence, before they quote anything.'
+          'This one slide replaces four (the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-06). Modules 05, 06, 09 and 10 are the required modules on the schedule (Jeff\'s Unit 4 module review, 2026-10-23); this deck was built before that review and had launched 07 instead of 09, with 06 optional. Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.A: identify and describe a claim in a source. It models Coen\'s 1614 letter, then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives, and whether that evidence proves it. Push for the claim in their own words, in one sentence, before they quote. Debrief only after: a name and a crowd do not prove what people believed; the source shows what he suspected.',
+          'Checkpoint 1 (Module 06), with no coach, asks for one way a ruler used mercantilism or a chartered company, one change in exchange (silver or the Atlantic system) and one continuity (regional markets, or peasant and artisan work). Give feedback in the room: on an alternating block nothing carries over.',
+          'The Manila Silver Council (Module 09) is set in Manila in 1594, after the king\'s 1593 limits on the galleon trade. Its question: how should the council keep the silver-for-silk trade paying for the colony, when the king wants to limit it, Chinese merchants run it, and rivals want to take it? It is section I\'s tools and section II\'s silver in one decision.',
+          'Checkpoint 2 (Module 10) asks for one way the slave trade changed families in parts of Africa and why, one example of Atlantic cultural mixing and who contributed, and a comparison of two things religions did as contact grew (Learning Objectives J and K). Socrates is told the skills are Causation and Comparison, so it will push for the cause of the family change and for a similarity and a difference. The revised answer in the box is what goes to Canvas.',
+          'Four modules will not all fit in class: Checkpoint 2 finishes at home. The Evidence Lab (Module 07: one claim from two sources, five real objects and a card of modern estimates) is optional today, for students who finish early.'
         ],
-        ask: 'After students have written: is Sahagún\'s evidence enough to prove his claim?',
-        listenFor: 'Debrief only after the module: a name and a crowd do not prove what people believed; the source shows what he suspected.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'Tools and exchange.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
-      notes: {
-        minutes: 0,
-        keys: [
-          'Optional: early finishers or diagnostic',
-          'A tool, a change in exchange, a continuity',
-          'Give feedback in the room'
-        ],
-        land: [
-          'Checkpoint 1 is not required for 4.5. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It asks for one way a ruler used mercantilism or a chartered company, one change in exchange (silver or the Atlantic system) and one continuity (regional markets, or peasant and artisan work). Give feedback in the room: on an alternating block nothing carries over.'
-        ],
-        ask: 'Name a tool, a change in exchange, and a continuity.',
-        listenFor: 'The VOC, silver pulled to China, and Gujarati or Chinese merchants trading on.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Build one claim from two sources.',
-      subtitle: 'Something new and something that kept going, from two sources. Name one limit.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
-      notes: {
-        minutes: 7,
-        keys: [
-          'One claim, two sources',
-          'Something new, something kept going',
-          'Five objects plus one figures card',
-          'Figures card: source it as a modern estimate',
-          'Observe → infer → name a limit'
-        ],
-        land: [
-          'Five real objects and one figures card: a VOC share receipt (Enkhuizen, 1606), a Potosí silver coin (1651), women reeling silk in the 1696 Pictures of Tilling and Weaving, a painted Indian cotton made for sale abroad (early 1700s), Antonio and Manuel de Arellano\'s painted copy of the Virgin of Guadalupe (1691, LACMA), and a card of modern historians\' estimates from the Atlantic shipping records, which is a record, not an object, so students should source it as a modern estimate.',
-          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you.',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated. The sixth card is text, not a picture.'
-        ],
-        ask: 'What does the source show before you tell me what it means?',
-        listenFor: 'A concrete detail, then the inference, then a limit.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'Families, cultures and faith: what changed, why, and how religions compared.',
-      subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
-      notes: {
-        minutes: 10,
-        keys: [
-          'Family change in Africa, and why',
-          'One mixing example: who contributed',
-          'Compare two things religions did',
-          'Revised answer goes to Canvas',
-          'Unfinished = homework'
-        ],
-        land: [
-          'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for one way the slave trade changed families in parts of Africa and why, one example of Atlantic cultural mixing and who contributed, and a comparison of two things religions did as contact grew. That is Learning Objectives J and K: KC-4.2.III.C, KC-4.1.IV.D.ii and KC-4.1.VI. Objectives H and I are the First & 10\'s and Checkpoint 1\'s.',
-          'Socrates is told the skills are Causation and Comparison, so it will push for the cause of the family change and for a similarity and a difference.'
-        ],
-        ask: 'Does your answer have the cause of the family change, a contribution from more than one group, and a similarity and a difference?',
-        listenFor: 'More men taken; music, food or language; spread and blending compared.'
+        ask: 'Does your answer name a claim, a change and a continuity, each with a named example?',
+        listenFor: 'Skill Builder: Sahagún suspects hidden idolatry. Checkpoint 1: the VOC, silver pulled to China, Gujarati or Chinese merchants trading on. Checkpoint 2: more men taken; music, food or language; spread and blending compared.'
       }
     },
     {
