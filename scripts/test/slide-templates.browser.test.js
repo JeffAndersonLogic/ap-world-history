@@ -654,7 +654,7 @@ function measureAnnotatedFit({ label, ratio }) {
       const boards = [], vennBad = [];
       // Unused catalog layouts still need to fit in the real brand fonts.
       // The overflow/collision controls below exercise this same measurement.
-      for (const e of EX.filter(e => e.round === 9)) {
+      for (const e of EX.filter(e => e.round >= 9)) {
         await draw(e.slide);
         for (const size of [[1280,720],[1024,768]]) {
           await page.evaluate(([w,h]) => { document.querySelector('#stage').style.cssText = `width:${w}px;height:${h}px;aspect-ratio:auto`; },size);

@@ -313,6 +313,53 @@ for (const deck of DECKS.filter(d => KEYS_DECKS.has(d.key))) {
   check('4.1 + 4.2 overview run of show points at the right slides', flowOk);
 }
 
+// The teaching outline and its road map (Jeff, 2026-11-06, piloted on 4.4).
+// A deck that carries `outline` shows it first in the briefing, and its
+// road-map slide shows students the same section headers. They are two copies
+// of one list, so they must agree, label for label and header for header, in
+// order, or the teacher's outline and the room's map describe different days.
+// A deck with an outline must also have exactly one road map, placed before
+// the First & 10.
+function outlineProblems(T) {
+  const o = T.outline;
+  if (!o) return [];
+  const out = [];
+  const secs = Array.isArray(o.sections) ? o.sections : [];
+  if (!secs.length) out.push('outline has no sections');
+  const maps = T.slides.filter(s => s.kind === 'road-map');
+  if (maps.length !== 1) return out.concat(`expected one road-map slide, found ${maps.length}`);
+  const stops = ((maps[0].template || {}).stops || []).filter(x => !x.key);
+  if (stops.length !== secs.length) out.push(`road map has ${stops.length} sections, outline has ${secs.length}`);
+  secs.forEach((sec, i) => {
+    const st = stops[i] || {};
+    if (st.label !== sec.label || st.text !== sec.title) out.push(`section ${i + 1}: road map "${st.label} ${st.text}" vs outline "${sec.label} ${sec.title}"`);
+  });
+  const at = T.slides.indexOf(maps[0]), f10 = T.slides.findIndex(s => s.phase === 'first10');
+  if (f10 >= 0 && at > f10) out.push('road map comes after the First & 10');
+  return out;
+}
+{
+  const good = { outline: { sections: [{ label: 'I', title: 'A' }, { label: 'II', title: 'B' }] }, slides: [{ kind: 'road-map', template: { stops: [{ label: 'I', text: 'A' }, { label: 'II', text: 'B' }, { label: 'W', text: 'Wrap', key: true }] } }, { phase: 'first10' }] };
+  check('control: a matching outline and road map pass', outlineProblems(good).length === 0, outlineProblems(good).join('; '));
+  const renamed = JSON.parse(JSON.stringify(good)); renamed.slides[0].template.stops[1].text = 'B, renamed on the slide only';
+  check('control: a road map that drifts from the outline is refused', outlineProblems(renamed).length === 1);
+  const late = JSON.parse(JSON.stringify(good)); late.slides.reverse();
+  check('control: a road map after the First & 10 is refused', outlineProblems(late).length === 1);
+  const none = JSON.parse(JSON.stringify(good)); none.slides.shift();
+  check('control: an outline with no road map is refused', outlineProblems(none).length === 1);
+}
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const T = sandbox.window.BEHISTORICAL_TEACHING;
+  if (!T || !T.outline) continue;
+  const problems = outlineProblems(T);
+  check(`${deck.key} outline and road map name the same sections`, problems.length === 0, problems.join('; ') || `${T.outline.sections.length} sections`);
+  const flowOk = T.flow.every(f => T.slides[f.slide - 1] && T.slides[f.slide - 1].phase === f.id);
+  check(`${deck.key} run of show points at the right slides`, flowOk);
+}
+
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
 const architecturePath = 'docs/TEACHING-OS.md';

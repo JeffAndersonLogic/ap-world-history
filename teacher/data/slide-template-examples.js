@@ -250,5 +250,19 @@ window.BH_SLIDE_TEMPLATE_EXAMPLES.push(
   {round:9,group:'Reasoning studio',name:'Retrieval bridge',note:'Two or three retrieval prompts beside one explicit bridge. Keep prompts short enough to answer from memory. Put answers in Teacher Intelligence, and use the bridge to introduce the next historical problem.',slide:{kind:'retrieval-bridge',eyebrow:'BeReady · 3–5 minutes · No notes at first',title:'Bring yesterday into today.',template:{prompts:['Recall one development from the previous topic.','Explain one cause or connection.','Name a specific example that supports it.'],bridge:'How does that earlier pattern help us ask today’s question?'}}}
 );
 
+
+/* Round 10, 2026-11-06 (Jeff): lesson flow, piloted on Topic 4.4. A road map
+   before the First & 10 shows students the whole period, in the same section
+   headers as the teacher's briefing outline; a launch pad gathers the day's
+   required modules onto one Work Time slide at the end of the story. */
+window.BH_SLIDE_TEMPLATE_EXAMPLES.push(
+  {round:10,group:'Lesson flow',name:'Road map',note:'The day\'s story in its section headers, shown before the First & 10 so the reading and the lecture have a shape. Use the same headers as the briefing outline, three to seven of them, a few words each; mark the wrap-up stop key: true. Optional question above and a Then line naming the work that follows. No kc: it spans the whole topic.',slide:{
+    kind:'road-map',eyebrow:'Topic 4.4 · Today\'s Road Map',title:'Where we are going today.',
+    template:{question:'Europeans built empires from the sea. What changed, and what kept going?',stops:[{label:'I',text:'Why Europeans went to sea'},{label:'II',text:'Portugal in the Indian Ocean'},{label:'III',text:'China and Japan set the rules'},{label:'IV',text:'Kongo and Asante grow stronger'},{label:'V',text:'Who did the work: labor and slavery'},{label:'✓',text:'Put it together: what changed, what kept going',key:true}],thenLabel:'Then',then:'Checkpoint 1 · Primary Source · BeInTheRoom · Checkpoint 2'}}},
+  {round:10,group:'Lesson flow',name:'Work time launch pad',note:'One slide for all of the day\'s required student work, in the order to do it: up to four modules, each a button that opens it. Replaces a run of one-module action slides. Give each a module number, a short name and one short line; the footer says what happens to unfinished work.',slide:{
+    kind:'launch-pad',eyebrow:'Topic 4.4 · Work Time',title:'Now you do the history.',footer:'In this order. Checkpoint 2 not finished in class? It is homework.',
+    template:{modules:[{code:'Module 06',name:'Checkpoint 1',note:'On your own, no coach.',url:'../unit-4/lesson-4-4-maritime-empires-established.html#modules'},{code:'Module 08',name:'Primary Source',note:'Afonso I\'s full letter, 1526.',url:'../unit-4/lesson-4-4-maritime-empires-established.html#modules'},{code:'Module 09',name:'BeInTheRoom',note:'The Goa Fort Council.',url:'../beintheroom/unit-4/the-goa-fort-council.html'},{code:'Module 10',name:'Checkpoint 2',note:'Draft, work with Socrates, revise.',url:'../unit-4/lesson-4-4-maritime-empires-established.html#modules'}]}}}
+);
+
 })();
 

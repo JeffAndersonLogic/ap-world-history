@@ -868,6 +868,30 @@ function retrievalBridge(s){
   return reasoningBoard(s,'retrieval-bridge',`<div class="r9-retrieval"><div class="r9-recall">${arr(t.prompts).slice(0,3).map((p,i)=>`<div><span>${i+1}</span>${r9Text(p)}</div>`).join('')}</div><div class="r9-bridge">${r9Label(t.bridgeLabel||'Carry it forward')}<h3>${rich(t.bridge)}</h3></div></div>`);
 }
 
+/* Round 10 (2026-11-06, Jeff): lesson flow. A road map shows students the
+   whole period's story before the First & 10, in the same section headers the
+   teacher's briefing outline uses, so the reading and the lecture have a shape
+   to hang on. A launch pad replaces a run of one-module "go do this" slides
+   with one Work Time slide: every module the day requires, in order, each a
+   button. Both are drawn here so the teacher projector and the student deck
+   show them the same way. */
+function roadMap(s){
+  const t=s.template||{},st=arr(t.stops).slice(0,7),n=Math.max(1,st.length);
+  const size=n>=7?24:n===6?28:n===5?31:34;
+  const q=t.question?`<p class="bht-rm-q">${rich(t.question)}</p>`:'';
+  const rows=st.map(x=>`<li class="bht-rm-stop${x.key?' key':''}"><span class="n">${esc(x.label)}</span><p style="font-size:calc(${size}*var(--u))">${rich(x.text)}</p></li>`).join('');
+  const then=t.then?`<div class="bht-rm-then">${t.thenLabel?`<span class="tg">${esc(t.thenLabel)}</span>`:''}<p>${rich(t.then)}</p></div>`:'';
+  return board('road-map',themeOf(t,'dark'),pad(head(s)+q+grow(`<ol class="bht-rm">${rows}</ol>`)+then+foot(s.footer),'tight'));
+}
+function launchPad(s){
+  const t=s.template||{},M=arr(t.modules).slice(0,4),cols=M.length>2?2:Math.max(1,M.length);
+  const card=m=>{
+    const inner=`${m.code?`<span class="cd">${esc(m.code)}</span>`:''}<span class="nm">${esc(m.name)}</span>${m.note?`<span class="nt">${rich(m.note)}</span>`:''}`;
+    return m.url?`<a class="bht-lp-mod" href="${esc(m.url)}" target="_blank" rel="noopener">${inner}</a>`:`<div class="bht-lp-mod">${inner}</div>`;
+  };
+  return board('launch-pad',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lp" style="grid-template-columns:repeat(${cols},minmax(0,1fr))">${M.map(card).join('')}</div>`)+foot(s.footer),'tight'));
+}
+
 const KINDS={
   'focus-lens':focusLens,'causal-fork':causalFork,'convergence':convergence,
   'perspective-bands':perspectiveBands,'scale-ladder':scaleLadder,
@@ -901,7 +925,9 @@ const KINDS={
   /* round 6 */
   'ledger':ledger,'verdict':verdict,'balance':balance,
   /* round 7 */
-  'frame-full':fFull
+  'frame-full':fFull,
+  /* round 10 */
+  'road-map':roadMap,'launch-pad':launchPad
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1811,6 +1837,23 @@ const CSS=`
 .bht-scase-row>p{font:400 calc(var(--sc-text)*var(--u))/1.28 'Libre Baskerville',Georgia,serif;color:var(--fg)}
 .bht-scase-row.key>b{color:#f1ce8f}
 
+/* round 10: lesson flow */
+.bht-rm-q{font-style:italic;font-size:22u;line-height:1.4;color:var(--sub);max-width:62ch}
+.bht-rm{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.bht-rm-stop{display:grid;grid-template-columns:64u minmax(0,1fr);column-gap:22u;align-items:baseline;padding:9u 0;border-bottom:1u solid var(--rulec)}
+.bht-rm-stop:last-child{border-bottom:0}
+.bht-rm-stop .n{font:700 26u/1.2 'Cinzel',Georgia,serif;color:var(--acc);text-align:right}
+.bht-rm-stop p{line-height:1.25;font-weight:700;color:var(--head)}
+.bht-rm-stop.key p{color:var(--acc)}
+.bht-rm-then{display:flex;gap:16u;align-items:baseline;border-top:2u solid var(--acc);padding-top:14u}
+.bht-rm-then .tg{font:800 13u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);flex:none}
+.bht-rm-then p{font-size:20u;line-height:1.35;color:var(--soft)}
+.bht-lp{display:grid;gap:22u}
+.bht-lp-mod{display:flex;flex-direction:column;gap:8u;padding:22u 26u;border:2u solid var(--acc);border-radius:10u;text-decoration:none;color:var(--fg);min-width:0}
+a.bht-lp-mod:hover,a.bht-lp-mod:focus-visible{background:rgba(201,164,106,.16);outline:none}
+.bht-lp-mod .cd{font:800 14u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.bht-lp-mod .nm{font:800 32u/1.15 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-lp-mod .nt{font-size:20u;line-height:1.35;color:var(--soft)}
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which
     is invalid CSS, so the browser dropped the whole declaration. That is how
