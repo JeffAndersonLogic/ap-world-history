@@ -82,7 +82,8 @@
     const all = (Readers && Readers.RECORDED[readerId]) || {};
     return Object.keys(all).filter(id => Readers.topicOf(id) === topicKey);
   }
-  const pastedHere = () => S.pasted.get(S.topic + '|' + S.section) || new Map();
+  const pasteKey = () => S.topic + '|' + (S.source === 'live' ? 'live:' + (S.liveSection || 'all') : S.section);
+  const pastedHere = () => S.pasted.get(pasteKey()) || new Map();
   function readerAvailable(readerId, topicKey) {
     if (H && readerId === H.READER.id) return topicKey === S.topic && pastedHere().size > 0;
     return readerId === 'invented' || recordedFor(readerId, topicKey).length > 0;
@@ -174,15 +175,27 @@
 
   // ── My class, from the database ───────────────────────────────────────────
   function liveSay(t) { $('#live-status').textContent = t; }
-  function classLabel() { return S.source === 'live' && S.live && S.live.roster ? S.live.roster.classLabel : S.section; }
+  // My class covers every class on the teacher's list; the section menu narrows it
+  // to one (S.liveSection, '' for all of them).
+  function liveStudents() {
+    const R = S.live && S.live.roster;
+    if (!R) return [];
+    return S.liveSection ? R.students.filter(st => st.section === S.liveSection) : R.students;
+  }
+  function classLabel() {
+    if (!(S.source === 'live' && S.live && S.live.roster)) return S.section;
+    if (S.liveSection) return S.liveSection;
+    return S.live.roster.sections && S.live.roster.sections.length > 1 ? 'all my classes' : S.live.roster.classLabel;
+  }
   // The same shape Demo.build returns. With no class list yet, an empty class.
   async function liveBuild() {
     const L = S.live;
     if (!L || !L.roster) return { kind: 'live', students: [], rows: { cp1: [], cp2: [] }, provider: { id: 'none', version: '1', has: () => false, async interpret() { throw new Error('Not read yet'); } } };
-    const rows = await L.api.answers(S.topic, L.roster.students);
+    const roster = liveStudents();
+    const rows = await L.api.answers(S.topic, roster);
     const ratings = await L.api.ratings(S.topic);
-    const students = L.roster.students.map((st, i) => ({
-      i, name: st.label, uid: st.uid, absent: false, strength: .5,
+    const students = roster.map((st, i) => ({
+      i, name: st.label, uid: st.uid, section: st.section || '', absent: false, strength: .5,
       submittedAt: { cp1: rows.cp1[i].completionState === 'verified-submission' ? 0 : null, cp2: rows.cp2[i].completionState === 'verified-submission' ? 0 : null },
       confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence }
     }));
@@ -231,10 +244,15 @@
     ['#play', '#toend', '#reset'].forEach(id => { $(id).hidden = live; });
     $('.clock').hidden = live;
     $('#reader').closest('div').hidden = live || !Readers;
-    $('#section').disabled = live;
-    $('#section').innerHTML = live
-      ? `<option>${esc(S.live && S.live.roster ? S.live.roster.classLabel + ' (' + S.live.roster.students.length + ' students)' : 'Sign in first')}</option>`
-      : Demo.SECTIONS.map(x => `<option value="${x.id}"${x.id === S.section ? ' selected' : ''}>${x.id}, ${x.cohort} (${x.size} students)</option>`).join('');
+    const R = live && S.live && S.live.roster;
+    const many = !!(R && R.sections && R.sections.length > 1);
+    $('#section').disabled = live && !many;
+    $('#section').innerHTML = !live
+      ? Demo.SECTIONS.map(x => `<option value="${x.id}"${x.id === S.section ? ' selected' : ''}>${x.id}, ${x.cohort} (${x.size} students)</option>`).join('')
+      : !R ? '<option>Sign in first</option>'
+      : !many ? `<option>${esc(R.classLabel + ' (' + R.students.length + ' students)')}</option>`
+      : `<option value=""${S.liveSection ? '' : ' selected'}>All my classes (${R.students.length} students)</option>`
+        + R.sections.map(x => `<option value="${esc(x)}"${x === S.liveSection ? ' selected' : ''}>${esc(x)} (${R.students.filter(st => st.section === x).length} students)</option>`).join('');
     ['course', 'student'].forEach(t => { const b = $('#tab-' + t); b.disabled = live; b.title = live ? 'Demo only for now' : ''; });
     if (live && (S.tab === 'course' || S.tab === 'student')) setTab('live');
     $('#mode-pill').textContent = live ? 'My class: real students' : 'Demo: invented students';
@@ -630,7 +648,7 @@
       load();
       return;
     }
-    const key = S.topic + '|' + S.section;
+    const key = pasteKey();
     if (!S.pasted.has(key)) S.pasted.set(key, new Map());
     S.pasted.get(key).set(id, { checkpoint: cp, read, service: S.service, at: new Date().toISOString() });
     const bad = read.failed + read.missing;
@@ -734,7 +752,10 @@
   $('#topic').innerHTML = TOPICS.map(k => `<option value="${k}"${k === S.topic ? ' selected' : ''}>${esc(title(k))}</option>`).join('');
   $('#section').innerHTML = Demo.SECTIONS.map(s => `<option value="${s.id}"${s.id === S.section ? ' selected' : ''}>${s.id}, ${s.cohort} (${s.size} students)</option>`).join('');
   $('#topic').addEventListener('change', e => { S.topic = e.target.value; S.stu = 0; load(); });
-  $('#section').addEventListener('change', e => { S.section = e.target.value; S.stu = 0; load(); });
+  $('#section').addEventListener('change', e => {
+    if (S.source === 'live') S.liveSection = e.target.value; else S.section = e.target.value;
+    S.stu = 0; load();
+  });
   $('#stpick').addEventListener('change', e => { S.stu = Number(e.target.value); renderStudent(); });
   $('#reader').addEventListener('change', e => { S.reader = e.target.value; load(); });
   $('#source').addEventListener('click', e => {

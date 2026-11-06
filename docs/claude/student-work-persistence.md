@@ -590,35 +590,51 @@ served on Google's own addresses, so the real policy and requests run unchanged.
 Auth and Firestore emulators with the real admin library on 2026-10-31. It has not been run
 against the real project.
 
-#### Setting up the class list (Jeff, once per class)
+#### Setting up the class list (Jeff, once for all five classes)
 
-You need: your school staff account, which co-owns the `behistoric` Firebase project, and a
-list of the class's students as a file with two columns, `email,name`, one student per line,
-student addresses ending `@stumail.zcs.k12.in.us`. Each student must have signed in to
-BeHistorical at least once. Keep the file on your own computer, never in this repository.
+Since 2026-11-06 the pilot covers all of Jeff's classes, G4 and S1 to S4, so one list holds
+them all and every student on it carries their class. Class Pulse then shows **All my
+classes** or any one of them from the class menu.
+
+You need: your school staff account, which co-owns the `behistoric` Firebase project, and
+one file listing your students. Keep the file on your own computer, never in this
+repository. Its first line must be `email,name,section`, then one student per line:
+
+```
+email,name,section
+ana.ruiz@stumail.zcs.k12.in.us,Ana Ruiz,G4
+ben.cole@stumail.zcs.k12.in.us,Ben Cole,S1
+```
+
+Student addresses end `@stumail.zcs.k12.in.us`. The class is a short name like `G4` or
+`S1`. A spreadsheet saved as CSV works: three columns, with those three words in the first
+row. A student must have signed in to BeHistorical at least once; anyone who has not is
+listed and left off, and the next run adds them. (A two-column `email,name` file for a
+single class also works, with `--class S1` on the command line.)
 
 1. Open **shell.cloud.google.com**, signed in with your school staff account.
 2. In the Cloud Shell window, open the three-dot menu, choose **Upload**, and upload the
-   file, for example `g4.csv`. It lands in your home folder.
-3. Paste these lines, one at a time (once Class Pulse is on `main`; before that,
-   add `-b claude/epic-ride-hc1gle` after `--depth 1`):
+   file, for example `classes.csv`. It lands in your home folder.
+3. Paste these lines, one at a time:
 
    ```
    git clone --depth 1 https://github.com/JeffAndersonLogic/ap-world-history.git
    cd ap-world-history
    npm install --no-save firebase-admin
    gcloud config set project behistoric
-   node scripts/class-pulse-roster.js ~/g4.csv --teacher YOUR-STAFF-EMAIL@zcs.k12.in.us --class G4 --approval "Dan Layton, emails of 2026-10-22 and 2026-11-05"
+   node scripts/class-pulse-roster.js ~/classes.csv --teacher YOUR-STAFF-EMAIL@zcs.k12.in.us --approval "Dan Layton, emails of 2026-10-22 and 2026-11-05"
    ```
 
-4. Read what it prints: how many students it found, and who has not signed in yet. Nothing
-   is written yet.
+4. Read what it prints: how many students it found in each class, and who has not signed
+   in yet. Nothing is written yet.
 5. Run the last line again with ` --apply` at the end. It says **Done**.
-6. Delete the uploaded file from Cloud Shell when you are finished: `rm ~/g4.csv`.
+6. Delete the uploaded file from Cloud Shell when you are finished: `rm ~/classes.csv`.
 
 If it stops with a message about credentials or a quota project, run
 `gcloud auth application-default login`, follow the link it prints, and try step 5 again.
-Run it again any time to add students who have since signed in.
+Run it again any time to add students who have since signed in, or to move a student who
+changed classes. `--remove-missing` takes off students who are no longer in the file, but
+only in the classes the file covers.
 
 #### What has to happen, in order, before My class works for real
 
@@ -631,10 +647,11 @@ Run it again any time to add students who have since signed in.
    `firestore/firestore.rules`, Publish. A file in this repository is not a deployed rule.
    The file also carries the iPad remote block of 2026-11-04, beside the Class Pulse
    blocks, so publishing it publishes both.
-3. Jeff sets up the G4 class list (above).
+3. Jeff sets up the class list for all five classes (above). Until 2026-11-06 this step
+   was G4 only.
 4. Shipped with the go-live release: `submit` in `scripts/lib/sync-config.js` is true, so
-   students in Jeff's classes (never a named classroom such as Kelly's) see **Submit to
-   your teacher**. A Submit works under the rules already published, because the
+   students in Jeff's classes, G4 and S1 to S4 (never a named classroom such as Kelly's),
+   see **Submit to your teacher**. A Submit works under the rules already published, because the
    student's own write is unchanged; it waits only on steps 2 and 3 to be read.
 5. Shipped with the same release: `APPROVAL` in `teacher/class-pulse-handoff.js` is on for
    `claude-for-teachers` only, and `privacy.html` says what is sent and where. ChatGPT for

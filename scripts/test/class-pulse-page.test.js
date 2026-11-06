@@ -78,13 +78,16 @@ export class GoogleAuthProvider { setCustomParameters() {} }
 export async function signInWithPopup() { user = { uid: 'teach1', email: 'jeff@zcs.k12.in.us', getIdToken: async () => 'token' }; cbs.forEach(f => f(user)); return { user }; }
 export async function signOut() { user = null; cbs.forEach(f => f(user)); }`;
 const ANA = 'Akbar used the mansabdar system to give officials land revenue he could take back.';
-function liveStore() {
+function liveStore(multi) {
   const P = 'projects/behistoric/databases/(default)/documents/tenants/zcs/';
   const docs = new Map(), commits = [], requests = [];
   const put = (name, fields) => docs.set(P + name, { name: P + name, fields, updateTime: new Date().toISOString() });
   const t = v => ({ stringValue: v });
-  put('rosters/teach1', { classLabel: t('G4') });
-  [['ana1', 'Ana Ruiz'], ['ben1', 'Ben Cole'], ['cal1', 'Cal Ito']].forEach(([u, l]) => put('rosters/teach1/students/' + u, { label: t(l) }));
+  // One class, as first set up; or, with `multi`, a list holding two of the teacher's
+  // classes, each student carrying their own (2026-11-06).
+  put('rosters/teach1', { classLabel: t(multi ? 'G4, S1' : 'G4') });
+  [['ana1', 'Ana Ruiz', 'G4'], ['ben1', 'Ben Cole', 'S1'], ['cal1', 'Cal Ito', 'S1']].forEach(([u, l, sec]) =>
+    put('rosters/teach1/students/' + u, multi ? { label: t(l), section: t(sec) } : { label: t(l) }));
   const ans = (u, slot, text, c) => put(`responses/${u}__3-2__${slot}`, { studentId: t(u), topicKey: t('3-2'), slotId: t(slot), text: t(text), confidence: c ? { integerValue: String(c) } : t('') });
   ans('ana1', 'checkpoint-one-response', ANA, 4);
   ans('ana1', 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:14 AM · fingerprint ' + Sync.valueHash(ANA, '4'));
@@ -395,6 +398,28 @@ async function suite(browser) {
   check('saving and pulling raise no script error', A.errors.length === 0, A.errors.join(' | '));
   await A.context.close();
 
+  section('All of the teacher\'s classes');
+  {
+    const store3 = liveStore(true);
+    const M = await open(browser, 1280, ctx => fakeGoogle(ctx, store3));
+    await M.p.click('#source [data-v="live"]');
+    await M.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
+    await M.p.click('#live-signin');
+    await M.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
+    const opts = await M.p.$$eval('#section option', os => os.map(o => o.textContent));
+    check('the class menu offers all classes and each one', JSON.stringify(opts) === JSON.stringify(['All my classes (3 students)', 'G4 (1 students)', 'S1 (2 students)']) && !(await M.p.$eval('#section', e => e.disabled)), opts.join(' | '));
+    const names = () => M.p.$$eval('#heat td.name', tds => tds.map(t => t.childNodes[0].textContent).join(','));
+    check('all classes shows every student', (await names()) === 'Ana Ruiz,Ben Cole,Cal Ito', await names());
+    await M.p.selectOption('#section', 'S1');
+    await M.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 2, null, { timeout: 8000 }).catch(() => {});
+    check('choosing a class shows only that class', (await names()) === 'Ben Cole,Cal Ito' && /Students in S1/.test(await M.p.$eval('#h-n-label', e => e.textContent)), await names());
+    await M.p.selectOption('#section', 'G4');
+    await M.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 1, null, { timeout: 8000 }).catch(() => {});
+    check('and another class shows only its own', (await names()) === 'Ana Ruiz', await names());
+    check('switching classes raises no script error', M.errors.length === 0, M.errors.join(' | '));
+    await M.context.close();
+  }
+
   section('A phone');
   for (const t of ['live', 'pulse', 'course', 'student']) {
     const m = await open(browser, 390);
@@ -426,6 +451,7 @@ async function suite(browser) {
     { name: 'Copy ignores the check', file: 'teacher/class-pulse-app.js', from: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\"${left ? ' disabled' : ''}>", to: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\">", expect: /Copy waits/ },
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
     { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },
+    { name: 'the class menu is ignored', file: 'teacher/class-pulse-app.js', from: 'return S.liveSection ? R.students.filter(st => st.section === S.liveSection) : R.students;', to: 'return R.students;', expect: /only that class|only its own/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];
   let controlFailures = 0;

@@ -14,8 +14,11 @@
  *   - the teacher must be a staff account that has signed in;
  *   - a student who has not signed in yet is reported and left off, not guessed;
  *   - a dry run writes nothing; --apply writes the list under the teacher's own id,
- *     names only, with the approval reference; students not in the file stay
- *     unless --remove-missing is given.
+ *     names and classes only, with the approval reference; students not in the
+ *     file stay unless --remove-missing is given;
+ *   - one file can hold all of a teacher's classes (header email,name,section),
+ *     every student keeps their class, and --remove-missing never reaches a class
+ *     the file does not cover.
  *
  * Negative controls at the end load broken copies of the script and prove the
  * assertions go red.
@@ -42,7 +45,7 @@ function fakes(existing) {
   const auth = { async getUserByEmail(e) { if (!users[e]) throw new Error('no user'); return { uid: users[e] }; } };
   const ref = p => ({
     path: p, firestore: { batch: () => ({ set: (r, d) => writes.push(['set', r.path, d]), delete: r => writes.push(['delete', r.path]), commit: async () => writes.push(['commit']) }) },
-    collection: c => ({ doc: d => ref(p + '/' + c + '/' + d), get: async () => ({ docs: (existing || []).map(id => ({ id })) }) })
+    collection: c => ({ doc: d => ref(p + '/' + c + '/' + d), get: async () => ({ docs: (existing || []).map(e => typeof e === 'string' ? { id: e, data: () => ({ label: 'X' }) } : { id: e.id, data: () => ({ label: 'X', section: e.section }) }) }) })
   });
   const db = { collection: c => ({ doc: d => ref(c + '/' + d) }) };
   return { auth, db, writes, FieldValue: { serverTimestamp: () => 'SERVER_TIME' } };
@@ -59,22 +62,22 @@ check('a class list inside the public repository is refused', async (M) => {
 });
 
 check('a bad line stops the run before anything is looked up', async (M) => {
-  assert.throws(() => M.readList(file('staff.csv', 'teacher@zcs.k12.in.us,A Teacher\n')), /not a student account/);
-  assert.throws(() => M.readList(file('noname.csv', 'ana.ruiz@stumail.zcs.k12.in.us,\n')), /no name/);
-  assert.throws(() => M.readList(file('twice.csv', 'ana.ruiz@stumail.zcs.k12.in.us,Ana\nANA.RUIZ@stumail.zcs.k12.in.us,Ana\n')), /listed twice/);
-  assert.throws(() => M.readList(file('look.csv', 'x@evilstumail.zcs.k12.in.us,X\n')), /not a student account/);
+  assert.throws(() => M.readList(file('staff.csv', 'teacher@zcs.k12.in.us,A Teacher\n'), 'G4'), /not a student account/);
+  assert.throws(() => M.readList(file('noname.csv', 'ana.ruiz@stumail.zcs.k12.in.us,\n'), 'G4'), /no name/);
+  assert.throws(() => M.readList(file('twice.csv', 'ana.ruiz@stumail.zcs.k12.in.us,Ana\nANA.RUIZ@stumail.zcs.k12.in.us,Ana\n'), 'G4'), /listed twice/);
+  assert.throws(() => M.readList(file('look.csv', 'x@evilstumail.zcs.k12.in.us,X\n'), 'G4'), /not a student account/);
 });
 
 check('the teacher must be a staff account that has signed in', async (M) => {
   const f = fakes();
-  await assert.rejects(M.plan(M.parseArgs([GOOD, '--teacher', 'kid@stumail.zcs.k12.in.us', '--class', 'G4', '--approval', 'Dan Layton, email']), M.readList(GOOD), f.auth, f.db), /staff account/);
-  await assert.rejects(M.plan(M.parseArgs([GOOD, '--teacher', 'nobody@zcs.k12.in.us', '--class', 'G4', '--approval', 'Dan Layton, email']), M.readList(GOOD), f.auth, f.db), /has not signed in/);
+  await assert.rejects(M.plan(M.parseArgs([GOOD, '--teacher', 'kid@stumail.zcs.k12.in.us', '--class', 'G4', '--approval', 'Dan Layton, email']), M.readList(GOOD, 'G4'), f.auth, f.db), /staff account/);
+  await assert.rejects(M.plan(M.parseArgs([GOOD, '--teacher', 'nobody@zcs.k12.in.us', '--class', 'G4', '--approval', 'Dan Layton, email']), M.readList(GOOD, 'G4'), f.auth, f.db), /has not signed in/);
   assert.throws(() => M.parseArgs([GOOD, '--teacher', 'teacher@zcs.k12.in.us', '--class', 'G4']), /approval/);
 });
 
 check('a student who has not signed in is reported and left off', async (M) => {
   const f = fakes();
-  const p = await M.plan(M.parseArgs(ARGS), M.readList(GOOD), f.auth, f.db);
+  const p = await M.plan(M.parseArgs(ARGS), M.readList(GOOD, 'G4'), f.auth, f.db);
   assert.deepEqual(p.found.map(x => x.uid), ['a1', 'b1']);
   assert.deepEqual(p.notYet, ['new.kid@stumail.zcs.k12.in.us']);
   assert.match(M.report(M.parseArgs(ARGS), p), /1 have not signed in[\s\S]*new\.kid@/);
@@ -83,29 +86,65 @@ check('a student who has not signed in is reported and left off', async (M) => {
 check('a dry run writes nothing', async (M) => {
   const f = fakes();
   const opts = M.parseArgs(ARGS);
-  const p = await M.plan(opts, M.readList(GOOD), f.auth, f.db);
+  const p = await M.plan(opts, M.readList(GOOD, 'G4'), f.auth, f.db);
   assert.equal(f.writes.length, 0);
   assert.match(M.report(opts, p), /Nothing was written/);
 });
 
 check('--apply writes the list under the teacher\'s own id, names only', async (M) => {
-  const f = fakes(['a1', 'gone1']);
+  const f = fakes(['a1', { id: 'gone1', section: 'G4' }]);
   const opts = M.parseArgs(ARGS.concat(['--apply']));
-  const p = await M.plan(opts, M.readList(GOOD), f.auth, f.db);
+  const p = await M.plan(opts, M.readList(GOOD, 'G4'), f.auth, f.db);
   await M.apply(opts, p, f.FieldValue);
   const sets = f.writes.filter(w => w[0] === 'set');
-  assert.deepEqual(sets[0], ['set', 'tenants/zcs/rosters/t1', { classLabel: 'G4', approvalReference: 'Dan Layton, email of 2026-10-22', studentCount: 2, updatedAt: 'SERVER_TIME' }]);
-  assert.deepEqual(sets.slice(1).map(w => [w[1], w[2]]), [['tenants/zcs/rosters/t1/students/a1', { label: 'Ana Ruiz' }], ['tenants/zcs/rosters/t1/students/b1', { label: 'Ben Cole' }]]);
+  assert.deepEqual(sets[0], ['set', 'tenants/zcs/rosters/t1', { classLabel: 'G4', sections: ['G4'], approvalReference: 'Dan Layton, email of 2026-10-22', studentCount: 3, updatedAt: 'SERVER_TIME' }]);
+  assert.deepEqual(sets.slice(1).map(w => [w[1], w[2]]), [['tenants/zcs/rosters/t1/students/a1', { label: 'Ana Ruiz', section: 'G4' }], ['tenants/zcs/rosters/t1/students/b1', { label: 'Ben Cole', section: 'G4' }]]);
   assert.ok(!JSON.stringify(f.writes).includes('@'), 'no email is stored');
   assert.ok(!f.writes.some(w => w[0] === 'delete'), 'a student not in the file stays without --remove-missing');
   assert.ok(f.writes.some(w => w[0] === 'commit'));
 });
 
 check('--remove-missing takes off students not in the file', async (M) => {
-  const f = fakes(['a1', 'gone1']);
+  const f = fakes(['a1', { id: 'gone1', section: 'G4' }]);
   const opts = M.parseArgs(ARGS.concat(['--apply', '--remove-missing']));
-  await M.apply(opts, await M.plan(opts, M.readList(GOOD), f.auth, f.db), f.FieldValue);
+  await M.apply(opts, await M.plan(opts, M.readList(GOOD, 'G4'), f.auth, f.db), f.FieldValue);
   assert.deepEqual(f.writes.filter(w => w[0] === 'delete'), [['delete', 'tenants/zcs/rosters/t1/students/gone1']]);
+});
+
+// ── All of a teacher's classes, added 2026-11-06 ────────────────────────────
+const ALL = file('all.csv', 'email,name,section\nana.ruiz@stumail.zcs.k12.in.us,Ana Ruiz,G4\nben.cole@stumail.zcs.k12.in.us,"Cole, Ben",S1\n');
+const ALL_ARGS = [ALL, '--teacher', 'teacher@zcs.k12.in.us', '--approval', 'Dan Layton, emails of 2026-10-22 and 2026-11-05'];
+
+check('one file can hold every class, and each student keeps theirs', async (M) => {
+  const list = M.readList(ALL);
+  assert.deepEqual(list.map(x => [x.name, x.section]), [['Ana Ruiz', 'G4'], ['Cole, Ben', 'S1']]);
+  const f = fakes();
+  const opts = M.parseArgs(ALL_ARGS.concat(['--apply']));
+  const p = await M.plan(opts, list, f.auth, f.db);
+  await M.apply(opts, p, f.FieldValue);
+  const sets = f.writes.filter(w => w[0] === 'set');
+  assert.deepEqual(sets[0][2].sections, ['G4', 'S1']);
+  assert.equal(sets[0][2].studentCount, 2);
+  assert.deepEqual(sets.slice(1).map(w => w[2]), [{ label: 'Ana Ruiz', section: 'G4' }, { label: 'Cole, Ben', section: 'S1' }]);
+  assert.match(M.report(opts, p), /G4 1, S1 1/);
+});
+
+check('a two-column file keeps a comma in a name and needs --class', async (M) => {
+  const twoCol = file('comma.csv', 'email,name\nben.cole@stumail.zcs.k12.in.us,Cole, Ben\n');
+  assert.deepEqual(M.readList(twoCol, 'S2').map(x => [x.name, x.section]), [['Cole, Ben', 'S2']]);
+  assert.throws(() => M.readList(twoCol), /no class/);
+  assert.throws(() => M.readList(file('badclass.csv', 'email,name,section\nben.cole@stumail.zcs.k12.in.us,Ben,<b>x</b>\n')), /not a class name/);
+});
+
+check('running one class never removes another class\'s students', async (M) => {
+  const f = fakes([{ id: 'g4old', section: 'G4' }, { id: 's1kid', section: 'S1' }]);
+  const opts = M.parseArgs(ARGS.concat(['--apply', '--remove-missing']));
+  const p = await M.plan(opts, M.readList(GOOD, 'G4'), f.auth, f.db);
+  await M.apply(opts, p, f.FieldValue);
+  assert.deepEqual(f.writes.filter(w => w[0] === 'delete').map(w => w[1]), ['tenants/zcs/rosters/t1/students/g4old']);
+  const head = f.writes.find(w => w[0] === 'set')[2];
+  assert.deepEqual(head.sections, ['G4', 'S1'], 'the S1 student is still on the list');
+  assert.equal(head.studentCount, 3);
 });
 
 function load(source) {
@@ -130,9 +169,12 @@ async function run(M, quiet) {
   const controls = [
     ['a list inside the repository is accepted', "if (!rel.startsWith('..') && !path.isAbsolute(rel)) throw", 'if (false) throw', /inside the public repository/],
     ['staff accounts pass as students', 'else if (domainOf(email) !== STUDENT)', 'else if (false)', /bad line stops/],
-    ['a student who has not signed in is guessed at', "catch (_) { notYet.push(s.email); }", "catch (_) { found.push({ uid: s.email, name: s.name, email: s.email }); }", /reported and left off/],
-    ['emails are stored with names', "batch.set(p.listRef.collection('students').doc(f.uid), { label: f.name })", "batch.set(p.listRef.collection('students').doc(f.uid), { label: f.name, email: f.email })", /names only/],
-    ['students are removed without being asked', 'if (opts.removeMissing) p.extra.forEach', 'if (true) p.extra.forEach', /names only/]
+    ['a student who has not signed in is guessed at', "catch (_) { notYet.push(s.email); }", "catch (_) { found.push({ uid: s.email, name: s.name, email: s.email, section: s.section }); }", /reported and left off/],
+    ['emails are stored with names', "{ label: f.name, section: f.section }", "{ label: f.name, section: f.section, email: f.email }", /names only|keeps theirs/],
+    ['students are removed without being asked', 'if (opts.removeMissing) p.extra.forEach', 'if (true) p.extra.forEach', /names only/],
+    ['removal reaches classes the file does not cover', '!keep.has(e.uid) && covered.has(e.section)', '!keep.has(e.uid)', /never removes another class/],
+    ['the class is not saved with the student', '{ label: f.name, section: f.section }', '{ label: f.name }', /keeps theirs|names only/],
+    ['a third column is read as the class without the header saying so', 'withSection = /,\\s*(section|class)\\s*$/i.test(lines[0]);', 'withSection = true;', /comma in a name/]
   ];
   for (const [name, from, to, expect] of controls) {
     if (!src.includes(from)) { console.log('  \x1b[31m✗\x1b[0m "' + name + '" no longer matches the script'); failures++; continue; }

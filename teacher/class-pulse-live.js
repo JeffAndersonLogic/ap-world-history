@@ -9,7 +9,7 @@
  * that teacher can read (AndersonLogic-OS 04_PRODUCTS/BeHistorical/Decisions.md,
  * 2026-10-31).
  *
- *   roster()            the class list: { classLabel, students: [{ uid, label }] }
+ *   roster()            the class list: { classLabel, sections, students: [{ uid, label, section }] }
  *   answers(topic, ids) each student's Checkpoint 1 and 2 answer with its Submit
  *                       receipt, as rows the engine reads. Only an answer whose
  *                       receipt still matches it counts as submitted.
@@ -87,11 +87,15 @@
         let pageToken = '';
         do {
           const page = await get(tenant + '/rosters/' + uid + '/students?pageSize=300' + (pageToken ? '&pageToken=' + encodeURIComponent(pageToken) : ''));
-          ((page && page.documents) || []).forEach(d => students.push({ uid: d.name.slice(d.name.lastIndexOf('/') + 1), label: str(d.fields && d.fields.label) || 'Student' }));
+          ((page && page.documents) || []).forEach(d => students.push({ uid: d.name.slice(d.name.lastIndexOf('/') + 1), label: str(d.fields && d.fields.label) || 'Student', section: str(d.fields && d.fields.section) }));
           pageToken = (page && page.nextPageToken) || '';
         } while (pageToken);
         students.sort((a, b) => a.label.localeCompare(b.label));
-        return { classLabel: str(head.fields && head.fields.classLabel) || 'My class', students };
+        // Each student's class comes from the list an administrator wrote, never
+        // from what a student's device reports.
+        const sections = Array.from(new Set(students.map(x => x.section).filter(Boolean)))
+          .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+        return { classLabel: str(head.fields && head.fields.classLabel) || 'My class', sections, students };
       },
 
       // rows: { cp1: [...], cp2: [...] }, one per student per checkpoint, in roster order.
