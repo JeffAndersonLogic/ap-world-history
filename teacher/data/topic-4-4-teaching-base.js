@@ -26,6 +26,17 @@
  * moved into the plantation slide), Myth and Evidence (its corrections live on
  * the ledger), Skill Builder and Evidence Lab. How the Dutch took Portugal's
  * posts stays in 4.5, which owns joint-stock companies.
+ *
+ * Outline and road map pilot, 2026-11-06 (Jeff, this topic only first). Jeff
+ * teaches from the story slides and skipped the module slides, so: `outline`
+ * below is a plain teaching outline the briefing shows first (five section
+ * headers with short bullets, the vocabulary from the First & 10 with
+ * definitions, and the three myths to watch for), and the run of show folds
+ * away under it. A road-map slide before the First & 10 shows students the same
+ * five headers, every story slide's eyebrow names its section, minute counts
+ * are off the projected slides (they stay in `flow` and the notes), and the
+ * Sharpen slide and the three module action slides became one Work Time slide.
+ * No story slide changed.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -56,32 +67,108 @@ window.BEHISTORICAL_TEACHING = {
     ]
   },
 
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes or the First & 10 "Empires from the Sea"; nothing is
+  // new. Required modules are the schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '06 Checkpoint 1', '08 Primary Source', '09 BeInTheRoom', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'Why Europeans went to sea', kc: 'KC-4.3.II.C · KC-4.3.II.A.i', points: [
+        'Cause = rivalries: political, religious, economic',
+        'Political: Tordesillas, the Dutch revolt, England vs. France',
+        'Religious: war on Muslim powers; Catholic vs. Protestant',
+        'Economic: gold, spices, sugar',
+        'Five empires: Portugal, Spain, Dutch, France, Britain',
+        'Trading post = a fort that controls trade, not a country',
+        'Elmina, 1482: Gold Coast gold (later a slave-trade center)',
+        'Profitable for rulers and merchants'
+      ] },
+      { label: 'II', title: 'Portugal in the Indian Ocean', kc: 'KC-4.3.II.A.i · KC-4.3.II.A.iii', points: [
+        'Calicut, 1498: da Gama\'s gifts get laughed at; Portugal has little Asia wants',
+        'The Zamorin is a Hindu king (no Mughals until 1526)',
+        'Can\'t out-trade them, so out-gun them: Cabral 1500, da Gama 1502',
+        'The gates of the ocean: Goa 1510 (base), Malacca 1511, Hormuz 1515',
+        'Aden 1513 fails, so the Red Sea stays open',
+        'Change: the cartaz, a pass Asian ships must buy',
+        'Continuity: Gujarati, Swahili, Omani, Javanese merchants trade on; most trade stays intra-Asian',
+        'Oman pushes Portugal out: Muscat 1650, Mombasa 1698'
+      ] },
+      { label: 'III', title: 'China and Japan set the rules', kc: 'KC-4.3.II.A.i', points: [
+        'Some Asian states limited European trade',
+        'Ming China: the Portuguese stay at Macau only by Chinese permission',
+        'Tokugawa Japan: orders of 1633 to 1639; Spanish expelled 1624',
+        'Dutch confined to Dejima, 1641; Japan still trades with the Dutch, Chinese and Korea',
+        '"Closed country" is a later label (1801)'
+      ], skill: 'You model sourcing (2.A) out loud on the 1635 orders to the Nagasaki officials. The audience is officials, not foreigners, so the orders show real intent.' },
+      { label: 'IV', title: 'Kongo and Asante grow stronger', kc: 'KC-4.3.II.A.ii', points: [
+        'Joining the trade increased their influence',
+        'Kongo: Portuguese ally, Christian court',
+        'Asante: victory at Feyiase, 1701; gold and guns',
+        'Both also sold captives'
+      ], skill: 'Students source Afonso I\'s 1526 letter themselves. Audience: the king of Portugal. Purpose: stop the kidnapping of his own subjects. It is about control, not ending slavery.' },
+      { label: 'V', title: 'Who did the work: labor and slavery', kc: 'KC-4.2.II.D · KC-4.2.II.B · KC-4.2.II.C', groups: [
+        { name: 'Labor in the Americas', points: [
+          'Colonies depend on agriculture and mines',
+          'Kept, in a new form: the mit\'a, now serving Spain (Potosí took 1 in 7 men)',
+          'New: encomienda, then hacienda; indentured servitude; chattel slavery'
+        ] },
+        { name: 'Slavery', points: [
+          'Continuity: slavery in Africa in its older forms (households; exports to the Mediterranean and Indian Ocean)',
+          'Change: plantations raise demand for enslaved labor in the Americas',
+          'Estimates: about 277,000 in the 1500s; about 2.5 million, 1701 to 1750',
+          'Demographic, social (tied to race, almost no way out), cultural (mixing is 4.5)'
+        ] }
+      ] }
+    ],
+    wrap: { title: 'Put it together', columns: ['Changed', 'Kept going'], rows: [
+      { label: 'Who ruled', cells: ['European trading posts; Kongo and Asante stronger', 'Ming and Tokugawa set the terms'] },
+      { label: 'Trade and labor', cells: ['The cartaz; encomienda, hacienda, indentured servitude, chattel slavery', 'Asian merchants trade on; the mit\'a reused'] },
+      { label: 'Slavery', cells: ['Plantation slavery in the Americas (the biggest change)', 'Older forms in Africa'] }
+    ] },
+    vocabulary: [
+      { term: 'Maritime empire', def: 'An empire held together by ships: ports, forts and colonies linked by sea.' },
+      { term: 'Trading post', def: 'A small fortified base where a foreign state\'s merchants buy and sell.' },
+      { term: 'Cartaz', def: 'A Portuguese pass Asian ships had to buy; ships without one could be attacked.' },
+      { term: 'Intra-Asian trade', def: 'Trade from one Asian port to another. Still most of the ocean\'s trade; Europeans often profited by joining it.' },
+      { term: 'Mit\'a', def: 'The Inca duty to send workers to the state in turns. Spain turned it into a draft for the Potosí silver mine.' },
+      { term: 'Encomienda', def: 'A grant giving a Spanish colonist the labor and tribute of a group of Indigenous people.' },
+      { term: 'Hacienda', def: 'A large estate where Indigenous and mixed-race workers farmed and herded, often for wages, sometimes tied by debt.' },
+      { term: 'Indentured servitude', def: 'Paying for the voyage with four to seven years of work under a contract.' },
+      { term: 'Chattel slavery', def: 'People owned as property for life, and their children too.' },
+      { term: 'Plantation economy', def: 'Huge farms growing one crop to sell (sugar, later tobacco) that needed enormous numbers of workers.' }
+    ],
+    watch: [
+      { myth: '"Europe took over the world after 1500."', fix: 'Ports and passes, not continents. China and Japan set the terms.' },
+      { myth: '"Slavery began with the Atlantic trade."', fix: 'Older forms in Africa went on alongside it.' },
+      { myth: '"African rulers had no power in the trade."', fix: 'Kongo and Asante grew stronger through it (and also sold captives).' }
+    ]
+  },
+
   flow: [
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the three objectives, the owns and bridge-only split, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.3, 4.2 and 2.3. Bridge to who would rule and who would work.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over the Nanban screen.', students: 'Predict one change and one continuity.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Empires from the Sea" in class.', students: 'For every case: what changed, what kept going.', slide: 4 },
-    { id: 'rivals', label: 'Why Build Empires', range: '17-19', minutes: 2, teacher: 'Political, religious, economic rivalries; five empires.', students: 'Sort a motive into a branch.', slide: 5 },
-    { id: 'map', label: 'Where They Reached', range: '19-20', minutes: 1, teacher: 'Forts on coasts, colonies in the Americas, places with their own rules.', students: 'Find one fort and one place that set its own terms.', slide: 6 },
-    { id: 'posts', label: 'Forts on the Coast', range: '20-21', minutes: 1, teacher: 'Elmina as the case: what a trading post was and who it paid.', students: 'Say who made money.', slide: 7 },
-    { id: 'calicut', label: 'Calicut, 1498', range: '21-24', minutes: 3, teacher: 'The gifts that got laughed at: Portugal had little Asia wanted.', students: 'Who wrote it down, and why?', slide: 8 },
-    { id: 'force', label: 'Traders to a Navy', range: '24-26', minutes: 2, teacher: '1500 and 1502: Portugal turns to force.', students: 'Name the cause, then the result.', slide: 9 },
-    { id: 'gates', label: 'The Three Gates', range: '26-28', minutes: 2, teacher: 'Malacca and Hormuz taken, Aden missed, Goa the base.', students: 'Say which gate stayed open.', slide: 10 },
-    { id: 'oceanmap', label: 'On the Map', range: '28-29', minutes: 1, teacher: 'Find the three gates on a real map; Aden has no Portuguese post.', students: 'Point to the gate that got away.', slide: 11 },
-    { id: 'ocean', label: 'The Old Ocean', range: '29-31', minutes: 2, teacher: 'The cartaz changed things; the merchants kept trading.', students: 'Name one change and one continuity.', slide: 12 },
-    { id: 'asia', label: 'Asia Sets the Terms', range: '31-33', minutes: 2, teacher: 'Macau under Ming rules; Japan, 1635 to 1641.', students: 'Say who made the rules.', slide: 13 },
-    { id: 'source1635', label: 'Source It: 1635', range: '33-36', minutes: 3, teacher: 'Model 2.A: author, audience, purpose, situation.', students: 'Name the four.', slide: 14 },
-    { id: 'africa', label: 'Kongo and Asante', range: '36-38', minutes: 2, teacher: 'Two African states that grew stronger through the trade.', students: 'Say what each gained.', slide: 15 },
-    { id: 'afonso', label: 'Source It: Afonso', range: '38-41', minutes: 3, teacher: 'Students source the 1526 letter themselves.', students: 'Audience, purpose, and what it changes.', slide: 16 },
-    { id: 'labor', label: 'Work in the Americas', range: '41-44', minutes: 3, teacher: 'One old system, four new ones.', students: 'Sort each as old or new.', slide: 17 },
-    { id: 'oldslavery', label: 'Slavery in Africa', range: '44-46', minutes: 2, teacher: 'The older forms that continued.', students: 'Name two older forms.', slide: 18 },
-    { id: 'plantation', label: 'What the Plantations Changed', range: '46-49', minutes: 3, teacher: 'The jump in numbers, then demographic, social and cultural change.', students: 'Name one of each.', slide: 19 },
-    { id: 'ledger', label: 'What Changed, What Kept Going', range: '49-53', minutes: 4, teacher: 'Students redraw the ledger from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 20 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '53-55', minutes: 2, teacher: 'Model one continuity-and-change claim.', students: 'Upgrade a weak claim.', slide: 21 },
-    { id: 'cp1', label: 'Checkpoint 1 and Primary Source', range: '55-64', minutes: 9, teacher: 'Modules 06 and 08: Checkpoint 1 on its own, then Afonso\'s full letter.', students: 'Work without the coach.', slide: 22 },
-    { id: 'room', label: 'BeInTheRoom', range: '64-76', minutes: 12, teacher: 'Module 09: the Goa Fort Council, just after the gates were taken.', students: 'Decide what kind of empire Goa builds.', slide: 23 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '76-86', minutes: 10, teacher: 'Module 10: labor and slavery, change and continuity. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 24 },
-    { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and leave the 4.5 question open.', students: 'Say the topic in one sentence.', slide: 25 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the five sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "Empires from the Sea" in class.', students: 'For every case: what changed, what kept going.', slide: 5 },
+    { id: 'rivals', label: 'Why Build Empires', range: '18-20', minutes: 2, teacher: 'Political, religious, economic rivalries; five empires.', students: 'Sort a motive into a branch.', slide: 6 },
+    { id: 'map', label: 'Where They Reached', range: '20-21', minutes: 1, teacher: 'Forts on coasts, colonies in the Americas, places with their own rules.', students: 'Find one fort and one place that set its own terms.', slide: 7 },
+    { id: 'posts', label: 'Forts on the Coast', range: '21-22', minutes: 1, teacher: 'Elmina as the case: what a trading post was and who it paid.', students: 'Say who made money.', slide: 8 },
+    { id: 'calicut', label: 'Calicut, 1498', range: '22-25', minutes: 3, teacher: 'The gifts that got laughed at: Portugal had little Asia wanted.', students: 'Who wrote it down, and why?', slide: 9 },
+    { id: 'force', label: 'Traders to a Navy', range: '25-27', minutes: 2, teacher: '1500 and 1502: Portugal turns to force.', students: 'Name the cause, then the result.', slide: 10 },
+    { id: 'gates', label: 'The Three Gates', range: '27-29', minutes: 2, teacher: 'Malacca and Hormuz taken, Aden missed, Goa the base.', students: 'Say which gate stayed open.', slide: 11 },
+    { id: 'oceanmap', label: 'On the Map', range: '29-30', minutes: 1, teacher: 'Find the three gates on a real map; Aden has no Portuguese post.', students: 'Point to the gate that got away.', slide: 12 },
+    { id: 'ocean', label: 'The Old Ocean', range: '30-32', minutes: 2, teacher: 'The cartaz changed things; the merchants kept trading.', students: 'Name one change and one continuity.', slide: 13 },
+    { id: 'asia', label: 'Asia Sets the Terms', range: '32-34', minutes: 2, teacher: 'Macau under Ming rules; Japan, 1635 to 1641.', students: 'Say who made the rules.', slide: 14 },
+    { id: 'source1635', label: 'Source It: 1635', range: '34-37', minutes: 3, teacher: 'Model 2.A: author, audience, purpose, situation.', students: 'Name the four.', slide: 15 },
+    { id: 'africa', label: 'Kongo and Asante', range: '37-39', minutes: 2, teacher: 'Two African states that grew stronger through the trade.', students: 'Say what each gained.', slide: 16 },
+    { id: 'afonso', label: 'Source It: Afonso', range: '39-42', minutes: 3, teacher: 'Students source the 1526 letter themselves.', students: 'Audience, purpose, and what it changes.', slide: 17 },
+    { id: 'labor', label: 'Work in the Americas', range: '42-45', minutes: 3, teacher: 'One old system, four new ones.', students: 'Sort each as old or new.', slide: 18 },
+    { id: 'oldslavery', label: 'Slavery in Africa', range: '45-47', minutes: 2, teacher: 'The older forms that continued.', students: 'Name two older forms.', slide: 19 },
+    { id: 'plantation', label: 'What the Plantations Changed', range: '47-50', minutes: 3, teacher: 'The jump in numbers, then demographic, social and cultural change.', students: 'Name one of each.', slide: 20 },
+    { id: 'ledger', label: 'What Changed, What Kept Going', range: '50-54', minutes: 4, teacher: 'Students redraw the ledger from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 21 },
+    { id: 'worktime', label: 'Work Time', range: '54-85', minutes: 31, teacher: 'Modules 06, 08, 09 and 10, in that order: Checkpoint 1 with no coach, Afonso\'s full letter, the Goa Fort Council, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Checkpoint 1, Afonso\'s letter, the Goa Fort Council, Checkpoint 2.', slide: 22 },
+    { id: 'close', label: 'Landing Sentence', range: '85-87', minutes: 2, teacher: 'Land the answer and leave the 4.5 question open.', students: 'Say the topic in one sentence.', slide: 23 }
   ],
 
   quickLaunch: [
@@ -99,7 +186,7 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'Empires from the sea. A world with its own rules.',
       subtitle: 'Continuity and Change, with Sourcing and Situation 2.A. Three objectives: who ruled, trade and labor, slavery. For each, one change and one continuity.',
       notes: {
@@ -129,7 +216,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull the last topics back from memory.',
       template: {
         questions: [
@@ -179,10 +266,41 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'Europeans built empires from the sea. What changed, and what kept going?',
+        stops: [
+          { label: 'I', text: 'Why Europeans went to sea' },
+          { label: 'II', text: 'Portugal in the Indian Ocean' },
+          { label: 'III', text: 'China and Japan set the rules' },
+          { label: 'IV', text: 'Kongo and Asante grow stronger' },
+          { label: 'V', text: 'Who did the work: labor and slavery' },
+          { label: '✓', text: 'Put it together: what changed, what kept going', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Checkpoint 1 · Primary Source · BeInTheRoom · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Five sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the five headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to V), so the class can see where it is all period.',
+          'The question at the top is the topic question: for each section, students watch for what changed and what kept going.'
+        ],
+        ask: 'Which section do you expect the biggest change in?',
+        listenFor: 'Any reasoned guess; return to it at the ledger.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read with two questions in mind.',
       subtitle: 'For every case: what changed, and what kept going the way it already had?',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-4-maritime-empires-established-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
@@ -203,7 +321,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'rivals', kind: 'branch-tree', eyebrow: 'Why Build Empires',
+      phase: 'rivals', kind: 'branch-tree', eyebrow: 'I · Why Europeans Went to Sea',
       kc: 'KC-4.3.II.C', title: 'Rivals built empires from the sea.',
       footer: 'Portugal, Spain, the Dutch, France and England: when one found a route or a rich coast, the others came after it.',
       template: {
@@ -238,7 +356,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'map', kind: 'map', eyebrow: 'Where the Empires Reached',
+      phase: 'map', kind: 'map', eyebrow: 'I · Why Europeans Went to Sea · Map',
       kc: 'Unit 4: Learning Objective E', title: 'Forts, colonies, and their own rules.',
       footer: 'In Africa and Asia, Europeans mostly held coasts. In the Americas, they took territory.',
       visual: { url: '../assets/images/instructional-maps/topic-4-4.svg', alt: 'World map marking the Gold Coast and Elmina, Kongo, the Swahili coast and Mombasa, Goa, Malacca, Macau, Japan, the Caribbean and Potosí, with arrows for forts on the coast, enslaved Africans carried west and to Brazil, and intra-Asian trade' },
@@ -260,7 +378,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'posts', kind: 'case-file', eyebrow: 'Forts on the Coast',
+      phase: 'posts', kind: 'case-file', eyebrow: 'I · Why Europeans Went to Sea · Trading Posts',
       kc: 'KC-4.3.II.A.i', title: 'What a trading post was, and who it paid.',
       template: {
         tag: 'Trading post', place: 'Elmina, Gold Coast', date: '1482',
@@ -294,7 +412,8 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'calicut', kind: 'story-scene', eyebrow: 'The Indian Ocean Story · 1',
+      phase: 'calicut', kind: 'story-scene', eyebrow: 'II · Portugal in the Indian Ocean · 1',
+      kc: 'Unit 4: Learning Objective F', // carried by the Sharpen slide until 2026-11-06: the Asian trade economy Portugal entered, the continuity half of F
       title: 'Calicut, 1498: the gifts that got laughed at.',
       footer: 'A Portuguese sailor wrote this down. Why would he record his own side being laughed at?',
       template: {
@@ -329,7 +448,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'force', kind: 'cause-chain', eyebrow: 'The Indian Ocean Story · 2',
+      phase: 'force', kind: 'cause-chain', eyebrow: 'II · Portugal in the Indian Ocean · 2',
       kc: 'KC-4.3.II.C', title: 'From traders to a navy.',
       footer: 'The laugh did not cause the violence by itself. It showed Portugal it could not win by trading alone.',
       template: {
@@ -364,7 +483,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'gates', kind: 'ledger', eyebrow: 'The Indian Ocean Story · 3',
+      phase: 'gates', kind: 'ledger', eyebrow: 'II · Portugal in the Indian Ocean · 3',
       kc: 'KC-4.3.II.A.i', title: 'Hold the gates of the ocean.',
       footer: 'Albuquerque\'s plan: hold the narrow places long-distance ships had to pass, and tax the trade.',
       template: {
@@ -400,7 +519,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'oceanmap', kind: 'frame-full', eyebrow: 'The Indian Ocean Story · On the Map',
+      phase: 'oceanmap', kind: 'frame-full', eyebrow: 'II · Portugal in the Indian Ocean · Map',
       title: 'Find the gates, and the gate that got away.',
       template: {
         visual: { url: '../assets/images/topics/2-3/' + encodeURIComponent('2.3 - Indian Ocean Trade Map Detailed.jpg'), credit: 'Simeon Netchev, World History Encyclopedia (worldhistory.org/image/20178) · CC BY-NC-ND', tagPos: 'bl', alt: 'Map titled Trade in the Indian Ocean, 15th to 16th century, from East Africa and the Red Sea to China, Japan and the spice islands. White lines show the principal Indian Ocean trade routes connecting the Swahili coast, the Red Sea, the Persian Gulf, India, Southeast Asia and China, with icons for goods such as spices, cotton, textiles, gold, ivory, porcelain, silk and enslaved people. Purple dots mark Portuguese trading posts with the year each was set up, among them Sofala and Kilwa 1505, Mozambique 1507, Hormuz 1515, Muscat 1550, Diu 1535, Goa 1510, Cochin 1503, Colombo 1518, Malacca 1511, Ambon 1511, Macau 1555 and Ternate 1522. Aden, at the mouth of the Red Sea, has no Portuguese date. Purple lines trace Vasco da Gama\'s 1498 route around Africa to Calicut and Pero da Covilha\'s mission of 1487 to 1490; green lines trace Zheng He\'s voyages of 1405 to 1433 and Spanish voyages across the Pacific. Empires labeled include the Ottoman, Safavid and Mughal empires and the Ming dynasty.' }
@@ -426,7 +545,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'ocean', kind: 'continuity-change', eyebrow: 'The Indian Ocean Story · 4',
+      phase: 'ocean', kind: 'continuity-change', eyebrow: 'II · Portugal in the Indian Ocean · 4',
       kc: 'KC-4.3.II.A.iii', title: 'The Portuguese changed the Indian Ocean. They did not replace it.',
       footer: 'The College Board\'s words: existing trade networks "continued to flourish."',
       template: {
@@ -456,7 +575,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'asia', kind: 'story-scene', eyebrow: 'Asia Sets the Terms',
+      phase: 'asia', kind: 'story-scene', eyebrow: 'III · China and Japan Set the Rules',
       kc: 'KC-4.3.II.A.i', title: 'China and Japan decided how far Europeans could reach.',
       template: {
         visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain', fit: 'contain' },
@@ -490,7 +609,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'source1635', kind: 'source-hipp', eyebrow: 'Source It · Model',
+      phase: 'source1635', kind: 'source-hipp', eyebrow: 'III · China and Japan · Source It, Model',
       kc: 'KC-4.3.II.A.i', title: 'Orders to the officials at Nagasaki, 1635.',
       template: {
         quote: 'Japanese ships are strictly forbidden to leave for foreign countries. ... If any Japanese returns from overseas after residing there, he must be put to death.',
@@ -522,7 +641,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'africa', kind: 'story-scene', eyebrow: 'African States Grow',
+      phase: 'africa', kind: 'story-scene', eyebrow: 'IV · Kongo and Asante Grow Stronger',
       kc: 'KC-4.3.II.A.ii', title: 'Kongo and Asante grew stronger through the new trade.',
       template: {
         visual: { url: '../assets/images/topics/4-4/kongo-crucifix-met.jpg', alt: 'Brass crucifix from the Kingdom of Kongo, with a figure of Christ on the cross, two small kneeling figures on top of its arms, one figure above Christ and two below his feet', credit: 'Crucifix, Kongo peoples, 17th to 18th century · The Metropolitan Museum of Art · Public domain (CC0)', fit: 'contain' },
@@ -556,7 +675,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'afonso', kind: 'source-quote', eyebrow: 'Source It · Your Turn',
+      phase: 'afonso', kind: 'source-quote', eyebrow: 'IV · Kongo and Asante · Source It, Your Turn',
       kc: 'Unit 4: Learning Objective G', title: 'A king writes to a king, 1526.',
       footer: 'Afonso sold war captives from outside Kongo himself. Read his letter with that in mind.',
       template: {
@@ -587,7 +706,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'labor', kind: 'ledger', eyebrow: 'Work in the Americas',
+      phase: 'labor', kind: 'ledger', eyebrow: 'V · Labor and Slavery · Work',
       kc: 'KC-4.2.II.D', title: 'One old labor system, four new ones.',
       footer: 'The colonies made money mostly from farming, and from mining. Each system found the workers.',
       template: {
@@ -624,7 +743,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'oldslavery', kind: 'case-file', eyebrow: 'Slavery: Continuity',
+      phase: 'oldslavery', kind: 'case-file', eyebrow: 'V · Labor and Slavery · Continuity',
       kc: 'KC-4.2.II.B', title: 'Slavery in Africa went on in its older forms.',
       template: {
         tag: 'Continuity', place: 'Africa', date: '1450 to 1750',
@@ -656,7 +775,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'plantation', kind: 'story-scene', eyebrow: 'Slavery: Change',
+      phase: 'plantation', kind: 'story-scene', eyebrow: 'V · Labor and Slavery · Change',
       kc: 'KC-4.2.II.C', title: 'What the plantations changed.',
       template: {
         visual: { url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg', alt: 'Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane', credit: 'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain', fit: 'contain' },
@@ -692,7 +811,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      retelling: true, phase: 'ledger', kind: 'split-matrix', eyebrow: 'The Whole Topic',
+      retelling: true, phase: 'ledger', kind: 'split-matrix', eyebrow: 'Put It Together · The Whole Topic',
       title: 'What changed, and what kept going.',
       template: {
         columns: [{ name: 'What changed' }, { name: 'What kept going' }],
@@ -724,96 +843,37 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      kc: 'Unit 4: Learning Objective F',
-      footer: 'A change and a continuity, each with a named example and the reason.',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 06, 08, 09, 10',
+      title: 'Now you do the history.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
-        weak: 'Indian Ocean trade changed.',
-        strong: '**Change:** In ______, ______ changed when ______. **Continuity:** But ______ kept going, **because** ______.'
+        modules: [
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
+          { code: 'Module 08', name: 'Primary Source', note: 'Afonso I\'s full letter, 1526.', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Goa Fort Council.', url: '../beintheroom/unit-4/the-goa-fort-council.html' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' }
+        ]
       },
       notes: {
-        minutes: 2,
+        minutes: 31,
         keys: [
-          'Weak: no continuity, evidence or reason',
-          'Need a change and a continuity, each named',
-          'Add the reason',
-          'Pairs fill the frame aloud',
-          'No finished claim on the board'
-        ],
-        land: [
-          'The weak claim names no continuity, no evidence and no reason.',
-          'The frame asks for a change and a continuity, each with a named example, and the reason: the shape both checkpoints ask for.',
-          'This is a sentence frame, not a model answer: every case in this topic is asked for somewhere (First & 10 Q1, Checkpoints 1 and 2), so the content is the students\' own. Have pairs fill it in aloud with a case they choose, then write their own in the checkpoints. Do not write a finished claim on the board.'
-        ],
-        ask: 'Why is "changed" not enough?',
-        listenFor: 'It does not say what changed, what continued, or why.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Modules 06 and 08 · On Your Own',
-      title: 'Checkpoint 1, then Afonso\'s letter.',
-      subtitle: 'Checkpoint 1 first, with no coach. Then the Primary Source: Afonso I\'s full letter to the king of Portugal.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
-      notes: {
-        minutes: 9,
-        keys: [
-          'Both required today: 06 and 08',
-          'Checkpoint 1: rivalry, change in power, continuity',
-          'No coach on Checkpoint 1',
-          'Module 08: source Afonso\'s full letter',
+          'All four required today, in order',
+          'Checkpoint 1: no coach',
+          'Primary Source: source Afonso\'s full letter',
+          'Goa Fort Council: forts, colony, or partner?',
+          'Checkpoint 2 unfinished = homework',
           'Give feedback in the room'
         ],
         land: [
-          'Checkpoint 1 (Module 06) and the Primary Source (Module 08, Afonso I\'s 1526 letter, whose questions are 2.A Sourcing and Situation) are both required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23).',
-          'It asks for one cause of the empires, one change in who held power (a trading post, or Kongo or Asante) and one continuity (China or Japan, or Asian merchants trading on in the Indian Ocean). Give feedback in the room: on an alternating block nothing carries over.'
-        ],
-        ask: 'Name a rivalry, a change in who held power and a continuity.',
-        listenFor: 'Religion, Elmina or Asante, and Japan\'s rules.'
-      }
-    },
-    {
-      phase: 'room', kind: 'action', eyebrow: 'Module 09 · BeInTheRoom',
-      title: 'The Goa Fort Council.',
-      subtitle: 'Albuquerque is dead. Portugal holds Goa, Malacca and Hormuz, but not enough people to conquer the lands behind them. What kind of empire does it build now?',
-      action: { label: 'Open the Goa Fort Council', url: '../beintheroom/unit-4/the-goa-fort-council.html' },
-      notes: {
-        minutes: 12,
-        keys: [
-          'Set just after the three gates',
-          'Forts and passes, colony, or a partner?',
-          'Every option needs local allies',
-          'Ask who is forced, who keeps profit'
-        ],
-        land: [
-          'Module 09 is required today. The council meets in Goa after Albuquerque\'s death in 1515, with Goa, Malacca and Hormuz held: the moment the three gates slide ends on.',
-          'Its three choices are the topic\'s argument in a decision: a chain of forts and sea passes, a wider territorial colony, or a negotiated place inside markets that already exist. Every option depends on local allies.',
-          'Debrief with the spine: whatever Goa chose, Asian rulers and merchants kept much of their own power.'
-        ],
-        ask: 'Which choice did Portugal actually make, and what did it cost Asian merchants?',
-        listenFor: 'Forts and passes: the cartaz taxed Asian ships, but the merchants kept trading.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'Labor and slavery: what changed, what kept going.',
-      subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
-      notes: {
-        minutes: 10,
-        keys: [
-          'Labor: one continuity, one change',
-          'Slavery: one continuity, one change',
-          'The reason for each change',
-          'Revised answer goes to Canvas',
-          'Unfinished = homework'
-        ],
-        land: [
-          'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for one continuity and one change in labor systems in the Americas, and one continuity and one change in slavery, with the reason for each change. That is Learning Objectives F and G: KC-4.2.II.D, II.B and II.C. Learning Objective E is the First & 10\'s and Checkpoint 1\'s.',
-          'Socrates is told the skill is Continuity and Change, so it will push for both halves and the reason.'
+          'This one slide replaces four (Sharpen the Claim and the Checkpoint 1, BeInTheRoom and Checkpoint 2 launch slides, 2026-11-06). Modules 06, 08, 09 and 10 are all required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23). Each button opens its module.',
+          'Checkpoint 1 (Module 06), with no coach, asks for one cause of the empires (a rivalry), one change in who held power (a trading post, or Kongo or Asante) and one continuity (China or Japan, or Asian merchants trading on in the Indian Ocean). Give feedback in the room: on an alternating block nothing carries over.',
+          'The Primary Source (Module 08) is Afonso I\'s full 1526 letter, and its questions are 2.A Sourcing and Situation: the same four questions the class asked of it on the slide.',
+          'The Goa Fort Council (Module 09) meets after Albuquerque\'s death in 1515, with Goa, Malacca and Hormuz held. Its three choices are the topic\'s argument in a decision: a chain of forts and sea passes, a wider territorial colony, or a negotiated place inside markets that already exist. Every option depends on local allies. Debrief with the spine: whatever Goa chose, Asian rulers and merchants kept much of their own power.',
+          'Checkpoint 2 (Module 10) asks for one continuity and one change in labor systems in the Americas, and one continuity and one change in slavery, with the reason for each change (Learning Objectives F and G). Socrates is told the skill is Continuity and Change, so it will push for both halves and the reason. The revised answer in the box is what goes to Canvas.',
+          'If a student needs the claim shape, give it aloud (it was the Sharpen slide): "Change: In ___, ___ changed when ___. Continuity: But ___ kept going, because ___." It is a frame, not a model answer; do not write a finished claim on the board.'
         ],
         ask: 'Does your answer have a continuity, a change, a named example for each, and why the change happened?',
-        listenFor: 'The mit’a and encomienda; older African slavery and plantation slavery; the plantations as the reason.'
+        listenFor: 'Checkpoint 1: religion, Elmina or Asante, and Japan\'s rules. Checkpoint 2: the mit’a and encomienda; older African slavery and plantation slavery; the plantations as the reason.'
       }
     },
     {

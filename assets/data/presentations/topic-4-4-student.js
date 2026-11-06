@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull the last topics back from memory.",
       "template": {
         "questions": [
@@ -44,8 +44,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Europeans built empires from the sea. What changed, and what kept going?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Why Europeans went to sea"
+          },
+          {
+            "label": "II",
+            "text": "Portugal in the Indian Ocean"
+          },
+          {
+            "label": "III",
+            "text": "China and Japan set the rules"
+          },
+          {
+            "label": "IV",
+            "text": "Kongo and Asante grow stronger"
+          },
+          {
+            "label": "V",
+            "text": "Who did the work: labor and slavery"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: what changed, what kept going",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Checkpoint 1 · Primary Source · BeInTheRoom · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with two questions in mind.",
       "subtitle": "For every case: what changed, and what kept going the way it already had?",
       "action": {
@@ -55,7 +92,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Why Build Empires",
+      "eyebrow": "I · Why Europeans Went to Sea",
       "title": "Rivals built empires from the sea.",
       "footer": "Portugal, Spain, the Dutch, France and England: when one found a route or a rich coast, the others came after it.",
       "kc": "KC-4.3.II.C",
@@ -85,7 +122,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Where the Empires Reached",
+      "eyebrow": "I · Why Europeans Went to Sea · Map",
       "title": "Forts, colonies, and their own rules.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-4.svg",
@@ -96,7 +133,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Forts on the Coast",
+      "eyebrow": "I · Why Europeans Went to Sea · Trading Posts",
       "title": "What a trading post was, and who it paid.",
       "kc": "KC-4.3.II.A.i",
       "template": {
@@ -132,9 +169,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "The Indian Ocean Story · 1",
+      "eyebrow": "II · Portugal in the Indian Ocean · 1",
       "title": "Calicut, 1498: the gifts that got laughed at.",
       "footer": "A Portuguese sailor wrote this down. Why would he record his own side being laughed at?",
+      "kc": "Unit 4: Learning Objective F",
       "template": {
         "visual": {
           "ai": true,
@@ -166,7 +204,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "The Indian Ocean Story · 2",
+      "eyebrow": "II · Portugal in the Indian Ocean · 2",
       "title": "From traders to a navy.",
       "footer": "The laugh did not cause the violence by itself. It showed Portugal it could not win by trading alone.",
       "kc": "KC-4.3.II.C",
@@ -205,7 +243,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "The Indian Ocean Story · 3",
+      "eyebrow": "II · Portugal in the Indian Ocean · 3",
       "title": "Hold the gates of the ocean.",
       "subtitle": "Albuquerque's plan: hold the narrow places long-distance ships had to pass, and tax the trade.",
       "footer": "Albuquerque's plan: hold the narrow places long-distance ships had to pass, and tax the trade.",
@@ -244,7 +282,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-full",
-      "eyebrow": "The Indian Ocean Story · On the Map",
+      "eyebrow": "II · Portugal in the Indian Ocean · Map",
       "title": "Find the gates, and the gate that got away.",
       "template": {
         "visual": {
@@ -257,7 +295,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "continuity-change",
-      "eyebrow": "The Indian Ocean Story · 4",
+      "eyebrow": "II · Portugal in the Indian Ocean · 4",
       "title": "The Portuguese changed the Indian Ocean. They did not replace it.",
       "footer": "The College Board's words: existing trade networks \"continued to flourish.\"",
       "kc": "KC-4.3.II.A.iii",
@@ -289,7 +327,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Asia Sets the Terms",
+      "eyebrow": "III · China and Japan Set the Rules",
       "title": "China and Japan decided how far Europeans could reach.",
       "kc": "KC-4.3.II.A.i",
       "template": {
@@ -334,7 +372,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-hipp",
-      "eyebrow": "Source It · Model",
+      "eyebrow": "III · China and Japan · Source It, Model",
       "title": "Orders to the officials at Nagasaki, 1635.",
       "kc": "KC-4.3.II.A.i",
       "template": {
@@ -352,7 +390,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "African States Grow",
+      "eyebrow": "IV · Kongo and Asante Grow Stronger",
       "title": "Kongo and Asante grew stronger through the new trade.",
       "kc": "KC-4.3.II.A.ii",
       "template": {
@@ -387,7 +425,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Source It · Your Turn",
+      "eyebrow": "IV · Kongo and Asante · Source It, Your Turn",
       "title": "A king writes to a king, 1526.",
       "footer": "Afonso sold war captives from outside Kongo himself. Read his letter with that in mind.",
       "kc": "Unit 4: Learning Objective G",
@@ -403,7 +441,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "Work in the Americas",
+      "eyebrow": "V · Labor and Slavery · Work",
       "title": "One old labor system, four new ones.",
       "footer": "The colonies made money mostly from farming, and from mining. Each system found the workers.",
       "kc": "KC-4.2.II.D",
@@ -446,7 +484,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Slavery: Continuity",
+      "eyebrow": "V · Labor and Slavery · Continuity",
       "title": "Slavery in Africa went on in its older forms.",
       "kc": "KC-4.2.II.B",
       "template": {
@@ -476,7 +514,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Slavery: Change",
+      "eyebrow": "V · Labor and Slavery · Change",
       "title": "What the plantations changed.",
       "kc": "KC-4.2.II.C",
       "template": {
@@ -521,7 +559,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "What changed, and what kept going.",
       "template": {
         "columns": [
@@ -562,44 +600,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "A change and a continuity, each with a named example and the reason.",
-      "kc": "Unit 4: Learning Objective F",
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 06, 08, 09, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
-        "weak": "Indian Ocean trade changed.",
-        "strong": "**Change:** In ______, ______ changed when ______. **Continuity:** But ______ kept going, **because** ______."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Modules 06 and 08 · On Your Own",
-      "title": "Checkpoint 1, then Afonso's letter.",
-      "subtitle": "Checkpoint 1 first, with no coach. Then the Primary Source: Afonso I's full letter to the king of Portugal.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-4-maritime-empires-established.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 09 · BeInTheRoom",
-      "title": "The Goa Fort Council.",
-      "subtitle": "Albuquerque is dead. Portugal holds Goa, Malacca and Hormuz, but not enough people to conquer the lands behind them. What kind of empire does it build now?",
-      "action": {
-        "label": "Open the Goa Fort Council",
-        "url": "../beintheroom/unit-4/the-goa-fort-council.html"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Labor and slavery: what changed, what kept going.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-4-maritime-empires-established.html#modules"
+        "modules": [
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-4-maritime-empires-established.html#modules"
+          },
+          {
+            "code": "Module 08",
+            "name": "Primary Source",
+            "note": "Afonso I's full letter, 1526.",
+            "url": "../unit-4/lesson-4-4-maritime-empires-established.html#modules"
+          },
+          {
+            "code": "Module 09",
+            "name": "BeInTheRoom",
+            "note": "The Goa Fort Council.",
+            "url": "../beintheroom/unit-4/the-goa-fort-council.html"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-4-maritime-empires-established.html#modules"
+          }
+        ]
       }
     },
     {

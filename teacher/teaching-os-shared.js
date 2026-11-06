@@ -203,6 +203,7 @@ function briefingData(){
   return{
     topic:m.topic||'',title:m.title||'',spine:m.subtitle||'',question:m.essentialQuestion||'',
     focus:m.apFocus||'',target:m.endTarget||'',minutes:m.minutes||'',priorities:T.priorities||{},
+    outline:T.outline&&Array.isArray(T.outline.sections)&&T.outline.sections.length?T.outline:null,
     flow:(T.flow||[]).filter(f=>f&&f.label),
     links:(T.quickLaunch||[]).filter(x=>x&&x.url).map(x=>({label:x.label||x.url,url:new URL(x.url,location.href).href}))
   };
@@ -214,11 +215,57 @@ function shareLink(){
   u.hash=BRIEF_HASH;
   return u.href;
 }
+/* The teaching outline (Jeff, 2026-11-06, piloted on Topic 4.4): a deck may
+   carry `outline`, a plain outline of what the period covers, in the same
+   section headers as its road-map slide. When it does, the briefing opens on
+   it (sections with short bullets, the day's vocabulary with definitions, and
+   the myths to watch for), and the minute-by-minute run of show folds away
+   under it, closed, for planning only. A deck without `outline` is unchanged. */
+const outlinePoints=sec=>Array.isArray(sec.groups)?sec.groups:[{name:'',points:sec.points||[]}];
+function outlineText(o){
+  const out=[];
+  if((o.required||[]).length)out.push('','Required modules: '+o.required.join(', '));
+  out.push('','[OUTLINE]');
+  o.sections.forEach(sec=>{
+    out.push((sec.label?sec.label+'. ':'')+sec.title+(sec.kc?' ('+sec.kc+')':''));
+    outlinePoints(sec).forEach(g=>{if(g.name)out.push('  '+g.name+':');(g.points||[]).forEach(x=>out.push('  - '+x));});
+    if(sec.skill)out.push('  Skill moment: '+sec.skill);
+  });
+  const w=o.wrap;
+  if(w&&(w.rows||[]).length){
+    out.push((w.title||'Put it together')+':');
+    const c=w.columns||[];
+    w.rows.forEach(r=>out.push('  - '+r.label+': '+(r.cells||[]).map((x,i)=>(c[i]?c[i]+': ':'')+x).join('; ')));
+  }
+  if((o.vocabulary||[]).length){out.push('','[VOCABULARY]');o.vocabulary.forEach(v=>out.push('- '+v.term+': '+v.def));}
+  if((o.watch||[]).length){out.push('','[WATCH FOR]');o.watch.forEach(x=>out.push('- '+x.myth+' '+x.fix));}
+  return out;
+}
+function outlineBody(o){
+  let h='';
+  if((o.required||[]).length)h+='<div class="bhb-section"><h3>Required modules today</h3><div class="bhb-chips">'+o.required.map(x=>'<span class="bhb-chip">'+escHTML(x)+'</span>').join('')+'</div></div>';
+  h+='<div class="bhb-section bhb-outline"><h3>Today&rsquo;s outline</h3>'+o.sections.map(sec=>
+    '<section class="bhb-osec"><h4><span class="bhb-onum">'+escHTML(sec.label||'')+'</span><span class="bhb-otitle">'+escHTML(sec.title)+'</span>'+(sec.kc?'<span class="bhb-okc">'+escHTML(sec.kc)+'</span>':'')+'</h4>'
+    +outlinePoints(sec).map(g=>(g.name?'<div class="bhb-ogroup">'+escHTML(g.name)+'</div>':'')+'<ul>'+(g.points||[]).map(x=>'<li>'+escHTML(x)+'</li>').join('')+'</ul>').join('')
+    +(sec.skill?'<p class="bhb-oskill"><b>Skill moment.</b> '+escHTML(sec.skill)+'</p>':'')+'</section>').join('');
+  const w=o.wrap;
+  if(w&&(w.rows||[]).length){
+    const c=w.columns||[];
+    h+='<section class="bhb-osec"><h4><span class="bhb-onum">&#10003;</span><span class="bhb-otitle">'+escHTML(w.title||'Put it together')+'</span></h4><div class="bhb-owrap"><table class="bhb-otable"><thead><tr><th></th>'+c.map(x=>'<th scope="col">'+escHTML(x)+'</th>').join('')+'</tr></thead><tbody>'
+      +w.rows.map(r=>'<tr><th scope="row">'+escHTML(r.label)+'</th>'+(r.cells||[]).map(x=>'<td>'+escHTML(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div></section>';
+  }
+  h+='</div>';
+  if((o.vocabulary||[]).length)h+='<div class="bhb-section"><h3>Vocabulary</h3><dl class="bhb-vocab">'+o.vocabulary.map(v=>'<dt>'+escHTML(v.term)+'</dt><dd>'+escHTML(v.def)+'</dd>').join('')+'</dl></div>';
+  if((o.watch||[]).length)h+='<div class="bhb-section"><h3>Watch for</h3><ul class="bhb-watch">'+o.watch.map(x=>'<li><b>'+escHTML(x.myth)+'</b> '+escHTML(x.fix)+'</li>').join('')+'</ul></div>';
+  return h;
+}
+
 function briefingText(){
   const d=briefingData(),out=[];
   out.push('BeHistorical · Topic '+d.topic+' Briefing');
   out.push(d.title+(d.spine?': '+d.spine:''));
   out.push('');
+  if(d.outline)out.push(...outlineText(d.outline),'');
   if(d.question)out.push('Essential question: '+d.question);
   if(d.focus)out.push('AP focus: '+d.focus);
   if(d.target)out.push('End target: '+d.target);
@@ -243,11 +290,16 @@ function briefingBody(){
   const d=briefingData();
   let h='';
   if(d.spine)h+='<p class="bhb-spine">'+escHTML(d.spine)+'</p>';
+  if(d.outline)h+=outlineBody(d.outline);
   const lead=[['Essential question',d.question],['AP focus',d.focus],['End target',d.target]].filter(x=>x[1]);
   if(lead.length)h+='<div class="bhb-section"><dl class="bhb-lead">'+lead.map(x=>'<dt>'+x[0]+'</dt><dd>'+escHTML(x[1])+'</dd>').join('')+'</dl></div>';
   const blocks=PRIORITY_LABELS.filter(([k])=>(d.priorities[k]||[]).length);
   if(blocks.length)h+='<div class="bhb-section"><h3>Instructional guardrails</h3><div class="bhb-priorities">'+blocks.map(([k,label])=>'<section class="bhb-priority '+k+'"><h4>'+label+'</h4><ul>'+d.priorities[k].map(x=>'<li>'+escHTML(x)+'</li>').join('')+'</ul></section>').join('')+'</div></div>';
-  if(d.flow.length)h+='<div class="bhb-section"><h3>Run of show'+(d.minutes?' &middot; '+escHTML(d.minutes)+' minutes':'')+'</h3><ol class="bhb-flow">'+d.flow.map(f=>'<li><span class="bhb-range">'+escHTML(rangeLabel(f.range))+'</span><span><b>'+escHTML(f.label)+'</b>'+(f.teacher?' '+escHTML(f.teacher):'')+'</span></li>').join('')+'</ol></div>';
+  if(d.flow.length){
+    const list='<ol class="bhb-flow">'+d.flow.map(f=>'<li><span class="bhb-range">'+escHTML(rangeLabel(f.range))+'</span><span><b>'+escHTML(f.label)+'</b>'+(f.teacher?' '+escHTML(f.teacher):'')+'</span></li>').join('')+'</ol>';
+    const head='Run of show'+(d.minutes?' &middot; '+escHTML(d.minutes)+' minutes':'');
+    h+=d.outline?'<div class="bhb-section"><details class="bhb-fold"><summary><h3>'+head+' (minute plan)</h3></summary>'+list+'</details></div>':'<div class="bhb-section"><h3>'+head+'</h3>'+list+'</div>';
+  }
   if(d.links.length)h+='<div class="bhb-section bhb-launch-section"><h3>Quick launch</h3><div class="bhb-launches">'+d.links.map(x=>'<a class="btn" href="'+escHTML(x.url)+'" target="_blank" rel="noopener">'+escHTML(x.label)+'</a>').join('')+'</div></div>';
   return h;
 }
@@ -277,6 +329,7 @@ function printBriefing(){
   if(!holder){holder=document.createElement('div');holder.id='bhbPrint';document.body.appendChild(holder);}
   const d=briefingData();
   holder.innerHTML='<div class="bhb-print-kicker">BeHistorical &middot; Teaching OS</div><h1>Topic '+escHTML(d.topic)+' Briefing: '+escHTML(d.title)+'</h1>'+briefingBody()+'<p class="bhb-print-link">'+escHTML(shareLink())+'</p>';
+  holder.querySelectorAll('details').forEach(x=>{x.open=true});
   document.documentElement.classList.add('bhb-printing');
   const done=()=>{document.documentElement.classList.remove('bhb-printing');window.removeEventListener('afterprint',done)};
   window.addEventListener('afterprint',done);
@@ -324,6 +377,35 @@ const sharedCSS=`
 .bhb-flow li{display:grid;grid-template-columns:92px 1fr;gap:10px}
 .bhb-range{font:700 .7rem var(--ui,system-ui,sans-serif);color:var(--gold,#c9a46a);padding-top:2px}
 .bhb-flow b{color:var(--paper,#f5f0e7)}
+.bhb-chips{display:flex;flex-wrap:wrap;gap:6px}
+.bhb-chip{font:700 .72rem var(--ui,system-ui,sans-serif);padding:4px 9px;border:1px solid var(--gold,#c9a46a);border-radius:999px;color:var(--paper,#f5f0e7)}
+.bhb-outline{display:grid;gap:14px}
+.bhb-outline>h3{margin-bottom:0}
+.bhb-osec h4{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 6px;font:700 1.02rem var(--title,Georgia,serif);color:var(--paper,#f5f0e7)}
+.bhb-onum{font:800 .78rem var(--ui,system-ui,sans-serif);color:var(--gold,#c9a46a);min-width:1.6em}
+.bhb-okc{margin-left:auto;font:600 .62rem var(--ui,system-ui,sans-serif);letter-spacing:.04em;color:var(--muted,#aeb6b8)}
+.bhb-osec ul{margin:0;padding-left:20px}
+.bhb-osec li{font-size:.9rem;line-height:1.5}
+.bhb-osec li::marker{color:var(--gold,#c9a46a)}
+.bhb-ogroup{margin:6px 0 2px;font:800 .6rem var(--ui,system-ui,sans-serif);letter-spacing:.13em;text-transform:uppercase;color:var(--muted,#aeb6b8)}
+.bhb-oskill{margin:8px 0 0;padding:8px 11px;border-left:3px solid var(--green,#7fa879);background:#161d1a;font-size:.86rem;line-height:1.5}
+.bhb-oskill b{color:var(--green,#7fa879)}
+.bhb-owrap{overflow-x:auto}
+.bhb-otable{width:100%;border-collapse:collapse;font-size:.84rem;line-height:1.45}
+.bhb-otable th,.bhb-otable td{border:1px solid var(--line,#364044);padding:6px 8px;text-align:left;vertical-align:top}
+.bhb-otable th{color:var(--paper,#f5f0e7)}
+.bhb-vocab{margin:0;display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr);gap:7px 14px}
+.bhb-vocab dt{font-weight:700;font-size:.88rem;color:var(--paper,#f5f0e7)}
+.bhb-vocab dd{margin:0;font-size:.86rem;line-height:1.45}
+.bhb-watch{margin:0;padding-left:19px;display:grid;gap:6px}
+.bhb-watch li{font-size:.86rem;line-height:1.5}
+.bhb-watch b{color:var(--paper,#f5f0e7)}
+.bhb-fold>summary{cursor:pointer;list-style:none}
+.bhb-fold>summary::-webkit-details-marker{display:none}
+.bhb-fold>summary h3{display:inline;margin:0}
+.bhb-fold>summary::before{content:'▸';color:var(--gold,#c9a46a);margin-right:7px}
+.bhb-fold[open]>summary::before{content:'▾'}
+.bhb-fold[open]>summary{margin-bottom:9px}
 .bhb-launches,.bhb-share-row{display:flex;flex-wrap:wrap;gap:8px}
 .bhb-launches a{text-decoration:none}
 .bhb-share{padding-top:16px;border-top:1px solid var(--line,#364044)}
@@ -336,7 +418,10 @@ const sharedCSS=`
   html.bhb-printing #bhbPrint{display:block!important;color:#111;font:11pt Georgia,serif;padding:0 .2in}
   #bhbPrint h1{font:700 15pt Georgia,serif;margin:4pt 0 6pt}
   #bhbPrint .bhb-print-kicker,#bhbPrint h3,#bhbPrint h4,#bhbPrint dt,#bhbPrint .bhb-range{color:#333!important;font-family:Arial,sans-serif}
-  #bhbPrint dd,#bhbPrint b,#bhbPrint .bhb-spine{color:#111!important}
+  #bhbPrint dd,#bhbPrint b,#bhbPrint .bhb-spine,#bhbPrint .bhb-osec h4,#bhbPrint .bhb-otable th,#bhbPrint .bhb-vocab dt,#bhbPrint .bhb-chip{color:#111!important}
+  #bhbPrint .bhb-oskill{background:#fff;border-left-color:#777}
+  #bhbPrint .bhb-otable th,#bhbPrint .bhb-otable td{border-color:#999}
+  #bhbPrint .bhb-fold>summary::before{content:''}
   #bhbPrint .bhb-priority{background:#fff;border-color:#999;break-inside:avoid}
   #bhbPrint .bhb-launch-section{display:none}
   #bhbPrint .bhb-print-link{margin-top:14pt;font:9pt Arial,sans-serif;color:#555;word-break:break-all}
