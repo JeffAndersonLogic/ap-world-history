@@ -115,11 +115,35 @@ function render(c) {
   return L.join('\n') + '\n';
 }
 
-function main() {
-  const check = process.argv.includes('--check');
+// A shallow clone cannot answer "when did this topic last change", so every
+// value in the index that depends on it is wrong there, in either direction. On
+// 2026-11-06 three sessions in a row met that as an unexplained DRIFT failure:
+// two reported it as real drift, and one rebuilt the index in its shallow clone,
+// committed the wrong answer (5.1 read Stale), and had to revert it once CI,
+// which checks out full history, refused it. So the shallow case gets its own
+// message, which says it is not drift, and writing is refused outright.
+function shallowRefusal(check) {
+  return [
+    check
+      ? 'topic audit index: CANNOT CHECK. This clone is shallow (its git history is cut off).'
+      : 'topic audit index: REFUSED TO WRITE. This clone is shallow (its git history is cut off).',
+    'Audit states come from git history, so here they would be wrong. This is not drift:',
+    'do not rebuild or commit the index from this clone. CI checks out full history.',
+    'Fix: git fetch --unshallow origin, then run this again.'
+  ];
+}
+
+function main(opts) {
+  const o = opts || {};
+  const argv = o.argv || process.argv;
+  const check = argv.includes('--check');
   // `today` still reaches coverage() because it decides the `upcoming` flag, which
   // render() no longer prints. Nothing clock-dependent survives into the file.
-  const c = cov.coverage({ today: cov.schoolToday() });
+  const c = o.coverage || cov.coverage({ today: cov.schoolToday() });
+  if (c.shallow) {
+    for (const line of shallowRefusal(check)) console.error(line);
+    return 1;
+  }
   const next = render(c);
   const prev = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : null;
 
@@ -136,4 +160,4 @@ function main() {
 }
 
 if (require.main === module) process.exit(main());
-module.exports = { render };
+module.exports = { render, main, shallowRefusal };

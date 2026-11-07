@@ -48,11 +48,20 @@ and the third is the one worth reading twice:
 4. **A record that does not parse**, which would otherwise make an audited topic read
    as never audited.
 5. **A shallow clone.** Staleness compares an audit date against git history, and a
-   shallow clone answers every lookup with nothing, so every audited topic reads Fresh
-   forever. This arrives by way of a one-line workflow change rather than an edit to
-   any of this code, which is why the nightly job sets `fetch-depth: 0` **and** the
-   script refuses to run quietly without the history. The session that built this was
-   itself in a shallow clone.
+   shallow clone gets that history wrong: a file untouched since before the cutoff is
+   credited to the cutoff commit, so it looks freshly changed (on 2026-11-06 that
+   turned 5.1 Stale in a shallow clone while full history said Fresh). The answer
+   depends on the clone's depth rather than on what changed. This arrives by way of a
+   one-line workflow change rather than an edit to any of this code, which is why the
+   nightly job sets `fetch-depth: 0` **and** the script refuses to run quietly without
+   the history. The session that built this was itself in a shallow clone.
+
+   `build-topic-audit-index.js` refuses too. In a shallow clone `--check` prints
+   `CANNOT CHECK` (not `DRIFT`) and says plainly that it is not drift, and writing is
+   refused, so a wrong index cannot be committed from one. That was added after three
+   sessions on 2026-11-06 met the shallow case as a bare `DRIFT` failure: two reported
+   it as real drift, and one rebuilt the index in its shallow clone, committed it, and
+   had to revert it once CI refused it. Fix: `git fetch --unshallow origin`.
 
 **A missing sweep marker must mean "the automation is broken", never "a quiet week".**
 That rule is lifted verbatim from the `nightly-work-log` Routine, which vanished once

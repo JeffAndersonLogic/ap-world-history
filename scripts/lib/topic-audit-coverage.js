@@ -110,10 +110,13 @@ function topicFiles(key, allFiles) {
 /**
  * Is this clone missing the history the staleness signal depends on?
  *
- * A shallow clone answers every `git log` lookup with nothing, `lastChanged`
- * returns null, and every audited topic then reads as fresh forever. That is the
- * exact false green this whole mechanism exists to refuse, and it arrives by way of
- * a one-line workflow change rather than by anyone touching this file, so it is
+ * A shallow clone gives wrong answers to the `git log` lookups `lastChanged`
+ * makes. A file untouched since before the cutoff is credited
+ * to the cutoff commit, so it looks freshly changed (on 2026-11-06 that turned 5.1
+ * Stale in a shallow clone while full history said Fresh). The answer then depends
+ * on how deep the clone is rather than on what changed, which is the kind of silent
+ * wrong answer this whole mechanism exists to refuse, and it arrives by way of a
+ * one-line workflow change rather than by anyone touching this file, so it is
  * detected here rather than trusted to a comment in the YAML.
  */
 function isShallow() {
