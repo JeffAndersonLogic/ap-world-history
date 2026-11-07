@@ -6,6 +6,21 @@ window.BH_EBOOK_AUDIO = {
   "base": "https://jeffandersonlogic.github.io/behistorical-audio/",
   "narrator": "VoxCPM2, designed narrator A, take 1 (2026-11-07)",
   "recordings": {
+    "51d36ea03b3486d9": {
+      "file": "ebook/unit-3/51d36ea03b3486d9.mp3",
+      "seconds": 349.2,
+      "section": "t3-1-ottomans"
+    },
+    "62046e7d6c251b3f": {
+      "file": "ebook/unit-3/62046e7d6c251b3f.mp3",
+      "seconds": 392,
+      "section": "t3-1-mughals"
+    },
+    "a15698fa17b35bf1": {
+      "file": "ebook/unit-3/a15698fa17b35bf1.mp3",
+      "seconds": 363.8,
+      "section": "t3-1-safavids"
+    },
     "b6c252ab6964cfdf": {
       "file": "ebook/unit-3/b6c252ab6964cfdf.mp3",
       "seconds": 214.3,
