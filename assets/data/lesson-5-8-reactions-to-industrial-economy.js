@@ -155,7 +155,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Reformers and Governments",
         bullets: [
           "**Three kinds of reformers:** the College Board names \"governments, organizations, and individuals.\" A reform changes a law or a system to fix a problem without overthrowing it.",
-          "**Political:** after a workers' organization, the Reform League, held huge meetings for the vote, Britain's Reform Acts of 1867 and 1884 gave the vote to many working men. No woman could vote in a British national election until 1918.",
+          "**Political:** after a workers' organization, the Reform League, held huge meetings for the vote, Britain's Reform Act of 1867 gave the vote to many working men in the towns, and a second act in 1884 reached many working men in the countryside. No woman could vote in a British national election until 1918.",
           "**Social:** the Factory Act of 1833 banned children under nine from most textile mills (not silk mills) and sent inspectors to check; a law of 1842, brought in by Lord Ashley, a member of Parliament, stopped women, girls, and boys under ten from working inside mines.",
           "**Educational:** the Education Act of 1870, written by a government minister, William Forster, after a campaign by the National Education League, set up public elementary schools where church schools were not enough; from 1880 children had to attend.",
           "**Urban:** in the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul it was called the \"Great Stink.\" London's city government then had its engineer, Joseph Bazalgette, build a huge system of new sewers to carry the waste away (Topic 5.9 has the city's problems).",

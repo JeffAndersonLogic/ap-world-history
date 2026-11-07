@@ -226,7 +226,14 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // valve, every finding fixed or answered. Against main at f8251dda (whose
 // unit-5.js is the 5.7 blob ca9371a9) only the 5.8 entry changed; 5.1 to 5.7,
 // 5.9 and 5.10 are byte-for-byte unchanged.
-const APPROVED_UNIT5_REWRITE_BLOB = 'bf7b3cb8a00c4da799f695a868b18a49b8b5a7b1';
+// 2026-11-07: one sentence in Topic 5.8's "Political" reform paragraph, at Jeff's
+// request. It said the Reform League's meetings led Parliament to pass "Reform Acts in
+// 1867 and 1884", but the League dissolved in 1869; the claim ledger
+// (docs/TOPIC-5-8-CLAIM-LEDGER.md) ties its meetings to the 1867 act only. It now names
+// the 1867 act for the towns and the 1884 act for the countryside as a separate step,
+// matching the 5.8 deep reading. Against the 5.8 blob bf7b3cb8 only that sentence
+// changed; every other Unit 5 reading is byte-for-byte unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = '7456ea90d6e455c19a36d8416005c987090a5ff6';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
