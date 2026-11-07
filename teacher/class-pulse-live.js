@@ -126,6 +126,9 @@
             // Only a current submission carries the note: what the teacher compares
             // is the answer that was read.
             coached: state === 'verified-submission' && receiptCoached(receiptText),
+            // When the database saved the Submit receipt: the server's clock, never the
+            // student's device, so it can be compared with a feedback session's time.
+            submittedTime: state === 'verified-submission' ? ((got[n].receipt && got[n].receipt.updateTime) || '') : '',
             updatedAt: (a && a.updateTime) || ''
           });
         });

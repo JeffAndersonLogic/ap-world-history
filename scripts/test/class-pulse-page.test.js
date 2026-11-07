@@ -16,6 +16,8 @@
  *     district approves, and once approved a pasted reply saved to the database
  *     with no student name in it and shown again on the next pull;
  *   - the receipt's coaching note splits Checkpoint 2 into coached and not coached;
+ *   - a marked feedback session counts, and After class names, only answers the
+ *     database saved after it, and clearing the mark clears them;
  *   - projector-safe mode leaves no student name on the grid;
  *   - Class view, for the projector, shows no name, no student's words and nothing
  *     that opens an answer, strips quoted words from wrong ideas, and shows a pasted
@@ -85,14 +87,14 @@ const ANA = 'Akbar used the mansabdar system to give officials land revenue he c
 function liveStore(multi) {
   const P = 'projects/behistoric/databases/(default)/documents/tenants/zcs/';
   const docs = new Map(), commits = [], requests = [];
-  const put = (name, fields) => docs.set(P + name, { name: P + name, fields, updateTime: new Date().toISOString() });
+  const put = (name, fields, when) => docs.set(P + name, { name: P + name, fields, updateTime: when || new Date().toISOString() });
   const t = v => ({ stringValue: v });
   // One class, as first set up; or, with `multi`, a list holding two of the teacher's
   // classes, each student carrying their own (2026-11-06).
   put('rosters/teach1', { classLabel: t(multi ? 'G4, S1' : 'G4') });
   [['ana1', 'Ana Ruiz', 'G4'], ['ben1', 'Ben Cole', 'S1'], ['cal1', 'Cal Ito', 'S1']].forEach(([u, l, sec]) =>
     put('rosters/teach1/students/' + u, multi ? { label: t(l), section: t(sec) } : { label: t(l) }));
-  const ans = (u, slot, text, c) => put(`responses/${u}__3-2__${slot}`, { studentId: t(u), topicKey: t('3-2'), slotId: t(slot), text: t(text), confidence: c ? { integerValue: String(c) } : t('') });
+  const ans = (u, slot, text, c, when) => put(`responses/${u}__3-2__${slot}`, { studentId: t(u), topicKey: t('3-2'), slotId: t(slot), text: t(text), confidence: c ? { integerValue: String(c) } : t('') }, when);
   ans('ana1', 'checkpoint-one-response', ANA, 4);
   ans('ana1', 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:14 AM · fingerprint ' + Sync.valueHash(ANA, '4'));
   ans('ben1', 'checkpoint-one-response', 'The devshirme took boys, and I changed this after submitting.', 3);
@@ -102,9 +104,9 @@ function liveStore(multi) {
   // (the receipt's coaching note, 2026-11-07).
   const ANA2 = 'Plantations needed year-round labor, so slavery became hereditary and tied to race.';
   ans('ana1', 'checkpoint-two-response', ANA2, 3);
-  ans('ana1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:02 AM · AI Coach prompt copied · fingerprint ' + Sync.valueHash(ANA2, '3'));
+  ans('ana1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:02 AM · AI Coach prompt copied · fingerprint ' + Sync.valueHash(ANA2, '3'), '', '2099-01-01T00:00:00Z');
   ans('ben1', 'checkpoint-two-response', 'The mita sent workers to Potosi.', 2);
-  ans('ben1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:05 AM · fingerprint ' + Sync.valueHash('The mita sent workers to Potosi.', '2'));
+  ans('ben1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:05 AM · fingerprint ' + Sync.valueHash('The mita sent workers to Potosi.', '2'), '', '2026-10-31T15:05:00Z');
   return { P, docs, commits, requests, googleLoaded: false };
 }
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'authorization,content-type', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS' };
@@ -396,6 +398,20 @@ async function suite(browser) {
   const coachedText = await L.p.$eval('#coached', e => e.textContent).catch(() => '');
   check('the coaching note splits Checkpoint 2 into coached and not coached', /1 of 2 Checkpoint 2 submissions came after the student copied the AI Coach prompt/.test(coachedText), coachedText.slice(0, 140));
   check('and says copying the prompt is not proof of coaching', /not proof they used the coaching/.test(coachedText));
+  // The feedback session marker: Ana's Checkpoint 2 was saved after "now", Ben's before.
+  await L.p.click('#tab-class');
+  await L.p.click('#cv-cp [data-v="cp2"]');
+  await L.p.click('#cv-session-mark').catch(() => {});
+  const sessNote = await L.p.$eval('#cv-teacher-note', e => e.textContent).catch(() => '');
+  check('marking the feedback session counts the answer submitted after it', /^1 answer came in after the feedback session/.test(sessNote), sessNote.slice(0, 120));
+  check('and says when it was marked', /Feedback session for Checkpoint 2 marked/.test(await L.p.$eval('#cv-session', e => e.textContent).catch(() => '')));
+  await L.p.click('#tab-pulse');
+  const lateList = await L.p.$eval('#after-session', e => e.textContent).catch(() => '');
+  check('After class names who submitted after the session', /Checkpoint 2:\s*1 \(Ana Ruiz\)/.test(lateList) && !/Ben Cole/.test(lateList), lateList.slice(0, 120));
+  await L.p.click('#tab-class');
+  await L.p.click('#cv-session-clear').catch(() => {});
+  check('clearing the mark clears the count', !/came in after the feedback session/.test(await L.p.$eval('#cv-teacher-note', e => e.textContent).catch(() => '')));
+  await L.p.click('#tab-pulse');
   check('with the approval off, copying real answers stays locked', /Locked/.test(await L.p.$eval('#paste-batches', e => e.textContent)) && (await L.p.$$('#paste-batches [data-copy]')).length === 0);
   check('My class raises no script error', L.errors.length === 0, L.errors.join(' | '));
   await L.context.close();
@@ -499,6 +515,8 @@ async function suite(browser) {
     { name: 'Class view shows names', file: 'teacher/class-pulse-app.js', from: '<p class="cv-count">${inCount} of ${n} answers in', to: '<p class="cv-count">${D.students.map(st => esc(st.name)).join(\', \')} ${inCount} of ${n} answers in', expect: /Class view shows no student name/ },
     { name: 'Class view keeps quoted words', file: 'teacher/class-pulse-app.js', from: 'const k = unquoted(m);', to: 'const k = m;', expect: /without the student's quoted words/ },
     { name: 'Class view ignores Hide on the model answer', file: 'teacher/class-pulse-app.js', from: "    if (S.cvModel === 'show') {\n      const paras", to: "    if (true) {\n      const paras", expect: /Hide takes it off/ },
+    { name: 'the session time is ignored', file: 'teacher/class-pulse-app.js', from: 'return !!(at && Date.parse(t) > Date.parse(at));', to: 'return false;', expect: /counts the answer submitted after it/ },
+    { name: 'every answer counts as after the session', file: 'teacher/class-pulse-app.js', from: 'return !!(at && Date.parse(t) > Date.parse(at));', to: 'return !!at;', expect: /names who submitted after the session/ },
     { name: 'the coaching note is never read', file: 'teacher/class-pulse-live.js', from: "coached: state === 'verified-submission' && receiptCoached(receiptText),", to: 'coached: false,', expect: /coaching note splits/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];

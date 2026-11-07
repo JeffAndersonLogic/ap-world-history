@@ -536,6 +536,17 @@ matches the criteria, the revisited criterion's paragraph is highlighted.
 **Students still writing.** The teacher-only line above the view says how many have not
 submitted, and warns that they will see the model answer before they write.
 
+**The feedback session marker.** In My class, with one class chosen, **Mark the feedback
+session now** records the time on that computer (`class-pulse-session-<topic>-<cp>-<class>`;
+one mark per topic, checkpoint and class, since each class meets on its own day). An answer
+whose Submit receipt the database saved after that time (the receipt document's
+`updateTime`, the server's clock, carried as `submittedTime` by `class-pulse-live.js`) is
+marked: counted on Class view's teacher line, named in After class under **After the
+feedback session**, and noted in the response drawer. Nothing is written to the database,
+so a mark made on the classroom computer is not seen on another one. Demo has no real
+submission times, so the button works only in My class. Checks: four in
+`class-pulse-page.test.js`, with two negative controls.
+
 **Checks.** `class-pulse-page.test.js`: no name, no answer text, a revisit criterion,
 nothing clickable, the pasted model answer and its highlight, Hide, the teacher line, and
 quoted words stripped from a pasted reply's wrong idea, with three negative controls. The

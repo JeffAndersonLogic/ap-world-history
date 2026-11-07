@@ -362,6 +362,30 @@ summary standing in for an available object.
 If a Phase 3 constraint check found something out of line (a mis-titled card, an off-spine
 opening section), it is fixed here, inside this topic's build, as the unit story map decides.
 
+### Class Pulse model answers (in AndersonLogic-OS, never here)
+
+Every topic build writes a model answer for both checkpoints (Jeff, 2026-11-07), for the
+Class Pulse **Class view** a teacher projects in a feedback session. They hold answers, so
+they go in AndersonLogic-OS, `04_PRODUCTS/BeHistorical/Assessments/Class-Pulse-Model-Answers/Topic-X-Y.md`,
+never in this public repository (`scripts/test/no-answer-keys.test.js`). Follow the README
+in that folder and the shape of `Topic-4-4.md`:
+
+- Written from `scripts/lib/ced-source/unit-N.js` and the approved story, after the
+  checkpoints are final. Quote each checkpoint prompt exactly as it stands in the renderer
+  config.
+- **One paragraph per criterion, in criterion order, separated by a blank line**, inside a
+  `text` code block. Class view highlights a paragraph by its position, so the count must
+  match the criteria.
+- Each paragraph meets the Class Pulse rubric at Demonstrating: it does what its criterion
+  asks, uses the course's key term, and says how or why. Ninth-grade language, at the length
+  a strong student could write in class.
+- Under each block, the Key Concepts it rests on and the other answers that earn full credit,
+  so the model never reads as the only answer.
+- Its factual claims go into the Phase 9 claim ledger like any other student-facing sentence,
+  and the independent reviewers read it.
+
+Commit it in AndersonLogic-OS on the same working branch name, in the same phase.
+
 ## Phase 8: Schedule, required modules and Canvas
 
 **Dates default to the next class pair** (Jeff, 2026-10-12): the next Green day and the next
@@ -579,7 +603,8 @@ Tell Jeff, in plain language (he is a teacher, not a programmer):
    count, so Jeff can overrule them
 6. Which checks ran, which skipped, and which were shown able to fail
 7. Adjacent findings
-8. What is left for him: Canvas steps, dates still needed, pictures to upload, decisions
+8. Where the topic's Class Pulse model answers are (AndersonLogic-OS path)
+9. What is left for him: Canvas steps, dates still needed, pictures to upload, decisions
 
 Keep the states separate: built, committed, tested, verified, shipped. Never call something
 done or live without the evidence for that state.

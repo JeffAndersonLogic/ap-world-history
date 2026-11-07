@@ -303,3 +303,4 @@ nav.tabs button:disabled{opacity:.45;cursor:default}
 .cv-model-entry textarea{width:100%;box-sizing:border-box;font:inherit;padding:10px;border-radius:12px;border:1px solid var(--line)}
 @media (max-width:640px){.cv-crit{grid-template-columns:1fr}}
 .cv .stack i{cursor:default;font-size:13px}.cv .stack i:hover{filter:none;outline:none}
+.watch-plain{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13px}

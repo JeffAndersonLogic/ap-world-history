@@ -199,7 +199,8 @@
       i, name: st.label, uid: st.uid, section: st.section || '', absent: false, strength: .5,
       submittedAt: { cp1: rows.cp1[i].completionState === 'verified-submission' ? 0 : null, cp2: rows.cp2[i].completionState === 'verified-submission' ? 0 : null },
       confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence },
-      coached: { cp1: !!rows.cp1[i].coached, cp2: !!rows.cp2[i].coached }
+      coached: { cp1: !!rows.cp1[i].coached, cp2: !!rows.cp2[i].coached },
+      submittedTime: { cp1: rows.cp1[i].submittedTime || '', cp2: rows.cp2[i].submittedTime || '' }
     }));
     // A saved rating counts only for the very answer it was made from.
     const byText = new Map(), readBy = new Map();
@@ -417,6 +418,7 @@
     const by = D.readBy.get(col.cp + '|' + si);
     if (by) h += `<p class="small read-by">Read by <b>${esc(by)}</b>, pasted.</p>`;
     if (coachedOf(st, col.cp)) h += '<p class="small coached-note">Submitted after copying the AI Coach prompt.</p>';
+    if (afterSession(st, col.cp)) h += `<p class="small session-note">Submitted ${esc(clock(st.submittedTime[col.cp]))}, after the feedback session.</p>`;
     // What this level means here, from the same rubric the provider was given.
     const ruled = D.contracts[col.cp].criteria[col.ci].rubric;
     const meaning = ruled && ruled[prop] ? ruled[prop] : D.contracts[col.cp].levels && D.contracts[col.cp].levels[prop];
@@ -506,6 +508,7 @@
         (g.other.length ? `<p class="small" style="grid-column:1/-1">Not placed (not submitted, not read yet, or the tool could not tell): ${g.other.map(st => esc(shown(st))).join(', ')}</p>` : '');
     }
     renderCoached();
+    renderAfterSession();
     renderScatter();
   }
 
@@ -542,6 +545,16 @@
     h += '</tbody></table><p class="small">Each number is the share demonstrating, out of the answers that were read.' +
       (thin ? ` <b>A group under ${COACH_MIN} is too small to compare</b>: wait for more classes or more topics before reading anything into a gap.` : '') + '</p>';
     box.innerHTML = h;
+  }
+  function renderAfterSession() {
+    const box = $('#after-session'); if (!box) return;
+    if (S.source !== 'live') { box.innerHTML = '<p class="small">In My class, answers submitted after you mark a feedback session on Class view are counted here.</p>'; return; }
+    const parts = CPS.map(cp => {
+      const late = D.students.filter(st => afterSession(st, cp));
+      return late.length ? `<li><b>${CP_NAME[cp]}:</b> ${late.length} (${late.map(st => esc(shown(st))).join(', ')})</li>` : '';
+    }).join('');
+    box.innerHTML = parts ? `<ul class="watch-plain">${parts}</ul><p class="small">These students wrote after seeing the class feedback, so read their answers knowing that.</p>`
+      : '<p class="small">No answers came in after a marked feedback session.</p>';
   }
   function renderScatter() {
     const W = 300, H = 220, pl = 34, pr = 10, pt = 10, pb = 34;
@@ -775,6 +788,48 @@
   // repository (scripts/test/no-answer-keys.test.js), and it is kept on that
   // computer only.
   const CV_MIN_READ = 3;
+
+  // The feedback session marker, added 2026-11-07 (Jeff). The teacher marks when a
+  // class saw the feedback; an answer whose Submit the database saved after that is
+  // marked "after the feedback session", the way the coaching note marks coached
+  // work. One mark per topic, checkpoint and class, since each class meets on its
+  // own day. Kept on this computer only, like the pasted model answer: nothing here
+  // writes to the database. My class only, because only the database knows when an
+  // answer was really submitted.
+  const sessionMemory = new Map();
+  function sessionKey(cp, section) { return 'class-pulse-session-' + S.topic + '-' + cp + '-' + (section || 'all'); }
+  function sessionAt(cp, section) {
+    const k = sessionKey(cp, section);
+    if (sessionMemory.has(k)) return sessionMemory.get(k);
+    try { return localStorage.getItem(k) || ''; } catch (_) { return ''; }
+  }
+  function setSession(cp, section, iso) {
+    const k = sessionKey(cp, section);
+    sessionMemory.set(k, iso);
+    try { if (iso) localStorage.setItem(k, iso); else localStorage.removeItem(k); } catch (_) { /* kept for this page load */ }
+  }
+  // The one class a mark can apply to right now, or null when several are showing.
+  function markableSection() {
+    if (S.source !== 'live' || !(S.live && S.live.roster)) return null;
+    const many = S.live.roster.sections && S.live.roster.sections.length > 1;
+    return many && !S.liveSection ? null : (S.liveSection || '');
+  }
+  function afterSession(st, cp) {
+    const t = st.submittedTime && st.submittedTime[cp];
+    const at = t && sessionAt(cp, st.section || '');
+    return !!(at && Date.parse(t) > Date.parse(at));
+  }
+  const clock = iso => new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+  function renderSessionBar() {
+    const bar = $('#cv-session'); if (!bar) return;
+    const cp = S.cvCp, sec = markableSection();
+    if (S.source !== 'live') { bar.innerHTML = '<span class="small">Marking a feedback session works in My class, where the database knows when each answer was submitted.</span>'; return; }
+    if (sec === null) { bar.innerHTML = '<span class="small">Choose one class in the Class menu to mark its feedback session.</span>'; return; }
+    const at = sessionAt(cp, sec);
+    bar.innerHTML = at
+      ? `<span class="small">Feedback session for ${CP_NAME[cp]} marked <b>${esc(clock(at))}</b>. Answers submitted after it are marked.</span> <button class="btn" type="button" id="cv-session-clear">Clear the mark</button>`
+      : `<button class="btn primary" type="button" id="cv-session-mark">Mark the feedback session now</button> <span class="small">Press it when you project this, so answers submitted afterwards are marked.</span>`;
+  }
   const modelKey = () => 'class-pulse-model-' + S.topic + '-' + S.cvCp;
   const modelMemory = new Map(); // this page load, for a browser that refuses storage
   function modelText() {
@@ -800,10 +855,12 @@
 
     // Teacher-only line above the projected area.
     const missing = n - inCount;
-    $('#cv-teacher-note').textContent = !n ? 'No students loaded yet.'
+    const late = D.students.filter(st => afterSession(st, cp)).length;
+    renderSessionBar();
+    $('#cv-teacher-note').textContent = (late ? `${late} ${late === 1 ? 'answer' : 'answers'} came in after the feedback session. ` : '') + (!n ? 'No students loaded yet.'
       : (missing ? `${missing} of ${n} have not submitted ${CP_NAME[cp]} yet. ` : `Everyone has submitted ${CP_NAME[cp]}. `)
         + (missing && S.cvModel === 'show' ? 'Anyone who has not submitted will see the model answer before they write, so read their answers knowing that.' : '')
-        + (read < CV_MIN_READ ? ` Fewer than ${CV_MIN_READ} answers have been read, so there is no criterion to revisit yet.` : '');
+        + (read < CV_MIN_READ ? ` Fewer than ${CV_MIN_READ} answers have been read, so there is no criterion to revisit yet.` : ''));
     if (document.activeElement !== $('#cv-model-text')) $('#cv-model-text').value = modelText();
 
     let h = `<header class="cv-head"><span class="eyebrow">Topic ${esc(title(S.topic))} · ${CP_NAME[cp]}</span><p class="cv-prompt">${esc(contract.prompt)}</p>
@@ -896,6 +953,13 @@
   seg('#cv-cp', 'cvCp', renderClass);
   seg('#cv-mis', 'cvMis', renderClass);
   seg('#cv-model-show', 'cvModel', renderClass);
+  $('#cv-session').addEventListener('click', e => {
+    const sec = markableSection(); if (sec === null) return;
+    if (e.target.closest('#cv-session-mark')) setSession(S.cvCp, sec, new Date().toISOString());
+    else if (e.target.closest('#cv-session-clear')) setSession(S.cvCp, sec, '');
+    else return;
+    renderClass();
+  });
   $('#cv-model-text').addEventListener('input', e => {
     modelMemory.set(modelKey(), e.target.value);
     try { localStorage.setItem(modelKey(), e.target.value); } catch (_) { /* a private window: kept until the page reloads */ }
