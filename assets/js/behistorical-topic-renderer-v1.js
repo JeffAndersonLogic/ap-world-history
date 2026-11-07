@@ -2269,6 +2269,7 @@ function renderVideoClips() {
   const host = byId('content-video-clips');
   if (!host) return;
   const videos = L.lecture.videos || [];
+  syncVideosButton(videos.length > 0);
   if (!videos.length) { host.innerHTML = ''; host.hidden = true; return; }
   host.hidden = false;
 
@@ -2290,6 +2291,26 @@ function renderVideoClips() {
         </div>
       </article>`;
   }).join('');
+}
+
+// The hero's quick-nav gets a Videos button beside Concept Cards, jumping
+// straight to the clips, but only on a topic that has clips: a button that
+// scrolls to a hidden block is a click where nothing happens. Added here rather
+// than typed into every lesson shell so the button and the block it points at
+// can never disagree.
+function syncVideosButton(hasVideos) {
+  const nav = document.querySelector('.hero .quick-nav');
+  if (!nav) return;
+  const existing = nav.querySelector('a[data-quick-nav="videos"]');
+  if (!hasVideos) { if (existing) existing.remove(); return; }
+  if (existing) return;
+  const btn = document.createElement('a');
+  btn.className = 'btn secondary';
+  btn.href = '#content-video-clips';
+  btn.dataset.quickNav = 'videos';
+  btn.textContent = 'Videos';
+  const cards = nav.querySelector('a[href="#lecture"]');
+  if (cards) cards.after(btn); else nav.appendChild(btn);
 }
 
 // ── Module grid ───────────────────────────────────────────────────────────────

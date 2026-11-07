@@ -263,7 +263,13 @@ const PAGES = [
         height: Math.round(host.getBoundingClientRect().height),
         intro: !!host.querySelector('.video-intro'),
         cards: host.querySelectorAll('.video-card').length,
-        heading: card ? card.textContent : ''
+        heading: card ? card.textContent : '',
+        button: (() => {
+          const b = document.querySelector('.hero .quick-nav a[data-quick-nav="videos"]');
+          const prev = b && b.previousElementSibling;
+          return b ? { text: b.textContent, target: b.getAttribute('href'),
+                       afterCards: !!prev && prev.getAttribute('href') === '#lecture' } : null;
+        })()
       };
     });
     if (spec.clips) {
@@ -271,9 +277,15 @@ const PAGES = [
         `intro=${vids.intro} cards=${vids.cards}`);
       check('a clip card is headed by its title, not the word "Video Clip"',
         !!vids.heading && vids.heading !== 'Video Clip', vids.heading.slice(0, 46));
+      check('the hero has a Videos button beside Concept Cards that jumps to the clips',
+        !!vids.button && vids.button.text === 'Videos' && vids.button.afterCards
+          && vids.button.target === '#content-video-clips',
+        JSON.stringify(vids.button));
     } else {
       check('a topic with no clips hides the block rather than leaving a gap',
         vids.hidden && vids.height === 0, `hidden=${vids.hidden} height=${vids.height}px`);
+      check('a topic with no clips shows no Videos button',
+        vids.button === null, JSON.stringify(vids.button));
     }
 
     check('no page errors', errors.length === 0, errors.join('; ') || 'none');
