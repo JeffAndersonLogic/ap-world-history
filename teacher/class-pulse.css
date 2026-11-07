@@ -281,3 +281,25 @@ nav.tabs button:disabled{opacity:.45;cursor:default}
 .coach-cmp tbody th{font-weight:600;max-width:340px}
 .coach-cmp tbody th small{display:block;font-weight:400;color:var(--muted);font-size:11px;margin-top:2px}
 .coach-cmp td{white-space:nowrap}
+
+/* Class view (projector), 2026-11-07: large type, readable from the back row */
+.cv{display:grid;gap:18px;margin-top:16px}
+.cv-head{display:grid;gap:8px}
+.cv-prompt{font-size:clamp(17px,1.6vw,22px);line-height:1.45;max-width:70ch}
+.cv-count{font-weight:700;color:var(--muted)}
+.cv-block{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;gap:12px}
+.cv-block h3{font-size:clamp(22px,2.2vw,30px)}
+.cv-block p,.cv-mis li{font-size:clamp(16px,1.5vw,21px);line-height:1.45}
+.cv-crit{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(160px,1fr);gap:14px;align-items:center;padding:8px;border-radius:12px}
+.cv-crit-text{font-size:clamp(15px,1.4vw,19px);line-height:1.4}
+.cv-crit .stack{height:30px}
+.cv-hot{background:#FFF4D6;outline:2px solid #C9A227;border-radius:12px;padding:8px}
+.cv-big{font-size:clamp(20px,2vw,28px);font-weight:700}
+.cv-strong{border-left:4px solid #C9A227;padding-left:12px}
+.cv-mis{margin:0;padding-left:22px;display:grid;gap:8px}
+.cv-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px}
+.cv-legend span{display:inline-flex;align-items:center;gap:6px}
+.cv-model-entry summary{cursor:pointer;font-weight:600}
+.cv-model-entry textarea{width:100%;box-sizing:border-box;font:inherit;padding:10px;border-radius:12px;border:1px solid var(--line)}
+@media (max-width:640px){.cv-crit{grid-template-columns:1fr}}
+.cv .stack i{cursor:default;font-size:13px}.cv .stack i:hover{filter:none;outline:none}

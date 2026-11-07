@@ -17,6 +17,9 @@
  *     with no student name in it and shown again on the next pull;
  *   - the receipt's coaching note splits Checkpoint 2 into coached and not coached;
  *   - projector-safe mode leaves no student name on the grid;
+ *   - Class view, for the projector, shows no name, no student's words and nothing
+ *     that opens an answer, strips quoted words from wrong ideas, and shows a pasted
+ *     model answer only when asked, with the revisited criterion highlighted;
  *   - after-class bars count every student, including anyone who did not submit;
  *   - the Reader menu offers an AI reader only where it has recorded readings, and
  *     choosing one shows that reader's own levels and reasons, with every reader's
@@ -225,6 +228,32 @@ async function suite(browser) {
   await s.p.click('#names [data-v="anon"]');
   const grid = await s.p.$eval('#heat', t => t.textContent);
   check('Projector safe hides every name on the grid', names.length > 0 && names.every(nm => !grid.includes(nm)));
+
+  section('Class view');
+  // With names switched back on, so the view's own rule is what is tested.
+  await s.p.click('#names [data-v="names"]');
+  await choose(s.p, '2.3');
+  await s.p.click('#tab-class');
+  await s.p.waitForFunction(() => /How the class did/i.test(document.getElementById('cv').textContent), null, { timeout: 8000 }).catch(() => {});
+  const cv = await s.p.$eval('#cv', e => e.textContent);
+  const shownNames = await s.p.$$eval('#heat td.name', tds => tds.map(t => t.childNodes[0].textContent));
+  const answers = await s.p.evaluate(() => (window.BHClassPulseCalibration.rows || []).map(r => r.text));
+  const leaked = answers.filter(t => t && t.length > 40).filter(t => { for (let i = 0; i + 40 <= t.length; i += 20) if (cv.includes(t.slice(i, i + 40))) return true; return false; });
+  check('Class view shows no student name, even with names on', shownNames.length > 0 && shownNames.every(nm => !cv.includes(nm)) && !/Student \d\d/.test(cv), shownNames.find(nm => cv.includes(nm)) || '');
+  check('Class view shows no student\'s words', answers.length > 0 && leaked.length === 0, (leaked[0] || '').slice(0, 80));
+  check('Class view names a criterion to revisit and what a strong answer does', /Let's revisit criterion \d/i.test(cv) && /A strong answer:/.test(cv), cv.slice(0, 120));
+  check('Class view has nothing that opens an answer', (await s.p.$$('#cv [data-s], #cv [data-seg], #cv button')).length === 0);
+  const MODEL = 'Model paragraph one.\n\nModel paragraph two.\n\nModel paragraph three.';
+  await s.p.click('#cv-model-show [data-v="show"]');
+  await s.p.click('.cv-model-entry summary');
+  await s.p.fill('#cv-model-text', MODEL);
+  const modelShown = await s.p.$$eval('#cv .cv-model p', ps => ps.map(x => x.textContent));
+  check('a pasted model answer shows, one paragraph per criterion', JSON.stringify(modelShown) === JSON.stringify(['Model paragraph one.', 'Model paragraph two.', 'Model paragraph three.']), JSON.stringify(modelShown));
+  check('with the revisited criterion\'s paragraph highlighted', (await s.p.$$('#cv .cv-model p.cv-hot')).length === 1);
+  await s.p.click('#cv-model-show [data-v="hide"]');
+  check('and Hide takes it off the screen', !(await s.p.$eval('#cv', e => e.textContent)).includes('Model paragraph one.'));
+  check('the teacher is told who has not submitted yet', /have not submitted Checkpoint 1 yet|Everyone has submitted/.test(await s.p.$eval('#cv-teacher-note', e => e.textContent)));
+  check('Class view raises no script error', s.errors.length === 0, s.errors.join(' | '));
   await s.context.close();
 
   section('Readers');
@@ -387,7 +416,7 @@ async function suite(browser) {
   if (text) {
     const id = JSON.parse(text.slice(text.lastIndexOf('{"batch"'))).batch;
     const n = (text.match(/"id":"criterion-\d+"/g) || []).length;
-    const reply = JSON.stringify({ batch: id, answers: [{ key: 'A01', criteria: Array.from({ length: n }, (_, j) => ({ criterionId: 'criterion-' + (j + 1), category: 'D', evidence: [ANA.slice(0, 20)], reason: 'SAVED-REASON', misconceptions: [], uncertainty: [], reviewRequired: false })) }] });
+    const reply = JSON.stringify({ batch: id, answers: [{ key: 'A01', criteria: Array.from({ length: n }, (_, j) => ({ criterionId: 'criterion-' + (j + 1), category: 'D', evidence: [ANA.slice(0, 20)], reason: 'SAVED-REASON', misconceptions: j === 0 ? ['Claims "' + ANA.slice(0, 30) + '" which QUOTED-MISCONCEPTION.'] : [], uncertainty: [], reviewRequired: false })) }] });
     await A.p.selectOption('#paste-service', 'chatgpt-for-teachers');
     await A.p.click('#paste-batches details >> nth=0');
     await A.p.fill('#paste-batches textarea[data-paste] >> nth=0', reply);
@@ -406,6 +435,10 @@ async function suite(browser) {
   await A.p.click('#heat button.cell.b-D >> nth=0');
   const savedDrawer = await A.p.$eval('#dbody', e => e.textContent);
   check('with the saved reasons, and which service read it', /SAVED-REASON/.test(savedDrawer) && /Read by ChatGPT for Teachers/.test(savedDrawer));
+  await A.p.keyboard.press('Escape');
+  await A.p.click('#tab-class');
+  const liveCv = await A.p.$eval('#cv', e => e.textContent).catch(() => '');
+  check('Class view shows a wrong idea without the student\'s quoted words', /QUOTED-MISCONCEPTION/.test(liveCv) && !liveCv.includes(ANA.slice(0, 30)) && !/Ana|Ruiz|Ben Cole|Cal Ito/.test(liveCv), liveCv.slice(0, 200));
   check('saving and pulling raise no script error', A.errors.length === 0, A.errors.join(' | '));
   await A.context.close();
 
@@ -463,6 +496,9 @@ async function suite(browser) {
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
     { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },
     { name: 'the class menu is ignored', file: 'teacher/class-pulse-app.js', from: 'return S.liveSection ? R.students.filter(st => st.section === S.liveSection) : R.students;', to: 'return R.students;', expect: /only that class|only its own/ },
+    { name: 'Class view shows names', file: 'teacher/class-pulse-app.js', from: '<p class="cv-count">${inCount} of ${n} answers in', to: '<p class="cv-count">${D.students.map(st => esc(st.name)).join(\', \')} ${inCount} of ${n} answers in', expect: /Class view shows no student name/ },
+    { name: 'Class view keeps quoted words', file: 'teacher/class-pulse-app.js', from: 'const k = unquoted(m);', to: 'const k = m;', expect: /without the student's quoted words/ },
+    { name: 'Class view ignores Hide on the model answer', file: 'teacher/class-pulse-app.js', from: "    if (S.cvModel === 'show') {\n      const paras", to: "    if (true) {\n      const paras", expect: /Hide takes it off/ },
     { name: 'the coaching note is never read', file: 'teacher/class-pulse-live.js', from: "coached: state === 'verified-submission' && receiptCoached(receiptText),", to: 'coached: false,', expect: /coaching note splits/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];

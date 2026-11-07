@@ -49,6 +49,7 @@
     <button role="tab" data-tab="pulse" id="tab-pulse">After class</button>
     <button role="tab" data-tab="course" id="tab-course">Across the course</button>
     <button role="tab" data-tab="student" id="tab-student">One student</button>
+    <button role="tab" data-tab="class" id="tab-class">Class view</button>
   </nav>
 </div>
 
@@ -157,6 +158,24 @@
         </div>
       </aside>
     </div>
+  </section>
+
+  <section class="view" id="view-class" role="tabpanel" aria-labelledby="tab-class" hidden>
+    <div class="viewhead"><h2>Class view</h2><p>For the projector: the class as a whole, never one student</p></div>
+    <div class="panel">
+      <div class="toolbar">
+        <div><span class="ctl-label">Checkpoint</span><span class="seg" id="cv-cp"><button type="button" aria-pressed="true" data-v="cp1">Checkpoint 1</button><button type="button" aria-pressed="false" data-v="cp2">Checkpoint 2</button></span></div>
+        <div><span class="ctl-label">Wrong ideas</span><span class="seg" id="cv-mis"><button type="button" aria-pressed="true" data-v="show">Show</button><button type="button" aria-pressed="false" data-v="hide">Hide</button></span></div>
+        <div><span class="ctl-label">Model answer</span><span class="seg" id="cv-model-show"><button type="button" aria-pressed="false" data-v="show">Show</button><button type="button" aria-pressed="true" data-v="hide">Hide</button></span></div>
+      </div>
+      <details class="cv-model-entry">
+        <summary>Paste this checkpoint's model answer</summary>
+        <p class="small">Model answers live in AndersonLogic-OS, <b>04_PRODUCTS/BeHistorical/Assessments/Class-Pulse-Model-Answers/</b>, never in this public site, where students could find them. Copy the one for this topic and checkpoint and paste it here. Write one paragraph per criterion, separated by a blank line, and the paragraph for the criterion being revisited is highlighted. It is kept on this computer only.</p>
+        <textarea id="cv-model-text" rows="6" aria-label="Model answer for this checkpoint"></textarea>
+      </details>
+      <p class="small" id="cv-teacher-note" role="status"></p>
+    </div>
+    <div class="cv" id="cv"></div>
   </section>
 
   <section class="view" id="view-course" role="tabpanel" aria-labelledby="tab-course" hidden>

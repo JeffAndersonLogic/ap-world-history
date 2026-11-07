@@ -513,6 +513,34 @@ side's own `receiptCoached`, with three negative controls. `class-pulse-page.tes
 proves My class splits Checkpoint 2 by the note, with one negative control. The privacy
 page says what the note records.
 
+### Class view, added 2026-11-07
+
+**What it is.** A Class Pulse tab for projecting at the start of a feedback session. For
+the chosen checkpoint it shows the prompt, how many answers are in and read, a bar per
+criterion, the criterion to revisit (the highest share not demonstrating, once three
+answers are read) with the criterion's own rubric line when one is written, up to three
+wrong ideas, and a model answer when the teacher presses Show.
+
+**What it never shows.** No name, even with names switched on, and no "Student 01", since
+a number in list order can be decoded. No student's words: wrong ideas pass through
+`unquoted`, which replaces anything in quotation marks with an ellipsis. Nothing on it
+opens an answer.
+
+**Model answers stay out of this repository.** They hold answers, and every file here is
+public (`scripts/test/no-answer-keys.test.js`). They are written in AndersonLogic-OS,
+`04_PRODUCTS/BeHistorical/Assessments/Class-Pulse-Model-Answers/`, one paragraph per
+criterion, and the teacher pastes one into Class view, where it is kept on that computer
+only (`localStorage`, `class-pulse-model-<topic>-<checkpoint>`). When the paragraph count
+matches the criteria, the revisited criterion's paragraph is highlighted.
+
+**Students still writing.** The teacher-only line above the view says how many have not
+submitted, and warns that they will see the model answer before they write.
+
+**Checks.** `class-pulse-page.test.js`: no name, no answer text, a revisit criterion,
+nothing clickable, the pasted model answer and its highlight, Hide, the teacher line, and
+quoted words stripped from a pasted reply's wrong idea, with three negative controls. The
+privacy page describes it.
+
 ### Class Pulse readers and calibration, added 2026-10-29
 
 **Which AI reads the work is a setting.** `teacher/data/class-pulse-readers.js` lists the

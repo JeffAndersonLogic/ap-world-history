@@ -66,6 +66,7 @@
 
   const TOPICS = E.topicsFor(MAP);
   const S = {
+    cvCp: 'cp1', cvMis: 'show', cvModel: 'hide',
     tab: 'live', topic: TOPICS.includes('3.2') ? '3.2' : TOPICS[0], section: 'S2',
     minute: 31, playing: false, timer: null, names: 'names', sort: 'roster', cmetric: 'ev', stu: 0,
     overrides: new Map(), loadToken: 0, reader: 'invented',
@@ -764,18 +765,95 @@
     $('#stright').innerHTML = r;
   }
 
+  // ── Class view ────────────────────────────────────────────────────────────
+  // Added 2026-11-07 (Jeff): a screen to project at the start of class. It shows
+  // the class as a whole and never one student: no names, no "Student 01" (a
+  // number in list order can be decoded), no answer text, no groups, and nothing
+  // that opens an answer. Wrong ideas are shown with any words quoted from a
+  // student taken out. The model answer is pasted in by the teacher from
+  // AndersonLogic-OS, because anything holding answers stays out of this public
+  // repository (scripts/test/no-answer-keys.test.js), and it is kept on that
+  // computer only.
+  const CV_MIN_READ = 3;
+  const modelKey = () => 'class-pulse-model-' + S.topic + '-' + S.cvCp;
+  const modelMemory = new Map(); // this page load, for a browser that refuses storage
+  function modelText() {
+    if (modelMemory.has(modelKey())) return modelMemory.get(modelKey());
+    try { return localStorage.getItem(modelKey()) || ''; } catch (_) { return ''; }
+  }
+  // "Claims Africans were "enslaved by other countries," but..." -> the quoted
+  // words become an ellipsis, so a classmate cannot recognize whose answer it was.
+  function unquoted(m) { return String(m).replace(/"[^"]*"|\u201c[^\u201d]*\u201d|'[^']{12,}'/g, '\u2026').replace(/\s+/g, ' ').trim(); }
+  function renderClass() {
+    const box = $('#cv'); if (!box) return;
+    const cp = S.cvCp, contract = D.contracts[cp], cols = D.cols.filter(c => c.cp === cp);
+    const n = D.students.length;
+    const inCount = D.students.filter(st => st.submittedAt[cp] != null).length;
+    const tallies = cols.map(c => {
+      const t = { c, D: 0, P: 0, N: 0, read: 0 };
+      D.students.forEach(st => { const b = endBand(st, c); if (b === 'D' || b === 'P' || b === 'N') { t[b]++; t.read++; } });
+      return t;
+    });
+    const read = Math.max(0, ...tallies.map(t => t.read));
+    let weakest = null;
+    tallies.forEach(t => { if (t.read >= CV_MIN_READ) { const r = (t.P + t.N) / t.read; if (!weakest || r > weakest.r) weakest = { t, r }; } });
+
+    // Teacher-only line above the projected area.
+    const missing = n - inCount;
+    $('#cv-teacher-note').textContent = !n ? 'No students loaded yet.'
+      : (missing ? `${missing} of ${n} have not submitted ${CP_NAME[cp]} yet. ` : `Everyone has submitted ${CP_NAME[cp]}. `)
+        + (missing && S.cvModel === 'show' ? 'Anyone who has not submitted will see the model answer before they write, so read their answers knowing that.' : '')
+        + (read < CV_MIN_READ ? ` Fewer than ${CV_MIN_READ} answers have been read, so there is no criterion to revisit yet.` : '');
+    if (document.activeElement !== $('#cv-model-text')) $('#cv-model-text').value = modelText();
+
+    let h = `<header class="cv-head"><span class="eyebrow">Topic ${esc(title(S.topic))} · ${CP_NAME[cp]}</span><p class="cv-prompt">${esc(contract.prompt)}</p>
+      <p class="cv-count">${inCount} of ${n} answers in${read ? ` · ${read} read` : ''}</p></header>`;
+    h += '<section class="cv-block"><h3>How the class did</h3>' + tallies.map(t => {
+      const hot = weakest && weakest.t === t;
+      const bar = t.read ? `<div class="stack m-rn">${['N', 'P', 'D'].map(k => t[k] ? `<i class="b-${k}" style="flex:${t[k]}" title="${BANDS[k]}: ${t[k]}">${t[k]}</i>` : '').join('')}</div>` : '<p class="small">Not read yet.</p>';
+      return `<div class="cv-crit${hot ? ' cv-hot' : ''}"><div class="cv-crit-text"><b>Criterion ${t.c.ci + 1}</b> ${esc(t.c.text)}</div>${bar}</div>`;
+    }).join('') + `<p class="cv-legend m-rn"><span><i class="cell b-D">D</i>${BANDS.D}</span><span><i class="cell b-P">P</i>${BANDS.P}</span><span><i class="cell b-N">N</i>${BANDS.N}</span></p></section>`;
+
+    if (weakest) {
+      const c = weakest.t.c, crit = contract.criteria[c.ci], ruled = crit && crit.rubric;
+      // Only a rubric written for this criterion; the course-wide level text is too
+      // general to teach from, and the model answer covers that case.
+      const strong = (ruled && ruled.D) || '';
+      h += `<section class="cv-block cv-revisit"><h3>Let's revisit criterion ${c.ci + 1}</h3><p class="cv-big">${esc(c.text)}</p>`
+        + `<p>${weakest.t.P + weakest.t.N} of ${weakest.t.read} answers read are not there yet on this one: ${weakest.t.P} partly there, ${weakest.t.N} not yet.</p>`
+        + (strong ? `<p class="cv-strong"><b>A strong answer:</b> ${esc(strong)}</p>` : '') + '</section>';
+    }
+
+    if (S.cvMis === 'show') {
+      const mis = new Map();
+      D.results[cp].forEach(e => e.result.criteria.forEach(c => c.misconceptions.forEach(m => { const k = unquoted(m); if (k) mis.set(k, (mis.get(k) || 0) + 1); })));
+      const top = [...mis.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3);
+      h += '<section class="cv-block"><h3>Wrong ideas to fix</h3>' + (top.length ? '<ul class="cv-mis">' + top.map(([m]) => `<li>${esc(m)}</li>`).join('') + '</ul>' : '<p>None found in the answers read so far.</p>') + '</section>';
+    }
+
+    if (S.cvModel === 'show') {
+      const paras = modelText().split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+      const mark = paras.length === cols.length && weakest ? weakest.t.c.ci : -1;
+      h += '<section class="cv-block cv-model"><h3>A model answer</h3>' + (paras.length
+        ? paras.map((x, i) => `<p${i === mark ? ' class="cv-hot"' : ''}>${esc(x)}</p>`).join('')
+        : '<p class="small">No model answer pasted for this checkpoint yet.</p>') + '</section>';
+    }
+    box.innerHTML = h;
+  }
+
   // ── Wiring ────────────────────────────────────────────────────────────────
   function renderAll() {
     renderLive();
+    if (S.tab === 'class') renderClass();
     if (S.tab === 'pulse') renderPulse();
     if (S.tab === 'course') renderCourse();
     if (S.tab === 'student') renderStudent();
   }
   function setTab(t) {
-    if (!['live', 'pulse', 'course', 'student'].includes(t)) t = 'live';
+    if (!['live', 'pulse', 'course', 'student', 'class'].includes(t)) t = 'live';
     if (S.source === 'live' && (t === 'course' || t === 'student')) t = 'live';
     S.tab = t;
-    ['live', 'pulse', 'course', 'student'].forEach(x => { $('#view-' + x).hidden = x !== t; $('#tab-' + x).setAttribute('aria-selected', x === t); });
+    ['live', 'pulse', 'course', 'student', 'class'].forEach(x => { $('#view-' + x).hidden = x !== t; $('#tab-' + x).setAttribute('aria-selected', x === t); });
     if (D) renderAll();
     try { history.replaceState(null, '', '#' + t); } catch (_) { /* file:// or a sandbox */ }
   }
@@ -815,6 +893,14 @@
   seg('#names', 'names', renderAll);
   seg('#sort', 'sort', renderLive);
   seg('#cmetric', 'cmetric', renderCourse);
+  seg('#cv-cp', 'cvCp', renderClass);
+  seg('#cv-mis', 'cvMis', renderClass);
+  seg('#cv-model-show', 'cvModel', renderClass);
+  $('#cv-model-text').addEventListener('input', e => {
+    modelMemory.set(modelKey(), e.target.value);
+    try { localStorage.setItem(modelKey(), e.target.value); } catch (_) { /* a private window: kept until the page reloads */ }
+    if (S.cvModel === 'show') renderClass();
+  });
   $('#play').addEventListener('click', () => { if (S.playing) { stop(); renderLive(); } else play(); });
   $('#toend').addEventListener('click', () => { stop(); S.minute = END; renderLive(); });
   $('#reset').addEventListener('click', () => { stop(); S.minute = 0; renderLive(); });
