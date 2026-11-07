@@ -273,3 +273,11 @@ select.sel{max-width:100%;text-overflow:ellipsis}
 .live-panel .row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
 nav.tabs button:disabled{opacity:.45;cursor:default}
 #paste-panel > .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* Coached and not coached (After class), 2026-11-07 */
+.coach-cmp{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0}
+.coach-cmp th,.coach-cmp td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.coach-cmp thead th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.coach-cmp tbody th{font-weight:600;max-width:340px}
+.coach-cmp tbody th small{display:block;font-weight:400;color:var(--muted);font-size:11px;margin-top:2px}
+.coach-cmp td{white-space:nowrap}

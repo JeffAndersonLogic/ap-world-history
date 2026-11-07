@@ -197,7 +197,8 @@
     const students = roster.map((st, i) => ({
       i, name: st.label, uid: st.uid, section: st.section || '', absent: false, strength: .5,
       submittedAt: { cp1: rows.cp1[i].completionState === 'verified-submission' ? 0 : null, cp2: rows.cp2[i].completionState === 'verified-submission' ? 0 : null },
-      confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence }
+      confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence },
+      coached: { cp1: !!rows.cp1[i].coached, cp2: !!rows.cp2[i].coached }
     }));
     // A saved rating counts only for the very answer it was made from.
     const byText = new Map(), readBy = new Map();
@@ -414,6 +415,7 @@
     h += `<div class="verdict"><div class="row m-rn"><span class="cell b-${prop}">${LETTER[prop]}</span><b>The tool proposes: ${BANDS[prop]}</b></div><p class="small">${esc(crit.reason)}</p>`;
     const by = D.readBy.get(col.cp + '|' + si);
     if (by) h += `<p class="small read-by">Read by <b>${esc(by)}</b>, pasted.</p>`;
+    if (coachedOf(st, col.cp)) h += '<p class="small coached-note">Submitted after copying the AI Coach prompt.</p>';
     // What this level means here, from the same rubric the provider was given.
     const ruled = D.contracts[col.cp].criteria[col.ci].rubric;
     const meaning = ruled && ruled[prop] ? ruled[prop] : D.contracts[col.cp].levels && D.contracts[col.cp].levels[prop];
@@ -502,7 +504,43 @@
         list('Stretch', g.D, 'Add another example or write the strongest counterargument.') +
         (g.other.length ? `<p class="small" style="grid-column:1/-1">Not placed (not submitted, not read yet, or the tool could not tell): ${g.other.map(st => esc(shown(st))).join(', ')}</p>` : '');
     }
+    renderCoached();
     renderScatter();
+  }
+
+  // Coached and not coached, added 2026-11-07 (Jeff). Splits each Checkpoint 2
+  // criterion by whether the student copied the AI Coach prompt before submitting
+  // (the receipt's note, class-pulse-live.js receiptCoached). Copying the prompt is
+  // not proof the student used the coaching, and a small group proves nothing, so
+  // both are said on screen. Only answers that were read count; missing, not read
+  // yet and Can't tell are left out of both groups.
+  const COACH_MIN = 5;
+  function coachedOf(st, cp) { return !!(st.coached && st.coached[cp]); }
+  function renderCoached() {
+    const box = $('#coached');
+    if (!box) return;
+    const cp = 'cp2';
+    const sub = D.students.filter(st => st.submittedAt[cp] != null);
+    const yes = sub.filter(st => coachedOf(st, cp)).length;
+    let h = `<p class="small">${yes} of ${sub.length} Checkpoint 2 submissions came after the student copied the AI Coach prompt. Copying it is not proof they used the coaching, only that they started to.</p>`;
+    if (!sub.length) { box.innerHTML = h; return; }
+    const pct = (d, n) => n ? Math.round(d / n * 100) + '%' : '&ndash;';
+    let thin = false;
+    h += '<table class="coach-cmp"><thead><tr><th scope="col">Criterion</th><th scope="col">Coached</th><th scope="col">Not coached</th></tr></thead><tbody>';
+    D.cols.filter(c => c.cp === cp).forEach(c => {
+      const g = { true: { d: 0, n: 0 }, false: { d: 0, n: 0 } };
+      D.students.forEach(st => {
+        const b = endBand(st, c);
+        if (!['D', 'P', 'N'].includes(b)) return;
+        const x = g[coachedOf(st, cp)]; x.n++; if (b === 'D') x.d++;
+      });
+      if (g.true.n < COACH_MIN || g.false.n < COACH_MIN) thin = true;
+      const cell = x => `<td><b>${pct(x.d, x.n)}</b> <span class="small">${x.d} of ${x.n}</span></td>`;
+      h += `<tr><th scope="row">Criterion ${c.ci + 1}<small>${esc(c.text)}</small></th>${cell(g.true)}${cell(g.false)}</tr>`;
+    });
+    h += '</tbody></table><p class="small">Each number is the share demonstrating, out of the answers that were read.' +
+      (thin ? ` <b>A group under ${COACH_MIN} is too small to compare</b>: wait for more classes or more topics before reading anything into a gap.` : '') + '</p>';
+    box.innerHTML = h;
   }
   function renderScatter() {
     const W = 300, H = 220, pl = 34, pr = 10, pt = 10, pb = 34;

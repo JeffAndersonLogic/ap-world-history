@@ -105,6 +105,9 @@
   function roster(sectionId, topicKey) {
     const section = SECTIONS.find(s => s.id === sectionId) || SECTIONS[1];
     const rnd = mulberry32(seedOf(section.id + '|' + topicKey));
+    // Its own sequence, so adding the coaching note left every other invented
+    // value where it was. Invented like the rest: who copied the coach prompt.
+    const coachRnd = mulberry32(seedOf('coach|' + section.id + '|' + topicKey));
     return NAMES.slice(0, section.size).map((name, i) => {
       const strength = Math.min(.97, Math.max(.06, .2 + rnd() * .7 + (rnd() - .5) * .15));
       const conf = () => rnd() < .1 ? '' : String(Math.min(5, Math.max(1, Math.round(1 + strength * 4 + (rnd() - .5) * 1.8))));
@@ -115,7 +118,9 @@
         variant: { cp1: rnd() < .5 ? 'A' : 'B', cp2: rnd() < .5 ? 'A' : 'B' },
         confidence: { cp1: conf(), cp2: conf() },
         // Minutes into a 52-minute period. Checkpoint 2 can be left for home.
-        submittedAt: { cp1: absent ? null : 17 + rnd() * 10 + slow, cp2: absent || rnd() < .12 ? null : Math.min(51.5, 41 + rnd() * 9 + slow * .5) }
+        submittedAt: { cp1: absent ? null : 17 + rnd() * 10 + slow, cp2: absent || rnd() < .12 ? null : Math.min(51.5, 41 + rnd() * 9 + slow * .5) },
+        // Checkpoint 1 has no coach, so only Checkpoint 2 can carry the note.
+        coached: { cp1: false, cp2: coachRnd() < .6 }
       };
     });
   }

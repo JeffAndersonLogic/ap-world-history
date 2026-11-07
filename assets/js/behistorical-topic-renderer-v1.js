@@ -2900,7 +2900,10 @@ function copyCheckpointPrompt(responseId) {
     return;
   }
   navigator.clipboard.writeText(previewEl.textContent)
-    .then(() => { if (resultEl) resultEl.textContent = 'Prompt copied, paste it into the BeHistorical AI Coach.'; })
+    .then(() => {
+      noteCoachCopied(responseId);
+      if (resultEl) resultEl.textContent = 'Prompt copied, paste it into the BeHistorical AI Coach.';
+    })
     .catch(() => { if (resultEl) resultEl.textContent = 'Copy failed. Select and copy the prompt text above manually.'; });
 }
 
@@ -3061,6 +3064,27 @@ function submittedAnswer(id) {
   return { text: text, confidence: confidenceFor(id) };
 }
 
+// The coaching note, added 2026-11-07 (Jeff). Copying the AI Coach prompt for a
+// checkpoint leaves a mark on this device, and a Submit made after it says so in
+// the receipt: "Submitted Nov 7, 9:14 AM · AI Coach prompt copied · fingerprint
+// k2j3h4". Class Pulse reads that phrase to compare coached and uncoached answers.
+// It records only that the prompt was copied, never the conversation, which stays
+// in MagicSchool, so it is worded as what it is. It needs no new slot and no rules
+// change, because the receipt slot already exists, and the student sees the note
+// in their own Submitted line. The key sits outside the draft prefix, so it never
+// reaches the Canvas paste.
+const COACH_NOTE = 'AI Coach prompt copied';
+
+function coachKey(id) {
+  const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
+  return `behistorical-coached-${topic}-${id}`;
+}
+
+function noteCoachCopied(id) {
+  if (SUBMIT_IDS.indexOf(id) === -1) return;
+  BHDraftStore.set(coachKey(id), new Date().toISOString());
+}
+
 function receiptFor(id) {
   const raw = String(BHDraftStore.get(submitKey(id)) || '');
   const m = /fingerprint ([0-9a-z]+)\s*$/.exec(raw);
@@ -3087,7 +3111,8 @@ function submitCheckpoint(id) {
   // look sees the same words the receipt was made from.
   BHDraftStore.set(draftKey(id), (byId(id) || {}).value || answer.text);
   const when = new Date().toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
-  BHDraftStore.set(submitKey(id), `Submitted ${when} · fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}`);
+  const coached = BHDraftStore.get(coachKey(id)) ? ` · ${COACH_NOTE}` : '';
+  BHDraftStore.set(submitKey(id), `Submitted ${when}${coached} · fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}`);
   updateSubmitStatus(id);
 }
 

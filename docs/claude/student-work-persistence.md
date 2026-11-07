@@ -480,6 +480,39 @@ fingerprint, the receipt reaching the backup, the teacher's reading of it, edits
 and rating changes reading as changed, and a wiped device getting the receipt back
 with the answer. Five negative controls.
 
+### The coaching note, added 2026-11-07
+
+**What it records.** When a student copies the AI Coach prompt for a checkpoint
+(`copyCheckpointPrompt` in the unit renderer, on a successful copy only), the renderer
+keeps a mark under `behistorical-coached-<topic>-<id>`, outside the draft prefix, so it
+never reaches the Canvas paste. A Submit made after that writes the receipt as
+`Submitted Nov 7, 9:14 AM · AI Coach prompt copied · fingerprint k2j3h4`. The student
+sees the note in their own Submitted line. Only Checkpoint 2 has a coach, so in practice
+only Checkpoint 2 carries it.
+
+**Why the receipt and not a new slot.** The receipt slot already exists and the teacher
+may already read it, so the note needed no new slot, no backup engine change and no
+Firestore rules change. The fingerprint stays last, so every older reader of a receipt
+still works.
+
+**What the teacher sees.** `receiptCoached` in `teacher/class-pulse-live.js` reads the
+note, and only for an answer whose receipt still matches it. After class shows
+**Coached and not coached**: for each Checkpoint 2 criterion, the share demonstrating
+among read answers in each group, a warning when a group is under five, and the plain
+statement that copying the prompt is not proof the student used the coaching. The
+response drawer says "Submitted after copying the AI Coach prompt."
+
+**What it cannot tell you.** It does not see the MagicSchool conversation, so it cannot
+tell a student who copied the prompt and ignored the reply from one who revised. A
+student who copies on one device and submits on another loses the note, because the
+mark is not backed up.
+
+**Checks.** `class-pulse-submit.test.js` (browser) proves the note appears only after a
+copy, reaches the backup, stays out of Gather All My Work, and is read by the teacher
+side's own `receiptCoached`, with three negative controls. `class-pulse-page.test.js`
+proves My class splits Checkpoint 2 by the note, with one negative control. The privacy
+page says what the note records.
+
 ### Class Pulse readers and calibration, added 2026-10-29
 
 **Which AI reads the work is a setting.** `teacher/data/class-pulse-readers.js` lists the

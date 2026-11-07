@@ -15,6 +15,7 @@
  *     matches, "not read yet" until a rating is saved, copying locked until the
  *     district approves, and once approved a pasted reply saved to the database
  *     with no student name in it and shown again on the next pull;
+ *   - the receipt's coaching note splits Checkpoint 2 into coached and not coached;
  *   - projector-safe mode leaves no student name on the grid;
  *   - after-class bars count every student, including anyone who did not submit;
  *   - the Reader menu offers an AI reader only where it has recorded readings, and
@@ -94,6 +95,13 @@ function liveStore(multi) {
   ans('ben1', 'checkpoint-one-response', 'The devshirme took boys, and I changed this after submitting.', 3);
   ans('ben1', 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:20 AM · fingerprint ' + Sync.valueHash('The devshirme took boys.', '3'));
   ans('cal1', 'checkpoint-one-response', 'Half an', '');
+  // Checkpoint 2: Ana copied the AI Coach prompt before submitting, Ben did not
+  // (the receipt's coaching note, 2026-11-07).
+  const ANA2 = 'Plantations needed year-round labor, so slavery became hereditary and tied to race.';
+  ans('ana1', 'checkpoint-two-response', ANA2, 3);
+  ans('ana1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:02 AM · AI Coach prompt copied · fingerprint ' + Sync.valueHash(ANA2, '3'));
+  ans('ben1', 'checkpoint-two-response', 'The mita sent workers to Potosi.', 2);
+  ans('ben1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:05 AM · fingerprint ' + Sync.valueHash('The mita sent workers to Potosi.', '2'));
   return { P, docs, commits, requests, googleLoaded: false };
 }
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'authorization,content-type', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS' };
@@ -356,6 +364,9 @@ async function suite(browser) {
     store.requests.length > 0 && !store.requests.some(r => /responses:runQuery|POST .*responses/.test(r)), store.requests.slice(0, 4).join(' ; '));
   check('Across the course and One student are off in My class', await L.p.$eval('#tab-course', b => b.disabled) && await L.p.$eval('#tab-student', b => b.disabled));
   await L.p.click('#tab-pulse');
+  const coachedText = await L.p.$eval('#coached', e => e.textContent).catch(() => '');
+  check('the coaching note splits Checkpoint 2 into coached and not coached', /1 of 2 Checkpoint 2 submissions came after the student copied the AI Coach prompt/.test(coachedText), coachedText.slice(0, 140));
+  check('and says copying the prompt is not proof of coaching', /not proof they used the coaching/.test(coachedText));
   check('with the approval off, copying real answers stays locked', /Locked/.test(await L.p.$eval('#paste-batches', e => e.textContent)) && (await L.p.$$('#paste-batches [data-copy]')).length === 0);
   check('My class raises no script error', L.errors.length === 0, L.errors.join(' | '));
   await L.context.close();
@@ -452,6 +463,7 @@ async function suite(browser) {
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
     { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },
     { name: 'the class menu is ignored', file: 'teacher/class-pulse-app.js', from: 'return S.liveSection ? R.students.filter(st => st.section === S.liveSection) : R.students;', to: 'return R.students;', expect: /only that class|only its own/ },
+    { name: 'the coaching note is never read', file: 'teacher/class-pulse-live.js', from: "coached: state === 'verified-submission' && receiptCoached(receiptText),", to: 'coached: false,', expect: /coaching note splits/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];
   let controlFailures = 0;

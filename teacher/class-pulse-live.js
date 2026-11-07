@@ -12,7 +12,8 @@
  *   roster()            the class list: { classLabel, sections, students: [{ uid, label, section }] }
  *   answers(topic, ids) each student's Checkpoint 1 and 2 answer with its Submit
  *                       receipt, as rows the engine reads. Only an answer whose
- *                       receipt still matches it counts as submitted.
+ *                       receipt still matches it counts as submitted, and only
+ *                       such an answer can be marked coached.
  *   ratings(topic)      the ratings this teacher has saved for the topic
  *   saveRatings(list)   saves ratings, ten to a request
  *
@@ -35,8 +36,12 @@
   // '3.2' -> '3-2', the shape the backup stores.
   function topicKey(t) { return String(t).trim().toLowerCase().replace(/^topic\s+/, '').replace(/\./g, '-'); }
 
-  // The receipt reads "Submitted Oct 31, 9:14 AM · fingerprint k2j3h4".
+  // The receipt reads "Submitted Oct 31, 9:14 AM · fingerprint k2j3h4", with
+  // " · AI Coach prompt copied" before the fingerprint when the student copied the
+  // Socrates prompt before submitting (the unit renderer's COACH_NOTE, 2026-11-07).
   function receiptPrint(text) { const m = /fingerprint ([0-9a-z]+)\s*$/.exec(String(text || '')); return m ? m[1] : ''; }
+  const COACH_NOTE = 'AI Coach prompt copied';
+  function receiptCoached(text) { return String(text || '').split(/\s*·\s*/).slice(1, -1).indexOf(COACH_NOTE) !== -1; }
 
   function create(o) {
     // o.projectId, o.tenantId, o.getUser() -> { uid }, o.getToken() -> Promise<token>,
@@ -111,12 +116,16 @@
         jobs.forEach((j, n) => {
           const a = got[n].answer, f = (a && a.fields) || {};
           const text = str(f.text).trim(), confidence = conf(f.confidence);
-          const print = receiptPrint(got[n].receipt && str(got[n].receipt.fields && got[n].receipt.fields.text));
+          const receiptText = got[n].receipt && str(got[n].receipt.fields && got[n].receipt.fields.text);
+          const print = receiptPrint(receiptText);
           const fingerprint = text ? o.valueHash(text, confidence) : '';
           const state = !text ? 'missing' : print && print === fingerprint ? 'verified-submission' : 'completion-unverified';
           rows[j.cp].push({
             key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint,
             completionState: state, changedSinceSubmit: !!(print && text && print !== fingerprint),
+            // Only a current submission carries the note: what the teacher compares
+            // is the answer that was read.
+            coached: state === 'verified-submission' && receiptCoached(receiptText),
             updatedAt: (a && a.updateTime) || ''
           });
         });
@@ -169,5 +178,5 @@
     };
   }
 
-  return { SLOTS, READER, topicKey, receiptPrint, create };
+  return { SLOTS, READER, COACH_NOTE, topicKey, receiptPrint, receiptCoached, create };
 });

@@ -17,7 +17,10 @@
  *     Canvas paste;
  *   - editing the answer or its rating afterwards reads as "changed", locally
  *     and to the teacher;
- *   - a wiped device gets the receipt back with the answer.
+ *   - a wiped device gets the receipt back with the answer;
+ *   - copying the AI Coach prompt before Submit adds "AI Coach prompt copied" to
+ *     the receipt, which the teacher side's own reader finds, and nothing else
+ *     does; the note never reaches the Canvas paste.
  *
  *   npm i --no-save playwright-core
  *   node scripts/test/class-pulse-submit.test.js
@@ -106,6 +109,8 @@ window.BHSyncTransport = { create: function () {
 } };`;
 
 const PAGE = '/unit-1/lesson-1-3-south-southeast-asia.html';
+// The teacher side's own reader of a receipt, so the two cannot drift apart.
+const require_live = require(path.join(ROOT, 'teacher', 'class-pulse-live.js'));
 // What actually ships, read from the source rather than the page the test patches.
 const SHIPPED_ON = /submit:\s*true,/.test(require('fs').readFileSync(require('path').join(__dirname, '..', 'lib', 'sync-config.js'), 'utf8'));
 const CP1 = 'checkpoint-one-response';
@@ -207,6 +212,35 @@ async function suite(browser) {
     await s.context.close();
   }
 
+  section('The coaching note');
+  {
+    const CP2 = 'checkpoint-two-response';
+    const s = await open(browser);
+    await saved(s.p);
+    // Headless Chromium has no clipboard to write to; the copy itself is not
+    // what is under test.
+    await s.p.evaluate(() => { navigator.clipboard.writeText = () => Promise.resolve(); });
+    await s.p.evaluate(() => openModule('checkpoint1'));
+    await s.p.fill('#' + CP1, ANSWER);
+    await pressSubmit(s.p);
+    const plain = await s.p.evaluate(k => localStorage.getItem(k), RECEIPT_KEY);
+    check('a checkpoint submitted without the coach carries no coaching note', !!plain && !/AI Coach/.test(plain), plain);
+    await s.p.evaluate(() => { closeModule(); openModule('checkpoint2'); });
+    await s.p.fill('#' + CP2, ANSWER);
+    await s.p.evaluate(id => { generateCheckpointPrompt(id); copyCheckpointPrompt(id); }, CP2);
+    await waitFor(s.p, id => /Prompt copied/.test((document.getElementById(id + '-ms-result') || {}).textContent || ''), CP2);
+    await s.p.evaluate(id => document.getElementById(id + '-submit-btn').click(), CP2);
+    const coached = await s.p.evaluate(k => localStorage.getItem(k), 'behistorical-submit-topic-1.3-' + CP2);
+    const print = await s.p.evaluate(t => window.BHSync.valueHash(t, ''), ANSWER);
+    check('copying the coach prompt before Submit puts the note in the receipt', !!coached && / · AI Coach prompt copied · fingerprint /.test(coached) && coached.endsWith('fingerprint ' + print), coached);
+    check('and the student sees it in their Submitted line', await s.p.evaluate(id => /AI Coach prompt copied/.test(document.getElementById(id + '-submit-status').textContent), CP2));
+    check('the coaching note stays out of Gather All My Work', await s.p.evaluate(() => !collectLessonWork().some(w => /coached|AI Coach prompt copied/.test(w.id + ' ' + w.text))));
+    await waitFor(s.p, id => !!window.__fake.docs[id + '-submitted'], CP2, 6000);
+    const teacher = await s.p.evaluate(id => (window.__fake.docs[id + '-submitted'] || {}).text || '', CP2);
+    check('the teacher side reads the backed-up receipt as coached', require_live.receiptCoached(teacher) && require_live.receiptPrint(teacher) === print, teacher);
+    await s.context.close();
+  }
+
   section('A wiped device');
   {
     const s = await open(browser, { docs: receiptDocs || {} });
@@ -233,6 +267,9 @@ async function suite(browser) {
     { name: 'receipts are not handed to the backup', patch: b => b.replace('.concat(submitSlots())', ''), expect: /reaches the backup as its own slot/ },
     { name: 'receipts are stored under the draft prefix', patch: b => b.replace('return `behistorical-submit-${topic}-${id}`;', 'return `behistorical-draft-${topic}-${id}-submitted`;'), expect: /stays out of Gather All My Work/ },
     { name: 'the fingerprint leaves out the rating', patch: b => b.replace('fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}', "fingerprint ${window.BHSync.valueHash(answer.text, '')}"), expect: /fingerprints the trimmed answer|teacher reading the backup sees it as submitted/ },
+    { name: 'copying the coach prompt leaves no note', patch: b => b.replace('      noteCoachCopied(responseId);\n', ''), expect: /puts the note in the receipt/ },
+    { name: 'every receipt says coached', patch: b => b.replace('const coached = BHDraftStore.get(coachKey(id)) ?', 'const coached = true ?'), expect: /without the coach carries no coaching note/ },
+    { name: 'the coaching note is kept under the draft prefix', patch: b => b.replace('return `behistorical-coached-${topic}-${id}`;', 'return `behistorical-draft-${topic}-${id}-coached`;'), expect: /coaching note stays out of Gather/ },
     { name: 'a restored receipt is dropped', patch: b => b.replace('  if (id.slice(-SUBMIT_SUFFIX.length) === SUBMIT_SUFFIX) {', '  if (false) {'), expect: /restored device shows it submitted/ }
   ];
   const source = fs.readFileSync(path.join(ROOT, 'assets/js/behistorical-topic-renderer-v1.js'), 'utf8')
