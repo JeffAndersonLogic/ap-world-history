@@ -93,10 +93,10 @@
       cardDesc: "Why Muhammad Ali's government built factories, what it built and how it paid for it, and why most of the factories closed.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: "Answer in three steps. (1) Explain ONE reason Muhammad Ali's government decided to build factories itself. (2) Describe what it built, and how it paid for it, with one detail from the lesson. (3) Explain why most of the factories closed: give ONE cause from outside Egypt and ONE cause from inside Egypt.",
+      prompt: "Answer in three steps. (1) Choose ONE government that built factories itself, for example Muhammad Ali's Egypt, and explain ONE reason it decided to. (2) Describe what it built, and how it paid for it, with one detail from the lesson. (3) Explain what happened to those factories and why: give ONE cause from outside the country and ONE cause from inside it.",
       responseType: "Checkpoint 1",
       terms: ["Muhammad Ali", "governor", "Ottoman", "sultan", "Napoleon", "1798", "family", "army", "cotton", "long-staple", "monopoly", "crops", "peasants", "factories", "mills", "30", "30,000", "drafted", "1822", "130,000", "machines", "experts", "Europe", "Syria", "1831", "1838", "treaty", "1840", "1841", "18,000", "coal", "animals", "managers", "resisted", "closed", "failed"],
-      focus: ["Explain one reason the government built factories.", "Describe what it built and how it paid for it.", "Give one cause of the result from outside Egypt and one from inside."]
+      focus: ["Explain one reason the government built factories.", "Describe what it built and how it paid for it.", "Give one cause of the result from outside the country and one from inside."]
     },
     {
       title: "Checkpoint 2: Japan's Chain, and the Pattern",
@@ -104,11 +104,11 @@
       cardDesc: "How pressure from the United States and Europe led to Meiji reforms, state industry and regional power, and what pattern Japan shares with Egypt.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain Japan's economic strategy as a chain of causes and effects, then compare it with Egypt's. (1) Say what pressure the United States and Europe put on Japan. (2) Name ONE Meiji reform and explain how it supported industry. (3) Give ONE example of industry the government built, and say what happened to its businesses after 1880. (4) Give ONE piece of evidence that Japan became a regional power. (5) Name ONE link Japan's chain shares with Egypt's (the pattern) and ONE difference in what happened next.",
+      prompt: "Explain Japan's economic strategy as a chain of causes and effects, then compare it with another government that built industry itself, for example Egypt's. (1) Say what pressure the United States and Europe put on Japan. (2) Name ONE Meiji reform and explain how it supported industry. (3) Give ONE example of industry the government built, and say what happened to its businesses after 1880. (4) Give ONE piece of evidence that Japan became a regional power. (5) Name ONE link Japan's chain shares with the other government's, for example Egypt's (the pattern), and ONE difference in what happened next.",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["Perry", "1853", "warships", "unequal treaty", "treaties", "courts", "trade", "Meiji", "1868", "Charter Oath", "samurai", "domains", "1871", "land tax", "schools", "army", "drafted", "Iwakura", "railway", "1872", "Tomioka", "silk", "shipyards", "1880", "sold", "private", "Mitsui", "Mitsubishi", "zaibatsu", "1894", "1895", "China", "Korea", "Taiwan", "regional power", "both", "pattern", "Egypt", "coal", "never conquered"],
-      focus: ["Name the outside pressure.", "Explain how one reform supported industry.", "Give one example of state industry and what happened after 1880.", "Give evidence of regional power.", "Name the pattern Japan shares with Egypt and one difference."]
+      focus: ["Name the outside pressure.", "Explain how one reform supported industry.", "Give one example of state industry and what happened after 1880.", "Give evidence of regional power.", "Name the pattern Japan shares with another state-built industry, for example Egypt's, and one difference."]
     }
   ];
 

@@ -307,7 +307,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Module 06 is required. Checkpoint 1 assesses Target 1 (KC-5.1.V.C): why Muhammad Ali\'s government built industry, what it did, and two causes of the result, one from outside Egypt and one from inside.'
+          'Module 06 is required. Checkpoint 1 assesses Target 1 (KC-5.1.V.C): why a government built industry itself (for example Muhammad Ali\'s Egypt), what it did, and two causes of the result, one from outside the country and one from inside.'
         ],
         ask: 'Which cause from outside Egypt did you use, and which from inside?',
         listenFor: 'The 1840 and 1841 settlement or the 1838 treaty; missing coal, drafted workers or new managers.'
