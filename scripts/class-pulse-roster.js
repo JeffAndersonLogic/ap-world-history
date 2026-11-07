@@ -173,21 +173,34 @@ function report(opts, p) {
   return lines.join('\n');
 }
 
+// firebase-admin through its per-service entry points (firebase-admin/app, /auth,
+// /firestore), which every version since 10 has. Version 14 removed the older
+// `admin.auth()` style, and Cloud Shell installs the newest, so on 2026-11-06 the
+// first real run stopped with "admin.auth is not a function". `req` is require, or
+// a stand-in in the tests.
+function adminClients(req) {
+  let appMod, authMod, fsMod;
+  try {
+    appMod = req('firebase-admin/app');
+    authMod = req('firebase-admin/auth');
+    fsMod = req('firebase-admin/firestore');
+  } catch (_) {
+    throw fail('Install the admin library first: npm install --no-save firebase-admin');
+  }
+  const app = appMod.initializeApp({ projectId: PROJECT, credential: appMod.applicationDefault() });
+  return { auth: authMod.getAuth(app), db: fsMod.getFirestore(app), FieldValue: fsMod.FieldValue };
+}
+
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const students = readList(opts.file, opts.classLabel);
-  let admin;
-  try { admin = require('firebase-admin'); }
-  catch (_) { throw fail('Install the admin library first: npm install --no-save firebase-admin'); }
-  const appOpts = { projectId: PROJECT };
-  if (admin.credential && admin.credential.applicationDefault) appOpts.credential = admin.credential.applicationDefault();
-  admin.initializeApp(appOpts);
-  const p = await plan(opts, students, admin.auth(), admin.firestore());
-  if (opts.apply) await apply(opts, p, admin.firestore.FieldValue);
+  const { auth, db, FieldValue } = adminClients(require);
+  const p = await plan(opts, students, auth, db);
+  if (opts.apply) await apply(opts, p, FieldValue);
   console.log(report(opts, p));
 }
 
-module.exports = { parseArgs, readList, plan, apply, report, ROOT };
+module.exports = { parseArgs, readList, plan, apply, report, adminClients, ROOT };
 
 if (require.main === module) {
   main().catch(e => {

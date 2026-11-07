@@ -89,3 +89,34 @@ land(s,'The picture is a labeled reconstruction of an imagined strategy meeting:
 })();
 
 (function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();
+
+/* Trading Post Empire, 2026-11-06 (Jeff). Jeff asked for the Topic 4.2 upload
+   "4.2 - Trading Post Empire.jpg" as a full-image slide right after teacher
+   slide 8 (posts, Elmina). It is an AI Historical Reconstruction (generator
+   mark bottom right), labeled from `ai: true`, never evidence. frame-full shows
+   it whole; the file is 1376x768, almost exactly the board's shape. The fault
+   Topic 4.2 named stays named here: the fort flies today's green and red flag,
+   adopted in 1911. */
+(function(){
+'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T||!Array.isArray(T.slides))return;
+const at=T.slides.findIndex(s=>s.phase==='posts');
+if(at<0||T.slides.some(s=>s.phase==='postscene'))return;
+T.slides.splice(at+1,0,{
+  phase:'postscene',kind:'frame-full',eyebrow:'I · Why Europeans Went to Sea · Trading Posts',
+  title:'A trading post: one fort, one quay, and the sea trade around it.',
+  template:{visual:{ai:true,url:'../assets/images/topics/4-2/'+encodeURIComponent('4.2 - Trading Post Empire.jpg'),alt:'Reconstruction of a busy tropical harbor town seen from a hillside: a stone fort with cannon on a rocky point flying a flag, a stone quay stacked with sacks, crates and barrels, two large European ships with red crosses on their sails at anchor among many small sailing boats and rowing boats, and a crowded town of tiled roofs along the shore'}},
+  notes:{
+    minutes:1,
+    keys:['Reconstruction: a fortified trading port','One fort guards the quay and harbor','The town and local boats were already there','Flag is wrong: modern, from 1911'],
+    land:[
+      'Historical Reconstruction, AI generated. It sets the scene; it is not evidence. Use it to show the idea from the last slide: a small fort and a quay, not a conquered country, and a busy local trade that was there before the Europeans arrived.',
+      'One thing it gets wrong, if a sharp student notices: the fort flies the green and red flag of Portugal today, adopted in 1911.'
+    ],
+    ask:'What does the fort control, and what does it not control?',
+    listenFor:'The quay and the harbor next to it; not the town, the hills or the many local boats.'
+  }
+});
+// The run of show numbers its slides; everything after the posts slide moves
+// down one. The picture shares the posts row's minute rather than adding one.
+if(Array.isArray(T.flow))T.flow.forEach(f=>{if(f.slide>at+1)f.slide++;else if(f.id==='posts')f.teacher+=' Then the trading-post picture: what the fort controls.';});
+})();

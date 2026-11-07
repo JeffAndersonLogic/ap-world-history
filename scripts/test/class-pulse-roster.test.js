@@ -18,7 +18,9 @@
  *     file stay unless --remove-missing is given;
  *   - one file can hold all of a teacher's classes (header email,name,section),
  *     every student keeps their class, and --remove-missing never reaches a class
- *     the file does not cover.
+ *     the file does not cover;
+ *   - the admin library is reached through firebase-admin/app, /auth and
+ *     /firestore, which version 14 requires (2026-11-06).
  *
  * Negative controls at the end load broken copies of the script and prove the
  * assertions go red.
@@ -147,6 +149,24 @@ check('running one class never removes another class\'s students', async (M) => 
   assert.equal(head.studentCount, 3);
 });
 
+// firebase-admin 14 (installed by Cloud Shell from 2026-11) has no admin.auth();
+// only the per-service entry points. These stand-ins are shaped like it.
+check('the admin library is used through its per-service entry points, as version 14 needs', async (M) => {
+  const app = { name: 'app' };
+  const mods = {
+    'firebase-admin': { initializeApp: () => app, applicationDefault: () => 'ADC' },
+    'firebase-admin/app': { initializeApp: o => { assert.equal(o.projectId, 'behistoric'); assert.equal(o.credential, 'ADC'); return app; }, applicationDefault: () => 'ADC' },
+    'firebase-admin/auth': { getAuth: a => { assert.equal(a, app); return { kind: 'auth' }; } },
+    'firebase-admin/firestore': { getFirestore: a => { assert.equal(a, app); return { kind: 'db' }; }, FieldValue: { serverTimestamp: () => 'T' } }
+  };
+  const req = id => { if (!(id in mods)) throw new Error('Cannot find module ' + id); return mods[id]; };
+  const c = M.adminClients(req);
+  assert.equal(c.auth.kind, 'auth');
+  assert.equal(c.db.kind, 'db');
+  assert.equal(c.FieldValue.serverTimestamp(), 'T');
+  assert.throws(() => M.adminClients(() => { throw new Error('Cannot find module'); }), /npm install --no-save firebase-admin/);
+});
+
 function load(source) {
   const sandbox = { module: { exports: {} }, require, __dirname: path.dirname(SOURCE), process, console };
   vm.runInNewContext(source, sandbox);
@@ -174,6 +194,7 @@ async function run(M, quiet) {
     ['students are removed without being asked', 'if (opts.removeMissing) p.extra.forEach', 'if (true) p.extra.forEach', /names only/],
     ['removal reaches classes the file does not cover', '!keep.has(e.uid) && covered.has(e.section)', '!keep.has(e.uid)', /never removes another class/],
     ['the class is not saved with the student', '{ label: f.name, section: f.section }', '{ label: f.name }', /keeps theirs|names only/],
+    ['the old admin.auth() style comes back', 'return { auth: authMod.getAuth(app),', "return { auth: req('firebase-admin').auth(),", /per-service entry points/],
     ['a third column is read as the class without the header saying so', 'withSection = /,\\s*(section|class)\\s*$/i.test(lines[0]);', 'withSection = true;', /comma in a name/]
   ];
   for (const [name, from, to, expect] of controls) {

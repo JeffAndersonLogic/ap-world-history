@@ -28,7 +28,10 @@
  * for list and the ledger notes; and one Work Time slide (05, 06, 09, 10)
  * replaced the four module slides. The Sharpen slide stays: it is the only
  * slide that can carry Learning Objective J without dropping a Key Concept.
- * No story slide changed.
+ * No story slide changed. This version supersedes the five-section outline and
+ * road map another session put on main the same evening (before this branch
+ * shipped); that session's Mercantilism change (the two purposes of a colony)
+ * is kept.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -71,7 +74,8 @@ window.BEHISTORICAL_TEACHING = {
         { name: 'Mercantilism', points: [
           'A strong state keeps wealth at home: sell more abroad than you buy',
           'Spain: Casa de Contratación, 1503; England: Navigation Act, 1651, against the Dutch',
-          'Colonies send raw goods and buy home goods; the name came later (1776)'
+          'Two purposes of a colony: cheap raw materials, and a market for the home country\'s goods',
+          'The name came later (1776)'
         ] },
         { name: 'Joint-stock companies', points: [
           'Voyages cost a fortune: sell shares, pool the money, split profit and risk',
@@ -211,8 +215,8 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: mercantilism and joint-stock companies, rivalries from economic disputes (including Europeans against each other), silver and the Atlantic system, regional markets, peasant and artisan labor, African family change, Atlantic cultural mixing, religions spreading, clashing and blending.',
           'Bridge only: the mit’a and the colonial labor systems (4.4; Potosí appears as silver\'s source); Tondibi as a battle (3.1; 4.5 gives its economic motive); the size of the slave trade and the plantations (4.4); Japan\'s ban on Christianity (4.4, one clause); casta (4.7, not mentioned); resistance (4.6, the hand-off).',
           'Four myths: "Europe paid for Asian goods with better products"; "the Atlantic trade was a neat triangle"; "global trade replaced the old markets"; "European culture simply replaced the others in the Americas."',
-          'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 11. None is AI-generated.',
-          'Slides 5 and 7 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (added 2026-11-04). Slide 8 is the case: the VOC, with the real 1606 share receipt.'
+          'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 12. None is AI-generated.',
+          'Slides 6 and 8 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (added 2026-11-04). Slide 9 is the case: the VOC, with the real 1606 share receipt.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Rulers built tools to make their empires pay (mercantilist laws, chartered companies), and the silver, goods and people those tools moved changed work, families and faith, while old markets and old religions kept going.',
@@ -331,7 +335,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'mercantilism', kind: 'frame-full', eyebrow: 'I · How Rulers Made Empires Pay · Mercantilism',
       kc: 'KC-4.1.IV.C', title: 'Mercantilism: how a state grows strong.',
       template: {
-        visual: { url: '../assets/images/topics/4-5/mercantilism-tool-1.png', alt: 'Slide graphic titled Mercantilism: Rulers\' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England\'s Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country\'s goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the "mercantile system" in 1776. Think: in this way of thinking, what is a colony for?' }
+        visual: { url: '../assets/images/topics/4-5/mercantilism-tool-1.png', alt: 'Slide graphic titled Mercantilism: Rulers\' Tool 1, an idea made into law, Topic 4.5, 1450 to 1750. The belief: a kingdom grows strong by bringing in more gold and silver than flows out, so it must sell more to other countries than it buys from them. A diagram, How a colony fits the plan: one arrow carries raw goods, silver, sugar and furs, from the colony (the Americas, Africa and Asia) to the home country, where gold and silver pile up in the treasury; a second arrow carries cloth, tools and wine back, because the colony buys home goods; rival ships are crossed out, kept out. Trade stays inside the empire, so the money stays home too. Expand their economies: sell more abroad than you buy, so gold and silver flow in and stay at home. Control their economies: Spain ran trade with its American colonies through one office in Seville, the Casa de Contratación (1503); England\'s Navigation Act (1651) let goods from Asia, Africa and the Americas in on English ships only. Claim overseas territories: take colonies that send raw goods home, buy the home country\'s goods and trade with no one else. The name came later: nobody called themselves a mercantilist; later critics named these shared ideas, and Adam Smith wrote of the "mercantile system" in 1776. Two purposes of a colony: 1, to provide cheap raw materials; 2, to serve as a market for the home country\'s goods.' }
       },
       notes: {
         minutes: 2,
@@ -339,7 +343,7 @@ window.BEHISTORICAL_TEACHING = {
           'Goal: a strong state, wealth kept at home',
           'Spain: Casa de Contratación, 1503',
           'England: Navigation Act, 1651, against the Dutch',
-          'Colonies: send raw goods, buy home goods',
+          'Two purposes of a colony: cheap raw materials, a market',
           'Shared ideas; the name came later (1776)'
         ],
         land: [
@@ -347,11 +351,11 @@ window.BEHISTORICAL_TEACHING = {
           'Spain: the Casa de Contratación, founded in Seville in 1503, licensed and registered trade with the Americas, and silver crossed in convoyed fleets.',
           'England: the Navigation Act of 1651 said goods from Asia, Africa and the Americas could enter England only in English ships; it was aimed at Dutch shippers. Later acts (1660) listed colonial goods such as sugar and tobacco that could be shipped only to England.',
           'The colony\'s job in this way of thinking: send raw goods home, buy the home country\'s goods, and trade with no one else.',
-          'The slide is one picture. The three rows on the right are the CED\'s own verbs: rulers used mercantilism to expand and control their economies and to claim overseas territories. The diagram answers the Think question at the bottom.',
+          'The slide is one picture. The three rows on the right are the CED\'s own verbs: rulers used mercantilism to expand and control their economies and to claim overseas territories. The footer names the two purposes of a colony (added 2026-11-06, Jeff): to provide cheap raw materials, and to serve as a market for the home country\'s goods. The diagram shows both: the top arrow is the first purpose, the bottom arrow the second.',
           'The goods on the arrows are examples, not CED requirements. Wine: Spain\'s 1595 order against new vineyards in the Americas was meant to protect Spanish wine sales, but it was widely ignored, and Peru made wine anyway. Use it to show the rule and the gap between rule and practice.'
         ],
         ask: 'In this way of thinking, what is a colony for?',
-        listenFor: 'To send raw goods home and buy the home country\'s goods, so money stays inside the empire.',
+        listenFor: 'Two purposes: to provide cheap raw materials, and to serve as a market for the home country\'s goods, so money stays inside the empire.',
         ap: 'LO H: an economic strategy rulers used to consolidate and maintain power.'
       }
     },
