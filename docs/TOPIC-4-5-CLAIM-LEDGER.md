@@ -361,3 +361,5 @@ problem. Every finding is fixed or logged above, and every claim row has a statu
 ## Slide numbers moved, 2026-11-06
 
 A road-map slide was added as slide 4, so every slide from the First & 10 on is one place later than the "Deck N" and "slide N" numbers in the rows above (written before the change): Deck 5 is now slide 6, and so on. The rows are left as written, since they record what was checked when. The deck's own notes were renumbered.
+
+Later the same day (Jeff, 2026-11-06), the Myth and Evidence slide was retired (its myths moved to the briefing outline's Watch for list and the ledger slide's notes) and the four module launch slides became one Work Time slide (Modules 05, 06, 09 and 10, the schedule's required set). Slides up to the Sahagún passage keep the numbers above plus one; the ledger is slide 23, Sharpen the Claim 24, Work Time 25 and the close 26. No claim in this ledger changed.

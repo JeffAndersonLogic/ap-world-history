@@ -292,6 +292,53 @@ check('a missing sweep directory is empty, not a crash', () => {
   assert.deepStrictEqual(cov.sweeps(path.join(os.tmpdir(), 'bh-nope-' + Date.now())), []);
 });
 
+console.log('\n  --- negative controls: the index builder in a shallow clone ---');
+
+// Three sessions on 2026-11-06 met a shallow clone as a bare DRIFT failure; one
+// rebuilt and committed a wrong index from it. These prove the builder now says
+// what is actually wrong and refuses to write, without needing a shallow clone.
+function runBuilder(argv, coverage) {
+  const { main } = require('../build-topic-audit-index.js');
+  const lines = [];
+  const realErr = console.error, realLog = console.log;
+  console.error = (...a) => lines.push(a.join(' '));
+  console.log = (...a) => lines.push(a.join(' '));
+  try { return { code: main({ argv, coverage }), text: lines.join('\n') }; }
+  finally { console.error = realErr; console.log = realLog; }
+}
+
+check('--check in a shallow clone fails, says it is not drift, and names the fix', () => {
+  const r = runBuilder(['node', 'x', '--check'], { shallow: true, rows: [] });
+  assert.strictEqual(r.code, 1, 'a shallow clone must not pass the check');
+  assert.ok(/shallow/i.test(r.text), 'should say the clone is shallow');
+  assert.ok(/not drift/i.test(r.text), 'should say this is not drift');
+  assert.ok(/fetch --unshallow/.test(r.text), 'should name the fix');
+  assert.ok(!/DRIFT\./.test(r.text), 'must not print the plain drift message');
+});
+
+check('writing in a shallow clone is refused and leaves the index untouched', () => {
+  const out = path.join(cov.AUDIT_DIR, 'index.md');
+  const before = fs.readFileSync(out, 'utf8');
+  let r, after;
+  try {
+    r = runBuilder(['node', 'x'], { shallow: true, rows: [] });
+    after = fs.readFileSync(out, 'utf8');
+  } finally {
+    // If the guard ever breaks, this test must not leave a clobbered index behind.
+    if (fs.readFileSync(out, 'utf8') !== before) fs.writeFileSync(out, before);
+  }
+  assert.strictEqual(r.code, 1, 'a shallow clone must not write');
+  assert.ok(/REFUSED TO WRITE/.test(r.text), r.text);
+  assert.strictEqual(after, before, 'the index must not change');
+});
+
+check('a full clone still reaches the ordinary check, so the guard is not a blanket fail', () => {
+  const c = cov.coverage({ today: cov.schoolToday() });
+  if (c.shallow) return; // this run is itself shallow; the drift check below reports it
+  const r = runBuilder(['node', 'x', '--check'], c);
+  assert.ok(!/shallow/i.test(r.text), 'a full clone must not get the shallow message');
+});
+
 console.log('\n  --- the real repository ---');
 
 check('the committed index matches the records (drift check)', () => {
