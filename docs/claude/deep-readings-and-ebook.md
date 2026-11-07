@@ -435,7 +435,25 @@ waiting for audio, and coverage is reported, never enforced.
    check was shown to fail on 2026-11-07 by cutting a sentence out of a
    recording, and a transcript that writes "1598" for "fifteen ninety eight" is
    not a failure, because both sides go through the same rules first.
-5. `npm run build:ebook-audio`, then commit `scripts/audio/recordings.json` and
+
+   **The check judges words, not how a name is spelled back.** Whisper is an
+   English listener. On the first pilot run it heard Mohacs as "mohax",
+   devshirme as "Dev Shirm", Qizilbash as "Quizzle Bash" and the Mughals as "the
+   Moogles", and the check refused the Ottoman and Safavid sections although
+   their audio was fine. So a swap of at most two words, heard as at most three,
+   counts as heard; accents are folded (Mohács is one word, mohacs); and
+   Whisper's "1453-1699" is read as "1453 to 1699". In exchange a chunk now also
+   fails if it runs far longer than its words take to say (more than 0.8 seconds
+   a word plus 2, about twice the narrator's measured 0.38), so sound Whisper
+   could not turn into words is not excused. `narrate.py --self-test` shows the
+   rule failing on a skip, an added run, a long swap and padded audio; it was
+   itself shown to fail by widening the swap limit and the length limit, and the
+   real cut recording still fails (27 words missing).
+6. **A stopped run loses nothing it made.** Each chunk's takes are kept in
+   `<audio-repo>/.narration-cache/` (ignored by that repository) until the
+   section is filed, keyed by the chunk's own words, so rerunning after a stop or
+   a refusal re-checks the audio instead of generating it again.
+7. `npm run build:ebook-audio`, then commit `scripts/audio/recordings.json` and
    `assets/data/ebook-audio.js` here and the MP3s in `behistorical-audio`. Push
    the audio first: a recording listed before its file is served plays nothing,
    and the player then falls back to the browser voice for the rest of the visit.

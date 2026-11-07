@@ -10,6 +10,11 @@ window.BH_EBOOK_AUDIO = {
       "file": "ebook/unit-3/b6c252ab6964cfdf.mp3",
       "seconds": 214.3,
       "section": "t3-1-compare"
+    },
+    "db1bd4018c7c38f1": {
+      "file": "ebook/unit-3/db1bd4018c7c38f1.mp3",
+      "seconds": 364.4,
+      "section": "t3-1-mechanism"
     }
   }
 };
