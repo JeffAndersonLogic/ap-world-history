@@ -273,6 +273,15 @@ textarea:focus-visible,
 }
 .bh-listen-status:empty{display:none}
 
+/* "AI narrator", on sections with a recorded narration. Iron on this paper is
+   6.5:1, so the label is quiet without being faint, and it is pushed to the end
+   of the row because it describes the voice rather than controlling it. */
+.bh-listen-note{
+  margin-left:auto;
+  font-size:.6rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--iron);
+}
+
 /*
  * Available to a screen reader, never to the eye. clip-path with a 1px box
  * rather than display:none or visibility:hidden, both of which remove the text

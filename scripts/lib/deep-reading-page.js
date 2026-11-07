@@ -1,5 +1,7 @@
 'use strict';
 
+const crypto = require('crypto');
+
 /**
  * The one renderer for deep readings.
  *
@@ -199,6 +201,35 @@ function listenAttrs(on, scope, name) {
   return ` data-listenable="true" data-listen-label="${esc(label)}"`;
 }
 
+/* ── The section fingerprint ─────────────────────────────────────────────────
+ *
+ * A short hash of everything a narratable section contains, carried on the
+ * section as data-listen-hash. It is how a recorded narration finds its
+ * section, and the only way it can: assets/data/ebook-audio.js is keyed by this
+ * value, and the player plays a recording only when the page in front of the
+ * student carries the exact fingerprint the recording was made from.
+ *
+ * So a revised paragraph cannot be narrated by a stale recording. Edit a
+ * chapter, rebuild, and the section's fingerprint changes; the old recording is
+ * still listed, under a fingerprint no page carries any more, and that section
+ * falls back to the browser's own voice reading the current text until it is
+ * recorded again. Nobody has to remember anything, and nothing has to fail the
+ * push to make it true. See "Recorded narration" in
+ * docs/claude/deep-readings-and-ebook.md.
+ *
+ * The id is part of what is hashed, so two sections with identical text in two
+ * volumes cannot share a recording entry by accident.
+ */
+function listenHash(id, body) {
+  return crypto.createHash('sha256').update(`${id}\n${body}`).digest('hex').slice(0, 16);
+}
+
+/** The section's opening tag, with the fingerprint when narration is on. */
+function sectionOpen(className, id, listen, scope, name, body) {
+  const hash = listen ? ` data-listen-hash="${listenHash(id, body)}"` : '';
+  return `  <section class="${className}" id="${esc(id)}"${listenAttrs(listen, scope, name)}${hash}>\n`;
+}
+
 /** The mount slot. Empty in the HTML, filled by the shared module on load, and
  *  marked data-no-narrate so the controls are never read out as part of the
  *  reading they control. */
@@ -219,8 +250,7 @@ function renderEmpire(empire, index, prefix, listen, scope) {
   const accent = `accent-${empire.accent || 'gold'}`;
   const parts = (empire.parts || []).map(renderPart).join('');
 
-  return (
-    `  <section class="empire ${accent}" id="${esc(id)}"${listenAttrs(listen, scope, empire.name)}>\n` +
+  const body =
     `    <div class="dr-ehead">\n` +
     // The section number is how the contents page and the jump bar refer to
     // this section, and it is nothing else: spoken aloud in front of the
@@ -237,9 +267,9 @@ function renderEmpire(empire, index, prefix, listen, scope) {
     listenMount(listen, '    ') +
     parts +
     renderUseThis(empire.useThis) +
-    renderTerms(empire.terms) +
-    `  </section>\n`
-  );
+    renderTerms(empire.terms);
+
+  return sectionOpen(`empire ${accent}`, id, listen, scope, empire.name, body) + body + `  </section>\n`;
 }
 
 function renderComparisons(closing, prefix, listen, scope) {
@@ -254,14 +284,14 @@ function renderComparisons(closing, prefix, listen, scope) {
     )
     .join('');
 
-  return (
-    `  <section class="dr-closing" id="${esc(withPrefix(prefix, 'compare'))}"${listenAttrs(listen, scope, closing.heading)}>\n` +
+  const id = withPrefix(prefix, 'compare');
+  const body =
     `    <h2>${esc(closing.heading)}</h2>\n` +
     `    <p>${closing.intro}</p>\n` +
     listenMount(listen, '    ') +
-    `    <div class="dr-pairs">\n${cards}    </div>\n` +
-    `  </section>\n`
-  );
+    `    <div class="dr-pairs">\n${cards}    </div>\n`;
+
+  return sectionOpen('dr-closing', id, listen, scope, closing.heading, body) + body + `  </section>\n`;
 }
 
 function renderHowTo(howTo, prefix) {
@@ -360,4 +390,4 @@ ${renderChapterBody(topic)}  <footer class="dr-footer">
 `);
 }
 
-module.exports = { renderDeepReadingPage, renderChapterBody, escapeText: esc, FONT_LINKS, FONT_LINKS_ASYNC };
+module.exports = { renderDeepReadingPage, renderChapterBody, listenHash, escapeText: esc, FONT_LINKS, FONT_LINKS_ASYNC };

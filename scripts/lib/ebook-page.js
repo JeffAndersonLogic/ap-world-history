@@ -73,7 +73,15 @@ const FONT_LINKS = require('./deep-reading-page').FONT_LINKS_ASYNC;
  * because nothing above it needs to wait for it. It is the only script either
  * eBook page type loads.
  */
-const LISTEN_SCRIPT = `<script defer src="../assets/js/behistorical-listen.js"></script>\n`;
+/**
+ * The recorded narrations, loaded first so the player finds them. Deferred
+ * scripts run in document order, so this one always runs before the player.
+ * It is a generated data file (scripts/build-ebook-audio.js), and if it ever
+ * fails to load the player simply finds no recordings and uses the browser
+ * voice, which is what every section did before recordings existed.
+ */
+const AUDIO_MANIFEST_SCRIPT = `<script defer src="../assets/data/ebook-audio.js"></script>\n`;
+const LISTEN_SCRIPT = AUDIO_MANIFEST_SCRIPT + `<script defer src="../assets/js/behistorical-listen.js"></script>\n`;
 
 function chapterNav(entries) {
   const rows = entries.map(entry => {

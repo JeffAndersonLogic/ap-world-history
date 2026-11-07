@@ -40,8 +40,18 @@ function baseUrlProblem(source) {
   return null;
 }
 
+// The one other site on the same github.io account that BeHistorical links to
+// on purpose, and it is not the old address of this site: the recorded eBook
+// narration lives in its own repository, behistorical-audio, because the whole
+// eBook is close to a gigabyte of audio and GitHub Pages caps a site at one.
+// GitHub serves it at this path and does not redirect it, the same way
+// BeCurrent is served at /BeCurrent/. Allowed as this exact prefix and nothing
+// broader, so an old BeHistorical link still fails.
+const AUDIO_SITE = OLD + '/behistorical-audio/';
+
 function oldLinkLines(text) {
-  return text.split('\n').map((l, i) => [i + 1, l]).filter(([, l]) => l.includes(OLD));
+  return text.split('\n').map((l, i) => [i + 1, l])
+    .filter(([, l]) => l.split(AUDIO_SITE).join('').includes(OLD));
 }
 
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'archive']);
@@ -79,6 +89,9 @@ ok('a two-line CNAME fails', () => assert.ok(cnameProblem('behistorical.com\nexa
 ok('the old BASE_URL fails', () => assert.ok(baseUrlProblem(`const BASE_URL = '${OLD}/ap-world-history';`)));
 ok('a missing BASE_URL fails', () => assert.ok(baseUrlProblem('const OTHER = 1;')));
 ok('an old-address link is found', () => assert.strictEqual(oldLinkLines(`<a href="${OLD}/ap-world-history/index.html">`).length, 1));
+ok('the audio site is not flagged', () => assert.strictEqual(oldLinkLines(`"base": "${AUDIO_SITE}"`).length, 0));
+ok('an old-address link beside the audio site is still found', () => assert.strictEqual(oldLinkLines(`${AUDIO_SITE}x.mp3 ${OLD}/ap-world-history/`).length, 1));
+ok('an old-address link that only resembles the audio site is found', () => assert.strictEqual(oldLinkLines(`${OLD}/behistorical-audio-old/`).length, 1));
 ok('a behistorical.com link is not flagged', () => assert.strictEqual(oldLinkLines('<a href="https://behistorical.com/index.html">').length, 0));
 
 if (failed) { console.log(`\n${failed} failed`); process.exit(1); }

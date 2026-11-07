@@ -876,12 +876,42 @@ section('eBook narration is generated and shared');
       err(target, `volume "${volume.id}" has ${marked} narratable sections and ${mounts} control mounts, so the controls land above the section heading instead of under it`);
     }
 
+    // Every narratable section carries its content fingerprint, the key a
+    // recorded narration is filed under. A section without one can never play
+    // its recording, which is silent: the browser voice reads it instead and the
+    // page looks finished. See listenHash() in scripts/lib/deep-reading-page.js.
+    totalChecks++;
+    const hashed = (src.match(/data-listenable="true"[^>]*\sdata-listen-hash="[0-9a-f]{16}"/g) || []).length;
+    if (hashed !== marked) {
+      err(target, `volume "${volume.id}" has ${marked} narratable sections but ${hashed} carry a content fingerprint, so ${marked - hashed} can never play a recorded narration`);
+    }
+
     totalChecks++;
     const tags = (src.match(/behistorical-listen\.js/g) || []).length;
     if (marked && tags !== 1) {
       err(target, tags === 0
         ? `volume "${volume.id}" marks ${marked} narratable sections but never loads ${SCRIPT_TAG}, so no control is ever built`
         : `volume "${volume.id}" loads the narration module ${tags} times, which builds a duplicate control in every section`);
+    }
+  }
+
+  // The recordings list loads once per volume, and before the player. Deferred
+  // scripts run in document order, so a list loaded after the player is a list
+  // the player has already finished looking for: every recording silently
+  // replaced by the browser voice, with the page looking perfect.
+  for (const volume of VOLUMES) {
+    const target = path.join(ROOT, volume.outputFile);
+    if (!exists(target)) continue;
+    const src = read(target) || '';
+    if (!/data-listenable="true"/.test(src)) continue;
+    totalChecks++;
+    const manifestAt = src.indexOf('src="../assets/data/ebook-audio.js"');
+    const playerAt = src.indexOf('src="../assets/js/behistorical-listen.js"');
+    const manifestTags = (src.match(/assets\/data\/ebook-audio\.js/g) || []).length;
+    if (manifestTags !== 1) {
+      err(target, `volume "${volume.id}" loads the recorded-narration list ${manifestTags} times; it must load it exactly once`);
+    } else if (playerAt !== -1 && manifestAt > playerAt) {
+      err(target, `volume "${volume.id}" loads the recorded-narration list after the player, so the player never sees a recording`);
     }
   }
 
@@ -893,7 +923,7 @@ section('eBook narration is generated and shared');
     if (exists(lib)) {
       const src = read(lib) || '';
       totalChecks++;
-      if (/data-listenable/.test(src) || /behistorical-listen\.js/.test(src)) {
+      if (/data-listenable/.test(src) || /behistorical-listen\.js/.test(src) || /ebook-audio\.js/.test(src)) {
         err(lib, 'the eBook library carries narration, but it has no reading section to narrate; see the LISTEN_SCRIPT note in scripts/lib/ebook-page.js');
       }
     }

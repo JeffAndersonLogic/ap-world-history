@@ -294,15 +294,13 @@ native HTML already says the thing, and nothing that starts speaking on its own.
 section in front of the student, so a revised chapter is a revised narration on
 the next page load, with nothing to regenerate and nothing that can fall behind.
 
-**That is why there are no MP3 files and no speech API.** An audio file is a
-second copy of the content, and the moment a paragraph is edited nothing in this
-repo can tell you which copy a student heard. It is the same failure the content
-model exists to refuse, and it would be worse here, because a stale recording
-sounds exactly as authoritative as a current one. A paid TTS service adds the
-second failure on top of the first: it would mean the reading, and eventually a
-student's page, leaving the device. `window.speechSynthesis` is the browser's
-own engine and it costs nothing. The single stored value is the playback rate, a
-number, under `behistorical-listen-rate`.
+**Until 2026-11-07 that was also why there were no MP3 files**, and the reason
+still governs the recorded narration described below: an audio file is a second
+copy of the content, the moment a paragraph is edited nothing could tell you
+which copy a student heard, and a stale recording sounds exactly as
+authoritative as a current one. Recorded narration was added only once that
+failure was made impossible by construction rather than by care; see "Recorded
+narration" below. The browser voice remains the floor under every section.
 
 **This repository has no speech backend, which is not the same as "nothing
 leaves the device", and the difference is worth stating precisely.** The voice
@@ -312,13 +310,14 @@ uses and narration a student turns off after one paragraph. A network voice mean
 the browser sends the text it is speaking to that vendor's own service. What is
 sent is **the published chapter**, which is already public on GitHub Pages, and
 never a student's writing: no student response is on an eBook page, the pages
-carry no capture block, and narration reads only the rendered chapter DOM. So the
-guarantee to make in writing is the narrow one: **no student work is transmitted,
-and this repository sends nothing anywhere itself.** Do not restore "nothing is
-sent anywhere", which is what this said until 2026-09-14 and is not true of a
-network voice. If on-device-only ever becomes the requirement, it is a one-line
-change to the scoring in `assets/js/behistorical-listen.js` and a real cost in
-voice quality, so make it a decision rather than a cleanup.
+carry no capture block, and narration reads only the rendered chapter DOM. A
+recorded section is fetched from the behistorical-audio site and sends nothing.
+So the guarantee to make in writing is the narrow one: **no student work is
+transmitted, and this repository sends nothing anywhere itself.** Do not restore
+"nothing is sent anywhere", which is what this said until 2026-09-14 and is not
+true of a network voice. If on-device-only ever becomes the requirement, it is a
+one-line change to the scoring in `assets/js/behistorical-listen.js` and a real
+cost in voice quality, so make it a decision rather than a cleanup.
 
 **One section speaks at a time, page-wide.** Starting anywhere cancels
 everywhere, playback stops on `pagehide`, and there is never more than one
@@ -378,6 +377,94 @@ against a stubbed engine: that Listen speaks the right section, that starting on
 cancels another, that pause, resume and stop move the real state, that speed
 persists and rejects a value that is not one of the four, and that a browser with
 no speech synthesis gets no controls rather than dead ones.
+
+#### Recorded narration
+
+Decided by Jeff on 2026-11-07, recorded in AndersonLogic-OS
+`04_PRODUCTS/BeHistorical/Decisions.md`. A section can be narrated by a
+recording in one designed AI voice instead of the browser's voice, which on a
+Chromebook or an iPhone is often poor. The browser voice stays as the fallback
+for every section, always.
+
+**The rule that makes it safe: a recording plays only for the exact text it was
+made from.** Every narratable section carries `data-listen-hash`, a fingerprint
+of its content computed by `listenHash()` in `scripts/lib/deep-reading-page.js`.
+Every recording is filed under the fingerprint of the section it was made from.
+The player plays a recording only when the section on the page carries that
+fingerprint. Edit a chapter and rebuild, and its fingerprint changes, the old
+recording matches nothing, and the section is read by the browser voice from the
+current text until it is recorded again. **A student can hear a recording or the
+current text, never an out-of-date recording, and nobody has to remember
+anything for that to be true.** Because of that, a chapter edit is never blocked
+waiting for audio, and coverage is reported, never enforced.
+
+**Where things live.**
+
+| What | Where |
+|---|---|
+| The MP3s | the `behistorical-audio` repository, served at `https://jeffandersonlogic.github.io/behistorical-audio/`, one file per section at `ebook/<volume>/<fingerprint>.mp3`. Separate because the whole eBook is close to 1 GB of audio and GitHub Pages caps a site at 1 GB. The same github.io account already serves BeCurrent to the same classrooms. |
+| The list of recordings (source) | `scripts/audio/recordings.json`, appended to by the generator |
+| The list the player reads (generated) | `assets/data/ebook-audio.js`, by `npm run build:ebook-audio`, which also reports how many sections are recorded and how many recordings are of text that has since changed |
+| The voice | `scripts/audio/voice/narrator-a.flac` and its transcript, narrator A, take 1, the one Jeff chose |
+| The generator | `scripts/audio/extract-narration.js` then `scripts/audio/narrate.py`, below |
+
+**How a section is recorded.**
+
+1. `node scripts/audio/extract-narration.js --volume unit-3 > sections.json`
+   runs the player's own extractor (`window.BHListen.chunks`) in Chromium, so a
+   recording says exactly what the browser voice would, and copies each
+   section's fingerprint from the page rather than recomputing it.
+2. Each chunk goes through `scripts/lib/narration-text.js`, which says
+   decades, regnal numerals and BCE dates the way a historian does: "the
+   fourteen nineties", not "one thousand four hundred and ninety seconds", which
+   is what the speech model's own normalizer said for all 294 decades in the
+   eBook; "Mehmed the Second"; "ninety six hundred B C E". Its numeral list is
+   reviewed: `scripts/test/narration-text.test.js` fails the push when a chapter
+   gains a name followed by a Roman numeral that is not on it, because "Abbas I"
+   and "Am I" cannot be told apart by a rule.
+3. `python3 -I scripts/audio/narrate.py --sections sections.json --audio-repo
+   ../behistorical-audio` generates each chunk with VoxCPM2 (Apache 2.0) as a
+   continuation of the locked voice recording. Locking is not optional: two
+   generations from the same voice description measured 0.29 to 0.58 alike on a
+   speaker-similarity scale, two locked generations 0.97.
+4. **Every chunk is checked.** Whisper transcribes it and the words are compared
+   with what was meant, after both pass through the same text rules. A chunk that
+   drops or adds a run of words is regenerated with a new seed, up to three
+   times. A section with a chunk that never passes is refused, written to
+   `refused.json` in the audio repository, and stays on the browser voice. The
+   check was shown to fail on 2026-11-07 by cutting a sentence out of a
+   recording, and a transcript that writes "1598" for "fifteen ninety eight" is
+   not a failure, because both sides go through the same rules first.
+5. `npm run build:ebook-audio`, then commit `scripts/audio/recordings.json` and
+   `assets/data/ebook-audio.js` here and the MP3s in `behistorical-audio`. Push
+   the audio first: a recording listed before its file is served plays nothing,
+   and the player then falls back to the browser voice for the rest of the visit.
+
+**Speed.** About 3.4 seconds of work per second of audio on a 4-core CPU,
+measured, so the whole eBook (roughly 40 hours) needs a graphics card. VoxCPM2
+reports about 0.3 seconds per second on a high-end one.
+
+**What the player does.** `recordingFor()` in `assets/js/behistorical-listen.js`
+looks the section's fingerprint up in `window.BH_EBOOK_AUDIO`; a recorded section
+shows an "AI narrator" label, which the model's licence asks for and which is
+honest. Speed changes apply to a recording immediately with pitch preserved. If a
+recording fails to load or `play()` is refused, the same section continues in the
+browser voice from its first line and recordings are not tried again that visit,
+because a school filter that blocks one blocks all of them. A manifest that is
+missing, malformed or has a non-https base is ignored entirely. With no speech
+synthesis, only recorded sections get controls.
+
+**Checks.** `validate.js` asserts every narratable section carries a fingerprint
+and that each volume loads the recordings list once, before the player (deferred
+scripts run in order, so a list loaded after the player is never seen).
+`scripts/test/ebook-audio.test.js` (offline) asserts the list is valid,
+reproduces from its source, and names files after their fingerprints.
+`scripts/test/ebook-recorded-narration.test.js` (browser) asserts playback,
+pause, speed, one-at-a-time across both engines, the stale-fingerprint fallback,
+the failed-recording fallback and the malformed-list cases, and was shown to fail
+when the fingerprint match or the fallback was deliberately broken.
+`scripts/test/custom-domain.test.js` allows exactly the audio site's address and
+still fails on any old BeHistorical github.io link.
 
 #### What the browser does, and what it does not
 

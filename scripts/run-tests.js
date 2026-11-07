@@ -67,6 +67,8 @@ const SUITES = {
     ['scripts/test/readings-parse.test.js', '77 reading script blocks are valid JavaScript'],
     ['scripts/test/ap-practice-units12.test.js', 'Units 1-2 AP practice rigor and CED alignment'],
     ['scripts/test/ced-source.test.js', 'the story starts from the CED: lesson data, contracts, story maps and story drafts match the College Board source'],
+    ['scripts/test/narration-text.test.js', 'recorded narration says decades, rulers and BCE dates the way a historian does, and every regnal numeral is reviewed'],
+    ['scripts/test/ebook-audio.test.js', 'recorded eBook narration list is valid, reproduces from its source, and is keyed to section fingerprints'],
     ['scripts/test/ced-unit2-contract.test.js', 'Unit 2 canonical CED coverage =100%'],
     ['scripts/test/unit2-instructional-coherence.test.js', 'Unit 2 cross-surface traceability + assessment alignment'],
     ['scripts/test/ced-unit3-contract.test.js', 'Unit 3 canonical/runtime CED coverage =100%'],
@@ -113,6 +115,7 @@ const SUITES = {
     ['scripts/test/room-v2-story.test.js', 'BeInTheRoom v2 story mode plays in order; standard v2 unchanged'],
     ['scripts/test/ebook-a11y.test.js', 'eBook landmarks, focus, reflow, contrast'],
     ['scripts/test/ebook-listen.test.js', 'eBook section narration, one section at a time'],
+    ['scripts/test/ebook-recorded-narration.test.js', 'recorded eBook narration: plays only for the exact text it was made from, falls back to the browser voice'],
     ['scripts/test/announcements-refresh.test.js', 'board re-reads its file when the day rolls over']
   ],
   // A third suite, because the Firestore rules have a third dependency story:
