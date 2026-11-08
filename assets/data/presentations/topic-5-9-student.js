@@ -178,7 +178,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "items": [
             "Landed families keep land, titles and power",
             "Prime minister in 1900: Lord Salisbury, a marquess (a high noble)",
-            "New money buys country houses and marries into the gentry"
+            "Some new money buys estates, marries into landed families"
           ]
         }
       }

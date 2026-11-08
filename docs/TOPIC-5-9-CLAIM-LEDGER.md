@@ -28,7 +28,7 @@ named.
 | The industrial working class owned no land and no tools and lived on wages, at the hours the employer set | SD, F10, LD, Deck, DR | Definition; the factory's set hours as taught in 5.3 | VERIFIED |
 | Landed families kept their land, titles and much of their power through the century | SD, F10, LD, Deck, DR, RC | Return of Owners of Land (1873) and the standard accounts of the landed elite (Cannadine, *The Decline and Fall of the British Aristocracy*: the landed class still dominant until the 1880s) | VERIFIED |
 | In 1900 Britain's prime minister, Lord Salisbury, was a marquess | SD, F10, LD, Deck, DR | Robert Gascoyne-Cecil, 3rd Marquess of Salisbury, prime minister 1895 to 1902 (UK Government, "Past Prime Ministers") | VERIFIED |
-| Rich middle-class families often bought country houses and married into the gentry | SD, F10, Deck, DR | Standard (Cannadine; Thompson, *English Landed Society in the Nineteenth Century*); "often," not "usually" | VERIFIED |
+| Some rich middle-class families bought country estates and married into landed families; how many is debated | SD, F10, LD, Deck, DR | Stone and Stone, *An Open Elite? England 1540–1880* (1984): few newcomers entered the landed elite; Rubinstein (business fortunes mostly not in land) against Thompson (some were) | NARROWED (pass 2: was "often bought country houses and married into the gentry") |
 | Before industry, families mostly worked together on the farm or at home; women spun and children helped | SD, F10, Deck, DR | 5.3's own surfaces (the putting-out system); Humphries and Schneider, "Spinning the Industrial Revolution" (hand spinning as women's work) | VERIFIED |
 | In a survey of British textile factories in 1833, women and girls were a majority of the workers in most kinds of mill | SD, F10, LD, Deck, DR | Burnette, EH.net, Table Two, from Mitchell's 1834 report on the 1833 returns: females 56.8 percent of the sample (almost all textile mills); cotton 58.0, flax 67.4, silk 78.1, wool 40.9 | NARROWED (pass 1: was "in the 1830s ... a majority of factory workers") |
 | Domestic service was the largest job for women in Britain | SD, F10, LD, Deck, DR, BR | EH.net (Burnette): 1851 figures suggest 40 percent of occupied women in domestic service; Northumberland Archives and others, "domestic service was the largest occupation of women in the nineteenth century"; caution on census over-counting (You, *EcHR* 2023: under 10 percent mis-recorded kin) | VERIFIED |
@@ -120,3 +120,46 @@ Noted, not a defect: the reviewer could not open the 1885 report to confirm the 
 (Lords, 16 July 1885) reports the commissioners "almost agreed that there were two causes," and the room now
 states it only in the reflection, attributed to the commission. The deep reading's "never been so large"
 (report-absolutes) was softened to "grew fast."
+
+### Pass 2 (packet `review2`, captured after the pass 1 fixes)
+
+**Page truth, readability, CED alignment, ownership (cheaper model): 9 supported findings, all fixed.** No
+cut-off text on any slide; CED and ownership clean.
+
+1. Slide 16's model (a Manchester cellar) was still the same housing move students make for Riis.
+   **Fixed:** the model is now Snow's 1854 map (water and sewers), in the deck and the deep reading.
+2. Slide 7 said "Most men in the towns win the vote, 1832." **Fixed:** "Most middle-class men in towns."
+3. Success Criterion 3 named placing a scene in context, which Checkpoint 2 does not ask. **Fixed:** the
+   clause is removed (the Skill Builder assesses 4.B).
+4. Slide 13 gave "one cause" against its own "at times" footer; slide 12 said "speed, not size" against the
+   First & 10's "speed and size." **Fixed:** "all made worse by growth too fast"; "What made them worse";
+   "Speed and size outran the town."
+5. The retelling cell "Most worked hard for little" was taught nowhere. **Fixed:** "Many still poor in 1900"
+   (taught on slide 17 and in the First & 10), in the deck, the outline and the story draft.
+6. Lecture-card captions answered the Evidence Lab's inference prompts (Wyld, Currier & Ives, Leech).
+   **Fixed:** captions trimmed to identification.
+7. Lecture card 2 dropped "in most kinds of mill." **Fixed.**
+8. "Marquess" and "gentry" unglossed on slide 8 and lecture card 1. **Fixed.**
+9. Slide 14's dates out of order; the map title ended at 1890 with a key reaching 1900. **Fixed.**
+
+**History (default model): 5 supported findings, all fixed, and one open point taken.** Every quotation, number,
+date, record and caption checked in pass 1 was confirmed again.
+
+1. "Often bought country houses and married into the gentry" stated a debated claim as settled. **Narrowed**
+   (row above) on the First & 10, lecture card, slide 8 and its notes, and the deep reading.
+2. The deep reading's "most working women were servants" against its own "four in ten." **Fixed:** "the
+   largest single job for working women (about four in ten)."
+3. The deep reading said Beeton's book "opened" with the quotation; it opens with a preface. **Fixed:** "in its
+   first chapter, 'The Mistress,' begins."
+4. The Bayard Street photograph is dated 1889 by MoMA; 1890 is the book. **Fixed:** First & 10 Q3 "about
+   1889," and "Riis had photographed."
+5. "The Conservative leader Lord Salisbury" in 1884: he led in the Lords, Northcote in the Commons. **Fixed.**
+6. (Not counted by the reviewer.) No woman of the dock laborer's wife's kind could be confirmed among the
+   commission's witnesses. **Fixed:** the role is labeled a composite, the premise and the lesson's room
+   description say she is a made-up character, and the premise's witness list no longer names "working
+   people."
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Riis photographed the Bayard Street lodgers about 1889; the book appeared in 1890 | F10 Q3, LD, RC, Deck | MoMA, object 51194 (1889); LoC 2002710259 ("ca. 1890") | NARROWED (pass 2) |
+| In 1884 Salisbury led the Conservatives in the House of Lords | BR | Northcote led in the Commons until June 1885 (standard; UK Parliament) | NARROWED (pass 2) |

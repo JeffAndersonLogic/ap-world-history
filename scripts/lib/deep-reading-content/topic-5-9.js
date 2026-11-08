@@ -86,7 +86,7 @@ module.exports = {
         {
           heading: 'Who stayed on top',
           blocks: [
-            { p: `The landed families did not disappear. They kept their land, their titles and much of their power; historians of the landed class describe it as still dominant in wealth and politics until the <span class="num">1880s</span>. From <span class="num">1895</span> to <span class="num">1902</span> Britain's prime minister was Lord Salisbury, a marquess and a great landowner. Rich middle-class families often bought country houses, sent their sons to the same schools as the gentry, and married into landed families. They climbed the old ladder rather than breaking it.` },
+            { p: `The landed families did not disappear. They kept their land, their titles and much of their power; historians of the landed class describe it as still dominant in wealth and politics until the <span class="num">1880s</span>. From <span class="num">1895</span> to <span class="num">1902</span> Britain's prime minister was Lord Salisbury, a marquess and a great landowner. Some rich middle-class families bought country estates, sent their sons to the same schools as the gentry, and married into landed families, though historians debate how many (Lawrence and Jeanne Stone found few newcomers entering the landed elite). Those who did climbed the old ladder rather than breaking it.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -127,7 +127,7 @@ module.exports = {
         {
           heading: 'The middle-class home',
           blocks: [
-            { p: `In middle-class families the husband's earnings were enough, so the wife was increasingly expected to stay out of paid work and to run the home and raise the children. Writers called the home a woman's proper "sphere"; historians call the idea <span class="kt">separate spheres</span>. In <span class="num">1861</span> Isabella Beeton's best-selling <em>Book of Household Management</em> opened: "As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house. Her spirit will be seen through the whole establishment; and just in proportion as she performs her duties intelligently and thoroughly, so will her domestics follow in her path."` },
+            { p: `In middle-class families the husband's earnings were enough, so the wife was increasingly expected to stay out of paid work and to run the home and raise the children. Writers called the home a woman's proper "sphere"; historians call the idea <span class="kt">separate spheres</span>. In <span class="num">1861</span> Isabella Beeton's best-selling <em>Book of Household Management</em>, in its first chapter, "The Mistress," begins: "As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house. Her spirit will be seen through the whole establishment; and just in proportion as she performs her duties intelligently and thoroughly, so will her domestics follow in her path."` },
             { p: `Running such a house was real work, and the "domestics" who followed the mistress were servants, most of them working-class women. One class's home ran on the other class's wages.` },
             { note: {
               kind: 'howknow',
@@ -143,7 +143,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"In the 1800s women stopped working." Working-class women and children earned wages, and middle-class women ran households, often with servants. The opposite mistake is "all women worked in factories": most working women were servants, and many worked at home. Name the class before you describe a woman's life.`
+              html: `"In the 1800s women stopped working." Working-class women and children earned wages, and middle-class women ran households, often with servants. The opposite mistake is "all women worked in factories": domestic service, not the factory, was the largest single job for working women (about four in ten), and many worked at home. Name the class before you describe a woman's life.`
             } }
           ]
         }

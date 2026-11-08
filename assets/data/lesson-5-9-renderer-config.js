@@ -69,7 +69,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-5/the-housing-commission.html',
-    desc: "London, 1884. On a royal commission into the housing of the working classes, decide what your report will say caused the crisis, as one of five people: the commission's chair, a stonemason who became a trade-union leader and MP, a landowning lord, a housing manager who gives evidence, and a dock laborer's wife who gives evidence."
+    desc: "London, 1884. On a royal commission into the housing of the working classes, decide what your report will say caused the crisis, as one of five people: the commission's chair, a stonemason who became a trade-union leader and MP, a landowning lord, a housing manager who gives evidence, and a dock laborer's wife, a made-up character based on the families the commission heard about."
   };
 
   lesson.skillBuilder = {

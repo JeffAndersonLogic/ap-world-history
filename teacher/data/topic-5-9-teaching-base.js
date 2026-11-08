@@ -379,7 +379,7 @@ window.BEHISTORICAL_TEACHING = {
         date: '1750 to 1900',
         before: { tag: 'Before', items: ['Landed families (nobles and gentry) rule, by birth', 'Wealth mostly comes from land'] },
         after: { tag: 'Changed', items: ['A middle class grows rich from business and professions', 'Most middle-class men in towns win the vote, 1832'] },
-        continued: { tag: 'Kept going', items: ['Landed families keep land, titles and power', 'Prime minister in 1900: Lord Salisbury, a marquess (a high noble)', 'New money buys country houses and marries into the gentry'] }
+        continued: { tag: 'Kept going', items: ['Landed families keep land, titles and power', 'Prime minister in 1900: Lord Salisbury, a marquess (a high noble)', 'Some new money buys estates, marries into landed families'] }
       },
       notes: {
         minutes: 2,
@@ -387,13 +387,13 @@ window.BEHISTORICAL_TEACHING = {
           'Changed: middle class rich and voting',
           'Kept going: landed families keep power',
           'Salisbury, a marquess, PM 1895 to 1902',
-          'New money copied the old',
+          'Some new money bought into land: debated',
           'Answer Checkpoint 1 part 2 here'
         ],
         land: [
           'The change: a middle class grew rich from business and the professions, and from 1832 most of its men in the towns could vote.',
           'The continuity: the landed families kept their land, their titles and much of their power. Robert Gascoyne-Cecil, the 3rd Marquess of Salisbury, was prime minister from 1895 to 1902, so in 1900. Historians of the landed class (Cannadine; F. M. L. Thompson) describe it as still dominant in wealth and politics until the 1880s.',
-          'Rich middle-class families often bought country houses and married into the gentry: they climbed the old ladder rather than breaking it.',
+          'Some rich middle-class families bought country estates and married into landed families, and they climbed the old ladder rather than breaking it. How many did so is debated: Lawrence and Jeanne Stone (An Open Elite?, 1984) found few newcomers entering the landed elite, and W. D. Rubinstein argues most business fortunes stayed out of land, while F. M. L. Thompson shows some did not. Say "some," never "most."',
           'This is the topic\'s first row: who was on top, what changed, what kept going.'
         ],
         ask: 'Did industry destroy the old top of society?',

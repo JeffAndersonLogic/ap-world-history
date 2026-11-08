@@ -2190,7 +2190,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Now the continuity. The old landed families did not disappear. They kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess, the head of a noble family with large estates of land. Rich middle-class families often bought country houses and married into the gentry. The ladder had new rungs, but it was still a ladder."
+            "html": "Now the continuity. The old landed families did not disappear. They kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess, the head of a noble family with large estates of land. Some rich middle-class families bought country estates and married into landed families, though historians debate how many. The ladder had new rungs, but it was still a ladder."
           }
         ],
         "callout": {
@@ -2282,7 +2282,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan, the heart of New York City, grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants. In 1890 a reporter, Jacob Riis, wrote that \"three-fourths of its people live in the tenements.\" A <span class=\"kt\">tenement</span> was a crowded apartment building for poor renters. Riis photographed one room, \"not thirteen feet either way,\" where twelve men and women slept; most of the men were lodgers, paying \"five cents a spot.\""
+            "html": "The College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan, the heart of New York City, grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants. In 1890 a reporter, Jacob Riis, wrote that \"three-fourths of its people live in the tenements.\" A <span class=\"kt\">tenement</span> was a crowded apartment building for poor renters. Riis had photographed one room, \"not thirteen feet either way,\" where twelve men and women slept; most of the men were lodgers, paying \"five cents a spot.\""
           },
           {
             "type": "p",
@@ -2333,7 +2333,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Contextualization",
-        "text": "Using Sections 5 and 6, choose Jacob Riis's crowded room in New York in 1890. Explain the bigger story it is part of: what was happening to cities in industrial countries, and why.",
+        "text": "Using Sections 5 and 6, choose the crowded room Jacob Riis photographed in New York about 1889. Explain the bigger story it is part of: what was happening to cities in industrial countries, and why.",
         "placeholder": "Riis's room was part of a bigger story... This was happening because..."
       }
     ],

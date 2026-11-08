@@ -109,7 +109,7 @@ window.BEHISTORICAL_LESSON = {
           "**Before:** in 1750 most people in Britain, as almost everywhere, lived in the countryside. At the top of the ladder were landowning families, the aristocracy (nobles with titles) and the gentry (landowners just below them), whose rank came from land they inherited. Most families worked together, on the farm or at home.",
           "**The middle class:** factory owners, merchants and bankers, and the people who ran things for them, from engineers, doctors and lawyers to managers and clerks. Their place came from money they made and the education they paid for, not from land or titles. In Britain the Reform Act of 1832 gave the vote to most middle-class men in the towns.",
           "**The industrial working class:** people who owned no land and no tools, and lived on the wages they earned in mills, mines, docks and workshops, at the hours the employer set.",
-          "**What kept going:** landed families kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess, a high-ranking noble. Rich middle-class families often bought country houses and married into the gentry. The ladder had new rungs; it was still a ladder."
+          "**What kept going:** landed families kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess, a high-ranking noble. Some rich middle-class families bought country estates and married into landed families, though historians debate how many. The ladder had new rungs; it was still a ladder."
         ],
         image: {
           title: "Manchester from Kersal Moor, 1852",
@@ -215,7 +215,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "London, 1884. On a royal commission into the housing of the working classes, decide what your report will say caused the crisis, as one of five people: the commission's chair, a stonemason who became a trade-union leader and MP, a landowning lord, a housing manager who gives evidence, and a dock laborer's wife who gives evidence."
+    desc: "London, 1884. On a royal commission into the housing of the working classes, decide what your report will say caused the crisis, as one of five people: the commission's chair, a stonemason who became a trade-union leader and MP, a landowning lord, a housing manager who gives evidence, and a dock laborer's wife, a made-up character based on the families the commission heard about."
   }
 
 };
