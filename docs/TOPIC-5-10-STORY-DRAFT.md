@@ -6,9 +6,9 @@ Drafted 2026-11-08 from the CED source file, for the build the parent session st
 record of what they found is in `docs/TOPIC-5-10-CLAIM-LEDGER.md`, under "Review findings". Nothing
 ships until Jeff says "ship it".
 
-**Resume here (2026-11-08):** Phases 0 to 8 built and pushed; browser checks green. Review pass 1 (two
-reviewers) is running on the packet from commit after `534346c8`; next: fix its findings, log them in the
-ledger, run pass 2. The Unit 5 fingerprint moves only after the loop closes.
+**Resume here (2026-11-08):** Phases 0 to 8 built and pushed; browser checks green. Review pass 1 found 5
+page-truth and 4 history defects (plus 2 smaller items), all fixed and logged in the ledger. Review pass 2 is
+running; next: fix its findings, then pass 3 if needed. The Unit 5 fingerprint moves only after the loop closes.
 
 **Taught:** no dates yet. Unit 5 class dates exist only through 5.3, and Jeff has not named dates for
 5.4 onward. The build adds no schedule entries; the dates are an open item in the report.
