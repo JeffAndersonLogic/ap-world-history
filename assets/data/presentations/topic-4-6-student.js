@@ -334,7 +334,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "III · At the Edges · A Witness, 1681",
       "title": "How the towns kept the same day.",
-      "footer": "A first look. In Work Time, the Primary Source module (08) reads more of his testimony.",
+      "footer": "A first look. The Primary Source module (08) reads more of his testimony.",
       "kc": "KC-4.3.III.iii",
       "template": {
         "quote": "[T]he cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.",

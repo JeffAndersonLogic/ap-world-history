@@ -529,7 +529,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'naranjo', kind: 'source-quote', eyebrow: 'III · At the Edges · A Witness, 1681',
       kc: 'KC-4.3.III.iii', title: 'How the towns kept the same day.',
-      footer: 'A first look. In Work Time, the Primary Source module (08) reads more of his testimony.',
+      footer: 'A first look. The Primary Source module (08) reads more of his testimony.',
       template: {
         quote: '[T]he cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.',
         attribution: { author: 'Pedro Naranjo, of San Felipe Pueblo, questioned by Spanish officials', work: 'Declaration, translated by C. C. Shelby (1942)', year: '19 December 1681' },
