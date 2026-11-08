@@ -1840,6 +1840,10 @@ const CSS=`
 /* round 10: lesson flow */
 .bht-rm-q{font-style:italic;font-size:22u;line-height:1.4;color:var(--sub);max-width:62ch}
 .bht-rm{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+/* The equation-remove template also uses .bht-rm, with a 14u gap between its
+   cards; without this the gap lands between every road-map stop too, and a
+   six- or seven-stop road map runs off the board (found 2026-11-08). */
+ol.bht-rm{gap:0}
 .bht-rm-stop{display:grid;grid-template-columns:64u minmax(0,1fr);column-gap:22u;align-items:baseline;padding:9u 0;border-bottom:1u solid var(--rulec)}
 .bht-rm-stop:last-child{border-bottom:0}
 .bht-rm-stop .n{font:700 26u/1.2 'Cinzel',Georgia,serif;color:var(--acc);text-align:right}
