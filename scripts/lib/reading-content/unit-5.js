@@ -2117,151 +2117,237 @@ module.exports = {
     "topicLabel": "5.9 - Society and the Industrial Age",
     "sourceFile": "first-and-10-topic-5-9-society-and-the-industrial-age.html",
     "unitDir": "unit-5",
-    "docTitle": "First &amp; 10 | Topic 5.9 Society and the Industrial Age",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.9 Society and the Industrial Age",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.9, Society and the Industrial Age &nbsp;|&nbsp; AP World History",
-    "titleHtml": "A New Kind of Society: Class, Home, and the Industrial City",
-    "deck": "Industrialization didn’t just change what people made, it remade who they were. New classes, new family roles, and cities that couldn’t keep up.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.9, Society and the Industrial Age &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "A New <em>Ladder</em>",
+    "deck": "Before industry, society was already a ladder of rank. Industry did not throw the ladder away. It added new rungs, moved people up and down, split women's lives by class, and packed people into cities that could not keep up.",
     "skillTags": [
-      "Developments and Processes",
-      "Causation",
-      "Comparison"
+      "Continuity and Change",
+      "Contextualization"
     ],
     "supportCards": {
-      "beforeYouRead": "Read all three sections, then answer the three questions below. Build your response and submit it in Canvas, then open your AI Coach.",
-      "readingTarget": "Topic 5.9 is a causation topic: industrialization caused change in social hierarchies and standards of living. Track who gained, who lost, and why."
+      "beforeYouRead": "<strong>New classes. Split homes. Crowded cities. A new ladder, still a ladder.</strong> As you read, draw four rows on notebook paper: who was on top, who did the work, women and children, and where people lived. For each row, write what changed and what kept going.",
+      "readingTarget": "How did industrialization change who was on top, who did the work, and how people lived between 1750 and 1900, and what kept going?"
     },
     "vocabulary": [
-      "middle class",
-      "industrial working class",
-      "bourgeoisie",
-      "proletariat",
-      "separate spheres",
-      "domesticity",
-      "urbanization",
-      "tenement",
-      "cholera",
-      "typhoid",
-      "public health",
-      "infrastructure",
-      "wage labor",
-      "child labor",
-      "standard of living"
+      "Social Hierarchy",
+      "Middle Class",
+      "Industrial Working Class",
+      "Wages",
+      "Domestic Service",
+      "Separate Spheres",
+      "Urbanization",
+      "Public Health",
+      "Infrastructure",
+      "Tenement",
+      "Standard of Living"
     ],
     "sections": [
       {
-        "number": "01",
-        "label": "Historical Development",
-        "heading": "The Old Order Gets Scrambled",
+        "number": "1",
+        "label": "Before",
+        "heading": "A Ladder of Land and Birth",
         "blocks": [
           {
             "type": "p",
-            "html": "Picture walking through <span class=\"kt\">Manchester</span>, England, around 1850. Smoke from hundreds of factory chimneys hangs over the rooftops. A few streets away, a well-dressed family steps out of a brick townhouse with a garden. In the same city, two completely different lives are being lived, and both of them are brand new."
+            "html": "Topic 5.8 ended with a question: industry had changed who worked, where people lived and how families got by, so what kind of society did it make? The answer is not \"a brand-new one.\" In this reading, keep asking two questions: what changed, and what kept going?"
           },
           {
             "type": "p",
-            "html": "For most of history, society was sorted mainly by land and birth: aristocrats on top, peasants and artisans below, with status largely fixed at birth. Industrialization cracked that order open. As factories, railroads, and global trade reorganized how wealth was made, two new social classes rose to define the age."
+            "html": "Every society has a <span class=\"kt\">social hierarchy</span>, a ladder of rank that says who is on top and who is below. In 1750, most people in Britain, as almost everywhere, lived in the countryside. At the top of the ladder were landowning families, the aristocracy and the gentry, whose wealth and rank came from land they inherited. Below them were farmers, craftsmen and laborers. Most families worked together, on the farm or at home: women spun thread, and children helped as soon as they could. In Topic 5.3 you saw that work begin to move into the factory."
           },
           {
             "type": "p",
-            "html": "The first was the <span class=\"kt\">middle class</span>, factory owners, merchants, bankers, engineers, and professionals such as lawyers, doctors, managers, and clerks. Their status came from business, skill, and salaries, not noble titles or inherited land, and as industry expanded they grew in numbers and political influence. The second was the <span class=\"kt\">industrial working class</span>, the men, women, and children who ran the machines. They sold their labor for wages and worked long shifts in hot, dangerous factories and mines. The widening gap between the owner who collected the profits and the worker who breathed the cotton dust became one of the defining tensions of the 1800s."
+            "html": "Industry did not throw this ladder away. It rebuilt it: it added new rungs, moved people up and down, and changed what life was like on each rung."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Developments and Processes",
-          "raw": "<p>Identify and describe the two new social classes industrialization produced. <strong>What made each one *new* compared to the older order of land and birth?</strong></p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Start with what was already true.</strong> You cannot say what changed until you know what came before. The College Board's question is how industry changed <em>existing</em> social hierarchies: the ladder was there first.</p>"
         }
       },
       {
-        "number": "02",
-        "label": "Key Concept",
-        "heading": "Two Very Different Homes",
+        "number": "2",
+        "label": "Who Was on Top",
+        "heading": "New Classes, Old Families",
         "blocks": [
           {
             "type": "p",
-            "html": "Industrialization didn’t just change where people worked, it rewired family life, and it did so differently depending on class."
+            "html": "Industry made two groups bigger and more important than ever before. The first was the <span class=\"kt\">middle class</span>: factory owners, merchants and bankers, and the people who ran things for them, from engineers, doctors and lawyers to managers and clerks. Their place came from money they made and the education they paid for, not from land or titles. They gained power, too. In Britain the Reform Act of 1832 gave the vote to most middle-class men in the towns."
           },
           {
             "type": "p",
-            "html": "In a <span class=\"kt\">working-class</span> family, one paycheck was rarely enough, so wives and children worked too, spinning thread in textile mills, tending machines, or working in mines. Their wages were essential to the family’s survival, and women were routinely paid less than men for the same labor."
+            "html": "The second was the <span class=\"kt\">industrial working class</span>: people who owned no land and no tools, and lived on the <span class=\"kt\">wages</span> they earned in mills, mines, docks and workshops, at the hours the employer set. These were the workers who organized in Topic 5.8."
           },
           {
             "type": "p",
-            "html": "In a <span class=\"kt\">middle-class</span> family, the pattern flipped. Because one salary could support the household, the wife was increasingly expected not to earn money at all but to manage the home and raise the children. A powerful idea called <span class=\"kt\">separate spheres</span> took hold: men belonged to the public world of work and politics, women to the private world of the household. What looked like comfort also meant shrinking opportunity, middle-class women were steered away from education and paid professions toward <span class=\"kt\">domesticity</span>. The same revolution pushed working-class women into the workforce and middle-class women out of it."
+            "html": "Now the continuity. The old landed families did not disappear. They kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess, the head of a noble family with large estates of land. Rich middle-class families often bought country houses and married into the gentry. The ladder had new rungs, but it was still a ladder."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The same force, industrialization, pushed working-class women into wage labor but pushed middle-class women out of it. <strong>What economic difference between the two kinds of family caused that divergence?</strong></p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Fill in your first two rows.</strong> Who was on top: what changed (a middle class rose by money and education) and what kept going (landed families kept power)? Who did the work: what changed (a class that lived on wages, at the employer's hours)?</p>"
         }
       },
       {
-        "number": "03",
-        "label": "Key Concept",
-        "heading": "The City Couldn’t Keep Up",
+        "number": "3",
+        "label": "Women and Children, Part 1",
+        "heading": "Working-Class Families Earn",
         "blocks": [
           {
             "type": "p",
-            "html": "All of this happened inside cities exploding in size faster than anyone could manage. People streamed in from the countryside chasing factory jobs, and the cities simply weren’t built to hold them."
+            "html": "Women and children had always worked. What changed was where they worked, and how the answer split by class."
           },
           {
             "type": "p",
-            "html": "The result was a cluster of challenges: coal smoke filled the air with <span class=\"kt\">pollution</span>; wages that barely covered rent locked families in <span class=\"kt\">poverty</span>; overcrowded districts saw rising <span class=\"kt\">crime</span>. With no sewers or clean water, diseases like <span class=\"kt\">cholera</span> and <span class=\"kt\">typhoid</span> swept through packed neighborhoods, the <span class=\"kt\">public health crises</span> of the age. Families crammed into <span class=\"kt\">tenements</span> because of severe housing shortages, and cities lacked the <span class=\"kt\">infrastructure</span>, clean water, sanitation, transit, to absorb millions of new residents."
+            "html": "In working-class families, one wage was rarely enough to pay for rent and food. So women, and often children, took wage-earning jobs to add to the family's income. In Britain in the 1830s, women and girls were a majority of the workers in the textile factories. Many more worked in <span class=\"kt\">domestic service</span>, as maids and cooks in other people's houses, the largest single job for women in Britain. Others sewed clothes or made goods at home, paid by the piece. Women were usually paid less than men, mostly because they were given different, lower-paid jobs."
           },
           {
             "type": "p",
-            "html": "Over time these conditions sparked reform, sanitation laws, public health measures, and housing rules (the story of Topic 5.8). For 5.9, the key is to see the whole transformation: industrialization produced a new class structure, new family roles, and new urban problems, reshaping social hierarchies and standards of living from top to bottom."
+            "html": "The same pattern spread with industry. In Japan, which industrialized after 1868 (Topic 5.6), women made up about 62 percent of the workers in private factories in 1900, most of them young women in textile mills."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Compare the industrial city as experienced by a wealthy middle-class family versus a working-class family. <strong>What did each face, and what does the contrast reveal about “standards of living”?</strong></p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Change and continuity in one sentence.</strong> Working-class women kept working, as they always had (continuity), but now for wages, outside the home, at an employer's hours (change).</p>"
+        }
+      },
+      {
+        "number": "4",
+        "label": "Women and Children, Part 2",
+        "heading": "The Middle-Class Home",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In middle-class families, the husband's earnings were enough. So the wife was increasingly expected to stay out of paid work and to run the home and raise the children. Writers called the home a woman's proper \"sphere\"; historians call the idea <span class=\"kt\">separate spheres</span>: men in the world of work and politics, women in the home."
+          },
+          {
+            "type": "p",
+            "html": "In 1861 Isabella Beeton published a best-selling guide for middle-class wives, <em>The Book of Household Management</em>. Its first chapter opens:"
+          },
+          {
+            "type": "pull",
+            "html": "\"As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house.\""
+          },
+          {
+            "type": "p",
+            "html": "Running a middle-class house was real work, and the \"domestics\" the mistress gave orders to were servants, most of them working-class women. One class's home ran on the other class's wages."
+          },
+          {
+            "type": "p",
+            "html": "What kept going? In both classes, women were paid less and had fewer rights than men. In England and Wales, until laws of 1870 and 1882, a married woman's property legally belonged to her husband, and until 1870 so did the money she earned. The College Board's word is \"increasingly\": the middle-class home was an ideal that grew over the century, and many women's lives never fit it."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name the reason.</strong> The College Board gives the cause of the split: money. Working-class women earned \"to supplement their families' income\"; middle-class women \"did not have the same economic demands to satisfy.\" Write your women-and-children row with that reason in it.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Where People Lived, Part 1",
+        "heading": "Cities That Could Not Keep Up",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The fastest change of all was where people lived. <span class=\"kt\">Urbanization</span> is the growth of cities, as people move from the countryside to towns. Manchester, the great cotton town, had about 23,000 people in a count of 1773, about 70,000 at the first national census in 1801, and more than 300,000 by 1851. That year's census found, for the first time, more than half the people of England and Wales living in towns."
+          },
+          {
+            "type": "p",
+            "html": "No city was ready for growth that fast. The College Board names six challenges, and the new industrial towns had all of them. <strong>Pollution:</strong> coal smoke hung over the towns, and waste ran into the rivers. <strong>Poverty:</strong> many wages barely paid the rent. <strong>Housing shortages:</strong> whole families lived in one room or a damp cellar. <strong>Insufficient <span class=\"kt\">infrastructure</span>:</strong> the new streets had no sewers, no clean water and no rubbish collection. <strong>Public health crises:</strong> diseases spread through dirty water and crowded rooms. Cholera reached Britain in 1831, and in 1848 and 1849 it killed about 53,000 people in England and Wales. <strong>Increased crime:</strong> more people were charged with crimes, a number that rose until the early 1840s, though historians warn that it also rose because towns were setting up police forces to catch them."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Old problems, new speed.</strong> Poverty and disease were not new. What was new was the speed and size of the cities, which made old problems much worse. That is the College Board's word: \"rapid\" urbanization.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Where People Lived, Part 2",
+        "heading": "What It Did to Life, and Not Only in Britain",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "A family's <span class=\"kt\">standard of living</span> is how well it lives: its food, its home, its health, and how long its members live. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole. (Those averages are pulled down by the many babies and young children who died; adults who survived childhood lived much longer.) Comfortable middle-class families moved to cleaner streets and, later, to suburbs at the edge of town, away from the smoke."
+          },
+          {
+            "type": "p",
+            "html": "The College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan, the heart of New York City, grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants. In 1890 a reporter, Jacob Riis, wrote that \"three-fourths of its people live in the tenements.\" A <span class=\"kt\">tenement</span> was a crowded apartment building for poor renters. Riis photographed one room, \"not thirteen feet either way,\" where twelve men and women slept, most of them lodgers paying \"five cents a spot.\""
+          },
+          {
+            "type": "p",
+            "html": "Later in the century, cities began to catch up with sewers, clean water and police (Topic 5.8 has those reforms). Death rates fell, and wages rose faster after about 1860. But in 1900 many city workers were still poor."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Contextualization",
+          "raw": "<p><strong>Put one thing inside a bigger story.</strong> To contextualize, take one specific thing, such as Riis's crowded room, and explain the bigger story it belongs to: cities around the industrial world growing faster than anyone could house the people who came for work.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "Put It Together",
+        "heading": "A New Ladder, Still a Ladder",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put the four rows together. Industry added a middle class that rose by money and education and a working class that lived on wages, beside landed families who kept much of their wealth and power. It moved work out of the home, sending working-class women and children into wage jobs while middle-class women were increasingly kept at home. And it packed people into cities that grew faster than they could house, clean or protect them, so standards of living rose for some and, for a time, fell for many."
+          },
+          {
+            "type": "p",
+            "html": "Industry changed almost everything in a hundred and fifty years. Or did it? In Topic 5.10 you will weigh the whole unit: how much did industrialization really change the world from 1750 to 1900?"
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Industry created social classes\": there was a ladder of rank before industry, and landed families stayed near the top. \"In the 1800s women stopped working\": working-class women and children earned wages; only middle-class women were increasingly kept at home, and even they ran households. \"Workers in industrial cities died at 25\": the averages are pulled down by the many babies who died.</p>"
         }
       }
     ],
-    "takeaway": "Industrialization rebuilt society from the ground up, creating a middle class and an industrial working class, splitting family roles along class lines, and packing people into cities that couldn’t yet handle them.",
+    "takeaway": "Before industry, society was a ladder of rank based on land and birth. Industry rebuilt the ladder. A middle class of owners, merchants and professionals rose by money and education and, in Britain, won the vote in 1832, and an industrial working class lived on wages; but landed families kept much of their land and power (Lord Salisbury, a marquess, was prime minister in 1900). Work moved out of the home: working-class women and often children took wage jobs to add to the family's income, in mills, in domestic service and at home, while middle-class women, whose families did not need their wages, were increasingly kept to the home and the children (the ideal of separate spheres). Cities grew faster than they could cope (Manchester from about 23,000 people in 1773 to more than 300,000 by 1851; Manhattan to about 1.4 million by 1890), bringing pollution, poverty, crime, cholera, crowded housing and too few sewers and water pipes, so standards of living rose for some and fell for many. New classes. Split homes. Crowded cities. A new ladder, still a ladder.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "Q1",
-        "skill": "Developments and Processes",
-        "text": "Identify one of the new social classes that developed during the Industrial Age and describe one characteristic that distinguished it from the older landowning aristocracy.",
-        "placeholder": "Name the class and describe one defining characteristic..."
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Using Section 2, explain ONE way industrialization changed who was near the top of British society, and ONE way the old top kept going. Use a detail from the reading for each.",
+        "placeholder": "One thing that changed was... One thing that kept going was..."
       },
       {
-        "num": "Q2",
-        "skill": "Causation",
-        "text": "Explain one reason why rapid urbanization in industrial cities led to a public health crisis.",
-        "placeholder": "Explain the mechanism connecting rapid urban growth to disease..."
+        "num": "02",
+        "skill": "Continuity and Change",
+        "text": "Using Sections 3 and 4, explain why industrialization changed the lives of working-class women and middle-class women in different ways. Name the reason the College Board gives, and use a detail for each class.",
+        "placeholder": "Working-class women... because... Middle-class women... because..."
       },
       {
-        "num": "Q3",
-        "skill": "Comparison",
-        "text": "Explain one difference between the typical economic role of working-class women and that of middle-class women during this period.",
-        "placeholder": "State the difference and explain why it existed..."
+        "num": "03",
+        "skill": "Contextualization",
+        "text": "Using Sections 5 and 6, choose Jacob Riis's crowded room in New York in 1890. Explain the bigger story it is part of: what was happening to cities in industrial countries, and why.",
+        "placeholder": "Riis's room was part of a bigger story... This was happening because..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.9, Society and the Industrial Age",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   }
 };
