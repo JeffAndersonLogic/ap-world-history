@@ -22,9 +22,28 @@
  * Retelling slide: continuity and change (phase 'retell').
  *
  * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
- * 2026-11-23 and 2026-11-24).
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * 2026-11-23 and 2026-11-24), so the architecture test cannot compare Work
+ * Time with the schedule yet: keep outline.required and the launch pad equal.
+ * Required modules (Jeff, 2026-11-08, under his rule of 2026-10-23: 02, 06 and
+ * 10 on every topic, plus at least one chosen): 02 First & 10, 05 Skill
+ * Builder, 06 Checkpoint 1 and 10 Checkpoint 2. The build had chosen 02, 05,
+ * 07 and 10, with Checkpoint 1 optional; the Evidence Lab is now the
+ * early-finisher option.
+ *
+ * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
+ * topic; slides that only point to a module are cut; the lecture tells the
+ * story). The briefing opens on the outline below, a road map before the
+ * First & 10 shows students the same six section headers, every story slide's
+ * eyebrow names its section, minute counts are off the projected slides, the
+ * myths moved to the outline's Watch for list and the retelling slide's notes,
+ * and one Work Time slide replaced Myth and Evidence and the four module launch
+ * slides (Skill Builder, Checkpoint 1, Evidence Lab, Checkpoint 2). No story
+ * slide changed. 22 slides to 19. The deck had no Sharpen slide: Find the
+ * Pattern and Five Cases (slides 11 and 12) are the 5.A model and practice
+ * inside the story, not pointers to a module, so they stay. The topic has one
+ * learning objective (E): the synthesis slide (close-retell, slide 17) carries
+ * its band and answers it, and stays after the retelling slide and before Work
+ * Time.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -40,20 +59,101 @@ window.BEHISTORICAL_TEACHING = {
   priorities: {
     must: [
       'Answer the objective as written: modes AND locations. Every "where" slide also says "how": by hand, or by steam-powered machines.',
-      'Teach all four destinations of KC-5.1.I.D: other parts of Europe, the United States, Russia and Japan (slide 7), and what carried the methods (slide 8).',
+      'Teach all four destinations of KC-5.1.I.D: other parts of Europe, the United States, Russia and Japan (slide 8), and what carried the methods (slide 9).',
       'Teach both halves of KC-5.1.II.B: Europe\'s and the United States\' share rose (slide 13), and the Middle East and Asia kept producing while their share fell (slide 14).',
       'Say "share," and teach what it means: a share can fall while output holds (the pizza, slide 13 notes).',
-      'Model 5.A: find the pattern across cases (slides 10 and 11).'
+      'Model 5.A: find the pattern across cases (slides 11 and 12).'
     ],
     should: [
-      'Use the CED\'s own examples for the continuity: textile production in India (slides 5, 14 and 15) and shipbuilding in India (slide 14).',
+      'Use the CED\'s own examples for the continuity: textile production in India (slides 6, 14 and 15) and shipbuilding in India (slide 14).',
       'Keep the causes of India\'s falling share plural and argued: cheaper machine-made cloth, the trade rules of those in power, and older troubles. Never one cause stated as fact.',
-      'Correct three myths: "Asia stopped making things," "industry spread everywhere," and "India fell behind only because British machines were better."'
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "Asia stopped making things," "industry spread everywhere," and "India fell behind only because British machines were better."'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "Who Made the World\'s Goods?"',
-      'Use the Primary Source as an extension for early finishers.',
+      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the Primary Source as an extension.',
       'For a class that is ahead: the historians\' argument over India\'s "deindustrialization" (slide 15 notes).'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes, the First & 10 "Who Made the World's Goods?" or
+  // docs/TOPIC-5-4-STORY-DRAFT.md; nothing is new. Required modules are Jeff's
+  // list of 2026-11-08; the topic is not on the schedule yet.
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'Who made the world\'s goods in 1750', kc: 'KC-5.1.II.B', points: [
+        'Almost everything made by hand, at home or in workshops',
+        'China about a third, India about a quarter',
+        'All of Europe about a quarter; Britain under 2 percent',
+        'India\'s cotton cloth sold across Asia, Africa, the Middle East, Europe',
+        'Bairoch\'s estimates: the size of the change, not exact amounts',
+        'Two halves of the objective: modes (how) and locations (where)'
+      ] },
+      { label: 'II', title: 'How the factory spread', kc: 'KC-5.1.I.D', points: [
+        'Britain banned skilled workers leaving (to 1824) and machine exports (to 1843)',
+        'Slater, 1789: trained at Strutt\'s mill; Pawtucket machines built from memory',
+        'Cockerill at Seraing, Belgium, 1817, on coal',
+        'Nuremberg to Fürth, 1835, with an English engine',
+        'Lowell, from the 1820s: Boston merchants\' money',
+        'Russia and Japan later, mostly after 1870: Hughes at Yuzovka; Osaka Spinning, 1883',
+        'Japan\'s government push is 5.6: name it, and stop'
+      ] },
+      { label: 'III', title: 'The pattern', kc: 'KC-5.1.I.D', points: [
+        'A pattern: what happens again and again across different cases',
+        'Three things traveled together: people, machines, money',
+        'They took root where coal, water and money waited (the 5.3 factors)',
+        'Lowell: carried by money more than one person; the pattern holds'
+      ], skill: 'You model 5.A Making Connections out loud with the frame "In ___, ___ and ___, ___, so the pattern is ___" on an everyday case, the town pool (slide 11). Then the room names the pattern across five cases before you give yours (slide 12). Students practice it in the Skill Builder.' },
+      { label: 'IV', title: 'What changed: the shares', kc: 'KC-5.1.II.B', points: [
+        'Steam mills made cloth far faster and cheaper than hands',
+        'Britain: under 2 percent (1750), about a fifth (1860)',
+        'Europe and the US: about a quarter to over four-fifths by 1900',
+        'By 1900 the US had passed Britain',
+        'China: a third to about 6 percent; India: a quarter to under 2',
+        'The pizza: a share can fall while output holds; India also made less per person',
+        'Say "estimates," every time'
+      ] },
+      { label: 'V', title: 'What continued: the old makers', kc: 'KC-5.1.II.B', points: [
+        'CED: Asia and the Middle East "continued to produce"',
+        'India\'s handlooms shrank but survived: about a million in one province, 1908',
+        'Many weavers used cheaper machine-spun thread',
+        'Bombay\'s first steam mill: founded 1854, spinning from 1856',
+        'Wadia builders: teak warships for the Royal Navy (Trincomalee, 1817)',
+        'Chinese farm families kept weaving; Aleppo and Damascus handlooms held steady'
+      ] },
+      { label: 'VI', title: 'Why the share fell', kc: 'KC-5.1.II.B', points: [
+        'Lancashire\'s machine cloth cheaper than hand cloth, even in India',
+        'India\'s cloth exports: £1.3 million (1815) to under £100,000 (1832)',
+        'By about 1830 India bought more cotton cloth than it sold; it sold raw cotton',
+        'Rules: British cloth into India at 2½ percent; Indian calicoes taxed 70 to 85 percent in Britain (about 1813)',
+        'Older troubles too: the Mughal Empire\'s breakup, droughts',
+        'Historians argue how much each cause mattered: never one cause',
+        'Ships: navies turn to iron and steam; Bombay\'s teak warships end'
+      ] }
+    ],
+    wrap: { title: 'Put it together', columns: ['Changed', 'Kept going'], rows: [
+      { label: 'How goods were made', cells: ['From hand work to steam-powered factories', 'Much of Asia\'s and the Middle East\'s goods still made by hand'] },
+      { label: 'Where goods were made', cells: ['Factory methods spread to other parts of Europe, the US, Russia and Japan', 'India, China and the Middle East kept making cloth, ships and other goods'] },
+      { label: 'The world\'s shares', cells: ['Europe and the US: about a quarter (1750) to over four-fifths (1900)', 'The old makers kept making, but a shrinking share'] },
+      { label: 'India\'s cloth and ships', cells: ['By about 1830 India buys more cloth than it sells; teak warships end with iron and steam', 'Handloom weaving survives; the Wadias build teak warships for Britain'] }
+    ] },
+    vocabulary: [
+      { term: 'Manufacturing', def: 'The making of goods such as cloth, tools and pots.' },
+      { term: 'Hand Production', def: 'Making goods by hand, at home or in small workshops: how almost everything was made in 1750.' },
+      { term: 'Skilled Workers', def: 'People trained to build or run the machines. British law banned them from leaving to work abroad, until 1824.' },
+      { term: 'Share', def: 'A part of a whole. A share can shrink while the amount stays the same, if the whole grows (the pizza).' },
+      { term: 'Steam Power', def: 'Machines driven by steam. A steam-powered factory could make cloth far faster and more cheaply than hands could.' },
+      { term: 'Handloom', def: 'A loom worked by hand and foot.' },
+      { term: 'Raw Cotton', def: 'Cotton not yet spun or woven. India came to sell it to British mills and buy British cloth.' },
+      { term: 'Dockyard', def: 'A shipyard. At the Bombay dockyard the Wadia family built teak warships for Britain\'s Royal Navy.' }
+    ],
+    watch: [
+      { myth: '"Asia stopped making things."', fix: 'It kept making them: India\'s hand weavers, China\'s farm weavers, Bombay\'s teak warships. Its share fell (the CED: "continued to produce"). But do not swing to "nothing changed for Asia": the share fell, and India made less per person too.' },
+      { myth: '"Industry spread everywhere."', fix: 'It spread to a few regions, mostly near coal or strong rivers: other parts of Europe, the United States, Russia and Japan. But do not swing to "it stayed in Britain": it reached all four places the CED names.' },
+      { myth: '"India fell behind only because British machines were better."', fix: 'Machine-made cloth was cheaper, but the rules of those in power mattered too, and older troubles; historians argue how much. But do not swing to "colonialism alone blocked India": the cheaper machines mattered as well.' }
     ]
   },
 
@@ -61,25 +161,22 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the objective, owns and bridge-only, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 5.3. Bridge to the question.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over the Great Exhibition.', students: 'Predict where the factory went.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Who Made the World\'s Goods?" in class.', students: 'List the changes and the continuity.', slide: 4 },
-    { id: 'before', label: 'The World in 1750', range: '17-19', minutes: 2, teacher: 'Who made the world\'s goods.', students: 'Say where most goods were made.', slide: 5 },
-    { id: 'secret', label: 'Keeping the Secret', range: '19-21', minutes: 2, teacher: 'The laws, and Slater.', students: 'Say why the laws failed.', slide: 6 },
-    { id: 'spread', label: 'Where It Went', range: '21-24', minutes: 3, teacher: 'The four destinations, one case each, in date order.', students: 'Name the stops.', slide: 7 },
-    { id: 'carriers', label: 'What Carried It', range: '24-26', minutes: 2, teacher: 'People, machines, money, on coal.', students: 'Match each to a case.', slide: 8 },
-    { id: 'latecomers', label: 'Russia and Japan', range: '26-28', minutes: 2, teacher: 'The latecomers, with British machines.', students: 'Say what the two share.', slide: 9 },
-    { id: 'model', label: 'Find the Pattern', range: '28-30', minutes: 2, teacher: 'Model 5.A on an everyday case.', students: 'Say the pattern aloud.', slide: 10 },
-    { id: 'practice', label: 'The Pattern in the Cases', range: '30-32', minutes: 2, teacher: 'Five cases, one pattern.', students: 'Name the pattern before the reveal.', slide: 11 },
-    { id: 'skill', label: 'Skill Builder', range: '32-40', minutes: 8, teacher: 'Module 05: Making Connections 5.A.', students: 'Find and state a pattern.', slide: 12 },
-    { id: 'shares', label: 'The Shares Move', range: '40-43', minutes: 3, teacher: 'The change: Bairoch\'s estimates.', students: 'Read the three lines.', slide: 13 },
-    { id: 'continued', label: 'The Old Makers Kept Making', range: '43-45', minutes: 2, teacher: 'The continuity: weavers and ships.', students: 'Name what continued.', slide: 14 },
-    { id: 'why', label: 'Why the Share Fell', range: '45-48', minutes: 3, teacher: 'India\'s cloth trade turns around.', students: 'Trace the chain.', slide: 15 },
-    { id: 'myths', label: 'Myth and Evidence', range: '48-50', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 16 },
-    { id: 'retell', label: 'Who Made the World\'s Goods?', range: '50-53', minutes: 3, teacher: 'Students redraw the change and the continuity.', students: 'Retell the whole topic.', slide: 17 },
-    { id: 'synthesis', label: 'Say It in One Sentence', range: '53-54', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 18 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: how the methods spread.', students: 'Work without the coach.', slide: 19 },
-    { id: 'evidence', label: 'Evidence Lab', range: '54-62', minutes: 8, teacher: 'Module 07: two sources, a change or a continuity.', students: 'Observe, then infer, then name a limit.', slide: 20 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '62-74', minutes: 12, teacher: 'Module 10: the shares, and what continued. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 21 },
-    { id: 'close', label: 'Landing Sentence', range: '74-76', minutes: 2, teacher: 'Land the answer and hand off to 5.5.', students: 'Say the topic in one sentence.', slide: 22 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the six sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "Who Made the World\'s Goods?" in class.', students: 'List the changes and the continuity.', slide: 5 },
+    { id: 'before', label: 'The World in 1750', range: '18-20', minutes: 2, teacher: 'Who made the world\'s goods.', students: 'Say where most goods were made.', slide: 6 },
+    { id: 'secret', label: 'Keeping the Secret', range: '20-22', minutes: 2, teacher: 'The laws, and Slater.', students: 'Say why the laws failed.', slide: 7 },
+    { id: 'spread', label: 'Where It Went', range: '22-25', minutes: 3, teacher: 'The four destinations, one case each, in date order.', students: 'Name the stops.', slide: 8 },
+    { id: 'carriers', label: 'What Carried It', range: '25-27', minutes: 2, teacher: 'People, machines, money, on coal.', students: 'Match each to a case.', slide: 9 },
+    { id: 'latecomers', label: 'Russia and Japan', range: '27-29', minutes: 2, teacher: 'The latecomers, with British machines.', students: 'Say what the two share.', slide: 10 },
+    { id: 'model', label: 'Find the Pattern', range: '29-31', minutes: 2, teacher: 'Model 5.A on an everyday case.', students: 'Say the pattern aloud.', slide: 11 },
+    { id: 'practice', label: 'The Pattern in the Cases', range: '31-33', minutes: 2, teacher: 'Five cases, one pattern.', students: 'Name the pattern before the reveal.', slide: 12 },
+    { id: 'shares', label: 'The Shares Move', range: '33-36', minutes: 3, teacher: 'The change: Bairoch\'s estimates.', students: 'Read the three lines.', slide: 13 },
+    { id: 'continued', label: 'The Old Makers Kept Making', range: '36-38', minutes: 2, teacher: 'The continuity: weavers and ships.', students: 'Name what continued.', slide: 14 },
+    { id: 'why', label: 'Why the Share Fell', range: '38-41', minutes: 3, teacher: 'India\'s cloth trade turns around.', students: 'Trace the chain.', slide: 15 },
+    { id: 'retell', label: 'Who Made the World\'s Goods?', range: '41-45', minutes: 4, teacher: 'Students redraw the change and the continuity; correct the three myths here.', students: 'Retell the whole topic.', slide: 16 },
+    { id: 'synthesis', label: 'Say It in One Sentence', range: '45-46', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 17 },
+    { id: 'worktime', label: 'Work Time', range: '46-82', minutes: 36, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder, Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 18 },
+    { id: 'close', label: 'Landing Sentence', range: '82-84', minutes: 2, teacher: 'Land the answer and hand off to 5.5.', students: 'Say the topic in one sentence.', slide: 19 }
   ],
 
   quickLaunch: [
@@ -96,18 +193,26 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'The factory traveled. The share moved. The old makers kept making.',
       subtitle: 'Continuity and Change, with Making Connections 5.A. Where did the new way of making things go, and what happened to the places that made the world\'s goods before?',
       notes: {
         minutes: 2,
+        keys: [
+          'Objective E: modes AND locations of production',
+          'The spread (KC-5.1.I.D): four destinations',
+          'The shares (KC-5.1.II.B): rose, fell, kept producing',
+          'Indian textiles and the Bombay Dockyard are the cases',
+          'Owns spread and shares; Meiji and Muhammad Ali are 5.6',
+          'Three myths: outline Watch for list'
+        ],
         land: [
           'CED p. 103. One learning objective, E (Technology and Innovation): explain how different modes and locations of production have developed and changed over time. The reasoning process is Continuity and Change (p. 95); the suggested skill is 5.A, identify patterns among or connections between historical developments and processes.',
           'Key Concepts: KC-5.1.II.B (the rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions\' share of global manufacturing during the first Industrial Revolution; while Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined); KC-5.1.I.D (as new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan).',
           'Illustrative examples (optional, p. 103): shipbuilding in India and Southeast Asia; iron works in India; textile production in India and Egypt. This deck uses Indian textiles and the Bombay Dockyard; Egypt appears only in the slide 14 notes, because its new mills of the 1830s were Muhammad Ali\'s, Topic 5.6\'s example. The page also lists a PD module, "Comparison in Period 5," on Russia and Japan; not used, because comparison is not 5.4\'s reasoning process and how those states built industry is 5.6\'s.',
           'Owns: the spread (KC-5.1.I.D) and the shares (KC-5.1.II.B). Bridge only: how governments sponsored industry, Meiji reform and Muhammad Ali\'s state mills (5.6); steam engines and fossil fuels (5.5; steam is named here as what made factory goods cheap); free trade (5.7); colonial economies (Unit 6); workers\' lives (5.9).',
           'Modes and locations: the objective has two halves. "Locations" is where goods were made; "modes" is how, by hand or by steam-powered machines. Every slide carries both.',
-          'Three myths, on slide 16: "Asia stopped making things"; "industry spread everywhere"; "India fell behind only because British machines were better."'
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (16) if they come up: "Asia stopped making things"; "industry spread everywhere"; "India fell behind only because British machines were better."'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, and those regions made a growing share of the world\'s goods, while India, China and the Middle East kept making goods by hand but a shrinking share.',
@@ -115,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull it back from memory.',
       template: {
         questions: [
@@ -127,10 +232,17 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'No notes; fast answers, no reteaching',
+          '5.3: nature and people; one place, one job each',
+          'India made much of the world\'s cloth',
+          'Bridge: where did the factory go?',
+          'Prompt 3 returns on slide 6'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: coal, iron, water, or the shortage of wood (nature); better farms, towns, laws, cotton from abroad, or capital (people). One place, and one job each. India.',
-          'The bridge is 5.3\'s hand-off line. Prompt 3 returns on slide 5: in 1750, India made about a quarter of the world\'s manufactured goods.'
+          'The bridge is 5.3\'s hand-off line. Prompt 3 returns on slide 6: in 1750, India made about a quarter of the world\'s manufactured goods.'
         ],
         ask: 'If the factory needed coal, water, people and money in Britain, what would it need to start somewhere else?',
         listenFor: 'The same things, plus someone who knew how to build the machines. That is today.',
@@ -143,23 +255,68 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'And what happened to the places that made the world\'s goods before?',
       notes: {
         minutes: 1,
+        keys: [
+          'Real painting: the Great Exhibition opens, 1851',
+          'Machines and hand-made goods under one roof',
+          'It shows the ceremony, not the exhibits',
+          'Predict where the factory went; check at slide 8'
+        ],
         land: [
           'The picture is a real painting: Henry Courtney Selous, The Opening of the Great Exhibition by Queen Victoria on 1 May 1851, oil, Victoria and Albert Museum, public domain (copy mirrored from Wikimedia Commons). The Great Exhibition, in the Crystal Palace in Hyde Park, London, gathered machines and goods from Britain and from many other countries under one glass roof.',
           'Why open here: the topic is about where the world\'s goods were made and how. In 1851 machines and hand-made goods stood side by side in one building; the BeInTheRoom scenario is set there.',
           'The painting shows the ceremony, not the exhibits: the queen, the royal family and officials under the glass. It was painted to celebrate the event.'
         ],
         ask: 'Predict: after Britain, where would the factory go next, and why there?',
-        listenFor: 'Places with coal and iron; places close to Britain; places with money to invest. Write the guesses down and check them on slide 7.'
+        listenFor: 'Places with coal and iron; places close to Britain; places with money to invest. Write the guesses down and check them on slide 8.'
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'Where did the new way of making things go, and what happened to the places that made the world\'s goods before?',
+        stops: [
+          { label: 'I', text: 'Who made the world\'s goods in 1750' },
+          { label: 'II', text: 'How the factory spread' },
+          { label: 'III', text: 'The pattern' },
+          { label: 'IV', text: 'What changed: the shares' },
+          { label: 'V', text: 'What continued: the old makers' },
+          { label: 'VI', text: 'Why the share fell' },
+          { label: '✓', text: 'Put it together: who made the world\'s goods?', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Six sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the six headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to VI), so the class can see where it is all period.',
+          'The question at the top is the topic question: students watch for the two changes, where goods were made and how, and for the one big continuity, who kept making them.'
+        ],
+        ask: 'Which do you expect to be bigger: what changed, or what kept going?',
+        listenFor: 'Any reasoned guess; return to it at the retelling slide.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read, and keep two lists.',
       subtitle: 'Changes: where goods were made, and how. Continuity: who kept making goods, and how.',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-5/first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Keep two lists: changes and the continuity',
+          'Write "share," not "amount"',
+          'Q1 pattern, Q2 shares, Q3 India',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Who Made the World\'s Goods?" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who keep both lists, and who write "share," not "amount," for the change.',
@@ -170,7 +327,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'before', kind: 'story-scene', eyebrow: 'Before · About 1750',
+      phase: 'before', kind: 'story-scene', eyebrow: 'I · Before · About 1750',
       kc: 'KC-5.1.II.B', title: 'Most goods were made by hand, most of them in Asia.',
       footer: 'Estimates by the economic historian Paul Bairoch: they show size, not exact amounts.',
       template: {
@@ -183,6 +340,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Baseline about 1750: the share Asia lost',
+          'China a third, India a quarter',
+          'All of Europe a quarter; Britain under 2 percent',
+          'Bairoch\'s estimates: size, not exact amounts',
+          'Real palampore: India\'s hand production at its best',
+          'The mode: almost all by hand'
+        ],
         land: [
           'KC-5.1.II.B begins from here: the share Europe and the United States gained is the share Asia lost. The baseline is about 1750.',
           'The picture is a real object: a palampore, a hanging of cotton painted and dyed by hand on the Coromandel Coast of southeast India in the early 1700s, made for buyers in Sri Lanka (The Metropolitan Museum of Art, 2010.337, public domain). It is what India\'s hand production looked like at its best: the kind of cloth Lancashire first copied.',
@@ -196,7 +361,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'secret', kind: 'case-file', eyebrow: 'How It Spread · People',
+      phase: 'secret', kind: 'case-file', eyebrow: 'II · How It Spread · People',
       kc: 'KC-5.1.I.D', title: 'Britain tried to keep the secret.',
       template: {
         tag: 'Law',
@@ -212,6 +377,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'The first spread: in people\'s heads',
+          'Workers banned from leaving to 1824; machines to 1843',
+          'The policy could not be enforced',
+          'Slater, 1789: Strutt\'s mill to Pawtucket',
+          'Machines built from memory; the disguise is legend'
+        ],
         land: [
           'KC-5.1.I.D: the methods "spread." This slide is how the first spread happened: in people\'s heads.',
           'The laws: the Artificers Going Abroad Act of 21 June 1824 repealed the ban on skilled workers leaving; Gladstone\'s bill of August 1843 removed the restrictions on exporting machinery (Hansard). Some textbooks give 1825 and 1842. David Jeremy (Business History Review) calls the policy "incapable of enforcement": machines and workers both got out.',
@@ -224,7 +396,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'spread', kind: 'diffusion-path', eyebrow: 'How It Spread · Where It Went',
+      phase: 'spread', kind: 'diffusion-path', eyebrow: 'II · How It Spread · Where It Went',
       kc: 'KC-5.1.I.D', title: 'Where the new methods went.',
       footer: 'One case at each stop, not the first arrival. Each added its own coal, water and money.',
       template: {
@@ -239,6 +411,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'All four CED destinations, one case each',
+          'Date order, not first arrivals',
+          'Belgium first on the mainland, on coal',
+          'Nuremberg to Fürth, 1835: an English locomotive',
+          'Hughes at Yuzovka; Osaka Spinning, 1883',
+          'Check the class\'s predictions'
+        ],
         land: [
           'KC-5.1.I.D names the destinations: "other parts of Europe and the United States, Russia, and Japan." All four are on this slide, one case each, in date order (not the first arrival: Brügelmann\'s water-powered Cromford mill at Ratingen, in the Rhineland, dates from 1783 to 1784, before Slater\'s).',
           'Belgium: John Cockerill (1790 to 1840), son of the English machine builder William Cockerill; the Seraing works began production on 25 January 1817 and by the mid-1820s were called "the industrial wonder of Europe" (Encyclopedia of Europe, 1789-1914). Machine building came first; the works\' coke blast furnace was begun in 1823 and producing by 1826. Belgium was the first country on the European mainland to industrialize, on the coal of the Sambre-Meuse valley. The mainland\'s first steam passenger railway ran from Brussels to Mechelen on 5 May 1835 (Canon of Flanders).',
@@ -253,7 +433,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'carriers', kind: 'equation', eyebrow: 'How It Spread · What Carried It',
+      phase: 'carriers', kind: 'equation', eyebrow: 'II · How It Spread · What Carried It',
       kc: 'KC-5.1.I.D', title: 'Three things traveled together.',
       footer: 'Ask of every case: what carried the methods there, and what was waiting when they arrived?',
       template: {
@@ -266,6 +446,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Three carriers: people, machines, money',
+          'Plus resources waiting where they arrived',
+          'Lowell: Boston merchants\' money; the town chosen 1821',
+          'Answer to "it just spread": something carries it'
+        ],
         land: [
           'KC-5.1.I.D says the methods spread. This slide is how: three carriers, and the resources that let them take root.',
           'People carried the methods while the British laws held (to 1824 and 1843); money and some machines carried them too, even then (the Nuremberg locomotive was never covered by the textile ban). Lowell: Francis Cabot Lowell studied British power looms in 1810 to 1812 and had them rebuilt "from his memory and drawings"; with Boston merchants (the "Boston Associates") he founded the Boston Manufacturing Company at Waltham in 1814. In 1821 the Associates chose the falls of the Merrimack for the mill town of Lowell, and recruited "the daughters of New England Yankee farmers" (National Park Service).',
@@ -273,11 +459,11 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'Take one away. Could a factory start in a new place without it?',
         listenFor: 'Without people, nobody can build or run the machines; without machines, there is nothing to run; without money, nobody pays before the factory earns.',
-        ap: 'KC-5.1.I.D; the pattern for slide 11.'
+        ap: 'KC-5.1.I.D; the pattern for slide 12.'
       }
     },
     {
-      phase: 'latecomers', kind: 'split-mirror', eyebrow: 'How It Spread · Russia and Japan',
+      phase: 'latecomers', kind: 'split-mirror', eyebrow: 'II · How It Spread · Russia and Japan',
       kc: 'KC-5.1.I.D', title: 'The last two came later, with British machines and know-how.',
       footer: 'How Japan\'s government pushed industry on purpose is Topic 5.6.',
       template: {
@@ -292,6 +478,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Last two destinations: late, with British help',
+          'Russia: Hughes, Yuzovka, first furnace 1871',
+          'Russia\'s output grew fastest in the 1890s',
+          'Japan: Osaka Spinning, British spindles, steam',
+          'Japan\'s government push is 5.6: name it, stop',
+          'No Perry, Meiji, Iwakura or zaibatsu here'
+        ],
         land: [
           'KC-5.1.I.D\'s last two destinations. Both came late and both borrowed British machines and experts. Japan\'s government also pushed industry on purpose, which is 5.6 (KC-5.2.II.A, Meiji Japan); the story map gives 5.6 no Russian case, so do not promise one. Name Japan\'s, and stop.',
           'Russia: John Hughes, a Welsh engineer, ironworks at Hughesovka (Yuzovka) in the Donets basin, company registered in London 1869, first furnace 1871, with a team of British workers (Glamorgan Archives). Russia\'s industrial output grew 8 to 9 percent a year in the 1890s, with railway building and foreign loans.',
@@ -304,7 +498,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'model', kind: 'sentence-frame', eyebrow: 'Making Connections 5.A · Model',
+      phase: 'model', kind: 'sentence-frame', eyebrow: 'III · The Pattern · Making Connections 5.A, Model',
       title: 'Find the pattern: the cases, what they share, the pattern.',
       footer: 'A pattern is what happens again and again across different cases.',
       template: {
@@ -314,6 +508,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          '5.A: identify patterns among developments',
+          'A pattern: two or more cases, one shared thing',
+          'Everyday model on purpose: no answer to copy',
+          'The pattern is the sentence after "so"'
+        ],
         land: [
           'The CED\'s suggested skill, 5.A: "Identify patterns among or connections between historical developments and processes." A pattern needs at least two cases and a thing they share.',
           'The model is from everyday life, on purpose: First & 10 question 01, Checkpoint 1 and the Skill Builder all ask for the pattern in this topic, so a modeled history answer would be an answer to copy.',
@@ -325,7 +525,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'practice', kind: 'ledger', eyebrow: 'Making Connections 5.A · Practice',
+      phase: 'practice', kind: 'ledger', eyebrow: 'III · The Pattern · Making Connections 5.A, Practice',
       kc: 'KC-5.1.I.D', title: 'Five cases. What do they share?',
       footer: 'What carried the methods to each place? What do all five share?',
       template: {
@@ -341,6 +541,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Students recall each case\'s carrier',
+          'Take three answers before giving yours',
+          'Pattern: people, machines, money, to the right resources',
+          '"They all copied Britain": copied how, with what?'
+        ],
         land: [
           'Practice on KC-5.1.I.D. The slide gives place, date and what was built, not who or what carried it: students recall the carrier for each case from the reading, then say the pattern. Take three answers before giving yours.',
           'A strong answer: "In Pawtucket, Seraing and Osaka, the factory started with British know-how or British machines, set up where there was water or coal, so the pattern is that the methods spread when people, machines and money carried them to places with the right resources."',
@@ -352,22 +558,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Find a pattern, and say it in one sentence.',
-      subtitle: 'Making Connections 5.A: list the cases, find what they share, and say the pattern.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
-      notes: {
-        minutes: 8,
-        land: [
-          'Module 05 is required. It models the frame on an everyday example and asks students to find a pattern across three cases of the factory\'s spread, then a pattern in the shares.',
-          'Circulate for the "so the pattern is": a shared feature, not a list.'
-        ],
-        ask: 'Read me your pattern sentence.',
-        listenFor: 'A shared feature named after "so," not another case.'
-      }
-    },
-    {
-      phase: 'shares', kind: 'timeline-fortunes', eyebrow: 'What Changed · The Shares',
+      phase: 'shares', kind: 'timeline-fortunes', eyebrow: 'IV · What Changed · The Shares',
       kc: 'KC-5.1.II.B', title: 'The world\'s shares moved.',
       footer: 'Britain alone: under 2 percent in 1750, about a fifth by 1860.',
       template: {
@@ -382,6 +573,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'KC-5.1.II.B first half: the share rose',
+          'Europe and US: about 23 to 86 percent',
+          'China 33 to 6; India 25 to under 2',
+          'US passed Britain "by 1900"; say "estimates"',
+          'The pizza: share is not amount',
+          'But India\'s output per person fell too'
+        ],
         land: [
           'KC-5.1.II.B, first half: steam-powered production in Europe and the U.S. "contributed to the increase in these regions\' share of global manufacturing."',
           'The lines are drawn from Bairoch\'s estimates (1982; Kennedy, 1987, Table 6), one scale for all three rows: Europe (including Russia) and the United States together, about 23 percent in 1750 to about 86 percent in 1900; China 32.8 to 6.2; India 24.5 to 1.7. Britain alone: 1.9 percent in 1750, 19.9 by 1860. By 1900 the United States (23.6) had passed Britain (18.5); the year it did so is not settled, so say "by 1900." Say "estimates," every time. (One online copy of the table prints the US at 26.6 for 1900; that is a typo.)',
@@ -394,7 +593,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'continued', kind: 'story-scene', eyebrow: 'What Continued · The Old Makers',
+      phase: 'continued', kind: 'story-scene', eyebrow: 'V · What Continued · The Old Makers',
       kc: 'KC-5.1.II.B', title: 'The old makers kept making.',
       footer: 'The share shrank: the rest of the world made far more, and the old makers lost buyers.',
       template: {
@@ -407,6 +606,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'KC-5.1.II.B second half: "continued to produce"',
+          'Handlooms survived: about a million, one province, 1908',
+          'Never "millions": no all-India count',
+          'Wadia builders: HMS Trincomalee, 1817, still afloat',
+          'China\'s farm weavers; Aleppo and Damascus steady',
+          'Egypt\'s state mills are 5.6: only if asked'
+        ],
         land: [
           'KC-5.1.II.B, second half: "While Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined." This slide is the continuity.',
           'India also built steam-powered cotton mills of its own: the Bombay Spinning and Weaving Company, founded by Cowasji Nanabhoy Davar on 7 July 1854, began production on 7 February 1856, the first mill in Bombay. Much of India\'s cloth was still woven by hand.',
@@ -424,7 +631,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'why', kind: 'cause-chain', eyebrow: 'Why the Share Fell · India\'s Cloth',
+      phase: 'why', kind: 'cause-chain', eyebrow: 'VI · Why the Share Fell · India\'s Cloth',
       kc: 'KC-5.1.II.B', title: 'India\'s cloth trade turned around.',
       footer: 'Historians still argue how much each cause mattered: cheaper machine-made cloth, the rules of those in power, and older troubles.',
       template: {
@@ -438,6 +645,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'One link is a choice by people in power',
+          'Exports £1.3 million (1815), under £100,000 (1832)',
+          'Net importer "by about 1830," not 1820',
+          'British cloth in at 2½ percent',
+          'Three causes argued; never one as fact',
+          'Teak warships end with iron and steam'
+        ],
         land: [
           'KC-5.1.II.B: why the share fell, in one case. This is a chain of causes, and one link is a choice made by people in power.',
           'The reversal: Montgomery Martin told a Commons committee in 1840 that India\'s cotton goods exports fell from £1.3 million (1815) to under £100,000 (1832), while cotton goods imported from England rose from £26,300 to over £400,000 (quoted in R. C. Dutt, India in the Victorian Age, 1904, p. 112). Twomey (1983) and Broadberry and Gupta: India became a net importer of cotton cloth "from about 1830." Say "by about 1830," not "by 1820."',
@@ -451,30 +666,8 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence is more interesting than the myths.',
-      template: {
-        rows: [
-          { myth: 'Asia stopped making things.', evidence: 'It kept making them: India\'s hand weavers, China\'s farm weavers, Bombay\'s teak warships. Its share fell.', source: 'KC-5.1.II.B' },
-          { myth: 'Industry spread everywhere.', evidence: 'It spread to a few regions, mostly near coal or strong rivers: other parts of Europe, the United States, Russia and Japan.', source: 'KC-5.1.I.D' },
-          { myth: 'India fell behind only because British machines were better.', evidence: 'Machine-made cloth was cheaper, but the rules of those in power mattered too, and historians argue how much.', source: 'KC-5.1.II.B' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        land: [
-          'Myth 1 is slides 13 and 14: the CED\'s own words, "continued to produce manufactured goods."',
-          'Myth 2: KC-5.1.I.D names four destinations. Within them, industry clustered on coal (Belgium\'s Sambre-Meuse, the Ruhr, Pennsylvania, the Donets).',
-          'Myth 3: slide 15. The opposite myth is just as wrong: "colonialism alone blocked India." Both causes, and older ones, are in the argument.'
-        ],
-        ask: 'Which myth would most hurt an essay answer, and why?',
-        listenFor: 'Myth 1: it drops the continuity, which is half of the CED\'s sentence.'
-      }
-    },
-    {
       retelling: true,
-      phase: 'retell', kind: 'continuity-change', eyebrow: 'The Whole Topic',
+      phase: 'retell', kind: 'continuity-change', eyebrow: 'Put It Together · The Whole Topic',
       title: 'Who made the world\'s goods?',
       footer: 'The factory traveled. The share moved. The old makers kept making.',
       template: {
@@ -484,17 +677,28 @@ window.BEHISTORICAL_TEACHING = {
         continued: { tag: 'Continued', items: ['Indian and Chinese weavers keep weaving', 'Bombay builds teak warships', 'But their **share** shrinks'] }
       },
       notes: {
-        minutes: 3,
+        minutes: 4,
+        keys: [
+          'Redraw it from memory: before, after, the band',
+          'Modes: by hand, then by steam-powered machine',
+          'Locations: Asia, then Europe, US, Russia, Japan',
+          'The band: "continued to produce"',
+          'Myths: fix them, without the opposite mistake'
+        ],
         land: [
           'The retelling slide: the change and the continuity around one turning point. Ask students to close their notes and redraw it, before, after and the band underneath, then compare with the slide.',
-          'Point to the two halves of the objective: modes (by hand, by steam-powered machine) and locations (Asia, then Europe and the United States, Russia and Japan). The band is the CED\'s "continued to produce."'
+          'Point to the two halves of the objective: modes (by hand, by steam-powered machine) and locations (Asia, then Europe and the United States, Russia and Japan). The band is the CED\'s "continued to produce."',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list). The one that most hurts an essay is the first: it drops the continuity, which is half of the CED\'s sentence.',
+          '"Asia stopped making things": it kept making them, India\'s hand weavers, China\'s farm weavers, Bombay\'s teak warships (slides 13 and 14; the CED\'s own words, "continued to produce manufactured goods"). Its share fell. Do not swing to the opposite mistake, that nothing changed for Asia: the share fell, and Bairoch\'s estimates show India\'s output per person falling too (slide 13 notes).',
+          '"Industry spread everywhere": KC-5.1.I.D names four destinations, other parts of Europe, the United States, Russia and Japan, and within them industry clustered on coal or strong rivers (Belgium\'s Sambre-Meuse, the Ruhr, Pennsylvania, the Donets). Do not swing to the opposite mistake, that it stayed in Britain: it reached all four (slide 8).',
+          '"India fell behind only because British machines were better": machine-made cloth was cheaper, but the rules of those in power mattered too, and older troubles, and historians argue how much (slide 15). The opposite mistake is just as wrong: "colonialism alone blocked India." Both causes, and older ones, are in the argument.'
         ],
         ask: 'Redraw it from memory. Which part is the change, and which is the continuity?',
         listenFor: 'The change: how and where goods were made, and the shares. The continuity: the old makers kept making.'
       }
     },
     {
-      phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
+      phase: 'synthesis', kind: 'close-retell', eyebrow: 'Put It Together · AP Synthesis',
       kc: 'Unit 5: Learning Objective E', title: 'Say it in one sentence.',
       template: {
         frame: 'Factory methods spread to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Europe\'s and the US\'s ___ rose; India and China kept ___ goods, but their share ___.',
@@ -503,6 +707,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Objective E, answered in one sentence',
+          'Fill it from memory',
+          'One example of change, one of continuity'
+        ],
         land: [
           'Learning objective E: "Explain how different modes and locations of production have developed and changed over time." The sentence is the whole answer; the examples make it an AP answer.',
           'A strong version: between 1750 and 1900 production moved from hand work to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people like Samuel Slater, by British machines and by investors\' money; Europe and the United States\' share of world manufacturing rose from about a quarter to over four-fifths, while India and China kept making goods, with Indian hand weaving shrinking but surviving and Chinese farm families still weaving at home, but their shares fell to a few percent.'
@@ -512,47 +721,36 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'How did the factory spread, and what carried it?',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      title: 'Now you find the pattern.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
+      template: {
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Find a pattern, and say it in one sentence.', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'What changed, what continued, with Socrates.', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' }
+        ]
+      },
       notes: {
-        minutes: 0,
-        land: [
-          'Optional. Checkpoint 1 assesses Target 1: where the methods spread, what carried them, and the pattern.'
+        minutes: 36,
+        keys: [
+          'All three required today, in order',
+          'Skill Builder: the pattern after "so"',
+          'Checkpoint 1: no coach',
+          'Checkpoint 2: the shares, and what continued',
+          'Checkpoint 2 unfinished = homework',
+          'Early finishers: Evidence Lab'
         ],
-        ask: 'Which carrier was hardest to find evidence for?',
-        listenFor: 'A destination, a carrier and a pattern.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Two sources: a change, or a continuity.',
-      subtitle: 'Choose at least two cards. For each: what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell you.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
-      notes: {
-        minutes: 8,
         land: [
-          'Module 07 is required. The cards pair real objects and verified excerpts; see the lesson\'s Evidence Lab.',
-          'Listen for students who name what kind of source each card is, and who say which half of the CED\'s sentence it supports: the change or the continuity.'
-        ],
-        ask: 'What can your source not tell you?',
-        listenFor: 'Whether it is typical: one mill, one ship or one weaver is a case, not a share.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'What changed, and what continued, in who made the world\'s goods?',
-      subtitle: 'Explain how the share of the world\'s manufacturing changed from 1750 to 1900, with two numbers; explain one cause of the change; and explain what continued in India or China, with evidence. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
-      notes: {
-        minutes: 12,
-        land: [
-          'Module 10 is required: draft, Socrates, revise. It assesses Target 2 (KC-5.1.II.B) and declares Continuity and Change.',
-          'A strong answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, almost all by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where it paid a tax of only 2½ percent, so that by about 1830 India bought more cotton cloth than it sold; but India kept making goods, with hand weavers still at work (about a million in one province in 1908) and Bombay\'s shipyards building teak warships; so the share changed, while production continued.'
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today (Jeff, 2026-11-08, under his rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen). Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 5.A Making Connections. It models the frame on an everyday example and asks students to find a pattern across three cases of the factory\'s spread, then a pattern in the shares. Circulate for the "so the pattern is": a shared feature, not a list. Ask "Read me your pattern sentence," and listen for a shared feature named after "so," not another case. If a student needs the frame, give it aloud (slide 11): "In ___, ___ and ___, ___, so the pattern is ___."',
+          'Checkpoint 1 (Module 06), with no coach, is the diagnostic. It assesses Target 1: where the methods spread, what carried them, and the pattern. Give feedback in the room. Ask which carrier was hardest to find evidence for; listen for a destination, a carrier and a pattern.',
+          'Checkpoint 2 (Module 10) asks students to explain how the share of the world\'s manufacturing changed from 1750 to 1900, with two numbers; explain one cause of the change; and explain what continued in India or China, with evidence. It assesses Target 2 (KC-5.1.II.B) and declares Continuity and Change: draft, Socrates, revise. If it is not finished in class, it is homework.',
+          'A strong Checkpoint 2 answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, almost all by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where it paid a tax of only 2½ percent, so that by about 1830 India bought more cotton cloth than it sold; but India kept making goods, with hand weavers still at work (about a million in one province in 1908) and Bombay\'s shipyards building teak warships; so the share changed, while production continued.',
+          'Early finishers: the Evidence Lab (Module 07, required when the deck was built, now the early-finisher option). The cards pair real objects and verified excerpts; see the lesson\'s Evidence Lab. Students choose at least two cards and say what kind of source each is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell them: whether it is typical, because one mill, one ship or one weaver is a case, not a share. Or the Primary Source as an extension.'
         ],
         ask: 'Where in your answer is the change, and where is the continuity?',
-        listenFor: 'The change in shares and in how goods were made; the continuity in who kept making them.'
+        listenFor: 'Checkpoint 2: the change in shares and in how goods were made; the continuity in who kept making them.'
       }
     },
     {
@@ -561,6 +759,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Mills at Lowell, Massachusetts, photographed between 1900 and 1910. Next, Topic 5.5: factories needed coal, and steam engines turned it into power on a scale nobody had seen. How did the machines themselves change the world?',
       notes: {
         minutes: 2,
+        keys: [
+          'Real photograph: Lowell\'s mills, 1900 to 1910',
+          'Land the spine',
+          'Hand-off to 5.5: the machines themselves'
+        ],
         land: [
           'Land the spine, then the hand-off to 5.5: the machines themselves, steam and the fossil-fuel revolution, the second industrial revolution, and railways, steamships and the telegraph.',
           'The picture is a real photograph: mills on the Merrimack River at Lowell, Massachusetts, by the Detroit Publishing Company, between 1900 and 1910 (Library of Congress, public domain), at the very end of this topic\'s dates. The water-powered mill town of the 1820s had become a city of brick mills and smokestacks, a long way from Slater\'s wooden mill on the lecture card and in the Evidence Lab.'

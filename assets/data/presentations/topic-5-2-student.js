@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "What does it take to start a revolution?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The recipe: grievance, words, a chance"
+          },
+          {
+            "label": "II",
+            "text": "America and France"
+          },
+          {
+            "label": "III",
+            "text": "Haiti and Spanish America"
+          },
+          {
+            "label": "IV",
+            "text": "The chain, and the words compared"
+          },
+          {
+            "label": "V",
+            "text": "New ways to govern"
+          },
+          {
+            "label": "VI",
+            "text": "The nation redraws the map"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: how revolutions made nations",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read for three ingredients.",
       "subtitle": "In each revolution, find the grievance, the words and the chance. Then watch how each revolution helped another one start or win.",
       "action": {
@@ -56,7 +97,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "The Recipe",
+      "eyebrow": "I · The Recipe",
       "title": "Ideas alone never overthrew a king.",
       "footer": "Many people read Locke and went on obeying their kings.",
       "kc": "Unit 5: Learning Objective C",
@@ -100,7 +141,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "America · 1775 to 1783",
+      "eyebrow": "II · America and France · America, 1775 to 1783",
       "title": "A republic with no king.",
       "kc": "KC-5.3.III.B",
       "template": {
@@ -135,7 +176,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "The Words · 1776",
+      "eyebrow": "II · America and France · The Words, 1776",
       "title": "Where does a government's power come from?",
       "kc": "KC-5.3.I.B",
       "template": {
@@ -146,7 +187,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "France · The Bill Comes Due",
+      "eyebrow": "II · America and France · France, the Bill Comes Due",
       "title": "One revolution's effect becomes the next one's cause.",
       "footer": "Grievance: nobles and clergy paid little tax, the Third Estate paid most, and bread prices soared after the bad harvest of 1788.",
       "kc": "KC-5.3",
@@ -179,7 +220,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "What France Created",
+      "eyebrow": "II · America and France · What France Created",
       "title": "A kingdom, then a republic, then an empire.",
       "footer": "France was not breaking away from anyone. It was remaking a kingdom.",
       "kc": "KC-5.3",
@@ -220,7 +261,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Haiti · 1791 to 1804",
+      "eyebrow": "III · Haiti and Spanish America · Haiti, 1791 to 1804",
       "title": "The words, claimed by people left out.",
       "kc": "KC-5.3.III.B",
       "template": {
@@ -255,7 +296,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "Haiti's Effects",
+      "eyebrow": "III · Haiti and Spanish America · Haiti's Effects",
       "title": "One revolution's effects reached other countries.",
       "kc": "KC-5.3",
       "template": {
@@ -291,7 +332,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Spanish America · 1810 to 1826",
+      "eyebrow": "III · Haiti and Spanish America · Spanish America, 1810 to 1826",
       "title": "An empire with no king.",
       "kc": "KC-5.3.III.B",
       "template": {
@@ -321,7 +362,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "The Words · 1815",
+      "eyebrow": "III · Haiti and Spanish America · The Words, 1815",
       "title": "Bolívar: the tie to Spain is cut.",
       "kc": "KC-5.3.I.B",
       "template": {
@@ -332,7 +373,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "diffusion-path",
-      "eyebrow": "The Chain",
+      "eyebrow": "IV · The Chain and the Words · The Chain",
       "title": "Each revolution helped another start or win.",
       "footer": "Follow the links: a debt, words, an invasion, and guns.",
       "kc": "KC-5.3.III.B",
@@ -363,7 +404,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sentence-frame",
-      "eyebrow": "Claims and Evidence in Sources 3.C · Model",
+      "eyebrow": "IV · The Chain and the Words · Compare, Model",
       "title": "Compare two sources: alike, different, and why.",
       "footer": "Explain the difference by what caused each document.",
       "template": {
@@ -374,7 +415,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "balance",
-      "eyebrow": "Claims and Evidence in Sources 3.C · Practice",
+      "eyebrow": "IV · The Chain and the Words · Compare, Your Turn",
       "title": "Two documents from the Americas.",
       "kc": "KC-5.3.I.B",
       "template": {
@@ -396,18 +437,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Compare two sources.",
-      "subtitle": "Claims and Evidence in Sources 3.C: say each source's argument, how they are alike, how they differ, and why.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-2-nationalism-and-revolutions.html#modules"
-      }
-    },
-    {
       "kind": "branch-tree",
-      "eyebrow": "What the Revolutions Created · Ideas",
+      "eyebrow": "V · New Ways to Govern · What the Revolutions Created",
       "title": "New answers to \"how should a country be run?\"",
       "footer": "These ideas helped set off new revolutions in Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years.",
       "kc": "KC-5.3.IV.A.i",
@@ -444,7 +475,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "From the People to the Nation",
+      "eyebrow": "VI · The Nation · From the People to the Nation",
       "title": "A state belongs to its people. Which people?",
       "footer": "1793: \"all Frenchmen are in permanent requisition for the service of the armies,\" and the old are to preach \"the unity of the Republic.\"",
       "kc": "KC-5.3.II.ii",
@@ -477,7 +508,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "Nationalism Joins States",
+      "eyebrow": "VI · The Nation · Nationalism Joins States",
       "title": "Two nations, many states, one country each.",
       "footer": "Nationalists sought the unification of fragmented regions.",
       "kc": "KC-5.3.II.iii",
@@ -514,7 +545,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Germany · 1848 to 1871",
+      "eyebrow": "VI · The Nation · Germany, 1848 to 1871",
       "title": "Not by speeches, but by iron and blood.",
       "kc": "KC-5.3.II.iii",
       "template": {
@@ -549,7 +580,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "face-off",
-      "eyebrow": "Nationalism Breaks an Empire",
+      "eyebrow": "VI · The Nation · Pulling Away from an Empire",
       "title": "Nation against empire.",
       "footer": "Nationalists challenged boundaries; the empire tried a loyalty of its own.",
       "kc": "KC-5.3.II.iii",
@@ -584,33 +615,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "The Enlightenment caused the revolutions.",
-            "evidence": "The ideas gave revolutionaries words. Taxes, debt, bread, slavery and Napoleon's invasion of Spain mattered too.",
-            "source": "KC-5.3.I.B, IV.A.i"
-          },
-          {
-            "myth": "France gave Haiti its freedom.",
-            "evidence": "The enslaved rose up in 1791; France's 1794 law followed the fighting, and Haitians defeated Napoleon's army.",
-            "source": "KC-5.3.III.B"
-          },
-          {
-            "myth": "Nationalism only built countries.",
-            "evidence": "It joined Italy and Germany together and pulled the Balkans away from the Ottoman Empire.",
-            "source": "KC-5.3.II.iii"
-          }
-        ]
-      }
-    },
-    {
       "kind": "cause-chain",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "How revolutions made nations.",
       "footer": "Grievance + words + a chance = revolution. Then the nation redrew the map.",
       "template": {
@@ -642,7 +648,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · Say It in One Sentence",
       "title": "Say it in one sentence.",
       "template": {
         "frame": "A revolution needed a ___, the ___ to name it, and a ___. Each helped another start or ___. They made new ___ and the nation, which ___ some states and pulled peoples from empires.",
@@ -658,33 +664,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "What caused one revolution, and what did it create?",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-2-nationalism-and-revolutions.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Two sources: a cause and an effect.",
-      "subtitle": "Choose two cards. For each: what kind of source it is, what it shows about a cause or an effect of the revolutions, and what it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-2-nationalism-and-revolutions.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "How did nationalism join some states and pull peoples away from an empire?",
-      "subtitle": "Explain what a nation shares, how governments used shared loyalty, one country nationalism joined, one people it pulled from the Ottoman Empire, and why one cause had both effects. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-2-nationalism-and-revolutions.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Compare two sources, and say why they differ.",
+            "url": "../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules"
+          }
+        ]
       }
     },
     {

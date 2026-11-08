@@ -47,7 +47,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Today's Road Map",
       "title": "Where we are going today.",
       "template": {
-        "question": "States pushed to expand and centralize. Who pushed back, and what did it change?",
+        "question": "Who pushed back, and what did it change?",
         "stops": [
           {
             "label": "I",
