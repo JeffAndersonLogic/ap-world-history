@@ -667,7 +667,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: 'Both {{case A}} and {{case B}} {{did the same things}}. That is the pattern. But {{case A}} {{had one result}}, while {{case B}} {{had another}}, because {{a reason}}.',
         exampleLabel: 'An everyday case',
-        example: 'Both **two friends** trained for a 5K race, **running every morning on the same phone plan**. That is the pattern. But **one finished the race**, while **the other was hurt in the second week**, because **she skipped stretching**.'
+        example: 'Both **Maya** and **Jordan** **trained for a 5K, running every morning on the same plan**. That is the pattern. But **Maya finished the race**, while **Jordan was hurt in the second week**, because **Jordan skipped stretching**.'
       },
       notes: {
         minutes: 2,
