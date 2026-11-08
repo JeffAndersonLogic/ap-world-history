@@ -529,7 +529,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'Unit 5: Learning Objective K', title: 'The gains went to some.',
       footer: 'Wallace in 1898: wealth grew "without any corresponding increase in the well-being of the whole people."',
       template: {
-        caption: 'Lodgers in a Bayard Street tenement, New York, about 1890',
+        caption: 'Still poor in 1890: lodgers in a New York tenement',
         steps: [
           { label: 'States', text: 'Egypt\'s army factories mostly closed by the mid-1840s; Japan\'s railways and mills lasted.' },
           { label: 'The top', text: 'Landed families kept power: Lord Salisbury, a marquess, prime minister in 1900.' },

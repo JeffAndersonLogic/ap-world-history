@@ -492,7 +492,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "Using Sections 4 and 6, choose one change from Sections 2 or 3 and one limit or continuity from Section 4. Explain how the two relate as a contrast, and say what the pair shows about how much industrialization changed the world.",
+        "text": "Using Sections 4 and 6, choose one change from Sections 2 or 3 and one limit or continuity from Section 4. Do not use the looms and handlooms example from Section 6. Explain how the two relate as a contrast, and say what the pair shows about how much industrialization changed the world.",
         "placeholder": "... changed, but ... kept going. Together they show that..."
       }
     ],

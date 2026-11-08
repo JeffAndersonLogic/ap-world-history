@@ -99,7 +99,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Start from the starting line. <em>Name one change in making, with a number, and say for whom it was biggest.</em>`,
-        limit: `How factories were organized is Topic 5.3's; how they spread is 5.4's; here they are evidence of how much changed.`,
+        limit: `The gains came slowly for working families: under 15 percent better from the 1780s to the 1850s. And while Britain's share rose to about a fifth by 1860, China's makers kept working at a shrinking share.`,
         comparison: `Against Section 03: the making changed most in a few regions. Where did the old makers go on?`
       },
       terms: [
@@ -142,7 +142,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Compare reach. <em>Which change reached more of the world, making or moving, and what is your evidence?</em>`,
-        limit: `What industrial states did with this reach, empire and the reasons people migrated, is Unit 6.`,
+        limit: `Railways reached the interior without ending farming: about two-thirds of India's people still lived by farming in 1901, and about two in five American workers in 1900.`,
         comparison: `Against Section 01: factories stayed in a few regions; railways and cables reached Russia, India and the Americas.`
       },
       terms: [
@@ -194,7 +194,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Set a change beside its limit. <em>Name one change from 01 or 02 and one limit from here, and say what the pair shows.</em>`,
-        limit: `Why the old makers' share fell (cheaper machine cloth, trade rules, older troubles) is 5.4's argument; here the fact that they kept making is the evidence.`,
+        limit: `The limits have limits: India came to buy British cloth and sell raw cotton (Topic 5.4), and working families' living standards did rise faster after about 1860.`,
         comparison: `Against Wallace: which of his claims does this section support, and which does it not?`
       },
       terms: [
@@ -239,7 +239,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Sort by cause. <em>Before you credit industry with a change, check its date and its cause.</em>`,
-        limit: `How each revolution happened is 5.2's story; here the dates and causes are the evidence.`,
+        limit: `The political change was limited too: in 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere.`,
         comparison: `Against Sections 01 and 02: both revolutions were big; only one came from machines.`
       },
       terms: [
@@ -281,7 +281,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Say the relationship. <em>"This led to that because ...", "These show the same pattern, because both ...", "This changed, but that kept going, because ..."</em>`,
-        limit: `Write your own thesis: this chapter gives the criteria, not an answer to copy.`,
+        limit: `A thesis that lists only changes, or only continuities, has not measured anything. Name both, and write your own: this chapter gives the criteria, not an answer to copy.`,
         comparison: `Against Topic 4.8, the last unit's argument: the same three relationships, with new evidence.`
       },
       terms: [

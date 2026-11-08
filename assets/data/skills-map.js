@@ -8978,7 +8978,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Answer in four steps. (1) Explain ONE change industrialization brought in how goods were made, with a number or a date. (2) Explain ONE change in how goods, people, or news moved, with a number or a date. (3) Explain how Enlightenment ideas came before the revolutions, and name one revolution or new nation-state and one example of nationalism. (4) Explain why this change in ideas and governments did not come from industry.",
+          "prompt": "Answer in four steps. (1) Explain ONE change industrialization brought in how goods were made, with a number or a date. (2) Explain ONE change in how goods, people, or news moved, with a number or a date, and say who gained most from these changes. (3) Name one Enlightenment idea, explain how it came before a revolution or new nation-state, and give one example of nationalism. (4) Explain why this change in ideas and governments did not come from industry.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -9045,8 +9045,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           ],
           "criteria": [
             "Explain one change in making, with a number or a date.",
-            "Explain one change in moving, with a number or a date.",
-            "Explain how Enlightenment ideas came before the revolutions, with a revolution or nation-state and an example of nationalism.",
+            "Explain one change in moving, with a number or a date, and say who gained most.",
+            "Name an Enlightenment idea, explain how it came before a revolution or nation-state, and give an example of nationalism.",
             "Explain why the change in ideas and governments did not come from industry."
           ],
           "learningTargets": [
@@ -9177,7 +9177,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 3",
           "label": "Module 02, First & 10, Question 3",
-          "prompt": "Using Sections 4 and 6, choose one change from Sections 2 or 3 and one limit or continuity from Section 4. Explain how the two relate as a contrast, and say what the pair shows about how much industrialization changed the world.",
+          "prompt": "Using Sections 4 and 6, choose one change from Sections 2 or 3 and one limit or continuity from Section 4. Do not use the looms and handlooms example from Section 6. Explain how the two relate as a contrast, and say what the pair shows about how much industrialization changed the world.",
           "skill": "Argumentation",
           "skills": [
             "Argumentation"

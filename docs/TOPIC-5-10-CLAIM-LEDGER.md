@@ -96,4 +96,22 @@ are carried from that topic's checked record. None is AI-generated and no new pi
 
 ## Review findings
 
-(Filled in Phase 9.)
+Each finding is weighed on its own; the reviewer does not have the last word.
+
+### Pass 1 (2026-11-08), page truth, readability, CED alignment, ownership (cheaper model)
+
+1. **Checkpoint 1 displayed "say who gained most" and "name one Enlightenment idea," but its prompt asked
+   for neither.** Supported. Fixed: step 2 now asks who gained most; step 3 asks for an Enlightenment idea;
+   the focus list matches.
+2. **First & 10 Question 03 could be answered by copying Section 6's printed contrast** (the looms and the
+   handlooms, also on slide 18, the Skill Builder and lecture card 5). Supported. Fixed: Q03 now says not to
+   use that example. The model stays where it teaches the move.
+3. **The deep reading's "limit" slot held scope notes, not limits** (Sections 01 and 02). Supported, and the
+   same was true of Sections 03 to 05. Fixed in all five with real limits from the ledger.
+4. **The Key Concept band printed "KC-5.3.II.I"** where the CED code is KC-5.3.II.i. Supported. Cause: the
+   shared band CSS (`.bhkc-code`, `assets/js/behistorical-slide-templates.js`) uppercased every code, so every
+   deck with a lowercase part (KC-4.3.III.ii, KC-5.3.IV.A.ii and others) was misprinting it. Fixed by turning
+   the transform off for the code only (the codes are already written in capitals where the CED has them).
+   Reported as an adjacent fix, since it changes every deck's band.
+5. **Slide 13's Riis photograph is tied to nothing on the slide.** Supported. Fixed: the caption now reads
+   "Still poor in 1890: lodgers in a New York tenement," tying the picture to the "gains went to some" claim.

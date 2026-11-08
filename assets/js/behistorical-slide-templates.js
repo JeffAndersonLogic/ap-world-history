@@ -1880,7 +1880,7 @@ const KC_CSS=`
 .bhkc{--u:calc(min(100cqw,177.7778cqh)/1280);--bhkc-h:64u;--bhkc-k:.91111;position:absolute;inset:0;container-type:size;background:#030404;overflow:hidden}
 .bhkc.bhkc-l3{--bhkc-h:88u;--bhkc-k:.87778}
 .bhkc-band{position:absolute;left:0;right:0;top:0;height:var(--bhkc-h);display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:20u;align-items:center;padding:0 max(40u,calc((100cqw - 1280*var(--u))/2 + 40u));background:#07090a;border-bottom:1.5u solid #364044;text-align:left}
-.bhkc-code{font:900 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#c9a46a;white-space:nowrap}
+.bhkc-code{font:900 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:none;color:#c9a46a;white-space:nowrap}
 .bhkc-text{font:400 16u/1.36 'Libre Baskerville',Georgia,serif;color:#ddd6ca;letter-spacing:0;text-shadow:none;overflow-wrap:break-word}
 .bhkc-slide{position:absolute;left:0;right:0;bottom:0;top:var(--bhkc-h);overflow:hidden;background:#030404}
 .bhkc-slide>.bht-slide{position:absolute!important;inset:0!important}
