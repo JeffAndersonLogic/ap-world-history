@@ -356,7 +356,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Ships changed too. On the busiest emigrant route, Liverpool to New York, a voyage took more than 40 days on average in 1853, most of them under sail; by 1869, as steamships took over, it took about 16. And news stopped waiting for ships. By the 1840s a telegraph message could travel along a wire in minutes (Samuel Morse's line from Washington to Baltimore opened in 1844); from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
+            "html": "Ships changed too. On the main emigrant route, from Liverpool, Britain's chief emigrant port, to New York, a voyage took more than 40 days on average in 1853, when emigrant ships still went under sail; by 1869, as steamships took over, it took about 16. And news stopped waiting for ships. By the 1840s a telegraph message could travel along a wire in minutes (Samuel Morse's line from Washington to Baltimore opened in 1844); from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
           },
           {
             "type": "p",
@@ -414,12 +414,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "This revolution began while factories were still almost all in Britain. Its causes were ideas and grievances, not machines. But the two revolutions met. Nationalism pushed some governments, such as Meiji Japan, to build industry to make the nation strong (Topic 5.6), and workers in industrial cities used the language of rights to demand the vote, as Britain's Chartists did (Topic 5.8). And the old order held on in politics too. In 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in 1893, was the first self-governing country where all adult women could (Topic 5.1)."
+            "html": "The revolutions of 1775 to 1826 began while factories were still almost all in Britain. Their causes were ideas and grievances, not machines. Later, the two revolutions met. Railways and iron helped Prussia win the wars that united Germany in 1871. Nationalism pushed some governments, such as Meiji Japan, to build industry to make the nation strong (Topic 5.6), and workers in industrial cities used the language of rights to demand the vote, as Britain's Chartists did (Topic 5.8). And the old order held on in politics too. In 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in 1893, was the first self-governing country where all adult women could (Topic 5.1)."
           }
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Sort the changes by cause.</strong> Before you credit industry with a change, check its date and its cause. A change that came before the factories spread, from ideas and grievances, belongs to the other revolution.</p>"
+          "raw": "<p><strong>Sort the changes by cause.</strong> Before you credit industry with a change, check its date and its cause. The Atlantic revolutions came before the factories spread, from ideas and grievances. Later changes, like Germany's unification, may have had both kinds of cause.</p>"
         }
       },
       {
@@ -486,8 +486,8 @@ module.exports = {
       {
         "num": "02",
         "skill": "Continuity and Change",
-        "text": "Using Section 5, explain how Enlightenment ideas came before the revolutions, with one example of a revolution or a new nation-state. Then explain why this change did not come from industry.",
-        "placeholder": "Enlightenment ideas such as... came before... This was not industry's change because..."
+        "text": "Using Section 5, explain how Enlightenment ideas came before the revolutions, with one example of a revolution or a new nation-state. Then explain why those revolutions did not come from industry.",
+        "placeholder": "Enlightenment ideas such as... came before... Those revolutions did not come from industry because..."
       },
       {
         "num": "03",

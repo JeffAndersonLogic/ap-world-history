@@ -8978,7 +8978,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Answer in four steps. (1) Explain ONE change industrialization brought in how goods were made, with a number or a date. (2) Explain ONE change in how goods, people, or news moved, with a number or a date, and say who gained most from these changes. (3) Name one Enlightenment idea, explain how it came before a revolution or new nation-state, and give one example of how nationalism changed a state or an empire. (4) Explain why this change in ideas and governments did not come from industry.",
+          "prompt": "Answer in four steps. (1) Explain ONE change industrialization brought in how goods were made, with a number or a date. (2) Explain ONE change in how goods, people, or news moved, with a number or a date, and say who gained most from these changes. (3) Name one Enlightenment idea, explain how it came before a revolution or new nation-state, and give one example of how nationalism changed a state or an empire. (4) Explain why the revolutions of 1775 to 1826 did not come from industry.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -9047,15 +9047,15 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Explain one change in making, with a number or a date.",
             "Explain one change in moving, with a number or a date, and say who gained most.",
             "Name an Enlightenment idea, explain how it came before a revolution or nation-state, and give an example of how nationalism changed a state or empire.",
-            "Explain why the change in ideas and governments did not come from industry."
+            "Explain why the revolutions of 1775 to 1826 did not come from industry."
           ],
           "learningTargets": [
             "I can explain what industrialization changed between 1750 and 1900 in how goods were made and how goods, people, and news moved, with evidence from across Unit 5, and say for whom the gains came.",
-            "I can explain how Enlightenment ideas came before the revolutions that built new nation-states, and how nationalism shaped states and empires, and why that change did not come from industry."
+            "I can explain how Enlightenment ideas came before the revolutions that built new nation-states, and how nationalism shaped states and empires, and why the revolutions of 1775 to 1826 did not come from industry."
           ],
           "successCriteria": [
             "I can name one change in how goods were made and one change in how goods, people, or news moved, with a number or date for each, and say who gained most.",
-            "I can name one Enlightenment idea, one revolution or new nation-state it came before, and one example of nationalism, and explain why this change was not caused by industry."
+            "I can name one Enlightenment idea, one revolution or new nation-state it came before, and one example of nationalism, and explain why the revolutions of 1775 to 1826 were not caused by industry."
           ]
         },
         "checkpoint-two-response": {
@@ -9161,7 +9161,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 2",
           "label": "Module 02, First & 10, Question 2",
-          "prompt": "Using Section 5, explain how Enlightenment ideas came before the revolutions, with one example of a revolution or a new nation-state. Then explain why this change did not come from industry.",
+          "prompt": "Using Section 5, explain how Enlightenment ideas came before the revolutions, with one example of a revolution or a new nation-state. Then explain why those revolutions did not come from industry.",
           "skill": "Continuity and Change",
           "skills": [
             "Continuity and Change"

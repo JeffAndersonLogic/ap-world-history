@@ -124,7 +124,7 @@ module.exports = {
           heading: 'Into the interior',
           blocks: [
             { p: `Before the railroad, heavy goods moved cheaply only by water, and the <span class="kt">interior</span> of a continent, far from the sea or a big river, was hard to reach. Railways changed that, and not only in Britain. Russia had <span class="num">27</span> kilometers of railway in 1840 and more than <span class="num">53,000</span> in 1900. India's first passenger train ran in <span class="num">1853</span>. The first railroad across the United States was finished in <span class="num">1869</span>.` },
-            { p: `Ships and news changed too. On the busiest emigrant route, Liverpool to New York, a voyage took more than <span class="num">40</span> days on average in 1853, most of them under sail; by 1869, as steamships took over, it took about <span class="num">16</span>. By the 1840s a telegraph message could travel along a wire in minutes; Samuel Morse's line from Washington to Baltimore opened in <span class="num">1844</span>. From <span class="num">1866</span> cables under the Atlantic carried messages without a lasting break, and in <span class="num">1870</span> a cable reached Bombay, in India.` }
+            { p: `Ships and news changed too. On the main emigrant route, from Liverpool to New York, a voyage took more than <span class="num">40</span> days on average in 1853, when emigrant ships still went under sail; by 1869, as steamships took over, it took about <span class="num">16</span>. By the 1840s a telegraph message could travel along a wire in minutes; Samuel Morse's line from Washington to Baltimore opened in <span class="num">1844</span>. From <span class="num">1866</span> cables under the Atlantic carried messages without a lasting break, and in <span class="num">1870</span> a cable reached Bombay, in India.` }
           ]
         },
         {
@@ -221,11 +221,11 @@ module.exports = {
         {
           heading: 'The ideas came first',
           blocks: [
-            { p: `The College Board says Enlightenment thought "often preceded" revolutions. The dates show it. The American Revolution began in <span class="num">1775</span>, the French in <span class="num">1789</span>, the Haitian in <span class="num">1791</span>, and the wars for independence in Spanish America in <span class="num">1810</span>. Factory methods, meanwhile, were only beginning to leave Britain: Samuel Slater's spinning mill in Rhode Island was begun in 1793, John Cockerill's works in Belgium in 1817, and the big growth in Russia and Japan came mostly after 1870 (Topic 5.4). So the political revolution was not industry's. Its causes, Topic 5.2 showed, were a grievance, the words to name it, and a chance to act.` },
+            { p: `The College Board says Enlightenment thought "often preceded" revolutions. The dates show it. The American Revolution began in <span class="num">1775</span>, the French in <span class="num">1789</span>, the Haitian in <span class="num">1791</span>, and the wars for independence in Spanish America in <span class="num">1810</span>. Factory methods, meanwhile, were only beginning to leave Britain: a copy of Arkwright's mill opened at Ratingen, in Germany, in 1784, Samuel Slater's spinning mill in Rhode Island was begun in 1793, John Cockerill's works in Belgium in 1817, and the big growth in Russia and Japan came mostly after 1870 (Topic 5.4). So the Atlantic revolutions were not industry's. Its causes, Topic 5.2 showed, were a grievance, the words to name it, and a chance to act.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Industry caused the revolutions." Check the dates: France's revolution began in 1789, before factories had spread beyond Britain. The opposite mistake, "the two revolutions had nothing to do with each other," forgets where they met: Meiji Japan and the Chartists, below.`
+              html: `"Industry caused the revolutions." Check the dates: France's revolution began in 1789, while factories were still almost all in Britain. The opposite mistake, "the two revolutions had nothing to do with each other," forgets where they met: Prussia's railways and iron, Meiji Japan and the Chartists, below.`
             } }
           ]
         },
@@ -233,14 +233,14 @@ module.exports = {
           heading: 'New nations, and where the two revolutions met',
           blocks: [
             { p: `The revolutions built new countries, the United States, Haiti and the new republics of Spanish America. Each was a <span class="kt">nation-state</span>, a state that claims to belong to one people, its nation. They also left a new loyalty, <span class="kt">nationalism</span>, which joined most of Italy into one kingdom in <span class="num">1861</span> and the German states into an empire in <span class="num">1871</span>, and pulled Greeks and other Balkan peoples away from the Ottoman Empire (Topic 5.2).` },
-            { p: `Later, the two revolutions met. Nationalism and fear of stronger powers pushed Meiji Japan to build railways and mills to make the nation strong (Topic 5.6). In industrial Britain, the Chartists used the language of rights to demand the vote for working men (Topic 5.8). And the old order held on in politics too: in 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in <span class="num">1893</span>, was the first self-governing country where all adult women could (Topic 5.1).` }
+            { p: `Later, the two revolutions met. Railways and iron helped Prussia win the wars that united Germany. Nationalism and fear of stronger powers pushed Meiji Japan to build railways and mills to make the nation strong (Topic 5.6). In industrial Britain, the Chartists used the language of rights to demand the vote for working men (Topic 5.8). And the old order held on in politics too: in 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in <span class="num">1893</span>, was the first self-governing country where all adult women could (Topic 5.1).` }
           ]
         }
       ],
       useThis: {
         tool: `Sort by cause. <em>Before you credit industry with a change, check its date and its cause.</em>`,
         limit: `The political change was limited too: in 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere.`,
-        comparison: `Against Sections 01 and 02: both revolutions were big; only one came from machines.`
+        comparison: `Against Sections 01 and 02: both revolutions were big; the first Atlantic revolutions did not come from machines, though later ones, like Germany's unification, drew on both.`
       },
       terms: [
         ['Enlightenment', 'A movement of thinkers who used reason and evidence to question old authorities.'],
@@ -313,7 +313,7 @@ module.exports = {
       {
         category: 'Continuity and Change',
         title: 'The other revolution',
-        body: `Changed, from ideas and grievances, not machines: Enlightenment ideas (Locke, 1689) before the revolutions of 1775, 1789, 1791 and 1810; new nation-states; nationalism (Italy 1861, Germany 1871). Kept going: kings and emperors in most of Europe in 1900; women's votes almost nowhere.`
+        body: `Changed, first from ideas and grievances, not machines: Enlightenment ideas (Locke, 1689) before the revolutions of 1775, 1789, 1791 and 1810; new nation-states; nationalism (Italy 1861; Germany 1871, where Prussia's railways and iron also helped). Kept going: kings and emperors in most of Europe in 1900; women's votes almost nowhere.`
       },
       {
         category: 'Argumentation',

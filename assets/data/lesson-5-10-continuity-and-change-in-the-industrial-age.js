@@ -41,7 +41,7 @@ window.BEHISTORICAL_LESSON = {
       kc: "Unit 5: Learning Objective K"
     },
     {
-      target: "I can explain how Enlightenment ideas came before the revolutions that built new nation-states, and how nationalism shaped states and empires, and why that change did not come from industry.",
+      target: "I can explain how Enlightenment ideas came before the revolutions that built new nation-states, and how nationalism shaped states and empires, and why the revolutions of 1775 to 1826 did not come from industry.",
       kc: "Unit 5: Learning Objective K"
     },
     {
@@ -56,7 +56,7 @@ window.BEHISTORICAL_LESSON = {
       kc: "Unit 5: Learning Objective K"
     },
     {
-      criteria: "I can name one Enlightenment idea, one revolution or new nation-state it came before, and one example of nationalism, and explain why this change was not caused by industry.",
+      criteria: "I can name one Enlightenment idea, one revolution or new nation-state it came before, and one example of nationalism, and explain why the revolutions of 1775 to 1826 were not caused by industry.",
       kc: "Unit 5: Learning Objective K"
     },
     {
@@ -99,7 +99,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Moving: Rails, Steam, and Wire",
         bullets: [
           "**Rails:** Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran in 1853. The first railroad across the United States was finished in 1869.",
-          "**Steam:** on the busiest emigrant route, Liverpool to New York, a voyage took more than 40 days on average in 1853, most of them under sail, and about 16 by 1869, as steamships took over.",
+          "**Steam:** on the main emigrant route, from Liverpool to New York, a voyage took more than 40 days on average in 1853, when emigrant ships still went under sail, and about 16 by 1869, as steamships took over.",
           "**Wire:** by the 1840s a telegraph message could travel along a wire in minutes (Morse's line, 1844). From 1866 cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay.",
           "**Trade and migration:** in 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913, just after this unit's period, only 15.6 percent more. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and from 1846 to 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean."
         ],
@@ -131,7 +131,7 @@ window.BEHISTORICAL_LESSON = {
           "**The ideas:** Enlightenment thinkers used reason and evidence to question old authorities, including religion used as a power of government. In 1689 John Locke argued that people are born with natural rights to \"lives, liberties and estates,\" and that government is a social contract resting on consent.",
           "**The ideas came first:** the American Revolution began in 1775, the French in 1789, the Haitian in 1791, and the wars for independence in Spanish America in 1810, while factories were still almost all in Britain.",
           "**New nation-states and nationalism:** the revolutions built the United States, Haiti and the new countries of Spanish America. Nationalism joined most of Italy into one kingdom in 1861 and the German states into an empire in 1871, and pulled Greeks and other Balkan peoples away from the Ottoman Empire.",
-          "**Where they met, and what kept going:** Meiji Japan built industry to make the nation strong, and Britain's Chartists demanded the vote. In 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere."
+          "**Where they met, and what kept going:** railways and iron helped Prussia win the wars that united Germany; Meiji Japan built industry to make the nation strong, and Britain's Chartists demanded the vote. In 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere."
         ],
         image: {
           title: "The Storming of the Bastille, 1789",

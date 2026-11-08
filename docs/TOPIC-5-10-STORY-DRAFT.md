@@ -211,7 +211,7 @@ joined Italy into one kingdom in 1861 and proclaimed a German Empire in 1871, an
 other Balkan peoples away from the Ottoman Empire (5.2). This revolution began while factories were still
 almost all in Britain. Its causes were ideas and grievances, not machines.
 
-The two revolutions met. Nationalism pushed some governments to build industry to make the state strong,
+The two revolutions met later. Railways and iron helped Prussia win the wars that united Germany in 1871. Nationalism pushed some governments to build industry to make the state strong,
 as Meiji Japan did (5.6); and workers in industrial cities used the language of rights to demand the
 vote, as the Chartists did in Britain (5.8). And the old order held on in politics too: in 1900 kings and
 emperors still ruled most of Europe, and women could vote in national elections almost nowhere (New

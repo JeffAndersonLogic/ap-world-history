@@ -35,7 +35,7 @@ words differently is a new row.
 | Britain's share of world manufacturing from under 2 percent (1750) to about a fifth by 1860; Europe and the US more than four-fifths by 1900; China's share from about a third to about 6 percent | SD, F10, Deck, DR, MAP | 5.4 ledger (Bairoch) | VERIFIED (5.4) |
 | One careful estimate: British working families' standard of living rose by less than 15 percent from the 1780s to the 1850s; most historians agree much faster from about 1860 to 1900 | SD, F10, Deck, DR, RC, MA | 5.7 ledger (Feinstein) | VERIFIED (5.7) |
 | Russia: 27 km of railway in 1840, more than 53,000 in 1900; India's first passenger train 1853; first US transcontinental railroad 1869 | SD, F10, Deck, DR, MAP, RC | 5.5 ledger | VERIFIED (5.5) |
-| On the Liverpool to New York emigrant route, the average voyage took more than 40 days in 1853 (mostly under sail) and about 16 by 1869, as steamships took over | SD, F10, LD, Deck, DR, RC, MA | T. J. Hatton, "Time on the Crossing: Emigrant Voyages across the Atlantic, 1853 to 1913," IZA DP 16274 (2023): "the average voyage duration fell dramatically, from more than 40 days in 1853-4 to just 16 days in 1869" | NARROWED (pass 1: was 5.5's Norwegian 53 days set beside an English steamer's 12, two routes read as one measurement) |
+| On the main emigrant route, Liverpool to New York, the average voyage took more than 40 days in 1853 (every voyage in Hatton's count under sail) and about 16 by 1869, as steamships took over | SD, F10, LD, Deck, DR, RC, MA | T. J. Hatton, "Time on the Crossing: Emigrant Voyages across the Atlantic, 1853 to 1913," IZA DP 16274 (2023): "the average voyage duration fell dramatically, from more than 40 days in 1853-4 to just 16 days in 1869" | NARROWED (pass 1: was 5.5's Norwegian 53 days set beside an English steamer's 12, two routes read as one measurement) |
 | Telegraph: by the 1840s a message could travel along a wire in minutes (Morse's line, 1844); Atlantic cables without a lasting break from 1866; a cable reached Bombay in 1870 | SD, F10, LD, Deck, DR, MAP, RC | 5.5 ledger; Science Museum Group (Cooke and Wheatstone's telegraph in commercial use on the Great Western Railway from 1839) | NARROWED (pass 1: was "from 1844," which read as the start) |
 | Wheat cost 57.6 percent more in Liverpool than Chicago in 1870 and 15.6 percent more in 1913 | SD, F10, LD, RC, Deck, DR, MAP | 5.5 ledger (Daudin, Morys and O'Rourke 2008, citing O'Rourke and Williamson 1994) | VERIFIED (5.5); 1913 now flagged as just after the period on every student surface (pass 1) |
 | About 55 million Europeans to the Americas and Australia, 1850 to 1914; more than 29 million Indians and more than 19 million Chinese to Southeast Asia and the Indian Ocean lands, 1846 to 1940 | SD, F10, Deck, DR | 5.5 ledger (Hatton and Williamson 1998 for the Europeans; McKeown for the Asian figures) | VERIFIED (5.5) |
@@ -55,7 +55,7 @@ words differently is a new row.
 | The ideas came before the revolutions: American 1775, French 1789, Haitian 1791, Spanish American 1810 | SD, F10, Deck, DR, MAP | 5.1 and 5.2 ledgers | VERIFIED (5.1, 5.2) |
 | The revolutions created the United States, Haiti and the new countries of Spanish America | SD, F10, Deck, DR | 5.2 ledger | VERIFIED (5.2) |
 | Nationalism joined most of Italy into one kingdom in 1861; the German Empire was proclaimed in 1871; Greeks and other Balkan peoples broke away from the Ottoman Empire (Greece 1830; Serbia, Montenegro, Romania 1878) | SD, F10, Deck, DR | 5.2 ledger | VERIFIED (5.2) |
-| The political revolution began while factories were still almost all in Britain | SD, F10, Deck, DR | 5.3 and 5.4 ledgers: the factory spread to the US from the 1790s (Slater), Belgium from 1817, Russia and Japan mostly after 1870; the revolutions began 1775 to 1810 | VERIFIED |
+| The Atlantic revolutions (1775 to 1826) began while factories were still almost all in Britain (narrowed in pass 2 from "the political revolution") | SD, F10, Deck, DR | 5.3 and 5.4 ledgers: the factory spread to the US from the 1790s (Slater), Belgium from 1817, Russia and Japan mostly after 1870; the revolutions began 1775 to 1810 | VERIFIED |
 | Nationalism pushed some governments, such as Meiji Japan, to build industry to make the state strong | SD, F10, Deck, DR | 5.6 ledger | VERIFIED (5.6) |
 | Workers in industrial cities used the language of rights to demand the vote, as the Chartists did | SD, F10, Deck, DR | 5.8 ledger | VERIFIED (5.8) |
 | In 1900 kings and emperors still ruled most of Europe; women could vote in national elections almost nowhere; New Zealand (1893) the first self-governing country where all adult women could | SD, F10, Deck, DR | 5.1 ledger | VERIFIED (5.1) |
@@ -64,6 +64,8 @@ words differently is a new row.
 | France, 1789: "the principle of all sovereignty resides essentially in the nation"; Spain had lost every colony in the Americas except Cuba and Puerto Rico by 1826 | Deck, RC, MA | 5.2 ledger | VERIFIED (5.2) |
 | The Ten Hours Act (1847) limited women and young people in textile mills to ten hours a day | SD (constraint check only) | UK Parliament, "The 1847 Factory Act" (the Ten Hours Act) | VERIFIED |
 | BeSurreal: a grandmother born in 1825 in a Lancashire farming village whose mother wove at home on a handloom from mill-spun thread (pass 1: was "spun and wove") could remember the first trains between Liverpool and Manchester (opened 1830, when she was five), mills, a village telegraph office, factory cloth and branded soap; a queen in 1900, where kings had ruled when she was born | LD (BeSurreal) | 5.5 ledger (Liverpool and Manchester Railway, 1830); Victoria reigned 1837 to January 1901, after George IV (1820 to 1830) and William IV; a made-up character, as the lesson says | VERIFIED (a composite character built from verified facts) |
+| Railways and iron helped Prussia win the wars that united Germany in 1871 | F10, LD, DR, Deck | D. Showalter, *Railroads and Rifles: Soldiers, Technology, and the Unification of Germany* (1975); Keynes, *The Economic Consequences of the Peace* (1919), ch. 2, "built more truly on coal and iron than on blood and iron" | VERIFIED (added in pass 2) |
+| A copy of Arkwright's mill opened at Ratingen, Germany, in 1784 (founded 1783) | DR, Deck | LVR-Industriemuseum, Textilfabrik Cromford, Ratingen: the first mechanised cotton spinning mill on the European mainland | VERIFIED (added in pass 2) |
 | Industrial states now needed raw materials and markets, and had new tools to take them (hand-off) | SD, F10, Deck | `docs/UNIT-5-STORY-MAP.md`, the 5.10 hand-off; a bridge, not taught | VERIFIED (as a bridge) |
 
 ## Pictures
@@ -156,3 +158,27 @@ Each finding is weighed on its own; the reviewer does not have the last word.
    Supported. Fixed: the Moving row's continuity is that the interiors the trains reached kept farming (they
    carried their crops, the wheat of section III); "most people still farmed" moves to the Living row. The
    outline's wrap table and the story draft match.
+
+### Pass 2 (2026-11-08), history (default model)
+
+1. **Unification filed under "not caused by industry."** The reading, chapter, deck and Checkpoint 1 said
+   the change in ideas and governments "did not come from industry," but German unification (1871) came
+   after industry had reached Prussia, and historians count its railways and iron among the causes of
+   Prussia's victories (Showalter 1975). Supported, and the most important finding of the pass. Fixed: the
+   claim now covers the Atlantic revolutions of 1775 to 1826 only; every surface adds that railways and iron
+   helped Prussia win the wars that united Germany, as a place where the two revolutions met; Checkpoint 1
+   step 4, Target 2, Criterion 2, First & 10 Question 02 and the model answer ask why the revolutions of 1775
+   to 1826 did not come from industry.
+2. **"Before factories had spread beyond Britain" and "to the US and Belgium first"** are false absolutes:
+   a copy of Arkwright's mill was spinning at Ratingen, Germany, from 1784. Supported. Fixed: "almost all in
+   Britain" everywhere, and Ratingen added to slide 15 and the chapter.
+3. **Slide 9 credited the 1869 average of about 16 days to steam**; in Hatton it is all voyages (steamships
+   alone about 14). Supported. Fixed: "as steam took over," with the 14 days in the notes.
+4. **5.5 says steamships crossed from England in "about 12 days in the 1860s"; 5.10 says about 16 by 1869.**
+   Supported as a course contradiction. 5.10 now uses one source's route; 5.5's figure (the Allan Line,
+   Liverpool to Quebec, 1865) is a different route. Adjacent finding for 5.5, reported, not changed here.
+5. **"Most of them under sail" in 1853 understates Hatton**, whose 1853 voyages were all sailing ships, and
+   could be read as "most of the days." Supported. Fixed: "when emigrant ships still went under sail."
+6. **Uncertain: "the busiest emigrant route."** Hatton calls Liverpool the most important British port but
+   does not say "busiest route." Accepted: "the main emigrant route, from Liverpool, Britain's chief emigrant
+   port, to New York."

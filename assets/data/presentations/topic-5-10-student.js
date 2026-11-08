@@ -201,7 +201,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Steam",
-            "text": "Liverpool to New York: **40+ days** in 1853, mostly by sail; about **16** by 1869, by steam."
+            "text": "Liverpool to New York: **40+ days** in 1853, all by sail; about **16** by 1869, as steam took over."
           },
           {
             "label": "Wire",
@@ -383,8 +383,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Factories spread",
-            "when": "1790s to 1900",
-            "text": "To the US and Belgium first; Russia and Japan mostly after 1870.",
+            "when": "1780s to 1900",
+            "text": "A few copies abroad (Ratingen, 1784); the US, Belgium; Russia and Japan mostly after 1870.",
             "note": "Topic 5.4."
           }
         ]
@@ -446,7 +446,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "They met",
             "key": true,
-            "text": "Meiji Japan built railways and mills to make the nation strong."
+            "text": "Prussia's railways helped it unite Germany; Japan built mills to make the nation strong."
           }
         ],
         "visual": {

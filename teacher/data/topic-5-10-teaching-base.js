@@ -39,7 +39,7 @@ window.BEHISTORICAL_TEACHING = {
     subtitle: 'Industry changed how the world made and moved things. How far did the change reach?',
     essentialQuestion: 'To what extent did industrialization bring change to the world from 1750 to 1900?',
     apFocus: 'Continuity and Change, with Argumentation 6.C',
-    endTarget: 'Students can measure the change industrialization brought from a 1750 starting line: what it changed in making (coal, factories, cheaper and more varied goods, standards of living for some, KC-5.1) and in moving (railroads, steamships and the telegraph reaching the interiors of continents, with more trade and migration, KC-5.1.IV); how far it reached (the old makers kept making, most people still farmed, the gains were unequal); and why the revolutions in ideas and governments (KC-5.3.I.A, KC-5.3.I, KC-5.3, KC-5.3.II.i) were a different change with other causes; and can write a thesis that takes a side on extent and explain how two pieces of evidence relate (6.C).'
+    endTarget: 'Students can measure the change industrialization brought from a 1750 starting line: what it changed in making (coal, factories, cheaper and more varied goods, standards of living for some, KC-5.1) and in moving (railroads, steamships and the telegraph reaching the interiors of continents, with more trade and migration, KC-5.1.IV); how far it reached (the old makers kept making, most people still farmed, the gains were unequal); and why the revolutions in ideas and governments (KC-5.3.I.A, KC-5.3.I, KC-5.3, KC-5.3.II.i) began as a different change, from ideas and grievances; and can write a thesis that takes a side on extent and explain how two pieces of evidence relate (6.C).'
   },
 
   priorities: {
@@ -407,7 +407,7 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'The Great Eastern carries the Atlantic cable, 1866',
         steps: [
           { label: 'Rails', text: 'Russia: **27 km** in 1840, more than **53,000** in 1900. India\'s first train, 1853. Across the US, 1869.' },
-          { label: 'Steam', text: 'Liverpool to New York: **40+ days** in 1853, mostly by sail; about **16** by 1869, by steam.' },
+          { label: 'Steam', text: 'Liverpool to New York: **40+ days** in 1853, all by sail; about **16** by 1869, as steam took over.' },
           { label: 'Wire', key: true, text: 'Morse\'s telegraph, 1844. Across the Atlantic 1866. To Bombay 1870.' }
         ]
       },
@@ -423,7 +423,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.1.IV: railroads, steamships and the telegraph made exploration, development and communication possible in interior regions globally. Before them, heavy goods moved cheaply only by water.',
           'Rails: Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900; India\'s first passenger train ran from Bombay to Thane in 1853; the first railroad across the United States was finished at Promontory Summit in 1869 (5.5).',
-          'Steam: on the busiest emigrant route, Liverpool to New York, the average voyage fell from more than 40 days in 1853, most of them under sail, to about 16 by 1869, as steamships took over (Hatton, "Time on the Crossing," 2023). 5.5 gives other figures for other routes (Norwegian emigrants\' whole trip under sail; an 1860s steamer from England): do not set those two side by side as one measurement.',
+          'Steam: on the main emigrant route, Liverpool to New York, the average voyage fell from more than 40 days in 1853, when every emigrant ship in Hatton\'s count went under sail, to about 16 for all voyages by 1869 (steamships alone about 14), as steamships took over (Hatton, "Time on the Crossing," 2023). 5.5 gives other figures for other routes (Norwegian emigrants\' whole trip under sail; an 1860s steamer from England): do not set those two side by side as one measurement.',
           'Wire: the electric telegraph was already in commercial use on an English railway from 1839; Morse\'s line, Washington to Baltimore, 1844; cables under the Atlantic without a lasting break from 1866; a cable through the Red Sea to Bombay in 1870 (5.5).',
           'The picture: the steamship Great Eastern leaving Sheerness with the Atlantic cable, an engraving in the Illustrated London News of 14 July 1866 (Library of Congress). A newspaper picture made to celebrate.'
         ],
@@ -581,7 +581,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.3.I.A: Enlightenment philosophies applied new ways of understanding and empiricist approaches to the natural world and human relationships, reexamined the role of religion in public life and emphasized reason, and developed new political ideas about the individual, natural rights and the social contract.',
           'Retrieve, do not reteach (5.1): Newton (1687) and Locke\'s empiricism; Voltaire\'s Treatise on Tolerance (1763) after the Calas case; Locke\'s natural rights to "lives, liberties and estates" and government by consent (1689); Rousseau\'s Social Contract (1762); Montesquieu\'s separation of powers (1748).',
-          'This is the unit\'s other big change. It came from books, salons and arguments, not machines.'
+          'This is the unit\'s other big change. At its start it came from books, salons and arguments, not machines; later, as in Germany\'s unification, industry played a part too.'
         ],
         ask: 'Which of these four ideas would a king who ruled by God\'s will find most dangerous?',
         listenFor: 'The social contract: a government that rests on consent can lose it.',
@@ -596,7 +596,7 @@ window.BEHISTORICAL_TEACHING = {
         periods: [
           { label: 'Ideas', when: '1687 to 1780s', text: 'Newton, Locke, Voltaire, Rousseau, Montesquieu, the Encyclopédie.', note: 'Read in coffeehouses and salons, across Europe and the Atlantic.' },
           { label: 'Revolutions', when: '1775 to 1826', text: 'America 1775, France 1789, Haiti 1791, Spanish America 1810.', note: 'Factories still almost all in Britain.' },
-          { label: 'Factories spread', when: '1790s to 1900', text: 'To the US and Belgium first; Russia and Japan mostly after 1870.', note: 'Topic 5.4.' }
+          { label: 'Factories spread', when: '1780s to 1900', text: 'A few copies abroad (Ratingen, 1784); the US, Belgium; Russia and Japan mostly after 1870.', note: 'Topic 5.4.' }
         ]
       },
       notes: {
@@ -611,10 +611,10 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.3.I: the rise and diffusion of Enlightenment thought that questioned established traditions often preceded revolutions and rebellions against existing governments.',
           'The order: the ideas (Newton 1687, Locke 1689, Montesquieu 1748, the Encyclopédie 1751 to 1772, Rousseau 1762); the revolutions (American 1775, French 1789, Haitian 1791, Spanish American 1810) (5.1, 5.2); and factory methods leaving Britain (Slater\'s mill in Rhode Island from 1793, Cockerill at Seraing from 1817, Russia and Japan mostly after 1870) (5.4).',
-          'So the political revolution began while factories were still almost all in Britain. Its causes, 5.2 taught, were a grievance, the words to name it, and a chance to act. The ideas gave revolutionaries their words; they did not cause the revolutions by themselves.'
+          'So the Atlantic revolutions began while factories were still almost all in Britain (a copy of Arkwright\'s mill at Ratingen, Germany, 1784, was one of the very few abroad). Its causes, 5.2 taught, were a grievance, the words to name it, and a chance to act. The ideas gave revolutionaries their words; they did not cause the revolutions by themselves.'
         ],
         ask: 'Can industry be the cause of the French Revolution? Use the dates.',
-        listenFor: 'No: France\'s revolution began in 1789, before factories spread beyond Britain, from debt, grievances and ideas.',
+        listenFor: 'No: France\'s revolution began in 1789, while factories were still almost all in Britain, from debt, grievances and ideas.',
         ap: 'Chronology is evidence in a causation claim.'
       }
     },
@@ -648,7 +648,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'What was new about these states compared with a kingdom in 1750?',
         listenFor: 'They claimed to belong to their people or nation, not to a king by God\'s will.',
-        ap: 'A change with its own causes, beside industry\'s.'
+        ap: 'A change that began from its own causes, beside industry\'s.'
       }
     },
     {
@@ -660,7 +660,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: 'Joined', text: 'Italy, 1861. The German Empire, 1871.' },
           { label: 'Pulled away', text: 'Greece, 1830; Serbia, Montenegro and Romania, 1878.' },
-          { label: 'They met', key: true, text: 'Meiji Japan built railways and mills to make the nation strong.' }
+          { label: 'They met', key: true, text: 'Prussia\'s railways helped it unite Germany; Japan built mills to make the nation strong.' }
         ]
       },
       notes: {
@@ -674,7 +674,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'KC-5.3.II.i: nationalism also became a major force shaping the historical development of states and empires. From 5.2: Italian nationalists joined most of Italy into one kingdom in 1861 (Rome in 1870); the German Empire was proclaimed on 18 January 1871 at Versailles; Greece was declared independent in 1830, and Serbia, Montenegro and Romania were recognized in 1878.',
-          'Where the two revolutions met: nationalism and fear of stronger powers pushed Meiji Japan to build railways and mills to make the nation strong (5.6); and in Britain the Chartists, workers in industrial towns, used the language of rights to demand the vote (5.8).',
+          'Where the two revolutions met: Prussia\'s railways and iron and steel helped it win the wars that united Germany (Showalter, Railroads and Rifles, 1975); nationalism and fear of stronger powers pushed Meiji Japan to build railways and mills to make the nation strong (5.6); and in Britain the Chartists, workers in industrial towns, used the language of rights to demand the vote (5.8).',
           'What kept going (5.1): in 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in 1893, was the first self-governing country where all adult women could.',
           'The picture: First Steam Train Leaving Yokohama, a woodblock print in three sheets signed Baidō Kunimasa, about 1872 (the Library of Congress catalogs it under Utagawa Kunisada); Japan\'s first railway opened in 1872. A print made to sell (verified for 5.6).'
         ],
@@ -731,14 +731,14 @@ window.BEHISTORICAL_TEACHING = {
         keys: [
           'Show it, hide it, redraw from memory',
           'Middle column = how big; last = the limit',
-          'Row 4 = the other revolution, other causes',
+          'Row 4 = the other revolution, first from ideas',
           'Read across a row = one argument',
           'Correct the three myths from these rows'
         ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the twelve cells from memory, with one number or name under each.',
-          'Rows 1 and 2 are KC-5.1 and KC-5.1.IV; row 3 is KC-5.1\'s "for some" and 5.9\'s ladder; row 4 is KC-5.3, KC-5.3.I.A, KC-5.3.I and KC-5.3.II.i, a change with its own causes. The slide carries no single Key Concept band because it spans all of them.',
-          'The three myths, corrected from these rows, naming the opposite mistake each time. "Everything changed": the last column answers it (the handloom weavers, India\'s farmers, the kings); but the opposite mistake, "nothing really changed," is answered by the middle column (railways, the telegraph, coal, the price of cloth). "Industry caused the revolutions": row 4, the ideas and the revolutions came first, from grievances and ideas, while factories were still almost all in Britain; the opposite mistake is "the two revolutions had nothing to do with each other," answered by Meiji Japan and the Chartists.'
+          'Rows 1 and 2 are KC-5.1 and KC-5.1.IV; row 3 is KC-5.1\'s "for some" and 5.9\'s ladder; row 4 is KC-5.3, KC-5.3.I.A, KC-5.3.I and KC-5.3.II.i, a change that began from ideas and grievances and later met industry (Germany, Japan). The slide carries no single Key Concept band because it spans all of them.',
+          'The three myths, corrected from these rows, naming the opposite mistake each time. "Everything changed": the last column answers it (the handloom weavers, India\'s farmers, the kings); but the opposite mistake, "nothing really changed," is answered by the middle column (railways, the telegraph, coal, the price of cloth). "Industry caused the revolutions": row 4, the ideas and the revolutions came first, from grievances and ideas, while factories were still almost all in Britain; the opposite mistake is "the two revolutions had nothing to do with each other," answered by Prussia\'s railways, Meiji Japan and the Chartists.'
         ],
         ask: 'Which row changed most? Which changed least? Why?',
         listenFor: 'Most: moving, because it reached the interiors of continents everywhere. Least: how most people lived, since most still farmed. Any reasoned answer with evidence.'
