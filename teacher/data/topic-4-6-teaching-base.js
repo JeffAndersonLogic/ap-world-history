@@ -13,8 +13,22 @@
  * Retelling slide: the four-link cause chain (phase 'chain').
  *
  * Class dates: Green Wednesday 2026-11-11, Silver Thursday 2026-11-12.
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * Required modules, from the schedule (Jeff's Unit 4 module review,
+ * 2026-10-23): 02 First & 10, 05 Skill Builder, 06 Checkpoint 1, 08 Primary
+ * Source (Naranjo's declaration) and 10 Checkpoint 2. The deck predated that
+ * review and launched 07 Evidence Lab with Checkpoint 1 optional; the Evidence
+ * Lab is now the early-finisher option.
+ *
+ * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
+ * topic; slides that only point to a module are cut; the lecture tells the
+ * story). The briefing opens on the outline below, a road map before the
+ * First & 10 shows students the same five section headers, every story slide's
+ * eyebrow names its section, minute counts are off the projected slides, the
+ * myths moved to the outline's Watch for list and the chain slide's notes, and
+ * one Work Time slide replaced Myth and Evidence, Sharpen the Claim and the four
+ * module launch slides. No story slide changed. 28 slides to 24. The Sharpen
+ * frame is given aloud in Work Time; the topic has one learning objective (L),
+ * which every story slide already carries.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -36,12 +50,79 @@ window.BEHISTORICAL_TEACHING = {
     ],
     should: [
       'Model 4.B Contextualization on the Fronde, then let students practice on Stono in the Skill Builder.',
-      'Correct three myths: "only colonized peoples resisted," "maroons were just runaways hiding," and "resisting a European empire meant opposing slavery." The outcomes slide answers a fourth, "resistance always failed."',
+      'Correct three myths when they come up (the outline\'s Watch for list; the chain slide\'s notes): "only colonized peoples resisted," "maroons were just runaways hiding," and "resisting a European empire meant opposing slavery." The outcomes slide answers a fourth, "resistance always failed."',
       'Set the Pueblo Revolt beside Metacom\'s War: same decade, opposite outcomes.'
     ],
     could: [
-      'Use the BeInTheRoom Knotted Cord as an extension for students who finish early.',
+      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the BeInTheRoom Knotted Cord as an extension.',
       'Point students who want more depth to the eBook chapter, "Push and Pushback."'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes or the First & 10 "Push and Pushback"; nothing is new.
+  // Required modules are the schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '08 Primary Source', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'Two pushes: centralize and expand', kc: 'KC-4.3.III.iii', points: [
+        'Centralize = pull power inward, away from nobles, judges, towns',
+        'Expand = push outward over people who were never yours',
+        'Both cost somebody: taxes, laws, privileges; land, tribute, labor, slavery',
+        'That cost is the context for every revolt today',
+        '"External" = the edges of an expanding state, not European rivalry (4.5)'
+      ] },
+      { label: 'II', title: 'Pushback inside the state', kc: 'KC-4.3.III.iii', points: [
+        'The Fronde, 1648 to 1653: war taxes; judges refuse, Paris barricades, nobles rise',
+        'Broussel\'s arrest sets off the barricades; the rebels split; the crown wins',
+        'Russia: the 1649 Law Code binds peasants to the land',
+        'Runaways join the Cossacks; Razin\'s Volga revolt, 1670',
+        'Razin executed 1671; serfdom stays (until 1861)'
+      ] },
+      { label: 'III', title: 'Pushback at the edges', kc: 'KC-4.3.III.iii', points: [
+        'Marathas: Shivaji\'s hill forts; Aurangzeb comes south 1681, dies there 1707 unbeaten',
+        'Njinga: talks and baptism in Luanda, 1622; war, Matamba, Dutch allies; peace in the 1650s',
+        'Pueblo Revolt causes come in kinds: religious, economic, political (plus drought)',
+        'Naranjo, 1681: the knotted cord counts down the days',
+        '10 August 1680: Spain driven out for twelve years; back in 1692 without the encomienda',
+        'Metacom\'s War, 1675 to 1676: same decade, crushed. Why the different outcome?'
+      ] },
+      { label: 'IV', title: 'Enslaved people organize', kc: 'KC-5.3.III.C', points: [
+        'Organized = many people acting together to challenge the authorities',
+        'Palmares: towns, farms, trade, an army; Ganga Zumba\'s treaty 1678; Zumbi killed 1695',
+        'Jamaica, 1739: freedom and land, but runaways sent back',
+        'Stono, 1739: the march to Spanish Florida; the Negro Act of 1740'
+      ] },
+      { label: 'V', title: 'Why it happened, what it changed', kc: 'Learning Objective L', points: [
+        'Context = the bigger development, plus the "because"',
+        'Crushed: the Fronde, Razin, Metacom, Stono',
+        'Bargained: Njinga, the Jamaica Maroons, New Mexico',
+        'Worn down: the Marathas',
+        'Palmares fits more than one box'
+      ], skill: 'You model contextualization (4.B) out loud on the Fronde with the sentence frame, then pairs say it for Razin. Students practice it on Stono in the Skill Builder.' }
+    ],
+    wrap: { title: 'Put it together', columns: ['The push', 'The pushback', 'What came next'], rows: [
+      { label: 'Inside the state', cells: ['War taxes; the 1649 Law Code', 'Judges, Paris, nobles; peasants and Cossacks', 'Crushed; the crown and serfdom stay'] },
+      { label: 'At the edges', cells: ['Mughals into the Deccan; Portugal inland; Spain and New England take land', 'Marathas, Njinga, the Pueblos, Metacom', 'Worn down, bargained, or crushed'] },
+      { label: 'Enslaved people', cells: ['The plantation colony', 'Palmares, the Jamaica Maroons, Stono', 'A treaty, or force and harsher laws'] }
+    ] },
+    vocabulary: [
+      { term: 'Centralization', def: 'A ruler pulling power into his own hands, away from the nobles, judges, towns and village leaders who used to share it.' },
+      { term: 'Expansion', def: 'A state pushing out over land and sea to rule people who had never been its own.' },
+      { term: 'Fronde', def: 'The revolts in France, 1648 to 1653, of judges, Paris and then great nobles against the crown\'s war taxes. The crown won.' },
+      { term: 'Cossacks', def: 'Free communities of frontier fighters beyond the tsar\'s reach, on the Don and elsewhere; runaway serfs joined them.' },
+      { term: 'Marathas', def: 'A kingdom of hill forts and fast horsemen in the Deccan, crowned under Shivaji in 1674, that the Mughals never defeated.' },
+      { term: 'Pueblo Revolt', def: 'The 1680 rising of the Pueblo towns that drove the Spanish out of New Mexico for twelve years.' },
+      { term: 'Encomienda', def: 'A grant giving a Spanish colonist the labor and tribute of a group of Indigenous people; in New Mexico, crops each year and unpaid work.' },
+      { term: 'Maroon communities', def: 'Free communities built by people who escaped slavery, often in mountains or forests.' },
+      { term: 'Quilombo', def: 'The Brazilian word for a maroon community; Palmares was a union of many.' },
+      { term: 'Organized resistance', def: 'Not one person running away, but many people acting together in a way that challenged the authorities.' }
+    ],
+    watch: [
+      { myth: '"Only colonized peoples resisted states."', fix: 'French judges and nobles and Russian peasants pushed back against their own rulers.' },
+      { myth: '"Maroons were just runaways hiding in the woods."', fix: 'Palmares had towns, farms, trade, an army and a treaty.' },
+      { myth: '"Resisting a European empire meant opposing slavery."', fix: 'Njinga\'s wars took captives to sell; the Maroons agreed to return runaways. Do not swing to the opposite myth: their resistance was real.' }
     ]
   },
 
@@ -49,31 +130,27 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the chain, the owns and bridge-only split, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.5, 3.2 and 4.4. Bridge to who pushed back.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over Razin\'s capture.', students: 'Predict who might push back against a state.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Push and Pushback" in class.', students: 'For every case: push, who, how, what next.', slide: 4 },
-    { id: 'push', label: 'Two Pushes', range: '17-19', minutes: 2, teacher: 'Centralize inward, expand outward, and what each cost.', students: 'Sort a cost under each push.', slide: 5 },
-    { id: 'map', label: 'Where People Pushed Back', range: '19-20', minutes: 1, teacher: 'Nine cases on one map, inside and at the edges.', students: 'Find one in Afro-Eurasia, one in the Americas.', slide: 6 },
-    { id: 'fronde', label: 'Inside: The Fronde', range: '20-23', minutes: 3, teacher: 'Judges, Paris and nobles against war taxes.', students: 'Run the chain.', slide: 7 },
-    { id: 'razin', label: 'Inside: Razin', range: '23-25', minutes: 2, teacher: 'The 1649 Law Code, runaways, the Volga revolt.', students: 'Name the group and the push.', slide: 8 },
-    { id: 'deccan', label: 'Edges: The Marathas', range: '25-27', minutes: 2, teacher: 'Aurangzeb\'s push south; forts and raids.', students: 'Say what the war cost the Mughals.', slide: 9 },
-    { id: 'njinga', label: 'Edges: Njinga', range: '27-29', minutes: 2, teacher: 'War and diplomacy against Portugal.', students: 'Name two of her moves.', slide: 10 },
-    { id: 'pueblo', label: 'Why the Pueblos Rose', range: '29-31', minutes: 2, teacher: 'Religious, economic and political causes together.', students: 'Sort the causes into kinds.', slide: 11 },
-    { id: 'naranjo', label: 'A Witness, 1681', range: '31-32', minutes: 1, teacher: 'First look at Naranjo; the Primary Source module goes deeper.', students: 'Find the knotted cord.', slide: 12 },
-    { id: 'revolt', label: 'The Revolt, 1680', range: '32-34', minutes: 2, teacher: 'From the 1675 arrests to the return on new terms.', students: 'Say what changed after 1692.', slide: 13 },
-    { id: 'metacom', label: 'Same Decade, Opposite Ends', range: '34-36', minutes: 2, teacher: 'The Pueblo Revolt beside Metacom\'s War.', students: 'Suggest why the outcomes differed.', slide: 14 },
-    { id: 'organized', label: 'Enslaved People Organize', range: '36-37', minutes: 1, teacher: 'What "organized" means: three forms.', students: 'Define organized resistance.', slide: 15 },
-    { id: 'palmares', label: 'Palmares', range: '37-39', minutes: 2, teacher: 'A maroon state for most of a century.', students: 'Find the evidence of organization.', slide: 16 },
-    { id: 'jamaica', label: 'The 1739 Treaty', range: '39-41', minutes: 2, teacher: 'Freedom and land, and the price.', students: 'What was gained, what was promised.', slide: 17 },
-    { id: 'stono', label: 'Stono, 1739', range: '41-43', minutes: 2, teacher: 'The march south and the colony\'s answer.', students: 'Say how the authorities responded.', slide: 18 },
-    { id: 'context', label: 'Contextualize It', range: '43-45', minutes: 2, teacher: 'Model 4.B on the Fronde with a sentence frame.', students: 'Say the frame aloud for the Fronde.', slide: 19 },
-    { id: 'outcomes', label: 'Three Outcomes', range: '45-47', minutes: 2, teacher: 'Crushed, bargained, worn down.', students: 'Sort each case.', slide: 20 },
-    { id: 'myths', label: 'Myth and Evidence', range: '47-49', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 21 },
-    { id: 'chain', label: 'Push and Pushback', range: '49-53', minutes: 4, teacher: 'Students redraw the chain from memory.', students: 'Retell the whole topic.', slide: 22 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '53-55', minutes: 2, teacher: 'From "they were oppressed" to a cause chain.', students: 'Upgrade a weak claim.', slide: 23 },
-    { id: 'skill', label: 'Skill Builder', range: '55-61', minutes: 6, teacher: 'Module 05: Contextualization.', students: 'Put Stono in its context.', slide: 24 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: local resistance.', students: 'Work without the coach.', slide: 25 },
-    { id: 'evidence', label: 'Evidence Lab', range: '61-68', minutes: 7, teacher: 'Module 07: one claim about pushback from two sources.', students: 'Observe, then infer, then name a limit.', slide: 26 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '68-78', minutes: 10, teacher: 'Module 10: organized resistance by enslaved people. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 27 },
-    { id: 'close', label: 'Landing Sentence', range: '78-80', minutes: 2, teacher: 'Land the answer and hand off to 4.7.', students: 'Say the topic in one sentence.', slide: 28 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the five sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "Push and Pushback" in class.', students: 'For every case: push, who, how, what next.', slide: 5 },
+    { id: 'push', label: 'Two Pushes', range: '18-20', minutes: 2, teacher: 'Centralize inward, expand outward, and what each cost.', students: 'Sort a cost under each push.', slide: 6 },
+    { id: 'map', label: 'Where People Pushed Back', range: '20-21', minutes: 1, teacher: 'Nine cases on one map, inside and at the edges.', students: 'Find one in Afro-Eurasia, one in the Americas.', slide: 7 },
+    { id: 'fronde', label: 'Inside: The Fronde', range: '21-24', minutes: 3, teacher: 'Judges, Paris and nobles against war taxes.', students: 'Run the chain.', slide: 8 },
+    { id: 'razin', label: 'Inside: Razin', range: '24-26', minutes: 2, teacher: 'The 1649 Law Code, runaways, the Volga revolt.', students: 'Name the group and the push.', slide: 9 },
+    { id: 'deccan', label: 'Edges: The Marathas', range: '26-28', minutes: 2, teacher: 'Aurangzeb\'s push south; forts and raids.', students: 'Say what the war cost the Mughals.', slide: 10 },
+    { id: 'njinga', label: 'Edges: Njinga', range: '28-30', minutes: 2, teacher: 'War and diplomacy against Portugal.', students: 'Name two of her moves.', slide: 11 },
+    { id: 'pueblo', label: 'Why the Pueblos Rose', range: '30-32', minutes: 2, teacher: 'Religious, economic and political causes together.', students: 'Sort the causes into kinds.', slide: 12 },
+    { id: 'naranjo', label: 'A Witness, 1681', range: '32-33', minutes: 1, teacher: 'First look at Naranjo; the Primary Source module goes deeper.', students: 'Find the knotted cord.', slide: 13 },
+    { id: 'revolt', label: 'The Revolt, 1680', range: '33-35', minutes: 2, teacher: 'From the 1675 arrests to the return on new terms.', students: 'Say what changed after 1692.', slide: 14 },
+    { id: 'metacom', label: 'Same Decade, Opposite Ends', range: '35-37', minutes: 2, teacher: 'The Pueblo Revolt beside Metacom\'s War.', students: 'Suggest why the outcomes differed.', slide: 15 },
+    { id: 'organized', label: 'Enslaved People Organize', range: '37-38', minutes: 1, teacher: 'What "organized" means: three forms.', students: 'Define organized resistance.', slide: 16 },
+    { id: 'palmares', label: 'Palmares', range: '38-40', minutes: 2, teacher: 'A maroon state for most of a century.', students: 'Find the evidence of organization.', slide: 17 },
+    { id: 'jamaica', label: 'The 1739 Treaty', range: '40-42', minutes: 2, teacher: 'Freedom and land, and the price.', students: 'What was gained, what was promised.', slide: 18 },
+    { id: 'stono', label: 'Stono, 1739', range: '42-44', minutes: 2, teacher: 'The march south and the colony\'s answer.', students: 'Say how the authorities responded.', slide: 19 },
+    { id: 'context', label: 'Contextualize It', range: '44-46', minutes: 2, teacher: 'Model 4.B on the Fronde with a sentence frame.', students: 'Say the frame aloud for the Fronde.', slide: 20 },
+    { id: 'outcomes', label: 'Three Outcomes', range: '46-48', minutes: 2, teacher: 'Crushed, bargained, worn down.', students: 'Sort each case.', slide: 21 },
+    { id: 'chain', label: 'Push and Pushback', range: '48-52', minutes: 4, teacher: 'Students redraw the chain from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 22 },
+    { id: 'worktime', label: 'Work Time', range: '52-84', minutes: 32, teacher: 'Modules 05, 06, 08 and 10, in that order: the Skill Builder on Stono, Checkpoint 1 with no coach, Naranjo\'s declaration, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Naranjo\'s declaration, Checkpoint 2.', slide: 23 },
+    { id: 'close', label: 'Landing Sentence', range: '84-86', minutes: 2, teacher: 'Land the answer and hand off to 4.7.', students: 'Say the topic in one sentence.', slide: 24 }
   ],
 
   quickLaunch: [
@@ -91,7 +168,7 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'Push, and pushback.',
       subtitle: 'Causation, with Contextualization 4.B. Every case runs one chain: what the state pushed, who it landed on, how they pushed back, what happened next.',
       notes: {
@@ -103,16 +180,16 @@ window.BEHISTORICAL_TEACHING = {
           'Pair an Afro-Eurasian case with an American one',
           'Enslaved resistance taught as organized',
           'European rivalry is 4.5, not "external"',
-          'Three myths, slide 21'
+          'Three myths: outline Watch for list'
         ],
         land: [
           'CED p. 88. One learning objective, L (Governance): explain the effects of the development of state power from 1450 to 1750. The reasoning process is Causation (p. 75); the suggested skill is 4.B Contextualization, explain how a development is situated in a broader context.',
           'KC-4.3.III.iii: state expansion and centralization led to resistance from an array of social, political and economic groups on a local level. KC-5.3.III.C: enslaved persons challenged existing authorities in the Americas through organized resistance.',
           'The CED\'s illustrative examples (optional): Pueblo Revolts; Fronde; Cossack revolts; Maratha conflict with Mughals; Ana Nzinga\'s resistance (as ruler of Ndongo and Matamba); Metacom\'s War (King Philip\'s War); Maroon societies in the Caribbean and Brazil; resistance of enslaved persons in North America. All eight are in this deck, each told briefly, because "an array of groups" is the Key Concept and no one case can show it.',
-          'The CED\'s sample activity (p. 77) is a close reading of the Declaration of Pedro Naranjo (1681). It is the Primary Source module; slide 12 is a first look.',
+          'The CED\'s sample activity (p. 77) is a close reading of the Declaration of Pedro Naranjo (1681). It is the Primary Source module (08), required today; slide 13 is a first look.',
           'Owns: local resistance to expanding and centralizing states, across Afro-Eurasia and the Americas; organized resistance by enslaved people in the Americas.',
           'Bridge only: rivalries between European states (KC-4.3.III.ii, Topic 4.5; the Unit 4 contract forbids it as a 4.6 target); Versailles (3.2, one clause); the labor systems and plantations (4.4, named as the push); casta and elites (4.7, the hand-off); the Haitian Revolution (Unit 5, after 1750, not mentioned).',
-          'Three myths, on slide 21: "only colonized peoples resisted states"; "maroons were just runaways hiding in the woods"; "resisting a European empire meant opposing slavery." Slide 20 answers a fourth, "resistance always failed."',
+          'Three myths, in the outline\'s Watch for list and corrected on the chain slide (22) if they come up: "only colonized peoples resisted states"; "maroons were just runaways hiding in the woods"; "resisting a European empire meant opposing slavery." Slide 21 answers a fourth, "resistance always failed."',
           'Every picture in this deck is a real object from the 1600s or 1700: a French print of 1648 and a Dutch print made for a book published in Leiden, two paintings made in the Deccan, and a Dutch print of Razin made about thirty years after his death. The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -121,7 +198,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull it back from memory.',
       template: {
         questions: [
@@ -143,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
           'No notes. Take fast answers and do not reteach.',
           'Accept: mercantilist laws (the Navigation Act, the Casa de Contratación), chartered companies (the VOC, the English East India Company); Versailles, the devshirme, tax farming, zamindars, salaried officials; the encomienda, the mit\'a, chattel slavery, indentured servitude.',
           'The bridge is 4.5\'s hand-off in the unit story map, word for word.',
-          'Prompt 2 is centralization (pulling power inward); prompts 1 and 3 are expansion (pushing outward). Those are the two pushes on slide 5.'
+          'Prompt 2 is centralization (pulling power inward); prompts 1 and 3 are expansion (pushing outward). Those are the two pushes on slide 6.'
         ],
         ask: 'Who paid for each of those tools: in money, land, work or freedom?',
         listenFor: 'Taxpayers and peasants, nobles who lost power, conquered peoples, enslaved Africans.',
@@ -163,7 +240,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'The picture is a real historical print: Jan Luyken, "Stenko Radzin is brought into Moscow on a cart with his brother," an etching made for J. L. Gottfried\'s Historische kronyck (Leiden: Pieter van der Aa, 1700), Rijksmuseum RP-P-1896-A-19368-1482. Luyken never went to Russia; the city and the clothing are his imagining. It shows a captured rebel chained in a cart under a gallows-like frame, guards with pikes, and a crowd at the city gate.',
-          'Razin\'s revolt is one case of many: peasants and Cossacks against a tsar who had just bound peasants to the land. Slide 8 tells it.',
+          'Razin\'s revolt is one case of many: peasants and Cossacks against a tsar who had just bound peasants to the land. Slide 9 tells it.',
           'The question is the learning objective in a ninth grader\'s words: the push (expansion and centralization), the pushback (resistance), and the effects.'
         ],
         ask: 'Predict: what kind of people might push back against a growing state?',
@@ -171,10 +248,41 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'States pushed to expand and centralize. Who pushed back, and what did it change?',
+        stops: [
+          { label: 'I', text: 'Two pushes: centralize and expand' },
+          { label: 'II', text: 'Pushback inside the state' },
+          { label: 'III', text: 'Pushback at the edges' },
+          { label: 'IV', text: 'Enslaved people organize' },
+          { label: 'V', text: 'Why it happened, what it changed' },
+          { label: '✓', text: 'Put it together: push and pushback', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Five sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the five headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to V), so the class can see where it is all period.',
+          'The question at the top is the topic question: for each section, students watch for the push, who pushed back, how, and what came next.'
+        ],
+        ask: 'Which kind of group do you expect to push back hardest?',
+        listenFor: 'Any reasoned guess; return to it at the chain.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read with four questions in mind.',
       subtitle: 'For every case: what did the state push for, who pushed back, how, and what happened next?',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-6-internal-external-challenges-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
@@ -195,7 +303,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'push', kind: 'branch-tree', eyebrow: 'The Push · Context',
+      phase: 'push', kind: 'branch-tree', eyebrow: 'I · Two Pushes · Context',
       kc: 'KC-4.3.III.iii', title: 'Two ways to grow a state.',
       footer: 'Both pushes cost somebody something. That is the context for every revolt today.',
       template: {
@@ -226,7 +334,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'map', kind: 'map', eyebrow: 'Where People Pushed Back',
+      phase: 'map', kind: 'map', eyebrow: 'I · Two Pushes · Map',
       kc: 'Unit 4: Learning Objective L', title: 'Pushback, inside states and at their edges.',
       footer: 'The key sorts every case: pushback inside a state, at the edge of an expanding state, or organized resistance by enslaved people.',
       visual: { url: '../assets/images/instructional-maps/topic-4-6.svg', alt: 'World map with labeled dots at Paris, the Volga, the Deccan, Ndongo and Matamba, New Mexico, New England, Palmares in Brazil, Jamaica and the Stono River in South Carolina, each with a date' },
@@ -247,7 +355,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'fronde', kind: 'frame-pair', eyebrow: 'Inside the State · France, 1648 to 1653',
+      phase: 'fronde', kind: 'frame-pair', eyebrow: 'II · Inside the State · France, 1648 to 1653',
       kc: 'KC-4.3.III.iii', title: 'Judges, Paris and nobles against the crown.',
       template: {
         panels: [
@@ -284,7 +392,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'razin', kind: 'story-steps', eyebrow: 'Inside the State · Russia, 1649 to 1671',
+      phase: 'razin', kind: 'story-steps', eyebrow: 'II · Inside the State · Russia, 1649 to 1671',
       kc: 'KC-4.3.III.iii', title: 'Peasants and Cossacks against the tsar.',
       template: {
         steps: [
@@ -315,7 +423,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'deccan', kind: 'frame-pair', eyebrow: 'At the Edges · The Deccan, 1660s to 1707',
+      phase: 'deccan', kind: 'frame-pair', eyebrow: 'III · At the Edges · The Deccan, 1660s to 1707',
       kc: 'KC-4.3.III.iii', title: 'An emperor pushes south. A warrior kingdom pushes back.',
       template: {
         panels: [
@@ -350,7 +458,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'njinga', kind: 'case-file', eyebrow: 'At the Edges · West Central Africa, 1622 to 1663',
+      phase: 'njinga', kind: 'case-file', eyebrow: 'III · At the Edges · West Central Africa, 1622 to 1663',
       kc: 'KC-4.3.III.iii', title: 'A queen fights and bargains with Portugal.',
       template: {
         tag: 'Ruler of Ndongo and Matamba', place: 'Inland from Luanda', date: '1624 to 1663',
@@ -385,7 +493,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'pueblo', kind: 'branch-tree', eyebrow: 'At the Edges · New Mexico, 1598 to 1680',
+      phase: 'pueblo', kind: 'branch-tree', eyebrow: 'III · At the Edges · New Mexico, 1598 to 1680',
       kc: 'KC-4.3.III.iii', title: 'Why the Pueblos rose: causes come in kinds.',
       footer: 'On top of all three came drought and famine. Strong answers name more than one kind of cause.',
       template: {
@@ -419,9 +527,9 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'naranjo', kind: 'source-quote', eyebrow: 'A Witness · 1681',
+      phase: 'naranjo', kind: 'source-quote', eyebrow: 'III · At the Edges · A Witness, 1681',
       kc: 'KC-4.3.III.iii', title: 'How the towns kept the same day.',
-      footer: 'A first look. The Primary Source module (08) reads more of his testimony.',
+      footer: 'A first look. In Work Time, the Primary Source module (08) reads more of his testimony.',
       template: {
         quote: '[T]he cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.',
         attribution: { author: 'Pedro Naranjo, of San Felipe Pueblo, questioned by Spanish officials', work: 'Declaration, translated by C. C. Shelby (1942)', year: '19 December 1681' },
@@ -446,7 +554,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'revolt', kind: 'story-steps', eyebrow: 'At the Edges · New Mexico, 1675 to 1690s',
+      phase: 'revolt', kind: 'story-steps', eyebrow: 'III · At the Edges · New Mexico, 1675 to 1690s',
       kc: 'KC-4.3.III.iii', title: 'The Pueblo Revolt, and what changed after.',
       template: {
         steps: [
@@ -478,7 +586,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'metacom', kind: 'balance', eyebrow: 'Same Decade, Opposite Ends',
+      phase: 'metacom', kind: 'balance', eyebrow: 'III · At the Edges · Same Decade, Opposite Ends',
       kc: 'KC-4.3.III.iii', title: 'Two revolts against two expanding colonies.',
       template: {
         job: 'Push back',
@@ -507,7 +615,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'organized', kind: 'branch-tree', eyebrow: 'Enslaved People Organize',
+      phase: 'organized', kind: 'branch-tree', eyebrow: 'IV · Enslaved People Organize',
       kc: 'KC-5.3.III.C', title: 'Not one person running. Many people acting together.',
       footer: 'The College Board\'s word is organized: resistance that challenged the authorities.',
       template: {
@@ -538,7 +646,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'palmares', kind: 'case-file', eyebrow: 'Maroon Communities · Brazil',
+      phase: 'palmares', kind: 'case-file', eyebrow: 'IV · Enslaved People Organize · Brazil',
       kc: 'KC-5.3.III.C', title: 'Palmares: a free state in the hills.',
       template: {
         tag: 'Quilombo', place: 'Hills behind the sugar coast', date: 'c. 1600 to 1695',
@@ -573,7 +681,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'jamaica', kind: 'source-quote', eyebrow: 'Maroon Communities · Jamaica, 1739',
+      phase: 'jamaica', kind: 'source-quote', eyebrow: 'IV · Enslaved People Organize · Jamaica, 1739',
       kc: 'KC-5.3.III.C', title: 'Freedom on paper, and its price.',
       footer: 'Freedom for one community, and a promise to guard slavery for others.',
       template: {
@@ -602,7 +710,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'stono', kind: 'story-steps', eyebrow: 'North America · South Carolina, 1739',
+      phase: 'stono', kind: 'story-steps', eyebrow: 'IV · Enslaved People Organize · South Carolina, 1739',
       kc: 'KC-5.3.III.C', title: 'The Stono Rebellion, and the colony\'s answer.',
       template: {
         steps: [
@@ -634,7 +742,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'context', kind: 'sentence-frame', eyebrow: 'Contextualization 4.B · Model',
+      phase: 'context', kind: 'sentence-frame', eyebrow: 'V · Why It Happened · Contextualize It, Model',
       kc: 'Unit 4: Learning Objective L', title: 'Put a revolt in its bigger story.',
       footer: 'Context is the bigger development, and how it helps explain the event.',
       template: {
@@ -661,7 +769,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'outcomes', kind: 'ledger', eyebrow: 'What Came Next',
+      phase: 'outcomes', kind: 'ledger', eyebrow: 'V · What It Changed',
       title: 'Resistance had effects too.',
       template: {
         rows: [
@@ -691,35 +799,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence tells a more interesting story than the myths.',
-      template: {
-        rows: [
-          { myth: 'Only colonized peoples resisted states.', evidence: 'French judges and nobles and Russian peasants pushed back against their own rulers.', source: 'The Fronde; Razin' },
-          { myth: 'Maroons were just runaways hiding in the woods.', evidence: 'Palmares had towns, farms, trade, an army and a treaty.', source: 'Palmares, 1600s' },
-          { myth: 'Resisting a European empire meant opposing slavery.', evidence: 'Njinga\'s wars took captives to sell; the Maroons agreed to return runaways.', source: 'Matamba; the 1739 treaty' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Not only colonized peoples resisted',
-          'Maroons were organized, not just hiding',
-          'Resisting an empire was not opposing slavery',
-          'Do not swing to the opposite myth'
-        ],
-        land: [
-          'Row 1 is the "array" in KC-4.3.III.iii: social, political and economic groups, not only colonized peoples.',
-          'Row 2 is the "organized" in KC-5.3.III.C.',
-          'Row 3 is the hardest. Do not swing to the opposite myth either: the Maroons\' freedom was real, and Njinga held off Portugal for decades. People resisted the push that landed on them, not every injustice of their age.'
-        ],
-        ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'The third: resisting one power was not opposing slavery itself, but that does not make the resistance less real.'
-      }
-    },
-    {
-      retelling: true, phase: 'chain', kind: 'cause-chain', eyebrow: 'The Whole Topic',
+      retelling: true, phase: 'chain', kind: 'cause-chain', eyebrow: 'Put It Together · The Whole Topic',
       title: 'Push, and pushback.',
       footer: 'The harder states pushed, the harder people pushed back, and the pushback changed the states too.',
       template: {
@@ -742,122 +822,46 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the four links from memory, with one case under each link.',
           'The chain is KC-4.3.III.iii in four steps: "state expansion and centralization led to resistance from an array of social, political, and economic groups on a local level," plus one more link for what the resistance did. KC-5.3.III.C runs the same chain with the plantation colony as the push.',
-          'Push for a named case and a named group at each link: the Fronde (judges and nobles), Razin (peasants and Cossacks), the Marathas, Njinga, the Pueblos, Metacom, Palmares, the Jamaica Maroons, Stono.'
+          'Push for a named case and a named group at each link: the Fronde (judges and nobles), Razin (peasants and Cossacks), the Marathas, Njinga, the Pueblos, Metacom, Palmares, the Jamaica Maroons, Stono.',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list): not only colonized peoples resisted (the Fronde, Razin: the "array" in KC-4.3.III.iii); maroons were organized, not just hiding (Palmares: the "organized" in KC-5.3.III.C); resisting an empire was not opposing slavery (Njinga sold captives; the Maroons returned runaways). Do not swing to the opposite myth: the Maroons\' freedom was real, and Njinga held off Portugal for decades.'
         ],
         ask: 'Run one case through all four links without looking.',
         listenFor: 'Russia\'s Law Code (push) binds peasants (lands) who join Razin\'s revolt (pushback) and are crushed; serfdom stays (answer).'
       }
     },
     {
-      phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      kc: 'KC-4.3.III.iii',
-      footer: 'Name the push, the group, the pushback, and what came next.',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 08, 10',
+      title: 'Now you do the history.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
-        weak: 'People resisted because they were oppressed.',
-        strong: '**Because** ______ pushed to ______, ______ lost ______, **so** they ______; **as a result,** ______.'
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Put the Stono Rebellion in its context.', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
+          { code: 'Module 08', name: 'Primary Source', note: 'Pedro Naranjo\'s declaration, 1681.', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' }
+        ]
       },
       notes: {
-        minutes: 2,
+        minutes: 32,
         keys: [
-          'Weak: no state, push, group or effect',
-          'Need: state, push, group, loss, pushback, next',
-          'Pairs fill the frame aloud',
-          'No finished claim on the board'
+          'All four required today, in order',
+          'Skill Builder: Stono in context, with "because"',
+          'Checkpoint 1: no coach',
+          'Naranjo: three kinds of cause, then source him',
+          'Checkpoint 2 unfinished = homework',
+          'Early finishers: Evidence Lab'
         ],
         land: [
-          'The weak claim names no state, no push, no group, no form of resistance and no effect. Almost any revolt in history fits it, which is why it earns no credit.',
-          'The frame asks for the whole chain: which state, which push, which group, what they lost, how they pushed back, and what happened next.',
-          'This is a sentence frame, not a model answer: every case is asked for somewhere (First & 10 Q1, Checkpoints 1 and 2). Have pairs fill it in aloud with a case they choose. Do not write a finished claim on the board.'
+          'This one slide replaces six (Myth and Evidence, Sharpen the Claim, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06, 08 and 10 are all required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23). Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 4.B Contextualization. It models the Fronde, then gives the Stono Rebellion with three pieces of context (a plantation colony with an enslaved majority, Spanish Florida\'s promise of freedom, a war between Britain and Spain about to begin) and asks students to place the revolt in its context and say how that context helps explain it. Push for the "because": listing the context is only half the move.',
+          'Checkpoint 1 (Module 06), with no coach, asks for two cases of local resistance, one in Africa, Asia or Europe and one in the Americas, each run through the chain. Give feedback in the room: on an alternating block nothing carries over.',
+          'The Primary Source (Module 08) is more of Pedro Naranjo\'s 1681 declaration, the CED\'s own sample activity (p. 77): one religious, one economic and one political reason for the revolt, with a few words quoted for each; how being a prisoner questioned in Spanish may have shaped what was recorded; and the most significant cause, with a detail from the source.',
+          'Checkpoint 2 (Module 10) asks for one maroon community (Palmares or the Jamaica Maroons) and the Stono Rebellion: how each was organized, how the authorities responded, and one reason the responses differed. That is KC-5.3.III.C, run through the causation chain. Socrates is told the skill is Causation, so it will push for how each was organized and why the authorities answered as they did. The revised answer in the box is what goes to Canvas.',
+          'Early finishers: the Evidence Lab (Module 07; four real objects and two written sources, observe before inferring, and name a limit), or the BeInTheRoom Knotted Cord as an extension.',
+          'If a student needs the claim shape, give it aloud (it was the Sharpen slide): "Because ___ pushed to ___, ___ lost ___, so they ___; as a result, ___." It is a frame, not a model answer; do not write a finished claim on the board.'
         ],
-        ask: 'Why is "oppressed" not enough?',
-        listenFor: 'It does not say who did what to whom, how they resisted, or what changed.'
-      }
-    },
-    {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Put a revolt in its bigger story.',
-      subtitle: 'Name the bigger development, then explain how it helps explain the event.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
-      notes: {
-        minutes: 6,
-        keys: [
-          'Skill 4.B: contextualize',
-          'Modeled on the Fronde, practiced on Stono',
-          'Push for the "because"',
-          'Debrief after: Florida, the coming war'
-        ],
-        land: [
-          'The Skill Builder practices the CED\'s suggested skill, 4.B Contextualization: explain how a specific development is situated within a broader context.',
-          'It models the Fronde (slide 19), then gives the Stono Rebellion with three pieces of context (a plantation colony with an enslaved majority, Spanish Florida\'s promise of freedom, a war between Britain and Spain about to begin) and asks students to place the revolt in its context and say how that context helps explain it.',
-          'Push students to write the "because." Listing the context is only half the move.'
-        ],
-        ask: 'After students have written: which piece of context explains the march south?',
-        listenFor: 'Debrief only after the module: Spanish Florida\'s offer of freedom, which explains the direction of the march, and the coming war, which explains the timing.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'Local resistance.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
-      notes: {
-        minutes: 0,
-        keys: [
-          'Optional: early finishers or diagnostic',
-          'Two cases, both sides of the Atlantic',
-          'Give feedback in the room'
-        ],
-        land: [
-          'Checkpoint 1 is not required for 4.6. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It asks for two cases of local resistance, one in Africa, Asia or Europe and one in the Americas, each run through the chain. Give feedback in the room: on an alternating block nothing carries over.'
-        ],
-        ask: 'Name two cases from two sides of the Atlantic, and run one through the chain.',
-        listenFor: 'The Marathas and the Pueblos, or the Fronde and Metacom\'s War, with push, group, pushback and outcome.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Build one claim from two sources.',
-      subtitle: 'What made people push back, and how? Two sources, one limit.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
-      notes: {
-        minutes: 7,
-        keys: [
-          'One claim, two sources',
-          'Four objects plus two text cards',
-          'Luyken print: a later Dutch imagining',
-          'Observe → infer → name a limit'
-        ],
-        land: [
-          'Four real objects and two written sources: the 1648 French print of Broussel, Luyken\'s 1700 print of Razin, the Shivaji portrait (about 1680), the Aurangzeb portrait (about 1686), and two text cards, from Naranjo\'s 1681 testimony and the 1739 Jamaica treaty.',
-          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. The Luyken print is a Dutch imagining made decades later; that is its limit, and a good one to name.',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated. Two cards are words, not pictures.'
-        ],
-        ask: 'What does the source show before you tell me what it means?',
-        listenFor: 'A concrete detail, then the inference, then a limit.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'Organized resistance by enslaved people: how it challenged the authorities, and how they answered.',
-      subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
-      notes: {
-        minutes: 10,
-        keys: [
-          'A maroon community plus Stono',
-          'How each was organized',
-          'How authorities answered, and why it differed',
-          'Revised answer goes to Canvas',
-          'Unfinished = homework'
-        ],
-        land: [
-          'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for one maroon community (Palmares or the Jamaica Maroons) and the Stono Rebellion: how each was organized, how the authorities responded, and one reason the responses differed. That is KC-5.3.III.C, run through the causation chain. KC-4.3.III.iii is the First & 10\'s and Checkpoint 1\'s.',
-          'Socrates is told the skill is Causation, so it will push for how each was organized and why the authorities answered as they did.'
-        ],
-        ask: 'Does your answer show how each was organized, how the authorities answered, and why the answers differed?',
-        listenFor: 'Towns, leaders, a treaty, a march; destruction, a treaty, a harsher law; the colony could not beat the Maroons in the mountains, but could catch Stono\'s marchers in open country.'
+        ask: 'Does your answer name the state, the push, the group, how they pushed back, and what came next?',
+        listenFor: 'Skill Builder: Spanish Florida\'s offer explains the march south, the coming war the timing. Checkpoint 2: towns, leaders, a treaty, a march; destruction, a treaty, a harsher law; the colony could not beat the Maroons in the mountains, but could catch Stono\'s marchers in open country.'
       }
     },
     {
