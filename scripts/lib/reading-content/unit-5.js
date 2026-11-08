@@ -264,155 +264,250 @@ module.exports = {
     "topicLabel": "5.10 - Continuity and Change in the Industrial Age",
     "sourceFile": "first-and-10-topic-5-10-continuity-and-change-in-the-industrial-age.html",
     "unitDir": "unit-5",
-    "docTitle": "First &amp; 10 | Topic 5.10 Continuity and Change in the Industrial Age",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.10 Continuity and Change in the Industrial Age",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.10, Continuity and Change in the Industrial Age &nbsp;|&nbsp; AP World History",
-    "titleHtml": "How Much Really <em>Changed</em>? Weighing the Industrial Age",
-    "deck": "This is the unit’s capstone. The job isn’t to list what industrialization changed, it’s to argue how MUCH it changed, and to be honest about what stayed the same.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.10, Continuity and Change in the Industrial Age &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "How Much <em>Changed</em>?",
+    "deck": "Between 1750 and 1900, industry changed how the world made and moved things. But how far did the change reach, and what kept going beside it? Today you weigh the whole unit and argue how much changed.",
     "skillTags": [
       "Continuity and Change",
-      "Causation",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Read all three sections, then answer the three questions below. Build your response and submit it in Canvas, then open your AI Coach to pressure-test your argument.",
-      "readingTarget": "Topic 5.10 is an argumentation topic. The Learning Objective asks you to explain the <em>extent</em> to which industrialization brought change from 1750 to 1900, which means weighing change against continuity, not just naming changes."
+      "beforeYouRead": "<strong>Deep change, uneven reach.</strong> As you read, make two columns on notebook paper: what changed, and what kept going. Next to each change, write where or for whom it was biggest.",
+      "readingTarget": "To what extent did industrialization bring change to the world from 1750 to 1900?"
     },
     "vocabulary": [
-      "extent",
-      "change",
-      "continuity",
-      "industrial capitalism",
-      "consumer goods",
-      "railroad",
-      "steamship",
-      "telegraph",
-      "social hierarchy",
-      "middle class",
-      "working class",
-      "rights and representation",
+      "Extent",
+      "Continuity",
+      "Industrial Capitalism",
+      "Consumer Goods",
+      "Standard of Living",
+      "Interior",
+      "Migration",
       "Enlightenment",
-      "natural rights",
-      "nationalism",
-      "nation-state",
-      "thesis",
-      "argumentation"
+      "Nation-State",
+      "Nationalism",
+      "Thesis"
     ],
     "sections": [
       {
-        "number": "01",
-        "label": "Evidence of Change",
-        "heading": "A New Economic and Connected World",
+        "number": "1",
+        "label": "The Question",
+        "heading": "Measure a Change",
         "blocks": [
           {
             "type": "p",
-            "html": "Stand at the year 1900 and look back to 1750, and the most obvious story is transformation. The biggest economic change was the rise of <span class=\"kt\">industrial capitalism</span>: wealth increasingly came from factories, machines, and invested capital rather than from land alone. Continued improvement in manufacturing methods made <span class=\"kt\">consumer goods</span> cheaper, more available, and more varied than ever before, and standards of living rose, at least for some."
+            "html": "Topic 5.9 ended with a question. Industry changed almost everything in a hundred and fifty years. Or did it?"
           },
           {
             "type": "p",
-            "html": "Technology shrank the world. <span class=\"kt\">Railroads</span>, <span class=\"kt\">steamships</span>, and the <span class=\"kt\">telegraph</span> made exploration, development, and communication possible in interior regions across the globe, driving a surge in trade and migration. A message that once took weeks by ship could cross an ocean by wire in minutes; goods and people moved at speeds no earlier generation could have imagined."
+            "html": "Today you are the historian. This topic gives you no new revolution and no new machine. It gives you the College Board's question, and you already have the evidence from Topics 5.1 to 5.9: to what <em><span class=\"kt\">extent</span></em> did industrialization bring change from 1750 to 1900? \"To what extent\" means <em>how much</em>. To measure a change, ask three things. How big was it? How far did it reach, to which places and which people? And what kept going beside it? What stays the same over time is called <span class=\"kt\">continuity</span>."
           },
           {
             "type": "p",
-            "html": "If you only counted these developments, you would conclude that the world was remade. And in its machines, markets, and networks, it largely was. But counting what is new is only half of a historian’s job."
+            "html": "Start with the starting line. In 1750 almost everything people bought was made by hand, at home or in small workshops, and most of the world's manufactured goods were made in Asia: the historian Paul Bairoch estimated that China made about a third and India about a quarter, while Britain made under 2 percent (Topic 5.4). Almost all energy came from things that grow: muscles, wood, wind and water. A message traveled only as fast as a horse or a ship. Most people farmed. And most rulers said their power came from God and birth (Topic 5.1)."
           }
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>Industrial capitalism and new technology are your strongest evidence of change. <strong>Pick the single development you think changed daily life the most, and be ready to say why it counts as a genuine break with the past.</strong></p>"
+          "raw": "<p><strong>A change needs a starting line.</strong> You cannot say how much changed until you know what was true before. Keep 1750 in mind as you read: every change below is measured from it.</p>"
         }
       },
       {
-        "number": "02",
-        "label": "Evidence of Continuity",
-        "heading": "Old Hierarchies and Unfinished Fights",
+        "number": "2",
+        "label": "Making",
+        "heading": "Factories, Coal, and Cheaper Goods",
         "blocks": [
           {
             "type": "p",
-            "html": "Now look underneath the machines. Industrialization created new classes, a rising <span class=\"kt\">middle class</span> and an industrial <span class=\"kt\">working class</span>, but <span class=\"kt\">steep hierarchy itself persisted</span>. A small group held most of the wealth and power while the majority labored for wages. The faces and the language changed; the basic pattern of the few over the many did not."
+            "html": "The first big change was in how goods were made. Steam engines turned the energy stored in coal into motion, and from the 1780s James Watt and Matthew Boulton built engines that turned wheels, so a mill could run wherever coal could be brought (Topic 5.5). By about 1900, coal supplied about half of all the energy used in the world."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">struggle for rights and representation</span> also continued rather than began. Labor unions organized workers to demand better wages and hours, and feminist movements pressed for suffrage and education, extending fights over who counts politically that reached back to the revolutionary era. The questions were old; industrialization just raised the stakes."
+            "html": "Factory owners and investors ran this new economy for profit, a system called <span class=\"kt\">industrial capitalism</span>. Factories kept improving how they made things, so <span class=\"kt\">consumer goods</span>, the things people buy for themselves, became more available, more affordable and more varied. By 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, after rising prices are taken into account, and soap came in wrapped bars with a brand name, like Sunlight, sold from 1884 (Topic 5.7)."
           },
           {
             "type": "p",
-            "html": "Even the era’s biggest political forces were carryovers. <span class=\"kt\">Enlightenment</span> ideas about reason, <span class=\"kt\">natural rights</span>, and the social contract did not stop in 1800, they kept circulating and kept preceding revolutions. The age of revolution and the building of new <span class=\"kt\">nation-states</span> that began in the 18th century rolled on through the 1800s, and <span class=\"kt\">nationalism</span> remained a major force shaping states and empires, from the unifications of Germany and Italy to independence movements in Latin America."
+            "html": "The places that made things moved, too. Britain's share of the world's manufacturing went from under 2 percent in 1750 to about a fifth by 1860, and by 1900 Europe and the United States together made more than four-fifths of the world's manufactured goods (Topic 5.4). And a family's <span class=\"kt\">standard of living</span>, how well it lives, rose, for some. One careful estimate finds that British working families' standard of living rose by less than 15 percent from the 1780s to the 1850s; most historians agree it grew much faster from about 1860 to 1900 (Topic 5.7)."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>Enlightenment thought and nationalism kept driving political change long after the 1700s. <strong>Choose one idea and trace how it caused a specific political change in this period, a revolution, a new nation-state, or an expanded set of rights.</strong></p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Read the College Board's limit.</strong> Its sentence says standards of living rose \"for some.\" Those two words are a measure of extent: the change was real, and it was unequal. Write \"for whom?\" next to this change.</p>"
         }
       },
       {
-        "number": "03",
-        "label": "The Argument",
-        "heading": "Arguing the Extent of Change",
+        "number": "3",
+        "label": "Moving",
+        "heading": "Rails, Steam, and Wire",
         "blocks": [
           {
             "type": "p",
-            "html": "Here is the move that turns a list into an argument. The Learning Objective does not ask <em>whether</em> things changed, of course they did. It asks <span class=\"kt\">to what extent</span>. That word forces you to take a position and weigh the two sides against each other."
+            "html": "The second big change was in how goods, people and news moved. Before the railroad, heavy goods moved cheaply only by water, and the <span class=\"kt\">interior</span> of a continent, the land far from the sea or a big river, was hard to reach. Then railways spread. Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran in 1853. The first railroad across the United States was finished in 1869 (Topic 5.5)."
           },
           {
             "type": "p",
-            "html": "A strong response commits to a defensible claim: that change was far-reaching, or limited, or, most powerfully, <span class=\"kt\">uneven</span>, transforming economies and technology while leaving social and political hierarchies stubbornly familiar. Whatever you choose, you back it with specific evidence of <em>both</em> change and continuity, and then you explain why the balance tips the way your <span class=\"kt\">thesis</span> says it does."
+            "html": "Ships changed too. Under sail, emigrants from Norway took about 53 days on average to reach America; by steamship, the Atlantic crossing from England took about 12 days in the 1860s. And news stopped waiting for ships. From 1844 a telegraph message could travel along a wire in minutes; from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
           },
           {
             "type": "p",
-            "html": "The best arguments concede the other side: “Although steep hierarchies persisted, the economic and technological break was so deep that…” That qualification is not a weakness, it is the historian’s honesty, and on the AP exam it is exactly what earns the complexity point. The goal of 5.10 is not to declare “everything changed” or “nothing changed,” but to argue, with evidence, how much, and for whom."
+            "html": "So trade and <span class=\"kt\">migration</span>, people moving to live in a new place, grew. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913 it cost only 15.6 percent more, because trains and steamships carried North American wheat to British workers. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and between 1846 and 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean (Topic 5.5)."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Compare the two changes.</strong> The change in making happened mostly in a few regions. The change in moving reached the interiors of continents around the world. Which one reached further?</p>"
+        }
+      },
+      {
+        "number": "4",
+        "label": "How Far It Reached",
+        "heading": "The Other Side of the Shield",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1898 the naturalist Alfred Russel Wallace, famous for working out the theory of evolution by natural selection at the same time as Charles Darwin, looked back over his own century. He wrote that \"not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period.\" In other words: this one century changed as much as all of history before it. Is he right? He went on: \"this is only one side of the shield.\" Put each change beside its limits."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The old makers kept making.</strong> India, China and the Middle East did not stop working. Their share of the world's goods shrank, and China's fell from about a third in 1750 to about 6 percent in 1900. But in 1908, in just one province of northern India, about a million people still lived from weaving cloth on handlooms (Topic 5.4)."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Most people still farmed.</strong> In India, the census of 1901 found about two-thirds of the people living by farming. Even in the industrial United States, about two in five workers still farmed in 1900. And until about 1900, wood and other things that grow were still the world's largest source of energy (Topic 5.5)."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Only a few states built industry, and not all of it lasted.</strong> Muhammad Ali's Egypt built factories for its army, and most of them had closed by the mid-1840s. Meiji Japan built railways and mills that lasted (Topic 5.6)."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The gains went to some.</strong> Industry rebuilt the ladder of rank instead of ending it: landed families kept much of their power, and in 1900 Britain's prime minister, Lord Salisbury, was a marquess. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole (Topic 5.9). Wallace went further. He wrote of \"the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people.\" Historians since have found that working families' living standards did rise, slowly before the 1850s and faster after about 1860. So Wallace was partly right: the gains were unequal, but they were not nothing."
           }
         ],
         "callout": {
           "label": "AP Thinking, Argumentation",
-          "raw": "<p>Write a one-sentence claim that takes a position on the extent of change. <strong>Make it defensible, something a reasonable person could disagree with, and signal that you will weigh both change and continuity.</strong></p>"
+          "raw": "<p><strong>Test a witness against the evidence.</strong> Wallace lived through the century, but a witness can overstate. Check his claim against what Topics 5.4 to 5.9 found. Which part holds up, and which part goes too far?</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "The Other Revolution",
+        "heading": "Ideas and Nations",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Not every big change of these years was industry's. The <span class=\"kt\">Enlightenment</span> was a movement of thinkers who used reason and evidence, first to explain nature and then to question old authorities, including religion used as a power of government. In 1689 John Locke argued that people are born with natural rights to \"lives, liberties and estates,\" and that government is a social contract that rests on the people's consent (Topic 5.1)."
+          },
+          {
+            "type": "p",
+            "html": "Those ideas came <em>before</em> the revolutions. The American Revolution began in 1775, the French Revolution in 1789, the Haitian Revolution in 1791, and the wars for independence in Spanish America in 1810. The revolutions built new countries: the United States, Haiti and the new republics of Spanish America. Each was a <span class=\"kt\">nation-state</span>, a state that claims to belong to one people, its nation. And they left a new loyalty, <span class=\"kt\">nationalism</span>, loyalty to your nation above a king or an empire. Nationalism joined most of Italy into one kingdom in 1861 and the German states into an empire in 1871, and it pulled Greeks and other Balkan peoples away from the Ottoman Empire (Topic 5.2)."
+          },
+          {
+            "type": "p",
+            "html": "This revolution began while factories were still almost all in Britain. Its causes were ideas and grievances, not machines. But the two revolutions met. Nationalism pushed some governments, such as Meiji Japan, to build industry to make the nation strong (Topic 5.6), and workers in industrial cities used the language of rights to demand the vote, as Britain's Chartists did (Topic 5.8). And the old order held on in politics too. In 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in 1893, was the first self-governing country where all adult women could (Topic 5.1)."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Sort the changes by cause.</strong> Before you credit industry with a change, check its date and its cause. A change that came before the factories spread, from ideas and grievances, belongs to the other revolution.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Make the Argument",
+        "heading": "How Evidence Connects",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate. Three relationships do most of the work."
+          },
+          {
+            "type": "p",
+            "html": "<strong>This led to that.</strong> Coal and steam engines led to railroads and steamships, which led to cheap wheat from the middle of North America feeding workers in Britain."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The same pattern, in two places.</strong> Railways reached the interior of Russia and the interior of India: the same change, in two different empires."
+          },
+          {
+            "type": "p",
+            "html": "<strong>A contrast.</strong> Lancashire's power looms made cloth more cheaply than India's hand weavers could, yet a million people in one Indian province still lived from the handloom in 1908. When you set a change beside a continuity, you can say how much changed."
+          },
+          {
+            "type": "p",
+            "html": "Then weigh it. Your <span class=\"kt\">thesis</span> is the claim that answers the question, and you must be able to defend it with evidence. A strong thesis about extent takes a side (to a great extent, to a limited extent, or great in some ways and limited in others), names a change and a continuity, and says for whom or where the change was greatest, and why."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Argumentation",
+          "raw": "<p><strong>Say the relationship out loud.</strong> \"This led to that because ...\" \"These show the same pattern, because both ...\" \"This changed, but that kept going, because ...\" The linking words are what turn facts into an argument.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "Put It Together",
+        "heading": "Deep Change, Uneven Reach",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put your two columns together. Industrialization changed how goods were made, with coal and factories, and how goods, people and news moved, with railroads, steamships and the telegraph. Goods became cheaper and more varied, and standards of living rose for some. But the change reached some places and people far more than others: the old makers kept making by hand, most of the world's people still farmed in 1900, and the gains were unequal. Meanwhile the other revolution, in ideas and governments, began before the factories spread and had causes of its own. Deep change, uneven reach. How much changed is now your argument to make."
+          },
+          {
+            "type": "p",
+            "html": "Industrial states now needed raw materials and markets, and had new tools to take them. That is Unit 6."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Two mistakes to avoid.</strong> \"Everything changed\" forgets the farmers, the handloom weavers and the kings still on their thrones. \"Nothing really changed\" forgets the railroads, the telegraph and the price of cloth. The answer is a measurement in between, with evidence.</p>"
         }
       }
     ],
-    "takeaway": "Industrialization transformed economies, technology, and global connections between 1750 and 1900, but steep social hierarchies, the fight for rights, and the Enlightenment and nationalist currents of the 1700s carried on. A strong answer weighs that change against that continuity and argues how much really changed, and for whom.",
+    "takeaway": "To what extent did industrialization bring change from 1750 to 1900? Measure it from the starting line of 1750, when goods were made by hand, mostly in Asia, and energy came from things that grow. Industry changed how goods were made: coal and steam powered factories, consumer goods became cheaper and more varied, Europe and the United States came to make more than four-fifths of the world's manufactured goods, and standards of living rose for some. It changed how goods, people and news moved: railroads, steamships and the telegraph reached the interiors of continents, so trade grew and tens of millions of people migrated. But it reached some places and people far more than others: the old makers kept making by hand, most people in India and many in the United States still farmed in 1900, and the gains were unequal, as Alfred Russel Wallace complained in 1898. The other revolution of the age, in ideas and governments, came from the Enlightenment and from grievances, began before the factories spread, and built new nation-states and nationalism, while kings and emperors still ruled most of Europe in 1900. Deep change, uneven reach.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "Q1",
+        "num": "01",
         "skill": "Continuity and Change",
-        "text": "Identify one significant change AND one significant continuity in the world between 1750 and 1900, and explain why each counts as change or as continuity.",
-        "placeholder": "Name one change and one continuity, and explain why each qualifies..."
+        "text": "Using Sections 2 and 3, explain ONE change industrialization brought in how goods were made and ONE change in how goods, people or news moved. Give a detail with a number or a date for each.",
+        "placeholder": "One change in making was... One change in moving was..."
       },
       {
-        "num": "Q2",
-        "skill": "Causation",
-        "text": "Explain how one Enlightenment idea OR nationalism contributed to a specific political change (a revolution, a new nation-state, or expanded rights) during this period.",
-        "placeholder": "Connect a specific idea to a specific political change..."
+        "num": "02",
+        "skill": "Continuity and Change",
+        "text": "Using Section 5, explain how Enlightenment ideas came before the revolutions, with one example of a revolution or a new nation-state. Then explain why this change did not come from industry.",
+        "placeholder": "Enlightenment ideas such as... came before... This was not industry's change because..."
       },
       {
-        "num": "Q3",
+        "num": "03",
         "skill": "Argumentation",
-        "text": "Make a defensible claim about the EXTENT to which industrialization changed the world from 1750 to 1900, and support it with one piece of evidence for change and one for continuity.",
-        "placeholder": "State your extent claim, then back it with evidence on both sides..."
+        "text": "Using Sections 4 and 6, choose one change from Sections 2 or 3 and one limit or continuity from Section 4. Explain how the two relate as a contrast, and say what the pair shows about how much industrialization changed the world.",
+        "placeholder": "... changed, but ... kept going. Together they show that..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will pressure-test your extent argument, push you to balance change against continuity, and ask a follow-up that sharpens your thesis.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.10, Continuity and Change in the Industrial Age",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.2": {
     "topicKey": "5.2",
