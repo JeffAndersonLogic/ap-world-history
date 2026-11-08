@@ -551,21 +551,24 @@ module.exports = [
   {
     id: 'topic-5-9',
     code: 'Topic 5.9',
-    title: 'The Industrial City, c. 1750-1900',
-    subtitle: 'Topic 5.9 · Society and the industrial age',
+    title: 'Industrial Cities, 1773 to 1890',
+    subtitle: 'Topic 5.9 \u00b7 Society and the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'MANCHESTER & LONDON', tone: 'gold', legend: 'Britain: the first industrial cities' },
-      { zone: 'westernEurope', label: 'RUHR & PARIS', tone: 'bronze', legend: 'Continental industrial cities' },
-      { zone: 'unitedStates', label: 'CHICAGO & NEW YORK', tone: 'sand', legend: 'US cities built by migration' },
-      { zone: 'japan', label: 'OSAKA', tone: 'sage', legend: 'Japan\'s industrial cities after 1868' }
-    ],
-    flows: [
-      { from: 'europe', to: 'unitedStates', label: 'rural and European migrants to cities' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'England and Wales: more than half in towns by 1851' },
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'United States: Manhattan about 1.4 million people by 1890' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'sage', legend: 'Japan: about 62 percent of private factory workers women, 1900' }
     ],
     points: [
-      { at: [-2, 53], label: 'Manchester', note: 'cotton, smoke, cholera' },
-      { at: [-0.1, 51.5], label: 'London', note: 'sanitation reform after 1848', side: 'left' }
-    ]
+      { at: [-2.24, 53.48], label: 'Manchester', note: '300,000+ people by 1851', side: 'left' },
+      { at: [-0.13, 51.51], label: 'London', note: 'cholera, Broad Street, 1854' },
+      { at: [-74.0, 40.71], label: 'New York', note: 'Riis, 1890' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'England and Wales: more than half in towns by 1851' },
+      { kind: 'area', tone: 'sand', text: 'United States: Manhattan about 1.4 million people by 1890' },
+      { kind: 'area', tone: 'sage', text: 'Japan: about 62 percent of private factory workers women, 1900' }
+    ],
+    note: 'The map shows only the places this topic names. Regions are approximate.'
   },
   {
     id: 'topic-5-10',

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">The Industrial City, c. 1750-1900</title>
-  <desc id="map-desc">Topic 5.9 instructional map for AP World History: The Industrial City, c. 1750-1900. Topic 5.9 · Society and the industrial age</desc>
+  <title id="map-title">Industrial Cities, 1773 to 1890</title>
+  <desc id="map-desc">Topic 5.9 instructional map for AP World History: Industrial Cities, 1773 to 1890. Topic 5.9 · Society and the Industrial Age</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -68,48 +68,44 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
     <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M871.1,222.2 Q606.8,161.6 364.4,283.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="612.3" cy="207.2" r="17"/>
-    <text class="badgenum" x="612.3" y="214.2" text-anchor="middle">1</text>
+    
   </g>
   <g id="region-labels">
-    <text class="region halo" x="791.1" y="331.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">MANCHESTER &amp;</tspan><tspan x="791.1" dy="25">LONDON</tspan></text>
-    <text class="region halo" x="817.8" y="399.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">RUHR &amp; PARIS</tspan></text>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CHICAGO &amp; NEW</tspan><tspan x="364.4" dy="25">YORK</tspan></text>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">OSAKA</tspan></text>
+    <text class="region halo" x="733.1" y="159.0" text-anchor="end" fill="#1A1C1D"><tspan x="733.1" dy="0">BRITAIN</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
+    <text class="region halo" x="1462.4" y="295.9" text-anchor="start" fill="#1A1C1D"><tspan x="1462.4" dy="0">JAPAN</tspan></text>
   </g>
   <g id="places">
-    <circle class="city" cx="791.1" cy="205.6" r="10"/>
-    <text class="place halo" x="811.1" y="165.6" text-anchor="start">Manchester</text>
-    <text class="placenote halo" x="811.1" y="187.6" text-anchor="start">cotton, smoke, cholera</text>
-    <line class="leader" x1="799.6" y1="213.9" x2="799.6" y2="253.9"/>
-    <circle class="city" cx="799.6" cy="213.9" r="10"/>
-    <text class="place halo" x="803.6" y="269.9" text-anchor="end">London</text>
-    <text class="placenote halo" x="803.6" y="291.9" text-anchor="end">sanitation reform after 1848</text>
+    <circle class="city" cx="790.0" cy="202.9" r="10"/>
+    <text class="place halo" x="770.0" y="198.9" text-anchor="end">Manchester</text>
+    <text class="placenote halo" x="770.0" y="220.9" text-anchor="end">300,000+ people by 1851</text>
+    <circle class="city" cx="799.4" cy="213.8" r="10"/>
+    <text class="place halo" x="819.4" y="209.8" text-anchor="start">London</text>
+    <text class="placenote halo" x="819.4" y="231.8" text-anchor="start">cholera, Broad Street, 1854</text>
+    <circle class="city" cx="471.1" cy="273.8" r="10"/>
+    <text class="place halo" x="491.1" y="269.8" text-anchor="start">New York</text>
+    <text class="placenote halo" x="491.1" y="291.8" text-anchor="start">Riis, 1890</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">The Industrial City, c. 1750-1900</text>
-    <text class="subtitle" x="48" y="97">Topic 5.9 · Society and the industrial age</text>
+    <text class="title" x="46" y="62">Industrial Cities, 1773 to 1890</text>
+    <text class="subtitle" x="48" y="97">Topic 5.9 · Society and the Industrial Age</text>
   </g>
 
-  <g id="legend" transform="translate(46,721)">
-    <rect x="0" y="0" width="640" height="211" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,787)">
+    <rect x="0" y="0" width="640" height="145" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Britain: the first industrial cities</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Continental industrial cities</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">US cities built by migration</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">Japan&apos;s industrial cities after 1868</text>
-      <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">rural and European migrants to cities</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">England and Wales: more than half in towns by 1851</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="89">United States: Manhattan about 1.4 million people by 1890</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="122">Japan: about 62 percent of private factory workers women, 1900</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">The map shows only the places this topic names. Regions are approximate.</text>
 </svg>

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Housing Commission | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.9",
+  "unit": "5",
+  "topicTitle": "Society and the Industrial Age",
+  "file": "the-housing-commission.html",
+  "title": "The *Housing Commission*",
+  "location": "A royal commission, London",
+  "date": "1884",
+  "lessonUrl": "../../unit-5/lesson-5-9-society-and-the-industrial-age.html",
+  "alignment": {
+    "theme": "Social Interactions and Organization (SIO)",
+    "objective": "Explain how industrialization caused change in existing social hierarchies and standards of living.",
+    "skill": "Continuity and Change, with Contextualization (4.B)",
+    "keyConcepts": [
+      "KC-5.1.VI.C",
+      "KC-5.1.VI.A"
+    ]
+  },
+  "premise": [
+    "It is 1884 in London. For more than a century, industry and trade have drawn people into Britain's cities faster than anyone could build homes for them. In London, many working families live in a single room, in old houses split up and rented out room by room. In October 1883 a short pamphlet, The Bitter Cry of Outcast London, described these rooms and set the city talking.",
+    "In March 1884 the government set up a royal commission to find out why the working classes were so badly housed. Its chair is Sir Charles Dilke, a government minister. Its members include the Prince of Wales, the Conservative leader Lord Salisbury, Cardinal Manning, and Henry Broadhurst, a stonemason who became a trade-union leader and a member of Parliament. Witnesses come before it to answer questions: housing managers, doctors, landlords, and working people.",
+    "You must decide what the commission's report will say. The hardest question comes first: what is really causing the crisis? Then: who should pay to fix it, and what happens to the families whose homes are knocked down?"
+  ],
+  "centralQuestion": "What is causing the housing crisis of London's working families, and what should the commission tell Parliament to do about it?",
+  "roles": [
+    {
+      "id": "chair",
+      "name": "Commission Chair and Government Minister",
+      "position": "You chair the commission and you are a minister in the government.",
+      "power": "You set the questions and write the report's first draft, but you need the members to agree.",
+      "goals": "Produce a report that Parliament will act on.",
+      "fears": "A report that blames everyone will change nothing.",
+      "lens": "Facts gathered carefully can move a government.",
+      "preference": "Name clear causes and ask for new laws and loans.",
+      "blindSpot": "You may care more about a report that passes than about one that goes far enough."
+    },
+    {
+      "id": "mason",
+      "name": "Stonemason, Union Leader and MP",
+      "position": "You worked as a stonemason before you led a trade union and won a seat in Parliament.",
+      "power": "You are one of very few working men in Parliament, and you speak for the unions.",
+      "goals": "Make the report say that wages, not workers' habits, are the problem.",
+      "fears": "Rich members will blame the poor for the way they live.",
+      "lens": "Working families are crowded because they are poor and must live near their work.",
+      "preference": "Ask for cheap loans to build homes working people can afford.",
+      "blindSpot": "You may speak for skilled workers like yourself more than for the poorest."
+    },
+    {
+      "id": "lord",
+      "name": "Landowning Lord",
+      "position": "You own great estates and lead a party in Parliament.",
+      "power": "Your party may form the next government, and many landowners listen to you.",
+      "goals": "Improve the homes of the poor without frightening property owners.",
+      "fears": "A report that attacks landlords could turn into an attack on all property.",
+      "lens": "Land is costly in the middle of a great city, and someone has to pay for it.",
+      "preference": "Let the government lend money cheaply, but keep homes in private hands.",
+      "blindSpot": "You may not see how much your own class gains from high land prices."
+    },
+    {
+      "id": "manager",
+      "name": "Housing Manager (a Witness)",
+      "position": "You manage blocks of houses for owners and collect the rents yourself, visiting every tenant each week.",
+      "power": "You know the tenants by name, but you are a witness, not a member, and the report is not yours to write.",
+      "goals": "Show that decent homes can pay for themselves if they are well run.",
+      "fears": "Government money will make tenants dependent and drive out private builders.",
+      "lens": "Careful management and fair rents can improve both homes and tenants.",
+      "preference": "Encourage owners to repair and manage their houses well, without government money.",
+      "blindSpot": "You may expect all tenants to manage on wages that are too low or too irregular."
+    },
+    {
+      "id": "wife",
+      "name": "Dock Laborer's Wife (a Witness)",
+      "position": "Your husband is hired by the day at the dock gates, when there is work; you take in sewing.",
+      "power": "You have no vote and no seat, only your story, if the commission will listen.",
+      "goals": "Keep a roof over your children near the docks, where your husband can find work.",
+      "fears": "If your street is pulled down, you will have nowhere you can afford to go.",
+      "lens": "The family must live near the work, whatever the rent or the room.",
+      "preference": "Build cheap homes near the docks before knocking any more down.",
+      "blindSpot": "You may not trust anything the commission promises."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "growth",
+      "label": "A City That Outgrew Its Houses",
+      "text": "For decades London's population has grown faster than its housing. Old houses are split up and rented out room by room.",
+      "why": "Shows the rapid urbanization behind the crisis (KC-5.1.VI.C)."
+    },
+    {
+      "id": "rooms",
+      "label": "One Room, One Family",
+      "text": "Many working families in central London live, cook and sleep in a single room.",
+      "why": "Shows the housing shortage, and what it did to standards of living."
+    },
+    {
+      "id": "poverty",
+      "label": "The Commission's First Cause",
+      "text": "The commission came to blame two main causes. The first: many tenants were too poor to pay the rent for a better home.",
+      "why": "Shows poverty as a cause, in the commission's own conclusion."
+    },
+    {
+      "id": "land",
+      "label": "The Commission's Second Cause",
+      "text": "The second: owners of building land in the city charged high ground rents, so homes for working people cost too much to build.",
+      "why": "Shows how land and money shaped who lived where."
+    },
+    {
+      "id": "docks",
+      "label": "Hired by the Day",
+      "text": "Many London men were hired by the day, at the docks or the markets, and had to live close by to be there early each morning.",
+      "why": "Shows why the poorest could not move to cheaper homes far away."
+    },
+    {
+      "id": "clearance",
+      "label": "Knocked Down",
+      "text": "Railways and new streets had knocked down many old houses where poor families lived. Most of the families crowded into the streets nearby.",
+      "why": "Shows how \"improvement\" could make crowding worse."
+    },
+    {
+      "id": "laws",
+      "label": "Laws Nobody Used",
+      "text": "Parliament had already given local authorities powers to deal with unhealthy houses. The commission found that many had not used them.",
+      "why": "Shows insufficient infrastructure as a failure of will, not only of money."
+    },
+    {
+      "id": "suburbs",
+      "label": "Those Who Could, Left",
+      "text": "Middle-class families who could afford it had moved out to suburbs and travelled into the city by train.",
+      "why": "Shows the new classes living apart (KC-5.1.VI.A)."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "cause",
+      "title": "Name the cause",
+      "prompt": "What should the report name as the main cause of the crisis?",
+      "options": [
+        {
+          "id": "poverty",
+          "title": "Low and irregular wages",
+          "action": "Say that most families are crowded because they cannot pay for anything better.",
+          "benefits": "The report points at the real limit on working families.",
+          "worries": "Employers and landowners may say wages are not the commission's business.",
+          "tradeoff": "The deepest cause is also the hardest for a commission to fix."
+        },
+        {
+          "id": "land",
+          "title": "The cost of land and building",
+          "action": "Say that land prices and ground rents make cheap homes impossible to build.",
+          "benefits": "The report names something laws and loans can change.",
+          "worries": "Landowners on the commission and in Parliament will resist.",
+          "tradeoff": "A cause that can be fixed, at the cost of angering the powerful."
+        },
+        {
+          "id": "neglect",
+          "title": "Authorities that did not act",
+          "action": "Say that local authorities failed to use the powers they already had.",
+          "benefits": "Nobody needs a new law to start: the old ones can be used tomorrow.",
+          "worries": "It may excuse the bigger causes and blame only officials.",
+          "tradeoff": "Quick to act on, but it leaves poverty untouched."
+        }
+      ]
+    },
+    {
+      "id": "pay",
+      "title": "Decide who pays",
+      "prompt": "Who should pay for better homes for working families?",
+      "options": [
+        {
+          "id": "loans",
+          "title": "Cheap government loans",
+          "action": "Ask Parliament to lend money at low interest to build working people's homes.",
+          "benefits": "More homes can be built than charity alone could pay for.",
+          "worries": "Taxpayers carry a risk, and some fear the state will take over housing.",
+          "tradeoff": "More homes, with the government more involved."
+        },
+        {
+          "id": "owners",
+          "title": "Make owners repair",
+          "action": "Require landlords to repair unhealthy houses or have them closed.",
+          "benefits": "Bad landlords pay for their own neglect.",
+          "worries": "Landlords may raise rents or close houses, leaving families with nowhere to go.",
+          "tradeoff": "Safer homes, perhaps fewer of them."
+        },
+        {
+          "id": "selfpay",
+          "title": "Homes that pay for themselves",
+          "action": "Encourage private owners and charities to build and manage good homes at fair rents.",
+          "benefits": "No tax money, and well-run homes can earn a small return.",
+          "worries": "The poorest families may never afford even a fair rent.",
+          "tradeoff": "Good homes for some working families, not for the poorest."
+        }
+      ]
+    },
+    {
+      "id": "cleared",
+      "title": "Protect the families",
+      "prompt": "What should the report say about homes knocked down for railways and new streets?",
+      "options": [
+        {
+          "id": "rehouse",
+          "title": "Rehouse before demolishing",
+          "action": "Require new homes nearby before any more working families' houses are pulled down.",
+          "benefits": "Families are not pushed into even more crowded streets.",
+          "worries": "Railways and new streets become slower and costlier to build.",
+          "tradeoff": "People before progress, and progress delayed."
+        },
+        {
+          "id": "trains",
+          "title": "Cheap trains to the suburbs",
+          "action": "Ask railways to run cheap early trains so workers can live farther out.",
+          "benefits": "Families can find more space outside the crowded center.",
+          "worries": "Men hired by the day at dawn cannot rely on a train, and fares still cost money.",
+          "tradeoff": "Helps steady workers, less so the poorest."
+        },
+        {
+          "id": "market",
+          "title": "Leave it to builders",
+          "action": "Let private builders replace the houses as land and rents allow.",
+          "benefits": "No new rules or spending.",
+          "worries": "The families who lost their homes may never be able to afford the new ones.",
+          "tradeoff": "Freedom for builders, risk for the poor."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Step out of the room. Explain what caused London's housing crisis in 1884, using the evidence, and what kept going for the poorest families whatever the commission decided. Then contextualize it: what bigger story from Topic 5.9 also explains a Manchester cellar in the 1840s and a crowded New York tenement in 1890?",
+  "sources": [
+    {
+      "label": "Hansard (House of Lords), Housing of the Working Classes, 20 March 1884 and 16 July 1885",
+      "url": "https://api.parliament.uk/historic-hansard/lords/1884/mar/20/housing-of-the-working-classes-the-royal-1"
+    },
+    {
+      "label": "First report of the Commissioners on the Housing of the Working Classes, 1884-85 (Internet Archive)",
+      "url": "https://archive.org/details/firstreportofcom0002grea"
+    },
+    {
+      "label": "Andrew Mearns, The Bitter Cry of Outcast London (1883), W. T. Stead Resource Site",
+      "url": "https://www.attackingthedevil.co.uk/related-texts/the-bitter-cry-of-outcast-london/"
+    },
+    {
+      "label": "Gareth Stedman Jones, Outcast London (Verso, new edition)",
+      "url": "https://www.versobooks.com/products/2299-outcast-london"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

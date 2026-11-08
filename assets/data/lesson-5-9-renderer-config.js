@@ -2,7 +2,6 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
-  // ── CED key concepts, VERBATIM (config wins over data file) ──
   lesson.collegeBoardKeyConcepts = [
     {
       "code": "Unit 5: Learning Objective J",
@@ -32,135 +31,147 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: A New Kind of Society',
+    title: "First & 10: A New Ladder",
     embedUrl: 'first-and-10-topic-5-9-society-and-the-industrial-age-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.9 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.9 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Where industrial cities grew', detail: 'Industrial cities clustered where the factory system was possible, near coal, water power, rivers, and ports. Britain industrialized first (Manchester, Birmingham, Leeds, Glasgow), followed by continental Europe (the Ruhr, northern France, Belgium) and the United States (the Northeast and Great Lakes). The geography of industry, not population alone, determined where the new urban society took shape.' },
-      { label: 'Class geography within the city', detail: 'The new class structure was written into the urban map. Working-class families lived in dense housing packed close to the factories and mills where they worked. The growing middle class, able to afford it, increasingly moved to cleaner neighborhoods and, later, suburbs at the edges, separated from the smoke and crowding. The same city contained sharply different standards of living within a short walk of each other.' },
-      { label: 'Rural-to-urban migration', detail: 'The demand for factory labor pulled a massive migration from the countryside into the cities. This migration is what made urbanization "rapid", and rapid growth, more than urban life itself, is what overwhelmed cities. Housing, water, and sanitation were built (when they were built at all) for far smaller populations.' },
-      { label: 'The geography of public health', detail: 'The challenges the CED names were concentrated in the overcrowded, poorly drained working-class districts: contaminated water and absent sewers turned dense neighborhoods into corridors for cholera and typhoid. Reform, sewers, clean water, housing codes, arrived unevenly and usually late, so the gap in life expectancy between rich and poor districts could be stark.' }
+      { label: "Manchester", detail: "The great cotton town grew from about 23,000 people in a count of 1773 to about 70,000 in 1801 and more than 300,000 by 1851. In the 1840s a baby born there could expect to live only about 25 to 28 years." },
+      { label: "London", detail: "In 1854 John Snow traced a cholera outbreak in Soho to one public water pump on Broad Street. In 1848 and 1849 cholera killed about 53,000 people in England and Wales." },
+      { label: "Britain", detail: "In 1851 the census found, for the first time, more than half the people of England and Wales living in towns." },
+      { label: "New York", detail: "Manhattan grew from about 515,000 people in 1850 to about 1.4 million in 1890. In 1890 Jacob Riis wrote that \"three-fourths of its people live in the tenements.\"" },
+      { label: "Japan", detail: "Japan industrialized after 1868 (Topic 5.6). In 1900 about 62 percent of the workers in its private factories were women, most of them in textile mills." },
+      { label: "Reading the map", detail: "The map shows only the places this topic names. The shaded regions are approximate." }
     ]
   };
 
-  // ── Module-card images. INDUSTRIAL-THEMED CANDIDATES; verified/falled-back in Step 8. ──
   lesson.stableImages = {
-    map:             '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
-    first10:         '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
-    contentDelivery: '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
-    beSurreal:       '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
-    skill:           '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
-    checkpoint1:     '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
-    evidence:        '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
-    source:          '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
-    beInTheRoom:     '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
-    checkpoint2:     '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png'
+    map:             '../assets/images/instructional-maps/topic-5-9.svg',
+    first10:         '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    contentDelivery: '../assets/images/topics/5-9/currier-ives-four-seasons-middle-age-1868.jpg',
+    beSurreal:       '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    skill:           '../assets/images/topics/5-9/riis-bayard-street-lodgers-five-cents-a-spot-1890.jpg',
+    checkpoint1:     '../assets/images/topics/5-9/riis-sewing-pants-gotham-court-1890.jpg',
+    evidence:        '../assets/images/topics/5-9/snow-cholera-map-broad-street-1854.jpg',
+    source:          '',
+    beInTheRoom:     '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
+    checkpoint2:     '../assets/images/topics/5-9/riis-garbage-east-fifth-street-1890.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: "Class Slides: A New Ladder",
+    desc: "Four rows, who was on top, who did the work, women and children, and where people lived: what industry changed in each, and what kept going.",
+    url: 'presentation-topic-5-9-student.html'
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-5/the-sanitary-board.html',
-    desc: "Join Manchester’s 1842 sanitary board and decide how public infrastructure, housing protections, taxes, and industrial interests should respond to urban disease."
+    url: '../beintheroom/unit-5/the-housing-commission.html',
+    desc: "London, 1884. On a royal commission into the housing of the working classes, decide what your report will say caused the crisis, as one of five people: the commission's chair, a stonemason who became a trade-union leader and MP, a landowning lord, a housing manager who gives evidence, and a dock laborer's wife who gives evidence."
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Causation: How Industrialization Reshaped Society',
-    intro: 'Learning Objective J is a causation objective: "Explain how industrialization caused change in existing social hierarchies and standards of living." The most common AP error is listing effects without explaining the mechanism that connects cause to effect. This builder walks the chain from the single cause, industrialization, to its distinct social effects.',
+    label: "Contextualization practice",
+    title: "Put One Thing Inside the Bigger Story",
+    intro: "Topic 5.9 asks you to contextualize: take one specific thing, a photograph, a book, a law, and explain the bigger historical story it is part of, and how that story helps explain it. Context is not just \"what came before.\" It has to explain why the specific thing happened. Watch the move on an example from everyday life, then use it on a photograph from New York in 1890.",
     steps: [
-      { label: 'Name the cause and a first-order effect', text: 'Cause: industrialization, the factory system, wage labor, and the concentration of capital. First-order effect: a new class structure. The middle class formed from those whose wealth came from business, skill, and salaries (owners, merchants, professionals); the industrial working class formed from those who sold their labor for wages. The mechanism: factory production rewarded capital and management on one side and created mass wage employment on the other, splitting society along a new economic line rather than the old line of land and birth.' },
-      { label: 'Trace a divergent effect by class', text: 'Same cause, different effect depending on class. In working-class families, low wages meant the family needed every earner, so women and children entered wage labor. In middle-class families, a single salary was enough, and that economic fact hardened into the ideology of "separate spheres," confining middle-class women to the household. The mechanism is economic: the family\'s need (or lack of need) for additional income drove women in opposite directions across the class line.' },
-      { label: 'Write the synthesis', text: 'Synthesis: industrialization caused change in BOTH social hierarchies (a new middle class and working class) AND standards of living (improved for some, degraded for others), and it did so through identifiable mechanisms. Rapid urbanization, itself caused by the migration of workers to factory cities, then produced the cluster of urban challenges (pollution, poverty, crime, public health crises, housing shortages, weak infrastructure) because city growth outpaced the capacity to plan, house, and sanitize. A strong causation answer names the mechanism at each link, not just the outcome.' }
+      { label: "Name the specific thing", text: "Say exactly what it is, where and when. Example: in 2020, a teacher teaches a class to a laptop camera from her kitchen table." },
+      { label: "Name the bigger story", text: "Say what larger development was going on at the same time, in many places. Example: in 2020 a worldwide pandemic closed school buildings in many countries." },
+      { label: "Connect them", text: "Say how the bigger story explains the specific thing. Example: \"Because the pandemic closed school buildings, classes moved online, so the teacher taught from home.\"" },
+      { label: "Write it in one sentence", text: "Use this frame: \"[Specific thing] happened inside [bigger story]: [how the bigger story explains it].\" Example: \"A teacher teaching from her kitchen in 2020 happened inside a worldwide pandemic: school buildings closed, so classes moved online.\"" }
     ],
-    prompt: 'In 3–4 sentences, explain how industrialization caused change in social hierarchies AND standards of living. Name the cause, trace it to at least two distinct effects (one on social class, and one on either gender/family roles or urban conditions), and explain the MECHANISM that connects cause to effect at each step.'
+    prompt: "Now do it with a real source from New York. Around 1890 the reporter Jacob Riis photographed lodgers in a tenement on Bayard Street, using a flash, on a police visit after midnight. In his book How the Other Half Lives (1890) he wrote: \"In a room not thirteen feet either way slept twelve men and women, two or three in bunks set in a sort of alcove, the rest on the floor ... Most of the men were lodgers, who slept there for five cents a spot.\" He also wrote that in New York \"to-day three-fourths of its people live in the tenements.\" First, describe the specific thing: what Riis saw and photographed, where and when. Second, name the bigger story it is part of, using the lesson: what was happening to industrial cities, in Britain and the United States, between 1750 and 1900? Third, explain how that bigger story helps explain why twelve people slept in one small room. Fourth, write one sentence with the frame, and name one other place in the lesson where the same bigger story shows up.",
+    criteria: [
+      "I described the specific thing: what Riis saw and photographed, where and when.",
+      "I named the bigger story it is part of, with a detail from the lesson.",
+      "I explained how the bigger story helps explain the crowded room.",
+      "I wrote one sentence with the frame and named one other place where the same story shows up."
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: New Social Classes — Causes',
-      subtitle: 'Checks Learning Target 1 — the development of the middle class and the industrial working class.',
-      cardDesc: 'How industrialization created a new middle class and a new industrial working class, and what made each new.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Industrialization reorganized society into new classes. In a well-developed paragraph, explain how industrialization caused the development of a new middle class AND a new industrial working class. Be specific about what made each class new, that is, how it differed from the older social order based on land and birth. Identify at least one defining characteristic of each class and explain where its members got their status or income.',
-      responseType: 'Checkpoint 1',
-      terms: ['middle class', 'industrial working class', 'bourgeoisie', 'proletariat', 'wage labor', 'factory system', 'social hierarchy', 'standard of living'],
-      focus: ['Explain how industrialization created two new classes, and what made them new vs. the old land-and-birth order.', 'Identify a defining characteristic of the middle class and of the industrial working class.', 'Be specific about where each class\'s status or income came from.']
+      title: "Checkpoint 1: New Classes and Split Homes",
+      subtitle: "Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.",
+      cardDesc: "What changed and what kept going at the top of society, the two new classes, and why women's lives split by class.",
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: "Answer in four steps. (1) Name the two new classes industrialization made, and say where each class's place in society came from. (2) Explain ONE way industrialization changed who was near the top of society, and ONE way the old top kept going, with a detail for each. (3) Explain why women and often children in working-class families earned wages, and why middle-class women were increasingly kept to the home. Use the reason the College Board gives, and a detail for each class. (4) Name ONE thing that kept going for women in both classes.",
+      responseType: "Checkpoint 1",
+      terms: ["middle class", "working class", "industrial working class", "class", "hierarchy", "ladder", "wages", "money", "education", "land", "titles", "landed", "aristocracy", "gentry", "1832", "Reform Act", "vote", "Salisbury", "marquess", "1900", "women", "children", "income", "supplement", "domestic service", "servant", "mill", "factory", "piecework", "Japan", "62", "household", "home", "separate spheres", "Beeton", "1861", "paid less", "property", "1870", "1882", "rights", "changed", "kept going", "continuity", "change"],
+      focus: ["Name the two new classes and where each one's place came from.", "Explain one change and one continuity at the top of society, with a detail.", "Explain why working-class and middle-class women's lives split, with the College Board's reason.", "Name one thing that kept going for women in both classes."]
     },
     {
-      title: 'Checkpoint 2: Urban Challenges and Gender Roles — Effects',
-      subtitle: 'Checks Learning Targets 2 & 3 — gender/family roles and the challenges of rapid urbanization.',
-      cardDesc: 'How industrialization changed women\'s roles across classes and produced the challenges of the industrial city.',
-      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Industrialization changed how and where people lived. In a developed response, explain how industrialization changed standards of living and social roles in this period. Address BOTH: (1) at least two challenges that rapid urbanization created for city populations, explaining WHY rapid growth produced each one; and (2) how the household and economic roles of women differed between working-class and middle-class families, and what economic difference caused that divergence. Use specific evidence to support each point.',
-      responseType: 'Checkpoint 2',
-      terms: ['urbanization', 'tenement', 'cholera', 'typhoid', 'public health', 'infrastructure', 'separate spheres', 'domesticity', 'wage-earning', 'standard of living'],
-      focus: ['Explain two challenges of rapid urbanization AND why rapid growth caused each.', 'Contrast working-class and middle-class women\'s roles and the economic reason behind the difference.', 'Support both parts with specific evidence.']
+      title: "Checkpoint 2: Crowded Cities, and What Changed",
+      subtitle: "Checks Learning Target 3 and Success Criterion 3, and Unit 5 Learning Objective J: how industrialization caused change in existing social hierarchies and standards of living.",
+      cardDesc: "The challenges of rapid urbanization, what they did to standards of living, and one change and one continuity in industrial society.",
+      learningTargets: [lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[2].criteria],
+      prompt: "Explain how industrialization changed existing social hierarchies and standards of living. (1) Name THREE of the challenges that rapid urbanization brought to industrial cities, with a detail for at least one. (2) Explain why rapid growth caused them. (3) Explain ONE effect on people's standard of living, with a detail such as cholera or life expectancy. (4) Explain ONE thing industrialization changed in society, and ONE thing that kept going, from any part of the lesson.",
+      responseType: "Checkpoint 2",
+      skill: "Continuity and Change",
+      terms: ["urbanization", "rapid", "pollution", "smoke", "poverty", "crime", "police", "public health", "cholera", "1831", "1848", "1849", "53,000", "Snow", "pump", "housing", "cellar", "tenement", "infrastructure", "sewers", "water", "Manchester", "23,000", "1773", "70,000", "1801", "300,000", "1851", "census", "towns", "life expectancy", "25", "28", "40", "standard of living", "babies", "New York", "Manhattan", "1.4 million", "1890", "Riis", "global capitalism", "changed", "kept going", "continuity", "change", "because"],
+      focus: ["Name three challenges of rapid urbanization, with a detail.", "Explain why rapid growth caused them.", "Explain one effect on standards of living, with a detail.", "Explain one change and one continuity in industrial society."]
     }
   ];
 
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Build and Test a Claim',
-    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Make a claim about how industrialization changed social life. Use evidence from at least two categories—urbanization, class, gender, family, public health, or labor—and explain one continuity or uneven effect.'
+    title: "Evidence Lab: A New Ladder, Seen Up Close",
+    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it (if the caption says), name one precise detail rather than summarizing it, explain what that detail shows about one row of the topic (who was on top, who did the work, women and children, or where people lived), and say whether it shows something that changed or something that kept going. The caption identifies the source; it does not supply your conclusion.",
+    prompt: "Make a claim about how industrialization changed social hierarchies or standards of living between 1750 and 1900, and what kept going. Support it with evidence from at least two cards."
   };
 
   lesson.images = [
     {
-      title: 'Manchester from Kersal Moor',
-      url: '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-      caption: 'Painting by William Wyld, 1852, commissioned view of Manchester from the moor: goats and shepherds in the foreground, the city\'s chimneys behind.',
-      prompt: 'NOTICE what the painter has put in the foreground and what he has put on the horizon. INFER what a patron in 1852 wanted this city to look like. What does a commissioned landscape not show about living in it?'
+      title: "Manchester from Kersal Moor, 1852",
+      alt: "A watercolour of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky.",
+      url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+      caption: "A watercolour by William Wyld, signed and dated 1852, now in the Royal Collection, the British royal family's art collection. Queen Victoria had visited Manchester in October 1851.",
+      prompt: "NOTICE what the painter put in front and what he put far away. INFER what this view says about the new industrial town. A painting for a royal collection, from miles away: what can it not show about the lives of the people under the smoke?"
     },
     {
-      title: '“A Court for King Cholera”',
-      url: '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png',
-      caption: 'Cartoon published in Punch, 1852, depicting a slum courtyard during a cholera epidemic. Satire aimed at a middle-class readership.',
-      prompt: 'NOTICE what the cartoonist chooses to show about the courtyard. INFER what its readers were being asked to feel, and to do. Set it beside the Wyld painting: same decade, same country, opposite argument. Which is evidence of what?'
+      title: "The Four Seasons of Life: Middle Age, about 1868",
+      alt: "A lithograph of a comfortable house: a father in a straw hat comes in from the porch and lifts a baby from its mother's arms, while a boy plays with a dog, a little girl runs toward them, and an older girl comes down the stairs with a doll.",
+      url: "../assets/images/topics/5-9/currier-ives-four-seasons-middle-age-1868.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/92500887/",
+      caption: "A lithograph sold by Currier & Ives, a New York firm that printed cheap pictures for people to hang at home, about 1868. Its title is \"The Four Seasons of Life: Middle Age, 'The Season of Strength.'\" Library of Congress.",
+      prompt: "NOTICE who comes in from outside and who is already in the house. INFER what this print says a husband's and a wife's roles should be. A picture sold to decorate homes: does it show how every family lived, or an ideal?"
     },
     {
-      title: 'Industrial society',
-      url: '../assets/images/instructional-maps/topic-5-9.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-5-9.svg',
-      caption: 'BeHistorical reference map. Secondary geographic reconstruction of urbanization and industrial districts.',
-      prompt: 'NOTICE the concentration the map shows. INFER what services a place growing that fast would struggle to provide. Which of the two pictures above does the map support?'
+      title: "Sewing Pants for the Trade, New York, about 1890",
+      alt: "An old photograph of an older woman in a headscarf and two girls sitting by a window in a bare room, each sewing a pair of dark trousers on her lap.",
+      url: "../assets/images/topics/5-9/riis-sewing-pants-gotham-court-1890.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/2002710299/",
+      caption: "A photograph by Jacob Riis, a New York reporter, titled \"Sewing pants for the trade in a Gotham Court 'flat,' about 1890\": a woman and two girls sewing trousers at home, paid by the piece, in a tenement. Library of Congress.",
+      prompt: "NOTICE who is working, where, and on what. INFER why this family's women and girls are earning. Riis chose and set up his photographs to persuade readers: what would you want to know that the picture cannot tell you?"
     },
     {
-      title: 'Manchester urban growth',
-      label: 'Quantitative record · rounded estimates, 1770–1851',
-      sourceText: [
-        'c. 25,000 people around 1770',
-        'more than 300,000 by the mid-nineteenth century'
-      ],
-      caption: 'The same city as the painting above, counted rather than depicted.',
-      prompt: 'What social problems might rapid urban growth create? Which of those problems would require separate evidence rather than inference from population alone?'
+      title: "\"A Court for King Cholera,\" Punch, 1852",
+      alt: "A cartoon of a crowded court of tall run-down houses with signs reading Lodgings for Travelers and Good Beds: washing hangs from the windows, adults crowd the yard, and children play on a heap of rubbish in front.",
+      url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png",
+      caption: "A cartoon by John Leech in the London magazine Punch, 25 September 1852, read mostly by comfortable middle-class families. Cholera had killed about 53,000 people in England and Wales in 1848 and 1849.",
+      prompt: "NOTICE how many people share the court and what the children are playing on. INFER what the cartoonist thinks causes cholera. Two years later John Snow showed that cholera spreads through dirty water: what did the cartoon get right, and what did it miss?"
     },
     {
-      title: 'Mines Act of 1842',
-      label: 'Legal record · Britain',
-      sourceText: [
-        'Women and girls were barred from underground mine work.',
-        'Boys under age ten were also barred.'
-      ],
-      caption: 'A law of 1842 barring women, girls and boys under ten from underground work, which tells you what had been usual.',
-      prompt: 'What does the law reveal about gender, childhood, and industrial labor? Why might a reform law also indicate that the prohibited practice had been common?'
+      title: "John Snow's Cholera Map, 1854",
+      alt: "A street map of part of Soho, London, with small black bars stacked along the streets, thickest around a pump marked on Broad Street.",
+      url: "../assets/images/topics/5-9/snow-cholera-map-broad-street-1854.jpg",
+      sourceUrl: "https://wellcomecollection.org/works/uxgfjt62",
+      caption: "A map by the physician John Snow of cholera deaths in Soho, London, in 1854, printed in a report of 1855. Each small black bar is one death; the pumps are marked. Wellcome Collection.",
+      prompt: "NOTICE where the black bars cluster and what sits in the middle of them. INFER what Snow concluded about how cholera spread. What does this map show about the infrastructure of a crowded city?"
     },
     {
-      title: 'Public Health Act of 1848',
-      label: 'Legal and administrative record · Britain',
-      sourceText: [
-        'Government gained new tools to address sanitation.',
-        'Urban disease became a public-policy problem.'
-      ],
-      caption: 'A law of 1848, the year of the epidemic the cartoon above was drawn about.',
-      prompt: 'How does this evidence show industrial urbanization changing the role of government? What does the law not reveal about enforcement?'
+      title: "Garbage in the Streets, New York, about 1890",
+      alt: "An old photograph of a New York street of four- and five-story buildings with fire escapes, its roadway buried in a long heap of rubbish and ash, with carts parked along it.",
+      url: "../assets/images/topics/5-9/riis-garbage-east-fifth-street-1890.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/2002710278/",
+      caption: "A photograph by Jacob Riis titled \"Garbage in the streets, East Fifth Street, N.Y.C. tenement area,\" about 1890. Library of Congress.",
+      prompt: "NOTICE what fills the street and what the buildings around it are. INFER which challenges of rapid urbanization this one picture shows. Compare it with the 1852 cartoon: what had changed in forty years, and what kept going?"
     }
   ];
 
