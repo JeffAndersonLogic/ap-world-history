@@ -15,8 +15,23 @@
  * Retelling slide: the continuity-and-change slide (phase 'retell').
  *
  * Class dates: Green Friday 2026-11-13, Silver Monday 2026-11-16.
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * Required modules, from the schedule (Jeff's Unit 4 module review,
+ * 2026-10-23): 02 First & 10, 05 Skill Builder, 06 Checkpoint 1, 09
+ * BeInTheRoom (the Identity Dossier) and 10 Checkpoint 2. The deck predated
+ * that review and launched 07 Evidence Lab with Checkpoint 1 optional and the
+ * Identity Dossier as an extension; the Evidence Lab is now the early-finisher
+ * option.
+ *
+ * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
+ * topic; slides that only point to a module are cut; the lecture tells the
+ * story). The briefing opens on the outline below, a road map before the
+ * First & 10 shows students the same five section headers, every story slide's
+ * eyebrow names its section, minute counts are off the projected slides, the
+ * myths moved to the outline's Watch for list and the retelling slide's notes,
+ * and one Work Time slide replaced Myth and Evidence, Sharpen the Claim and the
+ * four module launch slides. No story slide changed. 27 slides to 23. The
+ * Sharpen frame is given aloud in Work Time; the topic has one learning
+ * objective (M), which the retelling slide already carries.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -38,12 +53,80 @@ window.BEHISTORICAL_TEACHING = {
     ],
     should: [
       'Model 3.D on Busbecq\'s claim (support, modify, refute), then let students practice in the Skill Builder.',
-      'Correct three myths: "the Ottomans gave everyone equal rights," "casta was a fixed chart everyone was locked into," and "old elites simply disappeared."',
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Ottomans gave everyone equal rights," "casta was a fixed chart everyone was locked into," and "old elites simply disappeared."',
       'Show that one empire could change its own policy (Akbar and Aurangzeb) and treat one group differently by class (Ottoman women).'
     ],
     could: [
-      'Use the BeInTheRoom Identity Dossier as an extension for students who finish early.',
+      'Send students who finish Work Time early to the Evidence Lab (Module 07).',
       'Point students who want more depth to the eBook chapter, "Who Belongs, Who Rises."'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes or the First & 10 "Who Belongs, Who Rises"; nothing is
+  // new. Required modules are the schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '09 BeInTheRoom', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'The ladder, and three kinds of change', kc: 'Learning Objective M', points: [
+        'Stayed: a ruler who inherits power, privileged nobles, most people at the bottom',
+        'Changed 1: who could belong (welcomed or used, pushed out or limited)',
+        'Changed 2: new elites made by conquest and trade',
+        'Changed 3: old elites squeezed by stronger rulers',
+        'Every case: what stayed, what changed, why'
+      ] },
+      { label: 'II', title: 'Who belongs: welcomed or pushed out', kc: 'KC-4.3.I.B', points: [
+        'Pushed out: Spain expels Jews 1492, Portugal 1497',
+        'Taken in: Bayezid II welcomes the refugees',
+        'Ottomans: room, not equality (own courts and schools; jizya; no testimony against a Muslim)',
+        'Mughals: Akbar ends the jizya 1564, brings in the Rajputs; Aurangzeb restores it 1679',
+        'Ottoman women: status set by class (the mistress and the enslaved woman)'
+      ] },
+      { label: 'III', title: 'New elites', kc: 'KC-4.2.III.A', points: [
+        'Qing, 1644: the banners, a paid hereditary military elite',
+        'The queue ordered 1645; Manchu and Han paired in top posts',
+        'Kept: the exams, Confucian officials, Han scholars in most jobs',
+        'Spanish America: casta ranks by ancestry',
+        'Peninsulares on top; rich creoles resent them',
+        'Casta paintings show an elite\'s ideal, not daily life'
+      ] },
+      { label: 'IV', title: 'Old elites squeezed', kc: 'KC-4.2.III.B', points: [
+        'Ottoman sipahis and timars decline; tax farmers and local families rise',
+        'Russia: precedence ended 1682; Peter\'s Table of Ranks, 1722',
+        'Nobles serve for life but keep estates and serfs',
+        'France: nobles at Versailles keep titles, land, tax freedom; lose the power to defy the king',
+        'England, 1688: the old elite wins ("fluctuated")'
+      ] },
+      { label: 'V', title: 'Merit or birth? Test a claim', kc: 'Learning Objective M', points: [
+        'Busbecq, 1555: Ottomans rise by merit; in Europe birth decides',
+        'Support, modify or refute: weigh each piece of evidence',
+        'Modifies: top posts required Islam; the dynasty inherited the throne'
+      ], skill: 'You model 3.D Claims and Evidence in Sources out loud on the first half of Busbecq\'s claim. Students test the second half, about Europe, in the Skill Builder.' }
+    ],
+    wrap: { title: 'Put it together', columns: ['Stayed the same', 'Changed'], rows: [
+      { label: 'Who belongs', cells: ['Every society ranks people', 'Ottomans and Akbar make room; Spain, Portugal and the Qing push out or limit'] },
+      { label: 'New elites', cells: ['A ruler who inherits power on top', 'The Qing banners; peninsulares and creoles'] },
+      { label: 'Old elites', cells: ['Privileged nobles beneath the ruler', 'Sipahis, boyars, French nobles squeezed; England\'s won'] }
+    ] },
+    vocabulary: [
+      { term: 'Accommodation', def: 'Making room for a group\'s differences, such as its own courts and schools. Not the same as equality.' },
+      { term: 'Jizya', def: 'A special tax that Christians and Jews (and, in Mughal India, Hindus) paid under Muslim rulers.' },
+      { term: 'Rajputs', def: 'The Hindu warrior kings of northwestern India; Akbar married into their families and made their princes top commanders.' },
+      { term: 'Banners', def: 'Hereditary Qing military units of Manchus, Mongols and early Han allies: paid, privileged, living in walled city quarters.' },
+      { term: 'Queue', def: 'The Manchu braid every Han man was ordered to wear from 1645, with the front of the head shaved.' },
+      { term: 'Casta', def: 'Spanish America\'s ranking of people by ancestry.' },
+      { term: 'Peninsulares', def: 'People born in Spain; the top of colonial society, holding the highest offices.' },
+      { term: 'Creoles', def: 'People of Spanish ancestry born in the Americas; many grew rich and resented the peninsulares.' },
+      { term: 'Timar', def: 'An Ottoman cavalryman\'s right to collect a piece of land\'s taxes in return for riding to war. Not his to own.' },
+      { term: 'Boyars', def: 'Russia\'s great noble families, who sat on the tsar\'s council until Peter the Great replaced it.' },
+      { term: 'Table of Ranks', def: 'Peter the Great\'s 1722 list of fourteen ranks of service; a commoner who rose high enough became a noble.' },
+      { term: 'Nobility', def: 'The privileged families just below the ruler, with titles, land and special rights.' }
+    ],
+    watch: [
+      { myth: '"The Ottomans gave everyone equal rights."', fix: 'Christians and Jews were protected but paid the jizya and generally could not testify against a Muslim. Accommodation, not equality; still far more than Spain allowed in 1492.' },
+      { myth: '"Casta was a fixed chart everyone was locked into."', fix: 'How a person was recorded could change with wealth, job and reputation. But ancestry still opened and closed doors.' },
+      { myth: '"Old elites simply disappeared."', fix: 'Russian and French nobles kept land and privilege; English nobles gained power. They lost some powers and kept others.' }
     ]
   },
 
@@ -51,30 +134,26 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the three kinds of change, owns and bridge-only, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.6, 3.2 and 4.4. Bridge to who ended up where.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over Akbar\'s court.', students: 'Predict who might be welcomed or pushed out.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Who Belongs, Who Rises" in class.', students: 'For every case: what stayed, what changed.', slide: 4 },
-    { id: 'ladder', label: 'The Ladder', range: '17-19', minutes: 2, teacher: 'The continuity, and the three kinds of change.', students: 'Name what stayed the same.', slide: 5 },
-    { id: 'map', label: 'Where It Happened', range: '19-20', minutes: 1, teacher: 'The cases on one map, colored by kind.', students: 'Find one of each color.', slide: 6 },
-    { id: 'expelled', label: 'Pushed Out, Taken In', range: '20-22', minutes: 2, teacher: 'Spain and Portugal; Bayezid II.', students: 'Say why each state did it.', slide: 7 },
-    { id: 'room', label: 'Room, Not Equality', range: '22-24', minutes: 2, teacher: 'How the Ottomans governed Christians and Jews.', students: 'Name one right and one limit.', slide: 8 },
-    { id: 'mughal', label: 'It Depends on the Ruler', range: '24-26', minutes: 2, teacher: 'Akbar and the Rajputs; Aurangzeb and the jizya.', students: 'Say what changed and what did not.', slide: 9 },
-    { id: 'women', label: 'Women, by Class', range: '26-28', minutes: 2, teacher: 'One painting: a wealthy household and the enslaved woman in it.', students: 'Find the mistress and the enslaved woman.', slide: 10 },
-    { id: 'qing', label: 'A New Elite in China', range: '28-31', minutes: 3, teacher: 'The banners, the queue, the exams kept.', students: 'Sort continuity and change.', slide: 11 },
-    { id: 'banners', label: 'The Banners, 1662', range: '31-32', minutes: 1, teacher: 'A Manchu painter shows the new elite.', students: 'Find the banner and its label.', slide: 12 },
-    { id: 'casta', label: 'A New Top in the Americas', range: '32-34', minutes: 2, teacher: 'The casta ranking, top to bottom.', students: 'Say what decided a person\'s rung.', slide: 13 },
-    { id: 'castapainting', label: 'A Chart on Canvas', range: '34-36', minutes: 2, teacher: 'Read a casta painting as an elite\'s ideal.', students: 'Say what the painting wants you to believe.', slide: 14 },
-    { id: 'fortunes', label: 'Old Elites Rise and Fall', range: '36-38', minutes: 2, teacher: 'Sipahis down, tax farmers up, boyars down.', students: 'Say what pushed each line.', slide: 15 },
-    { id: 'boyars', label: 'The Boyars', range: '38-40', minutes: 2, teacher: 'Peter\'s squeeze, and what nobles kept.', students: 'Name one loss and one thing kept.', slide: 16 },
-    { id: 'nobles', label: 'France and England', range: '40-42', minutes: 2, teacher: 'Squeezed in France, winning in England.', students: 'Explain "fluctuated."', slide: 17 },
-    { id: 'busbecq', label: 'A Claim to Test', range: '42-43', minutes: 1, teacher: 'Read Busbecq\'s argument.', students: 'Say his argument in your own words.', slide: 18 },
-    { id: 'test', label: 'Support, Modify, Refute', range: '43-45', minutes: 2, teacher: 'Model 3.D on Busbecq.', students: 'Label each piece of evidence.', slide: 19 },
-    { id: 'myths', label: 'Myth and Evidence', range: '45-47', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 20 },
-    { id: 'retell', label: 'The Ladder Stayed', range: '47-51', minutes: 4, teacher: 'Students redraw the continuity-and-change model from memory.', students: 'Retell the whole topic.', slide: 21 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '51-53', minutes: 2, teacher: 'From "society changed" to what stayed, what changed and why.', students: 'Upgrade a weak claim.', slide: 22 },
-    { id: 'skill', label: 'Skill Builder', range: '53-60', minutes: 7, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Test Busbecq\'s claim about Europe.', slide: 23 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: who could belong.', students: 'Work without the coach.', slide: 24 },
-    { id: 'evidence', label: 'Evidence Lab', range: '60-67', minutes: 7, teacher: 'Module 07: one claim about who belonged or who rose, from two sources.', students: 'Observe, then infer, then name a limit.', slide: 25 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '67-77', minutes: 10, teacher: 'Module 10: the top of society, new elites and old. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 26 },
-    { id: 'close', label: 'Landing Sentence', range: '77-79', minutes: 2, teacher: 'Land the answer and hand off to 4.8.', students: 'Say the topic in one sentence.', slide: 27 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the five sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "Who Belongs, Who Rises" in class.', students: 'For every case: what stayed, what changed.', slide: 5 },
+    { id: 'ladder', label: 'The Ladder', range: '18-20', minutes: 2, teacher: 'The continuity, and the three kinds of change.', students: 'Name what stayed the same.', slide: 6 },
+    { id: 'map', label: 'Where It Happened', range: '20-21', minutes: 1, teacher: 'The cases on one map, colored by kind.', students: 'Find one of each color.', slide: 7 },
+    { id: 'expelled', label: 'Pushed Out, Taken In', range: '21-23', minutes: 2, teacher: 'Spain and Portugal; Bayezid II.', students: 'Say why each state did it.', slide: 8 },
+    { id: 'room', label: 'Room, Not Equality', range: '23-25', minutes: 2, teacher: 'How the Ottomans governed Christians and Jews.', students: 'Name one right and one limit.', slide: 9 },
+    { id: 'mughal', label: 'It Depends on the Ruler', range: '25-27', minutes: 2, teacher: 'Akbar and the Rajputs; Aurangzeb and the jizya.', students: 'Say what changed and what did not.', slide: 10 },
+    { id: 'women', label: 'Women, by Class', range: '27-29', minutes: 2, teacher: 'One painting: a wealthy household and the enslaved woman in it.', students: 'Find the mistress and the enslaved woman.', slide: 11 },
+    { id: 'qing', label: 'A New Elite in China', range: '29-32', minutes: 3, teacher: 'The banners, the queue, the exams kept.', students: 'Sort continuity and change.', slide: 12 },
+    { id: 'banners', label: 'The Banners, 1662', range: '32-33', minutes: 1, teacher: 'A Manchu painter shows the new elite.', students: 'Find the banner and its label.', slide: 13 },
+    { id: 'casta', label: 'A New Top in the Americas', range: '33-35', minutes: 2, teacher: 'The casta ranking, top to bottom.', students: 'Say what decided a person\'s rung.', slide: 14 },
+    { id: 'castapainting', label: 'A Chart on Canvas', range: '35-37', minutes: 2, teacher: 'Read a casta painting as an elite\'s ideal.', students: 'Say what the painting wants you to believe.', slide: 15 },
+    { id: 'fortunes', label: 'Old Elites Rise and Fall', range: '37-39', minutes: 2, teacher: 'Sipahis down, tax farmers up, boyars down.', students: 'Say what pushed each line.', slide: 16 },
+    { id: 'boyars', label: 'The Boyars', range: '39-41', minutes: 2, teacher: 'Peter\'s squeeze, and what nobles kept.', students: 'Name one loss and one thing kept.', slide: 17 },
+    { id: 'nobles', label: 'France and England', range: '41-43', minutes: 2, teacher: 'Squeezed in France, winning in England.', students: 'Explain "fluctuated."', slide: 18 },
+    { id: 'busbecq', label: 'A Claim to Test', range: '43-44', minutes: 1, teacher: 'Read Busbecq\'s argument.', students: 'Say his argument in your own words.', slide: 19 },
+    { id: 'test', label: 'Support, Modify, Refute', range: '44-46', minutes: 2, teacher: 'Model 3.D on Busbecq.', students: 'Label each piece of evidence.', slide: 20 },
+    { id: 'retell', label: 'The Ladder Stayed', range: '46-50', minutes: 4, teacher: 'Students redraw the continuity-and-change model from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 21 },
+    { id: 'worktime', label: 'Work Time', range: '50-83', minutes: 33, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder on Busbecq\'s claim about Europe, Checkpoint 1 with no coach, the Identity Dossier, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, the Identity Dossier, Checkpoint 2.', slide: 22 },
+    { id: 'close', label: 'Landing Sentence', range: '83-85', minutes: 2, teacher: 'Land the answer and hand off to 4.8.', students: 'Say the topic in one sentence.', slide: 23 }
   ],
 
   quickLaunch: [
@@ -92,7 +171,7 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'The ladder stayed. The people on it moved.',
       subtitle: 'Continuity and Change, with Claims and Evidence in Sources 3.D. Every case asks: what stayed the same about who held status, what changed, and why?',
       notes: {
@@ -110,10 +189,10 @@ window.BEHISTORICAL_TEACHING = {
           'CED p. 89. One learning objective, M (Social Interactions and Organization): explain how social categories, roles, and practices have been maintained or have changed over time. The reasoning process is Continuity and Change (p. 75); the suggested skill is 3.D, explain how claims or evidence support, modify, or refute a source\'s argument.',
           'KC-4.3.I.B: many states, such as the Mughal and Ottoman empires, accommodated the ethnic and religious diversity of their subjects or used the contributions of different groups; in other cases states suppressed diversity or limited certain groups\' roles. KC-4.2.III.A: imperial conquests and widening global economic opportunities formed new political and economic elites, including the Qing transition and the casta system. KC-4.2.III.B: the power of existing elites fluctuated as they confronted increasingly powerful monarchs.',
           'The CED\'s illustrative examples (optional): the expulsion of Jews from Spain and Portugal and their acceptance in the Ottoman Empire; restrictive policies against Han Chinese in Qing China; the varying status of different classes of women within the Ottoman Empire; Ottoman timars; Russian boyars; European nobility. All six are in this deck, each told briefly, because together they are the shortest route through all three Key Concepts.',
-          'The CED\'s sample activity (p. 77) is a debate testing a historian\'s claim about religious toleration against evidence. This deck takes the move, not the article: slides 18 and 19 test Busbecq\'s 1555 claim; the Skill Builder and the Primary Source (Montagu, 1717) do it again.',
+          'The CED\'s sample activity (p. 77) is a debate testing a historian\'s claim about religious toleration against evidence. This deck takes the move, not the article: slides 19 and 20 test Busbecq\'s 1555 claim; the Skill Builder and the Primary Source (Montagu, 1717) do it again.',
           'Owns: who could belong (KC-4.3.I.B), new elites (KC-4.2.III.A), old elites squeezed (KC-4.2.III.B).',
           'Bridge only: Atlantic slavery and the labor systems (4.4; enslaved Africans appear only as the bottom of the casta ranking); the devshirme and Versailles as tools of rule (3.2, one clause each, from the elite\'s side); the Janissaries\' guns (3.1); the Fronde and the 1649 Law Code (4.6); which change mattered most (4.8, the hand-off).',
-          'Three myths, on slide 20: "the Ottomans gave everyone equal rights"; "casta was a fixed chart everyone was locked into"; "old elites simply disappeared."',
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (21) if they come up: "the Ottomans gave everyone equal rights"; "casta was a fixed chart everyone was locked into"; "old elites simply disappeared."',
           'Every picture in this deck is a real object of the period: an Akbarnama painting (about 1590 to 1595), two paintings by Jean Baptiste Vanmour of life in Istanbul (about 1720 to 1737), a Manchu painter\'s handscroll of 1662, a casta painting of about 1715 to 1720, and a portrait of Peter the Great. Busbecq\'s portrait (engraved in Constantinople, 1557) and Pierre-Denis Martin\'s Versailles of 1722 are on the lesson page. The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -122,7 +201,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull it back from memory.',
       template: {
         questions: [
@@ -137,14 +216,14 @@ window.BEHISTORICAL_TEACHING = {
         keys: [
           'Fast answers, no reteaching',
           '4.6: who pushed back',
-          'Versailles returns on slide 17',
+          'Versailles returns on slide 18',
           'Ask: whose power shrinks?'
         ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: the Parlement of Paris and the nobles (the Fronde), peasants and Cossacks (Razin), the Marathas, Njinga, the Pueblos, the Wampanoag, maroons, the Stono rebels; Versailles, the devshirme, salaried officials, tax collectors who answered to the ruler; Indigenous workers under the encomienda or the mit\'a, enslaved Africans.',
           'The bridge is 4.6\'s hand-off in the unit story map, word for word.',
-          'Prompt 2 returns on slide 17 (Versailles), from the nobles\' side. Prompt 3 returns as the bottom of the casta ranking on slide 13.'
+          'Prompt 2 returns on slide 18 (Versailles), from the nobles\' side. Prompt 3 returns as the bottom of the casta ranking on slide 14.'
         ],
         ask: 'When a ruler pulls power into his own hands, whose power shrinks?',
         listenFor: 'The nobles\', the judges\', the old elites\'.',
@@ -172,10 +251,41 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'Between 1450 and 1750, who could belong, who could rise, and who got squeezed?',
+        stops: [
+          { label: 'I', text: 'The ladder, and three kinds of change' },
+          { label: 'II', text: 'Who belongs: welcomed or pushed out' },
+          { label: 'III', text: 'New elites' },
+          { label: 'IV', text: 'Old elites squeezed' },
+          { label: 'V', text: 'Merit or birth? Test a claim' },
+          { label: '✓', text: 'Put it together: the ladder stayed, the people moved', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Five sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the five headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to V), so the class can see where it is all period.',
+          'The question at the top is the topic question: for each section, students watch for what stayed the same, what changed, and why.'
+        ],
+        ask: 'Which section do you expect the biggest change in?',
+        listenFor: 'Any reasoned guess; return to it at the retelling slide.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read with two questions in mind.',
       subtitle: 'For every case: what stayed the same about who held power, and what changed?',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-7-changing-social-hierarchies-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
@@ -196,7 +306,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'ladder', kind: 'branch-tree', eyebrow: 'The Frame · Continuity and Change',
+      phase: 'ladder', kind: 'branch-tree', eyebrow: 'I · The Ladder · Continuity and Change',
       kc: 'Unit 4: Learning Objective M', title: 'The ladder stayed. The people on it moved.',
       footer: 'Continuity: rulers who inherited power, privileged nobles, most people at the bottom. Change: who stood where.',
       template: {
@@ -227,7 +337,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'map', kind: 'map', eyebrow: 'Where It Happened',
+      phase: 'map', kind: 'map', eyebrow: 'I · The Ladder · Map',
       kc: 'Unit 4: Learning Objective M', title: 'Who belonged, who rose, who was squeezed.',
       footer: 'The key sorts every case: who could belong, new elites, or old elites squeezed.',
       visual: { url: '../assets/images/instructional-maps/topic-4-7.svg', alt: 'World map with labeled dots at England, Versailles, Spain and Portugal, Salonica, Anatolia, Russia, Mughal India, Beijing and Mexico City, each with a date, shaded in three colors explained in the key' },
@@ -248,7 +358,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'expelled', kind: 'balance', eyebrow: 'Who Belongs · 1492 to 1497',
+      phase: 'expelled', kind: 'balance', eyebrow: 'II · Who Belongs · 1492 to 1497',
       kc: 'KC-4.3.I.B', title: 'Pushed out, and taken in.',
       template: {
         job: 'Who belongs',
@@ -280,7 +390,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'room', kind: 'story-scene', eyebrow: 'Who Belongs · The Ottoman Empire',
+      phase: 'room', kind: 'story-scene', eyebrow: 'II · Who Belongs · The Ottoman Empire',
       kc: 'KC-4.3.I.B', title: 'Room for difference, but not equality.',
       template: {
         steps: [
@@ -311,7 +421,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'mughal', kind: 'story-scene', eyebrow: 'Who Belongs · Mughal India',
+      phase: 'mughal', kind: 'story-scene', eyebrow: 'II · Who Belongs · Mughal India',
       kc: 'KC-4.3.I.B', title: 'Same empire, opposite policies.',
       template: {
         steps: [
@@ -343,7 +453,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'women', kind: 'frame-letterbox', eyebrow: 'Who Belongs · Ottoman Women, by Class · Istanbul, about 1720 to 1737',
+      phase: 'women', kind: 'frame-letterbox', eyebrow: 'II · Who Belongs · Ottoman Women, by Class · Istanbul, about 1720 to 1737',
       kc: 'KC-4.3.I.B', title: 'Who has a say in this household?',
       subtitle: 'A wealthy mother receives visitors after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.',
       notes: {
@@ -368,7 +478,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'qing', kind: 'continuity-change', eyebrow: 'New Elites · China, 1644',
+      phase: 'qing', kind: 'continuity-change', eyebrow: 'III · New Elites · China, 1644',
       kc: 'KC-4.2.III.A', title: 'New rulers at the top. The old system kept running.',
       footer: 'A new elite, limits on the majority, and a continuity, all in one empire.',
       template: {
@@ -420,7 +530,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'casta', kind: 'ledger', eyebrow: 'New Elites · Spanish America',
+      phase: 'casta', kind: 'ledger', eyebrow: 'III · New Elites · Spanish America',
       kc: 'KC-4.2.III.A', title: 'A new top, ranked by birthplace and ancestry.',
       template: {
         rows: [
@@ -456,7 +566,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'castapainting', kind: 'frame-letterbox', eyebrow: 'New Elites · A Casta Painting · Mexico, about 1715 to 1720',
+      phase: 'castapainting', kind: 'frame-letterbox', eyebrow: 'III · New Elites · A Casta Painting · Mexico, about 1715 to 1720',
       kc: 'KC-4.2.III.A', title: 'A chart on canvas, not a census.',
       subtitle: 'In Spanish, the label says: from a mestizo and an Indian woman comes a coyote. Most casta labels never appear in official records.',
       notes: {
@@ -479,7 +589,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'fortunes', kind: 'timeline-fortunes', eyebrow: 'Old Elites · Rise and Fall',
+      phase: 'fortunes', kind: 'timeline-fortunes', eyebrow: 'IV · Old Elites Squeezed · Rise and Fall',
       kc: 'KC-4.2.III.B', title: 'Sipahis and boyars fell. Others rose in their place.',
       footer: 'The lines show direction only, not measured power.',
       template: {
@@ -500,10 +610,10 @@ window.BEHISTORICAL_TEACHING = {
           'Say "changed shape," not "decline"'
         ],
         land: [
-          'The lines are a teaching sketch of direction, not a measurement; the footer says so. They teach half of "fluctuated" in KC-4.2.III.B: old elites fell and other groups rose in their place. Slide 17 adds England, where an old elite won.',
+          'The lines are a teaching sketch of direction, not a measurement; the footer says so. They teach half of "fluctuated" in KC-4.2.III.B: old elites fell and other groups rose in their place. Slide 18 adds England, where an old elite won.',
           'Sipahis: a timar was the right to collect the taxes of a piece of land in return for service as a cavalryman; it was not the holder\'s property and was not supposed to pass automatically to his son (Halil İnalcık, The Ottoman Empire: The Classical Age). From the late 1500s, wars needed infantry with guns paid in cash, and the state turned more and more timar land into tax farms; from 1695 it sold them for life (malikane). The Topic 3.2 and 3.4 chapters tell the same move, "from timar-holding cavalry to tax farming and provincial notables."',
           'Tax farmers and powerful provincial families rose with the life-term tax farms (Wikipedia, "Ottoman Old Regime," on the 1695 malikane and provincial influence). Historians no longer call this simply "decline"; the Ottoman state changed shape.',
-          'Boyars: the system of precedence by family rank (mestnichestvo) was abolished in 1682; Peter the Great\'s Table of Ranks of 1722 made rank depend on service. Slide 16 tells it.'
+          'Boyars: the system of precedence by family rank (mestnichestvo) was abolished in 1682; Peter the Great\'s Table of Ranks of 1722 made rank depend on service. Slide 17 tells it.'
         ],
         ask: 'What pushed the sipahis\' line down and the tax farmers\' line up?',
         listenFor: 'The state needed cash for armies with guns more than it needed cavalry, so it sold the right to collect taxes.',
@@ -511,7 +621,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'boyars', kind: 'story-scene', eyebrow: 'Old Elites · Russia',
+      phase: 'boyars', kind: 'story-scene', eyebrow: 'IV · Old Elites Squeezed · Russia',
       kc: 'KC-4.2.III.B', title: 'Squeezed into service, and still privileged.',
       template: {
         steps: [
@@ -544,7 +654,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'nobles', kind: 'balance', eyebrow: 'Old Elites · France and England',
+      phase: 'nobles', kind: 'balance', eyebrow: 'IV · Old Elites Squeezed · France and England',
       kc: 'KC-4.2.III.B', title: 'Squeezed in one kingdom, winning in another.',
       template: {
         job: 'Face the king',
@@ -574,7 +684,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'busbecq', kind: 'source-quote', eyebrow: 'A Claim to Test · 1555',
+      phase: 'busbecq', kind: 'source-quote', eyebrow: 'V · Merit or Birth? · A Claim to Test, 1555',
       title: 'An ambassador writes home about the Ottomans.',
       footer: 'Busbecq wanted reforms at home. Keep that in mind.',
       template: {
@@ -588,12 +698,12 @@ window.BEHISTORICAL_TEACHING = {
           'Habsburg ambassador at Suleiman’s court, 1555',
           'Claim: Ottomans rise by merit; Europe by birth',
           'He wanted reforms at home: bias',
-          'Slide 19 tests the first half'
+          'Slide 20 tests the first half'
         ],
         land: [
           'Charles Thornton Forster and F. H. Blackburne Daniell, trans., The Life and Letters of Ogier Ghiselin de Busbecq (London, 1881), vol. I, pp. 154 to 155, the First Turkish Letter, describing his audience with Suleiman at Amasya in 1555. Public domain. The quotation joins three sentences from one passage, with the cuts shown.',
           'Busbecq (1522 to 1592), a Flemish noble, was ambassador at the Ottoman court from 1555 to 1562 for the Habsburg ruler Ferdinand I, then King of the Romans and from 1558 Holy Roman Emperor. The Fordham Internet History Sourcebook\'s headnote: "Because Busbecq was trying to bring about reform at home, he did not dwell on the very real problems with Ottoman government."',
-          'His argument has two halves: among the Ottomans men rise by merit, not birth; in Europe, birth decides everything. Slide 19 tests the first half; the Skill Builder tests the second.',
+          'His argument has two halves: among the Ottomans men rise by merit, not birth; in Europe, birth decides everything. Slide 20 tests the first half; the Skill Builder, in Work Time, tests the second.',
           'Busbecq\'s portrait, engraved by Melchior Lorck in Constantinople in 1557 (Rijksmuseum RP-P-OB-49.753), is on the Skill Builder card.'
         ],
         ask: 'What is Busbecq\'s argument, in one sentence?',
@@ -601,7 +711,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'test', kind: 'claim-evidence', eyebrow: 'Claims and Evidence in Sources 3.D · Model',
+      phase: 'test', kind: 'claim-evidence', eyebrow: 'V · Merit or Birth? · Test It, Model',
       title: 'Support, modify, or refute?',
       footer: 'Most strong answers modify: true, but only for some people.',
       template: {
@@ -625,7 +735,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The suggested skill, 3.D: explain how claims or evidence support, modify, or refute a source\'s argument. Support: the evidence fits. Modify: it is true, but only for some people, places or times. Refute: the evidence shows the argument is wrong.',
           'Supports: devshirme recruits rose to the highest offices; Sokollu Mehmed Pasha, grand vizier from 1565 to 1579, began as a devshirme boy from Bosnia (Topic 3.2).',
-          'Modifies: the top posts required conversion to Islam, and Christians and Jews paid the jizya and lived with limits (slide 8). The Ottoman dynasty inherited the throne.',
+          'Modifies: the top posts required conversion to Islam, and Christians and Jews paid the jizya and lived with limits (slide 9). The Ottoman dynasty inherited the throne.',
           'Push students past "it supports it" or "it refutes it" to the exact limit: for whom was it true?'
         ],
         ask: 'Is there any evidence that would refute Busbecq\'s claim about the Ottomans, not just modify it?',
@@ -634,35 +744,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence is more interesting than the myths.',
-      template: {
-        rows: [
-          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and generally could not testify against a Muslim in an Islamic court.', source: 'Ottoman law' },
-          { myth: 'Casta was a fixed chart everyone was locked into.', evidence: 'How a person was recorded could change with wealth, job and reputation.', source: 'Colonial records' },
-          { myth: 'Old elites simply disappeared.', evidence: 'Russian and French nobles kept land and privilege; English nobles gained power.', source: 'Russia, France, England' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        keys: [
-          'Accommodation is not equality',
-          'Casta: argued over, not fixed',
-          'Old elites lost some powers, kept others',
-          'Do not swing to the opposite myth'
-        ],
-        land: [
-          'Row 1: accommodation is not equality. Do not swing to the opposite myth either: the arrangement was far more accommodating than Spain\'s in 1492.',
-          'Row 2: the casta paintings show a fixed chart; colonial records show a society where categories were argued over and could change. But do not swing to "casta did not matter": ancestry still opened and closed doors.',
-          'Row 3: "fluctuated" in KC-4.2.III.B. Elites lost some powers and kept or gained others.'
-        ],
-        ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'Any, with the opposite mistake named: "equal" versus "persecuted," "fixed" versus "meaningless," "gone" versus "unchanged."'
-      }
-    },
-    {
-      retelling: true, phase: 'retell', kind: 'continuity-change', eyebrow: 'The Whole Topic',
+      retelling: true, phase: 'retell', kind: 'continuity-change', eyebrow: 'Put It Together · The Whole Topic',
       title: 'The ladder stayed. The people on it moved.',
       footer: 'Conquest, new wealth and stronger rulers decided who moved where.',
       template: {
@@ -682,122 +764,46 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one case under each change.',
           'The three changes are the three Key Concepts in order, and the continuity is the "maintained" half of the learning objective. The slide carries no single Key Concept band because it spans all three.',
-          'Push for named cases: Ottomans and Jewish refugees, Akbar and the Rajputs, Spain and the Jews it expelled, the Qing and the Han; the banners, peninsulares and creoles; sipahis and timars, boyars and the Table of Ranks, Versailles; England, where the old elite won.'
+          'Push for named cases: Ottomans and Jewish refugees, Akbar and the Rajputs, Spain and the Jews it expelled, the Qing and the Han; the banners, peninsulares and creoles; sipahis and timars, boyars and the Table of Ranks, Versailles; England, where the old elite won.',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time: accommodation is not equality, but it was far more than Spain allowed in 1492 ("equal" versus "persecuted"); casta was argued over and could change, but ancestry still mattered ("fixed" versus "meaningless"); old elites lost some powers and kept or gained others ("gone" versus "unchanged": that is "fluctuated" in KC-4.2.III.B).'
         ],
         ask: 'Redraw it without looking, with one case under each change.',
         listenFor: 'Stayed: hereditary rulers, privileged nobles, most people at the bottom. Changed: who belongs (Ottomans took in Jews; Spain pushed them out), new elites (the banners), old elites squeezed (the boyars).'
       }
     },
     {
-      phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      kc: 'Unit 4: Learning Objective M',
-      footer: 'Name what stayed, what changed, and why.',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 09, 10',
+      title: 'Now you do the history.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
-        weak: 'Society changed a lot between 1450 and 1750.',
-        strong: 'Between 1450 and 1750, ______ **stayed the same**, but ______ **changed**, **because** ______.'
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Test Busbecq\'s claim about Europe.', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Identity Dossier.', url: '../beintheroom/unit-4/the-identity-dossier.html' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' }
+        ]
       },
       notes: {
-        minutes: 2,
+        minutes: 33,
         keys: [
-          'Weak: no society, group, continuity or cause',
-          'Need: what stayed, what changed, why',
-          'Pairs fill the frame aloud',
-          'No finished claim on the board'
+          'All four required today, in order',
+          'Skill Builder: support, modify, refute',
+          'Checkpoint 1: no coach',
+          'Identity Dossier: what decides a rank?',
+          'Checkpoint 2 unfinished = homework',
+          'Early finishers: Evidence Lab'
         ],
         land: [
-          'The weak claim names no society, no group, no continuity and no cause. It fits any three centuries in history, which is why it earns no credit.',
-          'The frame asks for the whole continuity-and-change move: what stayed, what changed, and why.',
-          'This is a sentence frame, not a model answer: every case is asked for somewhere (First & 10, Checkpoints 1 and 2). Have pairs fill it in aloud with a case they choose. Do not write a finished claim on the board.'
+          'This one slide replaces six (Myth and Evidence, Sharpen the Claim, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06, 09 and 10 are all required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23). Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources. It models the move on the first half of Busbecq\'s argument (slide 20), then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and French offices that families could buy and that could bring noble rank. The Table of Ranks is the strongest modifier: a commoner could become a noble by rank, and Russia is in Europe.',
+          'Checkpoint 1 (Module 06), with no coach, asks for one state that welcomed or used a group and one that pushed out or limited a group, with what each state gained (KC-4.3.I.B). Give feedback in the room: on an alternating block nothing carries over.',
+          'The Identity Dossier (Module 09) is a court hearing in Mexico City around 1715: students decide how much a widow\'s ancestry, wealth, family and reputation should count when the colony sorts people into ranks. It is the casta myth in a decision. Debrief with the spine: the ladder stayed, but where a person stood on it could be argued over.',
+          'Checkpoint 2 (Module 10) asks for one new elite (the Qing banners, or peninsulares and creoles in the casta ranking) and how conquest or new trade made it, one old elite (Ottoman sipahis, Russian boyars or French nobles) and how its power changed as rulers grew stronger, and one thing about the top of society that stayed the same (KC-4.2.III.A and KC-4.2.III.B). Socrates is told the skill is Continuity and Change, so it will push for what stayed the same as well as what changed. The revised answer in the box is what goes to Canvas.',
+          'Early finishers: the Evidence Lab (Module 07; six real objects; observe before inferring, and name a limit: Vanmour painted for European buyers, and the casta painting is an elite\'s ideal).',
+          'If a student needs the claim shape, give it aloud (it was the Sharpen slide): "Between 1450 and 1750, ___ stayed the same, but ___ changed, because ___." It is a frame, not a model answer; do not write a finished claim on the board.'
         ],
-        ask: 'Why is "changed a lot" not enough?',
-        listenFor: 'It does not say what changed, for whom, what stayed the same, or why.'
-      }
-    },
-    {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Test a source\'s argument.',
-      subtitle: 'Support, modify, or refute: Busbecq\'s claim that in Europe "birth is the standard for everything."',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
-      notes: {
-        minutes: 7,
-        keys: [
-          'Skill 3.D on Busbecq’s claim about Europe',
-          'Evidence: Versailles, Table of Ranks, bought offices',
-          'Debrief after: Table of Ranks hurts most'
-        ],
-        land: [
-          'The Skill Builder practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources.',
-          'It models the move on the first half of Busbecq\'s argument (slide 19), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and French offices, such as judges\' seats in the Parlement of Paris, that families could buy and that could bring noble rank. Students decide whether each supports, modifies or refutes it.',
-          'The Table of Ranks is the strongest modifier: a commoner could become a noble by rank. Russia is in Europe, so it tests Busbecq\'s "with us" directly.'
-        ],
-        ask: 'After students have written: which piece of evidence did the most damage to Busbecq\'s claim about Europe?',
-        listenFor: 'Debrief only after the module: the Table of Ranks, because it let commoners rise by service.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'Who could belong.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
-      notes: {
-        minutes: 0,
-        keys: [
-          'Optional: early finishers or diagnostic',
-          'One state welcomed, one pushed out',
-          'What each state gained',
-          'Give feedback in the room'
-        ],
-        land: [
-          'Checkpoint 1 is not required for 4.7. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It asks for one state that welcomed or used a group and one that pushed out or limited a group, with what each state gained (KC-4.3.I.B). Give feedback in the room: on an alternating block nothing carries over.'
-        ],
-        ask: 'Name one state that made room for a group and one that pushed a group out.',
-        listenFor: 'The Ottomans and the Jewish refugees, or Akbar and the Rajputs; Spain and the Jews it expelled, or the Qing and the Han.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Build one claim from two sources.',
-      subtitle: 'Who could belong, who could rise, or who was squeezed? Two sources, one limit.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
-      notes: {
-        minutes: 7,
-        keys: [
-          'One claim, two sources',
-          'Six real objects',
-          'Limits: Vanmour for Europeans; casta an ideal',
-          'Observe → infer → name a limit'
-        ],
-        land: [
-          'Six real objects: the Akbarnama painting of a Rajput ruler submitting to Akbar; Vanmour\'s Armenian wedding and his lying-in room; the banner handscroll dated 1662; the casta painting of about 1715 to 1720; and Martin\'s Versailles of 1722.',
-          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. Vanmour painted for European buyers and probably could not enter a wealthy woman\'s rooms; the casta painting is an elite\'s ideal. Both are good limits to name.',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
-        ],
-        ask: 'What does the source show before you tell me what it means?',
-        listenFor: 'A concrete detail, then the inference, then a limit.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'The top of society: one new elite and one old elite, and what stayed the same.',
-      subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
-      notes: {
-        minutes: 10,
-        keys: [
-          'A new elite and how it was made',
-          'An old elite and how it changed',
-          'One thing at the top that stayed',
-          'Revised answer goes to Canvas',
-          'Unfinished = homework'
-        ],
-        land: [
-          'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for one new elite (the Qing banners, or peninsulares and creoles in the casta ranking) and how conquest or new trade made it, one old elite (Ottoman sipahis, Russian boyars or French nobles) and how its power changed as rulers grew stronger, and one thing about the top of society that stayed the same. That is KC-4.2.III.A and KC-4.2.III.B, run through continuity and change. KC-4.3.I.B is the First & 10\'s and Checkpoint 1\'s.',
-          'Socrates is told the skill is Continuity and Change, so it will push for what stayed the same as well as what changed.'
-        ],
-        ask: 'Does your answer name a new elite, an old elite, and one thing that stayed the same?',
-        listenFor: 'The banners made by the Qing conquest; the boyars squeezed into service by Peter; a hereditary ruler still on top.'
+        ask: 'Does your answer name what stayed the same, what changed, and why?',
+        listenFor: 'Skill Builder: the Table of Ranks did the most damage to Busbecq\'s claim about Europe. Checkpoint 2: the banners made by the Qing conquest; the boyars squeezed into service by Peter; a hereditary ruler still on top.'
       }
     },
     {
