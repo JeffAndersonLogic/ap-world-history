@@ -96,6 +96,15 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Causation, with Contextualization 4.B. Every case runs one chain: what the state pushed, who it landed on, how they pushed back, what happened next.',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: states pushed harder, people pushed back',
+          'Every case: push, who it hit, pushback, next',
+          'Show the array: many kinds of groups',
+          'Pair an Afro-Eurasian case with an American one',
+          'Enslaved resistance taught as organized',
+          'European rivalry is 4.5, not "external"',
+          'Three myths, slide 21'
+        ],
         land: [
           'CED p. 88. One learning objective, L (Governance): explain the effects of the development of state power from 1450 to 1750. The reasoning process is Causation (p. 75); the suggested skill is 4.B Contextualization, explain how a development is situated in a broader context.',
           'KC-4.3.III.iii: state expansion and centralization led to resistance from an array of social, political and economic groups on a local level. KC-5.3.III.C: enslaved persons challenged existing authorities in the Americas through organized resistance.',
@@ -124,6 +133,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          'Recall: 4.5 tools, Unit 3 rule, 4.4 labor',
+          'Prompt 2 = centralize; 1 and 3 = expand',
+          'Ask: who paid for each tool?'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: mercantilist laws (the Navigation Act, the Casa de Contratación), chartered companies (the VOC, the English East India Company); Versailles, the devshirme, tax farming, zamindars, salaried officials; the encomienda, the mit\'a, chattel slavery, indentured servitude.',
@@ -141,6 +156,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'The rebel Stenka Razin brought into Moscow in chains, 1671, as a Dutch printmaker pictured it about thirty years later.',
       notes: {
         minutes: 1,
+        keys: [
+          'Real print: Razin in chains, 1671',
+          'A Dutch imagining, about 30 years later',
+          'Predict who might push back'
+        ],
         land: [
           'The picture is a real historical print: Jan Luyken, "Stenko Radzin is brought into Moscow on a cart with his brother," an etching made for J. L. Gottfried\'s Historische kronyck (Leiden: Pieter van der Aa, 1700), Rijksmuseum RP-P-1896-A-19368-1482. Luyken never went to Russia; the city and the clothing are his imagining. It shows a captured rebel chained in a cart under a gallows-like frame, guards with pikes, and a crowd at the city gate.',
           'Razin\'s revolt is one case of many: peasants and Cossacks against a tsar who had just bound peasants to the land. Slide 8 tells it.',
@@ -158,6 +178,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-6-internal-external-challenges-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Track: push, who pushed back, how, what next',
+          'Resistance had its own effects',
+          'Q2: the Pueblo Revolt’s context',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Push and Pushback" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who track the four questions for each case, and who notice that resistance has its own effects (crushed, bargained, worn down).',
@@ -181,6 +208,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Two pushes: centralize and expand',
+          'Centralize: pull power in over your own people',
+          'Expand: push out over new people',
+          'Both cost somebody something',
+          'This is the context for every revolt'
+        ],
         land: [
           'KC-4.3.III.iii opens with the two pushes: "state expansion and centralization." They are different. Centralizing is a state pulling power inward over people it already rules (Unit 3: Versailles, the devshirme, tax collectors who answered to the center). Expanding is a state pushing outward over people it does not yet rule (Unit 4: the maritime empires, and land empires too, such as the Mughals moving into the Deccan).',
           'This is the context, in the 4.B sense, for every case today. A revolt explained only as "people were angry" has no context; a revolt explained as the result of one of these pushes does.',
@@ -198,6 +232,12 @@ window.BEHISTORICAL_TEACHING = {
       visual: { url: '../assets/images/instructional-maps/topic-4-6.svg', alt: 'World map with labeled dots at Paris, the Volga, the Deccan, Ndongo and Matamba, New Mexico, New England, Palmares in Brazil, Jamaica and the Stono River in South Carolina, each with a date' },
       notes: {
         minutes: 1,
+        keys: [
+          'Three colors: inside a state, at the edge, enslaved',
+          'Dots are regions, not battlefields',
+          'Spread: four continents, about 1600 to 1739',
+          'That spread is the "array"'
+        ],
         land: [
           'The course\'s own instructional map, rebuilt for this story. Dots mark regions, not exact battlefields, and the colors sort the cases: inside a state (Paris, the Volga), at an expanding state\'s edge (the Deccan, Ndongo and Matamba, New Mexico, New England), and organized resistance by enslaved people (Palmares, Jamaica, Stono).',
           'Point out the spread: pushback happened in Europe, Asia, Africa and the Americas in about a century and a half, from about 1600 to 1739. That spread is the "array" in the Key Concept.'
@@ -223,6 +263,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Fronde 1648 to 1653: boy king, regent',
+          'War taxes; Paris judges refused them',
+          'Judge arrested; 1,200 barricades',
+          'Then the great nobles revolted',
+          'Crown won; Louis XIV "marked" by it',
+          'Say "marked," not "caused absolutism"'
+        ],
         land: [
           'The Fronde ("sling"), 1648 to 1653, while Anne of Austria ruled as regent for the boy Louis XIV with Cardinal Mazarin as chief minister (Michel De Waele, "Fronde," Europe 1450 to 1789, 2004). France had been at war with Spain for years; war consumed about 70 percent of revenue.',
           'January 1648: the regency tried to force new fiscal edicts on the Parlement of Paris, the high court whose judges had to register royal laws; the judges refused them, including taxes aimed at themselves. In August, after the victory at Lens, the government arrested Pierre Broussel and other judges; Paris put up some 1,200 barricades on the night of 26 to 27 August, and the queen released him. On 5 January 1649 the royal family and Mazarin fled Paris.',
@@ -248,6 +296,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Law Code 1649 bound peasants to the land',
+          'Cossacks: free frontier fighters',
+          'Razin, 1670: the Volga rises',
+          'Loyal to the tsar, against his officials',
+          'Crushed; executed 1671; serfdom stayed'
+        ],
         land: [
           'The Law Code of 1649 (Ulozhenie) completed the enserfment of the peasantry (chapter 11): a runaway serf could be returned to any place where he was recorded as having lived, with no time limit (Encyclopedia of Russian History, "Law Code of 1649"). It was itself the product of unrest: Moscow riots in June 1648 led the tsar to call for a new code.',
           'Cossacks were free frontier communities of fighters, on the Don and elsewhere, beyond the tsar\'s direct rule. Runaway serfs swelled their numbers.',
@@ -275,6 +330,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Aurangzeb pushed south into the Deccan',
+          'Marathas: hill forts and fast raids',
+          'Shivaji crowned 1674',
+          'Aurangzeb never beat them; died there, 1707',
+          'Mughal center weakened (many causes)',
+          'Real paintings from Golconda, 1680s'
+        ],
         land: [
           'Shivaji (about 1627 to 1680) built Maratha power from hill forts in the western Deccan; in 1674 he was crowned at his fort of Raigad (Frances Pritchett, Columbia; NCERT 2026). Forts and fast, mobile raiding were the Maratha way of war; Aurangzeb\'s artillery could take forts but could not pin down an enemy who would not stand and fight (Topic 3.1\'s chapter tells the guns side).',
           'Aurangzeb came south in 1681 (some sources say 1682), conquered the Deccan sultanates of Bijapur (1686) and Golconda (1687), "but never could subdue the Marathas" (Pritchett). He died at his camp near Ahmednagar in March 1707 and was buried at Khuldabad, near Aurangabad, without ever returning to North India. Shivaji had been fighting Mughal armies since the early 1660s (Shaista Khan\'s campaign, the sack of Surat in 1664, the Treaty of Purandar in 1665). After 1707 Maratha power expanded across much of the subcontinent while the Mughal center weakened. The decline had many causes; do not make the Marathas the only one.',
@@ -301,6 +364,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Portugal pushed into Ndongo for captives',
+          '1622 talks: Njinga baptized; ruler 1624',
+          'Fight: conquered Matamba; Dutch alliance',
+          'Bargain: peace with Portugal, 1650s',
+          'Her wars also sold captives',
+          'Skip the kneeling-servant story'
+        ],
         land: [
           'Portuguese Angola, centered on Luanda (founded 1576), pushed into the kingdom of Ndongo; its wars fed the Atlantic slave trade with captives (Enslaved.org, "Njinga"; Linda Heywood, Njinga of Angola, 2017).',
           'In 1622 King Mbandi sent his sister Njinga to Luanda to negotiate peace; she agreed to be baptized there and took the name Ana de Sousa. She became ruler in 1624. After Portuguese attacks drove her out of Ndongo, she conquered Matamba in the 1630s and ruled from there, allied with the Dutch West India Company after the Dutch occupied Luanda in 1641 (the Portuguese retook it in 1648), and made peace with Portugal in the 1650s (sources give 1656 or 1657). She died on 17 December 1663 (Enslaved.org).',
@@ -328,6 +399,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Spain in New Mexico from 1598',
+          'Economic: tribute and forced labor',
+          'Religious: dances banned, kivas destroyed',
+          'Political: rule by force, no defense from raids',
+          'On top: drought and famine',
+          'Do not settle "most significant cause" here'
+        ],
         land: [
           'Spain\'s colony in New Mexico dates from Juan de Oñate\'s expedition in 1598 (Library of Congress, In Custodia Legis, 2013; NPS Pecos). Under the encomienda, Pueblos had to hand over a portion of their crops each year; under repartimiento they were forced to work for Spaniards without pay (LOC 2013).',
           'Religious suppression: in May 1661 Fray Alonso de Posada, head of the Franciscans, banned the kachina dances (Kessell, NPS), and the friars burned masks and prayer sticks; in 1675 Governor Juan Francisco Treviño ordered kivas destroyed and arrested 47 religious leaders, whom the Spanish called sorcerers; four were sentenced to death, three hanged and one killed himself, and the rest were whipped and jailed. Pueblo men came to Santa Fe in force, and the prisoners were released. Popé of Ohkay Owingeh (San Juan Pueblo) was among them.',
@@ -350,6 +429,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'First look only: Module 08 reads more',
+          'Knotted cord counted down to one day',
+          'A captive questioned by Spanish officials',
+          'Cord detail: little reason to invent'
+        ],
         land: [
           '"Declaration of Pedro Naranjo of the Queres Nation," 19 December 1681, translated by Charmion Clair Shelby in Charles Wilson Hackett, ed., Revolt of the Pueblo Indians of New Mexico and Otermín\'s Attempted Reconquest, 1680-1682 (University of New Mexico Press, 1942), vol. 2. Naranjo, a Keres man from San Felipe Pueblo, was captured during Otermín\'s attempt to retake New Mexico and questioned by Spanish officials. The slide starts mid-sentence (the record reads "He said that the cord was passed ...", "he" being Naranjo as the Spanish clerk recorded him). The sentence before it says three spirit beings told Popé, in a kiva at Taos, to make a cord of maguey fiber and tie in it one knot for each day until the rising.',
           'This is the CED\'s own sample-activity source (p. 77). The slide uses only the knotted-cord passage; the Primary Source module gives students more of the testimony and asks for the reasons for the revolt and how to source a captive\'s statement. Do not run those questions here.',
@@ -373,6 +458,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Rose 10 August 1680, two days early',
+          'About 400 colonists killed, 21 friars',
+          'Spanish fled to El Paso; 12 years free',
+          'Vargas returned 1692',
+          'After: no encomienda, less religious pressure',
+          'Popé’s rule faced opposition too'
+        ],
         land: [
           'When the Spanish arrested two runners from Tesuque on 9 August, the Pueblos rose early, on 10 August 1680 (Naranjo: "two days before the time set ... it was carried out prematurely"; LOC 2013). They killed about 400 colonists, including 21 Franciscan friars, besieged Santa Fe and cut off its water. On 21 August Governor Antonio de Otermín broke out and led the survivors south to El Paso del Norte.',
           'For twelve years the Pueblos ruled themselves. Diego de Vargas returned in 1692 and retook Santa Fe; revolts in 1694 and 1696 were crushed (LOC 2013).',
@@ -396,6 +489,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Metacom’s War, 1675 to 1676',
+          'Colonists took Wampanoag land, imposed their law',
+          'Colonies won; captives sold into slavery',
+          'Pueblos won, Wampanoag lost: why?',
+          'Weigh: numbers, coordination, allies, geography'
+        ],
         land: [
           'Metacom\'s War (King Philip\'s War), 1675 to 1676: New England colonists were taking Wampanoag land and putting the Wampanoag under colonial law. In June 1675 Plymouth executed three Wampanoag men for killing John Sassamon, a Christian Native informer, and fighting began (Dictionary of American History). Metacom, son of Massasoit, was the Wampanoag sachem the English called Philip. Nipmucks, Pocumtucks, Narragansetts and others joined, though historians doubt there was one planned alliance under Metacom (Oxford Companion to American Military History).',
           'More than a dozen English towns were burned. The colonies, with Native allies and Mohawk pressure from the west, won; Metacom was shot by a Native man in Benjamin Church\'s company in August 1676, and many Native captives were sold into slavery in the West Indies. Southern New England\'s Native peoples lost their political and military independence.',
@@ -421,6 +521,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'CED word: organized',
+          'Collective, and challenged the colony itself',
+          'Maroons: Caribbean and Brazil',
+          'North America: Stono',
+          'The push: plantation slavery (4.4)'
+        ],
         land: [
           'KC-5.3.III.C: "Enslaved persons challenged existing authorities in the Americas through organized resistance." The word that matters is organized. Enslaved people also resisted every day, by working slowly, keeping their own beliefs and running away alone; this Key Concept asks about resistance that was collective and challenged the colony itself.',
           'The CED\'s examples: Maroon societies in the Caribbean and Brazil, and resistance of enslaved persons in North America. Palmares and Jamaica are the first; Stono is the second.',
@@ -445,6 +552,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Many towns joined for defense',
+          'Say "thousands," not a big number',
+          'Farmed, traded, beat expeditions',
+          '1678 treaty: Ganga Zumba yes, Zumbi no',
+          'Taken 1694; Zumbi killed 1695',
+          'Never "largest maroon community"'
+        ],
         land: [
           'Palmares, in the hills of the old captaincy of Pernambuco (today\'s Alagoas), was "not just one quilombo ... [but] a collection of numerous, perhaps dozens, of quilombos, joined together for purposes of defense and survival" (Flávio Gomes, "Palmares," Encyclopedia of African-American Culture and History). The first reports date from the late 1500s.',
           'Population: Gomes gives more than 20,000 by the mid-1600s and calls the chroniclers\' 30,000 an exaggeration; other historians estimate lower. Say "thousands." Do not repeat "the largest and most durable maroon community in the Americas"; no source here supports it.',
@@ -468,6 +583,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Maroons in the mountains after 1655',
+          'The colony could not win the war',
+          '1739 treaty: freedom and land',
+          'Price: return runaways, hunt rebels',
+          'A victory and a trap at once'
+        ],
         land: [
           'After the English took Jamaica from Spain in 1655, people who escaped slavery formed communities in the mountains, the Maroons, joined over the decades by many more. The colony fought them for years (the First Maroon War of the 1720s and 1730s) without winning.',
           'The Leeward Maroons under Cudjoe signed articles with the colony dated 1 March 1738 in the old calendar (1739 in ours), confirmed by the Assembly on 12 May 1739; the Windward Maroons signed a similar treaty later in 1739. The quotation joins the second and ninth articles; the brackets and the cut "from their masters or owners" are BeHistorical\'s (Dallas\'s 1803 printing reads "the said Captain Cudjoe, the rest of his captains, adherents, and men shall for ever hereafter in a perfect state of freedom and liberty" and "and shall fall into"; the Laws of Jamaica printing reads "shall be for ever hereafter in" and "and fall into". The slide quotes Dallas and says so).',
@@ -492,6 +614,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Stono, 9 September 1739, near Charleston',
+          'Took guns, marched south toward Florida',
+          'Spain promised freedom; Fort Mose, 1738',
+          'Caught near the Edisto; dozens killed',
+          'Answer: Negro Act 1740, harsher law',
+          'Save the contextualizing for Module 05'
+        ],
         land: [
           'The revolt began on Sunday, 9 September 1739, on a branch of the Stono River near Charleston. The rebels broke into a store for guns and powder, killed the storekeepers, and marched south toward St. Augustine, "to reach St. Augustine and claim freedom in Spanish-controlled Florida"; their numbers grew "from sixty to as many as one hundred," and some accounts say they marched with drums and a banner, shouting "Liberty!" Around four o\'clock planters and militia caught them near the Edisto River. "About forty whites and probably as many blacks were killed"; fighting and hunting went on into the next week (Mark M. Smith, "Stono Rebellion," South Carolina Encyclopedia). The account written in 1739 counts "about 40 Negroes and 20 whites" (Colonial Records of the State of Georgia, vol. 22, pt. 2); the slide gives the range. The starting number of about twenty is the common estimate in other accounts.',
           'Spain had promised freedom since 1693 to people who escaped the English colonies and became Catholic, and in 1738 founded Fort Mose near St. Augustine for them. Several Stono rebels came from Kongo, where Catholicism was widespread (Smith; John Thornton, 1991). Britain and Spain went to war weeks later.',
@@ -514,6 +644,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Skill 4.B: bigger development plus "because"',
+          'Model it once: the Fronde',
+          'Pairs say it aloud for Razin',
+          'No finished model on the board'
+        ],
         land: [
           'The suggested skill, 4.B: explain how a specific development is situated within a broader historical context. The move has two parts: name the bigger development, and say how it explains the event. Naming the context without the "because" is only half.',
           'The bigger development for the Fronde: centralization (Unit 3) and the cost of war. De Waele describes the regency continuing Richelieu\'s heavy taxation for the war with Spain, and many provincial bodies hoping "that the centralization of power ... would come to a halt."',
@@ -538,6 +674,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Resistance had effects too',
+          'Crushed: France, Russia, New England, South Carolina',
+          'Bargained: Njinga, Jamaica, New Mexico',
+          'Worn down: Mughals in the Deccan',
+          'Palmares fits more than one box'
+        ],
         land: [
           'The learning objective asks for the effects of state power. Resistance is one effect; this slide is the next link, what resistance did in return.',
           'Crushed and stronger: Louis XIV ruled in person and kept the nobles close (3.2); serfdom stayed in Russia; Southern New England\'s Native nations lost their independence; South Carolina passed the Negro Act. Bargained: Njinga\'s peace in the 1650s; the 1739 treaties; Spain\'s return to New Mexico without the encomienda. Worn down: the Mughals in the Deccan.',
@@ -560,6 +703,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Not only colonized peoples resisted',
+          'Maroons were organized, not just hiding',
+          'Resisting an empire was not opposing slavery',
+          'Do not swing to the opposite myth'
+        ],
         land: [
           'Row 1 is the "array" in KC-4.3.III.iii: social, political and economic groups, not only colonized peoples.',
           'Row 2 is the "organized" in KC-5.3.III.C.',
@@ -584,6 +733,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Show it, hide it, redraw four links',
+          'Push → lands on → pushback → answer',
+          'A named case and group at each link',
+          'Pushback changed the states too'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the four links from memory, with one case under each link.',
           'The chain is KC-4.3.III.iii in four steps: "state expansion and centralization led to resistance from an array of social, political, and economic groups on a local level," plus one more link for what the resistance did. KC-5.3.III.C runs the same chain with the plantation colony as the push.',
@@ -603,6 +758,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Weak: no state, push, group or effect',
+          'Need: state, push, group, loss, pushback, next',
+          'Pairs fill the frame aloud',
+          'No finished claim on the board'
+        ],
         land: [
           'The weak claim names no state, no push, no group, no form of resistance and no effect. Almost any revolt in history fits it, which is why it earns no credit.',
           'The frame asks for the whole chain: which state, which push, which group, what they lost, how they pushed back, and what happened next.',
@@ -619,6 +780,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
       notes: {
         minutes: 6,
+        keys: [
+          'Skill 4.B: contextualize',
+          'Modeled on the Fronde, practiced on Stono',
+          'Push for the "because"',
+          'Debrief after: Florida, the coming war'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 4.B Contextualization: explain how a specific development is situated within a broader context.',
           'It models the Fronde (slide 19), then gives the Stono Rebellion with three pieces of context (a plantation colony with an enslaved majority, Spanish Florida\'s promise of freedom, a war between Britain and Spain about to begin) and asks students to place the revolt in its context and say how that context helps explain it.',
@@ -635,6 +802,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
       notes: {
         minutes: 0,
+        keys: [
+          'Optional: early finishers or diagnostic',
+          'Two cases, both sides of the Atlantic',
+          'Give feedback in the room'
+        ],
         land: [
           'Checkpoint 1 is not required for 4.6. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'It asks for two cases of local resistance, one in Africa, Asia or Europe and one in the Americas, each run through the chain. Give feedback in the room: on an alternating block nothing carries over.'
@@ -650,6 +822,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'One claim, two sources',
+          'Four objects plus two text cards',
+          'Luyken print: a later Dutch imagining',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Four real objects and two written sources: the 1648 French print of Broussel, Luyken\'s 1700 print of Razin, the Shivaji portrait (about 1680), the Aurangzeb portrait (about 1686), and two text cards, from Naranjo\'s 1681 testimony and the 1739 Jamaica treaty.',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. The Luyken print is a Dutch imagining made decades later; that is its limit, and a good one to name.',
@@ -666,6 +844,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-6-internal-external-challenges.html#modules' },
       notes: {
         minutes: 10,
+        keys: [
+          'A maroon community plus Stono',
+          'How each was organized',
+          'How authorities answered, and why it differed',
+          'Revised answer goes to Canvas',
+          'Unfinished = homework'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for one maroon community (Palmares or the Jamaica Maroons) and the Stono Rebellion: how each was organized, how the authorities responded, and one reason the responses differed. That is KC-5.3.III.C, run through the causation chain. KC-4.3.III.iii is the First & 10\'s and Checkpoint 1\'s.',
@@ -681,6 +866,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Next: some people resisted the new order. Everyone was sorted by it. Who ended up where?',
       notes: {
         minutes: 2,
+        keys: [
+          'Real print: a judge arrested, 1648',
+          'The sentence answers the objective',
+          'Hand off to 4.7: who ended up where?'
+        ],
         land: [
           'The picture: Caspar Luyken\'s 1699 etching of soldiers arresting a judge of the Parlement of Paris in 1648 (Rijksmuseum), the arrest that set off the barricades: a state pushing, and the moment before the pushback.',
           'This sentence answers the learning objective: the development of state power (expansion and centralization) and its effects (resistance, and what resistance changed).',

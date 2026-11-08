@@ -97,6 +97,15 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Continuity and Change, with Claims and Evidence in Sources 3.D. Every case asks: what stayed the same about who held status, what changed, and why?',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: the ladder stayed; the people moved',
+          'Every case: what stayed, what changed, why',
+          'Who belongs: welcomed or pushed out',
+          'New elites: Qing banners, casta',
+          'Old elites squeezed; in England they won',
+          'Atlantic slavery is 4.4',
+          'Name the policy, not "tolerant"'
+        ],
         land: [
           'CED p. 89. One learning objective, M (Social Interactions and Organization): explain how social categories, roles, and practices have been maintained or have changed over time. The reasoning process is Continuity and Change (p. 75); the suggested skill is 3.D, explain how claims or evidence support, modify, or refute a source\'s argument.',
           'KC-4.3.I.B: many states, such as the Mughal and Ottoman empires, accommodated the ethnic and religious diversity of their subjects or used the contributions of different groups; in other cases states suppressed diversity or limited certain groups\' roles. KC-4.2.III.A: imperial conquests and widening global economic opportunities formed new political and economic elites, including the Qing transition and the casta system. KC-4.2.III.B: the power of existing elites fluctuated as they confronted increasingly powerful monarchs.',
@@ -125,6 +134,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          '4.6: who pushed back',
+          'Versailles returns on slide 17',
+          'Ask: whose power shrinks?'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: the Parlement of Paris and the nobles (the Fronde), peasants and Cossacks (Razin), the Marathas, Njinga, the Pueblos, the Wampanoag, maroons, the Stono rebels; Versailles, the devshirme, salaried officials, tax collectors who answered to the ruler; Indigenous workers under the encomienda or the mit\'a, enslaved Africans.',
@@ -142,6 +157,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'A Rajput ruler bows to the emperor Akbar in 1569, painted for Akbar\'s own history of his reign, about 1590 to 1595.',
       notes: {
         minutes: 1,
+        keys: [
+          'Real painting: Rajput ruler bows to Akbar, 1569',
+          'Made for Akbar’s own history',
+          'Conquered first, then honored',
+          'Predict: why welcome Hindu rulers?'
+        ],
         land: [
           'The picture is a real painting: "Rai Surjan Hada making submission to Akbar," from the Akbarnama, the official history of Akbar\'s reign, designed by Mukund and painted by Shankar, about 1590 to 1595 (Victoria and Albert Museum, IS.2:75-1896). It shows the Rajput ruler of the fortress of Ranthambhor bowing to Akbar in 1569, after a hard-fought siege; the fortress is on the hill behind. Akbar commissioned the book, so the painting shows the event as he wanted it seen. Rajput rulers came into the empire by force and by welcome together: conquered or pressured first, then honored, married into and given high ranks.',
           'The question is the learning objective in a ninth grader\'s words: who could belong (KC-4.3.I.B), who could rise (KC-4.2.III.A), and who got squeezed (KC-4.2.III.B).'
@@ -158,6 +179,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-7-changing-social-hierarchies-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Sort each case: continuity or change',
+          'One empire can flip: Akbar, then Aurangzeb',
+          'Q3: does evidence support Busbecq?',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Who Belongs, Who Rises" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who sort each case as continuity or change, and who notice that one empire could change its own policy (Akbar and Aurangzeb).',
@@ -182,6 +210,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Continuity first: kings, nobles, most at bottom',
+          'Nobody built a society of equals',
+          'Three branches = the three Key Concepts',
+          'Why: states needed soldiers, taxes, loyalty'
+        ],
         land: [
           'The learning objective asks how categories were "maintained or have changed." Start with what was maintained, because students forget it: every society in this course ranked people, and between 1450 and 1750 almost every state was still ruled by a hereditary monarch with privileged nobles beneath him. Nobody built a society of equals.',
           'The three branches are the three Key Concepts in order: KC-4.3.I.B (who belongs), KC-4.2.III.A (new elites), KC-4.2.III.B (old elites squeezed). The slide carries no single Key Concept band because it spans all three; the learning objective sits on it instead.',
@@ -199,6 +233,12 @@ window.BEHISTORICAL_TEACHING = {
       visual: { url: '../assets/images/instructional-maps/topic-4-7.svg', alt: 'World map with labeled dots at England, Versailles, Spain and Portugal, Salonica, Anatolia, Russia, Mughal India, Beijing and Mexico City, each with a date, shaded in three colors explained in the key' },
       notes: {
         minutes: 1,
+        keys: [
+          'Gold: who could belong',
+          'Plum: new elites',
+          'Green: old elites squeezed, or winning',
+          'Spread across the joined-up world'
+        ],
         land: [
           'The course\'s own instructional map, rebuilt for this story. Dots mark regions, not borders. Gold: who could belong (Spain and Portugal pushing Jews out, Salonica taking refugees in, Mughal India\'s jizya ended and restored). Plum: new elites (the Qing banners in Beijing, the casta ranking in Mexico City). Green: old elites squeezed, or winning (Anatolia\'s timars, Russia\'s Table of Ranks, Versailles, England in 1688).',
           'Point out the spread: Europe, Southwest Asia, South Asia, East Asia and the Americas. These changes were happening across the joined-up world of Unit 4.'
@@ -219,6 +259,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Spain 1492: convert or leave',
+          'Portugal 1497: forced baptism',
+          'Say "tens of thousands"',
+          'Ottomans took refugees in: Salonica',
+          'Many went elsewhere too',
+          'Skip the Bayezid quote: later embroidery'
+        ],
         land: [
           'On 31 March 1492 Ferdinand and Isabella ordered Jews who would not convert to leave their kingdoms by the end of July (the Alhambra Decree). Estimates of how many left run from about 40,000 to 200,000, and estimates of converts vary too; historians disagree about which group was larger (Henry Kamen: about 40,000 left and 50,000 were baptized; Joseph Pérez: most chose to leave). Say "tens of thousands."',
           'Portugal: Manuel I\'s decree of December 1496 ordered Jews out; in 1497 most were baptized by force instead of being allowed to leave.',
@@ -244,6 +292,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Christians and Jews: protected, not equal',
+          'Own leaders ran family law, schools',
+          'Limits: jizya, courts, churches, top posts',
+          'No tidy "millet system" chart',
+          'Real painting: Armenian wedding, Istanbul'
+        ],
         land: [
           'Under Islamic law, Christians and Jews were protected subjects (dhimmis). In the Ottoman Empire their own religious authorities ran family law, worship, schooling and charity, and answered to the state for order and taxes. This agrees with Topic 3.2\'s chapter.',
           'Do not teach the "millet system" as one tidy empire-wide chart; that picture is largely a nineteenth-century formalization read backward (3.2 chapter). Arrangements were made community by community and city by city.',
@@ -268,6 +323,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Akbar ended the jizya, 1564',
+          'Married into Rajput houses; high ranks',
+          'Why: he needed Rajput armies, Hindu loyalty',
+          'Aurangzeb brought the jizya back, 1679',
+          'Many Hindu officers stayed'
+        ],
         land: [
           'Akbar ruled 1556 to 1605. He abolished the jizya in 1564 (agrees with the 3.2 and 3.4 chapters). In 1562 he married a daughter of Raja Bharmal of Amber; the Rajput rulers of Amber became pillars of the empire. Man Singh of Amber reached a rank (mansab) of 7,000, the highest open to anyone but the emperor\'s sons (Wikipedia, "Man Singh I"; e-PG Pathshala module on the mansabdari system).',
           'Why: Akbar needed Rajput armies and the loyalty of the Hindu majority. This is the CED\'s "utilize the ... military contributions of different ... groups" as much as "accommodate."',
@@ -286,6 +348,14 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'A wealthy mother receives visitors after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.',
       notes: {
         minutes: 2,
+        keys: [
+          'A woman’s status depended on class',
+          'Top: Hürrem and Kösem held real power',
+          'Towns: women used courts, owned property',
+          'Law still unequal: inheritance, testimony',
+          'Enslaved women: almost no say',
+          'Vanmour likely imagined this room: say so'
+        ],
         land: [
           'The picture: Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737 (Rijksmuseum SK-A-2003). The museum describes visitors received in the house of a wealthy family after a birth: coffee brewing on the brazier in the middle, "an enslaved woman" on the left already making sherbet, rosewater and perfume for the guests, and cloths on the walls that were the visitors\' gifts. Vanmour painted for European buyers, and a European man probably would not have entered this room; it is likely his reconstruction from what he was told and saw elsewhere. Say so.',
           'Women at the top: Hürrem began as an enslaved woman in the palace and became Suleiman\'s wife; she paid for the Haseki Sultan complex in Istanbul (mosque 1538 to 1539, school, soup kitchen, and a hospital by 1550 to 1551). Kösem was regent for her young son Murad IV (from 1623) and her grandson Mehmed IV (1648 to 1651), and a powerful adviser to her adult son Ibrahim (1640 to 1648); she was killed in 1651.',
@@ -309,6 +379,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Manchus took Beijing, 1644: a small minority',
+          'New elite: the privileged banners',
+          'Limits on Han: queue, paired posts, palisade',
+          'Continuity: exams, Confucian officials',
+          'Never "banned Manchu-Han marriage"'
+        ],
         land: [
           'The Manchus, whose ruler Hong Taiji had named the dynasty Qing in 1636, took Beijing in 1644 and began to rule China. They were a small minority ruling a Han majority; no population figure is given on the slide.',
           'The banners: hereditary military units of Manchus, Mongols and Han who joined the Manchus before 1644. Bannermen received state stipends, grain and housing in garrison quarters, and had legal privileges ordinary Han did not (Wikipedia, "Eight Banners"). In 1648 Manchus were a minority inside the banners themselves.',
@@ -327,6 +404,12 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Painted in 1662, eighteen years after the Qing emperor entered Beijing: banner horsemen at one of the celebrations held for him.',
       notes: {
         minutes: 1,
+        keys: [
+          'Real handscroll, 1662, by a Manchu artist',
+          'Banner riders celebrate the conquest',
+          'Riding and archery: the banner skills',
+          'Find the Plain Yellow Banner label'
+        ],
         land: [
           'The picture: Nardunbu, a Manchu artist, "Horsemanship Competition for the Shunzhi Emperor," a handscroll dated 1662 (Metropolitan Museum of Art, 2002.328). The Met describes it as recording one of the celebrations that accompanied the Shunzhi emperor\'s (r. 1644 to 1661) entry into Beijing after the fall of the Ming, among the earliest known Qing court paintings and probably a preparatory sketch; the riders belong to the three highest-ranking of the eight banners. It was painted in 1662, after Shunzhi\'s death, eighteen years after the event. This section shows a rider standing on a galloping horse playing a flute, and rows of men carrying triangular flame-edged banners. The yellow label on the right reads "Commander of the Plain Yellow Banner" (正黃旗總帥), one of the eight banners. The other label names the stunt: standing on the horse, playing the flute.',
           'Riding and archery were the Manchu skills the banners were built on; displaying them for the emperor celebrated the conquest elite.',
@@ -352,6 +435,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Conquest mixed Spaniards, Indigenous, Africans',
+          'Ranked by birthplace and ancestry',
+          'Peninsulares held the top offices',
+          'Creoles: rich, resented Spanish-born officials',
+          'Enslaved people still had some legal rights',
+          'Labor is 4.4; this slide is rank'
+        ],
         land: [
           'KC-4.2.III.A names "the rise of the Casta system" in the Americas. Conquest threw together Spaniards, Indigenous peoples and Africans, and their children; colonial society ranked people by ancestry (the casta categories), and among those counted as Spanish, men born in Spain were favored for the highest offices. In law, Spaniards born in Spain and in the Americas were both "españoles" (Handbook of Texas, "Peninsular").',
           'Peninsulares: the viceroys of New Spain were almost always Spanish-born; Juan de Acuña (viceroy 1722 to 1734), born in Lima, is described as only the second creole to hold the post.',
@@ -370,6 +461,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'In Spanish, the label says: from a mestizo and an Indian woman comes a coyote. Most casta labels never appear in official records.',
       notes: {
         minutes: 2,
+        keys: [
+          'Real painting, about 1715 to 1720',
+          'A chart for elites, not a census',
+          'Most labels never in official records',
+          'But ancestry still opened and closed doors'
+        ],
         land: [
           'The picture: Juan Rodríguez Juárez, "De Mestizo, y de India Produce Coyote," oil on canvas (Hispanic Society of America, LA2122), dated about 1715 on Wikimedia Commons and about 1720 by the Hispanic Society, which links it to the viceroy Duke of Linares\'s commission; say "about 1715 to 1720." It is from one of the earliest known casta series; Rodríguez Juárez\'s sets of about 1715 are among the first (Ilona Katzew, Casta Painting, 2004). The inscription at top right reads "D MESTIZO Y D INDIA PRODUCE COYOTE": from a mestizo and an Indian woman comes a coyote.',
           'Read it as a genre. Casta paintings showed colonial society as an orderly chart, sorted and labeled, for elite viewers, many of them in Spain. Most of the long lists of labels in the paintings never appear in official records; the census used only a few categories (Katzew). In daily life, how a person was recorded could change with wealth, occupation, clothing and reputation.',
@@ -395,6 +492,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Lines show direction, not measured power',
+          'Sipahis fell: timars became tax farms',
+          'Why: armies needed guns and cash',
+          'Tax farmers, provincial families rose',
+          'Say "changed shape," not "decline"'
+        ],
         land: [
           'The lines are a teaching sketch of direction, not a measurement; the footer says so. They teach half of "fluctuated" in KC-4.2.III.B: old elites fell and other groups rose in their place. Slide 17 adds England, where an old elite won.',
           'Sipahis: a timar was the right to collect the taxes of a piece of land in return for service as a cavalryman; it was not the holder\'s property and was not supposed to pass automatically to his son (Halil İnalcık, The Ottoman Empire: The Classical Age). From the late 1500s, wars needed infantry with guns paid in cash, and the state turned more and more timar land into tax farms; from 1695 it sold them for life (malikane). The Topic 3.2 and 3.4 chapters tell the same move, "from timar-holding cavalry to tax farming and provincial notables."',
@@ -420,6 +524,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Peter replaced the boyar council, 1711',
+          'Shaving, Western clothes, lifelong service',
+          'Table of Ranks 1722: rank by service',
+          'Commoners could earn nobility',
+          'Lost independence; kept privilege and serfs'
+        ],
         land: [
           'Boyars were Russia\'s great noble families; they sat on the tsar\'s council (the Boyar Duma) and competed for posts by family precedence (mestnichestvo), abolished in 1682.',
           'Peter the Great (co-tsar from 1682, sole ruler from 1696, died 1725) replaced the council of boyars with a Senate he appointed in 1711; ordered officials and nobles to shave and wear Western clothing, with a beard tax for those who would not (sources date the decree 1698 or 1705, so no year is given); and required noblemen to serve the state for life. Compulsory noble service ended in 1762.',
@@ -444,6 +555,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          '"Fluctuated": down in France, up in England',
+          'France: intendants; Versailles 1682',
+          'Nobles kept titles, land, tax freedom',
+          'England 1688: nobles invited William',
+          'Bill of Rights 1689 limited the king'
+        ],
         land: [
           'France: after the Fronde (4.6), Louis XIV sent royal officials, the intendants, to run the provinces (they had been withdrawn during the Fronde and were restored after it), and on 6 May 1682 moved his court and government to Versailles, where great nobles competed for his favor instead of raising armies at home. Historians now describe this as collaboration more than taming: the king kept the great nobles loyal with offices, pensions and army commands (William Beik, Past & Present, 2005). Topic 3.2 shows Versailles as a tool of rule; this slide shows it from the nobles\' side.',
           'Nobles kept their titles, their land and their exemption from the main direct tax, the taille (the capitation of 1695 did tax them, which is why the slide says "tax freedom" without "all"). What they lost was the power to defy the king.',
@@ -466,6 +584,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Habsburg ambassador at Suleiman’s court, 1555',
+          'Claim: Ottomans rise by merit; Europe by birth',
+          'He wanted reforms at home: bias',
+          'Slide 19 tests the first half'
+        ],
         land: [
           'Charles Thornton Forster and F. H. Blackburne Daniell, trans., The Life and Letters of Ogier Ghiselin de Busbecq (London, 1881), vol. I, pp. 154 to 155, the First Turkish Letter, describing his audience with Suleiman at Amasya in 1555. Public domain. The quotation joins three sentences from one passage, with the cuts shown.',
           'Busbecq (1522 to 1592), a Flemish noble, was ambassador at the Ottoman court from 1555 to 1562 for the Habsburg ruler Ferdinand I, then King of the Romans and from 1558 Holy Roman Emperor. The Fordham Internet History Sourcebook\'s headnote: "Because Busbecq was trying to bring about reform at home, he did not dwell on the very real problems with Ottoman government."',
@@ -491,6 +615,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Skill 3.D: support, modify, refute',
+          'Supports: devshirme boys became viziers',
+          'Modifies: conversion required; jizya; dynasty',
+          'Ask: true for whom?',
+          'Most strong answers modify'
+        ],
         land: [
           'The suggested skill, 3.D: explain how claims or evidence support, modify, or refute a source\'s argument. Support: the evidence fits. Modify: it is true, but only for some people, places or times. Refute: the evidence shows the argument is wrong.',
           'Supports: devshirme recruits rose to the highest offices; Sokollu Mehmed Pasha, grand vizier from 1565 to 1579, began as a devshirme boy from Bosnia (Topic 3.2).',
@@ -515,6 +646,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Accommodation is not equality',
+          'Casta: argued over, not fixed',
+          'Old elites lost some powers, kept others',
+          'Do not swing to the opposite myth'
+        ],
         land: [
           'Row 1: accommodation is not equality. Do not swing to the opposite myth either: the arrangement was far more accommodating than Spain\'s in 1492.',
           'Row 2: the casta paintings show a fixed chart; colonial records show a society where categories were argued over and could change. But do not swing to "casta did not matter": ancestry still opened and closed doors.',
@@ -536,6 +673,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Show it, hide it, redraw it',
+          'Stayed: rulers, nobles, most at the bottom',
+          'Changed: who belongs, new elites, old squeezed',
+          'One named case under each change'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one case under each change.',
           'The three changes are the three Key Concepts in order, and the continuity is the "maintained" half of the learning objective. The slide carries no single Key Concept band because it spans all three.',
@@ -555,6 +698,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Weak: no society, group, continuity or cause',
+          'Need: what stayed, what changed, why',
+          'Pairs fill the frame aloud',
+          'No finished claim on the board'
+        ],
         land: [
           'The weak claim names no society, no group, no continuity and no cause. It fits any three centuries in history, which is why it earns no credit.',
           'The frame asks for the whole continuity-and-change move: what stayed, what changed, and why.',
@@ -571,6 +720,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'Skill 3.D on Busbecq’s claim about Europe',
+          'Evidence: Versailles, Table of Ranks, bought offices',
+          'Debrief after: Table of Ranks hurts most'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources.',
           'It models the move on the first half of Busbecq\'s argument (slide 19), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and French offices, such as judges\' seats in the Parlement of Paris, that families could buy and that could bring noble rank. Students decide whether each supports, modifies or refutes it.',
@@ -587,6 +741,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
       notes: {
         minutes: 0,
+        keys: [
+          'Optional: early finishers or diagnostic',
+          'One state welcomed, one pushed out',
+          'What each state gained',
+          'Give feedback in the room'
+        ],
         land: [
           'Checkpoint 1 is not required for 4.7. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'It asks for one state that welcomed or used a group and one that pushed out or limited a group, with what each state gained (KC-4.3.I.B). Give feedback in the room: on an alternating block nothing carries over.'
@@ -602,6 +762,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'One claim, two sources',
+          'Six real objects',
+          'Limits: Vanmour for Europeans; casta an ideal',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Six real objects: the Akbarnama painting of a Rajput ruler submitting to Akbar; Vanmour\'s Armenian wedding and his lying-in room; the banner handscroll dated 1662; the casta painting of about 1715 to 1720; and Martin\'s Versailles of 1722.',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. Vanmour painted for European buyers and probably could not enter a wealthy woman\'s rooms; the casta painting is an elite\'s ideal. Both are good limits to name.',
@@ -618,6 +784,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
       notes: {
         minutes: 10,
+        keys: [
+          'A new elite and how it was made',
+          'An old elite and how it changed',
+          'One thing at the top that stayed',
+          'Revised answer goes to Canvas',
+          'Unfinished = homework'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for one new elite (the Qing banners, or peninsulares and creoles in the casta ranking) and how conquest or new trade made it, one old elite (Ottoman sipahis, Russian boyars or French nobles) and how its power changed as rulers grew stronger, and one thing about the top of society that stayed the same. That is KC-4.2.III.A and KC-4.2.III.B, run through continuity and change. KC-4.3.I.B is the First & 10\'s and Checkpoint 1\'s.',
@@ -633,6 +806,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Next: trade, work and the ladder itself all moved between 1450 and 1750. Which change mattered most, and what stayed the same?',
       notes: {
         minutes: 2,
+        keys: [
+          'Casta painting: the ladder as if fixed',
+          'The sentence answers the objective',
+          'Hand off to 4.8: which change mattered most?'
+        ],
         land: [
           'The picture: the casta painting by Juan Rodríguez Juárez, about 1715 to 1720 (Hispanic Society of America): a family sorted and labeled, the ladder painted as if it could never move.',
           'This sentence answers the learning objective: categories maintained (the ladder) and changed (who stood where), with the cause (rulers who conquered, traded and centralized).',

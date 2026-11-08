@@ -96,6 +96,15 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Continuity and Change, with Argumentation 6.C. Every case asks: which economic development, which workers, what did it do to society, and what stayed the same?',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: follow the trade to the people',
+          'Every case ends at a social structure',
+          'One chain: ships, demand, workers, society',
+          'Teach continuity as hard as change',
+          'Model 6.C: led to, same pattern, contrast',
+          'No reteaching: every case is evidence',
+          'Three myths, slide 19'
+        ],
         land: [
           'CED pp. 90 to 91. One learning objective, N: explain how economic developments from 1450 to 1750 affected social structures over time. The reasoning process is Continuity and Change (p. 75); the suggested skill is 6.C, use historical reasoning to explain relationships among pieces of historical evidence. No thematic focus and no illustrative examples are printed for 4.8.',
           'The Key Concepts are the CED\'s "Review: Unit 4 Key Concepts": KC-4.1 (the hemispheres joined, trade transformed, a significant social impact); KC-4.1.II and II.A (borrowed knowledge, new tools, ships and wind knowledge made ocean trade possible); KC-4.2 (production still centered on agriculture, but major changes in labor, manufacturing, gender and social structures); KC-4.2.II (the demand for labor intensified: peasant agriculture grew and changed, plantations expanded, the Atlantic slave trade developed and intensified); KC-4.3 (empires shaped and were shaped by the peoples they ruled); KC-4.3.III.ii (economic disputes led to rivalries and conflict).',
@@ -123,6 +132,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          '4.7 elites; China’s silver; 4.4 labor',
+          'Prompts return on slides 7, 9, 16',
+          'Today joins money to people'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: the Qing banners, peninsulares and creoles; sipahis, boyars, French nobles. China, because the Ming collected most taxes in silver and China mined little of its own. The mit\'a, encomienda, hacienda labor, indentured servitude, chattel slavery.',
@@ -140,6 +155,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Who worked, who ruled, how families lived, and what stayed the same?',
       notes: {
         minutes: 1,
+        keys: [
+          'Real engraving: French Antilles sugar works, 1667',
+          'The objective in ninth-grade words',
+          'Predict: who worked, who got rich'
+        ],
         land: [
           'The picture is a real engraving: a sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, a French missionary, in his history of the French Caribbean islands (Paris, 1667). Its numbered key names the mill, the furnaces and kettles, the other buildings of the works, and the huts of the enslaved workers (verified for Topic 4.4).',
           'The question is the learning objective in a ninth grader\'s words: "economic developments" is the new global economy; "social structures" is who worked, who ruled, and how families lived; "over time" is how much changed and what stayed the same.'
@@ -156,6 +176,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-8-continuity-and-change-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Keep two lists: changed, stayed',
+          'Follow each case past trade to people',
+          'Q2: relate evidence to Ligon; Q3: a thesis',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Follow the Trade to the People" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who keep both lists, and who follow a case past the trade to the people.',
@@ -180,6 +207,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Retrieval from 4.1, not a reteach',
+          'Compass: used in China first',
+          'Astrolabe: Greek, refined by Islamic astronomers',
+          'Lateen sail: Roman Mediterranean, Islamic seas',
+          'Where the economic chain starts'
+        ],
         land: [
           'Retrieval from 4.1, not a reteach. Sailors in China steered by a magnetized needle by about 1100, and Europeans were writing about the compass by about 1190; historians debate whether it traveled west or was found again in Europe, so say "used in China first", not "invented in China and carried west". The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Muslim and Jewish astronomers in Toledo built tables of the sky; Abraham Zacuto\'s almanac, printed in Portugal in 1496, descends from them. The lateen sail was used on the Mediterranean since Roman times and was common across the seas of the Islamic world.',
           'KC-4.1.II: knowledge from the Classical, Islamic and Asian worlds spread, facilitating European technological developments. This is where the economic chain starts.'
@@ -204,6 +238,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Coming back turned voyages into trade',
+          'Caravel explores; carrack hauls',
+          'Fluyt (about 1600): cheap bulk shipping',
+          'Volta do mar: swing out to the westerlies'
+        ],
         land: [
           'KC-4.1.II.A: new tools, new ship designs and better knowledge of wind and current patterns "made transoceanic travel and trade possible."',
           'The caravel was small and light, the explorer; the carrack was large, with room for months of food, water, cargo and guns. The Dutch fluyt, designed around 1600, carried a large cargo with a small, cheap crew and made shipping goods much cheaper; it served mostly Europe\'s own bulk trades (verified for 4.1), though the VOC also sailed fluyts in Asian waters (Tasman\'s Zeehaen of 1642 was one); the ocean workhorses of the 1400s and 1500s were the caravel and the carrack.',
@@ -229,6 +269,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Three developments: demand, silver, rulers’ tools',
+          'Demand: sugar, tobacco, cotton, silk',
+          'Silver: Potosí, Zacatecas, Manila, then China',
+          'Tools: mercantilist laws, chartered companies',
+          'Now follow them to the people'
+        ],
         land: [
           'KC-4.1: the interconnection of the hemispheres, made possible by transoceanic voyaging, "transformed trade and had a significant social impact on the world." This slide is the trade half; the rest of the deck is the social half.',
           'New demand: sugar and tobacco from American plantations (4.3); Indian cotton cloth bought by Asian, African and European buyers, and Chinese silk (4.5).',
@@ -253,6 +300,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Economic disputes became conflicts (4.5)',
+          'Diu 1509: the spice trade',
+          'Tondibi 1591: gold and salt',
+          'Ambon 1623: an execution, not a battle',
+          'Anglo-Dutch Wars: trade and shipping',
+          'Painting: Texel 1673, a studio copy'
+        ],
         land: [
           'KC-4.3.III.ii: economic disputes led to rivalries and conflict between states. Retrieval from 4.5.',
           'Diu, 1509: a fleet of Mamluk Egypt and the sultan of Gujarat fought the Portuguese off Diu and lost. Tondibi, 1591: Ahmad al-Mansur\'s army crossed the Sahara and defeated Songhai; gold and the salt trade were a large part of the reason (3.1 told the battle, 4.5 the motive). Ambon, 1623: VOC officials executed ten English company men, nine Japanese soldiers in VOC service and a Portuguese man, accusing them of a plot; it was an execution, not a battle. The Anglo-Dutch Wars: 1652 to 1654, 1665 to 1667 and 1672 to 1674, largely over trade and shipping.',
@@ -277,6 +332,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'More demand meant more work',
+          'New: slave trade grew to 2.5 million, 1701 to 1750',
+          'Old put to new work: the mit’a',
+          'Old work, more of it: peasants, artisans',
+          'Say "estimate"'
+        ],
         land: [
           'KC-4.2.II: "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified."',
           'Plantations: historians estimate that fewer than 300,000 Africans (277,505) were forced onto ships for the Americas in the whole 1500s, and more than 2.5 million (2,560,634) in 1701 to 1750 (Slave Voyages estimates, verified for 4.4). Say "estimate."',
@@ -295,6 +357,12 @@ window.BEHISTORICAL_TEACHING = {
       visual: { url: '../assets/images/instructional-maps/topic-4-8.svg', alt: 'World map with labeled dots at Western Europe, Mexico City, Barbados, Brazil, Potosí, Asante, West Central Africa, India, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key' },
       notes: {
         minutes: 1,
+        keys: [
+          'Plum: forced labor, new rankings',
+          'Gold: trade changes families and states',
+          'Green: old work grows',
+          'Every color sits at one end of one trade'
+        ],
         land: [
           'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Plum: forced labor and new rankings build new societies (Barbados, Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (Asante, inland from the Gold Coast, and West Central Africa). Green: old work grows (western Europe\'s spinners, India\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
           'Point out that every color sits at one end of the same trade.'
@@ -320,6 +388,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Ligon arrived 1647; sugar just starting',
+          'Servants and enslaved Africans came together',
+          'Not an overnight switch',
+          'Drax: £300 to a fortune',
+          '1679: about 37,700 enslaved; ~20,000 whites (estimate)',
+          'No Barbados picture: slide 3 is French'
+        ],
         land: [
           'Richard Ligon, an English royalist, sailed in June 1647 and landed on Barbados in September 1647. He found that "the great work of Sugar-making, was but newly practised," though "many Sugar-works" were already "set up, and at work"; with plants from "Fernamlock," Pernambuco in Brazil. He lived on, and helped run, a sugar plantation that his traveling companion Thomas Modyford had bought a half share of (Ligon\'s own account: "Colonel Modiford was to pay for the Moity of this plantation"), and stayed about three years; he wrote his book in a London debtors\' prison (his dedication is dated 12 July 1653) and published it in 1657.',
           'Servants: most were poor people from England, Scotland and Ireland bound to work for a set number of years, many to pay for their voyage. Historians (Russell Menard) show that servants and enslaved Africans arrived together through the 1640s and 1650s; the island did not switch overnight.',
@@ -342,6 +418,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Three sorts: masters, servants, slaves',
+          'Servants: five years. Slaves: forever, children too',
+          'Inherited status: the line race was built on',
+          'Ligon helped run a plantation: his bias',
+          '"Greater care" is a planter’s claim'
+        ],
         land: [
           'Richard Ligon, A True & Exact History of the Island of Barbados (London, 1657). The 1657 spelling: "The Iland is divided into three sorts of men, viz. Masters, Servants, and slaves. The slaves and their posterity, being subject to their Masters for ever, are kept and preserv\'d with greater care then the servants, who are theirs but for five yeers, according to the law of the Iland." The slide joins the sentence with the cut shown and modernizes the spelling. "Viz." means "namely"; "posterity" means children and grandchildren.',
           'The cut part, "are kept and preserved with greater care than the servants," is a planter\'s claim. Ligon\'s point of view: an insider who lived on and helped run a plantation, writing for English readers he hoped would invest in sugar. The Primary Source module gives students the whole sentence and asks how his position shapes it.',
@@ -359,6 +442,13 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'A casta painting from Mexico, about 1715 to 1720: a colonial society that ranked people by their ancestry, with Spaniards at the top.',
       notes: {
         minutes: 1,
+        keys: [
+          'Casta painting, about 1715 to 1720',
+          'An elite’s ideal, not a census',
+          'Ancestry still opened and closed doors',
+          'Empire shaped its peoples; they shaped it',
+          'Compare with Barbados aloud, not on the board'
+        ],
         land: [
           'The picture: Juan Rodríguez Juárez, "De Mestizo, y de India Produce Coyote," about 1715 to 1720 (Hispanic Society of America, LA2122), verified for 4.7. The inscription reads: from a mestizo and an Indian woman comes a coyote.',
           'Read it as 4.7 taught it: an elite\'s ideal of an orderly society, not a census. But ancestry still opened and closed doors, and silver, land and trade made many creole families rich (KC-4.2.III.A, 4.7).',
@@ -383,6 +473,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'About two of three captives were male',
+          'More women than men in West Central Africa',
+          'Women farmed more: say "historians argue"',
+          'Asante rose on gold and guns, 1701',
+          'Afonso protested and also sold captives'
+        ],
         land: [
           'Retrieval from 4.5: about two of every three captives in the Atlantic trade were male (Slave Voyages; Eltis and Engerman). In parts of Africa, especially West Central Africa, that left communities with more women than men. Historians argue that women did more of the farming and that more women and girls were enslaved inside Africa; some argue polygyny became more common, and others find that evidence thin (Manning 1990; Fenske 2015). Say "historians argue."',
           'States, from 4.4: Asante rose around 1700 by controlling gold and buying guns from Dutch and English traders, and beat Denkyira at Feyiase in 1701. In 1526 Afonso I of Kongo complained that Portuguese traders were carrying off "the children of our nobles and vassals as well as relatives of ours" (Luís Madureira\'s translation, in John Thornton\'s 2023 book on Afonso, the text Topic 4.4\'s Primary Source uses); Afonso himself sold war captives and Kongo had enslaved people of its own.',
@@ -405,6 +502,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Most people still farmed',
+          'Old work, more of it, for far buyers',
+          'China silk; India cotton; Dutch spinning',
+          'Done at home, as a family',
+          'Much spinning by women and girls'
+        ],
         land: [
           'KC-4.2 begins with a continuity: "the world\'s productive systems continued to be heavily centered on agriculture." Most people in 1750, as in 1450, grew food. For cloth and silk the CED\'s words are Topic 4.5\'s KC-4.2.II.A: peasant and artisan labor "continued and intensified in many regions as the demand for food and consumer goods increased": old work, more of it. (KC-4.2.II\'s "traditional peasant agriculture increased and changed in nature" is about farming; the silk families\' mulberry trees and silkworms are its closest case here.)',
           'China: weaving on a draw loom, from the Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696 with poems by the Kangxi emperor (Metropolitan Museum of Art). Peasant families raised silkworms and wove silk; some of it went to Manila for American silver.',
@@ -429,6 +533,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Europe joined the old world, not replaced it',
+          'Asian merchants kept trading',
+          'Older slavery in Africa went on',
+          'Inherited rulers and nobles stayed on top',
+          'The peoples shaped the empires too'
+        ],
         land: [
           'From 4.4: Gujarati, Swahili Arab, Omani and Javanese merchants kept the Indian Ocean trading; much of it stayed intra-Asian trade, and European merchants often made money by joining it. Older forms of slavery went on in Africa through the whole period.',
           'From 4.7: almost everywhere a ruler who inherited the throne still sat on top, and old nobles kept most of their privileges even when stronger kings squeezed them.',
@@ -451,6 +562,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Skill 6.C: relationships, not lists',
+          'Led to: a chain of causes',
+          'Same pattern: two places, one development',
+          'Contrast: a change beside a continuity',
+          'Say the relationship word aloud'
+        ],
         land: [
           'The suggested skill, 6.C: use historical reasoning to explain relationships among pieces of historical evidence. A list of evidence is not an argument; the relationships are.',
           'Led to: a chain of causes, often across places (causation inside a continuity-and-change answer). Same pattern: two places showing one development (it corroborates). A contrast: a change beside a continuity, which is what lets an answer say how much changed. The slide\'s contrast (the mit\'a against an Indian weaver) is the Skill Builder\'s model; the weaver is not in the Skill Builder\'s practice set, so no practice pair has a printed answer.',
@@ -476,6 +594,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Sugar demand → plantations → captives → villages',
+          'The arrow words are the argument',
+          'Read it aloud with the arrow words',
+          'Students add one more link'
+        ],
         land: [
           'This is the "led to" relationship drawn out: four pieces of evidence from four places, each linked to the next by a reason. The linking words on the arrows are what turn a list into an argument.',
           'Every link is from earlier topics: European demand for sugar (4.3), Caribbean plantations (4.3, 4.4), the slave trade\'s scale (4.4), the sex ratio of the trade and its effect in West Central Africa (4.5).',
@@ -499,6 +623,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Not everything changed, and not nothing',
+          'Europeans joined Asian markets, and still mattered',
+          'The slave trade changed Africa too',
+          'Name the opposite mistake each time'
+        ],
         land: [
           'Row 1: the continuity is half the answer. Do not swing to "nothing changed": the plantation Americas and Atlantic Africa changed enormously.',
           'Row 2: European ships became one more carrier inside Asian markets; Dutch ships earned money from trade between Asian ports (4.5). Do not swing to "Europeans did not matter": the Portuguese taxed shipping with the cartaz and the VOC took ports.',
@@ -523,6 +653,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Show it, hide it, redraw it',
+          'Ships → trade → workers → society',
+          'Continuity: farming, old work, kings on top',
+          'One named case under each box'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one case under each box and the continuity line underneath.',
           'The chain is the cause (KC-4.1, II, II.A, KC-4.2.II); the last box is the change (KC-4.2, KC-4.3); the footer is the continuity (KC-4.2\'s "continued to be heavily centered on agriculture"). The slide carries no single Key Concept band because it spans all of them.',
@@ -542,6 +678,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Reasoning: continuity and change, causes inside',
+          'Weak: no development, place, continuity, reason',
+          'Pairs fill the frame, then peer revise',
+          'No finished thesis on the board'
+        ],
         land: [
           'The CED\'s sample activity (p. 77) starts here: which reasoning process best organizes an answer to "how economic developments led to changes in social structures, 1450 to 1750"? The CED\'s own reasoning process for 4.8 is Continuity and Change, with causes inside it: the "because" is causation, and "changed ... while ... stayed the same" is continuity and change.',
           'The weak thesis names no development, no place, no continuity and no reason. It fits any three centuries in history, which is why it earns no credit.',
@@ -558,6 +700,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-8-continuity-and-change.html#modules' },
       notes: {
         minutes: 8,
+        keys: [
+          'Skill 6.C: relate two pieces of evidence',
+          'Name it: led to, same pattern, contrast',
+          'Debrief after: "same pattern" is hardest'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 6.C Argumentation: explain relationships among pieces of historical evidence.',
           'It models the three relationships (the sugar chain, spinners in Holland and weavers in India, the mit\'a against an Indian weaver), ends with a sentence frame rather than a finished sentence, then gives students a new set: Potosí and the mit\'a, China\'s silver taxes, the casta ranking, and West Central Africa\'s villages. Students explain how two of them relate, and name the relationship.',
@@ -574,6 +721,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-8-continuity-and-change.html#modules' },
       notes: {
         minutes: 0,
+        keys: [
+          'Optional: early finishers or diagnostic',
+          'Development → workers → social change',
+          'Give feedback in the room'
+        ],
         land: [
           'Checkpoint 1 is not required for 4.8. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'It asks for one economic development followed to the workers it needed and to one change in a social structure (KC-4.2.II, KC-4.2). Give feedback in the room: on an alternating block nothing carries over.'
@@ -589,6 +741,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-8-continuity-and-change.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'One change card, one continuity card',
+          'Then connect them',
+          'Limits: made for Europeans; casta an ideal',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Six real objects, all verified for earlier Unit 4 topics: the Potosí woodcut (1553); the sugar works engraved for Du Tertre (1667); the canoes at Elmina and Manfroe (printed 1732); the casta painting (about 1715 to 1720); the Gengzhitu silk-reeling scene (1696); and the Indian palampore (early 1700s).',
           'Observation before inference: what the object shows, then what it suggests about a social structure, then what it cannot tell you. European engravings of Africa and the Caribbean were made for European readers; the casta painting is an elite\'s ideal. Both are good limits to name.',
@@ -605,6 +763,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-8-continuity-and-change.html#modules' },
       notes: {
         minutes: 12,
+        keys: [
+          'Thesis with a change and a continuity',
+          'Evidence from three Unit 4 topics',
+          'One sentence relating two pieces',
+          'Good practice for the Era 3 Exam',
+          'Revised answer goes to Canvas'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for a thesis that names a change and a continuity, evidence from at least three Unit 4 topics, and at least one sentence that explains how two pieces of evidence relate. That is the learning objective, run through continuity and change, with the 6.C move inside it.',
@@ -621,6 +786,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'By 1750 the oceans were joined and states were stronger than ever. That question is Unit 5.',
       notes: {
         minutes: 2,
+        keys: [
+          'Project only the hand-off: no thesis shown',
+          'Students say their own thesis aloud',
+          'Potosí: one mountain, a world economy',
+          'Hand off to Unit 5, and no further'
+        ],
         land: [
           'The picture: Potosí, the silver mountain, in a woodcut from Pedro Cieza de León\'s Crónica del Perú (Seville, 1553), with tiny figures climbing to the mine entrances (verified for 4.4). One mountain, a world economy, and the people sent to dig it.',
           'The slide projects only the hand-off, on purpose: the answer to the learning objective is each student\'s own thesis (Checkpoint 2), so no finished thesis is projected. Ask for answers aloud; the listen-for line below is one defensible thesis for the teacher only.',
