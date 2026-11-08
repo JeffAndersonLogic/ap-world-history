@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Where did the new way of making things go, and what happened to the places that made the world's goods before?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Who made the world's goods in 1750"
+          },
+          {
+            "label": "II",
+            "text": "How the factory spread"
+          },
+          {
+            "label": "III",
+            "text": "The pattern"
+          },
+          {
+            "label": "IV",
+            "text": "What changed: the shares"
+          },
+          {
+            "label": "V",
+            "text": "What continued: the old makers"
+          },
+          {
+            "label": "VI",
+            "text": "Why the share fell"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: who made the world's goods?",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read, and keep two lists.",
       "subtitle": "Changes: where goods were made, and how. Continuity: who kept making goods, and how.",
       "action": {
@@ -56,7 +97,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Before · About 1750",
+      "eyebrow": "I · Before · About 1750",
       "title": "Most goods were made by hand, most of them in Asia.",
       "footer": "Estimates by the economic historian Paul Bairoch: they show size, not exact amounts.",
       "kc": "KC-5.1.II.B",
@@ -92,7 +133,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "How It Spread · People",
+      "eyebrow": "II · How It Spread · People",
       "title": "Britain tried to keep the secret.",
       "kc": "KC-5.1.I.D",
       "template": {
@@ -122,7 +163,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "diffusion-path",
-      "eyebrow": "How It Spread · Where It Went",
+      "eyebrow": "II · How It Spread · Where It Went",
       "title": "Where the new methods went.",
       "footer": "One case at each stop, not the first arrival. Each added its own coal, water and money.",
       "kc": "KC-5.1.I.D",
@@ -163,7 +204,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "How It Spread · What Carried It",
+      "eyebrow": "II · How It Spread · What Carried It",
       "title": "Three things traveled together.",
       "footer": "Ask of every case: what carried the methods there, and what was waiting when they arrived?",
       "kc": "KC-5.1.I.D",
@@ -190,7 +231,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "How It Spread · Russia and Japan",
+      "eyebrow": "II · How It Spread · Russia and Japan",
       "title": "The last two came later, with British machines and know-how.",
       "footer": "How Japan's government pushed industry on purpose is Topic 5.6.",
       "kc": "KC-5.1.I.D",
@@ -227,7 +268,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sentence-frame",
-      "eyebrow": "Making Connections 5.A · Model",
+      "eyebrow": "III · The Pattern · Making Connections 5.A, Model",
       "title": "Find the pattern: the cases, what they share, the pattern.",
       "footer": "A pattern is what happens again and again across different cases.",
       "template": {
@@ -238,7 +279,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "Making Connections 5.A · Practice",
+      "eyebrow": "III · The Pattern · Making Connections 5.A, Practice",
       "title": "Five cases. What do they share?",
       "footer": "What carried the methods to each place? What do all five share?",
       "kc": "KC-5.1.I.D",
@@ -275,18 +316,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Find a pattern, and say it in one sentence.",
-      "subtitle": "Making Connections 5.A: list the cases, find what they share, and say the pattern.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-4-industrialization-spreads.html#modules"
-      }
-    },
-    {
       "kind": "timeline-fortunes",
-      "eyebrow": "What Changed · The Shares",
+      "eyebrow": "IV · What Changed · The Shares",
       "title": "The world's shares moved.",
       "footer": "Britain alone: under 2 percent in 1750, about a fifth by 1860.",
       "kc": "KC-5.1.II.B",
@@ -434,7 +465,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "What Continued · The Old Makers",
+      "eyebrow": "V · What Continued · The Old Makers",
       "title": "The old makers kept making.",
       "footer": "The share shrank: the rest of the world made far more, and the old makers lost buyers.",
       "kc": "KC-5.1.II.B",
@@ -486,7 +517,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "Why the Share Fell · India's Cloth",
+      "eyebrow": "VI · Why the Share Fell · India's Cloth",
       "title": "India's cloth trade turned around.",
       "footer": "Historians still argue how much each cause mattered: cheaper machine-made cloth, the rules of those in power, and older troubles.",
       "kc": "KC-5.1.II.B",
@@ -518,33 +549,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Asia stopped making things.",
-            "evidence": "It kept making them: India's hand weavers, China's farm weavers, Bombay's teak warships. Its share fell.",
-            "source": "KC-5.1.II.B"
-          },
-          {
-            "myth": "Industry spread everywhere.",
-            "evidence": "It spread to a few regions, mostly near coal or strong rivers: other parts of Europe, the United States, Russia and Japan.",
-            "source": "KC-5.1.I.D"
-          },
-          {
-            "myth": "India fell behind only because British machines were better.",
-            "evidence": "Machine-made cloth was cheaper, but the rules of those in power mattered too, and historians argue how much.",
-            "source": "KC-5.1.II.B"
-          }
-        ]
-      }
-    },
-    {
       "kind": "continuity-change",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Who made the world's goods?",
       "footer": "The factory traveled. The share moved. The old makers kept making.",
       "template": {
@@ -575,7 +581,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · AP Synthesis",
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective E",
       "template": {
@@ -592,33 +598,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "How did the factory spread, and what carried it?",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-4-industrialization-spreads.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Two sources: a change, or a continuity.",
-      "subtitle": "Choose at least two cards. For each: what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-4-industrialization-spreads.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "What changed, and what continued, in who made the world's goods?",
-      "subtitle": "Explain how the share of the world's manufacturing changed from 1750 to 1900, with two numbers; explain one cause of the change; and explain what continued in India or China, with evidence. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-4-industrialization-spreads.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you find the pattern.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Find a pattern, and say it in one sentence.",
+            "url": "../unit-5/lesson-5-4-industrialization-spreads.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-5/lesson-5-4-industrialization-spreads.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "What changed, what continued, with Socrates.",
+            "url": "../unit-5/lesson-5-4-industrialization-spreads.html#modules"
+          }
+        ]
       }
     },
     {
