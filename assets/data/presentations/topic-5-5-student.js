@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -46,8 +46,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "How did new technology change how much the world could make, and how far its goods and people could go?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Before: energy in 1750"
+          },
+          {
+            "label": "II",
+            "text": "More power"
+          },
+          {
+            "label": "III",
+            "text": "New methods"
+          },
+          {
+            "label": "IV",
+            "text": "Longer reach"
+          },
+          {
+            "label": "V",
+            "text": "More trade, more migration"
+          },
+          {
+            "label": "VI",
+            "text": "Rank the five"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: more power, new methods, longer reach",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read, and build the chain.",
       "subtitle": "Each link is a cause that made the next link possible. Watch for \"so,\" \"let\" and \"made it possible.\"",
       "action": {
@@ -57,7 +98,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Before · About 1750",
+      "eyebrow": "I · Before · About 1750",
       "title": "Energy came from things that grow, blow and flow.",
       "footer": "Until about 1900, wood and other things that grow were still the world's largest source of energy.",
       "kc": "KC-5.1.I.B",
@@ -84,7 +125,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Power · The Steam Engine",
+      "eyebrow": "II · More Power · The Steam Engine",
       "title": "A pump, then an engine that turns wheels.",
       "footer": "A mill no longer had to sit by a river. It could run on coal.",
       "kc": "KC-5.1.I.B",
@@ -120,7 +161,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "Power · The Fossil Fuels Revolution",
+      "eyebrow": "II · More Power · The Fossil Fuels Revolution",
       "title": "Machines plus fossil fuels: far more energy.",
       "footer": "Each made the other grow: engines drained deeper mines, and more coal fed more engines.",
       "kc": "KC-5.1.I.B",
@@ -143,7 +184,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "A Voice from 1865",
+      "eyebrow": "II · More Power · A Voice from 1865",
       "title": "What did coal mean to the people who used it?",
       "footer": "Jevons, a British economist, feared that Britain's cheap coal would not last.",
       "kc": "KC-5.1.I.B",
@@ -159,7 +200,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Power · Oil and a New Engine",
+      "eyebrow": "II · More Power · Oil and a New Engine",
       "title": "Then oil, and an engine that burns fuel inside itself.",
       "footer": "The internal combustion engine's big changes, to cars, trucks, tractors and airplanes, came after 1900.",
       "kc": "KC-5.1.I.B",
@@ -196,7 +237,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sentence-frame",
-      "eyebrow": "Developments and Processes 1.B · Model",
+      "eyebrow": "III · New Methods · Explain a Process, Model",
       "title": "Explain a process: the problem, the new thing, what it made possible, what followed.",
       "footer": "A process has steps. Say each one, in order.",
       "template": {
@@ -207,7 +248,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-matrix",
-      "eyebrow": "New Methods · After 1850",
+      "eyebrow": "III · New Methods · After 1850",
       "title": "The second industrial revolution: four new methods.",
       "footer": "Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well.",
       "kc": "KC-5.1.I.E",
@@ -259,7 +300,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Developments and Processes 1.B · Practice",
+      "eyebrow": "III · New Methods · Explain a Process, Practice",
       "title": "Your turn: explain the Bessemer process step by step.",
       "footer": "Say each step out loud, then write it as one sentence.",
       "kc": "KC-5.1.I.E",
@@ -286,18 +327,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Explain a process, step by step.",
-      "subtitle": "Developments and Processes 1.B: the problem, the new technology, what it made possible, and what followed.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-5-technology-of-industrialization.html#modules"
-      }
-    },
-    {
       "kind": "timeline",
-      "eyebrow": "Longer Reach · Railroads",
+      "eyebrow": "IV · Longer Reach · Railroads",
       "title": "Railroads reached the middle of continents.",
       "footer": "Russia: 27 km of railway in 1840, over 53,000 km in 1900. Germany: 469 km in 1840, over 51,000 km in 1900.",
       "kc": "KC-5.1.IV",
@@ -338,7 +369,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "Longer Reach · Ships and Wires",
+      "eyebrow": "IV · Longer Reach · Ships and Wires",
       "title": "Goods and people by steamship. News by wire.",
       "footer": "Before, news traveled only as fast as a horse or a ship.",
       "kc": "KC-5.1.IV",
@@ -370,7 +401,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "The Effects · Trade and Migration",
+      "eyebrow": "V · More Trade, More Migration · The Effects",
       "title": "More trade. More migration.",
       "footer": "Why people moved, and what they found, is Unit 6.",
       "kc": "KC-5.1.IV",
@@ -407,7 +438,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "Rank the Five · In No Particular Order",
+      "eyebrow": "VI · Rank the Five · In No Particular Order",
       "title": "Which changed the world most by 1900?",
       "template": {
         "rows": [
@@ -442,33 +473,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Watt invented the steam engine.",
-            "evidence": "Newcomen's engine pumped mines from 1712. Watt made it use far less coal, and turn wheels.",
-            "source": "KC-5.1.I.B"
-          },
-          {
-            "myth": "One invention changed everything.",
-            "evidence": "Each needed the others: railroads needed steam, coal, then steel; steam and steel built the ships too.",
-            "source": "KC-5.1.I.E, KC-5.1.IV"
-          },
-          {
-            "myth": "By 1900 the world ran on electricity and cars.",
-            "evidence": "Motors gave under 5 percent of US factory power in 1899; the US had about 8,000 cars in 1900.",
-            "source": "KC-5.1.I.B, KC-5.1.I.E"
-          }
-        ]
-      }
-    },
-    {
       "kind": "cause-chain",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "More power. New methods. Longer reach.",
       "footer": "Each link made the next one possible.",
       "template": {
@@ -505,7 +511,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · AP Synthesis",
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective F",
       "template": {
@@ -522,33 +528,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1",
-      "title": "How did machines and new methods change what could be made?",
-      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-5-technology-of-industrialization.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab · Optional",
-      "title": "Two sources, one link in the chain.",
-      "subtitle": "Choose at least two cards. For each: what kind of source it is, what link in the chain it shows, and one thing it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-5-technology-of-industrialization.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "How did railroads, steamships and the telegraph change trade and migration?",
-      "subtitle": "Choose ONE: explain what it did that older ways could not, how it reached an interior region, and how that led to more trade or more migration, with a number; then name the other effect. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-5-technology-of-industrialization.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you explain the process.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Explain two technologies, step by step.",
+            "url": "../unit-5/lesson-5-5-technology-of-industrialization.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-5/lesson-5-5-technology-of-industrialization.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Reach to trade and migration, with Socrates.",
+            "url": "../unit-5/lesson-5-5-technology-of-industrialization.html#modules"
+          }
+        ]
       }
     },
     {
