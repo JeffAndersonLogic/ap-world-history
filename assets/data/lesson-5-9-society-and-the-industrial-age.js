@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Social Interactions and Organization"
     },
     {
-      criteria: "I can name at least three of the six challenges, explain why rapid growth caused them, give one effect on standards of living with a detail (such as cholera or life expectancy), and place one specific scene, such as Riis's crowded room, inside this broader story.",
+      criteria: "I can name at least three of the six challenges, explain why rapid growth caused them, give one effect on standards of living with a detail (such as cholera or life expectancy), place one specific scene, such as Riis's crowded room, inside this broader story, and explain one thing industrialization changed in society and one thing that kept going.",
       kc: "KC-5.1.VI.C",
       theme: "Social Interactions and Organization"
     }

@@ -90,7 +90,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Industry created social classes." There was a ladder of rank long before the factories, and its top rungs held. What industry did was add new rungs and change how people climbed: by money and education as well as by birth. The opposite mistake is "nothing changed": the middle class won the vote in 1832, and a class that lived only on wages had never been so large.`
+              html: `"Industry created social classes." There was a ladder of rank long before the factories, and its top rungs held. What industry did was add new rungs and change how people climbed: by money and education as well as by birth. The opposite mistake is "nothing changed": the middle class won the vote in 1832, and the class that lived on wages grew fast.`
             } }
           ]
         }
@@ -264,7 +264,7 @@ module.exports = {
         {
           heading: 'Contextualize it',
           blocks: [
-            { p: `To contextualize a source, place it inside the bigger story that explains it. Twelve lodgers in one Bayard Street room in <span class="num">1890</span> happened inside the rapid growth of industrial cities around the world: people came for work faster than anyone built homes for them, so landlords packed rooms and rented floor space by the night. The same bigger story explains a Manchester cellar in the <span class="num">1840s</span>.` }
+            { p: `To contextualize a source, place it inside the bigger story that explains it. A Manchester family living in one damp cellar room in the <span class="num">1840s</span> happened inside the rapid growth of industrial towns: Manchester grew from about <span class="num">70,000</span> people in <span class="num">1801</span> to more than <span class="num">300,000</span> by <span class="num">1851</span>, faster than anyone built houses, so every room and cellar was rented out. Try the same move on Riis's Bayard Street room in the Skill Builder.` }
           ]
         },
         {

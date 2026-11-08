@@ -454,11 +454,11 @@ const scenarios = [
     evidence: [
       E('growth', 'A City That Outgrew Its Houses', 'For decades London\'s population has grown faster than its housing. Old houses are split up and rented out room by room.', 'Shows the rapid urbanization behind the crisis (KC-5.1.VI.C).'),
       E('rooms', 'One Room, One Family', 'Many working families in central London live, cook and sleep in a single room.', 'Shows the housing shortage, and what it did to standards of living.'),
-      E('poverty', 'The Commission\'s First Cause', 'The commission came to blame two main causes. The first: many tenants were too poor to pay the rent for a better home.', 'Shows poverty as a cause, in the commission\'s own conclusion.'),
-      E('land', 'The Commission\'s Second Cause', 'The second: owners of building land in the city charged high ground rents, so homes for working people cost too much to build.', 'Shows how land and money shaped who lived where.'),
+      E('poverty', 'Rent Against Wages', 'Witnesses describe families whose wages are too low, or too irregular, to pay the rent for anything better than one room.', 'Points to poverty as a cause.'),
+      E('land', 'The Price of Land', 'Builders say that land in the middle of London is so costly, and its owners charge such high ground rents, that cheap homes for working people do not pay.', 'Points to land and money as a cause.'),
       E('docks', 'Hired by the Day', 'Many London men were hired by the day, at the docks or the markets, and had to live close by to be there early each morning.', 'Shows why the poorest could not move to cheaper homes far away.'),
       E('clearance', 'Knocked Down', 'Railways and new streets had knocked down many old houses where poor families lived. Most of the families crowded into the streets nearby.', 'Shows how "improvement" could make crowding worse.'),
-      E('laws', 'Laws Nobody Used', 'Parliament had already given local authorities powers to deal with unhealthy houses. The commission found that many had not used them.', 'Shows insufficient infrastructure as a failure of will, not only of money.'),
+      E('laws', 'Powers Already on the Books', 'Parliament has already given local authorities powers to deal with unhealthy houses. Witnesses disagree about how often those powers are used.', 'Raises whether the problem is missing laws or unused ones.'),
       E('suburbs', 'Those Who Could, Left', 'Middle-class families who could afford it had moved out to suburbs and travelled into the city by train.', 'Shows the new classes living apart (KC-5.1.VI.A).')
     ],
     decisions: [
@@ -478,7 +478,7 @@ const scenarios = [
         O('market', 'Leave it to builders', 'Let private builders replace the houses as land and rents allow.', 'No new rules or spending.', 'The families who lost their homes may never be able to afford the new ones.', 'Freedom for builders, risk for the poor.')
       ])
     ],
-    reflectionPrompt: 'Step out of the room. Explain what caused London\'s housing crisis in 1884, using the evidence, and what kept going for the poorest families whatever the commission decided. Then contextualize it: what bigger story from Topic 5.9 also explains a Manchester cellar in the 1840s and a crowded New York tenement in 1890?',
+    reflectionPrompt: 'Step out of the room. The real commission reported in 1885. It blamed two main causes, tenants too poor to pay for better homes and high ground rents that made cheap homes too costly to build, and it criticized local authorities for not using the powers they had. Compare its answer with yours. Then explain what kept going for the poorest families whatever the commission decided. Then contextualize it: what bigger story from Topic 5.9 also explains a Manchester cellar in the 1840s and a crowded New York tenement in 1890?',
     sources: [
       { label: 'Hansard (House of Lords), Housing of the Working Classes, 20 March 1884 and 16 July 1885', url: 'https://api.parliament.uk/historic-hansard/lords/1884/mar/20/housing-of-the-working-classes-the-royal-1' },
       { label: 'First report of the Commissioners on the Housing of the Working Classes, 1884-85 (Internet Archive)', url: 'https://archive.org/details/firstreportofcom0002grea' },

@@ -122,7 +122,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-mirror",
       "eyebrow": "II · New Classes, Old Families · 1",
-      "title": "Industry made two classes bigger than ever.",
+      "title": "Two classes grew with industry.",
       "footer": "Both grew with industry. One rose by money and education; the other lived on wages.",
       "kc": "KC-5.1.VI.A",
       "template": {
@@ -142,11 +142,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Their place came from",
             "left": "Money they made, education they paid for",
             "right": "Wages, with no land and no tools"
-          },
-          {
-            "label": "Their hours",
-            "left": "Their own, or an office's",
-            "right": "Set by the employer"
           },
           {
             "label": "A gain",
@@ -235,7 +230,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Her \"domestics\" were servants: most of them working-class women.",
       "kc": "KC-5.1.VI.B",
       "template": {
-        "quote": "As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house. Her spirit will be seen through the whole establishment; and just in proportion as she performs her duties intelligently and thoroughly, so will her domestics follow in her path.",
+        "quote": "As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house. ... so will her domestics follow in her path.",
         "attribution": {
           "author": "Isabella Beeton",
           "work": "The Book of Household Management",
@@ -281,6 +276,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "position": "50% 50%"
           }
         },
+        "bothLabel": "Kept going in both",
         "both": [
           "Paid less than men",
           "Fewer rights: a wife's property her husband's until 1870 and 1882"
@@ -442,7 +438,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "{{A specific thing}} happened inside {{a bigger historical story}}: {{how the bigger story explains it}}.",
         "exampleLabel": "Filled in",
-        "example": "**Twelve lodgers sleeping in one Bayard Street room in 1890** happened inside **the rapid growth of industrial cities around the world**: **people came to New York for work faster than anyone built homes for them, so landlords packed rooms and rented floor space by the night**."
+        "example": "**A Manchester family living in one damp cellar room in the 1840s** happened inside **the rapid growth of industrial towns**: **Manchester grew from about 70,000 people in 1801 to more than 300,000 by 1851, faster than anyone built houses, so every room and cellar was rented out**."
       }
     },
     {

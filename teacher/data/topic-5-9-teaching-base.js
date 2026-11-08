@@ -46,7 +46,7 @@ window.BEHISTORICAL_TEACHING = {
       'Land the spine with the four-row table: new classes, split homes, crowded cities, a new ladder, still a ladder.'
     ],
     should: [
-      'Model 4.B Contextualization once on Riis\'s Bayard Street room, then let the Skill Builder practice it.',
+      'Model 4.B Contextualization once on a Manchester cellar of the 1840s, then let students do Riis\'s Bayard Street room in the Skill Builder.',
       'Read life expectancy with care: the low city averages are pulled down by babies who died.',
       'Correct three myths on the retelling slide: "industry created social classes," "in the 1800s women stopped working," and "city workers died at 25."'
     ],
@@ -109,7 +109,7 @@ window.BEHISTORICAL_TEACHING = {
         'Twelve people, one room "not thirteen feet either way," five cents a spot',
         'By 1900: sewers, water, police catching up (reforms are 5.8\'s)',
         'Death rates fall; wages rise faster after about 1860; many still poor'
-      ], skill: 'You model contextualization (4.B) out loud on Riis\'s Bayard Street room: one specific scene, then the bigger story it sits inside, then the link between them. Students practice it in the Skill Builder.' }
+      ], skill: 'You model contextualization (4.B) out loud on a Manchester cellar of the 1840s: one specific thing, then the bigger story it sits inside, then the link between them. Students do Riis\'s room themselves in the Skill Builder.' }
     ],
     wrap: { title: 'Put it together', columns: ['Changed', 'Kept going'], rows: [
       { label: 'Who was on top', cells: ['A middle class rose by money and education; won votes in 1832', 'Landed families kept land, titles and power'] },
@@ -153,7 +153,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'challenges', label: 'Six Challenges', range: '33-36', minutes: 3, teacher: 'The CED\'s six, in three pairs.', students: 'Name three.', slide: 13 },
     { id: 'health', label: 'What It Did to Life', range: '36-39', minutes: 3, teacher: 'Cholera, Snow\'s map, life expectancy read with care.', students: 'Why are the averages so low?', slide: 14 },
     { id: 'newyork', label: 'New York, 1890', range: '39-41', minutes: 2, teacher: 'The same pattern under global capitalism.', students: 'Describe the room.', slide: 15 },
-    { id: 'context', label: 'Contextualize It', range: '41-44', minutes: 3, teacher: 'Model 4.B on Riis\'s room.', students: 'Say the bigger story.', slide: 16 },
+    { id: 'context', label: 'Contextualize It', range: '41-44', minutes: 3, teacher: 'Model 4.B on a Manchester cellar.', students: 'Say the bigger story.', slide: 16 },
     { id: 'by1900', label: 'By 1900', range: '44-46', minutes: 2, teacher: 'What caught up, and who was still poor.', students: 'One change, one continuity.', slide: 17 },
     { id: 'retell', label: 'A New Ladder, Still a Ladder', range: '46-51', minutes: 5, teacher: 'Students redraw the table from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 18 },
     { id: 'worktime', label: 'Work Time', range: '51-86', minutes: 35, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder (Riis), Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 19 },
@@ -185,7 +185,7 @@ window.BEHISTORICAL_TEACHING = {
           '"Existing" hierarchies: the continuity is in the objective',
           'CED reason for split homes: money',
           'Six urban challenges, caused by speed',
-          'Model contextualization on Riis',
+          'Model contextualization on a Manchester cellar',
           'Reforms are 5.8\'s: bridge only'
         ],
         land: [
@@ -340,7 +340,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'classes', kind: 'split-mirror', eyebrow: 'II · New Classes, Old Families · 1',
-      kc: 'KC-5.1.VI.A', title: 'Industry made two classes bigger than ever.',
+      kc: 'KC-5.1.VI.A', title: 'Two classes grew with industry.',
       footer: 'Both grew with industry. One rose by money and education; the other lived on wages.',
       template: {
         left: { name: 'Middle class' },
@@ -348,7 +348,6 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Who', left: 'Factory owners, merchants, bankers, doctors, lawyers, managers, clerks', right: 'Mill, mine, dock and workshop workers' },
           { label: 'Their place came from', left: 'Money they made, education they paid for', right: 'Wages, with no land and no tools' },
-          { label: 'Their hours', left: 'Their own, or an office\'s', right: 'Set by the employer' },
           { label: 'A gain', left: 'Most men in the towns win the vote, 1832', right: 'Unions and parties (Topic 5.8)' }
         ]
       },
@@ -443,7 +442,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-5.1.VI.B', title: 'The middle-class wife, in a best-seller of 1861.',
       footer: 'Her "domestics" were servants: most of them working-class women.',
       template: {
-        quote: 'As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house. Her spirit will be seen through the whole establishment; and just in proportion as she performs her duties intelligently and thoroughly, so will her domestics follow in her path.',
+        quote: 'As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house. ... so will her domestics follow in her path.',
         attribution: { author: 'Isabella Beeton', work: 'The Book of Household Management', year: '1861' },
         notice: 'Who gives the orders in this house, and who follows them?'
       },
@@ -475,6 +474,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         left: { name: 'Working-class women', items: ['Earn wages for the family', 'Mills, service, piecework', 'Children often earn too'] },
         right: { name: 'Middle-class women', items: ['Family can live on one earner', 'Increasingly kept to the home', 'Run the house, raise the children'] },
+        bothLabel: 'Kept going in both',
         both: ['Paid less than men', 'Fewer rights: a wife\'s property her husband\'s until 1870 and 1882']
       },
       notes: {
@@ -639,26 +639,26 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: '{{A specific thing}} happened inside {{a bigger historical story}}: {{how the bigger story explains it}}.',
         exampleLabel: 'Filled in',
-        example: '**Twelve lodgers sleeping in one Bayard Street room in 1890** happened inside **the rapid growth of industrial cities around the world**: **people came to New York for work faster than anyone built homes for them, so landlords packed rooms and rented floor space by the night**.'
+        example: '**A Manchester family living in one damp cellar room in the 1840s** happened inside **the rapid growth of industrial towns**: **Manchester grew from about 70,000 people in 1801 to more than 300,000 by 1851, faster than anyone built houses, so every room and cellar was rented out**.'
       },
       notes: {
         minutes: 3,
         keys: [
           'Model 4.B out loud',
-          'Specific: the Bayard Street room',
-          'Bigger story: cities outgrowing housing',
+          'Modeled on a Manchester cellar, 1840s',
+          'Bigger story: towns outgrowing housing',
           'Link: arrivals faster than building',
-          'Same move works for Manchester, 1840s',
+          'Students do Riis\'s room themselves',
           'Skill Builder practices it next'
         ],
         land: [
           'This is the topic\'s suggested skill, 4.B Contextualization: "Explain how a specific historical development or process is situated within a broader historical context." Model it out loud with the frame.',
-          'Three moves: name the specific thing (the room); name the bigger story (industrial cities growing faster than they could house people, under global capitalism); explain the link (arrivals outran building, so landlords packed rooms).',
+          'Three moves: name the specific thing (a family in one Manchester cellar room in the 1840s); name the bigger story (industrial towns growing faster than they could house people); explain the link (arrivals outran building, so every room and cellar was rented). The model is deliberately not Riis\'s room: students contextualize that themselves in the Skill Builder, the First & 10\'s Question 3 and Checkpoint 2, so do not fill in the frame for Riis aloud.',
           'A context is not just "before this." It has to explain why the specific thing happened.',
-          'The Skill Builder (Module 05) practices the same move on the same room, with a short model on an everyday example first.'
+          'The Skill Builder (Module 05) practices the same move on Riis\'s Bayard Street room, with a short model on an everyday example first.'
         ],
-        ask: 'Put a Manchester cellar of the 1840s into the same frame.',
-        listenFor: 'A family in one cellar room in 1840s Manchester happened inside the town\'s growth from about 70,000 to over 300,000: housing could not keep up.',
+        ask: 'Which part of this sentence would change if the specific thing were a New York tenement in 1890, and which would stay?',
+        listenFor: 'The specific thing and its numbers change; the bigger story, cities growing faster than housing, stays. (Do not finish the Riis sentence for them.)',
         ap: 'Contextualization 4.B, modeled once before students do it alone.'
       }
     },

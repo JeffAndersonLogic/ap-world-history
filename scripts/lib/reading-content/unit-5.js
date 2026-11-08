@@ -2195,7 +2195,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Fill in your first two rows.</strong> Who was on top: what changed (a middle class rose by money and education) and what kept going (landed families kept power)? Who did the work: what changed (a class that lived on wages, at the employer's hours)?</p>"
+          "raw": "<p><strong>Fill in your first two rows.</strong> For who was on top, and for who did the work, find one thing that was new and one thing that lasted. Which detail in this section shows each?</p>"
         }
       },
       {
@@ -2249,7 +2249,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Name the reason.</strong> The College Board gives the cause of the split: money. Working-class women earned \"to supplement their families' income\"; middle-class women \"did not have the same economic demands to satisfy.\" Write your women-and-children row with that reason in it.</p>"
+          "raw": "<p><strong>Look for the reason.</strong> A change that splits by class needs a cause. Read Sections 3 and 4 again: what did one kind of family need that the other did not? Put that reason in your women-and-children row.</p>"
         }
       },
       {
@@ -2291,7 +2291,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Contextualization",
-          "raw": "<p><strong>Put one thing inside a bigger story.</strong> To contextualize, take one specific thing, such as Riis's crowded room, and explain the bigger story it belongs to: cities around the industrial world growing faster than anyone could house the people who came for work.</p>"
+          "raw": "<p><strong>Put one thing inside a bigger story.</strong> To contextualize, take one specific thing and ask what larger development, happening in many places at once, explains why it happened. Then say how the two connect.</p>"
         }
       },
       {
