@@ -356,11 +356,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Ships changed too. Under sail, emigrants from Norway took about 53 days on average to reach America; by steamship, the Atlantic crossing from England took about 12 days in the 1860s. And news stopped waiting for ships. From 1844 a telegraph message could travel along a wire in minutes; from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
+            "html": "Ships changed too. On the busiest emigrant route, Liverpool to New York, a voyage took more than 40 days on average in 1853, most of them under sail; by 1869, as steamships took over, it took about 16. And news stopped waiting for ships. By the 1840s a telegraph message could travel along a wire in minutes (Samuel Morse's line from Washington to Baltimore opened in 1844); from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
           },
           {
             "type": "p",
-            "html": "So trade and <span class=\"kt\">migration</span>, people moving to live in a new place, grew. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913 it cost only 15.6 percent more, because trains and steamships carried North American wheat to British workers. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and between 1846 and 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean (Topic 5.5)."
+            "html": "So trade and <span class=\"kt\">migration</span>, people moving to live in a new place, grew. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913, just after this unit's period, it cost only 15.6 percent more, because trains and steamships carried North American wheat to British workers. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and between 1846 and 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean (Topic 5.5)."
           }
         ],
         "callout": {
@@ -375,7 +375,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1898 the naturalist Alfred Russel Wallace, famous for working out the theory of evolution by natural selection at the same time as Charles Darwin, looked back over his own century. He wrote that \"not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period.\" In other words: this one century changed as much as all of history before it. Is he right? He went on: \"this is only one side of the shield.\" Put each change beside its limits."
+            "html": "In 1898 the naturalist Alfred Russel Wallace, famous for working out the theory of evolution by natural selection on his own, separately from Charles Darwin (their papers were read together in 1858), looked back over his own century. He wrote that \"not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period.\" In other words: this one century changed as much as all of history before it. Is he right? He went on: \"this is only one side of the shield.\" Put each change beside its limits."
           },
           {
             "type": "p",

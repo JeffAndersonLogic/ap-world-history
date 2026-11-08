@@ -27,7 +27,7 @@
       { label: "Russia", detail: "Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900 (Topic 5.5)." },
       { label: "India", detail: "India's first passenger train ran in 1853, and a telegraph cable reached Bombay in 1870. The census of 1901 found about two-thirds of India's people living by farming." },
       { label: "China", detail: "China made about a third of the world's manufactured goods in 1750 and about 6 percent in 1900 (historians' estimates, Topic 5.4)." },
-      { label: "Chicago to Liverpool", detail: "In 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913 only 15.6 percent more, because trains and steamships carried it cheaply." },
+      { label: "Chicago to Liverpool", detail: "In 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913, just after this unit's period, only 15.6 percent more, because trains and steamships carried it cheaply." },
       { label: "Reading the map", detail: "The map shows only the places this topic names. The shaded regions are approximate." }
     ]
   };
@@ -58,7 +58,7 @@
     title: "Connect the Evidence",
     intro: "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work: one piece of evidence can lead to another, two can show the same pattern in different places, or two can make a contrast. Watch the move on evidence from Unit 5, then try it yourself.",
     steps: [
-      { label: "Led to", text: "Steam engines burned coal to drive machines. That led to railroads and steamships, which carried wheat from the middle of North America to Britain so cheaply that by 1913 wheat cost only 15.6 percent more in Liverpool than in Chicago. Each piece of evidence is a cause of the next." },
+      { label: "Led to", text: "Steam engines burned coal to drive machines. That led to railroads and steamships, which carried wheat from the middle of North America to Britain so cheaply that by 1913, just after this unit's period, wheat cost only 15.6 percent more in Liverpool than in Chicago. Each piece of evidence is a cause of the next." },
       { label: "The same pattern", text: "Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran in 1853. Two places, one pattern: railways reaching the interior of a huge land." },
       { label: "A contrast", text: "Lancashire's power looms made cloth more cheaply than India's hand weavers could. Yet in 1908, in one Indian province, about a million people still lived from the handloom. The contrast shows a change set beside a continuity, which is how you say how much changed." },
       { label: "Put it in a sentence", text: "Use this frame: \"[Evidence A] and [Evidence B] are related because [one led to the other / they show the same pattern / they make a contrast], since ...\" Name both pieces of evidence, choose one relationship, and explain why." }
@@ -81,7 +81,7 @@
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
       prompt: "Answer in four steps. (1) Explain ONE change industrialization brought in how goods were made, with a number or a date. (2) Explain ONE change in how goods, people, or news moved, with a number or a date, and say who gained most from these changes. (3) Name one Enlightenment idea, explain how it came before a revolution or new nation-state, and give one example of nationalism. (4) Explain why this change in ideas and governments did not come from industry.",
       responseType: "Checkpoint 1",
-      terms: ["coal", "steam", "engine", "Watt", "factory", "factories", "half", "energy", "cotton", "yarn", "cheaper", "consumer goods", "Sunlight", "four-fifths", "share", "standard of living", "for some", "railroad", "railway", "27", "53,000", "1853", "1869", "steamship", "53 days", "12 days", "telegraph", "1844", "1866", "1870", "Bombay", "wheat", "migration", "55 million", "Enlightenment", "reason", "Locke", "natural rights", "social contract", "consent", "1775", "1789", "1791", "1810", "revolution", "nation-state", "United States", "Haiti", "nationalism", "Italy", "1861", "Germany", "1871", "Greece", "before", "Britain", "ideas", "grievance"],
+      terms: ["coal", "steam", "engine", "Watt", "factory", "factories", "half", "energy", "cotton", "yarn", "cheaper", "consumer goods", "Sunlight", "four-fifths", "share", "standard of living", "for some", "railroad", "railway", "27", "53,000", "1853", "1869", "steamship", "40 days", "16 days", "telegraph", "1844", "1866", "1870", "Bombay", "wheat", "migration", "55 million", "Enlightenment", "reason", "Locke", "natural rights", "social contract", "consent", "1775", "1789", "1791", "1810", "revolution", "nation-state", "United States", "Haiti", "nationalism", "Italy", "1861", "Germany", "1871", "Greece", "before", "Britain", "ideas", "grievance"],
       focus: ["Explain one change in making, with a number or a date.", "Explain one change in moving, with a number or a date, and say who gained most.", "Name an Enlightenment idea, explain how it came before a revolution or nation-state, and give an example of nationalism.", "Explain why the change in ideas and governments did not come from industry."]
     },
     {

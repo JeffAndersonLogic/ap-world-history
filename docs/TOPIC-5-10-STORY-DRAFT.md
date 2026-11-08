@@ -166,9 +166,9 @@ faster from about 1860 to 1900 (5.7).
 
 **III. Moving: rails, steam and wire (KC-5.1.IV).** Russia
 had 27 kilometers of railway in 1840 and more than 53,000 in 1900; India's first passenger train ran in
-1853; the first railroad across the United States was finished in 1869 (5.5). Under sail, Norwegian
-emigrants took about 53 days on average to reach America; by steamship the Atlantic crossing from England
-took about 12 days in the 1860s. From 1844 a telegraph message could travel along a wire in minutes; from
+1853; the first railroad across the United States was finished in 1869 (5.5). On the busiest route,
+emigrant voyages from Liverpool to New York took more than 40 days on average in 1853, mostly under sail, and
+about 16 by 1869, as steamships took over. By the 1840s a telegraph message could travel along a wire in minutes; from
 1866 cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached
 Bombay. Railroads reached farms and mines in the middles of continents, so trade and migration grew: in
 1870 wheat cost 57.6 percent more in Liverpool than in Chicago, and by 1913 only 15.6 percent more. About
@@ -265,7 +265,7 @@ the revolutions in ideas and governments.
 | Britain's share under 2 percent to about a fifth by 1860; Europe and the US more than four-fifths by 1900 | KC-5.1 | 5.4 | The **places** that made things moved. |
 | Standards of living: under 15 percent, 1780s to 1850s; faster, 1860 to 1900 | KC-5.1 ("for some") | 5.7 | The gains were **real and slow, and unequal**. |
 | Russia's railways 27 km (1840) to more than 53,000 (1900); India 1853; US 1869 | KC-5.1.IV ("interior regions globally") | 5.5 | Moving changed **on every continent**. |
-| About 53 days under sail, about 12 by steam; telegraph 1844, Atlantic 1866, Bombay 1870 | KC-5.1.IV | 5.5 | **How big** the change in moving was. |
+| Liverpool to New York: more than 40 days (1853, mostly sail) to about 16 (1869); telegraph by the 1840s (Morse 1844), Atlantic 1866, Bombay 1870 | KC-5.1.IV | 5.5 | **How big** the change in moving was. |
 | Wheat price gap 57.6 percent (1870) to 15.6 percent (1913); 55 million Europeans; 29 million Indians and 19 million Chinese | KC-5.1.IV ("increased trade and migration") | 5.5 | Trade and migration **grew**. |
 | Wallace (1898), preface and ch. XX | LO K | new source | A **witness** weighing the century, and a claim to test. |
 | A million handloom weavers in one province, 1908; China's share to about 6 percent | LO K (continuity) | 5.4 | The **old makers kept making**, at a shrinking share. |

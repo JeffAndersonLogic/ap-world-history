@@ -35,14 +35,14 @@ words differently is a new row.
 | Britain's share of world manufacturing from under 2 percent (1750) to about a fifth by 1860; Europe and the US more than four-fifths by 1900; China's share from about a third to about 6 percent | SD, F10, Deck, DR, MAP | 5.4 ledger (Bairoch) | VERIFIED (5.4) |
 | One careful estimate: British working families' standard of living rose by less than 15 percent from the 1780s to the 1850s; most historians agree much faster from about 1860 to 1900 | SD, F10, Deck, DR, RC, MA | 5.7 ledger (Feinstein) | VERIFIED (5.7) |
 | Russia: 27 km of railway in 1840, more than 53,000 in 1900; India's first passenger train 1853; first US transcontinental railroad 1869 | SD, F10, Deck, DR, MAP, RC | 5.5 ledger | VERIFIED (5.5) |
-| Norwegian emigrants under sail about 53 days on average; by steamship from England about 12 days in the 1860s | SD, F10, Deck, DR | 5.5 ledger (Norway Heritage, 53 days by sail; Allan Line, about 12 days, 1865) | VERIFIED (5.5) |
-| Telegraph: Morse 1844; Atlantic cables without a lasting break from 1866; a cable reached Bombay in 1870 | SD, F10, Deck, DR, MAP, RC | 5.5 ledger | VERIFIED (5.5) |
-| Wheat cost 57.6 percent more in Liverpool than Chicago in 1870 and 15.6 percent more in 1913 | SD, F10, Deck, DR | 5.5 ledger (Daudin, Morys and O'Rourke 2008, citing O'Rourke and Williamson 1994) | VERIFIED (5.5); 1913 stated as 1913, after the period |
+| On the Liverpool to New York emigrant route, the average voyage took more than 40 days in 1853 (mostly under sail) and about 16 by 1869, as steamships took over | SD, F10, LD, Deck, DR, RC, MA | T. J. Hatton, "Time on the Crossing: Emigrant Voyages across the Atlantic, 1853 to 1913," IZA DP 16274 (2023): "the average voyage duration fell dramatically, from more than 40 days in 1853-4 to just 16 days in 1869" | NARROWED (pass 1: was 5.5's Norwegian 53 days set beside an English steamer's 12, two routes read as one measurement) |
+| Telegraph: by the 1840s a message could travel along a wire in minutes (Morse's line, 1844); Atlantic cables without a lasting break from 1866; a cable reached Bombay in 1870 | SD, F10, LD, Deck, DR, MAP, RC | 5.5 ledger; Science Museum Group (Cooke and Wheatstone's telegraph in commercial use on the Great Western Railway from 1839) | NARROWED (pass 1: was "from 1844," which read as the start) |
+| Wheat cost 57.6 percent more in Liverpool than Chicago in 1870 and 15.6 percent more in 1913 | SD, F10, LD, RC, Deck, DR, MAP | 5.5 ledger (Daudin, Morys and O'Rourke 2008, citing O'Rourke and Williamson 1994) | VERIFIED (5.5); 1913 now flagged as just after the period on every student surface (pass 1) |
 | About 55 million Europeans to the Americas and Australia, 1850 to 1914; more than 29 million Indians and more than 19 million Chinese to Southeast Asia and the Indian Ocean lands, 1846 to 1940 | SD, F10, Deck, DR | 5.5 ledger (Hatton and Williamson 1998 for the Europeans; McKeown for the Asian figures) | VERIFIED (5.5) |
 | Wallace (1898), preface: "not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period." | SD, F10, LD (Primary Source), Deck, DR, RC | Alfred Russel Wallace, *The Wonderful Century: Its Successes and Its Failures* (New York: Dodd, Mead and Company, 1898), Preface (dated "Parkstone, Dorset, April, 1898"); read in the Cornell University Library copy, Internet Archive `cu31924012063875`. The text reads "superior to any that have gone be-fore it" (line-broken) and "may be best compai-ed" (OCR for "compared"); checked word for word | VERIFIED |
 | Wallace, preface: "But this is only one side of the shield. Along with these marvellous Successes — perhaps in consequence of them — there have been equally striking Failures, some intellectual, but for the most part moral and social." | SD, F10, LD, Deck, DR | Same, Preface, the next paragraph; British spelling "marvellous" kept | VERIFIED |
 | Wallace, ch. XX ("The Demon of Greed"), p. 343: "One of the most prominent features of our century has been the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people" | SD, F10, LD, Deck, DR, RC | Same, chapter XX, first sentence, p. 343 | VERIFIED |
-| Wallace was a naturalist, known with Charles Darwin for the theory of evolution by natural selection; the same book's "Failures" defend phrenology and attack vaccination; he favored nationalizing land | SD, LD, Deck, RC | Same book, Part II ("Failures"), ch. XVI "The Neglect of Phrenology" and the vaccination chapter (its preface: "The Vaccination question has been discussed at the greatest length"); Natural History Museum, London, "Alfred Russel Wallace" (co-proposer of natural selection, 1858); Wallace was first president of the Land Nationalisation Society (1881) | VERIFIED |
+| Wallace was a naturalist who worked out natural selection on his own, separately from Darwin (who had developed it from 1838 without publishing); their papers were read together at the Linnean Society in 1858 (pass 1: was "at the same time as Charles Darwin"); the same book's "Failures" defend phrenology and attack vaccination; he favored nationalizing land | SD, LD, Deck, RC | Same book, Part II ("Failures"), ch. XVI "The Neglect of Phrenology" and the vaccination chapter (its preface: "The Vaccination question has been discussed at the greatest length"); Natural History Museum, London, "Alfred Russel Wallace" (co-proposer of natural selection, 1858); Wallace was first president of the Land Nationalisation Society (1881) | VERIFIED |
 | Wallace's claim that workers gained nothing is only partly supported: living standards rose slowly to the 1850s and faster after about 1860, unequally | SD, F10, Deck, DR | 5.7 ledger (Feinstein; the post-1860 rise); 5.9 ledger (the cities' health) | VERIFIED (as the lesson's judgment, labeled as historians' finding) |
 | In 1908, in one province of northern India, about a million people still lived from handloom weaving | SD, F10, Deck, DR, MAP, RC | 5.4 ledger (the United Provinces figure) | VERIFIED (5.4) |
 | India's census of 1901 found about two-thirds of the people living by farming | SD, F10, Deck, DR, MAP | H. H. Risley and E. A. Gait, *Report on the Census of India, 1901*: agriculture the means of livelihood of nearly two-thirds of the population; secondary analyses give 65.1 percent | VERIFIED (stated as "about two-thirds") |
@@ -63,7 +63,7 @@ words differently is a new row.
 | Slater's mill in Rhode Island begun in 1793; Cockerill at Seraing from 1817; Russia's and Japan's big growth mostly after 1870 | SD, Deck, DR | 5.4 ledger | VERIFIED (5.4) |
 | France, 1789: "the principle of all sovereignty resides essentially in the nation"; Spain had lost every colony in the Americas except Cuba and Puerto Rico by 1826 | Deck, RC, MA | 5.2 ledger | VERIFIED (5.2) |
 | The Ten Hours Act (1847) limited women and young people in textile mills to ten hours a day | SD (constraint check only) | UK Parliament, "The 1847 Factory Act" (the Ten Hours Act) | VERIFIED |
-| BeSurreal: a grandmother born in 1825 in a Lancashire farming village could remember the first trains between Liverpool and Manchester (opened 1830, when she was five), mills, a village telegraph office, factory cloth and branded soap; a queen in 1900, where kings had ruled when she was born | LD (BeSurreal) | 5.5 ledger (Liverpool and Manchester Railway, 1830); Victoria reigned 1837 to January 1901, after George IV (1820 to 1830) and William IV; a made-up character, as the lesson says | VERIFIED (a composite character built from verified facts) |
+| BeSurreal: a grandmother born in 1825 in a Lancashire farming village whose mother wove at home on a handloom from mill-spun thread (pass 1: was "spun and wove") could remember the first trains between Liverpool and Manchester (opened 1830, when she was five), mills, a village telegraph office, factory cloth and branded soap; a queen in 1900, where kings had ruled when she was born | LD (BeSurreal) | 5.5 ledger (Liverpool and Manchester Railway, 1830); Victoria reigned 1837 to January 1901, after George IV (1820 to 1830) and William IV; a made-up character, as the lesson says | VERIFIED (a composite character built from verified facts) |
 | Industrial states now needed raw materials and markets, and had new tools to take them (hand-off) | SD, F10, Deck | `docs/UNIT-5-STORY-MAP.md`, the 5.10 hand-off; a bridge, not taught | VERIFIED (as a bridge) |
 
 ## Pictures
@@ -115,3 +115,25 @@ Each finding is weighed on its own; the reviewer does not have the last word.
    Reported as an adjacent fix, since it changes every deck's band.
 5. **Slide 13's Riis photograph is tied to nothing on the slide.** Supported. Fixed: the caption now reads
    "Still poor in 1890: lodgers in a New York tenement," tying the picture to the "gains went to some" claim.
+
+### Pass 1 (2026-11-08), history (default model)
+
+1. **Slide 9 projected "The Atlantic: about 53 days by sail"**, dropping that the 53 days are Norwegian
+   emigrants' whole trip. Supported. Fixed with finding 2.
+2. **Every surface set 5.5's Norwegian 53 days beside an English steamer's 12 days**, two routes read as one
+   measurement (a fourfold cut, where one route shows about two and a half). Supported, and it matters in a
+   topic about measuring change. Fixed on every 5.10 surface and in the model answers with one route from one
+   source: Liverpool to New York, more than 40 days in 1853 to about 16 by 1869 (Hatton 2023, checked in the
+   paper). Adjacent: 5.5's own reading gives the two figures side by side ("for the whole trip"); reported,
+   not changed here.
+3. **"At the same time as Charles Darwin" is a myth**: Darwin developed natural selection from 1838 and
+   Wallace reached it independently in 1858; only the presentation was joint. Supported. Fixed on all five
+   surfaces.
+4. **"From 1844 a telegraph message could travel ..." reads as the telegraph's start**; Cooke and
+   Wheatstone's line was in commercial use from 1839. Supported. Fixed: "by the 1840s," with Morse's 1844
+   line as the example.
+5. **Uncertain: the BeSurreal grandmother's mother "spun" cotton at home in the 1830s**, when hand spinning
+   of cotton had largely gone in Lancashire. Accepted as the safer wording: she wove at home on a handloom,
+   from thread spun in the mills.
+6. **Minor: the 1913 wheat figure is flagged as after the period in the chapter but not elsewhere.**
+   Supported. Fixed: "just after this unit's period" on the reading, lecture card, map key and Skill Builder.

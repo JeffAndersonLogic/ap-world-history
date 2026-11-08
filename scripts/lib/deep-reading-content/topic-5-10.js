@@ -124,7 +124,7 @@ module.exports = {
           heading: 'Into the interior',
           blocks: [
             { p: `Before the railroad, heavy goods moved cheaply only by water, and the <span class="kt">interior</span> of a continent, far from the sea or a big river, was hard to reach. Railways changed that, and not only in Britain. Russia had <span class="num">27</span> kilometers of railway in 1840 and more than <span class="num">53,000</span> in 1900. India's first passenger train ran in <span class="num">1853</span>. The first railroad across the United States was finished in <span class="num">1869</span>.` },
-            { p: `Ships and news changed too. Under sail, emigrants from Norway took about <span class="num">53</span> days on average to reach America; by steamship, the Atlantic crossing from England took about <span class="num">12</span> days in the 1860s. From <span class="num">1844</span> a telegraph message could travel along a wire in minutes. From <span class="num">1866</span> cables under the Atlantic carried messages without a lasting break, and in <span class="num">1870</span> a cable reached Bombay, in India.` }
+            { p: `Ships and news changed too. On the busiest emigrant route, Liverpool to New York, a voyage took more than <span class="num">40</span> days on average in 1853, most of them under sail; by 1869, as steamships took over, it took about <span class="num">16</span>. By the 1840s a telegraph message could travel along a wire in minutes; Samuel Morse's line from Washington to Baltimore opened in <span class="num">1844</span>. From <span class="num">1866</span> cables under the Atlantic carried messages without a lasting break, and in <span class="num">1870</span> a cable reached Bombay, in India.` }
           ]
         },
         {
@@ -164,7 +164,7 @@ module.exports = {
         {
           heading: 'A witness weighs his century',
           blocks: [
-            { p: `In <span class="num">1898</span> Alfred Russel Wallace, a British naturalist who had worked out the theory of evolution by natural selection at the same time as Charles Darwin, wrote a book weighing his century, <em>The Wonderful Century</em>. His preface claims that "not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period." Then he turns: "But this is only one side of the shield." More than half his book is about the century's "Failures."` },
+            { p: `In <span class="num">1898</span> Alfred Russel Wallace, a British naturalist who had worked out the theory of evolution by natural selection on his own, separately from Charles Darwin (their papers were read together in 1858), wrote a book weighing his century, <em>The Wonderful Century</em>. His preface claims that "not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period." Then he turns: "But this is only one side of the shield." More than half his book is about the century's "Failures."` },
             { note: {
               kind: 'howknow',
               label: 'How we know: reading a witness',
@@ -303,7 +303,7 @@ module.exports = {
       {
         category: 'Continuity and Change',
         title: 'Moving',
-        body: `Changed: Russia's railways from 27 km (1840) to more than 53,000 (1900); India 1853; the United States coast to coast 1869; the Atlantic in about 12 days by steam; telegraph cables 1866 and 1870; the wheat gap from 57.6 to 15.6 percent; tens of millions of migrants.`
+        body: `Changed: Russia's railways from 27 km (1840) to more than 53,000 (1900); India 1853; the United States coast to coast 1869; Liverpool to New York in about 16 days by 1869, down from more than 40; telegraph cables 1866 and 1870; the wheat gap from 57.6 to 15.6 percent; tens of millions of migrants.`
       },
       {
         category: 'Continuity and Change',

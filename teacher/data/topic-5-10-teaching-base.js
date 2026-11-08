@@ -83,8 +83,8 @@ window.BEHISTORICAL_TEACHING = {
       { label: 'III', title: 'Moving: rails, steam and wire', kc: 'KC-5.1.IV', points: [
         'Russia: 27 km of railway (1840), more than 53,000 (1900)',
         'India\'s first train 1853; US coast to coast 1869',
-        'Atlantic: about 53 days by sail (Norwegian emigrants), about 12 by steam (1860s)',
-        'Telegraph 1844; Atlantic cable 1866; Bombay 1870',
+        'Liverpool to New York: 40+ days (1853, mostly sail), about 16 (1869, steam)',
+        'Telegraph by the 1840s (Morse 1844); Atlantic cable 1866; Bombay 1870',
         'Wheat gap Liverpool-Chicago: 57.6 percent (1870) to 15.6 percent (1913)',
         '55 million Europeans out (1850 to 1914); 29 million Indians, 19 million Chinese (1846 to 1940)'
       ] },
@@ -407,8 +407,8 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'The Great Eastern carries the Atlantic cable, 1866',
         steps: [
           { label: 'Rails', text: 'Russia: **27 km** in 1840, more than **53,000** in 1900. India\'s first train, 1853. Across the US, 1869.' },
-          { label: 'Steam', text: 'The Atlantic: about **53 days** by sail, about **12** by steamship in the 1860s.' },
-          { label: 'Wire', key: true, text: 'Telegraph 1844. Across the Atlantic 1866. To Bombay 1870.' }
+          { label: 'Steam', text: 'Liverpool to New York: **40+ days** in 1853, mostly by sail; about **16** by 1869, by steam.' },
+          { label: 'Wire', key: true, text: 'Morse\'s telegraph, 1844. Across the Atlantic 1866. To Bombay 1870.' }
         ]
       },
       notes: {
@@ -417,14 +417,14 @@ window.BEHISTORICAL_TEACHING = {
           'Interiors reached on every continent',
           'Russia: 27 km to 53,000+',
           'India 1853; US coast to coast 1869',
-          '53 days by sail, 12 by steam',
+          'Liverpool-New York: 40+ days to 16',
           'Telegraph: messages in minutes, not weeks'
         ],
         land: [
           'KC-5.1.IV: railroads, steamships and the telegraph made exploration, development and communication possible in interior regions globally. Before them, heavy goods moved cheaply only by water.',
           'Rails: Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900; India\'s first passenger train ran from Bombay to Thane in 1853; the first railroad across the United States was finished at Promontory Summit in 1869 (5.5).',
-          'Steam: under sail, emigrants from Norway took about 53 days on average to reach America; by steamship the crossing from England took about 12 days in the 1860s (5.5).',
-          'Wire: Morse\'s line, Washington to Baltimore, 1844; cables under the Atlantic without a lasting break from 1866; a cable through the Red Sea to Bombay in 1870 (5.5).',
+          'Steam: on the busiest emigrant route, Liverpool to New York, the average voyage fell from more than 40 days in 1853, most of them under sail, to about 16 by 1869, as steamships took over (Hatton, "Time on the Crossing," 2023). 5.5 gives other figures for other routes (Norwegian emigrants\' whole trip under sail; an 1860s steamer from England): do not set those two side by side as one measurement.',
+          'Wire: the electric telegraph was already in commercial use on an English railway from 1839; Morse\'s line, Washington to Baltimore, 1844; cables under the Atlantic without a lasting break from 1866; a cable through the Red Sea to Bombay in 1870 (5.5).',
           'The picture: the steamship Great Eastern leaving Sheerness with the Atlantic cable, an engraving in the Illustrated London News of 14 July 1866 (Library of Congress). A newspaper picture made to celebrate.'
         ],
         ask: 'Compare this with Section II: which change reached more of the world, making or moving?',
@@ -476,14 +476,14 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         keys: [
-          'Wallace: naturalist, natural selection with Darwin',
+          'Wallace: natural selection, separately from Darwin',
           'Claim: one century equal to all history before',
           'A witness at the end of the period',
           '"Only one side of the shield"',
           'Not right about everything: phrenology, vaccination'
         ],
         land: [
-          'Alfred Russel Wallace, The Wonderful Century: Its Successes and Its Failures (New York: Dodd, Mead and Company, 1898), Preface, word for word. Wallace was a naturalist who worked out the theory of evolution by natural selection at the same time as Charles Darwin (1858).',
+          'Alfred Russel Wallace, The Wonderful Century: Its Successes and Its Failures (New York: Dodd, Mead and Company, 1898), Preface, word for word. Wallace was a naturalist who worked out the theory of evolution by natural selection on his own, separately from Charles Darwin, who had developed it twenty years earlier without publishing; their papers were read together at the Linnean Society in 1858.',
           'His claim is the "great extent" side at its strongest: the nineteenth century compares with the whole of history before it. His evidence in Part I is railways, steamships, the telegraph, and new science.',
           'The next paragraph of his preface turns: "But this is only one side of the shield. Along with these marvellous Successes — perhaps in consequence of them — there have been equally striking Failures, some intellectual, but for the most part moral and social." More than half the book is the failures.',
           'Point of view: Wallace favored nationalizing land, and his "Failures" chapters also defend phrenology and attack vaccination. A famous witness, not always a reliable one: test his claims against the evidence.'

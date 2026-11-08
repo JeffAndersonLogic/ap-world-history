@@ -99,9 +99,9 @@ window.BEHISTORICAL_LESSON = {
         title: "Moving: Rails, Steam, and Wire",
         bullets: [
           "**Rails:** Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran in 1853. The first railroad across the United States was finished in 1869.",
-          "**Steam:** under sail, emigrants from Norway took about 53 days on average to reach America; by steamship, the Atlantic crossing from England took about 12 days in the 1860s.",
-          "**Wire:** from 1844 a telegraph message could travel along a wire in minutes. From 1866 cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay.",
-          "**Trade and migration:** in 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913, only 15.6 percent more. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and from 1846 to 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean."
+          "**Steam:** on the busiest emigrant route, Liverpool to New York, a voyage took more than 40 days on average in 1853, most of them under sail, and about 16 by 1869, as steamships took over.",
+          "**Wire:** by the 1840s a telegraph message could travel along a wire in minutes (Morse's line, 1844). From 1866 cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay.",
+          "**Trade and migration:** in 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913, just after this unit's period, only 15.6 percent more. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and from 1846 to 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean."
         ],
         image: {
           title: "The Great Eastern Carries the Atlantic Cable, 1866",
@@ -188,7 +188,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Alfred Russel Wallace, The Wonderful Century, 1898",
-    intro: "Alfred Russel Wallace was a British naturalist who worked out the theory of evolution by natural selection at the same time as Charles Darwin. In 1898, near the end of the century, he wrote a book weighing it: Part I on its \"Successes,\" and Part II, more than half the book, on its \"Failures.\" He favored taking land out of private hands, and his \"Failures\" also include some claims scientists rejected, such as attacks on vaccination. The first passage is from his preface; the second opens a chapter he called \"The Demon of Greed.\"",
+    intro: "Alfred Russel Wallace was a British naturalist who worked out the theory of evolution by natural selection on his own, separately from Charles Darwin; their papers were read together in 1858. In 1898, near the end of the century, he wrote a book weighing it: Part I on its \"Successes,\" and Part II, more than half the book, on its \"Failures.\" He favored taking land out of private hands, and his \"Failures\" also include some claims scientists rejected, such as attacks on vaccination. The first passage is from his preface; the second opens a chapter he called \"The Demon of Greed.\"",
     attribution: "Alfred Russel Wallace, The Wonderful Century: Its Successes and Its Failures (New York: Dodd, Mead and Company, 1898), Preface and chapter XX, p. 343, from the Cornell University Library copy at the Internet Archive",
     text: "A comparative estimate of the number and importance of these achievements leads to the conclusion that not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period. ... But this is only one side of the shield. Along with these marvellous Successes — perhaps in consequence of them — there have been equally striking Failures, some intellectual, but for the most part moral and social.<br><br>One of the most prominent features of our century has been the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people ...",
     questions: [
@@ -201,7 +201,7 @@ window.BEHISTORICAL_LESSON = {
   beSurreal: {
     title: "BeSurreal: Grandmother's Century, 1900",
     desc: "It is 1900. Your grandmother is seventy-five. She was born in 1825 in a farming village in Lancashire, in northwest England, and she has lived her whole life within a day's walk of it.",
-    intro: "When she was a girl, her mother spun and wove at home, and news from London came by coach. She remembers the first trains on the railway between Liverpool and Manchester, the cotton mills where her sisters went to work, and the day the village got a telegraph office. Now her shawl is factory cloth, bought cheap, and her soap comes in a wrapped bar with a name on it.",
+    intro: "When she was a girl, her mother wove cloth at home on a handloom, from thread spun in the mills, and news from London came by coach. She remembers the first trains on the railway between Liverpool and Manchester, the cotton mills where her sisters went to work, and the day the village got a telegraph office. Now her shawl is factory cloth, bought cheap, and her soap comes in a wrapped bar with a name on it.",
     detail: "But some things have not moved. Her brother still farms the same fields, for the same landowning family. A queen rules from London, as kings did when she was born. Her cousin who went to the mill town buried two babies there. And when you tell her about a woman in New Zealand who has voted, she laughs and says she never expects to.",
     prompt: "Write a conversation between you and your grandmother. Ask her what changed most in her life and what stayed the same. Then add one place outside Britain from the lesson where the change was bigger or smaller than in her village, and say why. Use the words extent, change, and continuity."
   },

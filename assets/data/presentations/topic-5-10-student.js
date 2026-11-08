@@ -201,12 +201,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Steam",
-            "text": "The Atlantic: about **53 days** by sail, about **12** by steamship in the 1860s."
+            "text": "Liverpool to New York: **40+ days** in 1853, mostly by sail; about **16** by 1869, by steam."
           },
           {
             "label": "Wire",
             "key": true,
-            "text": "Telegraph 1844. Across the Atlantic 1866. To Bombay 1870."
+            "text": "Morse's telegraph, 1844. Across the Atlantic 1866. To Bombay 1870."
           }
         ],
         "visual": {
