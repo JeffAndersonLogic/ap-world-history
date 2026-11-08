@@ -271,7 +271,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "visual": {
             "url": "../assets/images/topics/5-9/currier-ives-four-seasons-middle-age-1868.jpg",
             "alt": "A lithograph of a comfortable house: a father in a straw hat comes in from the porch and lifts a baby from its mother's arms, while a boy plays with a dog, a little girl runs toward them, and an older girl comes down the stairs with a doll",
-            "credit": "Currier & Ives, The Four Seasons of Life: Middle Age, about 1868 · Library of Congress · Public domain",
+            "credit": "Currier & Ives, New York, The Four Seasons of Life: Middle Age, about 1868 · Library of Congress · Public domain",
             "ratio": 1.246,
             "position": "50% 50%"
           }
@@ -303,7 +303,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "1851",
             "key": true,
-            "text": "More than **300,000**."
+            "text": "More than **300,000**, counting the larger borough."
           },
           {
             "label": "1851",
@@ -445,7 +445,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "story-scene",
       "eyebrow": "V · Not Only Britain · By 1900",
       "title": "By 1900, cities were catching up, slowly.",
-      "footer": "Standards of living rose for some, and fell, for a time, for many.",
+      "footer": "Standards of living rose for some; in the fast-growing towns, health lagged far behind.",
       "kc": "KC-5.1.VI.C",
       "template": {
         "caption": "East Fifth Street, New York, about 1890",

@@ -163,3 +163,48 @@ date, record and caption checked in pass 1 was confirmed again.
 |---|---|---|---|
 | Riis photographed the Bayard Street lodgers about 1889; the book appeared in 1890 | F10 Q3, LD, RC, Deck | MoMA, object 51194 (1889); LoC 2002710259 ("ca. 1890") | NARROWED (pass 2) |
 | In 1884 Salisbury led the Conservatives in the House of Lords | BR | Northcote led in the Commons until June 1885 (standard; UK Parliament) | NARROWED (pass 2) |
+
+### Pass 3 (packet `review3`, captured after the pass 2 fixes)
+
+**History (default model): no supported defect.** Every quotation word for word, every picture record, every
+number and date, the commission's facts and the debated claims' framing confirmed; the composite witness is
+flagged.
+
+**Page truth, readability, CED alignment, ownership (cheaper model): 8 supported findings, all fixed.**
+
+1. "Sewers, clean water and police (Topic 5.8 has those reforms)": 5.8 teaches only London's sewers. **Fixed:**
+   "(Topic 5.8 has London's new sewers after 1858)" on the First & 10, lecture card, deep reading.
+2. Manchester's series mixed the township and the borough on student surfaces. **Fixed:** "counting the larger
+   borough" on the First & 10, takeaway, lecture card, map key and slide 12.
+3. Success Criteria 1 and 3 and the Checkpoint 2 prompt carried worked examples of the very detail asked for.
+   **Fixed:** trimmed to "with a detail." (Kept as a finding though 5.8's criteria have the same shape: trimming
+   is cheap.)
+4. First & 10 Q3 said "about 1889" against "about 1890" elsewhere, and "choose" a named room. **Fixed:** "take
+   the crowded room Jacob Riis photographed in New York" (no date in the question).
+5. "Standards of living ... fell for many" went beyond the evidence (city health in the 1840s). **Narrowed** on
+   the First & 10, takeaway, slide 17, its notes, the deep reading and the story draft: "rose for some, while
+   in the fast-growing towns many people's health was far worse than the nation's."
+6. The Housing Commission's decisions 2 and 3 had students choose reform policy (5.8's). **Fixed:** decision 2
+   weighs whose evidence to trust; decision 3 asks what will keep going for the poorest whatever Parliament
+   does; the premise and central question follow.
+7. "A father comes home from work": the print shows him coming in from a porch. **Fixed** (lecture caption,
+   slide 11 notes, story draft); "New York" added to the slide 11 credit.
+8. Slide 16's notes listed Checkpoint 2 as a contextualization task; the Skill Builder asked students to
+   describe a photograph not shown in its modal. **Fixed:** the note names the Skill Builder and First & 10 Q3
+   only; the Skill Builder points to the photograph on the last Content Delivery card.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Standards of living rose for some; in the fast-growing towns health was far worse than the nation's | F10, LD, Deck slide 17, DR, SD | The CED ("for some"); the life-expectancy rows above; Feinstein via 5.7 | NARROWED (pass 3: was "fell for many") |
+| Later in the century cities built sewers and clean water supplies and set up police forces | F10, LD, DR, Deck | Bazalgette's sewers (5.8's ledger); County and Borough Police Act 1856; ONS life tables | NARROWED (pass 3: no longer credited to 5.8) |
+
+## The loop stops here, on the three-pass safety valve
+
+Supported findings by pass (page truth + history): **13** (7 + 6), **14** (9 + 5), then **8** (8 + 0). The
+history findings fell 6, 5, 0: pass 3's history reviewer found nothing, and no quotation, date, number or
+caption was wrong after pass 2. The page-truth findings fell from 9 to 8 but moved from projected near-answers
+and a contradicted vote claim (passes 1 and 2) to cross-references, a boundary note, criterion wording and the
+room's decisions. No new myth class appeared after pass 1. Nothing systemic remains that a fourth pass would
+fix: the story, the sources and the renderer held throughout. Every finding was fixed; none was rejected.
+
+**Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS JEFF.

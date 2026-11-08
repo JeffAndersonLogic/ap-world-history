@@ -39,7 +39,7 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: "Manchester", detail: "The great cotton town grew from about 23,000 people in a count of 1773 to about 70,000 in 1801 and more than 300,000 by 1851. In the 1840s a baby born there could expect to live only about 25 to 28 years." },
+      { label: "Manchester", detail: "The great cotton town grew from about 23,000 people in a count of 1773 to about 70,000 in 1801 and more than 300,000 by 1851 (counting the larger borough). In the 1840s a baby born there could expect to live only about 25 to 28 years." },
       { label: "London", detail: "In 1854 John Snow traced a cholera outbreak in Soho to one public water pump on Broad Street. In 1848 and 1849 cholera killed about 53,000 people in England and Wales." },
       { label: "Britain", detail: "In 1851 the census found, for the first time, more than half the people of England and Wales living in towns." },
       { label: "New York", detail: "Manhattan grew from about 515,000 people in 1850 to about 1.4 million in 1890. In 1890 Jacob Riis wrote that \"three-fourths of its people live in the tenements.\"" },
@@ -75,7 +75,7 @@
   lesson.skillBuilder = {
     label: "Contextualization practice",
     title: "Put One Thing Inside the Bigger Story",
-    intro: "Topic 5.9 asks you to contextualize: take one specific thing, a photograph, a book, a law, and explain the bigger historical story it is part of, and how that story helps explain it. Context is not just \"what came before.\" It has to explain why the specific thing happened. Watch the move on an example from everyday life, then use it on a photograph from New York in 1890.",
+    intro: "Topic 5.9 asks you to contextualize: take one specific thing, a photograph, a book, a law, and explain the bigger historical story it is part of, and how that story helps explain it. Context is not just \"what came before.\" It has to explain why the specific thing happened. Watch the move on an example from everyday life, then use it on a photograph from New York about 1890 (you can see it on the last Content Delivery card).",
     steps: [
       { label: "Name the specific thing", text: "Say exactly what it is, where and when. Example: in 2020, a teacher teaches a class to a laptop camera from her kitchen table." },
       { label: "Name the bigger story", text: "Say what larger development was going on at the same time, in many places. Example: in 2020 a worldwide pandemic closed school buildings in many countries." },
@@ -109,7 +109,7 @@
       cardDesc: "The challenges of rapid urbanization, what they did to standards of living, and one change and one continuity in industrial society.",
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: "Explain how industrialization changed existing social hierarchies and standards of living. (1) Name THREE of the challenges that rapid urbanization brought to industrial cities, with a detail for at least one. (2) Explain why rapid growth caused them. (3) Explain ONE effect on people's standard of living, with a detail such as cholera or life expectancy. (4) Explain ONE thing industrialization changed in society, and ONE thing that kept going, from any part of the lesson.",
+      prompt: "Explain how industrialization changed existing social hierarchies and standards of living. (1) Name THREE of the challenges that rapid urbanization brought to industrial cities, with a detail for at least one. (2) Explain why rapid growth caused them. (3) Explain ONE effect on people's standard of living, with a detail. (4) Explain ONE thing industrialization changed in society, and ONE thing that kept going, from any part of the lesson.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
       terms: ["urbanization", "rapid", "pollution", "smoke", "poverty", "crime", "police", "public health", "cholera", "1831", "1848", "1849", "53,000", "Snow", "pump", "housing", "cellar", "tenement", "infrastructure", "sewers", "water", "Manchester", "23,000", "1773", "70,000", "1801", "300,000", "1851", "census", "towns", "life expectancy", "25", "28", "40", "standard of living", "babies", "New York", "Manhattan", "1.4 million", "1890", "Riis", "global capitalism", "changed", "kept going", "continuity", "change", "because"],

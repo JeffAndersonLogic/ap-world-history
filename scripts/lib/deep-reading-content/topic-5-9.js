@@ -207,7 +207,7 @@ module.exports = {
       name: 'What It Did to Life',
       navLabel: 'Life and health',
       dates: '1831 to 1854 &nbsp;·&nbsp; Manchester and London',
-      thesis: `Crowded towns with dirty water made disease spread, and in the fastest-growing cities people's lives were shorter: the standard of living, measured in health, fell for many.`,
+      thesis: `Crowded towns with dirty water made disease spread, and in the fastest-growing cities people's lives were shorter: measured in health, the standard of living there was far below the nation's.`,
       parts: [
         {
           heading: 'Cholera',
@@ -270,7 +270,7 @@ module.exports = {
         {
           heading: 'By 1900',
           blocks: [
-            { p: `Later in the century, cities began to catch up with sewers, clean water and police (Topic 5.8 has those reforms). Life expectancy in England and Wales began a lasting rise from the <span class="num">1870s</span>, and wages rose faster after about <span class="num">1860</span> (Topic 5.7). But in <span class="num">1900</span> many city workers were still poor, and a ladder of rank, rebuilt, still stood.` }
+            { p: `Later in the century, cities began to catch up, building sewers and clean water supplies and setting up police forces (Topic 5.8 has London's new sewers after 1858). Life expectancy in England and Wales began a lasting rise from the <span class="num">1870s</span>, and wages rose faster after about <span class="num">1860</span> (Topic 5.7). But in <span class="num">1900</span> many city workers were still poor, and a ladder of rank, rebuilt, still stood.` }
           ]
         }
       ],

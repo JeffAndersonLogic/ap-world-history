@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can name the two new classes and where each one's place came from, and give one change (such as the vote for most middle-class men in 1832) and one continuity (such as landed families keeping their land and power), with a detail for each.",
+      criteria: "I can name the two new classes and where each one's place came from, and give one change and one continuity at the top of society, with a detail for each.",
       kc: "KC-5.1.VI.A",
       theme: "Social Interactions and Organization"
     },
@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Social Interactions and Organization"
     },
     {
-      criteria: "I can name at least three of the six challenges, explain why rapid growth caused them, give one effect on standards of living with a detail (such as cholera or life expectancy), and explain one thing industrialization changed in society and one thing that kept going.",
+      criteria: "I can name at least three of the six challenges, explain why rapid growth caused them, give one effect on standards of living with a detail, and explain one thing industrialization changed in society and one thing that kept going.",
       kc: "KC-5.1.VI.C",
       theme: "Social Interactions and Organization"
     }
@@ -128,7 +128,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The Four Seasons of Life: Middle Age, about 1868",
-          caption: "A lithograph sold by Currier & Ives of New York, about 1868: a father comes home from work and lifts the baby from its mother's arms while the children greet him. Library of Congress.",
+          caption: "A lithograph sold by Currier & Ives of New York, about 1868: a father comes in from the porch and lifts the baby from its mother's arms while the children greet him. Library of Congress.",
           url: "../assets/images/topics/5-9/currier-ives-four-seasons-middle-age-1868.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/92500887/"
         }
@@ -136,7 +136,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Cities That Could Not Keep Up",
         bullets: [
-          "**How fast:** Manchester had about 23,000 people in a count of 1773, about 70,000 at the first national census in 1801, and more than 300,000 by 1851. That year's census found, for the first time, more than half the people of England and Wales living in towns.",
+          "**How fast:** Manchester had about 23,000 people in a count of 1773, about 70,000 at the first national census in 1801, and more than 300,000 by 1851, counting the larger borough. That year's census found, for the first time, more than half the people of England and Wales living in towns.",
           "**Six challenges:** pollution (coal smoke over the towns, waste in the rivers); poverty (wages that barely paid the rent); housing shortages (families in one room or a cellar); insufficient infrastructure (no sewers, clean water or rubbish collection); public health crises (cholera reached Britain in 1831 and killed about 53,000 people in England and Wales in 1848 and 1849); and increased crime (more people were charged with crimes until the early 1840s, though the numbers also rose because towns set up police).",
           "**Standards of living:** in the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole. The averages are pulled down by the many babies and young children who died.",
           "**Why:** the College Board's word is \"rapid.\" People arrived faster than anyone could build homes, sewers and water pipes."
@@ -153,7 +153,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Global capitalism:** the College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants.",
           "**Riis, 1890:** the reporter Jacob Riis wrote that \"three-fourths of its people live in the tenements,\" crowded apartment buildings for poor renters, and photographed a room \"not thirteen feet either way\" where twelve men and women slept; most of the men were lodgers, paying \"five cents a spot.\"",
-          "**By 1900:** cities began to catch up with sewers, clean water and police (Topic 5.8 has those reforms). Death rates fell, and wages rose faster after about 1860. But many city workers were still poor."
+          "**By 1900:** cities began to catch up, building sewers and clean water supplies and setting up police forces (Topic 5.8 has London's new sewers after 1858). Death rates fell, and wages rose faster after about 1860. But many city workers were still poor."
         ],
         image: {
           title: "Lodgers in a Bayard Street Tenement, about 1890",

@@ -1,9 +1,15 @@
 # Topic 5.9 Story Draft: Society and the Industrial Age
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
+**Status: Approved 2026-11-08 by the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 Drafted 2026-11-08 from the CED source file, for the build the parent session started with "Build
-5.9." The Phase 9 reviewers check it, and every surface built from it, against that file and the
-scholarship. Nothing ships until Jeff says "ship it".
+5.9." Three review passes (six reviewers) checked it and every surface built from it against that file
+and the scholarship; the loop closed on the three-pass safety valve with every finding fixed
+(`docs/TOPIC-5-9-CLAIM-LEDGER.md`, Review findings). Review changed the story in these places, and the
+surfaces carry the corrected wording: why women were paid less is a live debate; some, not "often,"
+new-money families bought into land; the 1833 survey speaks of textile mills by fiber; a wife's property
+"passed under her husband's control"; Riis's "most of the men were lodgers"; Manchester's 1851 figure is
+the larger borough's; standards of living "rose for some, while in the fast-growing towns many people's
+health was far worse than the nation's." Nothing ships until Jeff says "ship it".
 
 **Taught:** no dates yet. Unit 5 class dates exist only through 5.3 (finals follow), and Jeff has not
 named dates for 5.4 onward. The build adds no schedule entries; the dates are an open item in the
@@ -176,7 +182,7 @@ worked, and how the answer split by class.
 
 **3. Cities that could not keep up.** The fastest change was where people lived.
 - **The growth:** Manchester, the great cotton town, had about 23,000 people in a count of 1773, about
-  70,000 at the first census in 1801, and more than 300,000 by 1851. That year's census found, for the
+  70,000 at the first census in 1801, and more than 300,000 by 1851, counting the larger borough. That year's census found, for the
   first time, more than half the people of England and Wales living in towns.
 - **The challenges** the CED names: coal smoke over the town and waste in the rivers (pollution); wages
   that barely paid the rent (poverty); whole families in one room or a cellar (housing shortages); no
@@ -332,7 +338,7 @@ loc.gov's JSON; Wellcome Collection's catalogue API; Wikimedia Commons answered 
 | Beat | Historical object or visual | Why it carries the claim | Watch for |
 |---|---|---|---|
 | 3 | William Wyld, *Manchester from Kersal Moor*, watercolour, 1852 (in the repo; Royal Collection) | The question: a city of chimneys behind a country scene, the old ladder and the new. | A romantic view for a royal collection; not a picture of how workers lived. |
-| 7 | Currier & Ives, *The Four Seasons of Life: Middle Age*, lithograph, 1868 (LoC 92500887) | The middle-class home: a father home from work, a mother with the children. | American, an ideal printed to sell, not a photograph of a family. |
+| 7 | Currier & Ives, *The Four Seasons of Life: Middle Age*, lithograph, 1868 (LoC 92500887) | The middle-class home: a father coming in from the porch, a mother with the children. | American, an ideal printed to sell, not a photograph of a family. |
 | 9 | T. Allom, power-loom weaving, engraving, 1835 (in the repo) | Women at the looms. | An illustration for a book on the cotton industry. |
 | 9 | Jacob Riis, "Sewing pants for the trade in a Gotham Court 'flat'," about 1890 (LoC 2002710299) | Working-class women and a girl earning at home. | New York, not Britain; Riis posed and chose his scenes. |
 | 13 | John Leech, "A Court for King Cholera," Punch, 25 September 1852 (in the repo) | Crowding, filth and disease in one court. | A cartoon; its link of cholera to crowding rather than water is the thinking of 1852. |

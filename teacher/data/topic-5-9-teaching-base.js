@@ -489,7 +489,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The CED gives the cause: working-class families needed the wages ("to supplement their families\' income"), and middle-class families "did not have the same economic demands to satisfy."',
           'Continuity in both classes: women were paid less and had fewer rights than men. In England and Wales, under the old common law a married woman\'s property passed to her husband\'s control; the Married Women\'s Property Act of 1870 let her keep her earnings, and the Act of 1882 let women married from 1883 hold all their property as their own (UK Parliament, "Marriage: property and children"). Scotland had its own laws.',
-          'Left picture: power-loom weaving in a cotton mill, an engraving after Thomas Allom, published in 1835 in Edward Baines\'s History of the Cotton Manufacture. Right picture: Currier & Ives, The Four Seasons of Life: Middle Age, a New York lithograph of about 1868 (Library of Congress): a father home from work, a mother with the children. Both are pictures made to show an industry or an ideal, not photographs.'
+          'Left picture: power-loom weaving in a cotton mill, an engraving after Thomas Allom, published in 1835 in Edward Baines\'s History of the Cotton Manufacture. Right picture: Currier & Ives, The Four Seasons of Life: Middle Age, a New York lithograph of about 1868 (Library of Congress): a father coming in from the porch, a mother with the children. Both are pictures made to show an industry or an ideal, not photographs.'
         ],
         ask: 'Why did the same industry push one group of women into wage work and keep another at home?',
         listenFor: 'Money: one family needed her wages, the other did not.',
@@ -505,7 +505,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '1773', text: 'About **23,000** people, in a local count.' },
           { label: '1801', text: 'About **70,000**, at the first national census.' },
-          { label: '1851', key: true, text: 'More than **300,000**.' },
+          { label: '1851', key: true, text: 'More than **300,000**, counting the larger borough.' },
           { label: '1851', text: 'For the first time, more than half the people of England and Wales live in towns.' }
         ]
       },
@@ -594,7 +594,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'If the average was 25, did most Manchester adults die at 25?',
         listenFor: 'No: many babies died, which pulls the average down. But city lives were shorter than country lives.',
-        ap: 'Standards of living, the objective\'s second half: health and length of life fell for many in the fastest-growing cities.'
+        ap: 'Standards of living, the objective\'s second half: health and length of life were far worse in the fastest-growing cities than in the nation.'
       }
     },
     {
@@ -653,7 +653,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'This is the topic\'s suggested skill, 4.B Contextualization: "Explain how a specific historical development or process is situated within a broader historical context." Model it out loud with the frame.',
-          'Three moves: name the specific thing (Snow\'s 1854 map of cholera deaths around one pump); name the bigger story (industrial cities growing faster than their water and sewers); explain the link (crowded streets shared pumps that waste could reach). The model is deliberately not about housing or Riis\'s room: students contextualize that themselves in the Skill Builder, the First & 10\'s Question 3 and Checkpoint 2, so do not fill in the frame for Riis aloud.',
+          'Three moves: name the specific thing (Snow\'s 1854 map of cholera deaths around one pump); name the bigger story (industrial cities growing faster than their water and sewers); explain the link (crowded streets shared pumps that waste could reach). The model is deliberately not about housing or Riis\'s room: students contextualize that themselves in the Skill Builder and the First & 10\'s Question 3, so do not fill in the frame for Riis aloud.',
           'A context is not just "before this." It has to explain why the specific thing happened.',
           'The Skill Builder (Module 05) practices the same move on Riis\'s Bayard Street room, with a short model on an everyday example first.'
         ],
@@ -665,7 +665,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'by1900', kind: 'story-scene', eyebrow: 'V · Not Only Britain · By 1900',
       kc: 'KC-5.1.VI.C', title: 'By 1900, cities were catching up, slowly.',
-      footer: 'Standards of living rose for some, and fell, for a time, for many.',
+      footer: 'Standards of living rose for some; in the fast-growing towns, health lagged far behind.',
       template: {
         caption: 'East Fifth Street, New York, about 1890',
         steps: [

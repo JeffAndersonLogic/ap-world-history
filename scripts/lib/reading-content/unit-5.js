@@ -2259,7 +2259,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "The fastest change of all was where people lived. <span class=\"kt\">Urbanization</span> is the growth of cities, as people move from the countryside to towns. Manchester, the great cotton town, had about 23,000 people in a count of 1773, about 70,000 at the first national census in 1801, and more than 300,000 by 1851. That year's census found, for the first time, more than half the people of England and Wales living in towns."
+            "html": "The fastest change of all was where people lived. <span class=\"kt\">Urbanization</span> is the growth of cities, as people move from the countryside to towns. Manchester, the great cotton town, had about 23,000 people in a count of 1773, about 70,000 at the first national census in 1801, and more than 300,000 by 1851, counting the larger borough. That year's census found, for the first time, more than half the people of England and Wales living in towns."
           },
           {
             "type": "p",
@@ -2286,7 +2286,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Later in the century, cities began to catch up with sewers, clean water and police (Topic 5.8 has those reforms). Death rates fell, and wages rose faster after about 1860. But in 1900 many city workers were still poor."
+            "html": "Later in the century, cities began to catch up, building sewers and clean water supplies and setting up police forces (Topic 5.8 has London's new sewers after 1858). Death rates fell, and wages rose faster after about 1860. But in 1900 many city workers were still poor."
           }
         ],
         "callout": {
@@ -2301,7 +2301,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Put the four rows together. Industry added a middle class that rose by money and education and a working class that lived on wages, beside landed families who kept much of their wealth and power. It moved work out of the home, sending working-class women and children into wage jobs while middle-class women were increasingly kept at home. And it packed people into cities that grew faster than they could house, clean or protect them, so standards of living rose for some and, for a time, fell for many."
+            "html": "Put the four rows together. Industry added a middle class that rose by money and education and a working class that lived on wages, beside landed families who kept much of their wealth and power. It moved work out of the home, sending working-class women and children into wage jobs while middle-class women were increasingly kept at home. And it packed people into cities that grew faster than they could house, clean or protect them, so standards of living rose for some, while in the fast-growing towns many people's health was far worse than the nation's."
           },
           {
             "type": "p",
@@ -2314,7 +2314,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Before industry, society was a ladder of rank based on land and birth. Industry rebuilt the ladder. A middle class of owners, merchants and professionals rose by money and education and, in Britain, won the vote in 1832, and an industrial working class lived on wages; but landed families kept much of their land and power (Lord Salisbury, a marquess, was prime minister in 1900). Work moved out of the home: working-class women and often children took wage jobs to add to the family's income, in mills, in domestic service and at home, while middle-class women, whose families did not need their wages, were increasingly kept to the home and the children (the ideal of separate spheres). Cities grew faster than they could cope (Manchester from about 23,000 people in 1773 to more than 300,000 by 1851; Manhattan to about 1.4 million by 1890), bringing pollution, poverty, crime, cholera, crowded housing and too few sewers and water pipes, so standards of living rose for some and fell for many. New classes. Split homes. Crowded cities. A new ladder, still a ladder.",
+    "takeaway": "Before industry, society was a ladder of rank based on land and birth. Industry rebuilt the ladder. A middle class of owners, merchants and professionals rose by money and education and, in Britain, won the vote in 1832, and an industrial working class lived on wages; but landed families kept much of their land and power (Lord Salisbury, a marquess, was prime minister in 1900). Work moved out of the home: working-class women and often children took wage jobs to add to the family's income, in mills, in domestic service and at home, while middle-class women, whose families did not need their wages, were increasingly kept to the home and the children (the ideal of separate spheres). Cities grew faster than they could cope (Manchester from about 23,000 people in 1773 to more than 300,000, counting the larger borough, by 1851; Manhattan to about 1.4 million by 1890), bringing pollution, poverty, crime, cholera, crowded housing and too few sewers and water pipes, so standards of living rose for some, while in the fast-growing towns many people's health was far worse than the nation's. New classes. Split homes. Crowded cities. A new ladder, still a ladder.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -2333,7 +2333,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Contextualization",
-        "text": "Using Sections 5 and 6, choose the crowded room Jacob Riis photographed in New York about 1889. Explain the bigger story it is part of: what was happening to cities in industrial countries, and why.",
+        "text": "Using Sections 5 and 6, take the crowded room Jacob Riis photographed in New York. Explain the bigger story it is part of: what was happening to cities in industrial countries, and why.",
         "placeholder": "Riis's room was part of a bigger story... This was happening because..."
       }
     ],

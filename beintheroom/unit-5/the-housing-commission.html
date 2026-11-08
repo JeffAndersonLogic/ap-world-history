@@ -30,9 +30,9 @@
   "premise": [
     "It is 1884 in London. For more than a century, industry and trade have drawn people into Britain's cities faster than anyone could build homes for them. In London, many working families live in a single room, in old houses split up and rented out room by room. In October 1883 a short pamphlet, The Bitter Cry of Outcast London, described these rooms and set the city talking.",
     "In March 1884 the government set up a royal commission to find out why the working classes were so badly housed. Its chair is Sir Charles Dilke, a government minister. Its members include the Prince of Wales, the Conservative leader in the House of Lords, Lord Salisbury, Cardinal Manning, and Henry Broadhurst, a stonemason who became a trade-union leader and a member of Parliament. Witnesses come before it to answer questions: housing managers, doctors, officials and property owners. One of the roles below, the dock laborer's wife, is a made-up character based on the families they described.",
-    "You must decide what the commission's report will say. The hardest question comes first: what is really causing the crisis? Then: who should pay to fix it, and what happens to the families whose homes are knocked down?"
+    "You must decide what the commission's report will say. The hardest question comes first: what is really causing the crisis? Then: whose evidence should the report trust, and what should it admit will keep going for the poorest families, whatever Parliament does?"
   ],
-  "centralQuestion": "What is causing the housing crisis of London's working families, and what should the commission tell Parliament to do about it?",
+  "centralQuestion": "What is causing the housing crisis of London's working families, and what will keep going for the poorest whatever Parliament does?",
   "roles": [
     {
       "id": "chair",
@@ -173,64 +173,64 @@
       ]
     },
     {
-      "id": "pay",
-      "title": "Decide who pays",
-      "prompt": "Who should pay for better homes for working families?",
+      "id": "trust",
+      "title": "Weigh the witnesses",
+      "prompt": "Whose evidence should the report lean on most to explain the crisis?",
       "options": [
         {
-          "id": "loans",
-          "title": "Cheap government loans",
-          "action": "Ask Parliament to lend money at low interest to build working people's homes.",
-          "benefits": "More homes can be built than charity alone could pay for.",
-          "worries": "Taxpayers carry a risk, and some fear the state will take over housing.",
-          "tradeoff": "More homes, with the government more involved."
+          "id": "manager",
+          "title": "The housing manager",
+          "action": "Lean on the woman who collects rents and visits every tenant each week.",
+          "benefits": "She knows how families actually live, room by room.",
+          "worries": "She manages for owners and believes homes must pay for themselves, which shapes what she sees.",
+          "tradeoff": "Close-up knowledge, with a point of view."
         },
         {
-          "id": "owners",
-          "title": "Make owners repair",
-          "action": "Require landlords to repair unhealthy houses or have them closed.",
-          "benefits": "Bad landlords pay for their own neglect.",
-          "worries": "Landlords may raise rents or close houses, leaving families with nowhere to go.",
-          "tradeoff": "Safer homes, perhaps fewer of them."
+          "id": "doctors",
+          "title": "The doctors and officials",
+          "action": "Lean on medical officers and inspectors who count deaths and visit unhealthy houses.",
+          "benefits": "Their numbers show the crisis across whole districts.",
+          "worries": "Numbers can hide why families stay in rooms they know are unhealthy.",
+          "tradeoff": "The big picture, with less of the why."
         },
         {
-          "id": "selfpay",
-          "title": "Homes that pay for themselves",
-          "action": "Encourage private owners and charities to build and manage good homes at fair rents.",
-          "benefits": "No tax money, and well-run homes can earn a small return.",
-          "worries": "The poorest families may never afford even a fair rent.",
-          "tradeoff": "Good homes for some working families, not for the poorest."
+          "id": "families",
+          "title": "The working families",
+          "action": "Lean on what families say about wages, rent and work at the docks.",
+          "benefits": "Only they know why they cannot move.",
+          "worries": "Their stories are hard to check, and members may dismiss them.",
+          "tradeoff": "The deepest causes, if the commission will listen."
         }
       ]
     },
     {
-      "id": "cleared",
-      "title": "Protect the families",
-      "prompt": "What should the report say about homes knocked down for railways and new streets?",
+      "id": "kept",
+      "title": "Say what will not change",
+      "prompt": "Even if Parliament acts on the report, what should the report admit will keep going for the poorest families?",
       "options": [
         {
-          "id": "rehouse",
-          "title": "Rehouse before demolishing",
-          "action": "Require new homes nearby before any more working families' houses are pulled down.",
-          "benefits": "Families are not pushed into even more crowded streets.",
-          "worries": "Railways and new streets become slower and costlier to build.",
-          "tradeoff": "People before progress, and progress delayed."
+          "id": "wages",
+          "title": "Low and irregular wages",
+          "action": "Admit that better homes will cost more rent than a man hired by the day can pay.",
+          "benefits": "The report is honest about the deepest cause.",
+          "worries": "Readers may decide nothing can be done.",
+          "tradeoff": "Honesty that may discourage action."
         },
         {
-          "id": "trains",
-          "title": "Cheap trains to the suburbs",
-          "action": "Ask railways to run cheap early trains so workers can live farther out.",
-          "benefits": "Families can find more space outside the crowded center.",
-          "worries": "Men hired by the day at dawn cannot rely on a train, and fares still cost money.",
-          "tradeoff": "Helps steady workers, less so the poorest."
+          "id": "near",
+          "title": "The need to live near work",
+          "action": "Admit that families must stay close to the docks and markets, where land costs most.",
+          "benefits": "It explains why the poorest crowd the center while others move out.",
+          "worries": "It points at a problem no housing law alone can solve.",
+          "tradeoff": "A clear diagnosis, with no easy cure."
         },
         {
-          "id": "market",
-          "title": "Leave it to builders",
-          "action": "Let private builders replace the houses as land and rents allow.",
-          "benefits": "No new rules or spending.",
-          "worries": "The families who lost their homes may never be able to afford the new ones.",
-          "tradeoff": "Freedom for builders, risk for the poor."
+          "id": "gap",
+          "title": "The gap between classes",
+          "action": "Admit that families who can afford it will keep moving to suburbs, leaving the poorest behind.",
+          "benefits": "It names how the city is splitting by class.",
+          "worries": "Middle-class readers may not like seeing themselves in the problem.",
+          "tradeoff": "The truth about the new classes, told to the people in them."
         }
       ]
     }

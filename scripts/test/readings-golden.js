@@ -233,7 +233,13 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // the 1867 act for the towns and the 1884 act for the countryside as a separate step,
 // matching the 5.8 deep reading. Against the 5.8 blob bf7b3cb8 only that sentence
 // changed; every other Unit 5 reading is byte-for-byte unchanged.
-const APPROVED_UNIT5_REWRITE_BLOB = '7456ea90d6e455c19a36d8416005c987090a5ff6';
+// 2026-11-08: Topic 5.9's rewrite, "A New Ladder", written from the 5.9 story
+// (docs/TOPIC-5-9-STORY-DRAFT.md) and approved by the independent reviewer loop
+// (three passes, six reviewers; docs/TOPIC-5-9-CLAIM-LEDGER.md) under Jeff's
+// standing rule of 2026-10-12. The loop ended on its three-pass safety valve,
+// every finding fixed. Against the approved blob 7456ea90 only the 5.9 entry
+// changed; 5.1 to 5.8 and 5.10 are byte-for-byte unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = '522f51e043d14b4d4d1cb4398990eb672a1347bc';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
@@ -451,8 +457,8 @@ for (const topic of allTopics()) {
     if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
     continue;
   }
-  if (approvedUnit5Rewrite && /^5\.[12345678]$/.test(topic.topicKey)) {
-    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22), 5.5 (2026-10-23), 5.6 (2026-10-24), 5.7 (2026-10-29) and 5.8 (2026-11-01) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
+  if (approvedUnit5Rewrite && /^5\.[123456789]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22), 5.5 (2026-10-23), 5.6 (2026-10-24), 5.7 (2026-10-29), 5.8 (2026-11-01) and 5.9 (2026-11-08) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
     continue;
   }
   const diffs = [];
