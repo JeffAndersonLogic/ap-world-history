@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Why did people call for change, and what did their calls change?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The pressure: one city, two pictures"
+          },
+          {
+            "label": "II",
+            "text": "Workers organized"
+          },
+          {
+            "label": "III",
+            "text": "Thinkers imagined a different society"
+          },
+          {
+            "label": "IV",
+            "text": "Reformers fixed the worst of it"
+          },
+          {
+            "label": "V",
+            "text": "Old empires modernized, and met resistance"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: four rows, one story",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 14 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read, and build four rows.",
       "subtitle": "Workers, thinkers, reformers and governments, and the Ottoman and Qing courts: for each, the pressure, what they wanted, and what happened.",
       "action": {
@@ -56,7 +93,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "The Pressure · Sourcing",
+      "eyebrow": "I · The Pressure · Sourcing",
       "title": "One city, two pictures.",
       "footer": "Same city. Before you judge either one, ask: who wrote it, why, and for whom?",
       "template": {
@@ -82,7 +119,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Workers · At First, a Crime",
+      "eyebrow": "II · Workers · At First, a Crime",
       "title": "From a crime to a legal standing.",
       "footer": "Workers organized to improve conditions, limit hours and raise wages.",
       "kc": "KC-5.1.V.A",
@@ -128,7 +165,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Workers · A Movement for the Vote",
+      "eyebrow": "II · Workers · A Movement for the Vote",
       "title": "The Charter: lost at the time, won later.",
       "kc": "KC-5.1.V.A",
       "template": {
@@ -163,7 +200,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline-lanes",
-      "eyebrow": "Workers · In Different Countries",
+      "eyebrow": "II · Workers · In Different Countries",
       "title": "Unions and parties spread.",
       "footer": "Many wanted more than pay: \"alternative visions of society.\"",
       "kc": "KC-5.1.V.A",
@@ -224,7 +261,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Thinkers · In Their Own Words",
+      "eyebrow": "III · Thinkers · In Their Own Words",
       "title": "Marx and Engels, 1848.",
       "footer": "Who wrote this, for whom, and what picture of society did they want readers to see?",
       "kc": "KC-5.3.IV.A.ii",
@@ -240,7 +277,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-venn",
-      "eyebrow": "Thinkers · Two Words",
+      "eyebrow": "III · Thinkers · Two Words",
       "title": "Socialism and communism.",
       "footer": "By 1900: Marx shaped parties that ran in elections; no workers' revolution won lasting power.",
       "kc": "KC-5.3.IV.A.ii",
@@ -268,18 +305,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · 8 Minutes",
-      "title": "Why did workers organize, and what did Marx imagine?",
-      "subtitle": "Explain one cause that led workers to organize, one thing they wanted and one effect, what discontent led socialists and Marx to want, and one thing his ideas did or did not do by 1900. On your own: no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-8-reactions-to-industrial-economy.html#modules"
-      }
-    },
-    {
       "kind": "sentence-frame",
-      "eyebrow": "Sourcing and Situation 2.B · Model",
+      "eyebrow": "III · Thinkers · Sourcing and Situation 2.B, Model",
       "title": "How do you source a source?",
       "footer": "Four questions: who made it, why, for whom, and when. Then say how one shapes what it says.",
       "template": {
@@ -290,7 +317,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "Reformers · Four Kinds",
+      "eyebrow": "IV · Reformers · Four Kinds",
       "title": "Fixing the worst of it.",
       "footer": "Who pushed each: governments, organizations, or individuals?",
       "kc": "KC-5.1.V.D",
@@ -323,7 +350,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "Reformers · A Government Reforms",
+      "eyebrow": "IV · Reformers · A Government Reforms",
       "title": "Ban the meetings, then insure the workers.",
       "footer": "Reform could answer workers, and also be a weapon against their party.",
       "kc": "KC-5.1.V.D",
@@ -355,18 +382,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder · 8 Minutes",
-      "title": "Source two descriptions of Manchester.",
-      "subtitle": "Engels and the directory: who made each, what each says, its purpose and audience, how one of those explains the difference, and which you think is more accurate.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-8-reactions-to-industrial-economy.html#modules"
-      }
-    },
-    {
       "kind": "story-steps",
-      "eyebrow": "The Old Empires · A Different Pressure",
+      "eyebrow": "V · The Old Empires · A Different Pressure",
       "title": "The pressure came from outside.",
       "footer": "Like Egypt and Japan in Topic 5.6, both tried to modernize from the top.",
       "kc": "KC-5.1.V.B",
@@ -394,7 +411,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "The Old Empires · The Ottoman Empire",
+      "eyebrow": "V · The Old Empires · The Ottoman Empire",
       "title": "Reform, and the people who fought it.",
       "kc": "KC-5.1.V.B",
       "template": {
@@ -429,7 +446,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "The Old Empires · Qing China",
+      "eyebrow": "V · The Old Empires · Qing China",
       "title": "Self-Strengthening, and its limits.",
       "kc": "KC-5.1.V.B",
       "template": {
@@ -464,7 +481,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "balance",
-      "eyebrow": "The Old Empires · Compare",
+      "eyebrow": "V · The Old Empires · Compare",
       "title": "Same pressure, two empires.",
       "kc": "KC-5.1.V.B",
       "template": {
@@ -486,33 +503,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "After 1824, unions could do as they liked.",
-            "evidence": "An 1825 law limited them. Legal standing came in 1871; picketing was legal only from 1875.",
-            "source": "Union laws, 1825, 1871, 1875"
-          },
-          {
-            "myth": "Marx's revolution came in the 1800s.",
-            "evidence": "No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.",
-            "source": "German socialist program, 1891"
-          },
-          {
-            "myth": "China and the Ottoman Empire refused to change.",
-            "evidence": "Both governments built arsenals, factories and schools. Resistance came from inside.",
-            "source": "Tanzimat; Self-Strengthening"
-          }
-        ]
-      }
-    },
-    {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Four rows, one story.",
       "template": {
         "columns": [
@@ -568,7 +560,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · AP Synthesis",
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective I",
       "template": {
@@ -584,23 +576,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab · Optional",
-      "title": "Two sources, one row.",
-      "subtitle": "Choose at least two cards. For each: what kind of source it is, which row it is evidence for, and how its maker's point of view or purpose shapes what it shows.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-8-reactions-to-industrial-economy.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Who reformed, who resisted, and why?",
-      "subtitle": "Explain one reform and who pushed it, why Bismarck gave workers insurance, what pushed the Ottoman or Qing government to modernize and who resisted, and one cause, call and effect in a sentence. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-8-reactions-to-industrial-economy.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you source it.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Source two descriptions of Manchester.",
+            "url": "../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "Workers and Marx. On your own, no coach.",
+            "url": "../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Who reformed, who resisted, and why?",
+            "url": "../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules"
+          }
+        ]
       }
     },
     {
