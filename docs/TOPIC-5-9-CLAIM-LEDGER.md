@@ -21,8 +21,8 @@ named.
 | LO J, KC-5.1.VI.A, VI.B, VI.C wording; reasoning process Continuity and Change; suggested skill 4.B | SD, LD, RC, every surface | `scripts/lib/ced-source/unit-5.js`, p. 108 and p. 96 | VERIFIED |
 | KC-5.1.VI.B reads "working class families" (no hyphen) | LD (was "working-class") | CED source file | VERIFIED; LD corrected |
 | In 1750 most people in Britain lived in the countryside | SD, F10, Deck, DR | Davenport, "Urbanization and mortality in Britain, c. 1800–50," *EcHR* 73 (2020): "By 1851 over half the population lived in settlements of 2,500 or more" (so before then, a minority); the 1851 census as the first urban majority (Springer, *Urban Britain*) | VERIFIED |
-| The 1851 census found, for the first time, more than half the people of England and Wales living in towns | SD, F10, LD, Deck, DR, MAP | Davenport (2020), as above; *Urban Britain* (Springer), "the 1851 census had for the first time recorded over half of the population living in towns"; a contemporary account, "ten millions against ten millions" | VERIFIED (the margin was narrow; "more than half" kept, no percentage) |
-| Manchester: about 23,000 people in a count of 1773; about 70,000 at the 1801 census; more than 300,000 by 1851 | SD, F10, LD, RC, Deck, DR, MAP | 1773: a local census organized by John Whitaker's group (Greater Manchester Archaeological Unit, "The population of Manchester from c.1079 to 1801," gives 1773–4; other sources give 23,000 for the township); 1801: Manchester City Council's population table, 70,409 (township); 1851: "more than 300,000" (borough; the township alone was under 200,000), sources give 303,000 to 316,000 | NARROWED: "about 23,000 ... about 70,000 ... more than 300,000," and the deep reading names the boundaries |
+| The 1851 census found, for the first time, more than half the people of England and Wales living in towns | SD, F10, LD, Deck, DR, MAP | Davenport (2020), as above; *Urban Britain* (Springer), "the 1851 census had for the first time recorded over half of the population living in towns"; a contemporary account, "ten millions against ten millions" | VERIFIED (the margin was narrow; "more than half" kept, no percentage). The quotation "ten millions against ten millions" REMOVED in pass 1: untraced. |
+| Manchester: about 23,000 people in a count of 1773 (Thomas Percival's, with the historian John Whitaker); about 70,000 at the 1801 census; more than 300,000 by 1851 | SD, F10, LD, RC, Deck, DR, MAP | 1773: a local census organized by John Whitaker's group (Greater Manchester Archaeological Unit, "The population of Manchester from c.1079 to 1801," gives 1773–4; other sources give 23,000 for the township); 1801: Manchester City Council's population table, 70,409 (township); 1851: "more than 300,000" (borough; the township alone was under 200,000), sources give 303,000 to 316,000 | NARROWED: "about 23,000 ... about 70,000 ... more than 300,000," and the deep reading names the boundaries |
 | The middle class: factory owners, merchants, bankers, engineers, doctors, lawyers, managers, clerks; rank from money and education, not land or titles | SD, F10, LD, Deck, DR | Standard (e.g. Britannica, "middle class"; the National Archives, Victorian society resources); a definition, not a number | VERIFIED |
 | The Reform Act of 1832 gave the vote to most middle-class men in the towns | SD, F10, LD, Deck, DR | The National Archives, "What caused the 1832 Great Reform Act?": "in effect most middle-class men gained the vote and some skilled craftsmen"; UK Parliament, "The Reform Act 1832": £10 householders in the boroughs; women excluded | VERIFIED |
 | The industrial working class owned no land and no tools and lived on wages, at the hours the employer set | SD, F10, LD, Deck, DR | Definition; the factory's set hours as taught in 5.3 | VERIFIED |
@@ -30,14 +30,14 @@ named.
 | In 1900 Britain's prime minister, Lord Salisbury, was a marquess | SD, F10, LD, Deck, DR | Robert Gascoyne-Cecil, 3rd Marquess of Salisbury, prime minister 1895 to 1902 (UK Government, "Past Prime Ministers") | VERIFIED |
 | Rich middle-class families often bought country houses and married into the gentry | SD, F10, Deck, DR | Standard (Cannadine; Thompson, *English Landed Society in the Nineteenth Century*); "often," not "usually" | VERIFIED |
 | Before industry, families mostly worked together on the farm or at home; women spun and children helped | SD, F10, Deck, DR | 5.3's own surfaces (the putting-out system); Humphries and Schneider, "Spinning the Industrial Revolution" (hand spinning as women's work) | VERIFIED |
-| In Britain in the 1830s, women and girls were a majority of factory workers | SD, F10, LD, Deck, DR | EH.net, "Women Workers in the British Industrial Revolution" (Burnette): Mitchell's 1833 survey "found that females were a majority of the factory labor force"; galbithink.org (Galbi), "Women factory workers," same | VERIFIED (textile factories; "factory" in the 1833 sense) |
+| In a survey of British textile factories in 1833, women and girls were a majority of the workers in most kinds of mill | SD, F10, LD, Deck, DR | Burnette, EH.net, Table Two, from Mitchell's 1834 report on the 1833 returns: females 56.8 percent of the sample (almost all textile mills); cotton 58.0, flax 67.4, silk 78.1, wool 40.9 | NARROWED (pass 1: was "in the 1830s ... a majority of factory workers") |
 | Domestic service was the largest job for women in Britain | SD, F10, LD, Deck, DR, BR | EH.net (Burnette): 1851 figures suggest 40 percent of occupied women in domestic service; Northumberland Archives and others, "domestic service was the largest occupation of women in the nineteenth century"; caution on census over-counting (You, *EcHR* 2023: under 10 percent mis-recorded kin) | VERIFIED |
-| Women were usually paid less than men | SD, F10, LD, Deck, DR | Humphries and Weisdorf, "The Wages of Women in England, 1260–1850," *JEH* (2015); Horrell and Humphries (1995): married women's earnings averaged about 28 percent of their husbands' | VERIFIED; the old surfaces' "for the same labor" REMOVED (the gap came mostly from different jobs: Tertzakian, *EcHR* 2026, on Arkwright's Lumford Mill) |
+| Women were usually paid less than men, often in different, lower-paid jobs; how much was unequal pay for the same work is debated | SD, F10, LD, Deck, DR | Humphries and Weisdorf, *JEH* (2015); Burnette, *Gender, Work and Wages in Industrial Revolution Britain* (2008) and EH.net (much of the gap from productivity and job sorting); reviews (H-Net, Clendinning) on Humphries and Pinchbeck weighting custom and discrimination | NARROWED (pass 1: was "mostly because they were given different, lower-paid jobs") |
 | In Japan in 1900, women made up about 62 percent of the workers in private factories, most in textile mills | SD, F10, LD, Deck, DR, MAP | Tsurumi, *Factory Girls: Women in the Thread Mills of Meiji Japan* (Princeton, 1990): "In 1900, female workers made up 62 percent of the labor force in private factories"; Institute of Developing Economies (1902 and 1907 surveys: 79 percent of cotton mill workers, 94 to 95 percent of silk filature workers) | VERIFIED |
 | Middle-class wives were increasingly expected to stay out of paid work and run the home and raise children; historians call the idea "separate spheres" | SD, F10, LD, Deck, DR | The CED's own sentence; Davidoff and Hall, *Family Fortunes* (1987); Vickery, "Golden Age to Separate Spheres?" (1993) on how far practice matched the ideal | VERIFIED (taught as an ideal that grew, with Vickery's caution in the deep reading) |
 | Beeton (1861): "As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house." | SD, F10, LD (Primary Source), Deck, DR | Isabella Beeton, *The Book of Household Management* (London: S. O. Beeton, 1861; serialized 1859 to 1861), ch. I, para. 1, read in the Project Gutenberg text (eBook 10136), word for word | VERIFIED |
 | The "domestics" in Beeton were servants | SD, F10, Deck | Beeton, same paragraph ("so will her domestics follow in her path"); the book's chapters on servants | VERIFIED |
-| Until laws of 1870 and 1882, an English wife's property and, until 1870, her earnings legally belonged to her husband | SD, F10, LD, Deck, DR | UK Parliament, "Marriage: property and children"; Married Women's Property Act 1870 (earnings kept); Married Women's Property Act 1882 (legislation.gov.uk: all property held as separate property for women married after 1 January 1883); not Scotland | NARROWED: "In England and Wales, until laws of 1870 and 1882, ..." |
+| In England and Wales, until laws of 1870 and 1882, a married woman's property passed under her husband's control, and until 1870 so did her earnings | SD, F10, LD, Deck, DR | UK Parliament, "Marriage: property and children"; Married Women's Property Act 1870 (earnings kept); Married Women's Property Act 1882 (legislation.gov.uk: all property held as separate property for women married after 1 January 1883); not Scotland | NARROWED: "In England and Wales" (Phase 3), and "passed under her husband's control" (pass 1: was "legally belonged to"; under coverture a wife kept ownership of her land, and trusts protected some property) |
 | Cholera reached Britain in 1831 | SD, F10, Deck, DR | Science Museum, "Cholera in Victorian London"; first cases at Sunderland, October 1831 | VERIFIED |
 | Cholera killed about 53,000 people in England and Wales in 1848 and 1849 | SD, F10, LD, Deck, DR | Science Museum ("by 1849, about 53,000 cholera deaths were registered for England and Wales"); "The History of Cholera in Great Britain," *Proc. R. Soc. Med.* (1948): 52,000 to 53,000 | VERIFIED |
 | John Snow traced London's 1854 Broad Street outbreak to one water pump and mapped the deaths | Deck, RC (Evidence Lab), DR | Wellcome Collection, "A map taken from a report by Dr. John Snow" (Cholera Inquiry Committee report, St James, Westminster, 1855; public domain); London Museum, "John Snow: Cholera & the Broad Street pump" | VERIFIED (death count not given: sources say 500 to 600 in about ten days, so no number is stated) |
@@ -46,8 +46,8 @@ named.
 | Coal smoke over the towns and waste in the rivers | SD, F10, Deck, DR | Engels (1845) on the Irk (5.8's verified quotation); Wyld's watercolour (1852) shows the smoke | VERIFIED |
 | Comfortable families lived in cleaner streets and, later, suburbs | SD, F10, Deck, DR | Engels (1845) on the middle class's villas outside central Manchester (5.8's verified quotation on the town's layout) | VERIFIED |
 | Manhattan grew from about 515,000 people in 1850 to about 1.4 million in 1890 | SD, F10, LD, Deck, DR, MAP | U.S. census figures as tabled by Demographia ("New York (Manhattan) sectors, 1800–1910"): 515,547 (1850), 1,441,216 (1890); Boston University population history, 515,547 (1850) | VERIFIED (Manhattan, not the later Greater New York) |
-| Riis (1890): "To-day three-fourths of its people live in the tenements" | SD, F10, LD, RC, Deck, DR | Jacob A. Riis, *How the Other Half Lives* (New York: Scribner's, 1890), ch. 1, read in Project Gutenberg eBook 45502, word for word | VERIFIED |
-| Riis: a room "not thirteen feet either way" where "twelve men and women" slept, lodgers paying "five cents a spot," photographed by flash | SD, F10, RC (Skill Builder), Deck, DR | Riis (1890), ch. 6, same text: "In a room not thirteen feet either way slept twelve men and women, two or three in bunks set in a sort of alcove, the rest on the floor ... Most of the men were lodgers, who slept there for five cents a spot"; "photographed by flash-light" on a police visit | VERIFIED |
+| Riis (1890): "To-day three-fourths of its people live in the tenements" | SD, F10, LD, RC, Deck, DR | Jacob A. Riis, *How the Other Half Lives* (New York: Scribner's, 1890), Introduction (pass 1: the deck said "chapter 1"), read in Project Gutenberg eBook 45502, word for word | VERIFIED |
+| Riis: a room "not thirteen feet either way" where "twelve men and women" slept; "most of the men were lodgers," at "five cents a spot"; photographed by flash | SD, F10, RC (Skill Builder), Deck, DR | Riis (1890), ch. 6, same text: "In a room not thirteen feet either way slept twelve men and women, two or three in bunks set in a sort of alcove, the rest on the floor ... Most of the men were lodgers, who slept there for five cents a spot"; "photographed by flash-light" on a police visit | VERIFIED |
 | Later in the century sewers, clean water and police began to catch up; death rates fell; wages rose faster after about 1860; many city workers were still poor in 1900 | SD, F10, Deck, DR | 5.7's verified row (Feinstein; faster growth from about 1860); 5.8's verified rows (Bazalgette's sewers); ONS life tables (life expectancy rising from the 1870s) | VERIFIED (bridge only) |
 
 ## Pictures
@@ -76,4 +76,47 @@ named.
 
 ## Review findings
 
-(Written in Phase 9.)
+### Pass 1 (packet `review1`, captured after the slide-fit fixes; two reviewers, launched together)
+
+**Page truth, readability, CED alignment, ownership (cheaper model): 7 supported findings, all fixed.** CED,
+reasoning process, skill and ownership reported clean.
+
+1. Slide 16 and the deep reading printed a finished contextualization of Riis's room, the same task as the
+   Skill Builder, First & 10 Q3 and Checkpoint 2. **Fixed:** the model is now a Manchester cellar of the
+   1840s; the notes tell the teacher not to finish the Riis sentence aloud.
+2. Three First & 10 callouts (sections 2, 4, 6) gave the answers to Q1 to Q3. **Fixed:** reworded as moves
+   ("find one thing that was new and one that lasted"; "what did one kind of family need that the other did
+   not?"; "what larger development explains it?"). The body paragraphs keep the content.
+3. Slide 11's strip was labeled "Same job" (the template's default) over "Paid less than men," against the
+   lesson's own caution on pay. **Fixed:** `bothLabel: 'Kept going in both'`.
+4. Slide 10's Beeton quote pushed the gloss on "domestics" off the board. **Fixed:** the quote is cut to the
+   first sentence and the last clause, with an ellipsis.
+5. Slide 7's footer crowded its last row; an "hours" row was taught nowhere else. **Fixed:** the row is gone
+   and the title is shorter.
+6. The Housing Commission's evidence stated the report's 1885 findings before students decide in 1884.
+   **Fixed:** the cards are now testimony and evidence the commissioners heard; the findings move to the
+   reflection step, as what the real commission said.
+7. Checkpoint 2 step 4 (one change, one continuity) had no matching criterion. **Fixed:** Success Criterion 3
+   now names it.
+
+**History (default model): 6 supported findings, all fixed.** Verified with no finding: both quotations word
+for word (Beeton, Riis), all four Library of Congress records, the Wellcome map, the Royal Collection
+watercolor, Japan's 62 percent, the 1832 Act, Salisbury, Manchester's 1801 and 1851 figures, cholera's dates
+and toll, the life-expectancy range and its dispute, Manhattan's populations, Gatrell and Hadden, and the
+commission's chair, members and dates.
+
+1. Why women were paid less was stated as settled. **Narrowed** on the First & 10, lecture card, deep reading
+   and slide 9 notes (row above).
+2. The First & 10 and lecture card said "most of them lodgers"; Riis says "most of the men were lodgers."
+   **Fixed.**
+3. Slide 15 notes cited "chapter 1" for the three-fourths sentence; it is in the Introduction. **Fixed.**
+4. Slide 12 notes credited the 1773 count to "John Whitaker's group"; Chetham's Library: Thomas Percival, with
+   Whitaker. **Fixed.**
+5. The lecture card and slide 9 notes made the 1833 survey a statement about all factory workers. **Narrowed**
+   (row above); the deck notes give the percentages by fiber.
+6. "Legally belonged to her husband." **Narrowed** to "passed under her husband's control" (row above).
+
+Noted, not a defect: the reviewer could not open the 1885 report to confirm the "two main causes"; Hansard
+(Lords, 16 July 1885) reports the commissioners "almost agreed that there were two causes," and the room now
+states it only in the reflection, attributed to the commission. The deep reading's "never been so large"
+(report-absolutes) was softened to "grew fast."

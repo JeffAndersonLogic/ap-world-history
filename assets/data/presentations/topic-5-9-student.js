@@ -279,7 +279,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "bothLabel": "Kept going in both",
         "both": [
           "Paid less than men",
-          "Fewer rights: a wife's property her husband's until 1870 and 1882"
+          "Fewer rights: a wife's property in her husband's control until 1870 and 1882"
         ]
       }
     },

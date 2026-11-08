@@ -2209,7 +2209,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In working-class families, one wage was rarely enough to pay for rent and food. So women, and often children, took wage-earning jobs to add to the family's income. In Britain in the 1830s, women and girls were a majority of the workers in the textile factories. Many more worked in <span class=\"kt\">domestic service</span>, as maids and cooks in other people's houses, the largest single job for women in Britain. Others sewed clothes or made goods at home, paid by the piece. Women were usually paid less than men, mostly because they were given different, lower-paid jobs."
+            "html": "In working-class families, one wage was rarely enough to pay for rent and food. So women, and often children, took wage-earning jobs to add to the family's income. In a survey of British textile factories in 1833, women and girls were a majority of the workers in most kinds of mill. Many more worked in <span class=\"kt\">domestic service</span>, as maids and cooks in other people's houses, the largest single job for women in Britain. Others sewed clothes or made goods at home, paid by the piece. Women were usually paid less than men, often because they were given different, lower-paid jobs; historians still debate how much was also unequal pay for the same work."
           },
           {
             "type": "p",
@@ -2244,7 +2244,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "What kept going? In both classes, women were paid less and had fewer rights than men. In England and Wales, until laws of 1870 and 1882, a married woman's property legally belonged to her husband, and until 1870 so did the money she earned. The College Board's word is \"increasingly\": the middle-class home was an ideal that grew over the century, and many women's lives never fit it."
+            "html": "What kept going? In both classes, women were paid less and had fewer rights than men. In England and Wales, until laws of 1870 and 1882, a married woman's property passed under her husband's control, and until 1870 so did the money she earned. The College Board's word is \"increasingly\": the middle-class home was an ideal that grew over the century, and many women's lives never fit it."
           }
         ],
         "callout": {
@@ -2282,7 +2282,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan, the heart of New York City, grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants. In 1890 a reporter, Jacob Riis, wrote that \"three-fourths of its people live in the tenements.\" A <span class=\"kt\">tenement</span> was a crowded apartment building for poor renters. Riis photographed one room, \"not thirteen feet either way,\" where twelve men and women slept, most of them lodgers paying \"five cents a spot.\""
+            "html": "The College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan, the heart of New York City, grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants. In 1890 a reporter, Jacob Riis, wrote that \"three-fourths of its people live in the tenements.\" A <span class=\"kt\">tenement</span> was a crowded apartment building for poor renters. Riis photographed one room, \"not thirteen feet either way,\" where twelve men and women slept; most of the men were lodgers, paying \"five cents a spot.\""
           },
           {
             "type": "p",

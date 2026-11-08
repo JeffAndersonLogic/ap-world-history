@@ -122,9 +122,9 @@ window.BEHISTORICAL_LESSON = {
         title: "Work and Home, Split by Class",
         bullets: [
           "**Women and children had always worked.** What changed was where they worked, and how the answer split by class.",
-          "**Working-class families:** one wage was rarely enough, so women and often children took wage-earning jobs to add to the family's income: in textile mills (in Britain in the 1830s, women and girls were a majority of factory workers), in domestic service, the largest job for women, or sewing at home, paid by the piece. Women were usually paid less than men, mostly because they were given different, lower-paid jobs. In Japan in 1900, about 62 percent of the workers in private factories were women, most in textile mills.",
+          "**Working-class families:** one wage was rarely enough, so women and often children took wage-earning jobs to add to the family's income: in textile mills (in the British textile mills surveyed in 1833, women and girls were a majority of the workers), in domestic service, the largest job for women, or sewing at home, paid by the piece. Women were usually paid less than men, often because they were given different, lower-paid jobs; historians still debate how much was also unequal pay for the same work. In Japan in 1900, about 62 percent of the workers in private factories were women, most in textile mills.",
           "**Middle-class families:** one earner was enough, so the wife was increasingly expected to stay out of paid work and to run the home and raise the children. Historians call the idea separate spheres. Isabella Beeton's Book of Household Management (1861) compared the mistress of a house to \"the commander of an army\"; the \"domestics\" she commanded were servants, most of them working-class women.",
-          "**What kept going:** in both classes women were paid less and had fewer rights than men. In England and Wales, until laws of 1870 and 1882, a married woman's property legally belonged to her husband, and until 1870 so did the money she earned."
+          "**What kept going:** in both classes women were paid less and had fewer rights than men. In England and Wales, until laws of 1870 and 1882, a married woman's property passed under her husband's control, and until 1870 so did the money she earned."
         ],
         image: {
           title: "The Four Seasons of Life: Middle Age, about 1868",
@@ -152,7 +152,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Not Only Britain: New York, and 1900",
         bullets: [
           "**Global capitalism:** the College Board ties these challenges to \"global capitalism,\" because the same thing happened wherever industry and trade drew people in. Manhattan grew from about 515,000 people in 1850 to about 1.4 million in 1890, many of them immigrants.",
-          "**Riis, 1890:** the reporter Jacob Riis wrote that \"three-fourths of its people live in the tenements,\" crowded apartment buildings for poor renters, and photographed a room \"not thirteen feet either way\" where twelve men and women slept, most of them lodgers paying \"five cents a spot.\"",
+          "**Riis, 1890:** the reporter Jacob Riis wrote that \"three-fourths of its people live in the tenements,\" crowded apartment buildings for poor renters, and photographed a room \"not thirteen feet either way\" where twelve men and women slept; most of the men were lodgers, paying \"five cents a spot.\"",
           "**By 1900:** cities began to catch up with sewers, clean water and police (Topic 5.8 has those reforms). Death rates fell, and wages rose faster after about 1860. But many city workers were still poor."
         ],
         image: {

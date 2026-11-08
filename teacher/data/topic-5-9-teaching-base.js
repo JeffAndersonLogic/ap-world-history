@@ -81,7 +81,7 @@ window.BEHISTORICAL_TEACHING = {
       { label: 'III', title: 'Work and home, split by class', kc: 'KC-5.1.VI.B', groups: [
         { name: 'Working-class families', points: [
           'One wage rarely enough, so women and often children earn',
-          'Britain, 1830s: women and girls a majority of textile factory workers',
+          '1833 survey: women and girls a majority in most textile mills',
           'Domestic service: the largest job for women',
           'Sewing at home, paid by the piece (Riis, New York)',
           'Japan, 1900: about 62 percent of private factory workers women'
@@ -427,8 +427,8 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'KC-5.1.VI.B, first half: women and often children in working class families typically held wage-earning jobs to supplement their families\' income. The cause is in the sentence: the family needed the money.',
-          'Britain: an 1833 survey of factories (Mitchell\'s) found that females were a majority of the factory labor force (Burnette, EH.net). Domestic service was the largest single job for women; the 1851 figures suggest about 40 percent of women with a recorded occupation were in it.',
-          'Pay: women were usually paid less than men. The evidence is that the gap came mostly from being given different, lower-paid jobs; whether women were paid less for the same job is disputed, so do not say "half pay for the same work."',
+          'Britain: an 1833 survey of factories, almost all textile mills (Mitchell\'s, reported 1834), found females were 57 percent of the workers: a majority in cotton (58 percent), flax (67) and silk (78), but not in wool (41) (Burnette, EH.net). Domestic service was the largest single job for women; the 1851 figures suggest about 40 percent of women with a recorded occupation were in it.',
+          'Pay: women were usually paid less than men. Some historians (Burnette) find that much of the gap came from being given different, lower-paid jobs; others (Humphries) put more weight on custom and unequal pay for the same job. The debate is live, so do not say "half pay for the same work."',
           'Japan: Tsurumi (Factory Girls, 1990): in 1900 women were 62 percent of the labor force in private factories, most of them young women in textile mills. Industry spread the pattern; Meiji policy itself is 5.6\'s.',
           'The picture: Jacob Riis, "Sewing pants for the trade in a Gotham Court \'flat\'," New York, about 1890 (Library of Congress). A woman and two girls sewing piecework at home: paid by the piece, inside a tenement. Riis posed and chose his scenes.'
         ],
@@ -475,7 +475,7 @@ window.BEHISTORICAL_TEACHING = {
         left: { name: 'Working-class women', items: ['Earn wages for the family', 'Mills, service, piecework', 'Children often earn too'] },
         right: { name: 'Middle-class women', items: ['Family can live on one earner', 'Increasingly kept to the home', 'Run the house, raise the children'] },
         bothLabel: 'Kept going in both',
-        both: ['Paid less than men', 'Fewer rights: a wife\'s property her husband\'s until 1870 and 1882']
+        both: ['Paid less than men', 'Fewer rights: a wife\'s property in her husband\'s control until 1870 and 1882']
       },
       notes: {
         minutes: 2,
@@ -519,8 +519,8 @@ window.BEHISTORICAL_TEACHING = {
           'The problem is speed: "rapid" urbanization'
         ],
         land: [
-          'Manchester: about 23,000 people in a local count of 1773 to 1774 (organized by John Whitaker\'s group); about 70,000 in the township at the first national census in 1801 (Manchester City Council\'s table: 70,409); more than 300,000 by 1851 (counting the borough; the township alone was under 200,000). The figures depend on the boundary, so the deck says "about" and "more than."',
-          'The 1851 census was the first to record more than half the people of England and Wales living in towns (Davenport, Economic History Review 2020: "by 1851 over half the population lived in settlements of 2,500 or more"). A writer of the time called it "ten millions against ten millions": a narrow majority.',
+          'Manchester: about 23,000 people in a local count of 1773 to 1774 (the physician Thomas Percival\'s count, with the historian John Whitaker); about 70,000 in the township at the first national census in 1801 (Manchester City Council\'s table: 70,409); more than 300,000 by 1851 (counting the borough; the township alone was under 200,000). The figures depend on the boundary, so the deck says "about" and "more than."',
+          'The 1851 census was the first to record more than half the people of England and Wales living in towns (Davenport, Economic History Review 2020: "by 1851 over half the population lived in settlements of 2,500 or more"). It was a narrow majority.',
           'The CED\'s word is "rapid." Growth this fast outran every system a town had.',
           'The picture is Wyld\'s 1852 watercolor again: the town\'s chimneys, a year after the census.'
         ],
@@ -622,7 +622,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'Manhattan: 515,547 people in 1850 and 1,441,216 in 1890 (U.S. census, as tabled by Demographia). Greater New York, with Brooklyn, was formed only in 1898.',
-          'Jacob Riis, How the Other Half Lives (New York: Scribner\'s, 1890), chapter 1: "To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them."',
+          'Jacob Riis, How the Other Half Lives (New York: Scribner\'s, 1890), Introduction: "To-day three-fourths of its people live in the tenements, and the nineteenth century drift of the population to the cities is sending ever-increasing multitudes to crowd them."',
           'Chapter 6: "In a room not thirteen feet either way slept twelve men and women, two or three in bunks set in a sort of alcove, the rest on the floor ... Most of the men were lodgers, who slept there for five cents a spot." It was photographed "by flash-light" on a police visit after midnight; the book captions it "Lodgers in a crowded Bayard Street tenement—\'Five cents a spot.\'" (Library of Congress copy, about 1889 to 1890.)',
           'Sourcing caution: Riis was a reformer writing to shock middle-class readers, and his book carries prejudiced lines about immigrant groups. His numbers and scenes are evidence of crowding; his judgments of people are evidence of his own point of view.',
           'Immigration is Unit 6\'s; name it as who filled the tenements, do not teach it.'
