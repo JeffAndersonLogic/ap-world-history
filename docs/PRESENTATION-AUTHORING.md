@@ -180,7 +180,7 @@ Three of these are checked by machine, because each is easy to lose without anyt
 6. **Minutes are for planning, not projection.** The run of show (`flow`) keeps the minute plan and folds away under the outline in the briefing. No projected slide carries a minute count.
 7. **A Sharpen or thesis slide stays only when it carries something no other slide can**: a learning objective (4.5's Objective J), or the CED's sample activity and the thesis move a topic builds toward (4.8's Build a Thesis). Otherwise its frame moves into the Work Time notes, given aloud.
 
-**The reference model is Topic 4.4** (`teacher/data/topic-4-4-teaching-base.js`), built new in this shape. Topics 4.5 to 4.8 were converted from the older shape without changing a story slide, and show how. `scripts/test/teaching-os-architecture.test.js` enforces the shape for every deck not on `OUTLINE_OWED`, the list of decks built before the standard; `docs/TEACHING-OS.md`, The Briefing, says what it checks.
+**The reference model is Topic 4.4** (`teacher/data/topic-4-4-teaching-base.js`), built new in this shape. Topics 4.5 to 4.8 and 5.1 to 5.8 were converted from the older shape without changing a story slide, and show how. `scripts/test/teaching-os-architecture.test.js` enforces the shape for every deck not on `OUTLINE_OWED`, the list of decks built before the standard; `docs/TEACHING-OS.md`, The Briefing, says what it checks.
 
 ### BeReady retrieval standard
 
