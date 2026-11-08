@@ -19,10 +19,27 @@
  * redrew the map.
  * Retelling slide: the cause chain (phase 'retell').
  *
- * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
- * 2026-11-23 and 2026-11-24).
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * Class dates: Green Wednesday 2026-12-02, Silver Thursday 2026-12-03.
+ * Required modules, from the schedule: 02 First & 10, 05 Skill Builder,
+ * 06 Checkpoint 1 and 10 Checkpoint 2 (Jeff, 2026-11-08, applying his rule of
+ * 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen). The
+ * deck predated that and launched 07 Evidence Lab with Checkpoint 1 optional;
+ * the Evidence Lab is now the early-finisher option.
+ *
+ * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
+ * topic; slides that only point to a module are cut; the lecture tells the
+ * story). The briefing opens on the outline below, a road map before the
+ * First & 10 shows students the same six section headers, every story slide's
+ * eyebrow names its section, minute counts are off the projected slides, the
+ * myths moved to the outline's Watch for list and the retelling slide's notes,
+ * and one Work Time slide replaced Myth and Evidence and the four module launch
+ * slides (Skill Builder, Checkpoint 1, Evidence Lab, Checkpoint 2). No story
+ * slide changed. 29 slides to 26. The deck had no Sharpen slide. The two
+ * Compare Two Sources slides stay as story slides in section IV: they model
+ * the CED's suggested skill (3.C) where the documents are, a short version of
+ * its sample activity. Say It in One Sentence stays as the closer: it answers
+ * learning objective C, the topic's only objective, which the recipe slide's
+ * band also carries.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -46,12 +63,98 @@ window.BEHISTORICAL_TEACHING = {
     should: [
       'Name what the revolutions created as ideas, not only states: the republic, liberalism and democracy, and the uprisings of 1830 and 1848 they set off (KC-5.3.IV.A.i).',
       'Give Haiti its full weight: enslaved people rose first, in 1791; France\'s 1794 law followed the fighting; Haitians won independence by defeating Napoleon\'s army.',
-      'Correct three myths: "the Enlightenment caused the revolutions," "France gave Haiti its freedom," and "nationalism only built countries."'
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Enlightenment caused the revolutions," "France gave Haiti its freedom," and "nationalism only built countries."'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "How Revolutions Made Nations."',
-      'Use the Primary Source (the Letter from Jamaica) as an extension for early finishers.',
-      'For a class that is ahead: the CED\'s other examples, the Māori King movement and the New Zealand Wars, and Lola Rodríguez de Tió\'s poems for Puerto Rico (slide 23 notes).'
+      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the Primary Source (Module 08, the Letter from Jamaica) as an extension.',
+      'For a class that is ahead: the CED\'s other examples, the Māori King movement and the New Zealand Wars, and Lola Rodríguez de Tió\'s poems for Puerto Rico (slide 22 notes).'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes, the First & 10 "How Revolutions Made Nations" or
+  // docs/TOPIC-5-2-STORY-DRAFT.md; nothing is new. Required modules are the
+  // schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'The recipe: grievance, words, a chance', kc: 'Learning Objective C', points: [
+        'Many people read Locke and went on obeying their kings',
+        'Grievance = a wrong many people feel (discontent with kings and empires)',
+        'Words = a document that names it',
+        'Chance = the ruler is broke, far away or gone',
+        'A tool for four cases, not a law of history: "watch for all three"'
+      ] },
+      { label: 'II', title: 'America and France', kc: 'KC-5.3.III.B · KC-5.3.I.B · KC-5.3', points: [
+        'America: war debt, then taxes (Stamp Act, 1765): "no taxation without representation"',
+        '1776: power from "the consent of the governed"; the people may "alter or to abolish it"',
+        'Chance: an ocean away, no French army next door after 1763; French help from 1778',
+        'Created: independence 1783; a republic, Constitution 1787; slavery kept',
+        'France: the American war nearly bankrupts the king; Estates-General, May 1789',
+        'Privilege, taxes and bread; the Bastille; the Rights of Man, August 1789',
+        'A republic 1792, the Terror, Napoleon emperor 1804'
+      ] },
+      { label: 'III', title: 'Haiti and Spanish America', kc: 'KC-5.3.III.B · KC-5.3.I.B · KC-5.3', points: [
+        'Saint-Domingue: more than five enslaved people for every free person',
+        'Free people of color claim the declaration; the enslaved rise, August 1791',
+        'France ends slavery 1794, after the fighting; Napoleon\'s army defeated; Haiti, 1 January 1804',
+        'Haiti\'s effects: Louisiana sold 1803; US recognition only 1862; the 1825 indemnity',
+        'Spanish America: creoles kept out of top offices, which went to peninsulares',
+        'Chance: Napoleon takes Spain\'s king, 1808; juntas and Hidalgo, 1810',
+        'Letter from Jamaica, 1815; by 1826 Spain keeps only Cuba and Puerto Rico'
+      ] },
+      { label: 'IV', title: 'The chain, and the words compared', kc: 'KC-5.3.III.B · KC-5.3.I.B', points: [
+        'America to France: the debt',
+        'France to Saint-Domingue: the declaration claimed',
+        'France to Spanish America: Napoleon\'s invasion of Spain, 1808',
+        'Haiti to Bolívar: guns, 1816 (helped it win, not start)',
+        'Each link is one cause among several'
+      ], skill: 'You model 3.C (compare the arguments of two sources) out loud with the frame "Both ... argue that ..., but ..., because ...", on the 1789 declaration and Toussaint\'s 1793 proclamation. Students then compare the 1776 Declaration with Bolívar\'s 1815 letter, and practice it in the Skill Builder. A short version of the CED\'s sample activity, a seminar on the three documents.' },
+      { label: 'V', title: 'New ways to govern', kc: 'KC-5.3.IV.A.i', points: [
+        'Discontent with kings and empires made new systems and ideas',
+        'Republic: no king; leaders elected under a written constitution',
+        'Liberalism: a constitution and parliament limit government and protect rights',
+        'Democracy: rule by the people; the vote for all men',
+        'They helped set off 1830 and 1848; most of 1848 crushed within two years'
+      ] },
+      { label: 'VI', title: 'The nation redraws the map', kc: 'KC-5.3.II.ii · KC-5.3.II.iii', points: [
+        'A state belongs to its people. Which people? The nation',
+        'The nation shares a language, a religion, customs and a homeland',
+        'Governments use it: France calls the whole nation to war, 1793',
+        'Joins states: Italy 1861 (Rome 1870); Germany 1871, at Versailles',
+        'Bismarck, 1862: "iron and blood," not speeches; Frankfurt 1848 failed',
+        'Pulls peoples away: Greece 1830; Serbia, Montenegro, Romania 1878',
+        'Ottomanism: one loyalty, to the empire; it did not stop them leaving'
+      ] }
+    ],
+    wrap: { title: 'Put it together', columns: ['The causes', 'What it created', 'What came next'], rows: [
+      { label: 'America', cells: ['Taxes; the 1776 Declaration; an ocean away', 'A republic under the 1787 Constitution', 'Its war debt nearly bankrupts France'] },
+      { label: 'France', cells: ['Privilege, taxes, bread; a bankrupt king; the 1789 declaration', 'A republic, then Napoleon\'s empire', 'Its words claimed in Saint-Domingue; Napoleon takes Spain\'s king'] },
+      { label: 'Haiti', cells: ['Slavery; the declaration claimed; France divided', 'Independence, 1804, by people who freed themselves', 'Louisiana sold; Haiti arms Bolívar, 1816'] },
+      { label: 'Spanish America', cells: ['Creoles shut out; no king after 1808; the Letter from Jamaica', 'Independent states by 1826', 'Creole elites on top; slavery lasted decades'] },
+      { label: 'New ideas', cells: ['Discontent with kings and empires', 'Republics, liberalism, democracy', 'The revolutions of 1830 and 1848'] },
+      { label: 'The nation', cells: ['A state belongs to its people: which people?', 'Loyalty to the nation, used by governments', 'Italy and Germany joined; Balkan peoples pulled from the Ottoman Empire'] }
+    ] },
+    vocabulary: [
+      { term: 'Grievance', def: 'A wrong that many people felt, such as an unfair tax or a law that shut them out.' },
+      { term: 'Republic', def: 'A country with no king, whose leaders are elected.' },
+      { term: 'Estates-General', def: 'France\'s assembly of the clergy, the nobles and everyone else. The king called it to raise taxes; it met in 1789 for the first time since 1614.' },
+      { term: 'Sovereignty', def: 'The highest power in a state. In 1789 the French said it "resides essentially in the nation."' },
+      { term: 'Free People of Color', def: 'In Saint-Domingue, free people of African or mixed descent, who asked the Assembly in Paris for the equal rights its declaration promised.' },
+      { term: 'Creoles', def: 'People of Spanish descent born in the Americas, who owned land and businesses but were kept out of the highest offices.' },
+      { term: 'Peninsulares', def: 'Men born in Spain, who held the highest offices in Spain\'s American empire.' },
+      { term: 'Liberalism', def: 'The belief that a constitution and an elected parliament should limit the government and protect each person\'s rights, such as free speech, a free press and property.' },
+      { term: 'Democracy', def: 'Rule by the people; in the 1800s, the push for the vote to reach all men.' },
+      { term: 'Nationalism', def: 'Loyalty to the nation, everyone who shared a language, a religion, customs and a homeland, above loyalty to a king or an empire.' },
+      { term: 'Unification', def: 'Joining many small states into one, as in Italy and Germany.' },
+      { term: 'Ottomanism', def: 'The Ottoman government\'s answer to nationalism: one loyalty for everyone, to the empire, with equal treatment promised in 1856 and every subject made an Ottoman citizen in 1869.' }
+    ],
+    watch: [
+      { myth: '"The Enlightenment caused the revolutions."', fix: 'The ideas gave revolutionaries words. Taxes, debt, bread, slavery and Napoleon\'s invasion of Spain mattered too. Do not swing to "ideas did not matter": the words are one of three causes.' },
+      { myth: '"France gave Haiti its freedom."', fix: 'The enslaved rose up in 1791; France\'s 1794 law followed the fighting, and Haitians defeated Napoleon\'s army. But the law did matter: Toussaint joined France after it.' },
+      { myth: '"Nationalism only built countries."', fix: 'It joined Italy and Germany together and pulled the Balkans away from the Ottoman Empire. But do not say it broke the Ottoman Empire apart: the empire lasted to 1922.' }
     ]
   },
 
@@ -59,32 +162,29 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the objective, owns and bridge-only, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 5.1. Bridge to the question.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over the Bastille.', students: 'Predict what it took.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "How Revolutions Made Nations" in class.', students: 'Find the grievance, the words and the chance in each revolution.', slide: 4 },
-    { id: 'recipe', label: 'The Recipe', range: '17-18', minutes: 1, teacher: 'Grievance + words + a chance.', students: 'Say why ideas alone are not enough.', slide: 5 },
-    { id: 'america', label: 'America', range: '18-20', minutes: 2, teacher: 'The recipe, then what it created.', students: 'Name the three ingredients.', slide: 6 },
-    { id: 'declaration', label: 'The Words, 1776', range: '20-21', minutes: 1, teacher: 'Read the Declaration\'s argument.', students: 'Say where power comes from.', slide: 7 },
-    { id: 'france', label: 'France: the Bill Comes Due', range: '21-23', minutes: 2, teacher: 'One revolution\'s effect becomes the next one\'s cause.', students: 'Trace the chain.', slide: 8 },
-    { id: 'francecreated', label: 'What France Created', range: '23-24', minutes: 1, teacher: 'Kingdom, republic, empire.', students: 'Read the timeline.', slide: 9 },
-    { id: 'haiti', label: 'Haiti', range: '24-26', minutes: 2, teacher: 'The words, claimed by the enslaved.', students: 'Say who acted first.', slide: 10 },
-    { id: 'haitieffects', label: 'Haiti\'s Effects', range: '26-27', minutes: 1, teacher: 'Effects that reached other countries.', students: 'Pick the biggest effect.', slide: 11 },
-    { id: 'spanish', label: 'Spanish America', range: '27-29', minutes: 2, teacher: 'An empire with no king.', students: 'Name the chance.', slide: 12 },
-    { id: 'jamaica', label: 'The Words, 1815', range: '29-30', minutes: 1, teacher: 'Read Bolívar.', students: 'Say what he argues.', slide: 13 },
-    { id: 'chain', label: 'The Chain', range: '30-31', minutes: 1, teacher: 'Each revolution helped another start or win.', students: 'Say each link.', slide: 14 },
-    { id: 'model', label: 'Compare Two Sources', range: '31-33', minutes: 2, teacher: 'Model 3.C on the 1776 and 1789 declarations.', students: 'Fill the frame aloud.', slide: 15 },
-    { id: 'practice', label: 'Your Turn: 1776 and 1815', range: '33-35', minutes: 2, teacher: 'The Declaration beside the Letter from Jamaica.', students: 'Compare the two arguments.', slide: 16 },
-    { id: 'skill', label: 'Skill Builder', range: '35-43', minutes: 8, teacher: 'Module 05: Claims and Evidence in Sources 3.C.', students: 'Compare two sources.', slide: 17 },
-    { id: 'ideas', label: 'New Ways to Govern', range: '43-45', minutes: 2, teacher: 'Republic, liberalism, democracy.', students: 'Say what each one wants.', slide: 18 },
-    { id: 'nation', label: 'From the People to the Nation', range: '45-46', minutes: 1, teacher: 'Which people? The nation.', students: 'Name what a nation shares.', slide: 19 },
-    { id: 'unify', label: 'Uniting Italy and Germany', range: '46-48', minutes: 2, teacher: 'Nationalism joins states.', students: 'Compare the two.', slide: 20 },
-    { id: 'versailles', label: 'Versailles, 1871', range: '48-49', minutes: 1, teacher: 'Iron and blood, then the Hall of Mirrors.', students: 'Say why the place matters.', slide: 21 },
-    { id: 'break', label: 'Nation Against Empire', range: '49-51', minutes: 2, teacher: 'Nationalism breaks an empire, and the empire answers.', students: 'Say why Ottomanism failed.', slide: 22 },
-    { id: 'myths', label: 'Myth and Evidence', range: '51-53', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 23 },
-    { id: 'retell', label: 'How Revolutions Made Nations', range: '53-56', minutes: 3, teacher: 'Students redraw the chain from memory.', students: 'Retell the whole topic.', slide: 24 },
-    { id: 'synthesis', label: 'Say It in One Sentence', range: '56-57', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 25 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: causes and what the revolutions created.', students: 'Work without the coach.', slide: 26 },
-    { id: 'evidence', label: 'Evidence Lab', range: '57-64', minutes: 7, teacher: 'Module 07: two sources, a cause and an effect.', students: 'Observe, then infer, then name a limit.', slide: 27 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '64-76', minutes: 12, teacher: 'Module 10: how nationalism joined states and pulled peoples away from an empire. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 28 },
-    { id: 'close', label: 'Landing Sentence', range: '76-78', minutes: 2, teacher: 'Land the answer and hand off to 5.3.', students: 'Say the topic in one sentence.', slide: 29 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the six sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "How Revolutions Made Nations" in class.', students: 'Find the grievance, the words and the chance in each revolution.', slide: 5 },
+    { id: 'recipe', label: 'The Recipe', range: '18-19', minutes: 1, teacher: 'Grievance + words + a chance.', students: 'Say why ideas alone are not enough.', slide: 6 },
+    { id: 'america', label: 'America', range: '19-21', minutes: 2, teacher: 'The recipe, then what it created.', students: 'Name the three ingredients.', slide: 7 },
+    { id: 'declaration', label: 'The Words, 1776', range: '21-22', minutes: 1, teacher: 'Read the Declaration\'s argument.', students: 'Say where power comes from.', slide: 8 },
+    { id: 'france', label: 'France: the Bill Comes Due', range: '22-24', minutes: 2, teacher: 'One revolution\'s effect becomes the next one\'s cause.', students: 'Trace the chain.', slide: 9 },
+    { id: 'francecreated', label: 'What France Created', range: '24-25', minutes: 1, teacher: 'Kingdom, republic, empire.', students: 'Read the timeline.', slide: 10 },
+    { id: 'haiti', label: 'Haiti', range: '25-27', minutes: 2, teacher: 'The words, claimed by the enslaved.', students: 'Say who acted first.', slide: 11 },
+    { id: 'haitieffects', label: 'Haiti\'s Effects', range: '27-28', minutes: 1, teacher: 'Effects that reached other countries.', students: 'Pick the biggest effect.', slide: 12 },
+    { id: 'spanish', label: 'Spanish America', range: '28-30', minutes: 2, teacher: 'An empire with no king.', students: 'Name the chance.', slide: 13 },
+    { id: 'jamaica', label: 'The Words, 1815', range: '30-31', minutes: 1, teacher: 'Read Bolívar.', students: 'Say what he argues.', slide: 14 },
+    { id: 'chain', label: 'The Chain', range: '31-32', minutes: 1, teacher: 'Each revolution helped another start or win.', students: 'Say each link.', slide: 15 },
+    { id: 'model', label: 'Compare Two Sources', range: '32-34', minutes: 2, teacher: 'Model 3.C on the 1789 declaration and Toussaint\'s 1793 proclamation.', students: 'Fill the frame aloud.', slide: 16 },
+    { id: 'practice', label: 'Your Turn: 1776 and 1815', range: '34-36', minutes: 2, teacher: 'The Declaration beside the Letter from Jamaica.', students: 'Compare the two arguments.', slide: 17 },
+    { id: 'ideas', label: 'New Ways to Govern', range: '36-38', minutes: 2, teacher: 'Republic, liberalism, democracy.', students: 'Say what each one wants.', slide: 18 },
+    { id: 'nation', label: 'From the People to the Nation', range: '38-39', minutes: 1, teacher: 'Which people? The nation.', students: 'Name what a nation shares.', slide: 19 },
+    { id: 'unify', label: 'Uniting Italy and Germany', range: '39-41', minutes: 2, teacher: 'Nationalism joins states.', students: 'Compare the two.', slide: 20 },
+    { id: 'versailles', label: 'Versailles, 1871', range: '41-42', minutes: 1, teacher: 'Iron and blood, then the Hall of Mirrors.', students: 'Say why the place matters.', slide: 21 },
+    { id: 'break', label: 'Nation Against Empire', range: '42-44', minutes: 2, teacher: 'Nationalism pulls peoples away from an empire, and the empire answers.', students: 'Say why Ottomanism failed.', slide: 22 },
+    { id: 'retell', label: 'How Revolutions Made Nations', range: '44-48', minutes: 4, teacher: 'Students redraw the chain from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 23 },
+    { id: 'synthesis', label: 'Say It in One Sentence', range: '48-49', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 24 },
+    { id: 'worktime', label: 'Work Time', range: '49-83', minutes: 34, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder (3.C), Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 25 },
+    { id: 'close', label: 'Landing Sentence', range: '83-85', minutes: 2, teacher: 'Land the answer and hand off to 5.3.', students: 'Say the topic in one sentence.', slide: 26 }
   ],
 
   quickLaunch: [
@@ -101,17 +201,26 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'Grievance + words + a chance = revolution. Then the nation redrew the map.',
       subtitle: 'Causation, with Claims and Evidence in Sources 3.C. What caused the revolutions of 1750 to 1900, and what did they create?',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: grievance + words + a chance = revolution',
+          'Causes AND effects: every case ends on what it created',
+          'Ideas are one cause, not the cause',
+          'Each revolution helped another start or win',
+          'Nationalism joins states, pulls peoples from empires',
+          'Model 3.C: compare two documents, explain why',
+          'Three myths: outline Watch for list'
+        ],
         land: [
           'CED pp. 100 to 101. One learning objective, C (Governance): explain causes and effects of the various revolutions in the period from 1750 to 1900. The reasoning process is Causation (p. 95); the suggested skill is 3.C, compare the arguments or main ideas of two sources.',
           'Key Concepts: KC-5.3 (an intense period of revolution and rebellion against existing governments, leading to new nation-states around the world); KC-5.3.IV.A.i (discontent with monarchist and imperial rule encouraged new systems of government and ideologies, including democracy and 19th-century liberalism); KC-5.3.III.B (colonial subjects in the Americas rebelled; the American Revolution and its republic were a model; the American, Haitian and Latin American revolutions created independent states); KC-5.3.I.B (Enlightenment ideas, as reflected in the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen, and Bolívar\'s Letter from Jamaica, influenced resistance); KC-5.3.II.ii (a new sense of commonality based on language, religion, social customs and territory, sometimes harnessed by governments); KC-5.3.II.iii (national communities linked identity with borders; nationalists challenged boundaries or sought unification).',
-          'The CED\'s illustrative examples, beside KC-5.3.II.iii: the Propaganda Movement in the Philippines; Maori nationalism and the New Zealand wars; Puerto Rico, the writings of Lola Rodríguez de Tió; German and Italian unifications; Balkan nationalisms; Ottomanism. This deck uses the unifications (slides 20 and 21), the Balkans and Ottomanism (slide 22); the reading adds one sentence on the Propaganda Movement. The CED\'s sample activity (p. 97) is a Socratic seminar on the three documents; slides 15 and 16 and the Skill Builder are a short version of it.',
+          'The CED\'s illustrative examples, beside KC-5.3.II.iii: the Propaganda Movement in the Philippines; Maori nationalism and the New Zealand wars; Puerto Rico, the writings of Lola Rodríguez de Tió; German and Italian unifications; Balkan nationalisms; Ottomanism. This deck uses the unifications (slides 20 and 21), the Balkans and Ottomanism (slide 22); the reading adds one sentence on the Propaganda Movement, and slide 22\'s notes carry it, Māori nationalism and Rodríguez de Tió for a class that is ahead. The CED\'s sample activity (p. 97) is a Socratic seminar on the three documents; slides 16 and 17 and the Skill Builder are a short version of it.',
           'Owns: the revolutions, their causes and effects, the three documents, the new systems and ideologies, and nationalism. Bridge only: the Enlightenment ideas themselves (5.1, named not retaught), abolition and serfdom as long reform movements and de Gouges (5.1), France\'s 1848 vote for all men (5.1). Hand-off: the industrial revolution (5.3).',
-          'Three myths, on slide 23: "the Enlightenment caused the revolutions"; "France gave Haiti its freedom"; "nationalism only built countries."',
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (23) if they come up: "the Enlightenment caused the revolutions"; "France gave Haiti its freedom"; "nationalism only built countries."',
           'Every picture is a real object of the period, public domain: Charles Thévenin\'s etching of the storming of the Bastille (1790, Cleveland Museum of Art); a "No Stamp Act" teapot made in England for the American market (1766 to 1775, Metropolitan Museum of Art); a French print of Toussaint Louverture on horseback (1802, the Met); Sébastien Leclerc\'s etching of the Hall of Mirrors at Versailles (1684, the Met); Asher B. Durand\'s engraving of John Trumbull\'s Declaration of Independence (1820 to 1823, the Met). None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -120,7 +229,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull it back from memory.',
       template: {
         questions: [
@@ -132,10 +241,15 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          'Recall: "By what right?", consent, the nation',
+          'Bridge: reading Locke never overthrew a king'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: "By what right?"; the consent of the people (Locke\'s social contract); the nation ("the principle of all sovereignty resides essentially in the nation," Article 3 of the 1789 declaration, which 5.1 quoted).',
-          'The bridge is 5.1\'s hand-off in the unit story map. Prompt 2 returns on slide 7 (the Declaration of Independence); prompt 3 returns on slides 8 and 19 (the nation).'
+          'The bridge is 5.1\'s hand-off in the unit story map. Prompt 2 returns on slide 8 (the Declaration of Independence); prompt 3 returns on slides 9 and 19 (the nation).'
         ],
         ask: 'If the ideas were everywhere by 1789, why did revolutions break out in some places and not others?',
         listenFor: 'Something else had to be true there: people angry about something, a chance to act. That is today\'s recipe.',
@@ -148,6 +262,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'What caused the revolutions of 1750 to 1900, and what did they create?',
       notes: {
         minutes: 1,
+        keys: [
+          'Real etching: the Bastille, made in 1790',
+          'Ideas, anger and a chance met here',
+          'Predict: what else had to be true?'
+        ],
         land: [
           'The picture is a real print: Charles Thévenin, The Storming of the Bastille, July 14, 1789, an etching made in 1790, a year after the event. Cleveland Museum of Art 2015.21, public domain. A crowd of Parisians and soldiers who had joined them fights at the fortress gate, with a cannon on the left, wounded men on the ground, and a white flag raised at the right.',
           'Why open here: the picture is the moment ideas, anger and a chance met. The Bastille was a royal fortress and prison; the crowd wanted its gunpowder, and it held seven prisoners that day.',
@@ -158,13 +277,52 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'What does it take to start a revolution?',
+        stops: [
+          { label: 'I', text: 'The recipe: grievance, words, a chance' },
+          { label: 'II', text: 'America and France' },
+          { label: 'III', text: 'Haiti and Spanish America' },
+          { label: 'IV', text: 'The chain, and the words compared' },
+          { label: 'V', text: 'New ways to govern' },
+          { label: 'VI', text: 'The nation redraws the map' },
+          { label: '✓', text: 'Put it together: how revolutions made nations', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Six sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the six headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to VI), so the class can see where it is all period.',
+          'The question at the top is the topic question: in every revolution, students watch for the grievance, the words and the chance, and for what it created.'
+        ],
+        ask: 'Which revolution do you expect to change the most?',
+        listenFor: 'Any reasoned guess; return to it at the retelling slide.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read for three ingredients.',
       subtitle: 'In each revolution, find the grievance, the words and the chance. Then watch how each revolution helped another one start or win.',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-5/first-and-10-topic-5-2-nationalism-and-revolutions-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Find grievance, words, chance in each revolution',
+          'Watch the links between revolutions',
+          'Q2: the 1776 and 1789 declarations compared',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "How Revolutions Made Nations" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who label the three ingredients in each section, and who notice the links between revolutions (France\'s debt, Napoleon in Spain, Haiti and Bolívar).',
@@ -175,7 +333,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'recipe', kind: 'equation', eyebrow: 'The Recipe',
+      phase: 'recipe', kind: 'equation', eyebrow: 'I · The Recipe',
       kc: 'Unit 5: Learning Objective C', title: 'Ideas alone never overthrew a king.',
       footer: 'Many people read Locke and went on obeying their kings.',
       template: {
@@ -193,6 +351,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'The cause half of Objective C',
+          'Grievance, words, a chance: watch for all three',
+          'A teaching device, not a law of history',
+          'Ideas alone never overthrew a king'
+        ],
         land: [
           'Learning objective C asks for causes and effects. This is the cause half, as a tool students carry through four cases. It is a teaching device, not a law of history: say "watch for all three," not "every revolution needs exactly three."',
           'Each ingredient is in the CED. The grievance is KC-5.3.IV.A.i\'s "discontent with monarchist and imperial rule." The words are KC-5.3.I.B: Enlightenment ideas "as reflected in revolutionary documents ... influenced resistance to existing political authority." The chance is what turned discontent and ideas into action in each case on the next slides.'
@@ -203,7 +367,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'america', kind: 'story-scene', eyebrow: 'America · 1775 to 1783',
+      phase: 'america', kind: 'story-scene', eyebrow: 'II · America and France · America, 1775 to 1783',
       kc: 'KC-5.3.III.B', title: 'A republic with no king.',
       template: {
         caption: 'A teapot made in England for sale in the colonies, 1766 to 1775',
@@ -216,6 +380,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Grievance: war debt, then taxes; Stamp Act 1765',
+          'Words: Declaration of Independence, 1776',
+          'Chance: an ocean away, no French threat',
+          'French alliance, 1778: helped win, did not start',
+          'Created: independence 1783; republic, Constitution 1787',
+          'Limits: slavery kept, property owners voted'
+        ],
         land: [
           'KC-5.3.III.B: "Colonial subjects in the Americas led a series of rebellions inspired by democratic ideals. The American Revolution, and its successful establishment of a republic, the United States of America, was a model and inspiration for a number of the revolutions that followed."',
           'The picture is a real object: a pottery teapot painted "No Stamp Act," made in England between 1766 and 1775 for the American market. Metropolitan Museum of Art 27.232a, b, public domain. English potters sold protest goods to Americans; Parliament repealed the Stamp Act in 1766.',
@@ -229,7 +401,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'declaration', kind: 'source-quote', eyebrow: 'The Words · 1776',
+      phase: 'declaration', kind: 'source-quote', eyebrow: 'II · America and France · The Words, 1776',
       kc: 'KC-5.3.I.B', title: 'Where does a government\'s power come from?',
       template: {
         quote: 'Governments are instituted among Men, deriving their just powers from the consent of the governed, ... whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it',
@@ -238,10 +410,16 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Power from the consent of the governed',
+          'The people may alter or abolish it',
+          'Argues like Locke; does not copy him',
+          'Hold this quote for slides 16 and 17'
+        ],
         land: [
           'KC-5.3.I.B names this document first. National Archives transcription, with the middle of the sentence cut: "That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it."',
           'This is 5.1\'s social contract (BeReady prompt 2) turned into a reason to break away. The Declaration does not quote Locke; it argues like him. Avoid "copied Locke word for word": it did not.',
-          'Hold this quotation: it comes back on slides 15 and 16 for the 3.C comparison.'
+          'Hold this quotation: it comes back on slides 16 and 17 for the 3.C comparison.'
         ],
         ask: 'Who gives a government its power, according to this sentence? And what can they do if it fails them?',
         listenFor: 'The governed, the people, by their consent; they can change it or get rid of it.',
@@ -249,7 +427,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'france', kind: 'cause-chain', eyebrow: 'France · The Bill Comes Due',
+      phase: 'france', kind: 'cause-chain', eyebrow: 'II · America and France · France, the Bill Comes Due',
       kc: 'KC-5.3', title: 'One revolution\'s effect becomes the next one\'s cause.',
       footer: 'Grievance: nobles and clergy paid little tax, the Third Estate paid most, and bread prices soared after the bad harvest of 1788.',
       template: {
@@ -263,6 +441,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'American war leaves France nearly bankrupt',
+          'Estates-General, May 1789, first since 1614',
+          'Grievance: privilege, taxes, bread prices',
+          'One revolution\'s effect, the next one\'s cause'
+        ],
         land: [
           'KC-5.3: "The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments." The French case shows the chain: the American Revolution\'s cost is France\'s chance.',
           'Britannica: French participation in the American war drove the government "to the brink of bankruptcy"; by 1788 it was "on the verge of bankruptcy." To raise taxes Louis XVI summoned the Estates-General (August 1788, for May 1789), which had last met in 1614.',
@@ -275,7 +459,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'francecreated', kind: 'timeline', eyebrow: 'What France Created',
+      phase: 'francecreated', kind: 'timeline', eyebrow: 'II · America and France · What France Created',
       kc: 'KC-5.3', title: 'A kingdom, then a republic, then an empire.',
       footer: 'France was not breaking away from anyone. It was remaking a kingdom.',
       template: {
@@ -291,10 +475,16 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Republic 1792; king executed 1793; the Terror',
+          'Napoleon takes power 1799, emperor 1804',
+          'His armies spread the laws, and resentment',
+          'Remaking a kingdom, not breaking away'
+        ],
         land: [
           'Dates (Britannica): monarchy abolished 21 September 1792; Louis XVI executed 21 January 1793, before the Terror; the Terror from September 1793 to July 1794, about 17,000 official executions and many more deaths in prison; Napoleon\'s coup of 18 Brumaire, November 1799; crowned emperor 2 December 1804.',
           'What France created, for the effects half: the end of noble privilege, a republic, and then an empire whose armies carried the revolution\'s laws (the Napoleonic Code) across Europe and also made many Europeans resent French rule. That resentment is one root of the nationalism on slides 19 to 22.',
-          'The footer is the 3.C contrast for slide 15: the 1789 declaration is not a declaration of independence.'
+          'The footer is the 3.C contrast for slide 16: the 1789 declaration is not a declaration of independence.'
         ],
         ask: 'The revolution began against a king. How did it end up with an emperor?',
         listenFor: 'War and the Terror made people want order; a general took power and made himself emperor.',
@@ -302,7 +492,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'haiti', kind: 'story-scene', eyebrow: 'Haiti · 1791 to 1804',
+      phase: 'haiti', kind: 'story-scene', eyebrow: 'III · Haiti and Spanish America · Haiti, 1791 to 1804',
       kc: 'KC-5.3.III.B', title: 'The words, claimed by people left out.',
       template: {
         caption: 'Toussaint Louverture, a French print of 1802',
@@ -315,6 +505,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'More than five enslaved per free person',
+          'Free people of color claim the declaration',
+          'The enslaved rise first, August 1791',
+          'France ends slavery 1794, after the fighting',
+          'Napoleon\'s army defeated; independence 1 January 1804',
+          'First state founded by people who freed themselves'
+        ],
         land: [
           'KC-5.3.III.B: "The American Revolution, the Haitian Revolution, and the Latin American independence movements facilitated the emergence of independent states in the Americas."',
           'The picture is a real print made in Toussaint\'s lifetime: an anonymous hand-colored etching, Paris, 1802, captioned "Toussaint Louverture, Chef des Noirs Insurgés de Saint Domingue" (chief of the Black insurgents of Saint-Domingue). Metropolitan Museum of Art 83.2.934, public domain. A French printmaker\'s idea of him in a general\'s uniform, not a portrait from life.',
@@ -329,7 +527,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'haitieffects', kind: 'ledger', eyebrow: 'Haiti\'s Effects',
+      phase: 'haitieffects', kind: 'ledger', eyebrow: 'III · Haiti and Spanish America · Haiti\'s Effects',
       kc: 'KC-5.3', title: 'One revolution\'s effects reached other countries.',
       template: {
         rows: [
@@ -343,12 +541,19 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'The effects half of the objective',
+          'Louisiana sold 1803, as the army died',
+          'US recognition only in 1862',
+          'Indemnity: 150 million francs, cut to 90',
+          'Haiti arms Bolívar, 1816: effect becomes cause'
+        ],
         land: [
           'Effects, the second half of the objective, and KC-5.3\'s chain of revolutions.',
           'Louisiana: the BnF and recent scholarship link the failure of the 1802 expedition to the sale of Louisiana in 1803, alongside France\'s coming war with Britain. Get the order right: the sale was signed on 30 April 1803, while Leclerc\'s army was dying of yellow fever and before its final defeat at Vertières (18 November 1803); the Office of the Historian says the army "was being decimated by yellow fever." Not "because of Haiti alone": war with Britain was coming too.',
           'Recognition: the Office of the Historian, US Department of State: the United States recognized Haiti in 1862.',
           'The price: France\'s ordinance of 1825 set 150 million francs as the price of recognition; an 1838 treaty cut it to 90 million. Haiti paid off the indemnity by the 1880s, and loans taken to pay it ran into the twentieth century (BnF). Avoid "paid until 1947," which mixes the indemnity with later loans.',
-          'Bolívar: slide 12. JSTOR Daily (citing W. F. Lewis, 1969): Pétion promised rifles, munitions, supplies, a printing press and men, on one condition, that Bolívar abolish slavery.'
+          'Bolívar: slide 13. JSTOR Daily (citing W. F. Lewis, 1969): Pétion promised rifles, munitions, supplies, a printing press and men, on one condition, that Bolívar abolish slavery.'
         ],
         ask: 'Which of these effects shows one revolution helping cause another?',
         listenFor: 'Bolívar: Haiti, the last revolution\'s creation, armed the next one.',
@@ -356,7 +561,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'spanish', kind: 'case-file', eyebrow: 'Spanish America · 1810 to 1826',
+      phase: 'spanish', kind: 'case-file', eyebrow: 'III · Haiti and Spanish America · Spanish America, 1810 to 1826',
       kc: 'KC-5.3.III.B', title: 'An empire with no king.',
       template: {
         tag: 'Case',
@@ -372,6 +577,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Grievance: creoles shut out by peninsulares',
+          'Chance: Napoleon takes Spain\'s king, 1808',
+          'Juntas and Hidalgo, 1810',
+          'By 1826 Spain keeps only Cuba, Puerto Rico',
+          'Limits: creole elites on top, slavery lasted'
+        ],
         land: [
           'KC-5.3.III.B: "the Latin American independence movements facilitated the emergence of independent states in the Americas."',
           'Grievance: creoles, of Spanish descent and born in the Americas, owned land and businesses but were kept out of the highest offices, which went to peninsulares, men born in Spain; Spain\'s trade rules also limited what they could grow and make. Bolívar: Spain "has kept us in a sort of permanent infancy with regard to public affairs" (Bertrand\'s translation).',
@@ -385,7 +597,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'jamaica', kind: 'source-quote', eyebrow: 'The Words · 1815',
+      phase: 'jamaica', kind: 'source-quote', eyebrow: 'III · Haiti and Spanish America · The Words, 1815',
       kc: 'KC-5.3.I.B', title: 'Bolívar: the tie to Spain is cut.',
       template: {
         quote: 'The hatred that the Peninsula has inspired in us is greater than the ocean between us.',
@@ -394,11 +606,18 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Written 1815, in exile, five years in',
+          'Before the campaigns that won, 1819 to 1824',
+          'Argues the tie to Spain is cut',
+          'Doubts fully elected government suits it yet',
+          'Avoid the "single government" misquotation'
+        ],
         land: [
           'KC-5.3.I.B names Bolívar\'s "Letter from Jamaica" "on the eve of the Latin American revolutions." Be exact about the date: juntas formed from 1809 (La Paz, Quito), and in Caracas and Buenos Aires in 1810, so the letter came about five years into the struggle, written in exile after the patriots\' defeats, to a British reader, to win support. It came before the campaigns that won independence (1819 to 1824), which is the sense in which it is on the eve.',
           'Bertrand\'s translation (Selected Writings of Bolívar, 1951): "the tie that bound her to Spain has been severed"; "The hatred that the Peninsula has inspired in us is greater than the ocean between us"; "we are, moreover, neither Indian nor European, but a species midway between the legitimate proprietors of this country and the Spanish usurpers"; "Events in Costa Firme have proved that institutions which are wholly representative are not suited to our character, customs, and present knowledge."',
           'A misquotation to avoid: "As it has a single origin, a single language ... it ought to have a single government" is Bolívar describing an idea, a single nation for all Spanish America, which he then rejects: "But this is not possible."',
-          'The notice line is the hinge for slide 16: Bolívar argues for independence, but not for full self-government yet.'
+          'The notice line is the hinge for slide 17: Bolívar argues for independence, but not for full self-government yet.'
         ],
         ask: 'What is Bolívar\'s argument in one sentence?',
         listenFor: 'Spanish America can never go back to Spain; it must be independent, though he doubts it is ready to govern itself fully.',
@@ -406,7 +625,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'chain', kind: 'diffusion-path', eyebrow: 'The Chain',
+      phase: 'chain', kind: 'diffusion-path', eyebrow: 'IV · The Chain and the Words · The Chain',
       kc: 'KC-5.3.III.B', title: 'Each revolution helped another start or win.',
       footer: 'Follow the links: a debt, words, an invasion, and guns.',
       template: {
@@ -419,6 +638,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'America to France: the debt',
+          'France to Saint-Domingue: the declaration claimed',
+          'France to Spanish America: Napoleon\'s invasion',
+          'Haiti to Bolívar, 1816: helped win, not start',
+          'Each link is one cause among several'
+        ],
         land: [
           'KC-5.3.III.B: the American Revolution "was a model and inspiration for a number of the revolutions that followed."',
           'Say each link aloud: America to France (the debt); France to Saint-Domingue (the declaration claimed, and a France too divided to hold its colony); France to Spanish America (Napoleon\'s invasion of Spain, 1808); Haiti to Spanish America (Pétion\'s aid, 1816).',
@@ -430,7 +656,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'model', kind: 'sentence-frame', eyebrow: 'Claims and Evidence in Sources 3.C · Model',
+      phase: 'model', kind: 'sentence-frame', eyebrow: 'IV · The Chain and the Words · Compare, Model',
       title: 'Compare two sources: alike, different, and why.',
       footer: 'Explain the difference by what caused each document.',
       template: {
@@ -440,6 +666,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'CED skill 3.C: compare two arguments',
+          'Frame: both, but, because',
+          'Model: 1789 declaration beside Toussaint, 1793',
+          'The "because" makes it causation',
+          'Not the 1776 and 1789 pair: that is Q2'
+        ],
         land: [
           'The CED\'s suggested skill, 3.C: "Compare the arguments or main ideas of two sources." Its sample activity (p. 97) asks of the three documents: "How are the authors\' arguments similar? Why? How are the authors\' arguments different? Why?"',
           'The model uses Article 1 of the 1789 declaration, "Men are born and remain free and equal in rights" (Avalon Project), and Toussaint\'s Camp Turel proclamation of 29 August 1793, "I want Liberty and Equality to reign in Saint Domingue" (Bell\'s translation). It deliberately does not use the 1776 and 1789 pair, which is First & 10 question 02 and a Skill Builder choice: a model of that pair would be the answer.',
@@ -451,7 +684,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'practice', kind: 'balance', eyebrow: 'Claims and Evidence in Sources 3.C · Practice',
+      phase: 'practice', kind: 'balance', eyebrow: 'IV · The Chain and the Words · Compare, Your Turn',
       kc: 'KC-5.3.I.B', title: 'Two documents from the Americas.',
       template: {
         job: 'Who should govern?',
@@ -462,6 +695,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Declaration, 1776, beside Bolívar, 1815',
+          'Alike: a far-off ruler lost the right',
+          'Different: consent versus doubts about elected government',
+          'Because: party spirit wrecked the first Venezuelan republic',
+          'Accept any "because" built on evidence'
+        ],
         land: [
           'Both texts are verified word for word: the National Archives transcription of 1776; Bertrand\'s translation of 1815.',
           'A strong answer: both argue that a far-off ruler has lost the right to rule and that the people of the Americas should govern themselves, but the Declaration rests government on the people\'s consent while Bolívar doubts that fully elected governments suit Spanish America yet, because, in his own words, "party spirit" and quarrels had wrecked the first Venezuelan republic (1810 to 1812), and Spain had given creoles no practice in governing ("permanent infancy").',
@@ -473,22 +713,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Compare two sources.',
-      subtitle: 'Claims and Evidence in Sources 3.C: say each source\'s argument, how they are alike, how they differ, and why.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
-      notes: {
-        minutes: 8,
-        land: [
-          'Module 05 is required. It models the comparison on the 1789 declaration and Toussaint\'s 1793 proclamation and asks students to compare the Letter from Jamaica with the Declaration of Independence.',
-          'Circulate for the "because": the difference explained by what caused each document.'
-        ],
-        ask: 'What caused the difference you found?',
-        listenFor: 'An answer that ties each document\'s argument to its grievance or its moment.'
-      }
-    },
-    {
-      phase: 'ideas', kind: 'branch-tree', eyebrow: 'What the Revolutions Created · Ideas',
+      phase: 'ideas', kind: 'branch-tree', eyebrow: 'V · New Ways to Govern · What the Revolutions Created',
       kc: 'KC-5.3.IV.A.i', title: 'New answers to "how should a country be run?"',
       footer: 'These ideas helped set off new revolutions in Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years.',
       template: {
@@ -502,6 +727,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Discontent with kings made new systems and ideas',
+          'Republic: no king, a written constitution',
+          '19th-century liberalism: limits and rights, not today\'s meaning',
+          'Democracy: the vote for all men',
+          '1830 and 1848: most uprisings crushed',
+          'An effect that became a cause'
+        ],
         land: [
           'KC-5.3.IV.A.i: "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism."',
           'Republic dates: the United States governed without a king from 1776 (state constitutions, the Articles of Confederation ratified 1781), and the 1787 Constitution made the federal republic; France abolished its monarchy in 1792.',
@@ -515,7 +748,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'nation', kind: 'cause-chain', eyebrow: 'From the People to the Nation',
+      phase: 'nation', kind: 'cause-chain', eyebrow: 'VI · The Nation · From the People to the Nation',
       kc: 'KC-5.3.II.ii', title: 'A state belongs to its people. Which people?',
       footer: '1793: "all Frenchmen are in permanent requisition for the service of the armies," and the old are to preach "the unity of the Republic."',
       template: {
@@ -529,6 +762,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'A state belongs to its people: which people?',
+          'Nation: language, religion, customs, homeland',
+          'Governments harness it: France calls everyone, 1793',
+          'BeReady prompt 3 returns: sovereignty in the nation'
+        ],
         land: [
           'KC-5.3.II.ii: "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity." The four words in the third box are the CED\'s own list.',
           'BeReady prompt 3 returns here: in 1789 sovereignty "resides essentially in the nation."',
@@ -541,7 +780,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'unify', kind: 'split-mirror', eyebrow: 'Nationalism Joins States',
+      phase: 'unify', kind: 'split-mirror', eyebrow: 'VI · The Nation · Nationalism Joins States',
       kc: 'KC-5.3.II.iii', title: 'Two nations, many states, one country each.',
       footer: 'Nationalists sought the unification of fragmented regions.',
       template: {
@@ -556,6 +795,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Nationalists sought to unite fragmented regions',
+          'Italy: Piedmont, Cavour, Garibaldi; 1861, Rome 1870',
+          'Germany: Prussia, Bismarck, three wars; 1871',
+          'Italy mixed uprisings and war; Germany from the top',
+          '"Imagined": a nation is something people believe in'
+        ],
         land: [
           'KC-5.3.II.iii: "Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists ... sought unification of fragmented regions." The CED names "German and Italian unifications."',
           'Italy (Britannica, "Risorgimento"): Piedmont-Sardinia, with France, defeated Austria in 1859; Garibaldi\'s Thousand took Sicily and Naples in 1860; the Kingdom of Italy proclaimed 17 March 1861; Venetia added 1866; Rome taken 1870 and the capital from 1871.',
@@ -568,7 +814,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'versailles', kind: 'story-scene', eyebrow: 'Germany · 1848 to 1871',
+      phase: 'versailles', kind: 'story-scene', eyebrow: 'VI · The Nation · Germany, 1848 to 1871',
       kc: 'KC-5.3.II.iii', title: 'Not by speeches, but by iron and blood.',
       template: {
         caption: 'The Hall of Mirrors at Versailles, etched in 1684',
@@ -581,6 +827,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Frankfurt, 1848: the liberals fail',
+          'Bismarck, 1862: iron and blood, not speeches',
+          'Reported speech, not his exact words',
+          'Empire proclaimed in the Hall of Mirrors, 1871',
+          'The etching is from 1684, not 1871'
+        ],
         land: [
           'The picture is a real print: Sébastien Leclerc I, Galerie des Glaces at Versailles, etching, 1684, the hall as Louis XIV\'s court knew it, the year it was finished. Metropolitan Museum of Art 53.600.2784, public domain. It is not a picture of 1871. The callback is Topic 3.2: the palace of the divine-right king is where a nation-state was proclaimed, after Prussia\'s army defeated France.',
           'Frankfurt: the National Assembly of 1848 to 1849 wrote a constitution and offered the crown to Frederick William IV of Prussia, who refused it in April 1849.',
@@ -593,7 +846,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'break', kind: 'face-off', eyebrow: 'Nationalism Breaks an Empire',
+      phase: 'break', kind: 'face-off', eyebrow: 'VI · The Nation · Pulling Away from an Empire',
       kc: 'KC-5.3.II.iii', title: 'Nation against empire.',
       footer: 'Nationalists challenged boundaries; the empire tried a loyalty of its own.',
       template: {
@@ -608,11 +861,20 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Nationalists challenged boundaries',
+          'Greece: rises 1821, independent 1830',
+          '1878: Serbia, Montenegro, Romania independent',
+          'Ottomanism: one loyalty, to the empire',
+          'It did not stop the Balkan states leaving',
+          'Class ahead: Māori, Rodríguez de Tió, Rizal'
+        ],
         land: [
           'KC-5.3.II.iii: "in some cases, nationalists challenged boundaries." The CED names "Balkan nationalisms" and "Ottomanism."',
           'Greece (Britannica): the war began in 1821; the London protocol of 3 February 1830 declared Greece "an independent monarchical state" under the powers\' protection; the sultan recognized it in 1832. Serbia: risings of 1804 and 1815 and self-rule recognized by 1830, but full independence only in 1878; Greece was the first to be declared fully independent (1830). If a student says "first," ask whether they mean self-rule or independence. 1878: the Treaty of Berlin recognized Serbia, Montenegro and Romania; Bulgaria became a self-governing principality still under the sultan.',
           'Ottomanism is the government harnessing a shared loyalty (KC-5.3.II.ii) against nationalism: the Reform Edict of 1856 promised equality in education, appointments and justice regardless of religion; the nationality law of 1869 made "Ottoman" every subject\'s legal status. The empire\'s wider reforms, the Tanzimat, belong to Topic 5.8; here it is only the idea of one loyalty.',
-          'It did not stop the Balkan states from leaving, which is the effect to land.'
+          'It did not stop the Balkan states from leaving, which is the effect to land.',
+          'For a class that is ahead (on the Myth and Evidence slide until 2026-11-08), the CED\'s other cases of nationalists challenging boundaries: in New Zealand, Māori groups chose a king in 1858 (the Kīngitanga) to hold their land against settlers, and fought the New Zealand Wars of the 1840s to 1870s; in Puerto Rico, Lola Rodríguez de Tió wrote revolutionary words for "La Borinqueña" (1868); in the Philippines, the Propaganda Movement (1880s and 1890s), José Rizal among them, demanded equal rights with Spaniards, and Spain executed Rizal in 1896, during a revolution against its rule.'
         ],
         ask: 'Why might "be loyal to the empire" lose to "be loyal to your nation"?',
         listenFor: 'A nation is people like you, who share your language and religion; an empire is a ruler far away. And the promised equality often was not real in practice.',
@@ -620,29 +882,8 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence is more interesting than the myths.',
-      template: {
-        rows: [
-          { myth: 'The Enlightenment caused the revolutions.', evidence: 'The ideas gave revolutionaries words. Taxes, debt, bread, slavery and Napoleon\'s invasion of Spain mattered too.', source: 'KC-5.3.I.B, IV.A.i' },
-          { myth: 'France gave Haiti its freedom.', evidence: 'The enslaved rose up in 1791; France\'s 1794 law followed the fighting, and Haitians defeated Napoleon\'s army.', source: 'KC-5.3.III.B' },
-          { myth: 'Nationalism only built countries.', evidence: 'It joined Italy and Germany together and pulled the Balkans away from the Ottoman Empire.', source: 'KC-5.3.II.iii' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        land: [
-          'Myth 1 returns to the recipe (slide 5). Myth 2 is the order of events on slide 10. Myth 3 is slides 20 to 22.',
-          'For a class that is ahead, the CED\'s other cases of nationalists challenging boundaries: in New Zealand, Māori groups chose a king in 1858 (the Kīngitanga) to hold their land against settlers, and fought the New Zealand Wars of the 1840s to 1870s; in Puerto Rico, Lola Rodríguez de Tió wrote revolutionary words for "La Borinqueña" (1868); in the Philippines, the Propaganda Movement (1880s and 1890s), José Rizal among them, demanded equal rights with Spaniards, and Spain executed Rizal in 1896, during a revolution against its rule.'
-        ],
-        ask: 'Which myth would most hurt an essay answer, and why?',
-        listenFor: 'Myth 1: a single cause is a weak causation argument.'
-      }
-    },
-    {
       retelling: true,
-      phase: 'retell', kind: 'cause-chain', eyebrow: 'The Whole Topic',
+      phase: 'retell', kind: 'cause-chain', eyebrow: 'Put It Together · The Whole Topic',
       title: 'How revolutions made nations.',
       footer: 'Grievance + words + a chance = revolution. Then the nation redrew the map.',
       template: {
@@ -655,17 +896,24 @@ window.BEHISTORICAL_TEACHING = {
         links: ['meet in', 'create', 'leave behind']
       },
       notes: {
-        minutes: 3,
+        minutes: 4,
+        keys: [
+          'Close notes, redraw four boxes and three arrows',
+          'Causes, revolution, what it created, the nation',
+          'Third box: effects become causes',
+          'Correct myths here, without the opposite mistake'
+        ],
         land: [
           'The retelling slide: the cause chain the whole deck has built. Ask students to close their notes and redraw it, four boxes and three arrows, then compare with the slide.',
-          'Point to the third box: it is where effects become causes. Liberalism and democracy (an effect) set off 1830 and 1848 (a cause); the nation (an effect of the revolutions) causes unification and breakup.'
+          'Point to the third box: it is where effects become causes. Liberalism and democracy (an effect) set off 1830 and 1848 (a cause); the nation (an effect of the revolutions) causes unification and breakup.',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time. "The Enlightenment caused the revolutions": the ideas gave revolutionaries their words, but taxes, debt, bread, slavery and Napoleon\'s invasion of Spain mattered too; the first box is three causes, and the words are one of them, so do not swing to "ideas did not matter" (the recipe, slide 6). "France gave Haiti its freedom": the enslaved rose up in 1791, France\'s 1794 law followed the fighting, and Haitians defeated Napoleon\'s army; but do not swing to "France\'s law made no difference": Toussaint joined France after it (slide 11). "Nationalism only built countries": it joined Italy and Germany and also pulled Greece, Serbia, Montenegro and Romania away from the Ottoman Empire; but do not swing to "nationalism broke the Ottoman Empire apart": the empire lasted to 1922 (slides 20 to 22). The one that most hurts an essay is the first: a single cause is a weak causation argument.'
         ],
         ask: 'Redraw it from memory. Which arrow is the one where an effect becomes a cause?',
         listenFor: 'The last two: the ideas and the nation the revolutions created went on to cause new revolutions and new countries.'
       }
     },
     {
-      phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
+      phase: 'synthesis', kind: 'close-retell', eyebrow: 'Put It Together · Say It in One Sentence',
       title: 'Say it in one sentence.',
       template: {
         frame: 'A revolution needed a ___, the ___ to name it, and a ___. Each helped another start or ___. They made new ___ and the nation, which ___ some states and pulled peoples from empires.',
@@ -674,6 +922,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Objective C answered in one sentence',
+          'Fill it from memory, then one example per blank',
+          'An example in each blank makes an AP answer'
+        ],
         land: [
           'Learning objective C: "Explain causes and effects of the various revolutions in the period from 1750 to 1900." The sentence is the whole answer; the examples make it an AP answer.',
           'A strong version: Revolutions came when a grievance (British taxes, privilege and bread, slavery, exclusion from office), the words to name it (the 1776 and 1789 declarations, the Letter from Jamaica) and a chance (distance and the end of the French threat, a bankrupt king, a France in revolution, Napoleon\'s invasion of Spain) came together; each one helped another start or win; and they created new states and the nation, which joined Italy and Germany and pulled Greece and Serbia away from the Ottoman Empire.'
@@ -683,47 +936,35 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'What caused one revolution, and what did it create?',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      title: 'Now you do the history.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
+      template: {
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Compare two sources, and say why they differ.', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' }
+        ]
+      },
       notes: {
-        minutes: 0,
-        land: [
-          'Optional. Checkpoint 1 assesses Targets 1 and 2: one revolution\'s grievance, words and chance, and what it created, including how it helped another revolution start or win, and liberalism or democracy as a new idea.'
+        minutes: 34,
+        keys: [
+          'All three required today, in order',
+          'Skill Builder: compare two sources, then the "because"',
+          'Checkpoint 1: no coach',
+          'Checkpoint 2: nationalism joins states and pulls peoples away',
+          'Checkpoint 2 unfinished = homework',
+          'Early finishers: Evidence Lab'
         ],
-        ask: 'Which revolution did you choose, and which ingredient was hardest to find?',
-        listenFor: 'A specific grievance, document and chance, and a created state or idea.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Two sources: a cause and an effect.',
-      subtitle: 'Choose two cards. For each: what kind of source it is, what it shows about a cause or an effect of the revolutions, and what it cannot tell you.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
-      notes: {
-        minutes: 7,
         land: [
-          'Module 07 is required. The six cards are three real objects (the "No Stamp Act" teapot, Thévenin\'s 1790 Bastille etching, the 1802 French print of Toussaint) and three verified excerpts (the Declaration of Independence, Toussaint\'s 1793 proclamation, and Bismarck\'s 1862 "iron and blood" remarks).',
-          'Listen for students who name what kind of source each card is: a teapot made in England for American buyers, an etching made to celebrate the Bastille a year later, a French print of a Haitian general, a summary of a speech in reported speech.'
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today, after the First & 10, from the schedule: Jeff set them on 2026-11-08, applying his rule of 2026-10-23 (02, 06 and 10 on every topic, plus at least one chosen). The deck predated that and launched the Evidence Lab with Checkpoint 1 optional. Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.C, compare the arguments of two sources. It models the comparison on the 1789 declaration and Toussaint\'s 1793 proclamation, the pair on slide 16, then has students choose a pair, the Declaration of Independence with the Letter from Jamaica or with the 1789 declaration, and write three sentences: each argument in their own words, one way the two agree and one way they differ, and what caused the difference. Circulate for the "because": the difference explained by what caused each document.',
+          'Checkpoint 1 (Module 06), with no coach, is the diagnostic for Targets 1 and 2: one revolution\'s grievance, words and chance; what it created, and how it helped another revolution start or win, or was helped by one; and liberalism or democracy as a new idea about government. Give feedback in the room: on an alternating block nothing carries over.',
+          'Checkpoint 2 (Module 10): draft, Socrates, revise. It assesses Target 3 (KC-5.3.II.ii and II.iii) and declares Causation. A strong answer explains the nation as shared language, religion, customs and homeland; names how a government used shared loyalty (France 1793; Ottomanism as an attempt to hold back nationalism); names a unification (Italy 1861 and 1870, or Germany 1871) and a people pulled away from the Ottoman Empire (Greece 1830, or Serbia, Montenegro and Romania 1878); and says how: nationalists wanted one state with borders to match the nation. The Ottoman Empire itself lasted to 1922; avoid "nationalism broke the Ottoman Empire apart" for this period. The revised answer in the box is what goes to Canvas; if it is not finished in class, it is homework.',
+          'Early finishers: the Evidence Lab (Module 07). Its six cards are three real objects (the "No Stamp Act" teapot, Thévenin\'s 1790 Bastille etching, the 1802 French print of Toussaint) and three verified excerpts (the Declaration of Independence, Toussaint\'s 1793 proclamation, and Bismarck\'s 1862 "iron and blood" remarks). For two cards, students say what kind of source it is, what it shows about a cause or an effect of the revolutions, and what it cannot tell them: the Toussaint print is a French printmaker\'s view, not a Haitian one. The Primary Source (Module 08, the Letter from Jamaica) is an extension.'
         ],
-        ask: 'What can your object not tell you?',
-        listenFor: 'Who made it and for whom: the Toussaint print is a French printmaker\'s view, not a Haitian one.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'How did nationalism join some states and pull peoples away from an empire?',
-      subtitle: 'Explain what a nation shares, how governments used shared loyalty, one country nationalism joined, one people it pulled from the Ottoman Empire, and why one cause had both effects. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
-      notes: {
-        minutes: 12,
-        land: [
-          'Module 10 is required: draft, Socrates, revise. It assesses Target 3 (KC-5.3.II.ii and II.iii) and declares Causation.',
-          'A strong answer explains the nation as shared language, religion, customs and homeland; names how a government used shared loyalty (France 1793; Ottomanism as an attempt to hold back nationalism); names a unification (Italy 1861 and 1870, or Germany 1871) and a people pulled away from the Ottoman Empire (Greece 1830, or Serbia, Montenegro and Romania 1878); and says how: nationalists wanted one state with borders to match the nation. The Ottoman Empire itself lasted to 1922; avoid "nationalism broke the Ottoman Empire apart" for this period.'
-        ],
-        ask: 'What is the cause in your answer, and what are the two effects?',
-        listenFor: 'Nationalism as the cause; unification and peoples leaving an empire as the effects.'
+        ask: 'What caused the difference you found? And in Checkpoint 2, what is the cause, and what are its two effects?',
+        listenFor: 'Skill Builder: each document\'s argument tied to its grievance or its moment. Checkpoint 2: nationalism as the cause; unification and peoples leaving an empire as the effects.'
       }
     },
     {
@@ -732,6 +973,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'The committee presenting its draft of the Declaration to Congress, 28 June 1776, as an engraver copied a painting of it in 1823. Next, Topic 5.3: even before Paris argued about rights, a different revolution had begun in British workshops.',
       notes: {
         minutes: 2,
+        keys: [
+          'Real print: the draft presented, 28 June 1776',
+          'Not the signing; posed, painted decades later',
+          'Land the spine',
+          'Hand off to 5.3: British workshops, before 1789'
+        ],
         land: [
           'The picture is a real print: Asher B. Durand\'s engraving (1820 to 1823) of John Trumbull\'s painting The Declaration of Independence (1818, now in the United States Capitol). Metropolitan Museum of Art 2022.29, public domain. It does not show the signing: the Architect of the Capitol says the painting "depicts the moment on June 28, 1776, when the first draft of the Declaration of Independence was presented to the Second Continental Congress" by the committee of five. Trumbull painted it more than forty years later, and the men are posed.',
           'Land the spine, then the hand-off to 5.3, the industrial revolution. It began before 1789: Watt\'s improved steam engine was patented in 1769 and Arkwright\'s water-powered mill opened in 1771, while the American colonists were protesting the Townshend taxes (1767 to 1770); the Stamp Act had been repealed in 1766.'

@@ -270,7 +270,7 @@ for (const deck of DECKS) {
 // because a key that grows back into a sentence, or a slide that loses its
 // keys, still renders and looks fine.
 console.log('\n  MUST LAND keys\n');
-const KEYS_DECKS = new Set(['4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8', '5.1']);
+const KEYS_DECKS = new Set(['4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8', '5.1', '5.2']);
 const KEY_MAX_WORDS = 10;
 function keyProblems(slides) {
   const out = [];
@@ -377,7 +377,7 @@ for (const deck of DECKS) {
 console.log('\n  The lesson shape: outline, road map, story, Work Time\n');
 const OUTLINE_OWED = new Set([
   '2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '3.1', '3.2', '3.3', '3.4', '4.1', '4.2', '4.3',
-  '5.2', '5.3', '5.4', '5.5', '5.6', '5.7', '5.8'
+  '5.3', '5.4', '5.5', '5.6', '5.7', '5.8'
 ]);
 function loadSchedule() {
   const sandbox = { window: {} };
