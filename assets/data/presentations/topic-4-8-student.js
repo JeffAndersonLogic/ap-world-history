@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "How did the new global economy change people's lives?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The ocean road"
+          },
+          {
+            "label": "II",
+            "text": "The money: sugar, silver, cloth"
+          },
+          {
+            "label": "III",
+            "text": "More demand, more work"
+          },
+          {
+            "label": "IV",
+            "text": "What changed in society"
+          },
+          {
+            "label": "V",
+            "text": "What stayed"
+          },
+          {
+            "label": "VI",
+            "text": "Connect the evidence"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: follow the trade, then build a thesis",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Evidence Lab · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with two lists in mind.",
       "subtitle": "For every case: what changed for the people, and what stayed the same?",
       "action": {
@@ -56,7 +97,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "diffusion-path",
-      "eyebrow": "The Road · Topic 4.1",
+      "eyebrow": "I · The Ocean Road · Topic 4.1",
       "title": "Europe's sea tools were borrowed.",
       "footer": "Knowledge from older worlds made the new ships possible.",
       "kc": "KC-4.1.II",
@@ -92,7 +133,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "The Road · Topic 4.1",
+      "eyebrow": "I · The Ocean Road · Ships and Winds",
       "title": "Ships could go, and come back.",
       "footer": "Coming back is what turned voyages into trade.",
       "kc": "KC-4.1.II.A",
@@ -126,7 +167,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The Money · Topics 4.3 to 4.5",
+      "eyebrow": "II · The Money · Topics 4.3 to 4.5",
       "title": "Three economic developments came down the road.",
       "footer": "These are the economic developments. Now follow them to the people.",
       "kc": "KC-4.1",
@@ -164,7 +205,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "The Money · Topic 4.5",
+      "eyebrow": "II · The Money · Topic 4.5",
       "title": "The money was worth fighting over.",
       "kc": "KC-4.3.III.ii",
       "template": {
@@ -199,7 +240,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "The Workers · Topics 4.4 and 4.5",
+      "eyebrow": "III · More Work · Topics 4.4 and 4.5",
       "title": "More demand meant more work.",
       "kc": "KC-4.2.II",
       "template": {
@@ -229,7 +270,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Where It Reached People",
+      "eyebrow": "IV · What Changed · Map",
       "title": "Where the trade changed people's lives.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-8.svg",
@@ -240,7 +281,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "What Changed · Barbados, 1647 to 1679",
+      "eyebrow": "IV · What Changed · Barbados, 1647 to 1679",
       "title": "One crop remade a whole island.",
       "kc": "KC-4.2",
       "template": {
@@ -273,7 +314,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "A Witness · Barbados, 1647 to 1650",
+      "eyebrow": "IV · What Changed · A Witness, Barbados, 1647 to 1650",
       "title": "An Englishman describes the island.",
       "kc": "KC-4.2",
       "template": {
@@ -288,7 +329,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "What Changed · Spanish America · Topic 4.7",
+      "eyebrow": "IV · What Changed · Spanish America · Topic 4.7",
       "title": "Ranked by ancestry in Spanish America.",
       "subtitle": "A casta painting from Mexico, about 1715 to 1720: a colonial society that ranked people by their ancestry, with Spaniards at the top.",
       "kc": "KC-4.3",
@@ -305,7 +346,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "What Changed · Africa · Topics 4.4 and 4.5",
+      "eyebrow": "IV · What Changed · Africa · Topics 4.4 and 4.5",
       "title": "The trade reached African families and kingdoms.",
       "kc": "KC-4.2",
       "template": {
@@ -340,7 +381,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-triptych",
-      "eyebrow": "What Stayed · Topic 4.5",
+      "eyebrow": "V · What Stayed · Topic 4.5",
       "title": "The same work, more of it.",
       "kc": "KC-4.2",
       "template": {
@@ -380,7 +421,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "continuity-change",
-      "eyebrow": "What Stayed · Topics 4.4 and 4.7",
+      "eyebrow": "V · What Stayed · Topics 4.4 and 4.7",
       "title": "Europe joined the old world. It did not replace it.",
       "footer": "Much of the world kept its own rulers and its own ways of trading.",
       "kc": "KC-4.3",
@@ -412,7 +453,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Argumentation 6.C · Model",
+      "eyebrow": "VI · Connect the Evidence · Model",
       "title": "Three ways evidence relates.",
       "template": {
         "steps": [
@@ -434,7 +475,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "Argumentation 6.C · One Chain",
+      "eyebrow": "VI · Connect the Evidence · One Chain",
       "title": "One chain links three continents.",
       "footer": "The words on the arrows are the argument.",
       "kc": "KC-4.2.II",
@@ -466,33 +507,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Everything changed after 1492.",
-            "evidence": "In 1750, as in 1450, most people farmed, and rulers and nobles stayed on top.",
-            "source": "KC-4.2; Topic 4.7"
-          },
-          {
-            "myth": "Europeans took over the world's trade.",
-            "evidence": "Gujarati, Chinese and Armenian merchants kept trading; Europeans often joined Asian trade.",
-            "source": "Topics 4.4 and 4.5"
-          },
-          {
-            "myth": "The slave trade changed only the Americas.",
-            "evidence": "It changed families in parts of Africa and made some African states stronger.",
-            "source": "Topics 4.4 and 4.5"
-          }
-        ]
-      }
-    },
-    {
       "kind": "cause-chain",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Follow the trade to the people.",
       "footer": "What stayed: most people farmed, the same work grew, and kings and nobles stayed on top.",
       "template": {
@@ -524,7 +540,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sharpen",
-      "eyebrow": "Build a Thesis · Continuity and Change",
+      "eyebrow": "Put It Together · Build a Thesis",
       "title": "",
       "footer": "Name a change, a continuity, and the reason.",
       "kc": "Unit 4: Learning Objective N",
@@ -534,43 +550,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Connect the evidence.",
-      "subtitle": "Argumentation 6.C: led to, the same pattern, or a contrast. Say how two pieces relate, and why.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-8-continuity-and-change.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "One chain, from trade to people.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-8-continuity-and-change.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "One change, one continuity, two objects.",
-      "subtitle": "Choose a card that shows a change in society and a card that shows something that stayed. Then connect them.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-8-continuity-and-change.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Your argument: how economic developments changed social structures, and what stayed the same.",
-      "subtitle": "A thesis, then evidence from three Unit 4 topics, connected. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-8-continuity-and-change.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 07, 10",
+      "title": "Now you make the argument.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Say how two pieces of evidence relate.",
+            "url": "../unit-4/lesson-4-8-continuity-and-change.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-8-continuity-and-change.html#modules"
+          },
+          {
+            "code": "Module 07",
+            "name": "Evidence Lab",
+            "note": "One change, one continuity, two objects.",
+            "url": "../unit-4/lesson-4-8-continuity-and-change.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Your thesis and argument, with Socrates.",
+            "url": "../unit-4/lesson-4-8-continuity-and-change.html#modules"
+          }
+        ]
       }
     },
     {
