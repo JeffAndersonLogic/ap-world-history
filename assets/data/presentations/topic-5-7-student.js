@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "How did trade, business and the goods people bought change between 1750 and 1900, and what stayed the same?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The old rules"
+          },
+          {
+            "label": "II",
+            "text": "A new argument: Adam Smith"
+          },
+          {
+            "label": "III",
+            "text": "Britain changes its rules"
+          },
+          {
+            "label": "IV",
+            "text": "Others follow, for a while"
+          },
+          {
+            "label": "V",
+            "text": "Bigger business"
+          },
+          {
+            "label": "VI",
+            "text": "Cheaper goods, for some"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: three rows, one story",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read, and build three rows.",
       "subtitle": "Trade, business and goods: for each, what it was like around 1750, what it was like by 1900, and one thing that carried on.",
       "action": {
@@ -56,7 +97,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Trade · The Before",
+      "eyebrow": "I · The Old Rules · Trade, the Before",
       "title": "The old rules: trade was a contest.",
       "footer": "Mercantilism (Topic 4.5): sell more than you buy, and keep your colonies' trade for yourself.",
       "kc": "KC-5.1.III.A",
@@ -84,7 +125,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Trade · A New Argument",
+      "eyebrow": "II · A New Argument · Adam Smith",
       "title": "Adam Smith: buy it where it is cheaper.",
       "footer": "Later writers called ideas like his laissez-faire, French for roughly \"let them do it.\" Smith did not use the phrase.",
       "kc": "KC-5.1.III.A",
@@ -112,7 +153,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Trade · The Change",
+      "eyebrow": "III · Britain Changes Its Rules · The Change",
       "title": "Britain changes its rules.",
       "footer": "Seventy years passed between Smith's book and Britain's repeal of the Corn Laws.",
       "kc": "KC-5.1.III.A",
@@ -153,7 +194,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-rank",
-      "eyebrow": "Trade · Why \"Partly\"?",
+      "eyebrow": "III · Britain Changes Its Rules · Why \"Partly\"?",
       "title": "Why did Britain choose free trade?",
       "kc": "KC-5.1.III.A",
       "template": {
@@ -176,7 +217,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline-lanes",
-      "eyebrow": "Trade · The Limits",
+      "eyebrow": "IV · Others Follow · The Limits",
       "title": "Others followed, for a while.",
       "footer": "Western Europe \"began abandoning mercantilism\": not every country, not for good.",
       "kc": "KC-5.1.III.A",
@@ -231,18 +272,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1",
-      "title": "How did the rules of trade change, and what did not?",
-      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-7-economic-developments-and-innovations.html#modules"
-      }
-    },
-    {
       "kind": "sentence-frame",
-      "eyebrow": "Making Connections 5.B · Model",
+      "eyebrow": "V · Bigger Business · Making Connections 5.B, Model",
       "title": "How does one change relate to another?",
       "footer": "Three kinds of link: one change can cause another, make it possible, or answer it.",
       "template": {
@@ -253,7 +284,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "continuity-change",
-      "eyebrow": "Business · Old Idea, New Rules",
+      "eyebrow": "V · Bigger Business · Old Idea, New Rules",
       "title": "Selling shares was old. Who could do it changed.",
       "footer": "With less to lose, many more people with modest savings could invest.",
       "kc": "KC-5.1.III.B",
@@ -286,7 +317,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Business · Stock Markets",
+      "eyebrow": "V · Bigger Business · Stock Markets",
       "title": "A market for shares, in city after city.",
       "footer": "A stock market lets an investor get money back without waiting for the company to close.",
       "kc": "KC-5.1.III.B",
@@ -323,7 +354,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Business · A Bank Across Borders",
+      "eyebrow": "V · Bigger Business · A Bank Across Borders",
       "title": "A bank built for trade with China.",
       "kc": "KC-5.1.III.B",
       "template": {
@@ -353,7 +384,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-pair",
-      "eyebrow": "Business · Soap Across the Ocean",
+      "eyebrow": "V · Bigger Business · Soap Across the Ocean",
       "title": "A soap made in England, protected in America.",
       "kc": "KC-5.1.III.B",
       "template": {
@@ -393,18 +424,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Relate two developments.",
-      "subtitle": "Making Connections 5.B: name two developments, choose the link, explain it with a detail for each side.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-7-economic-developments-and-innovations.html#modules"
-      }
-    },
-    {
       "kind": "story-steps",
-      "eyebrow": "Goods · More, Cheaper, More Kinds",
+      "eyebrow": "VI · Cheaper Goods · More, Cheaper, More Kinds",
       "title": "Better methods, cheaper goods.",
       "footer": "Availability, affordability, variety: the College Board's three words.",
       "kc": "KC-5.1",
@@ -432,7 +453,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "Goods · For Some",
+      "eyebrow": "VI · Cheaper Goods · For Some",
       "title": "Living standards rose, for some.",
       "footer": "The College Board's words are exact: standards of living rose \"for some.\"",
       "kc": "KC-5.1",
@@ -463,33 +484,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Adam Smith said government should do nothing.",
-            "evidence": "He gave government three duties: defense, justice, and public works no private person would build.",
-            "source": "Wealth of Nations, Book IV"
-          },
-          {
-            "myth": "Free trade won everywhere.",
-            "evidence": "Germany brought tariffs back from 1879, and the United States kept them high.",
-            "source": "Tariff laws of 1861 and 1879"
-          },
-          {
-            "myth": "Companies that sell shares were invented in the 1800s.",
-            "evidence": "The VOC sold shares in 1602. What changed was who could form one, and how little an owner could lose.",
-            "source": "Topic 4.5"
-          }
-        ]
-      }
-    },
-    {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Three rows, one story.",
       "footer": "Freer trade. Bigger business. Cheaper goods, for some. Redraw it from memory.",
       "template": {
@@ -538,7 +534,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · AP Synthesis",
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective H",
       "template": {
@@ -555,23 +551,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab · Optional",
-      "title": "Two sources, one row.",
-      "subtitle": "Choose at least two cards. For each: what kind of source it is, which row it is evidence for (trade, business or goods), and one thing it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-7-economic-developments-and-innovations.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "How did business and goods change, and how do the changes connect?",
-      "subtitle": "Explain how one banking or finance practice helped a business that crossed borders to grow, one way goods changed and why only for some, how one development relates to another, and one thing that continued. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-7-economic-developments-and-innovations.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you make the connections.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Relate two developments, with a detail for each.",
+            "url": "../unit-5/lesson-5-7-economic-developments-and-innovations.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "The rules of trade, on your own, no coach.",
+            "url": "../unit-5/lesson-5-7-economic-developments-and-innovations.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Business, goods and the connections, with Socrates.",
+            "url": "../unit-5/lesson-5-7-economic-developments-and-innovations.html#modules"
+          }
+        ]
       }
     },
     {
