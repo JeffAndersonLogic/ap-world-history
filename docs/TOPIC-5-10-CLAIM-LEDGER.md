@@ -59,7 +59,29 @@ words differently is a new row.
 | Nationalism pushed some governments, such as Meiji Japan, to build industry to make the state strong | SD, F10, Deck, DR | 5.6 ledger | VERIFIED (5.6) |
 | Workers in industrial cities used the language of rights to demand the vote, as the Chartists did | SD, F10, Deck, DR | 5.8 ledger | VERIFIED (5.8) |
 | In 1900 kings and emperors still ruled most of Europe; women could vote in national elections almost nowhere; New Zealand (1893) the first self-governing country where all adult women could | SD, F10, Deck, DR | 5.1 ledger | VERIFIED (5.1) |
+| Voltaire's *Treatise on Tolerance* (1763): no government should force a faith on anyone | DR, Deck | 5.1 ledger | VERIFIED (5.1) |
+| Slater's mill in Rhode Island begun in 1793; Cockerill at Seraing from 1817; Russia's and Japan's big growth mostly after 1870 | SD, Deck, DR | 5.4 ledger | VERIFIED (5.4) |
+| France, 1789: "the principle of all sovereignty resides essentially in the nation"; Spain had lost every colony in the Americas except Cuba and Puerto Rico by 1826 | Deck, RC, MA | 5.2 ledger | VERIFIED (5.2) |
+| The Ten Hours Act (1847) limited women and young people in textile mills to ten hours a day | SD (constraint check only) | UK Parliament, "The 1847 Factory Act" (the Ten Hours Act) | VERIFIED |
+| BeSurreal: a grandmother born in 1825 in a Lancashire farming village could remember the first trains between Liverpool and Manchester (opened 1830, when she was five), mills, a village telegraph office, factory cloth and branded soap; a queen in 1900, where kings had ruled when she was born | LD (BeSurreal) | 5.5 ledger (Liverpool and Manchester Railway, 1830); Victoria reigned 1837 to January 1901, after George IV (1820 to 1830) and William IV; a made-up character, as the lesson says | VERIFIED (a composite character built from verified facts) |
 | Industrial states now needed raw materials and markets, and had new tools to take them (hand-off) | SD, F10, Deck | `docs/UNIT-5-STORY-MAP.md`, the 5.10 hand-off; a bridge, not taught | VERIFIED (as a bridge) |
+
+## Pictures
+
+Every picture is a real historical object verified for an earlier Unit 5 topic; its caption and credit
+are carried from that topic's checked record. None is AI-generated and no new picture was sourced.
+
+| Picture | Used on | Verified in | Caption checked against | Status |
+|---|---|---|---|---|
+| Currier & Ives, *Across the Continent*, 1868 (LoC 90708413) | Deck question and close; LD card 5; RC Evidence Lab; first10 card | 5.5 | LoC record: drawn by F. F. Palmer, design by J. M. Ives, 1868 | VERIFIED |
+| Power-loom weaving, engraving after T. Allom, 1835 | Deck making; LD card 1; content-delivery card | 5.9 (commons manifest) | Baines, *History of the Cotton Manufacture* (1835) | VERIFIED |
+| The *Great Eastern* with the Atlantic cable, *Illustrated London News*, 14 July 1866 (LoC 2022637951) | Deck moving; LD card 2; RC Evidence Lab; evidence card | 5.5 | LoC record | VERIFIED |
+| Weaver at his loom, attributed to a Tanjore painter, about 1840 (Wellcome pjnujb7j) | Deck reach; LD card 3; RC Evidence Lab | 5.4 | Wellcome record | VERIFIED |
+| Riis, lodgers in a Bayard Street tenement, about 1890 (LoC 2002710259) | Deck gains | 5.9 | LoC record | VERIFIED |
+| Thévenin, *The Storming of the Bastille*, etching, 1790 (Cleveland 2015.21) | Deck nations; LD card 4; RC Evidence Lab | 5.2 | Cleveland Museum of Art record | VERIFIED |
+| *First Steam Train Leaving Yokohama*, signed Baidō Kunimasa, about 1872 (LoC 2002700197) | Deck nationalism; RC Evidence Lab | 5.6 | LoC record (catalogued under Utagawa Kunisada) | VERIFIED |
+| *The National Convention*, 1839, etching (LoC 2004669356) | RC Evidence Lab | 5.8 | LoC record | VERIFIED |
+| Module-card pictures (Allom mule spinning 1834; *Lightning Express* 1874; Durand's *Declaration* 1823; Liverpool dock 1893) | `stableImages` only, no caption | 5.3, 5.5, 5.2, 5.7 | their own topics | VERIFIED |
 
 ## Superlatives and myths kept out
 
