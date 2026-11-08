@@ -235,7 +235,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'question', kind: 'frame-subtitle',
       title: 'How did industry change who was on top, who did the work, and how people lived? What kept going?',
-      subtitle: 'Manchester in 1852, its chimneys behind a country scene, as a watercolour painter showed it.',
+      subtitle: 'Manchester in 1852, its chimneys behind a country scene, as a watercolor painter showed it.',
       notes: {
         minutes: 1,
         keys: [
@@ -245,7 +245,7 @@ window.BEHISTORICAL_TEACHING = {
           'Predict one change, one continuity'
         ],
         land: [
-          'The picture is William Wyld\'s watercolour Manchester from Kersal Moor, signed and dated 1852, now in the Royal Collection (RCIN 920223). Queen Victoria had visited Manchester in October 1851. In front: a hillside with country people and goats. Behind: the town\'s church spires and factory chimneys under smoke.',
+          'The picture is William Wyld\'s watercolor Manchester from Kersal Moor, signed and dated 1852, now in the Royal Collection (RCIN 920223). Queen Victoria had visited Manchester in October 1851. In front: a hillside with country people and goats. Behind: the town\'s church spires and factory chimneys under smoke.',
           'It sets the question because it holds both halves of the topic in one view: the old countryside and its people in front, the new industrial town behind.',
           'Sourcing caution: this is a romantic view painted for a royal collection, at a distance where no one can see a cellar or a cholera court. Ask what it leaves out.'
         ],
@@ -518,7 +518,7 @@ window.BEHISTORICAL_TEACHING = {
           'Manchester: about 23,000 people in a local count of 1773 to 1774 (organized by John Whitaker\'s group); about 70,000 in the township at the first national census in 1801 (Manchester City Council\'s table: 70,409); more than 300,000 by 1851 (counting the borough; the township alone was under 200,000). The figures depend on the boundary, so the deck says "about" and "more than."',
           'The 1851 census was the first to record more than half the people of England and Wales living in towns (Davenport, Economic History Review 2020: "by 1851 over half the population lived in settlements of 2,500 or more"). A writer of the time called it "ten millions against ten millions": a narrow majority.',
           'The CED\'s word is "rapid." Growth this fast outran every system a town had.',
-          'The picture behind the number is Wyld\'s 1852 watercolour again, the town\'s chimneys.'
+          'The picture behind the number is Wyld\'s 1852 watercolor again, the town\'s chimneys.'
         ],
         ask: 'Why does the speed of growth matter more than the size?',
         listenFor: 'Nobody could build houses, sewers and water pipes as fast as people arrived.',

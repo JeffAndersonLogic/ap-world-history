@@ -32,11 +32,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "",
       "title": "How did industry change who was on top, who did the work, and how people lived? What kept going?",
-      "subtitle": "Manchester in 1852, its chimneys behind a country scene, as a watercolour painter showed it.",
+      "subtitle": "Manchester in 1852, its chimneys behind a country scene, as a watercolor painter showed it.",
       "template": {
         "visual": {
           "url": "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
-          "alt": "A watercolour of a sunny hillside where country people sit with goats, and beyond it, in a hazy valley, a town of church spires and tall factory chimneys trailing smoke",
+          "alt": "A watercolor of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky",
           "credit": "William Wyld, Manchester from Kersal Moor, 1852 · Royal Collection · Public domain",
           "ratio": 1.561,
           "position": "50% 50%"
@@ -260,7 +260,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           ],
           "visual": {
             "url": "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
-            "alt": "An engraving of a long mill room with rows of power looms driven by belts from shafts in the ceiling, and women standing at the looms tending them",
+            "alt": "An engraving of a long mill hall where young women tend rows of power looms driven by belts from shafts along the ceiling, while a man in a cap stands in the aisle and a woman kneels to adjust a loom",
             "credit": "Power-loom weaving, engraving after T. Allom, 1835 · Public domain",
             "ratio": 1.548,
             "position": "50% 50%"
@@ -299,7 +299,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "text": "In 1851, for the first time, more than half the people of England and Wales lived in towns.",
         "visual": {
           "url": "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
-          "alt": "A watercolour of a sunny hillside where country people sit with goats, and beyond it, in a hazy valley, a town of church spires and tall factory chimneys trailing smoke",
+          "alt": "A watercolor of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky",
           "credit": "William Wyld, Manchester from Kersal Moor, 1852 · Royal Collection · Public domain",
           "ratio": 1.561,
           "position": "50% 50%"

@@ -13,7 +13,7 @@
  *
  * Already in the repo (assets/images/commons/, credits in its manifest.json):
  * - wyld-william-manchester-from-kersal-moor-...-98dd3c.jpg: William Wyld,
- *   Manchester from Kersal Moor, watercolour, signed and dated 1852, Royal
+ *   Manchester from Kersal Moor, watercolor, signed and dated 1852, Royal
  *   Collection RCIN 920223 (Google Art Project).
  * - powerloom-weaving-in-1835-f81451.jpg: power-loom weaving, drawn by
  *   T. Allom, engraved by J. Tingle, in Edward Baines, History of the Cotton
@@ -41,7 +41,7 @@ const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/5-9/';
-const WYLD={url:'../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',alt:'A watercolour of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky',credit:'William Wyld, Manchester from Kersal Moor, 1852 · Royal Collection · Public domain',ratio:1.561,position:'50% 50%'};
+const WYLD={url:'../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',alt:'A watercolor of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky',credit:'William Wyld, Manchester from Kersal Moor, 1852 · Royal Collection · Public domain',ratio:1.561,position:'50% 50%'};
 const LOOM={url:'../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',alt:'An engraving of a long mill hall where young women tend rows of power looms driven by belts from shafts along the ceiling, while a man in a cap stands in the aisle and a woman kneels to adjust a loom',credit:'Power-loom weaving, engraving after T. Allom, 1835 · Public domain',ratio:1.548,position:'50% 50%'};
 const FOUR={url:IMG+'currier-ives-four-seasons-middle-age-1868.jpg',alt:'A lithograph of a comfortable house: a father in a straw hat comes in from the porch and lifts a baby from its mother\'s arms, while a boy plays with a dog, a little girl runs toward them, and an older girl comes down the stairs with a doll',credit:'Currier & Ives, The Four Seasons of Life: Middle Age, about 1868 · Library of Congress · Public domain',ratio:1.246,position:'50% 50%'};
 const LODGERS={url:IMG+'riis-bayard-street-lodgers-five-cents-a-spot-1890.jpg',alt:'An old flash photograph of a small, cluttered room at night: a man sits on a high bunk, and men and women lie under blankets on the floor and in a lower bunk beside a stove, with pots on shelves and bundles hanging from the wall',credit:'Jacob Riis, lodgers in a Bayard Street tenement, about 1890 · Library of Congress · Public domain',ratio:1.255,position:'50% 50%'};

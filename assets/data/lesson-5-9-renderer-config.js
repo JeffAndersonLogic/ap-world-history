@@ -127,10 +127,10 @@
   lesson.images = [
     {
       title: "Manchester from Kersal Moor, 1852",
-      alt: "A watercolour of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky.",
+      alt: "A watercolor of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky.",
       url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
-      caption: "A watercolour by William Wyld, signed and dated 1852, now in the Royal Collection, the British royal family's art collection. Queen Victoria had visited Manchester in October 1851.",
+      caption: "A watercolor by William Wyld, signed and dated 1852, now in the Royal Collection, the British royal family's art collection. Queen Victoria had visited Manchester in October 1851.",
       prompt: "NOTICE what the painter put in front and what he put far away. INFER what this view says about the new industrial town. A painting for a royal collection, from miles away: what can it not show about the lives of the people under the smoke?"
     },
     {
