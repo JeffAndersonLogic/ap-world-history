@@ -256,6 +256,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-5-8-student.js',
     backUrl: 'lesson-5-8-reactions-to-industrial-economy.html#lecture'
+  },
+  {
+    key: '5.9',
+    sources: [
+      'teacher/data/topic-5-9-teaching-base.js',
+      'teacher/data/topic-5-9-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-5-9-student.js',
+    backUrl: 'lesson-5-9-society-and-the-industrial-age.html#lecture'
   }
 ];
 
@@ -458,7 +467,8 @@ function buildDeck(deck) {
     '5.5': topic31Slides,
     '5.6': topic31Slides,
     '5.7': topic31Slides,
-    '5.8': topic31Slides
+    '5.8': topic31Slides,
+    '5.9': topic31Slides
   };
   return {
     meta: {
