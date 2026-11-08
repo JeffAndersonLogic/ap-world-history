@@ -410,10 +410,10 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'Sewing for pay at home, New York, about 1890',
         steps: [
           { label: 'Always', text: 'Women and children had always worked, at home and on the farm.' },
-          { label: 'The need', key: true, text: 'One wage rarely paid for rent and food, so women and often children **earned**.' },
-          { label: 'Where', text: 'Textile mills (in the 1830s, women and girls a majority), **domestic service**, piecework at home.' },
-          { label: 'Pay', text: 'Women were usually paid less than men, mostly in different, lower-paid jobs.' },
-          { label: 'Japan, 1900', text: 'About 62 percent of private factory workers were women, most in textile mills.' }
+          { label: 'The need', key: true, text: 'One wage rarely paid the rent, so women and children **earned**.' },
+          { label: 'Where', text: 'Textile mills, **domestic service**, sewing at home.' },
+          { label: 'Pay', text: 'Usually less than men, mostly in lower-paid jobs.' },
+          { label: 'Japan, 1900', text: 'About 62 percent of private factory workers were women.' }
         ]
       },
       notes: {
@@ -497,13 +497,17 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'growth', kind: 'frame-number', eyebrow: 'IV · Cities That Could Not Keep Up · 1',
+      phase: 'growth', kind: 'story-scene', eyebrow: 'IV · Cities That Could Not Keep Up · 1',
       kc: 'KC-5.1.VI.C', title: 'Manchester grew faster than anyone could build.',
+      footer: 'The College Board\'s word is "rapid." Speed, not size, outran the town.',
       template: {
-        number: '300,000+',
-        unit: 'people in Manchester by 1851',
-        range: 'about 23,000 in 1773',
-        text: 'In 1851, for the first time, more than half the people of England and Wales lived in towns.'
+        caption: 'Manchester from Kersal Moor, 1852',
+        steps: [
+          { label: '1773', text: 'About **23,000** people, in a local count.' },
+          { label: '1801', text: 'About **70,000**, at the first national census.' },
+          { label: '1851', key: true, text: 'More than **300,000**.' },
+          { label: '1851', text: 'For the first time, more than half the people of England and Wales live in towns.' }
+        ]
       },
       notes: {
         minutes: 2,
@@ -518,7 +522,7 @@ window.BEHISTORICAL_TEACHING = {
           'Manchester: about 23,000 people in a local count of 1773 to 1774 (organized by John Whitaker\'s group); about 70,000 in the township at the first national census in 1801 (Manchester City Council\'s table: 70,409); more than 300,000 by 1851 (counting the borough; the township alone was under 200,000). The figures depend on the boundary, so the deck says "about" and "more than."',
           'The 1851 census was the first to record more than half the people of England and Wales living in towns (Davenport, Economic History Review 2020: "by 1851 over half the population lived in settlements of 2,500 or more"). A writer of the time called it "ten millions against ten millions": a narrow majority.',
           'The CED\'s word is "rapid." Growth this fast outran every system a town had.',
-          'The picture behind the number is Wyld\'s 1852 watercolor again, the town\'s chimneys.'
+          'The picture is Wyld\'s 1852 watercolor again: the town\'s chimneys, a year after the census.'
         ],
         ask: 'Why does the speed of growth matter more than the size?',
         listenFor: 'Nobody could build houses, sewers and water pipes as fast as people arrived.',

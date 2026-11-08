@@ -204,19 +204,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "The need",
             "key": true,
-            "text": "One wage rarely paid for rent and food, so women and often children **earned**."
+            "text": "One wage rarely paid the rent, so women and children **earned**."
           },
           {
             "label": "Where",
-            "text": "Textile mills (in the 1830s, women and girls a majority), **domestic service**, piecework at home."
+            "text": "Textile mills, **domestic service**, sewing at home."
           },
           {
             "label": "Pay",
-            "text": "Women were usually paid less than men, mostly in different, lower-paid jobs."
+            "text": "Usually less than men, mostly in lower-paid jobs."
           },
           {
             "label": "Japan, 1900",
-            "text": "About 62 percent of private factory workers were women, most in textile mills."
+            "text": "About 62 percent of private factory workers were women."
           }
         ],
         "visual": {
@@ -288,15 +288,32 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-number",
+      "kind": "story-scene",
       "eyebrow": "IV · Cities That Could Not Keep Up · 1",
       "title": "Manchester grew faster than anyone could build.",
+      "footer": "The College Board's word is \"rapid.\" Speed, not size, outran the town.",
       "kc": "KC-5.1.VI.C",
       "template": {
-        "number": "300,000+",
-        "unit": "people in Manchester by 1851",
-        "range": "about 23,000 in 1773",
-        "text": "In 1851, for the first time, more than half the people of England and Wales lived in towns.",
+        "caption": "Manchester from Kersal Moor, 1852",
+        "steps": [
+          {
+            "label": "1773",
+            "text": "About **23,000** people, in a local count."
+          },
+          {
+            "label": "1801",
+            "text": "About **70,000**, at the first national census."
+          },
+          {
+            "label": "1851",
+            "key": true,
+            "text": "More than **300,000**."
+          },
+          {
+            "label": "1851",
+            "text": "For the first time, more than half the people of England and Wales live in towns."
+          }
+        ],
         "visual": {
           "url": "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
           "alt": "A watercolor of a green hillside with trees, where two women sit and two goats graze, looking across a river valley to a town of church spires and dozens of tall factory chimneys trailing smoke into a hazy golden sky",
