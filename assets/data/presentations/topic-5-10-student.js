@@ -510,7 +510,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Horse and sail",
               "Rails, steam, telegraph; trade, migration",
-              "Most people still farmed"
+              "The trains carried farm crops"
             ]
           },
           {
@@ -518,7 +518,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Rank by birth and land",
               "Cheaper goods; better, for some",
-              "Landed families on top; many poor"
+              "Most still farmed; many poor"
             ]
           },
           {

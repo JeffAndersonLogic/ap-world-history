@@ -137,3 +137,22 @@ Each finding is weighed on its own; the reviewer does not have the last word.
    from thread spun in the mills.
 6. **Minor: the 1913 wheat figure is flagged as after the period in the chapter but not elsewhere.**
    Supported. Fixed: "just after this unit's period" on the reading, lecture card, map key and Skill Builder.
+
+### Pass 2 (2026-11-08), page truth, readability, CED alignment, ownership (cheaper model)
+
+1. **Primary Source question 1 ("quote the phrase") is answered by the same quotation on lecture card 3,
+   slide 11 and the First & 10.** Partly supported. Quoting from the source in front of them is the task, and
+   the phrase is the source's; the quotation stays where it teaches the witness. Narrowed: the question now
+   also asks students to explain the phrase in their own words.
+2. **Checkpoint 2 step 3 can be answered by pasting one of the three printed relationship models.**
+   Supported. Fixed: "Use your own pair, not one of the three models in the lesson."
+3. **Checkpoint 2 asks "for whom or where" but Success Criterion 3 did not say so.** Supported. Fixed in the
+   criterion (it feeds the page, the modal and Canvas).
+4. **Checkpoint 1 displays "how nationalism shaped states and empires" but asked only for "one example of
+   nationalism."** Supported. Fixed: step 3 and the checklist ask how nationalism changed a state or empire.
+5. **Checkpoint 2 asks for three topics but the lecture cards do not label topics.** Supported. Fixed: the
+   step says the First & 10 names the topic each fact comes from (every borrowed fact there is tagged).
+6. **The retelling table's Moving row gave "Most people still farmed" as a continuity in moving.**
+   Supported. Fixed: the Moving row's continuity is that the interiors the trains reached kept farming (they
+   carried their crops, the wheat of section III); "most people still farmed" moves to the Living row. The
+   outline's wrap table and the story draft match.

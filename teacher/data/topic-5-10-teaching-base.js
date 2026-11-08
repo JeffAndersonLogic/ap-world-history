@@ -113,8 +113,8 @@ window.BEHISTORICAL_TEACHING = {
     ],
     wrap: { title: 'Put it together', columns: ['By 1900', 'Kept going'], rows: [
       { label: 'Making goods', cells: ['Coal and factories; Europe and the US make over four-fifths', 'Old makers kept making by hand, a shrinking share'] },
-      { label: 'Moving goods, people, news', cells: ['Railroads, steamships, telegraph; more trade and migration', 'Most people still farmed'] },
-      { label: 'How people lived', cells: ['Cheaper goods; living standards rose for some', 'Landed families near the top; many still poor'] },
+      { label: 'Moving goods, people, news', cells: ['Railroads, steamships, telegraph; more trade and migration', 'Interiors kept farming: the trains carried their wheat'] },
+      { label: 'How people lived', cells: ['Cheaper goods; living standards rose for some', 'Most people still farmed; landed families near the top; many still poor'] },
       { label: 'Who ruled', cells: ['Revolutions, new nation-states, nationalism (from ideas, first)', 'Kings and emperors in most of Europe; women\'s votes almost nowhere'] }
     ] },
     vocabulary: [
@@ -720,8 +720,8 @@ window.BEHISTORICAL_TEACHING = {
         columns: [{ name: 'In 1750' }, { name: 'By 1900' }, { name: 'Kept going' }],
         rows: [
           { label: 'Making', cells: ['By hand, mostly in Asia', 'Coal, factories; Europe and US over four-fifths', 'Old makers kept making by hand'] },
-          { label: 'Moving', cells: ['Horse and sail', 'Rails, steam, telegraph; trade, migration', 'Most people still farmed'] },
-          { label: 'Living', cells: ['Rank by birth and land', 'Cheaper goods; better, for some', 'Landed families on top; many poor'] },
+          { label: 'Moving', cells: ['Horse and sail', 'Rails, steam, telegraph; trade, migration', 'The trains carried farm crops'] },
+          { label: 'Living', cells: ['Rank by birth and land', 'Cheaper goods; better, for some', 'Most still farmed; many poor'] },
           { label: 'Ruling', cells: ['Kings by God\'s will', 'New nations, nationalism (ideas first)', 'Kings in most of Europe; few women vote'] }
         ],
         result: { label: 'So', text: 'Deep change, uneven reach.' }

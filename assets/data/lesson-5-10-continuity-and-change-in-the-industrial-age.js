@@ -60,7 +60,7 @@ window.BEHISTORICAL_LESSON = {
       kc: "Unit 5: Learning Objective K"
     },
     {
-      criteria: "I can state a thesis that takes a side on how much changed and names a change and a continuity, use evidence from at least three Unit 5 topics, and explain how two pieces of evidence relate.",
+      criteria: "I can state a thesis that takes a side on how much changed and names a change and a continuity, use evidence from at least three Unit 5 topics, and explain how two pieces of evidence relate, and say for whom or where the change was greatest.",
       kc: "Unit 5: Learning Objective K"
     }
   ],
@@ -192,7 +192,7 @@ window.BEHISTORICAL_LESSON = {
     attribution: "Alfred Russel Wallace, The Wonderful Century: Its Successes and Its Failures (New York: Dodd, Mead and Company, 1898), Preface and chapter XX, p. 343, from the Cornell University Library copy at the Internet Archive",
     text: "A comparative estimate of the number and importance of these achievements leads to the conclusion that not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period. ... But this is only one side of the shield. Along with these marvellous Successes — perhaps in consequence of them — there have been equally striking Failures, some intellectual, but for the most part moral and social.<br><br>One of the most prominent features of our century has been the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people ...",
     questions: [
-      "In the first passage, what does Wallace claim about how much his century changed? Quote the phrase that shows how big he thinks the change was.",
+      "In the first passage, what does Wallace claim about how much his century changed? Quote the phrase that shows how big he thinks the change was, then explain in your own words what it means.",
       "In the second passage, what does Wallace claim about who gained from the new wealth? Using the lesson, explain one piece of evidence that supports him and one that does not.",
       "Wallace wrote in 1898, as a famous scientist who wanted to change how land was owned. How might his point of view shape what he chose to call successes and failures? Then explain how one claim of his relates to one piece of evidence from another Unit 5 topic."
     ]

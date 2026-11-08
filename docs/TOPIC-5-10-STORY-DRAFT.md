@@ -317,8 +317,8 @@ A four-row table, one row per part of the world industry touched, so a student c
 | | In 1750 | By 1900 | Kept going |
 |---|---|---|---|
 | **Making goods** | By hand, mostly in Asia | Coal and factories; Europe and the US make over four-fifths | Old makers kept making by hand, a shrinking share |
-| **Moving goods, people, news** | Horse and sail | Railroads, steamships, telegraph; more trade, tens of millions migrate | Most people still farmed |
-| **How people lived** | Most in the countryside, rank by birth | Cheaper goods; living standards rose for some; crowded cities | Landed families near the top; many still poor |
+| **Moving goods, people, news** | Horse and sail | Railroads, steamships, telegraph; more trade, tens of millions migrate | The interiors kept farming: the trains carried their crops |
+| **How people lived** | Most in the countryside, rank by birth | Cheaper goods; living standards rose for some; crowded cities | Most people still farmed; landed families near the top; many still poor |
 | **Who ruled** | Kings by God's will | Revolutions, new nation-states, nationalism (from ideas, before the factories spread) | Kings and emperors in most of Europe; women's votes almost nowhere |
 
 Result line: **Deep change, uneven reach.**
