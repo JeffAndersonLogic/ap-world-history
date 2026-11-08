@@ -267,39 +267,34 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-scenes",
+      "kind": "split-mirror",
       "eyebrow": "IV · How Far It Reached · 2",
       "title": "The change did not reach everyone.",
-      "footer": "Set each change beside its limit.",
+      "footer": "Wood was still the world's largest energy source until about 1900.",
       "kc": "Unit 5: Learning Objective K",
       "template": {
         "left": {
-          "name": "The old makers kept making",
-          "items": [
-            "China's share of the world's goods: about a third (1750) to about 6% (1900)",
-            "One Indian province, 1908: about a million people still live from the handloom"
-          ],
-          "visual": {
-            "url": "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
-            "alt": "An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above",
-            "credit": "Weaver at his loom, gouache, attributed to a Tanjore painter, about 1840 · Wellcome Collection · Public domain",
-            "ratio": 0.735,
-            "fit": "cover",
-            "position": "50% 45%"
-          }
+          "name": "The old makers kept making"
         },
         "right": {
-          "name": "Most people still farmed",
-          "items": [
-            "India, 1901 census: about two-thirds live by farming",
-            "United States, 1900: about two in five workers still farm",
-            "Wood: the world's largest energy source until about 1900"
-          ]
+          "name": "Most people still farmed"
         },
-        "bothLabel": "So",
-        "both": [
-          "The change was deepest in a few regions",
-          "Much of the world's work went on in old ways"
+        "rows": [
+          {
+            "label": "Where",
+            "left": "China and India",
+            "right": "India and the United States"
+          },
+          {
+            "label": "The change",
+            "left": "China's share of the world's goods: about a third (1750) to about 6% (1900)",
+            "right": "Factories and railways spread"
+          },
+          {
+            "label": "Kept going",
+            "left": "1908: about a million people in one Indian province still live from the handloom",
+            "right": "India, 1901: about two-thirds farm. US, 1900: about two in five workers farm"
+          }
         ]
       }
     },

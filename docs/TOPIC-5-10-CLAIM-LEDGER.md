@@ -76,7 +76,7 @@ are carried from that topic's checked record. None is AI-generated and no new pi
 | Currier & Ives, *Across the Continent*, 1868 (LoC 90708413) | Deck question and close; LD card 5; RC Evidence Lab; first10 card | 5.5 | LoC record: drawn by F. F. Palmer, design by J. M. Ives, 1868 | VERIFIED |
 | Power-loom weaving, engraving after T. Allom, 1835 | Deck making; LD card 1; content-delivery card | 5.9 (commons manifest) | Baines, *History of the Cotton Manufacture* (1835) | VERIFIED |
 | The *Great Eastern* with the Atlantic cable, *Illustrated London News*, 14 July 1866 (LoC 2022637951) | Deck moving; LD card 2; RC Evidence Lab; evidence card | 5.5 | LoC record | VERIFIED |
-| Weaver at his loom, attributed to a Tanjore painter, about 1840 (Wellcome pjnujb7j) | Deck reach; LD card 3; RC Evidence Lab | 5.4 | Wellcome record | VERIFIED |
+| Weaver at his loom, attributed to a Tanjore painter, about 1840 (Wellcome pjnujb7j) | LD card 3; RC Evidence Lab | 5.4 | Wellcome record | VERIFIED |
 | Riis, lodgers in a Bayard Street tenement, about 1890 (LoC 2002710259) | Deck gains | 5.9 | LoC record | VERIFIED |
 | Thévenin, *The Storming of the Bastille*, etching, 1790 (Cleveland 2015.21) | Deck nations; LD card 4; RC Evidence Lab | 5.2 | Cleveland Museum of Art record | VERIFIED |
 | *First Steam Train Leaving Yokohama*, signed Baidō Kunimasa, about 1872 (LoC 2002700197) | Deck nationalism; RC Evidence Lab | 5.6 | LoC record (catalogued under Utagawa Kunisada) | VERIFIED |

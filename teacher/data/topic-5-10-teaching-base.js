@@ -494,14 +494,17 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'reach', kind: 'split-scenes', eyebrow: 'IV · How Far It Reached · 2',
+      phase: 'reach', kind: 'split-mirror', eyebrow: 'IV · How Far It Reached · 2',
       kc: 'Unit 5: Learning Objective K', title: 'The change did not reach everyone.',
-      footer: 'Set each change beside its limit.',
+      footer: 'Wood was still the world\'s largest energy source until about 1900.',
       template: {
-        left: { name: 'The old makers kept making', items: ['China\'s share of the world\'s goods: about a third (1750) to about 6% (1900)', 'One Indian province, 1908: about a million people still live from the handloom'] },
-        right: { name: 'Most people still farmed', items: ['India, 1901 census: about two-thirds live by farming', 'United States, 1900: about two in five workers still farm', 'Wood: the world\'s largest energy source until about 1900'] },
-        bothLabel: 'So',
-        both: ['The change was deepest in a few regions', 'Much of the world\'s work went on in old ways']
+        left: { name: 'The old makers kept making' },
+        right: { name: 'Most people still farmed' },
+        rows: [
+          { label: 'Where', left: 'China and India', right: 'India and the United States' },
+          { label: 'The change', left: 'China\'s share of the world\'s goods: about a third (1750) to about 6% (1900)', right: 'Factories and railways spread' },
+          { label: 'Kept going', left: '1908: about a million people in one Indian province still live from the handloom', right: 'India, 1901: about two-thirds farm. US, 1900: about two in five workers farm' }
+        ]
       },
       notes: {
         minutes: 3,
@@ -515,7 +518,6 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The old makers: India, China and the Middle East kept making goods, much of it by hand, but a shrinking share. China\'s share fell from about a third in 1750 to about 6 percent in 1900 (5.4, Bairoch). In 1908, in one province of northern India (the United Provinces), about a million people still lived from handloom weaving (5.4).',
           'Most people still farmed: the Census of India, 1901 (Risley and Gait\'s report) found agriculture the livelihood of nearly two-thirds of the population; in the United States in 1900, about two in five workers were in farming (Lebergott\'s estimates). Until about 1900, wood and other things that grow were still the world\'s largest source of energy (5.5).',
-          'Left picture: a weaver at his loom, a painting attributed to a Tanjore painter, about 1840 (Wellcome Collection), made for European buyers, so a typical weaver, not one real person\'s workshop.'
         ],
         ask: 'Does a shrinking share mean the old makers stopped working?',
         listenFor: 'No: they kept making, but the rest of the world\'s production grew much faster.',
