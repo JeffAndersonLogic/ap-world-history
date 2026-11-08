@@ -208,8 +208,8 @@ the American Revolution began in 1775, the French in 1789, the Haitian in 1791, 
 independence in Spanish America in 1810 (5.1, 5.2). The revolutions built new countries, the United
 States, Haiti and the new republics of Spanish America, and they left a new loyalty, nationalism, which
 joined Italy into one kingdom in 1861 and proclaimed a German Empire in 1871, and pulled Greeks and
-other Balkan peoples away from the Ottoman Empire (5.2). This revolution began while factories were still
-almost all in Britain. Its causes were ideas and grievances, not machines.
+other Balkan peoples away from the Ottoman Empire (5.2). The revolutions of 1775 to 1826 began while factories
+were still almost all in Britain. Their causes were ideas and grievances, not machines.
 
 The two revolutions met later. Railways and iron helped Prussia win the wars that united Germany in 1871. Nationalism pushed some governments to build industry to make the state strong,
 as Meiji Japan did (5.6); and workers in industrial cities used the language of rights to demand the
