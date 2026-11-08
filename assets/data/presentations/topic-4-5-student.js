@@ -38,8 +38,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-5/voc-shipyard-bakhuysen-1696.jpg",
           "alt": "Oil painting of a busy harbor: a long brick warehouse and shipyard behind the water, a large ship's hull on the slip, and tall Dutch sailing ships and small boats in front, flying flags and firing a salute",
           "credit": "Ludolf Bakhuysen, The Shipyard of the Dutch East India Company at Amsterdam, 1696 · Mauritshuis · Public domain",
-          "position": "50% 55%"
-        }
+          "position": "50% 100%"
+        },
+        "place": "top"
       }
     },
     {
@@ -263,6 +264,50 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "so",
           "so"
         ]
+      }
+    },
+    {
+      "kind": "annotated",
+      "eyebrow": "II · What Trade Moved · One Coin",
+      "title": "Struck in the Andes, wanted in China.",
+      "subtitle": "A peso de ocho, the “piece of eight,” struck at Potosí in 1651.",
+      "footer": "Spain made the coin. China’s demand for silver carried coins like it across two oceans.",
+      "kc": "KC-4.1.IV",
+      "template": {
+        "imageWidth": 0.42,
+        "ratio": 1.0368421052631578,
+        "pins": [
+          {
+            "x": 0.27,
+            "y": 0.1,
+            "label": "1651 · Potosí",
+            "text": "Struck at the mint in Potosí, high in the Andes."
+          },
+          {
+            "x": 0.41,
+            "y": 0.32,
+            "label": "Castles and Lions",
+            "text": "The arms of Castile and León, Spain’s kingdoms."
+          },
+          {
+            "x": 0.89,
+            "y": 0.42,
+            "label": "INDIARVM REX",
+            "text": "Latin for “king of the Indies”: Spain’s king ruled the Americas."
+          },
+          {
+            "x": 0.3,
+            "y": 0.84,
+            "label": "Eight Reales of Silver",
+            "text": "Worth one peso. Coins like it took both silver roads toward Asia."
+          }
+        ],
+        "visual": {
+          "url": "../assets/images/topics/4-5/potosi-8-reales-1651.jpg",
+          "alt": "A worn, roughly round silver coin with a cross dividing castles and lions, the date 1651 in the lettering around the edge, and a small hole punched near the rim",
+          "credit": "Münzkabinett Berlin · Photo R. Saczewski, CC0",
+          "tagPos": "bl"
+        }
       }
     },
     {

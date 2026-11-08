@@ -164,19 +164,20 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'rivals', label: 'Disputes Become Wars', range: '28-31', minutes: 3, teacher: 'The Indian Ocean, the Sahara, the spice islands and the North Sea.', students: 'Name the trade each rivalry was about.', slide: 11 },
     { id: 'map', label: 'Follow the Silver', range: '31-32', minutes: 1, teacher: 'Two silver routes toward China; three battles.', students: 'Trace both routes.', slide: 12 },
     { id: 'silver', label: 'Why China', range: '32-35', minutes: 3, teacher: 'Mines, the Single Whip, Manila.', students: 'Explain the pull.', slide: 13 },
-    { id: 'manila', label: 'Silk for Silver', range: '35-36', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 14 },
-    { id: 'atlantic', label: 'The Atlantic System', range: '36-38', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 15 },
-    { id: 'regional', label: 'Old Markets Keep Going', range: '38-40', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 16 },
-    { id: 'work', label: 'More Work', range: '40-42', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 17 },
-    { id: 'families', label: 'Families in Africa', range: '42-44', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 18 },
-    { id: 'mixing', label: 'A Mixed Atlantic World', range: '44-46', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 19 },
-    { id: 'faith', label: 'Spread, Clash, Blend', range: '46-48', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 20 },
-    { id: 'virgin', label: 'The Virgin of the Mountain', range: '48-49', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 21 },
-    { id: 'sahagun', label: 'Claim It: Sahagún', range: '49-51', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 22 },
-    { id: 'ledger', label: 'What Was New, What Kept Going', range: '51-55', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 23 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '55-57', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 24 },
-    { id: 'worktime', label: 'Work Time', range: '57-87', minutes: 30, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder on Sahagún, Checkpoint 1 with no coach, the Manila Silver Council, then Checkpoint 2. Four modules is more than 30 minutes: Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, the Manila Silver Council, Checkpoint 2.', slide: 25 },
-    { id: 'close', label: 'Landing Sentence', range: '87-88', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 26 }
+    { id: 'coin', label: 'One Coin', range: '35-36', minutes: 1, teacher: 'A real peso de ocho, struck at Potosí in 1651.', students: 'Say why coins like it went to China.', slide: 14 },
+    { id: 'manila', label: 'Silk for Silver', range: '36-37', minutes: 1, teacher: 'The Chinese merchants of Manila, about 1590.', students: 'Say who ran this trade.', slide: 15 },
+    { id: 'atlantic', label: 'The Atlantic System', range: '37-39', minutes: 2, teacher: 'Goods, wealth and enslaved people, from everywhere.', students: 'Name a good from outside the Atlantic.', slide: 16 },
+    { id: 'regional', label: 'Old Markets Keep Going', range: '39-41', minutes: 2, teacher: 'Established practices; Europeans as carriers.', students: 'Name the change and the continuity.', slide: 17 },
+    { id: 'work', label: 'More Work', range: '41-43', minutes: 2, teacher: 'Wool and linen, cotton, silk.', students: 'Old work or new?', slide: 18 },
+    { id: 'families', label: 'Families in Africa', range: '43-45', minutes: 2, teacher: 'Who the trade took, and what it changed.', students: 'Explain the cause.', slide: 19 },
+    { id: 'mixing', label: 'A Mixed Atlantic World', range: '45-47', minutes: 2, teacher: 'All parties contributing.', students: 'Name a contribution from each.', slide: 20 },
+    { id: 'faith', label: 'Spread, Clash, Blend', range: '47-49', minutes: 2, teacher: 'Compare three things religions did.', students: 'One similarity, one difference.', slide: 21 },
+    { id: 'virgin', label: 'The Virgin of the Mountain', range: '49-50', minutes: 1, teacher: 'Blending in one painting.', students: 'Find the two traditions.', slide: 22 },
+    { id: 'sahagun', label: 'Claim It: Sahagún', range: '50-52', minutes: 2, teacher: 'Students find the friar\'s claim themselves.', students: 'Claim, and whether the source proves it.', slide: 23 },
+    { id: 'ledger', label: 'What Was New, What Kept Going', range: '52-56', minutes: 4, teacher: 'Students redraw the ledger from memory.', students: 'Retell the whole topic.', slide: 24 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '56-58', minutes: 2, teacher: 'A change and a continuity, each with a reason.', students: 'Upgrade a weak claim.', slide: 25 },
+    { id: 'worktime', label: 'Work Time', range: '58-88', minutes: 30, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder on Sahagún, Checkpoint 1 with no coach, the Manila Silver Council, then Checkpoint 2. Four modules is more than 30 minutes: Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, the Manila Silver Council, Checkpoint 2.', slide: 26 },
+    { id: 'close', label: 'Landing Sentence', range: '88-89', minutes: 1, teacher: 'Land the answer and hand off to 4.6.', students: 'Say the topic in one sentence.', slide: 27 }
   ],
 
   quickLaunch: [
@@ -216,7 +217,8 @@ window.BEHISTORICAL_TEACHING = {
           'Bridge only: the mit’a and the colonial labor systems (4.4; Potosí appears as silver\'s source); Tondibi as a battle (3.1; 4.5 gives its economic motive); the size of the slave trade and the plantations (4.4); Japan\'s ban on Christianity (4.4, one clause); casta (4.7, not mentioned); resistance (4.6, the hand-off).',
           'Four myths: "Europe paid for Asian goods with better products"; "the Atlantic trade was a neat triangle"; "global trade replaced the old markets"; "European culture simply replaced the others in the Americas."',
           'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 12. None is AI-generated.',
-          'Slides 6 and 8 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (added 2026-11-04). Slide 9 is the case: the VOC, with the real 1606 share receipt.'
+          'Slides 6 and 8 are the course\'s own graphics of the two rulers\' tools, mercantilism and the joint-stock company (added 2026-11-04). Slide 9 is the case: the VOC, with the real 1606 share receipt.',
+          'Slide 14 (added 2026-11-08) puts the silver story in one real object: a peso de ocho struck at Potosí in 1651. It shows what China\'s demand pulled, not how much silver moved.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Rulers built tools to make their empires pay (mercantilist laws, chartered companies), and the silver, goods and people those tools moved changed work, families and faith, while old markets and old religions kept going.',
@@ -574,6 +576,44 @@ window.BEHISTORICAL_TEACHING = {
         ask: 'If China had not taxed in silver, what would have happened to the silver?',
         listenFor: 'Much less would have gone to Asia; its value would have been lower, and the trade would have been smaller.',
         ap: 'Change: one metal moving through Europe, Asia, Africa and the Americas.'
+      }
+    },
+    {
+      phase: 'coin', kind: 'annotated', eyebrow: 'II · What Trade Moved · One Coin',
+      kc: 'KC-4.1.IV', title: 'Struck in the Andes, wanted in China.',
+      subtitle: 'A peso de ocho, the “piece of eight,” struck at Potosí in 1651.',
+      footer: 'Spain made the coin. China’s demand for silver carried coins like it across two oceans.',
+      template: {
+        imageWidth: .42, ratio: 985/950,
+        pins: [
+          { x: .27, y: .1, label: '1651 · Potosí', text: 'Struck at the mint in Potosí, high in the Andes.' },
+          { x: .41, y: .32, label: 'Castles and Lions', text: 'The arms of Castile and León, Spain’s kingdoms.' },
+          { x: .89, y: .42, label: 'INDIARVM REX', text: 'Latin for “king of the Indies”: Spain’s king ruled the Americas.' },
+          { x: .3, y: .84, label: 'Eight Reales of Silver', text: 'Worth one peso. Coins like it took both silver roads toward Asia.' }
+        ]
+      },
+      notes: {
+        minutes: 1,
+        story: 'Make the silver story one object. This coin was struck at Potosí in 1651 for the king of Spain. Spain made it, but China’s demand is why coins like it crossed two oceans. In China, merchants tested foreign silver and stamped it with small marks called chops.',
+        keys: [
+          'Peso de ocho: eight reales, the “piece of eight”',
+          'Struck at Potosí, 1651, for Spain’s king',
+          'Castles and lions: Castile and León',
+          'Spain made the coin; China’s demand moved it',
+          'Chinese merchants stamped “chops” after testing silver',
+          'This coin has no chops; its hole is unexplained'
+        ],
+        land: [
+          'The object is real: an eight-reales silver coin, reverse side, struck at the Potosí mint in 1651 (Münzkabinett, Staatliche Museen zu Berlin, object 18214111; photograph Reinhard Saczewski, CC0, on Wikimedia Commons). The same coin is Evidence Lab card 2 on the student lesson page, so some students will recognize it.',
+          'What students can read on it: the date 1651; a cross dividing castles and lions, the arms of Castile and León, Spain’s kingdoms; and part of the king’s Latin title, ET INDIARVM REX, “and king of the Indies.” The king in 1651 was Philip IV. “The Indies” was Spain’s name for its lands in the Americas.',
+          'Eight reales made one peso, so the coin was the peso de ocho; English speakers called it a piece of eight or a Spanish dollar. Coins like it were how American silver traveled: across the Atlantic to Seville and on toward Asia, or from Acapulco across the Pacific to Manila. Much of the silver on the Manila galleons came from Mexican mines; Potosí’s silver more often took the Atlantic road, though some reached Acapulco too.',
+          'In China silver was mostly valued by its weight and purity, not by what a coin said. That is why merchants and money-changers tested foreign coins and often stamped small marks, called chops, into them. This coin has no chops. Its hole was punched at some later time, and the coin cannot tell us by whom or why. No chop-marked coin from before 1750 could be verified for this slide (2026-11-08), so describe chops rather than show one.',
+          'If asked: the first United States dollar (1792) was set to the value of the Spanish milled dollar, a later, machine-made version of this coin, and foreign silver coins stayed legal money in the United States until 1857. That is after this unit; keep it to one sentence.'
+        ],
+        ask: 'This coin was made for the king of Spain. Why did so many coins like it end up in China?',
+        listenFor: 'China collected its taxes in silver and silver was worth more there, so merchants carried it to China to buy silk and porcelain.',
+        ap: 'Change: a new network carried one kind of coin from the Andes to Europe and Asia.',
+        avoid: 'Do not call it “the first global currency” as settled fact; say it was the best-known coin of the silver trade. Do not give Potosí alone a share of world silver (see Why China). Do not read the hole as proof of anything.'
       }
     },
     {

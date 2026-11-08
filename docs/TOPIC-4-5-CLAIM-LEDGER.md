@@ -363,3 +363,30 @@ problem. Every finding is fixed or logged above, and every claim row has a statu
 A road-map slide was added as slide 4, so every slide from the First & 10 on is one place later than the "Deck N" and "slide N" numbers in the rows above (written before the change): Deck 5 is now slide 6, and so on. The rows are left as written, since they record what was checked when. The deck's own notes were renumbered.
 
 Later the same day (Jeff, 2026-11-06), the Myth and Evidence slide was retired (its myths moved to the briefing outline's Watch for list and the ledger slide's notes) and the four module launch slides became one Work Time slide (Modules 05, 06, 09 and 10, the schedule's required set). Slides up to the Sahagún passage keep the numbers above plus one; the ledger is slide 23, Sharpen the Claim 24, Work Time 25 and the close 26. No claim in this ledger changed.
+
+## The peso de ocho slide and the slide 3 layout, 2026-11-08
+
+Jeff asked whether 4.5 should tell the story of the peso de ocho and Potosí, then asked for a
+slide. The CED (`scripts/lib/ced-source/unit-4.js`, KC-4.1.IV) requires "the global flow of
+silver, especially from Spanish colonies in the Americas"; it names neither Potosí nor the coin,
+not even as an illustrative example, so both are teaching choices that serve that sentence. The
+story draft's own evidence plan (section 10, beat 8) had already called for "a Spanish 8-reales
+coin with Chinese merchants' chop marks." The new slide is slide 14, `coin`, between Why China and
+the Manila slide, and every slide from Manila on moves one place later. The run of show gained
+one minute (the close is now 88 to 89).
+
+Slide 3 (`question`) changed layout only: the caption moved into the sky (`place: 'top'`) and the
+painting is anchored to its bottom edge, so the hulls and boats are no longer hidden under the
+caption. No claim changed.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| The picture is an eight-reales silver coin, reverse, struck at the Potosí mint in 1651, Münzkabinett der Staatlichen Museen zu Berlin; photograph Reinhard Saczewski, CC0 | Deck 14 (credit and LAND) | Commons file description, read 2026-11-08: "Moneda de plata de 8 reales de 1651 (acuñado en Potosí) - reverso", source Münzkabinett Berlin object 18214111, author Reinhard Saczewski, licence Cc-zero. Matches the RC Evidence Lab card 2 row above. | VERIFIED |
+| The castles and lions are the arms of Castile and León | Deck 14 pin 2 | Same wording as the Evidence Lab card 2 caption, which passed the review loop; read on the coin itself. | VERIFIED |
+| The legend reads, in part, ET INDIARVM REX, "and king of the Indies," part of the title of Philip IV, king in 1651 | Deck 14 pin 3 and LAND | Read on the coin: "...1651 · ET · INDIA RVM · REX". Philip IV reigned 1621 to 1665. "Las Indias" was Spain's name for its American lands. | VERIFIED |
+| Eight reales made one peso; English speakers called the coin a piece of eight or a Spanish dollar | Deck 14 subtitle, pin 4, LAND | Standard numismatic usage (the coin's own denomination, 8 reales; "peso de a ocho"). | VERIFIED |
+| Coins like it took both silver roads toward Asia; much of the Manila galleon silver came from Mexican mines, and Potosí's silver more often took the Atlantic road, though some reached Acapulco | Deck 14 pin 4 and LAND | Consistent with the Silver rows above (the two roads on the map; Flynn and Giráldez on the Pacific route). The Mexico and Peru split is stated as "much" and "more often", not as a share. | NARROWED |
+| In China silver was mostly valued by weight and purity, so merchants tested foreign coins and often stamped small marks, chops, into them | Deck 14 STORY, keys, LAND | General scholarship on Ming and Qing silver (silver reckoned by weight in taels). The slide shows no chop-marked coin: the Commons examples found on 2026-11-08 are dated 1798 or later, are collectors' own photographs, or sit in a fake-countermark category, so none was used and the notes say why. | NARROWED |
+| The coin's hole was punched later, and the coin cannot say by whom or why | Deck 14 keys and LAND | Visible in the photograph; the Evidence Lab caption likewise only describes it. | VERIFIED |
+| The 1792 U.S. dollar was set to the value of the Spanish milled dollar; foreign silver coins were legal money in the U.S. until 1857 | Deck 14 LAND (if asked) | Coinage Act of 1792, section 9 ("of the value of a Spanish milled dollar as the same is now current"); Act of 21 February 1857 ended the legal-tender status of foreign coins. Marked as after the unit. | VERIFIED |
+| "The first global currency" | Deck 14 AVOID | Not claimed; the note tells the teacher not to state it as settled fact. | REMOVED |
