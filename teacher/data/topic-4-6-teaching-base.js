@@ -251,7 +251,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
       title: 'Where we are going today.',
       template: {
-        question: 'States pushed to expand and centralize. Who pushed back, and what did it change?',
+        question: 'Who pushed back, and what did it change?',
         stops: [
           { label: 'I', text: 'Two pushes: centralize and expand' },
           { label: 'II', text: 'Pushback inside the state' },
