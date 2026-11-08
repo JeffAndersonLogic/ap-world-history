@@ -360,6 +360,92 @@ for (const deck of DECKS) {
   check(`${deck.key} run of show points at the right slides`, flowOk);
 }
 
+// The lesson shape is the standard (Jeff, 2026-11-08): "use the outlines in
+// 4.4 as the reference for how all future topics are created", and "we are
+// cutting slides that simply point to the modules; the focus is on telling the
+// story during lecture." So every deck not on OUTLINE_OWED must carry the
+// outline and road map checked above, and also: no slide whose only job is to
+// launch a module (the First & 10 stays: it is read in class before the story);
+// no Myth and Evidence slide (myths live in the outline's watch list and the
+// retelling notes); no minute count on a projected slide (minutes live in
+// `flow`); and exactly one Work Time launch pad, after the retelling slide,
+// whose buttons are the schedule's required modules after 02, in order, the
+// same list as `outline.required`. OUTLINE_OWED lists the decks built before
+// the standard; a deck comes off it when it is converted, and the check below
+// fails a converted deck still on the list. docs/PRESENTATION-AUTHORING.md,
+// section 7, "The lesson shape", is the rule in prose.
+console.log('\n  The lesson shape: outline, road map, story, Work Time\n');
+const OUTLINE_OWED = new Set([
+  '2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '3.1', '3.2', '3.3', '3.4', '4.1', '4.2', '4.3',
+  '5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7', '5.8'
+]);
+function loadSchedule() {
+  const sandbox = { window: {} };
+  const any = new Proxy(function () {}, { get: (t, p) => (p === 'then' ? undefined : any), set: () => true, apply: () => any, construct: () => any });
+  sandbox.document = any; sandbox.location = any; sandbox.navigator = any;
+  vm.createContext(sandbox);
+  vm.runInContext(read('assets/data/announcements-schedule.js'), sandbox, { filename: 'announcements-schedule.js' });
+  return sandbox.window.BEHISTORICAL_SCHEDULE;
+}
+const SCHEDULED = new Map();
+for (const d of (loadSchedule().days || [])) if (d && d.topic && Array.isArray(d.modules) && !SCHEDULED.has(d.topic)) SCHEDULED.set(d.topic, d.modules);
+function shapeProblems(T, modules) {
+  const out = [], slides = T.slides || [];
+  if (!T.outline) out.push('no teaching outline');
+  for (const s of slides) {
+    if (s.kind === 'action' && s.phase !== 'first10') out.push(`module launch slide "${s.phase}" (put it on the Work Time launch pad)`);
+    if (s.kind === 'myth-evidence') out.push(`Myth and Evidence slide "${s.phase}" (move the myths to outline.watch and the retelling notes)`);
+    if (/\b\d+\s*minutes?\b/i.test(s.eyebrow || '') || s.big) out.push(`minute count on projected slide "${s.phase}"`);
+  }
+  const pads = slides.filter(s => s.kind === 'launch-pad');
+  if (pads.length !== 1) return out.concat(`expected one Work Time launch pad, found ${pads.length}`);
+  const at = slides.indexOf(pads[0]), retell = slides.findIndex(s => s.retelling);
+  if (retell >= 0 && at < retell) out.push('Work Time comes before the retelling slide');
+  if (modules) {
+    const want = modules.filter(m => m !== '02').join(',');
+    const got = ((pads[0].template || {}).modules || []).map(m => String(m.code || '').replace(/\D/g, '')).join(',');
+    if (got !== want) out.push(`Work Time launches ${got || 'nothing'}, the schedule requires ${want}`);
+    const req = ((T.outline || {}).required || []).map(r => String(r).slice(0, 2)).join(',');
+    if (T.outline && req !== modules.join(',')) out.push(`outline.required is ${req}, the schedule says ${modules.join(',')}`);
+  }
+  return out;
+}
+{
+  const good = {
+    outline: { required: ['02 First & 10', '06 Checkpoint 1', '10 Checkpoint 2'], sections: [] },
+    slides: [{ phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10' }, { phase: 'retell', retelling: true, kind: 'cause-chain' },
+      { phase: 'worktime', kind: 'launch-pad', template: { modules: [{ code: 'Module 06' }, { code: 'Module 10' }] } }]
+  };
+  const mods = ['02', '06', '10'];
+  check('control: a deck in the lesson shape passes', shapeProblems(good, mods).length === 0, shapeProblems(good, mods).join('; '));
+  const pointer = JSON.parse(JSON.stringify(good)); pointer.slides.splice(2, 0, { phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1' });
+  check('control: a module launch slide is refused', shapeProblems(pointer, mods).length === 1);
+  const myth = JSON.parse(JSON.stringify(good)); myth.slides.splice(1, 0, { phase: 'myths', kind: 'myth-evidence' });
+  check('control: a Myth and Evidence slide is refused', shapeProblems(myth, mods).length === 1);
+  const mins = JSON.parse(JSON.stringify(good)); mins.slides[0].eyebrow = 'Module 02 · First & 10 · 12 Minutes';
+  check('control: a minute count on a projected slide is refused', shapeProblems(mins, mods).length === 1);
+  const drift = JSON.parse(JSON.stringify(good)); drift.slides[2].template.modules[0].code = 'Module 07';
+  check('control: Work Time that drifts from the schedule is refused', shapeProblems(drift, mods).length === 1);
+  const early = JSON.parse(JSON.stringify(good)); early.slides.reverse();
+  check('control: Work Time before the retelling slide is refused', shapeProblems(early, mods).some(p => /before the retelling/.test(p)));
+  const bare = JSON.parse(JSON.stringify(good)); delete bare.outline;
+  check('control: a deck with no outline is refused', shapeProblems(bare, mods).some(p => /no teaching outline/.test(p)));
+}
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const T = sandbox.window.BEHISTORICAL_TEACHING;
+  if (!T || !Array.isArray(T.slides)) continue;
+  if (OUTLINE_OWED.has(deck.key)) {
+    check(`${deck.key} is owed the lesson shape (take it off OUTLINE_OWED once converted)`, !T.outline, T.outline ? 'converted: take it off OUTLINE_OWED' : 'not yet converted');
+    continue;
+  }
+  const problems = shapeProblems(T, SCHEDULED.get(deck.key));
+  check(`${deck.key} is in the lesson shape`, problems.length === 0,
+    problems.join('; ') || (SCHEDULED.has(deck.key) ? `Work Time matches the schedule (${SCHEDULED.get(deck.key).join(', ')})` : 'not on the schedule yet'));
+}
+
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
 const architecturePath = 'docs/TEACHING-OS.md';

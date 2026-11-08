@@ -168,6 +168,20 @@ Three of these are checked by machine, because each is easy to lose without anyt
 
 **Which decks this applies to.** Every deck built or revised on or after 2026-09-22. Decks already taught before then (Topics 2.1 and 2.2) carry their omissions in `meta.omits` and gain the missing functions the next time they are revised. Topics 2.5 and 2.6 were not yet taught and received BeReady on 2026-09-22.
 
+### The lesson shape: outline, road map, story, Work Time
+
+**The Topic 4.4 outline is the standard for every topic** (Jeff, 2026-11-08: "use the outlines used in 4.4 as a reference for how all future topics are to be created," and "we are cutting slides that simply point to the modules and the focus is on telling the story during lecture"). Jeff teaches by telling the story from a glanceable outline, then sends students to the modules. He skipped almost every module slide and the Myth and Evidence slide, and never taught to the minute counts. The functions above still apply; this is the order they take in class.
+
+1. **The teacher's outline comes first.** The teacher source carries `outline`: the story's sections (three to seven) in the order the deck tells them, each a few short points a teacher can read at a glance; a wrap table whose columns follow the reasoning process (what changed and what kept going; the push, the pushback and what came next); the First & 10 vocabulary with a short definition each; the myths to watch for, each with its fix; and the schedule's required modules. Every point comes from the approved story, the First & 10 or the deck's own notes: the outline adds nothing new.
+2. **Students see the same map.** A road-map slide before the First & 10 shows the outline's section headers, a final "put it together" stop, and a Then line naming the Work Time modules. Every story slide's eyebrow begins with its section (`III · At the Edges · New Mexico, 1598 to 1680`), so the room can see where it is all period.
+3. **The lecture is the story.** After the First & 10 come the story slides, then the retelling slide. **Never trim a story slide to shorten the deck** (Jeff, 2026-11-06 and 2026-11-08); a long deck is fine when every slide carries the story. Model the skill inside the story, on the section it belongs to (4.4 sources the 1635 orders in section III).
+4. **One Work Time slide, and no slide that only points to a module.** A single launch pad after the retelling slide carries one button for each of the schedule's required modules after the First & 10, in the order to do them. Its notes say what each module asks, give any claim frame aloud, and name the early-finisher option. The First & 10 keeps its own slide, because it is read in class before the story.
+5. **Myths go in the outline, not on a slide.** The Watch for list carries them, and the retelling slide's notes say how to correct each one, naming the opposite mistake, if it comes up.
+6. **Minutes are for planning, not projection.** The run of show (`flow`) keeps the minute plan and folds away under the outline in the briefing. No projected slide carries a minute count.
+7. **A Sharpen or thesis slide stays only when it carries something no other slide can**: a learning objective (4.5's Objective J), or the CED's sample activity and the thesis move a topic builds toward (4.8's Build a Thesis). Otherwise its frame moves into the Work Time notes, given aloud.
+
+**The reference model is Topic 4.4** (`teacher/data/topic-4-4-teaching-base.js`), built new in this shape. Topics 4.5 to 4.8 were converted from the older shape without changing a story slide, and show how. `scripts/test/teaching-os-architecture.test.js` enforces the shape for every deck not on `OUTLINE_OWED`, the list of decks built before the standard; `docs/TEACHING-OS.md`, The Briefing, says what it checks.
+
 ### BeReady retrieval standard
 
 BeReady is the first student-facing phase after any teacher-only preflight. Its job is retrieval and transition, not new instruction.
@@ -306,6 +320,7 @@ Implementation begins only after the story, evidence, beats, gate, retelling sli
 
 The teacher source carries:
 
+- the teaching outline (`outline`), which the briefing opens on (section 7, The lesson shape)
 - projected slide content
 - pacing and run-of-show information
 - Teacher Preflight
