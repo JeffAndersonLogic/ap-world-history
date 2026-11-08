@@ -66,6 +66,7 @@ const TOOLS = [
   { kind: 'lesson', unit: '5', key: '5.7', title: 'Economic Developments and Innovations in the Industrial Age', href: 'topic-5-7-os.html', undated: true },
   { kind: 'lesson', unit: '5', key: '5.8', title: 'Reactions to the Industrial Economy from 1750 to 1900', href: 'topic-5-8-os.html', undated: true },
   { kind: 'lesson', unit: '5', key: '5.9', title: 'Society and the Industrial Age', href: 'topic-5-9-os.html', undated: true },
+  { kind: 'lesson', unit: '5', key: '5.10', title: 'Continuity and Change in the Industrial Age', href: 'topic-5-10-os.html', undated: true },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'primary', label: 'Class Pulse', desc: 'A formative read of submitted Checkpoint 1 and 2 answers, by criterion, for your own class only. Never used for grades.', href: 'class-pulse.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Explore every Teaching OS layout, including 10 new reasoning templates, with examples and slide data to copy.', href: 'slide-templates.html' },

@@ -3,33 +3,31 @@
 /**
  * Topic 5.10, Continuity and Change in the Industrial Age: the deep reading.
  *
- * Why this exists. The success criteria are almost entirely about writing rather
- * than about content: two specific changes tied to key concepts, at least one
- * meaningful continuity with an explanation of why it counts as continuity, and
- * a defensible thesis taking a position on the EXTENT of change, supported on
- * both sides, with reasoning rather than a list of facts.
+ * Why this exists. The CED gives 5.10 one learning objective, K, explain the
+ * extent to which industrialization brought change from 1750 to 1900, and six
+ * "Review: Unit 5 Key Concepts" (KC-5.1, KC-5.1.IV, KC-5.3, KC-5.3.I.A,
+ * KC-5.3.I, KC-5.3.II.i), a reasoning process of Continuity and Change and the
+ * skill 6.C, argumentation. The First & 10 tells the argument in one pass. What
+ * it has no room for is how a historian measures a change, why the change in
+ * moving reached further than the change in making, how to read a witness like
+ * Wallace, why the revolutions in ideas and governments are a different change,
+ * and what an argument about extent looks like with its pieces connected.
  *
- * So this chapter is a method chapter, like Topic 4.8's section 04 and Topic
- * 3.4, and it should not re-teach nine topics. It teaches the shape of the
- * argument and supplies the evidence in the form an essay needs it.
- *
- * The organizing insight is the one the criteria are circling: hierarchy and the
- * struggle for rights are the continuities, and they are continuities precisely
- * because the same STRUCTURE persists while its content changes completely. A
- * student who can say "the pattern persisted, the parties to it changed" has the
- * distinction that this whole topic is testing.
+ * Rebuilt from the 5.10 story (docs/TOPIC-5-10-STORY-DRAFT.md) on 2026-11-08.
+ * The old chapter, "The Question That Runs Both Ways," was written in June
+ * before the CED rebuild and carried claims the unit no longer teaches (a
+ * superlative, "the workplace separated from the home for the first time,"
+ * flagged by the 5.9 build, and Manchester figures that disagree with 5.9's).
+ * Every claim here is in docs/TOPIC-5-10-CLAIM-LEDGER.md, and every number is
+ * the number its own topic teaches.
  *
  * Three things carried deliberately:
  *
- *   1. Section 01 gives changes with mechanisms, not a list, and ties each to
- *      what it made possible, because "tie each to a key concept" means show
- *      the causal link rather than name a bucket.
- *   2. Section 02 makes the continuity argument properly, including the hard
- *      version: the same continuity can be argued as a change depending on the
- *      level you pitch it at, and saying which level you mean is the skill.
- *   3. Section 04 is a worked thesis with its own counterargument attached,
- *      because the criteria ask for a position supported on both sides and most
- *      students have never seen what that looks like written out.
+ *   1. Every section measures: how big, how far it reached, what kept going.
+ *   2. The revolution in ideas and governments is sorted by its causes and its
+ *      dates, so students do not credit industry with it.
+ *   3. The chapter models the 6.C relationships and the criteria for a thesis,
+ *      and prints no finished thesis, because Checkpoint 2 asks for one.
  */
 
 module.exports = {
@@ -38,244 +36,289 @@ module.exports = {
   sourceFile: 'deep-reading-topic-5-10-continuity-and-change-in-the-industrial-age.html',
   lessonFile: 'lesson-5-10-continuity-and-change-in-the-industrial-age.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.10: The Question That Runs Both Ways',
+  docTitle: 'BeHistorical | Deep Reading | Topic 5.10: How Much Changed?',
   eyebrow: 'Topic 5.10 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'The Question That Runs Both <em>Ways</em>',
-  deck: `In 1750 most people on earth farmed, moved at the speed of a horse and lived under someone who inherited the right to rule them. By 1900 a third of that had changed completely, a third had changed its form and kept its shape, and a third had not moved at all. This chapter is how to tell which is which, and how to write a thesis that takes a position instead of listing both.`,
-  meta: ['Four sections', 'Changes, continuities, the method, a worked thesis', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.10 &nbsp;·&nbsp; The Question That Runs Both Ways &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'How Much <em>Changed</em>?',
+  deck: `Between 1750 and 1900 industry changed how the world made and moved things. But a change has a size, a reach and a limit. This chapter measures all three, sorts out the other great change of the age, the revolution in ideas and governments, and shows how to connect the evidence into an argument.`,
+  meta: ['Five sections', 'Making, moving, reach, ideas and nations, the argument', 'Read alongside the First & 10'],
+  footerNote: 'Topic 5.10 &nbsp;·&nbsp; How Much Changed? &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `This chapter does not re-teach the unit. Section 01 is the changes in the form an essay needs them, each with a mechanism. Section 02 is the continuities with the reason each counts as one. Section 03 is the method for deciding, and section 04 is a full thesis written out with its own counterargument, which is what the third success criterion is asking for.`,
+    intro: `The College Board asks you to explain the <em>extent</em> to which industrialization brought change from 1750 to 1900. "Extent" means how much, so this is a measurement: how big the change was, how far it reached, and what kept going beside it. The evidence is the whole unit's, and every number here is the one its own topic teaches. The skill is argumentation: explaining how pieces of evidence relate.`,
     steps: [
-      `<b>01 Three changes:</b> each with the mechanism that made it matter, not a label.`,
-      `<b>02 Three continuities:</b> and why each is continuity rather than change.`,
-      `<b>03 The method:</b> four questions that decide which side a fact belongs on.`,
-      `<b>04 A worked thesis:</b> a position, both sides supported, and the reasoning stated.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 Making:</b> coal, factories, cheaper goods, and who gained.`,
+      `<b>02 Moving:</b> railroads, steamships and the telegraph, and why they reached further.`,
+      `<b>03 How far it reached:</b> a witness in 1898, the old makers, the farmers, and the gains.`,
+      `<b>04 The other revolution:</b> ideas and nations, sorted by date and cause.`,
+      `<b>05 Make the argument:</b> three ways evidence connects, and what a thesis about extent needs.`,
+      `<b>Then the closing section</b>, which gathers the evidence for an answer.`
     ]
   },
 
   empires: [
-    // ── 01 ────────────────────────────────────────────────────────────────────
+    // ── 01 ─────────────────────────────────────────────────────────────
     {
-      id: 'changes',
+      id: 'making',
       num: '01',
       accent: 'gold',
-      name: 'Three Changes, Each With Its Mechanism',
-      navLabel: 'The changes',
-      dates: 'c. 1750 to 1900 &nbsp;·&nbsp; What actually broke',
-      thesis: `The success criteria ask you to name changes and tie each to a key concept, and tying means showing the causal link rather than filing the fact under a heading. Three will do more work than ten, if each one is written with the mechanism attached.`,
+      name: 'Making: Factories and Coal',
+      navLabel: 'Making',
+      dates: '1750 to 1900 &nbsp;·&nbsp; Britain, Europe, the United States',
+      thesis: `Industry changed how goods were made and what they cost, and moved the making of the world's goods from Asia to Europe and the United States. The gains in living standards were real, slow at first, and unequal.`,
       parts: [
         {
-          heading: 'Energy, and everything downstream of it',
+          heading: 'The starting line',
           blocks: [
-            { p: `<b>The change:</b> production stopped being limited by muscle, water and wind and began running on stored fossil energy.` },
-            { p: `<b>Why it matters, mechanically:</b> every economy before this one had a ceiling set by how much work living things and moving water could do in a year, and that ceiling is why output per person had risen so slowly for so long. Coal removes it, because a seam represents millions of years of accumulated energy available all at once. That is the single fact under everything else in Unit 5: the factory of Topic 5.3, the railway and telegraph of Topic 5.5, the cities of Topic 5.9 and the military gap that opens in Unit 6 are all consequences of an energy source that does not run out at the end of the season.` },
-            { p: `<b>Tie it:</b> this is the industrial economy key concept in its strongest form, and the environmental key concept as well, since a species burning fossil carbon at scale begins here, as the Topic 5.5 chapter records.` }
-          ]
-        },
-        {
-          heading: 'The wage relationship, and the political ideas it produced',
-          blocks: [
-            { p: `<b>The change:</b> the typical relationship between a worker and the means of production inverted. Before, most people had access to some productive property, a strip of land, a workshop, a loom in the parlor; after, most people in industrial societies owned none and sold hours instead.` },
-            { p: `<b>Why it matters, mechanically:</b> as the Topic 5.6 chapter sets out, a person with no productive property has exactly one thing to withhold, which makes collective action the characteristic form of industrial politics and makes the legal treatment of combination, in Topic 5.8, the decisive question of the century. It also produced ideologies that had not existed before: socialism and Marxism are answers to a question that could not have been asked of a society of peasants and craftsmen.` },
-            { p: `<b>Tie it:</b> social structures and governance both, since this is the origin of class as the organizing political category and of the state's new responsibility for welfare, from the Factory Acts to Bismarck's pensions.` }
-          ]
-        },
-        {
-          heading: 'The collapse of distance, and a genuinely global economy',
-          blocks: [
-            { p: `<b>The change:</b> the cost of moving goods and the time taken to move information both fell by orders of magnitude, through railways, steamships, the Suez Canal and the telegraph.` },
-            { p: `<b>Why it matters, mechanically:</b> the Topic 4.8 chapter argues that the world became connected in the sixteenth century in the sense that a closed circuit existed. This is different and it is worth stating as the difference: connection became <b>cheap</b>, which means ordinary bulk goods rather than luxuries, and it became <b>fast</b>, which means prices in Bombay and Liverpool move together in a day. That is what turns a network of trade into a single market, and it is why an Argentine harvest could lower a German farmer's income.` },
-            { p: `<b>Tie it:</b> economic systems and technology, and it is also the mechanism that made the imperialism of Unit 6 practicable, since an empire is only governable at the speed its orders travel.` },
-            { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not write "industrialization changed everything," and do not answer a change question by listing inventions. A change claim scores when it names <b>what became possible that was not possible before</b> and <b>for whom</b>. Compare two sentences. "The railroad was a major change because it made travel faster" names a fact. "Falling freight costs meant a farmer three hundred miles inland could sell into a national market, which rewarded production at scale and destroyed local producers that distance had protected" names a mechanism and its winners and losers. The second is an argument and the first is a caption.`
-            } }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Removing an energy ceiling. <em>The mechanism is that every pre-industrial economy was limited to the work that muscle, water and wind could perform in a given year, so output per person could only rise slowly, and a coal seam is stored energy accumulated over geological time that can be spent at any rate the machinery allows, which lifts the constraint that had bounded production for the whole of this course.</em>`,
-        limit: `The gains were distributed unevenly by region and by class, and the first generations of industrial workers, as Topic 5.3 records, largely did not receive them.`,
-        comparison: `Against <em>Champa rice</em> in Topic 1.1 and the <em>potato</em> in Topic 4.8: both raised the ceiling by increasing calories per acre, which supports more people at roughly the same standard. Coal is different in kind, because it raises output per person rather than the number of persons, and that distinction is the sharpest available answer to why this is the change and those were expansions.`
-      },
-      terms: [
-        ['Energy ceiling', 'The pre-industrial limit set by muscle, water and wind, which fossil fuel removed.'],
-        ['Wage relationship', 'The arrangement in which a worker owns no productive property and sells hours, the basis of industrial class politics.'],
-        ['Cheap connection', 'The collapse of freight cost and message time, which distinguishes the nineteenth-century world market from earlier trade networks.'],
-        ['Mechanism', 'The causal step showing what a change made possible, which is what turns a named fact into an argument.'],
-        ['Key concept', 'The College Board category a change is tied to, which requires showing the causal link rather than naming the bucket.']
-      ]
-    },
-
-    // ── 02 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'continuities',
-      num: '02',
-      accent: 'iron',
-      name: 'Three Continuities, and Why They Count',
-      navLabel: 'The continuities',
-      dates: 'c. 1750 to 1900 &nbsp;·&nbsp; What held',
-      thesis: `A continuity is not a thing that failed to change. It is a structure that persists while its content changes completely, and saying which is the structure and which is the content is the whole of this part of the answer.`,
-      parts: [
-        {
-          heading: 'Steep hierarchy, with new parties to it',
-          blocks: [
-            { p: `<b>The continuity:</b> a small group controlled most of the productive wealth and most of the political power, and a large majority worked for them with little of either.` },
-            { p: `<b>Why it counts:</b> compare a landlord and tenant in <span class="num">1750</span> with a factory owner and worker in <span class="num">1880</span>. The names, the legal basis and the setting are entirely different, and the shape is the same: a propertied few, a working many, an enormous gap in wealth and security, and political institutions weighted toward the top. The Topic 5.6 chapter describes a new elite of capital displacing an elite of land, and displacing an elite is not the same as removing a hierarchy. That is the sentence a grader is looking for.` },
-            { p: `<b>The honest complication</b>, which strengthens the answer rather than weakening it: the terms did change in ways that mattered. Legal serfdom ended across Europe, Russia included in <span class="num">1861</span>; slavery was abolished across the Atlantic world; hereditary status gave way to a hierarchy that was formally open. So the correct claim is precise: hierarchy persisted as a structure and became <b>economic and formally open</b> rather than <b>legal and closed</b>, which is continuity of shape with change of mechanism.` }
-          ]
-        },
-        {
-          heading: 'The rights argument, and the position of most of the world',
-          blocks: [
-            { p: `<b>The continuity of the rights struggle.</b> The Topic 5.1 chapter identifies the move, holding a general principle to its own terms, and every campaign in this unit runs it: revolutionaries against monarchs, the enslaved against enslavers, Chartists and unionists against property qualifications and combination law, women against a franchise defended in universal language. The parties change constantly and the argument does not, which is exactly what a continuity is. And it is a continuity that continues past this unit, since the anticolonial movements of Units 6 and 8 use the identical move against the empires that taught it to them.` },
-            { p: `<b>The continuity of most people's lives.</b> This one is worth naming because it corrects the unit's center of gravity. In <span class="num">1900</span>, the great majority of people on earth still farmed, still lived in villages, and still worked with tools their grandparents would have recognized. Industrialization was concentrated in a handful of regions, for the reasons the Topic 5.4 chapter gives, and outside them the nineteenth century did not transform daily labor. The changes reached those regions in a different form, as demand for cotton, rubber, guano and grain, as railways built to the coast, and as debt, all of which reshaped economies without industrializing them.` },
-            { p: `Writing that continuity is one of the most reliable ways to demonstrate a global perspective rather than a European one, and it is defensible with the evidence already in this unit.` },
+            { p: `To measure a change you need a starting line. In <span class="num">1750</span> almost everything people bought was made by hand, at home or in small workshops, and most of the world's manufactured goods were made in Asia. The economic historian Paul Bairoch estimated that China made about a third of them and India about a quarter, while all of Europe together made about a quarter and Britain under <span class="num">2 percent</span>. Almost all the energy people used came from things that grow: food for the muscles of people and animals, wood for fire, and wind and water for ships and mills.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: measure it in wealth and in bodies',
-              html: `Two kinds of evidence support continuity claims about hierarchy, and they are worth knowing because assertions about inequality are easy to make and hard to test. The first is <b>wealth and income distribution</b>, reconstructed from tax records, probate inventories and estate duty returns, which for nineteenth-century Britain and France show wealth concentrated at the top through the whole period, with the concentration not falling before the twentieth century. The second is <b>anthropometric</b>: average heights, recorded in military recruitment and prison registers, track childhood nutrition, and they show working-class heights stagnating or falling in the early industrial decades and rising later. Both are records kept for other purposes, which is what makes them useful, since nobody was measuring recruits in order to prove a point about class.`
+              label: 'How we know: estimates, not counts',
+              html: `Nobody in 1750 counted every piece of cloth in the world. Bairoch's shares are a historian's estimates, built from what records survive, and historians who use them say so. What they show well is the size and direction of the change, not exact amounts. Say "estimated" when you use them.`
             } }
           ]
-        }
-      ],
-      useThis: {
-        tool: `Structure persists, content changes. <em>The mechanism is that a social arrangement can keep its shape, a few holding wealth and power over a working many, while every particular of it is replaced: the basis shifts from land to capital, the legal form from inherited status to open competition, and the setting from an estate to a factory, so a claim of continuity has to name the structure and a claim of change has to name the content.</em>`,
-        limit: `Pitched too high, any structure persists and the claim becomes unfalsifiable, so a continuity is only worth writing if you can also state what would have counted as its ending.`,
-        comparison: `Against <em>Topic 4.7&rsquo;s</em> continuity-and-change argument: there the hierarchy kept its shape and changed its axis from religion and occupation to ancestry. Here it keeps its shape again and changes its axis from birth to capital. The same analytical move works in two units, which is a sign it is a method rather than a fact about one period.`
-      },
-      terms: [
-        ['Continuity', 'A structure that persists while its content changes, which is what must be named for the claim to work.'],
-        ['Formally open hierarchy', 'A stratification with no legal barrier to movement, which replaced legally closed status without reducing the gap.'],
-        ['The rights move', 'Holding an accepted general principle to its own terms, used by every excluded group in this unit and beyond it.'],
-        ['Agrarian majority', 'The great majority of the world\'s people still farming in 1900, the continuity that corrects a Europe-centered account.'],
-        ['Anthropometric evidence', 'Height data from recruitment and prison records, which tracks childhood nutrition and tests claims about living standards.']
-      ]
-    },
-
-    // ── 03 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'method',
-      num: '03',
-      accent: 'rust',
-      name: 'Four Questions That Decide Which Side a Fact Belongs On',
-      navLabel: 'The method',
-      dates: 'A method &nbsp;·&nbsp; For any extent-of-change prompt',
-      thesis: `Most facts in this unit can be argued as continuity or as change, and a student who notices that usually panics. It is the opposite of a problem: it is the opening, because specifying which reading you mean and why is the analytical move the prompt is actually testing.`,
-      parts: [
+        },
         {
-          heading: 'The four questions',
+          heading: 'A new source of energy',
           blocks: [
-            { p: `<b>1. At what level?</b> Slavery is the clearest case. At the level of the institution, abolition across the Atlantic world is an enormous change. At the level of coerced labor, indentured servitude, debt peonage, the Congo rubber system of Topic 5.5 and the mita's descendants continue, so the practice persists in new legal forms. Both are true, and the sentence that scores says which level it is pitched at.` },
-            { p: `<b>2. For whom?</b> A Lancashire mill worker, a Bengali handloom weaver, an American plantation laborer, a Japanese farmer under the land tax and a Congolese rubber tapper are all in this unit, and the extent of change is wildly different for each. A claim that names its population is stronger than a claim about "society."` },
-            { p: `<b>3. Over what span?</b> From <span class="num">1750</span> to <span class="num">1800</span>, very little has happened outside a few British counties. From <span class="num">1750</span> to <span class="num">1900</span>, the world economy is unrecognizable. Prompts carry dates and the dates are part of the question.` },
-            { p: `<b>4. Compared with what?</b> Change is a comparison and is meaningless without a baseline. Compared with the century before, the nineteenth is a transformation. Compared with the twentieth, its technologies look continuous with what preceded them. Say what your baseline is.` }
+            { p: `The change began with energy. Steam engines turned the heat of burning coal into motion, and from the <span class="num">1780s</span> James Watt and Matthew Boulton built engines that turned a wheel, so an engine could drive machines. A mill no longer had to sit beside a fast river; it could run wherever coal could be brought. Coal mining and steam engines grew together, and by about <span class="num">1900</span> coal supplied about half of all the energy used in the world. That is the size of the change: not just new machines, but a new kind of energy, stored underground for millions of years.` }
           ]
         },
         {
-          heading: 'Running the questions on one fact',
+          heading: 'Cheaper goods, and whose',
           blocks: [
-            { p: `Take a single fact and watch the four questions produce four different defensible answers, which is what makes them a method rather than a checklist.` },
-            { p: `<b>The fact:</b> women entered factory work in large numbers.` },
-            { p: `<b>At what level?</b> At the level of whether women worked, this is continuity, and the Topic 5.9 chapter says so: women had always worked. At the level of where and on whose terms, it is a genuine change, since the workplace separated from the home for the first time.` },
-            { p: `<b>For whom?</b> For working-class women it meant wage work away from home. For middle-class women it meant the opposite, withdrawal from paid work as a marker of status. One economic change, two opposite outcomes, decided by what a household could afford.` },
-            { p: `<b>Over what span?</b> Across the whole century it is change, since married women's property rights, education and eventually the vote follow. Across the first fifty years it is mostly a change of setting without a change of position.` },
-            { p: `<b>Compared with what?</b> Compared with the household economy immediately before, the factory is a break. Compared with the position of women in the societies of Units 1 to 4, the fundamentals of legal subordination and domestic responsibility are strikingly persistent until very late in this period.` },
-            { p: `Four answers, all supportable, and none of them contradicts the others because each is a different question. Writing one of them explicitly, with the qualifier attached, is what an extent-of-change prompt rewards.` }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Qualified comparison. <em>The mechanism is that continuity and change are not properties of a fact but of a comparison, so a fact has no fixed answer until you specify the level, the population, the time span and the baseline, and stating those four is what converts an apparent contradiction into a thesis with a defensible scope.</em>`,
-        limit: `It is a method for structuring an argument, not a substitute for evidence. Every level you specify still has to be supported with a particular case.`,
-        comparison: `Against <em>Topic 4.8&rsquo;s</em> method section: there the resolution was that the connections were transformed and the centers were not, which is the same move made once. Here it is generalized into four questions, and running them is how you find that kind of sentence for yourself instead of memorizing one.`
-      },
-      terms: [
-        ['Level of claim', 'Whether you mean the institution, the practice or the structure, which decides whether a fact reads as change or continuity.'],
-        ['Scope', 'The population a claim covers, which a strong thesis names rather than implying everyone.'],
-        ['Periodization', 'The span a claim covers, which is part of the prompt and changes the answer.'],
-        ['Baseline', 'The point of comparison against which change is measured, without which a change claim has no meaning.'],
-        ['Qualified thesis', 'A position stated with its level, scope and span attached, which is what an extent-of-change prompt rewards.']
-      ]
-    },
-
-    // ── 04 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'thesis',
-      num: '04',
-      accent: 'oxide',
-      name: 'A Thesis, Written Out',
-      navLabel: 'The worked thesis',
-      dates: 'The third criterion &nbsp;·&nbsp; A position, both sides, the reasoning',
-      thesis: `The success criteria ask for a defensible thesis that takes a position on the extent of change, supports both sides with specific evidence, and explains the reasoning. Here is one, written out, so you can see the shape rather than infer it.`,
-      parts: [
-        {
-          heading: 'The prompt, and a thesis that answers it',
-          blocks: [
-            { p: `<b>Prompt:</b> Evaluate the extent to which industrialization transformed societies in the period from <span class="num">1750</span> to <span class="num">1900</span>.` },
-            { p: `<b>A weak thesis:</b> "Industrialization changed society a lot, but some things stayed the same." It takes no position, names nothing, and could preface an essay about any period in the course.` },
-            { p: `<b>A defensible thesis:</b> "Industrialization transformed how societies produced and where their people lived more completely than any change since agriculture, but it left the basic structure of social hierarchy intact, replacing an elite of land with an elite of capital while the majority continued to work for others with little property or political power, and outside a small number of industrializing regions it altered what the world's farmers grew and sold without changing that they farmed."` },
-            { p: `Notice what that sentence does. It <b>takes a position</b>, that the change was profound in one dimension and limited in another. It <b>specifies the dimensions</b>, production and settlement against social structure. It <b>names its scope</b>, distinguishing industrializing regions from everywhere else. And it gives the grader a map of the essay, because each clause is a paragraph.` }
-          ]
-        },
-        {
-          heading: 'Supporting both sides, and stating the reasoning',
-          blocks: [
-            { p: `<b>The change side, with evidence.</b> Britain passed from a majority rural to a majority urban society within a century, and Manchester grew from about 25,000 to about 300,000 between <span class="num">1772</span> and <span class="num">1850</span>. Production moved from households working at their own pace to factories running on the clock, after Arkwright concentrated workers and machines at Cromford in <span class="num">1771</span>. Watt's rotary engine of <span class="num">1781</span> and Bessemer's converter of <span class="num">1856</span> removed the energy and materials ceilings, and the telegraph from <span class="num">1844</span> separated the speed of information from the speed of transport for the first time in history. Entirely new political ideologies, socialism and Marxism, appeared to explain conditions that had not previously existed.` },
-            { p: `<b>The continuity side, with evidence.</b> A new elite displaced an old one rather than dissolving the hierarchy: the Reform Act of <span class="num">1832</span> admitted the middle class to the political nation and left the working class outside, and Chartism was rejected. Wealth stayed concentrated at the top throughout, on the tax and probate evidence. Coerced labor persisted in new forms after abolition, in the Congo rubber system and in indenture and debt peonage. And in <span class="num">1900</span> the great majority of the world's people still farmed, since industrialization reached a short list of regions and reached the rest as demand for raw materials, as railways built to the coast and as debt.` },
-            { p: `<b>The reasoning, which is the part most answers omit.</b> These two sides do not cancel, and the reason is that they describe different levels. Industrialization changed the <b>means</b> by which wealth was produced and the <b>places</b> where people lived, and it did so with a completeness that has few parallels. It did not change the <b>relationship</b> between those who own productive property and those who work it, and in the regions it did not industrialize it changed what was produced rather than how. A transformation of means with a persistence of relations is a coherent position, and it is why the nineteenth century produced both the greatest increase in output in history and the largest movements demanding that its benefits be shared.` },
+            { p: `<span class="kt">Industrial capitalism</span>, factories and businesses run by owners and investors for profit, kept improving how things were made, so <span class="kt">consumer goods</span> became more available, more affordable and more varied, the three words the College Board uses. By <span class="num">1815</span> even the coarsest cotton yarn cost about a third of what it had in the early 1780s, after rising prices are taken into account. Soap came in wrapped bars with a brand name, like Sunlight, sold from <span class="num">1884</span>. And the making moved: Britain's share of the world's manufacturing rose from under 2 percent in 1750 to about a fifth by <span class="num">1860</span>, and by 1900 Europe and the United States together made more than four-fifths of the world's manufactured goods.` },
+            { p: `Did people live better? The College Board's answer is careful: standards of living rose "for some." One careful estimate finds British working families' <span class="kt">standard of living</span> rose by less than <span class="num">15 percent</span> from the 1780s to the 1850s, and most historians agree it grew much faster from about 1860 to 1900. In the fast-growing towns, many people's health was far worse than the nation's (Topic 5.9).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not confuse acknowledging the other side with taking no position. A thesis that says change was extensive and then spends a paragraph on real continuities is stronger than one that hedges, because it has explained why the counterevidence does not defeat it. What loses marks is a thesis that lists both and never decides, or that decides and then ignores everything on the other side. The structure to imitate is: <b>state the position</b>, <b>concede the strongest evidence against it</b>, and then <b>explain why your position survives it</b>, usually because the two claims are pitched at different levels, cover different populations, or measure different spans.`
+              html: `"Industry made everyone richer." The College Board's own words are "for some." Owners and the middle class gained first; working families gained slowly, then faster after about 1860; and many city workers were still poor in 1900. The opposite mistake, "workers gained nothing," goes too far the other way.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `A thesis that maps its own essay. <em>The mechanism is that a thesis stating a position in clauses, each naming a dimension and its scope, tells a reader what every paragraph will argue before they reach it, so the evidence that follows reads as support for a claim rather than as a list of facts, which is the difference the rubric is measuring.</em>`,
-        limit: `A well-built thesis with thin evidence still fails. The structure is what makes evidence count, and it does not substitute for having any.`,
-        comparison: `Against <em>Topic 3.4</em> and <em>Topic 4.8</em>: those chapters end on the same skill, holding several cases against one question and stating what varies in the thesis rather than discovering it in the last paragraph. Three units in a row end this way because it is the one technique that transfers to every essay you will write in this course.`
+        tool: `Start from the starting line. <em>Name one change in making, with a number, and say for whom it was biggest.</em>`,
+        limit: `How factories were organized is Topic 5.3's; how they spread is 5.4's; here they are evidence of how much changed.`,
+        comparison: `Against Section 03: the making changed most in a few regions. Where did the old makers go on?`
       },
       terms: [
-        ['Defensible thesis', 'A position that could be argued against, stated with the dimensions and scope it covers.'],
-        ['Concession', 'The deliberate statement of the strongest evidence against your position, followed by why it does not defeat it.'],
-        ['Line of reasoning', 'The explanation of why the evidence supports the claim, which is what separates an argument from a list.'],
-        ['Dimension', 'The aspect a claim is about, production, settlement, social structure, which lets one thesis hold change and continuity together.'],
-        ['Complexity', 'Recognizing that a question has defensible answers on more than one side, and resolving it rather than balancing it.']
+        ['Extent', 'How much. "To what extent" asks you to measure a change.'],
+        ['Industrial capitalism', 'An economy where owners and investors run factories and businesses for profit.'],
+        ['Consumer goods', 'Things people buy for themselves, such as cloth, soap and food.'],
+        ['Standard of living', 'How well people live: food, home, health and how long they live.']
+      ]
+    },
+
+    // ── 02 ─────────────────────────────────────────────────────────────
+    {
+      id: 'moving',
+      num: '02',
+      accent: 'rust',
+      name: 'Moving: Rails, Steam, and Wire',
+      navLabel: 'Moving',
+      dates: '1830 to 1913 &nbsp;·&nbsp; the Americas, Russia, India, the oceans',
+      thesis: `Railroads, steamships and the telegraph reached the interiors of continents around the world, so trade and migration grew. The change in moving reached further than the change in making.`,
+      parts: [
+        {
+          heading: 'Into the interior',
+          blocks: [
+            { p: `Before the railroad, heavy goods moved cheaply only by water, and the <span class="kt">interior</span> of a continent, far from the sea or a big river, was hard to reach. Railways changed that, and not only in Britain. Russia had <span class="num">27</span> kilometers of railway in 1840 and more than <span class="num">53,000</span> in 1900. India's first passenger train ran in <span class="num">1853</span>. The first railroad across the United States was finished in <span class="num">1869</span>.` },
+            { p: `Ships and news changed too. Under sail, emigrants from Norway took about <span class="num">53</span> days on average to reach America; by steamship, the Atlantic crossing from England took about <span class="num">12</span> days in the 1860s. From <span class="num">1844</span> a telegraph message could travel along a wire in minutes. From <span class="num">1866</span> cables under the Atlantic carried messages without a lasting break, and in <span class="num">1870</span> a cable reached Bombay, in India.` }
+          ]
+        },
+        {
+          heading: 'More trade, more migration',
+          blocks: [
+            { p: `When moving goods got cheaper and faster, markets far apart began to behave like one market. In <span class="num">1870</span> wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by <span class="num">1913</span>, just after this unit's period, it cost only 15.6 percent more. Wheat grown in the middle of North America, carried by train to the coast and by steamship across the ocean, fed workers in Britain.` },
+            { p: `People moved too. <span class="kt">Migration</span> means moving to live in a new place. About <span class="num">55 million</span> Europeans moved to the Americas and Australia between 1850 and 1914, and between 1846 and 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean. Why they moved, and what they found, is Unit 6.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: a price gap',
+              html: `Historians cannot measure "connection" directly, but they can measure prices. When the same grain costs nearly the same in two cities an ocean apart, it means moving it has become cheap and fast. A gap that shrinks from 57.6 percent to 15.6 percent is a number that shows a change over time.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Compare reach. <em>Which change reached more of the world, making or moving, and what is your evidence?</em>`,
+        limit: `What industrial states did with this reach, empire and the reasons people migrated, is Unit 6.`,
+        comparison: `Against Section 01: factories stayed in a few regions; railways and cables reached Russia, India and the Americas.`
+      },
+      terms: [
+        ['Interior', 'The land of a continent far from the sea or a big river.'],
+        ['Migration', 'People moving to live in a new place.']
+      ]
+    },
+
+    // ── 03 ─────────────────────────────────────────────────────────────
+    {
+      id: 'reach',
+      num: '03',
+      accent: 'slate',
+      name: 'How Far It Reached',
+      navLabel: 'Reach',
+      dates: '1840s to 1908 &nbsp;·&nbsp; India, China, Egypt, Japan, Britain',
+      thesis: `The change was deep where it reached, but it did not reach everyone. The old makers kept making, most people still farmed, and the gains went to some more than others.`,
+      parts: [
+        {
+          heading: 'A witness weighs his century',
+          blocks: [
+            { p: `In <span class="num">1898</span> Alfred Russel Wallace, a British naturalist who had worked out the theory of evolution by natural selection at the same time as Charles Darwin, wrote a book weighing his century, <em>The Wonderful Century</em>. His preface claims that "not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period." Then he turns: "But this is only one side of the shield." More than half his book is about the century's "Failures."` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: reading a witness',
+              html: `Wallace lived through most of the century, which makes him a valuable witness, but a witness has a point of view. He wanted land taken out of private hands, and his "Failures" also include attacks on vaccination and a defense of phrenology, ideas scientists rejected. Use him as a claim to test against other evidence, not as the answer.`
+            } }
+          ]
+        },
+        {
+          heading: 'The old makers, and the farmers',
+          blocks: [
+            { p: `India, China and the Middle East did not stop working. Their share of the world's goods shrank, and China's fell from about a third in 1750 to about <span class="num">6 percent</span> in 1900, partly because the rest of the world's production grew much faster. But in <span class="num">1908</span>, in just one province of northern India, about a million people still lived from weaving cloth on handlooms.` },
+            { p: `And most people still farmed. In India, the census of <span class="num">1901</span> found about two-thirds of the people living by farming. Even in the industrial United States, about two in five workers still farmed in 1900. Until about 1900, wood and other things that grow were still the world's largest source of energy.` }
+          ]
+        },
+        {
+          heading: 'Gains for some',
+          blocks: [
+            { p: `Only a few states built industry, and not all of it lasted: Muhammad Ali's Egypt built factories for its army, and most had closed by the mid-<span class="num">1840s</span>, while Meiji Japan built railways and mills that lasted (Topic 5.6). Inside industrial countries, the ladder of rank was rebuilt, not ended: landed families kept much of their power, and in 1900 Britain's prime minister, Lord Salisbury, was a marquess. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole, averages pulled down by the many babies who died (Topic 5.9).` },
+            { p: `Wallace went further. "One of the most prominent features of our century," he wrote, "has been the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people." Test it. The gains were unequal, as he says. But historians find that working families' living standards did rise, slowly to the 1850s and faster after about 1860. Wallace is partly right and partly too far.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `"A shrinking share means the old makers stopped." A share is a part of a whole. China's and India's makers kept working; the whole grew much faster around them. The opposite mistake, "nothing changed for Asia's makers," forgets that India came to buy British cloth and sell raw cotton (Topic 5.4).`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Set a change beside its limit. <em>Name one change from 01 or 02 and one limit from here, and say what the pair shows.</em>`,
+        limit: `Why the old makers' share fell (cheaper machine cloth, trade rules, older troubles) is 5.4's argument; here the fact that they kept making is the evidence.`,
+        comparison: `Against Wallace: which of his claims does this section support, and which does it not?`
+      },
+      terms: [
+        ['Continuity', 'What stays the same over time.']
+      ]
+    },
+
+    // ── 04 ─────────────────────────────────────────────────────────────
+    {
+      id: 'ideas',
+      num: '04',
+      accent: 'sage',
+      name: 'The Other Revolution: Ideas and Nations',
+      navLabel: 'Ideas and nations',
+      dates: '1687 to 1900 &nbsp;·&nbsp; Europe and the Americas',
+      thesis: `The revolution in ideas and governments was the age's other great change. It began before the factories spread, from ideas and grievances, and it met industry later.`,
+      parts: [
+        {
+          heading: 'By what right?',
+          blocks: [
+            { p: `The <span class="kt">Enlightenment</span> was a movement of thinkers who used reason and evidence, first to explain nature and then to question old authorities. They reexamined the role of religion in public life: Voltaire's <em>Treatise on Tolerance</em> (<span class="num">1763</span>) argued that no government should force a faith on anyone. And they wrote new political ideas. In <span class="num">1689</span> John Locke argued that people are born with natural rights to "lives, liberties and estates," and that government is a social contract that rests on the people's consent (Topic 5.1).` }
+          ]
+        },
+        {
+          heading: 'The ideas came first',
+          blocks: [
+            { p: `The College Board says Enlightenment thought "often preceded" revolutions. The dates show it. The American Revolution began in <span class="num">1775</span>, the French in <span class="num">1789</span>, the Haitian in <span class="num">1791</span>, and the wars for independence in Spanish America in <span class="num">1810</span>. Factory methods, meanwhile, were only beginning to leave Britain: Samuel Slater's spinning mill in Rhode Island was begun in 1793, John Cockerill's works in Belgium in 1817, and the big growth in Russia and Japan came mostly after 1870 (Topic 5.4). So the political revolution was not industry's. Its causes, Topic 5.2 showed, were a grievance, the words to name it, and a chance to act.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `"Industry caused the revolutions." Check the dates: France's revolution began in 1789, before factories had spread beyond Britain. The opposite mistake, "the two revolutions had nothing to do with each other," forgets where they met: Meiji Japan and the Chartists, below.`
+            } }
+          ]
+        },
+        {
+          heading: 'New nations, and where the two revolutions met',
+          blocks: [
+            { p: `The revolutions built new countries, the United States, Haiti and the new republics of Spanish America. Each was a <span class="kt">nation-state</span>, a state that claims to belong to one people, its nation. They also left a new loyalty, <span class="kt">nationalism</span>, which joined most of Italy into one kingdom in <span class="num">1861</span> and the German states into an empire in <span class="num">1871</span>, and pulled Greeks and other Balkan peoples away from the Ottoman Empire (Topic 5.2).` },
+            { p: `Later, the two revolutions met. Nationalism and fear of stronger powers pushed Meiji Japan to build railways and mills to make the nation strong (Topic 5.6). In industrial Britain, the Chartists used the language of rights to demand the vote for working men (Topic 5.8). And the old order held on in politics too: in 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere; New Zealand, in <span class="num">1893</span>, was the first self-governing country where all adult women could (Topic 5.1).` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Sort by cause. <em>Before you credit industry with a change, check its date and its cause.</em>`,
+        limit: `How each revolution happened is 5.2's story; here the dates and causes are the evidence.`,
+        comparison: `Against Sections 01 and 02: both revolutions were big; only one came from machines.`
+      },
+      terms: [
+        ['Enlightenment', 'A movement of thinkers who used reason and evidence to question old authorities.'],
+        ['Nation-state', 'A state that claims to belong to one people, its nation.'],
+        ['Nationalism', 'Loyalty to your nation above a king or an empire.']
+      ]
+    },
+
+    // ── 05 ─────────────────────────────────────────────────────────────
+    {
+      id: 'argument',
+      num: '05',
+      accent: 'gold',
+      name: 'Make the Argument',
+      navLabel: 'The argument',
+      dates: 'The whole unit',
+      thesis: `A list of evidence is not an argument. An argument explains how the pieces relate, and an argument about extent takes a side, names a change and a continuity, and says for whom and why.`,
+      parts: [
+        {
+          heading: 'Three ways evidence connects',
+          blocks: [
+            { p: `<b>Led to.</b> Coal and steam engines led to railroads and steamships, which led to cheap North American wheat feeding workers in Britain. Each piece is a cause of the next.` },
+            { p: `<b>The same pattern.</b> Railways reached the interior of Russia and the interior of India: the same change, in two different empires.` },
+            { p: `<b>A contrast.</b> Lancashire's power looms made cloth more cheaply than India's hand weavers could, yet a million people in one Indian province still lived from the handloom in 1908. Set a change beside a continuity, and you can say how much changed.` }
+          ]
+        },
+        {
+          heading: 'What a thesis about extent needs',
+          blocks: [
+            { p: `Your <span class="kt">thesis</span> is the claim that answers the question, and you must be able to defend it with evidence. A thesis about extent takes a side: to a great extent, to a limited extent, or great in some ways and limited in others. It names a change and a continuity. And it says for whom or where the change was greatest, and why. "Industrialization changed the world a lot" does none of this: it fits any century in history.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `"Everything changed" and "nothing really changed" are both easy to write and both wrong. The first forgets the farmers, the handloom weavers and the kings; the second forgets the railroads, the telegraph and the price of cloth. A good answer is a measurement in between, with evidence.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Say the relationship. <em>"This led to that because ...", "These show the same pattern, because both ...", "This changed, but that kept going, because ..."</em>`,
+        limit: `Write your own thesis: this chapter gives the criteria, not an answer to copy.`,
+        comparison: `Against Topic 4.8, the last unit's argument: the same three relationships, with new evidence.`
+      },
+      terms: [
+        ['Thesis', 'The claim that answers the question, which you can defend with evidence.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The last one is a complete thesis with its concession attached, which is the deliverable this topic is asking for.`,
+    navLabel: 'The answer',
+    intro: `Each card gathers the evidence for one part of the answer. The College Board asks for the extent to which industrialization brought change, so each card gives how big the change was and its limit, and the last asks you to connect them.`,
     pairs: [
       {
-        category: 'Change',
-        title: 'Coal removed a ceiling every previous economy had lived under',
-        body: `Every economy in this course before the nineteenth century was limited to the work that muscle, water and wind could do in a year, which is why output per person had risen so slowly for so long. A coal seam is stored energy accumulated over geological time and spendable at whatever rate the machinery allows, so the constraint disappears. Everything else in Unit 5 sits downstream of that: the factory at Cromford in 1771, Watt&rsquo;s rotary motion in 1781, Bessemer steel in 1856, railways, the telegraph, and cities that grew twelvefold in two generations. Note the contrast with Champa rice and the potato, which raised calories per acre and therefore the number of people supported; coal raised output per person, which is a change in kind rather than in scale.`
+        category: 'Continuity and Change',
+        title: 'Making',
+        body: `Changed: coal about half the world's energy by about 1900; cotton yarn about a third of its 1780s price by 1815; Europe and the United States more than four-fifths of the world's manufactured goods by 1900. Limit: living standards rose "for some," slowly to the 1850s, faster after about 1860.`
       },
       {
-        category: 'Continuity',
-        title: 'Displacing an elite is not removing a hierarchy',
-        body: `Compare a landlord and tenant in 1750 with a factory owner and worker in 1880: the names, the legal basis and the setting are entirely different and the shape is identical, a propertied few, a working many, a large gap in wealth and security, and political institutions weighted to the top. The Reform Act of 1832 admitted the middle class to the political nation and left the working class outside, Chartism was rejected, and tax and probate evidence shows wealth concentrated at the top throughout. The honest qualification strengthens the claim: legal serfdom and slavery ended and status became formally open, so hierarchy persisted as a structure while its basis moved from birth and land to capital.`
+        category: 'Continuity and Change',
+        title: 'Moving',
+        body: `Changed: Russia's railways from 27 km (1840) to more than 53,000 (1900); India 1853; the United States coast to coast 1869; the Atlantic in about 12 days by steam; telegraph cables 1866 and 1870; the wheat gap from 57.6 to 15.6 percent; tens of millions of migrants.`
       },
       {
-        category: 'Method',
-        title: 'A fact has no answer until you say which comparison you mean',
-        body: `Women entering factory work reads as continuity at the level of whether women worked, since they always had, and as change at the level of where and on whose terms, since the workplace separated from the home. It meant wage work away from home for working-class women and withdrawal from paid work as a status marker for middle-class women, so the population named decides the answer. Across the whole century it is change, since property rights, education and the vote follow; across the first fifty years it is mostly a change of setting. And measured against the household economy immediately before it is a break, while measured against Units 1 to 4 the legal subordination is strikingly persistent. Four defensible answers, four different questions, and naming which one you mean is the analytical move.`
+        category: 'Continuity and Change',
+        title: 'How far it reached',
+        body: `Kept going: a million handloom weavers in one Indian province in 1908; about two-thirds of India's people farming in 1901, and about two in five American workers in 1900; Egypt's factories closed by the mid-1840s; landed families near the top. Test Wallace (1898) against it.`
       },
       {
-        category: 'Thesis',
-        title: 'A transformation of means with a persistence of relations',
-        body: `Industrialization transformed how societies produced and where their people lived more completely than any change since agriculture, and left the basic structure of social hierarchy intact, replacing an elite of land with an elite of capital while the majority continued working for others with little property or power, and outside a small number of regions it altered what the world&rsquo;s farmers grew and sold without changing that they farmed. The two halves do not cancel because they are pitched at different levels: the means of production and the places people lived changed almost completely, the relationship between owners and workers did not, and where industry never arrived the change was in the crop rather than the work. That is also why the same century produced the largest rise in output in history and the largest movements demanding it be shared.`
+        category: 'Continuity and Change',
+        title: 'The other revolution',
+        body: `Changed, from ideas and grievances, not machines: Enlightenment ideas (Locke, 1689) before the revolutions of 1775, 1789, 1791 and 1810; new nation-states; nationalism (Italy 1861, Germany 1871). Kept going: kings and emperors in most of Europe in 1900; women's votes almost nowhere.`
+      },
+      {
+        category: 'Argumentation',
+        title: 'Connect the evidence',
+        body: `Pick two pieces of evidence and name how they relate: one led to the other, they show the same pattern, or they make a contrast. Then take a side on how much changed, for whom, and why.`
       }
     ]
   }

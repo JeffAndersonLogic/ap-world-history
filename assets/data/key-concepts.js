@@ -725,7 +725,7 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     },
     {
       "code": "KC-5.3.II.i",
-      "text": "Nationalism also became a major force shaping the historical development of states and empires."
+      "text": "Nationalism also became a major force shaping the historical development of states and empires"
     }
   ],
   "6.1": [

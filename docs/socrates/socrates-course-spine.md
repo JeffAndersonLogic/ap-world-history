@@ -811,26 +811,26 @@ Strong answer checklist: Name three challenges of rapid urbanization, with a det
 
 ## 5.10 Continuity and Change in the Industrial Age
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Arguing the extent to which industrialization transformed economic, technological, and political life between 1750 and 1900 — and what stayed the same
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Industrialization changed how the world made and moved goods, people, and news, but it reached some places and people far more than others, and much of the old world, from farming to kings, kept going beside it. Argue how much changed, for whom, with evidence.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective K (Learning Objective): Explain the extent to which industrialization brought change from 1750 to 1900.
-- KC-5.1 (Economic Systems): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
-- KC-5.1.IV (Technology and Innovation): Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.
-- KC-5.3 (Governance): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.
-- KC-5.3.I.A (Cultural Developments and Interactions): Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.
-- KC-5.3.I (Cultural Developments and Interactions): The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.
-- KC-5.3.II.i (Governance): Nationalism also became a major force shaping the historical development of states and empires.
+- KC-5.1 (Review: Unit 5 Key Concepts): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
+- KC-5.1.IV (Review: Unit 5 Key Concepts): Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.
+- KC-5.3 (Review: Unit 5 Key Concepts): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.
+- KC-5.3.I.A (Review: Unit 5 Key Concepts): Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.
+- KC-5.3.I (Review: Unit 5 Key Concepts): The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.
+- KC-5.3.II.i (Review: Unit 5 Key Concepts): Nationalism also became a major force shaping the historical development of states and empires
 
-**Expected evidence terms.** industrial capitalism, consumer goods, railroad, steamship, telegraph, social hierarchy, rights and representation, Enlightenment, nationalism, continuity, change, extent, thesis, transformation, technology, reform movements, evidence, reasoning.
+**Expected evidence terms.** coal, steam, engine, Watt, factory, factories, half, energy, cotton, yarn, cheaper, consumer goods, Sunlight, four-fifths, share, standard of living, for some, railroad, railway, 27, 53,000, 1853, 1869, steamship, 53 days, 12 days, telegraph, 1844, 1866, 1870, Bombay, wheat, migration, 55 million, Enlightenment, reason, Locke, natural rights, social contract, consent, 1775, 1789, 1791, 1810, revolution, nation-state, United States, Haiti, nationalism, Italy, 1861, Germany, 1871, Greece, before, Britain, ideas, grievance, extent, thesis, great extent, limited extent, change, continuity, kept going, led to, same pattern, contrast, because, Russia, India, handloom, million, 1908, farming, two-thirds, 1901, China, 6 percent, Egypt, Japan, Salisbury, Manchester, Wallace, 1898, kings, New Zealand, 1893.
 
-**AP skill focus.** Argumentation.
+**AP skill focus.** Argumentation practice.
 
-**Checkpoint 1 prompt.** Before you argue extent, gather your evidence. (1) Name at least two specific changes industrialization brought between 1750 and 1900 and tie each to a key concept. (2) Name at least one meaningful continuity and explain why it counts as continuity rather than change. Be specific, this is the raw material your argument will stand on.
-Strong answer checklist: Name two specific changes and tie each to a KC. Name one continuity and explain why it is continuity. Use specific evidence, not general statements.
+**Checkpoint 1 prompt.** Answer in four steps. (1) Explain ONE change industrialization brought in how goods were made, with a number or a date. (2) Explain ONE change in how goods, people, or news moved, with a number or a date. (3) Explain how Enlightenment ideas came before the revolutions, and name one revolution or new nation-state and one example of nationalism. (4) Explain why this change in ideas and governments did not come from industry.
+Strong answer checklist: Explain one change in making, with a number or a date. Explain one change in moving, with a number or a date. Explain how Enlightenment ideas came before the revolutions, with a revolution or nation-state and an example of nationalism. Explain why the change in ideas and governments did not come from industry.
 
-**Checkpoint 2 prompt.** Write a developed response that explains the extent to which industrialization brought change from 1750 to 1900. State a defensible thesis that takes a position on how much changed; support BOTH sides with specific evidence (at least one change and one continuity); and explain the reasoning that makes your position stronger than the alternative. Concede the other side at least once.
-Strong answer checklist: State a defensible thesis on the extent of change. Support both change and continuity with specific evidence. Explain reasoning and concede the other side.
+**Checkpoint 2 prompt.** Explain the extent to which industrialization brought change from 1750 to 1900. (1) Write a thesis that takes a side on how much changed and names one change and one continuity. (2) Support it with evidence from at least THREE different Unit 5 topics. (3) Write at least one sentence that explains how two pieces of your evidence relate: one led to the other, they show the same pattern, or they make a contrast. (4) Say for whom or where the change was greatest, and why.
+Strong answer checklist: Write a thesis that takes a side and names a change and a continuity. Use evidence from at least three Unit 5 topics. Explain how two pieces of evidence relate. Say for whom or where the change was greatest, and why.
 
 ## 6.1 Rationales for Imperialism
 

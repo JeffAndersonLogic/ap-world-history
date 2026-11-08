@@ -573,20 +573,31 @@ module.exports = [
   {
     id: 'topic-5-10',
     code: 'Topic 5.10',
-    title: 'How Industrialization Reshaped the World, c. 1750-1900',
-    subtitle: 'Topic 5.10 · Continuity and change in the industrial age',
+    title: 'Deep Change, Uneven Reach, 1750 to 1900',
+    subtitle: 'Topic 5.10 \u00b7 Continuity and Change in the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'Industrial core: factories and capital' },
-      { zone: 'westernEurope', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'Western Europe joins the core' },
-      { zone: 'unitedStates', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'United States joins the core' },
-      { zone: 'japan', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'Japan industrializes on its own terms' },
-      { zone: 'southAsia', label: 'EXPORT PERIPHERY', tone: 'sand', legend: 'Export economies supplying raw materials' },
-      { zone: 'centralAfrica', label: 'EXPORT PERIPHERY', tone: 'sand', legend: 'Regions reorganized around extraction' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: under 2% of world manufacturing (1750), a fifth (1860)' },
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'United States: coast-to-coast railroad, 1869; two in five farm, 1900' },
+      { zone: 'russia', label: 'RUSSIA', tone: 'slate', legend: 'Russia: 27 km of railway (1840), more than 53,000 (1900)' },
+      { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'sage', legend: 'India: first train, 1853; about two-thirds farm (1901 census)' },
+      { zone: 'eastAsia', label: 'CHINA', tone: 'plum', legend: 'China: a third of world manufacturing (1750), about 6% (1900)' }
     ],
     flows: [
-      { from: 'southAsia', to: 'britain', label: 'raw materials', bow: 0.2 },
-      { from: 'britain', to: 'centralAfrica', label: 'manufactures and capital', bow: -0.2 }
-    ]
+      { from: [-87.6, 41.9], to: [-3, 53.4], label: 'wheat', bow: -0.25 }
+    ],
+    points: [
+      { at: [-87.6, 41.9], label: 'Chicago', note: 'wheat by rail' },
+      { at: [-2.98, 53.41], label: 'Liverpool', note: 'wheat by steamship', side: 'left' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: under 2% of world manufacturing (1750), a fifth (1860)' },
+      { kind: 'area', tone: 'sand', text: 'United States: coast-to-coast railroad, 1869; two in five farm, 1900' },
+      { kind: 'area', tone: 'slate', text: 'Russia: 27 km of railway (1840), more than 53,000 (1900)' },
+      { kind: 'area', tone: 'sage', text: 'India: first train, 1853; about two-thirds farm (1901 census)' },
+      { kind: 'area', tone: 'plum', text: 'China: a third of world manufacturing (1750), about 6% (1900)' },
+      { kind: 'flow', step: 1, text: 'Wheat, Chicago to Liverpool: price gap 57.6% (1870), 15.6% (1913)' }
+    ],
+    note: 'The map shows only the places this topic names. Shares are historians\u2019 estimates. Regions are approximate.'
   },
 
   // ── Unit 6 ──────────────────────────────────────────────────────────────────
