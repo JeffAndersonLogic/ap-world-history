@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Who does a state belong to? How did a new way of thinking change the answer, and how far did the new rights reach by 1900?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The old answer"
+          },
+          {
+            "label": "II",
+            "text": "Reason and the new answers"
+          },
+          {
+            "label": "III",
+            "text": "The ideas travel, before the revolutions"
+          },
+          {
+            "label": "IV",
+            "text": "Over time: pressing the words further"
+          },
+          {
+            "label": "V",
+            "text": "Women's demands"
+          },
+          {
+            "label": "VI",
+            "text": "What changed by 1900, what stayed"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: by what right?",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with two lists in mind.",
       "subtitle": "What changed in how people thought about power, and who gained rights? What stayed the same?",
       "action": {
@@ -56,7 +97,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "The Old Answer · About 1750",
+      "eyebrow": "I · The Old Answer · About 1750",
       "title": "Power came from God, tradition and birth.",
       "template": {
         "steps": [
@@ -78,7 +119,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "A New Way of Knowing",
+      "eyebrow": "II · New Answers · A New Way of Knowing",
       "title": "Reason and evidence, first for nature, then for people.",
       "footer": "Learning from evidence and experience instead of authority: empiricism.",
       "kc": "KC-5.3.I.A",
@@ -111,7 +152,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The New Answers",
+      "eyebrow": "II · New Answers · Rights, Consent, Limits",
       "title": "Start with the individual, not the king.",
       "footer": "New political ideas about the individual, natural rights and the social contract.",
       "kc": "KC-5.3.I.A",
@@ -147,7 +188,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Claims and Evidence in Sources 3.A",
+      "eyebrow": "II · New Answers · Claims and Evidence in Sources 3.A",
       "title": "Find Locke's claim.",
       "kc": "KC-5.3.I.A",
       "template": {
@@ -162,7 +203,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Religion and the State · Toulouse, 1762",
+      "eyebrow": "II · New Answers · Religion and the State · Toulouse, 1762",
       "title": "Should a government force a faith?",
       "kc": "KC-5.3.I.A",
       "template": {
@@ -192,7 +233,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "continuity-change",
-      "eyebrow": "What Changed",
+      "eyebrow": "II · New Answers · What Changed",
       "title": "The question changed before the kings did.",
       "footer": "What changed first was what made a ruler rightful.",
       "kc": "Unit 5: Learning Objective A",
@@ -224,7 +265,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-pair",
-      "eyebrow": "The Ideas Travel",
+      "eyebrow": "III · The Ideas Travel · The Encyclopédie",
       "title": "A book that tried to explain everything.",
       "kc": "KC-5.3.I",
       "template": {
@@ -267,7 +308,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "The Ideas Came First",
+      "eyebrow": "III · The Ideas Travel · The Ideas Came First",
       "title": "The ideas came before the revolutions.",
       "footer": "\"Often preceded\": the ideas gave revolutionaries their words. Topic 5.2 is the rest of the story.",
       "kc": "KC-5.3.I",
@@ -313,7 +354,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "The People Become a Nation",
+      "eyebrow": "III · The Ideas Travel · The People Become a Nation",
       "title": "If a state belongs to its people, which people?",
       "footer": "Nationalism: loyalty to your nation above a king or an empire.",
       "kc": "KC-5.3.II.i",
@@ -346,7 +387,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "claim-evidence",
-      "eyebrow": "The Turn",
+      "eyebrow": "IV · Over Time · The Turn",
       "title": "The words were bigger than the men who wrote them.",
       "footer": "Anyone could ask the philosophers' own question: by what right am I left out?",
       "template": {
@@ -370,7 +411,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Over Time · Abolition",
+      "eyebrow": "IV · Over Time · Abolition",
       "title": "Ideas and faith together, for a century.",
       "kc": "KC-5.3.I.C",
       "template": {
@@ -405,7 +446,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "Over Time · Serfs and Voters",
+      "eyebrow": "IV · Over Time · Serfs and Voters",
       "title": "Rights reached further, in steps.",
       "kc": "KC-5.3.I.C",
       "template": {
@@ -441,7 +482,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Over Time · Women's Demands",
+      "eyebrow": "V · Women's Demands · 1791 to 1848",
       "title": "Women pressed the words too.",
       "kc": "KC-5.3.IV.B",
       "template": {
@@ -468,7 +509,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Seneca Falls, New York · July 1848",
+      "eyebrow": "V · Women's Demands · Seneca Falls, New York, July 1848",
       "title": "Two words added.",
       "kc": "KC-5.3.IV.B",
       "template": {
@@ -483,7 +524,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sentence-frame",
-      "eyebrow": "Claims and Evidence in Sources 3.A · Model",
+      "eyebrow": "V · Women's Demands · Claims and Evidence 3.A, Model",
       "title": "Find the claim. Say it. Say what it argues against.",
       "footer": "A claim is what the writer wants you to believe.",
       "template": {
@@ -494,7 +535,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "balance",
-      "eyebrow": "Claims and Evidence in Sources 3.A · Practice",
+      "eyebrow": "V · Women's Demands · Claims and Evidence 3.A, Practice",
       "title": "Same words, a wider claim.",
       "kc": "KC-5.3.IV.B",
       "template": {
@@ -516,18 +557,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Find the claim.",
-      "subtitle": "Claims and Evidence in Sources 3.A: find it, say it in your own words, and say what it argues against.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-1-enlightenment.html#modules"
-      }
-    },
-    {
       "kind": "continuity-change",
-      "eyebrow": "What Changed by 1900, What Stayed",
+      "eyebrow": "VI · What Changed by 1900, What Stayed",
       "title": "The ideas changed fast. The world changed slowly.",
       "kc": "Unit 5: Learning Objective B",
       "template": {
@@ -559,33 +590,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "The Enlightenment caused the revolutions.",
-            "evidence": "It came first and gave revolutionaries words. Taxes, debt, war and slavery mattered too.",
-            "source": "KC-5.3.I; Topic 5.2"
-          },
-          {
-            "myth": "The Enlightenment was against religion.",
-            "evidence": "Most writers believed in God. They questioned faith forced by the state, and faith, with natural rights, drove abolition.",
-            "source": "KC-5.3.I.A, I.C"
-          },
-          {
-            "myth": "Rights reached everyone in 1789.",
-            "evidence": "Slavery lasted in Brazil to 1888; women voted almost nowhere in 1900.",
-            "source": "Topic 5.1"
-          }
-        ]
-      }
-    },
-    {
       "kind": "cause-chain",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "By what right?",
       "footer": "What stayed by 1900: kings and emperors on most thrones, other forced labor, and women's votes almost nowhere.",
       "template": {
@@ -616,33 +622,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "The ideas behind the revolutions.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-1-enlightenment.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Two sources, two claims.",
-      "subtitle": "Choose two cards. For each: what kind of source it is, what it claims, and what it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-1-enlightenment.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "What did the Enlightenment change over time, and what stayed?",
-      "subtitle": "One reform movement, the ideas or faith that drove it, how far it got by 1900, and what had still not changed. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-1-enlightenment.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Find the claim in two of three new sources.",
+            "url": "../unit-5/lesson-5-1-enlightenment.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-5/lesson-5-1-enlightenment.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-5/lesson-5-1-enlightenment.html#modules"
+          }
+        ]
       }
     },
     {
