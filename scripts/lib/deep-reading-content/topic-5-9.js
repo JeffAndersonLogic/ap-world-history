@@ -264,7 +264,7 @@ module.exports = {
         {
           heading: 'Contextualize it',
           blocks: [
-            { p: `To contextualize a source, place it inside the bigger story that explains it. A Manchester family living in one damp cellar room in the <span class="num">1840s</span> happened inside the rapid growth of industrial towns: Manchester grew from about <span class="num">70,000</span> people in <span class="num">1801</span> to more than <span class="num">300,000</span> by <span class="num">1851</span>, faster than anyone built houses, so every room and cellar was rented out. Try the same move on Riis's Bayard Street room in the Skill Builder.` }
+            { p: `To contextualize a source, place it inside the bigger story that explains it. John Snow's <span class="num">1854</span> map of cholera deaths around one London water pump happened inside the rapid growth of industrial cities: crowded streets still drew their water from shared pumps and wells that waste could reach, so one fouled pump could kill hundreds of neighbors. Try the same move on Riis's Bayard Street room in the Skill Builder.` }
           ]
         },
         {

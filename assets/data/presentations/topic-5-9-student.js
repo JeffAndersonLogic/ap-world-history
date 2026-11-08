@@ -145,7 +145,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "A gain",
-            "left": "Most men in the towns win the vote, 1832",
+            "left": "Most middle-class men in towns win the vote, 1832",
             "right": "Unions and parties (Topic 5.8)"
           }
         ]
@@ -162,7 +162,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "before": {
           "tag": "Before",
           "items": [
-            "Landed families rule, by birth",
+            "Landed families (nobles and gentry) rule, by birth",
             "Wealth mostly comes from land"
           ]
         },
@@ -177,7 +177,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "tag": "Kept going",
           "items": [
             "Landed families keep land, titles and power",
-            "Prime minister in 1900: Lord Salisbury, a marquess",
+            "Prime minister in 1900: Lord Salisbury, a marquess (a high noble)",
             "New money buys country houses and marries into the gentry"
           ]
         }
@@ -287,7 +287,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "story-scene",
       "eyebrow": "IV · Cities That Could Not Keep Up · 1",
       "title": "Manchester grew faster than anyone could build.",
-      "footer": "The College Board's word is \"rapid.\" Speed, not size, outran the town.",
+      "footer": "The College Board's word is \"rapid.\" Speed and size outran the town.",
       "kc": "KC-5.1.VI.C",
       "template": {
         "caption": "Manchester from Kersal Moor, 1852",
@@ -322,11 +322,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "branch-tree",
       "eyebrow": "IV · Cities That Could Not Keep Up · 2",
-      "title": "Six challenges, one cause: growth too fast.",
+      "title": "Six challenges, all made worse by growth too fast.",
       "footer": "The College Board names all six. \"At times\": not every town, not every year.",
       "kc": "KC-5.1.VI.C",
       "template": {
-        "claimLabel": "The cause",
+        "claimLabel": "What made them worse",
         "claim": "**Rapid urbanization** outran the cities' homes, pipes and police.",
         "branches": [
           {
@@ -370,17 +370,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Cholera, spread by dirty water, reaches Britain."
           },
           {
+            "label": "1840s",
+            "key": true,
+            "text": "A Manchester baby could expect about **25 to 28 years**; England and Wales, about 40 to 42."
+          },
+          {
             "label": "1848 to 1849",
-            "text": "It kills about 53,000 people in England and Wales."
+            "text": "Cholera kills about 53,000 people in England and Wales."
           },
           {
             "label": "1854",
             "text": "John Snow maps London's deaths around **one water pump**."
-          },
-          {
-            "label": "1840s",
-            "key": true,
-            "text": "A Manchester baby could expect about **25 to 28 years**; England and Wales, about 40 to 42."
           }
         ],
         "visual": {
@@ -438,7 +438,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "{{A specific thing}} happened inside {{a bigger historical story}}: {{how the bigger story explains it}}.",
         "exampleLabel": "Filled in",
-        "example": "**A Manchester family living in one damp cellar room in the 1840s** happened inside **the rapid growth of industrial towns**: **Manchester grew from about 70,000 people in 1801 to more than 300,000 by 1851, faster than anyone built houses, so every room and cellar was rented out**."
+        "example": "**John Snow's 1854 map of cholera deaths around one London water pump** happened inside **the rapid growth of industrial cities**: **crowded streets still drew their water from shared pumps and wells that waste could reach, so one fouled pump could kill hundreds of neighbors**."
       }
     },
     {
@@ -507,7 +507,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Farm and craft families",
               "A working class lived on wages",
-              "Most worked hard for little"
+              "Many still poor in 1900"
             ]
           },
           {

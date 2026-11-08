@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Social Interactions and Organization"
     },
     {
-      criteria: "I can name at least three of the six challenges, explain why rapid growth caused them, give one effect on standards of living with a detail (such as cholera or life expectancy), place one specific scene, such as Riis's crowded room, inside this broader story, and explain one thing industrialization changed in society and one thing that kept going.",
+      criteria: "I can name at least three of the six challenges, explain why rapid growth caused them, give one effect on standards of living with a detail (such as cholera or life expectancy), and explain one thing industrialization changed in society and one thing that kept going.",
       kc: "KC-5.1.VI.C",
       theme: "Social Interactions and Organization"
     }
@@ -106,14 +106,14 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "New Classes, Old Families",
         bullets: [
-          "**Before:** in 1750 most people in Britain, as almost everywhere, lived in the countryside. At the top of the ladder were landowning families, the aristocracy and gentry, whose rank came from land they inherited. Most families worked together, on the farm or at home.",
+          "**Before:** in 1750 most people in Britain, as almost everywhere, lived in the countryside. At the top of the ladder were landowning families, the aristocracy (nobles with titles) and the gentry (landowners just below them), whose rank came from land they inherited. Most families worked together, on the farm or at home.",
           "**The middle class:** factory owners, merchants and bankers, and the people who ran things for them, from engineers, doctors and lawyers to managers and clerks. Their place came from money they made and the education they paid for, not from land or titles. In Britain the Reform Act of 1832 gave the vote to most middle-class men in the towns.",
           "**The industrial working class:** people who owned no land and no tools, and lived on the wages they earned in mills, mines, docks and workshops, at the hours the employer set.",
-          "**What kept going:** landed families kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess. Rich middle-class families often bought country houses and married into the gentry. The ladder had new rungs; it was still a ladder."
+          "**What kept going:** landed families kept their land, their titles and much of their power. In 1900 Britain's prime minister, Lord Salisbury, was a marquess, a high-ranking noble. Rich middle-class families often bought country houses and married into the gentry. The ladder had new rungs; it was still a ladder."
         ],
         image: {
           title: "Manchester from Kersal Moor, 1852",
-          caption: "A watercolor by William Wyld, signed and dated 1852, now in the Royal Collection: two women and their goats on a hillside in front, and beyond the river, Manchester's church spires and factory chimneys under smoke. A romantic view, painted from far enough away that no one can see how the town's workers lived.",
+          caption: "A watercolor by William Wyld, signed and dated 1852, now in the Royal Collection: two women and their goats on a hillside in front, and beyond the river, Manchester's church spires and factory chimneys under smoke.",
           url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg"
         }
@@ -122,13 +122,13 @@ window.BEHISTORICAL_LESSON = {
         title: "Work and Home, Split by Class",
         bullets: [
           "**Women and children had always worked.** What changed was where they worked, and how the answer split by class.",
-          "**Working-class families:** one wage was rarely enough, so women and often children took wage-earning jobs to add to the family's income: in textile mills (in the British textile mills surveyed in 1833, women and girls were a majority of the workers), in domestic service, the largest job for women, or sewing at home, paid by the piece. Women were usually paid less than men, often because they were given different, lower-paid jobs; historians still debate how much was also unequal pay for the same work. In Japan in 1900, about 62 percent of the workers in private factories were women, most in textile mills.",
+          "**Working-class families:** one wage was rarely enough, so women and often children took wage-earning jobs to add to the family's income: in textile mills (in a survey of British textile mills in 1833, women and girls were a majority of the workers in most kinds of mill), in domestic service, the largest job for women, or sewing at home, paid by the piece. Women were usually paid less than men, often because they were given different, lower-paid jobs; historians still debate how much was also unequal pay for the same work. In Japan in 1900, about 62 percent of the workers in private factories were women, most in textile mills.",
           "**Middle-class families:** one earner was enough, so the wife was increasingly expected to stay out of paid work and to run the home and raise the children. Historians call the idea separate spheres. Isabella Beeton's Book of Household Management (1861) compared the mistress of a house to \"the commander of an army\"; the \"domestics\" she commanded were servants, most of them working-class women.",
           "**What kept going:** in both classes women were paid less and had fewer rights than men. In England and Wales, until laws of 1870 and 1882, a married woman's property passed under her husband's control, and until 1870 so did the money she earned."
         ],
         image: {
           title: "The Four Seasons of Life: Middle Age, about 1868",
-          caption: "A lithograph sold by Currier & Ives of New York, about 1868: a father comes home from work and lifts the baby from its mother's arms while the children greet him. A picture of the middle-class ideal, printed to sell, not a photograph of a real family. Library of Congress.",
+          caption: "A lithograph sold by Currier & Ives of New York, about 1868: a father comes home from work and lifts the baby from its mother's arms while the children greet him. Library of Congress.",
           url: "../assets/images/topics/5-9/currier-ives-four-seasons-middle-age-1868.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/92500887/"
         }
@@ -143,7 +143,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "\"A Court for King Cholera,\" Punch, 1852",
-          caption: "A cartoon by John Leech in the London magazine Punch, 25 September 1852: a crowded court of lodging houses, with washing at the windows and children playing on a heap of rubbish. It blames crowding and filth for cholera; the disease's real route, dirty water, was shown by John Snow two years later.",
+          caption: "A cartoon by John Leech in the London magazine Punch, 25 September 1852: a crowded court of lodging houses, with washing at the windows and children playing on a heap of rubbish.",
           url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
         }
@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "Industrial Cities, 1773 to 1890",
+    title: "Industrial Cities, 1773 to 1900",
     url: "../assets/images/instructional-maps/topic-5-9.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-9.svg",
     caption: "A BeHistorical map of the places in this lesson: Manchester and London in Britain, New York in the United States, and Japan, where industry grew fast and drew workers in.",

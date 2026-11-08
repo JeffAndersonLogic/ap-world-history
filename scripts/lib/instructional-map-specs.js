@@ -551,7 +551,7 @@ module.exports = [
   {
     id: 'topic-5-9',
     code: 'Topic 5.9',
-    title: 'Industrial Cities, 1773 to 1890',
+    title: 'Industrial Cities, 1773 to 1900',
     subtitle: 'Topic 5.9 \u00b7 Society and the Industrial Age',
     highlights: [
       { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'England and Wales: more than half in towns by 1851' },

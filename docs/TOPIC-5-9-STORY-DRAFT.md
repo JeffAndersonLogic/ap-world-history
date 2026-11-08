@@ -280,7 +280,7 @@ A continuity-and-change table, one row per part of society, so a student can red
 | Part of society | Before industry | What changed | What kept going |
 |---|---|---|---|
 | **Who was on top** | Landed families, by birth | A middle class rose by money and education; won votes in 1832 | Landed families kept land, titles and power |
-| **Who did the work** | Farm and craft families, at home | A working class lived on wages, at the employer's hours | Most people still worked hard for little |
+| **Who did the work** | Farm and craft families, at home | A working class lived on wages, at the employer's hours | Many still poor in 1900 |
 | **Women and children** | Worked in the family household | Working-class women and children earned wages; middle-class women increasingly kept at home | Women paid less, with fewer rights |
 | **Where people lived** | Mostly the countryside | Fast-growing cities: smoke, crowding, disease, crime | Poverty and disease, old problems made worse |
 

@@ -46,7 +46,7 @@ window.BEHISTORICAL_TEACHING = {
       'Land the spine with the four-row table: new classes, split homes, crowded cities, a new ladder, still a ladder.'
     ],
     should: [
-      'Model 4.B Contextualization once on a Manchester cellar of the 1840s, then let students do Riis\'s Bayard Street room in the Skill Builder.',
+      'Model 4.B Contextualization once on John Snow\'s 1854 cholera map, then let students do Riis\'s Bayard Street room in the Skill Builder.',
       'Read life expectancy with care: the low city averages are pulled down by babies who died.',
       'Correct three myths on the retelling slide: "industry created social classes," "in the 1800s women stopped working," and "city workers died at 25."'
     ],
@@ -109,11 +109,11 @@ window.BEHISTORICAL_TEACHING = {
         'Twelve people, one room "not thirteen feet either way," five cents a spot',
         'By 1900: sewers, water, police catching up (reforms are 5.8\'s)',
         'Death rates fall; wages rise faster after about 1860; many still poor'
-      ], skill: 'You model contextualization (4.B) out loud on a Manchester cellar of the 1840s: one specific thing, then the bigger story it sits inside, then the link between them. Students do Riis\'s room themselves in the Skill Builder.' }
+      ], skill: 'You model contextualization (4.B) out loud on John Snow\'s 1854 cholera map: one specific thing, then the bigger story it sits inside, then the link between them. Students do Riis\'s room themselves in the Skill Builder.' }
     ],
     wrap: { title: 'Put it together', columns: ['Changed', 'Kept going'], rows: [
       { label: 'Who was on top', cells: ['A middle class rose by money and education; won votes in 1832', 'Landed families kept land, titles and power'] },
-      { label: 'Who did the work', cells: ['A working class lived on wages, at the employer\'s hours', 'Most people still worked hard for little'] },
+      { label: 'Who did the work', cells: ['A working class lived on wages, at the employer\'s hours', 'Many still poor in 1900'] },
       { label: 'Women and children', cells: ['Working-class women and children earned wages; middle-class women increasingly kept home', 'Women paid less, with fewer rights'] },
       { label: 'Where people lived', cells: ['Fast-growing cities: smoke, crowding, cholera, crime', 'Poverty and disease, old problems made worse'] }
     ] },
@@ -153,7 +153,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'challenges', label: 'Six Challenges', range: '33-36', minutes: 3, teacher: 'The CED\'s six, in three pairs.', students: 'Name three.', slide: 13 },
     { id: 'health', label: 'What It Did to Life', range: '36-39', minutes: 3, teacher: 'Cholera, Snow\'s map, life expectancy read with care.', students: 'Why are the averages so low?', slide: 14 },
     { id: 'newyork', label: 'New York, 1890', range: '39-41', minutes: 2, teacher: 'The same pattern under global capitalism.', students: 'Describe the room.', slide: 15 },
-    { id: 'context', label: 'Contextualize It', range: '41-44', minutes: 3, teacher: 'Model 4.B on a Manchester cellar.', students: 'Say the bigger story.', slide: 16 },
+    { id: 'context', label: 'Contextualize It', range: '41-44', minutes: 3, teacher: 'Model 4.B on Snow\'s map.', students: 'Say the bigger story.', slide: 16 },
     { id: 'by1900', label: 'By 1900', range: '44-46', minutes: 2, teacher: 'What caught up, and who was still poor.', students: 'One change, one continuity.', slide: 17 },
     { id: 'retell', label: 'A New Ladder, Still a Ladder', range: '46-51', minutes: 5, teacher: 'Students redraw the table from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 18 },
     { id: 'worktime', label: 'Work Time', range: '51-86', minutes: 35, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder (Riis), Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 19 },
@@ -185,7 +185,7 @@ window.BEHISTORICAL_TEACHING = {
           '"Existing" hierarchies: the continuity is in the objective',
           'CED reason for split homes: money',
           'Six urban challenges, caused by speed',
-          'Model contextualization on a Manchester cellar',
+          'Model contextualization on Snow\'s map',
           'Reforms are 5.8\'s: bridge only'
         ],
         land: [
@@ -348,7 +348,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Who', left: 'Factory owners, merchants, bankers, doctors, lawyers, managers, clerks', right: 'Mill, mine, dock and workshop workers' },
           { label: 'Their place came from', left: 'Money they made, education they paid for', right: 'Wages, with no land and no tools' },
-          { label: 'A gain', left: 'Most men in the towns win the vote, 1832', right: 'Unions and parties (Topic 5.8)' }
+          { label: 'A gain', left: 'Most middle-class men in towns win the vote, 1832', right: 'Unions and parties (Topic 5.8)' }
         ]
       },
       notes: {
@@ -377,9 +377,9 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The ladder had new rungs. It was still a ladder.',
       template: {
         date: '1750 to 1900',
-        before: { tag: 'Before', items: ['Landed families rule, by birth', 'Wealth mostly comes from land'] },
+        before: { tag: 'Before', items: ['Landed families (nobles and gentry) rule, by birth', 'Wealth mostly comes from land'] },
         after: { tag: 'Changed', items: ['A middle class grows rich from business and professions', 'Most middle-class men in towns win the vote, 1832'] },
-        continued: { tag: 'Kept going', items: ['Landed families keep land, titles and power', 'Prime minister in 1900: Lord Salisbury, a marquess', 'New money buys country houses and marries into the gentry'] }
+        continued: { tag: 'Kept going', items: ['Landed families keep land, titles and power', 'Prime minister in 1900: Lord Salisbury, a marquess (a high noble)', 'New money buys country houses and marries into the gentry'] }
       },
       notes: {
         minutes: 2,
@@ -499,7 +499,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'growth', kind: 'story-scene', eyebrow: 'IV · Cities That Could Not Keep Up · 1',
       kc: 'KC-5.1.VI.C', title: 'Manchester grew faster than anyone could build.',
-      footer: 'The College Board\'s word is "rapid." Speed, not size, outran the town.',
+      footer: 'The College Board\'s word is "rapid." Speed and size outran the town.',
       template: {
         caption: 'Manchester from Kersal Moor, 1852',
         steps: [
@@ -531,10 +531,10 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'challenges', kind: 'branch-tree', eyebrow: 'IV · Cities That Could Not Keep Up · 2',
-      kc: 'KC-5.1.VI.C', title: 'Six challenges, one cause: growth too fast.',
+      kc: 'KC-5.1.VI.C', title: 'Six challenges, all made worse by growth too fast.',
       footer: 'The College Board names all six. "At times": not every town, not every year.',
       template: {
-        claimLabel: 'The cause',
+        claimLabel: 'What made them worse',
         claim: '**Rapid urbanization** outran the cities\' homes, pipes and police.',
         branches: [
           { label: 'The environment', note: 'Smoke in the air, waste in the water', items: ['Pollution', 'Insufficient infrastructure'] },
@@ -571,9 +571,9 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'Deaths around one pump, London, 1854',
         steps: [
           { label: '1831', text: 'Cholera, spread by dirty water, reaches Britain.' },
-          { label: '1848 to 1849', text: 'It kills about 53,000 people in England and Wales.' },
-          { label: '1854', text: 'John Snow maps London\'s deaths around **one water pump**.' },
-          { label: '1840s', key: true, text: 'A Manchester baby could expect about **25 to 28 years**; England and Wales, about 40 to 42.' }
+          { label: '1840s', key: true, text: 'A Manchester baby could expect about **25 to 28 years**; England and Wales, about 40 to 42.' },
+          { label: '1848 to 1849', text: 'Cholera kills about 53,000 people in England and Wales.' },
+          { label: '1854', text: 'John Snow maps London\'s deaths around **one water pump**.' }
         ]
       },
       notes: {
@@ -639,26 +639,26 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: '{{A specific thing}} happened inside {{a bigger historical story}}: {{how the bigger story explains it}}.',
         exampleLabel: 'Filled in',
-        example: '**A Manchester family living in one damp cellar room in the 1840s** happened inside **the rapid growth of industrial towns**: **Manchester grew from about 70,000 people in 1801 to more than 300,000 by 1851, faster than anyone built houses, so every room and cellar was rented out**.'
+        example: '**John Snow\'s 1854 map of cholera deaths around one London water pump** happened inside **the rapid growth of industrial cities**: **crowded streets still drew their water from shared pumps and wells that waste could reach, so one fouled pump could kill hundreds of neighbors**.'
       },
       notes: {
         minutes: 3,
         keys: [
           'Model 4.B out loud',
-          'Modeled on a Manchester cellar, 1840s',
-          'Bigger story: towns outgrowing housing',
-          'Link: arrivals faster than building',
+          'Modeled on Snow\'s 1854 map',
+          'Bigger story: cities outgrowing their water and sewers',
+          'Link: crowded streets, shared pumps',
           'Students do Riis\'s room themselves',
           'Skill Builder practices it next'
         ],
         land: [
           'This is the topic\'s suggested skill, 4.B Contextualization: "Explain how a specific historical development or process is situated within a broader historical context." Model it out loud with the frame.',
-          'Three moves: name the specific thing (a family in one Manchester cellar room in the 1840s); name the bigger story (industrial towns growing faster than they could house people); explain the link (arrivals outran building, so every room and cellar was rented). The model is deliberately not Riis\'s room: students contextualize that themselves in the Skill Builder, the First & 10\'s Question 3 and Checkpoint 2, so do not fill in the frame for Riis aloud.',
+          'Three moves: name the specific thing (Snow\'s 1854 map of cholera deaths around one pump); name the bigger story (industrial cities growing faster than their water and sewers); explain the link (crowded streets shared pumps that waste could reach). The model is deliberately not about housing or Riis\'s room: students contextualize that themselves in the Skill Builder, the First & 10\'s Question 3 and Checkpoint 2, so do not fill in the frame for Riis aloud.',
           'A context is not just "before this." It has to explain why the specific thing happened.',
           'The Skill Builder (Module 05) practices the same move on Riis\'s Bayard Street room, with a short model on an everyday example first.'
         ],
-        ask: 'Which part of this sentence would change if the specific thing were a New York tenement in 1890, and which would stay?',
-        listenFor: 'The specific thing and its numbers change; the bigger story, cities growing faster than housing, stays. (Do not finish the Riis sentence for them.)',
+        ask: 'What makes this a context and not just something that happened earlier?',
+        listenFor: 'The bigger story explains why the specific thing happened. (Do not fill in the frame for Riis\'s room: that is the Skill Builder.)',
         ap: 'Contextualization 4.B, modeled once before students do it alone.'
       }
     },
@@ -701,7 +701,7 @@ window.BEHISTORICAL_TEACHING = {
         columns: [{ name: 'Before industry' }, { name: 'What changed' }, { name: 'What kept going' }],
         rows: [
           { label: 'Who was on top', cells: ['Landed families, by birth', 'A middle class rose by money and education', 'Landed families kept land and power'] },
-          { label: 'Who did the work', cells: ['Farm and craft families', 'A working class lived on wages', 'Most worked hard for little'] },
+          { label: 'Who did the work', cells: ['Farm and craft families', 'A working class lived on wages', 'Many still poor in 1900'] },
           { label: 'Women and children', cells: ['Worked in the family household', 'Working-class women earned; middle-class women kept home', 'Women paid less, fewer rights'] },
           { label: 'Where people lived', cells: ['Mostly the countryside', 'Fast cities: smoke, crowding, disease', 'Poverty and disease, made worse'] }
         ],
