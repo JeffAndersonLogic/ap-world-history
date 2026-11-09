@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -43,8 +43,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Who pushed back, and what did it change?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Two pushes: centralize and expand"
+          },
+          {
+            "label": "II",
+            "text": "Pushback inside the state"
+          },
+          {
+            "label": "III",
+            "text": "Pushback at the edges"
+          },
+          {
+            "label": "IV",
+            "text": "Enslaved people organize"
+          },
+          {
+            "label": "V",
+            "text": "Why it happened, what it changed"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: push and pushback",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with four questions in mind.",
       "subtitle": "For every case: what did the state push for, who pushed back, how, and what happened next?",
       "action": {
@@ -54,7 +91,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The Push · Context",
+      "eyebrow": "I · Two Pushes · Context",
       "title": "Two ways to grow a state.",
       "footer": "Both pushes cost somebody something. That is the context for every revolt today.",
       "kc": "KC-4.3.III.iii",
@@ -85,7 +122,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Where People Pushed Back",
+      "eyebrow": "I · Two Pushes · Map",
       "title": "Pushback, inside states and at their edges.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-6.svg",
@@ -96,7 +133,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Inside the State · France, 1648 to 1653",
+      "eyebrow": "II · Inside the State · France, 1648 to 1653",
       "title": "Judges, Paris and nobles against the crown.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -145,7 +182,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Inside the State · Russia, 1649 to 1671",
+      "eyebrow": "II · Inside the State · Russia, 1649 to 1671",
       "title": "Peasants and Cossacks against the tsar.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -172,7 +209,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "At the Edges · The Deccan, 1660s to 1707",
+      "eyebrow": "III · At the Edges · The Deccan, 1660s to 1707",
       "title": "An emperor pushes south. A warrior kingdom pushes back.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -225,7 +262,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "At the Edges · West Central Africa, 1622 to 1663",
+      "eyebrow": "III · At the Edges · West Central Africa, 1622 to 1663",
       "title": "A queen fights and bargains with Portugal.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -258,7 +295,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "At the Edges · New Mexico, 1598 to 1680",
+      "eyebrow": "III · At the Edges · New Mexico, 1598 to 1680",
       "title": "Why the Pueblos rose: causes come in kinds.",
       "footer": "On top of all three came drought and famine. Strong answers name more than one kind of cause.",
       "kc": "KC-4.3.III.iii",
@@ -295,7 +332,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "A Witness · 1681",
+      "eyebrow": "III · At the Edges · A Witness, 1681",
       "title": "How the towns kept the same day.",
       "footer": "A first look. The Primary Source module (08) reads more of his testimony.",
       "kc": "KC-4.3.III.iii",
@@ -311,7 +348,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "At the Edges · New Mexico, 1675 to 1690s",
+      "eyebrow": "III · At the Edges · New Mexico, 1675 to 1690s",
       "title": "The Pueblo Revolt, and what changed after.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -345,7 +382,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "balance",
-      "eyebrow": "Same Decade, Opposite Ends",
+      "eyebrow": "III · At the Edges · Same Decade, Opposite Ends",
       "title": "Two revolts against two expanding colonies.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -368,7 +405,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "Enslaved People Organize",
+      "eyebrow": "IV · Enslaved People Organize",
       "title": "Not one person running. Many people acting together.",
       "footer": "The College Board's word is organized: resistance that challenged the authorities.",
       "kc": "KC-5.3.III.C",
@@ -402,7 +439,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Maroon Communities · Brazil",
+      "eyebrow": "IV · Enslaved People Organize · Brazil",
       "title": "Palmares: a free state in the hills.",
       "kc": "KC-5.3.III.C",
       "template": {
@@ -435,7 +472,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Maroon Communities · Jamaica, 1739",
+      "eyebrow": "IV · Enslaved People Organize · Jamaica, 1739",
       "title": "Freedom on paper, and its price.",
       "footer": "Freedom for one community, and a promise to guard slavery for others.",
       "kc": "KC-5.3.III.C",
@@ -451,7 +488,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "North America · South Carolina, 1739",
+      "eyebrow": "IV · Enslaved People Organize · South Carolina, 1739",
       "title": "The Stono Rebellion, and the colony's answer.",
       "kc": "KC-5.3.III.C",
       "template": {
@@ -478,7 +515,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sentence-frame",
-      "eyebrow": "Contextualization 4.B · Model",
+      "eyebrow": "V · Why It Happened · Contextualize It, Model",
       "title": "Put a revolt in its bigger story.",
       "footer": "Context is the bigger development, and how it helps explain the event.",
       "kc": "Unit 4: Learning Objective L",
@@ -490,7 +527,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "What Came Next",
+      "eyebrow": "V · What It Changed",
       "title": "Resistance had effects too.",
       "template": {
         "rows": [
@@ -518,33 +555,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence tells a more interesting story than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Only colonized peoples resisted states.",
-            "evidence": "French judges and nobles and Russian peasants pushed back against their own rulers.",
-            "source": "The Fronde; Razin"
-          },
-          {
-            "myth": "Maroons were just runaways hiding in the woods.",
-            "evidence": "Palmares had towns, farms, trade, an army and a treaty.",
-            "source": "Palmares, 1600s"
-          },
-          {
-            "myth": "Resisting a European empire meant opposing slavery.",
-            "evidence": "Njinga's wars took captives to sell; the Maroons agreed to return runaways.",
-            "source": "Matamba; the 1739 treaty"
-          }
-        ]
-      }
-    },
-    {
       "kind": "cause-chain",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Push, and pushback.",
       "footer": "The harder states pushed, the harder people pushed back, and the pushback changed the states too.",
       "template": {
@@ -575,54 +587,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "Name the push, the group, the pushback, and what came next.",
-      "kc": "KC-4.3.III.iii",
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 08, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
-        "weak": "People resisted because they were oppressed.",
-        "strong": "**Because** ______ pushed to ______, ______ lost ______, **so** they ______; **as a result,** ______."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Put a revolt in its bigger story.",
-      "subtitle": "Name the bigger development, then explain how it helps explain the event.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-6-internal-external-challenges.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "Local resistance.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-6-internal-external-challenges.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Build one claim from two sources.",
-      "subtitle": "What made people push back, and how? Two sources, one limit.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-6-internal-external-challenges.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Organized resistance by enslaved people: how it challenged the authorities, and how they answered.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-6-internal-external-challenges.html#modules"
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Put the Stono Rebellion in its context.",
+            "url": "../unit-4/lesson-4-6-internal-external-challenges.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-6-internal-external-challenges.html#modules"
+          },
+          {
+            "code": "Module 08",
+            "name": "Primary Source",
+            "note": "Pedro Naranjo's declaration, 1681.",
+            "url": "../unit-4/lesson-4-6-internal-external-challenges.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-6-internal-external-challenges.html#modules"
+          }
+        ]
       }
     },
     {
