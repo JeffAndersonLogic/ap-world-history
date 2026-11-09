@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { CAPTURE_BLOCK } = require('./first10-capture-block');
+const { TRIAL_CLASS, usesLabelTrial, trialLinks } = require('./label-typography-trial');
 
 function esc(value) {
   return String(value == null ? '' : value)
@@ -126,7 +127,7 @@ function renderFirst10Page(options) {
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${documentTitle}</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/behistorical-first10.css?v=20260717"></head><body><div class="module">
+<link rel="stylesheet" href="../assets/css/behistorical-first10.css?v=20260717">${trialLinks(usesLabelTrial(topicId))}</head><body${usesLabelTrial(topicId) ? ` class="${TRIAL_CLASS}"` : ''}><div class="module">
   <header class="module-header"><div class="header-top"><span class="module-badge">${moduleBadge}</span><span class="module-name">${moduleName}</span></div><div class="module-subtitle">${subtitleLine}</div></header>
   <section class="reading-title-band"><p class="reading-eyebrow">${readingEyebrow}</p><h1 class="reading-title">${bandTitleHtml}</h1><p class="reading-deck">${esc(subtitle)}</p><div class="skill-tags">${skillTags}</div></section>
   <main class="reading-body"><div class="support-strip"><article class="support-card"><h3>${supportBeforeHeading}</h3><p>${beforeYouRead}</p></article><article class="support-card"><h3>${supportTargetHeading}</h3><p>${readingTarget}</p></article></div>

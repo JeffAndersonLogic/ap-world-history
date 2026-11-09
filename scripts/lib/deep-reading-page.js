@@ -1,4 +1,5 @@
 'use strict';
+const { TRIAL_CLASS, usesLabelTrial, trialLinks } = require('./label-typography-trial');
 
 /**
  * The one renderer for deep readings.
@@ -337,8 +338,8 @@ function renderDeepReadingPage(topic) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(topic.docTitle)}</title>
 ${FONT_LINKS}  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
-</head>
-<body>
+${trialLinks(usesLabelTrial(topic))}</head>
+<body${usesLabelTrial(topic) ? ` class="${TRIAL_CLASS}"` : ''}>
 <header class="dr-masthead">
   <div class="dr-wrap">
     <div class="dr-eyebrow">${topic.eyebrow}</div>

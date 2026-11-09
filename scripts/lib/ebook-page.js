@@ -16,6 +16,7 @@
  */
 
 const { renderChapterBody, escapeText } = require('./deep-reading-page');
+const { TRIAL_CLASS, usesLabelTrial, trialLinks } = require('./label-typography-trial');
 
 const esc = escapeText;
 
@@ -163,7 +164,7 @@ function tocLabel(chapter) {
 
 function renderChapter(chapter) {
   return (
-    `  <section class="eb-chapter" id="chapter-${esc(chapter.topicKey)}">\n` +
+    `  <section class="eb-chapter${usesLabelTrial(chapter) ? ` ${TRIAL_CLASS}` : ''}" id="chapter-${esc(chapter.topicKey)}">\n` +
     `    <header class="eb-chapter-head">\n` +
     `      <div class="eb-chapter-label">${esc(tocLabel(chapter))}</div>\n` +
     `      <h2>${chapter.titleHtml}</h2>\n` +
@@ -213,7 +214,7 @@ function renderEbook(volume, entries) {
   <title>${esc(volume.docTitle)}</title>
 ${FONT_LINKS}  <link rel="stylesheet" href="../assets/css/behistorical-deep-reading.css">
   <link rel="stylesheet" href="../assets/css/behistorical-ebook.css">
-</head>
+${trialLinks(chapters.some(usesLabelTrial))}</head>
 <body class="eb-body">
 ${SKIP_LINK}<header class="eb-cover">
   <div class="dr-wrap">

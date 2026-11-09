@@ -1,0 +1,31 @@
+/* Topic 4.6 only: Option A, Cormorant Garamond Semibold.
+ * Preserve existing colors, sizes, tracking, backgrounds and line heights.
+ * No global font token override; no navigation, buttons, titles or headings.
+ * An eBook volume loads this once, but only its 4.6 chapter carries the class.
+ */
+.bh-label-trial-46 :is(
+  .eyebrow,
+  .module-label,
+  .module-badge,
+  .module-subtitle,
+  .reading-eyebrow,
+  .section-label,
+  .ap-callout-label,
+  .skill-tag,
+  .check-badge,
+  .q-skill,
+  .cb-code,
+  .inline-target-kc,
+  .pq-doc-label,
+  .dr-eyebrow,
+  .dr-meta,
+  .dr-dates,
+  .dr-note > b,
+  .dr-usethis > b,
+  .dr-usethis dt,
+  .dr-pair .cat,
+  .eb-chapter-label
+) {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+}
