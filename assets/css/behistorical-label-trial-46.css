@@ -1,4 +1,4 @@
-/* Topic 4.6 only: Option A, Cormorant Garamond Semibold.
+/* Topic 4.6 only: Option A, Cormorant Garamond Bold.
  * Preserve existing colors, sizes, tracking, backgrounds and line heights.
  * No global font token override; no navigation, buttons, titles or headings.
  * An eBook volume loads this once, but only its 4.6 chapter carries the class.
@@ -27,7 +27,7 @@
   .eb-chapter-label
 ) {
   font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  font-weight: 600;
+  font-weight: 700;
   font-feature-settings: "lnum" 1, "onum" 0;
 }
 

@@ -8,9 +8,9 @@ function usesLabelTrial(topic) {
 }
 function trialLinks(enabled) {
   if (!enabled) return '';
-  const font = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap';
+  const font = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap';
   return `  <link rel="stylesheet" href="${font}" media="print" onload="this.media='all'">\n` +
     `  <noscript><link rel="stylesheet" href="${font}"></noscript>\n` +
-    '  <link rel="stylesheet" href="../assets/css/behistorical-label-trial-46.css?v=20261109">\n';
+    '  <link rel="stylesheet" href="../assets/css/behistorical-label-trial-46.css?v=20261110-bold">\n';
 }
 module.exports = { TRIAL_CLASS, usesLabelTrial, trialLinks };
