@@ -365,7 +365,8 @@ function fFull(s){
 }
 function fLetterbox(s){
   const t=s.template||{};
-  return board('frame-letterbox','dark',`<div class="bht-lb-top">${eyebrow(s)}</div>${frame(t.visual,'bht-lb-img')}<div class="bht-lb-bot">${title(s)}${sub(s)}</div>`);
+  // Compact captions give a wide source image more height, without text over it.
+  return board('frame-letterbox','dark',`<div class="bht-lb-top${t.compact?' compact':''}">${eyebrow(s)}</div>${frame(t.visual,'bht-lb-img'+(t.compact?' compact':''))}<div class="bht-lb-bot${t.compact?' compact':''}">${title(s)}${sub(s)}</div>`);
 }
 function fQuestion(s){
   const t=s.template||{},right=t.side!=='left';
@@ -1349,6 +1350,11 @@ const CSS=`
 .bht-ff-img{position:absolute;inset:0;background:#030404}
 .bht-lb-bot{position:absolute;left:0;right:0;bottom:0;height:190u;background:#050606;padding:26u 76u;display:flex;flex-direction:column;gap:10u}
 .bht-lb-bot .bht-h{font-size:46u;max-width:none}
+.bht-lb-top.compact{height:62u;padding-bottom:12u}
+.bht-lb-img.compact{top:62u;height:520u}
+.bht-lb-bot.compact{height:138u;padding:16u 76u;gap:8u}
+.bht-lb-bot.compact .bht-h{font-size:36u}
+.bht-lb-bot.compact .bht-sub{font-size:20u}
 .bht-fq{position:absolute;inset:0;display:grid;grid-template-columns:520u minmax(0,1fr)}
 .bht-fq.flip{grid-template-columns:minmax(0,1fr) 520u}
 .bht-fq-copy{background:#f5f0e7;padding:64u 56u 64u 76u;display:flex;flex-direction:column;justify-content:center;gap:20u}

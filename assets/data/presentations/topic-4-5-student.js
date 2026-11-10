@@ -267,45 +267,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "annotated",
+      "kind": "frame-letterbox",
       "eyebrow": "II · What Trade Moved · One Coin",
-      "title": "Struck in the Andes, wanted in China.",
-      "subtitle": "A peso de ocho, the “piece of eight,” struck at Potosí in 1651.",
-      "footer": "Spain made the coin. China’s demand for silver carried coins like it across two oceans.",
+      "title": "Eight reales. One peso. A coin across oceans.",
+      "subtitle": "Shown: 1821, a later example of the peso de ocho, or “piece of eight.”",
       "kc": "KC-4.1.IV",
       "template": {
-        "imageWidth": 0.42,
-        "ratio": 1.0368421052631578,
-        "pins": [
-          {
-            "x": 0.27,
-            "y": 0.1,
-            "label": "1651 · Potosí",
-            "text": "Struck at the mint in Potosí, high in the Andes."
-          },
-          {
-            "x": 0.41,
-            "y": 0.32,
-            "label": "Castles and Lions",
-            "text": "The arms of Castile and León, Spain’s kingdoms."
-          },
-          {
-            "x": 0.89,
-            "y": 0.42,
-            "label": "INDIARVM REX",
-            "text": "Latin for “king of the Indies”: Spain’s king ruled the Americas."
-          },
-          {
-            "x": 0.3,
-            "y": 0.84,
-            "label": "Eight Reales of Silver",
-            "text": "Worth one peso. Coins like it took both silver roads toward Asia."
-          }
-        ],
+        "compact": true,
         "visual": {
-          "url": "../assets/images/topics/4-5/potosi-8-reales-1651.jpg",
-          "alt": "A worn, roughly round silver coin with a cross dividing castles and lions, the date 1651 in the lettering around the edge, and a small hole punched near the rim",
-          "credit": "Münzkabinett Berlin · Photo R. Saczewski, CC0",
+          "url": "../assets/images/topics/4-5/4.5%20-%20Peso%20De%20Ocho.jpg",
+          "alt": "Both sides of an 1821 eight-reales silver coin: Ferdinand VII in profile on the left; a crowned shield with castles and lions between two pillars on the right. This is a later example, outside 1450 to 1750.",
+          "credit": "1821 · Later example · Photo Coinman62 · Public domain",
+          "fit": "contain",
           "tagPos": "bl"
         }
       }

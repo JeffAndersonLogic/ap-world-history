@@ -390,3 +390,21 @@ caption. No claim changed.
 | The coin's hole was punched later, and the coin cannot say by whom or why | Deck 14 keys and LAND | Visible in the photograph; the Evidence Lab caption likewise only describes it. | VERIFIED |
 | The 1792 U.S. dollar was set to the value of the Spanish milled dollar; foreign silver coins were legal money in the U.S. until 1857 | Deck 14 LAND (if asked) | Coinage Act of 1792, section 9 ("of the value of a Spanish milled dollar as the same is now current"); Act of 21 February 1857 ended the legal-tender status of foreign coins. Marked as after the unit. | VERIFIED |
 | "The first global currency" | Deck 14 AVOID | Not claimed; the note tells the teacher not to state it as settled fact. | REMOVED |
+
+## Slide 14: Jeff’s two-sided peso photograph, 2026-11-10
+
+Jeff requested the upload `4.5 - Peso De Ocho.jpg` from
+`JeffAndersonLogic-patch-27`, with a large image. It replaces the 1651
+Potosí coin on this slide only. The historical story, sequence and KC-4.1.IV
+stay in place. The earlier rows above record the old slide and are superseded
+for slide 14 by this entry; the Evidence Lab still uses the original 1651 object.
+
+| Claim or decision | Source and verification | Status |
+|---|---|---|
+| The new photograph shows both sides of a silver coin dated 1821, with Ferdinand VII’s portrait and crowned royal arms between two pillars | Read on Jeff’s image. Matching source: [Commons, Ferdinand VII Coin.jpg](https://commons.wikimedia.org/wiki/File:Ferdinand_VII_Coin.jpg), checked 2026-11-10. The [Spanish dollar article](https://en.wikipedia.org/wiki/Spanish_dollar) identifies this exact two-sided 1821 image, its ruler and its legends. | VERIFIED |
+| The photograph is by Coinman62 and released into the public domain | Commons file description and licensing section, checked 2026-11-10. The uploaded JPEG stays repo-local, with the credit visible. | VERIFIED |
+| 1821 is outside this topic’s 1450 to 1750 period | Caption, alt text, run-of-show entry and teacher notes explicitly call it a later example. Removed the old Potosí/1651 subtitle and pins; neither this coin’s individual route nor a Potosí origin is claimed. | CORRECTED |
+| Eight reales made one peso, also called the piece of eight or Spanish dollar | Same denomination as the prior slide’s verified usage; source article’s introductory definition. | VERIFIED |
+| Large, whole image without invented detail | Upload header and published original both measure 1016 × 532. Preserve uploaded blob unchanged. Optional compact letterbox: 520 design pixels of image height, approximately 993 pixels wide on the unscaled 1280 × 720 board. Both sides remain whole; captions sit outside the image. Original photograph has no higher-resolution version on its source page. | LIMITED BY SOURCE |
+| One canonical teacher deck and generated student companion | Executed the repository generator’s unchanged buildDeck and serialize functions against an in-memory filesystem because the local shell sandbox could not start. Baseline reproduced the committed student artifact byte for byte before generation. Only the coin slide’s public object changes. | CHECKED |
+| Browser review | Local browser and shell could not start because the Windows sandbox setup failed. CI remains the authority for browser overflow and font checks; do not claim a local visual review or a live deployment from this commit. | PENDING CI |

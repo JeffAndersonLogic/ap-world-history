@@ -36,6 +36,12 @@
  * - batavia-beeckman-c1662.jpg: Andries Beeckman, The Castle of Batavia,
  *   about 1662, Rijksmuseum SK-A-19 (public domain)
  *
+ * Slide 14 revised 2026-11-10: Jeff’s upload 4.5 - Peso De Ocho.jpg
+ * shows both sides of an 1821 coin, not the Potosí object above. Matching
+ * original: Commons File:Ferdinand_VII_Coin.jpg, Coinman62, public domain,
+ * 1016 x 532 pixels (checked 2026-11-10). Use the full original upload,
+ * fit whole in a compact letterbox. The 1651 coin stays in Evidence Lab.
+ *
  * Reviewed uploads added 2026-11-04. The inventory above describes the
  * historical sources; the labeled reconstructions are assigned below.
  */
@@ -48,7 +54,7 @@ const IMG='../assets/images/topics/4-5/';
 const SHIPYARD={url:IMG+'voc-shipyard-bakhuysen-1696.jpg',alt:'Oil painting of a busy harbor: a long brick warehouse and shipyard behind the water, a large ship\'s hull on the slip, and tall Dutch sailing ships and small boats in front, flying flags and firing a salute',credit:'Ludolf Bakhuysen, The Shipyard of the Dutch East India Company at Amsterdam, 1696 · Mauritshuis · Public domain',position:'50% 100%'};
 const MANILA={url:IMG+'manila-vingboons-c1665.jpg',alt:'Hand-colored bird\'s-eye view of a walled city on a wide bay, green hills behind, and sailing ships at anchor in the water',credit:'Johannes Vingboons, view of Manila, about 1665, painted in the Netherlands · Nationaal Archief · Public domain',position:'50% 60%'};
 const VIRGEN={url:IMG+'virgen-del-cerro-potosi.jpg',alt:'Painting of a great red mountain with the face, hands and crown of the Virgin Mary at its top and tiny people and animals on its slopes; two crowned figures and a dove above, and a pope, churchmen and a king kneeling below around a blue globe',credit:'La Virgen del Cerro, unknown painter, Potosí, 1700s · Casa Nacional de Moneda, Potosí · Photo Dan Lundberg, CC BY-SA 2.0',position:'50% 30%',fit:'contain'};
-const COIN={url:IMG+'potosi-8-reales-1651.jpg',alt:'A worn, roughly round silver coin with a cross dividing castles and lions, the date 1651 in the lettering around the edge, and a small hole punched near the rim',credit:'Münzkabinett Berlin · Photo R. Saczewski, CC0',tagPos:'bl'};
+const COIN={url:IMG+encodeURIComponent('4.5 - Peso De Ocho.jpg'),alt:'Both sides of an 1821 eight-reales silver coin: Ferdinand VII in profile on the left; a crowned shield with castles and lions between two pillars on the right. This is a later example, outside 1450 to 1750.',credit:'1821 · Later example · Photo Coinman62 · Public domain',fit:'contain',tagPos:'bl'};
 const BATAVIA={url:IMG+'batavia-beeckman-c1662.jpg',alt:'Oil painting of tall palm trees in front of the long white walls of a fortress, with a crowd of Javanese, Chinese and Dutch people along the bottom edge',credit:'Andries Beeckman, The Castle of Batavia, about 1662 · Rijksmuseum · Public domain',position:'50% 88%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 /* Slide 3: the caption sits in the sky and the painting is anchored to its
