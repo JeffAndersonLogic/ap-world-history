@@ -356,5 +356,30 @@
       ],
       "limits": "Reconstruction, never a primary source or Evidence Lab object. Shown whole, so the small generator mark remains, as on the deck's other uploads. Placed 2026-11-05 as scene-case (the whole wide picture beside the steps)."
     }
+  ],
+  "pendingReviews": [
+    {
+      "path": "assets/images/topics/4-5/4.5 - Peso De Ocho.jpg",
+      "blobSha": "d4e458808c9008adeb08e0fd35ed20f10c1edc94",
+      "reviewedAt": "2026-11-10",
+      "classification": "historical-coin-photograph-unverified-provenance",
+      "sourceRef": "c6041e1a4cd9d606e2fb70ac18faece98e7e7b77",
+      "sourcePr": 170,
+      "status": "held-out-of-period",
+      "observedSubject": "Two sides of a silver coin on black: a laureate portrait with FERDIN VII and the clearly visible date 1821; crowned arms between pillars on the reverse.",
+      "dimensions": {
+        "width": 1016,
+        "height": 532
+      },
+      "placements": [],
+      "consideredPlacement": {
+        "topic": "4.5",
+        "phase": "coin",
+        "template": "annotated"
+      },
+      "rationale": "Not assigned. The uploaded coin is dated 1821, outside Unit 4 (1450-1750). The approved coin slide identifies a Potosi eight-reales coin of 1651 and points to its actual inscriptions; this upload would contradict its subtitle, annotation positions, source attribution and teacher notes. Preserve the existing verified 1651 coin and all lesson content.",
+      "limits": "Visual inspection supports the visible date and inscriptions only. Photographer, license, mint, authenticity and circulation history are not verified. No evidence of Chinese circulation is established by this image. No story rewrite, Evidence Lab insertion or student visual change is authorized by this upload.",
+      "resolution": "Use a verified in-period coin image with provenance for this slide, or obtain separate approval for an explicitly later comparison. The exact uploaded blob is preserved on the review branch; it is not approved for presentation use."
+    }
   ]
 }
