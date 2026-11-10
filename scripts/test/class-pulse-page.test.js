@@ -439,6 +439,9 @@ async function suite(browser) {
     await A.p.click('#paste-batches [data-read] >> nth=0');
     await A.p.waitForFunction(() => /every submitted answer is read|0 submitted answers/i.test(document.getElementById('h-kind').textContent) || document.querySelectorAll('#heat .cell.b-D').length > 0, null, { timeout: 8000 }).catch(() => {});
   }
+  const cardSaid = await A.p.$eval('#paste-batches [data-said]', x => x.textContent).catch(() => '');
+  const cardState = await A.p.$eval('#paste-batches .batch-top .small', x => x.textContent).catch(() => '');
+  check('after a paste in My class, the batch card shows what was saved', /Saved 1 rating/.test(cardSaid) && /1 of 1 read and saved/.test(cardState), cardSaid + ' | ' + cardState);
   const saved = JSON.stringify(store2.commits);
   check('a pasted reply is saved to the database for that student', store2.commits.length === 1 && /ana1__3-2__checkpoint-one-response/.test(saved) && /"codes":\{"stringValue":"D+"\}/.test(saved), saved.slice(0, 160));
   check('with no student name in what is saved', !/Ana|Ruiz/.test(saved.replace(/ana1/g, '')));
@@ -507,6 +510,7 @@ async function suite(browser) {
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
     { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "provider = S.reader === 'invented' ? src.provider\n        :", to: 'provider = true ? src.provider\n        :', expect: /recorded reader's levels/ },
     { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, src)", to: ": H && S.reader === H.READER.id ? src.provider : recordedProvider(S.reader, src)", expect: /pasted reader's reasons/ },
+    { name: 'the outcome of a paste in My class goes only to the screen reader', file: 'teacher/class-pulse-app.js', from: "S.saved.set(id, { state: read.passed + ' of ' + b.answers.length + ' read and saved', said });", to: 'void said;', expect: /batch card shows what was saved/ },
     { name: 'the service is not recorded', file: 'teacher/class-pulse-app.js', from: "reader: S.service + '-pasted' });", to: "});", expect: /service it was pasted into/ },
     { name: 'Copy ignores the check', file: 'teacher/class-pulse-app.js', from: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\"${left ? ' disabled' : ''}>", to: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\">", expect: /Copy waits/ },
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
