@@ -178,11 +178,14 @@
     const reply = parseReply(raw);
     if (!reply || !Array.isArray(reply.answers)) throw new Error('The reply has no list of answers in it. Paste the batch into a new chat and try again.');
     if (reply.batch != null && reply.batch !== batch.id) throw new Error('This reply is for a different batch. Paste it next to the batch it answers.');
+    // The chat sees each answer between markers like A01-1a2b3c, and a reader sometimes
+    // copies the marker as the key. Both name the same answer, so both are accepted.
+    const tag = batch.id.slice(-6);
     const results = batch.answers.map(a => {
       // Quotes are checked against the text that was copied; the page matches on the
       // original, where a quote that runs across "[removed]" fails and shows Can't tell.
       const base = { key: a.key, text: a.original || a.text, copied: a.text };
-      const got = reply.answers.filter(x => x && x.key === a.key);
+      const got = reply.answers.filter(x => x && (x.key === a.key || x.key === a.key + '-' + tag));
       if (!got.length) return { ...base, status: 'missing', why: 'The reply left this answer out.' };
       if (got.length > 1) return { ...base, status: 'failed', why: 'The reply rated this answer twice.' };
       const entry = { criteria: got[0].criteria };

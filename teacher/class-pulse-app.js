@@ -73,7 +73,8 @@
     overrides: new Map(), loadToken: 0, reader: 'invented',
     pasted: new Map(), // topic|section -> Map(batch id -> { checkpoint, read, at })
     checks: new Map(), // batch id -> the teacher's decisions in the check before copying
-    source: 'demo',    // 'demo' (invented students) or 'live' (my class, from the database)
+    saved: new Map(),  // batch id -> what happened to its pasted reply in My class, shown on its card
+    source: 'demo',   // 'demo' (invented students) or 'live' (my class, from the database)
     service: (() => { try { const v = localStorage.getItem('class-pulse-service'); return H && H.SERVICES.some(x => x.id === v) ? v : 'claude-for-teachers'; } catch (_) { return 'claude-for-teachers'; } })(),
     live: null         // { auth, api, roster } once My class is chosen
   };
@@ -633,13 +634,15 @@
   }
   function batchHtml(cp, b, n, open) {
     const got = pastedHere().get(b.id), first = b.answers[0].key, last = b.answers[b.answers.length - 1].key, left = undecided(b);
-    const state = got ? got.read.passed + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '') : 'Not pasted yet';
+    const saved = S.saved.get(b.id);
+    const state = got ? got.read.passed + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '')
+      : saved ? saved.state : 'Not pasted yet';
     return `<div class="batch${got ? ' done' : ''}" data-card="${b.id}"><div class="batch-top"><b>${CP_NAME[cp]}, batch ${n + 1} of ${D.batches[cp].length}</b><span class="small">Answers ${first} to ${last} · ${esc(state)}</span></div>
       ${checkHtml(b)}
       <div class="row"><button class="btn primary" type="button" data-copy="${b.id}"${left ? ' disabled' : ''}>Copy batch</button><span class="small" data-copied="${b.id}" role="status">${left ? 'Decide each flag above first.' : ''}</span></div>
       <details data-batch="${b.id}"${open ? ' open' : ''}><summary>Paste the reply</summary>
         <textarea data-paste="${b.id}" aria-label="${CP_NAME[cp]}, batch ${n + 1}: paste the reply" placeholder="Paste the whole reply here"></textarea>
-        <div class="row"><button class="btn dark" type="button" data-read="${b.id}">Read this reply</button><span class="small" data-said="${b.id}" role="status"></span></div>
+        <div class="row"><button class="btn dark" type="button" data-read="${b.id}">Read this reply</button><span class="small" data-said="${b.id}" role="status">${saved ? esc(saved.said) : ''}</span></div>
         ${left ? '' : `<p class="small">If Copy does not work on this device, select all of the text below and copy it yourself.</p>
         <textarea readonly class="batch-text" data-text="${b.id}" aria-label="The text to paste">${esc(H.promptFor(D.contracts[cp], asCopied(b)))}</textarea>`}
       </details></div>`;
@@ -697,8 +700,15 @@
       try { await S.live.api.saveRatings(save); }
       catch (err) { say.textContent = 'Not saved: ' + err.message; return; }
       const bad = read.failed + read.missing;
-      $('#announce').textContent = 'Saved ' + save.length + ' ratings' + (bad ? '; ' + bad + ' answers did not pass the checks and stay not read yet' : '');
-      load();
+      // The page redraws after saving, so what happened is kept on the batch's card;
+      // a message written only to the screen-reader region left a blank box on screen.
+      const why = read.results.filter(x => x.status !== 'passed').map(x => x.key + ': ' + x.why);
+      const said = 'Saved ' + save.length + ' rating' + (save.length === 1 ? '' : 's') + ' from this reply.' +
+        (bad ? ' ' + bad + ' answer' + (bad === 1 ? '' : 's') + ' did not pass the checks and stay not read yet. ' + why.slice(0, 6).join(' ') + (why.length > 6 ? ' And ' + (why.length - 6) + ' more.' : '') : '');
+      S.saved.set(id, { state: read.passed + ' of ' + b.answers.length + ' read and saved', said });
+      $('#announce').textContent = said;
+      await load();
+      const d = $(`[data-card="${id}"] details`); if (d) d.open = true;
       return;
     }
     const key = pasteKey();

@@ -154,6 +154,15 @@ check('an invented quote, a double rating or a missing answer never passes', asy
   assert.equal(r.passed, b.answers.length - 3);
 });
 
+check('a reply keyed by the copied markers (A01-1a2b3c) reads every answer, but not another batch\'s markers', async (M) => {
+  const [b] = await M.batches(contract, rows, { size: 13 });
+  const tag = b.id.slice(-6);
+  const r = M.readReply(contract, b, reply(b, contract, o => { o.answers.forEach(a => { a.key = a.key + '-' + tag; }); }));
+  assert.equal(r.passed, b.answers.length);
+  const other = M.readReply(contract, b, reply(b, contract, o => { o.answers.forEach(a => { a.key = a.key + '-zzzzzz'; }); }));
+  assert.equal(other.missing, b.answers.length);
+});
+
 check('a reply for another batch, or not JSON at all, is refused', async (M) => {
   const [b] = await M.batches(contract, rows, { size: 13 });
   assert.throws(() => M.readReply(contract, b, reply(b, contract, o => { o.batch = 'cp-3-1-cp1-0000000000'; })), /different batch/);
@@ -241,6 +250,7 @@ async function run(M, quiet) {
     { name: 'the first word of every run is skipped', from: 'judged = start && ws.length === 1 ? [] : ws;', to: 'judged = ws.slice(1);', expect: /flags what could identify/ },
     { name: 'removing changes nothing in the copy', from: ".reduce((t, sp) => t.split(sp).join('[removed]'), a.text);", to: ';', extra: ['const text = spans.slice()', 'const text = a.text; void spans.slice()'], expect: /removed word never reaches/ },
     { name: 'the reading is matched on the trimmed copy', from: "const base = { key: a.key, text: a.original || a.text, copied: a.text };", to: "const base = { key: a.key, text: a.text, copied: a.text };", expect: /lands on the answer/ },
+    { name: 'a key copied from the markers is not recognized', from: "x.key === a.key || x.key === a.key + '-' + tag", to: 'x.key === a.key', expect: /copied markers/ },
     { name: 'a reply for another batch is accepted', from: "if (reply.batch != null && reply.batch !== batch.id) throw", to: 'if (false) throw', expect: /another batch/ },
     { name: 'the contract is left out of the copied text', from: "'\\n\\nCONTRACT (JSON):\\n' + JSON.stringify(contract) +", to: '', expect: /word for word/ }
   ];
