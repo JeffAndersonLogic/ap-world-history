@@ -43,6 +43,7 @@
   const Rubrics = window.BHClassPulseRubrics;
   const Readers = window.BHClassPulseReaders;
   const H = window.BHClassPulseHandoff;
+  const MF = window.BHClassPulseModelFile;
   const MAP = window.BEHISTORICAL_SKILLS_MAP;
   const $ = s => document.querySelector(s);
   const $$ = s => Array.from(document.querySelectorAll(s));
@@ -783,8 +784,9 @@
   // the class as a whole and never one student: no names, no "Student 01" (a
   // number in list order can be decoded), no answer text, no groups, and nothing
   // that opens an answer. Wrong ideas are shown with any words quoted from a
-  // student taken out. The model answer is pasted in by the teacher from
-  // AndersonLogic-OS, because anything holding answers stays out of this public
+  // student taken out. The model answer comes from the teacher's own file in
+  // AndersonLogic-OS, loaded once with "Load the model answers file" (2026-11-10)
+  // or pasted in, because anything holding answers stays out of this public
   // repository (scripts/test/no-answer-keys.test.js), and it is kept on that
   // computer only.
   const CV_MIN_READ = 3;
@@ -862,6 +864,7 @@
         + (missing && S.cvModel === 'show' ? 'Anyone who has not submitted will see the model answer before they write, so read their answers knowing that.' : '')
         + (read < CV_MIN_READ ? ` Fewer than ${CV_MIN_READ} answers have been read, so there is no criterion to revisit yet.` : ''));
     if (document.activeElement !== $('#cv-model-text')) $('#cv-model-text').value = modelText();
+    $('#cv-model-summary').textContent = modelText().trim() ? '' : '(none for this checkpoint yet)';
 
     let h = `<header class="cv-head"><span class="eyebrow">Topic ${esc(title(S.topic))} · ${CP_NAME[cp]}</span><p class="cv-prompt">${esc(contract.prompt)}</p>
       <p class="cv-count">${inCount} of ${n} answers in${read ? ` · ${read} read` : ''}</p></header>`;
@@ -960,10 +963,45 @@
     else return;
     renderClass();
   });
+  function setModel(key, text) {
+    modelMemory.set(key, text);
+    try { localStorage.setItem(key, text); } catch (_) { /* a private window: kept until the page reloads */ }
+  }
   $('#cv-model-text').addEventListener('input', e => {
-    modelMemory.set(modelKey(), e.target.value);
-    try { localStorage.setItem(modelKey(), e.target.value); } catch (_) { /* a private window: kept until the page reloads */ }
+    setModel(modelKey(), e.target.value);
     if (S.cvModel === 'show') renderClass();
+  });
+  // The model answers file (class-pulse-model-file.js), read on this computer only.
+  // Every answer in it replaces what was kept for that topic and checkpoint. A
+  // topic Class Pulse does not read, or an answer whose paragraphs do not line up
+  // with its criteria, is named, so a wrong highlight is never a surprise.
+  function loadModelFile(text) {
+    const r = MF.parse(text);
+    const notes = r.problems.slice();
+    let loaded = 0;
+    r.answers.forEach(a => {
+      const label = 'Topic ' + a.topic + ' Checkpoint ' + a.cp.slice(2);
+      if (!TOPICS.includes(a.topic)) { notes.push(label + ' is not a topic Class Pulse reads, so it was skipped.'); return; }
+      setModel('class-pulse-model-' + a.topic + '-' + a.cp, a.text);
+      loaded++;
+      let n = 0;
+      try { n = E.contractFor(MAP, a.topic, a.cp, Rubrics).criteria.length; } catch (_) { n = 0; }
+      const paras = a.text.split(/\n\s*\n/).length;
+      if (n && paras !== n) notes.push(`${label} has ${paras} paragraphs for ${n} criteria, so no paragraph will be highlighted.`);
+    });
+    const topics = [...new Set(r.answers.filter(a => TOPICS.includes(a.topic)).map(a => a.topic))];
+    $('#cv-model-status').textContent = (loaded
+      ? `Loaded ${loaded} model ${loaded === 1 ? 'answer' : 'answers'} (Topic${topics.length === 1 ? '' : 's'} ${topics.join(', ')}). `
+      : 'Nothing was loaded. ') + notes.join(' ');
+    $('#cv-model-text').value = modelText(); // even while the cursor is in the box
+    renderClass();
+  }
+  $('#cv-model-load').addEventListener('click', () => $('#cv-model-file').click());
+  $('#cv-model-file').addEventListener('change', e => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    f.text().then(loadModelFile, () => { $('#cv-model-status').textContent = 'That file could not be read. Choose the Markdown file from the Class-Pulse-Model-Answers folder.'; })
+      .then(() => { e.target.value = ''; });
   });
   $('#play').addEventListener('click', () => { if (S.playing) { stop(); renderLive(); } else play(); });
   $('#toend').addEventListener('click', () => { stop(); S.minute = END; renderLive(); });
