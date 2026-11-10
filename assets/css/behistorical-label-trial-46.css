@@ -28,4 +28,19 @@
 ) {
   font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   font-weight: 600;
+  font-feature-settings: "lnum" 1, "onum" 0;
+}
+
+/* Keep the existing Cinzel headings and number markers, using their lining
+ * figures where supported. Do not shift text boxes or alter line heights.
+ * Explicit feature settings also preserve existing tabular-number variants.
+ */
+.bh-label-trial-46 :is(
+  h1, h2, h3, h4, h5, h6,
+  .module-name,
+  .check-title,
+  .section-number,
+  .q-num
+) {
+  font-feature-settings: "lnum" 1, "onum" 0;
 }
