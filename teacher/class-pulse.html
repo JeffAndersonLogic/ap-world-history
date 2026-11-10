@@ -173,9 +173,10 @@
         <div><span class="ctl-label">Model answer</span><span class="seg" id="cv-model-show"><button type="button" aria-pressed="false" data-v="show">Show</button><button type="button" aria-pressed="true" data-v="hide">Hide</button></span></div>
       </div>
       <details class="cv-model-entry">
-        <summary>Paste this checkpoint's model answer</summary>
-        <p class="small">Model answers live in AndersonLogic-OS, <b>04_PRODUCTS/BeHistorical/Assessments/Class-Pulse-Model-Answers/</b>, never in this public site, where students could find them. Copy the one for this topic and checkpoint and paste it here. Write one paragraph per criterion, separated by a blank line, and the paragraph for the criterion being revisited is highlighted. It is kept on this computer only.</p>
-        <textarea id="cv-model-text" rows="6" aria-label="Model answer for this checkpoint"></textarea>
+        <summary>This checkpoint's model answer <span class="small" id="cv-model-summary"></span></summary>
+        <div class="row"><button class="btn" type="button" id="cv-model-load">Load the model answers file</button><input type="file" id="cv-model-file" accept=".md,.txt,text/markdown,text/plain" hidden> <span class="small" id="cv-model-status" role="status"></span></div>
+        <p class="small">Model answers live in AndersonLogic-OS, <b>04_PRODUCTS/BeHistorical/Assessments/Class-Pulse-Model-Answers/</b>, never in this public site, where students could find them. Load that folder's file once on this computer and every topic and checkpoint in it fills in here by itself; load it again after the file changes. You can still edit or paste below. Write one paragraph per criterion, separated by a blank line, and the paragraph for the criterion being revisited is highlighted. It is kept on this computer only.</p>
+        <textarea id="cv-model-text" rows="9" aria-label="Model answer for this checkpoint"></textarea>
       </details>
       <div class="row" id="cv-session"></div>
       <p class="small" id="cv-teacher-note" role="status"></p>
@@ -234,6 +235,7 @@
 <script src="data/class-pulse-config.js"></script>
 <script src="class-pulse-live.js"></script>
 <script src="class-pulse-handoff.js"></script>
+<script src="class-pulse-model-file.js"></script>
 <script src="data/class-pulse-course-words.js"></script>
 <script src="data/class-pulse-calibration.js"></script>
 <script src="data/class-pulse-rubrics.js"></script>

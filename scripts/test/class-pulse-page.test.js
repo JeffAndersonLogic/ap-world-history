@@ -252,8 +252,23 @@ async function suite(browser) {
   const modelShown = await s.p.$$eval('#cv .cv-model p', ps => ps.map(x => x.textContent));
   check('a pasted model answer shows, one paragraph per criterion', JSON.stringify(modelShown) === JSON.stringify(['Model paragraph one.', 'Model paragraph two.', 'Model paragraph three.']), JSON.stringify(modelShown));
   check('with the revisited criterion\'s paragraph highlighted', (await s.p.$$('#cv .cv-model p.cv-hot')).length === 1);
+  // The model answers file (Jeff, 2026-11-10): one load fills every checkpoint in it.
+  // Placeholder text only: real model answers never go in this public repository.
+  const FILE_TEXT = '# Model answers\n\n## Topic 2.3 · Checkpoint 1\n\nFile one.\n\nFile two.\n\nFile three.\n\n## Topic 2.3 · Checkpoint 2\n\nSecond one.\n\nSecond two.\n\nSecond three.\n\n## Topic 9.42 · Checkpoint 1\n\nNowhere.\n\n## Claims\n\nA reviewer note.\n';
+  await s.p.setInputFiles('#cv-model-file', { name: 'Unit-Model-Answers.md', mimeType: 'text/markdown', buffer: Buffer.from(FILE_TEXT) });
+  await s.p.waitForFunction(() => /Loaded/.test(document.getElementById('cv-model-status').textContent), null, { timeout: 4000 }).catch(() => {});
+  const fileShown = await s.p.$$eval('#cv .cv-model p', ps => ps.map(x => x.textContent));
+  check('loading the model answers file fills this checkpoint in, one paragraph per criterion', JSON.stringify(fileShown) === JSON.stringify(['File one.', 'File two.', 'File three.']), JSON.stringify(fileShown));
+  check('and puts it in the box under the dropdown', (await s.p.$eval('#cv-model-text', e => e.value)) === 'File one.\n\nFile two.\n\nFile three.');
+  const loadNote = await s.p.$eval('#cv-model-status', e => e.textContent);
+  check('the teacher is told what loaded and what was skipped', /Loaded 2 model answers/.test(loadNote) && /9\.42 Checkpoint 1 is not a topic Class Pulse reads/.test(loadNote), loadNote);
+  await s.p.click('#cv-cp [data-v="cp2"]');
+  const fileShown2 = await s.p.$$eval('#cv .cv-model p', ps => ps.map(x => x.textContent));
+  check('the other checkpoint in the file is already filled in too', JSON.stringify(fileShown2) === JSON.stringify(['Second one.', 'Second two.', 'Second three.']), JSON.stringify(fileShown2));
+  check('a reviewer note in the file never reaches the screen', !(await s.p.$eval('#cv', e => e.textContent)).includes('A reviewer note'));
+  await s.p.click('#cv-cp [data-v="cp1"]');
   await s.p.click('#cv-model-show [data-v="hide"]');
-  check('and Hide takes it off the screen', !(await s.p.$eval('#cv', e => e.textContent)).includes('Model paragraph one.'));
+  check('and Hide takes it off the screen', !/Model paragraph one\.|File one\./.test(await s.p.$eval('#cv', e => e.textContent)));
   check('the teacher is told who has not submitted yet', /have not submitted Checkpoint 1 yet|Everyone has submitted/.test(await s.p.$eval('#cv-teacher-note', e => e.textContent)));
   check('Class view raises no script error', s.errors.length === 0, s.errors.join(' | '));
   await s.context.close();
@@ -519,6 +534,9 @@ async function suite(browser) {
     { name: 'Class view shows names', file: 'teacher/class-pulse-app.js', from: '<p class="cv-count">${inCount} of ${n} answers in', to: '<p class="cv-count">${D.students.map(st => esc(st.name)).join(\', \')} ${inCount} of ${n} answers in', expect: /Class view shows no student name/ },
     { name: 'Class view keeps quoted words', file: 'teacher/class-pulse-app.js', from: 'const k = unquoted(m);', to: 'const k = m;', expect: /without the student's quoted words/ },
     { name: 'Class view ignores Hide on the model answer', file: 'teacher/class-pulse-app.js', from: "    if (S.cvModel === 'show') {\n      const paras", to: "    if (true) {\n      const paras", expect: /Hide takes it off/ },
+    { name: 'the model answers file is read but not kept', file: 'teacher/class-pulse-app.js', from: "setModel('class-pulse-model-' + a.topic + '-' + a.cp, a.text);", to: '', expect: /fills this checkpoint in|already filled in too/ },
+    { name: 'the box keeps old text after a load', file: 'teacher/class-pulse-app.js', from: "$('#cv-model-text').value = modelText(); // even while the cursor is in the box", to: '', expect: /box under the dropdown/ },
+    { name: 'the model answers file keeps only the open checkpoint', file: 'teacher/class-pulse-app.js', from: "setModel('class-pulse-model-' + a.topic + '-' + a.cp, a.text);", to: "if (a.topic === S.topic && a.cp === S.cvCp) setModel(modelKey(), a.text);", expect: /already filled in too/ },
     { name: 'the session time is ignored', file: 'teacher/class-pulse-app.js', from: 'return !!(at && Date.parse(t) > Date.parse(at));', to: 'return false;', expect: /counts the answer submitted after it/ },
     { name: 'every answer counts as after the session', file: 'teacher/class-pulse-app.js', from: 'return !!(at && Date.parse(t) > Date.parse(at));', to: 'return !!at;', expect: /names who submitted after the session/ },
     { name: 'the coaching note is never read', file: 'teacher/class-pulse-live.js', from: "coached: state === 'verified-submission' && receiptCoached(receiptText),", to: 'coached: false,', expect: /coaching note splits/ },
