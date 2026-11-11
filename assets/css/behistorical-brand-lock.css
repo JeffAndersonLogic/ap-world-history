@@ -1,3 +1,4 @@
+@import url("behistorical-labels.css?v=20261111");
 /* Official supplied Globe O artwork. Keep heading and link text accessible. */
 body .logo-title{display:block!important;width:min(620px,100%)!important;height:clamp(44px,8vw,104px)!important;margin:0 auto!important;padding:0!important;background:url('../logos/behistorical-wordmark.png') center/contain no-repeat!important;font-size:0!important;line-height:0!important;text-shadow:none!important;border:0!important}
 body .logo-title *{font-size:0!important;line-height:0!important}
