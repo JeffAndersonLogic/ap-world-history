@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -44,8 +44,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Who could belong, who could rise, who got squeezed?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The ladder stayed"
+          },
+          {
+            "label": "II",
+            "text": "Who could belong"
+          },
+          {
+            "label": "III",
+            "text": "New elites at the top"
+          },
+          {
+            "label": "IV",
+            "text": "Old elites squeezed"
+          },
+          {
+            "label": "V",
+            "text": "Test a claim: Busbecq"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: what stayed, what changed, why",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with two questions in mind.",
       "subtitle": "For every case: what stayed the same about who held power, and what changed?",
       "action": {
@@ -55,7 +92,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The Frame · Continuity and Change",
+      "eyebrow": "I · The Ladder Stayed",
       "title": "The ladder stayed. The people on it moved.",
       "footer": "Continuity: rulers who inherited power, privileged nobles, most people at the bottom. Change: who stood where.",
       "kc": "Unit 4: Learning Objective M",
@@ -92,7 +129,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Where It Happened",
+      "eyebrow": "I · The Ladder Stayed · Map",
       "title": "Who belonged, who rose, who was squeezed.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-7.svg",
@@ -103,7 +140,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Who Belongs · 1492 to 1497",
+      "eyebrow": "II · Who Could Belong · 1492 to 1497",
       "title": "Pushed out, and taken in.",
       "kc": "KC-4.3.I.B",
       "template": {
@@ -133,7 +170,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Who Belongs · The Ottoman Empire",
+      "eyebrow": "II · Who Could Belong · The Ottoman Empire",
       "title": "Room for difference, but not equality.",
       "kc": "KC-4.3.I.B",
       "template": {
@@ -168,7 +205,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Who Belongs · Mughal India",
+      "eyebrow": "II · Who Could Belong · Mughal India",
       "title": "Same empire, opposite policies.",
       "kc": "KC-4.3.I.B",
       "template": {
@@ -203,7 +240,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "Who Belongs · Ottoman Women, by Class · Istanbul, about 1720 to 1737",
+      "eyebrow": "II · Who Could Belong · Women, by Class · Istanbul, about 1720 to 1737",
       "title": "Who has a say in this household?",
       "subtitle": "A wealthy mother receives visitors after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.",
       "kc": "KC-4.3.I.B",
@@ -219,7 +256,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "New Elites · China, 1644",
+      "eyebrow": "III · New Elites at the Top · China, 1644",
       "title": "New rulers at the top. The old system kept running.",
       "footer": "A new elite, limits on the majority, and a continuity, all in one empire.",
       "kc": "KC-4.2.III.A",
@@ -265,7 +302,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "ledger",
-      "eyebrow": "New Elites · Spanish America",
+      "eyebrow": "III · New Elites at the Top · Spanish America",
       "title": "A new top, ranked by birthplace and ancestry.",
       "kc": "KC-4.2.III.A",
       "template": {
@@ -307,7 +344,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-evidence",
-      "eyebrow": "New Elites · A Casta Painting · Mexico, about 1715 to 1720",
+      "eyebrow": "III · New Elites · A Casta Painting · Mexico, about 1715 to 1720",
       "title": "A chart on canvas, not a census.",
       "subtitle": "In Spanish, the label says: from a mestizo and an Indian woman comes a coyote. Most casta labels never appear in official records.",
       "kc": "KC-4.2.III.A",
@@ -332,7 +369,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline-fortunes",
-      "eyebrow": "Old Elites · Rise and Fall",
+      "eyebrow": "IV · Old Elites Squeezed · Rise and Fall",
       "title": "Sipahis and boyars fell. Others rose in their place.",
       "footer": "The lines show direction only, not measured power.",
       "kc": "KC-4.2.III.B",
@@ -439,7 +476,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "scene-case",
-      "eyebrow": "Old Elites · Russia",
+      "eyebrow": "IV · Old Elites Squeezed · Russia",
       "title": "Squeezed into service, and still privileged.",
       "kc": "KC-4.2.III.B",
       "template": {
@@ -489,7 +526,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "balance",
-      "eyebrow": "Old Elites · France and England",
+      "eyebrow": "IV · Old Elites Squeezed · France and England",
       "title": "Squeezed in one kingdom, winning in another.",
       "kc": "KC-4.2.III.B",
       "template": {
@@ -512,7 +549,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "A Claim to Test · 1555",
+      "eyebrow": "V · Test a Claim · 1555",
       "title": "An ambassador writes home about the Ottomans.",
       "footer": "Busbecq wanted reforms at home. Keep that in mind.",
       "template": {
@@ -527,7 +564,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "claim-evidence",
-      "eyebrow": "Claims and Evidence in Sources 3.D · Model",
+      "eyebrow": "V · Test a Claim · 3.D Model",
       "title": "Support, modify, or refute?",
       "footer": "Most strong answers modify: true, but only for some people.",
       "template": {
@@ -550,33 +587,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "The Ottomans gave everyone equal rights.",
-            "evidence": "Christians and Jews were protected but paid the jizya and generally could not testify against a Muslim in an Islamic court.",
-            "source": "Ottoman law"
-          },
-          {
-            "myth": "Casta was a fixed chart everyone was locked into.",
-            "evidence": "How a person was recorded could change with wealth, job and reputation.",
-            "source": "Colonial records"
-          },
-          {
-            "myth": "Old elites simply disappeared.",
-            "evidence": "Russian and French nobles kept land and privilege; English nobles gained power.",
-            "source": "Russia, France, England"
-          }
-        ]
-      }
-    },
-    {
       "kind": "continuity-change",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "The ladder stayed. The people on it moved.",
       "footer": "Conquest, new wealth and stronger rulers decided who moved where.",
       "template": {
@@ -607,54 +619,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "Name what stayed, what changed, and why.",
-      "kc": "Unit 4: Learning Objective M",
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 09, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
-        "weak": "Society changed a lot between 1450 and 1750.",
-        "strong": "Between 1450 and 1750, ______ **stayed the same**, but ______ **changed**, **because** ______."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Test a source's argument.",
-      "subtitle": "Support, modify, or refute: Busbecq's claim that in Europe \"birth is the standard for everything.\"",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-7-changing-social-hierarchies.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "Who could belong.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-7-changing-social-hierarchies.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Build one claim from two sources.",
-      "subtitle": "Who could belong, who could rise, or who was squeezed? Two sources, one limit.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-7-changing-social-hierarchies.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "The top of society: one new elite and one old elite, and what stayed the same.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-7-changing-social-hierarchies.html#modules"
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Test Busbecq: is birth everything in Europe?",
+            "url": "../unit-4/lesson-4-7-changing-social-hierarchies.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-7-changing-social-hierarchies.html#modules"
+          },
+          {
+            "code": "Module 09",
+            "name": "BeInTheRoom",
+            "note": "The Identity Dossier.",
+            "url": "../beintheroom/unit-4/the-identity-dossier.html"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-7-changing-social-hierarchies.html#modules"
+          }
+        ]
       }
     },
     {
