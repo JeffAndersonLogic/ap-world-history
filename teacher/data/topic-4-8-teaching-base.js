@@ -16,8 +16,8 @@
  * Retelling slide: the cause chain (phase 'retell').
  *
  * Class dates: Green Tuesday 2026-11-17, Silver Wednesday 2026-11-18.
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * Required modules, from the schedule: 02 First & 10, 05 Skill Builder,
+ * 06 Checkpoint 1, 07 Evidence Lab, 10 Checkpoint 2.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -71,10 +71,10 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'retell', label: 'Follow the Trade', range: '44-48', minutes: 4, teacher: 'Students redraw the chain from memory, with what stayed underneath.', students: 'Retell the whole topic.', slide: 20 },
     { id: 'sharpen', label: 'Build a Thesis', range: '48-50', minutes: 2, teacher: 'Which reasoning process? Then upgrade a weak thesis.', students: 'Fill the frame aloud.', slide: 21 },
     { id: 'skill', label: 'Skill Builder', range: '50-58', minutes: 8, teacher: 'Module 05: Argumentation 6.C.', students: 'Connect three pieces of evidence.', slide: 22 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: one chain from trade to people.', students: 'Work without the coach.', slide: 23 },
-    { id: 'evidence', label: 'Evidence Lab', range: '58-65', minutes: 7, teacher: 'Module 07: one change, one continuity, two objects.', students: 'Observe, then infer, then name a limit.', slide: 24 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '65-77', minutes: 12, teacher: 'Module 10: the argument. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 25 },
-    { id: 'close', label: 'Landing Sentence', range: '77-79', minutes: 2, teacher: 'Land the answer and hand off to Unit 5.', students: 'Say the topic in one sentence.', slide: 26 }
+    { id: 'cp1', label: 'Checkpoint 1', range: '58-64', minutes: 6, teacher: 'Module 06, required: one chain from trade to people.', students: 'Work without the coach.', slide: 23 },
+    { id: 'evidence', label: 'Evidence Lab', range: '64-71', minutes: 7, teacher: 'Module 07: one change, one continuity, two objects.', students: 'Observe, then infer, then name a limit.', slide: 24 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '71-83', minutes: 12, teacher: 'Module 10: the argument. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 25 },
+    { id: 'close', label: 'Landing Sentence', range: '83-85', minutes: 2, teacher: 'Land the answer and hand off to Unit 5.', students: 'Say the topic in one sentence.', slide: 26 }
   ],
 
   quickLaunch: [
@@ -568,14 +568,14 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
+      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1',
       title: 'One chain, from trade to people.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
+      subtitle: 'On your own: Checkpoint 1 is the diagnostic, so no coach.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-8-continuity-and-change.html#modules' },
       notes: {
-        minutes: 0,
+        minutes: 6,
         land: [
-          'Checkpoint 1 is not required for 4.8. Use it for early finishers or as a quick diagnostic if the room is ahead.',
+          'Checkpoint 1 is required for 4.8, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23). Students work it on their own, with no coach.',
           'It asks for one economic development followed to the workers it needed and to one change in a social structure (KC-4.2.II, KC-4.2). Give feedback in the room: on an alternating block nothing carries over.'
         ],
         ask: 'Name one economic development, the workers it needed, and what it changed.',

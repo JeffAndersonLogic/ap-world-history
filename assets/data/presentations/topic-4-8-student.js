@@ -545,9 +545,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
+      "eyebrow": "Module 06 · Checkpoint 1",
       "title": "One chain, from trade to people.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
+      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-8-continuity-and-change.html#modules"

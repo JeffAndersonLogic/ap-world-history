@@ -270,16 +270,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "Ming",
-            "text": "Han Chinese emperors; Scholar-officials run the government."
+            "text": "Han Chinese emperors. Scholar-officials run the government."
           },
           {
             "label": "Qing, 1644",
-            "text": "Manchu emperors and the **banners**, a new elite; Han men must wear the **queue** (1645); Many top posts shared: one Manchu, one Han.",
+            "text": "Manchu emperors and the **banners**, a new elite. Han men must wear the **queue** (1645). Many top posts shared: one Manchu, one Han.",
             "key": true
           },
           {
             "label": "Continued",
-            "text": "The civil service exams; Confucian officials and law codes; Han scholars fill most government jobs."
+            "text": "The civil service exams. Confucian officials and law codes. Han scholars fill most government jobs."
           }
         ],
         "caption": "Conquest created a new elite; institutions continued"
