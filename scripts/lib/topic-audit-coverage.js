@@ -148,8 +148,16 @@ function gitFiles() {
  */
 function lastChanged(files) {
   if (!files.length) return null;
-  const committed = execFileSync('git', ['log', '-1', '--format=%cs', '--'].concat(files),
-    { cwd: ROOT, encoding: 'utf8' }).trim() || null;
+  // The commit's moment, read as a school date. `%cs` gives the date in the
+  // committer's own timezone, and a cloud session commits in UTC: an evening
+  // fix made at 7:24 p.m. in Indiana on 2026-11-11 was stamped 2026-11-12, so
+  // the dirty half (school time) said Fresh before the commit and the committed
+  // half said Stale after it, and `--check` failed in CI on a clean build.
+  const stamp = execFileSync('git', ['log', '-1', '--format=%ct', '--'].concat(files),
+    { cwd: ROOT, encoding: 'utf8' }).trim();
+  const committed = stamp
+    ? new Intl.DateTimeFormat('en-CA', { timeZone: SCHOOL_TZ }).format(new Date(Number(stamp) * 1000))
+    : null;
   let dirty = null;
   try {
     const st = execFileSync('git', ['status', '--porcelain', '--'].concat(files),
