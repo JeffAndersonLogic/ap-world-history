@@ -790,7 +790,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "About two hundred years later, on the Gold Coast of West Africa, the Asante kingdom rose by controlling gold and by buying guns from Dutch and English traders on the coast. In 1701 Asante defeated the stronger kingdom of Denkyira at the battle of Feyiase and became the main power in the region."
+            "html": "About two hundred years later, inland from the Gold Coast of West Africa, the Asante kingdom rose by controlling gold and by buying guns from Dutch and English traders on the coast. In 1701 Asante defeated the stronger kingdom of Denkyira at the battle of Feyiase and became the main power in the region."
           },
           {
             "type": "p",

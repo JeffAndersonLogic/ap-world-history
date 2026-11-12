@@ -154,7 +154,12 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // reviewer loop. The loop ended on its three-pass safety valve, every finding
 // fixed or answered. The fingerprint moved from 03b7f51... and only the 4.8 entry
 // changed; 4.1 to 4.7 are byte-for-byte unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = 'a6badc549120af821186199888140fec13addb09';
+// On 2026-11-11 Jeff asked for one correction that the 4.8 audit of 2026-10-18 had
+// logged against the 4.4 entry and left open: "on the Gold Coast of West Africa,
+// the Asante kingdom rose" placed an inland forest kingdom on the coast. It now
+// reads "inland from the Gold Coast", as the 4.8 entry already said. The
+// fingerprint moved from a6badc5... and only that 4.4 sentence changed.
+const APPROVED_UNIT4_REWRITE_BLOB = '5080ceb1324c8cf71424a16934ad73f663547f5b';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

@@ -109,7 +109,10 @@ async function grid(page, port, file) {
       await page.locator('#module-grid .module-card').nth(8).click();
       await page.waitForSelector('#pop-modal.show', { timeout: 5000 }).catch(() => {});
       const body = await page.evaluate(() => { const m = document.getElementById('pop-modal'); return m && m.classList.contains('show') ? document.getElementById('pop-body').textContent : ''; });
-      check(`${name}: the dialog says the scenario is coming soon`, /coming soon/i.test(body), body.trim().slice(0, 60));
+      // 4.8 and 9.9 are unit summary topics: no scenario will ever exist, so
+      // the dialog must say so and must not promise one (Jeff, 2026-11-11).
+      check(`${name}: the dialog says a summary topic has no scenario`, /has no BeInTheRoom scenario/i.test(body), body.trim().slice(0, 60));
+      check(`${name}: the dialog does not promise a scenario`, !/coming soon/i.test(body), body.trim().slice(0, 60));
       await page.keyboard.press('Escape');
     }
   }

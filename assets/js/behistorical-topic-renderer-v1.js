@@ -2332,7 +2332,7 @@ function defaultModules() {
     // Checkpoint 2 numbered "Module 10" after a gap.
     (L.beInTheRoom && L.beInTheRoom.url)
       ? { id: 'beintheroom', label: 'Module 09', title: 'BeInTheRoom', desc: L.beInTheRoom.desc, img: moduleCardImg('beintheroom', L.map.url), link: L.beInTheRoom.url }
-      : { id: 'beintheroom', label: 'Module 09', title: 'BeInTheRoom', desc: 'An immersive scenario, coming soon for this topic.', img: moduleCardImg('beintheroom', L.map.url), render: renderBeInTheRoomPlaceholder },
+      : { id: 'beintheroom', label: 'Module 09', title: 'BeInTheRoom', desc: isUnitSummaryTopic() ? 'No scenario for this topic. It pulls the unit together.' : 'An immersive scenario, coming soon for this topic.', img: moduleCardImg('beintheroom', L.map.url), render: renderBeInTheRoomPlaceholder },
     { id: 'checkpoint2', label: 'Module 10', title: 'Checkpoint 2', desc: (L.checkpoints && L.checkpoints[1] && L.checkpoints[1].cardDesc) || 'Final checkpoint.', img: moduleCardImg('checkpoint2', L.map.url), render: () => renderCheckpoint(L.checkpoints[1], 'checkpoint-two-response') }
   ];
 }
@@ -2687,11 +2687,22 @@ function renderFirst10() {
 // place of the whole scene on every topic written to the documented shape, so
 // `text` wins when present (those pages render unchanged) and the documented
 // fields are the fallback. scripts/test/besurreal-render.test.js is the check.
+// A unit's closing topic (Comparison, Continuity and Change, Causation) reviews
+// the unit and never gets a scenario, so its card must not promise one (Jeff,
+// 2026-11-11: "there is not a BeInTheRoom for 4.8 since it is a review"). The
+// test is the one generate-status-manifest.js uses to mark a topic a capstone.
+function isUnitSummaryTopic() {
+  return /comparison|continuity and change|causation|capstone/i.test((L.meta && L.meta.title) || '');
+}
+
 function renderBeInTheRoomPlaceholder() {
+  const line = isUnitSummaryTopic()
+    ? 'This topic pulls the whole unit together, so it has no BeInTheRoom scenario. Nothing is due here.'
+    : 'The BeInTheRoom scenario for this topic is coming soon. Nothing is due here today.';
   return `
     <article class="card">
       <h3>BeInTheRoom</h3>
-      <p>The BeInTheRoom scenario for this topic is coming soon. Nothing is due here today.</p>
+      <p>${line}</p>
     </article>`;
 }
 

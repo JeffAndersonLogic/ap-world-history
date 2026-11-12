@@ -217,7 +217,7 @@ Every lesson page, Unit and Foundations, must display exactly **10 modules** in 
 
 **Rules:**
 - Module 03 is always a jump link, never a pop-out modal.
-- Module 09 is always an external link (`window.open`) when a URL exists; otherwise shows a "coming soon" placeholder.
+- Module 09 is always an external link (`window.open`) when a URL exists; otherwise shows a "coming soon" placeholder. A unit's summary topic (Comparison, Continuity and Change, Causation) never gets a scenario, so its placeholder says there is none instead (Jeff, 2026-11-11).
 - Module count must be exactly 10, no more, no fewer.
 - The `beSurreal` field is required in every data file (Unit and Foundations). It must have `title`, `desc`, `intro`, `detail`, and `prompt`.
 - When a Foundations data file has no `beInTheRoom.url`, the renderer renders the "coming soon" placeholder automatically.
