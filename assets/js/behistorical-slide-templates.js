@@ -737,7 +737,7 @@ function sentenceFrame(s){
    and `caption` are the one-picture shorthand. `side: 'left'` puts the
    pictures on the left. A tall slice of a wide picture is a heavy crop, so
    give each visual a `position` that keeps its subject. */
-function sceneCase(s){const t=s.template||{},steps=arr(t.steps||t.rows).slice(0,5),sources=arr(t.sources).slice(0,3);const strip=sources.length?`<div class="bht-scase-sources" style="grid-template-columns:repeat(${sources.length},minmax(0,1fr))">${sources.map(p=>`<div class="bht-scase-source">${frame(p.visual,'bht-scase-object',{fit:'contain',tagPos:'bl'})}${p.caption?`<p class="bht-scase-caption">${esc(p.caption)}</p>`:''}</div>`).join('')}</div>`:'';const media=`<div class="bht-scase-media${sources.length?' with-sources':''}">${frame(t.visual,'bht-scase-scene',{fit:'contain',tagPos:'tl'})}${strip}</div>`;const rows=`<div class="bht-scase-copy" style="--sc-text:${steps.length>=5?20:22}">${steps.map(x=>`<div class="bht-scase-row${x.key?' key':''}"><b>${esc(x.label)}</b><p>${rich(x.text)}</p></div>`).join('')}</div>`;return board('scene-case',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-scase">${media}${rows}</div>`)+foot(t.proves||s.footer),'tight'));}
+function sceneCase(s){const t=s.template||{},steps=arr(t.steps||t.rows).slice(0,5),sources=arr(t.sources).slice(0,3);const strip=sources.length?`<div class="bht-scase-sources" style="grid-template-columns:repeat(${sources.length},minmax(0,1fr))">${sources.map(p=>`<div class="bht-scase-source">${frame(p.visual,'bht-scase-object',{fit:'contain',tagPos:'bl'})}${p.caption?`<p class="bht-scase-caption">${esc(p.caption)}</p>`:''}</div>`).join('')}</div>`:'';const side=t.sourcesSide&&sources.length===1;const media=`<div class="bht-scase-media${sources.length?' with-sources':''}${side?' side':''}">${frame(t.visual,'bht-scase-scene',{fit:'contain',tagPos:'tl'})}${strip}</div>`;const rows=`<div class="bht-scase-copy" style="--sc-text:${steps.length>=5?20:22}">${steps.map(x=>`<div class="bht-scase-row${x.key?' key':''}"><b>${esc(x.label)}</b><p>${rich(x.text)}</p></div>`).join('')}</div>`;return board('scene-case',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-scase">${media}${rows}</div>`)+foot(t.proves||s.footer),'tight'));}
 function storyScene(s){
   const t=s.template||{},st=arr(t.steps).slice(0,5),n=Math.max(1,st.length);
   const pics=(arr(t.pictures).length?arr(t.pictures):(t.visual?[{visual:t.visual,caption:t.caption}]:[])).slice(0,2);
@@ -1824,6 +1824,8 @@ const CSS=`
 .bht-scase{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:30u;height:100%;min-height:0}
 .bht-scase-media{display:grid;grid-template-rows:minmax(0,1fr);gap:12u;min-height:0}
 .bht-scase-media.with-sources{grid-template-rows:minmax(0,1fr) 142u}
+/* sourcesSide: one tall source (a portrait) stands beside the scene instead of in the short strip under it, which cropped it. Opt-in, so every other deck is unchanged. */
+.bht-scase-media.with-sources.side{grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr) 205u}
 .bht-scase-scene,.bht-scase-object{position:relative;overflow:hidden;background:#050606;min-height:0}
 .bht-scase-sources{display:grid;gap:12u;min-height:0}
 .bht-scase-source{display:flex;flex-direction:column;gap:5u;min-height:0}

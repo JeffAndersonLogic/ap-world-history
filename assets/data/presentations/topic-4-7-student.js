@@ -498,6 +498,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "caption": "A historical portrait of Peter the Great"
           }
         ],
+        "sourcesSide": true,
         "steps": [
           {
             "label": "1682",

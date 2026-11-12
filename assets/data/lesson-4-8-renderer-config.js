@@ -120,7 +120,7 @@
       cardDesc: 'Follow one economic development to the workers it needed and to one change in a social structure.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Answer in three steps. (1) Choose ONE economic development from Unit 4: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.',
+      prompt: 'Answer in three steps. (1) Choose ONE economic development from Unit 4: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Pick a different one than you used for Question 1 of the First & 10. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.',
       responseType: 'Checkpoint 1',
       terms: ['economic developments', 'social structure', 'sugar', 'plantation', 'chattel slavery', 'slavery', 'enslaved', 'indentured servants', 'planters', 'Barbados', 'silver', 'Potosí', 'mit’a', 'cloth', 'peasant', 'artisan', 'casta', 'elite', 'gender', 'family', 'West Central Africa'],
       focus: ['Name one economic development and who wanted it.', 'Explain which workers it needed.', 'Explain one change it made to a social structure.']
