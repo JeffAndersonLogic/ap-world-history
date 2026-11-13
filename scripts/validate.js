@@ -656,9 +656,9 @@ section('Deep readings are linked from their lesson');
 // mean a book with a chapter missing.
 section('eBook volumes are generated and linked');
 {
-  let VOLUMES = [], LIBRARY = null;
+  let VOLUMES = [], LIBRARY = null, chapterFile = () => null;
   try {
-    ({ VOLUMES, LIBRARY } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
+    ({ VOLUMES, LIBRARY, chapterFile } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
   } catch (e) {
     err(path.join(ROOT, 'scripts', 'build-ebook.js'), `does not load: ${e.message}`);
   }
@@ -731,10 +731,13 @@ section('eBook volumes are generated and linked');
     }
 
     for (const entry of volume.contents || []) {
-      if (!entry.module) continue;               // a pending topic has no module yet, by design
-      const mod = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content', `${entry.module}.js`);
+      // A pending topic and a part divider have no module, by design. A topic
+      // chapter lives in deep-reading-content/ and a regional chapter in
+      // region-content/; chapterFile() is the builder's own answer to which.
+      const mod = chapterFile(entry);
+      if (!mod) continue;
       if (!exists(mod)) {
-        err(path.join(ROOT, 'scripts', 'build-ebook.js'), `volume "${volume.id}" names chapter module "${entry.module}" that does not exist`);
+        err(path.join(ROOT, 'scripts', 'build-ebook.js'), `volume "${volume.id}" names chapter module "${entry.module || entry.region}" that does not exist`);
       }
     }
 
@@ -828,9 +831,9 @@ section('eBook narration is generated and shared');
   const LISTEN_MODULE = path.join(ROOT, 'assets', 'js', 'behistorical-listen.js');
   const SCRIPT_TAG = 'src="../assets/js/behistorical-listen.js"';
 
-  let VOLUMES = [], LIBRARY = null;
+  let VOLUMES = [], LIBRARY = null, chapterFile = () => null;
   try {
-    ({ VOLUMES, LIBRARY } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
+    ({ VOLUMES, LIBRARY, chapterFile } = require(path.join(ROOT, 'scripts', 'build-ebook.js')));
   } catch (e) { /* 7d already reported this */ }
 
   totalChecks++;
@@ -853,8 +856,8 @@ section('eBook narration is generated and shared');
     // page against itself can only ever agree with itself.
     let expected = 0;
     for (const entry of volume.contents || []) {
-      if (!entry.module) continue;
-      const modFile = path.join(ROOT, 'scripts', 'lib', 'deep-reading-content', `${entry.module}.js`);
+      const modFile = chapterFile(entry);
+      if (!modFile) continue;
       if (!exists(modFile)) continue;              // 7d reports this too
       let mod;
       try { mod = require(modFile); } catch (e) { continue; }

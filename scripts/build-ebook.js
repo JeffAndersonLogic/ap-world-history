@@ -34,6 +34,11 @@ const { renderEbook, renderLibrary } = require('./lib/ebook-page');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(__dirname, 'lib', 'deep-reading-content');
+// Regional chapters live in their own directory, not beside the topic chapters,
+// because build-deep-readings.js discovers every module in deep-reading-content/
+// and writes a standalone page for it beside its lesson. A regional chapter has
+// no lesson: it exists only inside a volume, so it must stay out of that sweep.
+const REGION_DIR = path.join(__dirname, 'lib', 'region-content');
 const check = process.argv.includes('--check');
 
 // The library page: the one stable eBook URL. It is what index.html links and
@@ -139,13 +144,25 @@ const VOLUMES = [
   {
     id: 'unit-4',
     outputFile: 'ebook/unit-4.html',
-    blurb: `Transoceanic Connections: the ships that could come home against the wind, the three incompatible ways of holding an ocean, the silver that paid for all of it, and the honest account of what Europeans still could not do in 1750.`,
+    blurb: `Transoceanic Connections: the ships that could come home against the wind, the three incompatible ways of holding an ocean, the silver that paid for all of it, and the honest account of what Europeans still could not do in 1750. Then the whole unit again, region by region.`,
     label: 'Unit 04',
     docTitle: 'BeHistorical | Unit 4: Transoceanic Connections',
     eyebrow: 'Unit 04 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
     titleHtml: 'Transoceanic <em>Connections</em>',
-    deck: `Eight chapters for eight topics, and two arguments running through them. The first is that every empire in this unit took the shape of what it was extracting and what stood in its way, which is why Portugal took harbors, Spain took land, and the Dutch chartered a company that could declare war. The second is the correction the unit needs: Europeans dominated the ocean routes and the Americas while remaining customers of Asian economies they could not match in production, and knowing where that line falls is what makes Unit 5 legible.`,
+    deck: `Eight chapters for eight topics, and two arguments running through them. The first is that every empire in this unit took the shape of what it was extracting and what stood in its way, which is why Portugal took harbors, Spain took land, and the Dutch chartered a company that could declare war. The second is the correction the unit needs: Europeans dominated the ocean routes and the Americas while remaining customers of Asian economies they could not match in production, and knowing where that line falls is what makes Unit 5 legible. Part Two then tells the same unit one region at a time, for the reader who wants each place's whole story in one sitting.`,
+    // Two parts since 2026-11-13 (Jeff): the topic chapters, then the same unit
+    // retold region by region, the way a survey textbook tells it. A `part`
+    // entry is a divider, not a chapter. A `region` entry names a module in
+    // scripts/lib/region-content/. Central Asia has no chapter because the
+    // Unit 4 CED gives it no Key Concept; the part intro says so rather than
+    // leaving a student to wonder where it went.
     contents: [
+      { part: {
+        id: 'by-topic',
+        label: 'Part One',
+        title: 'By Topic',
+        intro: `Eight chapters in the order the College Board teaches the unit, one for each topic.`
+      } },
       { module: 'topic-4-1' },
       { module: 'topic-4-2' },
       { module: 'topic-4-3' },
@@ -153,7 +170,19 @@ const VOLUMES = [
       { module: 'topic-4-5' },
       { module: 'topic-4-6' },
       { module: 'topic-4-7' },
-      { module: 'topic-4-8' }
+      { module: 'topic-4-8' },
+      { part: {
+        id: 'by-region',
+        label: 'Part Two',
+        title: 'By Region',
+        intro: `The same unit, retold one region at a time. The topics slice the world by theme, so you meet China in three of them and never see its whole story in one place. Each chapter here tells one region's story from about <span class="num">1450</span> to about <span class="num">1750</span> as a single narrative, about a fifteen-minute read, and links back to the topics it draws on. There is no Central Asia chapter in this unit: the land empires that ruled it are Unit 3's story, and the College Board's Unit 4 says almost nothing about it.`
+      } },
+      { region: 'unit-4-east-asia' },
+      { region: 'unit-4-south-southeast-asia' },
+      { region: 'unit-4-middle-east' },
+      { region: 'unit-4-sub-saharan-africa' },
+      { region: 'unit-4-europe' },
+      { region: 'unit-4-americas' }
     ]
   },
   {
@@ -268,16 +297,36 @@ const VOLUMES = [
 // require() would execute the builder, which would mean the validator writes
 // files as a side effect of validating, and a check that silently rebuilds the
 // thing it is checking can never fail.
-module.exports = { VOLUMES, LIBRARY };
+/**
+ * Where a contents entry's chapter module lives, or null for an entry that has
+ * none (a pending topic or a part divider). Exported so validate.js and the
+ * tests resolve chapters exactly the way the builder does, rather than each
+ * keeping its own idea of which directory a chapter is in.
+ */
+function chapterFile(entry) {
+  if (entry.module) return path.join(CONTENT_DIR, `${entry.module}.js`);
+  if (entry.region) return path.join(REGION_DIR, `${entry.region}.js`);
+  return null;
+}
+
+module.exports = { VOLUMES, LIBRARY, chapterFile, REGION_DIR };
 
 if (require.main !== module) return;
 
-function loadChapter(moduleName) {
-  const file = path.join(CONTENT_DIR, `${moduleName}.js`);
+function loadChapter(entry) {
+  const file = chapterFile(entry);
   if (!fs.existsSync(file)) {
-    throw new Error(`volume names a chapter with no content module: scripts/lib/deep-reading-content/${moduleName}.js`);
+    throw new Error(`volume names a chapter with no content module: ${path.relative(ROOT, file)}`);
   }
   return require(file);
+}
+
+/** A contents entry resolved for the renderer: a loaded chapter, a pending
+ *  topic, or a part divider. Order is preserved exactly as declared. */
+function resolve(entry) {
+  if (entry.part) return { part: entry.part };
+  if (entry.pending) return { pending: entry.pending };
+  return { chapter: loadChapter(entry) };
 }
 
 let wrote = 0;
@@ -287,9 +336,7 @@ for (const volume of VOLUMES) {
   // Resolve the ordered contents into entries the renderer can walk: a written
   // chapter carries its loaded content module, a pending one carries only its
   // label. Order is preserved exactly as declared.
-  const entries = volume.contents.map(entry =>
-    entry.module ? { chapter: loadChapter(entry.module) } : { pending: entry.pending }
-  );
+  const entries = volume.contents.map(resolve);
   const chapters = entries.filter(e => e.chapter).map(e => e.chapter);
   const target = path.join(ROOT, volume.outputFile);
   const rel = path.relative(ROOT, target);
@@ -313,8 +360,7 @@ for (const volume of VOLUMES) {
   const rel = path.relative(ROOT, target);
   const html = renderLibrary(LIBRARY, VOLUMES.map(v => ({
     volume: v,
-    entries: v.contents.map(e =>
-      e.module ? { chapter: loadChapter(e.module) } : { pending: e.pending })
+    entries: v.contents.map(resolve)
   })));
 
   if (check) {

@@ -137,6 +137,40 @@ li.eb-toc-pending{background:#efe9dd}
 li.eb-toc-pending .eb-toc-n{color:var(--iron)}
 li.eb-toc-pending .eb-toc-title{color:var(--iron)}
 
+/* ── parts (Unit 4: By Topic, then By Region) ───────────────────────────────
+   A part row in the contents is a dark band, so it reads as a divider rather
+   than as another chapter. Steel is the cover's surface, and the colours on it
+   are the cover's: sandstone (8.7:1) for the label, paper for the title, and
+   the gold ring for focus, because the oxidized ring is 2.1:1 on steel. */
+ol.eb-toc > li.eb-toc-part{background:var(--steel)}
+a.eb-toc-part-link{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:.3rem 1rem;
+  padding:.85rem 1.2rem; text-decoration:none; color:var(--clean);
+}
+a.eb-toc-part-link:focus-visible{outline-color:var(--gold)}
+.eb-toc-part-label{
+  font-family:var(--font-ui); font-size:.66rem; font-weight:700;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--sandstone);
+}
+.eb-toc-part-title{
+  font-family:var(--font-display); font-size:1.1rem; font-weight:700;
+  letter-spacing:.05em; color:var(--clean);
+}
+.eb-part{
+  margin-top:clamp(2.2rem,5vw,3.5rem); padding:clamp(1.4rem,3vw,2rem) 0 .4rem;
+  border-top:4px double var(--steel);
+}
+.eb-part-label{
+  font-family:var(--font-ui); font-size:.66rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--oxidized);
+}
+.eb-part h2{
+  font-family:var(--font-display); font-size:clamp(1.8rem,4.6vw,3rem);
+  font-weight:700; letter-spacing:.03em; color:var(--steel);
+  line-height:1.1; margin:.4rem 0 .8rem; overflow-wrap:break-word;
+}
+.eb-part-intro{font-size:.98rem;line-height:1.75;max-width:64ch;color:var(--ink)}
+
 /* ── chapter opener ─────────────────────────────────────────────────────── */
 .eb-chapter{padding-top:clamp(2rem,5vw,3.5rem)}
 .eb-chapter + .eb-chapter{border-top:4px double var(--steel);margin-top:clamp(2rem,4vw,3rem)}
@@ -183,6 +217,9 @@ li.eb-toc-pending .eb-toc-title{color:var(--iron)}
   .eb-chapter{break-before:page;padding-top:0}
   .eb-chapter + .eb-chapter{border-top:0;margin-top:0}
   .eb-chapter-head{break-inside:avoid;border-left-width:4pt}
+  ol.eb-toc > li.eb-toc-part{background:#fff;border-top:2pt solid #000}
+  .eb-toc-part-label,.eb-toc-part-title{color:#000}
+  .eb-part{break-before:page}
   .eb-chapter-return{display:none}
 }
 

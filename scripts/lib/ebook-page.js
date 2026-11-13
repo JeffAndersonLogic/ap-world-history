@@ -76,8 +76,15 @@ const FONT_LINKS = require('./deep-reading-page').FONT_LINKS_ASYNC;
  */
 const LISTEN_SCRIPT = `<script defer src="../assets/js/behistorical-listen.js"></script>\n`;
 
-function chapterNav(entries) {
+function chapterNav(entries, nums) {
   const rows = entries.map(entry => {
+    if (entry.part) {
+      return (
+        `      <li class="eb-toc-part">\n` +
+        `        <a class="eb-toc-part-link" href="#part-${esc(entry.part.id)}"><span class="eb-toc-part-label">${esc(entry.part.label)}</span><span class="eb-toc-part-title">${esc(entry.part.title)}</span></a>\n` +
+        `      </li>\n`
+      );
+    }
     if (entry.pending) {
       return (
         `      <li class="eb-toc-pending">\n` +
@@ -105,7 +112,7 @@ function chapterNav(entries) {
     return (
       `      <li>\n` +
       `        <a class="eb-toc-chapter" href="#chapter-${esc(chapter.topicKey)}">\n` +
-      `          <span class="eb-toc-n">${esc(chapterNumber(chapter))}</span>\n` +
+      `          <span class="eb-toc-n">${esc(chapterNumber(chapter, nums))}</span>\n` +
       `          <span class="eb-toc-body">\n` +
       `            <span class="eb-toc-title">${chapter.titleHtml}</span>\n` +
       `            <span class="eb-toc-meta">${esc(tocLabel(chapter))} &nbsp;·&nbsp; ${empires.length} sections</span>\n` +
@@ -130,7 +137,8 @@ function chapterNav(entries) {
  * Foundations 3 chapter "Chapter 02" while Foundations 2 is unwritten, and
  * would silently renumber every chapter the moment a gap is filled.
  */
-function chapterNumber(chapter) {
+function chapterNumber(chapter, nums) {
+  if (isRegion(chapter)) return (nums && nums.get(chapter)) || '';
   const m = /^foundations-(\d+)/.exec(chapter.slug || '');
   if (m) return m[1].padStart(2, '0');
   const u = /^topic-(\d+)-(\d+)/.exec(chapter.slug || '');
@@ -153,13 +161,80 @@ function lessonHref(chapter) {
   return `../${file}`;
 }
 
+/**
+ * A regional chapter retells a unit one region at a time, so it has no topic
+ * number and no lesson of its own. Its slug is region-<unit>-<region>, and the
+ * module lives in scripts/lib/region-content/, outside the deep-reading sweep.
+ */
+function isRegion(chapter) {
+  return /^region-/.test(chapter.slug || '');
+}
+
+/**
+ * R1, R2 ... for the regional chapters, in the order the volume lists them.
+ * Position is the right source here, unlike for topics: a region has no
+ * College Board number to borrow, and the order is the volume's editorial
+ * choice. Keyed by the chapter object, so nothing is written onto a content
+ * module that the library page also reads.
+ */
+function regionNumbers(entries) {
+  const nums = new Map();
+  let n = 0;
+  for (const entry of entries) {
+    if (entry.chapter && isRegion(entry.chapter)) nums.set(entry.chapter, `R${++n}`);
+  }
+  return nums;
+}
+
 /** "Foundations 1" from the slug, for the contents line. */
 function tocLabel(chapter) {
+  if (isRegion(chapter)) return `Unit ${chapter.unit} by Region`;
   const m = /^foundations-(\d+)/.exec(chapter.slug || '');
   if (m) return `Foundations ${m[1]}`;
   const u = /^topic-(\d+)-(\d+)/.exec(chapter.slug || '');
   if (u) return `Topic ${u[1]}.${u[2]}`;
   return chapter.slug || '';
+}
+
+/**
+ * The "Read alongside" line under a regional chapter's deck: one link per
+ * topic the chapter draws on, to that topic's chapter in the same volume. The
+ * anchors come from the volume's own topic chapters, and a region naming a
+ * topic the volume does not contain stops the build, because the alternative
+ * is a link that scrolls nowhere.
+ */
+function readAlongside(chapter, topicKeys) {
+  const links = (chapter.topics || []).map(code => {
+    const key = topicKeys.get(code);
+    if (!key) throw new Error(`regional chapter ${chapter.slug} names Topic ${code}, which is not a chapter in this volume`);
+    return `<a href="#chapter-${esc(key)}">Topic ${esc(code)}</a>`;
+  });
+  return links.length ? `Read alongside ${links.join(', ')} &nbsp;·&nbsp; ` : '';
+}
+
+function renderRegionChapter(chapter, topicKeys) {
+  return (
+    `  <section class="eb-chapter eb-chapter-region" id="chapter-${esc(chapter.topicKey)}">\n` +
+    `    <header class="eb-chapter-head">\n` +
+    `      <div class="eb-chapter-label">${esc(tocLabel(chapter))}</div>\n` +
+    `      <h2>${chapter.titleHtml}</h2>\n` +
+    `      <p class="eb-chapter-deck">${chapter.deck}</p>\n` +
+    `      <p class="eb-chapter-return">${readAlongside(chapter, topicKeys)}<a href="#contents">Back to contents</a></p>\n` +
+    `    </header>\n` +
+    renderChapterBody(chapter, { idPrefix: chapter.topicKey, listen: true, listenScope: chapter.region }) +
+    `  </section>\n`
+  );
+}
+
+/** A part divider: Part One, By Topic. Only volumes that declare parts get them. */
+function renderPart(part) {
+  return (
+    `  <section class="eb-part" id="part-${esc(part.id)}">\n` +
+    `    <div class="eb-part-label">${esc(part.label)}</div>\n` +
+    `    <h2>${esc(part.title)}</h2>\n` +
+    `    <p class="eb-part-intro">${part.intro}</p>\n` +
+    `  </section>\n`
+  );
 }
 
 function renderChapter(chapter) {
@@ -187,7 +262,7 @@ function renderChapter(chapter) {
  * in it yet.
  */
 function hub(volume, chapters) {
-  const first = (chapters || []).find(Boolean);
+  const first = (chapters || []).find(c => c && !isRegion(c));
   const unit = first && /^topic-(\d)/.exec(first.slug || '');
   return unit
     ? { href: `../unit-${unit[1]}/index.html`, label: `Unit ${unit[1]}` }
@@ -201,7 +276,19 @@ function hub(volume, chapters) {
  */
 function renderEbook(volume, entries) {
   const chapters = entries.filter(e => e.chapter).map(e => e.chapter);
-  const body = chapters.map(renderChapter).join('');
+  const nums = regionNumbers(entries);
+  const topicKeys = new Map();
+  for (const c of chapters) {
+    const u = /^topic-(\d+)-(\d+)/.exec(c.slug || '');
+    if (u) topicKeys.set(`${u[1]}.${u[2]}`, c.topicKey);
+  }
+  // Walked as entries rather than chapters so a part divider lands in place.
+  // A pending topic has no body, exactly as before parts existed.
+  const body = entries.map(entry => {
+    if (entry.part) return renderPart(entry.part);
+    if (!entry.chapter) return '';
+    return isRegion(entry.chapter) ? renderRegionChapter(entry.chapter, topicKeys) : renderChapter(entry.chapter);
+  }).join('');
   const chapterCount = chapters.length;
   const sectionCount = chapters.reduce((sum, c) => sum + (c.empires || []).length, 0);
 
@@ -229,7 +316,7 @@ ${SKIP_LINK}<header class="eb-cover">
   </div>
 </header>
 ${MAIN_OPEN}
-${chapterNav(entries)}${body}</main>
+${chapterNav(entries, nums)}${body}</main>
 <div class="dr-wrap">
   <footer class="dr-footer">
     <span class="dr-footer-note">BeHistorical &nbsp;·&nbsp; ${esc([volume.label, stripTags(volume.titleHtml)].filter(Boolean).join(': '))} &nbsp;·&nbsp; The eBook</span>
@@ -270,18 +357,20 @@ function renderLibrary(library, volumes) {
     const chapters = entries.filter(e => e.chapter).map(e => e.chapter);
     const pending = entries.filter(e => e.pending).map(e => e.pending);
     const sections = chapters.reduce((sum, c) => sum + (c.empires || []).length, 0);
+    const nums = regionNumbers(entries);
 
     // Walked in declared order, so written and unwritten chapters interleave in
     // teaching order. Listing every written chapter first and the gaps after
     // tells a student looking for Foundations 2 to check the bottom of the list,
     // which is the wrong place to look.
     const rows = entries.map(entry => {
+      if (entry.part) return '';
       if (entry.pending) {
         return `          <li class="eb-lib-pending"><span class="eb-sec-n">&mdash;</span>${esc(entry.pending.title)}</li>\n`;
       }
       const c = entry.chapter;
       return `          <li><a href="${esc(path_basename(volume.outputFile))}#chapter-${esc(c.topicKey)}">` +
-             `<span class="eb-sec-n">${esc(chapterNumber(c))}</span>${esc(stripTags(c.titleHtml))}</a></li>\n`;
+             `<span class="eb-sec-n">${esc(chapterNumber(c, nums))}</span>${esc(stripTags(c.titleHtml))}</a></li>\n`;
     }).join('');
 
     return (
