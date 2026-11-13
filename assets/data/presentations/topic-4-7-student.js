@@ -381,6 +381,21 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "video",
+      "eyebrow": "III · New Elites at the Top · Smarthistory · 5:38",
+      "title": "Watch: casta paintings and status",
+      "footer": "Clapera, c. 1775 · Later example: whose view of society do these paintings show?",
+      "kc": "KC-4.2.III.A",
+      "video": {
+        "youtubeId": "Opdr_qnGPcw",
+        "label": "Pride and anxiety in New Spain: Francisco Clapera, set of sixteen Casta paintings, c. 1775"
+      },
+      "action": {
+        "label": "Open on YouTube",
+        "url": "https://youtu.be/Opdr_qnGPcw"
+      }
+    },
+    {
       "kind": "timeline-fortunes",
       "eyebrow": "IV · Old Elites Squeezed · Rise and Fall",
       "title": "Sipahis and boyars fell. Others rose in their place.",

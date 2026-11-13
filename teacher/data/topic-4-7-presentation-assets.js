@@ -100,3 +100,54 @@ s.template=Object.assign({},s.template,{
 });
 s.notes.land.push('Jeff explicitly approved the exact queue upload from PR #173 for slide 12 on 2026-11-13 after the provenance hold was explained. Use this small, uncropped inset only to make the named hairstyle visible. Its photographer, date, original collection, reuse terms and generated-or-photographic origin remain unverified; the on-screen credit states the uncertainty. It is not evidence of the 1645 order or its enforcement, a verified image from 1450 to 1750, or proof of the sitter\'s ethnicity, rank or political allegiance. Keep source analysis on the documented 1662 handscroll on the following slide; no Evidence Lab change.');
 })();
+
+
+/* Jeff requested the Smarthistory casta video on 2026-11-13. */
+(function(){
+'use strict';
+const T=window.BEHISTORICAL_TEACHING;
+const at=T.slides.findIndex(s=>s.phase==='castapainting')+1;
+const video={
+  "phase": "castavideo",
+  "kind": "video",
+  "eyebrow": "III · New Elites at the Top · Smarthistory · 5:38",
+  "kc": "KC-4.2.III.A",
+  "title": "Watch: casta paintings and status",
+  "footer": "Clapera, c. 1775 · Later example: whose view of society do these paintings show?",
+  "video": {
+    "youtubeId": "Opdr_qnGPcw",
+    "label": "Pride and anxiety in New Spain: Francisco Clapera, set of sixteen Casta paintings, c. 1775"
+  },
+  "action": {
+    "label": "Open on YouTube",
+    "url": "https://youtu.be/Opdr_qnGPcw"
+  },
+  "notes": {
+    "minutes": 6,
+    "keys": [
+      "Watch for rank, clothing, and family labels",
+      "Pictures express an elite viewpoint",
+      "Clapera: c.1775, after this topic's period",
+      "Compare with the earlier casta painting"
+    ],
+    "land": [
+      "Jeff requested this exact Smarthistory video, https://youtu.be/Opdr_qnGPcw, on 2026-11-13. Full title: Pride and anxiety in New Spain: Francisco Clapera, set of sixteen Casta paintings, c. 1775. Runtime 5:38; allow six minutes including a brief response. Source and teaching context: https://smarthistory.org/francisco-clapera-casta/ and https://smarthistory.org/teaching-guide-sixteen-casta-paintings/.",
+      "This follows the casta ranking and the documented Rodriguez Juarez painting from c.1715 to 1720. Clapera's set dates to c.1775, after the topic's 1450 to 1750 period. Use it explicitly as a later illustration of the visual classification already discussed, not as a painting made within the course period or a second required CED example.",
+      "Ask students to notice how family labels, clothing and status make hierarchy look orderly. Keep the distinction from the preceding slide: these are constructed images expressing an elite viewpoint, not a census or a fixed chart that fully describes lived colonial identities.",
+      "Six minutes are moved from Work Time to this video; the required modules and the 90-minute arc are preserved. Embedded playback does not autoplay. If the embedded player is blocked on the school network, use Open on YouTube."
+    ],
+    "ask": "Whose view of colonial society does this set present, and what makes that viewpoint visible?",
+    "listenFor": "Family labels, clothing and status build an ordered ranking. The paintings express an elite ideal rather than neutrally record everyone's lived status.",
+    "ap": "KC-4.2.III.A: new colonial elites and social ranking. Skill 3.D: distinguish what an image supports from what it cannot establish.",
+    "avoid": "Do not date Clapera's paintings to 1450-1750, present racial classifications as biological facts, or treat painted categories as an inflexible census."
+  }
+};
+T.slides.splice(at,0,video);
+const work=T.slides.find(s=>s.phase==='worktime');work.notes.minutes-=6;
+const flowAt=T.flow.findIndex(f=>f.id==='castapainting')+1;
+T.flow.splice(flowAt,0,{id:'castavideo',label:'Casta Paintings: Video',minutes:6,teacher:'Play the 5:38 Smarthistory video; identify c.1775 as a later example, then debrief the viewpoint.',students:'Notice family labels, clothing and status; whose view is shown?'});
+T.flow.find(f=>f.id==='worktime').minutes-=6;
+let clock=0;
+T.flow.forEach(f=>{f.slide=T.slides.findIndex(s=>s.phase===f.id)+1;if(f.id!=='preflight'){f.range=clock+'-'+(clock+f.minutes);clock+=f.minutes;}});
+T.slides.forEach(s=>{if(s.notes&&s.notes.land)s.notes.land=s.notes.land.map(line=>line.replace(/\b([Ss]lide) (1[6-9]|2[0-3])\b/g,(_,word,n)=>word+' '+(Number(n)+1)));});
+})();
