@@ -368,17 +368,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "video",
-      "eyebrow": "III · New Elites · Video · Smarthistory",
-      "title": "Pride and anxiety in New Spain",
-      "footer": "Watch for one thing the paintings want a viewer in Spain to believe, and one thing they leave out.",
-      "kc": "KC-4.2.III.A",
-      "video": {
-        "youtubeId": "Opdr_qnGPcw",
-        "label": "Pride and anxiety in New Spain: Francisco Clapera, set of sixteen casta paintings, c. 1775 (Smarthistory)"
-      }
-    },
-    {
       "kind": "timeline-fortunes",
       "eyebrow": "IV · Old Elites Squeezed · Rise and Fall",
       "title": "Sipahis and boyars fell. Others rose in their place.",

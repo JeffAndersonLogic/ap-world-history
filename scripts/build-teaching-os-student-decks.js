@@ -323,8 +323,11 @@ function baseStudentSlide(s) {
   return out;
 }
 
+// A slide marked `teacherOnly: true` is taught from the teacher deck but left out
+// of the student copy (Jeff, 2026-11-13: the 4.7 casta video is for class only;
+// students get the clip from the lesson page's video list instead).
 function projectedSlides(teaching) {
-  return teaching.slides.filter(src => src.phase !== 'preflight');
+  return teaching.slides.filter(src => src.phase !== 'preflight' && !src.teacherOnly);
 }
 
 function ensureWhy(slide, text) {

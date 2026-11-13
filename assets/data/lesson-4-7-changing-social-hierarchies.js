@@ -107,6 +107,12 @@ window.BEHISTORICAL_LESSON = {
         url: "https://youtu.be/RQIEAt2_UoE",
         youtubeId: "RQIEAt2_UoE",
         prompt: "Use this clip to review who rose and who fell in society from 1450 to 1750. As you watch, note one group a ruler made room for, one group that lost power, and how the casta system ranked people in Spanish America."
+      },
+      {
+        title: "Pride and anxiety in New Spain: Francisco Clapera, set of sixteen Casta paintings, c. 1775 (Smarthistory)",
+        url: "https://youtu.be/Opdr_qnGPcw",
+        youtubeId: "Opdr_qnGPcw",
+        prompt: "These casta paintings were made around 1775, a little after this course's period, for viewers in Spain. As you watch, write down one thing the paintings want a viewer to believe about New Spain, and one thing about real life that they leave out."
       }
     ],
     segments: [

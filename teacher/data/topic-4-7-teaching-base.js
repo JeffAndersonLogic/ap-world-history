@@ -620,7 +620,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'castavideo', kind: 'video', eyebrow: 'III · New Elites · Video · Smarthistory',
+      phase: 'castavideo', kind: 'video', teacherOnly: true, eyebrow: 'III · New Elites · Video · Smarthistory',
       kc: 'KC-4.2.III.A', title: 'Pride and anxiety in New Spain',
       footer: 'Watch for one thing the paintings want a viewer in Spain to believe, and one thing they leave out.',
       video: { youtubeId: 'Opdr_qnGPcw', label: 'Pride and anxiety in New Spain: Francisco Clapera, set of sixteen casta paintings, c. 1775 (Smarthistory)' },

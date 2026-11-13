@@ -105,7 +105,9 @@ for (const deck of DECKS) {
 
   if (exists(deck.student)) {
     const student = loadInto([deck.student]).BEHISTORICAL_STUDENT_DECK || { slides: [] };
-    const want = projected.map(s => s.kc || null).join('|');
+    // A `teacherOnly` slide is projected from the teacher deck but is left out of
+    // the student copy by build-teaching-os-student-decks.js, so it is not compared.
+    const want = projected.filter(s => !s.teacherOnly).map(s => s.kc || null).join('|');
     const have = student.slides.map(s => s.kc || null).join('|');
     check(`${deck.key} student deck carries the same bands`, want === have);
   }
