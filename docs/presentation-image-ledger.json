@@ -356,5 +356,33 @@
       ],
       "limits": "Reconstruction, never a primary source or Evidence Lab object. Shown whole, so the small generator mark remains, as on the deck's other uploads. Placed 2026-11-05 as scene-case (the whole wide picture beside the steps)."
     }
+  ],
+  "pendingReviews": [
+    {
+      "path": "assets/images/topics/4-7/4.7 - Queue.jpg",
+      "blobSha": "a4319e2c37524f07164c92996e8a5750841b265c",
+      "reviewedAt": "2026-11-13",
+      "classification": "portrait-image-unverified-provenance",
+      "sourceRef": "2a6cc11c14345e5fcd2cf6b6ebb08321b61239ea",
+      "sourcePr": 173,
+      "status": "held-unverified-provenance",
+      "dimensions": {
+        "width": 361,
+        "height": 470
+      },
+      "observedSubject": "Black-and-white profile portrait of a person facing right, with a shaved scalp, hair retained at the back and a long braid, wearing a light garment against a plain backdrop.",
+      "placements": [],
+      "plannedPlacements": [
+        {
+          "topic": "4.7",
+          "phase": "qing",
+          "template": "scene-case",
+          "purpose": "After provenance is established, show as a small whole-image reference for the queue already named in the Qing row. Preserve the three existing Ming, Qing and Continued steps, the reconstruction label on the existing main scene, the 1662 handscroll and all lesson pacing."
+        }
+      ],
+      "rationale": "The visible hairstyle is relevant to the approved queue discussion, but the upload has no verified photographer, creation date, source collection or license. No exact match to an authoritative source was established. Do not invent a credit, treat this as a 1645 photograph or infer the sitter's ethnicity or political compliance from appearance. At 361x470 it is a small inset candidate, not a full-slide background.",
+      "limits": "This image cannot establish the 1645 policy, its enforcement, or the sitter's identity. If a later historical photograph is verified, identify it as a later reference view outside 1450-1750 and use it only to illustrate hairstyle. No Evidence Lab change. No AI reconstruction label assigned without evidence of generated origin.",
+      "resolution": "Hold presentation placement until the exact original source, date and reuse credit can be verified. Exact uploaded blob preserved on review branch. Generator run without deck changes; offline checks and browser launch results reported separately."
+    }
   ]
 }
