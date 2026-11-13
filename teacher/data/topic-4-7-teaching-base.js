@@ -166,14 +166,15 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'banners', label: 'The Banners, 1662', range: '32-33', minutes: 1, teacher: 'A Manchu painter shows the new elite.', students: 'Find the banner and its label.', slide: 13 },
     { id: 'casta', label: 'A New Top in the Americas', range: '33-35', minutes: 2, teacher: 'The casta ranking, top to bottom.', students: 'Say what decided a person\'s rung.', slide: 14 },
     { id: 'castapainting', label: 'A Chart on Canvas', range: '35-37', minutes: 2, teacher: 'Read a casta painting as an elite\'s ideal.', students: 'Say what the painting wants you to believe.', slide: 15 },
-    { id: 'fortunes', label: 'Old Elites Rise and Fall', range: '37-39', minutes: 2, teacher: 'Sipahis down, tax farmers up, boyars down.', students: 'Say what pushed each line.', slide: 16 },
-    { id: 'boyars', label: 'The Boyars', range: '39-41', minutes: 2, teacher: 'Peter\'s squeeze, and what nobles kept.', students: 'Name one loss and one thing kept.', slide: 17 },
-    { id: 'nobles', label: 'France and England', range: '41-43', minutes: 2, teacher: 'Squeezed in France, winning in England.', students: 'Explain "fluctuated."', slide: 18 },
-    { id: 'busbecq', label: 'A Claim to Test', range: '43-44', minutes: 1, teacher: 'Read Busbecq\'s argument.', students: 'Say his argument in your own words.', slide: 19 },
-    { id: 'test', label: 'Support, Modify, Refute', range: '44-46', minutes: 2, teacher: 'Model 3.D on Busbecq.', students: 'Label each piece of evidence.', slide: 20 },
-    { id: 'retell', label: 'The Ladder Stayed', range: '46-50', minutes: 4, teacher: 'Students redraw the continuity-and-change model from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 21 },
-    { id: 'worktime', label: 'Work Time', range: '50-86', minutes: 36, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder on Busbecq\'s European half, Checkpoint 1 with no coach, the Identity Dossier, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, the Identity Dossier, Checkpoint 2.', slide: 22 },
-    { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and hand off to 4.8.', students: 'Say the topic in one sentence.', slide: 23 }
+    { id: 'castavideo', label: 'Pride and Anxiety (Video)', range: '37-43', minutes: 6, teacher: 'Smarthistory on a full casta set: who it was made for, and what it hides.', students: 'Name what the paintings want Spain to believe.', slide: 16 },
+    { id: 'fortunes', label: 'Old Elites Rise and Fall', range: '43-45', minutes: 2, teacher: 'Sipahis down, tax farmers up, boyars down.', students: 'Say what pushed each line.', slide: 17 },
+    { id: 'boyars', label: 'The Boyars', range: '45-47', minutes: 2, teacher: 'Peter\'s squeeze, and what nobles kept.', students: 'Name one loss and one thing kept.', slide: 18 },
+    { id: 'nobles', label: 'France and England', range: '47-49', minutes: 2, teacher: 'Squeezed in France, winning in England.', students: 'Explain "fluctuated."', slide: 19 },
+    { id: 'busbecq', label: 'A Claim to Test', range: '49-50', minutes: 1, teacher: 'Read Busbecq\'s argument.', students: 'Say his argument in your own words.', slide: 20 },
+    { id: 'test', label: 'Support, Modify, Refute', range: '50-52', minutes: 2, teacher: 'Model 3.D on Busbecq.', students: 'Label each piece of evidence.', slide: 21 },
+    { id: 'retell', label: 'The Ladder Stayed', range: '52-56', minutes: 4, teacher: 'Students redraw the continuity-and-change model from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 22 },
+    { id: 'worktime', label: 'Work Time', range: '56-86', minutes: 30, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder on Busbecq\'s European half, Checkpoint 1 with no coach, the Identity Dossier, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, the Identity Dossier, Checkpoint 2.', slide: 23 },
+    { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and hand off to 4.8.', students: 'Say the topic in one sentence.', slide: 24 }
   ],
 
   quickLaunch: [
@@ -209,7 +210,7 @@ window.BEHISTORICAL_TEACHING = {
           'CED p. 89. One learning objective, M (Social Interactions and Organization): explain how social categories, roles, and practices have been maintained or have changed over time. The reasoning process is Continuity and Change (p. 75); the suggested skill is 3.D, explain how claims or evidence support, modify, or refute a source\'s argument.',
           'KC-4.3.I.B: many states, such as the Mughal and Ottoman empires, accommodated the ethnic and religious diversity of their subjects or used the contributions of different groups; in other cases states suppressed diversity or limited certain groups\' roles. KC-4.2.III.A: imperial conquests and widening global economic opportunities formed new political and economic elites, including the Qing transition and the casta system. KC-4.2.III.B: the power of existing elites fluctuated as they confronted increasingly powerful monarchs.',
           'The CED\'s illustrative examples (optional): the expulsion of Jews from Spain and Portugal and their acceptance in the Ottoman Empire; restrictive policies against Han Chinese in Qing China; the varying status of different classes of women within the Ottoman Empire; Ottoman timars; Russian boyars; European nobility. All six are in this deck, each told briefly, because together they are the shortest route through all three Key Concepts.',
-          'The CED\'s sample activity (p. 77) is a debate testing a historian\'s claim about religious toleration against evidence. This deck takes the move, not the article: slides 19 and 20 test Busbecq\'s 1555 claim; the Skill Builder (required) and the Primary Source (Montagu, 1717, optional today) do it again.',
+          'The CED\'s sample activity (p. 77) is a debate testing a historian\'s claim about religious toleration against evidence. This deck takes the move, not the article: slides 20 and 21 test Busbecq\'s 1555 claim; the Skill Builder (required) and the Primary Source (Montagu, 1717, optional today) do it again.',
           'Owns: who could belong (KC-4.3.I.B), new elites (KC-4.2.III.A), old elites squeezed (KC-4.2.III.B).',
           'Bridge only: Atlantic slavery and the labor systems (4.4; enslaved Africans appear only as the bottom of the casta ranking); the devshirme and Versailles as tools of rule (3.2, one clause each, from the elite\'s side); the Janissaries\' guns (3.1); the Fronde and the 1649 Law Code (4.6); which change mattered most (4.8, the hand-off).',
           'Three myths, corrected on the retelling slide (they had their own slide until 2026-11-11): "the Ottomans gave everyone equal rights"; "casta was a fixed chart everyone was locked into"; "old elites simply disappeared."',
@@ -237,14 +238,14 @@ window.BEHISTORICAL_TEACHING = {
         keys: [
           'Fast answers, no reteaching',
           '4.6 hand-off: who ended up where?',
-          'Prompt 2 returns at Versailles, slide 18',
+          'Prompt 2 returns at Versailles, slide 19',
           'Prompt 3 returns as casta\'s bottom rung'
         ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: the Parlement of Paris and the nobles (the Fronde), peasants and Cossacks (Razin), the Marathas, Njinga, the Pueblos, the Wampanoag, maroons, the Stono rebels; Versailles, the devshirme, salaried officials, tax collectors who answered to the ruler; Indigenous workers under the encomienda or the mit\'a, enslaved Africans.',
           'The bridge is 4.6\'s hand-off in the unit story map, word for word.',
-          'Prompt 2 returns on slide 18 (Versailles), from the nobles\' side. Prompt 3 returns as the bottom of the casta ranking on slide 14.'
+          'Prompt 2 returns on slide 19 (Versailles), from the nobles\' side. Prompt 3 returns as the bottom of the casta ranking on slide 14.'
         ],
         ask: 'When a ruler pulls power into his own hands, whose power shrinks?',
         listenFor: 'The nobles\', the judges\', the old elites\'.',
@@ -619,6 +620,32 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'castavideo', kind: 'video', eyebrow: 'III · New Elites · Video · Smarthistory',
+      kc: 'KC-4.2.III.A', title: 'Pride and anxiety in New Spain',
+      footer: 'Watch for one thing the paintings want a viewer in Spain to believe, and one thing they leave out.',
+      video: { youtubeId: 'Opdr_qnGPcw', label: 'Pride and anxiety in New Spain: Francisco Clapera, set of sixteen casta paintings, c. 1775 (Smarthistory)' },
+      notes: {
+        minutes: 6,
+        keys: [
+          'Clapera, about 1775: after 1750',
+          'Same genre: a chart, not a census',
+          'Pride: show Spain the colony\'s wealth',
+          'Anxiety: fear of mixing',
+          'Stereotypes, not real life'
+        ],
+        land: [
+          'Give the question before you press play: what do these paintings want a viewer in Spain to believe, and what do they leave out? The clip runs about five and a half minutes (Smarthistory, with Sabina Kull of the Denver Art Museum and Beth Harris).',
+          'The set: Francisco Clapera, sixteen casta paintings, about 1775, Denver Art Museum, which Smarthistory describes as the only complete casta set in the United States. Clapera was a Spaniard working in New Spain. Say the date out loud: about 1775 is after this course period ends in 1750. Use it as the genre at its fullest, the same kind of chart as the Rodríguez Juárez painting on the last slide, not as new evidence for 1450 to 1750.',
+          '"Pride" is pride in New Spain: many casta series were made to be sent to Spain, to show off the colony\'s wealth and the variety of its people. "Anxiety" is Spanish worry about mixing, and about people moving between categories, which is why the paintings put everyone in a labeled place.',
+          'Land the same point as the painting slide: Smarthistory says these images did not reflect reality so much as stereotypes arranged along a biased, ranked scale. Do not swing to "casta did not matter": ancestry still opened and closed doors to office and honor.',
+          'Six minutes came out of Work Time to fit the clip (Work Time is now 30 minutes). If the room is running long, skip the clip; the painting slide already carries the sourcing point.'
+        ],
+        ask: 'What did these paintings want a viewer in Spain to believe about New Spain, and what did they leave out?',
+        listenFor: 'That the colony was rich and orderly, with everyone labeled and in a fixed place; they leave out that real people were recorded differently as their wealth and reputation changed, and that the labels were stereotypes, not records.',
+        ap: 'KC-4.2.III.A. Sourcing (2.A): purpose and audience. Made for viewers in Spain, the paintings show an ideal order, not a count of real people.'
+      }
+    },
+    {
       phase: 'fortunes', kind: 'timeline-fortunes', eyebrow: 'IV · Old Elites Squeezed · Rise and Fall',
       kc: 'KC-4.2.III.B', title: 'Sipahis and boyars fell. Others rose in their place.',
       footer: 'The lines show direction only, not measured power.',
@@ -641,10 +668,10 @@ window.BEHISTORICAL_TEACHING = {
           'Not "decline": the state changed shape'
         ],
         land: [
-          'The lines are a teaching sketch of direction, not a measurement; the footer says so. They teach half of "fluctuated" in KC-4.2.III.B: old elites fell and other groups rose in their place. Slide 18 adds England, where an old elite won.',
+          'The lines are a teaching sketch of direction, not a measurement; the footer says so. They teach half of "fluctuated" in KC-4.2.III.B: old elites fell and other groups rose in their place. Slide 19 adds England, where an old elite won.',
           'Sipahis: a timar was the right to collect the taxes of a piece of land in return for service as a cavalryman; it was not the holder\'s property and was not supposed to pass automatically to his son (Halil İnalcık, The Ottoman Empire: The Classical Age). From the late 1500s, wars needed infantry with guns paid in cash, and the state turned more and more timar land into tax farms; from 1695 it sold them for life (malikane). The Topic 3.2 and 3.4 chapters tell the same move, "from timar-holding cavalry to tax farming and provincial notables."',
           'Tax farmers and powerful provincial families rose with the life-term tax farms (Wikipedia, "Ottoman Old Regime," on the 1695 malikane and provincial influence). Historians no longer call this simply "decline"; the Ottoman state changed shape.',
-          'Boyars: the system of precedence by family rank (mestnichestvo) was abolished in 1682; Peter the Great\'s Table of Ranks of 1722 made rank depend on service. Slide 17 tells it.'
+          'Boyars: the system of precedence by family rank (mestnichestvo) was abolished in 1682; Peter the Great\'s Table of Ranks of 1722 made rank depend on service. Slide 18 tells it.'
         ],
         ask: 'What pushed the sipahis\' line down and the tax farmers\' line up?',
         listenFor: 'The state needed cash for armies with guns more than it needed cavalry, so it sold the right to collect taxes.',
@@ -737,7 +764,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Charles Thornton Forster and F. H. Blackburne Daniell, trans., The Life and Letters of Ogier Ghiselin de Busbecq (London, 1881), vol. I, pp. 154 to 155, the First Turkish Letter, describing his audience with Suleiman at Amasya in 1555. Public domain. The quotation joins three sentences from one passage, with the cuts shown.',
           'Busbecq (1522 to 1592), a Flemish noble, was ambassador at the Ottoman court from 1555 to 1562 for the Habsburg ruler Ferdinand I, then King of the Romans and from 1558 Holy Roman Emperor. The Fordham Internet History Sourcebook\'s headnote: "Because Busbecq was trying to bring about reform at home, he did not dwell on the very real problems with Ottoman government."',
-          'His argument has two halves: among the Ottomans men rise by merit, not birth; in Europe, birth decides everything. Slide 20 tests the first half; the Skill Builder tests the second.',
+          'His argument has two halves: among the Ottomans men rise by merit, not birth; in Europe, birth decides everything. Slide 21 tests the first half; the Skill Builder tests the second.',
           'Busbecq\'s portrait, engraved by Melchior Lorck in Constantinople in 1557 (Rijksmuseum RP-P-OB-49.753), is on the Skill Builder card.'
         ],
         ask: 'What is Busbecq\'s argument, in one sentence?',
@@ -822,7 +849,7 @@ window.BEHISTORICAL_TEACHING = {
         ]
       },
       notes: {
-        minutes: 36,
+        minutes: 30,
         keys: [
           'All four required today, in order',
           'Skill Builder: Busbecq\'s European half',
@@ -834,7 +861,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'This one slide replaces six (Myth and Evidence moved to the retelling slide; Sharpen the Claim and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-11). Modules 05, 06, 09 and 10 are all required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23). Each button opens its module.',
-          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources. It models the move on the first half of Busbecq\'s argument (slide 20), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and French offices, such as judges\' seats in the Parlement of Paris, that families could buy and that could bring noble rank. Students decide whether each supports, modifies or refutes it. The Table of Ranks is the strongest modifier: a commoner could become a noble by rank. Russia is in Europe, so it tests Busbecq\'s "with us" directly. Debrief only after students have written.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources. It models the move on the first half of Busbecq\'s argument (slide 21), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and French offices, such as judges\' seats in the Parlement of Paris, that families could buy and that could bring noble rank. Students decide whether each supports, modifies or refutes it. The Table of Ranks is the strongest modifier: a commoner could become a noble by rank. Russia is in Europe, so it tests Busbecq\'s "with us" directly. Debrief only after students have written.',
           'Checkpoint 1 (Module 06), with no coach, asks for one empire that made room for or used a group (the Ottomans or Akbar) and one state that pushed out or limited a group (Spain or Qing China), what each did and gained, and for one case what changed and what stayed the same for the group (KC-4.3.I.B). Give feedback in the room: on an alternating block nothing carries over.',
           'The Identity Dossier (Module 09) is a composite court hearing in Mexico City around 1715: a wealthy widow of mixed ancestry asks to expand her cloth shop, join a business association that has kept her out, and have her children recorded. Students make three rulings: how to classify her (by family records, by family, status and reputation together, or by freedom and residence only), whether the association must admit her, and what to record for her children. It is the casta slides (14 and 15) as a decision: the official ranking was powerful, but real status also depended on wealth, gender, reputation and community. Debrief with the spine: the ladder stayed, but where a person stood on it could be argued.',
           'Checkpoint 2 (Module 10) asks for one new elite (the Qing banners, or peninsulares and creoles in the casta ranking) and how conquest or new trade made it, one old elite (Ottoman sipahis, Russian boyars or French nobles) and how its power changed as rulers grew stronger, with one thing it lost and one thing it kept, and one thing about the top of society that stayed the same. That is KC-4.2.III.A and KC-4.2.III.B, run through continuity and change. Socrates is told the skill is Continuity and Change, so it will push for what stayed the same as well as what changed. The revised answer in the box is what goes to Canvas.',
