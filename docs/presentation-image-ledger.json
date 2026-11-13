@@ -355,6 +355,33 @@
         }
       ],
       "limits": "Reconstruction, never a primary source or Evidence Lab object. Shown whole, so the small generator mark remains, as on the deck's other uploads. Placed 2026-11-05 as scene-case (the whole wide picture beside the steps)."
+    },
+    {
+      "path": "assets/images/topics/4-7/4.7 - Queue.jpg",
+      "blobSha": "a4319e2c37524f07164c92996e8a5750841b265c",
+      "reviewedAt": "2026-11-13",
+      "classification": "user-approved-hairstyle-reference-unverified-provenance",
+      "sourceRef": "2a6cc11c14345e5fcd2cf6b6ebb08321b61239ea",
+      "sourcePr": 173,
+      "status": "placed-user-approved-reference",
+      "dimensions": {
+        "width": 361,
+        "height": 470
+      },
+      "observedSubject": "Black-and-white profile portrait of a person facing right, with a shaved scalp, hair retained at the back and a long braid, wearing a light garment against a plain backdrop.",
+      "placements": [
+        {
+          "topic": "4.7",
+          "phase": "qing",
+          "teacherSlide": 12,
+          "template": "scene-case",
+          "purpose": "Small whole-image inset illustrates the queue already named in the Qing row; existing reconstruction, three explanation steps and following 1662 handscroll preserved."
+        }
+      ],
+      "rationale": "Jeff explicitly replied 'Yes, add this to slide 12 of the 4.7 presentation' on 2026-11-13 after receiving the provenance hold and inset recommendation. This authorizes a reference-only use without asserting a historical date, photographer, collection, identity or license. On-screen credit: User-supplied image · date/source unverified.",
+      "limits": "Original source, date, photographer, reuse terms and AI/photographic origin remain unverified. Used solely to illustrate the visible hairstyle; not evidence of the 1645 order or its enforcement, the sitter's ethnicity or rank, or an image made in 1450-1750. No AI label assigned without evidence; no Evidence Lab change.",
+      "resolution": "Prior provenance hold superseded for this explicitly approved, visibly qualified hairstyle-reference use only. Portrait fitted whole at inset size to respect 361x470 resolution; source metadata remains unresolved.",
+      "approvedAt": "2026-11-13"
     }
   ]
 }

@@ -255,7 +255,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-scene",
+      "kind": "scene-case",
       "eyebrow": "III · New Elites at the Top · China, 1644",
       "title": "New rulers at the top. The old system kept running.",
       "footer": "A new elite, limits on the majority, and a continuity, all in one empire.",
@@ -282,7 +282,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "The civil service exams. Confucian officials and law codes. Han scholars fill most government jobs."
           }
         ],
-        "caption": "Conquest created a new elite; institutions continued"
+        "caption": "Conquest created a new elite; institutions continued",
+        "sources": [
+          {
+            "visual": {
+              "url": "../assets/images/topics/4-7/4.7%20-%20Queue.jpg",
+              "alt": "User-supplied black-and-white profile portrait showing a shaved front scalp and long braid at the back; date and original source unverified",
+              "credit": "User-supplied image · date/source unverified",
+              "ratio": 0.7680851063829788,
+              "fit": "contain"
+            },
+            "caption": "Queue: shaved front, braided back."
+          }
+        ],
+        "sourcesSide": true
       }
     },
     {

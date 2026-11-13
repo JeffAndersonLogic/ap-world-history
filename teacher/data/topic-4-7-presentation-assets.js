@@ -78,3 +78,25 @@ by('preflight').notes.land.push('Visual update, 2026-11-04: five labeled reconst
 })();
 
 (function(){const p=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='preflight');p.notes.land=p.notes.land.filter(x=>!x.includes('None is AI-generated.'));})();
+
+/* Jeff approved this uploaded hairstyle reference for teacher slide 12,
+ * 2026-11-13. Its provenance remains unverified; do not invent a source/date. */
+(function(){
+'use strict';
+const s=window.BEHISTORICAL_TEACHING.slides.find(s=>s.phase==='qing');
+s.kind='scene-case';
+s.template=Object.assign({},s.template,{
+  sources:[{
+    visual:{
+      url:'../assets/images/topics/4-7/'+encodeURIComponent('4.7 - Queue.jpg'),
+      alt:'User-supplied black-and-white profile portrait showing a shaved front scalp and long braid at the back; date and original source unverified',
+      credit:'User-supplied image · date/source unverified',
+      ratio:361/470,
+      fit:'contain'
+    },
+    caption:'Queue: shaved front, braided back.'
+  }],
+  sourcesSide:true
+});
+s.notes.land.push('Jeff explicitly approved the exact queue upload from PR #173 for slide 12 on 2026-11-13 after the provenance hold was explained. Use this small, uncropped inset only to make the named hairstyle visible. Its photographer, date, original collection, reuse terms and generated-or-photographic origin remain unverified; the on-screen credit states the uncertainty. It is not evidence of the 1645 order or its enforcement, a verified image from 1450 to 1750, or proof of the sitter\'s ethnicity, rank or political allegiance. Keep source analysis on the documented 1662 handscroll on the following slide; no Evidence Lab change.');
+})();
