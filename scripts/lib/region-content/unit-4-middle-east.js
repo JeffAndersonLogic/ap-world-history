@@ -5,18 +5,20 @@
  * One story of the Islamic heartlands from Morocco to Persia, 1450 to 1750, in four sections:
  * the instruments, tables and sails that reached European ships through the Islamic world
  * (KC-4.1.II, KC-4.1.II.A); the spice war at sea, Mamluk and Ottoman fleets against the
- * Portuguese, and the recovery of the Red Sea route and the regional markets (KC-4.3.III.ii,
- * KC-4.3.II.A.iii, KC-4.1.IV); the Ottoman Empire's many peoples, its welcome to Jews expelled
+ * Portuguese (attacks from 1502, the Mamluk fleet, Diu 1509), and the recovery of the Red Sea
+ * route (KC-4.3.III.ii, KC-4.3.II.A.iii, KC-4.1.IV); the Ottoman Empire's many peoples, its welcome to Jews expelled
  * from Spain and Portugal, women by class, and the older export of enslaved Africans to the
- * Mediterranean and the Indian Ocean (KC-4.3.I.B, KC-4.3, KC-4.2.II.B); and guns and cash after
- * about 1580: Morocco against Songhai, timars giving way to tax farms, Persia at Hormuz and Oman
- * at Muscat and Mombasa, and the CED's Middle East market for cash crops (KC-4.3.III.ii,
- * KC-4.2.III.B, KC-4.3.II.A.iii, KC-4.1.V.B). This is the thinnest region in the Unit 4 CED and
+ * Mediterranean and the Indian Ocean (KC-4.3.I.B, KC-4.3 via Topic 4.8, KC-4.2.II.B); and guns and cash after
+ * about 1580: Morocco against Songhai, timars giving way to tax farms, New Julfa (after 1605),
+ * Persia at Hormuz and Oman at Muscat and Mombasa, and the CED's Middle East market for cash
+ * crops (KC-4.3.III.ii, KC-4.2.III.B, KC-4.3.II.A.iii, KC-4.1.IV, KC-4.1.V.B). This is the thinnest region in the Unit 4 CED and
  * the chapter says so rather than padding: the rise of the Ottomans and Safavids belongs to
  * Unit 3 and gets one connective sentence; coffee is left out because no source file supports
  * it for this region; the Middle East as a market for cash crops is stated in the CED's words,
- * with the 4.3 ledger's narrowing (sugar went mostly to Europe) kept, and tobacco is the only
- * crop named. The 4.1 ledger's corrections are kept: the lateen sail is Roman-era Mediterranean
+ * with the 4.3 ledger's narrowing (sugar went mostly to Europe) kept; tobacco and maize are the
+ * only American crops named. Ptolemy's astronomy follows the 4.1 reading correction (the
+ * Byzantines always had it), and Busbecq is left out (his line is about palace servants, not
+ * timar cavalry). The 4.1 ledger's corrections are kept: the lateen sail is Roman-era Mediterranean
  * and common in Islamic seas, not an Arab invention, and Indian Ocean pilots used the kamal and
  * wooden quadrants rather than the astrolabe at sea. Diu 1509 is Mamluk with Ottoman supplies,
  * not Ottoman (4.4 ledger). Morocco and Songhai is told from Morocco's side; the Sub-Saharan
@@ -29,8 +31,8 @@ module.exports = {
   unit: '4',
   region: 'The Middle East and Dar al-Islam',
   titleHtml: 'The Middle East and <em>Dar al-Islam</em>',
-  deck: `Between 1450 and 1750 the new ocean routes did not simply pass the Islamic lands by. Their instruments and tables sailed in European ships, their states fought the Portuguese for the spice trade and kept much of it, and the Ottoman Empire grew strong by ruling many peoples. Follow the story from the astrolabe to Oman's capture of Mombasa.`,
-  topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.7'],
+  deck: `Between 1450 and 1750 the new ocean routes did not simply pass the Islamic lands by. Their instruments and tables sailed in European ships, their states fought the Portuguese for the spice trade and kept much of it, and the Ottoman Empire grew strong by ruling many peoples.`,
+  topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.7', '4.8'],
   ced: [
     'KC-4.1.II',
     'KC-4.1.II.A',
@@ -53,26 +55,26 @@ module.exports = {
       name: 'Knowledge That Sailed West',
       navLabel: 'Knowledge',
       dates: 'Before 1450 to c. 1500 &nbsp;·&nbsp; Instruments, tables, sails and pilots',
-      thesis: `European ships crossed the oceans with knowledge gathered over centuries in the Islamic world and beyond it. Europe's new contribution was to assemble the pieces for a harder ocean.`,
+      thesis: `European ships crossed the oceans with knowledge gathered over centuries in the Islamic world and beyond it. Europe's contribution was to assemble those pieces, build new ships and learn the Atlantic's winds.`,
       parts: [
         {
           heading: 'A world of scholars and sailors',
           blocks: [
-            { p: `In 1450 the heartlands of Islam stretched from Morocco through Egypt and Arabia to Persia, and Muslim rulers and merchants reached far beyond them. Historians call this world <span class="kt">Dar al-Islam</span>, Arabic for "the house of Islam": not one state, but lands joined by Islamic law, by Arabic as the language of scholarship, and by long trade routes. (Unit 3 told how the Ottoman and Safavid empires rose inside it.) The CED's sentence for this story is that "knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation" (<a href="#chapter-t4-1">Topic 4.1</a>).` },
-            { p: `Take the <span class="kt">astrolabe</span>, an instrument for measuring how high the sun or a star stands above the horizon. A Greek idea made precise by astronomers in the Islamic world, it reached Europe through Muslim Spain, and so did the mathematics behind it. In Toledo, in the 1100s and 1200s, Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin, among them Ptolemy's great book of Greek astronomy, which had been kept and studied in Arabic before Europeans could read it again.` },
-            { p: `To turn the noon sun's height into a <span class="kt">latitude</span> (how far north or south of the equator a ship is), a pilot also needs a table of where the sun stands on each day of the year: the CED's "astronomical charts." Muslim and Jewish astronomers in Toledo built tables of the sky around <span class="num">1080</span>, and later tables grew from that line, down to the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>. By the 1480s Portuguese pilots carried a heavy sea version of the instrument, the mariner's astrolabe.` }
+            { p: `In 1450 the heartlands of Islam stretched from Morocco through Egypt and Arabia to Persia. Historians call this world <span class="kt">Dar al-Islam</span>, Arabic for "the house of Islam": not one state, but lands joined by Islamic law, by Arabic as the language of scholarship, and by long trade routes. (Unit 3 told how the Ottoman and Safavid empires rose inside it.) The CED's sentence for this story is that "knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation" (<a href="#chapter-t4-1">Topic 4.1</a>).` },
+            { p: `Take the <span class="kt">astrolabe</span>, which measures how high the sun or a star stands above the horizon. A Greek idea made precise by astronomers in the Islamic world, it reached Europe through Muslim Spain, and so did the mathematics behind it. In Toledo, in the 1100s and 1200s, Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin, among them Ptolemy's great book of Greek astronomy, which scholars in the Islamic world had preserved, studied, and corrected in Arabic.` },
+            { p: `To turn the noon sun's height into a <span class="kt">latitude</span> (how far north or south of the equator a ship is), a pilot also needs a table of where the sun stands on each day of the year: the CED's "astronomical charts." Muslim and Jewish astronomers in Toledo built such tables around <span class="num">1080</span>, and later tables grew from that line, down to the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>. By the 1480s Portuguese pilots carried a heavy sea version of the instrument, the mariner's astrolabe.` }
           ]
         },
         {
           heading: 'Sails, winds and pilots',
           blocks: [
-            { p: `The triangular <span class="kt">lateen sail</span> lets a ship work forward against the wind. Used on the Mediterranean since Roman times and common across the seas of the Islamic world, it rigged the first Portuguese caravels.` },
+            { p: `The triangular <span class="kt">lateen sail</span> lets a ship work forward against the wind. Used on the Mediterranean since Roman times and common across the seas of the Islamic world, it rigged the first Portuguese caravels, small exploring ships.` },
             { p: `The Indian Ocean held another kind of knowledge: its winds. The <span class="kt">monsoon</span> reverses twice a year on schedule, and its sailors, Arabs among them, planned voyages around it months ahead. They measured the stars with simple tools such as the <span class="kt">kamal</span>, a small wooden card on a knotted string, and wrote their routes into pilot books. At Malindi, on the Swahili coast, Vasco da Gama took on a pilot who knew the crossing, and reached Calicut in India in May <span class="num">1498</span> (<a href="#chapter-t4-2">Topic 4.2</a>).` },
-            { p: `Europeans also designed new ships and learned the Atlantic's harder winds for themselves. But the instruments, the tables, the sail and the pilot came from older worlds, much of it through the lands of Islam.` },
+            { p: `Europeans built new ships and learned the Atlantic's harder winds for themselves. But much of what went into those voyages, the astrolabe and the tables behind it, the lateen sail and the pilot's knowledge, came from older worlds, much of it through the lands of Islam.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Arabs invented the lateen sail or that Europe got it from Arab sailors; historians trace it to the Roman-era Mediterranean. Say it was common across the seas of the Islamic world, which fits the CED's "Classical, Islamic." And Indian Ocean pilots mostly used the kamal and wooden quadrants at sea; the astrolabe was mainly an astronomer's instrument on land.`
+              html: `Do not write that Arabs invented the lateen sail or that Europe got it from Arab sailors; historians trace it to the Roman-era Mediterranean. Indian Ocean pilots mostly used the kamal and wooden quadrants at sea; the astrolabe was mainly an astronomer's instrument on land.`
             } }
           ]
         }
@@ -80,7 +82,7 @@ module.exports = {
       terms: [
         ['Dar al-Islam', 'Arabic for "the house of Islam": the lands under Islamic law and Muslim rulers.'],
         ['Astrolabe', 'A Greek instrument made precise by astronomers in the Islamic world, used to measure the height of the sun or a star.'],
-        ['Astronomical charts', 'Tables of where the sun and stars stand each day, needed to turn a height reading into a latitude.'],
+        ['Astronomical charts', 'Tables of where the sun stands each day, needed to turn a height reading into a latitude.'],
         ['Lateen sail', 'A triangular sail, Mediterranean since Roman times and common across Islamic seas, that lets a ship work against the wind.']
       ]
     },
@@ -98,34 +100,33 @@ module.exports = {
         {
           heading: 'The old road and the newcomers',
           blocks: [
-            { p: `Before 1500, pepper from India crossed the ocean to the Red Sea or the Persian Gulf, then went overland to the Mediterranean, where Venetian merchants bought it. It was taxed and resold at every step, and most of those profits went to Muslim states and merchants. Egypt, the richest stop, was ruled by the <span class="kt">Mamluks</span>, sultans drawn from an elite of slave soldiers.` },
-            { p: `The Portuguese wanted to cut out that chain. They took ports at the ocean's narrow places, among them <b>Hormuz</b>, at the mouth of the Persian Gulf, in <span class="num">1515</span>, and sold passes, the <span class="kt">cartaz</span>, to Asian ships (<a href="#chapter-t4-4">Topic 4.4</a>). Papal bulls of the 1450s had framed their expansion as war on Muslim powers, so the rivalry was about religion as well as money.` },
+            { p: `Before 1500, pepper from India crossed the ocean to the Red Sea or the Persian Gulf, then went overland to the Mediterranean and Venetian buyers. It was taxed and resold at every step, and most of those profits went to Muslim states and merchants. Egypt, the richest stop, was ruled by the <span class="kt">Mamluks</span>, sultans drawn from an elite of slave soldiers.` },
+            { p: `The Portuguese wanted to cut out that chain. From <span class="num">1502</span> they attacked Muslim ships and sold passes, the <span class="kt">cartaz</span>, to many Asian ships; later they took ports at the ocean's narrow places, among them <b>Hormuz</b>, at the mouth of the Persian Gulf, in <span class="num">1515</span> (<a href="#chapter-t4-4">Topic 4.4</a>). Papal bulls (orders from the pope) of the 1450s had framed their expansion as war on Muslim powers, so the rivalry was about religion as well as money.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Ottomans "closed" the spice routes when they took Constantinople in <span class="num">1453</span>. The main route ran through Mamluk Egypt, Ottoman only from <span class="num">1517</span>; spice prices did not jump after 1453; and Portugal's African voyages were already decades old. Europeans went to sea to get around the middlemen, not a blockade.`
+              html: `Do not write that the Ottomans "closed" the spice routes when they took Constantinople in <span class="num">1453</span>. The main route ran through Mamluk Egypt, Ottoman only from <span class="num">1517</span>; spice prices did not jump after 1453; and Portugal's African voyages were already decades old. Europeans went to sea mainly to get around the middlemen (and, for Portugal, to reach West African gold), not to escape a blockade.`
             } }
           ]
         },
         {
           heading: 'Diu, and the Ottomans take up the fight',
           blocks: [
-            { p: `Mamluk Egypt answered. With timber and guns supplied by the Ottomans, it sent a fleet east, which joined the ships of the sultan of Gujarat and the ruler of Calicut. In <span class="num">1509</span>, off the port of Diu in western India, the Portuguese defeated them. At the heart of this rivalry between Muslim and European powers was an economic question: which route, and whose ships, would carry the spices (<a href="#chapter-t4-5">Topic 4.5</a>). In the CED's words, "Economic disputes led to rivalries and conflict between states."` },
-            { p: `In <span class="num">1517</span> the Ottoman Empire conquered Egypt and inherited the Mamluks' war at sea. Its sultans now also protected Mecca and Medina and the pilgrims who sailed to them. Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, and in <span class="num">1538</span> an Ottoman force besieged the Portuguese at Diu, though the siege was lifted.` }
+            { p: `Mamluk Egypt answered the first attacks. With timber and guns supplied by the Ottomans, it sent a fleet east to join the ships of the sultan of Gujarat and the ruler of Calicut. In <span class="num">1509</span>, off the port of Diu in western India, the Portuguese defeated them. At the heart of this rivalry between Muslim and European powers was an economic question: which route, and whose ships, would carry the spices (<a href="#chapter-t4-5">Topic 4.5</a>). In the CED's words, "Economic disputes led to rivalries and conflict between states."` },
+            { p: `In <span class="num">1517</span> the Ottoman Empire conquered Egypt and inherited the Mamluks' war at sea. Its sultans now also protected Mecca and Medina. Ottoman fleets fought the Portuguese in the Red Sea, the Gulf and the Indian Ocean through the 1500s, and in <span class="num">1538</span> an Ottoman force besieged the Portuguese at Diu, though the siege was lifted.` }
           ]
         },
         {
           heading: 'The route that would not close',
           blocks: [
-            { p: `Portuguese patrols cut the flow of pepper up the Red Sea for about two decades, but by the middle of the 1500s spices again reached the Mediterranean that way in large amounts. Gujarati ships kept carrying cargo and pilgrims to the Red Sea, and Armenian merchants of New Julfa, outside the Persian capital of Isfahan, traded through family networks from India to the Mediterranean. That is the CED's continuity: "regional markets continued to flourish in Afro-Eurasia by using established commercial practices."` }
+            { p: `Portuguese patrols cut the flow of pepper up the Red Sea for about two decades, but by the middle of the 1500s spices again reached the Mediterranean that way in large amounts. Gujarati ships kept carrying cargo and pilgrims to the Red Sea. That is the CED's continuity: "regional markets continued to flourish in Afro-Eurasia by using established commercial practices."` }
           ]
         }
       ],
       terms: [
         ['Mamluks', 'The soldier-sultans who ruled Egypt, and the spice route through it, until the Ottoman conquest of 1517.'],
-        ['Cartaz', 'A pass the Portuguese sold to Asian ships and enforced with warships.'],
-        ['Diu, 1509', 'The sea battle off western India in which the Portuguese defeated a fleet of Mamluk Egypt, Gujarat and Calicut.'],
-        ['New Julfa', 'The Armenian merchants\' town outside Isfahan, in Persia.']
+        ['Cartaz', 'A pass the Portuguese sold to many Asian ships and enforced with warships.'],
+        ['Diu, 1509', 'The sea battle off western India in which the Portuguese defeated a fleet of Mamluk Egypt, Gujarat and Calicut.']
       ]
     },
 
@@ -137,31 +138,31 @@ module.exports = {
       name: 'An Empire of Many Peoples',
       navLabel: 'Many peoples',
       dates: '1492 to 1700s &nbsp;·&nbsp; The Ottoman Empire: faiths, women and the enslaved',
-      thesis: `The Ottoman Empire ruled Muslims, Christians and Jews who spoke many languages. It held them by making room for difference and putting it to use, not by making everyone equal.`,
+      thesis: `The Ottoman Empire ruled Muslims, Christians and Jews of many languages. It held them by making room for difference and using it, not by making everyone equal.`,
       parts: [
         {
           heading: 'A refuge for Spain\'s Jews',
           blocks: [
-            { p: `In <span class="num">1492</span> Spain ordered every Jew who would not become Christian to leave, and in <span class="num">1497</span> Portugal had most of its Jews baptized by force (<a href="#chapter-r4-europe">Europe</a> tells that side). The Ottoman sultan <b>Bayezid II</b> let the refugees settle. Thousands came, to Istanbul, to Salonica (today Thessaloniki, in Greece) and to other cities. By the 1500s Jews were the largest group in Salonica, and exiles from Spain set up Istanbul's first printing press, printing books in Hebrew.` },
-            { p: `Why would a Muslim sultan welcome them? Because they were useful: merchants, doctors, craftsmen and taxpayers. The CED says states such as the Ottomans adopted practices "to utilize the economic, political, and military contributions of different ethnic or religious groups." Spain made the opposite choice: it "suppressed diversity," in the CED's words (<a href="#chapter-t4-7">Topic 4.7</a>).` }
+            { p: `In <span class="num">1492</span> Spain ordered every Jew who would not become Christian to leave, and in <span class="num">1497</span> Portugal had most of its Jews baptized by force (<a href="#chapter-r4-europe">Europe</a> tells that side). The Ottoman sultan <b>Bayezid II</b> let the refugees settle. Thousands came, to Istanbul, Salonica (today Thessaloniki, in Greece) and other cities. By the 1500s Jews were the largest group in Salonica, and exiles from Spain set up Istanbul's first printing press, printing books in Hebrew.` },
+            { p: `Why would a Muslim sultan welcome them? They were useful: merchants, doctors, craftsmen and taxpayers. The CED says states such as the Ottomans adopted practices "to utilize the economic, political, and military contributions of different ethnic or religious groups." Spain made the opposite choice: it "suppressed diversity," in the CED's words (<a href="#chapter-t4-7">Topic 4.7</a>).` }
           ]
         },
         {
           heading: 'Room, not equality',
           blocks: [
             { p: `The empire already ruled millions of Christians and Jews, and it governed them by an old rule of Islamic law: they were <span class="kt">protected subjects</span>. They could practice their religion, and their own leaders ran their marriages, inheritances, schools and family courts and answered to the state for their community's taxes. For the sultan this was cheap: each community ran itself and paid. (You may read that this was the <span class="kt">millet</span> system; the tidy version is mostly a nineteenth-century arrangement.)` },
-            { p: `This was <span class="kt">accommodation</span>, making room for a group's differences. It was not equality. Christians and Jews paid a special tax, the <span class="kt">jizya</span>. In an Islamic court they generally could not testify against a Muslim, they could not freely build new churches or synagogues, and the top posts in the army and government went to Muslims.` }
+            { p: `This was <span class="kt">accommodation</span>, making room for a group's differences. It was not equality. Christians and Jews paid a special tax, the <span class="kt">jizya</span>. In an Islamic court they generally could not testify against a Muslim, they could not freely build new churches or synagogues, and the top posts in the army and government went to Muslims. In the CED's words, empires were "shaping and being shaped by the diverse populations they incorporated" (<a href="#chapter-t4-8">Topic 4.8</a>).` }
           ]
         },
         {
           heading: 'Women and the enslaved, by class',
           blocks: [
-            { p: `How an Ottoman woman lived depended on her class, the CED's "varying status of different classes of women." At the top, <b>Hürrem</b> began as an enslaved woman in the palace, became the wife of Sultan Suleiman, and paid for a mosque complex in Istanbul with a school, a soup kitchen and a hospital. In the next century <b>Kösem</b> ruled as regent for her young son Murad IV and later her grandson Mehmed IV. In the towns, ordinary women owned property and went to the Islamic court over inheritances, debts and divorces, though a daughter inherited half what a son did.` },
-            { p: `At the bottom were enslaved women, servants and concubines in wealthy households with almost no say over their own lives. Enslaved people reached these lands by several routes, and one ran out of Africa. The CED says enslavement in Africa continued "in its traditional forms, including ... the export of enslaved persons to the Mediterranean and the Indian Ocean regions." Captives were carried north across the Sahara to North Africa and the Mediterranean world, and east across the Red Sea and the Indian Ocean to Arabia, Persia and India. Those trades were centuries old before 1500 and went on through this whole period (<a href="#chapter-r4-sub-saharan-africa">Sub-Saharan Africa</a>).` },
+            { p: `How an Ottoman woman lived depended on her class, the CED's "varying status of different classes of women." At the top, <b>Hürrem</b> began as an enslaved woman in the palace, became the wife of Sultan Suleiman, and paid for a mosque complex in Istanbul with a school, a soup kitchen and a hospital. In the next century <b>Kösem</b> ruled as regent, governing in the name of her young son Murad IV and later her grandson Mehmed IV. In the towns, ordinary women owned property and went to the Islamic court over inheritances, debts and divorces, though a daughter inherited half what a son did.` },
+            { p: `At the bottom were enslaved women, servants and concubines (enslaved women kept as a master's partners) in wealthy households with almost no say over their own lives. Enslaved people reached these lands by several routes: from the lands north of the Black Sea, from the Caucasus, as war captives, and out of Africa. The CED says enslavement in Africa continued "in its traditional forms, including ... the export of enslaved persons to the Mediterranean and the Indian Ocean regions." Captives were carried north across the Sahara to North Africa and the Mediterranean world, and east across the Red Sea and the Indian Ocean to Arabia, Persia and India. Those trades were centuries old before 1500 and went on through this whole period (<a href="#chapter-r4-sub-saharan-africa">Sub-Saharan Africa</a>).` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
-              html: `In one Anatolian city's court registers from the early 1600s, women took part in about four in ten recorded property transactions. In <span class="num">1717</span> Lady Mary Wortley Montagu, wife of Britain's ambassador, wrote, "I look upon the Turkish women as the only free people in the empire." Read her with care: she met mostly wealthy women.`
+              html: `In a letter dated <span class="num">1717</span>, which she later polished for readers, Lady Mary Wortley Montagu, wife of Britain's ambassador, wrote, "I look upon the Turkish women as the only free people in the empire." Read her with care: she met mostly wealthy women, and the town courts and the enslaved women in their households tell a wider story.`
             } }
           ]
         }
@@ -181,41 +182,41 @@ module.exports = {
       name: 'Guns, Cash and Pushing Back',
       navLabel: 'Pushing back',
       dates: '1578 to 1750 &nbsp;·&nbsp; Morocco, the Ottoman cavalry, Persia and Oman',
-      thesis: `By the late 1500s war ran on firearms and money. Morocco sent gunmen across the Sahara for West Africa's gold, the Ottoman sultan traded cavalry for cash, and Persia and Oman drove the Portuguese from their waters.`,
+      thesis: `By the late 1500s war ran on firearms and money. Morocco sent gunmen across the Sahara, the Ottoman sultan traded cavalry for cash, and Persia and Oman drove out the Portuguese.`,
       parts: [
         {
           heading: 'Morocco crosses the Sahara',
           blocks: [
-            { p: `Morocco, at the far west of the Islamic world, was never ruled by the Ottomans. Its sultan from <span class="num">1578</span>, <b>Ahmad al-Mansur</b>, looked south. The <b>Songhai Empire</b> controlled the trade in West African gold and the salt mines of the Sahara, and the two states quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army of about four thousand men with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at <b>Tondibi</b>. Gold and the salt trade were a large part of the reason.` },
-            { p: `He got less than he hoped: Morocco held Timbuktu and Gao, but Songhai broke into smaller states, and gold kept flowing to other buyers, including European traders on the coast (<a href="#chapter-r4-sub-saharan-africa">Sub-Saharan Africa</a> tells this from Songhai's side).` }
+            { p: `Morocco, in the far west, was never ruled by the Ottomans. Its sultan from <span class="num">1578</span>, <b>Ahmad al-Mansur</b>, looked south. The <b>Songhai Empire</b> controlled the trade in West African gold and the salt mines of the Sahara, and the two states quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army of about four thousand men with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at <b>Tondibi</b>. Gold and the salt trade were a large part of the reason.` },
+            { p: `He got less than he hoped: Morocco held Timbuktu and Gao, but Songhai broke into smaller states, and gold kept flowing to other buyers, including European traders on the coast (<a href="#chapter-r4-sub-saharan-africa">Sub-Saharan Africa</a> gives Songhai's side).` }
           ]
         },
         {
           heading: 'From cavalry to tax farms',
           blocks: [
-            { p: `The same change in war squeezed an old Ottoman elite. For centuries the core of the army had been the <span class="kt">sipahi</span>, a cavalryman who held a <span class="kt">timar</span>: the right to collect the taxes of a piece of land, in return for riding to war when the sultan called. In the 1550s a Habsburg ambassador, Busbecq, wrote admiringly that among the Turks "it is by merit that men rise in the service." But from the late 1500s, wars were won more and more by infantry with guns, paid in cash, and the sultan needed money more than horsemen.` },
-            { p: `So the state turned more and more timar land into <span class="kt">tax farms</span>, rights to collect a district's taxes sold to whoever offered the treasury the most, and from <span class="num">1695</span> it sold them for life. The sipahis faded (the timar system was abolished only in 1831), and tax farmers and provincial families rose in their place. That is the CED's point that the power of existing elites "fluctuated." Historians no longer call this simply decline: the state changed shape and kept going.` }
+            { p: `The same change in war squeezed an old Ottoman elite. For centuries the core of the army had been the <span class="kt">sipahi</span>, a cavalryman who held a <span class="kt">timar</span>: the right to collect the taxes of a piece of land, in return for riding to war when the sultan called. But from the late 1500s, wars were won more and more by infantry with guns, paid in cash, and the sultan needed money more than horsemen.` },
+            { p: `So the state turned more and more timar land into <span class="kt">tax farms</span>, rights to collect a district's taxes sold to the highest bidder, and from <span class="num">1695</span> it sold them for life. The sipahis faded (the timar system was abolished only in 1831), and tax farmers and provincial families rose in their place. That is the CED's point that the power of existing elites "fluctuated." Historians no longer call this simply decline: the state changed shape and kept going.` }
           ]
         },
         {
           heading: 'Pushing the Portuguese out',
           blocks: [
-            { p: `At sea the balance shifted too. In <span class="num">1622</span> Shah Abbas I of Safavid Persia, with help from ships of the English East India Company, took Hormuz from the Portuguese. Then <b>Oman</b>, an Arabian power at the mouth of the Gulf, went further. Its Ya'rubid rulers drove the Portuguese from <b>Muscat</b> in <span class="num">1650</span>. After a siege begun in <span class="num">1696</span>, they took Fort Jesus at <b>Mombasa</b>, on the Swahili coast, in <span class="num">1698</span>.` },
-            { p: `The Omanis were also traders, one of the merchant groups the CED names. Their story fits its sentence that, despite "some disruption and restructuring" by Portuguese, Spanish and Dutch merchants, "existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants."` }
+            { p: `Persia's Shah Abbas I moved Armenians by force to New Julfa, a town he built for them outside his capital, Isfahan, and after <span class="num">1605</span> its merchants traded through family networks from India to the Mediterranean. In <span class="num">1622</span> Shah Abbas, with help from ships of the English East India Company, took Hormuz from the Portuguese. Then <b>Oman</b>, an Arabian power at the mouth of the Gulf, went further. Its Ya'rubid rulers drove the Portuguese from <b>Muscat</b> in <span class="num">1650</span>. After a siege begun in <span class="num">1696</span>, they took Fort Jesus at <b>Mombasa</b>, on the Swahili coast, in <span class="num">1698</span>.` },
+            { p: `The Omanis were also traders, one of the Asian merchant groups the CED names. Their story fits its sentence: despite "some disruption and restructuring," the Indian Ocean's "existing trade networks" continued to flourish.` }
           ]
         },
         {
           heading: 'New goods in old markets',
           blocks: [
-            { p: `The Columbian Exchange reached these lands too. The CED says cash crops, grown on plantations with coerced labor, "were exported mostly to Europe and the Middle East" (<a href="#chapter-t4-3">Topic 4.3</a>). Read it with care: American sugar went mostly to Europe, and this course does not trace which plantation goods reached Middle Eastern markets. One American plant clearly arrived: tobacco reached Ottoman cities around 1600, and smoking spread so fast that Sultan Murad IV tried to ban it in the 1630s.` }
+            { p: `The Columbian Exchange reached these lands too. The CED says cash crops, grown on plantations with coerced labor, "were exported mostly to Europe and the Middle East" (<a href="#chapter-t4-3">Topic 4.3</a>); most American sugar went to Europe. Tobacco clearly reached these lands: it arrived in Ottoman cities around 1600, Ottoman farmers were soon growing their own, and smoking spread so fast that Sultan Murad IV tried to ban it in the 1630s. An American food crop, <span class="kt">maize</span>, also took root in Ottoman lands such as the Balkans and Egypt. The CED's wider point is that American foods became staple crops in parts of Europe, Asia and Africa.` }
           ]
         }
       ],
       terms: [
         ['Tondibi, 1591', 'The battle in which a Moroccan army with firearms defeated the Songhai Empire, after a dispute over gold and salt.'],
-        ['Timar', 'The right to collect the taxes of a piece of land, granted to an Ottoman cavalryman (sipahi) in return for military service.'],
+        ['Timar', 'The right to collect a piece of land\'s taxes, granted to an Ottoman cavalryman (sipahi) for military service.'],
         ['Tax farm', 'The right to collect a district\'s taxes, sold for cash; Ottoman tax farms were sold for life from 1695.'],
-        ['Fort Jesus', 'The Portuguese fortress at Mombasa, on the Swahili coast, taken by Oman in 1698.']
+        ['New Julfa', 'The Armenian merchants\' town outside Isfahan, built by Shah Abbas I after 1605.']
       ]
     }
   ],
@@ -223,7 +224,7 @@ module.exports = {
   closing: {
     heading: 'The Middle East at a Glance',
     navLabel: 'At a glance',
-    intro: `The six sides of the region's story, gathered for review. The CED says less about this region than most, so each card keeps to what the unit covers.`,
+    intro: `The six sides of the region's story, gathered for review, keeping to what the unit covers.`,
     pairs: [
       {
         category: 'Political',
@@ -233,12 +234,12 @@ module.exports = {
       {
         category: 'Religious',
         title: 'Room for other faiths, with limits',
-        body: `The Ottomans governed Christians and Jews as protected subjects who ran their own family law and paid the jizya, and Bayezid II took in Jews expelled from Spain and Portugal; Muslims stayed on top. The Portuguese came partly as crusaders, so the war at sea was religious as well as economic.`
+        body: `The Ottomans governed Christians and Jews as protected subjects who ran their own family law and paid the jizya, and took in Jews expelled from Spain and Portugal; Muslims stayed on top. The Portuguese came partly as crusaders, so the war at sea was also religious.`
       },
       {
         category: 'Social',
         title: 'Class decided a life',
-        body: `Hürrem and Kösem held power in the palace, townswomen went to court over property, and enslaved women served wealthy households. Captives from Africa were carried across the Sahara and the Red Sea to North Africa, the Mediterranean, Arabia and Persia, in trades far older than 1500.`
+        body: `Hürrem and Kösem held power in the palace, townswomen went to court over property, and enslaved women served wealthy households. Enslaved people came from north of the Black Sea, from the Caucasus and from Africa, whose captives crossed the Sahara and the Red Sea in trades far older than 1500.`
       },
       {
         category: 'Intellectual',
@@ -248,12 +249,12 @@ module.exports = {
       {
         category: 'Technological',
         title: 'Sails, star tools and guns',
-        body: `The lateen sail, common across the Islamic world's seas, rigged the first caravels, and Indian Ocean pilots read the monsoon and measured the stars with the kamal. Firearms carried Morocco's army to Tondibi and made the sultan need paid infantry more than timar cavalry.`
+        body: `The lateen sail, common across Islamic seas, rigged the first caravels; Indian Ocean pilots read the monsoon and used the kamal. Firearms carried Morocco's army to Tondibi and made the sultan need paid infantry more than timar cavalry.`
       },
       {
         category: 'Economic',
         title: 'The old routes survived',
-        body: `Portuguese forts and passes disrupted the spice trade but never closed the Red Sea route, which recovered by the mid-1500s. Gujarati, Armenian and Omani merchants kept regional markets flourishing. The CED names the Middle East, with Europe, as a main market for plantation cash crops.`
+        body: `Portuguese passes disrupted the spice trade, but the Red Sea route recovered by the mid-1500s, and Gujarati, Armenian and Omani merchants kept regional markets flourishing. The CED names the Middle East, with Europe, as a main market for plantation cash crops; tobacco and maize took root in Ottoman lands.`
       }
     ]
   }
