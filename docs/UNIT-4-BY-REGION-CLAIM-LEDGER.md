@@ -113,3 +113,45 @@ NEEDS JEFF.
 Senegal coast) and `topic-4-5.js` (the Anglo-Dutch Wars glossary), rebuilt into
 `unit-4/deep-reading-topic-4-2-exploration.html`,
 `unit-4/deep-reading-topic-4-5-maritime-empires-maintained.html` and the eBook.
+
+## External review (2026-11-14): ChatGPT five-persona stress test, supplied by Jeff
+
+Evaluated independently against the chapter sources, the CED and the topic ledgers, per CLAUDE.md.
+It raised six accuracy flags, all phrased as "verify", and five structural recommendations. It did
+not find the one defect that was actually left over from pass 3 (item 0).
+
+0. **Europe still said "the first of three Anglo-Dutch Wars".** Not raised by the review; found
+   while checking its item 6. Pass 3 (Reviewer C, 3) fixed the glossary and the next paragraph but
+   missed this sentence. Fixed: "the first of the Anglo-Dutch Wars".
+1. **Lateen sail origin.** Partly supported: the text said historians "trace it to" the Roman-era
+   Mediterranean, firmer than the evidence. Earliest evidence is Roman-era Mediterranean; first use
+   is debated. NARROWED in the Middle East chapter (paragraph and misconception note).
+2. **Single Whip and the silver ratios.** Mostly already handled: the text says silver was already
+   worth more in China before the reform, and the ratios are localized (Canton and Spain, 1590s).
+   Source is Topic 4.5 ledger row 132 (Flynn and Giraldez quoting von Glahn 1996, p. 127). Fixed by
+   attribution only: "By the historian Richard von Glahn's figures".
+3. **Ottoman protected subjects too uniform.** Supported. The chapter disclaimed the millet name
+   but still described each community answering to the state for its taxes, which is the later
+   formal arrangement. NARROWED: the tax clause removed; many Christians and Jews also used the
+   Islamic court; the arrangement differed by city and century. **For Jeff:** the shipped Topic 4.7
+   First & 10 and deep reading carry the communal-tax clause (4.7 ledger row 79, sourced to the
+   3.2 chapter); the deep reading already has the "community by community" caveat. Left unchanged.
+4. **Household slavery read as benign.** Supported for the topic chapter more than the regional
+   one. Regional chapter NARROWED: not gentle, varied by society, hereditary in some places, and
+   Songhai's rulers worked captives on large farms; glossary says enslaved people could still be
+   sold. Adjacent fix in the shipped Topic 4.4 deep reading, which said flatly "it was not slavery
+   passed down forever": now "often not ... though in some societies it was".
+5. **Casta not one rigid pyramid.** Supported. Fixed with Topic 4.7 ledger row 123 (VERIFIED,
+   Katzew): never one fixed ladder; official records used few labels; recording changed with
+   wealth, work and reputation; it differed by region.
+6. **Statistics unattributed.** Not supported: Cook and Borah, the Trans-Atlantic Slave Trade
+   Database and "one standard estimate" (Barrett, via the 4.5 ledger) are already named or hedged.
+   No change.
+
+**Structural recommendations, not adopted, for Jeff to decide.** A reasoning question after each
+chapter, a six-region comparison activity and recap prompts all conflict with the eBook's design
+rule (`docs/claude/deep-readings-and-ebook.md`: no questions, nothing submitted; the ten lesson
+modules are the only route to Canvas). A printed, unanswered "argue it" prompt per chapter, or a
+cross-region comparison table built from the closing cards, would fit the rule. If the table is
+built, note that three chapters split "Intellectual" and "Technological" in their closing cards and
+three merge them.

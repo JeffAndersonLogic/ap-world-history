@@ -104,7 +104,7 @@ module.exports = {
           heading: 'Why China wanted silver',
           blocks: [
             { p: `Through the 1500s the Ming government folded many taxes and labor duties into a single payment in silver, a reform historians call the <span class="kt">Single Whip</span>. The minister <b>Zhang Juzheng</b> pushed it across the empire around <span class="num">1580</span>. Some grain was still owed in rice, but most taxes were now paid in silver. Tens of millions of households needed silver, and China mined little of its own.` },
-            { p: `Silver was already worth more in China than in Europe, because the Ming had given up paper money and the growing economy ran on silver; the tax reform added to that demand. In the 1590s an ounce of gold bought about five and a half to seven ounces of silver at Canton (Guangzhou), China's southern port, but twelve and a half to fourteen in Spain. In other words, the same silver bought about twice as much gold in China. A merchant who carried silver to China made money on the silver itself.` }
+            { p: `Silver was already worth more in China than in Europe, because the Ming had given up paper money and the growing economy ran on silver; the tax reform added to that demand. By the historian Richard von Glahn's figures, in the 1590s an ounce of gold bought about five and a half to seven ounces of silver at Canton (Guangzhou), China's southern port, but twelve and a half to fourteen in Spain. In other words, the same silver bought about twice as much gold in China. A merchant who carried silver to China made money on the silver itself.` }
           ]
         },
         {

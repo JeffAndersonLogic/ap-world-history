@@ -68,13 +68,13 @@ module.exports = {
         {
           heading: 'Sails, winds and pilots',
           blocks: [
-            { p: `The triangular <span class="kt">lateen sail</span> lets a ship work forward against the wind. Used on the Mediterranean since Roman times and common across the seas of the Islamic world, it rigged the first Portuguese caravels, small exploring ships.` },
+            { p: `The triangular <span class="kt">lateen sail</span> lets a ship work forward against the wind. The oldest evidence for it comes from the Mediterranean of Roman times, though where it was first used is still debated. Common across the seas of the Islamic world, it rigged the first Portuguese caravels, small exploring ships.` },
             { p: `The Indian Ocean held another kind of knowledge: its winds. The <span class="kt">monsoon</span> reverses twice a year on schedule, and its sailors, Arabs among them, planned voyages around it months ahead. They measured the stars with simple tools such as the <span class="kt">kamal</span>, a small wooden card on a knotted string, and wrote their routes into pilot books. At Malindi, on the Swahili coast, Vasco da Gama took on a pilot who knew the crossing, and reached Calicut in India in May <span class="num">1498</span> (<a href="#chapter-t4-2">Topic 4.2</a>).` },
             { p: `Europeans built new ships and learned the Atlantic's harder winds for themselves. But much of what went into those voyages, the astrolabe and the tables behind it, the lateen sail and the pilot's knowledge, came from older worlds, much of it through the lands of Islam.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Arabs invented the lateen sail or that Europe got it from Arab sailors; historians trace it to the Roman-era Mediterranean. Indian Ocean pilots mostly used the kamal and wooden quadrants at sea; the astrolabe was mainly an astronomer's instrument on land.`
+              html: `Do not write that Arabs invented the lateen sail or that Europe got it from Arab sailors; its oldest evidence is from the Roman-era Mediterranean, centuries before Islam. Indian Ocean pilots mostly used the kamal and wooden quadrants at sea; the astrolabe was mainly an astronomer's instrument on land.`
             } }
           ]
         }
@@ -150,7 +150,7 @@ module.exports = {
         {
           heading: 'Room, not equality',
           blocks: [
-            { p: `The empire already ruled millions of Christians and Jews, and it governed them by an old rule of Islamic law: they were <span class="kt">protected subjects</span>. They could practice their religion, and their own leaders ran their marriages, inheritances, schools and family courts and answered to the state for their community's taxes. For the sultan this was cheap: each community ran itself and paid. (Some books call this the <span class="kt">millet</span> system. Many historians now think that name fits the more formal arrangement of the 1800s better than the looser practice of the 1500s.)` },
+            { p: `The empire already ruled millions of Christians and Jews, and it governed them by an old rule of Islamic law: they were <span class="kt">protected subjects</span>. They could practice their religion, and their own leaders ran their marriages, inheritances, schools and family courts, though many Christians and Jews also took cases to the Islamic court when it suited them. For the sultan this was cheap: each community ran much of its own life. How much differed from city to city and century to century. (Some books call this the <span class="kt">millet</span> system. Many historians now think that name fits the more formal arrangement of the 1800s better than the looser practice of the 1500s.)` },
             { p: `This was <span class="kt">accommodation</span>, making room for a group's differences. It was not equality. Christians and Jews paid a special tax, the <span class="kt">jizya</span>. In an Islamic court they generally could not testify against a Muslim, they could not freely build new churches or synagogues, and the top posts in the army and government went to Muslims.` },
             { p: `The empire shaped its peoples through these rules, and they shaped it in turn: the exiles' printing press was one example, and Christian and Jewish merchants carried much of its trade. In the CED's words, empires were "shaping and being shaped by the diverse populations they incorporated."` }
           ]

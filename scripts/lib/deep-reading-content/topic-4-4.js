@@ -267,7 +267,7 @@ module.exports = {
         {
           heading: 'The older forms that continued',
           blocks: [
-            { p: `In many African societies, slavery was old and took forms unlike the plantations. Enslaved people, often captives from wars, were taken into <b>households</b>, where they worked, served or married, and over time they or their children could become part of the family. In Kongo, a king's letter of <span class="num">1550</span> speaks of a rival's relatives "even if they are slaves," and Heywood concludes that domestic slaves in elite households were counted as part of the extended family. That was not freedom: enslaved people could still be sold. But it was not slavery passed down forever.` },
+            { p: `In many African societies, slavery was old and took forms unlike the plantations. Enslaved people, often captives from wars, were taken into <b>households</b>, where they worked, served or married, and over time they or their children could become part of the family. In Kongo, a king's letter of <span class="num">1550</span> speaks of a rival's relatives "even if they are slaves," and Heywood concludes that domestic slaves in elite households were counted as part of the extended family. That was not freedom: enslaved people could still be sold. But it was often not slavery passed down forever, though in some societies it was.` },
             { p: `Captives were also carried out of Africa by older routes than the Atlantic: north across the <b>Sahara</b> to North Africa and the Mediterranean world, and east across the Red Sea and the <b>Indian Ocean</b> to Arabia, Persia and India. Those trades were centuries old before 1500 and went on through this whole period alongside the Atlantic trade.` }
           ]
         },

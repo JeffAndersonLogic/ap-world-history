@@ -111,7 +111,7 @@ module.exports = {
         {
           heading: 'Older forms that continued',
           blocks: [
-            { p: `In many African societies, enslaved people, often war captives, were taken into households, a form historians call <span class="kt">household slavery</span>, where they worked, served or married, and over time they or their children could become part of the family. That was not freedom, since they could still be sold, but it was often not slavery handed down forever. Captives were also carried north across the Sahara to North Africa and the Mediterranean, and east across the Red Sea and the Indian Ocean to Arabia, Persia and India. These trades were centuries old and went on beside the Atlantic one: enslavement in Africa, in the College Board's words, "continued in its traditional forms."` }
+            { p: `In many African societies, enslaved people, often war captives, were taken into households, a form historians call <span class="kt">household slavery</span>, where they worked, served or married, and over time they or their children could become part of the family. That was not freedom, since they could still be sold, and it was often not slavery handed down forever, but it was not gentle either, and it differed from one society to the next. In some places slave status passed from parent to child for generations, and rulers such as Songhai's put captives to work on large farms. Captives were also carried north across the Sahara to North Africa and the Mediterranean, and east across the Red Sea and the Indian Ocean to Arabia, Persia and India. These trades were centuries old and went on beside the Atlantic one: enslavement in Africa, in the College Board's words, "continued in its traditional forms."` }
           ]
         },
         {
@@ -136,7 +136,7 @@ module.exports = {
         }
       ],
       terms: [
-        ['Household slavery', 'Slavery in which enslaved people joined a household and their children could become part of the family.'],
+        ['Household slavery', 'Slavery in which enslaved people joined a household and could, over generations, become part of the family, though they could still be sold.'],
         ['Atlantic trading system', 'The movement of goods, wealth and enslaved people among Europe, Africa and the Americas.'],
         ['Middle Passage', 'The forced crossing of the Atlantic by enslaved Africans.']
       ]
