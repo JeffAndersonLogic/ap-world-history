@@ -153,7 +153,7 @@ module.exports = {
         ['Diu, 1509', 'The sea battle in which the Portuguese defeated a fleet of Mamluk Egypt and Gujarat.'],
         ['Tondibi, 1591', 'The battle in which a Moroccan army with firearms defeated the Songhai Empire, after a dispute over gold and salt.'],
         ['Amboyna, 1623', 'The execution of English East India Company men by VOC officials on Ambon, in the rivalry over the spice islands.'],
-        ['Anglo-Dutch Wars', 'Three wars at sea between England and the Dutch Republic, 1652 to 1674, fought largely over trade and shipping.']
+        ['Anglo-Dutch Wars', 'Wars at sea between England and the Dutch Republic; the first three, 1652 to 1674, were fought largely over trade and shipping (a fourth followed in 1780).']
       ]
     },
 
