@@ -199,6 +199,13 @@ a.eb-toc-part-link:focus-visible{outline-color:var(--gold)}
 }
 .eb-chapter-return a{color:var(--oxidized);text-decoration:none;font-weight:600}
 .eb-chapter-return a:hover,.eb-chapter-return a:focus-visible{text-decoration:underline}
+/* Links inside a chapter's prose, which the regional chapters (Unit 4 by Region)
+   were the first to use: without this they rendered in the browser's default blue,
+   then purple once visited. Oxidized is the light-surface link colour (7.9:1 on
+   paper); the underline keeps a link recognisable without relying on colour
+   (WCAG 1.4.1), since a running sentence gives no other cue. */
+.eb-chapter .dr-part a{color:var(--oxidized);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+.eb-chapter .dr-part a:hover,.eb-chapter .dr-part a:focus-visible{text-decoration-thickness:2px}
 
 /* The chapter's own how-to sits directly under the opener, so it should not
    also carry the standalone page's large top margin. */
