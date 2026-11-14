@@ -32,7 +32,7 @@ module.exports = {
   region: 'The Middle East and Dar al-Islam',
   titleHtml: 'The Middle East and <em>Dar al-Islam</em>',
   deck: `Between 1450 and 1750 the new ocean routes did not simply pass the Islamic lands by. Their instruments and tables sailed in European ships, their states fought the Portuguese for the spice trade and kept much of it, and the Ottoman Empire grew strong by ruling many peoples.`,
-  topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.7', '4.8'],
+  topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.7'],
   ced: [
     'KC-4.1.II',
     'KC-4.1.II.A',
@@ -60,9 +60,9 @@ module.exports = {
         {
           heading: 'A world of scholars and sailors',
           blocks: [
-            { p: `In 1450 the heartlands of Islam stretched from Morocco through Egypt and Arabia to Persia. Historians call this world <span class="kt">Dar al-Islam</span>, Arabic for "the house of Islam": not one state, but lands joined by Islamic law, by Arabic as the language of scholarship, and by long trade routes. (Unit 3 told how the Ottoman and Safavid empires rose inside it.) The CED's sentence for this story is that "knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation" (<a href="#chapter-t4-1">Topic 4.1</a>).` },
-            { p: `Take the <span class="kt">astrolabe</span>, which measures how high the sun or a star stands above the horizon. A Greek idea made precise by astronomers in the Islamic world, it reached Europe through Muslim Spain, and so did the mathematics behind it. In Toledo, in the 1100s and 1200s, Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin, among them Ptolemy's great book of Greek astronomy, which scholars in the Islamic world had preserved, studied, and corrected in Arabic.` },
-            { p: `To turn the noon sun's height into a <span class="kt">latitude</span> (how far north or south of the equator a ship is), a pilot also needs a table of where the sun stands on each day of the year: the CED's "astronomical charts." Muslim and Jewish astronomers in Toledo built such tables around <span class="num">1080</span>, and later tables grew from that line, down to the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>. By the 1480s Portuguese pilots carried a heavy sea version of the instrument, the mariner's astrolabe.` }
+            { p: `In 1450 the heartlands of Islam stretched from Morocco through Egypt and Arabia to Persia. Muslim scholars of law called this world <span class="kt">Dar al-Islam</span>, Arabic for "the house of Islam": not one state, but lands joined by Islamic law, by Arabic as the language of scholarship, and by long trade routes. (Unit 3 told how the Ottoman and Safavid empires rose inside it.) The CED's sentence for this story is that "knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation" (<a href="#chapter-t4-1">Topic 4.1</a>).` },
+            { p: `Take the <span class="kt">astrolabe</span>, which measures how high the sun or a star stands above the horizon. A Greek idea made precise by astronomers in the Islamic world, it reached Europe through Muslim Spain, and so did the mathematics behind it. In Toledo, in the 1100s and 1200s, Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin. Among those books was Ptolemy's great book of Greek astronomy, which scholars in the Islamic world had preserved, studied, and corrected in Arabic.` },
+            { p: `By the 1480s Portuguese pilots carried a heavy sea version of the astrolabe, the mariner's astrolabe. To turn the noon sun's height into a <span class="kt">latitude</span> (how far north or south of the equator a ship is), a pilot also needs a table of where the sun stands on each day of the year: the CED's <span class="kt">astronomical charts</span>. Muslim and Jewish astronomers in Toledo built such tables around <span class="num">1080</span>, and later tables grew from that line, down to those of Abraham Zacuto, composed in the 1470s and printed in Portugal in <span class="num">1496</span>.` }
           ]
         },
         {
@@ -100,8 +100,8 @@ module.exports = {
         {
           heading: 'The old road and the newcomers',
           blocks: [
-            { p: `Before 1500, pepper from India crossed the ocean to the Red Sea or the Persian Gulf, then went overland to the Mediterranean and Venetian buyers. It was taxed and resold at every step, and most of those profits went to Muslim states and merchants. Egypt, the richest stop, was ruled by the <span class="kt">Mamluks</span>, sultans drawn from an elite of slave soldiers.` },
-            { p: `The Portuguese wanted to cut out that chain. From <span class="num">1502</span> they attacked Muslim ships and sold passes, the <span class="kt">cartaz</span>, to many Asian ships; later they took ports at the ocean's narrow places, among them <b>Hormuz</b>, at the mouth of the Persian Gulf, in <span class="num">1515</span> (<a href="#chapter-t4-4">Topic 4.4</a>). Papal bulls (orders from the pope) of the 1450s had framed their expansion as war on Muslim powers, so the rivalry was about religion as well as money.` },
+            { p: `Before 1500, pepper from India crossed the ocean to the Red Sea or the Persian Gulf, then went overland to the Mediterranean and Venetian buyers. It was taxed and resold at every step, and a large share of that money went to the Muslim states and merchants along the way. Egypt, the richest stop, was ruled by the <span class="kt">Mamluks</span>, sultans drawn from an elite of slave soldiers.` },
+            { p: `The Portuguese wanted to cut out that chain. From <span class="num">1500</span> they attacked Muslim ships, and from <span class="num">1502</span> they sold passes, the <span class="kt">cartaz</span>, to many Asian ships; later they took ports at the ocean's narrow places, among them <b>Hormuz</b>, at the mouth of the Persian Gulf, in <span class="num">1515</span> (<a href="#chapter-t4-4">Topic 4.4</a>). Papal bulls (orders from the pope) of the 1450s had framed their expansion as war on Muslim powers, so the rivalry was about religion as well as money.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -151,7 +151,8 @@ module.exports = {
           heading: 'Room, not equality',
           blocks: [
             { p: `The empire already ruled millions of Christians and Jews, and it governed them by an old rule of Islamic law: they were <span class="kt">protected subjects</span>. They could practice their religion, and their own leaders ran their marriages, inheritances, schools and family courts and answered to the state for their community's taxes. For the sultan this was cheap: each community ran itself and paid. (You may read that this was the <span class="kt">millet</span> system; the tidy version is mostly a nineteenth-century arrangement.)` },
-            { p: `This was <span class="kt">accommodation</span>, making room for a group's differences. It was not equality. Christians and Jews paid a special tax, the <span class="kt">jizya</span>. In an Islamic court they generally could not testify against a Muslim, they could not freely build new churches or synagogues, and the top posts in the army and government went to Muslims. In the CED's words, empires were "shaping and being shaped by the diverse populations they incorporated" (<a href="#chapter-t4-8">Topic 4.8</a>).` }
+            { p: `This was <span class="kt">accommodation</span>, making room for a group's differences. It was not equality. Christians and Jews paid a special tax, the <span class="kt">jizya</span>. In an Islamic court they generally could not testify against a Muslim, they could not freely build new churches or synagogues, and the top posts in the army and government went to Muslims.` },
+            { p: `The empire shaped its peoples through these rules, and they shaped it in turn: the exiles' printing press was one example, and Christian and Jewish merchants carried much of its trade. In the CED's words, empires were "shaping and being shaped by the diverse populations they incorporated."` }
           ]
         },
         {
@@ -182,13 +183,13 @@ module.exports = {
       name: 'Guns, Cash and Pushing Back',
       navLabel: 'Pushing back',
       dates: '1578 to 1750 &nbsp;·&nbsp; Morocco, the Ottoman cavalry, Persia and Oman',
-      thesis: `By the late 1500s war ran on firearms and money. Morocco sent gunmen across the Sahara, the Ottoman sultan traded cavalry for cash, and Persia and Oman drove out the Portuguese.`,
+      thesis: `By the late 1500s war ran on firearms and money. Morocco sent gunmen across the Sahara, the Ottoman sultan traded cavalry for cash, and Persia and Oman drove out the Portuguese, while American crops took root in Ottoman fields.`,
       parts: [
         {
           heading: 'Morocco crosses the Sahara',
           blocks: [
-            { p: `Morocco, in the far west, was never ruled by the Ottomans. Its sultan from <span class="num">1578</span>, <b>Ahmad al-Mansur</b>, looked south. The <b>Songhai Empire</b> controlled the trade in West African gold and the salt mines of the Sahara, and the two states quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army of about four thousand men with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at <b>Tondibi</b>. Gold and the salt trade were a large part of the reason.` },
-            { p: `He got less than he hoped: Morocco held Timbuktu and Gao, but Songhai broke into smaller states, and gold kept flowing to other buyers, including European traders on the coast (<a href="#chapter-r4-sub-saharan-africa">Sub-Saharan Africa</a> gives Songhai's side).` }
+            { p: `Morocco, in the far west, was never ruled by the Ottomans. Its sultan from <span class="num">1578</span>, <b>Ahmad al-Mansur</b>, looked south. The <b>Songhai Empire</b> controlled the trade in West African gold and the salt mines of the Sahara, and the two states quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army of about four thousand men with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at <b>Tondibi</b>. Gold and the salt trade were a large part of the reason: another economic dispute that turned to war (<a href="#chapter-t4-5">Topic 4.5</a>).` },
+            { p: `For Morocco the prize proved hard to hold. Al-Mansur seems to have believed Songhai held the gold mines themselves, but it did not. His pashas governed Timbuktu, yet the gold supply never came under Moroccan control, and much of it went to other buyers, including European traders on the coast (<a href="#chapter-r4-sub-saharan-africa">Sub-Saharan Africa</a> gives Songhai's side).` }
           ]
         },
         {
@@ -199,16 +200,17 @@ module.exports = {
           ]
         },
         {
-          heading: 'Pushing the Portuguese out',
+          heading: 'Persia and Oman push back',
           blocks: [
-            { p: `Persia's Shah Abbas I moved Armenians by force to New Julfa, a town he built for them outside his capital, Isfahan, and after <span class="num">1605</span> its merchants traded through family networks from India to the Mediterranean. In <span class="num">1622</span> Shah Abbas, with help from ships of the English East India Company, took Hormuz from the Portuguese. Then <b>Oman</b>, an Arabian power at the mouth of the Gulf, went further. Its Ya'rubid rulers drove the Portuguese from <b>Muscat</b> in <span class="num">1650</span>. After a siege begun in <span class="num">1696</span>, they took Fort Jesus at <b>Mombasa</b>, on the Swahili coast, in <span class="num">1698</span>.` },
+            { p: `Persia's Safavid shah Abbas I moved Armenians by force to <span class="kt">New Julfa</span>, a town outside his capital, Isfahan, in <span class="num">1605</span>. Its merchants traded through family firms and partnerships from India to the Mediterranean, the "established commercial practices" by which, in the CED's words, regional markets "continued to flourish."` },
+            { p: `In <span class="num">1622</span> Shah Abbas, with help from ships of the English East India Company, took Hormuz from the Portuguese. Then <b>Oman</b>, an Arabian power at the mouth of the Gulf, went further. Its Ya'rubid rulers drove the Portuguese from <b>Muscat</b> in <span class="num">1650</span>. After a siege begun in <span class="num">1696</span>, they took the Portuguese fortress of Fort Jesus at <b>Mombasa</b>, on the Swahili coast, in <span class="num">1698</span>.` },
             { p: `The Omanis were also traders, one of the Asian merchant groups the CED names. Their story fits its sentence: despite "some disruption and restructuring," the Indian Ocean's "existing trade networks" continued to flourish.` }
           ]
         },
         {
           heading: 'New goods in old markets',
           blocks: [
-            { p: `The Columbian Exchange reached these lands too. The CED says cash crops, grown on plantations with coerced labor, "were exported mostly to Europe and the Middle East" (<a href="#chapter-t4-3">Topic 4.3</a>); most American sugar went to Europe. Tobacco clearly reached these lands: it arrived in Ottoman cities around 1600, Ottoman farmers were soon growing their own, and smoking spread so fast that Sultan Murad IV tried to ban it in the 1630s. An American food crop, <span class="kt">maize</span>, also took root in Ottoman lands such as the Balkans and Egypt. The CED's wider point is that American foods became staple crops in parts of Europe, Asia and Africa.` }
+            { p: `The Columbian Exchange reached these lands too. The CED says cash crops, grown on plantations with coerced labor, "were exported mostly to Europe and the Middle East" (<a href="#chapter-t4-3">Topic 4.3</a>); most American sugar went to Europe. Tobacco did reach these lands, though not mainly as a plantation import: it arrived in Ottoman cities around 1600, Ottoman farmers were soon growing their own, and smoking spread so fast that Sultan Murad IV tried to ban it in the 1630s. An American food crop, <span class="kt">maize</span>, also took root in Ottoman lands such as the Balkans and Egypt. The CED's wider point is that American foods became staple crops in parts of Europe, Asia and Africa.` }
           ]
         }
       ],
@@ -216,7 +218,7 @@ module.exports = {
         ['Tondibi, 1591', 'The battle in which a Moroccan army with firearms defeated the Songhai Empire, after a dispute over gold and salt.'],
         ['Timar', 'The right to collect a piece of land\'s taxes, granted to an Ottoman cavalryman (sipahi) for military service.'],
         ['Tax farm', 'The right to collect a district\'s taxes, sold for cash; Ottoman tax farms were sold for life from 1695.'],
-        ['New Julfa', 'The Armenian merchants\' town outside Isfahan, built by Shah Abbas I after 1605.']
+        ['New Julfa', 'The Armenian merchants\' town outside Isfahan, settled from 1605 by Armenians Shah Abbas I moved there by force.']
       ]
     }
   ],
