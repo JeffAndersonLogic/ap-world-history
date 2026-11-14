@@ -243,6 +243,25 @@ function renderEmpire(empire, index, prefix, listen, scope) {
   );
 }
 
+/**
+ * An "Argue it" prompt: one historical reasoning question at the end of a
+ * chapter, printed and never collected. It is a note, not a form: no textarea,
+ * no capture, no script, because nothing is submitted from a deep reading or
+ * the eBook (the ten lesson modules are the only route to Canvas). Optional,
+ * so a closing without one renders byte for byte as before. The regional
+ * chapters carry one each, and region-chapters.test.js holds its reasoning
+ * move to the CED's reasoning processes for that unit.
+ */
+function renderArgue(argue) {
+  if (!argue || !argue.prompt) return '';
+  return (
+    `    <aside class="dr-note argue"><b>Argue it: ${esc(argue.move)}</b>` +
+    `<p>${argue.prompt}</p>` +
+    `<p class="dr-argue-how">Nothing here is handed in. Make your case in your head, out loud, or on paper, ` +
+    `and back it with evidence from this chapter.</p></aside>\n`
+  );
+}
+
 function renderComparisons(closing, prefix, listen, scope) {
   if (!closing || !closing.pairs || !closing.pairs.length) return '';
   const cards = closing.pairs
@@ -261,6 +280,7 @@ function renderComparisons(closing, prefix, listen, scope) {
     `    <p>${closing.intro}</p>\n` +
     listenMount(listen, '    ') +
     `    <div class="dr-pairs">\n${cards}    </div>\n` +
+    renderArgue(closing.argue) +
     `  </section>\n`
   );
 }

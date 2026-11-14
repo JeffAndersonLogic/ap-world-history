@@ -191,6 +191,10 @@ module.exports = {
     heading: 'South and Southeast Asia at a Glance',
     navLabel: 'At a glance',
     intro: `The region's story, sorted for review. The unit says little about this region's ideas, so two sides share one card.`,
+    argue: {
+      move: 'Continuity and Change',
+      prompt: `By 1750, had armed European companies taken over the Indian Ocean trade? Make a claim, then support it with one change and one continuity from this chapter.`
+    },
     pairs: [
       { category: 'Political', title: 'Europe held ports and a few islands; Asian states held most of the land', body: `Portugal seized Goa, Malacca and Hormuz from 1510 to 1515, Spain founded Manila in 1571, and the Dutch took Banda in 1621 and Malacca in 1641. Mataram and Makassar fought back. On land the Mughals ruled, and Aurangzeb never overcame the Marathas.` },
       { category: 'Religious', title: 'Faiths spread and collided along the routes', body: `Islam kept spreading in Southeast Asia with merchants and teachers. Christianity spread through the Philippines after 1565, and Goa's Inquisition, from 1560, tried converts suspected of keeping old practices. Muslim powers fought Portugal for the ocean's trade.` },

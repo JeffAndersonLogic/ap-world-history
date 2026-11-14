@@ -237,6 +237,10 @@ module.exports = {
     heading: 'East Asia at a Glance',
     navLabel: 'At a glance',
     intro: `The same story, gathered by its sides for review.`,
+    argue: {
+      move: 'Continuity and Change',
+      prompt: `Between 1450 and 1750, Europeans came to East Asia's ports, Christianity arrived, and the Manchus conquered China. Through all of it, did control of China's and Japan's foreign trade stay in East Asian hands? Make a claim, then support it with one change and one continuity from this chapter.`
+    },
     pairs: [
       {
         category: 'Political',

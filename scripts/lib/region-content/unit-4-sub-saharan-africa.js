@@ -236,6 +236,10 @@ module.exports = {
     heading: 'Sub-Saharan Africa at a Glance',
     navLabel: 'At a glance',
     intro: `The same story, sorted into its six sides for review.`,
+    argue: {
+      move: 'Causation',
+      prompt: `The Atlantic trade helped Asante grow strong, but in Kongo the trade that had first strengthened the king turned against the kingdom. Explain why the same trade had such different effects on the two kingdoms, using evidence about each from this chapter.`
+    },
     pairs: [
       {
         category: 'Political',

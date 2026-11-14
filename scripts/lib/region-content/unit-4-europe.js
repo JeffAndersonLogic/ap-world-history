@@ -178,6 +178,10 @@ module.exports = {
     heading: 'Europe at a Glance',
     navLabel: 'At a glance',
     intro: `The six sides of Europe's story from <span class="num">1450</span> to <span class="num">1750</span>, gathered for review.`,
+    argue: {
+      move: 'Causation',
+      prompt: `Why did Europe's kings and queens, not only its merchants, pay for ocean voyages and back armed trading companies? Explain two causes, each with evidence from this chapter.`
+    },
     pairs: [
       { category: 'Political', title: 'Crowns built sea empires and tamed nobles', body: `Rival crowns, first Portugal and Spain, then England, France and the Dutch, sponsored voyages and built maritime empires. At home, the Fronde collapsed, Razin's revolt was crushed, and Louis XIV and Peter the Great curbed their nobles. In England, Parliament limited the crown instead.` },
       { category: 'Religious', title: 'Faith pushed outward and divided the rivals', body: `Expansion began as a crusade at Ceuta in <span class="num">1415</span>. Spain expelled Jews who would not convert in <span class="num">1492</span>, and Portugal forced baptisms in <span class="num">1497</span>. Missionaries carried Catholic Christianity overseas, and Protestant England and the Dutch fought Catholic Spain for trade and faith at once.` },

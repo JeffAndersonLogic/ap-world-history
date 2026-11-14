@@ -227,6 +227,10 @@ module.exports = {
     heading: 'The Middle East at a Glance',
     navLabel: 'At a glance',
     intro: `The six sides of the region's story, gathered for review, keeping to what the unit covers.`,
+    argue: {
+      move: 'Continuity and Change',
+      prompt: `After 1500 the Portuguese attacked the old spice route with warships and passes. By 1600, how much had that route changed? Make a claim, then support it with one change and one continuity from this chapter.`
+    },
     pairs: [
       {
         category: 'Political',

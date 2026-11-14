@@ -25,7 +25,13 @@
  *   5. its closing cards cover all six sides of a region's story: political,
  *      religious, social, intellectual, technological and economic (two may
  *      share a card, but none may be missing);
- *   6. no em or en dash appears anywhere in it (the house writing rule).
+ *   6. no em or en dash appears anywhere in it (the house writing rule);
+ *   7. it ends with one "Argue it" prompt (closing.argue) whose reasoning move
+ *      is a reasoning process the CED gives a topic in that unit, so the
+ *      prompt asks for the thinking the unit actually assesses, and the prompt
+ *      carries no form control: the eBook collects nothing, and the ten lesson
+ *      modules stay the only route to Canvas. The rendered chapter must show
+ *      it, so a renderer that drops the field fails here too.
  *
  * And per unit: **every Key Concept in the CED unit is taught by at least one
  * regional chapter**, so the regional retelling cannot quietly drop the part
@@ -44,6 +50,7 @@
 const fs = require('fs');
 const path = require('path');
 const { VOLUMES, chapterFile, REGION_DIR } = require('../build-ebook');
+const { renderChapterBody } = require('../lib/deep-reading-page');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const SIX = ['political', 'religious', 'social', 'intellectual', 'technological', 'economic'];
@@ -61,6 +68,11 @@ function cedCodes(ced) {
     for (const kc of topic.keyConcepts || []) codes.add(kc.code);
   }
   return codes;
+}
+
+/** The reasoning processes the CED gives the unit's topics, e.g. Causation. */
+function cedMoves(ced) {
+  return new Set(Object.values(ced.topics).map(t => t.reasoningProcess).filter(Boolean));
 }
 
 /** Every string anywhere inside a value, for the dash and link sweeps. */
@@ -126,6 +138,23 @@ function checkRegion(mod, fileBase, ced, volumeKeys) {
     if (!cats.includes(side)) problems.push(`closing cards have no ${side} card`);
   }
 
+  const argue = mod.closing && mod.closing.argue;
+  if (!argue || !String(argue.prompt || '').trim()) {
+    problems.push('no Argue it prompt (closing.argue): every regional chapter ends with one');
+  } else {
+    const moves = cedMoves(ced);
+    if (!moves.has(argue.move)) {
+      problems.push(`Argue it move "${argue.move}" is not a reasoning process the CED gives Unit ${unit} (${[...moves].join(', ')})`);
+    }
+    if (/<\s*(textarea|input|form|select|button|script)\b/i.test(argue.prompt)) {
+      problems.push('Argue it prompt carries a form control or script; the eBook collects nothing');
+    }
+    const html = renderChapterBody(mod, { idPrefix: mod.topicKey });
+    if (!html.includes('class="dr-note argue"') || !html.includes(argue.prompt)) {
+      problems.push('Argue it prompt does not appear in the rendered chapter');
+    }
+  }
+
   return problems;
 }
 
@@ -146,8 +175,8 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
 {
   const fakeCed = {
     topics: {
-      '9.1': { keyConcepts: [{ code: 'KC-A' }, { code: 'KC-B' }] },
-      '9.2': { keyConcepts: [{ code: 'KC-C' }] }
+      '9.1': { reasoningProcess: 'Causation', keyConcepts: [{ code: 'KC-A' }, { code: 'KC-B' }] },
+      '9.2': { reasoningProcess: 'Continuity and Change', keyConcepts: [{ code: 'KC-C' }] }
     }
   };
   const keys = new Map([['t9-1', 'topic-9-1-x'], ['t9-2', 'topic-9-2-y'], ['r9-north', 'region-9-north']]);
@@ -156,7 +185,11 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     titleHtml: 'The <em>North</em>', deck: 'A deck.',
     topics: ['9.1'], ced: ['KC-A', 'KC-B', 'KC-C'],
     empires: [{ id: 'a', parts: [{ heading: 'h', blocks: [{ p: 'See <a href="#chapter-t9-1">Topic 9.1</a>.' }] }] }],
-    closing: { pairs: SIX.map(c => ({ category: c[0].toUpperCase() + c.slice(1), title: 't', body: 'b' })) }
+    closing: {
+      heading: 'At a glance', intro: 'i',
+      argue: { move: 'Causation', prompt: 'Why did it happen?' },
+      pairs: SIX.map(c => ({ category: c[0].toUpperCase() + c.slice(1), title: 't', body: 'b' }))
+    }
   });
 
   const baseline = checkRegion(good(), 'unit-9-north', fakeCed, keys);
@@ -171,7 +204,14 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     ['an em dash in prose', m => { m.deck = 'one — two'; }, /em or en dash/],
     ['a missing closing category', m => { m.closing.pairs.pop(); }, /no economic card/],
     ['a slug that does not match its file', m => { m.slug = 'region-9-south'; }, /slug/],
-    ['no ced codes at all', m => { m.ced = []; }, /no ced codes/]
+    ['no ced codes at all', m => { m.ced = []; }, /no ced codes/],
+    ['no Argue it prompt', m => { delete m.closing.argue; }, /no Argue it prompt/],
+    ['an Argue it move the unit\'s CED does not use', m => { m.closing.argue.move = 'Comparison'; }, /not a reasoning process the CED gives/],
+    ['an Argue it prompt with an answer box', m => { m.closing.argue.prompt += '<textarea></textarea>'; }, /form control/],
+    ['a blank Argue it prompt', m => { m.closing.argue.prompt = ' '; }, /no Argue it prompt/],
+    // The renderer skips a closing with no cards, prompt included: the
+    // rendered-output check must notice the prompt never reached the page.
+    ['an Argue it prompt the renderer never shows', m => { m.closing.pairs = []; }, /does not appear in the rendered chapter/]
   ];
   for (const [name, mutate, expect] of controls) {
     const m = good();

@@ -155,3 +155,20 @@ modules are the only route to Canvas). A printed, unanswered "argue it" prompt p
 cross-region comparison table built from the closing cards, would fit the rule. If the table is
 built, note that three chapters split "Intellectual" and "Technological" in their closing cards and
 three merge them.
+
+## Argue it prompts (2026-11-14, Jeff: "Add the Argue it prompts and ship it")
+
+Each regional chapter now ends with one printed "Argue it" prompt (`closing.argue`), rendered by
+`renderArgue` in `scripts/lib/deep-reading-page.js` as a note, never a form: nothing is collected,
+and the page says so. Each move is a reasoning process the Unit 4 CED uses (only Causation and
+Continuity and Change appear there, so no Comparison prompt): Continuity and Change for East Asia,
+South and Southeast Asia and the Middle East; Causation for Sub-Saharan Africa, Europe and the
+Americas. `scripts/test/region-chapters.test.js` requires one per chapter, holds the move to the
+unit's CED, refuses a form control, and checks the prompt reaches the rendered chapter, with a
+negative control for each.
+
+Each prompt was checked as answerable from its own chapter. One was narrowed before shipping: the
+Africa prompt said the trade "helped tear Kongo apart", further than the chapter goes (the causes of
+Kongo's civil wars are argued); it now uses the chapter's own claim, that the trade which had
+strengthened the king "turned against the kingdom". The six prompts were not put through a fresh
+reviewer loop; this is a review aid, not a topic build.

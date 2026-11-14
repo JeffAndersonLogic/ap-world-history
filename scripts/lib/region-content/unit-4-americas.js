@@ -183,6 +183,10 @@ module.exports = {
     heading: 'The Americas at a Glance',
     navLabel: 'At a glance',
     intro: `The region's story, sorted for review. The unit says little about this region's ideas, so two sides share one card.`,
+    argue: {
+      move: 'Causation',
+      prompt: `Disease killed more Indigenous people than anything else, yet the chapter says people made choices too. Explain how disease and human choices worked together to change who lived and worked in the Americas. Use one piece of evidence about disease and one about a labor system.`
+    },
     pairs: [
       { category: 'Political', title: 'Rival empires, and local pushback', body: `Spain sponsored Columbus in 1492, and Spain, Portugal, England, France and the Dutch built rival empires here. The Pueblo Revolt of 1680 won twelve years of self-rule and better terms; Metacom's War ended in defeat.` },
       { category: 'Religious', title: 'Christianity spread, clashed and blended', body: `Missionaries spread Christianity, and priests in Peru attacked Andean religion from about 1610. Faiths also blended: Nahua Christians made the Virgin of Guadalupe their own, and enslaved Africans in Saint-Domingue built Vodou.` },
