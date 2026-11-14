@@ -27,8 +27,8 @@ module.exports = {
   unit: '4',
   region: 'East Asia',
   titleHtml: 'East <em>Asia</em>',
-  deck: `From 1450 to 1750, China and Japan dealt with Europeans on their own terms. Follow silver as a Chinese tax law pulls it across oceans, Japan's rulers as they choose which Europeans may stay, and the Manchus as they conquer China.`,
-  topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.7'],
+  deck: `From 1450 to 1750, China and Japan dealt with Europeans on their own terms. Follow silver as Chinese demand, made sharper by a tax law, pulls it across oceans, Japan's rulers as they choose which Europeans may stay, and the Manchus as they conquer China.`,
+  topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7'],
   ced: [
     'KC-4.1.II',
     'KC-4.1.III.A',
@@ -60,22 +60,21 @@ module.exports = {
         {
           heading: 'The Ming and the sea',
           blocks: [
-            { p: `The <span class="kt">Ming dynasty</span> had ruled China since <span class="num">1368</span>. In the early 1400s the Ming admiral <b>Zheng He</b> led large fleets as far as East Africa, and then the court stopped sending them after <span class="num">1433</span>. China did not stop trading. Chinese merchants kept sailing across Southeast Asia, often against the law, and the court allowed official foreign trade mainly through the <span class="kt">tribute system</span>: foreign rulers sent envoys to acknowledge the emperor, received gifts, and were allowed to trade.` },
-            { p: `The Ming also restricted its own subjects' private overseas trade, because it wanted to decide who came and went on its coasts.` }
+            { p: `The <span class="kt">Ming dynasty</span> had ruled China since <span class="num">1368</span>. In the early 1400s the Ming admiral <b>Zheng He</b> led large fleets as far as East Africa, and then the court stopped sending them after <span class="num">1433</span>. China did not stop trading, but the Ming restricted its subjects' private overseas trade, because it wanted to decide who came and went on its coasts. Chinese merchants kept sailing across Southeast Asia, often against the law, and the court allowed official foreign trade mainly through the <span class="kt">tribute system</span>: foreign rulers sent envoys to acknowledge the emperor, received gifts, and were allowed to trade.` }
           ]
         },
         {
           heading: 'Chinese tools on European ships',
           blocks: [
-            { p: `The ships that came looking for China carried Chinese ideas. The <span class="kt">magnetic compass</span> was first used at sea in China, by about <span class="num">1100</span>, and gunpowder was Chinese too. Europeans combined them with Greek and Islamic instruments to build ships that could cross oceans and come back (<a href="#chapter-t4-1">Topic 4.1</a>). The College Board's words are that knowledge "from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."` }
+            { p: `The ships that came looking for China carried Chinese ideas. The <span class="kt">magnetic compass</span> was first used at sea in China, by about <span class="num">1100</span>, and gunpowder was Chinese too. Europeans combined them with Greek and Islamic instruments and Mediterranean sails, so that their ships could cross oceans, find their way back, and arrive armed (<a href="#chapter-t4-1">Topic 4.1</a>). The College Board's words are that knowledge "from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."` }
           ]
         },
         {
           heading: 'Portugal at Macau',
           blocks: [
-            { p: `Portugal built a <span class="kt">trading-post empire</span>, a chain of fortified ports rather than conquered land. After taking Malacca, on the strait into the South China Sea, in <span class="num">1511</span>, its ships sailed on to China (<a href="#chapter-t4-2">Topic 4.2</a>).` },
+            { p: `Portugal reached India by sea in <span class="num">1498</span> (<a href="#chapter-t4-2">Topic 4.2</a>) and built a <span class="kt">trading-post empire</span>, a chain of fortified ports rather than conquered land. After taking Malacca, on the strait into the South China Sea, in <span class="num">1511</span>, its ships sailed on to China.` },
             { p: `From <span class="num">1557</span>, Chinese provincial officials let Portuguese merchants settle permanently at <b>Macau</b>, a small peninsula on the south coast. It was not a conquest. Chinese officials kept authority over the port, and the Portuguese paid them a yearly ground rent. Macau existed because China allowed it.` },
-            { p: `Why allow it? Ming law barred Chinese merchants from trading directly with Japan, and even when the Ming eased their limits in <span class="num">1567</span> and licensed Chinese merchants to trade overseas, the ban on Japan stayed. So the Portuguese stepped into the gap. They carried Chinese silk to Japan and Japanese silver back to China, and Macau let Chinese officials keep that trade in one place they could watch (<a href="#chapter-t4-4">Topic 4.4</a>). The post made Portugal's merchants money, on China's conditions.` },
+            { p: `Why allow it? Ming law barred Chinese merchants from trading directly with Japan, and even when the Ming eased its limits in <span class="num">1567</span> and licensed Chinese merchants to trade overseas, the ban on Japan stayed. So the Portuguese stepped into the gap. They carried Chinese silk to Japan and Japanese silver back to China, and Macau let Chinese officials keep that trade in one place they could watch (<a href="#chapter-t4-4">Topic 4.4</a>). The post made Portugal's merchants money, on China's conditions.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -99,21 +98,21 @@ module.exports = {
       name: 'Silver Comes to China',
       navLabel: 'Silver and silk',
       dates: '1545 to 1640s &nbsp;·&nbsp; The Single Whip, Manila, silk, and sweet potatoes',
-      thesis: `Spain's American colonies mined the silver, but a Chinese tax law decided where much of it went. China paid for it with silk and porcelain made by ordinary families, and the same ships helped carry American crops to China.`,
+      thesis: `Silver from Spain's American colonies and from Japan poured into China, where it was worth more than in Europe and where a tax law made it more necessary still. China paid for it with silk and porcelain made by ordinary families, and the same ships helped carry American crops to China.`,
       parts: [
         {
-          heading: 'A tax that pulled silver around the world',
+          heading: 'Why China wanted silver',
           blocks: [
             { p: `Through the 1500s the Ming government folded many taxes and labor duties into a single payment in silver, a reform historians call the <span class="kt">Single Whip</span>. The minister <b>Zhang Juzheng</b> pushed it across the empire around <span class="num">1580</span>. Some grain was still owed in rice, but most taxes were now paid in silver. Tens of millions of households needed silver, and China mined little of its own.` },
-            { p: `Silver was already worth more in China than in Europe, because the Ming had given up paper money and the growing economy ran on silver; the tax reform added to that demand. In the 1590s an ounce of gold bought about five and a half to seven ounces of silver at Canton, but twelve and a half to fourteen in Spain. A merchant who carried silver to China made money on the silver itself.` }
+            { p: `Silver was already worth more in China than in Europe, because the Ming had given up paper money and the growing economy ran on silver; the tax reform added to that demand. In the 1590s an ounce of gold bought about five and a half to seven ounces of silver at Canton (Guangzhou), China's southern port, but twelve and a half to fourteen in Spain. In other words, the same silver bought about twice as much gold in China. A merchant who carried silver to China made money on the silver itself.` }
           ]
         },
         {
-          heading: 'Two roads to China',
+          heading: 'Three roads to China',
           blocks: [
-            { p: `Much of the silver came from Japan, carried by Portuguese ships through Macau and by Chinese and Japanese traders; in the decades around <span class="num">1600</span>, Japan may have sent China as much silver as the Americas did. Over the whole period, though, more came from the Americas, from <b>Potosí</b> in the Andes, mined from <span class="num">1545</span>, and Zacatecas in Mexico, from <span class="num">1546</span> (see <a href="#chapter-r4-americas">the Americas</a>). Some crossed the Atlantic and went on to Asia around Africa in European ships.` },
-            { p: `The other road crossed the Pacific. A Spanish expedition found a way back across the Pacific in <span class="num">1565</span>, and in <span class="num">1571</span> the Spanish founded <b>Manila</b> in the Philippines. The College Board says that voyages "across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade." From then on the <span class="kt">Manila galleon</span>, usually one or two ships a year, carried silver from Acapulco in Mexico to Manila.` },
-            { p: `At Manila, Chinese merchants from Fujian and nearby provinces sailed in with silk and porcelain. Antonio de Morga, a Spanish official who had served in Manila, wrote in a book published in <span class="num">1609</span> that "what is given them for it, is silver and reals, for they do not like gold, nor any other goods in exchange" (<a href="#chapter-t4-5">Topic 4.5</a>). In the CED's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
+            { p: `The first road ran from Japan: much of the silver came from there, carried by Portuguese ships through Macau and by Chinese and Japanese traders; in the decades around <span class="num">1600</span>, Japan may have sent China as much silver as the Americas did. Over the whole period, though, more came from the Americas, from <b>Potosí</b> in the Andes, mined from <span class="num">1545</span>, and Zacatecas in Mexico, from <span class="num">1546</span> (see <a href="#chapter-r4-americas">the Americas</a>). A second road crossed the Atlantic and went on to Asia around Africa in European ships.` },
+            { p: `The third road crossed the Pacific. A Spanish expedition found a way back across the Pacific in <span class="num">1565</span>, and in <span class="num">1571</span> the Spanish founded <b>Manila</b> in the Philippines. The College Board says that voyages "across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade." From then on the <span class="kt">Manila galleon</span>, usually one or two ships a year, carried silver from Acapulco in Mexico to Manila.` },
+            { p: `At Manila, Chinese merchants from Fujian and nearby provinces sailed in with silk and porcelain. Antonio de Morga, a Spanish official who had served in Manila, wrote in a book published in <span class="num">1609</span> that "what is given them for it, is silver and reals, for they do not like gold, nor any other goods in exchange" (reals were Spanish silver coins) (<a href="#chapter-t4-5">Topic 4.5</a>). In the CED's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
           ]
         },
         {
@@ -158,7 +157,7 @@ module.exports = {
           heading: 'The orders to Nagasaki',
           blocks: [
             { p: `Between <span class="num">1633</span> and <span class="num">1639</span>, the shogun's senior councilors sent five sets of orders to their two magistrates at Nagasaki, the main port where Portuguese and Chinese ships traded. The <span class="num">1635</span> set has seventeen articles. The first reads: "Japanese ships are strictly forbidden to leave for foreign countries." The third: "If any Japanese returns from overseas after residing there, he must be put to death." Others order every incoming ship searched for Christians.` },
-            { p: `In <span class="num">1637</span> and <span class="num">1638</span> peasants at <b>Shimabara</b>, near Nagasaki, squeezed by heavy taxes and famine and many of them Christian, rose against their lords. It was local resistance to a centralizing state, what the College Board calls resistance from groups "on a local level," and the shogunate crushed it. In <span class="num">1639</span> the councilors banned Portuguese ships outright, because, the order says, the Portuguese "have secretly transported those who are going to propagate that religion."` },
+            { p: `In <span class="num">1637</span> and <span class="num">1638</span> peasants at <b>Shimabara</b>, near Nagasaki, squeezed by heavy taxes and famine and many of them Christian, rose against their lords, who were enforcing the shogunate's taxes and its ban on Christianity. It was local resistance to a centralizing state, what the College Board calls resistance from groups "on a local level" (<a href="#chapter-t4-6">Topic 4.6</a>), and the shogunate crushed it. In <span class="num">1639</span> the councilors banned Portuguese ships outright, because, the order says, the Portuguese "have secretly transported those who are going to propagate that religion."` },
             { p: `The Dutch stayed, because they came to trade and not to preach. After <span class="num">1639</span> they were the only Europeans allowed to trade in Japan, and from <span class="num">1641</span> they were moved from the port of Hirado to <b>Dejima</b>, a small artificial island in Nagasaki harbor, under Japanese watch. Chinese merchants kept trading at Nagasaki. In the CED's words, "Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies."` },
             { note: {
               kind: 'misconception',
@@ -170,7 +169,7 @@ module.exports = {
         {
           heading: 'One faith, two receptions',
           blocks: [
-            { p: `China received the Jesuits differently. The Italian Jesuit <b>Matteo Ricci</b> lived in Beijing from <span class="num">1601</span>, and the Jesuits won a place at court by teaching astronomy and mathematics and living as Confucian scholars. The Kangxi emperor tolerated Christianity in <span class="num">1692</span>, and his son banned it in <span class="num">1724</span>. The College Board says contact "expanded the reach" of existing religions and "contributed to religious conflicts" (<a href="#chapter-t4-5">Topic 4.5</a>). East Asia shows both, and shows that its rulers decided how far a new faith could go.` }
+            { p: `China received the Jesuits differently. The Italian Jesuit <b>Matteo Ricci</b> lived in Beijing from <span class="num">1601</span>, and the Jesuits won a place at court by teaching astronomy and mathematics and living as Confucian scholars. The College Board says contact "expanded the reach" of existing religions and "contributed to religious conflicts" (<a href="#chapter-t4-5">Topic 4.5</a>). East Asia shows both, and shows that its rulers decided how far a new faith could go.` }
           ]
         }
       ],
@@ -206,8 +205,8 @@ module.exports = {
         {
           heading: 'What the Qing kept, and who lost ground',
           blocks: [
-            { p: `The Manchus were a small minority ruling the <b>Han Chinese</b>, China's huge ethnic majority, and they did not try to make China Manchu. They kept the Ming civil service examinations, Confucian bureaucracy and law codes, and Han scholars still filled most government jobs. The <b>Kangxi</b> emperor (ruled <span class="num">1661</span> to <span class="num">1722</span>) presented himself as a model Confucian ruler.` },
-            { p: `The old Han scholar-officials kept their exams and most of their jobs, but they now shared power. Under <span class="kt">dual appointment</span>, many top posts in the capital went to two officials, one Manchu and one Han, so that the Manchu could watch the Han, and Qing emperors kept the biggest decisions in their own hands. Yet Kangxi also courted scholars still loyal to the Ming with a special examination in <span class="num">1679</span>. This is one case of what the College Board describes: the power of existing elites "fluctuated" as they faced "increasingly powerful monarchs and leaders" (<a href="#chapter-t4-7">Topic 4.7</a>).` }
+            { p: `The Manchus were a small minority ruling the <b>Han Chinese</b>, China's huge ethnic majority, and they did not try to make China Manchu. They kept the Ming civil service examinations, Confucian bureaucracy and law codes, and Han scholars still filled most government jobs. The <b>Kangxi</b> emperor (ruled <span class="num">1661</span> to <span class="num">1722</span>) presented himself as a model Confucian ruler. He also tolerated Christianity in <span class="num">1692</span>, though his son, the Yongzheng emperor, banned it in <span class="num">1724</span>.` },
+            { p: `Han scholar-officials now shared that power. Under <span class="kt">dual appointment</span>, many top posts in the capital went to two officials, one Manchu and one Han, so that the Manchu could watch the Han, and Qing emperors kept the biggest decisions in their own hands. Yet Kangxi also courted scholars still loyal to the Ming with a special examination in <span class="num">1679</span>. This is one case of what the College Board describes: the power of existing elites "fluctuated" as they faced "increasingly powerful monarchs and leaders" (<a href="#chapter-t4-7">Topic 4.7</a>).` }
           ]
         },
         {
@@ -247,7 +246,7 @@ module.exports = {
       {
         category: 'Religious',
         title: 'Christianity arrived, and met limits',
-        body: `Jesuits made many converts in Japan, where the shoguns banned Christianity in 1614. In China they won a place at court through astronomy; Kangxi tolerated Christianity in 1692 and his son banned it in 1724. Confucian teaching stayed at the center of Chinese government.`
+        body: `Jesuits made many converts in Japan, where the shoguns banned Christianity in 1614. In China they won a place at court through astronomy; the Qing emperor Kangxi tolerated Christianity in 1692, and his son banned it in 1724. Confucian teaching stayed at the center of Chinese government.`
       },
       {
         category: 'Social',
@@ -261,8 +260,8 @@ module.exports = {
       },
       {
         category: 'Economic',
-        title: 'China\'s demand moved the world\'s silver',
-        body: `The Single Whip made most Chinese taxes payable in silver, and silver from Japan and the Americas flowed to China, much of it through Macau and Manila, paid for with silk and porcelain. American crops such as the sweet potato let farmers use dry hillsides.`
+        title: 'China\'s demand pulled much of the world\'s silver',
+        body: `Silver was worth more in China than in Europe, and the Single Whip made most Chinese taxes payable in silver, so silver from Japan and the Americas flowed to China, much of it through Macau and Manila, paid for with silk and porcelain. American crops such as the sweet potato let farmers use dry hillsides.`
       }
     ]
   }
