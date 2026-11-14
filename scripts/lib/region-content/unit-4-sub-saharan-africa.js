@@ -27,7 +27,7 @@ module.exports = {
   unit: '4',
   region: 'Sub-Saharan Africa',
   titleHtml: 'Sub-Saharan <em>Africa</em>',
-  deck: `Through most of the region, the land stayed under African rulers from 1450 to 1750. What changed was the sea: Portuguese, then Dutch and English, ships turned Africa's coasts into a meeting point of world trade, which made some African states stronger and carried millions of Africans into slavery in the Americas. This chapter follows both, and the crops and cultures that crossed the ocean.`,
+  deck: `Through most of the region, the land stayed under African rulers from 1450 to 1750. What changed was the sea: Portuguese, then Dutch and English, ships tied Africa's Atlantic coast into a new ocean trade and forced their way into the old Indian Ocean trade of the Swahili coast, which made some African states stronger and carried millions of Africans into slavery in the Americas. This chapter follows both, and the crops and cultures that crossed the ocean.`,
   topics: ['4.2', '4.3', '4.4', '4.5', '4.6'],
   ced: [
     'KC-4.1.III',
@@ -40,6 +40,7 @@ module.exports = {
     'KC-4.1.IV.D.i',
     'KC-4.1.IV',
     'KC-4.2.III.C',
+    'KC-4.2',
     'KC-4.3.III.ii',
     'KC-4.3.III.iii',
     'KC-4.3.II.C',
@@ -66,7 +67,7 @@ module.exports = {
         {
           heading: 'The voyages down the coast',
           blocks: [
-            { p: `West African gold had long crossed the Sahara by camel to North Africa. Portugal wanted to reach the gold by sea. Its royal family, Prince Henry above all, paid for voyages down the coast or licensed merchants to make them: <span class="kt">state-supported exploration</span> (<a href="#chapter-t4-2">Topic 4.2</a>). By the 1440s Portuguese ships were trading on the Senegal coast for gold, and for enslaved people.` },
+            { p: `West African gold had long crossed the Sahara by camel to North Africa. Portugal wanted to reach the gold by sea. Its royal family, Prince Henry above all, paid for voyages down the coast or licensed merchants to make them: <span class="kt">state-supported exploration</span> (<a href="#chapter-t4-2">Topic 4.2</a>). In the 1440s Portuguese crews raided the coast south of the Sahara for captives, then turned to trade; by the 1450s they were buying gold, and enslaved people, on the Senegal coast.` },
             { p: `Each return made the next voyage easier to pay for. In <span class="num">1482</span> Portugal built the fortress of São Jorge da Mina, <b>Elmina</b>, on the Gold Coast to buy gold for a royal trade. In the same decade its ships reached the mouth of the Congo River. In <span class="num">1488</span> Bartolomeu Dias sailed around the southern tip of Africa, and in <span class="num">1498</span> Vasco da Gama worked up the east coast through the Swahili ports, hired a pilot at <b>Malindi</b> who knew the ocean crossing, and reached India.` }
           ]
         },
@@ -81,7 +82,7 @@ module.exports = {
           blocks: [
             { p: `<b>Kongo</b> was the dominant power in west-central Africa when the Portuguese arrived. Its king was baptized in <span class="num">1491</span>, and his son <b>Afonso I</b>, king from about <span class="num">1509</span> until the early 1540s, made Christianity the religion of the court. He asked Portugal for priests and teachers, sent young nobles to study there, and fought his wars with Portuguese allies; his son Henrique became a bishop in <span class="num">1518</span>. Later Kongo artists cast brass crucifixes in their own style, with Kongo meanings.` },
             { p: `Trade made the king stronger because imported goods came through him, and he gave them to loyal nobles, who then owed him their loyalty. This is what the College Board means when it says maritime trade "fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo."` },
-            { p: `The trade also took people. Kongo had slavery of its own, and Afonso sold foreign captives taken in his wars and ran a slave market in his capital. But custom protected free-born Kongo people from sale abroad. In <span class="num">1526</span> Afonso wrote to the king of Portugal that thieves were seizing free people and selling them to Portuguese traders, who carried away, in Luís Madureira's translation, "our native-born countrymen and the children of our nobles and vassals as well as relatives of ours." He objected to whom the trade took, and to losing control of it.` },
+            { p: `The trade also took people. Kongo had slavery of its own, and Afonso sold foreign captives taken in his wars and ran a slave market in his capital. But custom protected free-born Kongo people from sale abroad. In <span class="num">1526</span> Afonso wrote to the king of Portugal that thieves were seizing free people and selling them to Portuguese traders, who carried away, in Luís Madureira's translation, "our native-born countrymen and the children of our nobles and vassals as well as relatives of ours."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -111,13 +112,13 @@ module.exports = {
         {
           heading: 'Older forms that continued',
           blocks: [
-            { p: `In many African societies, enslaved people, often war captives, were taken into <b>households</b>, where they worked, served or married, and over time they or their children could become part of the family. That was not freedom, since they could still be sold, but it was not slavery passed down forever. Captives were also carried north across the Sahara to North Africa and the Mediterranean, and east across the Red Sea and the Indian Ocean to Arabia, Persia and India. These trades were centuries old and went on beside the Atlantic one: enslavement in Africa "continued in its traditional forms."` }
+            { p: `In many African societies, enslaved people, often war captives, were taken into households, a form historians call <span class="kt">household slavery</span>, where they worked, served or married, and over time they or their children could become part of the family. That was not freedom, since they could still be sold, but it was not slavery passed down forever. Captives were also carried north across the Sahara to North Africa and the Mediterranean, and east across the Red Sea and the Indian Ocean to Arabia, Persia and India. These trades were centuries old and went on beside the Atlantic one: enslavement in Africa "continued in its traditional forms."` }
           ]
         },
         {
           heading: 'How the Atlantic trade grew',
           blocks: [
-            { p: `Portugal grew sugar with enslaved workers on Madeira before <span class="num">1492</span>, then on São Tomé, an island in the Gulf of Guinea settled in the 1480s and 1490s. Plantations crossed the ocean to Brazil in the 1500s and the Caribbean in the 1600s, and sugar, and later tobacco, needed huge numbers of workers. The <span class="kt">Atlantic slave trade</span> grew with them. Historians estimate that about 278,000 Africans were forced onto ships bound for the Americas in the whole 1500s, and more than 2.5 million in the fifty years from <span class="num">1701</span> to <span class="num">1750</span> (<a href="#chapter-t4-4">Topic 4.4</a>).` },
+            { p: `Portugal grew sugar with enslaved workers on Madeira before <span class="num">1492</span>, then on São Tomé, an island in the Gulf of Guinea settled in the 1480s and 1490s. Plantations crossed the ocean to Brazil in the 1500s and, on a far larger scale, the Caribbean in the 1600s, and sugar, and later tobacco, needed huge numbers of workers. The <span class="kt">Atlantic slave trade</span> grew with them. Historians estimate that about 278,000 Africans were forced onto ships bound for the Americas in the whole 1500s, and more than 2.5 million in the fifty years from <span class="num">1701</span> to <span class="num">1750</span> (<a href="#chapter-t4-4">Topic 4.4</a>).` },
             { p: `The <span class="kt">Atlantic trading system</span> moved goods, wealth and people. Into Africa went guns, iron, alcohol and cloth, much of it cotton woven in India, and cowrie shells from the Maldive Islands, used as money on the West African coast. Out went gold, ivory and, more and more, captives. The routes were more tangled than a triangle: ships from Brazil also sailed straight to Africa with brandy and tobacco and came back with captives. <b>Luanda</b>, the Portuguese port in Angola founded in <span class="num">1576</span>, became one of the busiest slave ports of the Atlantic.` },
             { p: `Most captives were taken inside Africa, in wars, raids and kidnappings, and sold at the coast by African rulers and merchants; in Angola, Portugal's own wars took captives too. Then came the weeks-long crossing called the <span class="kt">Middle Passage</span>, on which many died. What happened to the survivors is the story of the <a href="#chapter-r4-americas">Americas</a>.` }
           ]
@@ -126,7 +127,7 @@ module.exports = {
           heading: 'What the trade did to the people who stayed',
           blocks: [
             { p: `About two of every three captives carried across the Atlantic were male. European buyers paid more for young men to work the plantations, and African sellers often kept women and children, whom African buyers valued. In parts of Africa, especially West Central Africa, that left communities with more women than men.` },
-            { p: `Historians argue that this changed family life where the trade hit hardest. Women did more of the farming, and more women and girls were enslaved inside Africa itself. Some historians argue that more men took several wives, a practice called <span class="kt">polygyny</span>; others find that evidence thin. Some regions lost population or grew more slowly, while states that sold captives grew richer. The College Board names these "demographic changes in Africa that resulted from the trade of enslaved persons" (<a href="#chapter-t4-5">Topic 4.5</a>).` },
+            { p: `Historians argue that this changed family life where the trade hit hardest: that women did more of the farming, and that more women and girls were enslaved inside Africa itself. Some historians argue that more men took several wives, a practice called <span class="kt">polygyny</span>; others find that evidence thin. Some regions lost population or grew more slowly, while states that sold captives grew richer. The College Board names these "demographic changes in Africa that resulted from the trade of enslaved persons" (<a href="#chapter-t4-5">Topic 4.5</a>).` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
@@ -151,19 +152,19 @@ module.exports = {
       name: 'Kingdoms Rise, Fall and Resist',
       navLabel: 'Rivals and resisters',
       dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Songhai, Njinga, Asante, Oman',
-      thesis: `African states did not stand still while the trade grew. Morocco broke Songhai, Njinga fought Portugal for forty years, Asante rose on gold and guns, and Oman drove the Portuguese from the Swahili coast.`,
+      thesis: `African states did not stand still while the trade grew. Morocco broke Songhai, Njinga fought Portugal for some thirty years, Asante rose on gold and guns, and Oman drove the Portuguese from the Swahili coast.`,
       parts: [
         {
           heading: 'Morocco against Songhai',
           blocks: [
-            { p: `The <b>Songhai Empire</b>, ruling the West African interior from cities on the Niger River such as Timbuktu and Gao, controlled the gold trade and the Sahara's salt mines. Morocco's sultan, <b>Ahmad al-Mansur</b>, wanted that wealth, and the two had quarreled over the salt mine at Taghaza in the 1580s. In <span class="num">1591</span> his army of about 4,000, armed with firearms, crossed the desert and defeated Songhai at <b>Tondibi</b>. Gold and salt were a large part of the reason: "Economic disputes led to rivalries and conflict between states."` },
+            { p: `The <b>Songhai Empire</b>, ruling a large empire along the middle Niger River from cities such as Gao and Timbuktu, controlled the trade routes that carried West African gold north, and the Sahara's salt mines. Morocco's sultan, <b>Ahmad al-Mansur</b>, wanted that wealth, and the two had quarreled over the salt mine at Taghaza in the 1580s. In <span class="num">1591</span> his army of about 4,000, armed with firearms, crossed the desert and defeated Songhai at <b>Tondibi</b>. Gold and salt were a large part of the reason: "Economic disputes led to rivalries and conflict between states."` },
             { p: `Morocco held Timbuktu and Gao, but Songhai broke into smaller states, and the gold kept flowing to other buyers, including European traders on the coast.` }
           ]
         },
         {
           heading: 'Njinga against Portugal',
           blocks: [
-            { p: `European rivals fought over Africa's coasts. The Dutch West India Company, a chartered trading company, took Elmina from Portugal in <span class="num">1637</span>, and the Dutch captured Luanda in <span class="num">1641</span>. Inland from Luanda, Portugal's colony had pushed into the kingdom of <b>Ndongo</b>, and its wars took captives for the slave trade.` },
+            { p: `European rivals fought over Africa's coasts. From the 1600s <span class="kt">chartered companies</span>, given a monopoly of trade by their governments, ran much of it: the Dutch West India Company and, from <span class="num">1672</span>, England's Royal African Company. The Dutch company took Elmina from Portugal in <span class="num">1637</span>, and the Dutch captured Luanda in <span class="num">1641</span>. Inland from Luanda, Portugal's colony had pushed into the kingdom of <b>Ndongo</b>, and its wars took captives for the slave trade.` },
             { p: `In <span class="num">1622</span> Ndongo's king sent his sister <b>Njinga</b> to Luanda to make peace. She agreed to be baptized there, taking the name Ana de Sousa, which is why the College Board calls her Ana Nzinga. In <span class="num">1624</span> she became Ndongo's ruler. Driven out by Portuguese armies, she conquered the neighboring kingdom of <b>Matamba</b> in the 1630s and ruled from there. When the Dutch took Luanda she joined them; when Portugal retook it in <span class="num">1648</span>, she fought on. She made peace in the 1650s and died in <span class="num">1663</span>, still ruling Matamba.` },
             { p: `Hers was local resistance to an expanding state (<a href="#chapter-t4-6">Topic 4.6</a>). But she was no enemy of the slave trade: her wars took captives, and Matamba sold them.` }
           ]
@@ -171,14 +172,14 @@ module.exports = {
         {
           heading: 'Kongo weakens, Asante rises',
           blocks: [
-            { p: `Kongo's civil wars of the 1600s, the historian Linda Heywood argues, broke down the old protection of free-born Kongo people, and far more of them were sold abroad. Inland from the Gold Coast, the trade worked the other way. Around <span class="num">1700</span> several Akan states joined under one ruler, the Asantehene, in the forest kingdom of <b>Asante</b>; tradition credits Osei Tutu and the priest Okomfo Anokye with the union and with the Golden Stool that stood for it. Asante controlled gold and bought guns from Dutch and English traders on the coast, paying partly with war captives. In <span class="num">1701</span> it defeated Denkyira, the leading power, at <b>Feyiase</b>, and through the 1700s it became the region's main power.` }
+            { p: `Kongo's civil wars of the 1600s, the historian Linda Heywood argues, broke down the old protection of free-born Kongo people, and far more of them were sold abroad. Inland from the Gold Coast, the trade worked the other way. Around <span class="num">1700</span> several states of Akan-speaking peoples joined under one ruler, the Asantehene, in the forest kingdom of <b>Asante</b>; tradition credits Osei Tutu and the priest Okomfo Anokye with the union and with the Golden Stool that stood for it. Asante controlled gold and bought guns from Dutch and English traders on the coast, paying partly with war captives. In <span class="num">1701</span> it defeated Denkyira, the leading power, at <b>Feyiase</b>, and through the 1700s it became the region's main power.` }
           ]
         },
         {
           heading: 'The Swahili coast and Oman',
           blocks: [
-            { p: `On the east coast, the Swahili ports were Muslim trading towns whose African language, Swahili, held many Arabic words. The Portuguese sacked Mombasa in <span class="num">1505</span> and <span class="num">1528</span>, and from <span class="num">1593</span> held it with a stone fortress, Fort Jesus. They taxed the trade but did not end it: Swahili Arab merchants kept trading in an Indian Ocean network that "continued to flourish."` },
-            { p: `Then an Arabian power pushed Portugal out. Oman's rulers drove the Portuguese from Muscat in <span class="num">1650</span>, and in <span class="num">1698</span>, after a siege begun in <span class="num">1696</span>, they took Fort Jesus, ending Portuguese power on the coast north of Mozambique.` }
+            { p: `On the east coast, the Swahili ports were Muslim trading towns whose African language, Swahili, held many Arabic words. The Portuguese sacked Mombasa in <span class="num">1505</span> and <span class="num">1528</span>, and from <span class="num">1593</span> held it with a stone fortress, Fort Jesus. They taxed the trade but did not end it: Swahili Arab merchants (the College Board's name for the coast's Muslim traders) kept trading in an Indian Ocean network that "continued to flourish."` },
+            { p: `Then an Arabian power pushed Portugal out. Oman's rulers drove the Portuguese from Muscat in <span class="num">1650</span>, and in <span class="num">1698</span>, after a siege begun in <span class="num">1696</span>, they took Fort Jesus, breaking Portuguese power on the coast north of Mozambique (apart from a brief return to Mombasa in <span class="num">1728</span> and <span class="num">1729</span>).` }
           ]
         }
       ],
@@ -216,7 +217,7 @@ module.exports = {
         {
           heading: 'A mixed Atlantic world',
           blocks: [
-            { p: `In the Americas, Africans, Indigenous Americans and Europeans lived side by side, usually by force, with "all parties contributing to this cultural synthesis." New <span class="kt">creole languages</span>, such as Haitian Creole and Papiamentu, took most of their words from a European language, and much of their grammar and sound shows the influence of African languages. In the French colony of Saint-Domingue, enslaved Africans in the 1700s built <b>Vodou</b> from West and Central African religions and Catholic saints. And Kongo's Christianity crossed with its people: several of the rebels at Stono, in South Carolina, in <span class="num">1739</span>, came from Kongo, where Catholicism was widespread.` },
+            { p: `In the Americas, Africans, Indigenous Americans and Europeans lived side by side, usually by force, with "all parties contributing to this cultural synthesis." New <span class="kt">creole languages</span>, such as Haitian Creole and Papiamentu, took most of their words from a European language, and much of their grammar and sound shows the influence of African languages; linguists still debate exactly how they formed. In the French colony of Saint-Domingue, enslaved Africans in the 1700s built <b>Vodou</b> from West and Central African religions and Catholic saints. And Kongo's Christianity crossed with its people: several of the rebels at Stono, in South Carolina, in <span class="num">1739</span>, came from Kongo, where Catholicism was widespread.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -242,7 +243,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'African states set terms and fought for them',
-        body: `Kongo under Afonso I and Asante around 1700 grew stronger by controlling trade with Europeans. Morocco broke Songhai at Tondibi in 1591. Njinga fought and bargained with Portugal from 1622 to 1663, and Oman drove the Portuguese from Mombasa in 1698. Europeans held forts and, in Angola, a colony; most land stayed under African rulers.`
+        body: `Kongo under Afonso I and Asante around 1700 grew stronger by controlling trade with Europeans. Morocco broke Songhai at Tondibi in 1591. Njinga fought and bargained with Portugal from 1622 to 1663, and Oman drove the Portuguese from Mombasa in 1698. Europeans held forts, a colony in Angola and, from 1652, a Dutch settlement at the Cape; most land stayed under African rulers.`
       },
       {
         category: 'Religious',
@@ -267,7 +268,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'Gold, captives, cloth and new crops',
-        body: `Gold, ivory and, more and more, captives went out; Indian cloth, Maldive cowries, guns, iron and alcohol came in. The Atlantic slave trade grew from about 278,000 people in the 1500s to more than 2.5 million in 1701 to 1750. Maize and cassava became staples, and Swahili merchants kept trading.`
+        body: `Gold, ivory and, more and more, captives went out; Indian cloth, Maldive cowries, guns, iron and alcohol came in. The Atlantic slave trade grew from about 278,000 people in the 1500s to more than 2.5 million in the fifty years from 1701 to 1750. Maize and cassava became staples, and Swahili merchants kept trading.`
       }
     ]
   }
