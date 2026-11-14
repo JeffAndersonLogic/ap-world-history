@@ -27,7 +27,7 @@ module.exports = {
   unit: '4',
   region: 'Sub-Saharan Africa',
   titleHtml: 'Sub-Saharan <em>Africa</em>',
-  deck: `Through most of the region, the land stayed under African rulers from 1450 to 1750. What changed was the sea: Portuguese ships, then Dutch and English ones, tied Africa's Atlantic coast into a new ocean trade, and Portuguese ships forced their way into the old Indian Ocean trade of the Swahili coast, which made some African states stronger and carried millions of Africans into slavery in the Americas.`,
+  deck: `Through most of the region, the land stayed under African rulers from 1450 to 1750. What changed was the sea: Portuguese ships, then Dutch and English ones, tied Africa's Atlantic coast into a new ocean trade. That Atlantic trade made some African states stronger, and it carried millions of Africans into slavery in the Americas. On the east coast, Portuguese ships forced their way into the old Indian Ocean trade of the Swahili ports.`,
   topics: ['4.2', '4.3', '4.4', '4.5', '4.6'],
   ced: [
     'KC-4.1.III',
@@ -176,7 +176,7 @@ module.exports = {
         {
           heading: 'The Swahili coast and Oman',
           blocks: [
-            { p: `On the east coast, the Swahili ports were Muslim trading towns whose African language, Swahili, held many Arabic words. The Portuguese sacked Mombasa in <span class="num">1505</span> and <span class="num">1528</span>, and from <span class="num">1593</span> held it with a stone fortress, Fort Jesus. They taxed the trade but did not end it: Swahili Arab merchants (the College Board's name for the coast's Muslim traders) kept trading in an Indian Ocean network that, in the College Board's words, "continued to flourish."` },
+            { p: `On the east coast, the Swahili ports were Muslim trading towns whose African language, Swahili, held many Arabic words. The Portuguese sacked Mombasa in <span class="num">1505</span> and <span class="num">1528</span>, and from <span class="num">1593</span> held it with a stone fortress, Fort Jesus. They taxed the trade but did not end it: Swahili Arab merchants (one of the Indian Ocean merchant groups the College Board names) kept trading in an Indian Ocean network that, in the College Board's words, "continued to flourish."` },
             { p: `The rulers of Oman, in Arabia, drove the Portuguese from Muscat in <span class="num">1650</span>, and in <span class="num">1698</span>, after a siege begun in <span class="num">1696</span>, they took Fort Jesus, breaking Portuguese power on the coast north of Mozambique (apart from a brief return to Mombasa in <span class="num">1728</span> and <span class="num">1729</span>).` }
           ]
         }
