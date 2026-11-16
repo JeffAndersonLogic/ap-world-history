@@ -213,3 +213,31 @@ Corn Laws sequence; Lever and Unilever; abolition, union and reform-act dates; S
 Enlightenment dates and quotations; the French Revolution sequence; serfdom; unification; Cockerill,
 railway kilometers, Hughes, BASF, Otto, Benz; the German party dates and Bismarck's 1884 words
 (GHDI translation).
+
+#### Reviewer C: history, East Asia and South and Southeast Asia, 5 findings
+
+1. **South and Southeast Asia 03 and its card: the 1870 cable meant "minutes rather than weeks by
+   ship"**: London and India were already joined by the overland Indo-European telegraph from 1865,
+   whose messages took days (the first, six days and more). The 1870 cable cut days to minutes. The card
+   also puts the railways inside "within minutes". Sources: Encyclopaedia Iranica, "Indo-European
+   Telegraph Department"; atlantic-cable.com, Indo-European page; Porthcurno Museum on the 1870
+   exchange. `PENDING`
+2. **East Asia 02: the Elman box drops his qualification** ("but inadequate funding did set limits on
+   Li Hongzhang's plans to expand the Northern Fleet"; Elman, Modern Asian Studies 38:2, 2004, opened).
+   Same as D9. `PENDING`
+3. **East Asia 04: "Within a week Russia, Germany and France forced Japan to give back..."**: only the
+   demand came within a week (23 April 1895); Japan accepted on 5 May and returned Liaodong by a
+   November convention. `PENDING`
+4. **East Asia thesis and economic card: "the world's goods"**: Bairoch's shares are of manufactured
+   goods only; the body says so, the heading and thesis do not. `PENDING`
+5. **East Asia economic card: "sold it to Mitsui and Mitsubishi from 1880"**: 1880 was the decision;
+   the sales the chapter names are 1887 and 1889. `PENDING`
+
+Checked and held up (reviewer's list): every CED quotation; Bairoch's 1750 and 1900 shares; the Opium
+Wars, Taiping, Zongli Yamen, Jiangnan, Fuzhou, the steamship company, the Tongwen Guan and 1898;
+HSBC's dates and 16 countries (HSBC's own timeline); Perry, the treaties, the 1866 tariff and 1911;
+the Meiji reforms and industry; the 62 percent figure (Tsurumi, 1984); treaty revision and
+Shimonoseki; India's cloth figures and duties (Ray, 2009); Wadia and Trincomalee; Bombay to Thane;
+the 1901 census; McKeown's migration figures; Rizal and the Propaganda Movement. Unverified but
+consistent with the topic chapters: Prince Gong's line, the Tongwen Guan admissions, Woren's English
+wording, Roy's handloom figures, Osaka Spinning running day and night.
