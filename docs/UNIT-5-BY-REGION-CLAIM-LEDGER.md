@@ -321,3 +321,24 @@ Held up (reviewer's list): every CED attribution word for word; Argue it moves a
 (South and Southeast Asia's "for whom" thinnest; the Middle East prompt's 1789 not in the body);
 closing cards against bodies; shared facts across chapters and topics; cross-references; the part
 intro against the CED.
+
+#### Reviewer F: history, Europe and East Asia, 4 findings
+
+1. **East Asia 01 mistake box: "Its share fell because the world's total grew far faster, while
+   Chinese families kept spinning and weaving."** One cause; Bairoch also has China's own output
+   shrinking after about 1830 and its per-person level falling (8, 6, 3 for 1750, 1830, 1900);
+   Feuerwerker found hand weaving held up better. And "kept spinning" contradicts the paragraph above
+   (machine-made thread replacing home spinning). Topic 5.4 claims the per-person fall for India only.
+   `PENDING`
+2. **Europe 03: "These ideas set off revolutions across Europe in 1830 and 1848"**: a sole cause;
+   topic 5.2 says "helped set off", and 1848 followed the bad harvests of 1845 to 1847 and the slump of
+   1847. `PENDING`
+3. **Europe 01 (and topic 5.1): Rousseau "began The Social Contract" with "Man is born free"**: the
+   line opens Book I, Chapter 1, after a short introduction. `PENDING`
+4. **Europe 01: "In most countries one church was the law"** could be read literally. `PENDING`
+
+Held up (reviewer's list): every CED quotation; both Argue it prompts; the intro; Locke (Second
+Treatise sections 123 and 95); the French Revolution sequence; serfdom; unification; rail figures;
+BASF, Otto, Benz; the German tariffs as corrected; the Manifesto's first-section line; the SPD dates
+(19.7 percent in 1890); Bismarck's 1884 words (GHDI); every East Asia date and figure, including
+Elman's text (p. 317, read in the PDF) and the Triple Intervention.
