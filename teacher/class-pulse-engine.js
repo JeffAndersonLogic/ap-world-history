@@ -30,6 +30,9 @@
   'use strict';
 
   const VERSION = 'class-pulse/2.1.0';
+  // The reading rules a model is given are unchanged since 2.1.0. What changed on
+  // 2026-11-16 is how a reply is checked (locate and readOutput below), which sends
+  // nothing different to a model, so the version and every saved reading stand.
   const BANDS = ['D', 'P', 'N', 'U'];
   const SLOTS = { cp1: 'checkpoint-one-response', cp2: 'checkpoint-two-response' };
   const MAX_CRITERIA = 8;
@@ -130,26 +133,121 @@
 
   function bounded(s, max = 1400) { return typeof s === 'string' && s.length <= max; }
 
+  // ── Finding a quote in the student's own words ────────────────────────────
+  // Added 2026-11-16 (Jeff). A quote used to count only if it matched the answer
+  // character for character, and one miss voided every criterion of that answer. A
+  // chat app that curls an apostrophe, or a model that capitalizes the first word,
+  // closes its quote with a period or joins two phrases with an ellipsis, was
+  // costing whole answers. locate() looks for the same words, ignoring only the
+  // style of quote marks and dashes, capital letters, runs of spaces and an
+  // ellipsis the reader put in, and returns the words exactly as the student wrote
+  // them. Different words still fail: a corrected spelling is not the student's
+  // writing, and an invented quote is still refused.
+  const FOLD = [
+    [/[\u2018\u2019\u201a\u2032\u0060\u00b4]/, "'"], [/[\u201c\u201d\u201e\u2033]/, '"'],
+    [/[\u2010-\u2015\u2212]/, '-'], [/[\u00a0\u2000-\u200a\u202f]/, ' ']
+  ];
+  function folded(text) {
+    let out = '';
+    const at = [];
+    for (let i = 0; i < text.length; i++) {
+      let ch = text[i];
+      for (const [re, to] of FOLD) if (re.test(ch)) { ch = to; break; }
+      if (ch === '\u2026') { for (let k = 0; k < 3; k++) { out += '.'; at.push(i); } continue; }
+      if (/\s/.test(ch)) { if (out.endsWith(' ')) continue; ch = ' '; }
+      out += ch.toLowerCase(); at.push(i);
+    }
+    return { out, at };
+  }
+  const MIN_PIECE = 6;
+  // The student's exact words for one quote, as one or more pieces, or null.
+  function locate(text, quote) {
+    if (typeof quote !== 'string' || !quote.trim()) return null;
+    if (text.includes(quote)) return [quote];
+    const hay = folded(text);
+    const pieces = folded(quote).out.split(/\s*(?:\[\s*\.\.\.\s*\]|\.{3,})\s*/)
+      .map(p => p.trim().replace(/^["'(\[]+/, '').replace(/["')\].,;:!?]+$/, '').trim()).filter(Boolean);
+    if (!pieces.length) return null;
+    const found = [];
+    for (const piece of pieces) {
+      // A fragment of a few letters could be found in almost any answer.
+      if (pieces.length > 1 && piece.length < MIN_PIECE) return null;
+      const i = hay.out.indexOf(piece);
+      if (i < 0) return null;
+      found.push(text.slice(hay.at[i], hay.at[i + piece.length - 1] + 1));
+    }
+    return found;
+  }
+
+  // One criterion of a reply, checked. Throws with the reason when it cannot stand.
+  function checkCriterion(r, text) {
+    if (!r || !BANDS.includes(r.category) || !bounded(r.reason) || !r.reason.trim() || typeof r.reviewRequired !== 'boolean') throw new Error('Invalid criterion result');
+    for (const key of ['evidence', 'misconceptions', 'uncertainty']) {
+      if (!Array.isArray(r[key]) || r[key].length > 8 || r[key].some(s => !bounded(s, 1000) || !s.trim())) throw new Error('Invalid supporting evidence');
+    }
+    const evidence = [];
+    for (const q of r.evidence) {
+      const got = locate(text, q);
+      if (!got) throw new Error('Evidence quote absent from response');
+      got.forEach(x => { if (!evidence.includes(x)) evidence.push(x); });
+    }
+    if (['D', 'P'].includes(r.category) && !evidence.length) throw new Error('Positive interpretation needs quoted evidence');
+    if (r.uncertainty.length && r.category !== 'U') throw new Error('Uncertain evidence must remain unknown');
+    if ((r.category === 'U' || r.uncertainty.length) && !r.reviewRequired) throw new Error('Uncertainty must be flagged for review');
+    return {
+      criterionId: r.criterionId, category: r.category, evidence: evidence.slice(0, 8), reason: r.reason,
+      misconceptions: [...r.misconceptions], uncertainty: [...r.uncertainty], reviewRequired: r.reviewRequired
+    };
+  }
+
+  // Strict: the whole reply stands or the whole reply is refused.
   function validateOutput(output, contract, text) {
     if (!output || !Array.isArray(output.criteria) || output.criteria.length !== contract.criteria.length) throw new Error('Incomplete criterion results');
     const seen = new Set();
     const criteria = contract.criteria.map(c => {
-      const r = output.criteria.find(x => x.criterionId === c.id);
-      if (!r || seen.has(r.criterionId) || !BANDS.includes(r.category) || !bounded(r.reason) || !r.reason.trim() || typeof r.reviewRequired !== 'boolean') throw new Error('Invalid criterion result');
+      const r = output.criteria.find(x => x && x.criterionId === c.id);
+      if (!r || seen.has(r.criterionId)) throw new Error('Invalid criterion result');
       seen.add(r.criterionId);
-      for (const key of ['evidence', 'misconceptions', 'uncertainty']) {
-        if (!Array.isArray(r[key]) || r[key].length > 8 || r[key].some(s => !bounded(s, 1000) || !s.trim())) throw new Error('Invalid supporting evidence');
-      }
-      if (r.evidence.some(q => !text.includes(q))) throw new Error('Evidence quote absent from response');
-      if (['D', 'P'].includes(r.category) && !r.evidence.length) throw new Error('Positive interpretation needs quoted evidence');
-      if (r.uncertainty.length && r.category !== 'U') throw new Error('Uncertain evidence must remain unknown');
-      if ((r.category === 'U' || r.uncertainty.length) && !r.reviewRequired) throw new Error('Uncertainty must be flagged for review');
-      return {
-        criterionId: r.criterionId, category: r.category, evidence: [...r.evidence], reason: r.reason,
-        misconceptions: [...r.misconceptions], uncertainty: [...r.uncertainty], reviewRequired: r.reviewRequired
-      };
+      return checkCriterion(r, text);
     });
     return { criteria };
+  }
+
+  // Criterion by criterion, added 2026-11-16 (Jeff). A reply with one bad criterion
+  // used to lose the other two as well. Here each criterion is checked on its own:
+  // one that passes stands, and one that fails becomes Can't tell with the reason,
+  // marked CHECK_FAILED so the page can offer that answer for another read. It
+  // still fails closed, only one criterion at a time: nothing unchecked is shown as
+  // a level. A reply with no usable criterion at all is refused whole.
+  const CHECK_FAILED = 'This criterion\'s reading did not pass the checks';
+  const CHECK_WHY = {
+    'Evidence quote absent from response': 'it quoted words the student did not write',
+    'Positive interpretation needs quoted evidence': 'it proposed a level without quoting the student',
+    'Uncertain evidence must remain unknown': 'it gave a level and also said it was unsure',
+    'Uncertainty must be flagged for review': 'it was unsure without flagging the answer for review',
+    'Invalid supporting evidence': 'its evidence was not in a readable form',
+    'Invalid criterion result': 'it was not in a readable form'
+  };
+  function failedCriterion(id, message) {
+    return {
+      criterionId: id, category: 'U', evidence: [], reason: CHECK_FAILED + ': ' + (CHECK_WHY[message] || 'it was left out or given twice') + '. Read it again.',
+      misconceptions: [], uncertainty: ['Reading did not pass the checks'], reviewRequired: true
+    };
+  }
+  const checkFailed = c => !!c && c.category === 'U' && typeof c.reason === 'string' && c.reason.startsWith(CHECK_FAILED);
+  function readOutput(output, contract, text) {
+    if (!output || !Array.isArray(output.criteria)) throw new Error('Incomplete criterion results');
+    let failed = 0;
+    const criteria = contract.criteria.map(c => {
+      const got = output.criteria.filter(x => x && x.criterionId === c.id);
+      if (got.length !== 1) { failed++; return failedCriterion(c.id, ''); }
+      // A criterion saved earlier as failed stays failed, and stays marked.
+      if (checkFailed(got[0])) { failed++; return failedCriterion(c.id, Object.keys(CHECK_WHY).find(k => got[0].reason.includes(CHECK_WHY[k])) || ''); }
+      try { return checkCriterion(got[0], text); }
+      catch (err) { failed++; return failedCriterion(c.id, String(err.message || err)); }
+    });
+    if (failed === criteria.length) throw new Error('No criterion in this reply passed the checks');
+    return { criteria, failed };
   }
 
   const stringArray = { type: 'array', items: { type: 'string' } };
@@ -234,7 +332,8 @@
           // Only the prompt, criteria and response text leave the engine. UIDs, class,
           // confidence, timestamps and response keys do not reach the provider.
           const value = await provider.interpret({ instructions: INSTRUCTIONS, contract: JSON.parse(JSON.stringify(contract)), response: { text: row.text }, schema: OUTPUT_SCHEMA });
-          result = { ...base, status: 'analyzed', ...validateOutput(value, contract, row.text) };
+          const read = readOutput(value, contract, row.text);
+          result = { ...base, status: 'analyzed', criteria: read.criteria };
         } catch (_) {
           result = { ...base, source: 'analysis-unavailable', status: 'error', criteria: unknown(contract, 'Analysis unavailable; inspect the original response.') };
         }
@@ -268,6 +367,6 @@
 
   return {
     VERSION, BANDS, SLOTS, topicsFor, contractFor, digest, revisionFor, eligibility,
-    validateOutput, OUTPUT_SCHEMA, INSTRUCTIONS, summary, aggregate, createEngine, correction
+    validateOutput, readOutput, locate, CHECK_FAILED, checkFailed, OUTPUT_SCHEMA, INSTRUCTIONS, summary, aggregate, createEngine, correction
   };
 });

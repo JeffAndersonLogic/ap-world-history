@@ -145,7 +145,7 @@ async function loadRealRules() {
   console.log(`\n${W}Negative controls${X}`);
   const src = fs.readFileSync(SOURCE, 'utf8');
   const controls = [
-    ['any answer with a receipt counts as submitted', "print && print === fingerprint ? 'verified-submission'", "print ? 'verified-submission'", /changed after Submit/],
+    ['any answer with a receipt counts as submitted', "const sameWriting = !!print && prints.indexOf(print) !== -1;", "const sameWriting = !!print;", /changed after Submit/],
     ['ratings are written with the browser\'s clock', "updateTransforms: [{ fieldPath: 'ratedAt', setToServerValue: 'REQUEST_TIME' }]", "update: undefined && 0, x: 0", /save in batches/],
     ['a missing class list reads as an empty class', "if (!head) throw fail('no-roster'", "if (false) throw fail('no-roster'", /no class list is told/]
   ];

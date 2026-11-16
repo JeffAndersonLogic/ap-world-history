@@ -84,6 +84,8 @@ export class GoogleAuthProvider { setCustomParameters() {} }
 export async function signInWithPopup() { user = { uid: 'teach1', email: 'jeff@zcs.k12.in.us', getIdToken: async () => 'token' }; cbs.forEach(f => f(user)); return { user }; }
 export async function signOut() { user = null; cbs.forEach(f => f(user)); }`;
 const ANA = 'Akbar used the mansabdar system to give officials land revenue he could take back.';
+const ANA2 = 'Plantations needed year-round labor, so slavery became hereditary and tied to race.';
+const BEN2 = 'The mita sent workers to Potosi.';
 function liveStore(multi) {
   const P = 'projects/behistoric/databases/(default)/documents/tenants/zcs/';
   const docs = new Map(), commits = [], requests = [];
@@ -102,9 +104,10 @@ function liveStore(multi) {
   ans('cal1', 'checkpoint-one-response', 'Half an', '');
   // Checkpoint 2: Ana copied the AI Coach prompt before submitting, Ben did not
   // (the receipt's coaching note, 2026-11-07).
-  const ANA2 = 'Plantations needed year-round labor, so slavery became hereditary and tied to race.';
   ans('ana1', 'checkpoint-two-response', ANA2, 3);
-  ans('ana1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:02 AM · AI Coach prompt copied · fingerprint ' + Sync.valueHash(ANA2, '3'), '', '2099-01-01T00:00:00Z');
+  // She tapped a different confidence after submitting (the answer says 3, the receipt
+  // was made at 5). The writing is the same, so it still counts as submitted (2026-11-16).
+  ans('ana1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:02 AM · AI Coach prompt copied · fingerprint ' + Sync.valueHash(ANA2, '5'), '', '2099-01-01T00:00:00Z');
   ans('ben1', 'checkpoint-two-response', 'The mita sent workers to Potosi.', 2);
   ans('ben1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:05 AM · fingerprint ' + Sync.valueHash('The mita sent workers to Potosi.', '2'), '', '2026-10-31T15:05:00Z');
   return { P, docs, commits, requests, googleLoaded: false };
@@ -171,6 +174,12 @@ async function open(browser, width, setup) {
   await p.waitForFunction(() => document.querySelectorAll('#heat th.colh').length > 0, null, { timeout: 8000 }).catch(() => {});
   return { context, p, hosts, errors };
 }
+// The batch-by-batch cards live on Read the work, inside a closed fallback
+// (2026-11-16: the one-paste Reader is the main path).
+const toBatches = async p => {
+  await p.click('#tab-read');
+  if (!(await p.$eval('#paste-panel', d => d.open))) await p.click('#paste-panel > summary');
+};
 const choose = async (p, topic) => {
   await p.selectOption('#topic', topic);
   await p.waitForFunction(t => document.getElementById('h-topic').textContent.startsWith(t + ' '), topic, { timeout: 8000 }).catch(() => {});
@@ -270,6 +279,34 @@ async function suite(browser) {
   await s.p.click('#cv-model-show [data-v="hide"]');
   check('and Hide takes it off the screen', !/Model paragraph one\.|File one\./.test(await s.p.$eval('#cv', e => e.textContent)));
   check('the teacher is told who has not submitted yet', /have not submitted Checkpoint 1 yet|Everyone has submitted/.test(await s.p.$eval('#cv-teacher-note', e => e.textContent)));
+  // The projector screen (2026-11-16): a second window that is sent class totals only.
+  await s.p.click('#cv-model-show [data-v="show"]');
+  await s.p.evaluate(() => { window.__pj = []; window.__pjc = new BroadcastChannel('class-pulse-projector'); window.__pjc.onmessage = e => { if (e.data && e.data.type === 'state') window.__pj.push(e.data.state); }; });
+  const pj = await s.context.newPage();
+  const pjErrors = []; pj.on('pageerror', e => pjErrors.push(String(e)));
+  await pj.goto(`http://127.0.0.1:${server.address().port}/teacher/class-pulse-projector.html`, { waitUntil: 'load' });
+  await pj.waitForFunction(() => /Topic 2\.3/.test(document.getElementById('pj-topic').textContent), null, { timeout: 8000 }).catch(() => {});
+  check('the projector screen opens on the title alone', /Topic 2\.3/.test(await pj.$eval('#pj-stage', e => e.textContent)) && !/How the class did/.test(await pj.$eval('#pj-stage', e => e.textContent)));
+  const seenText = [];
+  for (let i = 1; i < 6; i++) {
+    await s.p.click(`#proj-scenes [data-scene="${i}"]`);
+    await pj.waitForFunction(n => document.getElementById('pj-step').textContent.startsWith((n + 1) + ' of 6'), i, { timeout: 4000 }).catch(() => {});
+    seenText.push(await pj.$eval('body', e => e.textContent));
+  }
+  const sentStates = await s.p.evaluate(() => window.__pj);
+  const sentAll = JSON.stringify(sentStates), drawn = seenText.join('\n');
+  const leak = t => answers.filter(a => a && a.length > 40).some(a => { for (let i = 0; i + 40 <= a.length; i += 20) if (t.includes(a.slice(i, i + 40))) return true; return false; });
+  check('each part reaches the projector screen in turn', /Explain how knowledge|Explain/.test(seenText[0]) && /How the class did/.test(seenText[1]) && /Let's revisit criterion \d/.test(seenText[2]) && /Wrong ideas to fix/.test(seenText[3]) && /A model answer/.test(seenText[4]), seenText.map(t => t.slice(0, 60)).join(' | '));
+  check('nothing sent to the projector holds a student name', sentStates.length >= 5 && shownNames.every(nm => !sentAll.includes(nm)) && !/Student \d\d/.test(sentAll) && shownNames.every(nm => !drawn.includes(nm)), shownNames.find(nm => sentAll.includes(nm)) || '');
+  check('or a student\'s words', !leak(sentAll) && !leak(drawn));
+  check('the model answer is sent only while its own part is showing', sentStates.filter(x => x.model).length > 0 && sentStates.every(x => !x.model || x.scene === 'model') && sentStates.filter(x => x.scene !== 'model').every(x => !JSON.stringify(x).includes('File one.')) && /File one\./.test(seenText[4]), sentStates.map(x => x.scene + ':' + !!x.model).join(','));
+  await pj.keyboard.press('ArrowLeft');
+  await s.p.waitForFunction(() => document.querySelector('#proj-scenes [data-scene="4"]').getAttribute('aria-pressed') === 'true', null, { timeout: 4000 }).catch(() => {});
+  check('an arrow key on the projector window steps it from the teacher\'s page', (await s.p.$eval('#proj-scenes [data-scene="4"]', b => b.getAttribute('aria-pressed'))) === 'true' && /5 of 6/.test(await pj.$eval('#pj-step', e => e.textContent)));
+  const pjCsp = await pj.$eval('meta[http-equiv="Content-Security-Policy"]', m => m.content);
+  check('the projector screen cannot reach the network at all', /connect-src 'none'/.test(pjCsp) && await pj.evaluate(() => fetch('https://example.com/').then(() => false, () => true)));
+  check('the projector screen raises no script error', pjErrors.length === 0, pjErrors.join(' | '));
+  await pj.close();
   check('Class view raises no script error', s.errors.length === 0, s.errors.join(' | '));
   await s.context.close();
 
@@ -302,7 +339,7 @@ async function suite(browser) {
   const c = await open(browser);
   await c.context.grantPermissions(['clipboard-read', 'clipboard-write']);
   await choose(c.p, '5.3');
-  await c.p.click('#tab-pulse');
+  await toBatches(c.p);
   check('a topic with no writing offers nothing to copy', (await c.p.$$('#paste-batches [data-copy]')).length === 0);
   await choose(c.p, '3.2');
   const roster = await c.p.$$eval('#heat td.name', tds => tds.map(t => t.childNodes[0].textContent));
@@ -348,7 +385,7 @@ async function suite(browser) {
     return 'not found';
   }, badText);
   check('the answer with an invented quote shows as Can\'t tell', /Can't tell/.test(invented), invented);
-  await c.p.click('#tab-pulse');
+  await toBatches(c.p);
   if (texts.length > 1) {
     await c.p.click('#paste-batches details >> nth=1');
     await c.p.fill('#paste-batches textarea[data-paste] >> nth=1', made.json);
@@ -366,7 +403,7 @@ async function suite(browser) {
   const k = await open(browser);
   patches = kept;
   await choose(k.p, '3.2');
-  await k.p.click('#tab-pulse');
+  await toBatches(k.p);
   const card = '#paste-batches .batch:has(.precheck) >> nth=0';
   const flaggedCard = await k.p.$(card);
   check('an answer naming a teacher is flagged before copying', !!flaggedCard && /Mr\. Anderson/.test(await flaggedCard.textContent()));
@@ -404,11 +441,21 @@ async function suite(browser) {
   check('signing in shows the teacher\'s own class list', JSON.stringify(liveNames) === JSON.stringify(['Ana Ruiz', 'Ben Cole', 'Cal Ito']), liveNames.join(','));
   const cells = await L.p.$$eval('#heat tbody tr', trs => trs.map(tr => [...tr.querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' ')));
   check('a submitted answer with no saved rating shows as not read yet', /^b-wait b-wait b-wait$/.test(cells[0] || ''), cells.join(' | '));
-  check('an answer changed after Submit shows as not submitted', /^b-none b-none b-none$/.test(cells[1] || ''), cells[1]);
-  check('a draft never submitted shows as not submitted', /^b-none b-none b-none$/.test(cells[2] || ''), cells[2]);
+  check('an answer changed after Submit shows as changed, never as a level', /^b-changed b-changed b-changed$/.test(cells[1] || ''), cells[1]);
+  check('a draft never submitted shows as saved, never submitted', /^b-draft b-draft b-draft$/.test(cells[2] || ''), cells[2]);
+  // Where everyone is (2026-11-16): one box per student per checkpoint, adding up to the class.
+  const ledger = await L.p.$$eval('#ledger .ledger-row', rows => rows.map(r => ({ cp: r.dataset.cp, boxes: [...r.querySelectorAll('.ledger-box')].map(b => b.querySelector('span').textContent + '=' + b.querySelector('b').textContent), sum: [...r.querySelectorAll('.ledger-box b')].reduce((a, b) => a + Number(b.textContent), 0), of: r.querySelector('.ledger-sum').textContent })));
+  check('the count puts every student in exactly one box for each checkpoint', ledger.length === 2 && ledger.every(r => r.sum === 3 && r.of === 'of 3'), JSON.stringify(ledger));
+  check('and says why: waiting, changed after submitting, saved but never submitted', ledger[0] && ['Submitted, waiting for a reading=1', 'Changed after submitting=1', 'Writing saved, never submitted=1'].every(x => ledger[0].boxes.includes(x)), JSON.stringify(ledger[0]));
+  check('a student with no writing is counted as nothing in the backup', ledger[1] && ledger[1].boxes.includes('Nothing in the backup=1') && ledger[1].boxes.includes('Submitted, waiting for a reading=2'), JSON.stringify(ledger[1]));
+  await L.p.click('#ledger [data-ledger="cp1|changed"]');
+  const who = await L.p.$eval('#dbody', e => e.textContent);
+  check('pressing a box names who is in it and what to do', /Ben Cole/.test(who) && !/Ana Ruiz|Cal Ito/.test(who) && /Submit again/.test(who), who.slice(0, 160));
+  await L.p.keyboard.press('Escape');
+  check('nothing in My class is shown as "Reading it now"', !/Reading it now/.test(await L.p.$eval('#legend-live', e => e.textContent)));
   check('the database is read one document at a time, never queried for student work',
     store.requests.length > 0 && !store.requests.some(r => /responses:runQuery|POST .*responses/.test(r)), store.requests.slice(0, 4).join(' ; '));
-  check('Across the course and One student are off in My class', await L.p.$eval('#tab-course', b => b.disabled) && await L.p.$eval('#tab-student', b => b.disabled));
+  check('Across the course and One student are not offered in My class', await L.p.$eval('#tab-course', b => b.hidden) && await L.p.$eval('#tab-student', b => b.hidden));
   await L.p.click('#tab-pulse');
   const coachedText = await L.p.$eval('#coached', e => e.textContent).catch(() => '');
   check('the coaching note splits Checkpoint 2 into coached and not coached', /1 of 2 Checkpoint 2 submissions came after the student copied the AI Coach prompt/.test(coachedText), coachedText.slice(0, 140));
@@ -426,7 +473,8 @@ async function suite(browser) {
   await L.p.click('#tab-class');
   await L.p.click('#cv-session-clear').catch(() => {});
   check('clearing the mark clears the count', !/came in after the feedback session/.test(await L.p.$eval('#cv-teacher-note', e => e.textContent).catch(() => '')));
-  await L.p.click('#tab-pulse');
+  await toBatches(L.p);
+  check('with the approval off, the one copy is locked too', await L.p.$eval('#bundle-copy', b => b.disabled) && /Locked/.test(await L.p.$eval('#bundle-copied', e => e.textContent)) && (await L.p.$eval('#bundle-text', t => t.value)) === '');
   check('with the approval off, copying real answers stays locked', /Locked/.test(await L.p.$eval('#paste-batches', e => e.textContent)) && (await L.p.$$('#paste-batches [data-copy]')).length === 0);
   check('My class raises no script error', L.errors.length === 0, L.errors.join(' | '));
   await L.context.close();
@@ -441,7 +489,7 @@ async function suite(browser) {
   await A.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
   await A.p.click('#live-signin');
   await A.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
-  await A.p.click('#tab-pulse');
+  await toBatches(A.p);
   const text = await A.p.$eval('#paste-batches textarea[data-text]', t => t.value).catch(() => '');
   check('once approved, only submitted answers are offered to copy', text.includes(ANA) && !text.includes('I changed this after submitting') && !text.includes('Half an') && !/Ana Ruiz|Ruiz|Ben Cole|Cal Ito/.test(text));
   if (text) {
@@ -473,6 +521,38 @@ async function suite(browser) {
   await A.p.click('#tab-class');
   const liveCv = await A.p.$eval('#cv', e => e.textContent).catch(() => '');
   check('Class view shows a wrong idea without the student\'s quoted words', /QUOTED-MISCONCEPTION/.test(liveCv) && !liveCv.includes(ANA.slice(0, 30)) && !/Ana|Ruiz|Ben Cole|Cal Ito/.test(liveCv), liveCv.slice(0, 200));
+  const liveSent = await A.p.evaluate(() => new Promise(done => { const c = new BroadcastChannel('class-pulse-projector'); c.onmessage = e => { if (e.data && e.data.type === 'state') done(JSON.stringify(e.data.state)); }; document.querySelector('#proj-scenes [data-scene="4"]').click(); setTimeout(() => done(''), 3000); }));
+  check('and so does what is sent to the projector', /QUOTED-MISCONCEPTION/.test(liveSent) && !liveSent.includes(ANA.slice(0, 30)) && !/Ana|Ruiz|Ben Cole|Cal Ito|ana1/.test(liveSent), liveSent.slice(0, 200));
+  // One copy, one paste (2026-11-16). Ana's Checkpoint 1 is read by now, so what waits
+  // is the two Checkpoint 2 answers.
+  await A.p.click('#tab-read');
+  await A.p.waitForFunction(() => document.getElementById('bundle-text').value.length > 0, null, { timeout: 8000 }).catch(() => {});
+  const bundleText = await A.p.$eval('#bundle-text', t => t.value);
+  const bundle = (() => { try { return JSON.parse(bundleText.slice(bundleText.indexOf('{'))); } catch (_) { return { items: [] }; } })();
+  const sent = bundle.items.flatMap(x => x.answers.map(a => a.text));
+  check('the one copy carries only the answers still waiting', JSON.stringify(sent.slice().sort()) === JSON.stringify([ANA2, BEN2].sort()) && !bundleText.includes(ANA), sent.join(' | '));
+  check('with no name, class or account in it', !/Ana Ruiz|Ruiz|Ben Cole|Cal Ito|ana1|ben1|teach1|"G4"|"S1"|confidence/.test(bundleText));
+  check('and the badge on the tab says how many wait', (await A.p.$eval('#read-badge', b => b.textContent)) === '2');
+  const crit3 = (a, bad) => bundle.items[0].contract.criteria.map((c, j) => ({ criterionId: c.id, category: 'D', evidence: [bad && j === 0 ? 'words nobody wrote' : a.text.slice(0, 16).toUpperCase()], reason: 'READER-REASON', misconceptions: [], uncertainty: [], reviewRequired: false }));
+  const result = JSON.stringify({ format: 'class-pulse-bundle-reply/1', bundle: bundle.id, batches: bundle.items.map(x => ({ batch: x.batch, answers: x.answers.map(a => ({ key: a.key, criteria: crit3(a, a.text === BEN2) })) })) });
+  const before = store2.commits.length;
+  await A.p.fill('#bundle-paste', bundleText);
+  await A.p.click('#bundle-read');
+  check('pasting the bundle back in place of the result is caught', /not the Reader's result/.test(await A.p.$eval('#bundle-said', e => e.textContent)) && store2.commits.length === before);
+  await A.p.fill('#bundle-paste', result);
+  await A.p.click('#bundle-read');
+  await A.p.waitForFunction(() => /^Saved/.test(document.getElementById('bundle-said').textContent), null, { timeout: 8000 }).catch(() => {});
+  const bundleSaid = await A.p.$eval('#bundle-said', e => e.textContent);
+  const bundleSaved = JSON.stringify(store2.commits.slice(before));
+  check('the Reader\'s result is saved for each student it read', /Saved 2 readings/.test(bundleSaid) && /ana1__3-2__checkpoint-two-response/.test(bundleSaved) && /ben1__3-2__checkpoint-two-response/.test(bundleSaved), bundleSaid);
+  check('and records that it came through the Reader', /"reader":\{"stringValue":"claude-for-teachers-reader"\}/.test(bundleSaved));
+  check('a quote in capitals is matched to the student\'s own words', bundleSaved.includes(ANA2.slice(0, 16)) && !bundleSaved.includes(ANA2.slice(0, 16).toUpperCase()));
+  const led2 = await A.p.$$eval('#ledger .ledger-row[data-cp="cp2"] .ledger-box', bs => bs.map(b => b.querySelector('span').textContent + '=' + b.querySelector('b').textContent));
+  check('one criterion with an invented quote costs that criterion, not the answer', led2.includes('Read=1') && led2.includes('Read, part needs a second look=1'), led2.join(' | '));
+  const benCells = await A.p.$$eval('#heat tbody tr', trs => [...trs[1].querySelectorAll('td .cell')].slice(3, 6).map(c => c.className.replace('cell ', '')).join(' '));
+  check('it shows as Can\'t tell on that criterion and a level on the others', /^b-U b-D b-D$/.test(benCells), benCells);
+  await A.p.waitForFunction(() => /1 answer is waiting/.test(document.getElementById('bundle-count').textContent), null, { timeout: 8000 }).catch(() => {});
+  check('and that answer goes out again with the next copy', /1 answer is waiting/.test(await A.p.$eval('#bundle-count', e => e.textContent)), await A.p.$eval('#bundle-count', e => e.textContent));
   check('saving and pulling raise no script error', A.errors.length === 0, A.errors.join(' | '));
   await A.context.close();
 
@@ -499,7 +579,7 @@ async function suite(browser) {
   }
 
   section('A phone');
-  for (const t of ['live', 'pulse', 'course', 'student']) {
+  for (const t of ['live', 'read', 'pulse', 'class', 'course', 'student']) {
     const m = await open(browser, 390);
     await m.p.click('#tab-' + t);
     await m.p.waitForTimeout(150);
@@ -519,13 +599,21 @@ async function suite(browser) {
   const controls = [
     { name: 'the grid assumes three criteria', file: 'teacher/class-pulse-app.js', from: 'CPS.forEach(cp => contracts[cp].criteria.forEach(', to: 'CPS.forEach(cp => contracts[cp].criteria.slice(0, 3).forEach(', expect: /follow the topic's criteria/ },
     { name: 'the policy allows the network', file: 'teacher/class-pulse.html', from: "connect-src https://firestore.googleapis.com", to: "connect-src * https://firestore.googleapis.com", expect: /only Google sign-in and the district database|fetch from the page is refused/ },
-    { name: 'saved ratings are ignored', file: 'teacher/class-pulse-app.js', from: "if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) {", to: "if (false) {", expect: /next pull shows the saved levels/ },
-    { name: 'an answer changed after Submit is counted', file: 'teacher/class-pulse-live.js', from: "print && print === fingerprint ? 'verified-submission'", to: "print ? 'verified-submission'", expect: /changed after Submit/ },
+    { name: 'saved ratings are ignored', file: 'teacher/class-pulse-app.js', from: "if (g && r.completionState === 'verified-submission' && (r.fingerprints || [r.fingerprint]).includes(g.fingerprint)) {", to: "if (false) {", expect: /next pull shows the saved levels/ },
+    { name: 'an answer changed after Submit is counted', file: 'teacher/class-pulse-live.js', from: "const sameWriting = !!print && prints.indexOf(print) !== -1;", to: "const sameWriting = !!print;", expect: /changed after Submit/ },
+    { name: 'a changed confidence rating unsubmits the answer', file: 'teacher/class-pulse-live.js', from: "const sameWriting = !!print && prints.indexOf(print) !== -1;", to: "const sameWriting = !!print && print === o.valueHash(text, confidence);", expect: /coaching note splits|nothing in the backup/ },
+    { name: 'the count leaves out students with nothing', file: 'teacher/class-pulse-app.js', from: "return s === 'changed' || s === 'draft' ? s : 'none';", to: "return s === 'changed' || s === 'draft' ? s : 'gone';", expect: /exactly one box/ },
+    { name: 'the one copy sends answers already read', file: 'teacher/class-pulse-app.js', from: "const answers = b.answers.filter(a => answerPending(cp, a.text));", to: "const answers = b.answers;", expect: /only the answers still waiting/ },
+    { name: 'the one copy ignores the approval', file: 'teacher/class-pulse-app.js', from: "const can = gate.ok && n > 0 && !left;", to: "const can = n > 0 && !left;", expect: /one copy is locked too/ },
+    { name: 'a partly failed reading is thrown away', file: 'teacher/class-pulse-app.js', from: "reads.forEach(r => r.read.results.filter(x => x.status === 'passed' || x.status === 'partial')", to: "reads.forEach(r => r.read.results.filter(x => x.status === 'passed')", expect: /costs that criterion, not the answer/ },
+    { name: 'the projector is sent the class list', file: 'teacher/class-pulse-app.js', from: "inCount: d.inCount, n: D.students.length, read: d.read,", to: "inCount: d.inCount, n: D.students.length, read: d.read, who: D.students.map(st => st.name),", expect: /sent to the projector holds a student name/ },
+    { name: 'the projector is sent the model answer early', file: 'teacher/class-pulse-app.js', from: "if (scene === 'model' && S.cvModel === 'show') {", to: "if (S.cvModel === 'show') {", expect: /only while its own part is showing/ },
+    { name: 'the projector keeps quoted words', file: 'teacher/class-pulse-app.js', from: "const word = unquoted(m);", to: "const word = m;", expect: /what is sent to the projector/ },
     { name: 'copying real answers is open without approval', file: 'teacher/class-pulse-handoff.js', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: "if (true)", expect: /stays locked/ },
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
     { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "provider = S.reader === 'invented' ? src.provider\n        :", to: 'provider = true ? src.provider\n        :', expect: /recorded reader's levels/ },
     { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, src)", to: ": H && S.reader === H.READER.id ? src.provider : recordedProvider(S.reader, src)", expect: /pasted reader's reasons/ },
-    { name: 'the outcome of a paste in My class goes only to the screen reader', file: 'teacher/class-pulse-app.js', from: "S.saved.set(id, { state: read.passed + ' of ' + b.answers.length + ' read and saved', said });", to: 'void said;', expect: /batch card shows what was saved/ },
+    { name: 'the outcome of a paste in My class goes only to the screen reader', file: 'teacher/class-pulse-app.js', from: "S.saved.set(id, { state: (read.passed + (read.partial || 0)) + ' of ' + b.answers.length + ' read and saved', said });", to: 'void said;', expect: /batch card shows what was saved/ },
     { name: 'the service is not recorded', file: 'teacher/class-pulse-app.js', from: "reader: S.service + '-pasted' });", to: "});", expect: /service it was pasted into/ },
     { name: 'Copy ignores the check', file: 'teacher/class-pulse-app.js', from: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\"${left ? ' disabled' : ''}>", to: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\">", expect: /Copy waits/ },
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },

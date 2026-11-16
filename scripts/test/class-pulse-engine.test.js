@@ -196,6 +196,37 @@ function checkBlindSet(set) {
     mutate(bad);
     assert.throws(() => E.validateOutput(bad, cp, text));
   }
+
+  // 7b. The same words in a different dress still count; different words never do
+  // (2026-11-16). And one bad criterion no longer costs the answer its good ones.
+  {
+    const said = 'The Mughal Empire used the mansabdar system; it wasn\'t  fixed. Akbar could take land back.';
+    assert.deepEqual(E.locate(said, 'the mughal empire used the mansabdar system'), ['The Mughal Empire used the mansabdar system'], 'capital letters do not matter');
+    assert.deepEqual(E.locate(said, 'it wasn\u2019t fixed.'), ['it wasn\'t  fixed'], 'a curled apostrophe, a closing period and a double space do not matter');
+    assert.deepEqual(E.locate(said, '\u201cmansabdar system \u2026 take land back\u201d'), ['mansabdar system', 'take land back'], 'an ellipsis joins two real phrases');
+    assert.equal(E.locate(said, 'the Ottoman system'), null, 'words the student did not write are refused');
+    assert.equal(E.locate(said, 'the mansabdar sistem'), null, 'a changed spelling is not the student\'s writing');
+    assert.equal(E.locate(said, 'mansabdar ... it'), null, 'a fragment of a few letters cannot stand as a quote');
+    const dressed = goodReply(cp, text);
+    dressed.criteria[0].evidence = [text.slice(0, 24).toUpperCase()];
+    const kept = E.validateOutput(dressed, cp, text);
+    assert.equal(kept.criteria[0].evidence[0], text.slice(0, 24), 'the evidence kept is the student\'s exact words');
+    const one = goodReply(cp, text);
+    one.criteria[0].evidence = ['Invented quote'];
+    const part = E.readOutput(one, cp, text);
+    assert.equal(part.failed, 1);
+    assert.equal(part.criteria[0].category, 'U', 'the criterion with the invented quote is Can\'t tell');
+    assert.ok(E.checkFailed(part.criteria[0]) && part.criteria[0].reviewRequired && !part.criteria[0].evidence.length);
+    assert.deepEqual(part.criteria.slice(1), E.validateOutput(goodReply(cp, text), cp, text).criteria.slice(1), 'and the criteria that passed stand');
+    assert.doesNotThrow(() => E.validateOutput(part, cp, text), 'a partly failed reading can be saved and read back');
+    assert.equal(E.readOutput(part, cp, text).failed, 1, 'and is still marked for another read when it comes back');
+    const all = goodReply(cp, text);
+    all.criteria.forEach(c => { c.evidence = ['Invented quote']; });
+    assert.throws(() => E.readOutput(all, cp, text), /No criterion/, 'a reply with nothing usable is refused whole');
+    const gone = goodReply(cp, text);
+    gone.criteria.pop();
+    assert.equal(E.readOutput(gone, cp, text).failed, 1, 'a criterion left out is Can\'t tell, not a guess');
+  }
   // A three-criterion reply cannot answer a five-criterion checkpoint.
   assert.throws(() => E.validateOutput(goodReply(cp, text), five, text), /Incomplete/);
   const broken = E.createEngine({ provider: { id: 'bad', version: '1', async interpret() { return { criteria: [] }; } } });
@@ -223,8 +254,12 @@ function checkBlindSet(set) {
       m => assert.throws(() => m.contractFor(MAP, 'f1', 'cp1'), /unit topics only/)],
     ['applies a rubric whose wording drifted', "if (own && (own.length !== criteria.length || own.some((r, i) => r.criterion !== criteria[i]))) {", 'if (false) {',
       m => { const d = JSON.parse(JSON.stringify(R)); d.TOPICS['2.3'].cp1[0].criterion += ' (edited)'; assert.throws(() => m.contractFor(MAP, '2.3', 'cp1', d), /does not match/); }],
-    ['accepts invented quotes', "if (r.evidence.some(q => !text.includes(q))) throw new Error('Evidence quote absent from response');", '',
+    ['accepts invented quotes', "const got = locate(text, q);", "const got = locate(text, q) || [q];",
       m => { const bad = goodReply(cp, text); bad.criteria[0].evidence = ['Invented quote']; assert.throws(() => m.validateOutput(bad, cp, text)); }],
+    ['a failed criterion keeps its unchecked level', "catch (err) { failed++; return failedCriterion(c.id, String(err.message || err)); }", "catch (err) { failed++; return got[0]; }",
+      m => { const one = goodReply(cp, text); one.criteria[0].evidence = ['Invented quote']; assert.equal(m.readOutput(one, cp, text).criteria[0].category, 'U'); }],
+    ['a changed spelling passes as the student\'s words', "const i = hay.out.indexOf(piece);", "const i = hay.out.indexOf(piece.slice(0, 4));",
+      m => assert.equal(m.locate('The Mughal Empire used the mansabdar system.', 'the mansabdar sistem'), null)],
     ['drops a topic\'s own clarifications', "contract.rules = [...(rubrics.RULES || []), ...((own && own.rules) || [])];", 'contract.rules = [...(rubrics.RULES || [])];',
       m => assert.deepEqual(m.contractFor(MAP, '3.1', 'cp1', R).rules, R.RULES.concat(R.TOPICS['3.1'].rules))],
     ['a blind answer carries a level', null, null,

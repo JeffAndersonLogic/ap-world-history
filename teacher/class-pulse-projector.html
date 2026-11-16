@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- The screen in front of the class. It cannot reach the network at all: it draws
+     only what the Class Pulse page on this same computer sends it, and that message
+     holds class totals, never a student's name or words. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<title>Class Pulse | Projector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="class-pulse.css">
+<link rel="stylesheet" href="class-pulse-projector.css">
+<link rel="icon" href="data:,">
+</head>
+<body class="pj">
+<header class="pj-top"><span id="pj-topic">Class Pulse</span><span id="pj-cp"></span></header>
+<main class="pj-stage" id="pj-stage" aria-live="polite">
+  <div class="pj-hold"><img src="../assets/images/brand/class-pulse-logo.png" width="2000" height="2000" alt=""><p id="pj-wait">Waiting for the Class Pulse page. Open it on this computer.</p></div>
+</main>
+<footer class="pj-foot"><span id="pj-step"></span><span class="pj-hint" id="pj-hint">Press F for full screen. Arrow keys move.</span></footer>
+<script src="class-pulse-projector.js"></script>
+</body>
+</html>

@@ -29,6 +29,7 @@
   const RECEIPT = '-submitted';
   const READER = 'claude-for-teachers-pasted';
   const CONCURRENT = 6;
+  const CONFIDENCES = ['', '1', '2', '3', '4', '5'];
   const PER_COMMIT = 10; // each saved rating costs the rules one class-list lookup; a request allows 20
 
   function fail(code, message) { const e = new Error(message || code); e.code = code; return e; }
@@ -118,11 +119,20 @@
           const text = str(f.text).trim(), confidence = conf(f.confidence);
           const receiptText = got[n].receipt && str(got[n].receipt.fields && got[n].receipt.fields.text);
           const print = receiptPrint(receiptText);
-          const fingerprint = text ? o.valueHash(text, confidence) : '';
-          const state = !text ? 'missing' : print && print === fingerprint ? 'verified-submission' : 'completion-unverified';
+          // The receipt's fingerprint covers the writing and the confidence rating
+          // together. A student who only taps a different confidence after submitting
+          // has not changed their answer, so the writing is compared on its own: it is
+          // the same writing if the receipt matches it under any confidence
+          // (2026-11-16, Jeff; such answers used to drop off the page as "not submitted").
+          const prints = text ? CONFIDENCES.map(c => o.valueHash(text, c)) : [];
+          const sameWriting = !!print && prints.indexOf(print) !== -1;
+          const fingerprint = sameWriting ? print : text ? o.valueHash(text, confidence) : '';
+          const state = !text ? 'missing' : sameWriting ? 'verified-submission' : 'completion-unverified';
+          // Where this student stands, in the words the page uses.
+          const submitState = !text ? 'none' : sameWriting ? 'submitted' : print ? 'changed' : 'draft';
           rows[j.cp].push({
-            key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint,
-            completionState: state, changedSinceSubmit: !!(print && text && print !== fingerprint),
+            key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint, fingerprints: prints, submitState,
+            completionState: state, changedSinceSubmit: submitState === 'changed',
             // Only a current submission carries the note: what the teacher compares
             // is the answer that was read.
             coached: state === 'verified-submission' && receiptCoached(receiptText),

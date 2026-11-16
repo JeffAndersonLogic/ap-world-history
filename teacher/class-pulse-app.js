@@ -33,6 +33,14 @@
  * (APPROVAL in class-pulse-handoff.js). Across the course and One student are
  * demo-only and are switched off in My class.
  *
+ * Rebuilt 2026-11-16 (Jeff): a command bar that stays put, a count of where every
+ * student is, tabs in the order the work is done (Class grid, Read the work, Plan next
+ * class, Projector), one copy and one paste for everything waiting (the Class Pulse
+ * Reader), pulling by itself for one class, and a projector screen in its own window
+ * that is sent class totals only and can be stepped from the iPad. The page's policy
+ * is the one in class-pulse.html, not the 'none' of Stage A above. See "Class Pulse
+ * rebuilt around its friction points" in docs/claude/student-work-persistence.md.
+ *
  * Levels: D Demonstrating, P Partly there, N Not yet, U Can't tell. Colors are
  * Cardinal red, Ridge gold and Teaching navy (Jeff, 2026-10-23). */
 (function () {
@@ -67,7 +75,7 @@
 
   const TOPICS = E.topicsFor(MAP);
   const S = {
-    cvCp: 'cp1', cvMis: 'show', cvModel: 'hide',
+    cvCp: 'cp1', cvMis: 'show', cvModel: 'show', // the model answer has its own part of the projector now, so Show is the default
     tab: 'live', topic: TOPICS.includes('3.2') ? '3.2' : TOPICS[0], section: 'S2',
     minute: 31, playing: false, timer: null, names: 'names', sort: 'roster', cmetric: 'ev', stu: 0,
     overrides: new Map(), loadToken: 0, reader: 'invented',
@@ -76,7 +84,9 @@
     saved: new Map(),  // batch id -> what happened to its pasted reply in My class, shown on its card
     source: 'demo',   // 'demo' (invented students) or 'live' (my class, from the database)
     service: (() => { try { const v = localStorage.getItem('class-pulse-service'); return H && H.SERVICES.some(x => x.id === v) ? v : 'claude-for-teachers'; } catch (_) { return 'claude-for-teachers'; } })(),
-    live: null         // { auth, api, roster } once My class is chosen
+    live: null,        // { auth, api, roster } once My class is chosen
+    scene: 0,          // which part of Class view the projector shows (SCENES below)
+    bundleSaid: ''     // what happened to the last pasted Reader result, kept across redraws
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
 
@@ -170,6 +180,7 @@
     S.overrides = new Map();
     renderAll();
     renderPaste();
+    renderBundle();
     if (S.source === 'live' && S.live && S.live.roster) {
       const sub = CPS.map(cp => src.rows[cp].filter(r => r.completionState === 'verified-submission').length);
       liveSay(`${S.live.roster.classLabel}, Topic ${S.topic}: ${sub[0]} submitted Checkpoint 1, ${sub[1]} submitted Checkpoint 2, pulled ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}.`);
@@ -202,15 +213,16 @@
       submittedAt: { cp1: rows.cp1[i].completionState === 'verified-submission' ? 0 : null, cp2: rows.cp2[i].completionState === 'verified-submission' ? 0 : null },
       confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence },
       coached: { cp1: !!rows.cp1[i].coached, cp2: !!rows.cp2[i].coached },
-      submittedTime: { cp1: rows.cp1[i].submittedTime || '', cp2: rows.cp2[i].submittedTime || '' }
+      submittedTime: { cp1: rows.cp1[i].submittedTime || '', cp2: rows.cp2[i].submittedTime || '' },
+      submitState: { cp1: rows.cp1[i].submitState || 'none', cp2: rows.cp2[i].submitState || 'none' }
     }));
     // A saved rating counts only for the very answer it was made from.
     const byText = new Map(), readBy = new Map();
     CPS.forEach(cp => rows[cp].forEach(r => {
       const g = ratings.get(r.uid + '|' + cp);
-      if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) {
+      if (g && r.completionState === 'verified-submission' && (r.fingerprints || [r.fingerprint]).includes(g.fingerprint)) {
         byText.set(cp + '|' + r.text, g.criteria);
-        readBy.set(cp + '|' + r.text, H ? H.serviceLabel(String(g.reader).replace(/-pasted$/, '')) : g.reader);
+        readBy.set(cp + '|' + r.text, H ? H.serviceLabel(String(g.reader).replace(/-(pasted|reader)$/, '')) + (/-reader$/.test(g.reader) ? ', through the Reader' : ', pasted') : g.reader);
       }
     }));
     return { kind: 'live', students, rows, readBy, provider: {
@@ -258,7 +270,11 @@
       : !many ? `<option>${esc(R.classLabel + ' (' + R.students.length + ' students)')}</option>`
       : `<option value=""${S.liveSection ? '' : ' selected'}>All my classes (${R.students.length} students)</option>`
         + R.sections.map(x => `<option value="${esc(x)}"${x === S.liveSection ? ' selected' : ''}>${esc(x)} (${R.students.filter(st => st.section === x).length} students)</option>`).join('');
-    ['course', 'student'].forEach(t => { const b = $('#tab-' + t); b.disabled = live; b.title = live ? 'Demo only for now' : ''; });
+    // Across the course and One student run on invented numbers, so in My class they
+    // are not offered at all (they used to sit there greyed out, which read as broken).
+    ['course', 'student'].forEach(t => { const b = $('#tab-' + t); b.disabled = live; b.hidden = live; });
+    $('#auto-pull-wrap').hidden = !(live && R);
+    if (!live) setAutoPull(false);
     if (live && (S.tab === 'course' || S.tab === 'student')) setTab('live');
     $('#mode-pill').textContent = live ? 'My class: real students' : 'Demo: invented students';
     $('#hero-lede').textContent = live
@@ -274,7 +290,12 @@
   function entry(st, cp) { return D.results[cp].get(st.i) || null; }
   function status(st, cp, minute) {
     const at = st.submittedAt[cp];
-    if (at == null) return minute >= END ? 'none' : 'empty';
+    if (at == null) {
+      // In My class, writing that is not a current submission says which kind it is.
+      const ss = st.submitState && st.submitState[cp];
+      if (ss === 'changed' || ss === 'draft') return ss;
+      return minute >= END ? 'none' : 'empty';
+    }
     if (minute < at) return 'empty';
     if (minute < at + READING_FOR) return 'busy';
     return entry(st, cp) ? (D.unread.has(cp + '|' + st.i) ? 'unread' : 'done') : 'none';
@@ -297,9 +318,14 @@
   // ── During class ──────────────────────────────────────────────────────────
   function legend() {
     return '<span class="m-rn" style="display:contents">' + ['D', 'P', 'N'].map(k => `<span><i class="sw cell b-${k}">${k}</i>${BANDS[k]}</span>`).join('') + '</span>' +
-      '<span><i class="sw cell b-U">?</i>Can\'t tell, check it</span><span><i class="sw cell b-busy">&middot;</i>Reading it now</span>' +
-      '<span><i class="sw cell b-empty"></i>Not submitted yet</span>' +
-      (D.unread.size ? '<span><i class="sw cell b-wait">&middot;</i>Submitted, not read yet</span>' : '') +
+      '<span><i class="sw cell b-U">?</i>Can\'t tell, check it</span>' +
+      // "Reading it now" belongs to the demo's clock. In My class nothing reads by
+      // itself, and showing it there read as a reading that never finished.
+      (D.kind === 'live' ? '<span><i class="sw cell b-none">&ndash;</i>Nothing submitted</span>'
+        : '<span><i class="sw cell b-busy">&middot;</i>Reading it now</span><span><i class="sw cell b-empty"></i>Not submitted yet</span>') +
+      (D.unread.size ? '<span><i class="sw cell b-wait">&hellip;</i>Submitted, waiting for a reading</span>' : '') +
+      (D.students.some(st => CPS.some(cp => st.submitState && st.submitState[cp] === 'changed')) ? '<span><i class="sw cell b-changed">&ne;</i>Changed after submitting</span>' : '') +
+      (D.students.some(st => CPS.some(cp => st.submitState && st.submitState[cp] === 'draft')) ? '<span><i class="sw cell b-draft">&#9998;</i>Saved, never submitted</span>' : '') +
       '<span><i class="sw" style="position:relative;background:var(--inset)"><i style="position:absolute;top:3px;right:3px;width:6px;height:6px;border-radius:50%;background:var(--accent)"></i></i>You changed it</span>';
   }
   function needScore(st) {
@@ -336,7 +362,9 @@
         if (s === 'empty') h += '<td><span class="cell b-empty"></span></td>';
         else if (s === 'none') h += '<td><span class="cell b-none" title="Not submitted">&ndash;</span></td>';
         else if (s === 'busy') h += '<td><span class="cell b-busy" title="Reading it now">&middot;</span></td>';
-        else if (s === 'unread') h += '<td><span class="cell b-wait" title="Submitted, not read yet">&middot;</span></td>';
+        else if (s === 'unread') h += '<td><span class="cell b-wait" title="Submitted, waiting for a reading">&hellip;</span></td>';
+        else if (s === 'changed') h += '<td><span class="cell b-changed" title="Changed after submitting">&ne;</span></td>';
+        else if (s === 'draft') h += '<td><span class="cell b-draft" title="Writing saved, never submitted">&#9998;</span></td>';
         else {
           const b = band(st, c), e = entry(st, c.cp), o = overrideFor(e, c);
           h += `<td><button type="button" class="cell b-${b}${o && !o.agreed ? ' over' : ''}" data-s="${st.i}" data-c="${c.id}" aria-label="${esc(shown(st))}, ${c.group} ${c.short}: ${BANDS[b]}">${LETTER[b]}</button></td>`;
@@ -365,7 +393,7 @@
   function renderWatch() {
     const items = D.students.map(st => ({ st, need: needsYou(st) })).filter(x => x.need);
     $('#watch').innerHTML = items.length ? items.map(x => `<li><b>${esc(shown(x.st))}</b><span>${CP_NAME[x.need.cp]}: not yet on ${x.need.n} of ${x.need.of}. <button class="btn" type="button" style="padding:2px 8px;font-size:11px;margin-left:4px" data-s="${x.st.i}" data-c="${x.need.col.id}">Read it</button></span></li>`).join('')
-      : '<li class="empty-note">Nobody yet. Checkpoint 1 submissions start around minute 17. Press Play.</li>';
+      : D.kind === 'live' ? '<li class="empty-note">Nobody right now.</li>' : '<li class="empty-note">Nobody yet. Checkpoint 1 submissions start around minute 17. Press Play.</li>';
   }
   function renderWeak() {
     let best = null;
@@ -386,7 +414,7 @@
     $('#h-need').textContent = D.students.filter(needsYou).length;
     $('#h-topic').textContent = title(S.topic);
     $('#h-min').textContent = S.source === 'live' ? 'Live' : S.minute >= END ? 'Bell rang' : 'Minute ' + Math.floor(S.minute) + ' of ' + END;
-    $('#h-kind').textContent = D.kind === 'live' ? (D.students.length ? 'Your students\' submitted answers. ' + (D.unread.size ? D.unread.size + ' submitted answers are not read yet.' : 'Every submitted answer is read.') : 'Sign in with your school account to see your class.') : ((D.kind === 'written' ? 'Invented answers with invented writing.'
+    $('#h-kind').textContent = D.kind === 'live' ? (D.students.length ? 'Your students\' submitted answers. ' + (D.unread.size ? D.unread.size + ' submitted answers are waiting for a reading: open Read the work.' : 'Every submitted answer is read.') : 'Sign in with your school account to see your class.') : ((D.kind === 'written' ? 'Invented answers with invented writing.'
       : D.kind === 'calibration' ? 'The forty invented calibration answers, dealt round the class.'
       : 'Invented levels only. This topic has no invented writing yet.') +
       (S.reader === 'invented' ? '' : ' Levels read by ' + readerLabel(S.reader) + '.'));
@@ -418,7 +446,7 @@
     if (e.result.status === 'ineligible') h += `<p class="callout">${esc(ELIGIBILITY[e.result.eligibilityReason] || 'Not read.')}</p>`;
     h += `<div class="verdict"><div class="row m-rn"><span class="cell b-${prop}">${LETTER[prop]}</span><b>The tool proposes: ${BANDS[prop]}</b></div><p class="small">${esc(crit.reason)}</p>`;
     const by = D.readBy.get(col.cp + '|' + si);
-    if (by) h += `<p class="small read-by">Read by <b>${esc(by)}</b>, pasted.</p>`;
+    if (by) h += `<p class="small read-by">Read by <b>${esc(by.replace(/, (pasted|through the Reader)$/, ''))}</b>${/through the Reader$/.test(by) ? ', through the Reader' : ', pasted'}.</p>`;
     if (coachedOf(st, col.cp)) h += '<p class="small coached-note">Submitted after copying the AI Coach prompt.</p>';
     if (afterSession(st, col.cp)) h += `<p class="small session-note">Submitted ${esc(clock(st.submittedTime[col.cp]))}, after the feedback session.</p>`;
     // What this level means here, from the same rubric the provider was given.
@@ -635,7 +663,7 @@
   function batchHtml(cp, b, n, open) {
     const got = pastedHere().get(b.id), first = b.answers[0].key, last = b.answers[b.answers.length - 1].key, left = undecided(b);
     const saved = S.saved.get(b.id);
-    const state = got ? got.read.passed + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '')
+    const state = got ? (got.read.passed + (got.read.partial || 0)) + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '')
       : saved ? saved.state : 'Not pasted yet';
     return `<div class="batch${got ? ' done' : ''}" data-card="${b.id}"><div class="batch-top"><b>${CP_NAME[cp]}, batch ${n + 1} of ${D.batches[cp].length}</b><span class="small">Answers ${first} to ${last} · ${esc(state)}</span></div>
       ${checkHtml(b)}
@@ -667,9 +695,12 @@
     if (!d.has(key)) d.set(key, new Map());
     d.get(key).set(span, v);
     const { cp, b } = batchOf(id), card = $(`[data-card="${id}"]`);
-    const open = card && card.querySelector('details').open, paste = card && card.querySelector('[data-paste]').value;
-    card.outerHTML = batchHtml(cp, b, D.batches[cp].indexOf(b), open);
-    const again = $(`[data-card="${id}"] [data-paste]`); if (again && paste) again.value = paste;
+    if (card) {
+      const open = card.querySelector('details').open, paste = card.querySelector('[data-paste]').value;
+      card.outerHTML = batchHtml(cp, b, D.batches[cp].indexOf(b), open);
+      const again = $(`[data-card="${id}"] [data-paste]`); if (again && paste) again.value = paste;
+    }
+    renderBundle();
   }
   async function copyBatch(id) {
     const { cp, b } = batchOf(id), note = $(`[data-copied="${id}"]`);
@@ -693,7 +724,7 @@
       // Saved for every student whose submitted answer is these exact words. An answer
       // that failed the checks is not saved, so it stays "not read yet".
       const save = [];
-      read.results.filter(x => x.status === 'passed').forEach(x => D.rows[cp].forEach(r => {
+      read.results.filter(x => x.status === 'passed' || x.status === 'partial').forEach(x => D.rows[cp].forEach(r => {
         if (r.text === x.text && r.completionState === 'verified-submission') save.push({ studentUid: r.uid, topic: S.topic, cp, criteria: x.output.criteria, fingerprint: r.fingerprint, rubricVersion: D.contracts[cp].rubricVersion || '', reader: S.service + '-pasted' });
       }));
       say.textContent = 'Saving ' + save.length + ' ratings...';
@@ -702,10 +733,10 @@
       const bad = read.failed + read.missing;
       // The page redraws after saving, so what happened is kept on the batch's card;
       // a message written only to the screen-reader region left a blank box on screen.
-      const why = read.results.filter(x => x.status !== 'passed').map(x => x.key + ': ' + x.why);
+      const why = read.results.filter(x => x.status === 'failed' || x.status === 'missing').map(x => x.key + ': ' + x.why);
       const said = 'Saved ' + save.length + ' rating' + (save.length === 1 ? '' : 's') + ' from this reply.' +
         (bad ? ' ' + bad + ' answer' + (bad === 1 ? '' : 's') + ' did not pass the checks and stay not read yet. ' + why.slice(0, 6).join(' ') + (why.length > 6 ? ' And ' + (why.length - 6) + ' more.' : '') : '');
-      S.saved.set(id, { state: read.passed + ' of ' + b.answers.length + ' read and saved', said });
+      S.saved.set(id, { state: (read.passed + (read.partial || 0)) + ' of ' + b.answers.length + ' read and saved', said });
       $('#announce').textContent = said;
       await load();
       const d = $(`[data-card="${id}"] details`); if (d) d.open = true;
@@ -715,7 +746,7 @@
     if (!S.pasted.has(key)) S.pasted.set(key, new Map());
     S.pasted.get(key).set(id, { checkpoint: cp, read, service: S.service, at: new Date().toISOString() });
     const bad = read.failed + read.missing;
-    $('#announce').textContent = read.passed + ' of ' + b.answers.length + ' answers read' + (bad ? '; ' + bad + ' did not pass the checks and show as Can\'t tell' : '');
+    $('#announce').textContent = (read.passed + (read.partial || 0)) + ' of ' + b.answers.length + ' answers read' + (bad ? '; ' + bad + ' did not pass the checks and show as Can\'t tell' : '');
     S.reader = H.READER.id;
     load();
   }
@@ -911,19 +942,374 @@
     box.innerHTML = h;
   }
 
+  // ── Where everyone is ─────────────────────────────────────────────────────
+  // Added 2026-11-16 (Jeff): "not all submissions are being pulled in." Every student
+  // on the list is in exactly one box for each checkpoint, with the reason in plain
+  // words and what to do about it, so a missing answer is never just a dash. The
+  // boxes always add up to the class.
+  const LEDGER = [
+    ['read', 'Read', 'Read. Open any letter on the Class grid to see the reasons.'],
+    ['recheck', 'Read, part needs a second look', 'One or more criteria came back in a form that did not pass the checks, so they show as Can\'t tell. These answers go out again the next time you copy everything waiting.'],
+    ['wait', 'Submitted, waiting for a reading', 'Submitted and not read yet. Nothing reads these by itself: open Read the work, copy everything waiting, and paste the result back.'],
+    ['changed', 'Changed after submitting', 'The writing is different from what the student submitted, so it is not counted. It counts again when they press Submit again, or Gather All My Work.'],
+    ['draft', 'Writing saved, never submitted', 'There is writing in the backup, but the student never pressed Submit or Gather All My Work on this checkpoint. Work turned in to Canvas before 2026-11-16 can look like this.'],
+    ['none', 'Nothing in the backup', 'No writing for this checkpoint. Either it is not started, or it was written on a device where the student is not signed in to the backup, in which case it exists only in their Canvas paste.']
+  ];
+  function bucketOf(st, cp) {
+    const s = status(st, cp, S.minute);
+    if (s === 'done') return entry(st, cp).result.criteria.some(E.checkFailed) ? 'recheck' : 'read';
+    if (s === 'unread' || s === 'busy') return 'wait';
+    return s === 'changed' || s === 'draft' ? s : 'none';
+  }
+  function renderLedger() {
+    const box = $('#ledger'); if (!box || !D) return;
+    const n = D.students.length;
+    if (!n) { box.innerHTML = '<p class="small">No students loaded yet.</p>'; return; }
+    let h = '';
+    CPS.forEach(cp => {
+      const cnt = {};
+      D.students.forEach(st => { const b = bucketOf(st, cp); cnt[b] = (cnt[b] || 0) + 1; });
+      h += `<div class="ledger-row" data-cp="${cp}"><b class="ledger-cp">${CP_NAME[cp]}</b><div class="ledger-boxes">` +
+        LEDGER.filter(([k]) => cnt[k] || k === 'read' || k === 'wait').map(([k, label]) =>
+          `<button type="button" class="ledger-box lb-${k}" data-ledger="${cp}|${k}"${cnt[k] ? '' : ' disabled'}><b>${cnt[k] || 0}</b><span>${label}</span></button>`).join('') +
+        `</div><span class="ledger-sum">of ${n}</span></div>`;
+    });
+    box.innerHTML = h;
+    $('#ledger-note').textContent = 'Every student on the list is in exactly one box for each checkpoint, so each row adds up to the class. Press a box to see who is in it and what to do.' +
+      (D.kind === 'live' ? ' A student who has never signed in to BeHistorical is not on your class list and cannot appear here; run the class-list setup again to add them.' : '');
+    const waiting = pendingCount();
+    const badge = $('#read-badge');
+    badge.hidden = !waiting; badge.textContent = waiting ? String(waiting) : '';
+  }
+  function showLedger(key) {
+    const [cp, k] = key.split('|');
+    const row = LEDGER.find(x => x[0] === k), who = D.students.filter(st => bucketOf(st, cp) === k);
+    lastFocus = document.activeElement;
+    $('#dtitle').textContent = row[1] + ' · ' + who.length;
+    $('#dsub').textContent = CP_NAME[cp] + ', Topic ' + S.topic;
+    $('#dbody').innerHTML = `<p class="callout">${esc(row[2])}</p><ul class="watch">${who.map(st => `<li><b>${esc(shown(st))}</b>${st.section ? `<span>${esc(st.section)}</span>` : ''}</li>`).join('')}</ul>` +
+      (k === 'wait' || k === 'recheck' ? '<button class="btn primary" type="button" data-goto="read" style="justify-self:start">Open Read the work</button>' : '');
+    showDrawer();
+  }
+
+  // ── Read everything waiting, in one copy and one paste ────────────────────
+  // Added 2026-11-16 (Jeff). Every answer that still needs a reading, from both
+  // checkpoints, goes out in one copy (class-pulse-handoff.js, bundleFor) to the Class
+  // Pulse Reader, and one result comes back. The same check before copying applies:
+  // Copy waits until every flag is decided. What comes back is read batch by batch
+  // with the handoff's own readReply, so every rating passes the checks a chat's
+  // reply would.
+  function answerPending(cp, text) {
+    // An answer waits if no reading of it stands, or if part of its reading failed the checks.
+    return D.rows[cp].some(r => r.text === text && !E.eligibility(r) && (() => {
+      const e = D.results[cp].get(r.student);
+      if (D.kind === 'live') return D.unread.has(cp + '|' + r.student) || !!(e && e.result.criteria.some(E.checkFailed));
+      const got = [...pastedHere().values()].some(x => x.checkpoint === cp && x.read.results.some(y => y.text === text && y.status === 'passed'));
+      return !got;
+    })());
+  }
+  function pendingBatches() {
+    const out = [];
+    if (!H || !D || D.kind === 'levels') return out;
+    CPS.forEach(cp => D.batches[cp].forEach(b => {
+      const answers = b.answers.filter(a => answerPending(cp, a.text));
+      if (answers.length) out.push({ cp, b, sub: Object.assign({}, b, { answers }) });
+    }));
+    return out;
+  }
+  function pendingCount() { return pendingBatches().reduce((n, x) => n + x.sub.answers.length, 0); }
+  function bundleGate() {
+    const rows = CPS.flatMap(cp => D.rows[cp].filter(r => !E.eligibility(r)));
+    return H.gate(rows, undefined, 'claude-for-teachers');
+  }
+  function flaggedPending(list) { return list.map(x => ({ x, items: flagged(x.sub) })).filter(y => y.items.length); }
+  function undecidedPending(list) {
+    return list.reduce((n, x) => { const d = decisions(x.b.id); return n + flagged(x.sub).reduce((m, y) => m + y.flags.filter(f => !(d.get(y.a.key) && d.get(y.a.key).has(f.span))).length, 0); }, 0);
+  }
+  function renderBundle() {
+    const panel = $('#bundle-panel'); if (!panel || !D) return;
+    if (!H) { panel.hidden = true; return; }
+    const list = pendingBatches(), n = list.reduce((k, x) => k + x.sub.answers.length, 0), gate = bundleGate();
+    const per = CPS.map(cp => list.filter(x => x.cp === cp).reduce((k, x) => k + x.sub.answers.length, 0));
+    $('#bundle-count').textContent = D.kind === 'levels' ? 'This topic has invented levels but no invented writing, so there is nothing to read.'
+      : !n ? (D.kind === 'live' ? 'Nothing is waiting. Every submitted answer for this topic and class has a reading.' : 'Nothing is waiting: every answer here has a pasted reading.')
+      : `${n} ${n === 1 ? 'answer is' : 'answers are'} waiting for a reading: ${per[0]} from Checkpoint 1, ${per[1]} from Checkpoint 2.` +
+        (D.kind === 'live' ? '' : ' (Demo: these invented answers already show invented levels. Copying them is how you try the Reader.)');
+    $('#bundle-gate').textContent = gate.reason;
+    const left = undecidedPending(list), fl = flaggedPending(list);
+    const d = id => decisions(id);
+    $('#bundle-flags').innerHTML = !gate.ok || !fl.length ? (n && gate.ok ? '<p class="small check-ok">Checked: no waiting answer names a person or gives a personal detail.</p>' : '')
+      : `<div class="precheck"><p class="small"><b>Check before copying.</b> ${fl.reduce((k, y) => k + y.items.length, 0)} waiting ${fl.reduce((k, y) => k + y.items.length, 0) === 1 ? 'answer mentions' : 'answers mention'} something that could identify a student. Remove it from the copy or keep it; the student's work is not changed. ${left ? left + ' still to decide.' : 'All decided.'}</p>
+        <div class="row"><button class="btn" type="button" data-flag-all="remove">Remove every flagged word from the copy</button><span class="small">The cautious choice. A removed personal detail takes its whole sentence.</span></div>` +
+        fl.map(y => y.items.map(it => `<div class="flagged"><p class="response small">${markFlags(it.a.text, it.flags)}</p>` + it.flags.map(f => {
+          const v = d(y.x.b.id).get(it.a.key) && d(y.x.b.id).get(it.a.key).get(f.span);
+          return `<div class="row flagrow"><span class="chip">${esc(FLAG_KIND[f.kind] || f.kind)}</span><span class="small"><b>${esc(f.span.length > 70 ? f.span.slice(0, 67) + '...' : f.span)}</b> ${esc(f.why)}</span>
+            <button class="btn" type="button" data-flag="${y.x.b.id}|${it.a.key}|remove" data-span="${esc(f.span)}" aria-pressed="${v === 'remove'}">Remove from the copy</button>
+            <button class="btn" type="button" data-flag="${y.x.b.id}|${it.a.key}|keep" data-span="${esc(f.span)}" aria-pressed="${v === 'keep'}">Keep it</button></div>`;
+        }).join('') + '</div>').join('')).join('') + '</div>';
+    const can = gate.ok && n > 0 && !left;
+    $('#bundle-copy').disabled = !can;
+    $('#bundle-copied').textContent = !gate.ok ? 'Locked. ' + gate.reason : !n ? '' : left ? 'Decide each flag above first.' : $('#bundle-copied').dataset.done || '';
+    const link = $('#bundle-reader');
+    if (H.READER_URL) { link.href = H.READER_URL; link.removeAttribute('aria-disabled'); $('#bundle-reader-note').textContent = 'Opens in a new tab. Sign in to Claude with your school account if it asks.'; }
+    else { link.removeAttribute('href'); link.setAttribute('aria-disabled', 'true'); $('#bundle-reader-note').textContent = 'The Reader has not been published yet.'; }
+    $('#bundle-said').textContent = S.bundleSaid;
+    // The text itself, for a device where Copy is blocked. Built only once Copy is allowed.
+    const raw = $('#bundle-text');
+    if (!can) { raw.value = ''; return; }
+    const token = S.loadToken;
+    bundleNow(list).then(text => { if (token === S.loadToken) raw.value = text; });
+  }
+  async function bundleNow(list) {
+    const bundle = await H.bundleFor(list.map(x => ({ contract: D.contracts[x.cp], batch: asCopied(x.sub) })));
+    return H.bundleText(bundle);
+  }
+  function decideAll(v) {
+    pendingBatches().forEach(x => flagged(x.sub).forEach(y => {
+      const d = decisions(x.b.id);
+      if (!d.has(y.a.key)) d.set(y.a.key, new Map());
+      y.flags.forEach(f => d.get(y.a.key).set(f.span, v));
+    }));
+    renderPaste();
+    renderBundle();
+  }
+  async function copyBundle() {
+    const list = pendingBatches(), note = $('#bundle-copied');
+    if (!list.length || undecidedPending(list) || !bundleGate().ok) { renderBundle(); return; }
+    const text = await bundleNow(list);
+    let done = false;
+    try { await navigator.clipboard.writeText(text); done = true; }
+    catch (_) {
+      const t = $('#bundle-text'); t.value = text; t.closest('details').open = true; t.select();
+      try { done = document.execCommand('copy'); } catch (__) { done = false; }
+    }
+    const n = list.reduce((k, x) => k + x.sub.answers.length, 0);
+    note.dataset.done = done ? `Copied ${n} ${n === 1 ? 'answer' : 'answers'}. Now paste into the Reader.` : 'This browser blocked copying. Open "If Copy does not work" below and copy the text yourself.';
+    note.textContent = note.dataset.done;
+  }
+  async function readBundle() {
+    const raw = $('#bundle-paste').value, say = t => { S.bundleSaid = t; $('#bundle-said').textContent = t; };
+    if (!raw.trim()) { say('Paste the Reader\'s result first.'); return; }
+    let reply;
+    try { reply = H.parseBundleReply(raw); } catch (err) { say(err.message); return; }
+    const reads = [];
+    let elsewhere = 0;
+    reply.batches.forEach(entry => {
+      const hit = entry && typeof entry.batch === 'string' && batchOf(entry.batch);
+      if (!hit || !Array.isArray(entry.answers)) { elsewhere++; return; }
+      // Only the answers the Reader was sent are expected back, so the rest of the
+      // batch is not reported as left out.
+      const tag = hit.b.id.slice(-6), keys = new Set(entry.answers.map(a => a && String(a.key).replace('-' + tag, '')));
+      const copied = asCopied(hit.b);
+      const sub = Object.assign({}, copied, { answers: copied.answers.filter(a => keys.has(a.key)) });
+      try { reads.push({ cp: hit.cp, b: hit.b, read: H.readReply(D.contracts[hit.cp], sub, JSON.stringify(entry)) }); }
+      catch (_) { elsewhere++; }
+    });
+    if (!reads.length) { say('None of this result matches the topic and class on screen. Choose the topic and class it was copied from, then paste it again.'); return; }
+    const sum = k => reads.reduce((n, r) => n + (r.read[k] || 0), 0);
+    const ok = sum('passed'), part = sum('partial'), bad = sum('failed') + sum('missing');
+    const tail = (part ? ` ${part} of them ${part === 1 ? 'has' : 'have'} a criterion that shows as Can't tell and will go out again.` : '') +
+      (bad ? ` ${bad} did not pass the checks and ${bad === 1 ? 'is' : 'are'} still waiting.` : '') +
+      (elsewhere ? ` ${elsewhere} ${elsewhere === 1 ? 'part' : 'parts'} of the result belonged to another topic or class and ${elsewhere === 1 ? 'was' : 'were'} left alone.` : '');
+    if (S.source === 'live') {
+      const save = [];
+      reads.forEach(r => r.read.results.filter(x => x.status === 'passed' || x.status === 'partial').forEach(x => D.rows[r.cp].forEach(row => {
+        if (row.text === x.text && row.completionState === 'verified-submission') save.push({ studentUid: row.uid, topic: S.topic, cp: r.cp, criteria: x.output.criteria, fingerprint: row.fingerprint, rubricVersion: D.contracts[r.cp].rubricVersion || '', reader: 'claude-for-teachers-reader' });
+      })));
+      say('Saving ' + save.length + ' readings...');
+      try { await S.live.api.saveRatings(save); }
+      catch (err) { say('Not saved: ' + err.message); return; }
+      S.bundleSaid = `Saved ${save.length} ${save.length === 1 ? 'reading' : 'readings'} for ${ok + part} ${ok + part === 1 ? 'answer' : 'answers'}.` + tail;
+      $('#bundle-paste').value = '';
+      $('#announce').textContent = S.bundleSaid;
+      await load();
+      return;
+    }
+    const key = pasteKey();
+    if (!S.pasted.has(key)) S.pasted.set(key, new Map());
+    reads.forEach(r => {
+      // A second result for a batch adds to the first rather than replacing it.
+      const before = S.pasted.get(key).get(r.b.id);
+      if (before) {
+        const fresh = new Set(r.read.results.map(x => x.key));
+        r.read.results = before.read.results.filter(x => !fresh.has(x.key)).concat(r.read.results);
+        ['passed', 'partial', 'failed', 'missing'].forEach(k => { r.read[k] = r.read.results.filter(x => x.status === k).length; });
+      }
+      S.pasted.get(key).set(r.b.id, { checkpoint: r.cp, read: r.read, service: 'claude-for-teachers', at: new Date().toISOString() });
+    });
+    S.bundleSaid = `Read ${ok + part} ${ok + part === 1 ? 'answer' : 'answers'}.` + tail;
+    $('#bundle-paste').value = '';
+    $('#announce').textContent = S.bundleSaid;
+    S.reader = H.READER.id;
+    load();
+  }
+
+  // ── Pulling by itself ─────────────────────────────────────────────────────
+  // Added 2026-11-16 (Jeff). During class the page can pull the latest submissions
+  // every three minutes, for one class at a time. It reads only, under the same rules
+  // as the Pull button. It is one class only and stops itself after ninety minutes
+  // because every pull spends the free plan's daily reads, which the student backup
+  // shares: a class of 25 is about 200 reads a pull.
+  const AUTO_EVERY = 180000, AUTO_FOR = 90 * 60000;
+  let autoTimer = null, autoSince = 0;
+  function autoAllowed() { return S.source === 'live' && !!(S.live && S.live.roster) && markableSection() !== null; }
+  function setAutoPull(on) {
+    clearInterval(autoTimer); autoTimer = null;
+    const box = $('#auto-pull'), label = $('#auto-pull-label');
+    if (on && !autoAllowed()) { on = false; label.textContent = 'Choose one class to pull every 3 minutes'; }
+    else label.textContent = on ? 'Pulling every 3 minutes' : 'Pull every 3 minutes';
+    box.checked = !!on;
+    if (!on) return;
+    autoSince = Date.now();
+    autoTimer = setInterval(() => {
+      if (!autoAllowed() || Date.now() - autoSince > AUTO_FOR) { setAutoPull(false); if (autoAllowed()) $('#auto-pull-label').textContent = 'Stopped after 90 minutes. Tick to start again.'; return; }
+      // Never under the teacher's hands: a pull redraws the batch cards.
+      const typing = $$('#paste-batches textarea[data-paste], #bundle-paste').some(t => t.value.trim());
+      if (document.hidden || typing || !$('#drawer').hidden) return;
+      load();
+    }, AUTO_EVERY);
+  }
+
+  // ── The projector screen ──────────────────────────────────────────────────
+  // Added 2026-11-16 (Jeff): a separate window to put in front of the class and drive
+  // from this page or the iPad, as the Teaching OS decks have. It shows what Class
+  // view shows, one part at a time, and holds to Class view's rule: no name, no
+  // "Student 01", no student's words. That is a property of what is sent, not of what
+  // the screen chooses to draw: projectorState() builds the whole message from class
+  // totals, and the model answer is put in it only while its own part is showing, so
+  // a projector opened early has nothing to reveal.
+  const SCENES = [['hold', 'Title only'], ['question', 'The question'], ['results', 'How the class did'], ['revisit', 'What to revisit'], ['mis', 'Wrong ideas'], ['model', 'Model answer']];
+  const chan = typeof BroadcastChannel === 'function' ? new BroadcastChannel('class-pulse-projector') : null;
+  let projWin = null, projSeen = 0;
+  function classData(cp) {
+    const cols = D.cols.filter(c => c.cp === cp);
+    const tallies = cols.map(c => {
+      const t = { c, D: 0, P: 0, N: 0, read: 0 };
+      D.students.forEach(st => { const b = endBand(st, c); if (b === 'D' || b === 'P' || b === 'N') { t[b]++; t.read++; } });
+      return t;
+    });
+    let weakest = null;
+    tallies.forEach(t => { if (t.read >= CV_MIN_READ) { const r = (t.P + t.N) / t.read; if (!weakest || r > weakest.r) weakest = { t, r }; } });
+    const mis = new Map();
+    D.results[cp].forEach(e => e.result.criteria.forEach(c => c.misconceptions.forEach(m => { const word = unquoted(m); if (word) mis.set(word, (mis.get(word) || 0) + 1); })));
+    return { cols, tallies, weakest, read: Math.max(0, ...tallies.map(t => t.read)), inCount: D.students.filter(st => st.submittedAt[cp] != null).length,
+      mis: [...mis.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(x => x[0]) };
+  }
+  function projectorState() {
+    const cp = S.cvCp, contract = D.contracts[cp], d = classData(cp), scene = SCENES[S.scene][0];
+    const out = {
+      v: 1, scene, index: S.scene, count: SCENES.length, label: SCENES[S.scene][1],
+      topic: 'Topic ' + title(S.topic), checkpoint: CP_NAME[cp], prompt: contract.prompt,
+      inCount: d.inCount, n: D.students.length, read: d.read,
+      criteria: d.tallies.map(t => ({ n: t.c.ci + 1, text: t.c.text, D: t.D, P: t.P, N: t.N, read: t.read, hot: !!(d.weakest && d.weakest.t === t) })),
+      revisit: null, mis: S.cvMis === 'show' ? d.mis : null, model: null
+    };
+    if (d.weakest) {
+      const c = d.weakest.t.c, ruled = contract.criteria[c.ci] && contract.criteria[c.ci].rubric;
+      out.revisit = { n: c.ci + 1, text: c.text, short: d.weakest.t.P + d.weakest.t.N, read: d.weakest.t.read, P: d.weakest.t.P, N: d.weakest.t.N, strong: (ruled && ruled.D) || '' };
+    }
+    // Only while the model answer's own part is on screen, and only if it is switched on.
+    if (scene === 'model' && S.cvModel === 'show') {
+      const paras = modelText().split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+      const mark = paras.length === d.cols.length && d.weakest ? d.weakest.t.c.ci : -1;
+      out.model = paras.map((text, i) => ({ text, hot: i === mark }));
+    }
+    return out;
+  }
+  function pushProjector() {
+    renderScenes();
+    if (chan && D) chan.postMessage({ type: 'state', state: projectorState() });
+    sendRemoteState();
+  }
+  function renderScenes() {
+    const box = $('#proj-scenes'); if (!box) return;
+    box.innerHTML = SCENES.map(([, label], i) => `<button class="btn" type="button" data-scene="${i}" aria-pressed="${i === S.scene}">${i + 1}. ${label}</button>`).join('');
+    const open = projSeen && Date.now() - projSeen < 15000;
+    $('#proj-status').textContent = (open ? 'The projector screen is open and showing: ' : 'Not open yet. When it opens it will show: ') + SCENES[S.scene][1] + ', ' + CP_NAME[S.cvCp] + '.' +
+      (S.scene === 5 && S.cvModel !== 'show' ? ' Model answer is set to Hide above, so the screen says so instead of showing it.' : '') +
+      (S.scene === 5 && S.cvModel === 'show' && !modelText().trim() ? ' No model answer is loaded for this checkpoint on this computer yet.' : '');
+  }
+  function setScene(i) {
+    S.scene = Math.max(0, Math.min(SCENES.length - 1, Number(i) || 0));
+    pushProjector();
+  }
+  function stepScene(d) { setScene(S.scene + d); }
+  function openProjector() {
+    projWin = window.open('class-pulse-projector.html', 'class-pulse-projector', 'popup=yes,width=1280,height=720');
+    if (!projWin) { $('#proj-status').textContent = 'The browser blocked the new window. Allow pop-ups for this page and press the button again.'; setTab('class'); return; }
+    setTab('class');
+  }
+  if (chan) chan.onmessage = e => {
+    const m = e.data || {};
+    if (m.type === 'hello' || m.type === 'alive') { projSeen = Date.now(); if (D) { if (m.type === 'hello') pushProjector(); else renderScenes(); } }
+    else if (m.type === 'step') stepScene(m.d > 0 ? 1 : -1);
+  };
+
+  // The iPad as the remote, through the same Firebase session the Teaching OS decks
+  // use (remote-firebase.js; firestore.rules, remoteSessions). The session document
+  // accepts a button name and a number and nothing else, so all that travels is which
+  // part to show: index = checkpoint (0 or 1) times six, plus the part. This page
+  // answers with the same number and the part's name. No student work can pass.
+  let remote = null, remoteSession = '', remoteReady = false;
+  const remoteIndex = () => (S.cvCp === 'cp2' ? SCENES.length : 0) + S.scene;
+  function remoteSay(t) { $('#proj-ipad-status').textContent = t; }
+  function sendRemoteState() {
+    if (!remote || !remoteReady) return;
+    remote.publish({ type: 'state', index: remoteIndex(), count: (S.cvCp === 'cp2' ? 'CP2' : 'CP1') + ' · ' + (S.scene + 1) + ' of ' + SCENES.length, title: SCENES[S.scene][1] });
+  }
+  function remoteGoto(index) {
+    const i = Math.max(0, Math.min(SCENES.length * 2 - 1, Number(index) || 0));
+    const cp = i >= SCENES.length ? 'cp2' : 'cp1';
+    if (cp !== S.cvCp) { S.cvCp = cp; $$('#cv-cp button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === cp)); if (S.tab === 'class') renderClass(); }
+    setScene(i % SCENES.length);
+  }
+  function renderRemote() {
+    const qr = $('#proj-qr'), link = $('#proj-ipad-link');
+    if (!remoteSession || !remoteReady) { qr.hidden = true; link.hidden = true; return; }
+    const url = new URL('class-pulse-remote.html', location.href); url.searchParams.set('session', remoteSession);
+    qr.hidden = false; qr.innerHTML = '';
+    if (window.QRCode) new window.QRCode(qr, { text: url.href, width: 200, height: 200, correctLevel: window.QRCode.CorrectLevel.M });
+    link.hidden = false;
+    link.innerHTML = 'Or open this on the iPad: <button class="btn" type="button" id="proj-ipad-copy">Copy the iPad link</button>';
+    $('#proj-ipad-copy').addEventListener('click', e => { navigator.clipboard.writeText(url.href).then(() => { e.target.textContent = 'Copied'; }, () => { link.textContent = url.href; }); });
+  }
+  function remoteStart() {
+    if (!window.BHRemoteFirebase) { remoteSay('The iPad remote is not available on this copy of the page.'); return; }
+    if (remote) { remote.retry(); return; }
+    try { remoteSession = sessionStorage.getItem('class-pulse-remote-session') || ''; } catch (_) { remoteSession = ''; }
+    remote = window.BHRemoteFirebase.connect({
+      session: remoteSession, sender: 'host',
+      onsession(id) { remoteSession = id; try { sessionStorage.setItem('class-pulse-remote-session', id); } catch (_) { /* this visit only */ } renderRemote(); },
+      onready() { remoteReady = true; $('#proj-ipad-signin').hidden = true; remoteSay('Ready. Scan the code with the iPad camera.'); renderRemote(); },
+      onstatus(kind, message) { if (kind === 'ready') return; remoteReady = false; $('#proj-ipad-signin').hidden = kind !== 'signin'; remoteSay(message); renderRemote(); },
+      onmessage(m) {
+        if (!m || m.sender !== 'ipad') return;
+        remoteSay('iPad connected.'); $('#proj-qr').hidden = true;
+        if (m.type === 'next') stepScene(1);
+        else if (m.type === 'prev') stepScene(-1);
+        else if (m.type === 'start') remoteGoto(S.cvCp === 'cp2' ? SCENES.length : 0);
+        else if (m.type === 'goto') remoteGoto(m.index);
+        else sendRemoteState(); // hello and ping: say where we are
+      }
+    });
+  }
+
   // ── Wiring ────────────────────────────────────────────────────────────────
+  const TABS = ['live', 'read', 'pulse', 'class', 'course', 'student'];
   function renderAll() {
     renderLive();
+    renderLedger();
+    pushProjector();
     if (S.tab === 'class') renderClass();
     if (S.tab === 'pulse') renderPulse();
     if (S.tab === 'course') renderCourse();
     if (S.tab === 'student') renderStudent();
   }
   function setTab(t) {
-    if (!['live', 'pulse', 'course', 'student', 'class'].includes(t)) t = 'live';
+    if (!TABS.includes(t)) t = 'live';
     if (S.source === 'live' && (t === 'course' || t === 'student')) t = 'live';
     S.tab = t;
-    ['live', 'pulse', 'course', 'student', 'class'].forEach(x => { $('#view-' + x).hidden = x !== t; $('#tab-' + x).setAttribute('aria-selected', x === t); });
+    TABS.forEach(x => { $('#view-' + x).hidden = x !== t; $('#tab-' + x).setAttribute('aria-selected', x === t); });
     if (D) renderAll();
     try { history.replaceState(null, '', '#' + t); } catch (_) { /* file:// or a sandbox */ }
   }
@@ -940,6 +1326,7 @@
   $('#topic').addEventListener('change', e => { S.topic = e.target.value; S.stu = 0; load(); });
   $('#section').addEventListener('change', e => {
     if (S.source === 'live') S.liveSection = e.target.value; else S.section = e.target.value;
+    if (!autoAllowed()) setAutoPull(false);
     S.stu = 0; load();
   });
   $('#stpick').addEventListener('change', e => { S.stu = Number(e.target.value); renderStudent(); });
@@ -960,12 +1347,20 @@
     renderPaste();
   });
   $('#live-refresh').addEventListener('click', () => { liveSay('Pulling the latest answers...'); load(); });
+  $('#auto-pull').addEventListener('change', e => setAutoPull(e.target.checked));
+  $('#bundle-copy').addEventListener('click', copyBundle);
+  $('#bundle-read').addEventListener('click', readBundle);
+  ['#proj-open', '#proj-open-2'].forEach(id => $(id).addEventListener('click', openProjector));
+  $('#proj-prev').addEventListener('click', () => stepScene(-1));
+  $('#proj-next').addEventListener('click', () => stepScene(1));
+  $('#proj-ipad-start').addEventListener('click', remoteStart);
+  $('#proj-ipad-signin').addEventListener('click', () => { if (remote && remote.signIn) remote.signIn(); });
   seg('#names', 'names', renderAll);
   seg('#sort', 'sort', renderLive);
   seg('#cmetric', 'cmetric', renderCourse);
-  seg('#cv-cp', 'cvCp', renderClass);
-  seg('#cv-mis', 'cvMis', renderClass);
-  seg('#cv-model-show', 'cvModel', renderClass);
+  seg('#cv-cp', 'cvCp', () => { renderClass(); pushProjector(); });
+  seg('#cv-mis', 'cvMis', () => { renderClass(); pushProjector(); });
+  seg('#cv-model-show', 'cvModel', () => { renderClass(); pushProjector(); });
   $('#cv-session').addEventListener('click', e => {
     const sec = markableSection(); if (sec === null) return;
     if (e.target.closest('#cv-session-mark')) setSession(S.cvCp, sec, new Date().toISOString());
@@ -980,6 +1375,7 @@
   $('#cv-model-text').addEventListener('input', e => {
     setModel(modelKey(), e.target.value);
     if (S.cvModel === 'show') renderClass();
+    pushProjector();
   });
   // The model answers file (class-pulse-model-file.js), read on this computer only.
   // Every answer in it replaces what was kept for that topic and checkpoint. A
@@ -1005,6 +1401,7 @@
       : 'Nothing was loaded. ') + notes.join(' ');
     $('#cv-model-text').value = modelText(); // even while the cursor is in the box
     renderClass();
+    pushProjector();
   }
   $('#cv-model-load').addEventListener('click', () => $('#cv-model-file').click());
   $('#cv-model-file').addEventListener('change', e => {
@@ -1020,7 +1417,14 @@
   $('#dclose').addEventListener('click', closeDrawer);
   $('#scrim').addEventListener('click', closeDrawer);
   document.addEventListener('keydown', e => {
-    if ($('#drawer').hidden) return;
+    if ($('#drawer').hidden) {
+      // On the Projector screen the arrow keys step the projector, as a clicker does.
+      if (S.tab === 'class' && !/^(INPUT|TEXTAREA|SELECT)$/.test((e.target && e.target.tagName) || '')) {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') { stepScene(1); e.preventDefault(); }
+        else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { stepScene(-1); e.preventDefault(); }
+      }
+      return;
+    }
     if (e.key === 'Escape') closeDrawer();
     if (e.key === 'Tab') {
       const f = $$('#drawer button'); if (!f.length) return;
@@ -1033,10 +1437,13 @@
     const ag = e.target.closest('[data-agree]'); if (ag) { const [s, c] = ag.dataset.agree.split('|'); const col = D.cols.find(x => x.id === c); record(Number(s), c, entry(D.students[Number(s)], col.cp).result.criteria[col.ci].category, true); return; }
     const st = e.target.closest('[data-set]'); if (st) { const [s, c, b] = st.dataset.set.split('|'); record(Number(s), c, b, false); return; }
     const sg = e.target.closest('[data-seg]'); if (sg) { showSegment(sg.dataset.seg); return; }
-    const go = e.target.closest('[data-goto]'); if (go) { setTab(go.dataset.goto); return; }
+    const go = e.target.closest('[data-goto]'); if (go) { if (!$('#drawer').hidden) closeDrawer(); setTab(go.dataset.goto); return; }
     const cp = e.target.closest('[data-copy]'); if (cp) { copyBatch(cp.dataset.copy); return; }
     const rd = e.target.closest('[data-read]'); if (rd) { readPasted(rd.dataset.read); return; }
-    const fl = e.target.closest('[data-flag]'); if (fl) { const [id, key, v] = fl.dataset.flag.split('|'); decide(id, key, fl.dataset.span, v); }
+    const fl = e.target.closest('[data-flag]'); if (fl) { const [id, key, v] = fl.dataset.flag.split('|'); decide(id, key, fl.dataset.span, v); return; }
+    const lg = e.target.closest('[data-ledger]'); if (lg) { showLedger(lg.dataset.ledger); return; }
+    const all = e.target.closest('[data-flag-all]'); if (all) { decideAll(all.dataset.flagAll); return; }
+    const sc = e.target.closest('[data-scene]'); if (sc) { setScene(Number(sc.dataset.scene)); }
   });
 
   setTab((location.hash || '').slice(1) || 'live');
