@@ -1,7 +1,8 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** drafting. The region plan below is settled; draft the chapters in the order
-listed, then wire `VOLUMES` and the hub button, build, and start review pass 1.
+**Resume here:** review pass 1 is running (launched 2026-11-16, four fresh reviewers on the packet
+captured from `ebook/unit-5.html` at commit after the ledger rows). If this session stopped
+before pass 1's findings appear below, relaunch pass 1 from a fresh capture.
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
