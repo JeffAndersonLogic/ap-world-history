@@ -117,6 +117,9 @@ starts from is `05_PROMPTS/BeHistorical-Build-Handoff-Prompt.md` in AndersonLogi
   status line naming the last finished phase, the next step, and anything half done (for
   example "review pass 2 findings 1 to 9 fixed, 10 to 14 not yet"). The next session
   deletes the line when it picks the work up. Never leave the resume point only in chat.
+  Reviewer findings follow the same rule: they go into the claim ledger, marked `PENDING`,
+  the moment a pass ends and before any fix (Phase 9C), so a stopped session loses nothing
+  a reviewer found.
 - **Starting a session, on either account:** `git fetch origin`, then list remote branches
   with commits not on `main` (Phase 0 step 0). A `claude/topic-*` branch ahead of `main` is
   either a finished build waiting for "ship it" or a build to resume; its last commit and
@@ -554,6 +557,17 @@ supported ones, reject the unsupported ones with a one-line reason, and log both
 (a "Review findings" section with each finding and its disposition). A reviewer that sounds
 confident is not thereby right, and a fix made only because a reviewer asked is a second way to
 put an error in.
+
+**Write the findings down the moment a pass ends, before fixing anything** (Jeff, standing rule
+of 2026-11-16). As soon as each reviewer reports, copy every finding into the ledger's "Review
+findings" section under its pass and reviewer (where, what is wrong, the evidence and source,
+the proposed fix), each marked `PENDING`, then commit and push the ledger. Only then start
+fixing, and replace each `PENDING` with its disposition as the fix lands. A finding that lives
+only in a reviewer's report or in chat dies with the session: on 2026-11-13 the Unit 4 by
+Region build stopped in the middle of pass 2, and the next session could recover every fix from
+the commits but not one reviewer's reasoning, so a whole extra pass was spent re-finding what
+the lost passes had already found. A `PENDING` row is also the exact resume point for a
+session that picks the work up.
 
 **Then a fresh reviewer runs a full pass**, never only a check of the corrected spots, since a
 fix can break something nearby. Repeat until a full pass turns up no supported defect.
