@@ -809,10 +809,26 @@ Layton. It has been run only on invented answers and against a stand-in for Clau
 **Before real work goes through it, compare its readings with the calibration set**
 (AndersonLogic-OS `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`).
 
-**Pulling by itself.** A tick box pulls the latest answers every three minutes, for one
-class at a time, and stops itself after ninety minutes. One class only because every pull
-spends the free plan's daily reads, which the student backup shares. It never pulls while a
+**Pulling by itself.** A tick box checks for new submissions every three minutes, for one
+class at a time, and stops itself after ninety minutes. One class only because every check
+spends the free plan's daily reads, which the student backup shares. It never checks while a
 reply is half pasted or a drawer is open.
+
+**What a pull costs, corrected the same day.** A full pull is 8 reads a student (two
+checkpoints, an answer and a receipt each, and the rules' class-list lookup on every
+document) plus one read for every saved reading of the topic, across all the teacher's
+classes. So a class of 26 is about 210 to 470 reads, and All my classes about 1,300. The
+first version of auto-pull made a full pull every three minutes, up to about 14,000 reads
+in ninety minutes. It now makes a **quick check** (`answers(topic, ids, { reuse })` in
+`class-pulse-live.js`, `liveBuild(quick)` in the app): every receipt, an answer only when
+its receipt changed since the last pull, and the saved readings reused, since they change
+only when the teacher saves and saving pulls in full. That is about 4 reads a student plus
+2 per new submission, about 105 for a class of 26, so ninety minutes is about 3,100 to
+3,400. What it cannot see until the next full pull: an answer edited without a new Submit
+or Gather, and readings saved on another computer. The Pull button, and changing topic or
+class, still pull in full. `class-pulse-page.test.js` proves the quick check with a fake
+clock and four negative controls. The read budget Jeff was given is in AndersonLogic-OS
+`04_PRODUCTS/BeHistorical/Class-Pulse-At-A-Glance.html`.
 
 **The dashboard.** A command bar that stays put (students, class, topic, names, pull,
 projector), the hero cut to a strip, the count, then tabs in the order the work is done:
