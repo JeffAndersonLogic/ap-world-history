@@ -172,3 +172,55 @@ Africa prompt said the trade "helped tear Kongo apart", further than the chapter
 Kongo's civil wars are argued); it now uses the chapter's own claim, that the trade which had
 strengthened the king "turned against the kingdom". The six prompts were not put through a fresh
 reviewer loop; this is a review aid, not a topic build.
+
+## Plain-language pass, East Asia (2026-11-16, Jeff: "yes, start with the East Asia chapter")
+
+A readability check found the chapters at about a grade 9 to 10.5 reading level, with the difficulty
+coming from crowded sentences rather than vocabulary: in East Asia, 29 story sentences over 25
+words (the longest 48) and 13 College Board or CED quotations woven into the story. East Asia was
+revised first, as the sample for the other five.
+
+**What changed.** Sentences split to one idea each (story prose: average 18.0 words to 12.0;
+sentences over 25 words 29 to 3; Flesch-Kincaid grade 9.4 to 6.6, the drop coming from sentence
+length, since the vocabulary and key terms are the same). Every College Board quotation moved out
+of the story into one "What the College Board says" box at the end of each of the four sections
+(`kind: 'howknow'`, so no renderer change), each linking its topic. The box quotes whole Key
+Concept sentences where they are short and fragments where they are long, word for word from
+`scripts/lib/ced-source/unit-4.js`; "silk in China" is labelled one of the College Board's
+examples, since the CED lists it as an illustrative example, not a Key Concept sentence.
+
+**What did not change.** No fact was added or removed. All 46 years and decades in the old chapter
+are still there; the reviewers' narrowings stay word for word in substance ("most taxes", "may
+have", "probably", the Shimabara lords' "taxes of their own", the silver-and-the-Ming-fall
+misconception). The glossary, closing cards and Argue it prompt are unchanged apart from two
+closing-card sentences split in two.
+
+**Rewordings that touch a claim, for the record:**
+
+1. **Silver ratios rounded.** "about five and a half to seven ounces of silver at Canton ... twelve
+   and a half to fourteen in Spain" became "about six" and "about thirteen" (the midpoints are 6.25
+   and 13.25; von Glahn 1996, via Topic 4.5 ledger row 132). The "about twice as much" conclusion is
+   unchanged. Attribution kept: "The historian Richard von Glahn has worked out what this meant".
+2. **Tribute system.** "sent envoys to acknowledge the emperor" became "to honor the emperor as the
+   ruler above him", which is what the acknowledgement was. The glossary keeps "acknowledge".
+3. **Shimabara.** "local resistance to a centralizing state" became "local resistance to a
+   government that was pulling power into its own hands", with the Topic 4.6 Key Concept quoted in
+   the box.
+4. **The 1565 voyage.** "found a way back across the Pacific" became "found a sailing route back
+   across the Pacific, from Asia to Mexico", which is what the return route was.
+5. **The 1639 order glossed.** After the order's words ("have secretly transported those who are
+   going to propagate that religion"): "In other words, they had been sneaking in missionaries to
+   spread Christianity."
+6. **Han officials and Topic 4.7.** "the power of existing elites fluctuated ..." is now said in the
+   story as "The old elite's power went up and down, and the emperor had the final say", with the
+   CED's words in the box.
+7. **New links, both to topics the chapter already declared:** Topic 4.4 on Japan's restrictive
+   trade policy (now also a key-term span) and Topic 4.6 on the queue risings, which the module
+   header already counted under KC-4.3.III.iii.
+
+**How it was checked.** `region-chapters.test.js` and the full offline gate pass; the eBook
+accessibility and narration browser tests pass. Two disposable checks, each first shown failing on
+a deliberately broken copy: every quotation in the four boxes is verbatim CED text, and no year in
+the old chapter is missing from the new one. Only `ebook/unit-4.html` changed in the rebuild. This
+pass was not put through a fresh independent reviewer; it changes wording, not history, but items
+1 to 6 are the places a reviewer should look first.
