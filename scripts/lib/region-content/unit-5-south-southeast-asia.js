@@ -23,7 +23,7 @@ module.exports = {
   unit: '5',
   region: 'South and Southeast Asia',
   titleHtml: 'South and Southeast <em>Asia</em>',
-  deck: `In 1750 India's weavers sold cotton cloth on three continents. By 1900 India bought British cloth and sold raw cotton, though millions of its weavers were still at their looms. Follow how the trade turned around, what railways and steamships brought, the Indian and Chinese migrants who crossed the Bay of Bengal and the South China Sea, and the Filipino writers who imagined a nation.`,
+  deck: `In 1750 India's weavers sold cotton cloth on three continents. By 1900 India bought most of its machine-made cloth from Britain and sold raw cotton abroad, though millions of its weavers were still at their looms and Indian-owned mills were spinning thread. Follow how the trade turned around, what railways and steamships brought, the Indian and Chinese migrants who crossed the Bay of Bengal and the South China Sea, and the Filipino writers who imagined a nation.`,
   topics: ['5.2', '5.3', '5.4', '5.5', '5.7'],
   ced: [
     'KC-5.1.II.B',
@@ -132,7 +132,7 @@ module.exports = {
         {
           heading: 'Old work',
           blocks: [
-            { p: `India's hand weaving shrank, but it did not die. Many weavers switched to cheaper machine-spun thread so they could keep weaving. The economic historian Tirthankar Roy finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s, and in <span class="num">1908</span>, in one province of northern India alone, about a million people still lived from handloom weaving. And most Indians still farmed: the census of <span class="num">1901</span> found about two-thirds of the people living by farming.` },
+            { p: `India's hand weaving shrank, but it did not die. Many weavers switched to cheaper machine-spun thread so they could keep weaving, and some of that thread was Indian. From <span class="num">1854</span> Indian owners built steam-powered cotton mills, first in Bombay; by the early 1900s India had about 200 of them, with about five million spindles, spinning thread for India's handloom weavers and yarn for sale in China. The economic historian Tirthankar Roy finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s, and in <span class="num">1908</span>, in one province of northern India alone, about a million people still lived from handloom weaving. And most Indians still farmed: the census of <span class="num">1901</span> found about two-thirds of the people living by farming.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -217,7 +217,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'From cloth seller to cloth buyer',
-        body: `By estimate, India made about a quarter of the world's manufactured goods in 1750 and under 2 percent by 1900. From about 1830 it bought more cotton cloth than it sold, and sold raw cotton to Britain's mills instead.`
+        body: `By estimate, India made about a quarter of the world's manufactured goods in 1750 and under 2 percent by 1900. From about 1830 it bought more cotton cloth than it sold, and sold raw cotton abroad instead. From 1854 Indian-owned steam mills, about 200 by the early 1900s, spun thread at home.`
       }
     ]
   }

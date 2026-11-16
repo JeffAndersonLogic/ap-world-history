@@ -164,7 +164,7 @@ module.exports = {
       name: 'Haiti: The Words Claimed',
       navLabel: 'Haiti',
       dates: '1791 to 1825 &nbsp;·&nbsp; Saint-Domingue becomes Haiti',
-      thesis: `France's declaration said men are born free and equal. In Saint-Domingue, the people France held in slavery claimed those words for themselves, rose up first, and won a country of their own.`,
+      thesis: `France's declaration said men are born free and equal. In Saint-Domingue, enslaved people rose up first, in 1791, and within two years their leaders were claiming liberty and equality for themselves. They won a country of their own.`,
       parts: [
         {
           heading: 'The grievance',
@@ -180,7 +180,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that France gave Haiti its freedom. Enslaved people rose up in 1791. French officials in the colony began freeing enslaved people in 1793 to keep their side's soldiers, and in February 1794 the government in Paris abolished slavery in all French colonies, after two and a half years of fighting. Toussaint changed sides to France a few months later. Haitians then won their independence by defeating Napoleon's army.`
+              html: `Do not write that France gave Haiti its freedom. Enslaved people rose up in 1791. French officials in the colony began freeing enslaved people in 1793 to win them as soldiers against Spain and Britain, and in February 1794 the government in Paris abolished slavery in all French colonies, after two and a half years of fighting. Toussaint changed sides to France a few months later. Haitians then won their independence by defeating Napoleon's army.`
             } }
           ]
         },

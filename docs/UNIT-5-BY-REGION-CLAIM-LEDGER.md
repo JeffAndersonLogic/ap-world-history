@@ -1,9 +1,8 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** pass 2's reviewers E, F and H are dispositioned and fixed. Reviewer G (history,
-the Americas and South and Southeast Asia) was still running when this was committed; if its findings
-are not below, relaunch that one reviewer on the pass 2 packet, record its findings as `PENDING`,
-then fix, then run pass 3 on a fresh capture.
+**Resume here:** passes 1 and 2 are done and every finding has a disposition. Next: recapture
+the chapters from `ebook/unit-5.html` and run review pass 3 (the last allowed) with four fresh
+reviewers.
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
@@ -128,6 +127,7 @@ not repeated here.
 | Spain had ruled the Philippines since the 1500s; Propaganda writers, many of them students in Europe, demanded equal rights with Spaniards; Rizal's Noli Me Tángere (1887) attacked the abuses of Spanish rule and the friars | South and Southeast Asia 04 | Library of Congress country study, Philippines ("Rizal and the Propaganda Movement"); Penguin reader's guide to Noli Me Tángere; Topic 5.2 for the demands and 1896 | VERIFIED |
 | Chile ended slavery in 1823 and Mexico in 1829 | Americas 04 | Added in pass 1 (reviewer B): Abolition of slavery timeline (Chile 1823; Mexico, the Guerrero decree of 1829) | VERIFIED |
 | London and India were joined by an overland telegraph from 1865, whose messages took days; the 1870 cable cut that to minutes | South and Southeast Asia 03 | Added in pass 1 (reviewer C): Encyclopaedia Iranica, "Indo-European Telegraph Department" (1 March 1865); atlantic-cable.com (first message 6 days 8 hours); Porthcurno Museum (1870 exchange about 5 minutes) | VERIFIED |
+| From 1854 Indian owners built steam-powered cotton mills, first in Bombay; about 200 by the early 1900s, about five million spindles; yarn for handloom weavers and for China | South and Southeast Asia 03, deck, card | Added in pass 2 (reviewer G): 1911 Britannica, "Cotton" (164 mills in 1897-98, 204 in 1903-04; 4.2 to 5.2 million spindles); Bombay Spinning and Weaving Company founded 1854 (Wikipedia; Davar) | VERIFIED |
 | The Propaganda Movement did not demand independence at first | South and Southeast Asia 04 | Library of Congress country study, Philippines (a reform movement; independence came with the Katipunan); Topic 5.2 ("demanded equal rights with Spaniards") | VERIFIED |
 
 ## Review findings
@@ -379,22 +379,29 @@ facts. Unverified, not findings: the Aleppo and Damascus handlooms, Manchester's
    it, economic card): the first Bombay mill opened in 1854, and by about 1900 India had roughly 190
    mills and about 5 million spindles, spinning yarn for handloom weavers and for China. Also, by the
    1890s to 1910s most Indian raw cotton went to Japan and continental Europe (Hansard written answer,
-   11 July 1916), so "sold raw cotton to British mills" is safe only for mid-century. `PENDING`
+   11 July 1916), so "sold raw cotton to British mills" is safe only for mid-century. **FIXED: section 03 now says that from 1854 Indian owners built steam-powered cotton mills, first in Bombay, about 200 by the early 1900s with about five million spindles, spinning thread for handloom weavers and yarn for China (1911 Britannica, "Cotton": 164 mills in 1897-98, 204 in 1903-04, 4.2 to 5.2 million spindles; Bombay Spinning and Weaving Company, 1854). The deck and the economic card say India sold raw cotton "abroad", not to "Britain's mills"; the 1830s sentence in section 02 stays, since it is right for then.**
 2. **Americas 02 thesis (and topic 5.2's): the enslaved "claimed those words for themselves, rose
    up"**: an implied "because" between the 1789 Declaration and the 1791 rising that the sources do not
    support (royalist leaders, the three-free-days rumour; liberty and equality language clear by 1793,
    when Toussaint fought for Spain). Sources: EHNE, "Saint-Domingue revolution, August 1791"; Dubois,
    Avengers of the New World (2004). Restore "fighting on Spain's side" before the 1793 quotation.
-   `PENDING`
-3. **Americas 02: Louisiana sale with one cause** (same as H1). `PENDING`
+   **FIXED here and in topic 5.2's deep reading thesis: "enslaved people rose up in 1791, and within two years their leaders were claiming liberty and equality for themselves". The 1793 quotation now says Toussaint was fighting on Spain's side, and that he changed sides after Paris abolished slavery (as topic 5.2).**
+3. **Americas 02: Louisiana sale with one cause** (same as H1). **FIXED with H1.**
 4. **Americas deck: "a hemisphere of independent states"**: Canada, the Caribbean colonies, the
-   Guianas, British Honduras, Puerto Rico and occupied Cuba in 1900. `PENDING`
+   Guianas, British Honduras, Puerto Rico and occupied Cuba in 1900. **FIXED: "a hemisphere made up mostly of independent states".**
 5. **Americas 02 box (and topic 5.2): "began freeing them in 1793 to keep their side's soldiers"**:
    hard to decode and not quite right; they freed people to win them as soldiers for the Republic.
-   `PENDING`
-6. **Americas 04 thesis: "held the words to their own terms"** is garbled. `PENDING`
+   **FIXED here and in topic 5.2's deep reading: "to win them as soldiers against Spain and Britain".**
+6. **Americas 04 thesis: "held the words to their own terms"** is garbled. **FIXED: "insisted that those words meant what they said, for them too".**
 
 Held up (reviewer's list): every CED quotation; both Argue it moves; every Americas date and figure
 (including the abolition dates and the tenement definition); every South and Southeast Asia date and
 figure (Bairoch, the trade figures, the duties, Wadia, 1853, Suez, the 1865 and 1870 telegraph times,
 HSBC, Roy, the 1901 census, McKeown, Rizal); the part intro.
+
+**Pass 2 total: 30 findings (H 13, E 7, G 6, F 4), 4 of them duplicates or already fixed. 22 FIXED or
+NARROWED, 1 REJECTED (the first intercity railway), 1 no change (figures sourced, the one wrong one
+fixed under E2), 2 ADJACENT (the old 5.9 and 5.10 drafts; the topic 5.4 per-person gap for China).
+Down from 37 in pass 1, and smaller: no new myth, and most were compressions (one cause where there
+were two), readability or scope. Five more small corrections reached shipped topic chapters (5.1,
+5.2, 5.3, 5.8), each on every surface that carried it. Pass 3 runs on a fresh capture.**

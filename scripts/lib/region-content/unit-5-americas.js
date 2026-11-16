@@ -22,7 +22,7 @@ module.exports = {
   unit: '5',
   region: 'The Americas',
   titleHtml: 'The <em>Americas</em>',
-  deck: `From 1750 to 1900, the Americas went from a set of European colonies to a hemisphere of independent states, and the United States became the world's largest industrial power. Follow the colonists, the enslaved and the creoles who broke away, the people who pressed the new words further, and the mills, railroads and migrants that followed.`,
+  deck: `From 1750 to 1900, the Americas went from a set of European colonies to a hemisphere made up mostly of independent states, and the United States became the world's largest industrial power. Follow the colonists, the enslaved and the creoles who broke away, the people who pressed the new words further, and the mills, railroads and migrants that followed.`,
   topics: ['5.1', '5.2', '5.3', '5.4', '5.5', '5.7', '5.8', '5.9'],
   ced: [
     'KC-5.3',
@@ -95,17 +95,17 @@ module.exports = {
       name: 'Haiti Claims the Words',
       navLabel: 'Haiti',
       dates: '1791 to 1825 &nbsp;·&nbsp; Saint-Domingue becomes Haiti',
-      thesis: `France's declaration of 1789 said men are born free and equal. In Saint-Domingue, the people France held in slavery claimed those words for themselves, rose up, and won a country of their own.`,
+      thesis: `France's declaration of 1789 said men are born free and equal. In Saint-Domingue, enslaved people rose up in 1791, and within two years their leaders were claiming liberty and equality for themselves. They went on to win a country of their own.`,
       parts: [
         {
           heading: 'France\'s richest colony',
           blocks: [
             { p: `Saint-Domingue, on the western part of the island of Hispaniola, was France's most valuable colony. Its sugar and coffee were grown by enslaved Africans and their children, worked and punished brutally on plantations. Around <span class="num">1789</span> it held more than 400,000 enslaved people and fewer than 80,000 free people, white colonists and free people of color together.` },
-            { p: `When France's Declaration of the Rights of Man reached the colony, <span class="kt">free people of color</span>, free people of African or mixed descent, asked for the equal rights it promised, and the white planters refused. In August <span class="num">1791</span>, with France in revolution and the planters divided, enslaved people in the northern plain rose up and burned plantations. Toussaint Louverture, born enslaved and freed before the revolution, became its most famous leader. "I want Liberty and Equality to reign in Saint Domingue," he announced in <span class="num">1793</span>.` },
+            { p: `When France's Declaration of the Rights of Man reached the colony, <span class="kt">free people of color</span>, free people of African or mixed descent, asked for the equal rights it promised, and the white planters refused. In August <span class="num">1791</span>, with France in revolution and the planters divided, enslaved people in the northern plain rose up and burned plantations. Toussaint Louverture, born enslaved and freed before the revolution, became its most famous leader. In <span class="num">1793</span>, while fighting on Spain's side against France, he announced: "I want Liberty and Equality to reign in Saint Domingue." He changed sides to France the next year, after Paris abolished slavery.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that France gave Haiti its freedom. Enslaved people rose up in 1791. French officials began freeing them in 1793 to keep their side's soldiers, and Paris abolished slavery in all French colonies in February 1794, after two and a half years of fighting. Haitians then won independence by defeating Napoleon's army.`
+              html: `Do not write that France gave Haiti its freedom. Enslaved people rose up in 1791. French officials began freeing them in 1793 to win them as soldiers against Spain and Britain, and Paris abolished slavery in all French colonies in February 1794, after two and a half years of fighting. Haitians then won independence by defeating Napoleon's army.`
             } }
           ]
         },
@@ -166,7 +166,7 @@ module.exports = {
       name: 'Pressing the Words Further',
       navLabel: 'Rights pressed',
       dates: '1823 to 1888 &nbsp;·&nbsp; Abolition and Seneca Falls',
-      thesis: `The new states were founded on words about equal rights, and most of them kept slavery and shut women out. Over the next century the enslaved, abolitionists and women held the words to their own terms.`,
+      thesis: `The new states were founded on words about equal rights, and most of them kept slavery and shut women out. Over the next century the enslaved, abolitionists and women insisted that those words meant what they said, for them too.`,
       parts: [
         {
           heading: 'Slavery ends, country by country',

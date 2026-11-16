@@ -364,3 +364,16 @@ Also fixed in this round, from the builder's own checks: the browser suite (`sli
 ### Pass 3 outcome, and the end of the loop
 
 14 findings, 11 distinct supported defects, all fixed; 4 rejected with reasons. **The loop stops on the three-pass safety valve:** three full passes in a row found supported defects (24, 16, 11). The trend is down and to smaller items: pass 3 found no misquotation, no wrong picture credit, no CED or ownership defect and no wrong date on a student page; its one student-facing factual defect was the map's placement of two regions, plus a source description (the Bismarck record) and two dates in teacher notes. Nothing suggests a systemic problem with the story or its sources. Every ledger row has a status; none is NEEDS JEFF.
+
+## Corrections from the Unit 5 by Region review (2026-11-16)
+
+Pass 2, reviewer G, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`):
+
+- The deep reading's Haiti thesis said the enslaved "claimed those words for themselves, rose up
+  first", an implied "because" between France's 1789 declaration and the rising of 1791 that the
+  sources do not support (the first leaders presented themselves as royalists; a rumour of three free
+  days a week; liberty and equality language clear by 1793). EHNE, "Saint-Domingue revolution, August
+  1791"; Dubois, Avengers of the New World (2004). **NARROWED**: "rose up first, in 1791, and within two
+  years their leaders were claiming liberty and equality for themselves".
+- The misconception box said French officials freed enslaved people in 1793 "to keep their side's
+  soldiers". **NARROWED**: "to win them as soldiers against Spain and Britain".
