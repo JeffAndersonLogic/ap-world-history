@@ -372,3 +372,29 @@ studies); the Middle East army, Egypt (Beinin's 1981 MERIP article), Ottoman ref
 facts. Unverified, not findings: the Aleppo and Damascus handlooms, Manchester's 25 to 28 years
 (Davenport, EcHR 2021, disputes the low city estimates), the fez factory's steam date (some say
 1843), the Gülhane wording, the yarn price.
+
+#### Reviewer G: history, the Americas and South and Southeast Asia, 6 findings
+
+1. **South and Southeast Asia: India's own steam-powered cotton mills left out of 1900** (deck, Argue
+   it, economic card): the first Bombay mill opened in 1854, and by about 1900 India had roughly 190
+   mills and about 5 million spindles, spinning yarn for handloom weavers and for China. Also, by the
+   1890s to 1910s most Indian raw cotton went to Japan and continental Europe (Hansard written answer,
+   11 July 1916), so "sold raw cotton to British mills" is safe only for mid-century. `PENDING`
+2. **Americas 02 thesis (and topic 5.2's): the enslaved "claimed those words for themselves, rose
+   up"**: an implied "because" between the 1789 Declaration and the 1791 rising that the sources do not
+   support (royalist leaders, the three-free-days rumour; liberty and equality language clear by 1793,
+   when Toussaint fought for Spain). Sources: EHNE, "Saint-Domingue revolution, August 1791"; Dubois,
+   Avengers of the New World (2004). Restore "fighting on Spain's side" before the 1793 quotation.
+   `PENDING`
+3. **Americas 02: Louisiana sale with one cause** (same as H1). `PENDING`
+4. **Americas deck: "a hemisphere of independent states"**: Canada, the Caribbean colonies, the
+   Guianas, British Honduras, Puerto Rico and occupied Cuba in 1900. `PENDING`
+5. **Americas 02 box (and topic 5.2): "began freeing them in 1793 to keep their side's soldiers"**:
+   hard to decode and not quite right; they freed people to win them as soldiers for the Republic.
+   `PENDING`
+6. **Americas 04 thesis: "held the words to their own terms"** is garbled. `PENDING`
+
+Held up (reviewer's list): every CED quotation; both Argue it moves; every Americas date and figure
+(including the abolition dates and the tenement definition); every South and Southeast Asia date and
+figure (Bairoch, the trade figures, the duties, Wadia, 1853, Suez, the 1865 and 1870 telegraph times,
+HSBC, Roy, the 1901 census, McKeown, Rizal); the part intro.
