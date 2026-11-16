@@ -57,7 +57,11 @@ jobs:
     # grows with each topic built. On main it took 18 to 19 of the 20 minutes,
     # and with 5.4 and 5.5 added plus a slow Chromium install, a run with every
     # check passing was cancelled at 20 minutes, partway through 5.5.
-    timeout-minutes: 30
+    # 45, not 30 (2026-11-16): main was taking about 27 of the 30 minutes, and
+    # the Class Pulse rebuild adds a Reader test and more negative controls,
+    # each of which reruns its whole suite. A limit is for a hung run, and a
+    # full passing run must fit inside it with room to spare.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
