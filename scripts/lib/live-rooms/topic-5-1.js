@@ -1,0 +1,415 @@
+'use strict';
+
+/**
+ * Topic 5.1, The Enlightenment: the live-room PROTOTYPE of The Natural Rights Test.
+ *
+ * This is the first scenario written for the live engine
+ * (assets/js/behistorical-room-live.js). It is a prototype for Jeff to play and
+ * for one class to trial. It is NOT linked from the lesson page: Module 09 on
+ * 5.1 still opens the-natural-rights-test.html until Jeff says otherwise.
+ *
+ * WHERE IT STARTS. The alignment block below is read from the College Board's
+ * own text in scripts/lib/ced-source/unit-5.js, never typed here, so it cannot
+ * drift from the CED. The scenario enacts both of 5.1's learning objectives:
+ *   A (CDI): the first line of the pamphlet and the three documents are the
+ *     "intellectual and ideological context" (KC-5.3.I.A), and the pamphlet
+ *     going out the door before August 1789 is KC-5.3.I.
+ *   B (SIO): the tracker and the record are "how the Enlightenment affected
+ *     societies over time" (KC-5.3.I.C, KC-5.3.IV.B).
+ * The reasoning process is the CED's, Continuity and Change, and each document
+ * asks for the CED's suggested skill, 3.A: identify the claim in a source.
+ *
+ * WHAT IS INVENTED AND WHAT IS NOT. The printer, Morel, Delmas, Laurent, Renard
+ * and Luc are invented, and so is Laurent's sheet of figures (its numbers are
+ * historians' modern estimates). The page says so. The three quoted texts,
+ * every date and every item in the record are real. An independent fact-check
+ * on 2026-11-16 matched the quotations to Project Gutenberg and the Avalon
+ * Project word for word; its corrections are applied here.
+ *
+ * WRITING RULES. Ninth-grade reading level, second person, present tense. A
+ * choice never says what it will cost. No em dashes or en dashes in prose.
+ */
+
+const ced = require('../ced-source/unit-5.js');
+const unit = ced.topics || ced;
+const topic = unit['5.1'] || (unit.topics && unit.topics['5.1']);
+if (!topic) throw new Error('topic-5-1.js: could not find 5.1 in scripts/lib/ced-source/unit-5.js');
+
+module.exports = {
+  id: '5.1',
+  unit: '5',
+  topicTitle: topic.title,
+  file: 'the-natural-rights-test-live.html',
+  title: 'The *Natural Rights Test*',
+  location: 'A print shop on the rue Saint-Jacques, Paris',
+  date: 'Autumn 1788',
+  lessonUrl: '../../unit-5/lesson-5-1-enlightenment.html',
+
+  // Shown only at the very end, under "What this room was teaching".
+  alignment: {
+    theme: topic.thematicFocus,
+    objectives: topic.learningObjectives.map(lo => lo.text),
+    reasoning: topic.reasoningProcess,
+    skill: `${topic.suggestedSkill.name} (${topic.suggestedSkill.code}): ${topic.suggestedSkill.text}`,
+    keyConcepts: topic.keyConcepts
+      .filter(kc => ['KC-5.3.I.A', 'KC-5.3.I', 'KC-5.3.I.C', 'KC-5.3.IV.B'].includes(kc.code))
+      .map(kc => ({ code: kc.code, text: kc.text }))
+  },
+
+  opening: {
+    lines: [
+      'Paris. The king is out of money, and for the first time in 175 years he has called the Estates-General, a meeting of representatives from all of France. He has even asked his subjects to send in their opinions.',
+      'So everyone is writing. And everything that gets written has to be printed by somebody.',
+      'That somebody is you.'
+    ],
+    brief: {
+      who: 'You are a master printer. You inherited this shop, two presses, and your father\'s debts.',
+      want: 'You want this pamphlet to matter. Ideas only change things if people read them.',
+      fear: 'By law, nothing may be printed without royal permission. This winter so many pamphlets are pouring out that the law is rarely enforced, but the book-trade inspector can still seize a print run. Lose the press and you lose everything.',
+      rule: 'Nobody will tell you what a choice costs before you make it. You cannot take a choice back.'
+    },
+    start: 'Open the shop'
+  },
+
+  gauges: [
+    { id: 'coin', label: 'Coin', start: 5, hint: 'Money to buy paper and keep the press running.' },
+    { id: 'reach', label: 'Reach', start: 2, hint: 'How many people your pamphlet gets to.' },
+    { id: 'heat', label: 'Heat', start: 2, hint: 'How closely the authorities are watching your shop.', danger: true }
+  ],
+
+  // The Key Concept made visible: who the pamphlet's "rights" actually cover.
+  tracker: {
+    label: 'Who your pamphlet speaks for',
+    included: [
+      { text: 'Men who own property', when: 'claim_property' },
+      { text: 'All men', when: 'claim_men' },
+      { text: 'Every human being, in its first line', when: 'claim_all' },
+      { text: 'Enslaved people, in a full page of evidence', when: 'testimony' },
+      { text: 'Enslaved people, in one footnote', when: 'footnote' },
+      { text: 'Women, in a page of their own', when: 'women' }
+    ],
+    excluded: [
+      { text: 'Men without property', when: 'claim_property' },
+      { text: 'Enslaved people', when: 'silent' },
+      { text: 'Women (promised a later edition)', when: 'women_later' },
+      { text: 'Women', when: 'women_no' }
+    ]
+  },
+
+  cast: [
+    { id: 'morel', name: 'Étienne Morel', role: 'the writer', tone: 'gold' },
+    { id: 'delmas', name: 'Monsieur Delmas', role: 'merchant of Nantes, who pays for your paper', tone: 'bronze' },
+    { id: 'laurent', name: 'Baptiste Laurent', role: 'a free man of color, born in Saint-Domingue', tone: 'green' },
+    { id: 'renard', name: 'Sophie Renard', role: 'schoolmistress', tone: 'rose' },
+    { id: 'luc', name: 'Luc', role: 'your apprentice', tone: 'steel' },
+    { id: 'inspector', name: 'The Inspector', role: 'of the book trade', tone: 'red' }
+  ],
+
+  scenes: [
+    {
+      id: 'claim',
+      kicker: 'October 1788 · Morning',
+      title: 'The first line',
+      beats: [
+        { type: 'narrate', text: 'The press has not stopped for a week. Wet sheets hang from every beam, and the whole shop smells of ink and lamp oil.' },
+        { type: 'say', who: 'morel', text: 'Every pamphlet in Paris says the common people deserve a voice. Mine explains why. Read this first. It is a hundred years old and it still frightens kings.' },
+        {
+          type: 'doc', id: 'locke',
+          title: 'John Locke, Second Treatise of Government',
+          meta: 'England, 1689',
+          text: 'Men being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent.',
+          ask: {
+            prompt: 'Morel taps the page. "Well, printer? What is he claiming?"',
+            options: [
+              { text: 'Kings rule because God chose them.', reply: 'Morel laughs. "That is what the king says. Read it again: by nature, all free." Locke is claiming the opposite. Nobody can rightly be ruled unless they agree to it.' },
+              { text: 'No one can rightly be ruled without agreeing to it.', right: true, reply: '"Exactly. Consent." Morel grins. "If power comes from the people who are ruled, a king is not owed obedience just for being born a king."' },
+              { text: 'People are happiest when they obey.', reply: '"He says nothing about happiness." Morel points to the last words: without his own consent. Locke is claiming that nobody can rightly be ruled unless they agree to it.' }
+            ]
+          }
+        },
+        { type: 'say', who: 'morel', text: 'Now the first line of ours. You set the type, so you choose the words. Who has these rights?' }
+      ],
+      choice: {
+        prompt: 'Set the first line in type.',
+        options: [
+          {
+            id: 'property', label: '"Every man who owns property has a right to a voice in his government."',
+            flags: ['claim_property'], effects: { coin: 1 },
+            outcome: [
+              { type: 'say', who: 'morel', text: 'Natural rights, with an entry fee. Hm. It will not frighten the men who buy pamphlets, I grant you that.' },
+              { type: 'narrate', text: 'Two subscribers who own land put their names down for copies before the ink is dry.' }
+            ]
+          },
+          {
+            id: 'men', label: '"All men are born free, with rights no king can take away."',
+            flags: ['claim_men'], effects: { reach: 1, heat: 1 },
+            outcome: [
+              { type: 'say', who: 'morel', text: 'Good. That is a sentence a man can shout in a café.' },
+              { type: 'narrate', text: 'Luc reads the proof sheet out loud to the paper carrier, who asks to keep it.' }
+            ]
+          },
+          {
+            id: 'all', label: '"Every human being is born with rights, whatever their sex, their color, or their fortune."',
+            flags: ['claim_all'], effects: { reach: 1, heat: 2 },
+            outcome: [
+              { type: 'say', who: 'morel', text: 'Every human being? You go further than I wrote. Further than Locke, even. Very well. But you had better mean it.' },
+              { type: 'narrate', text: 'Luc reads the proof sheet twice, then looks over his shoulder at the door.' }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      id: 'testimony',
+      kicker: 'November 1788 · Afternoon',
+      title: 'The page of figures',
+      beats: [
+        { type: 'narrate', text: 'Monsieur Delmas comes for his monthly look at the accounts. His ships sail from Nantes, the busiest slave-trading port in France. His money buys your paper.' },
+        { type: 'say', who: 'delmas', when: 'claim_property', text: 'Men of property. Sensible. A pamphlet I can leave on my own table.' },
+        { type: 'say', who: 'delmas', when: 'claim_men', text: 'All men. Bold. I assume we understand each other about which men.' },
+        { type: 'say', who: 'delmas', when: 'claim_all', text: 'Every human being, whatever their color? Words are cheap, printer. I trust it stops at words.' },
+        { type: 'narrate', text: 'The door opens again. A man in a plain dark coat sets one sheet on your counter. He has been to see the Society of the Friends of the Blacks, founded here in Paris this year to fight the slave trade.' },
+        { type: 'say', who: 'laurent', text: 'Baptiste Laurent. I was born free in Saint-Domingue. I hear you are printing a pamphlet about liberty.' },
+        {
+          type: 'doc', id: 'figures',
+          title: 'Figures for the French colony of Saint-Domingue',
+          meta: 'Laurent\'s sheet (invented). The numbers are the estimates historians use today.',
+          text: 'Enslaved people: about 500,000.\nFree people, white and of color together: about 60,000.\nThe colony grows about four-tenths of the sugar and more than half of the coffee sold in Europe.',
+          ask: {
+            prompt: 'Laurent says nothing. He lets you read. What argument is he making with these numbers?',
+            options: [
+              { text: 'France should buy less sugar and coffee.', reply: 'Laurent shakes his head. "I am not talking about your breakfast." His claim is bigger: the wealth of France, even the wealth that pays for pamphlets about liberty, is made by people who have none.' },
+              { text: 'The wealth that pays for talk of liberty is made by people who have no liberty.', right: true, reply: '"You read well." Laurent glances at Delmas. "Then you see the problem with a pamphlet about freedom that does not mention them."' },
+              { text: 'Saint-Domingue is too far away to matter in Paris.', reply: '"Far away?" Laurent looks at Delmas, then at your paper stock. His claim is the opposite: the wealth of France, even the wealth that pays for pamphlets about liberty, is made by people who have none.' }
+            ]
+          }
+        },
+        { type: 'say', who: 'laurent', text: 'Print my page beside your first line. Then let your readers decide what "free" means.' },
+        { type: 'say', who: 'delmas', text: 'Print that, and you can find another man to buy your paper.' }
+      ],
+      choice: {
+        prompt: 'Both men are watching you.',
+        options: [
+          {
+            id: 'print', label: 'Print Laurent\'s page in full.',
+            flags: ['testimony'], effects: { coin: -3, reach: 1, heat: 1 },
+            outcome: [
+              { type: 'narrate', text: 'Delmas closes your account book, sets it on the counter, and leaves without a word. His money leaves with him.' },
+              { type: 'say', who: 'laurent', text: 'I will take two hundred copies to the Society myself. They will be read aloud.' }
+            ]
+          },
+          {
+            id: 'cut', label: 'Leave Laurent\'s page out.',
+            flags: ['silent'], effects: { coin: 1 },
+            outcome: [
+              { type: 'say', who: 'delmas', text: 'A printer who understands business. I will send over more paper.' },
+              { type: 'say', who: 'laurent', when: 'claim_all', text: 'Your first line says every human being. Your pages say otherwise. I will remember which one you printed.' },
+              { type: 'say', who: 'laurent', when: 'claim_men', text: 'All men, your first line says. I see now which men you meant.' },
+              { type: 'say', who: 'laurent', when: 'claim_property', text: 'Men of property. And in my colony, the property is people. At least your pamphlet is honest about whose side it is on.' },
+              { type: 'narrate', text: 'He takes his sheet back, folds it carefully, and goes.' }
+            ]
+          },
+          {
+            id: 'footnote', label: 'Offer a footnote: slavery "deserves the attention of thoughtful men."',
+            flags: ['footnote'], effects: { coin: -1 },
+            outcome: [
+              { type: 'say', who: 'laurent', text: 'A footnote. Half a million people, at the bottom of the page, in small type.' },
+              { type: 'say', who: 'delmas', text: 'I do not like it. But I can live with small type. My next payment will be smaller too.' }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      id: 'women',
+      kicker: 'December 1788 · Evening',
+      title: 'The schoolmistress',
+      beats: [
+        { type: 'narrate', text: 'Snow on the rue Saint-Jacques. Sophie Renard teaches girls to read in two rented rooms above a baker. She has brought a book with one page marked.' },
+        { type: 'say', who: 'renard', text: 'Your writer admires Rousseau. "Man is born free, and everywhere he is in chains." A fine sentence. Now read what the same man wrote about my pupils.' },
+        {
+          type: 'doc', id: 'emile',
+          title: 'Jean-Jacques Rousseau, Emile, or On Education',
+          meta: 'France, 1762',
+          text: 'A woman\'s education must therefore be planned in relation to man. To be pleasing in his sight, to win his respect and love ... these are the duties of woman for all time.',
+          ask: {
+            prompt: 'Renard waits. "What is he claiming?"',
+            options: [
+              { text: 'Girls and boys should learn the same things.', reply: '"If only." Renard reads it back to you: planned in relation to man. Rousseau is claiming that a woman should be educated to serve and please men, not for her own sake.' },
+              { text: 'A woman should be educated to serve and please men, not for her own sake.', right: true, reply: '"Yes. Born free, he says, and then he plans half of us a cage." Renard closes the book. "The idea is right. The man stopped halfway."' },
+              { text: 'Women should not be taught to read.', reply: '"Not quite. He wants us taught." Renard points: planned in relation to man. Rousseau is claiming that a woman should be educated to serve and please men, not for her own sake.' }
+            ]
+          }
+        },
+        { type: 'say', who: 'renard', text: 'Give me one page. If reason is what earns a person rights, then girls who can reason have earned them.' },
+        { type: 'say', who: 'morel', text: 'One fight at a time! Put women in it and they will laugh at the whole pamphlet. The king first. The rest can wait.' }
+      ],
+      choice: {
+        prompt: 'It is your press.',
+        options: [
+          {
+            id: 'page', label: 'Give Renard her page.',
+            flags: ['women'], effects: { reach: 1, heat: 1 },
+            outcome: [
+              { type: 'say', who: 'renard', text: 'Then I will write it tonight, and my oldest pupils will read the proof.' },
+              { type: 'say', who: 'morel', text: 'On your head be it, printer.' }
+            ]
+          },
+          {
+            id: 'later', label: 'Promise her a page in the next edition.',
+            flags: ['women_later'], effects: {},
+            outcome: [
+              { type: 'say', who: 'renard', text: 'The next edition. I have been promised the next edition my whole life.' },
+              { type: 'narrate', text: 'She leaves the book on your counter, open at the marked page.' }
+            ]
+          },
+          {
+            id: 'refuse', label: 'Tell her Morel is right. Not this pamphlet.',
+            flags: ['women_no'], effects: {},
+            outcome: [
+              { type: 'say', who: 'morel', text: 'Thank you. Now we can finish.' },
+              { type: 'say', who: 'renard', text: 'You will print "by nature free" and see no contradiction. Good evening, messieurs.' }
+            ]
+          }
+        ]
+      },
+      after: [
+        { type: 'narrate', text: 'Late that night Luc is locking up the type. He has set every word of this pamphlet with his own hands.' },
+        {
+          type: 'reply', id: 'who-for', who: 'luc',
+          prompt: 'Master, I have to ask. Who is this pamphlet for? And who is it not for?',
+          label: 'Answer Luc in your own words. One or two sentences.',
+          placeholder: 'This pamphlet is for ... It is not for ... because ...'
+        },
+        { type: 'say', who: 'luc', text: 'I will remember you said that.' }
+      ]
+    },
+    {
+      id: 'circulation',
+      kicker: 'January 1789 · Before dawn',
+      title: 'Out the door',
+      beats: [
+        { type: 'narrate', text: 'The sheets are dry, folded and stitched. Elections for the Estates-General begin within weeks. A pamphlet that stays in the shop changes nothing.' },
+        { type: 'say', who: 'luc', text: 'They are ready, master. Where do they go?' }
+      ],
+      choice: {
+        prompt: 'Decide how the pamphlet travels.',
+        options: [
+          {
+            id: 'salon', label: 'A handsome edition on good paper, for salons and paying subscribers.',
+            flags: ['salon'], effects: { coin: 2, reach: 1 },
+            outcome: [
+              { type: 'narrate', text: 'It sells out in ten days. It is read in drawing rooms, discussed over dinner, and praised by people who already agreed with it.' }
+            ]
+          },
+          {
+            id: 'cheap', label: 'A cheap edition on rough paper, sold in the streets and read aloud in cafés.',
+            flags: ['cheap'], effects: { coin: -1, reach: 3, heat: 2 },
+            outcome: [
+              { type: 'narrate', text: 'It costs less than a loaf of bread. People who cannot read hear it read aloud in wine shops. A copy is pinned to the wall of a market.' }
+            ]
+          },
+          {
+            id: 'atlantic', label: 'Bundles sent to the ports: for London, Philadelphia and Cap-Français.',
+            flags: ['atlantic'], effects: { coin: -2, reach: 3, heat: 2 },
+            outcome: [
+              { type: 'narrate', text: 'Shipping eats your savings. But a pamphlet printed on your press is now crossing the same ocean as the sugar. In Saint-Domingue, a copy will pass through many hands.' }
+            ]
+          }
+        ]
+      },
+      after: [
+        { type: 'event', when: 'heat>=7', effects: { reach: -2 }, text: 'Three nights later there is a fist on the door. The Inspector of the book trade walks in out of the rain with two men.' },
+        { type: 'say', who: 'inspector', when: 'heat>=7', text: 'No royal permission. No censor\'s approval. I cannot burn every pamphlet in Paris this winter, but I can take yours.' },
+        { type: 'narrate', when: 'heat>=7', text: 'They carry off every bundle still in the shop. The copies already out in the city are beyond their reach.' },
+        { type: 'narrate', when: 'heat>=5 heat<=6', text: 'One evening the Inspector of the book trade steps in out of the rain. He turns a copy over in his hands for a long time.' },
+        { type: 'say', who: 'inspector', when: 'heat>=5 heat<=6', text: 'Half of Paris is printing worse than this, and I cannot arrest half of Paris. I am keeping this copy. Be careful what you print next.' },
+        { type: 'narrate', when: 'heat<=4', text: 'No one from the book trade office ever comes. Your shop is safe. You wonder, some nights, whether that is a compliment.' },
+        { type: 'event', when: 'coin<=1', effects: {}, text: 'The paper merchant will not wait any longer. You sell your father\'s second press to pay him. The shop is very quiet with only one.' }
+      ]
+    },
+    {
+      id: 'walls',
+      kicker: 'August 1789 · Midday',
+      title: 'The walls of Paris',
+      beats: [
+        { type: 'narrate', text: 'Seven months later, nothing is the same. The Estates-General has become a National Assembly. In July a crowd took the Bastille. The censors have stopped working, and the Inspector has not been seen since July.' },
+        { type: 'narrate', text: 'This week a new poster is going up on the walls. A boy is reading it aloud to a crowd outside your shop.' },
+        {
+          type: 'doc', id: 'declaration',
+          title: 'Declaration of the Rights of Man and of the Citizen, Article 1',
+          meta: 'National Assembly of France, 26 August 1789',
+          text: 'Men are born and remain free and equal in rights. Social distinctions may be founded only upon the general good.',
+          ask: {
+            prompt: 'You know these ideas. You set them in type last autumn. But the Assembly wrote "men." Who do you think they will count?',
+            options: [
+              { text: 'Everyone in France and its colonies.', reply: 'Not yet. Under the constitution that followed, only men who paid a certain amount in taxes could vote. That left out millions of poorer men. Women could not vote at all. In the colonies, slavery went on.' },
+              { text: 'All men, rich or poor.', reply: 'Not even that. Under the constitution that followed, only men who paid a certain amount in taxes could vote. That left out millions of poorer men. Women could not vote at all. In the colonies, slavery went on.' },
+              { text: 'Men who pay taxes, but not the poorest men.', right: true, reply: 'You have learned how this works. Under the constitution that followed, only men who paid a certain amount in taxes could vote. That left out millions of poorer men. Women could not vote at all. In the colonies, slavery went on.' }
+            ]
+          }
+        },
+        { type: 'say', who: 'renard', when: 'women', text: 'Men. Again. But my pupils have your pamphlet, and they can read the difference.' },
+        { type: 'say', who: 'renard', when: '!women', text: 'Men. Again. You could have told them otherwise, printer, a year ago.' },
+        { type: 'say', who: 'laurent', when: 'testimony', text: 'They say "men" and they do not mean us. Not yet. But the words are loose in the world now, and my page went out with them.' },
+        { type: 'say', who: 'laurent', when: '!testimony', text: 'They say "men" and they do not mean us. Not yet. But the words are loose in the world now. They will be read in Saint-Domingue, with or without your help.' }
+      ]
+    }
+  ],
+
+  // First match wins.
+  endings: [
+    {
+      id: 'broke', when: 'coin<=1 testimony|women',
+      title: 'Brave and Broke',
+      text: 'You printed what the men with money did not want printed, and it cost you half your shop. Your pamphlet was read by people the Declaration left out. Ideas can outrun the people who pay for them, but somebody always pays.'
+    },
+    {
+      id: 'hands', when: 'testimony women reach>=5',
+      title: 'Passed from Hand to Hand',
+      text: 'Your pamphlet did something rare in 1789: it said who was missing. Readers who were left out of "men" found themselves in your pages, and they kept their copies.'
+    },
+    {
+      id: 'quiet', when: 'claim_all|claim_men silent !women',
+      title: 'Universal Words, Quiet Pages',
+      text: 'Your first line promised rights to a great many people. The rest of your pamphlet took most of them back. You were in good company: many of the most famous writers of the age did much the same.'
+    },
+    {
+      id: 'loud', when: 'reach>=6',
+      title: 'Read All Over Paris',
+      text: 'Thousands of people read or heard your pamphlet before the Bastille fell. It helped teach a city to say "rights." Look at the list above to see whose rights it taught them to say.'
+    },
+    {
+      id: 'shelf', when: '',
+      title: 'Safe on the Shelf',
+      text: 'Your pamphlet was well printed, politely read, and never in danger. It reached the people who already agreed with it. The revolution, when it came, was pushed along by louder presses than yours.'
+    }
+  ],
+
+  record: {
+    title: 'What the words did next',
+    intro: 'Your shop is invented. This is not. The ideas you set in type kept moving for a century, and each time, people who had been left out picked up the same words and used them.',
+    items: [
+      { year: '1791', text: 'In Paris, Olympe de Gouges rewrote the Declaration article by article as the Declaration of the Rights of Woman and of the Female Citizen. She was executed in 1793, during the Terror, for her political writings.' },
+      { year: '1791', text: 'In Saint-Domingue, enslaved people rose in revolt. France abolished slavery in its colonies in 1794, but Napoleon brought it back in 1802. In 1804 the colony became the independent nation of Haiti.' },
+      { year: '1792', text: 'In London, Mary Wollstonecraft published A Vindication of the Rights of Woman, arguing that women seemed less reasonable only because they were denied an education.' },
+      { year: '1848', text: 'At Seneca Falls, New York, a convention organized by Elizabeth Cady Stanton, Lucretia Mott and others declared "that all men and women are created equal." The same year, France gave the vote to all adult men and ended slavery in its colonies for good.' },
+      { year: '1861', text: 'Russia ended serfdom, freeing more than 20 million serfs.' }
+    ],
+    close: 'What stayed the same: for a hundred years the words barely changed. Free. Equal. Rights. What changed: who was allowed to mean them.'
+  },
+
+  reflection: {
+    prompt: 'Step out of the shop. In 4 to 6 sentences: explain how Enlightenment ideas challenged traditional authority. Then explain ONE thing that changed and ONE thing that stayed the same, between 1789 and 1848, in who those rights reached. Use one decision you made in the shop and one event from the record as evidence.',
+    placeholder: 'Enlightenment ideas challenged traditional authority by ...'
+  },
+
+  disclosure: 'The printer, Morel, Delmas, Laurent, Renard, Luc and the Inspector are invented, and so is Laurent\'s sheet, though the numbers on it are the estimates historians use today. The quotations from Locke, Rousseau and the Declaration, the dates, and everything in the record are real.',
+
+  sources: [
+    { label: 'Yale Law School, Avalon Project: Declaration of the Rights of Man, 1789', url: 'https://avalon.law.yale.edu/18th_century/rightsof.asp' },
+    { label: 'Project Gutenberg: John Locke, Second Treatise of Government', url: 'https://www.gutenberg.org/ebooks/7370' },
+    { label: 'Project Gutenberg: Jean-Jacques Rousseau, Emile (Foxley translation)', url: 'https://www.gutenberg.org/ebooks/5427' },
+    { label: 'Liberty, Equality, Fraternity: Exploring the French Revolution (George Mason University)', url: 'https://revolution.chnm.org/' }
+  ]
+};
