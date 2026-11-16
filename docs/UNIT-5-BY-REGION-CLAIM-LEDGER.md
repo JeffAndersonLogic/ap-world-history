@@ -214,6 +214,39 @@ Enlightenment dates and quotations; the French Revolution sequence; serfdom; uni
 railway kilometers, Hughes, BASF, Otto, Benz; the German party dates and Bismarck's 1884 words
 (GHDI translation).
 
+#### Reviewer B: history, the Americas and the Middle East, 7 findings
+
+1. **Middle East 02 (and shipped topic 5.6): "long-staple cotton, first grown for sale in 1820 ...
+   With that money, from the late 1810s, the government built"**: money from 1820 cannot have paid for
+   factories begun in the late 1810s; the earlier crop monopolies (grain and others) did. Topic 5.6's
+   useThis also says "through the cotton monopoly". `PENDING`
+2. **Americas 04 and its card: abolition framed as beginning in 1834** ("from 1834 to Brazil in
+   1888"): Chile ended slavery in 1823, Central America in 1824, Mexico in 1829, and Haiti earlier.
+   `PENDING`
+3. **Americas 05: Riis's "tenements" glossed as "crowded buildings for poor renters"**: Riis's
+   three-fourths uses the legal definition he quotes himself, any building "occupied by three or more
+   families, living independently and doing their cooking on the premises"; the gloss turns the figure
+   into slum housing. Source: Riis (1890), ch. 2. `PENDING`
+4. **Americas 04: "reform movements, driven by 'Enlightenment ideas and religious ideals'"**: the
+   CED says these "influenced" the movements; "driven by" strengthens the quoted claim. `PENDING`
+5. **Middle East 03: the fez factory reads as a Tanzimat creation**; topic 5.8 has it opened by Mahmud
+   II's government in the 1830s. `PENDING`
+6. **Americas 05 thesis: "Factory methods reached the United States in a skilled worker's memory"**:
+   one channel, not the only one (earlier attempts such as Beverly, 1787; Francis Cabot Lowell's power
+   loom, from 1810 to 1812). `PENDING`
+7. **Middle East social card: "the Balkan peoples chose their own nations"**: by 1878 only Greeks,
+   Serbs, Montenegrins and Romanians had states; many others stayed in the empire. `PENDING`
+
+Checked and held up (reviewer's list): every CED quotation; Locke, the Stamp Act, the Declaration,
+1778 to 1787; Saint-Domingue's figures, 1791, Toussaint's 1793 words, 1793 and 1794, 1802, 1803,
+1804, Louisiana, 1862, the indemnity; 1808, 1810, Hidalgo; the Jamaica Letter quotations (Bertrand
+translation; "wholly representative" not confirmed in the copy opened); Pétion; 1826; Brazil 1822;
+the abolition dates; Mott and Seneca Falls; Slater, Lowell, Drake, Promontory, steel, Pearl Street,
+Morrill; Hatton and Williamson's 55 million; the wheat gap; Manhattan's census figures; Bayard
+Street; the AFL; the Ottoman army reforms; Muhammad Ali's dates, the 1840 powers, the 1841 firman,
+Balta Liman; Gülhane's date and quoted wording (one translation; the "lofty Sultanate" sentence not
+traced to a published English translation); 1856, 1869, 1876, 1878; Greece, Berlin, Suez, the cable.
+
 #### Reviewer C: history, East Asia and South and Southeast Asia, 5 findings
 
 1. **South and Southeast Asia 03 and its card: the 1870 cable meant "minutes rather than weeks by
