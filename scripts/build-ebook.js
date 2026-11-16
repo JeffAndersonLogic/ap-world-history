@@ -188,13 +188,25 @@ const VOLUMES = [
   {
     id: 'unit-5',
     outputFile: 'ebook/unit-5.html',
-    blurb: `Revolutions: where authority comes from and who counted as the people, why industrialization began in one set of counties and was blocked everywhere else, and the five competing explanations of why an economy producing unprecedented wealth also produced unprecedented misery.`,
+    blurb: `Revolutions: where authority comes from and who counted as the people, why industrialization began in one set of counties and was blocked everywhere else, and the five competing explanations of why an economy producing unprecedented wealth also produced unprecedented misery. Then the whole unit again, region by region.`,
     label: 'Unit 05',
     docTitle: 'BeHistorical | Unit 5: Revolutions',
     eyebrow: 'Unit 05 &nbsp;·&nbsp; The eBook &nbsp;·&nbsp; AP World History: Modern',
     titleHtml: '<em>Revolutions</em>',
-    deck: `Ten chapters for ten topics, and one argument connecting the political half to the industrial one. A set of writers claimed that authority comes from the governed and that rights belong to people as such, and then wrote those claims down, where everyone they excluded could read them. The rest of the unit is what happened as revolutionaries, the enslaved, nationalists, women and factory workers each held that principle to its own terms, against states that were simultaneously being remade by coal.`,
+    deck: `Ten chapters for ten topics, and one argument connecting the political half to the industrial one. A set of writers claimed that authority comes from the governed and that rights belong to people as such, and then wrote those claims down, where everyone they excluded could read them. The rest of the unit is what happened as revolutionaries, the enslaved, nationalists, women and factory workers each held that principle to its own terms, against states that were simultaneously being remade by coal. Part Two then tells the same unit one region at a time, for the reader who wants each place's whole story in one sitting.`,
+    // Two parts since 2026-11-16, on the Unit 4 model: the topic chapters, then
+    // the same unit retold region by region. Europe has two chapters because
+    // so much of this unit happened there; Sub-Saharan Africa, Oceania and
+    // Central Asia have none because the Unit 5 CED names no case from them
+    // outside optional examples, and the part intro says so. The plan and its reasons are in
+    // docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md.
     contents: [
+      { part: {
+        id: 'by-topic',
+        label: 'Part One',
+        title: 'By Topic',
+        intro: `Ten chapters in the order the College Board teaches the unit, one for each topic.`
+      } },
       { module: 'topic-5-1' },
       { module: 'topic-5-2' },
       { module: 'topic-5-3' },
@@ -204,7 +216,19 @@ const VOLUMES = [
       { module: 'topic-5-7' },
       { module: 'topic-5-8' },
       { module: 'topic-5-9' },
-      { module: 'topic-5-10' }
+      { module: 'topic-5-10' },
+      { part: {
+        id: 'by-region',
+        label: 'Part Two',
+        title: 'By Region',
+        intro: `The same unit, retold one region at a time. The topics slice the world by theme, so you meet Britain in six of them and never see its whole story in one place. Each chapter here tells one region's story from about <span class="num">1750</span> to about <span class="num">1900</span> as a single narrative, about a fifteen-minute read, and links back to the topics it draws on. Europe has two chapters, Britain and the rest of the Continent, because so much of this unit happened there. Three regions have none. Sub-Saharan Africa's nineteenth-century story, European conquest and the export economies that followed, is Unit 6's, and the College Board's Unit 5 names no case from it outside one optional example; Egypt, in North Africa, is in the Middle East chapter. Oceania appears in Unit 5 only in an optional example from New Zealand, and Central Asia not at all.`
+      } },
+      { region: 'unit-5-britain' },
+      { region: 'unit-5-europe' },
+      { region: 'unit-5-americas' },
+      { region: 'unit-5-middle-east' },
+      { region: 'unit-5-east-asia' },
+      { region: 'unit-5-south-southeast-asia' }
     ]
   },
   {
