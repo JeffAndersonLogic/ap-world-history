@@ -461,3 +461,33 @@ Ottoman date and the Gülhane wording (Inalcik and Hurewitz); Beinin's quotation
 1981); the 1838 cloth prices; the Aleppo and Damascus looms (Pamuk and Williamson, NBER w14763, citing
 Issawi); Smyrna in the mid-1780s; Suez and the 1870 cable; Bairoch; the 1813 duties; 1853; HSBC;
 Davar's mill (1854); Trincomalee; the 1901 census; McKeown; Rizal.
+
+#### Reviewer I: history, Britain and East Asia, 6 findings
+
+1. **East Asia 04 (thesis and box): "Japan's government built the first railways, mills and shipyards
+   itself, then sold most of them"**: Japan's first Western-style spinning mill was Satsuma's
+   Kagoshima mill (1867), and the Nagasaki shipyard was begun by the Tokugawa shogunate in 1857
+   (Mitsubishi Heavy Industries, Nagasaki Shipyard history); the railways were not among the works
+   sold. Topic 5.6 claims only the first railway. `PENDING`
+2. **Britain 02: the cotton steps, "each step on its own machine", read as Cromford in 1771**: Cromford
+   began with spinning machines; carding and roving came with the 1775 patent; cleaning was not a
+   machine step. Topic 5.3 says this correctly. `PENDING`
+3. **Britain 01: "Britain was not yet a great maker: ... under 2 percent"**: a small share reflects a
+   small population; Bairoch's per-person index already puts Britain highest in 1750 (10, against China
+   8 and India 7). Bairoch (1982), p. 294, via McKay, Table 20.1. `PENDING`
+4. **East Asia 02 box (and topic 5.8): "The deeper problems were a disorganized empire and poorly
+   trained crews"**: Elman's sentence with those two causes is about the Sino-French War of 1884 to
+   1885; for 1894 he points to Japan's better-trained crews and a navy split into regional fleets.
+   Elman (2004), pp. 316 to 317 (PDF opened). `PENDING`
+5. **Britain 01 (and topic 5.3): enclosure set beside "More food fed more people"**, implying
+   enclosure drove the harvest and the population rise; Allen (1992) finds most yield gains in open
+   fields too, and Wrigley and Schofield (1981) put the population rise mainly to higher fertility.
+   `PENDING`
+6. **Britain 05: Wollstonecraft's book "among the 'demands for women's suffrage and an emergent
+   feminism'"**: the CED lists it only as an optional example, and the book asked for education and
+   independence, only hinting at representation; a reader will think she demanded the vote. `PENDING`
+
+Held up (reviewer's list): every CED quotation in both chapters; the Britain dates, figures and
+quotations (Harley's yarn price word for word; Edwards on 1787 imports; Burnette's 1833 percentages;
+Szreter and Mooney's Manchester range); every East Asia date, figure and quotation (HSBC timeline;
+Tsurumi; the 1894 treaty; Shimonoseki); both Argue it prompts; the part intro.
