@@ -1,8 +1,9 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** review pass 2 is running (four fresh reviewers, packet recaptured after commit
-`dec3bd83`). If this session stopped before pass 2's findings appear below, relaunch pass 2 from a
-fresh capture.
+**Resume here:** pass 2's reviewers E, F and H are dispositioned and fixed. Reviewer G (history,
+the Americas and South and Southeast Asia) was still running when this was committed; if its findings
+are not below, relaunch that one reviewer on the pass 2 packet, record its findings as `PENDING`,
+then fix, then run pass 3 on a fresh capture.
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
@@ -288,34 +289,34 @@ Asia; plus the CED, readability and consistency reviewer on all six. None saw pa
 #### Reviewer H: CED alignment, readability, consistency (all six), 13 items
 
 1. **Americas 02: "In 1803, with his army dying in Saint-Domingue, Napoleon sold Louisiana"** drops
-   topic 5.2's second cause ("and a new war with Britain coming"). `PENDING`
+   topic 5.2's second cause ("and a new war with Britain coming"). **FIXED: "dying of yellow fever and a new war with Britain coming" (as topic 5.2).**
 2. **Americas Argue it: "Between 1775 and 1826, most of the Americas broke away"**: Canada and the
    British, French and Dutch Caribbean stayed European, Cuba and Puerto Rico Spanish; 1775 never
-   appears in the body. `PENDING`
+   appears in the body. **FIXED: "Between 1776 and 1826, the United States, Haiti, Brazil and most of Spanish America broke away".**
 3. **Manchester's size: 5.9 and 5.10 (shipped) say about 25,000 in 1772; 5.3 and Britain say about
-   23,000 in 1773.** Same as pass 1 A10. `PENDING`
+   23,000 in 1773.** Same as pass 1 A10. **ADJACENT, same as pass 1 A10; no change here.**
 4. **Middle East 04 "a quarter or more of the cotton spun in Britain came from the Ottoman Empire"
    beside Britain 01 "most of the cotton spun in Manchester was grown by enslaved people"**: different
-   scopes, and "most" plus "a quarter or more" leaves little room. `PENDING`
+   scopes, and "most" plus "a quarter or more" leaves little room. **FIXED with E1: the Middle East chapter now says "In the mid-1780s about a quarter of the raw cotton Britain imported"; Britain keeps "most of the cotton spun in Manchester", which leaves room for it.**
 5. **Middle East 03: Ottomanism tied to KC-5.3.II.ii ("new sense of commonality ... harnessed by
    governments")**, while the CED lists Ottomanism as an optional example under the calls for national
-   unification or liberation. `PENDING`
+   unification or liberation. **FIXED: the chapter now says in its own voice that Ottomanism tried to build a "new sense of commonality" around the empire, and says the College Board lists Ottomanism among its optional examples of calls for national unity. KC-5.3.II.ii stays claimed: the Ottoman government using that loyalty is what the sentence describes.**
 6. **Terms boxes define words the body never uses**: Conscription (Middle East), Tariff, Nationalism,
    Migration (South and Southeast Asia), State-sponsored industry (Middle East, East Asia), Social
-   insurance (Europe). `PENDING`
+   insurance (Europe). **FIXED: conscription, state-sponsored industry (Middle East and East Asia), social insurance (Europe), tariff, migration and nationalism (South and Southeast Asia) now each appear in the body where the idea does.**
 7. **Americas 02: comma splice**, "Dessalines fought on, yellow fever and the war destroyed the French
-   army, and ...". `PENDING`
+   army, and ...". **FIXED: three sentences.**
 8. **South and Southeast Asia 02: "Power mattered too"** after a sentence about steam-powered mills
-   reads as machine power. `PENDING`
-9. **South and Southeast Asia: "friars" unglossed.** `PENDING`
-10. **Britain: "marquess", "monopolies" and "Corn Laws" (corn meaning grain) unglossed.** `PENDING`
+   reads as machine power. **FIXED: "The trade rules mattered too."**
+9. **South and Southeast Asia: "friars" unglossed.** **FIXED: "friars, Catholic religious brothers".**
+10. **Britain: "marquess", "monopolies" and "Corn Laws" (corn meaning grain) unglossed.** **FIXED: marquess, monopolies and "corn" glossed in place.**
 11. **Europe "brought back slavery in the colonies in 1802" against Americas "in other French
-    colonies".** `PENDING`
+    colonies".** **FIXED: Europe now says "in some French colonies, such as Guadeloupe".**
 12. **Britain 02: "the world's first railway between two cities"**, a "first" (matches topic 5.5).
-    `PENDING`
+    **REJECTED: "the first railway between two cities" is the standard description of the Liverpool and Manchester (the Stockton and Darlington joined two towns and used horses for passengers at first) and matches topic 5.5 and its ledger.**
 13. **Unconfirmed by this reviewer's searches**: four in ten women servants (1851), the 1833 survey
     majority, Manchester life expectancy 25 to 28 against 40 to 42. Not counted as defects by the
-    reviewer. `PENDING`
+    reviewer. **NO CHANGE: not a defect claim. Each figure is a verified row in the 5.9 rebuild ledger; the 1851 servant share was corrected under E2, and the 1833 percentages were confirmed by reviewers A and E (Burnette).**
 
 Held up (reviewer's list): every CED attribution word for word; Argue it moves and answerability
 (South and Southeast Asia's "for whom" thinnest; the Middle East prompt's 1789 not in the body);
@@ -329,13 +330,13 @@ intro against the CED.
    shrinking after about 1830 and its per-person level falling (8, 6, 3 for 1750, 1830, 1900);
    Feuerwerker found hand weaving held up better. And "kept spinning" contradicts the paragraph above
    (machine-made thread replacing home spinning). Topic 5.4 claims the per-person fall for India only.
-   `PENDING`
+   **FIXED: "mostly because the world's total grew far faster. Bairoch also estimated that China's own output shrank after about 1830, though other historians think hand weaving held up better than he allowed. Chinese families kept weaving, more and more of it with machine-made thread." The topic 5.4 gap (a per-person fall named for India only) is an omission, not an error: ADJACENT, reported.**
 2. **Europe 03: "These ideas set off revolutions across Europe in 1830 and 1848"**: a sole cause;
    topic 5.2 says "helped set off", and 1848 followed the bad harvests of 1845 to 1847 and the slump of
-   1847. `PENDING`
+   1847. **FIXED: "helped set off", with the hard times after the bad harvests of 1845 to 1847 named for 1848 (as topic 5.2's "helped").**
 3. **Europe 01 (and topic 5.1): Rousseau "began The Social Contract" with "Man is born free"**: the
-   line opens Book I, Chapter 1, after a short introduction. `PENDING`
-4. **Europe 01: "In most countries one church was the law"** could be read literally. `PENDING`
+   line opens Book I, Chapter 1, after a short introduction. **FIXED here and on every shipped 5.1 surface: the deep reading, the First & 10 (fingerprint moved with a dated note), the lesson data, the Skill Builder prompt in the renderer config, and the teacher note ("Book I, Chapter 1, opens").**
+4. **Europe 01: "In most countries one church was the law"** could be read literally. **FIXED: "one church was the official church, and the law favored it over every other".**
 
 Held up (reviewer's list): every CED quotation; both Argue it prompts; the intro; Locke (Second
 Treatise sections 123 and 95); the French Revolution sequence; serfdom; unification; rail figures;
@@ -350,20 +351,20 @@ Elman's text (p. 317, read in the PDF) and the Triple Intervention.
    gives Britain's raw cotton for 1786 to 1790 as about 70 percent West Indies, 20 percent "the
    Mediterranean countries", 8 percent Brazil, so the Ottoman share was at most a fifth in the late
    1780s. (Topic 5.3's ledger cites Hansard, 1847: about 5 of 19.9 million pounds from Smyrna and
-   Turkey in 1786.) `PENDING`
+   Turkey in 1786.) **NARROWED here and in topic 5.3's deep reading to "the mid-1780s ... about a quarter". Topic 5.3's ledger has two archival sources for 1786 to 1787 (Hansard 1847: about 5 of 19.9 million pounds from Smyrna and Turkey in 1786; Pereira, from BT 6/140: about 6.0 of 19.8 million in 1786 to 1787); the reviewer's 1911 Britannica average for 1786 to 1790 (20 percent Mediterranean) is lower for the late 1780s, so the decade-wide "a quarter or more" was too wide.**
 2. **Britain 04: "the census of 1851 suggests about four in ten women with a recorded job were
    servants"**: Burnett (Victorian Web) gives 905,000 domestic servants among about 2.8 million employed
-   women and girls, about a third; four in ten only with washerwomen and charwomen. `PENDING`
+   women and girls, about a third; four in ten only with washerwomen and charwomen. **FIXED: "about one in three women with a recorded job was a domestic servant ..., and about four in ten worked in domestic service if washerwomen and charwomen are counted" (Burnett). The unshipped 5.9 rebuild says "about four in ten ... servants": ADJACENT, reported for that branch.**
 3. **Middle East 04 "Ottomanism did not stop them" and the social card's "but"**: Greece was
-   independent in 1830, before the 1856 decree and the 1869 law. `PENDING`
+   independent in 1830, before the 1856 decree and the 1869 law. **FIXED: "Greece had left before Ottomanism began; it did not stop Serbia, Montenegro and Romania in 1878", and the card reworded to match.**
 4. **Middle East 03 (and topic 5.8): "In December 1876 the empire got a constitution and a
-   parliament"**: the parliament first met in March 1877. `PENDING`
+   parliament"**: the parliament first met in March 1877. **FIXED here and in topic 5.8's deep reading: the constitution in December 1876, the first parliament in March 1877.**
 5. **Britain 03: "could now buy shares safely"**: limited liability capped the loss; it did not make
-   shares safe. `PENDING`
+   shares safe. **FIXED: "without risking their homes".**
 6. **Middle East Argue it: "Between 1789 and 1878"**: 1789 appears nowhere in the chapter. (Same as
-   H's note.) `PENDING`
+   H's note.) **FIXED with H's note: the prompt now starts at 1787, the chapter's first date.**
 7. **Topic 5.9 (shipped draft): "the Reform Act of 1832 in Topic 5.6"**: 5.6 never mentions it.
-   Adjacent. `PENDING`
+   Adjacent. **ADJACENT: the shipped 5.9 draft; its rebuild on `claude/topic-5-10-build` drops the cross-reference. Reported.**
 
 Held up (reviewer's list): every CED quotation; both Argue it moves; the Britain industry, trade,
 business, society, reform and city facts (including the 1833 inquiry percentages and Snow's two 1854

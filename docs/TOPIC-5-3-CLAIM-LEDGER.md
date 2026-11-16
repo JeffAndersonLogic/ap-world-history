@@ -307,3 +307,10 @@ round until a clean round or three rounds). Pass 3 was not clean, but every find
 logged above, the defects shrank in each pass (pass 1: 22 fixed; pass 2: 19; pass 3: 16) and moved
 from wrong dates and misquotations to wording and credits. Story and reading approval were delegated
 to the independent reviewer loop (Jeff's standing rule of 2026-10-12).
+
+## Correction from the Unit 5 by Region review (2026-11-16)
+
+Pass 2, reviewer E: the 1911 Britannica gives about 20 percent of Britain's raw cotton from "the
+Mediterranean countries" for 1786 to 1790, lower than this ledger's 1786 and 1786-87 figures. The deep
+reading's "In the 1780s a quarter or more" is **NARROWED** to "In the mid-1780s about a quarter", which
+both archival sources above support.

@@ -216,7 +216,7 @@ module.exports = {
         {
           heading: 'Cotton from abroad',
           blocks: [
-            { p: `Cotton does not grow in Britain's climate. By the <span class="num">1780s</span> most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the <span class="num">1790s</span> more and more of it came from plantations in the United States. Britain used about <span class="num">2.6 million</span> pounds of raw cotton in <span class="num">1760</span>, almost all of it spun by hand, and about <span class="num">51.6 million</span> pounds in <span class="num">1800</span>. The factory's raw material came from far away, and most of it was grown by people who were not free. (In the 1780s a quarter or more came from the Ottoman Empire, through the port of Smyrna.)` }
+            { p: `Cotton does not grow in Britain's climate. By the <span class="num">1780s</span> most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the <span class="num">1790s</span> more and more of it came from plantations in the United States. Britain used about <span class="num">2.6 million</span> pounds of raw cotton in <span class="num">1760</span>, almost all of it spun by hand, and about <span class="num">51.6 million</span> pounds in <span class="num">1800</span>. The factory's raw material came from far away, and most of it was grown by people who were not free. (In the mid-1780s about a quarter came from the Ottoman Empire, through the port of Smyrna.)` }
           ]
         },
         {

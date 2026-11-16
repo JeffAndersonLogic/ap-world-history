@@ -60,14 +60,14 @@ module.exports = {
         {
           heading: 'The old answer',
           blocks: [
-            { p: `In 1750 a European state belonged, in its rulers' telling, to the king, because God had put him there: <span class="kt">divine right</span>. In most countries one church was the law. Nobles were born into privileges, such as freedom from some taxes, and across much of central and eastern Europe peasants were <span class="kt">serfs</span>, bound to work their lord's land.` }
+            { p: `In 1750 a European state belonged, in its rulers' telling, to the king, because God had put him there: <span class="kt">divine right</span>. In most countries one church was the official church, and the law favored it over every other. Nobles were born into privileges, such as freedom from some taxes, and across much of central and eastern Europe peasants were <span class="kt">serfs</span>, bound to work their lord's land.` }
           ]
         },
         {
           heading: 'Reason, first for nature, then for people',
           blocks: [
             { p: `In <span class="num">1687</span> the English scientist Isaac Newton showed that a few laws of motion and gravity, worked out with mathematics, explained both the planets and a falling apple. Many readers took the lesson that the world runs by laws a human mind can discover. Then they turned the same method on people. In <span class="num">1689</span> the English philosopher John Locke argued that people are born with <span class="kt">natural rights</span> to their "lives, liberties and estates," and that government is a <span class="kt">social contract</span>: no one may be "subjected to the political power of another, without his own consent."` },
-            { p: `French writers carried the questions further. Montesquieu argued in <span class="num">1748</span> that liberty is safest when the powers to make laws, carry them out and judge are held by different people, the <span class="kt">separation of powers</span>. Jean-Jacques Rousseau began The Social Contract (<span class="num">1762</span>): "Man is born free; and everywhere he is in chains." Voltaire campaigned for Jean Calas, a Protestant executed in <span class="num">1762</span> for killing his son to stop him from becoming a Catholic, a crime he most likely did not commit, and argued for <span class="kt">religious toleration</span>. In the College Board's words, these thinkers "reexamined the role that religion played in public life and emphasized the importance of reason."` },
+            { p: `French writers carried the questions further. Montesquieu argued in <span class="num">1748</span> that liberty is safest when the powers to make laws, carry them out and judge are held by different people, the <span class="kt">separation of powers</span>. Jean-Jacques Rousseau opened the first chapter of The Social Contract (<span class="num">1762</span>) with "Man is born free; and everywhere he is in chains." Voltaire campaigned for Jean Calas, a Protestant executed in <span class="num">1762</span> for killing his son to stop him from becoming a Catholic, a crime he most likely did not commit, and argued for <span class="kt">religious toleration</span>. In the College Board's words, these thinkers "reexamined the role that religion played in public life and emphasized the importance of reason."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -117,7 +117,7 @@ module.exports = {
           heading: 'A republic, a nation in arms, an emperor',
           blocks: [
             { p: `France abolished its monarchy in <span class="num">1792</span> and executed the king in January <span class="num">1793</span>. At war with much of Europe, the government ordered in <span class="num">1793</span> that "all Frenchmen are in permanent requisition for the service of the armies": young men would fight, married men make weapons, women make tents and work in hospitals. Here a government used loyalty to the <span class="kt">nation</span>, what the College Board calls a "new sense of commonality" that was "sometimes harnessed by governments to foster a sense of unity." Afraid of enemies at home, it also began the Terror (<span class="num">1793</span> to <span class="num">1794</span>), killing thousands. France abolished slavery in its colonies in <span class="num">1794</span>.` },
-            { p: `In <span class="num">1799</span> the general Napoleon Bonaparte took power, and in <span class="num">1804</span> he crowned himself emperor. He brought back slavery in the colonies in <span class="num">1802</span>. His armies carried the revolution's laws, such as the end of noble privilege, across Europe, and also made many Europeans hate French rule. In <span class="num">1808</span> he invaded Spain, which gave Spanish America's colonists their chance to break away (<a href="#chapter-r5-americas">the Americas</a>).` },
+            { p: `In <span class="num">1799</span> the general Napoleon Bonaparte took power, and in <span class="num">1804</span> he crowned himself emperor. He brought back slavery in some French colonies, such as Guadeloupe, in <span class="num">1802</span>. His armies carried the revolution's laws, such as the end of noble privilege, across Europe, and also made many Europeans hate French rule. In <span class="num">1808</span> he invaded Spain, which gave Spanish America's colonists their chance to break away (<a href="#chapter-r5-americas">the Americas</a>).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -148,7 +148,7 @@ module.exports = {
           heading: '1830 and 1848',
           blocks: [
             { p: `The revolutions left new answers to how a country should be run. <span class="kt">Liberalism</span> held that a written constitution and an elected parliament should limit the government and protect each person's rights, such as a free press; many liberals still wanted only men with property to vote. <span class="kt">Democracy</span> pushed for the vote to reach all men. In the College Board's words, "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism."` },
-            { p: `These ideas set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>, when crowds demanded constitutions, parliaments and wider voting. In <span class="num">1848</span> France gave the vote to all adult men, and France ended slavery in its colonies for good. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
+            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>; in 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds crowds demanded constitutions, parliaments and wider voting. In <span class="num">1848</span> France gave the vote to all adult men, and France ended slavery in its colonies for good. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
           ]
         },
         {
@@ -252,7 +252,7 @@ module.exports = {
         {
           heading: 'Bismarck reforms to beat his critics',
           blocks: [
-            { p: `Bismarck also tried another weapon. The Reichstag, Germany's parliament, passed health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span>. In <span class="num">1884</span> Bismarck told the Reichstag that the socialists' leaders needed "dissatisfied classes": "dissatisfied workers are just what they need." Reform could answer workers and weaken their party at the same time.` }
+            { p: `Bismarck also tried another weapon. The Reichstag, Germany's parliament, passed <span class="kt">social insurance</span>: health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span>. In <span class="num">1884</span> Bismarck told the Reichstag that the socialists' leaders needed "dissatisfied classes": "dissatisfied workers are just what they need." Reform could answer workers and weaken their party at the same time.` }
           ]
         },
         {

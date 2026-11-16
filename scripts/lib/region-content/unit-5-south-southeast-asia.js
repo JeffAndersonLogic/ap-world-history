@@ -89,7 +89,7 @@ module.exports = {
         {
           heading: 'Why',
           blocks: [
-            { p: `Cloth from Lancashire's steam-powered mills was cheaper than cloth woven by hand, even in India itself. Power mattered too. British cotton cloth entered Company-ruled India at a tax of only 2½ percent, while around <span class="num">1813</span> Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Some of India's troubles began before the factories did, such as the breakup of the Mughal Empire and years of drought, and historians still argue about how much each cause mattered.` },
+            { p: `Cloth from Lancashire's steam-powered mills was cheaper than cloth woven by hand, even in India itself. The trade rules mattered too. British cotton cloth entered Company-ruled India at a <span class="kt">tariff</span>, an import tax, of only 2½ percent, while around <span class="num">1813</span> Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Some of India's troubles began before the factories did, such as the breakup of the Mughal Empire and years of drought, and historians still argue about how much each cause mattered.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -161,14 +161,14 @@ module.exports = {
         {
           heading: 'Millions on the move',
           blocks: [
-            { p: `Cheaper, faster steamships carried people as well as goods. Between <span class="num">1846</span> and <span class="num">1940</span>, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean, counted from passenger lists and port records by the historian Adam McKeown. Many later went home. Why they moved, and the work they found, is Unit 6.` }
+            { p: `Cheaper, faster steamships carried people as well as goods, and <span class="kt">migration</span> grew. Between <span class="num">1846</span> and <span class="num">1940</span>, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean, counted from passenger lists and port records by the historian Adam McKeown. Many later went home. Why they moved, and the work they found, is Unit 6.` }
           ]
         },
         {
           heading: 'The Propaganda Movement',
           blocks: [
-            { p: `Spain had ruled the Philippines since the 1500s. In the 1880s and 1890s Filipino writers, many of them students in Europe, began what was called the <span class="kt">Propaganda Movement</span>. They demanded equal rights with Spaniards. The best known, José Rizal, published his novel Noli Me Tángere ("Touch Me Not") in <span class="num">1887</span>, attacking the abuses of Spanish rule and of the friars who held great power in the islands. In <span class="num">1896</span>, during a revolution against Spanish rule, Spain executed Rizal (<a href="#chapter-t5-2">Topic 5.2</a>).` },
-            { p: `These writers were building what the College Board calls "a new sense of commonality based on language, religion, social customs, and territory": a people of many islands and languages who began to see themselves as one, Filipino. In time, as the College Board says of such "newly imagined national communities," that identity was linked "with borders of the state."` },
+            { p: `Spain had ruled the Philippines since the 1500s. In the 1880s and 1890s Filipino writers, many of them students in Europe, began what was called the <span class="kt">Propaganda Movement</span>. They demanded equal rights with Spaniards. The best known, José Rizal, published his novel Noli Me Tángere ("Touch Me Not") in <span class="num">1887</span>, attacking the abuses of Spanish rule and of the friars, Catholic religious brothers, who held great power in the islands. In <span class="num">1896</span>, during a revolution against Spanish rule, Spain executed Rizal (<a href="#chapter-t5-2">Topic 5.2</a>).` },
+            { p: `These writers were building what the College Board calls "a new sense of commonality based on language, religion, social customs, and territory": a people of many islands and languages who began to see themselves as one, Filipino. That loyalty to a nation is <span class="kt">nationalism</span>. In time, as the College Board says of such "newly imagined national communities," that identity was linked "with borders of the state."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',

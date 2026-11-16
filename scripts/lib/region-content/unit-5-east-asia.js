@@ -59,7 +59,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that China "stopped manufacturing." Its share fell because the world's total grew far faster, while Chinese families kept spinning and weaving. Bairoch's figures are estimates: use them for the size of the change, never as exact amounts.`
+              html: `Do not write that China "stopped manufacturing." Its share fell mostly because the world's total grew far faster. Bairoch also estimated that China's own output shrank after about 1830, though other historians think hand weaving held up better than he allowed. Chinese families kept weaving, more and more of it with machine-made thread. Bairoch's figures are estimates: use them for the size of the change, never as exact amounts.`
             } }
           ]
         },
@@ -174,7 +174,7 @@ module.exports = {
         {
           heading: 'The state builds',
           blocks: [
-            { p: `The government built Japan's first railway, from Tokyo to Yokohama, which opened in <span class="num">1872</span> with British engineers. The same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine so the method could spread. It built telegraph lines, shipyards, mines, and factories for weapons and goods such as cement and glass. Farmers paid for much of it through the land tax. This is one of the College Board's "state-sponsored visions of industrialization."` }
+            { p: `The government built Japan's first railway, from Tokyo to Yokohama, which opened in <span class="num">1872</span> with British engineers. The same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine so the method could spread. It built telegraph lines, shipyards, mines, and factories for weapons and goods such as cement and glass. Farmers paid for much of it through the land tax. This is <span class="kt">state-sponsored industry</span>, one of the College Board's "state-sponsored visions of industrialization."` }
           ]
         },
         {

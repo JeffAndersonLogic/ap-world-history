@@ -245,7 +245,11 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // monopolies (grain and others) paid for the first mills, and cotton from the 1820s.
 // Against the approved blob 7456ea90 only those two sentences changed; every other
 // Unit 5 reading is byte-for-byte unchanged.
-const APPROVED_UNIT5_REWRITE_BLOB = 'e797bdbef57b07284dc996e5062d49dc1863db25';
+// 2026-11-16, later the same day: one phrase in Topic 5.1, found by the Unit 5 by Region
+// review (pass 2, reviewer F). Rousseau's "Man is born free" opens Book I, Chapter 1 of The
+// Social Contract, not the book, so "began his own book" is now "opened the first chapter of
+// his own book". Against the blob e797bdbe only that phrase changed.
+const APPROVED_UNIT5_REWRITE_BLOB = '6b593eebf4137c3a17b16ddbe103a430232e3066';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

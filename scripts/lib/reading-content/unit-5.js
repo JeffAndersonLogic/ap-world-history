@@ -117,7 +117,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The second was the <span class=\"kt\">social contract</span>: government is an agreement. People give some of their freedom to a government so that it will protect their rights. \"No one,\" Locke wrote, can be put under another person's power \"without his own consent.\" If a government breaks the deal and attacks the people's rights, the people may resist it. In 1762 the French-speaking writer Jean-Jacques Rousseau began his own book on the social contract with a famous line: \"Man is born free; and everywhere he is in chains.\""
+            "html": "The second was the <span class=\"kt\">social contract</span>: government is an agreement. People give some of their freedom to a government so that it will protect their rights. \"No one,\" Locke wrote, can be put under another person's power \"without his own consent.\" If a government breaks the deal and attacks the people's rights, the people may resist it. In 1762 the French-speaking writer Jean-Jacques Rousseau opened the first chapter of his own book on the social contract with a famous line: \"Man is born free; and everywhere he is in chains.\""
           },
           {
             "type": "p",

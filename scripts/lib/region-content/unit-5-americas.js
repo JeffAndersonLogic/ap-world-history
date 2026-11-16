@@ -112,8 +112,8 @@ module.exports = {
         {
           heading: 'Independence',
           blocks: [
-            { p: `In <span class="num">1802</span> Napoleon brought slavery back in other French colonies and sent an army to retake Saint-Domingue. Toussaint was arrested and died in a French prison in <span class="num">1803</span>. His officer Jean-Jacques Dessalines fought on, yellow fever and the war destroyed the French army, and on 1 January <span class="num">1804</span> Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, after the United States, and the first founded by people who had freed themselves from slavery.` },
-            { p: `Its effects reached far. In <span class="num">1803</span>, with his army dying in Saint-Domingue, Napoleon sold Louisiana to the United States. Countries that allowed slavery feared Haiti's example: the United States did not recognize it until <span class="num">1862</span>, and in <span class="num">1825</span> France demanded 150 million francs, later cut to 90 million, as the price of recognizing it (<a href="#chapter-t5-2">Topic 5.2</a>).` }
+            { p: `In <span class="num">1802</span> Napoleon brought slavery back in other French colonies and sent an army to retake Saint-Domingue. Toussaint was arrested and died in a French prison in <span class="num">1803</span>. His officer Jean-Jacques Dessalines fought on. Yellow fever and the war destroyed the French army. On 1 January <span class="num">1804</span> Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, after the United States, and the first founded by people who had freed themselves from slavery.` },
+            { p: `Its effects reached far. In <span class="num">1803</span>, with his army in Saint-Domingue dying of yellow fever and a new war with Britain coming, Napoleon sold Louisiana to the United States. Countries that allowed slavery feared Haiti's example: the United States did not recognize it until <span class="num">1862</span>, and in <span class="num">1825</span> France demanded 150 million francs, later cut to 90 million, as the price of recognizing it (<a href="#chapter-t5-2">Topic 5.2</a>).` }
           ]
         }
       ],
@@ -241,7 +241,7 @@ module.exports = {
     intro: `The same story, gathered by its sides for review.`,
     argue: {
       move: 'Causation',
-      prompt: `Between 1775 and 1826, most of the Americas broke away from European rule. Using two of the revolutions in this chapter, argue whether Enlightenment ideas or the circumstances of the moment (grievances and chances) did more to cause them, and explain how one revolution helped another start or win.`
+      prompt: `Between 1776 and 1826, the United States, Haiti, Brazil and most of Spanish America broke away from European rule. Using two of the revolutions in this chapter, argue whether Enlightenment ideas or the circumstances of the moment (grievances and chances) did more to cause them, and explain how one revolution helped another start or win.`
     },
     pairs: [
       {

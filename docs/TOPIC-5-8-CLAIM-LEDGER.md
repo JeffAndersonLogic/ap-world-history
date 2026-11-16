@@ -666,3 +666,9 @@ suites passed. `teaching-os-briefing.browser.test.js` failed one assertion, "5.8
 page resolves": the teacher page's Student Lesson button named `lesson-5-8-economic-developments-and-innovations.html`,
 left from the copy of 5.7's page. **Fixed** to `lesson-5-8-reactions-to-industrial-economy.html`; the
 suite then passed on its own (exit 0).
+
+## Correction from the Unit 5 by Region review (2026-11-16)
+
+Pass 2, reviewer E: the Ottoman constitution was proclaimed in December 1876, but its first parliament met
+in March 1877. The deep reading's "In December 1876 the empire got a constitution and a parliament" is
+**NARROWED** to "a constitution, and in March 1877 its first parliament met".

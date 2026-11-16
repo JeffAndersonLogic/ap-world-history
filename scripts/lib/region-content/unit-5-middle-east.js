@@ -85,7 +85,7 @@ module.exports = {
           heading: 'Crops paid for factories',
           blocks: [
             { p: `His government took control of Egypt's farming: it told peasants what to plant, bought their crops cheap and sold them abroad dear. Those crop monopolies, first on grain and other crops and from <span class="num">1820</span> above all on a new crop, long-staple cotton, earned a great deal. With that money, from the late 1810s, the government built cotton mills and works for weapons, sugar and other goods, with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 workers, many making cloth and uniforms for the army, and Muhammad Ali kept cheap British cloth out of Egypt to protect them.` },
-            { p: `The workers were drafted, as Egyptian peasants had long been made to dig canals. From <span class="num">1822</span> peasants were drafted into the army too, and it reached about 130,000 soldiers by the early 1830s. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences. This is one of the College Board's "state-sponsored visions of industrialization": a government that planned, paid for and owned the factories itself (<a href="#chapter-t5-6">Topic 5.6</a>).` }
+            { p: `The workers were drafted, as Egyptian peasants had long been made to dig canals. From <span class="num">1822</span> peasants were drafted into the army too, which is called <span class="kt">conscription</span>, and it reached about 130,000 soldiers by the early 1830s. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences. This is <span class="kt">state-sponsored industry</span>, one of the College Board's "state-sponsored visions of industrialization": a government that planned, paid for and owned the factories itself (<a href="#chapter-t5-6">Topic 5.6</a>).` }
           ]
         },
         {
@@ -128,14 +128,14 @@ module.exports = {
         {
           heading: 'Ottomanism',
           blocks: [
-            { p: `A decree of <span class="num">1856</span> promised equal treatment to Christians and Jews, and a law of <span class="num">1869</span> made every subject an Ottoman citizen. The idea, called <span class="kt">Ottomanism</span>, was one loyalty for everyone, to the empire, instead of to a nation. It is a case of what the College Board describes: a "new sense of commonality" that was "sometimes harnessed by governments to foster a sense of unity" (<a href="#chapter-t5-2">Topic 5.2</a>).` },
+            { p: `A decree of <span class="num">1856</span> promised equal treatment to Christians and Jews, and a law of <span class="num">1869</span> made every subject an Ottoman citizen. The idea, called <span class="kt">Ottomanism</span>, was one loyalty for everyone, to the empire, instead of to a nation. It was a government trying to build a "new sense of commonality," in the College Board's words, around the empire itself, to "foster a sense of unity" among peoples who did not share one language or religion. The College Board lists Ottomanism among its optional examples of the period's calls for national unity (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { p: `Not everyone wanted it. Many Muslims, who had long held a higher place than Christians and Jews, resented losing it, and some Christian church leaders were unhappy too.` }
           ]
         },
         {
           heading: 'A constitution, suspended',
           blocks: [
-            { p: `In December <span class="num">1876</span> the empire got a constitution and a parliament. In February <span class="num">1878</span> Sultan Abdulhamid II, who had come to the throne in <span class="num">1876</span>, suspended the constitution and dissolved the parliament. Reform from above could be taken back from above.` },
+            { p: `In December <span class="num">1876</span> the empire got a constitution, and in March <span class="num">1877</span> its first parliament met. In February <span class="num">1878</span> Sultan Abdulhamid II, who had come to the throne in <span class="num">1876</span>, suspended the constitution and dissolved the parliament. Reform from above could be taken back from above.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -164,7 +164,7 @@ module.exports = {
         {
           heading: 'The Balkan nations',
           blocks: [
-            { p: `<span class="kt">Nationalism</span>, loyalty to a nation of people who shared a language, religion and homeland, pulled at an empire of many peoples. Serbs rebelled and won the right to rule themselves. Greeks rose up in <span class="num">1821</span>, and in <span class="num">1830</span> Britain, France and Russia declared Greece an independent state; it became a kingdom under a Bavarian prince in <span class="num">1832</span>. In <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as independent. These are the College Board's nationalists who "challenged boundaries" (<a href="#chapter-t5-2">Topic 5.2</a>). Ottomanism did not stop them.` },
+            { p: `<span class="kt">Nationalism</span>, loyalty to a nation of people who shared a language, religion and homeland, pulled at an empire of many peoples. Serbs rebelled and won the right to rule themselves. Greeks rose up in <span class="num">1821</span>, and in <span class="num">1830</span> Britain, France and Russia declared Greece an independent state; it became a kingdom under a Bavarian prince in <span class="num">1832</span>. In <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as independent. These are the College Board's nationalists who "challenged boundaries" (<a href="#chapter-t5-2">Topic 5.2</a>). Greece had left before Ottomanism began; it did not stop Serbia, Montenegro and Romania in 1878.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -175,7 +175,7 @@ module.exports = {
         {
           heading: 'Cloth, and a shrinking share',
           blocks: [
-            { p: `The region had long made and traded goods. In the 1780s a quarter or more of the cotton spun in Britain came from the Ottoman Empire, through the port of Smyrna (<a href="#chapter-t5-3">Topic 5.3</a>). But machine-made cloth was cheaper than hand-made: in <span class="num">1838</span> English cotton cloth sold in Egypt for less than cloth from Egypt's own new mills. The College Board's sentence is that while "Middle Eastern and Asian countries continued to produce manufactured goods, these regions' share in global manufacturing declined."` },
+            { p: `The region had long made and traded goods. In the mid-1780s about a quarter of the raw cotton Britain imported came from the Ottoman Empire, through the port of Smyrna (<a href="#chapter-t5-3">Topic 5.3</a>). But machine-made cloth was cheaper than hand-made: in <span class="num">1838</span> English cotton cloth sold in Egypt for less than cloth from Egypt's own new mills. The College Board's sentence is that while "Middle Eastern and Asian countries continued to produce manufactured goods, these regions' share in global manufacturing declined."` },
             { p: `They did keep producing. In the Syrian cities of Aleppo and Damascus, the number of handlooms held steady from <span class="num">1860</span> to <span class="num">1914</span> (<a href="#chapter-t5-4">Topic 5.4</a>).` }
           ]
         },
@@ -200,7 +200,7 @@ module.exports = {
     intro: `The same story, gathered by its sides for review.`,
     argue: {
       move: 'Continuity and Change',
-      prompt: `Between 1789 and 1878, Ottoman sultans and Egypt's governor rebuilt their armies, laws and economies. By 1878, how much had their reforms changed how the empire was ruled and who ruled it? Make a claim, then support it with one change and one continuity from this chapter.`
+      prompt: `Between 1787 and 1878, Ottoman sultans and Egypt's governor rebuilt their armies, laws and economies. By 1878, how much had their reforms changed how the empire was ruled and who ruled it? Make a claim, then support it with one change and one continuity from this chapter.`
     },
     pairs: [
       {
@@ -216,7 +216,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Drafted peasants, one citizenship',
-        body: `Muhammad Ali drafted peasants into his factories and, from 1822, his army of about 130,000. The 1869 law made every Ottoman subject a citizen, but Greeks, Serbs, Montenegrins and Romanians chose nations of their own.`
+        body: `Muhammad Ali drafted peasants into his factories and, from 1822, his army of about 130,000. Greece left the empire in 1830, and Serbia, Montenegro and Romania in 1878, despite the 1869 law that made every Ottoman subject a citizen.`
       },
       {
         category: 'Intellectual and technological',

@@ -335,3 +335,10 @@ wrong date, no misattributed quotation and no CED or ownership defect, only word
 a map label and connector words. Nothing systemic was found in the story, the CED reading or a source.
 One build-time catch outside the reviewers: a slide 14 box first quoted the 1789 article loosely and was
 corrected to its exact words before commit.
+
+## Correction from the Unit 5 by Region review (2026-11-16)
+
+Pass 2, reviewer F, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`): Rousseau's
+"Man is born free; and everywhere he is in chains" opens Book I, Chapter 1 of The Social Contract, after
+a short introduction, not the book itself. **NARROWED** on the deep reading, the First & 10, the lesson
+data, the Skill Builder prompt and the teacher note: "opened the first chapter of".
