@@ -491,3 +491,22 @@ Held up (reviewer's list): every CED quotation in both chapters; the Britain dat
 quotations (Harley's yarn price word for word; Edwards on 1787 imports; Burnette's 1833 percentages;
 Szreter and Mooney's Manchester range); every East Asia date, figure and quotation (HSBC timeline;
 Tsurumi; the 1894 treaty; Shimonoseki); both Argue it prompts; the part intro.
+
+#### Reviewer J: history, Europe and the Americas, 4 findings
+
+1. **Americas 02: "He changed sides to France the next year, after Paris abolished slavery"** implies a
+   cause historians debate (James; Ardouin; Ott; Toussaint's own later account; Geggus). Topic 5.2
+   gives no cause ("a few months later"). Source: Wikipedia, "Toussaint Louverture", "Alliance with
+   the French: 1794-1796" ("The timing of and motivation behind Louverture's volte-face against Spain
+   remains debated among historians"). This sentence was added by the pass 2 fix for G2. `PENDING`
+2. **Europe 03: "Crowds crowds"** (same as L2). `PENDING`
+3. **Europe 04: the German and Russian railway lengths and the Trans-Siberian cited to Topic 5.4**;
+   they are in Topic 5.5, not 5.4. (Figures confirmed: Fordham Modern History Sourcebook, 51,678 and
+   53,234 km in 1900.) `PENDING`
+4. **Europe 04 (and topic 5.4): Seraing "near Liège in Belgium" in 1817**: Liège was in the United
+   Kingdom of the Netherlands until Belgium's independence in 1830. `PENDING`
+
+Held up (reviewer's list): every CED quotation; both Argue it prompts; the part intro; Riis (three
+passages, Standard Ebooks), Bismarck (GHDI), Bolívar (Bertrand), Locke, Rousseau, the declarations,
+the levée, "iron and blood", the Manifesto, Kant, Toussaint's 1793 proclamation; every Europe and
+Americas date and figure.
