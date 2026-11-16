@@ -342,3 +342,32 @@ Treatise sections 123 and 95); the French Revolution sequence; serfdom; unificat
 BASF, Otto, Benz; the German tariffs as corrected; the Manifesto's first-section line; the SPD dates
 (19.7 percent in 1890); Bismarck's 1884 words (GHDI); every East Asia date and figure, including
 Elman's text (p. 317, read in the PDF) and the Triple Intervention.
+
+#### Reviewer E: history, Britain and the Middle East, 7 findings
+
+1. **Middle East 04 (and topic 5.3): "In the 1780s a quarter or more of the cotton spun in Britain
+   came from the Ottoman Empire, through Smyrna."** The 1911 Britannica (citing a US Census bulletin)
+   gives Britain's raw cotton for 1786 to 1790 as about 70 percent West Indies, 20 percent "the
+   Mediterranean countries", 8 percent Brazil, so the Ottoman share was at most a fifth in the late
+   1780s. (Topic 5.3's ledger cites Hansard, 1847: about 5 of 19.9 million pounds from Smyrna and
+   Turkey in 1786.) `PENDING`
+2. **Britain 04: "the census of 1851 suggests about four in ten women with a recorded job were
+   servants"**: Burnett (Victorian Web) gives 905,000 domestic servants among about 2.8 million employed
+   women and girls, about a third; four in ten only with washerwomen and charwomen. `PENDING`
+3. **Middle East 04 "Ottomanism did not stop them" and the social card's "but"**: Greece was
+   independent in 1830, before the 1856 decree and the 1869 law. `PENDING`
+4. **Middle East 03 (and topic 5.8): "In December 1876 the empire got a constitution and a
+   parliament"**: the parliament first met in March 1877. `PENDING`
+5. **Britain 03: "could now buy shares safely"**: limited liability capped the loss; it did not make
+   shares safe. `PENDING`
+6. **Middle East Argue it: "Between 1789 and 1878"**: 1789 appears nowhere in the chapter. (Same as
+   H's note.) `PENDING`
+7. **Topic 5.9 (shipped draft): "the Reform Act of 1832 in Topic 5.6"**: 5.6 never mentions it.
+   Adjacent. `PENDING`
+
+Held up (reviewer's list): every CED quotation; both Argue it moves; the Britain industry, trade,
+business, society, reform and city facts (including the 1833 inquiry percentages and Snow's two 1854
+studies); the Middle East army, Egypt (Beinin's 1981 MERIP article), Ottoman reform, Balkan and route
+facts. Unverified, not findings: the Aleppo and Damascus handlooms, Manchester's 25 to 28 years
+(Davenport, EcHR 2021, disputes the low city estimates), the fez factory's steam date (some say
+1843), the Gülhane wording, the yarn price.
