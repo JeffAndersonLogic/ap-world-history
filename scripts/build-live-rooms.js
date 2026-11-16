@@ -43,21 +43,15 @@ if (previewAt !== -1 && scenarios.length) {
   if (!target) { console.error('--preview needs a file path'); process.exit(1); }
   const scenario = scenarios[0];
   const asset = file => fs.readFileSync(path.join(ROOT, 'assets', file), 'utf8');
-  const html = `<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BeInTheRoom Live Prototype</title>
-<style>${asset('css/behistorical-room-live.css')}</style>
-</head>
-<body>
+  // A fragment, not a full document: the place it is shown wraps it in its own
+  // page skeleton.
+  const html = `<title>${scenario.title.replaceAll('*', '')}</title>
+<style>:root { color-scheme: dark; }
+${asset('css/behistorical-room-live.css')}</style>
 <div id="room-app"></div>
 <script>window.BH_LIVE_ROOM = ${safeJson({ ...scenario, lessonUrl: '#' })};</script>
 <script>${asset('js/behistorical-beintheroom-capture.js')}</script>
 <script>${asset('js/behistorical-room-live.js')}</script>
-</body>
-</html>
 `;
   fs.writeFileSync(target, html, 'utf8');
   console.log(`Wrote preview ${target}`);
