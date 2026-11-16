@@ -129,4 +129,52 @@ not repeated here.
 
 ## Review findings
 
-(None yet. Each pass's findings go here as `PENDING` before any fix.)
+### Pass 1 (2026-11-16), four fresh reviewers
+
+Packet: the six chapters and the Part Two intro as rendered text from `ebook/unit-5.html` (captured
+in Chromium), a copy of `scripts/lib/ced-source/unit-5.js`, and a brief adapted from
+`docs/review-brief-template.md`. Three history reviewers (two chapters each, top model, web
+sources) and one CED, readability and consistency reviewer (all six, cheaper model). None saw the
+build's reasoning, the ledger or the region-content sources.
+
+#### Reviewer D: CED alignment, readability, consistency (all six), 15 findings
+
+All College Board quotations checked by script against the CED: word for word. Argue it moves and
+answerability, cross-references and the part intro's account of missing regions held up.
+
+1. **Part intro: "you meet Britain in six of them"**, but Britain's own header lists seven topics.
+   Fix: drop the count or say seven. `PENDING`
+2. **Europe: the "spread" quotation (KC-5.1.I.D) is cited to Topic 5.5**; the CED puts it in 5.4
+   and topic-5-4 teaches it. Fix: cite Topic 5.4. `PENDING`
+3. **Europe: closing card "by 1900 most kings shared power with parliaments"** against the body's
+   "many of them"; Russia's tsar had no parliament until 1906. Fix: "many". `PENDING`
+4. **Europe: missing full stop**, "...disability in 1889 In 1884 Bismarck told...". `PENDING`
+5. **Americas: "By 1783 Britain had recognized the United States, and in 1787 it wrote a
+   constitution"**: "it" reads as Britain. Fix: name the United States. `PENDING`
+6. **East Asia: the CED splice "governments including 'Qing China, sought to...'"** reads as broken
+   English. Fix: quote from "including the Ottoman Empire and Qing China". `PENDING`
+7. **South and Southeast Asia: "as the CED says"**: "CED" is never explained to students. Fix: "the
+   College Board". `PENDING`
+8. **East Asia: the Terms box defines "Indemnity", which the text never uses; "taels" unglossed;
+   "one more piece of land" with no first piece named.** Fix: use "indemnity", gloss taels, name the
+   Liaodong Peninsula. `PENDING`
+9. **East Asia: the Elman quotation is a hard double negative and drops topic 5.8's qualifier**
+   ("though tight funding did limit the fleet"). Fix: paraphrase and restore the qualifier. `PENDING`
+10. **Britain 03: "Chartist" used before it is explained, and "'cheap bread' really meant cheap labor"
+    skips the step** (lower bread prices would let employers cut wages). `PENDING`
+11. **Britain deck: "the first country to make most of its goods by machine"**: the chapter gives no
+    evidence for "most of its goods". Fix: "the first country to industrialize". `PENDING`
+12. **Americas 03 thesis: "Haiti helped them win"** rests on one expedition in the body. Fix: say what
+    Haiti did. `PENDING`
+13. **East Asia closing card: "arsenals at Shanghai (1865) and Fuzhou (1866)"** against the body's
+    "a navy yard at Fuzhou". `PENDING`
+14. **South and Southeast Asia: "India's weavers clothed much of the world"** (deck and Argue it)
+    goes beyond the chapter's evidence (cloth sold on three continents; about a quarter of
+    manufactured goods). `PENDING`
+15. **Topic 5.10 (shipped chapter, not regional): "Chartism was rejected"** sits oddly beside Britain's
+    "five of the six points later became law". `PENDING`
+
+Reviewer D also listed as unverified, not as defects: Bismarck's 1884 words, Beinin's and Elman's
+quotations, Bolívar's phrases, the 62 percent figure for Japan, HSBC's 16 countries, Roy's handloom
+figures and the 1815 and 1832 cloth values. Each is a verified row in its topic ledger or in this
+ledger's Claims table.
