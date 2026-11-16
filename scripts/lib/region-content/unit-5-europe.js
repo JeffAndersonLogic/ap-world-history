@@ -197,7 +197,7 @@ module.exports = {
         {
           heading: 'Russia comes later',
           blocks: [
-            { p: `Russia had 27 kilometers of railway in <span class="num">1840</span> and more than 53,000 in <span class="num">1900</span>. In the early 1870s a Welsh engineer, John Hughes, built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine; the town that grew up around them was named Yuzovka after him (today Donetsk). Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and by <span class="num">1904</span> trains could cross to the Pacific. The College Board names Russia among the places where the new methods "spread," with "other parts of Europe," the United States and Japan (<a href="#chapter-t5-5">Topic 5.5</a>).` }
+            { p: `Russia had 27 kilometers of railway in <span class="num">1840</span> and more than 53,000 in <span class="num">1900</span>. In the early 1870s a Welsh engineer, John Hughes, built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine; the town that grew up around them was named Yuzovka after him (today Donetsk). Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and by <span class="num">1904</span> trains could cross to the Pacific. The College Board names Russia among the places where the new methods "spread," with "other parts of Europe," the United States and Japan (<a href="#chapter-t5-4">Topic 5.4</a>).` }
           ]
         },
         {
@@ -209,7 +209,7 @@ module.exports = {
         {
           heading: 'Free trade, for a while',
           blocks: [
-            { p: `In <span class="num">1860</span> Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods, and in the 1860s similar treaties lowered tariffs across much of Western Europe. Then some countries turned back. From <span class="num">1879</span> Germany put tariffs back on imported grain and iron, to protect its farmers and factories after cheap American grain drove prices down (<a href="#chapter-t5-7">Topic 5.7</a>).` }
+            { p: `In <span class="num">1860</span> Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods, and in the 1860s similar treaties lowered tariffs across much of Western Europe. Then some countries turned back. From <span class="num">1879</span> Germany put tariffs back on imported grain, to protect its farmers from cheap grain from America and Russia, and on iron, to protect its factories after a long slump that began in <span class="num">1873</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` }
           ]
         }
       ],
@@ -234,7 +234,7 @@ module.exports = {
         {
           heading: 'The Manifesto',
           blocks: [
-            { p: `In <span class="num">1848</span> two Germans, Karl Marx and Friedrich Engels, published the Communist Manifesto. "The history of all hitherto existing society is the history of class struggles," it begins. Industry, they argued, was splitting society into owners, the bourgeoisie, and wage workers, the proletarians, and the workers would one day overthrow the owners, end private property in the means of production, and build a society without classes: <span class="kt">communism</span>. The College Board names "those espoused by Karl Marx, and the ideas of socialism and communism" among the ideologies of this age (<a href="#chapter-t5-8">Topic 5.8</a>).` }
+            { p: `In <span class="num">1848</span> two Germans, Karl Marx and Friedrich Engels, published the Communist Manifesto. Its first section begins: "The history of all hitherto existing society is the history of class struggles." Industry, they argued, was splitting society into owners, the bourgeoisie, and wage workers, the proletarians, and the workers would one day overthrow the owners, end private property in the means of production, and build a society without classes: <span class="kt">communism</span>. The College Board names "those espoused by Karl Marx, and the ideas of socialism and communism" among the ideologies of this age (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         },
         {
@@ -252,7 +252,7 @@ module.exports = {
         {
           heading: 'Bismarck reforms to beat his critics',
           blocks: [
-            { p: `Bismarck also tried another weapon. The Reichstag, Germany's parliament, passed health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span> In <span class="num">1884</span> Bismarck told the Reichstag that the socialists' leaders needed "dissatisfied classes": "dissatisfied workers are just what they need." Reform could answer workers and weaken their party at the same time.` }
+            { p: `Bismarck also tried another weapon. The Reichstag, Germany's parliament, passed health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span>. In <span class="num">1884</span> Bismarck told the Reichstag that the socialists' leaders needed "dissatisfied classes": "dissatisfied workers are just what they need." Reform could answer workers and weaken their party at the same time.` }
           ]
         },
         {
@@ -283,7 +283,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'Kings stayed, but had to answer',
-        body: `France's revolution of 1789 put sovereignty in the nation and ended its monarchy in 1792; Napoleon then crowned himself. Liberals rose in 1830 and 1848, Italy (1861) and Germany (1871) were unified, and by 1900 most kings shared power with parliaments.`
+        body: `France's revolution of 1789 put sovereignty in the nation and ended its monarchy in 1792; Napoleon then crowned himself. Liberals rose in 1830 and 1848, Italy (1861) and Germany (1871) were unified, and by 1900 many monarchs shared power with elected parliaments.`
       },
       {
         category: 'Religious',

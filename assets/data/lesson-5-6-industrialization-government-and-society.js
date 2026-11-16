@@ -124,7 +124,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Line Up the Two Cases",
         bullets: [
           "**Threat:** for Egypt, European armies like the one Napoleon brought in 1798, which Muhammad Ali wanted to match, and the sultan he meant to hold Egypt against. For Japan, the American and European warships that forced its ports open in the 1850s.",
-          "**Strategy, who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax, and, for the first railway, money raised in Britain.",
+          "**Strategy, who paid for the first factories:** in Egypt, the state, with money from its crop monopolies, above all cotton from the 1820s. In Japan, the state, with money from the land tax, and, for the first railway, money raised in Britain.",
           "**Strategy, where the machines and know-how came from:** Egypt bought machines in Europe, hired European experts, and sent students to Europe in the 1820s. Japan used British engineers for its railway and a French engineer and French machines at Tomioka, and sent the Iwakura Mission abroad from 1871 to 1873.",
           "**Strategy, who did the work:** Egypt drafted peasants into its mills and its army. Japan drafted men of every class into its army and hired workers, many of them young women, for mills such as Tomioka.",
           "**Fuel:** Egypt had almost no coal, so many machines were turned by animals. Japan had coal of its own.",

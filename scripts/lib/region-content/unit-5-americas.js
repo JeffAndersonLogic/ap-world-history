@@ -69,7 +69,7 @@ module.exports = {
         {
           heading: 'The words and the chance',
           blocks: [
-            { p: `On 4 July <span class="num">1776</span> the Continental Congress adopted the Declaration of Independence: "all men are created equal," governments get "their just powers from the consent of the governed," and when a government destroys people's rights, "it is the Right of the People to alter or to abolish it." The chance: Britain was an ocean away, its victory in 1763 had pushed France out of North America, and in <span class="num">1778</span> France joined the war on the American side. By <span class="num">1783</span> Britain had recognized the United States, and in <span class="num">1787</span> it wrote a constitution for a <span class="kt">republic</span>, a country with no king, whose leaders are elected (<a href="#chapter-t5-2">Topic 5.2</a>).` },
+            { p: `On 4 July <span class="num">1776</span> the Continental Congress adopted the Declaration of Independence: "all men are created equal," governments get "their just powers from the consent of the governed," and when a government destroys people's rights, "it is the Right of the People to alter or to abolish it." The chance: Britain was an ocean away, its victory in 1763 had pushed France out of North America, and in <span class="num">1778</span> France joined the war on the American side. By <span class="num">1783</span> Britain had recognized the United States, and in <span class="num">1787</span> the new country wrote a constitution for a <span class="kt">republic</span>, a country with no king, whose leaders are elected (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { p: `The College Board calls the American Revolution "a model and inspiration for a number of the revolutions that followed." It was also limited. The republic kept slavery, and most states let only men who owned property vote.` },
             { note: {
               kind: 'misconception',
@@ -132,7 +132,7 @@ module.exports = {
       name: 'An Empire With No King',
       navLabel: 'Spanish America',
       dates: '1808 to 1826 &nbsp;·&nbsp; Creoles, Bolívar, and new states',
-      thesis: `Creoles in Spain's American empire had grievances for decades. Their chance came when Napoleon took Spain's king, and Haiti helped them win.`,
+      thesis: `Creoles in Spain's American empire had grievances for decades. Their chance came when Napoleon took Spain's king, and Haiti armed one of Bolívar's expeditions.`,
       parts: [
         {
           heading: 'The grievance and the chance',
@@ -165,13 +165,13 @@ module.exports = {
       accent: 'oxide',
       name: 'Pressing the Words Further',
       navLabel: 'Rights pressed',
-      dates: '1834 to 1888 &nbsp;·&nbsp; Abolition and Seneca Falls',
+      dates: '1823 to 1888 &nbsp;·&nbsp; Abolition and Seneca Falls',
       thesis: `The new states were founded on words about equal rights, and most of them kept slavery and shut women out. Over the next century the enslaved, abolitionists and women held the words to their own terms.`,
       parts: [
         {
           heading: 'Slavery ends, country by country',
           blocks: [
-            { p: `Abolition came slowly. Britain began ending slavery in its Caribbean colonies in <span class="num">1834</span>, and France ended it in its colonies for good in <span class="num">1848</span>. Colombia ended it in <span class="num">1851</span>, Venezuela and Peru in <span class="num">1854</span>. The United States ended it in <span class="num">1865</span>, after a civil war. Brazil was the last country in the Americas, in <span class="num">1888</span>. The College Board counts "the abolition of slavery" among the expansions of rights that reform movements, driven by "Enlightenment ideas and religious ideals," helped bring about (<a href="#chapter-t5-1">Topic 5.1</a>).` }
+            { p: `Abolition came slowly. Haiti's revolution had ended slavery there, and some of the new states ended it early: Chile in <span class="num">1823</span> and Mexico in <span class="num">1829</span>. Many kept it for decades. Britain began ending slavery in its Caribbean colonies in <span class="num">1834</span>, and France ended it in its colonies for good in <span class="num">1848</span>. Colombia ended it in <span class="num">1851</span>, Venezuela and Peru in <span class="num">1854</span>. The United States ended it in <span class="num">1865</span>, after a civil war. Brazil was the last country in the Americas, in <span class="num">1888</span>. The College Board counts "the abolition of slavery" among the expansions of rights that reform movements, influenced by "Enlightenment ideas and religious ideals," helped bring about (<a href="#chapter-t5-1">Topic 5.1</a>).` }
           ]
         },
         {
@@ -197,7 +197,7 @@ module.exports = {
       name: 'The Largest Maker in the World',
       navLabel: 'US industry',
       dates: '1789 to 1900 &nbsp;·&nbsp; Mills, railroads, steel, migrants, and unions',
-      thesis: `Factory methods reached the United States in a skilled worker's memory. By 1900 the country made more of the world's manufactured goods than any other, drew millions of migrants, and packed them into cities.`,
+      thesis: `Factory spinning reached the United States partly in a skilled worker's memory. By 1900 the country made more of the world's manufactured goods than any other, drew millions of migrants, and packed them into cities.`,
       parts: [
         {
           heading: 'Mills by the river',
@@ -221,7 +221,7 @@ module.exports = {
         {
           heading: 'Tenements and unions',
           blocks: [
-            { p: `Manhattan grew from about 515,000 people in <span class="num">1850</span> to about 1.4 million in <span class="num">1890</span>. That year the reporter Jacob Riis published How the Other Half Lives, writing of New York that "three-fourths of its people live in the tenements," crowded buildings for poor renters. In one Bayard Street room "not thirteen feet either way," he found twelve men and women sleeping. Riis wanted to shock readers into reform, and chose his scenes for that purpose.` },
+            { p: `Manhattan grew from about 515,000 people in <span class="num">1850</span> to about 1.4 million in <span class="num">1890</span>. That year the reporter Jacob Riis published How the Other Half Lives, writing of New York that "three-fourths of its people live in the tenements." By law a tenement was any rented building where three or more families lived and cooked; the worst were dark and badly crowded. In one Bayard Street room "not thirteen feet either way," he found twelve men and women sleeping. Riis wanted to shock readers into reform, and chose his scenes for that purpose.` },
             { p: `Workers organized. The American Federation of Labor, founded in <span class="num">1886</span> with Samuel Gompers as president, joined unions of skilled workers who wanted higher wages, shorter hours and better conditions (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         }
@@ -229,7 +229,7 @@ module.exports = {
       terms: [
         ['Interior', `The middle of a continent, far from the sea.`],
         ['Migration', `People moving to live in a new place.`],
-        ['Tenement', `A crowded apartment building for poor renters.`],
+        ['Tenement', `A rented building shared by three or more families, often crowded and poor.`],
         ['Labor union', `A group of workers who bargain with their employer together.`]
       ]
     }
@@ -257,7 +257,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'The words pressed further, slowly',
-        body: `Enslaved people won Haiti by revolution; slavery ended elsewhere country by country, from 1834 to Brazil in 1888. Seneca Falls (1848) demanded the vote for women. By Riis's count in 1890, three in four New Yorkers lived in tenements.`
+        body: `Enslaved people won Haiti by revolution; slavery ended elsewhere country by country, from Chile in 1823 to Brazil in 1888. Seneca Falls (1848) demanded the vote for women. By Riis's count in 1890, three in four New Yorkers lived in tenements.`
       },
       {
         category: 'Intellectual and technological',

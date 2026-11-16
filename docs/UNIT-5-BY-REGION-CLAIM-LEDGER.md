@@ -1,8 +1,7 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** review pass 1 is running (launched 2026-11-16, four fresh reviewers on the packet
-captured from `ebook/unit-5.html` at commit after the ledger rows). If this session stopped
-before pass 1's findings appear below, relaunch pass 1 from a fresh capture.
+**Resume here:** pass 1 is done and every finding has a disposition. Next: recapture the
+chapters from `ebook/unit-5.html` and run review pass 2 with four fresh reviewers.
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
@@ -125,6 +124,8 @@ not repeated here.
 | India's census of 1901 found about two-thirds of the people living by farming | South and Southeast Asia 03 | Topic 5.10 rebuild ledger (Risley and Gait, Report on the Census of India, 1901) | VERIFIED (5.10 rebuild) |
 | Many Indian and Chinese migrants later went home | South and Southeast Asia 04 | McKeown (2007 essay): returns from Southeast Asia ran at 63 to 75 percent of arrivals, 1870 to 1930 | VERIFIED |
 | Spain had ruled the Philippines since the 1500s; Propaganda writers, many of them students in Europe, demanded equal rights with Spaniards; Rizal's Noli Me Tángere (1887) attacked the abuses of Spanish rule and the friars | South and Southeast Asia 04 | Library of Congress country study, Philippines ("Rizal and the Propaganda Movement"); Penguin reader's guide to Noli Me Tángere; Topic 5.2 for the demands and 1896 | VERIFIED |
+| Chile ended slavery in 1823 and Mexico in 1829 | Americas 04 | Added in pass 1 (reviewer B): Abolition of slavery timeline (Chile 1823; Mexico, the Guerrero decree of 1829) | VERIFIED |
+| London and India were joined by an overland telegraph from 1865, whose messages took days; the 1870 cable cut that to minutes | South and Southeast Asia 03 | Added in pass 1 (reviewer C): Encyclopaedia Iranica, "Indo-European Telegraph Department" (1 March 1865); atlantic-cable.com (first message 6 days 8 hours); Porthcurno Museum (1870 exchange about 5 minutes) | VERIFIED |
 | The Propaganda Movement did not demand independence at first | South and Southeast Asia 04 | Library of Congress country study, Philippines (a reform movement; independence came with the Katipunan); Topic 5.2 ("demanded equal rights with Spaniards") | VERIFIED |
 
 ## Review findings
@@ -137,42 +138,44 @@ in Chromium), a copy of `scripts/lib/ced-source/unit-5.js`, and a brief adapted 
 sources) and one CED, readability and consistency reviewer (all six, cheaper model). None saw the
 build's reasoning, the ledger or the region-content sources.
 
+**Pass 1 total: 37 findings (D 15, A 10, B 7, C 5), 4 of them duplicates. 34 FIXED, 2 ADJACENT (the old 5.9 and 5.10 drafts on `main`), 0 rejected. Three were errors in shipped topic chapters (5.6 Egypt's factory money, 5.7 the 1879 tariff), fixed on every surface that carries them.** Pass 2 runs on a fresh capture.
+
 #### Reviewer D: CED alignment, readability, consistency (all six), 15 findings
 
 All College Board quotations checked by script against the CED: word for word. Argue it moves and
 answerability, cross-references and the part intro's account of missing regions held up.
 
 1. **Part intro: "you meet Britain in six of them"**, but Britain's own header lists seven topics.
-   Fix: drop the count or say seven. `PENDING`
+   Fix: drop the count or say seven. **FIXED: "in most of them".**
 2. **Europe: the "spread" quotation (KC-5.1.I.D) is cited to Topic 5.5**; the CED puts it in 5.4
-   and topic-5-4 teaches it. Fix: cite Topic 5.4. `PENDING`
+   and topic-5-4 teaches it. Fix: cite Topic 5.4. **FIXED: cited to Topic 5.4.**
 3. **Europe: closing card "by 1900 most kings shared power with parliaments"** against the body's
-   "many of them"; Russia's tsar had no parliament until 1906. Fix: "many". `PENDING`
-4. **Europe: missing full stop**, "...disability in 1889 In 1884 Bismarck told...". `PENDING`
+   "many of them"; Russia's tsar had no parliament until 1906. Fix: "many". **FIXED: "many monarchs shared power with elected parliaments".**
+4. **Europe: missing full stop**, "...disability in 1889 In 1884 Bismarck told...". **FIXED (introduced by a pre-review edit that dropped a clause).**
 5. **Americas: "By 1783 Britain had recognized the United States, and in 1787 it wrote a
-   constitution"**: "it" reads as Britain. Fix: name the United States. `PENDING`
+   constitution"**: "it" reads as Britain. Fix: name the United States. **FIXED: "the new country wrote a constitution".**
 6. **East Asia: the CED splice "governments including 'Qing China, sought to...'"** reads as broken
-   English. Fix: quote from "including the Ottoman Empire and Qing China". `PENDING`
+   English. Fix: quote from "including the Ottoman Empire and Qing China". **FIXED: quotes from "including the Ottoman Empire and Qing China".**
 7. **South and Southeast Asia: "as the CED says"**: "CED" is never explained to students. Fix: "the
-   College Board". `PENDING`
+   College Board". **FIXED: "the College Board".**
 8. **East Asia: the Terms box defines "Indemnity", which the text never uses; "taels" unglossed;
    "one more piece of land" with no first piece named.** Fix: use "indemnity", gloss taels, name the
-   Liaodong Peninsula. `PENDING`
+   Liaodong Peninsula. **FIXED: "indemnity" used in the text, taels glossed, the Liaodong Peninsula named.**
 9. **East Asia: the Elman quotation is a hard double negative and drops topic 5.8's qualifier**
-   ("though tight funding did limit the fleet"). Fix: paraphrase and restore the qualifier. `PENDING`
+   ("though tight funding did limit the fleet"). Fix: paraphrase and restore the qualifier. **FIXED: paraphrased, with the qualifier restored (Elman, Modern Asian Studies 38:2, 2004, confirmed by reviewer C).**
 10. **Britain 03: "Chartist" used before it is explained, and "'cheap bread' really meant cheap labor"
-    skips the step** (lower bread prices would let employers cut wages). `PENDING`
+    skips the step** (lower bread prices would let employers cut wages). **FIXED: Chartists glossed in place, and the step stated (cheaper bread would let employers pay lower wages).**
 11. **Britain deck: "the first country to make most of its goods by machine"**: the chapter gives no
-    evidence for "most of its goods". Fix: "the first country to industrialize". `PENDING`
+    evidence for "most of its goods". Fix: "the first country to industrialize". **FIXED: "the world's first industrial country".**
 12. **Americas 03 thesis: "Haiti helped them win"** rests on one expedition in the body. Fix: say what
-    Haiti did. `PENDING`
+    Haiti did. **FIXED: "Haiti armed one of Bolívar's expeditions".**
 13. **East Asia closing card: "arsenals at Shanghai (1865) and Fuzhou (1866)"** against the body's
-    "a navy yard at Fuzhou". `PENDING`
+    "a navy yard at Fuzhou". **FIXED: "an arsenal at Shanghai (1865), a navy yard at Fuzhou (1866)".**
 14. **South and Southeast Asia: "India's weavers clothed much of the world"** (deck and Argue it)
     goes beyond the chapter's evidence (cloth sold on three continents; about a quarter of
-    manufactured goods). `PENDING`
+    manufactured goods). **FIXED: "sold cotton cloth on three continents", in the deck and the Argue it prompt.**
 15. **Topic 5.10 (shipped chapter, not regional): "Chartism was rejected"** sits oddly beside Britain's
-    "five of the six points later became law". `PENDING`
+    "five of the six points later became law". **ADJACENT, no change: the shipped 5.10 chapter is the older draft; its reviewed rebuild on `claude/topic-5-10-build` no longer says "Chartism was rejected". Reported.**
 
 Reviewer D also listed as unverified, not as defects: Bismarck's 1884 words, Beinin's and Elman's
 quotations, Bolívar's phrases, the 62 percent figure for Japan, HSBC's 16 countries, Roy's handloom
@@ -183,28 +186,28 @@ ledger's Claims table.
 
 1. **Europe 05: the Manifesto "begins" with "The history of all hitherto existing society..."**: it
    begins with the preamble ("A spectre is haunting Europe"); the class-struggle sentence opens
-   Section I, as topic-5-8 says. `PENDING`
+   Section I, as topic-5-8 says. **FIXED: "Its first section begins: ..." (matches topic 5.8).**
 2. **Britain 03: limited liability presented as what made railway finance possible, then a railway
    boom ten years before the laws.** Railway companies of the 1830s and 1840s were each incorporated
-   by their own Act of Parliament. Fix: separate the two. `PENDING`
+   by their own Act of Parliament. Fix: separate the two. **FIXED: railways raised money through their own acts of Parliament, the boom of the mid-1840s came first, and the 1855 and 1856 laws then made limited companies general.**
 3. **Britain 03: "Laws of 1855 and 1856 let almost any group of seven or more..."**: the seven-person
    rule is the 1856 Act's; the 1855 Act covered larger companies (more than 25 members). Topic 5.7
-   separates them. `PENDING`
-4. **Europe 04: the "spread" quotation cited to Topic 5.5** (same as D2). `PENDING`
+   separates them. **FIXED: 1855 for larger companies, 1856 for any seven or more (as topic 5.7).**
+4. **Europe 04: the "spread" quotation cited to Topic 5.5** (same as D2). **FIXED with D2.**
 5. **Britain 04: Snow "mapped deaths around one water pump ... and showed that the water carried
    it"**: the popular simplification; the course's topic chapter says the stronger evidence was the
-   two-water-company comparison and that doctors were not persuaded at once. `PENDING`
+   two-water-company comparison and that doctors were not persuaded at once. **FIXED: the map and the two-company comparison, and doctors not persuaded for years (as the course's 5.9 chapter).**
 6. **Europe 04: "From 1879 Germany put tariffs back on imported grain and iron ... after cheap American
    grain drove prices down"**: one cause for two tariffs; grain came from Russia too, and the iron
-   tariff answered the slump after 1873. Topic 5.7 has the same compression. `PENDING`
+   tariff answered the slump after 1873. Topic 5.7 has the same compression. **FIXED here and in the shipped course: grain tariffs against cheap American and Russian grain, iron tariffs after the slump from 1873 (Wikipedia, "German tariff of 1879" and "Marriage of Iron and Rye"; Britannica, "Germany: the economy, 1870-90"). Same correction in `deep-reading-content/topic-5-7.js` and the 5.7 teacher note in `teacher/data/topic-5-7-teaching-base.js`.**
 7. **Britain 03: "a free trade country, and it stayed one"** has no end date; Britain left general
-   free trade in 1932 (McKenna duties from 1915). `PENDING`
+   free trade in 1932 (McKenna duties from 1915). **FIXED: "it stayed one through 1900".**
 8. **Britain 03: "In 1776 Adam Smith, a Scottish professor"**: he resigned his Glasgow chair in 1764.
-   Topic 5.7 has it right ("who had been a professor"). `PENDING`
-9. **Europe 05: missing full stop after 1889** (same as D4). `PENDING`
+   Topic 5.7 has it right ("who had been a professor"). **FIXED: "a Scottish thinker who had been a professor at Glasgow" (as topic 5.7).**
+9. **Europe 05: missing full stop after 1889** (same as D4). **FIXED with D4.**
 10. **Manchester's population: Britain and topic 5.3 say about 23,000 in 1773; the shipped topic 5.9
     and 5.10 chapters say about 25,000 in 1772.** The 1773 count (about 22,500 for the township) supports
-    23,000. Adjacent to this build. `PENDING`
+    23,000. Adjacent to this build. **ADJACENT, no change here: the regional chapter's 23,000 (1773) is right; the shipped 5.9 and 5.10 drafts' 25,000 (1772) is the old wording, and the 5.9 rebuild on `claude/topic-5-10-build` already says about 23,000 in 1773. Reported.**
 
 Checked and held up (reviewer's list): every CED quotation in both chapters; Bairoch's shares;
 population and enclosure figures; Darby, Bridgewater, the 1624 law, Arkwright, Newcomen, Watt;
@@ -219,23 +222,23 @@ railway kilometers, Hughes, BASF, Otto, Benz; the German party dates and Bismarc
 1. **Middle East 02 (and shipped topic 5.6): "long-staple cotton, first grown for sale in 1820 ...
    With that money, from the late 1810s, the government built"**: money from 1820 cannot have paid for
    factories begun in the late 1810s; the earlier crop monopolies (grain and others) did. Topic 5.6's
-   useThis also says "through the cotton monopoly". `PENDING`
+   useThis also says "through the cotton monopoly". **FIXED here and in the shipped course: the crop monopolies (grain and others first, cotton from 1820) paid for the factories. Same correction in the 5.6 deep reading and its "Use this" line, the 5.6 First & 10 (`reading-content/unit-5.js`, fingerprint moved in `readings-golden.js` with a dated note) and the 5.6 lesson data. Supported by the course's own sources: Panza and Williamson (2015), "the state purchased agricultural commodities (cotton and wheat)" (5.6 ledger).**
 2. **Americas 04 and its card: abolition framed as beginning in 1834** ("from 1834 to Brazil in
    1888"): Chile ended slavery in 1823, Central America in 1824, Mexico in 1829, and Haiti earlier.
-   `PENDING`
+   **FIXED: Haiti, Chile (1823) and Mexico (1829) named before the 1834 sentence; the section dates and card now start at 1823.**
 3. **Americas 05: Riis's "tenements" glossed as "crowded buildings for poor renters"**: Riis's
    three-fourths uses the legal definition he quotes himself, any building "occupied by three or more
    families, living independently and doing their cooking on the premises"; the gloss turns the figure
-   into slum housing. Source: Riis (1890), ch. 2. `PENDING`
+   into slum housing. Source: Riis (1890), ch. 2. **FIXED: the legal definition stated ("any rented building where three or more families lived and cooked; the worst were dark and badly crowded"), and the glossary to match.**
 4. **Americas 04: "reform movements, driven by 'Enlightenment ideas and religious ideals'"**: the
-   CED says these "influenced" the movements; "driven by" strengthens the quoted claim. `PENDING`
+   CED says these "influenced" the movements; "driven by" strengthens the quoted claim. **FIXED: "influenced by".**
 5. **Middle East 03: the fez factory reads as a Tanzimat creation**; topic 5.8 has it opened by Mahmud
-   II's government in the 1830s. `PENDING`
+   II's government in the 1830s. **FIXED: opened by Mahmud II's government in the 1830s, fitted with steam about 1850 (as topic 5.8); the thesis says "ran", not "built".**
 6. **Americas 05 thesis: "Factory methods reached the United States in a skilled worker's memory"**:
    one channel, not the only one (earlier attempts such as Beverly, 1787; Francis Cabot Lowell's power
-   loom, from 1810 to 1812). `PENDING`
+   loom, from 1810 to 1812). **FIXED: "Factory spinning reached the United States partly in a skilled worker's memory".**
 7. **Middle East social card: "the Balkan peoples chose their own nations"**: by 1878 only Greeks,
-   Serbs, Montenegrins and Romanians had states; many others stayed in the empire. `PENDING`
+   Serbs, Montenegrins and Romanians had states; many others stayed in the empire. **FIXED: "Greeks, Serbs, Montenegrins and Romanians chose nations of their own".**
 
 Checked and held up (reviewer's list): every CED quotation; Locke, the Stamp Act, the Declaration,
 1778 to 1787; Saint-Domingue's figures, 1791, Toussaint's 1793 words, 1793 and 1794, 1802, 1803,
@@ -254,17 +257,17 @@ traced to a published English translation); 1856, 1869, 1876, 1878; Greece, Berl
    whose messages took days (the first, six days and more). The 1870 cable cut days to minutes. The card
    also puts the railways inside "within minutes". Sources: Encyclopaedia Iranica, "Indo-European
    Telegraph Department"; atlantic-cable.com, Indo-European page; Porthcurno Museum on the 1870
-   exchange. `PENDING`
+   exchange. **FIXED: the 1865 overland line (days, many relays) named, and the card no longer puts the railways "within minutes".**
 2. **East Asia 02: the Elman box drops his qualification** ("but inadequate funding did set limits on
    Li Hongzhang's plans to expand the Northern Fleet"; Elman, Modern Asian Studies 38:2, 2004, opened).
-   Same as D9. `PENDING`
+   Same as D9. **FIXED with D9.**
 3. **East Asia 04: "Within a week Russia, Germany and France forced Japan to give back..."**: only the
    demand came within a week (23 April 1895); Japan accepted on 5 May and returned Liaodong by a
-   November convention. `PENDING`
+   November convention. **FIXED: "demanded that Japan give back the Liaodong Peninsula ... and Japan gave in".**
 4. **East Asia thesis and economic card: "the world's goods"**: Bairoch's shares are of manufactured
-   goods only; the body says so, the heading and thesis do not. `PENDING`
+   goods only; the body says so, the heading and thesis do not. **FIXED: "manufactured goods" in the thesis and the card.**
 5. **East Asia economic card: "sold it to Mitsui and Mitsubishi from 1880"**: 1880 was the decision;
-   the sales the chapter names are 1887 and 1889. `PENDING`
+   the sales the chapter names are 1887 and 1889. **FIXED: "decided in 1880 to sell it, and sold key works to Mitsubishi (1887) and Mitsui (1889)".**
 
 Checked and held up (reviewer's list): every CED quotation; Bairoch's 1750 and 1900 shares; the Opium
 Wars, Taiping, Zongli Yamen, Jiangnan, Fuzhou, the steamship company, the Tongwen Guan and 1898;

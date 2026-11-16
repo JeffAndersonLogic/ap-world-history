@@ -23,7 +23,7 @@ module.exports = {
   unit: '5',
   region: 'South and Southeast Asia',
   titleHtml: 'South and Southeast <em>Asia</em>',
-  deck: `In 1750 India's weavers clothed much of the world. By 1900 India bought British cloth and sold raw cotton, though millions of its weavers were still at their looms. Follow how the trade turned around, what railways and steamships brought, the Indian and Chinese migrants who crossed the Bay of Bengal and the South China Sea, and the Filipino writers who imagined a nation.`,
+  deck: `In 1750 India's weavers sold cotton cloth on three continents. By 1900 India bought British cloth and sold raw cotton, though millions of its weavers were still at their looms. Follow how the trade turned around, what railways and steamships brought, the Indian and Chinese migrants who crossed the Bay of Bengal and the South China Sea, and the Filipino writers who imagined a nation.`,
   topics: ['5.2', '5.3', '5.4', '5.5', '5.7'],
   ced: [
     'KC-5.1.II.B',
@@ -125,7 +125,7 @@ module.exports = {
         {
           heading: 'New lines',
           blocks: [
-            { p: `India's first passenger train ran from Bombay to Thane in <span class="num">1853</span>. The Suez Canal, opened in <span class="num">1869</span>, cut the voyage from Europe to India for steamships, and in <span class="num">1870</span> an undersea telegraph cable through the Red Sea reached Bombay, so a message could travel between London and Bombay in minutes rather than weeks by ship (<a href="#chapter-t5-5">Topic 5.5</a>). In the College Board's words, railroads, steamships and the telegraph made "exploration, development, and communication possible in interior regions globally," which "led to increased trade and migration."` },
+            { p: `India's first passenger train ran from Bombay to Thane in <span class="num">1853</span>. The Suez Canal, opened in <span class="num">1869</span>, cut the voyage from Europe to India for steamships, and in <span class="num">1870</span> an undersea telegraph cable through the Red Sea reached Bombay, so a message could travel between London and Bombay in minutes; an overland telegraph line, opened in <span class="num">1865</span>, had needed days, passing through many relay stations (<a href="#chapter-t5-5">Topic 5.5</a>). In the College Board's words, railroads, steamships and the telegraph made "exploration, development, and communication possible in interior regions globally," which "led to increased trade and migration."` },
             { p: `Banks followed the trade. HSBC, founded in Hong Kong in <span class="num">1865</span>, opened in London that July to change money for clients in China and India, one of the "large-scale transnational businesses" the College Board names (<a href="#chapter-t5-7">Topic 5.7</a>).` }
           ]
         },
@@ -168,7 +168,7 @@ module.exports = {
           heading: 'The Propaganda Movement',
           blocks: [
             { p: `Spain had ruled the Philippines since the 1500s. In the 1880s and 1890s Filipino writers, many of them students in Europe, began what was called the <span class="kt">Propaganda Movement</span>. They demanded equal rights with Spaniards. The best known, José Rizal, published his novel Noli Me Tángere ("Touch Me Not") in <span class="num">1887</span>, attacking the abuses of Spanish rule and of the friars who held great power in the islands. In <span class="num">1896</span>, during a revolution against Spanish rule, Spain executed Rizal (<a href="#chapter-t5-2">Topic 5.2</a>).` },
-            { p: `These writers were building what the College Board calls "a new sense of commonality based on language, religion, social customs, and territory": a people of many islands and languages who began to see themselves as one, Filipino. In time, as the CED says of such "newly imagined national communities," that identity was linked "with borders of the state."` },
+            { p: `These writers were building what the College Board calls "a new sense of commonality based on language, religion, social customs, and territory": a people of many islands and languages who began to see themselves as one, Filipino. In time, as the College Board says of such "newly imagined national communities," that identity was linked "with borders of the state."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -191,7 +191,7 @@ module.exports = {
     intro: `The same story, gathered by its sides for review.`,
     argue: {
       move: 'Continuity and Change',
-      prompt: `In 1750 India's weavers clothed much of the world. Between 1750 and 1900, how much did India's place in the world's making of cloth change? Make a claim, then support it with one change and one continuity from this chapter, and say for whom the change was greatest.`
+      prompt: `In 1750 India's weavers sold cotton cloth on three continents. Between 1750 and 1900, how much did India's place in the world's making of cloth change? Make a claim, then support it with one change and one continuity from this chapter, and say for whom the change was greatest.`
     },
     pairs: [
       {
@@ -212,7 +212,7 @@ module.exports = {
       {
         category: 'Intellectual and technological',
         title: 'Hand skill met steam and wire',
-        body: `Bombay's Wadia shipbuilders made teak warships such as HMS Trincomalee (1817) until iron and steam replaced them. Railways from 1853 and the telegraph cable of 1870 tied India to Britain within minutes.`
+        body: `Bombay's Wadia shipbuilders made teak warships such as HMS Trincomalee (1817) until iron and steam replaced them. Railways from 1853 carried goods inland, and the telegraph cable of 1870 linked Bombay to London within minutes.`
       },
       {
         category: 'Economic',

@@ -114,8 +114,8 @@ module.exports = {
         {
           heading: 'Crops paid for factories',
           blocks: [
-            { p: `His government took control of Egypt's farming. It told peasants what crops to plant, bought the crops at low prices, and sold them abroad at higher ones. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. A new crop, long-staple cotton, first grown for sale in <span class="num">1820</span>, earned a great deal of money.` },
-            { p: `With that money, from the late 1810s, the government built factories: cotton mills, and works for weapons, sugar and other goods. It bought machines in Europe and hired European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. To protect the mills, Muhammad Ali kept cheap British cloth out of Egypt.` },
+            { p: `His government took control of Egypt's farming. It told peasants what crops to plant, bought the crops at low prices, and sold them abroad at higher ones. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. From <span class="num">1820</span> a new crop, long-staple cotton, earned a great deal of money.` },
+            { p: `With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar and other goods. It bought machines in Europe and hired European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. To protect the mills, Muhammad Ali kept cheap British cloth out of Egypt.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the mills and their workers',
@@ -131,7 +131,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Follow the money. <em>Say who paid for the factories (peasants, through the cotton monopoly) and what the factories were for (the army).</em>`,
+        tool: `Follow the money. <em>Say who paid for the factories (peasants, through the crop monopolies) and what the factories were for (the army).</em>`,
         limit: `Muhammad Ali was an Ottoman governor building power for his family, not an Egyptian nationalist building a nation: his court's official language was Ottoman Turkish.`,
         comparison: `Against Japan (section 05): both governments made farmers pay; Egypt through a monopoly on crops, Japan through a land tax.`
       },

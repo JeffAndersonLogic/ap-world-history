@@ -44,7 +44,7 @@ module.exports = {
       name: 'The World\'s Largest Maker',
       navLabel: 'Qing China',
       dates: '1750 to 1864 &nbsp;·&nbsp; Silk, porcelain, cloth, and two lost wars',
-      thesis: `In 1750 China made more of the world's goods than any other country, by hand. Over the next century its share shrank as machines elsewhere made more, and lost wars showed the Qing court how far behind its weapons had fallen.`,
+      thesis: `In 1750 China made more of the world's manufactured goods than any other country, by hand. Over the next century its share shrank as machines elsewhere made more, and lost wars showed the Qing court how far behind its weapons had fallen.`,
       parts: [
         {
           heading: 'Made in China',
@@ -90,7 +90,7 @@ module.exports = {
         {
           heading: 'Arsenals and shipyards',
           blocks: [
-            { p: `In <span class="num">1861</span> Prince Gong set up an office for foreign affairs, and officials such as Zeng Guofan, Li Hongzhang and Zuo Zongtang began what was called <span class="kt">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal in Shanghai (<span class="num">1865</span>), a navy yard at Fuzhou (<span class="num">1866</span>) and a steamship company (<span class="num">1872</span>). In the College Board's words, governments including "Qing China, sought to reform and modernize their economies and militaries."` }
+            { p: `In <span class="num">1861</span> Prince Gong set up an office for foreign affairs, and officials such as Zeng Guofan, Li Hongzhang and Zuo Zongtang began what was called <span class="kt">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal in Shanghai (<span class="num">1865</span>), a navy yard at Fuzhou (<span class="num">1866</span>) and a steamship company (<span class="num">1872</span>). The College Board says some governments, "including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries."` }
           ]
         },
         {
@@ -112,7 +112,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds her palace spending "did not use up the imperial treasury or leave nothing for the Chinese navy"; the deeper problems were a disorganized empire and poorly trained crews.`
+              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money, though tight funding did limit the fleet. The deeper problems were a disorganized empire and poorly trained crews.`
             } }
           ]
         }
@@ -192,7 +192,7 @@ module.exports = {
         {
           heading: 'A regional power',
           blocks: [
-            { p: `To win back its own courts, Japan rewrote its laws on French and German models, and in <span class="num">1894</span> Britain agreed to end the foreign courts in Japan from <span class="num">1899</span>; other countries followed. Japan won back full control of its tariffs only in <span class="num">1911</span>. In <span class="num">1894</span> and <span class="num">1895</span> Japan fought China over Korea and won. In the Treaty of Shimonoseki, China recognized Korea's independence, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver. Within a week Russia, Germany and France forced Japan to give back one more piece of land it had won, which angered Japan's leaders. Still, Japan, forced open forty years before, was now what the College Board calls a growing "regional power," with a colony of its own. What empires did with that power is Unit 6.` },
+            { p: `To win back its own courts, Japan rewrote its laws on French and German models, and in <span class="num">1894</span> Britain agreed to end the foreign courts in Japan from <span class="num">1899</span>; other countries followed. Japan won back full control of its tariffs only in <span class="num">1911</span>. In <span class="num">1894</span> and <span class="num">1895</span> Japan fought China over Korea and won. In the Treaty of Shimonoseki, China recognized Korea's independence, gave the island of Taiwan to Japan, and agreed to pay an <span class="kt">indemnity</span> of 200 million taels of silver (a tael is a Chinese measure of silver). Within a week Russia, Germany and France demanded that Japan give back the Liaodong Peninsula, which it had also won, and Japan gave in, which angered its leaders. Still, Japan, forced open forty years before, was now what the College Board calls a growing "regional power," with a colony of its own. What empires did with that power is Unit 6.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -237,12 +237,12 @@ module.exports = {
       {
         category: 'Intellectual and technological',
         title: 'Borrowed machines, borrowed teachers',
-        body: `China built arsenals at Shanghai (1865) and Fuzhou (1866) and a school for Western learning. Japan hired British engineers for its first railway (1872) and a French engineer for Tomioka, and sent the Iwakura Mission to study the West.`
+        body: `China built an arsenal at Shanghai (1865), a navy yard at Fuzhou (1866) and a school for Western learning. Japan hired British engineers for its first railway (1872) and a French engineer for Tomioka, and sent the Iwakura Mission to study the West.`
       },
       {
         category: 'Economic',
-        title: 'From a third of the world\'s goods to 6 percent',
-        body: `China's share of world manufacturing fell, by estimate, from about a third in 1750 to about 6 percent in 1900. Japan's state built industry and sold it to Mitsui and Mitsubishi from 1880. HSBC (1865) financed the China trade.`
+        title: 'From a third of the world\'s manufactured goods to 6 percent',
+        body: `China's share of world manufacturing fell, by estimate, from about a third in 1750 to about 6 percent in 1900. Japan's state built industry, decided in 1880 to sell it, and sold key works to Mitsubishi (1887) and Mitsui (1889). HSBC (1865) financed the China trade.`
       }
     ]
   }

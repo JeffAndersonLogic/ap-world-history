@@ -84,7 +84,7 @@ module.exports = {
         {
           heading: 'Crops paid for factories',
           blocks: [
-            { p: `His government took control of Egypt's farming: it told peasants what to plant, bought their crops cheap and sold them abroad dear. A new crop, long-staple cotton, first grown for sale in <span class="num">1820</span>, earned a great deal. With that money, from the late 1810s, the government built cotton mills and works for weapons, sugar and other goods, with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 workers, many making cloth and uniforms for the army, and Muhammad Ali kept cheap British cloth out of Egypt to protect them.` },
+            { p: `His government took control of Egypt's farming: it told peasants what to plant, bought their crops cheap and sold them abroad dear. Those crop monopolies, first on grain and other crops and from <span class="num">1820</span> above all on a new crop, long-staple cotton, earned a great deal. With that money, from the late 1810s, the government built cotton mills and works for weapons, sugar and other goods, with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 workers, many making cloth and uniforms for the army, and Muhammad Ali kept cheap British cloth out of Egypt to protect them.` },
             { p: `The workers were drafted, as Egyptian peasants had long been made to dig canals. From <span class="num">1822</span> peasants were drafted into the army too, and it reached about 130,000 soldiers by the early 1830s. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences. This is one of the College Board's "state-sponsored visions of industrialization": a government that planned, paid for and owned the factories itself (<a href="#chapter-t5-6">Topic 5.6</a>).` }
           ]
         },
@@ -117,12 +117,12 @@ module.exports = {
       name: 'Reorganization, and One Loyalty',
       navLabel: 'The Tanzimat',
       dates: '1839 to 1878 &nbsp;·&nbsp; Gülhane, equality, a constitution, and a sultan',
-      thesis: `The Ottoman government reorganized its laws and taxes, built a few state factories, and tried to give all its peoples one loyalty, to the empire. Each step met resistance from inside.`,
+      thesis: `The Ottoman government reorganized its laws and taxes, ran a few state factories, and tried to give all its peoples one loyalty, to the empire. Each step met resistance from inside.`,
       parts: [
         {
           heading: 'The Tanzimat',
           blocks: [
-            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span>, "reorganization." Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and regular military service, and said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The state also built industry of its own: a fez factory in Istanbul, fitted around <span class="num">1850</span> with steam engines and machines from Britain and Belgium, an ironworks in <span class="num">1843</span>, and telegraph lines from <span class="num">1855</span>.` }
+            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span>, "reorganization." Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and regular military service, and said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The state also ran industry of its own. Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; around <span class="num">1850</span> it was fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` }
           ]
         },
         {
@@ -216,7 +216,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Drafted peasants, one citizenship',
-        body: `Muhammad Ali drafted peasants into his factories and, from 1822, his army of about 130,000. The 1869 law made every Ottoman subject a citizen, but the Balkan peoples chose their own nations.`
+        body: `Muhammad Ali drafted peasants into his factories and, from 1822, his army of about 130,000. The 1869 law made every Ottoman subject a citizen, but Greeks, Serbs, Montenegrins and Romanians chose nations of their own.`
       },
       {
         category: 'Intellectual and technological',

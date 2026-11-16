@@ -294,7 +294,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'The change spread: the Cobden-Chevalier Treaty of 23 January 1860 cut tariffs between Britain and France, and was the first of a series of "most favoured nation" treaties Britain negotiated in the 1860s, which were widely copied across Europe (Encyclopedia.com; Wikipedia, citing Nye, Irwin, and O\'Rourke and Williamson).',
-          'Germany was not one country until 1871: in the 1860s its states, joined in a customs union (the Zollverein) led by Prussia, kept tariffs low (grain duties were abolished in 1853). And partly reversed: from 1879 Germany put duties on grain, livestock and iron after cheap American grain drove prices down (Wikipedia, "German tariff of 1879"; Britannica as quoted). The United States\' Morrill Tariff of 1861 "began a long period of protectionism that lasted until 1913"; the McKinley Tariff of 1890 raised average duties to about 49 percent.',
+          'Germany was not one country until 1871: in the 1860s its states, joined in a customs union (the Zollverein) led by Prussia, kept tariffs low (grain duties were abolished in 1853). And partly reversed: from 1879 Germany put duties on grain and livestock, after cheap American and Russian grain drove prices down, and on iron, after a slump that began in 1873 (Wikipedia, "German tariff of 1879"; Britannica as quoted). The United States\' Morrill Tariff of 1861 "began a long period of protectionism that lasted until 1913"; the McKinley Tariff of 1890 raised average duties to about 49 percent.',
           'Britain stayed with free trade through 1900. This slide is the "carried on" of the trade row: tariffs did not disappear.'
         ],
         ask: 'What is the continuity on this slide?',

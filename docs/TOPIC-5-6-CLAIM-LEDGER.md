@@ -437,3 +437,12 @@ the treaty overclaim, father-to-son succession), 21 in pass 2 (the pattern wordi
 for Japan, the Syria label), 13 in pass 3 (one medium causal claim about the 1894 treaty, the rest
 labels, wording and consistency). No new myth or wrong date after pass 2. Every finding is fixed or
 answered above.
+
+## Correction from the Unit 5 by Region review (2026-11-16)
+
+Pass 1, reviewer B, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`) found that
+the deep reading and the First & 10 said money from long-staple cotton, "first grown for sale in
+1820", paid for factories built "from the late 1810s", which their own dates rule out. **NARROWED**
+on the deep reading (paragraph and "Use this" line), the First & 10 and the lesson data: the crop
+monopolies, first on grain and other crops and from the 1820s above all on cotton, paid for the
+factories. The "long-staple cotton from 1820" row above stands.

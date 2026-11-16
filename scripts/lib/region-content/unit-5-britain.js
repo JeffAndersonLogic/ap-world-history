@@ -22,7 +22,7 @@ module.exports = {
   unit: '5',
   region: 'Britain',
   titleHtml: '<em>Britain</em>',
-  deck: `From 1750 to 1900, Britain became the first country to make most of its goods by machine. Follow why it happened there, what the factory and the steam engine changed, how Britain chose free trade, who got rich and who did the work, and the people who pushed back.`,
+  deck: `From 1750 to 1900, Britain became the world's first industrial country. Follow why it happened there, what the factory and the steam engine changed, how Britain chose free trade, who got rich and who did the work, and the people who pushed back.`,
   topics: ['5.1', '5.3', '5.4', '5.5', '5.7', '5.8', '5.9'],
   ced: [
     'KC-5.1.I.A',
@@ -156,14 +156,14 @@ module.exports = {
         {
           heading: 'Smith against the old rules',
           blocks: [
-            { p: `Under <span class="kt">mercantilism</span>, governments controlled trade with <span class="kt">tariffs</span> (taxes on imported goods), bans and monopolies, such as the East India Company's sole right to British trade with India and China. In <span class="num">1776</span> Adam Smith, a Scottish professor, attacked "the mercantile system" in The Wealth of Nations. "The tailor does not attempt to make his own shoes, but buys them of the shoemaker," he wrote, and what is sensible for a family "can scarce be folly in that of a great kingdom" (<a href="#chapter-t5-7">Topic 5.7</a>).` }
+            { p: `Under <span class="kt">mercantilism</span>, governments controlled trade with <span class="kt">tariffs</span> (taxes on imported goods), bans and monopolies, such as the East India Company's sole right to British trade with India and China. In <span class="num">1776</span> Adam Smith, a Scottish thinker who had been a professor at Glasgow, attacked "the mercantile system" in The Wealth of Nations. "The tailor does not attempt to make his own shoes, but buys them of the shoemaker," he wrote, and what is sensible for a family "can scarce be folly in that of a great kingdom" (<a href="#chapter-t5-7">Topic 5.7</a>).` }
           ]
         },
         {
           heading: 'The Corn Laws',
           blocks: [
-            { p: `Britain's <span class="kt">Corn Laws</span> kept cheap foreign grain out: a law of <span class="num">1815</span> banned foreign wheat until British prices rose very high. High grain prices kept landowners' rents high, and landowners filled Parliament. In <span class="num">1838</span> Manchester's factory owners and merchants began the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright, saying cheap bread would help workers. Many workers in the Chartist movement (section 05) answered that "cheap bread" really meant cheap labor.` },
-            { p: `In <span class="num">1845</span> a disease destroyed much of Ireland's potato crop, and famine began. Prime Minister Robert Peel decided the Corn Laws had to go, and Parliament repealed them in <span class="num">1846</span>. By <span class="num">1860</span> Britain had ended its tariffs on imported factory goods. It had become a free trade country, and it stayed one. In the College Board's words, Western European countries adopted free trade "partly in response to the growing acceptance of Adam Smith's theories."` },
+            { p: `Britain's <span class="kt">Corn Laws</span> kept cheap foreign grain out: a law of <span class="num">1815</span> banned foreign wheat until British prices rose very high. High grain prices kept landowners' rents high, and landowners filled Parliament. In <span class="num">1838</span> Manchester's factory owners and merchants began the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright, saying cheap bread would help workers. Many <span class="kt">Chartists</span>, workers campaigning for the vote (section 05), feared that cheaper bread would only let employers pay lower wages: to them, "cheap bread" really meant cheap labor.` },
+            { p: `In <span class="num">1845</span> a disease destroyed much of Ireland's potato crop, and famine began. Prime Minister Robert Peel decided the Corn Laws had to go, and Parliament repealed them in <span class="num">1846</span>. By <span class="num">1860</span> Britain had ended its tariffs on imported factory goods. It had become a free trade country, and it stayed one through 1900. In the College Board's words, Western European countries adopted free trade "partly in response to the growing acceptance of Adam Smith's theories."` },
             { note: {
               kind: 'howknow',
               label: 'How we know: "partly"',
@@ -174,7 +174,7 @@ module.exports = {
         {
           heading: 'New tools for business',
           blocks: [
-            { p: `A railway cost more than a few partners could pay, and if a partnership failed, each partner could lose his house to pay its debts. Laws of <span class="num">1855</span> and <span class="num">1856</span> let almost any group of seven or more people register a company whose owners could lose only what they had put in, <span class="kt">limited liability</span>. People with modest savings could now buy shares, and sell them again on the London stock exchange. Many lost money in a railway share boom of the mid-1840s, but the railways got built.` },
+            { p: `Most businesses belonged to a family or a few partners, and if a partnership failed, each partner could lose his house to pay its debts. Railways cost far more than that, so each railway company needed its own act of Parliament to raise money from many investors; in a railway share boom of the mid-1840s, many of them lost their savings. Then a law of <span class="num">1855</span> let larger companies limit what their owners could lose to the money they had put in, <span class="kt">limited liability</span>, and a law of <span class="num">1856</span> let almost any group of seven or more people register such a company, with no special act. People with modest savings could now buy shares safely, and sell them again on the London stock exchange.` },
             { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants such as coconut and palm kernels. It came in wrapped bars with a brand name, advertised to every household. In <span class="num">1890</span> the business became Lever Brothers, Limited, and from <span class="num">1894</span> it sold shares to the public. It grew into one of the "large-scale transnational businesses" the College Board names, Unilever, though that company was not formed until <span class="num">1929</span>.` }
           ]
         },
@@ -221,7 +221,7 @@ module.exports = {
           heading: 'A city that could not keep up',
           blocks: [
             { p: `Manchester had more than 300,000 people by <span class="num">1851</span>, and that year's census found, for the first time, more than half the people of England and Wales living in towns. Houses were split into rooms, and whole families lived in one room or a damp cellar. The new streets had no sewers and no clean water. Friedrich Engels described Manchester's river Irk in <span class="num">1845</span> as "coal-black, foul-smelling ... full of debris and refuse."` },
-            { p: `Cholera, a disease spread through water fouled with human waste, killed about 53,000 people registered in England and Wales in <span class="num">1848</span> and <span class="num">1849</span>. In <span class="num">1854</span> the London doctor John Snow mapped deaths around one water pump in Soho and showed that the water carried it. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole. These are the challenges the College Board lists: "pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure."` },
+            { p: `Cholera, a disease spread through water fouled with human waste, killed about 53,000 people registered in England and Wales in <span class="num">1848</span> and <span class="num">1849</span>. In <span class="num">1854</span> the London doctor John Snow mapped deaths around one water pump in Soho and compared households served by two different water companies, and argued that the water carried the disease; many doctors were not persuaded for years. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole. These are the challenges the College Board lists: "pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',

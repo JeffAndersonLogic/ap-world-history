@@ -516,3 +516,12 @@ wraps them to a second line, which pushes into the slide above. Shown by a contr
 longer slide 9 footer that wraps locally reproduces CI's exact failure ("timeline-lanes 13px"), and
 the source was restored. **Fixed:** both footers shortened to about two-thirds of the width; the
 wording is unchanged in substance.
+
+## Correction from the Unit 5 by Region review (2026-11-16)
+
+Pass 1, reviewer A, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`) found that
+the deep reading gave one cause, cheap American grain, for both of Germany's 1879 tariffs. **NARROWED**
+in the deep reading and the slide 9 teacher note: grain tariffs against cheap grain from America and
+Russia; iron tariffs after the slump that began in 1873 (Wikipedia, "German tariff of 1879" and
+"Marriage of Iron and Rye"; Britannica, "Germany: the economy, 1870-90"). The First & 10, lesson data
+and map do not carry the compression and are unchanged.

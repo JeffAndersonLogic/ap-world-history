@@ -238,7 +238,14 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // the 1867 act for the towns and the 1884 act for the countryside as a separate step,
 // matching the 5.8 deep reading. Against the 5.8 blob bf7b3cb8 only that sentence
 // changed; every other Unit 5 reading is byte-for-byte unchanged.
-const APPROVED_UNIT5_REWRITE_BLOB = '7456ea90d6e455c19a36d8416005c987090a5ff6';
+// 2026-11-16: two sentences in Topic 5.6's Egypt section, found by the Unit 5 by
+// Region review (pass 1, reviewer B; docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md). They said
+// money from long-staple cotton, "first grown for sale in 1820", paid for factories
+// built "from the late 1810s", which the dates themselves rule out: the earlier crop
+// monopolies (grain and others) paid for the first mills, and cotton from the 1820s.
+// Against the approved blob 7456ea90 only those two sentences changed; every other
+// Unit 5 reading is byte-for-byte unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = 'e797bdbef57b07284dc996e5062d49dc1863db25';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

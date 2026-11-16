@@ -1476,11 +1476,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. A new crop, long-staple cotton (cotton with long fibers, which makes strong, fine thread), first grown for sale in 1820, earned a great deal of money."
+            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. From 1820 a new crop, long-staple cotton (cotton with long fibers, which makes strong, fine thread), earned a great deal of money."
           },
           {
             "type": "p",
-            "html": "With that money, from the late 1810s, the government built factories: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. In the 1820s he also sent Egyptian students to Europe to learn its sciences. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
+            "html": "With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. In the 1820s he also sent Egyptian students to Europe to learn its sciences. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
           }
         ],
         "callout": {
