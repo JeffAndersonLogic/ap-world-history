@@ -186,7 +186,7 @@ module.exports = {
         {
           heading: 'The women in the mills',
           blocks: [
-            { p: `As in Britain, the first factory workers were often young women. In <span class="num">1900</span> women made up about 62 percent of the workers in Japan's private factories, most of them in textile mills (<a href="#chapter-t5-9">Topic 5.9</a>). Their wages helped their farm families, a case of the College Board's point that women in working families "held wage-earning jobs to supplement their families' income."` }
+            { p: `As in Britain, the first factory workers were often young women. In <span class="num">1900</span> women made up about 62 percent of the workers in Japan's private factories, most of them in textile mills. Their wages helped their farm families, a case of the College Board's point that women in working families "held wage-earning jobs to supplement their families' income."` }
           ]
         },
         {

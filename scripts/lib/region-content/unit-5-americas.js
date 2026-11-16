@@ -221,7 +221,7 @@ module.exports = {
         {
           heading: 'Tenements and unions',
           blocks: [
-            { p: `Manhattan grew from about 515,000 people in <span class="num">1850</span> to about 1.4 million in <span class="num">1890</span>. That year the reporter Jacob Riis published How the Other Half Lives, writing of New York that "three-fourths of its people live in the tenements," crowded buildings for poor renters. In one Bayard Street room "not thirteen feet either way," he found twelve men and women sleeping (<a href="#chapter-t5-9">Topic 5.9</a>). Riis wanted to shock readers into reform, and chose his scenes for that purpose.` },
+            { p: `Manhattan grew from about 515,000 people in <span class="num">1850</span> to about 1.4 million in <span class="num">1890</span>. That year the reporter Jacob Riis published How the Other Half Lives, writing of New York that "three-fourths of its people live in the tenements," crowded buildings for poor renters. In one Bayard Street room "not thirteen feet either way," he found twelve men and women sleeping. Riis wanted to shock readers into reform, and chose his scenes for that purpose.` },
             { p: `Workers organized. The American Federation of Labor, founded in <span class="num">1886</span> with Samuel Gompers as president, joined unions of skilled workers who wanted higher wages, shorter hours and better conditions (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         }

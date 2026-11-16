@@ -207,7 +207,7 @@ module.exports = {
           heading: 'Two new classes, and the old one',
           blocks: [
             { p: `The <span class="kt">middle class</span> ran from factory owners, merchants and bankers to engineers, doctors, managers and clerks. Their place came from money they made and education they paid for, not from land or titles. The <span class="kt">industrial working class</span> owned no land and no tools and lived on wages, at the hours the employer set. The College Board puts it simply: "New social classes, including the middle class and the industrial working class, developed." In <span class="num">1832</span> the Reform Act gave the vote in the towns to men who occupied property worth ten pounds a year, in effect most middle-class men.` },
-            { p: `The old landed families did not disappear. They kept their land, their titles and much of their power: from <span class="num">1895</span> to <span class="num">1902</span> Britain's prime minister was Lord Salisbury, a marquess and a great landowner (<a href="#chapter-t5-9">Topic 5.9</a>).` }
+            { p: `The old landed families did not disappear. They kept their land, their titles and much of their power: from <span class="num">1895</span> to <span class="num">1902</span> Britain's prime minister was Lord Salisbury, a marquess and a great landowner.` }
           ]
         },
         {
