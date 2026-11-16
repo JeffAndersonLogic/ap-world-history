@@ -796,7 +796,10 @@ ul.plain{margin:0;padding-left:18px;display:grid;gap:4px}
     const ctl = new AbortController(); state.ctl.push(ctl);
     let text;
     try {
-      ({ text } = await sample(H.promptFor(j.item.contract, one) + (again ? AGAIN : ''), { modelTier: $('tier').value, signal: ctl.signal, cache: again ? false : undefined }));
+      // A second reading must be a new one, so it is never replayed from the cache.
+      const options = { modelTier: $('tier').value, signal: ctl.signal };
+      if (again) options.cache = false;
+      ({ text } = await sample(H.promptFor(j.item.contract, one) + (again ? AGAIN : ''), options));
     } finally { state.ctl = state.ctl.filter(c => c !== ctl); }
     let got;
     try { got = H.readReply(j.item.contract, one, text).results[0]; }
