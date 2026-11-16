@@ -327,8 +327,10 @@ nav.tabs button:disabled{opacity:.45;cursor:default}
 .cmdbar .toolbar{padding-top:10px;padding-bottom:10px}
 .cmd-right{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
 .auto-pull{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--muted)}
-.hero.slim{padding:16px 22px;border-radius:18px;margin-top:14px;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:18px;align-items:center}
-.hero.slim .hero-logo,.hero.slim #hero-lede,.hero.slim .copy .eyebrow{display:none}
+/* The Globe-O pulse mark stays in the strip, beside the title (Jeff, 2026-11-16). */
+.hero.slim{padding:16px 22px;border-radius:18px;margin-top:14px;grid-template-columns:auto minmax(0,1fr) minmax(0,1.6fr);gap:18px;align-items:center}
+.hero.slim > .hero-logo{order:-1;width:76px;height:76px;max-width:none}
+.hero.slim #hero-lede,.hero.slim .copy .eyebrow{display:none}
 .hero.slim h1{font-size:clamp(28px,3vw,40px);margin:0;line-height:1}
 .hero.slim .hero-details{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;align-items:center}
 .hero.slim .stat{min-height:0;padding:10px 12px;border-radius:12px;gap:4px}
@@ -337,7 +339,8 @@ nav.tabs button:disabled{opacity:.45;cursor:default}
 .hero.slim .today{border-top:0;padding-top:0;gap:2px}
 .hero.slim .today .topic{font-size:18px}
 .hero.slim .today p{font-size:12px;margin:0}
-@media (max-width:900px){.hero.slim,.hero.slim .hero-details{grid-template-columns:minmax(0,1fr)}.cmd-right{margin-left:0}.cmdbar{position:static}}
+@media (max-width:900px){.hero.slim{grid-template-columns:auto minmax(0,1fr)}.hero.slim .hero-details{grid-column:1/-1;grid-template-columns:minmax(0,1fr)}.cmd-right{margin-left:0}.cmdbar{position:static}}
+@media (max-width:700px){.hero.slim > .hero-logo{grid-column:1;grid-row:2;width:56px;height:56px}.hero.slim .copy h1{grid-column:2}}
 .live-panel,.ledger-panel{margin-top:14px}
 .ledger-panel > h3:first-child{font-size:22px;padding:14px 18px 10px}
 .ledger-row{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:10px;align-items:center}
