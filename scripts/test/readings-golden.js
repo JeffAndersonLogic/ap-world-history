@@ -249,7 +249,11 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // review (pass 2, reviewer F). Rousseau's "Man is born free" opens Book I, Chapter 1 of The
 // Social Contract, not the book, so "began his own book" is now "opened the first chapter of
 // his own book". Against the blob e797bdbe only that phrase changed.
-const APPROVED_UNIT5_REWRITE_BLOB = '6b593eebf4137c3a17b16ddbe103a430232e3066';
+// 2026-11-16, pass 3 of the same review (reviewer J): Topic 5.4 said Cockerill began at
+// Seraing "In Belgium" in 1817, and its takeaway "at Seraing in Belgium in 1817"; Liège was in the
+// United Kingdom of the Netherlands until Belgium's independence in 1830. Both now say "in what is
+// today Belgium". Against the blob 6b593eeb only those two phrases changed.
+const APPROVED_UNIT5_REWRITE_BLOB = 'e1d2719a895e8628776c7c1fda6e8baf40c2b85a';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

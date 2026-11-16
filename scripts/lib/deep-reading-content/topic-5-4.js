@@ -130,7 +130,7 @@ module.exports = {
         {
           heading: 'John Cockerill',
           blocks: [
-            { p: `In Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in <span class="num">1817</span>, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, with rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there.` }
+            { p: `In what is today Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in <span class="num">1817</span>, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, with rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there.` }
           ]
         }
       ],

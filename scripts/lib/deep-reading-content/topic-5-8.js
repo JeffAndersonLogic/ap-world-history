@@ -275,7 +275,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Cixi spent the navy's money, so China lost in 1895." It is a popular story. The historian Benjamin Elman finds that Cixi's spending on the Summer Palace "did not use up the imperial treasury or leave nothing for the Chinese navy," though tight funding did limit the fleet; the deeper problems were a disorganized empire and poorly trained crews. And the slogan "Chinese learning as the essence, Western learning for practical use" is often pinned on the 1860s. The idea goes back that far, but the slogan in this form appeared in the 1890s and was made famous in 1898.`
+              html: `"Cixi spent the navy's money, so China lost in 1895." It is a popular story. The historian Benjamin Elman finds that Cixi's spending on the Summer Palace "did not use up the imperial treasury or leave nothing for the Chinese navy," though tight funding did limit the fleet; for 1894 he points to a navy split into rival regional fleets and to crews less well trained than Japan's. And the slogan "Chinese learning as the essence, Western learning for practical use" is often pinned on the 1860s. The idea goes back that far, but the slogan in this form appeared in the 1890s and was made famous in 1898.`
             } }
           ]
         }

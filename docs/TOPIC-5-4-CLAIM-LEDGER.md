@@ -214,3 +214,10 @@ Two fresh reviewers, from a fresh packet after the pass 2 fixes.
 Three full passes, six reviewers: 29, 20 (10 and 10) and 17 (12 and 5) supported findings, every one fixed, answered or logged as an adjacent finding. The loop ended on the three-pass safety valve. Pass 3 was trending down to wording and teaching-device points: no wrong date, number or quotation survived to it; its history reviewer found five narrow fixes and checked Martin's passages, every picture record and every Bairoch figure as sound. The repeated finding across passes was the pattern answer printed on practice surfaces (passes 1, 2 and 3), fixed at its root in pass 3 by taking the carriers and the pattern off every practice surface. Story and reading approval were delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).
 
 The Unit 5 fingerprint (`APPROVED_UNIT5_REWRITE_BLOB` in `scripts/test/readings-golden.js`) moved to the reviewed 5.4 text after the loop; against `main` at `1161bb82` only the 5.4 entry of `unit-5.js` changed, and a one-character mutation was shown to fail the check before the green was trusted.
+
+## Correction from the Unit 5 by Region review (2026-11-16)
+
+Pass 3, reviewer J, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`): in 1817
+Liège was in the United Kingdom of the Netherlands; Belgium became independent in 1830. "In Belgium,
+John Cockerill ... 1817" is **NARROWED** to "In what is today Belgium" in the deep reading, the First &
+10 (paragraph and takeaway) and the lesson data.

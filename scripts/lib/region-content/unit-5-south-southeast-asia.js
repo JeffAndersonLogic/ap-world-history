@@ -132,7 +132,7 @@ module.exports = {
         {
           heading: 'Old work',
           blocks: [
-            { p: `India's hand weaving shrank, but it did not die. Many weavers switched to cheaper machine-spun thread so they could keep weaving, and some of that thread was Indian. From <span class="num">1854</span> Indian owners built steam-powered cotton mills, first in Bombay; by the early 1900s India had about 200 of them, with about five million spindles (the parts of a spinning machine that twist fiber into thread), spinning thread for India's handloom weavers and yarn, thread for weaving, for sale in China. The economic historian Tirthankar Roy finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s, and in <span class="num">1908</span>, in one province of northern India alone, about a million people still lived from handloom weaving. And most Indians still farmed: the census of <span class="num">1901</span> found about two-thirds of the people living by farming.` },
+            { p: `India's hand weaving shrank, but it did not die. Many weavers switched to cheaper machine-spun thread so they could keep weaving, and some of that thread was Indian. From <span class="num">1854</span> steam-powered cotton mills were built in India, first in Bombay by Indian owners; by the early 1900s India had about 200 of them, many Indian-owned, with about five million spindles (the parts of a spinning machine that twist fiber into thread), spinning thread for India's handloom weavers and yarn, thread for weaving, for sale in China. The economic historian Tirthankar Roy finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s, and in <span class="num">1908</span>, in one province of northern India alone, about a million people still lived from handloom weaving. And most Indians still farmed: the census of <span class="num">1901</span> found about two-thirds of the people living by farming.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -167,7 +167,7 @@ module.exports = {
         {
           heading: 'The Propaganda Movement',
           blocks: [
-            { p: `Spain had ruled the Philippines since the 1500s. In the 1880s and 1890s Filipino writers, many of them students in Europe, began what was called the <span class="kt">Propaganda Movement</span>. They demanded equal rights with Spaniards. The best known, José Rizal, published his novel Noli Me Tángere ("Touch Me Not") in <span class="num">1887</span>, attacking the abuses of Spanish rule and of the friars, Catholic religious brothers, who held great power in the islands. In <span class="num">1896</span>, during a revolution against Spanish rule, Spain executed Rizal (<a href="#chapter-t5-2">Topic 5.2</a>).` },
+            { p: `Spain had ruled the Philippines since the 1500s. In the 1880s and 1890s Filipino writers, many of them students in Europe, began what was called the <span class="kt">Propaganda Movement</span>. They demanded equal rights with Spaniards. The best known, José Rizal, published his novel Noli Me Tángere ("Touch Me Not") in <span class="num">1887</span>, attacking the abuses of Spanish rule and of the friars, Spanish members of Catholic religious orders, most of them priests who ran the parishes, who held great power in the islands. In <span class="num">1896</span>, during a revolution against Spanish rule, Spain executed Rizal (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { p: `These writers were building what the College Board calls "a new sense of commonality based on language, religion, social customs, and territory": a people of many islands and languages who began to see themselves as one, Filipino. That loyalty to a nation is <span class="kt">nationalism</span>. In time, as the College Board says of such "newly imagined national communities," that identity was linked "with borders of the state."` },
             { note: {
               kind: 'misconception',
@@ -217,7 +217,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'From cloth seller to cloth buyer',
-        body: `By estimate, India made about a quarter of the world's manufactured goods in 1750 and under 2 percent by 1900. From about 1830 it bought more cotton cloth than it sold, and sold raw cotton abroad instead. From 1854 Indian-owned steam mills, about 200 by the early 1900s, spun thread at home.`
+        body: `By estimate, India made about a quarter of the world's manufactured goods in 1750 and under 2 percent by 1900. From about 1830 it bought more cotton cloth than it sold, and sold raw cotton abroad instead. From 1854 steam cotton mills in India, about 200 by the early 1900s and many of them Indian-owned, spun thread at home.`
       }
     ]
   }

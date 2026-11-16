@@ -1020,7 +1020,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in 1817, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, and it had rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there."
+            "html": "In what is today Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in 1817, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, and it had rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there."
           }
         ],
         "callout": {
@@ -1137,7 +1137,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In 1750 most of the world's goods were made by hand, and most of them in Asia: Paul Bairoch estimated that China made about a third of the world's manufactured goods and India about a quarter, while Britain made under 2 percent. Then factory methods spread from Britain, first carried by skilled people such as Samuel Slater, who built spinning machines from memory in Rhode Island, and John Cockerill, who opened works at Seraing in Belgium in 1817, and later by machines and money. By 1900 they had reached other parts of Europe, the United States, Russia, and Japan, and Europe and the United States made more than four-fifths of the world's manufactured goods. India's and China's shares fell to a few percent. But the old makers kept making: Indian hand weaving shrank but survived, with about a million people living from it in one province alone in 1908, and Bombay's shipbuilders built teak warships for the Royal Navy. Cheaper machine-made goods and the trade rules of the people in power, among other causes, shrank their share. The factory traveled. The share moved. The old makers kept making.",
+    "takeaway": "In 1750 most of the world's goods were made by hand, and most of them in Asia: Paul Bairoch estimated that China made about a third of the world's manufactured goods and India about a quarter, while Britain made under 2 percent. Then factory methods spread from Britain, first carried by skilled people such as Samuel Slater, who built spinning machines from memory in Rhode Island, and John Cockerill, who opened works at Seraing, in what is today Belgium, in 1817, and later by machines and money. By 1900 they had reached other parts of Europe, the United States, Russia, and Japan, and Europe and the United States made more than four-fifths of the world's manufactured goods. India's and China's shares fell to a few percent. But the old makers kept making: Indian hand weaving shrank but survived, with about a million people living from it in one province alone in 1908, and Bombay's shipbuilders built teak warships for the Royal Navy. Cheaper machine-made goods and the trade rules of the people in power, among other causes, shrank their share. The factory traveled. The share moved. The old makers kept making.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

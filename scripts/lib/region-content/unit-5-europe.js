@@ -110,7 +110,7 @@ module.exports = {
           heading: 'The words',
           blocks: [
             { p: `In August <span class="num">1789</span> the Assembly ended the nobles' special privileges and adopted the Declaration of the Rights of Man and of the Citizen. Its first article: "Men are born and remain free and equal in rights." Its third: "The principle of all sovereignty resides essentially in the nation." The College Board names this declaration among the "revolutionary documents" through which Enlightenment ideas "influenced resistance to existing political authority" (<a href="#chapter-t5-2">Topic 5.2</a>).` },
-            { p: `The words were wider than the men who wrote them meant. In <span class="num">1791</span> Olympe de Gouges rewrote the declaration as the Declaration of the Rights of Woman and of the Female Citizen: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in <span class="num">1793</span>. The College Board names her declaration among the demands that "challenged political and gender hierarchies."` }
+            { p: `The words were wider than the men who wrote them meant. In <span class="num">1791</span> Olympe de Gouges rewrote the declaration as the Declaration of the Rights of Woman and of the Female Citizen: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in <span class="num">1793</span>. The College Board lists her declaration as an optional example of the demands that "challenged political and gender hierarchies."` }
           ]
         },
         {
@@ -191,13 +191,13 @@ module.exports = {
         {
           heading: 'Coal and railways',
           blocks: [
-            { p: `Britain banned the export of textile machines and the emigration of skilled textile workers, but the methods left anyway. In <span class="num">1817</span> John Cockerill, son of an English machine maker, began building machines at Seraing, near Liège in Belgium, on one of the richest coalfields on the Continent. Factories grew where coal lay, as in Britain: around Liège, in the Ruhr valley of the German states, and in northern France. The first steam railway in the German states, from Nuremberg to Fürth, opened in <span class="num">1835</span> with an English locomotive, and Germany's railways grew from 469 kilometers in <span class="num">1840</span> to more than 51,000 in <span class="num">1900</span> (<a href="#chapter-t5-4">Topic 5.4</a>).` }
+            { p: `Britain banned the export of textile machines and the emigration of skilled textile workers, but the methods left anyway. In <span class="num">1817</span> John Cockerill, son of an English machine maker, began building machines at Seraing, near Liège, in what is today Belgium, on one of the richest coalfields on the Continent. Factories grew where coal lay, as in Britain: around Liège, in the Ruhr valley of the German states, and in northern France. The first steam railway in the German states, from Nuremberg to Fürth, opened in <span class="num">1835</span> with an English locomotive, and Germany's railways grew from 469 kilometers in <span class="num">1840</span> to more than 51,000 in <span class="num">1900</span> (<a href="#chapter-t5-4">Topic 5.4</a>; railway figures, <a href="#chapter-t5-5">Topic 5.5</a>).` }
           ]
         },
         {
           heading: 'Russia comes later',
           blocks: [
-            { p: `Russia had 27 kilometers of railway in <span class="num">1840</span> and more than 53,000 in <span class="num">1900</span>. In the early 1870s a Welsh engineer, John Hughes, built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine; the town that grew up around them was named Yuzovka after him (today Donetsk). Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and by <span class="num">1904</span> trains could cross to the Pacific. The College Board names Russia among the places where the new methods "spread," with "other parts of Europe," the United States and Japan (<a href="#chapter-t5-4">Topic 5.4</a>).` }
+            { p: `Russia had 27 kilometers of railway in <span class="num">1840</span> and more than 53,000 in <span class="num">1900</span>. In the early 1870s a Welsh engineer, John Hughes, built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine; the town that grew up around them was named Yuzovka after him (today Donetsk). Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and by <span class="num">1904</span> trains could cross to the Pacific (<a href="#chapter-t5-5">Topic 5.5</a>). The College Board names Russia among the places where the new methods "spread," with "other parts of Europe," the United States and Japan (<a href="#chapter-t5-4">Topic 5.4</a>).` }
           ]
         },
         {

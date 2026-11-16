@@ -112,7 +112,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money, though tight funding did limit the fleet. The deeper problems were a disorganized empire and poorly trained crews.`
+              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money, though tight funding did limit the fleet. He points instead to a navy split into rival regional fleets and to crews less well trained than Japan's by 1894.`
             } }
           ]
         }
@@ -169,12 +169,12 @@ module.exports = {
       name: 'Japan Builds, Then Sells',
       navLabel: 'Japan\'s industry',
       dates: '1872 to 1900 &nbsp;·&nbsp; Railways, silk, cotton, and a war with China',
-      thesis: `Japan's government built the first railways, mills and shipyards itself, then sold most of them to private companies. The strength it built made Japan a regional power.`,
+      thesis: `Japan's government built the first railway and model factories itself, took over shipyards and mines, then sold most of its factories and mines to private companies. The strength it built made Japan a regional power.`,
       parts: [
         {
           heading: 'The state builds',
           blocks: [
-            { p: `The government built Japan's first railway, from Tokyo to Yokohama, which opened in <span class="num">1872</span> with British engineers. The same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine so the method could spread. It built telegraph lines, shipyards, mines, and factories for weapons and goods such as cement and glass. Farmers paid for much of it through the land tax. This is <span class="kt">state-sponsored industry</span>, one of the College Board's "state-sponsored visions of industrialization."` }
+            { p: `The government built Japan's first railway, from Tokyo to Yokohama, which opened in <span class="num">1872</span> with British engineers. The same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine so the method could spread. It built telegraph lines and factories for weapons and goods such as cement and glass, and took over shipyards and mines begun under the shogun. Farmers paid for much of it through the land tax. This is <span class="kt">state-sponsored industry</span>, one of the College Board's "state-sponsored visions of industrialization."` }
           ]
         },
         {
@@ -196,7 +196,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Japan's government built all of its industry. The state started key industries and then sold most of them; private companies carried them on and built much more.`
+              html: `Do not write that Japan's government built all of its industry. The state started key industries and then sold most of its factories and mines; private companies carried them on and built much more.`
             } }
           ]
         }

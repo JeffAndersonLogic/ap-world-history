@@ -672,3 +672,9 @@ suite then passed on its own (exit 0).
 Pass 2, reviewer E: the Ottoman constitution was proclaimed in December 1876, but its first parliament met
 in March 1877. The deep reading's "In December 1876 the empire got a constitution and a parliament" is
 **NARROWED** to "a constitution, and in March 1877 its first parliament met".
+
+Pass 3, reviewer I: Elman's two causes ("the political and regional disorganization of the empire";
+crews "insufficiently trained") describe the Sino-French War of 1884 to 1885. For 1894 he points to a
+navy split into regional fleets and to Japanese crews that "were better trained" (Elman, Modern Asian
+Studies 38:2, 2004, pp. 316 to 317). The deep reading's misconception box is **NARROWED**: "for 1894 he
+points to a navy split into rival regional fleets and to crews less well trained than Japan's".

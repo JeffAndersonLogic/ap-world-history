@@ -1,8 +1,8 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** review pass 3 (the last allowed) is running, four fresh reviewers on a packet
-recaptured after commit `ce7e82da`. If this session stopped before pass 3's findings appear below,
-relaunch pass 3 from a fresh capture.
+**Resume here:** the review loop is finished (stopped at its three-pass safety valve; every
+finding fixed or answered). What remains is verification and the report. Not on `main`: waiting for
+Jeff's "ship it".
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
@@ -441,20 +441,20 @@ topic chapters; every internal reference; every Terms-box entry now used in its 
 
 #### Reviewer K: history, the Middle East and South and Southeast Asia, 5 findings
 
-1. **Middle East social card: Greece left "despite" the 1869 law** (same as L1). `PENDING`
+1. **Middle East social card: Greece left "despite" the 1869 law** (same as L1). **FIXED with L1.**
 2. **Middle East 01: KC-5.1.V.B quoted without its opening clause ("In response to the expansion of
    industrializing states") and applied to Selim III's and Mahmud II's reforms**, which answered
    defeat by Russia (1787 to 1792) and Napoleon's army (1798), neither an industrializing state.
-   Topic 5.8 frames it the same way. `PENDING`
+   Topic 5.8 frames it the same way. **FIXED: the chapter now says the first reforms answered defeats by Russia and by Napoleon's army, and quotes KC-5.1.V.B in full ("In response to the expansion of industrializing states, ...") for the later pressure. Topic 5.8 already says "more and more of them industrial"; no change there.**
 3. **Middle East 03 (and topic 5.8): the fez factory "opened ... in the 1830s; around 1850 fitted with
    steam engines and machines from Britain and Belgium"**: Istanbul's official heritage site dates the
    fez workshop to 1827 (at Kadırga, moved to Eyüp later) and its first steam machines to 1843; no
-   source found for "around 1850, Britain and Belgium". `PENDING`
+   source found for "around 1850, Britain and Belgium". **REJECTED: the course's dates come from a scholarly source the reviewer could not reach. Topic 5.8's ledger (row "The state fez factory ...") cites TDV İslâm Ansiklopedisi, "Feshâne" (fez making from 1833; machines 1849 to 1851) and Ergün and Ciritci (2026) (1843 to 1851). The reviewer's source is a tourism page. "In the 1830s" and "around 1850" stand.**
 4. **South and Southeast Asia 03 and card: "Indian owners built ... about 200 of them" and
    "Indian-owned steam mills, about 200"**: about 200 was all of India's cotton mills, some
-   British-owned (Cawnpore's Elgin Mills, 1864; Muir Mills, 1874; mills around Calcutta). `PENDING`
+   British-owned (Cawnpore's Elgin Mills, 1864; Muir Mills, 1874; mills around Calcutta). **FIXED: "steam-powered cotton mills were built in India, first in Bombay by Indian owners; by the early 1900s India had about 200 of them, many Indian-owned", and the card to match.**
 5. **South and Southeast Asia 04: "the friars, Catholic religious brothers"**: the Spanish friars
-   were mostly ordained priests who ran the parishes, not lay brothers. `PENDING`
+   were mostly ordained priests who ran the parishes, not lay brothers. **FIXED: "the friars, Spanish members of Catholic religious orders, most of them priests who ran the parishes".**
 
 Held up (reviewer's list): every CED quotation and both Argue it prompts; the part intro; every
 Ottoman date and the Gülhane wording (Inalcik and Hurewitz); Beinin's quotation and figures (MERIP,
@@ -468,24 +468,24 @@ Davar's mill (1854); Trincomalee; the 1901 census; McKeown; Rizal.
    itself, then sold most of them"**: Japan's first Western-style spinning mill was Satsuma's
    Kagoshima mill (1867), and the Nagasaki shipyard was begun by the Tokugawa shogunate in 1857
    (Mitsubishi Heavy Industries, Nagasaki Shipyard history); the railways were not among the works
-   sold. Topic 5.6 claims only the first railway. `PENDING`
+   sold. Topic 5.6 claims only the first railway. **FIXED: the thesis and box say the government built the first railway and model factories, took over shipyards and mines begun under the shogun, and sold most of its factories and mines; the body says the shipyards and mines were taken over (Mitsubishi Heavy Industries, Nagasaki Shipyard history: shogunate, 1857).**
 2. **Britain 02: the cotton steps, "each step on its own machine", read as Cromford in 1771**: Cromford
    began with spinning machines; carding and roving came with the 1775 patent; cleaning was not a
-   machine step. Topic 5.3 says this correctly. `PENDING`
+   machine step. Topic 5.3 says this correctly. **FIXED: "Cromford began with spinning machines. After 1775, when Arkwright patented machines for the earlier steps, ... each step after cleaning on its own machine" (as topic 5.3).**
 3. **Britain 01: "Britain was not yet a great maker: ... under 2 percent"**: a small share reflects a
    small population; Bairoch's per-person index already puts Britain highest in 1750 (10, against China
-   8 and India 7). Bairoch (1982), p. 294, via McKay, Table 20.1. `PENDING`
+   8 and India 7). Bairoch (1982), p. 294, via McKay, Table 20.1. **FIXED: "Britain was a small country:" in place of "not yet a great maker".**
 4. **East Asia 02 box (and topic 5.8): "The deeper problems were a disorganized empire and poorly
    trained crews"**: Elman's sentence with those two causes is about the Sino-French War of 1884 to
    1885; for 1894 he points to Japan's better-trained crews and a navy split into regional fleets.
-   Elman (2004), pp. 316 to 317 (PDF opened). `PENDING`
+   Elman (2004), pp. 316 to 317 (PDF opened). **FIXED here and in topic 5.8's deep reading: for 1894 Elman points to a navy split into rival regional fleets and crews less well trained than Japan's (Elman, Modern Asian Studies 38:2, 2004, pp. 316 to 317).**
 5. **Britain 01 (and topic 5.3): enclosure set beside "More food fed more people"**, implying
    enclosure drove the harvest and the population rise; Allen (1992) finds most yield gains in open
    fields too, and Wrigley and Schofield (1981) put the population rise mainly to higher fertility.
-   `PENDING`
+   **NARROWED here: more food is tied to the new crops; enclosure is a separate sentence with "historians still argue how much enclosure added to the harvest"; "Larger harvests helped feed a growing population". Topic 5.3 already hedges enclosure ("historians still argue about how many people it pushed off the land") and claims no cause for the population rise; no change there.**
 6. **Britain 05: Wollstonecraft's book "among the 'demands for women's suffrage and an emergent
    feminism'"**: the CED lists it only as an optional example, and the book asked for education and
-   independence, only hinting at representation; a reader will think she demanded the vote. `PENDING`
+   independence, only hinting at representation; a reader will think she demanded the vote. **FIXED here, and the same framing aligned in Europe (de Gouges) and the Americas (Seneca Falls): each is now "an optional example" of the CED's demands, and Wollstonecraft's book is said to have asked for education and independence, not yet the vote.**
 
 Held up (reviewer's list): every CED quotation in both chapters; the Britain dates, figures and
 quotations (Harley's yarn price word for word; Edwards on 1787 imports; Burnette's 1833 percentages;
@@ -498,15 +498,48 @@ Tsurumi; the 1894 treaty; Shimonoseki); both Argue it prompts; the part intro.
    cause historians debate (James; Ardouin; Ott; Toussaint's own later account; Geggus). Topic 5.2
    gives no cause ("a few months later"). Source: Wikipedia, "Toussaint Louverture", "Alliance with
    the French: 1794-1796" ("The timing of and motivation behind Louverture's volte-face against Spain
-   remains debated among historians"). This sentence was added by the pass 2 fix for G2. `PENDING`
-2. **Europe 03: "Crowds crowds"** (same as L2). `PENDING`
+   remains debated among historians"). This sentence was added by the pass 2 fix for G2. **FIXED: "In May 1794, a few months after Paris abolished slavery, he changed sides to France; historians still debate why." The causal wording had been introduced by the pass 2 fix for G2.**
+2. **Europe 03: "Crowds crowds"** (same as L2). **FIXED with L2.**
 3. **Europe 04: the German and Russian railway lengths and the Trans-Siberian cited to Topic 5.4**;
    they are in Topic 5.5, not 5.4. (Figures confirmed: Fordham Modern History Sourcebook, 51,678 and
-   53,234 km in 1900.) `PENDING`
+   53,234 km in 1900.) **FIXED: the railway figures and the Trans-Siberian now cite Topic 5.5; the "spread" quotation keeps Topic 5.4.**
 4. **Europe 04 (and topic 5.4): Seraing "near Liège in Belgium" in 1817**: Liège was in the United
-   Kingdom of the Netherlands until Belgium's independence in 1830. `PENDING`
+   Kingdom of the Netherlands until Belgium's independence in 1830. **FIXED here and in topic 5.4: "in what is today Belgium" in the deep reading, the First & 10 paragraph and takeaway (fingerprint moved with a dated note) and the lesson data. The teacher deck's map labels name places by today's country and are left as labels.**
 
 Held up (reviewer's list): every CED quotation; both Argue it prompts; the part intro; Riis (three
 passages, Standard Ebooks), Bismarck (GHDI), Bolívar (Bertrand), Locke, Rousseau, the declarations,
 the levée, "iron and blood", the Manifesto, Kant, Toussaint's 1793 proclamation; every Europe and
 Americas date and figure.
+
+**Pass 3 total: 25 findings (L 10, I 6, K 5, J 4), 3 of them duplicates. 20 FIXED or NARROWED, 1
+REJECTED (the fez factory dates, which rest on a scholarly encyclopedia), 1 with no change needed in a
+topic chapter. Three pass 3 defects were introduced by this build's own earlier fixes (the doubled
+"Crowds", the Greece card's "despite", and the reason given for Toussaint's change of sides), which
+is the reason a fresh full pass is run after every round of fixes. Two more small corrections reached
+shipped topic chapters (5.4, 5.8).**
+
+## Why the loop stopped
+
+Pass 3 is the third full pass and it still found supported defects, so the safety valve applies: fix
+what it found and stop rather than run a fourth. The trend is down: 37 findings in pass 1, 30 in
+pass 2, 25 in pass 3, and smaller each time. Pass 1 found outright errors (the Manifesto's first line,
+Topic 5.6's factory money, abolition before 1834, the telegraph's speed); pass 2 found mostly
+compressions where two causes had become one; pass 3 found finer points of chronology and attribution
+(Cromford's machines before 1775, which Japanese works the Meiji state built first, which war Elman's
+two causes describe) plus three slips from earlier fixes. No new myth turned up after pass 1. Every
+finding has a disposition and no row is left NEEDS JEFF.
+
+**Shipped topic chapters corrected by this build**, each on every surface that carried the claim:
+5.1 (Rousseau's first line), 5.2 (the cause of the 1791 rising; why France freed people in 1793),
+5.3 (the Ottoman cotton share; "one of the seven factors the College Board names"), 5.4 (Seraing "in
+what is today Belgium"), 5.6 (what paid for Egypt's factories), 5.7 (Germany's two 1879 tariffs) and
+5.8 (the first Ottoman parliament, 1877; Elman on 1894). Each has a dated note in its own ledger; the
+First & 10 fingerprint in `scripts/test/readings-golden.js` was moved three times, each with a note
+naming the only phrases that changed.
+
+**Adjacent, not changed here:** the shipped Topic 5.9 and 5.10 chapters on `main` are older drafts
+(Manchester "about 25,000 in 1772", "Chartism was rejected", a cross-reference to the 1832 Reform Act
+"in Topic 5.6"); their reviewed rebuilds wait on `claude/topic-5-10-build`. That rebuild says "about
+four in ten" women servants in 1851, which this build's reviewers narrowed to about one in three (four
+in ten with washerwomen and charwomen). Topic 5.4 claims a per-person fall in output for India but not
+for China, which Bairoch also estimates.
