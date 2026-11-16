@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Class Pulse | iPad Remote</title>
+<style>
+:root{--bg:#151718;--panel:#24282a;--line:#5a5f5c;--gold:#c9a46a;--paper:#f5f0e7;--ok:#75b777;--warn:#d6a95e;font-family:Montserrat,system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--paper)}
+.shell{max-width:760px;margin:0 auto;padding:max(14px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) 24px max(14px,env(safe-area-inset-left));display:grid;gap:16px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.brand{font-weight:900;color:var(--gold)}
+.status{font-size:.85rem;font-weight:800;color:var(--warn)}.status.ok{color:var(--ok)}
+.now{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:4px}
+.now small{color:#9ea7a9;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem}
+.now b{font-size:1.6rem}
+.big{display:grid;grid-template-columns:1fr 2fr;gap:12px}
+.btn{border:1px solid var(--line);border-radius:14px;background:#3e4447;color:#fff;padding:16px 12px;font:inherit;font-weight:800;font-size:1rem}
+.btn:active{background:#555d60}
+.btn.next{background:var(--gold);border-color:var(--gold);color:#151718;font-size:1.4rem;padding:30px 12px}
+.btn.back{font-size:1.2rem}
+.btn[aria-pressed="true"]{outline:3px solid var(--gold);outline-offset:1px}
+h2{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#9ea7a9;margin:6px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.grid .btn{padding:12px 8px;font-size:.85rem}
+p.note{font-size:.8rem;color:#c3bcb1;line-height:1.5;margin:0}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="bar"><div class="brand">Class Pulse · Projector Remote</div><div id="status" class="status" role="status">Connecting…</div><button class="btn" id="retry" style="padding:8px 12px;font-size:.8rem">Retry</button></div>
+  <div class="now"><small>On the screen now</small><b id="now">Waiting for the laptop…</b><span id="count"></span></div>
+  <div class="big"><button class="btn back" id="back">← Back</button><button class="btn next" id="next">Next →</button></div>
+  <h2>Checkpoint 1</h2><div class="grid" id="grid1"></div>
+  <h2>Checkpoint 2</h2><div class="grid" id="grid2"></div>
+  <p class="note">This remote only tells the laptop which part of the class screen to show. No student work comes to this iPad, so there is nothing here a student could read over your shoulder. Title only is the safe screen to rest on.</p>
+</div>
+<script src="remote-firebase.js?v=remote-firebase-1"></script>
+<script>
+(function(){
+'use strict';
+/* The same parts, in the same order, as SCENES in class-pulse-app.js. A number is all
+   that travels: checkpoint (0 or 1) times six, plus the part. */
+const SCENES=['Title only','The question','How the class did','What to revisit','Wrong ideas','Model answer'];
+const session=(new URLSearchParams(location.search).get('session')||'').replace(/[^a-f0-9]/gi,'');
+const status=document.getElementById('status');
+let index=0,seen=0,helloTimer=null,tries=0;
+function say(t,ok){status.textContent=t;status.className='status'+(ok?' ok':'');}
+function paint(){document.querySelectorAll('[data-i]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.i)===index)));}
+[0,1].forEach(cp=>{document.getElementById('grid'+(cp+1)).innerHTML=SCENES.map((s,i)=>'<button class="btn" type="button" data-i="'+(cp*6+i)+'" aria-pressed="false">'+(i+1)+'. '+s+'</button>').join('');});
+if(session.length<20){say('Scan the QR code on the Class Pulse page');document.getElementById('now').textContent='This page needs a live session.';return;}
+function go(i){index=Math.max(0,Math.min(11,i));paint();relay.publish({type:'goto',index:index});}
+function handle(m){if(!m||m.sender!=='host'||m.type!=='state')return;seen=Date.now();clearTimeout(helloTimer);index=Number(m.index)||0;paint();document.getElementById('now').textContent=m.title||SCENES[index%6];document.getElementById('count').textContent=m.count||'';say('Connected to the classroom laptop',true);}
+function findLaptop(){clearTimeout(helloTimer);tries=0;say('Finding the classroom laptop…');const attempt=async()=>{const sent=await relay.publish({type:'hello'});if(seen&&Date.now()-seen<3000)return;if(!sent)return;tries++;if(tries>=5){say('The laptop has not replied. Keep Class Pulse open there, then tap Retry.');return;}helloTimer=setTimeout(attempt,Math.min(15000,3000*Math.pow(2,tries-1)));};attempt();}
+const relay=BHRemoteFirebase.connect({session:session,sender:'ipad',onmessage:handle,onready:findLaptop,onstatus(kind,message){if(kind==='ready')return;clearTimeout(helloTimer);say(message);}});
+document.getElementById('next').addEventListener('click',()=>go(index%6===5?index:index+1));
+document.getElementById('back').addEventListener('click',()=>go(index%6===0?index:index-1));
+document.addEventListener('click',e=>{const b=e.target.closest('[data-i]');if(b)go(Number(b.dataset.i));});
+document.getElementById('retry').addEventListener('click',()=>{clearTimeout(helloTimer);relay.retry();});
+setInterval(()=>{if(document.visibilityState==='visible'&&seen)relay.publish({type:'ping'});},300000);
+})();
+</script>
+</body>
+</html>

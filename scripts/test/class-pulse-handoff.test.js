@@ -143,15 +143,46 @@ check('a good reply reads every answer, even wrapped in a fence and a sentence',
 check('an invented quote, a double rating or a missing answer never passes', async (M) => {
   const [b] = await M.batches(contract, rows, { size: 13 });
   const r = M.readReply(contract, b, reply(b, contract, o => {
-    o.answers[0].criteria[0].evidence = ['words this student never wrote'];
+    o.answers[0].criteria.forEach(c => { c.evidence = ['words this student never wrote']; });
     o.answers.push(JSON.parse(JSON.stringify(o.answers[1])));
     o.answers.splice(2, 1);
+    o.answers[2].criteria[0].evidence = ['words this student never wrote'];
   }));
   const by = Object.fromEntries(r.results.map(x => [x.key, x.status]));
   assert.equal(by[b.answers[0].key], 'failed', 'invented quote');
   assert.equal(by[b.answers[1].key], 'failed', 'rated twice');
   assert.equal(by[b.answers[2].key], 'missing', 'left out');
-  assert.equal(r.passed, b.answers.length - 3);
+  // One invented quote among good criteria: that criterion is Can't tell, the rest
+  // stand, and the answer is marked partial so it can be read again (2026-11-16).
+  const part = r.results.find(x => x.key === b.answers[3].key);
+  assert.equal(part.status, 'partial', 'one criterion with an invented quote');
+  assert.equal(part.output.criteria[0].category, 'U');
+  assert.ok(E.checkFailed(part.output.criteria[0]));
+  assert.ok(part.output.criteria.slice(1).every(c => c.category === 'D'));
+  assert.equal(r.passed, b.answers.length - 4);
+  assert.equal(r.partial, 1);
+});
+
+check('one copy carries everything waiting, and the Reader\'s result is told from anything else', async (M) => {
+  const bs = await M.batches(contract, rows, { size: 5 });
+  const bundle = await M.bundleFor(bs.map(b => ({ contract, batch: b })));
+  assert.equal(bundle.count, bs.reduce((n, b) => n + b.answers.length, 0));
+  const text = M.bundleText(bundle);
+  for (const v of Object.values(SECRET)) assert.ok(!text.includes(v), v + ' is in the bundle');
+  assert.doesNotMatch(text, /Student \d|"confidence"|studentId|"uid"|sectionId|updatedAt|submittedAt|"key":"S2/);
+  const back = M.parseBundle('Here you go:\n' + text);
+  assert.deepEqual(back.items.map(x => x.answers.map(a => a.text)), bs.map(b => b.answers.map(a => a.text)));
+  assert.equal(back.items[0].contract.prompt, contract.prompt);
+  // The same answers give the same bundle id; a different set gives another.
+  assert.equal((await M.bundleFor(bs.map(b => ({ contract, batch: b })))).id, bundle.id);
+  assert.notEqual((await M.bundleFor(bs.slice(1).map(b => ({ contract, batch: b })))).id, bundle.id);
+  assert.throws(() => M.parseBundle('{"format":"something-else"}'), /not a Class Pulse bundle/);
+  assert.throws(() => M.parseBundleReply(text), /not the Reader's result/);
+  assert.throws(() => M.parseBundleReply('Sorry, no.'), /does not look like the Reader/);
+  const result = JSON.stringify({ format: M.BUNDLE_REPLY, bundle: bundle.id, batches: bs.map(b => JSON.parse(reply(b, contract))) });
+  const parsed = M.parseBundleReply(result);
+  const r = M.readReply(contract, bs[0], JSON.stringify(parsed.batches[0]));
+  assert.equal(r.passed, bs[0].answers.length, 'each batch of the result reads through the same checks as a chat reply');
 });
 
 check('a reply keyed by the copied markers (A01-1a2b3c) reads every answer, but not another batch\'s markers', async (M) => {
@@ -163,6 +194,15 @@ check('a reply keyed by the copied markers (A01-1a2b3c) reads every answer, but 
   assert.equal(other.missing, b.answers.length);
 });
 
+check('what the teacher removed is removed from the bundle too', async (M) => {
+  const [b] = await M.batches(contract, rows, { size: 13 });
+  const word = b.answers[0].text.split(/\s+/).find(w => w.length > 5);
+  const cut = M.redact(b, new Map([[b.answers[0].key, [word]]]));
+  const text = M.bundleText(await M.bundleFor([{ contract, batch: cut }]));
+  assert.ok(JSON.parse(text.slice(text.indexOf('{'))).items[0].answers[0].text.includes('[removed]'));
+  assert.ok(!JSON.parse(text.slice(text.indexOf('{'))).items[0].answers[0].text.includes(word));
+});
+
 check('a reply for another batch, or not JSON at all, is refused', async (M) => {
   const [b] = await M.batches(contract, rows, { size: 13 });
   assert.throws(() => M.readReply(contract, b, reply(b, contract, o => { o.batch = 'cp-3-1-cp1-0000000000'; })), /different batch/);
@@ -171,7 +211,7 @@ check('a reply for another batch, or not JSON at all, is refused', async (M) => 
 
 check('through the engine, a pasted rating is a proposal and a failed one is Can\'t tell', async (M) => {
   const [b] = await M.batches(contract, rows, { size: 13 });
-  const read = M.readReply(contract, b, reply(b, contract, o => { o.answers[0].criteria[0].evidence = ['not in the answer']; }));
+  const read = M.readReply(contract, b, reply(b, contract, o => { o.answers[0].criteria.forEach(c => { c.evidence = ['not in the answer']; }); }));
   const engine = E.createEngine({ provider: M.provider([{ checkpoint: 'cp1', read }]) });
   const out = await engine.analyzeMany(rows, contract);
   const bad = out[rows.findIndex(r => r.text === b.answers[0].text)];
@@ -244,7 +284,8 @@ async function run(M, quiet) {
     { name: 'the response key travels with the answer', from: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text })", to: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text, row: rowKeys.get(fp) })", extra: ['const seen = new Map();', 'const seen = new Map(), rowKeys = new Map();\n    for (const r of rows) rowKeys.set(await E.digest(r.text), r.key);'], expect: /no name, response key/ },
     { name: 'answers numbered in roster order', from: '.sort((a, b) => a[0].localeCompare(b[0]))', to: '', expect: /fingerprints, not the roster/ },
     { name: 'drafts are copied too', from: 'if (E.eligibility(r)) continue;', to: 'if (!r.text.trim()) continue;', expect: /unfinished and empty/ },
-    { name: 'replies skip the engine\'s validation', from: "try { return { ...base, status: 'passed', entry, output: E.validateOutput(entry, contract, a.text) }; }", to: "try { return { ...base, status: 'passed', entry, output: entry }; }", expect: /invented quote/ },
+    { name: 'replies skip the engine\'s validation', from: "const output = E.readOutput(entry, contract, a.text);", to: "const output = { criteria: entry.criteria, failed: 0 };", expect: /invented quote/ },
+    { name: 'the bundle carries the answers before the teacher\'s removals', from: "answers: x.batch.answers.map(a => ({ key: a.key, text: a.text }))", to: "answers: x.batch.answers.map(a => ({ key: a.key, text: a.original || a.text }))", expect: /removed from the bundle/ },
     { name: 'family details go unflagged', from: 're: /\\b(?:my|our) (?:mom', to: 're: /\\b(?:zzqq) (?:mom', expect: /flags what could identify/ },
     { name: 'every capitalized word counts as course vocabulary', from: 'const isKnown = (w, known) => {', to: 'const isKnown = (w, known) => { return true; ', expect: /flags what could identify/ },
     { name: 'the first word of every run is skipped', from: 'judged = start && ws.length === 1 ? [] : ws;', to: 'judged = ws.slice(1);', expect: /flags what could identify/ },

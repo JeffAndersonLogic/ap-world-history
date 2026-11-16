@@ -1,0 +1,243 @@
+<title>Class Pulse Reader</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one column, three numbered steps in the order they are done, with the
+   progress of the reading as the only thing that moves. Class Pulse's own palette
+   and faces, so the two pages read as one tool. */
+:root{
+  --bg:#EFE8DB; --surface:#FBF7EF; --inset:#F2ECE0; --ink:#1A1C1D; --muted:#6E695F; --line:#DED6C8;
+  --gold:#C9A46A; --on-gold:#2B2216; --bronze:#8A6425; --lv-d:#344A63; --lv-p:#C09A42; --lv-n:#9D211F; --warn-bg:#F6E9D2; --warn-ink:#7A4A0E;
+  --title:"Cinzel",Georgia,"Times New Roman",serif; --ui:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif; --body:"Libre Baskerville",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#17191A; --surface:#212425; --inset:#2A2E2F; --ink:#F3EEE4; --muted:#B5AEA2; --line:#3D4243;
+  --gold:#C9A46A; --on-gold:#1D1810; --bronze:#D9B982; --lv-d:#8FA9C6; --lv-p:#D9B45C; --lv-n:#E0736F; --warn-bg:#3A2F1B; --warn-ink:#F0D9A8; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#17191A; --surface:#212425; --inset:#2A2E2F; --ink:#F3EEE4; --muted:#B5AEA2; --line:#3D4243;
+  --gold:#C9A46A; --on-gold:#1D1810; --bronze:#D9B982; --lv-d:#8FA9C6; --lv-p:#D9B45C; --lv-n:#E0736F; --warn-bg:#3A2F1B; --warn-ink:#F0D9A8; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.55}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+header{display:grid;gap:6px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}
+h1{font-family:var(--title);font-weight:400;font-size:clamp(30px,6vw,44px);line-height:1;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--muted);max-width:60ch}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:12px;min-width:0}
+.step h2{font-family:var(--title);font-weight:400;font-size:22px;margin:0;display:flex;gap:10px;align-items:baseline}
+.step h2 span{font-family:var(--ui);font-size:12px;font-weight:700;color:var(--bronze);letter-spacing:.08em}
+.step p{margin:0}
+.small{font-size:13px;color:var(--muted)}
+textarea{width:100%;min-height:110px;border:1px solid var(--line);border-radius:10px;background:var(--inset);color:var(--ink);padding:10px 12px;font:12px/1.5 ui-monospace,Menlo,Consolas,monospace;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+button,select{font:inherit;color:inherit}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;font-weight:700;font-size:13px;cursor:pointer}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:var(--on-gold)}
+.btn:disabled{opacity:.5;cursor:default}
+select{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 12px;font-size:13px;font-weight:600}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.track{height:12px;border-radius:999px;background:var(--inset);overflow:hidden;border:1px solid var(--line)}
+.fill{height:100%;width:0;background:var(--lv-d);transition:width .3s}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+.tally{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;font-variant-numeric:tabular-nums}
+.tally b{font-size:18px;margin-right:5px}
+.note{background:var(--warn-bg);color:var(--warn-ink);border-radius:10px;padding:10px 14px;font-size:13px}
+ul.plain{margin:0;padding-left:18px;display:grid;gap:4px}
+</style>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">BeHistorical · Class Pulse</span>
+    <h1>Class Pulse Reader</h1>
+    <p>Reads every waiting checkpoint answer one at a time, checks each reading against the student's own words, asks again when a reading fails, and hands back one result for Class Pulse.</p>
+  </header>
+
+  <div class="note" id="absent" hidden>This page reads with Claude, so it only works when you open it inside your Claude account. Open it from the link on the Class Pulse page, signed in with your school account.</div>
+
+  <section class="step" aria-labelledby="s1">
+    <h2 id="s1"><span>STEP 1</span>Paste what Class Pulse copied</h2>
+    <label class="small" for="bundle">In Class Pulse, open Read the work and press Copy everything waiting. Then paste here.</label>
+    <textarea id="bundle" placeholder="Paste here"></textarea>
+    <p class="small" id="bundle-info" role="status">Nothing pasted yet.</p>
+  </section>
+
+  <section class="step" aria-labelledby="s2">
+    <h2 id="s2"><span>STEP 2</span>Read them</h2>
+    <div class="row">
+      <label class="small" for="tier">Reader</label>
+      <select id="tier"><option value="complex">Most careful (slower)</option><option value="default">Everyday (faster)</option></select>
+      <button class="btn primary" type="button" id="go" disabled>Read the answers</button>
+      <button class="btn" type="button" id="stop" hidden>Stop</button>
+    </div>
+    <div class="track" aria-hidden="true"><div class="fill" id="fill"></div></div>
+    <p id="progress" role="status" class="small">The first time, Claude asks your permission to let this page read. Each answer is read by itself, so a class takes a few minutes.</p>
+    <div class="tally" id="tally" hidden>
+      <span><b id="t-ok">0</b>read</span><span><b id="t-part">0</b>read, one part unclear</span><span><b id="t-bad">0</b>not read</span><span><b id="t-left">0</b>to go</span>
+    </div>
+    <div class="note" id="trouble" hidden></div>
+  </section>
+
+  <section class="step" aria-labelledby="s3">
+    <h2 id="s3"><span>STEP 3</span>Take the result back</h2>
+    <div class="row"><button class="btn primary" type="button" id="copy" disabled>Copy the result</button><span class="small" id="copied" role="status"></span></div>
+    <textarea id="result" readonly placeholder="The result appears here when the reading is done" aria-label="The result to paste into Class Pulse"></textarea>
+    <p class="small">In Class Pulse, paste it into step 3 of Read the work and press Read the result. Class Pulse checks every reading again before it shows.</p>
+  </section>
+
+  <section class="step" aria-labelledby="s4">
+    <h2 id="s4"><span>PRIVACY</span>What this page does with the writing</h2>
+    <ul class="plain small">
+      <li>It sends Claude the question, the criteria, the rubric and one numbered answer at a time. No names, classes or accounts are in what Class Pulse copies.</li>
+      <li>It keeps nothing. Close or reload the page and the pasted writing is gone from it. Nothing is saved to this page or shared with anyone who opens it.</li>
+      <li>It runs in your own Claude for Teachers account, the service the district approved for this.</li>
+      <li>Its readings are formative suggestions. Nothing here is a grade.</li>
+    </ul>
+    <div class="row"><button class="btn" type="button" id="clear">Clear everything from this page</button></div>
+  </section>
+</div>
+<script>
+/*ENGINE*/
+</script>
+<script>
+/*HANDOFF*/
+</script>
+<script>
+(function () {
+  'use strict';
+  const H = window.BHClassPulseHandoff;
+  const $ = id => document.getElementById(id);
+  const AT_ONCE = 2;          // the platform runs a couple of calls at a time for a viewer
+  const state = { bundle: null, jobs: [], running: false, stopped: false, ctl: [] };
+  let sample = null;
+
+  // One job per answer. best: the best reading so far ({ status, entry }).
+  function parse() {
+    const raw = $('bundle').value;
+    state.bundle = null; state.jobs = [];
+    $('go').disabled = true;
+    if (!raw.trim()) { $('bundle-info').textContent = 'Nothing pasted yet.'; return; }
+    let b;
+    try { b = H.parseBundle(raw); } catch (e) { $('bundle-info').textContent = e.message; return; }
+    state.bundle = b;
+    b.items.forEach(item => item.answers.forEach(a => state.jobs.push({ item, a, best: null, tries: 0, error: '' })));
+    const cps = [...new Set(b.items.map(x => x.contract.checkpoint === 'cp2' ? 'Checkpoint 2' : 'Checkpoint 1'))];
+    const topic = b.items[0] ? String(b.items[0].contract.topicKey).replace('-', '.') : '';
+    $('bundle-info').textContent = state.jobs.length + (state.jobs.length === 1 ? ' answer' : ' answers') + ' from Topic ' + topic + ', ' + cps.join(' and ') + '. Ready to read.';
+    $('go').disabled = !sample || !state.jobs.length;
+    $('go').textContent = 'Read the answers';
+    paint();
+  }
+  const done = j => j.best && (j.best.status === 'passed' || j.tries >= 2 || j.final);
+  function paint() {
+    const n = state.jobs.length, ok = state.jobs.filter(j => j.best && j.best.status === 'passed').length;
+    const part = state.jobs.filter(j => done(j) && j.best.status === 'partial').length;
+    const bad = state.jobs.filter(j => j.final && (!j.best || j.best.status === 'failed' || j.best.status === 'missing')).length;
+    $('tally').hidden = !n;
+    $('t-ok').textContent = ok; $('t-part').textContent = part; $('t-bad').textContent = bad; $('t-left').textContent = n - ok - part - bad;
+    $('fill').style.width = n ? Math.round((ok + part + bad) / n * 100) + '%' : '0';
+  }
+  function result() {
+    const by = new Map();
+    state.jobs.forEach(j => {
+      if (!j.best || !j.best.entry || (j.best.status !== 'passed' && j.best.status !== 'partial')) return;
+      if (!by.has(j.item.batch)) by.set(j.item.batch, []);
+      by.get(j.item.batch).push({ key: j.a.key, criteria: j.best.entry.criteria });
+    });
+    const out = { format: H.BUNDLE_REPLY, bundle: state.bundle.id, reader: { tier: $('tier').value, at: new Date().toISOString() }, batches: [...by.entries()].map(([batch, answers]) => ({ batch, answers })) };
+    $('result').value = out.batches.length ? JSON.stringify(out) : '';
+    $('copy').disabled = !out.batches.length;
+  }
+  const rank = s => ({ passed: 3, partial: 2, failed: 1, missing: 0 }[s] || 0);
+  const AGAIN = '\n\nNOTE: An earlier reading of this answer did not pass an automatic check. Every evidence quote must be copied exactly, character for character, from the answer between the markers, with no words changed, corrected or added. Give D or P only with a quote. Leave uncertainty empty unless the category is U.';
+
+  // Reads one answer: Claude sees the instructions, the contract and this answer only.
+  async function readOne(j) {
+    const one = { id: j.item.batch, answers: [j.a] };
+    const again = j.tries > 0;
+    j.tries++;
+    const ctl = new AbortController(); state.ctl.push(ctl);
+    let text;
+    try {
+      // A second reading must be a new one, so it is never replayed from the cache.
+      const options = { modelTier: $('tier').value, signal: ctl.signal };
+      if (again) options.cache = false;
+      ({ text } = await sample(H.promptFor(j.item.contract, one) + (again ? AGAIN : ''), options));
+    } finally { state.ctl = state.ctl.filter(c => c !== ctl); }
+    let got;
+    try { got = H.readReply(j.item.contract, one, text).results[0]; }
+    catch (e) { got = { status: 'failed', why: e.message }; }
+    if (!j.best || rank(got.status) > rank(j.best.status)) j.best = got;
+  }
+  const STOPPERS = {
+    not_granted: 'Claude was not allowed to read for this page, so nothing was read. Reload the page and choose Allow when it asks.',
+    sampling_disabled: 'Claude is not available to this page on this account.',
+    capability_disabled: 'Claude is not available to this page in this view. Open it on claude.ai in a browser.',
+    not_declared: 'This page is no longer set up to read with Claude.',
+    session_expired: 'You have been signed out of Claude. Sign in again, then press Continue reading.',
+    rate_limited: 'Claude has paused this page: either it was asked too quickly or your usage limit for now is reached. What is read so far is kept. Wait a few minutes, then press Continue reading.'
+  };
+  async function worker() {
+    for (;;) {
+      if (state.stopped) return;
+      const j = state.jobs.find(x => !x.busy && !x.final && !done(x));
+      if (!j) return;
+      j.busy = true;
+      try { await readOne(j); }
+      catch (e) {
+        const code = (e && e.code) || 'upstream_error';
+        if (code === 'cancelled') { j.tries = Math.max(0, j.tries - 1); }
+        else if (STOPPERS[code]) { j.tries = Math.max(0, j.tries - 1); halt(STOPPERS[code]); }
+        else if (code === 'refused' || code === 'prompt_too_large' || code === 'empty_completion') { j.final = true; j.error = code; }
+        else if (j.tries >= 2) { j.final = true; j.error = code; }
+      }
+      j.busy = false;
+      if (done(j)) j.final = true;
+      paint(); result();
+      $('progress').textContent = state.jobs.filter(x => x.final).length + ' of ' + state.jobs.length + ' answers done.';
+    }
+  }
+  function halt(message) {
+    state.stopped = true;
+    state.ctl.forEach(c => c.abort());
+    if (message) { $('trouble').hidden = false; $('trouble').textContent = message; }
+  }
+  async function run() {
+    if (state.running || !state.jobs.length) return;
+    state.running = true; state.stopped = false;
+    $('trouble').hidden = true; $('go').disabled = true; $('stop').hidden = false; $('bundle').readOnly = true; $('tier').disabled = true;
+    $('progress').textContent = 'Reading. The first answer can take up to a minute.';
+    await Promise.all(Array.from({ length: AT_ONCE }, worker));
+    state.running = false;
+    $('stop').hidden = true; $('bundle').readOnly = false; $('tier').disabled = false;
+    const left = state.jobs.filter(j => !j.final).length;
+    const bad = state.jobs.filter(j => j.final && (!j.best || rank(j.best.status) < 2)).length;
+    $('go').disabled = !left; $('go').textContent = left ? 'Continue reading' : 'Read the answers';
+    $('progress').textContent = left ? left + ' still to read. What is read so far is in the result below and can be taken back now.'
+      : 'Done. ' + (bad ? bad + (bad === 1 ? ' answer was' : ' answers were') + ' not read and will still be waiting in Class Pulse. ' : '') + 'Copy the result and paste it into Class Pulse.';
+    paint(); result();
+  }
+
+  $('bundle').addEventListener('input', () => { if (!state.running) parse(); });
+  $('go').addEventListener('click', run);
+  $('stop').addEventListener('click', () => halt('Stopped. What is read so far is kept. Press Continue reading to go on.'));
+  $('copy').addEventListener('click', async () => {
+    const t = $('result');
+    try { await navigator.clipboard.writeText(t.value); $('copied').textContent = 'Copied. Paste it into Class Pulse.'; }
+    catch (_) { t.focus(); t.select(); $('copied').textContent = 'Copying was blocked here. The result is selected: copy it yourself.'; }
+  });
+  $('clear').addEventListener('click', () => {
+    halt(''); $('bundle').value = ''; $('result').value = ''; $('copy').disabled = true; $('copied').textContent = ''; $('trouble').hidden = true;
+    $('progress').textContent = 'Cleared.'; parse();
+  });
+
+  const start = async () => {
+    try { sample = window.claude && window.claude.use ? await window.claude.use('sample') : null; } catch (_) { sample = null; }
+    $('absent').hidden = !!sample;
+    try {
+      const lim = sample && await sample.limits();
+      if (lim && lim.modelTiers && !lim.modelTiers.includes('complex')) { $('tier').value = 'default'; $('tier').querySelector('[value="complex"]').disabled = true; }
+    } catch (_) { /* assume every tier */ }
+    parse();
+  };
+  start();
+})();
+</script>

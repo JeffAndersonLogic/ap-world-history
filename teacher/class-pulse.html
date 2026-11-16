@@ -25,8 +25,22 @@
     <span class="gold-pill" id="mode-pill">Demo: invented students</span>
   </div>
 </header>
+<div class="cmdbar" role="region" aria-label="What you are looking at">
+  <div class="wrap toolbar">
+    <div><span class="ctl-label">Students</span><span class="seg" id="source"><button type="button" aria-pressed="true" data-v="demo">Demo</button><button type="button" aria-pressed="false" data-v="live">My class</button></span></div>
+    <div><label class="ctl-label" for="section">Class</label><select class="sel" id="section"></select></div>
+    <div><label class="ctl-label" for="topic">Topic</label><select class="sel" id="topic"></select></div>
+    <div><label class="ctl-label" for="reader">Reader</label><select class="sel" id="reader"></select></div>
+    <div><span class="ctl-label">Names</span><span class="seg" id="names"><button type="button" aria-pressed="true" data-v="names">Show</button><button type="button" aria-pressed="false" data-v="anon">Projector safe</button></span></div>
+    <div class="cmd-right">
+      <button class="btn" type="button" id="live-refresh" hidden>Pull the latest answers</button>
+      <label class="auto-pull" id="auto-pull-wrap" hidden><input type="checkbox" id="auto-pull"> <span id="auto-pull-label">Pull every 3 minutes</span></label>
+      <button class="btn dark" type="button" id="proj-open">Open the projector screen</button>
+    </div>
+  </div>
+</div>
 <div class="wrap">
-  <section class="hero" aria-label="Class at a glance">
+  <section class="hero slim" aria-label="Class at a glance">
     <div class="copy">
       <span class="eyebrow">BeHistorical · AP World History</span>
       <h1>Class Pulse</h1>
@@ -47,37 +61,34 @@
     </div>
     </div>
   </section>
-  <nav class="tabs" role="tablist" aria-label="Screens">
-    <button role="tab" data-tab="live" id="tab-live">During class</button>
-    <button role="tab" data-tab="pulse" id="tab-pulse">After class</button>
-    <button role="tab" data-tab="course" id="tab-course">Across the course</button>
-    <button role="tab" data-tab="student" id="tab-student">One student</button>
-    <button role="tab" data-tab="class" id="tab-class">Class view</button>
-  </nav>
-</div>
-
-<main><div class="wrap">
-  <div class="panel" style="margin-bottom:16px">
-    <div class="toolbar">
-      <div><span class="ctl-label">Students</span><span class="seg" id="source"><button type="button" aria-pressed="true" data-v="demo">Demo</button><button type="button" aria-pressed="false" data-v="live">My class</button></span></div>
-      <div><label class="ctl-label" for="topic">Topic</label><select class="sel" id="topic"></select></div>
-      <div><label class="ctl-label" for="section">Class</label><select class="sel" id="section"></select></div>
-      <div><label class="ctl-label" for="reader">Reader</label><select class="sel" id="reader"></select></div>
-      <div><span class="ctl-label">Names</span><span class="seg" id="names"><button type="button" aria-pressed="true" data-v="names">Show</button><button type="button" aria-pressed="false" data-v="anon">Projector safe</button></span></div>
-    </div>
-  </div>
 
   <div class="panel live-panel" id="live-panel" hidden>
     <div class="row">
       <button class="btn primary" type="button" id="live-signin">Sign in with your school Google account</button>
-      <button class="btn" type="button" id="live-refresh" hidden>Pull the latest answers</button>
       <span class="small" id="live-status" role="status"></span>
     </div>
     <p class="small">Reads only answers your students have submitted, for students on your class list, straight from the district database. Nothing is sent anywhere else.</p>
   </div>
 
+  <section class="panel ledger-panel" aria-labelledby="ledger-title">
+    <h3 id="ledger-title">Where everyone is</h3>
+    <p class="small" id="ledger-note">Every student on the list is in exactly one box for each checkpoint, so each row adds up to the class. Press a box to see who is in it and what to do.</p>
+    <div id="ledger"></div>
+  </section>
+
+  <nav class="tabs" role="tablist" aria-label="Screens">
+    <button role="tab" data-tab="live" id="tab-live"><span class="tab-n">1</span>Class grid</button>
+    <button role="tab" data-tab="read" id="tab-read"><span class="tab-n">2</span>Read the work <span class="tab-badge" id="read-badge" hidden></span></button>
+    <button role="tab" data-tab="pulse" id="tab-pulse"><span class="tab-n">3</span>Plan next class</button>
+    <button role="tab" data-tab="class" id="tab-class"><span class="tab-n">4</span>Projector</button>
+    <button role="tab" data-tab="course" id="tab-course">Across the course <span class="tab-demo">demo</span></button>
+    <button role="tab" data-tab="student" id="tab-student">One student <span class="tab-demo">demo</span></button>
+  </nav>
+</div>
+
+<main><div class="wrap">
   <section class="view" id="view-live" role="tabpanel" aria-labelledby="tab-live">
-    <div class="viewhead"><h2>During class</h2><p id="live-sub"></p></div>
+    <div class="viewhead"><h2>Class grid</h2><p id="live-sub"></p></div>
     <div class="panel">
       <div class="toolbar" id="clock-bar">
         <div class="clock">
@@ -107,19 +118,28 @@
     </div>
   </section>
 
-  <section class="view" id="view-pulse" role="tabpanel" aria-labelledby="tab-pulse" hidden>
-    <div class="viewhead"><h2>After class</h2><p>What the whole class showed, and what to do next</p></div>
-    <div class="panel">
-      <div class="pulse-head">
-        <div style="display:grid;gap:4px">
-          <h2 id="pulse-title"></h2>
-          <p class="small" id="pulse-n"></p>
-        </div>
-        <div class="calib" id="calib"></div>
-      </div>
+  <section class="view" id="view-read" role="tabpanel" aria-labelledby="tab-read" hidden>
+    <div class="viewhead"><h2>Read the work</h2><p>Every submitted answer that still needs a reading, in one copy and one paste</p></div>
+    <div class="panel" id="bundle-panel">
+      <h3>Read everything waiting</h3>
+      <p class="small" id="bundle-count" role="status"></p>
+      <div id="bundle-flags"></div>
+      <ol class="bigsteps">
+        <li><b>Copy.</b> <button class="btn primary" type="button" id="bundle-copy">Copy everything waiting</button> <span class="small" id="bundle-copied" role="status"></span></li>
+        <li><b>Paste it into the Class Pulse Reader</b>, a private page in your Claude for Teachers account. It reads the answers one at a time and checks its own work. <a class="btn" id="bundle-reader" target="_blank" rel="noopener noreferrer" href="#">Open the Reader</a> <span class="small" id="bundle-reader-note"></span></li>
+        <li><b>Paste the Reader's result here.</b>
+          <textarea id="bundle-paste" rows="4" aria-label="Paste the Reader's result" placeholder="Paste the whole result here"></textarea>
+          <div class="row"><button class="btn dark" type="button" id="bundle-read">Read the result</button> <span class="small" id="bundle-said" role="status"></span></div>
+        </li>
+      </ol>
+      <p class="small">What is copied is the question, the criteria, the rubric and the numbered answers: no names, no class, no account. Anything a student wrote that could identify them is flagged above, and you decide what to remove before Copy unlocks. Every reading that comes back is checked again here before it shows. <span id="bundle-gate"></span></p>
+      <details class="bundle-raw"><summary>If Copy does not work on this device</summary>
+        <p class="small">Select all of the text below and copy it yourself.</p>
+        <textarea readonly class="batch-text" id="bundle-text" aria-label="The text to paste into the Reader"></textarea>
+      </details>
     </div>
-    <div class="panel" id="paste-panel">
-      <h3>Read it by pasting</h3>
+    <details class="panel fallback" id="paste-panel">
+      <summary>Or read it batch by batch in a chat</summary>
       <div class="row"><label class="ctl-label" for="paste-service">Pasting into</label><select class="sel" id="paste-service"></select></div>
       <p class="small">Paste each batch into a new chat in that service and paste the reply back here. Both services get the same text, and every reading records which one proposed it. The chat gets the question, the criteria, the rubric and the answers, numbered: no names, no class. Each batch is checked first for anything a student wrote that could identify them, and you decide what to remove. Every rating it sends back is checked before it shows, and one that quotes words the student did not write shows as Can't tell. <span id="paste-gate"></span></p>
       <ol class="steps small" id="paste-steps">
@@ -129,6 +149,19 @@
         <li>Open <b>Paste the reply</b> on the same batch, paste, and press <b>Read this reply</b>.</li>
       </ol>
       <div class="batches" id="paste-batches"></div>
+    </details>
+  </section>
+
+  <section class="view" id="view-pulse" role="tabpanel" aria-labelledby="tab-pulse" hidden>
+    <div class="viewhead"><h2>Plan next class</h2><p>What the whole class showed, and what to do next</p></div>
+    <div class="panel">
+      <div class="pulse-head">
+        <div style="display:grid;gap:4px">
+          <h2 id="pulse-title"></h2>
+          <p class="small" id="pulse-n"></p>
+        </div>
+        <div class="calib" id="calib"></div>
+      </div>
     </div>
     <div class="cols">
       <div style="display:grid;gap:16px;min-width:0">
@@ -168,12 +201,36 @@
   </section>
 
   <section class="view" id="view-class" role="tabpanel" aria-labelledby="tab-class" hidden>
-    <div class="viewhead"><h2>Class view</h2><p>For the projector: the class as a whole, never one student</p></div>
+    <div class="viewhead"><h2>Projector</h2><p>The class as a whole, never one student. Below is everything the screen can show; the projector shows one part at a time.</p></div>
+    <div class="panel" id="proj-panel">
+      <h3>The screen in front of the class</h3>
+      <div class="row">
+        <button class="btn primary" type="button" id="proj-open-2">Open the projector screen</button>
+        <span class="small" id="proj-status" role="status">Not open yet. It opens in its own window: drag it to the projector and press F for full screen.</span>
+      </div>
+      <div class="row proj-steps" id="proj-scenes" role="group" aria-label="What the projector shows"></div>
+      <div class="row">
+        <button class="btn" type="button" id="proj-prev">Back</button>
+        <button class="btn dark" type="button" id="proj-next">Next</button>
+        <span class="small">The arrow keys work too, here and on the projector window. The model answer is sent to the screen only when you reach it.</span>
+      </div>
+      <details class="proj-ipad" id="proj-ipad">
+        <summary>Use the iPad as the remote</summary>
+        <div class="row">
+          <button class="btn" type="button" id="proj-ipad-start">Connect the iPad</button>
+          <button class="btn primary" type="button" id="proj-ipad-signin" hidden>Sign in</button>
+          <span class="small" id="proj-ipad-status" role="status">Starts a remote session, the same kind the Teaching OS decks use.</span>
+        </div>
+        <div class="proj-qr" id="proj-qr" hidden></div>
+        <p class="small" id="proj-ipad-link" hidden></p>
+        <p class="small">The iPad sends only which part of the screen to show. No student work, name or number passes through it. Scan the code with the iPad camera; never show the code to the class.</p>
+      </details>
+    </div>
     <div class="panel">
       <div class="toolbar">
         <div><span class="ctl-label">Checkpoint</span><span class="seg" id="cv-cp"><button type="button" aria-pressed="true" data-v="cp1">Checkpoint 1</button><button type="button" aria-pressed="false" data-v="cp2">Checkpoint 2</button></span></div>
         <div><span class="ctl-label">Wrong ideas</span><span class="seg" id="cv-mis"><button type="button" aria-pressed="true" data-v="show">Show</button><button type="button" aria-pressed="false" data-v="hide">Hide</button></span></div>
-        <div><span class="ctl-label">Model answer</span><span class="seg" id="cv-model-show"><button type="button" aria-pressed="false" data-v="show">Show</button><button type="button" aria-pressed="true" data-v="hide">Hide</button></span></div>
+        <div><span class="ctl-label">Model answer</span><span class="seg" id="cv-model-show"><button type="button" aria-pressed="true" data-v="show">Show</button><button type="button" aria-pressed="false" data-v="hide">Hide</button></span></div>
       </div>
       <details class="cv-model-entry">
         <summary>This checkpoint's model answer <span class="small" id="cv-model-summary"></span></summary>
@@ -244,6 +301,8 @@
 <script src="data/class-pulse-rubrics.js"></script>
 <script src="data/class-pulse-readers.js"></script>
 <script src="data/class-pulse-demo.js"></script>
+<script src="vendor/qrcode.min.js"></script>
+<script src="remote-firebase.js"></script>
 <script src="class-pulse-app.js"></script>
 </body>
 </html>

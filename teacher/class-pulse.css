@@ -319,3 +319,55 @@ nav.tabs button:disabled{opacity:.45;cursor:default}
 .cv .stack i{cursor:default;font-size:13px}.cv .stack i:hover{filter:none;outline:none}
 .watch-plain{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13px}
 
+
+/* ── 2026-11-16: one clear dashboard (Jeff) ──────────────────────────────────
+   A command bar that stays put, a hero cut down to a strip, a count of where every
+   student is, and tabs in the order the work is done. */
+.cmdbar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);z-index:34;background:rgba(251,247,239,.97);border-bottom:1px solid var(--rule);box-shadow:0 6px 18px rgba(47,39,26,.07)}
+.cmdbar .toolbar{padding-top:10px;padding-bottom:10px}
+.cmd-right{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.auto-pull{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--muted)}
+.hero.slim{padding:16px 22px;border-radius:18px;margin-top:14px;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:18px;align-items:center}
+.hero.slim .hero-logo,.hero.slim #hero-lede,.hero.slim .copy .eyebrow{display:none}
+.hero.slim h1{font-size:clamp(28px,3vw,40px);margin:0;line-height:1}
+.hero.slim .hero-details{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px;align-items:center}
+.hero.slim .stat{min-height:0;padding:10px 12px;border-radius:12px;gap:4px}
+.hero.slim .stat b{font-size:28px}
+.hero.slim .stat small{font-size:11px}
+.hero.slim .today{border-top:0;padding-top:0;gap:2px}
+.hero.slim .today .topic{font-size:18px}
+.hero.slim .today p{font-size:12px;margin:0}
+@media (max-width:900px){.hero.slim,.hero.slim .hero-details{grid-template-columns:minmax(0,1fr)}.cmd-right{margin-left:0}.cmdbar{position:static}}
+.live-panel,.ledger-panel{margin-top:14px}
+.ledger-panel > h3:first-child{font-size:22px;padding:14px 18px 10px}
+.ledger-row{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:10px;align-items:center}
+.ledger-row + .ledger-row{margin-top:8px}
+.ledger-cp{font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.ledger-boxes{display:flex;flex-wrap:wrap;gap:6px}
+.ledger-box{display:inline-flex;align-items:baseline;gap:7px;border:1px solid var(--line);border-left-width:5px;background:#FFFDF8;border-radius:10px;padding:6px 11px;font-size:12px;font-weight:600;text-align:left}
+.ledger-box b{font-size:18px;font-variant-numeric:tabular-nums}
+.ledger-box:disabled{opacity:.5;cursor:default}
+.ledger-box:not(:disabled):hover{border-color:var(--ink)}
+.lb-read{border-left-color:var(--lv-d)}.lb-recheck{border-left-color:var(--u2)}.lb-wait{border-left-color:var(--lv-p)}
+.lb-changed,.lb-draft{border-left-color:var(--accent)}.lb-none{border-left-color:var(--rule)}
+.ledger-sum{font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
+@media (max-width:640px){.ledger-row{grid-template-columns:minmax(0,1fr)}}
+.tab-n{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:rgba(0,0,0,.08);font-size:10px;margin-right:6px}
+.tab-badge{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--lv-p);color:#1A1C1D;font-size:10px;font-weight:700;margin-left:6px}
+.tab-demo{font-size:9px;letter-spacing:.08em;text-transform:uppercase;opacity:.65;margin-left:4px}
+.b-wait{background:#FBF1D9;color:var(--warn-ink);outline:1px solid var(--lv-p);outline-offset:-1px}
+.b-changed,.b-draft{background:var(--accent-soft);color:var(--accent);cursor:default}
+.bigsteps{margin:0;padding-left:22px;display:grid;gap:14px;font-size:13px}
+.bigsteps li::marker{font-family:var(--title);font-size:20px}
+.bigsteps textarea{display:block;width:100%;margin:8px 0;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:8px 10px;font-size:12px;resize:vertical}
+.bigsteps .row,.panel .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+a.btn{text-decoration:none;display:inline-block;color:var(--ink)}
+a.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
+details.fallback > summary,.bundle-raw > summary,.proj-ipad > summary{cursor:pointer;font-weight:700;font-size:13px}
+details.fallback:not([open]){padding-top:14px;padding-bottom:14px}
+.bundle-raw textarea{width:100%;min-height:70px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:8px 10px}
+#view-read{display:grid;gap:16px}
+#view-read[hidden]{display:none!important}
+.proj-steps .btn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.proj-qr{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;width:max-content}
+#proj-panel{margin-bottom:16px}

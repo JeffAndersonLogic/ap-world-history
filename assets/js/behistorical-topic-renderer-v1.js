@@ -3127,6 +3127,28 @@ function submitCheckpoint(id) {
   updateSubmitStatus(id);
 }
 
+// Gathering also submits, added 2026-11-16 (Jeff). Students who turned their work
+// in to Canvas were missing from Class Pulse, because pasting into Canvas and
+// pressing Submit were two separate acts and some did only the first. Gather All
+// My Work now submits each checkpoint that has writing, exactly as the button
+// under it would, so the version pasted into Canvas and the version the teacher
+// sees are the same one. A checkpoint already submitted with the same words keeps
+// its receipt and its time; an empty one is not submitted. It follows submitOn(),
+// so nothing changes in a named classroom or with the switch off, and the student
+// is told on the Gather panel.
+function submitOnGather() {
+  if (!submitOn()) return [];
+  const sent = [];
+  SUBMIT_IDS.forEach(id => {
+    const answer = submittedAnswer(id);
+    if (!answer.text) return;
+    const receipt = receiptFor(id);
+    if (!receipt || receipt.print !== window.BHSync.valueHash(answer.text, answer.confidence)) submitCheckpoint(id);
+    sent.push(id);
+  });
+  return sent;
+}
+
 function updateSubmitStatus(id) {
   const status = byId(id + '-submit-status');
   const btn = byId(id + '-submit-btn');
@@ -3722,6 +3744,13 @@ function gatherAllWork() {
       + (short > 0
         ? ` ${short} ${short === 1 ? 'is' : 'are'} still empty. Check those module cards before you submit, then copy and paste this into Canvas.`
         : ' Copy this, then paste it into Canvas.');
+    const sent = submitOnGather();
+    if (sent.length) {
+      const names = sent.map(id => (id === 'checkpoint1-response' || /one/.test(id)) ? 'Checkpoint 1' : 'Checkpoint 2');
+      result.textContent += ` ${names.join(' and ')} ${sent.length === 1 ? 'was' : 'were'} also submitted to your teacher.`;
+    }
+  } else {
+    submitOnGather();
   }
   return doc;
 }
@@ -3833,7 +3862,7 @@ function renderWorkExportPanel() {
   grid.insertAdjacentHTML('afterend', `
     <article class="card work-export">
       <h3>Save Your Work</h3>
-      <p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p>
+      <p>Your typing saves automatically, but only in this browser on this device. Before you leave class, gather everything here and paste it into the Canvas assignment. Canvas is where your graded work goes.</p>${submitOn() ? '\n      <p class="gather-submit-note">Gathering also submits your Checkpoint 1 and Checkpoint 2 answers to your teacher, the same as the Submit button under each one.</p>' : ''}
       <div class="tool-row">
         <button class="btn" type="button" onclick="gatherAllWork()">Gather All My Work</button>
         <button class="btn secondary" type="button" onclick="copyAllWork()">Copy to Clipboard</button>

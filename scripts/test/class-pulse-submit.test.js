@@ -241,6 +241,50 @@ async function suite(browser) {
     await s.context.close();
   }
 
+  // Gathering also submits (2026-11-16, Jeff): students who pasted into Canvas and
+  // never pressed Submit were missing from Class Pulse.
+  section('Gathering also submits');
+  {
+    const CP2_RECEIPT = RECEIPT_KEY.replace(CP1, 'checkpoint-two-response');
+    const s = await open(browser);
+    await saved(s.p);
+    check('the Gather panel says it submits the checkpoints', /also submits your Checkpoint 1 and Checkpoint 2 answers to your teacher/.test(await s.p.evaluate(() => document.querySelector('.work-export').textContent)));
+    await s.p.evaluate(() => openModule('checkpoint1'));
+    await s.p.fill('#' + CP1, ANSWER);
+    await rate(s.p, 3);
+    await s.p.waitForTimeout(800);
+    await s.p.evaluate(() => closeModule());
+    check('writing an answer submits nothing by itself', !(await s.p.evaluate(k => localStorage.getItem(k), RECEIPT_KEY)));
+    await s.p.evaluate(() => gatherAllWork());
+    const receipt = await s.p.evaluate(k => localStorage.getItem(k), RECEIPT_KEY);
+    const expected = await s.p.evaluate(t => window.BHSync.valueHash(t, '3'), ANSWER);
+    check('Gather All My Work submits a checkpoint that has writing', !!receipt && receipt.endsWith('fingerprint ' + expected), receipt);
+    check('and leaves an empty checkpoint unsubmitted', !(await s.p.evaluate(k => localStorage.getItem(k), CP2_RECEIPT)));
+    check('the student is told it was submitted', /Checkpoint 1 was also submitted to your teacher/.test(await s.p.evaluate(() => document.getElementById('all-work-result').textContent)), await s.p.evaluate(() => document.getElementById('all-work-result').textContent));
+    check('the receipt still stays out of the Canvas paste', await s.p.evaluate(() => !/fingerprint/.test(document.querySelector('.work-output').textContent)));
+    const arrived = await waitFor(s.p, id => !!window.__fake.docs[id + '-submitted'] && !!window.__fake.docs[id], CP1, 6000);
+    check('and the teacher sees the gathered answer as submitted', arrived && (await teacherSees(s.p)) === 'submitted', await teacherSees(s.p));
+    await s.p.evaluate(() => gatherAllWork());
+    check('gathering again keeps the same receipt and its time', (await s.p.evaluate(k => localStorage.getItem(k), RECEIPT_KEY)) === receipt);
+    await s.p.evaluate(() => openModule('checkpoint1'));
+    await s.p.fill('#' + CP1, ANSWER + ' The Khmer built Angkor Wat.');
+    await s.p.waitForTimeout(800);
+    await s.p.evaluate(() => { closeModule(); gatherAllWork(); });
+    const again = await s.p.evaluate(k => localStorage.getItem(k), RECEIPT_KEY);
+    const expected2 = await s.p.evaluate(t => window.BHSync.valueHash(t, '3'), ANSWER + ' The Khmer built Angkor Wat.');
+    check('an answer edited after submitting is submitted again by Gather', !!again && again.endsWith('fingerprint ' + expected2), again);
+    await s.context.close();
+  }
+  for (const [label, opts] of [['with the switch off', { submit: false }], ['in Kelly\'s classroom', { query: '?classroom=kelly' }]]) {
+    const s = await open(browser, opts);
+    await s.p.evaluate(() => openModule('checkpoint1'));
+    await s.p.fill('#' + CP1, ANSWER);
+    await s.p.waitForTimeout(800);
+    await s.p.evaluate(() => { closeModule(); gatherAllWork(); });
+    check('Gather submits nothing ' + label, !(await s.p.evaluate(k => localStorage.getItem(k), RECEIPT_KEY)) && !/submitted to your teacher|also submits/.test(await s.p.evaluate(() => document.querySelector('.work-export').textContent)));
+    await s.context.close();
+  }
+
   section('A wiped device');
   {
     const s = await open(browser, { docs: receiptDocs || {} });
@@ -270,6 +314,9 @@ async function suite(browser) {
     { name: 'copying the coach prompt leaves no note', patch: b => b.replace('      noteCoachCopied(responseId);\n', ''), expect: /puts the note in the receipt/ },
     { name: 'every receipt says coached', patch: b => b.replace('const coached = BHDraftStore.get(coachKey(id)) ?', 'const coached = true ?'), expect: /without the coach carries no coaching note/ },
     { name: 'the coaching note is kept under the draft prefix', patch: b => b.replace('return `behistorical-coached-${topic}-${id}`;', 'return `behistorical-draft-${topic}-${id}-coached`;'), expect: /coaching note stays out of Gather/ },
+    { name: 'Gather submits nothing', patch: b => b.replace('    const sent = submitOnGather();', '    const sent = [];'), expect: /Gather All My Work submits a checkpoint/ },
+    { name: 'Gather rewrites a receipt that is already current', patch: b => b.replace('if (!receipt || receipt.print !== window.BHSync.valueHash(answer.text, answer.confidence)) submitCheckpoint(id);', 'submitCheckpoint(id); BHDraftStore.set(submitKey(id), String(BHDraftStore.get(submitKey(id))).replace(/^Submitted/, "Submitted " + performance.now()));'), expect: /keeps the same receipt/ },
+    { name: 'Gather submits in a named classroom', patch: b => b.replace('function submitOnGather() {\n  if (!submitOn()) return [];', 'function submitOnGather() {'), expect: /Gather submits nothing/ },
     { name: 'a restored receipt is dropped', patch: b => b.replace('  if (id.slice(-SUBMIT_SUFFIX.length) === SUBMIT_SUFFIX) {', '  if (false) {'), expect: /restored device shows it submitted/ }
   ];
   const source = fs.readFileSync(path.join(ROOT, 'assets/js/behistorical-topic-renderer-v1.js'), 'utf8')

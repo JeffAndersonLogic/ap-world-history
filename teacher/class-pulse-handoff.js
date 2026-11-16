@@ -189,11 +189,64 @@
       if (!got.length) return { ...base, status: 'missing', why: 'The reply left this answer out.' };
       if (got.length > 1) return { ...base, status: 'failed', why: 'The reply rated this answer twice.' };
       const entry = { criteria: got[0].criteria };
-      try { return { ...base, status: 'passed', entry, output: E.validateOutput(entry, contract, a.text) }; }
+      // Criterion by criterion (2026-11-16): a criterion that fails the checks becomes
+      // Can't tell and the ones that passed stand, so one bad quote no longer costs
+      // the whole answer. Such an answer is 'partial', and the page offers it again.
+      try {
+        const output = E.readOutput(entry, contract, a.text);
+        if (!output.failed) return { ...base, status: 'passed', entry, output: { criteria: output.criteria } };
+        return { ...base, status: 'partial', entry, output: { criteria: output.criteria }, why: output.failed + ' of ' + output.criteria.length + ' criteria did not pass the checks and show as Can\'t tell.' };
+      }
       catch (err) { return { ...base, status: 'failed', entry, why: String(err.message || err) }; }
     });
     const count = s => results.filter(r => r.status === s).length;
-    return { batchId: batch.id, results, passed: count('passed'), failed: count('failed'), missing: count('missing') };
+    return { batchId: batch.id, results, passed: count('passed'), partial: count('partial'), failed: count('failed'), missing: count('missing') };
+  }
+
+  // ── One paste for everything waiting ───────────────────────────────────────
+  // Added 2026-11-16 (Jeff). Batch by batch meant a copy, a new chat, a paste, a wait,
+  // a copy and a paste for every fifteen answers. The bundle is every waiting answer
+  // of a topic in one copy. It is pasted into the Class Pulse Reader, a private page
+  // inside the teacher's own Claude for Teachers account (the same service, approved
+  // the same way), which reads the answers one at a time with promptFor below, checks
+  // each reply with readReply, asks again when one fails, and hands back one result.
+  // The bundle carries exactly what a batch carries: instructions, contract, numbered
+  // answer text with the teacher's removals applied. No name, class, account or time.
+  const BUNDLE = 'class-pulse-bundle/1', BUNDLE_REPLY = 'class-pulse-bundle-reply/1';
+  const BUNDLE_MARK = 'CLASS PULSE BUNDLE';
+  // Where the Reader lives: a private artifact in Jeff's Claude for Teachers account,
+  // published from teacher/reader/class-pulse-reader.artifact.html (2026-11-16). Only
+  // he can open it. Left empty, the page says the Reader is not published.
+  const READER_URL = 'https://claude.ai/artifact/CZKikLV5Ei9P7CaPR5wzK6';
+  // items: [{ contract, batch }], each batch already redacted and holding only the
+  // answers still waiting.
+  async function bundleFor(items) {
+    const list = items.filter(x => x.batch.answers.length).map(x => ({
+      batch: x.batch.id, contract: x.contract, answers: x.batch.answers.map(a => ({ key: a.key, text: a.text }))
+    }));
+    const id = 'cpb-' + (await E.digest(list.map(x => [x.batch, x.answers.map(a => a.key)]))).slice(0, 10);
+    return { format: BUNDLE, id, count: list.reduce((n, x) => n + x.answers.length, 0), items: list };
+  }
+  const bundleText = bundle => BUNDLE_MARK + '\nPaste all of this into the Class Pulse Reader.\n' + JSON.stringify(bundle);
+  function jsonIn(raw, wrong) {
+    const t = String(raw || '').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+    const a = t.indexOf('{'), b = t.lastIndexOf('}');
+    try { return JSON.parse(a >= 0 && b > a ? t.slice(a, b + 1) : t); }
+    catch (_) { throw new Error(wrong); }
+  }
+  function parseBundle(raw) {
+    const b = jsonIn(raw, 'That is not a Class Pulse bundle. In Class Pulse, press "Copy everything waiting" and paste that here.');
+    if (!b || b.format !== BUNDLE || !Array.isArray(b.items) || !b.items.every(x => x && typeof x.batch === 'string' && x.contract && Array.isArray(x.contract.criteria) && Array.isArray(x.answers) && x.answers.every(a => a && typeof a.key === 'string' && typeof a.text === 'string'))) {
+      throw new Error('That is not a Class Pulse bundle. In Class Pulse, press "Copy everything waiting" and paste that here.');
+    }
+    return b;
+  }
+  // What the Reader hands back: one entry per batch, in the shape a chat's reply has.
+  function parseBundleReply(raw) {
+    const r = jsonIn(raw, 'That does not look like the Reader\'s result. In the Reader, press "Copy the result" and paste the whole thing.');
+    if (r && r.format === BUNDLE) throw new Error('That is the bundle you copied out, not the Reader\'s result. Paste it into the Reader first.');
+    if (!r || r.format !== BUNDLE_REPLY || !Array.isArray(r.batches)) throw new Error('That does not look like the Reader\'s result. In the Reader, press "Copy the result" and paste the whole thing.');
+    return r;
   }
 
   // A provider made of pasted replies, found by checkpoint and answer text, as the
@@ -212,5 +265,5 @@
     };
   }
 
-  return { APPROVAL, SERVICES, SERVICE, READER, BATCH, FORMAT, serviceLabel, gate, batches, flagsFor, redact, promptFor, parseReply, readReply, provider };
+  return { APPROVAL, SERVICES, SERVICE, READER, BATCH, FORMAT, BUNDLE, BUNDLE_REPLY, READER_URL, serviceLabel, gate, batches, flagsFor, redact, promptFor, parseReply, readReply, provider, bundleFor, bundleText, parseBundle, parseBundleReply };
 });
