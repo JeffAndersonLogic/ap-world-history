@@ -85,7 +85,7 @@ module.exports = {
           heading: 'Crops paid for factories',
           blocks: [
             { p: `His government took control of Egypt's farming: it told peasants what to plant, bought their crops cheap and sold them abroad dear. A new crop, long-staple cotton, first grown for sale in <span class="num">1820</span>, earned a great deal. With that money, from the late 1810s, the government built cotton mills and works for weapons, sugar and other goods, with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 workers, many making cloth and uniforms for the army, and Muhammad Ali kept cheap British cloth out of Egypt to protect them.` },
-            { p: `The workers were drafted, as Egyptian peasants had long been made to dig canals. From <span class="num">1822</span> peasants were drafted into the army too, and it reached about 130,000 soldiers by the early 1830s. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences. This is the College Board's example of a "state-sponsored vision of industrialization": a government that planned, paid for and owned the factories itself (<a href="#chapter-t5-6">Topic 5.6</a>).` }
+            { p: `The workers were drafted, as Egyptian peasants had long been made to dig canals. From <span class="num">1822</span> peasants were drafted into the army too, and it reached about 130,000 soldiers by the early 1830s. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences. This is one of the College Board's "state-sponsored visions of industrialization": a government that planned, paid for and owned the factories itself (<a href="#chapter-t5-6">Topic 5.6</a>).` }
           ]
         },
         {
