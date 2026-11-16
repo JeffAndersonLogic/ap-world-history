@@ -141,12 +141,13 @@
   }
 
   // ── Loading a topic and class ─────────────────────────────────────────────
-  async function load() {
+  async function load(opts) {
+    const quick = !!(opts && opts.quick);
     const token = ++S.loadToken;
     const contracts = { cp1: E.contractFor(MAP, S.topic, 'cp1', Rubrics), cp2: E.contractFor(MAP, S.topic, 'cp2', Rubrics) };
     let src, provider;
     if (S.source === 'live') {
-      try { src = await liveBuild(); }
+      try { src = await liveBuild(quick); }
       catch (e) { if (token === S.loadToken) liveSay(e.message); return; }
       provider = src.provider;
     } else {
@@ -183,7 +184,9 @@
     renderBundle();
     if (S.source === 'live' && S.live && S.live.roster) {
       const sub = CPS.map(cp => src.rows[cp].filter(r => r.completionState === 'verified-submission').length);
-      liveSay(`${S.live.roster.classLabel}, Topic ${S.topic}: ${sub[0]} submitted Checkpoint 1, ${sub[1]} submitted Checkpoint 2, pulled ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}.`);
+      const when = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+      liveSay(`${S.live.roster.classLabel}, Topic ${S.topic}: ${sub[0]} submitted Checkpoint 1, ${sub[1]} submitted Checkpoint 2, ` +
+        (src.quick ? `checked for new submissions ${when} (${src.rows.answersRead} new to read).` : `pulled ${when}.`));
     }
   }
 
@@ -202,12 +205,23 @@
     return S.live.roster.sections && S.live.roster.sections.length > 1 ? 'all my classes' : S.live.roster.classLabel;
   }
   // The same shape Demo.build returns. With no class list yet, an empty class.
-  async function liveBuild() {
+  // quick: the check auto-pull makes (2026-11-16). It reads every Submit receipt but
+  // re-reads an answer only when its receipt changed since the last pull, and reuses
+  // the saved readings, which change only when the teacher saves (and saving pulls in
+  // full). About half the reads of a full pull, less when few receipts changed. What it
+  // cannot see: an answer edited without a new Submit or Gather, or readings saved on
+  // another computer, until the next full pull. It needs a full pull of the same topic
+  // and students to build on, and makes a full one when there is none.
+  async function liveBuild(quick) {
     const L = S.live;
     if (!L || !L.roster) return { kind: 'live', students: [], rows: { cp1: [], cp2: [] }, provider: { id: 'none', version: '1', has: () => false, async interpret() { throw new Error('Not read yet'); } } };
     const roster = liveStudents();
-    const rows = await L.api.answers(S.topic, roster);
-    const ratings = await L.api.ratings(S.topic);
+    const cacheKey = S.topic + '|' + (S.liveSection || '') + '|' + roster.map(st => st.uid).join(',');
+    const base = quick && S.liveCache && S.liveCache.key === cacheKey ? S.liveCache : null;
+    const reuse = base ? new Map(CPS.flatMap(cp => base.rows[cp].map(r => [r.uid + '|' + cp, r]))) : null;
+    const rows = await L.api.answers(S.topic, roster, reuse ? { reuse } : undefined);
+    const ratings = base ? base.ratings : await L.api.ratings(S.topic);
+    S.liveCache = { key: cacheKey, rows, ratings };
     const students = roster.map((st, i) => ({
       i, name: st.label, uid: st.uid, section: st.section || '', absent: false, strength: .5,
       submittedAt: { cp1: rows.cp1[i].completionState === 'verified-submission' ? 0 : null, cp2: rows.cp2[i].completionState === 'verified-submission' ? 0 : null },
@@ -225,7 +239,7 @@
         readBy.set(cp + '|' + r.text, H ? H.serviceLabel(String(g.reader).replace(/-(pasted|reader)$/, '')) + (/-reader$/.test(g.reader) ? ', through the Reader' : ', pasted') : g.reader);
       }
     }));
-    return { kind: 'live', students, rows, readBy, provider: {
+    return { kind: 'live', quick: !!base, students, rows, readBy, provider: {
       id: 'saved-ratings', version: '1', has: (cp, text) => byText.has(cp + '|' + text),
       async interpret({ contract, response }) {
         const c = byText.get(contract.checkpoint + '|' + response.text);
@@ -1145,11 +1159,13 @@
   }
 
   // ── Pulling by itself ─────────────────────────────────────────────────────
-  // Added 2026-11-16 (Jeff). During class the page can pull the latest submissions
+  // Added 2026-11-16 (Jeff). During class the page can check for new submissions
   // every three minutes, for one class at a time. It reads only, under the same rules
   // as the Pull button. It is one class only and stops itself after ninety minutes
-  // because every pull spends the free plan's daily reads, which the student backup
-  // shares: a class of 25 is about 200 reads a pull.
+  // because every check spends the free plan's daily reads, which the student backup
+  // shares. Each check is the quick one (liveBuild above): about 4 reads a student
+  // plus 2 for each new submission, so about 105 for a class of 26, against up to
+  // about 470 for a full pull.
   const AUTO_EVERY = 180000, AUTO_FOR = 90 * 60000;
   let autoTimer = null, autoSince = 0;
   function autoAllowed() { return S.source === 'live' && !!(S.live && S.live.roster) && markableSection() !== null; }
@@ -1166,7 +1182,7 @@
       // Never under the teacher's hands: a pull redraws the batch cards.
       const typing = $$('#paste-batches textarea[data-paste], #bundle-paste').some(t => t.value.trim());
       if (document.hidden || typing || !$('#drawer').hidden) return;
-      load();
+      load({ quick: true });
     }, AUTO_EVERY);
   }
 

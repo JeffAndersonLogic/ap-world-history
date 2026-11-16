@@ -14,6 +14,10 @@
  *                       receipt, as rows the engine reads. Only an answer whose
  *                       receipt still matches it counts as submitted, and only
  *                       such an answer can be marked coached.
+ *   answers(topic, ids, { reuse })  the quick check auto-pull uses (2026-11-16):
+ *                       reads every receipt, but an answer only when its receipt
+ *                       differs from the row in `reuse` (uid|cp -> row from the
+ *                       last pull). About half the reads of a full pull.
  *   ratings(topic)      the ratings this teacher has saved for the topic
  *   saveRatings(list)   saves ratings, ten to a request
  *
@@ -105,19 +109,33 @@
       },
 
       // rows: { cp1: [...], cp2: [...] }, one per student per checkpoint, in roster order.
-      async answers(topic, students) {
+      async answers(topic, students, opts) {
         const key = topicKey(topic), rows = { cp1: [], cp2: [] };
+        const reuse = opts && opts.reuse;
         const jobs = [];
         students.forEach((st, i) => Object.keys(SLOTS).forEach(cp => jobs.push({ st, i, cp })));
+        let answersRead = 0;
         const got = await pool(jobs, async j => {
           const id = tenant + '/responses/' + j.st.uid + '__' + key + '__' + SLOTS[j.cp];
-          const [answer, receipt] = await Promise.all([get(id), get(id + RECEIPT)]);
-          return { answer, receipt };
+          if (!reuse) {
+            const [answer, receipt] = await Promise.all([get(id), get(id + RECEIPT)]);
+            answersRead++;
+            return { answer, receipt };
+          }
+          // The quick check: a Submit (or a Gather) rewrites the receipt, so an
+          // unchanged receipt means the answer that was read last time still stands.
+          const receipt = await get(id + RECEIPT);
+          const before = reuse.get(j.st.uid + '|' + j.cp);
+          if (before && before.receiptText === str(receipt && receipt.fields && receipt.fields.text)) return { kept: before };
+          answersRead++;
+          return { answer: await get(id), receipt };
         });
+        rows.answersRead = answersRead;
         jobs.forEach((j, n) => {
+          if (got[n].kept) { rows[j.cp].push(Object.assign({}, got[n].kept, { student: j.i })); return; }
           const a = got[n].answer, f = (a && a.fields) || {};
           const text = str(f.text).trim(), confidence = conf(f.confidence);
-          const receiptText = got[n].receipt && str(got[n].receipt.fields && got[n].receipt.fields.text);
+          const receiptText = str(got[n].receipt && got[n].receipt.fields && got[n].receipt.fields.text);
           const print = receiptPrint(receiptText);
           // The receipt's fingerprint covers the writing and the confidence rating
           // together. A student who only taps a different confidence after submitting
@@ -131,7 +149,7 @@
           // Where this student stands, in the words the page uses.
           const submitState = !text ? 'none' : sameWriting ? 'submitted' : print ? 'changed' : 'draft';
           rows[j.cp].push({
-            key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint, fingerprints: prints, submitState,
+            key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint, fingerprints: prints, submitState, receiptText,
             completionState: state, changedSinceSubmit: submitState === 'changed',
             // Only a current submission carries the note: what the teacher compares
             // is the answer that was read.

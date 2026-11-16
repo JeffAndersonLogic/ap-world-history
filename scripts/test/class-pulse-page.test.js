@@ -556,6 +556,44 @@ async function suite(browser) {
   check('saving and pulling raise no script error', A.errors.length === 0, A.errors.join(' | '));
   await A.context.close();
 
+  // Auto-pull's quick check (2026-11-16): receipts every time, an answer only when its
+  // receipt changed, and the saved readings reused. A fake clock fires the timer.
+  section('Auto-pull reads as little as it can');
+  {
+    const store4 = liveStore();
+    const Q = await open(browser, 1280, async ctx => { await ctx.clock.install(); await fakeGoogle(ctx, store4); });
+    const wait = ms => new Promise(r => setTimeout(r, ms));
+    await Q.p.click('#source [data-v="live"]');
+    await Q.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
+    await Q.p.click('#live-signin');
+    await Q.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
+    await wait(300);
+    check('auto-pull is offered once one class is showing', !(await Q.p.$eval('#auto-pull-wrap', e => e.hidden)));
+    await Q.p.check('#auto-pull');
+    const tick = async () => { const n = store4.requests.length; await Q.p.clock.fastForward(181000); for (let i = 0; i < 40 && store4.requests.length === n; i++) await wait(50); await wait(400); return store4.requests.slice(n); };
+    let reqs = await tick();
+    const receipts = reqs.filter(r => /^GET responses\/.*-submitted$/.test(r)).length;
+    const answers = reqs.filter(r => /^GET responses\/.*-response$/.test(r)).length;
+    check('a check with nothing new reads each receipt once and no answer', receipts === 6 && answers === 0, reqs.join(' ; '));
+    check('and does not read the saved readings again', !reqs.some(r => /runQuery/.test(r)), reqs.join(' ; '));
+    check('the page says it checked, not pulled', /checked for new submissions .* \(0 new to read\)/.test(await Q.p.$eval('#live-status', e => e.textContent)), await Q.p.$eval('#live-status', e => e.textContent));
+    // Ben submits again with his new words: his receipt changes, so his answer is read.
+    const P = store4.P, NEW = 'The devshirme took boys, and I changed this after submitting.';
+    store4.docs.set(P + 'responses/ben1__3-2__checkpoint-one-response-submitted', { name: P + 'responses/ben1__3-2__checkpoint-one-response-submitted', fields: { text: { stringValue: 'Submitted Oct 31, 9:40 AM · fingerprint ' + Sync.valueHash(NEW, '3') } }, updateTime: new Date().toISOString() });
+    reqs = await tick();
+    const read = reqs.filter(r => /^GET responses\/.*-response$/.test(r));
+    check('a changed receipt gets its answer read, and only that one', read.length === 1 && /ben1__3-2__checkpoint-one-response$/.test(read[0]), read.join(' ; '));
+    const benRow = await Q.p.$$eval('#heat tbody tr', trs => [...trs[1].querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' '));
+    check('and the student shows as submitted on the grid', /^b-wait b-wait b-wait$/.test(benRow), benRow);
+    const before = store4.requests.length;
+    await Q.p.click('#live-refresh');
+    for (let i = 0; i < 60; i++) { const n = store4.requests.length; await wait(100); if (n > before && store4.requests.length === n) break; }
+    const full = store4.requests.slice(before);
+    check('the Pull button still makes a full pull, saved readings included', full.some(r => /runQuery/.test(r)) && full.filter(r => /^GET responses\/.*-response$/.test(r)).length === 6, full.join(' ; '));
+    check('auto-pull raises no script error', Q.errors.length === 0, Q.errors.join(' | '));
+    await Q.context.close();
+  }
+
   section('All of the teacher\'s classes');
   {
     const store3 = liveStore(true);
@@ -606,6 +644,10 @@ async function suite(browser) {
     { name: 'the one copy sends answers already read', file: 'teacher/class-pulse-app.js', from: "const answers = b.answers.filter(a => answerPending(cp, a.text));", to: "const answers = b.answers;", expect: /only the answers still waiting/ },
     { name: 'the one copy ignores the approval', file: 'teacher/class-pulse-app.js', from: "const can = gate.ok && n > 0 && !left;", to: "const can = n > 0 && !left;", expect: /one copy is locked too/ },
     { name: 'a partly failed reading is thrown away', file: 'teacher/class-pulse-app.js', from: "reads.forEach(r => r.read.results.filter(x => x.status === 'passed' || x.status === 'partial')", to: "reads.forEach(r => r.read.results.filter(x => x.status === 'passed')", expect: /costs that criterion, not the answer/ },
+    { name: 'auto-pull reads every answer', file: 'teacher/class-pulse-live.js', from: "if (before && before.receiptText === str(receipt && receipt.fields && receipt.fields.text)) return { kept: before };", to: '', expect: /reads each receipt once and no answer/ },
+    { name: 'auto-pull never notices a new submission', file: 'teacher/class-pulse-live.js', from: "if (before && before.receiptText === str(receipt && receipt.fields && receipt.fields.text)) return { kept: before };", to: 'if (before) return { kept: before };', expect: /changed receipt gets its answer read/ },
+    { name: 'auto-pull reads the saved readings again', file: 'teacher/class-pulse-app.js', from: "const ratings = base ? base.ratings : await L.api.ratings(S.topic);", to: 'const ratings = await L.api.ratings(S.topic);', expect: /saved readings again/ },
+    { name: 'the Pull button makes a quick check too', file: 'teacher/class-pulse-app.js', from: "const base = quick && S.liveCache && S.liveCache.key === cacheKey ? S.liveCache : null;", to: "const base = S.liveCache && S.liveCache.key === cacheKey ? S.liveCache : null;", expect: /Pull button still makes a full pull|next pull shows the saved levels/ },
     { name: 'the projector is sent the class list', file: 'teacher/class-pulse-app.js', from: "inCount: d.inCount, n: D.students.length, read: d.read,", to: "inCount: d.inCount, n: D.students.length, read: d.read, who: D.students.map(st => st.name),", expect: /sent to the projector holds a student name/ },
     { name: 'the projector is sent the model answer early', file: 'teacher/class-pulse-app.js', from: "if (scene === 'model' && S.cvModel === 'show') {", to: "if (S.cvModel === 'show') {", expect: /only while its own part is showing/ },
     { name: 'the projector keeps quoted words', file: 'teacher/class-pulse-app.js', from: "const word = unquoted(m);", to: "const word = m;", expect: /what is sent to the projector/ },
