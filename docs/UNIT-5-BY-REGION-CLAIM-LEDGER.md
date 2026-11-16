@@ -278,3 +278,46 @@ Shimonoseki; India's cloth figures and duties (Ray, 2009); Wadia and Trincomalee
 the 1901 census; McKeown's migration figures; Rizal and the Propaganda Movement. Unverified but
 consistent with the topic chapters: Prince Gong's line, the Tongwen Guan admissions, Woren's English
 wording, Roy's handloom figures, Osaka Spinning running day and night.
+
+### Pass 2 (2026-11-16), four fresh reviewers
+
+Packet recaptured from `ebook/unit-5.html` after commit `dec3bd83` (all pass 1 fixes in). New
+pairings: Britain and the Middle East; Europe and East Asia; the Americas and South and Southeast
+Asia; plus the CED, readability and consistency reviewer on all six. None saw pass 1.
+
+#### Reviewer H: CED alignment, readability, consistency (all six), 13 items
+
+1. **Americas 02: "In 1803, with his army dying in Saint-Domingue, Napoleon sold Louisiana"** drops
+   topic 5.2's second cause ("and a new war with Britain coming"). `PENDING`
+2. **Americas Argue it: "Between 1775 and 1826, most of the Americas broke away"**: Canada and the
+   British, French and Dutch Caribbean stayed European, Cuba and Puerto Rico Spanish; 1775 never
+   appears in the body. `PENDING`
+3. **Manchester's size: 5.9 and 5.10 (shipped) say about 25,000 in 1772; 5.3 and Britain say about
+   23,000 in 1773.** Same as pass 1 A10. `PENDING`
+4. **Middle East 04 "a quarter or more of the cotton spun in Britain came from the Ottoman Empire"
+   beside Britain 01 "most of the cotton spun in Manchester was grown by enslaved people"**: different
+   scopes, and "most" plus "a quarter or more" leaves little room. `PENDING`
+5. **Middle East 03: Ottomanism tied to KC-5.3.II.ii ("new sense of commonality ... harnessed by
+   governments")**, while the CED lists Ottomanism as an optional example under the calls for national
+   unification or liberation. `PENDING`
+6. **Terms boxes define words the body never uses**: Conscription (Middle East), Tariff, Nationalism,
+   Migration (South and Southeast Asia), State-sponsored industry (Middle East, East Asia), Social
+   insurance (Europe). `PENDING`
+7. **Americas 02: comma splice**, "Dessalines fought on, yellow fever and the war destroyed the French
+   army, and ...". `PENDING`
+8. **South and Southeast Asia 02: "Power mattered too"** after a sentence about steam-powered mills
+   reads as machine power. `PENDING`
+9. **South and Southeast Asia: "friars" unglossed.** `PENDING`
+10. **Britain: "marquess", "monopolies" and "Corn Laws" (corn meaning grain) unglossed.** `PENDING`
+11. **Europe "brought back slavery in the colonies in 1802" against Americas "in other French
+    colonies".** `PENDING`
+12. **Britain 02: "the world's first railway between two cities"**, a "first" (matches topic 5.5).
+    `PENDING`
+13. **Unconfirmed by this reviewer's searches**: four in ten women servants (1851), the 1833 survey
+    majority, Manchester life expectancy 25 to 28 against 40 to 42. Not counted as defects by the
+    reviewer. `PENDING`
+
+Held up (reviewer's list): every CED attribution word for word; Argue it moves and answerability
+(South and Southeast Asia's "for whom" thinnest; the Middle East prompt's 1789 not in the body);
+closing cards against bodies; shared facts across chapters and topics; cross-references; the part
+intro against the CED.
