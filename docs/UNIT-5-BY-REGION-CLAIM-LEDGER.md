@@ -1,7 +1,8 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** pass 1 is done and every finding has a disposition. Next: recapture the
-chapters from `ebook/unit-5.html` and run review pass 2 with four fresh reviewers.
+**Resume here:** review pass 2 is running (four fresh reviewers, packet recaptured after commit
+`dec3bd83`). If this session stopped before pass 2's findings appear below, relaunch pass 2 from a
+fresh capture.
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
