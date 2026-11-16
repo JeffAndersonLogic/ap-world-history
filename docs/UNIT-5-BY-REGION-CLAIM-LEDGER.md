@@ -438,3 +438,26 @@ Asia; plus the CED, readability and consistency reviewer on all six. None saw pa
 Held up (reviewer's list): every CED attribution word for word and in context; all six Argue it
 moves and answerability; the part intro's scope claims; shared facts across chapters and with the
 topic chapters; every internal reference; every Terms-box entry now used in its body.
+
+#### Reviewer K: history, the Middle East and South and Southeast Asia, 5 findings
+
+1. **Middle East social card: Greece left "despite" the 1869 law** (same as L1). `PENDING`
+2. **Middle East 01: KC-5.1.V.B quoted without its opening clause ("In response to the expansion of
+   industrializing states") and applied to Selim III's and Mahmud II's reforms**, which answered
+   defeat by Russia (1787 to 1792) and Napoleon's army (1798), neither an industrializing state.
+   Topic 5.8 frames it the same way. `PENDING`
+3. **Middle East 03 (and topic 5.8): the fez factory "opened ... in the 1830s; around 1850 fitted with
+   steam engines and machines from Britain and Belgium"**: Istanbul's official heritage site dates the
+   fez workshop to 1827 (at Kadırga, moved to Eyüp later) and its first steam machines to 1843; no
+   source found for "around 1850, Britain and Belgium". `PENDING`
+4. **South and Southeast Asia 03 and card: "Indian owners built ... about 200 of them" and
+   "Indian-owned steam mills, about 200"**: about 200 was all of India's cotton mills, some
+   British-owned (Cawnpore's Elgin Mills, 1864; Muir Mills, 1874; mills around Calcutta). `PENDING`
+5. **South and Southeast Asia 04: "the friars, Catholic religious brothers"**: the Spanish friars
+   were mostly ordained priests who ran the parishes, not lay brothers. `PENDING`
+
+Held up (reviewer's list): every CED quotation and both Argue it prompts; the part intro; every
+Ottoman date and the Gülhane wording (Inalcik and Hurewitz); Beinin's quotation and figures (MERIP,
+1981); the 1838 cloth prices; the Aleppo and Damascus looms (Pamuk and Williamson, NBER w14763, citing
+Issawi); Smyrna in the mid-1780s; Suez and the 1870 cable; Bairoch; the 1813 duties; 1853; HSBC;
+Davar's mill (1854); Trincomalee; the 1901 census; McKeown; Rizal.
