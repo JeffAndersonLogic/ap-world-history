@@ -146,7 +146,7 @@ module.exports = {
           blocks: [
             { p: `In <span class="num">1815</span>, beaten and in exile in Jamaica, Bolívar wrote the <span class="kt">Letter from Jamaica</span>: "The hatred that the Peninsula has inspired in us is greater than the ocean between us." The tie to Spain, he said, "has been severed." He also doubted that governments "wholly representative" suited Spanish America yet. The College Board names his letter, with the American Declaration and the French one, among the documents through which Enlightenment ideas "influenced resistance to existing political authority."` },
             { p: `In <span class="num">1816</span> Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies and men for a new expedition, and asked him to end slavery in the lands he freed. By <span class="num">1826</span> Spain had lost every American colony except Cuba and Puerto Rico. Mexico, Gran Colombia, Peru, Chile and others became independent, and Brazil broke from Portugal in <span class="num">1822</span> with an emperor of its own. In the College Board's words, these revolutions "facilitated the emergence of independent states in the Americas."` },
-            { p: `Creole elites took the top places, and most of the new countries kept a sharp social hierarchy. Many wrote republican constitutions; how far power should reach the people was argued over for the rest of the century.` }
+            { p: `Creole elites took the top places, and most of the new countries kept a sharp social hierarchy.` }
           ]
         }
       ],
@@ -178,7 +178,7 @@ module.exports = {
           heading: 'Seneca Falls',
           blocks: [
             { p: `In <span class="num">1840</span> the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London and was refused a seat because she was a woman. In July <span class="num">1848</span> she and Elizabeth Cady Stanton, with three other women, organized a women's rights convention at Seneca Falls, New York. Its Declaration of Sentiments copied the Declaration of Independence and added two words: "all men and women are created equal." It complained that a woman had never been "permitted ... to exercise her inalienable right to the elective franchise," the vote.` },
-            { p: `This was <span class="kt">feminism</span> emerging, the claim that women and men should have equal rights. The College Board names Seneca Falls among the demands that "challenged political and gender hierarchies." The resolution demanding the vote was the only one not passed unanimously, and in <span class="num">1900</span> American women still could not vote in national elections.` }
+            { p: `This was <span class="kt">feminism</span> emerging, the claim that women and men should have equal rights. The College Board names Seneca Falls among the demands that "challenged political and gender hierarchies." The resolution demanding the vote was the only one not passed unanimously, and in <span class="num">1900</span> most American women still could not vote.` }
           ]
         }
       ],
@@ -267,7 +267,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'Cotton, then the world\'s largest maker',
-        body: `Enslaved people in the United States grew much of the cotton Britain's mills spun. From Lowell in the 1820s to steel and electricity, the United States became the world's largest manufacturer by 1900, behind high tariffs, and drew millions of European migrants.`
+        body: `Enslaved people in the United States grew much of the cotton Britain's mills spun. From Lowell in the 1820s to steel and electricity, the United States became the world's largest manufacturer by 1900 and drew millions of European migrants.`
       }
     ]
   }

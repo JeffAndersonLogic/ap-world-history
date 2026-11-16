@@ -99,6 +99,32 @@ not repeated here.
 
 | Claim | Where | Source and what it says | Status |
 |---|---|---|---|
+| The Liverpool and Manchester Railway (1830) let cotton landed at Liverpool reach Manchester's mills by rail | Britain 02 | ICE, "Liverpool and Manchester Railway"; Rylands collections (2022): built to move raw materials and goods between the port and the mills; Liverpool was the main import port for raw cotton | VERIFIED |
+| Reform Act 1832: the vote in the towns for men occupying property worth ten pounds a year, in effect most middle-class men | Britain 04 | Topic 5.9 rebuild ledger (`claude/topic-5-10-build`), the 1832 Act row | VERIFIED (5.9 rebuild) |
+| Lord Salisbury, a marquess and great landowner, prime minister 1895 to 1902 | Britain 04 | Topic 5.9 rebuild ledger, Salisbury row | VERIFIED (5.9 rebuild) |
+| 1833 survey: women and girls a majority in cotton, flax and silk mills (not wool); 1851 census, about four in ten women with a recorded job were servants | Britain 04 | Topic 5.9 rebuild ledger (narrowed there to "most kinds of mill"; the chapter names the three) | VERIFIED (5.9 rebuild) |
+| Beeton (1861): the mistress compared to "the commander of an army" | Britain 04 | Topic 5.9 rebuild ledger, Beeton row | VERIFIED (5.9 rebuild) |
+| Manchester more than 300,000 by 1851; the 1851 census found more than half the people of England and Wales in towns | Britain 04 | Topic 5.9 rebuild ledger | VERIFIED (5.9 rebuild) |
+| Cholera about 53,000 registered deaths in England and Wales, 1848 to 1849; Snow 1854; Manchester life expectancy at birth about 25 to 28 years in the 1840s, against about 40 to 42 nationally | Britain 04 | Topic 5.9 rebuild ledger | VERIFIED (5.9 rebuild) |
+| Serious-crime charges peaked in hard years such as 1842 and 1848, then fell; police forces caught and charged more | Britain 04 | Topic 5.9 rebuild ledger (Gatrell and Hadden) | VERIFIED (5.9 rebuild) |
+| From 1880 every local authority had to require children to attend school | Britain 05 | Topic 5.8 chapter and ledger (Education Act 1880). The first draft said "every child had to attend", wider than the law; narrowed before review | NARROWED |
+| Marx wrote the first volume of Capital in London | Britain 05 | Topic 5.8: Marx lived in London 1849 to 1883 and published Capital in 1867 (it was printed in Hamburg; "wrote", not "published", is the claim) | VERIFIED |
+| Napoleon's invasion of Spain (1808) gave Spanish America's colonists their chance to break away | Europe 02 | Topic 5.2 section 04 ("The chance"). The first draft said it "set off" independence, a sole-cause wording; narrowed before review | NARROWED |
+| Calas was executed in 1762 for killing his son to stop him becoming a Catholic, a crime he most likely did not commit | Europe 01 | Topic 5.1 section 02 ("His son had most likely taken his own life") | VERIFIED |
+| Bismarck was the German Empire's chancellor by 1878 | Europe 05 | Standard (chancellor from 1871); Topic 5.8 calls him chancellor when he banned the socialists | VERIFIED |
+| The United States ended slavery in 1865, after a civil war | Americas 04 | Thirteenth Amendment, ratified December 1865 (National Archives); not in a Unit 5 topic chapter | VERIFIED |
+| In 1900 most American women still could not vote | Americas 04 | Women had full suffrage in Wyoming, Colorado, Utah and Idaho by 1896; the Nineteenth Amendment came in 1920. The first draft said they "could not vote in national elections", wrong for those four states; narrowed before review | NARROWED |
+| Manhattan about 515,000 (1850) to about 1.4 million (1890); Riis, 1890, "three-fourths of its people live in the tenements" (of New York), the Bayard Street room | Americas 05 | Topic 5.9 rebuild ledger | VERIFIED (5.9 rebuild) |
+| The Ottoman Empire in 1750 held the Balkans, Anatolia and the Arab lands, including Egypt | Middle East 01 | Standard; Topic 5.2 (Balkans) and 5.6 (Egypt a province) | VERIFIED |
+| A quarter or more of the cotton spun in Britain in the 1780s came from the Ottoman Empire, through Smyrna | Middle East 04 | Topic 5.3 section 04 and its ledger | VERIFIED (5.3) |
+| Abdulhamid II came to the throne in 1876 and suspended the constitution in February 1878 | Middle East 03 | Standard (accession 31 August 1876); Topic 5.8 | VERIFIED |
+| In 1750 Qing China governed the largest population on earth | East Asia 01 | Standard (China roughly 200 million or more in the mid-1700s, ahead of India); no topic chapter states it | VERIFIED |
+| In Japan in 1900 women were about 62 percent of private factory workers, most in textile mills | East Asia 04 | Topic 5.9 rebuild ledger (Tsurumi) | VERIFIED (5.9 rebuild) |
+| The Mughal Empire was breaking up in 1750; over the next century the East India Company, with its own army, came to rule much of India | South and Southeast Asia 01 | Topic 5.4 ("the breakup of the Mughal Empire"; "much of India was ruled by the British East India Company"); standard | VERIFIED |
+| India's census of 1901 found about two-thirds of the people living by farming | South and Southeast Asia 03 | Topic 5.10 rebuild ledger (Risley and Gait, Report on the Census of India, 1901) | VERIFIED (5.10 rebuild) |
+| Many Indian and Chinese migrants later went home | South and Southeast Asia 04 | McKeown (2007 essay): returns from Southeast Asia ran at 63 to 75 percent of arrivals, 1870 to 1930 | VERIFIED |
+| Spain had ruled the Philippines since the 1500s; Propaganda writers, many of them students in Europe, demanded equal rights with Spaniards; Rizal's Noli Me Tángere (1887) attacked the abuses of Spanish rule and the friars | South and Southeast Asia 04 | Library of Congress country study, Philippines ("Rizal and the Propaganda Movement"); Penguin reader's guide to Noli Me Tángere; Topic 5.2 for the demands and 1896 | VERIFIED |
+| The Propaganda Movement did not demand independence at first | South and Southeast Asia 04 | Library of Congress country study, Philippines (a reform movement; independence came with the Katipunan); Topic 5.2 ("demanded equal rights with Spaniards") | VERIFIED |
 
 ## Review findings
 
