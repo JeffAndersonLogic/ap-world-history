@@ -178,3 +178,38 @@ Reviewer D also listed as unverified, not as defects: Bismarck's 1884 words, Bei
 quotations, Bolívar's phrases, the 62 percent figure for Japan, HSBC's 16 countries, Roy's handloom
 figures and the 1815 and 1832 cloth values. Each is a verified row in its topic ledger or in this
 ledger's Claims table.
+
+#### Reviewer A: history, Britain and Europe, 10 findings
+
+1. **Europe 05: the Manifesto "begins" with "The history of all hitherto existing society..."**: it
+   begins with the preamble ("A spectre is haunting Europe"); the class-struggle sentence opens
+   Section I, as topic-5-8 says. `PENDING`
+2. **Britain 03: limited liability presented as what made railway finance possible, then a railway
+   boom ten years before the laws.** Railway companies of the 1830s and 1840s were each incorporated
+   by their own Act of Parliament. Fix: separate the two. `PENDING`
+3. **Britain 03: "Laws of 1855 and 1856 let almost any group of seven or more..."**: the seven-person
+   rule is the 1856 Act's; the 1855 Act covered larger companies (more than 25 members). Topic 5.7
+   separates them. `PENDING`
+4. **Europe 04: the "spread" quotation cited to Topic 5.5** (same as D2). `PENDING`
+5. **Britain 04: Snow "mapped deaths around one water pump ... and showed that the water carried
+   it"**: the popular simplification; the course's topic chapter says the stronger evidence was the
+   two-water-company comparison and that doctors were not persuaded at once. `PENDING`
+6. **Europe 04: "From 1879 Germany put tariffs back on imported grain and iron ... after cheap American
+   grain drove prices down"**: one cause for two tariffs; grain came from Russia too, and the iron
+   tariff answered the slump after 1873. Topic 5.7 has the same compression. `PENDING`
+7. **Britain 03: "a free trade country, and it stayed one"** has no end date; Britain left general
+   free trade in 1932 (McKenna duties from 1915). `PENDING`
+8. **Britain 03: "In 1776 Adam Smith, a Scottish professor"**: he resigned his Glasgow chair in 1764.
+   Topic 5.7 has it right ("who had been a professor"). `PENDING`
+9. **Europe 05: missing full stop after 1889** (same as D4). `PENDING`
+10. **Manchester's population: Britain and topic 5.3 say about 23,000 in 1773; the shipped topic 5.9
+    and 5.10 chapters say about 25,000 in 1772.** The 1773 count (about 22,500 for the township) supports
+    23,000. Adjacent to this build. `PENDING`
+
+Checked and held up (reviewer's list): every CED quotation in both chapters; Bairoch's shares;
+population and enclosure figures; Darby, Bridgewater, the 1624 law, Arkwright, Newcomen, Watt;
+Harley's yarn price (working paper opened); Feinstein; the 1833 survey (Burnette's table); the
+Corn Laws sequence; Lever and Unilever; abolition, union and reform-act dates; Salisbury; the
+Enlightenment dates and quotations; the French Revolution sequence; serfdom; unification; Cockerill,
+railway kilometers, Hughes, BASF, Otto, Benz; the German party dates and Bismarck's 1884 words
+(GHDI translation).
