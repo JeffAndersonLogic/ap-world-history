@@ -405,3 +405,36 @@ fixed under E2), 2 ADJACENT (the old 5.9 and 5.10 drafts; the topic 5.4 per-pers
 Down from 37 in pass 1, and smaller: no new myth, and most were compressions (one cause where there
 were two), readability or scope. Five more small corrections reached shipped topic chapters (5.1,
 5.2, 5.3, 5.8), each on every surface that carried it. Pass 3 runs on a fresh capture.**
+
+### Pass 3 (2026-11-16), four fresh reviewers, the last pass allowed
+
+Packet recaptured from `ebook/unit-5.html` after commit `ce7e82da` (all pass 1 and 2 fixes in). New
+pairings: Britain and East Asia; Europe and the Americas; the Middle East and South and Southeast
+Asia; plus the CED, readability and consistency reviewer on all six. None saw passes 1 or 2.
+
+#### Reviewer L: CED alignment, readability, consistency (all six), 10 items
+
+1. **Middle East social card: "Greece left the empire in 1830 ... despite the 1869 law"**: Greece
+   left 39 years before the law. `PENDING`
+2. **Europe 03: "Crowds crowds demanded"**, a doubled word. `PENDING`
+3. **Britain: "Britain had all seven", "one of seven factors", "The College Board lists seven
+   factors"**: KC-5.1.I.A says "A variety of factors ... including:", an open list. `PENDING`
+4. **South and Southeast Asia deck: "millions of its weavers were still at their looms"**: the body
+   gives about a million in one province. `PENDING`
+5. **South and Southeast Asia card: "Railways from 1853 carried goods inland"**: the body says only
+   that the first passenger train ran in 1853. `PENDING`
+6. **East Asia religious card: "Confucian values" (not in the body) and "few scholars joined the
+   Tongwen Guan"** (looser than the body's 30 of 98, few of them the hoped-for young officials).
+   `PENDING`
+7. **Europe 04 thesis: "after 1850 German firms led in new industries such as chemicals"**: the body
+   shows activity, not leadership. `PENDING`
+8. **East Asia 01 box repeats "kept weaving ... machine-made thread" and sets "mostly because the
+   total grew" beside "China's own output shrank" with no bridge.** `PENDING`
+9. **Middle East 04: "Greece had left before Ottomanism began; it did not stop..."**: ambiguous "it".
+   `PENDING`
+10. **Unglossed terms**: spindles, arsenal, Anatolia, fez, Piedmont-Sardinia, Prussia, yarn, census.
+    `PENDING`
+
+Held up (reviewer's list): every CED attribution word for word and in context; all six Argue it
+moves and answerability; the part intro's scope claims; shared facts across chapters and with the
+topic chapters; every internal reference; every Terms-box entry now used in its body.
