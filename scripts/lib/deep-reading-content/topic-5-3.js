@@ -78,7 +78,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Britain industrialized because it had coal. Coal was one of seven factors, and China had coal too. A strong answer says what coal made cheaper or possible, and names other factors that made it worth using.`
+              html: `Do not write that Britain industrialized because it had coal. Coal was one of the seven factors the College Board names, and China had coal too. A strong answer says what coal made cheaper or possible, and names other factors that made it worth using.`
             } }
           ]
         },

@@ -59,7 +59,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that China "stopped manufacturing." Its share fell mostly because the world's total grew far faster. Bairoch also estimated that China's own output shrank after about 1830, though other historians think hand weaving held up better than he allowed. Chinese families kept weaving, more and more of it with machine-made thread. Bairoch's figures are estimates: use them for the size of the change, never as exact amounts.`
+              html: `Do not write that China "stopped manufacturing." Its share fell mostly because the world's total grew far faster. Bairoch thought China's own output also fell after about 1830, though other historians think hand weaving held up better than he allowed. Bairoch's figures are estimates: use them for the size of the change, never as exact amounts.`
             } }
           ]
         },
@@ -90,13 +90,13 @@ module.exports = {
         {
           heading: 'Arsenals and shipyards',
           blocks: [
-            { p: `In <span class="num">1861</span> Prince Gong set up an office for foreign affairs, and officials such as Zeng Guofan, Li Hongzhang and Zuo Zongtang began what was called <span class="kt">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal in Shanghai (<span class="num">1865</span>), a navy yard at Fuzhou (<span class="num">1866</span>) and a steamship company (<span class="num">1872</span>). The College Board says some governments, "including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries."` }
+            { p: `In <span class="num">1861</span> Prince Gong set up an office for foreign affairs, and officials such as Zeng Guofan, Li Hongzhang and Zuo Zongtang began what was called <span class="kt">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal, a factory for weapons and ships, in Shanghai (<span class="num">1865</span>), a navy yard at Fuzhou (<span class="num">1866</span>) and a steamship company (<span class="num">1872</span>). The College Board says some governments, "including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries."` }
           ]
         },
         {
           heading: 'A school, and its enemies',
           blocks: [
-            { p: `In <span class="num">1862</span> the court opened the Tongwen Guan in Beijing to train translators. In <span class="num">1867</span> Prince Gong asked to add astronomy and mathematics, taught partly by Western teachers, and to invite young scholars who had passed the civil service examinations. "Western learning is something urgently in need of study," his memorial said. Woren, a senior scholar and the emperor's tutor, objected: "establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems." The court backed the prince, but of about 98 who applied, only about 30 were admitted, and few were the young officials the plan had hoped for. The College Board's sentence fits: "Reform efforts were often resisted by some members of government or established elite groups."` }
+            { p: `In <span class="num">1862</span> the court opened the Tongwen Guan in Beijing to train translators. In <span class="num">1867</span> Prince Gong asked to add astronomy and mathematics, taught partly by Western teachers, and to invite young scholars who had passed the civil service examinations. "Western learning is something urgently in need of study," his memorial said. Woren, a senior Confucian scholar and the emperor's tutor, objected: "establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems." The court backed the prince, but of about 98 who applied, only about 30 were admitted, and few were the young officials the plan had hoped for. The College Board's sentence fits: "Reform efforts were often resisted by some members of government or established elite groups."` }
           ]
         },
         {
@@ -227,7 +227,7 @@ module.exports = {
       {
         category: 'Religious',
         title: 'Confucian order against "schemes and stratagems"',
-        body: `Woren argued in 1867 that a country rests on "propriety and righteousness," Confucian values, not on Western learning, and few scholars joined the Tongwen Guan. Japan's Charter Oath of 1868 promised instead to seek knowledge "throughout the world."`
+        body: `Woren argued in 1867 that a country rests on "propriety and righteousness," the Confucian values he defended, not on Western learning, and fewer young officials joined the Tongwen Guan than the plan had hoped. Japan's Charter Oath of 1868 promised instead to seek knowledge "throughout the world."`
       },
       {
         category: 'Social',

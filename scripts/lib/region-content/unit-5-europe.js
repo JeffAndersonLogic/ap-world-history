@@ -148,7 +148,7 @@ module.exports = {
           heading: '1830 and 1848',
           blocks: [
             { p: `The revolutions left new answers to how a country should be run. <span class="kt">Liberalism</span> held that a written constitution and an elected parliament should limit the government and protect each person's rights, such as a free press; many liberals still wanted only men with property to vote. <span class="kt">Democracy</span> pushed for the vote to reach all men. In the College Board's words, "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism."` },
-            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>; in 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds crowds demanded constitutions, parliaments and wider voting. In <span class="num">1848</span> France gave the vote to all adult men, and France ended slavery in its colonies for good. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
+            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>; in 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds demanded constitutions, parliaments and wider voting. In <span class="num">1848</span> France gave the vote to all adult men, and France ended slavery in its colonies for good. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
           ]
         },
         {
@@ -165,8 +165,8 @@ module.exports = {
         {
           heading: 'Nationalism joins states',
           blocks: [
-            { p: `<span class="kt">Nationalism</span> put loyalty to the nation, a people who shared a language, customs and a homeland, above loyalty to a king or an empire. Italy was split into several states, some ruled by Austria. Count Cavour, chief minister of Piedmont-Sardinia, and the soldier Giuseppe Garibaldi, whose volunteers took Sicily and Naples in <span class="num">1860</span>, joined most of Italy into one kingdom in <span class="num">1861</span>; Rome was added in <span class="num">1870</span>.` },
-            { p: `Germany was split into more than thirty states. In <span class="num">1848</span> German liberals met at Frankfurt to unite them under an elected parliament, and failed. In <span class="num">1862</span> Otto von Bismarck, Prussia's chief minister, told its lawmakers that the great questions were decided not "by speeches and majority resolutions" but "by iron and blood." After wars against Denmark, Austria and France, the German Empire was proclaimed on 18 January <span class="num">1871</span>, in the Hall of Mirrors at Versailles. These are the College Board's nationalists who "sought unification of fragmented regions" (<a href="#chapter-t5-2">Topic 5.2</a>).` }
+            { p: `<span class="kt">Nationalism</span> put loyalty to the nation, a people who shared a language, customs and a homeland, above loyalty to a king or an empire. Italy was split into several states, some ruled by Austria. Count Cavour, chief minister of the Italian kingdom of Piedmont-Sardinia, and the soldier Giuseppe Garibaldi, whose volunteers took Sicily and Naples in <span class="num">1860</span>, joined most of Italy into one kingdom in <span class="num">1861</span>; Rome was added in <span class="num">1870</span>.` },
+            { p: `Germany was split into more than thirty states. In <span class="num">1848</span> German liberals met at Frankfurt to unite them under an elected parliament, and failed. In <span class="num">1862</span> Otto von Bismarck, chief minister of Prussia, the largest German state, told its lawmakers that the great questions were decided not "by speeches and majority resolutions" but "by iron and blood." After wars against Denmark, Austria and France, the German Empire was proclaimed on 18 January <span class="num">1871</span>, in the Hall of Mirrors at Versailles. These are the College Board's nationalists who "sought unification of fragmented regions" (<a href="#chapter-t5-2">Topic 5.2</a>).` }
           ]
         }
       ],
@@ -186,7 +186,7 @@ module.exports = {
       name: 'Industry Crosses the Channel',
       navLabel: 'Industry spreads',
       dates: '1817 to 1904 &nbsp;·&nbsp; Coal, railways, chemicals, and tariffs',
-      thesis: `Factory methods left Britain in the heads of skilled people, then in machines and money. On the Continent they took root where coal lay, and after 1850 German firms led in new industries such as chemicals.`,
+      thesis: `Factory methods left Britain in the heads of skilled people, then in machines and money. On the Continent they took root where coal lay, and after 1850 German firms became leaders in new industries such as chemical dyes.`,
       parts: [
         {
           heading: 'Coal and railways',
@@ -203,7 +203,7 @@ module.exports = {
         {
           heading: 'The second industrial revolution',
           blocks: [
-            { p: `After 1850 came new methods "in the production of steel, chemicals, electricity, and precision machinery," in the College Board's words. German chemical companies such as BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes, and in <span class="num">1897</span> BASF began selling indigo blue made in a factory instead of from a plant. In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany, and in <span class="num">1886</span> Carl Benz patented a car driven by a small engine burning a fuel made from oil, an <span class="kt">internal combustion engine</span>. Its big changes came after 1900.` }
+            { p: `After 1850 came new methods "in the production of steel, chemicals, electricity, and precision machinery," in the College Board's words. German chemical companies such as BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes, and in <span class="num">1897</span> BASF began selling indigo blue made in a factory instead of from a plant. By 1914 Germany made most of the world's dyes. In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany, and in <span class="num">1886</span> Carl Benz patented a car driven by a small engine burning a fuel made from oil, an <span class="kt">internal combustion engine</span>. Its big changes came after 1900.` }
           ]
         },
         {

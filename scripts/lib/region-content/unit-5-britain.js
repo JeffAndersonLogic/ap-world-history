@@ -58,7 +58,7 @@ module.exports = {
           heading: 'Made by hand',
           blocks: [
             { p: `In 1750 most thread and cloth in Britain were made in homes. Under the <span class="kt">putting-out system</span>, a merchant brought raw wool or cotton to country families, who spun and wove it on their own wheels and looms, and paid them for each piece. Power came from muscles, horses, wind and water. Britain was not yet a great maker: by one historian's estimate, it made under 2 percent of the world's manufactured goods, and much of the world's cotton cloth came from India (see <a href="#chapter-r5-south-southeast-asia">South and Southeast Asia</a>).` },
-            { p: `The College Board lists the factors behind the <span class="kt">Industrial Revolution</span>: "Proximity to waterways; access to rivers and canals," the "Geographical distribution of coal, iron, and timber," "Urbanization," "Improved agricultural productivity," "Legal protection of private property," "Access to foreign resources" and "Accumulation of capital." Britain had all seven (<a href="#chapter-t5-3">Topic 5.3</a>).` }
+            { p: `Among the factors behind the <span class="kt">Industrial Revolution</span>, the College Board names seven: "Proximity to waterways; access to rivers and canals," the "Geographical distribution of coal, iron, and timber," "Urbanization," "Improved agricultural productivity," "Legal protection of private property," "Access to foreign resources" and "Accumulation of capital." Britain had all seven (<a href="#chapter-t5-3">Topic 5.3</a>).` }
           ]
         },
         {
@@ -69,7 +69,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Britain industrialized because it had coal. Coal was one of seven factors, and China had coal too. Say what coal made cheaper, and name the other factors that made it worth using.`
+              html: `Do not write that Britain industrialized because it had coal. Coal was one of the seven factors the College Board names, and China had coal too. Say what coal made cheaper, and name the other factors that made it worth using.`
             } }
           ]
         },
@@ -213,7 +213,7 @@ module.exports = {
         {
           heading: 'Women\'s two lives',
           blocks: [
-            { p: `In working-class families one wage was rarely enough, so women and often children earned too. A survey of <span class="num">1833</span> found women and girls a majority of the workers in Britain's cotton, flax and silk mills. The largest single job for women was domestic service: in the census of <span class="num">1851</span>, about one in three women with a recorded job was a domestic servant in someone else's house, and about four in ten worked in domestic service if washerwomen and charwomen are counted.` },
+            { p: `In working-class families one wage was rarely enough, so women and often children earned too. A survey of <span class="num">1833</span> found women and girls a majority of the workers in Britain's cotton, flax and silk mills. The largest single job for women was domestic service: in the census of <span class="num">1851</span>, the government's count of the people, about one in three women with a recorded job was a domestic servant in someone else's house, and about four in ten worked in domestic service if washerwomen and charwomen are counted.` },
             { p: `In middle-class families the husband's earnings were enough, and the wife was increasingly expected to stay out of paid work and run the home, an ideal historians call <span class="kt">separate spheres</span>. Isabella Beeton's best-selling Book of Household Management (<span class="num">1861</span>) compared the mistress of a house to "the commander of an army." Her household ran on servants, most of them working-class women. The College Board's sentence is that middle-class women were "increasingly limited to roles in the household." Married women's property passed to their husbands until laws of <span class="num">1870</span> and <span class="num">1882</span>, and no woman could vote for Parliament.` }
           ]
         },

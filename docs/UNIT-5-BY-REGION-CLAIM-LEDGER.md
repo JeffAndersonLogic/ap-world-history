@@ -415,25 +415,25 @@ Asia; plus the CED, readability and consistency reviewer on all six. None saw pa
 #### Reviewer L: CED alignment, readability, consistency (all six), 10 items
 
 1. **Middle East social card: "Greece left the empire in 1830 ... despite the 1869 law"**: Greece
-   left 39 years before the law. `PENDING`
-2. **Europe 03: "Crowds crowds demanded"**, a doubled word. `PENDING`
+   left 39 years before the law. **FIXED: "Greece left the empire in 1830. Serbia, Montenegro and Romania left in 1878, nine years after the 1869 law".**
+2. **Europe 03: "Crowds crowds demanded"**, a doubled word. **FIXED (introduced by the pass 2 fix for F2).**
 3. **Britain: "Britain had all seven", "one of seven factors", "The College Board lists seven
-   factors"**: KC-5.1.I.A says "A variety of factors ... including:", an open list. `PENDING`
+   factors"**: KC-5.1.I.A says "A variety of factors ... including:", an open list. **FIXED: "Among the factors behind the Industrial Revolution, the College Board names seven", and "one of the seven factors the College Board names" here and in topic 5.3's deep reading. "Lists seven factors" stays where it appears: the CED does print seven.**
 4. **South and Southeast Asia deck: "millions of its weavers were still at their looms"**: the body
-   gives about a million in one province. `PENDING`
+   gives about a million in one province. **FIXED: "many of its weavers".**
 5. **South and Southeast Asia card: "Railways from 1853 carried goods inland"**: the body says only
-   that the first passenger train ran in 1853. `PENDING`
+   that the first passenger train ran in 1853. **FIXED: "India's first passenger train ran in 1853".**
 6. **East Asia religious card: "Confucian values" (not in the body) and "few scholars joined the
    Tongwen Guan"** (looser than the body's 30 of 98, few of them the hoped-for young officials).
-   `PENDING`
+   **FIXED: Woren is "a senior Confucian scholar" in the body, and the card says "the Confucian values he defended" and "fewer young officials joined the Tongwen Guan than the plan had hoped".**
 7. **Europe 04 thesis: "after 1850 German firms led in new industries such as chemicals"**: the body
-   shows activity, not leadership. `PENDING`
+   shows activity, not leadership. **FIXED: "became leaders in new industries such as chemical dyes", with topic 5.5's "By 1914 Germany made most of the world's dyes" now in the body.**
 8. **East Asia 01 box repeats "kept weaving ... machine-made thread" and sets "mostly because the
-   total grew" beside "China's own output shrank" with no bridge.** `PENDING`
+   total grew" beside "China's own output shrank" with no bridge.** **FIXED: the repeated sentence dropped; "Bairoch thought China's own output also fell after about 1830, though other historians think hand weaving held up better".**
 9. **Middle East 04: "Greece had left before Ottomanism began; it did not stop..."**: ambiguous "it".
-   `PENDING`
+   **FIXED: "Ottomanism did not stop Serbia, Montenegro and Romania from leaving in 1878".**
 10. **Unglossed terms**: spindles, arsenal, Anatolia, fez, Piedmont-Sardinia, Prussia, yarn, census.
-    `PENDING`
+    **FIXED: spindles, arsenal, Anatolia, fez, Piedmont-Sardinia, Prussia, yarn and census glossed in place.**
 
 Held up (reviewer's list): every CED attribution word for word and in context; all six Argue it
 moves and answerability; the part intro's scope claims; shared facts across chapters and with the

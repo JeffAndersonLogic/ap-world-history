@@ -46,7 +46,7 @@ module.exports = {
         {
           heading: 'An empire of many peoples',
           blocks: [
-            { p: `In 1750 the <span class="kt">Ottoman Empire</span>, ruled by a sultan in Istanbul, held lands in southeastern Europe (the Balkans), Anatolia and the Arab lands, including Egypt. It ruled many peoples, Muslim, Christian and Jewish, speaking many languages. Over the next century and a half it faced European states that were growing stronger, and from the 1800s more and more of them were industrial.` }
+            { p: `In 1750 the <span class="kt">Ottoman Empire</span>, ruled by a sultan in Istanbul, held lands in southeastern Europe (the Balkans), Anatolia (most of today's Turkey) and the Arab lands, including Egypt. It ruled many peoples, Muslim, Christian and Jewish, speaking many languages. Over the next century and a half it faced European states that were growing stronger, and from the 1800s more and more of them were industrial.` }
           ]
         },
         {
@@ -122,7 +122,7 @@ module.exports = {
         {
           heading: 'The Tanzimat',
           blocks: [
-            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span>, "reorganization." Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and regular military service, and said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The state also ran industry of its own. Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; around <span class="num">1850</span> it was fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` }
+            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span>, "reorganization." Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and regular military service, and said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The state also ran industry of its own. Mahmud II's government had opened a state factory making the fez, the brimless red cap its soldiers and officials wore, in Istanbul in the 1830s; around <span class="num">1850</span> it was fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` }
           ]
         },
         {
@@ -164,7 +164,7 @@ module.exports = {
         {
           heading: 'The Balkan nations',
           blocks: [
-            { p: `<span class="kt">Nationalism</span>, loyalty to a nation of people who shared a language, religion and homeland, pulled at an empire of many peoples. Serbs rebelled and won the right to rule themselves. Greeks rose up in <span class="num">1821</span>, and in <span class="num">1830</span> Britain, France and Russia declared Greece an independent state; it became a kingdom under a Bavarian prince in <span class="num">1832</span>. In <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as independent. These are the College Board's nationalists who "challenged boundaries" (<a href="#chapter-t5-2">Topic 5.2</a>). Greece had left before Ottomanism began; it did not stop Serbia, Montenegro and Romania in 1878.` },
+            { p: `<span class="kt">Nationalism</span>, loyalty to a nation of people who shared a language, religion and homeland, pulled at an empire of many peoples. Serbs rebelled and won the right to rule themselves. Greeks rose up in <span class="num">1821</span>, and in <span class="num">1830</span> Britain, France and Russia declared Greece an independent state; it became a kingdom under a Bavarian prince in <span class="num">1832</span>. In <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as independent. These are the College Board's nationalists who "challenged boundaries" (<a href="#chapter-t5-2">Topic 5.2</a>). Greece had left before Ottomanism began. Ottomanism did not stop Serbia, Montenegro and Romania from leaving in 1878.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -216,7 +216,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Drafted peasants, one citizenship',
-        body: `Muhammad Ali drafted peasants into his factories and, from 1822, his army of about 130,000. Greece left the empire in 1830, and Serbia, Montenegro and Romania in 1878, despite the 1869 law that made every Ottoman subject a citizen.`
+        body: `Muhammad Ali drafted peasants into his factories and, from 1822, his army of about 130,000. Greece left the empire in 1830. Serbia, Montenegro and Romania left in 1878, nine years after the 1869 law made every Ottoman subject a citizen.`
       },
       {
         category: 'Intellectual and technological',
