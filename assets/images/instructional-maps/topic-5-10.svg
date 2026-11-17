@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">How Industrialization Reshaped the World, c. 1750-1900</title>
-  <desc id="map-desc">Topic 5.10 instructional map for AP World History: How Industrialization Reshaped the World, c. 1750-1900. Topic 5.10 · Continuity and change in the industrial age</desc>
+  <title id="map-title">Deep Change, Uneven Reach, 1750 to 1900</title>
+  <desc id="map-desc">Topic 5.10 instructional map for AP World History: Deep Change, Uneven Reach, 1750 to 1900. Topic 5.10 · Continuity and Change in the Industrial Age</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -68,52 +68,51 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
+    <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
+    <ellipse cx="1075.6" cy="166.7" rx="142.2" ry="55.6" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M1146.7,377.8 Q1004.4,217.8 791.1,200.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="986.7" cy="253.3" r="17"/>
-    <text class="badgenum" x="986.7" y="260.3" text-anchor="middle">1</text>
-    <path class="flow" d="M791.1,200.0 Q900.0,330.4 888.9,500.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="870.0" cy="340.2" r="17"/>
-    <text class="badgenum" x="870.0" y="347.2" text-anchor="middle">2</text>
+    <path class="flow" d="M410.7,267.2 Q582.7,141.3 786.7,203.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="590.7" cy="188.3" r="17"/>
+    <text class="badgenum" x="590.7" y="195.3" text-anchor="middle">1</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="791.1" y="175.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">INDUSTRIAL CORE</tspan></text>
-    <text class="region halo" x="709.8" y="327.8" text-anchor="middle" fill="#1A1C1D"><tspan x="709.8" dy="0">INDUSTRIAL CORE</tspan></text>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">INDUSTRIAL CORE</tspan></text>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">INDUSTRIAL CORE</tspan></text>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">EXPORT PERIPHERY</tspan></text>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">EXPORT PERIPHERY</tspan></text>
+    <text class="region halo" x="757.1" y="159.0" text-anchor="end" fill="#1A1C1D"><tspan x="757.1" dy="0">BRITAIN</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
+    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">RUSSIA</tspan></text>
+    <text class="region halo" x="1075.3" y="384.8" text-anchor="end" fill="#1A1C1D"><tspan x="1075.3" dy="0">INDIA</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA</tspan></text>
   </g>
   <g id="places">
-    
+    <circle class="city" cx="410.7" cy="267.2" r="10"/>
+    <text class="place halo" x="430.7" y="287.2" text-anchor="start">Chicago</text>
+    <text class="placenote halo" x="430.7" y="309.2" text-anchor="start">wheat by rail</text>
+    <line class="leader" x1="786.8" y1="203.3" x2="786.8" y2="231.3"/>
+    <circle class="city" cx="786.8" cy="203.3" r="10"/>
+    <text class="place halo" x="814.8" y="247.3" text-anchor="end">Liverpool</text>
+    <text class="placenote halo" x="814.8" y="269.3" text-anchor="end">wheat by steamship</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">How Industrialization Reshaped the World, c. 1750-1900</text>
-    <text class="subtitle" x="48" y="97">Topic 5.10 · Continuity and change in the industrial age</text>
+    <text class="title" x="46" y="62">Deep Change, Uneven Reach, 1750 to 1900</text>
+    <text class="subtitle" x="48" y="97">Topic 5.10 · Continuity and Change in the Industrial Age</text>
   </g>
 
-  <g id="legend" transform="translate(46,754)">
-    <rect x="0" y="0" width="1030" height="178" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,688)">
+    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Industrial core: factories and capital</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="89">Western Europe joins the core</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="122">United States joins the core</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="155">Japan industrializes on its own terms</text>
-      <rect x="518" y="38" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="574" y="56">Export economies supplying raw materials</text>
-      <rect x="518" y="71" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="574" y="89">Regions reorganized around extraction</text>
-      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">raw materials</text>
-      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">manufactures and capital</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Britain: under 2% of world manufacturing (1750), a fifth (1860)</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="89">United States: coast-to-coast railroad, 1869; two in five farm, 1900</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="122">Russia: 27 km of railway (1840), more than 53,000 (1900)</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">India: first train, 1853; about two-thirds farm (1901 census)</text>
+      <rect x="18" y="170" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="188">China: a third of world manufacturing (1750), about 6% (1900)</text>
+      <circle class="badge" cx="33" cy="214" r="14"/><text class="badgenum" x="33" y="220" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="214" y2="214" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,208 L84,214 L72,220 Z" fill="#8C5A2B"/><text class="small" x="94" y="221">Wheat, Chicago to Liverpool: price gap 57.6% (1870), 15.6% (1913)</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">The map shows only the places this topic names. Shares are historians’ estimates. Regions are approximate.</text>
 </svg>

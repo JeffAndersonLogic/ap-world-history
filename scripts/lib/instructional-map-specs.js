@@ -551,39 +551,53 @@ module.exports = [
   {
     id: 'topic-5-9',
     code: 'Topic 5.9',
-    title: 'The Industrial City, c. 1750-1900',
-    subtitle: 'Topic 5.9 · Society and the industrial age',
+    title: 'Industrial Cities, 1773 to 1900',
+    subtitle: 'Topic 5.9 \u00b7 Society and the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'MANCHESTER & LONDON', tone: 'gold', legend: 'Britain: the first industrial cities' },
-      { zone: 'westernEurope', label: 'RUHR & PARIS', tone: 'bronze', legend: 'Continental industrial cities' },
-      { zone: 'unitedStates', label: 'CHICAGO & NEW YORK', tone: 'sand', legend: 'US cities built by migration' },
-      { zone: 'japan', label: 'OSAKA', tone: 'sage', legend: 'Japan\'s industrial cities after 1868' }
-    ],
-    flows: [
-      { from: 'europe', to: 'unitedStates', label: 'rural and European migrants to cities' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'England and Wales: more than half in towns by 1851' },
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'United States: Manhattan about 1.4 million people by 1890' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'sage', legend: 'Japan: about 62 percent of private factory workers women, 1900' }
     ],
     points: [
-      { at: [-2, 53], label: 'Manchester', note: 'cotton, smoke, cholera' },
-      { at: [-0.1, 51.5], label: 'London', note: 'sanitation reform after 1848', side: 'left' }
-    ]
+      { at: [-2.24, 53.48], label: 'Manchester', note: '300,000+ people by 1851', side: 'left' },
+      { at: [-0.13, 51.51], label: 'London', note: 'cholera, Broad Street, 1854' },
+      { at: [-74.0, 40.71], label: 'New York', note: 'Riis, 1890' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'England and Wales: more than half in towns by 1851' },
+      { kind: 'area', tone: 'sand', text: 'United States: Manhattan about 1.4 million people by 1890' },
+      { kind: 'area', tone: 'sage', text: 'Japan: about 62 percent of private factory workers women, 1900' }
+    ],
+    note: 'The map shows only the places this topic names. Regions are approximate.'
   },
   {
     id: 'topic-5-10',
     code: 'Topic 5.10',
-    title: 'How Industrialization Reshaped the World, c. 1750-1900',
-    subtitle: 'Topic 5.10 · Continuity and change in the industrial age',
+    title: 'Deep Change, Uneven Reach, 1750 to 1900',
+    subtitle: 'Topic 5.10 \u00b7 Continuity and Change in the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'Industrial core: factories and capital' },
-      { zone: 'westernEurope', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'Western Europe joins the core' },
-      { zone: 'unitedStates', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'United States joins the core' },
-      { zone: 'japan', label: 'INDUSTRIAL CORE', tone: 'gold', legend: 'Japan industrializes on its own terms' },
-      { zone: 'southAsia', label: 'EXPORT PERIPHERY', tone: 'sand', legend: 'Export economies supplying raw materials' },
-      { zone: 'centralAfrica', label: 'EXPORT PERIPHERY', tone: 'sand', legend: 'Regions reorganized around extraction' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: under 2% of world manufacturing (1750), a fifth (1860)' },
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'United States: coast-to-coast railroad, 1869; two in five farm, 1900' },
+      { zone: 'russia', label: 'RUSSIA', tone: 'slate', legend: 'Russia: 27 km of railway (1840), more than 53,000 (1900)' },
+      { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'sage', legend: 'India: first train, 1853; about two-thirds farm (1901 census)' },
+      { zone: 'eastAsia', label: 'CHINA', tone: 'plum', legend: 'China: a third of world manufacturing (1750), about 6% (1900)' }
     ],
     flows: [
-      { from: 'southAsia', to: 'britain', label: 'raw materials', bow: 0.2 },
-      { from: 'britain', to: 'centralAfrica', label: 'manufactures and capital', bow: -0.2 }
-    ]
+      { from: [-87.6, 41.9], to: [-3, 53.4], label: 'wheat', bow: -0.25 }
+    ],
+    points: [
+      { at: [-87.6, 41.9], label: 'Chicago', note: 'wheat by rail' },
+      { at: [-2.98, 53.41], label: 'Liverpool', note: 'wheat by steamship', side: 'left' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: under 2% of world manufacturing (1750), a fifth (1860)' },
+      { kind: 'area', tone: 'sand', text: 'United States: coast-to-coast railroad, 1869; two in five farm, 1900' },
+      { kind: 'area', tone: 'slate', text: 'Russia: 27 km of railway (1840), more than 53,000 (1900)' },
+      { kind: 'area', tone: 'sage', text: 'India: first train, 1853; about two-thirds farm (1901 census)' },
+      { kind: 'area', tone: 'plum', text: 'China: a third of world manufacturing (1750), about 6% (1900)' },
+      { kind: 'flow', step: 1, text: 'Wheat, Chicago to Liverpool: price gap 57.6% (1870), 15.6% (1913)' }
+    ],
+    note: 'The map shows only the places this topic names. Shares are historians\u2019 estimates. Regions are approximate.'
   },
 
   // ── Unit 6 ──────────────────────────────────────────────────────────────────

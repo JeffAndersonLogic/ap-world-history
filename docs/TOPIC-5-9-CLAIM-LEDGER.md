@@ -1,0 +1,210 @@
+# Topic 5.9 Claim Ledger: Society and the Industrial Age
+
+Started 2026-11-08 in Phase 3 of the 5.9 build, with every date, number, quotation and causal claim in
+the story draft (`docs/TOPIC-5-9-STORY-DRAFT.md`), checked before the surfaces were written. One row per
+material claim; a claim that repeats across surfaces is one row listing every place it appears. Status is
+exactly one of VERIFIED, NARROWED, REMOVED or NEEDS JEFF.
+
+**Where it appears** uses: SD story draft; F10 First & 10; LD lesson data (targets, criteria, lecture
+cards, map, Primary Source, BeSurreal); RC renderer config (checkpoints, Skill Builder, Evidence Lab, map
+key); DR deep reading and eBook chapter; Deck (slide numbers from the teacher deck); BR BeInTheRoom; CV
+Canvas text; MAP the instructional map.
+
+**The CED decides scope; scholarship decides truth.** Sources are named with what they actually say.
+Where two sources were required (a number that is approximate, disputed or easily mythologized), both are
+named.
+
+## Claims
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| LO J, KC-5.1.VI.A, VI.B, VI.C wording; reasoning process Continuity and Change; suggested skill 4.B | SD, LD, RC, every surface | `scripts/lib/ced-source/unit-5.js`, p. 108 and p. 96 | VERIFIED |
+| KC-5.1.VI.B reads "working class families" (no hyphen) | LD (was "working-class") | CED source file | VERIFIED; LD corrected |
+| In 1750 most people in Britain lived in the countryside | SD, F10, Deck, DR | Davenport, "Urbanization and mortality in Britain, c. 1800–50," *EcHR* 73 (2020): "By 1851 over half the population lived in settlements of 2,500 or more" (so before then, a minority); the 1851 census as the first urban majority (Springer, *Urban Britain*) | VERIFIED |
+| The 1851 census found, for the first time, more than half the people of England and Wales living in towns | SD, F10, LD, Deck, DR, MAP | Davenport (2020), as above; *Urban Britain* (Springer), "the 1851 census had for the first time recorded over half of the population living in towns"; a contemporary account, "ten millions against ten millions" | VERIFIED (the margin was narrow; "more than half" kept, no percentage). The quotation "ten millions against ten millions" REMOVED in pass 1: untraced. |
+| Manchester: about 23,000 people in a count of 1773 (Thomas Percival's, with the historian John Whitaker); about 70,000 at the 1801 census; more than 300,000 by 1851 | SD, F10, LD, RC, Deck, DR, MAP | 1773: a local census organized by John Whitaker's group (Greater Manchester Archaeological Unit, "The population of Manchester from c.1079 to 1801," gives 1773–4; other sources give 23,000 for the township); 1801: Manchester City Council's population table, 70,409 (township); 1851: "more than 300,000" (borough; the township alone was under 200,000), sources give 303,000 to 316,000 | NARROWED: "about 23,000 ... about 70,000 ... more than 300,000," and the deep reading names the boundaries |
+| The middle class: factory owners, merchants, bankers, engineers, doctors, lawyers, managers, clerks; rank from money and education, not land or titles | SD, F10, LD, Deck, DR | Standard (e.g. Britannica, "middle class"; the National Archives, Victorian society resources); a definition, not a number | VERIFIED |
+| The Reform Act of 1832 gave the vote to most middle-class men in the towns | SD, F10, LD, Deck, DR | The National Archives, "What caused the 1832 Great Reform Act?": "in effect most middle-class men gained the vote and some skilled craftsmen"; UK Parliament, "The Reform Act 1832": £10 householders in the boroughs; women excluded | VERIFIED |
+| The industrial working class owned no land and no tools and lived on wages, at the hours the employer set | SD, F10, LD, Deck, DR | Definition; the factory's set hours as taught in 5.3 | VERIFIED |
+| Landed families kept their land, titles and much of their power through the century | SD, F10, LD, Deck, DR, RC | Return of Owners of Land (1873) and the standard accounts of the landed elite (Cannadine, *The Decline and Fall of the British Aristocracy*: the landed class still dominant until the 1880s) | VERIFIED |
+| In 1900 Britain's prime minister, Lord Salisbury, was a marquess | SD, F10, LD, Deck, DR | Robert Gascoyne-Cecil, 3rd Marquess of Salisbury, prime minister 1895 to 1902 (UK Government, "Past Prime Ministers") | VERIFIED |
+| Some rich middle-class families bought country estates and married into landed families; how many is debated | SD, F10, LD, Deck, DR | Stone and Stone, *An Open Elite? England 1540–1880* (1984): few newcomers entered the landed elite; Rubinstein (business fortunes mostly not in land) against Thompson (some were) | NARROWED (pass 2: was "often bought country houses and married into the gentry") |
+| Before industry, families mostly worked together on the farm or at home; women spun and children helped | SD, F10, Deck, DR | 5.3's own surfaces (the putting-out system); Humphries and Schneider, "Spinning the Industrial Revolution" (hand spinning as women's work) | VERIFIED |
+| In a survey of British textile factories in 1833, women and girls were a majority of the workers in most kinds of mill | SD, F10, LD, Deck, DR | Burnette, EH.net, Table Two, from Mitchell's 1834 report on the 1833 returns: females 56.8 percent of the sample (almost all textile mills); cotton 58.0, flax 67.4, silk 78.1, wool 40.9 | NARROWED (pass 1: was "in the 1830s ... a majority of factory workers") |
+| Domestic service was the largest job for women in Britain | SD, F10, LD, Deck, DR, BR | EH.net (Burnette): 1851 figures suggest 40 percent of occupied women in domestic service; Northumberland Archives and others, "domestic service was the largest occupation of women in the nineteenth century"; caution on census over-counting (You, *EcHR* 2023: under 10 percent mis-recorded kin) | VERIFIED |
+| Women were usually paid less than men, often in different, lower-paid jobs; how much was unequal pay for the same work is debated | SD, F10, LD, Deck, DR | Humphries and Weisdorf, *JEH* (2015); Burnette, *Gender, Work and Wages in Industrial Revolution Britain* (2008) and EH.net (much of the gap from productivity and job sorting); reviews (H-Net, Clendinning) on Humphries and Pinchbeck weighting custom and discrimination | NARROWED (pass 1: was "mostly because they were given different, lower-paid jobs") |
+| In Japan in 1900, women made up about 62 percent of the workers in private factories, most in textile mills | SD, F10, LD, Deck, DR, MAP | Tsurumi, *Factory Girls: Women in the Thread Mills of Meiji Japan* (Princeton, 1990): "In 1900, female workers made up 62 percent of the labor force in private factories"; Institute of Developing Economies (1902 and 1907 surveys: 79 percent of cotton mill workers, 94 to 95 percent of silk filature workers) | VERIFIED |
+| Middle-class wives were increasingly expected to stay out of paid work and run the home and raise children; historians call the idea "separate spheres" | SD, F10, LD, Deck, DR | The CED's own sentence; Davidoff and Hall, *Family Fortunes* (1987); Vickery, "Golden Age to Separate Spheres?" (1993) on how far practice matched the ideal | VERIFIED (taught as an ideal that grew, with Vickery's caution in the deep reading) |
+| Beeton (1861): "As with the commander of an army, or the leader of any enterprise, so is it with the mistress of a house." | SD, F10, LD (Primary Source), Deck, DR | Isabella Beeton, *The Book of Household Management* (London: S. O. Beeton, 1861; serialized 1859 to 1861), ch. I, para. 1, read in the Project Gutenberg text (eBook 10136), word for word | VERIFIED |
+| The "domestics" in Beeton were servants | SD, F10, Deck | Beeton, same paragraph ("so will her domestics follow in her path"); the book's chapters on servants | VERIFIED |
+| In England and Wales, until laws of 1870 and 1882, a married woman's property passed under her husband's control, and until 1870 so did her earnings | SD, F10, LD, Deck, DR | UK Parliament, "Marriage: property and children"; Married Women's Property Act 1870 (earnings kept); Married Women's Property Act 1882 (legislation.gov.uk: all property held as separate property for women married after 1 January 1883); not Scotland | NARROWED: "In England and Wales" (Phase 3), and "passed under her husband's control" (pass 1: was "legally belonged to"; under coverture a wife kept ownership of her land, and trusts protected some property) |
+| Cholera reached Britain in 1831 | SD, F10, Deck, DR | Science Museum, "Cholera in Victorian London"; first cases at Sunderland, October 1831 | VERIFIED |
+| Cholera killed about 53,000 people in England and Wales in 1848 and 1849 | SD, F10, LD, Deck, DR | Science Museum ("by 1849, about 53,000 cholera deaths were registered for England and Wales"); "The History of Cholera in Great Britain," *Proc. R. Soc. Med.* (1948): 52,000 to 53,000 | VERIFIED |
+| John Snow traced London's 1854 Broad Street outbreak to one water pump and mapped the deaths | Deck, RC (Evidence Lab), DR | Wellcome Collection, "A map taken from a report by Dr. John Snow" (Cholera Inquiry Committee report, St James, Westminster, 1855; public domain); London Museum, "John Snow: Cholera & the Broad Street pump" | VERIFIED (death count not given: sources say 500 to 600 in about ten days, so no number is stated) |
+| In the 1840s a baby born in Manchester could expect to live about 25 to 28 years, against about 40 to 42 for England and Wales | SD, F10, LD, Deck, DR | Szreter and Mooney (*EcHR* 1998) from the Registrar-General's life table: Manchester 25.3 (c. 1841); Davenport (*EcHR* 2020), Table 3: Manchester 28 for 1838 to 1844 (whole registration district); ONS, England and Wales 1841: 40.2 (males), 42.2 or 42.3 (females) | VERIFIED as a range ("about 25 to 28"), with "pulled down by the many babies and children who died" |
+| More people were charged with crimes until the early 1840s; the numbers grew partly because towns set up police | SD, F10, LD, Deck, DR | Gatrell and Hadden, "Criminal statistics and their interpretation," in Wrigley (ed.), *Nineteenth-Century Society* (1972): committals rose to peaks in 1842 and 1848, then fell; the Digital Panopticon, "Crime, 1780-1925": the statistics are a measure of prosecution, not of crime | NARROWED: "more people were charged with crimes, which rose until the early 1840s," never "crime exploded" |
+| Coal smoke over the towns and waste in the rivers | SD, F10, Deck, DR | Engels (1845) on the Irk (5.8's verified quotation); Wyld's watercolour (1852) shows the smoke | VERIFIED |
+| Comfortable families lived in cleaner streets and, later, suburbs | SD, F10, Deck, DR | Engels (1845) on the middle class's villas outside central Manchester (5.8's verified quotation on the town's layout) | VERIFIED |
+| Manhattan grew from about 515,000 people in 1850 to about 1.4 million in 1890 | SD, F10, LD, Deck, DR, MAP | U.S. census figures as tabled by Demographia ("New York (Manhattan) sectors, 1800–1910"): 515,547 (1850), 1,441,216 (1890); Boston University population history, 515,547 (1850) | VERIFIED (Manhattan, not the later Greater New York) |
+| Riis (1890): "To-day three-fourths of its people live in the tenements" | SD, F10, LD, RC, Deck, DR | Jacob A. Riis, *How the Other Half Lives* (New York: Scribner's, 1890), Introduction (pass 1: the deck said "chapter 1"), read in Project Gutenberg eBook 45502, word for word | VERIFIED |
+| Riis: a room "not thirteen feet either way" where "twelve men and women" slept; "most of the men were lodgers," at "five cents a spot"; photographed by flash | SD, F10, RC (Skill Builder), Deck, DR | Riis (1890), ch. 6, same text: "In a room not thirteen feet either way slept twelve men and women, two or three in bunks set in a sort of alcove, the rest on the floor ... Most of the men were lodgers, who slept there for five cents a spot"; "photographed by flash-light" on a police visit | VERIFIED |
+| Later in the century sewers, clean water and police began to catch up; death rates fell; wages rose faster after about 1860; many city workers were still poor in 1900 | SD, F10, Deck, DR | 5.7's verified row (Feinstein; faster growth from about 1860); 5.8's verified rows (Bazalgette's sewers); ONS life tables (life expectancy rising from the 1870s) | VERIFIED (bridge only) |
+
+## Pictures
+
+| Picture | Where it appears | What the holder's record says | Status |
+|---|---|---|---|
+| William Wyld, *Manchester from Kersal Moor*, watercolour, signed and dated 1852; Royal Collection (RCIN 920223) | Deck (question), LD lecture card, RC Evidence Lab, stableImages | Royal Collection Trust record (RCIN 920223, as returned by search; the page refused this session's fetch): a romantic view with chimneys behind, rustic figures and goats; signed and dated 1852. Queen Victoria had visited Manchester in October 1851. | VERIFIED; "commissioned" not stated (two secondary sources only) |
+| John Leech, "A Court for King Cholera," *Punch*, 25 September 1852 (vol. 23, p. 139) | Deck, LD, RC, stableImages | The National Archives, "Court for King Cholera"; Wellcome Collection; Victorian Web | VERIFIED; the old card's "the year of the epidemic the cartoon above was drawn about" REMOVED |
+| Power-loom weaving, 1835, drawn by T. Allom, engraved by J. Tingle | Deck, LD, RC | Commons file page in the repo's mirror manifest; from Edward Baines, *History of the Cotton Manufacture in Great Britain* (1835) | VERIFIED |
+| Currier & Ives, *The Four Seasons of Life: Middle Age, "The Season of Strength,"* lithograph, c. 1868 (LoC 92500887) | Deck, RC, LD | Library of Congress record (JSON): title, c1868, "No known restrictions on publication." | VERIFIED |
+| Jacob Riis, "Lodgers in a crowded Bayard Street tenement, 'five cents a spot'," about 1889 to 1890 (LoC 2002710259) | Deck, RC (Skill Builder, Evidence Lab), stableImages | LoC record: "Five cents a spot - unauthorized immigration lodgings in a Bayard Street tenement [New York]," ca. 1890, no known restrictions; Riis (1890) captions it "Lodgers in a crowded Bayard Street tenement—'Five cents a spot.'" | VERIFIED |
+| Jacob Riis, "Sewing pants for the trade in a Gotham Court 'flat'," about 1890 (LoC 2002710299) | Deck, RC | LoC record, ca. 1890, no known restrictions | VERIFIED |
+| Jacob Riis, "Garbage in the streets, East Fifth Street," about 1890 (LoC 2002710278) | Deck, RC | LoC record, ca. 1890, no known restrictions | VERIFIED |
+| John Snow's map of cholera deaths around Broad Street, 1854, from the Cholera Inquiry Committee's report (1855) | Deck, RC | Wellcome Collection, work uxgfjt62, Public Domain Mark | VERIFIED |
+
+## BeInTheRoom: "The Housing Commission," London, 1884
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| The Royal Commission on the Housing of the Working Classes was set up on 4 March 1884, chaired by Sir Charles Dilke | BR, LD, RC | Hansard, Lords, 20 March 1884; Internet Archive, *First report of the Commissioners ... 1884-85*; Wikipedia, Housing of the Working Classes Act 1885 (members listed) | VERIFIED |
+| Members included the Prince of Wales, Lord Salisbury, Cardinal Manning, Henry Broadhurst (a stonemason and trade-union leader, then an MP) and Jesse Collings | BR | Same | VERIFIED |
+| Octavia Hill was a witness, not a member; Dilke wanted her as a member and the Home Secretary, Sir William Harcourt, would not agree | BR | Oxford DNB as quoted ("Sir William Harcourt, vetoed her ... instead she became a witness"); Hansard, Commons, 25 February 1884 | VERIFIED |
+| Octavia Hill argued that housing for the poor should pay for itself, without subsidies | BR | Civitas, *Octavia Hill and the Social Housing Debate*; Cambridge, *Journal of British Studies*, "Octavia Hill and *The Homes of the London Poor*" | VERIFIED |
+| The commission named two main causes: tenants too poor to pay rents for better homes, and high ground rents that raised the cost of building; it blamed authorities for not using the laws they had, and recommended loans and stronger local powers; the 1885 Housing of the Working Classes Act followed | BR | Hansard, Lords, 16 July 1885 (the conclusions "practically unanimous"); Housing of the Working Classes Act 1885 | VERIFIED |
+| A pamphlet of October 1883, *The Bitter Cry of Outcast London*, by the Rev. Andrew Mearns, set London talking about slum housing | BR | Wohl (ed.), *The Bitter Cry of Outcast London* (1970); the W. T. Stead Resource Site; Inglis's caution that the debate had begun weeks before | NARROWED: no claim that it caused the commission |
+
+## Review findings
+
+### Pass 1 (packet `review1`, captured after the slide-fit fixes; two reviewers, launched together)
+
+**Page truth, readability, CED alignment, ownership (cheaper model): 7 supported findings, all fixed.** CED,
+reasoning process, skill and ownership reported clean.
+
+1. Slide 16 and the deep reading printed a finished contextualization of Riis's room, the same task as the
+   Skill Builder, First & 10 Q3 and Checkpoint 2. **Fixed:** the model is now a Manchester cellar of the
+   1840s; the notes tell the teacher not to finish the Riis sentence aloud.
+2. Three First & 10 callouts (sections 2, 4, 6) gave the answers to Q1 to Q3. **Fixed:** reworded as moves
+   ("find one thing that was new and one that lasted"; "what did one kind of family need that the other did
+   not?"; "what larger development explains it?"). The body paragraphs keep the content.
+3. Slide 11's strip was labeled "Same job" (the template's default) over "Paid less than men," against the
+   lesson's own caution on pay. **Fixed:** `bothLabel: 'Kept going in both'`.
+4. Slide 10's Beeton quote pushed the gloss on "domestics" off the board. **Fixed:** the quote is cut to the
+   first sentence and the last clause, with an ellipsis.
+5. Slide 7's footer crowded its last row; an "hours" row was taught nowhere else. **Fixed:** the row is gone
+   and the title is shorter.
+6. The Housing Commission's evidence stated the report's 1885 findings before students decide in 1884.
+   **Fixed:** the cards are now testimony and evidence the commissioners heard; the findings move to the
+   reflection step, as what the real commission said.
+7. Checkpoint 2 step 4 (one change, one continuity) had no matching criterion. **Fixed:** Success Criterion 3
+   now names it.
+
+**History (default model): 6 supported findings, all fixed.** Verified with no finding: both quotations word
+for word (Beeton, Riis), all four Library of Congress records, the Wellcome map, the Royal Collection
+watercolor, Japan's 62 percent, the 1832 Act, Salisbury, Manchester's 1801 and 1851 figures, cholera's dates
+and toll, the life-expectancy range and its dispute, Manhattan's populations, Gatrell and Hadden, and the
+commission's chair, members and dates.
+
+1. Why women were paid less was stated as settled. **Narrowed** on the First & 10, lecture card, deep reading
+   and slide 9 notes (row above).
+2. The First & 10 and lecture card said "most of them lodgers"; Riis says "most of the men were lodgers."
+   **Fixed.**
+3. Slide 15 notes cited "chapter 1" for the three-fourths sentence; it is in the Introduction. **Fixed.**
+4. Slide 12 notes credited the 1773 count to "John Whitaker's group"; Chetham's Library: Thomas Percival, with
+   Whitaker. **Fixed.**
+5. The lecture card and slide 9 notes made the 1833 survey a statement about all factory workers. **Narrowed**
+   (row above); the deck notes give the percentages by fiber.
+6. "Legally belonged to her husband." **Narrowed** to "passed under her husband's control" (row above).
+
+Noted, not a defect: the reviewer could not open the 1885 report to confirm the "two main causes"; Hansard
+(Lords, 16 July 1885) reports the commissioners "almost agreed that there were two causes," and the room now
+states it only in the reflection, attributed to the commission. The deep reading's "never been so large"
+(report-absolutes) was softened to "grew fast."
+
+### Pass 2 (packet `review2`, captured after the pass 1 fixes)
+
+**Page truth, readability, CED alignment, ownership (cheaper model): 9 supported findings, all fixed.** No
+cut-off text on any slide; CED and ownership clean.
+
+1. Slide 16's model (a Manchester cellar) was still the same housing move students make for Riis.
+   **Fixed:** the model is now Snow's 1854 map (water and sewers), in the deck and the deep reading.
+2. Slide 7 said "Most men in the towns win the vote, 1832." **Fixed:** "Most middle-class men in towns."
+3. Success Criterion 3 named placing a scene in context, which Checkpoint 2 does not ask. **Fixed:** the
+   clause is removed (the Skill Builder assesses 4.B).
+4. Slide 13 gave "one cause" against its own "at times" footer; slide 12 said "speed, not size" against the
+   First & 10's "speed and size." **Fixed:** "all made worse by growth too fast"; "What made them worse";
+   "Speed and size outran the town."
+5. The retelling cell "Most worked hard for little" was taught nowhere. **Fixed:** "Many still poor in 1900"
+   (taught on slide 17 and in the First & 10), in the deck, the outline and the story draft.
+6. Lecture-card captions answered the Evidence Lab's inference prompts (Wyld, Currier & Ives, Leech).
+   **Fixed:** captions trimmed to identification.
+7. Lecture card 2 dropped "in most kinds of mill." **Fixed.**
+8. "Marquess" and "gentry" unglossed on slide 8 and lecture card 1. **Fixed.**
+9. Slide 14's dates out of order; the map title ended at 1890 with a key reaching 1900. **Fixed.**
+
+**History (default model): 5 supported findings, all fixed, and one open point taken.** Every quotation, number,
+date, record and caption checked in pass 1 was confirmed again.
+
+1. "Often bought country houses and married into the gentry" stated a debated claim as settled. **Narrowed**
+   (row above) on the First & 10, lecture card, slide 8 and its notes, and the deep reading.
+2. The deep reading's "most working women were servants" against its own "four in ten." **Fixed:** "the
+   largest single job for working women (about four in ten)."
+3. The deep reading said Beeton's book "opened" with the quotation; it opens with a preface. **Fixed:** "in its
+   first chapter, 'The Mistress,' begins."
+4. The Bayard Street photograph is dated 1889 by MoMA; 1890 is the book. **Fixed:** First & 10 Q3 "about
+   1889," and "Riis had photographed."
+5. "The Conservative leader Lord Salisbury" in 1884: he led in the Lords, Northcote in the Commons. **Fixed.**
+6. (Not counted by the reviewer.) No woman of the dock laborer's wife's kind could be confirmed among the
+   commission's witnesses. **Fixed:** the role is labeled a composite, the premise and the lesson's room
+   description say she is a made-up character, and the premise's witness list no longer names "working
+   people."
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Riis photographed the Bayard Street lodgers about 1889; the book appeared in 1890 | F10 Q3, LD, RC, Deck | MoMA, object 51194 (1889); LoC 2002710259 ("ca. 1890") | NARROWED (pass 2) |
+| In 1884 Salisbury led the Conservatives in the House of Lords | BR | Northcote led in the Commons until June 1885 (standard; UK Parliament) | NARROWED (pass 2) |
+
+### Pass 3 (packet `review3`, captured after the pass 2 fixes)
+
+**History (default model): no supported defect.** Every quotation word for word, every picture record, every
+number and date, the commission's facts and the debated claims' framing confirmed; the composite witness is
+flagged.
+
+**Page truth, readability, CED alignment, ownership (cheaper model): 8 supported findings, all fixed.**
+
+1. "Sewers, clean water and police (Topic 5.8 has those reforms)": 5.8 teaches only London's sewers. **Fixed:**
+   "(Topic 5.8 has London's new sewers after 1858)" on the First & 10, lecture card, deep reading.
+2. Manchester's series mixed the township and the borough on student surfaces. **Fixed:** "counting the larger
+   borough" on the First & 10, takeaway, lecture card, map key and slide 12.
+3. Success Criteria 1 and 3 and the Checkpoint 2 prompt carried worked examples of the very detail asked for.
+   **Fixed:** trimmed to "with a detail." (Kept as a finding though 5.8's criteria have the same shape: trimming
+   is cheap.)
+4. First & 10 Q3 said "about 1889" against "about 1890" elsewhere, and "choose" a named room. **Fixed:** "take
+   the crowded room Jacob Riis photographed in New York" (no date in the question).
+5. "Standards of living ... fell for many" went beyond the evidence (city health in the 1840s). **Narrowed** on
+   the First & 10, takeaway, slide 17, its notes, the deep reading and the story draft: "rose for some, while
+   in the fast-growing towns many people's health was far worse than the nation's."
+6. The Housing Commission's decisions 2 and 3 had students choose reform policy (5.8's). **Fixed:** decision 2
+   weighs whose evidence to trust; decision 3 asks what will keep going for the poorest whatever Parliament
+   does; the premise and central question follow.
+7. "A father comes home from work": the print shows him coming in from a porch. **Fixed** (lecture caption,
+   slide 11 notes, story draft); "New York" added to the slide 11 credit.
+8. Slide 16's notes listed Checkpoint 2 as a contextualization task; the Skill Builder asked students to
+   describe a photograph not shown in its modal. **Fixed:** the note names the Skill Builder and First & 10 Q3
+   only; the Skill Builder points to the photograph on the last Content Delivery card.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Standards of living rose for some; in the fast-growing towns health was far worse than the nation's | F10, LD, Deck slide 17, DR, SD | The CED ("for some"); the life-expectancy rows above; Feinstein via 5.7 | NARROWED (pass 3: was "fell for many") |
+| Later in the century cities built sewers and clean water supplies and set up police forces | F10, LD, DR, Deck | Bazalgette's sewers (5.8's ledger); County and Borough Police Act 1856; ONS life tables | NARROWED (pass 3: no longer credited to 5.8) |
+
+## The loop stops here, on the three-pass safety valve
+
+Supported findings by pass (page truth + history): **13** (7 + 6), **14** (9 + 5), then **8** (8 + 0). The
+history findings fell 6, 5, 0: pass 3's history reviewer found nothing, and no quotation, date, number or
+caption was wrong after pass 2. The page-truth findings fell from 9 to 8 but moved from projected near-answers
+and a contradicted vote claim (passes 1 and 2) to cross-references, a boundary note, criterion wording and the
+room's decisions. No new myth class appeared after pass 1. Nothing systemic remains that a fourth pass would
+fix: the story, the sources and the renderer held throughout. Every finding was fixed; none was rejected.
+
+**Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS JEFF.

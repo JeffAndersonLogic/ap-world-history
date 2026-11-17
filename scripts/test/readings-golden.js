@@ -253,7 +253,14 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // Seraing "In Belgium" in 1817, and its takeaway "at Seraing in Belgium in 1817"; Liège was in the
 // United Kingdom of the Netherlands until Belgium's independence in 1830. Both now say "in what is
 // today Belgium". Against the blob 6b593eeb only those two phrases changed.
-const APPROVED_UNIT5_REWRITE_BLOB = 'e1d2719a895e8628776c7c1fda6e8baf40c2b85a';
+// 2026-11-17: Topics 5.9 and 5.10 brought onto main from claude/topic-5-10-build
+// (Jeff: "A, run pass 3": only 5.9 and 5.10, not that branch's other deck work).
+// Topic 5.9's rewrite, "A New Ladder", was approved on that branch by the
+// independent reviewer loop (three passes; docs/TOPIC-5-9-CLAIM-LEDGER.md) under
+// Jeff's standing rule of 2026-10-12. Topic 5.10's rewrite, "How Much Changed?",
+// had two passes there; its third runs now, and this pin moves again once that
+// pass's fixes land. Against the blob e1d2719a only the 5.9 and 5.10 entries changed.
+const APPROVED_UNIT5_REWRITE_BLOB = '39898dd5738da3f751f3cc456ad8f4bd690ff6a3';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
@@ -471,8 +478,8 @@ for (const topic of allTopics()) {
     if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
     continue;
   }
-  if (approvedUnit5Rewrite && /^5\.[12345678]$/.test(topic.topicKey)) {
-    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22), 5.5 (2026-10-23), 5.6 (2026-10-24), 5.7 (2026-10-29) and 5.8 (2026-11-01) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
+  if (approvedUnit5Rewrite && /^5\.([1-9]|10)$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22), 5.5 (2026-10-23), 5.6 (2026-10-24), 5.7 (2026-10-29), 5.8 (2026-11-01), 5.9 (2026-11-08) and 5.10 (2026-11-17, after its third review pass) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
     continue;
   }
   const diffs = [];
