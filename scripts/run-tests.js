@@ -54,6 +54,7 @@ const SUITES = {
     ['scripts/test/sync-engine.test.js', 'backup engine: restore, never overwrite, never write empty, bounded writes, sign-in domains'],
     ['scripts/test/class-pulse-engine.test.js', 'Class Pulse reader: every topic\'s checkpoint contract verbatim, no identifiers sent, fail-closed replies'],
     ['scripts/test/class-pulse-roster.test.js', 'Class Pulse class-list setup: private file, students only, nothing written on a dry run'],
+    ['scripts/test/backup-lookup.test.js', 'one-student backup lookup: read only, district accounts only, writing shown for one topic only when asked'],
     ['scripts/test/class-pulse-model-file.test.js', 'Class Pulse model answers file: one paragraph per criterion, notes never shown, nothing loaded silently'],
     ['scripts/test/class-pulse-reader-build.test.js', 'the Class Pulse Reader carries the current engine and handoff, and uses Claude only to read'],
     ['scripts/test/class-pulse-handoff.test.js', 'Class Pulse by copy and paste: off for real writing, nothing identifying copied, every pasted rating checked'],

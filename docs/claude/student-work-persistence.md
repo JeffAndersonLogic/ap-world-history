@@ -443,6 +443,62 @@ runs the real requests and the engine against the emulator with the real rules.
 `firestore-rules.test.js` holds the rules. The last two need the emulator and
 SKIP without it; a SKIP is not a pass.
 
+### Looking up one student's backup, added 2026-11-17
+
+`scripts/backup-lookup.js` answers "did this student's work reach the backup?" for one
+student: whether the account has ever signed in, when it was last active, and every
+backed-up answer by topic, with a First & 10 question that never arrived named outright
+and a plain-language reading of what the pattern means. It was built for a student who
+kept losing her First & 10 answers.
+
+**It is a command and not a teacher page, on purpose.** The rules let a teacher's browser
+read only Checkpoint 1 and 2 of students on the class list, which is what Dan Layton
+approved on 2026-11-05. A page that showed First & 10 would need those rules widened,
+which is a district decision. Jeff chose (2026-11-17) the Cloud Shell route instead: it
+runs with the project owner's administrator credentials, the same access he already has
+in the Firebase console, so it needs no rules change and no new approval.
+
+**Read only, and it prints the writing only when asked, one topic at a time.** Without
+`--answers` it shows when each answer was saved, its length and its confidence, which is
+enough to diagnose. `--answers` adds the text and refuses to run without `--topic`, so a
+lookup to recover one lesson never prints a student's whole year. Nothing is saved to a
+file. Times are Indiana time; Cloud Shell's clock is UTC.
+
+**What it can say and what it cannot.** "Never signed in" is certain. A First & 10
+answer marked NOT BACKED UP is certain about the cloud and says nothing about whether
+the student typed it: the device is the only witness to that. More than one browser ID
+across a student's records means a second computer or a Chromebook whose saved data was
+wiped, because a wiped browser makes a new ID; it is the one server-side trace of the
+wipes the save counter can only see at the device. Each record keeps only the ID of its
+last write, so the count is a floor.
+
+To run it (Jeff), in Cloud Shell, the same way as the class list:
+
+1. Open **shell.cloud.google.com**, signed in with your school staff account.
+2. Paste these lines, one at a time. If the `ap-world-history` folder is already there
+   from setting up the class list, skip the first line and run `cd ap-world-history`
+   then `git pull` instead.
+
+   ```
+   git clone --depth 1 https://github.com/JeffAndersonLogic/ap-world-history.git
+   cd ap-world-history
+   npm install --no-save firebase-admin
+   gcloud config set project behistoric
+   node scripts/backup-lookup.js STUDENT-EMAIL@stumail.zcs.k12.in.us
+   ```
+
+3. To focus on one lesson, add the topic: `--topic 2.6` (Foundations: `--topic F1`).
+   To see the writing itself for that topic, add `--answers` as well.
+
+If it stops with a message about credentials or a quota project, run
+`gcloud auth application-default login`, follow the link it prints, and try again.
+
+`scripts/test/backup-lookup.test.js` is offline and in the push gate: district accounts
+only, `--answers` tied to one topic, a credentials failure never reported as "never
+signed in", only the one student's records read, the text hidden unless asked, missing
+First & 10 questions named, Indiana time, the browser count, and no write, with nine
+negative controls.
+
 ## Class Pulse submission, added 2026-10-28
 
 Class Pulse, the teacher view of Checkpoint 1 and 2 by criterion, reads only work
