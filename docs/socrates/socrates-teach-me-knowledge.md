@@ -368,11 +368,12 @@ State expansion and centralization producing resistance from local social, polit
 Cases from Africa, Asia, and Europe: the Fronde, Razin’s revolt, the Marathas against the Mughals, and Njinga of Ndongo and Matamba
 Cases from the Americas: the Pueblo Revolt and Metacom’s War
 Organized resistance by enslaved people: maroon communities such as Palmares and the Jamaica Maroons, and revolts such as the Stono Rebellion
+Spanish Florida offering freedom to people who escaped slavery in British colonies, if they became Catholic, to weaken a rival empire
 Be able to explain
 What a state pushed for, which group pushed back, and how
 What a case of resistance changed, and one way two cases were alike
 How enslaved people challenged authorities in the Americas, and why authorities responded differently to different challenges
-Evidence anchors: Fronde · Razin’s revolt · Marathas · Njinga · Pueblo Revolt · Metacom’s War · Palmares · Jamaica Maroons · Stono Rebellion
+Evidence anchors: Fronde · Razin’s revolt · Marathas · Njinga · Pueblo Revolt · Metacom’s War · Palmares · Jamaica Maroons · Stono Rebellion · Spanish Florida
 
 ## Topic 4.7: Changing Social Hierarchies
 
