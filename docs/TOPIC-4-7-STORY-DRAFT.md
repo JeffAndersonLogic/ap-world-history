@@ -194,8 +194,8 @@ Portugal, North Africa and Italy.)
 **How the Ottomans made room.** The Ottoman Empire ruled Muslims, Orthodox Christians, Armenian
 Christians and Jews. Its rule for non-Muslims was old Islamic law: they were protected subjects.
 They could practice their religion, and their own religious leaders ran their marriages,
-inheritances, schools and courts for family matters, and answered to the sultan for their
-community's taxes and good behavior. In return they paid a special tax, the **jizya**, and lived
+inheritances, schools and courts for family matters, though many also took cases to the Islamic
+court when it suited them. In return they paid a special tax, the **jizya**, and lived
 with limits: in an Islamic court their word counted for less against a Muslim's, they could not
 build new churches or synagogues freely, and the top jobs in the army and government went to
 Muslims. (Topic 3.2's devshirme took Christian boys and made them Muslim soldiers and officials,

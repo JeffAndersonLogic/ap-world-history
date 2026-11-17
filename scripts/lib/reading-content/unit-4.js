@@ -1476,7 +1476,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Ottoman Empire ruled Muslims, Orthodox and Armenian Christians, and Jews. Under Islamic law, Christians and Jews were protected subjects. They could practice their religion, and their own religious leaders ran their marriages, inheritances, schools, and family courts, and answered to the sultan for their community's taxes and good behavior. This is <span class=\"kt\">accommodation</span>: making room for a group's differences. But it was not equality. Christians and Jews paid a special tax, the <span class=\"kt\">jizya</span>. In an Islamic court, they generally could not testify against a Muslim. They could not freely build new churches or synagogues, and the top jobs in the army and government went to Muslims."
+            "html": "The Ottoman Empire ruled Muslims, Orthodox and Armenian Christians, and Jews. Under Islamic law, Christians and Jews were protected subjects. They could practice their religion, and their own religious leaders ran their marriages, inheritances, schools, and family courts, though many Christians and Jews also took cases to the Islamic court when it suited them. This is <span class=\"kt\">accommodation</span>: making room for a group's differences. But it was not equality. Christians and Jews paid a special tax, the <span class=\"kt\">jizya</span>. In an Islamic court, they generally could not testify against a Muslim. They could not freely build new churches or synagogues, and the top jobs in the army and government went to Muslims."
           }
         ],
         "callout": {
