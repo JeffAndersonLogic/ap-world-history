@@ -224,3 +224,70 @@ a deliberately broken copy: every quotation in the four boxes is verbatim CED te
 the old chapter is missing from the new one. Only `ebook/unit-4.html` changed in the rebuild. This
 pass was not put through a fresh independent reviewer; it changes wording, not history, but items
 1 to 6 are the places a reviewer should look first.
+
+## Five-persona stress test (2026-11-17, Jeff: "Spin up the five personas in the regional ebook")
+
+Five independent reviewers, each briefed only with its own persona and the topic, each driving or
+reading the real page, then one debate round. Scored against the branch (East Asia revised, the other
+five not). Persona scripts and measurements were kept in the session scratchpad, not the repo.
+
+| Persona | Stake | Initial | After debate |
+|---|---|---|---|
+| Ana, English learner with a reading IEP | can she follow it and retell it | 6 (East Asia 7.5, Middle East 4) | 5 |
+| Jordan, May exam crammer | points on SAQ, DBQ, LEQ | 7 | 6 |
+| Dr. Okafor, hostile AP Reader and historian | errors students will repeat | 7 | 7 |
+| Dev, dyslexic student on a phone using Listen | reach a region and hear it | 6 | 6 |
+| Ms. Reyes, second-classroom teacher | assign it Monday | 6 | 6 |
+
+**Consensus, round 1, 5 of 5 (100%): one merged pass, chapter by chapter, Middle East first.** Each of
+the five unrevised chapters gets the East Asia plain-language method and, in the same edit, the
+accuracy and consistency fixes below, then all six go through one fresh independent reviewer loop
+**before** shipping. Merged because both touch the same sentences: two separate passes would edit and
+review each sentence twice, and a plain pass alone would make the contradictions easier to read.
+Folded in by the debate: line up the closing cards (same categories, same kind of evidence on the same
+card), write College Board items as separate paragraphs (not `<br>`), move mid-story "Common mistake"
+boxes so the correct claim comes first, and give the College Board box a look distinct from "How we
+know". Not adopted: holding East Asia back to keep the six uniform (Ana and Dev: it is the chapter
+that works for the weakest readers); a cross-region Argue it prompt before the silver contradiction
+is fixed (Okafor).
+
+**Confirmed findings to fix in that pass (Okafor, verified against the modules):**
+
+1. **Three chapters give three causes for silver flowing to China.** East Asia: already worth more, and
+   the tax law added demand. The Americas: taxes in silver "so silver was worth more there than
+   anywhere else" (reversed order, superlative). South and Southeast Asia: "because China's government
+   collected its taxes in silver" (drops "most"). Use East Asia's chain everywhere.
+2. **Illustrative examples presented as CED content** in the Middle East ("the CED's 'varying status of
+   different classes of women'", "the CED's astronomical charts", the Omanis as a group "the CED
+   names"). Label each as one of the College Board's examples, as East Asia does.
+3. **"(Sub-Saharan Africa gives Songhai's side)" points to nothing.** The Africa chapter gives no
+   Songhai decisions. Give Songhai its own actions or drop the pointer; say the Swahili towns sought
+   Oman's help.
+4. **Portugal's motive told two ways** (South and Southeast Asia vs. Europe and the Middle East).
+5. **Two truncated CED quotations** that shift the slant (Middle East KC-4.1.IV; South and Southeast
+   Asia "limited certain groups' roles." with the period inside the quotation).
+6. Judgment calls for the reviewer: Europe's "Europeans dominated the ocean routes"; Madeira as the
+   plantation prototype; Gujarati agency at Diu 1509; the East Asia rewordings 2 (tribute) and 5
+   (the 1639 gloss states the shogunate's charge as fact).
+
+**Fixed now, on this branch:** the plain-language pass had dropped the causal link in East Asia
+("because the Ming had given up paper money"; found by Ana and Okafor independently). Restored, and
+the von Glahn sentence's "what this meant" (which pointed back at the tax reform) is now "How big was
+the difference? ... has worked out the numbers for the 1590s."
+
+**Separate small items the panel queued behind the merged pass (not competing for the vote):**
+
+- **Narration bug, every eBook volume, live on main.** `splitLong()` in
+  `assets/js/behistorical-listen.js` treats "4.5" as a sentence end: 51 mangled topic numbers across
+  the 30 regional sections ("Topic 4. 7", or split across two utterances), plus `<br>` read as a
+  run-on and stray punctuation-only utterances. Dev's measurement with a stubbed speech engine.
+- **Reading time.** "About a fifteen-minute read" is not honest: 2,965 to 3,258 visible words per
+  chapter (Reyes), 18 to 20 minutes of narration at 1x (Dev), 25 to 30 minutes for struggling readers.
+- **Teacher note.** No guidance anywhere on when to use Part Two. The panel's suggestion: Era 3 review
+  or a six-group jigsaw, not alongside the topics, linked from the review days.
+- **Navigation on phones.** "Read Unit 4 by Region" lands on an intro that links no region (the
+  target can be 48.7 screens below); no next-region link; "Back to contents" only at chapter head;
+  "Read alongside" and "Back to contents" tap targets 52x12px (WCAG 2.5.8 asks 24px); At a Glance
+  has no contents link; cross-region links land on chapter tops.
+- **Developer-only:** the East Asia module header says KC-4.3.II.A.i is "Left out on purpose" while the
+  module claims and quotes it (probably meant A.iii).
