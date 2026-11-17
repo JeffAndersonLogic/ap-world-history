@@ -72,8 +72,10 @@ The two required contexts (from `.github/branch-ruleset.json`) are:
 - `Browser contracts`
 
 Both run in parallel from `.github/workflows/validate.yml` on every push and pull
-request. `structure` finishes in about 8 seconds; `browser` takes about two minutes (27s
-installing Chromium and the rest running the browser suite). `.github/workflows/nightly.yml`
+request. `structure` finishes in about 8 seconds; `browser` took about 35 to 40 minutes
+in November 2026 (about 20 seconds installing Chromium and the rest running the browser
+suite, which grows with every deck and every negative control), against a 60-minute
+limit. Schedule a check back rather than watching it. `.github/workflows/nightly.yml`
 is separate and not a required check, it runs `check-image-urls.js` against
 commons.wikimedia.org on a schedule so a third-party outage never blocks a push.
 
