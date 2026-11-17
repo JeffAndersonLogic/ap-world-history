@@ -195,6 +195,7 @@ says "see <section> in CLAUDE.md", the section is in the file named here.
 | The First & 10 template, a wrapper, a reading builder, a reading migration | `docs/claude/first10-readings.md` | The Content Model; First & 10 Reading Standard: Required structure, Delivery pattern, CSS class names, Prohibited patterns, Capture wrapper pattern |
 | Card art, map slots, generated SVGs, image filenames | `docs/claude/image-contract.md` | Image Contract |
 | The modals, the lightbox, the retired Google Form | `docs/claude/core-architecture.md` | Core Architecture |
+| The Retake Planner (teacher page, its engine, its tests) | `docs/claude/retake-planner.md` | The Retake Planner |
 
 Standard unit lessons are thin HTML shells plus a topic data file, a renderer-config file, and `assets/js/behistorical-topic-renderer-v1.js`. Foundations uses `foundations/foundations-topic-renderer.js`. First & 10 readings are standalone pages embedded through capture wrappers. BeInTheRoom simulations live under `beintheroom/unit-N/` and must pass the theme-alignment gate in `docs/beintheroom-scenario-blueprint.md` before they are linked.
 
