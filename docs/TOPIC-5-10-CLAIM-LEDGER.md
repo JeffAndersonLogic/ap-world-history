@@ -196,3 +196,32 @@ Findings go below as `PENDING` before any fix (standing rule of 2026-11-16).
 **Interrupted (2026-11-17):** all three pass 3 reviewers were cut off by the account's usage limit before
 reporting (it resets at 04:00 UTC). Their work is saved; they are resumed, not relaunched, once the limit
 resets. No finding has been reported yet, so nothing below is `PENDING` and nothing has been fixed.
+
+#### Pass 3, page truth, readability, CED alignment, ownership (cheaper model), 5 findings
+
+Held up: the learning objective, the six review Key Concepts, Continuity and Change and skill 6.C
+against the CED; both checkpoints display what they assess; Evidence Lab, map and Skill Builder prompts
+point at what is on the page; ownership (5.2, 5.6, 5.8, 5.9 material used as one-line evidence; Unit 6 a
+one-line hand-off); no worked Skill Builder answer printed.
+
+1. **Near-model answers to the Primary Source (Wallace) questions printed and projected.** Q1 asks students
+   to quote and explain his phrase; First & 10 section 4 quotes it and paraphrases it ("In other words: this
+   one century changed as much as all of history before it"). Q2 asks for one piece of evidence that supports
+   him and one that does not; the First & 10 ("So Wallace was partly right: the gains were unequal, but they
+   were not nothing"), slide 13 ("Wallace tested ... Unequal, but not nothing") and the deep reading
+   ("partly right and partly too far") give the verdict, and the AP Thinking callout then asks the question
+   the paragraph has answered. `PENDING`
+2. **Energy contradiction**: "By about 1900, coal supplied about half of all the energy used in the world"
+   (F10 section 2, lecture card 1, slide 7, deep reading) against "until about 1900, wood and other things
+   that grow were still the world's largest source of energy" (F10 section 4, slide 12, deep reading).
+   `PENDING`
+3. **Slide 20's thesis frame with slide 19's table is a copyable Checkpoint 2 thesis**: the frame
+   pre-chooses "to a great extent" and "especially for", and slide 19's rows fill every blank; "AP-SIZED" is
+   jargon. `PENDING`
+4. **Slide 19 cells no student surface teaches**: MOVING, kept going, "The trains carried farm crops" (the
+   reading presents the wheat trade as change); RULING, 1750, "Kings by God's will" (the reading says most
+   rulers claimed God and birth). `PENDING`
+5. **Dense prompts and an unseen date**: Primary Source Q3 asks three things; Skill Practice item 3 packs two
+   statistics into one parenthesis; Checkpoint 1 step 3 asks three things in one step; slide 12's row labels;
+   Target 2 and Checkpoint 1 step 4 say "1775 to 1826" but the lesson page's cards show revolution dates only
+   to 1810. `PENDING`
