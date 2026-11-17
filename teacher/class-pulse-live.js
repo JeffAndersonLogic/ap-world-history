@@ -48,6 +48,19 @@
   const COACH_NOTE = 'AI Coach prompt copied';
   function receiptCoached(text) { return String(text || '').split(/\s*·\s*/).slice(1, -1).indexOf(COACH_NOTE) !== -1; }
 
+  // A one-time recovery (Jeff, 2026-11-17). Before 2026-11-16, Gather All My Work sent
+  // work to Canvas without writing a Submit receipt, so finished work on the earlier
+  // topics sat in the backup as "never submitted" and could not be read. Through this
+  // topic, writing with no receipt at all counts as submitted, and looks it. From 4.7
+  // on, only a receipt counts. An answer changed after its Submit is never recovered:
+  // that student did press Submit, on different words. Nothing is written back.
+  const RECOVER_THROUGH = '4.6';
+  function recovered(topic) {
+    const at = k => { const m = /^(\d+)-(\d+)$/.exec(topicKey(k)); return m ? [Number(m[1]), Number(m[2])] : null; };
+    const t = at(topic), c = at(RECOVER_THROUGH);
+    return !!t && (t[0] < c[0] || (t[0] === c[0] && t[1] <= c[1]));
+  }
+
   function create(o) {
     // o.projectId, o.tenantId, o.getUser() -> { uid }, o.getToken() -> Promise<token>,
     // o.valueHash(text, confidence) (the backup engine's own), o.fetchImpl, o.apiBase
@@ -110,7 +123,7 @@
 
       // rows: { cp1: [...], cp2: [...] }, one per student per checkpoint, in roster order.
       async answers(topic, students, opts) {
-        const key = topicKey(topic), rows = { cp1: [], cp2: [] };
+        const key = topicKey(topic), rows = { cp1: [], cp2: [] }, recover = recovered(topic);
         const reuse = opts && opts.reuse;
         const jobs = [];
         students.forEach((st, i) => Object.keys(SLOTS).forEach(cp => jobs.push({ st, i, cp })));
@@ -144,12 +157,15 @@
           // (2026-11-16, Jeff; such answers used to drop off the page as "not submitted").
           const prints = text ? CONFIDENCES.map(c => o.valueHash(text, c)) : [];
           const sameWriting = !!print && prints.indexOf(print) !== -1;
+          // Writing with no receipt at all, on a topic the recovery covers (RECOVER_THROUGH).
+          const fromBackup = recover && !!text && !print;
+          const counted = sameWriting || fromBackup;
           const fingerprint = sameWriting ? print : text ? o.valueHash(text, confidence) : '';
-          const state = !text ? 'missing' : sameWriting ? 'verified-submission' : 'completion-unverified';
+          const state = !text ? 'missing' : counted ? 'verified-submission' : 'completion-unverified';
           // Where this student stands, in the words the page uses.
-          const submitState = !text ? 'none' : sameWriting ? 'submitted' : print ? 'changed' : 'draft';
+          const submitState = !text ? 'none' : counted ? 'submitted' : print ? 'changed' : 'draft';
           rows[j.cp].push({
-            key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint, fingerprints: prints, submitState, receiptText,
+            key: j.st.uid + '|' + j.cp, student: j.i, uid: j.st.uid, text, confidence, fingerprint, fingerprints: prints, submitState, receiptText, recovered: fromBackup,
             completionState: state, changedSinceSubmit: submitState === 'changed',
             // Only a current submission carries the note: what the teacher compares
             // is the answer that was read.
@@ -209,5 +225,5 @@
     };
   }
 
-  return { SLOTS, READER, COACH_NOTE, topicKey, receiptPrint, receiptCoached, create };
+  return { SLOTS, READER, COACH_NOTE, RECOVER_THROUGH, topicKey, receiptPrint, receiptCoached, recovered, create };
 });
