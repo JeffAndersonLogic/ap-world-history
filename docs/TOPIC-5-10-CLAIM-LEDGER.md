@@ -182,3 +182,13 @@ Each finding is weighed on its own; the reviewer does not have the last word.
 6. **Uncertain: "the busiest emigrant route."** Hatton calls Liverpool the most important British port but
    does not say "busiest route." Accepted: "the main emigrant route, from Liverpool, Britain's chief emigrant
    port, to New York."
+
+### Pass 3 (2026-11-17), fresh reviewers, after the pass 2 fixes
+
+**Resume here:** pass 3 was launched on 2026-11-17 on a packet captured from `main` plus this topic
+(`node scripts/capture-topic-for-review.js 5.10`, fallback fonts), after Jeff chose to ship only 5.9 and
+5.10 from `claude/topic-5-10-build` and to finish this topic's loop first. Passes 1 and 2 ran on
+2026-11-08 and every finding was fixed; the fresh full pass the stop rule requires after those fixes had
+not run. Three reviewers: history on the student surfaces (top model), history on the deck, notes and
+picture credits (top model), and page truth, readability, CED alignment and ownership (cheaper model).
+Findings go below as `PENDING` before any fix (standing rule of 2026-11-16).
