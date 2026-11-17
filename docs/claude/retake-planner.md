@@ -11,6 +11,18 @@ questions measure memory of the answer, not understanding. The Retake Planner sh
 reads results; it does not grade. Canvas holds every grade, and nothing the page shows feeds one.
 It is a department tool: any teacher who gives the test can use it with their own Canvas copy.
 
+## Branding
+
+Since 2026-11-17 the page carries the **ANDERSONLOGIC ai** brand, not BeHistorical's, because it
+works for any course on Canvas New Quizzes (Jeff's call). The wordmark is text (`.al-wordmark`:
+ANDERSONLOGIC in capitals, LOGIC italic, a space, lowercase ai), as locked in AndersonLogic-OS
+`02_BRAND/Brand-Guide.md`. Palette and type are the brand's **interim** set from
+`02_BRAND/Colors-and-Visual-Standards.md` (Blackened Steel, Antique Gold, Clean Paper, Fairway
+Green, Aged Iron; Manrope and Inter). When that file locks a final palette, change the tokens at
+the top of `retake-planner.css`. Manrope and Inter are served from `assets/fonts/andersonlogic/`
+(OFL, licences beside them), never from Google, because the page's policy allows no other host.
+Gold is never text on a light surface; `--gold-ink` is.
+
 ## Two files, both read in the tab
 
 1. **The Canvas results**: New Quizzes, Reports, Student Analysis, Export CSV. Canvas does not
@@ -29,8 +41,8 @@ It is a department tool: any teacher who gives the test can use it with their ow
 
 ## Rules that must not be broken
 
-- **The page reaches nothing.** Its Content-Security-Policy allows its own script and style files
-  and nothing else: no fonts, no `connect-src`. It holds student names, so this is the privacy
+- **The page reaches nothing.** Its Content-Security-Policy allows its own script, style and
+  font files and nothing else: no `connect-src`, no other host. It holds student names, so this is the privacy
   promise, not a preference. Nothing is written to `localStorage`; Start over or closing the tab
   forgets both files. The browser test proves the policy blocks a fetch.
 - **No inline `style=""` in generated markup.** The policy refuses it; set widths through

@@ -5,8 +5,8 @@
  * The Retake Planner teacher page in Chromium.
  *
  * What it proves:
- *   - the page asks nothing of any host: the only requests are its own four files,
- *     and its security policy refuses anything else (a fetch from the page is
+ *   - the page asks nothing of any host: the only requests are its own four files and
+ *     its two brand fonts, all on this site, and its security policy refuses anything else (a fetch from the page is
  *     blocked, which the test proves by trying one);
  *   - the invented demo loads, matches every question and counts every student;
  *   - two files chosen through the file picker, in either order and in the
@@ -192,8 +192,9 @@ function assert(cond, msg) { if (!cond) throw new Error(msg); }
     fx.people.forEach(p => assert(text.includes(p), p + ' missing'));
   });
 
-  await check('the page reaches nothing but its own four files', async () => {
-    const own = new Set(['/teacher/retake-planner.html', '/teacher/retake-planner.css', '/teacher/retake-planner-engine.js', '/teacher/retake-planner-app.js']);
+  await check('the page reaches nothing but its own files and brand fonts', async () => {
+    const own = new Set(['/teacher/retake-planner.html', '/teacher/retake-planner.css', '/teacher/retake-planner-engine.js', '/teacher/retake-planner-app.js',
+      '/assets/fonts/andersonlogic/manrope-latin-var.woff2', '/assets/fonts/andersonlogic/inter-latin-var.woff2']);
     const stray = requests.filter(u => !u.startsWith('data:') && !u.startsWith('blob:') && !own.has(u.replace(origin, '')));
     assert(!stray.length, 'unexpected requests: ' + stray.join(', '));
     // Negative control: a fetch from the page is refused by its policy and recorded.
@@ -202,6 +203,18 @@ function assert(cond, msg) { if (!cond) throw new Error(msg); }
     const csp = await page.evaluate(() => window.__csp.slice());
     assert(csp.some(v => /connect-src/.test(v)), 'the blocked fetch should be recorded as a violation');
     await page.evaluate(() => { window.__csp.length = 0; });
+  });
+
+  await check('the brand shows: the ANDERSONLOGIC ai wordmark, and its fonts really load', async () => {
+    const mark = await page.locator('.topbar .al-wordmark').innerText();
+    assert(/^ANDERSONLOGIC ai$/.test(mark.replace(/\s+/g, ' ').trim()), 'wordmark: ' + mark);
+    assert(await page.locator('.topbar .al-wordmark i').innerText() === 'LOGIC', 'LOGIC is the italic part');
+    assert(!/BeHistorical/.test(await page.locator('body').innerText()), 'no BeHistorical branding left on the page');
+    // document.fonts.check() answers true for a face that does not exist at all, so it
+    // proves nothing; the list of faces whose files actually loaded does.
+    const loaded = await page.evaluate(async () => { await document.fonts.ready; return [...document.fonts].filter(f => f.status === 'loaded').map(f => f.family.replace(/"/g, '')); });
+    assert(loaded.includes('Manrope') && loaded.includes('Inter'), 'loaded faces: ' + loaded.join(', '));
+    assert(!loaded.includes('Cinzel'), 'negative control: a face this page never loads must not be listed');
   });
 
   await check('no console error and no security-policy violation', async () => {
