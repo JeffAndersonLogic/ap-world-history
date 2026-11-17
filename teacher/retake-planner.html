@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<!-- This page reaches nothing. It loads its own stylesheet, two scripts, two brand fonts
-     and the ANDERSONLOGIC ai logo files, all from this site, and makes no other request: no
-     analytics, no AI service, no database. The Canvas file and the question map are read inside this tab and are gone when it closes.
+<!-- This page reaches nothing. It loads its own stylesheet, its two brand fonts and two
+     scripts, all from this site, and makes no other request: no analytics, no AI service,
+     no database. The Canvas file
+     and the question map are read inside this tab and are gone when it closes.
      scripts/test/retake-planner-page.test.js fails the push if a request leaves. -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; frame-src 'none'; object-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="noindex">
 <title>Retake Planner | ANDERSONLOGIC ai</title>
 <link rel="stylesheet" href="retake-planner.css">
-<link rel="icon" type="image/png" href="../assets/images/brand/andersonlogic/al-favicon.png">
+<link rel="icon" href="data:,">
 </head>
 <body>
 <header class="topbar">
   <div class="wrap">
-    <span class="brand"><img class="al-mark" src="../assets/images/brand/andersonlogic/al-logo-mark.png" width="143" height="128" alt=""><img class="al-word" src="../assets/images/brand/andersonlogic/al-logo-wordmark.png" width="778" height="72" alt="ANDERSONLOGIC ai"><span class="product">Retake Planner</span></span>
+    <span class="brand"><span class="al-wordmark" aria-label="ANDERSONLOGIC ai">ANDERSON<i>LOGIC</i> <span class="ai">ai</span></span><span class="product">Retake Planner</span></span>
     <a href="index.html">Teacher Command Center</a>
   </div>
 </header>
@@ -27,7 +28,6 @@
       <h1>Retake Planner</h1>
       <p>Which learning targets each student missed on a test, so a retake or test correction can ask <em>new</em> questions on those targets instead of the ones the student has already seen. It reads results; it does not grade. Canvas holds every grade.</p>
     </div>
-    <img class="hero-logo" src="../assets/images/brand/andersonlogic/al-logo-lockup.png" width="640" height="344" alt="ANDERSONLOGIC ai. Logic. Applied.">
     <div class="stats" aria-live="polite">
       <div class="stat"><b id="s-students">0</b><small>Students who took it</small></div>
       <div class="stat"><b id="s-average">0</b><small>Average score</small></div>
