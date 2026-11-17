@@ -166,15 +166,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "tag": "1750",
           "items": [
             "Goods made by hand",
-            "Britain: under 2% of world goods"
+            "Britain: under 2% of manufacturing"
           ]
         },
         "after": {
           "tag": "Changed",
           "items": [
-            "Yarn a third of its 1780s price, 1815",
+            "Coarse yarn: a third of 1780s real price, 1815",
             "Branded goods: Sunlight soap, 1884",
-            "Europe and US: over four-fifths, 1900"
+            "Europe and US: four-fifths of manufacturing, 1900"
           ]
         },
         "continued": {
@@ -239,8 +239,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "How much",
-            "left": "Liverpool's wheat cost 57.6% more than Chicago's in 1870; 15.6% more in 1913",
-            "right": "About 55 million Europeans, 1850 to 1914; more than 29 million Indians and 19 million Chinese, 1846 to 1940"
+            "left": "Liverpool's wheat cost 57.6% more than Chicago's in 1870; 15.6% more in 1913 (after this unit)",
+            "right": "About 55 million Europeans, 1850 to 1914; more than 29 million Indians and 19 million Chinese, 1846 to 1940 (runs past this unit)"
           },
           {
             "label": "Where to",
@@ -270,14 +270,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-mirror",
       "eyebrow": "IV · How Far It Reached · 2",
       "title": "The change did not reach everyone.",
-      "footer": "Wood was still the world's largest energy source until about 1900.",
+      "footer": "Coal passed wood as the world's largest energy source only between 1900 and 1910.",
       "kc": "Unit 5: Learning Objective K",
       "template": {
         "left": {
           "name": "The old makers kept making"
         },
         "right": {
-          "name": "Most people still farmed"
+          "name": "Farming kept going"
         },
         "rows": [
           {
@@ -287,13 +287,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "The change",
-            "left": "China's share of the world's goods: about a third (1750) to about 6% (1900)",
+            "left": "China's share of manufactured goods: about a third (1750) to about 6% (1900)",
             "right": "Factories and railways spread"
           },
           {
             "label": "Kept going",
             "left": "1908: about a million people in one Indian province still live from the handloom",
-            "right": "India, 1901: about two-thirds farm. US, 1900: about two in five workers farm"
+            "right": "India, 1901: about two-thirds farm. Even in the US, 1900: about two in five workers still farm"
           }
         ]
       }
@@ -305,7 +305,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Wallace in 1898: wealth grew \"without any corresponding increase in the well-being of the whole people.\"",
       "kc": "Unit 5: Learning Objective K",
       "template": {
-        "caption": "Still poor in 1890: lodgers in a New York tenement",
+        "caption": "Still poor, about 1890: lodgers in a New York tenement",
         "steps": [
           {
             "label": "States",
@@ -320,9 +320,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Manchester, 1840s: a baby could expect about **25 to 28** years; England and Wales, about **40 to 42**."
           },
           {
-            "label": "Wallace tested",
+            "label": "Test Wallace",
             "key": true,
-            "text": "Living standards did rise, slowly, then faster after about 1860. Unequal, but not nothing."
+            "text": "Living standards rose slowly, then faster after 1860. Support or not?"
           }
         ],
         "visual": {
@@ -379,7 +379,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Revolutions",
             "when": "1775 to 1826",
             "text": "America 1775, France 1789, Haiti 1791, Spanish America 1810.",
-            "note": "Factories still almost all in Britain."
+            "note": "When they began, factories were almost all in Britain."
           },
           {
             "label": "Factories spread",
@@ -510,7 +510,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Horse and sail",
               "Rails, steam, telegraph; trade, migration",
-              "The trains carried farm crops"
+              "Farmers still grew the wheat the trains carried"
             ]
           },
           {
@@ -524,7 +524,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Ruling",
             "cells": [
-              "Kings by God's will",
+              "Most rulers: God and birth",
               "New nations, nationalism (ideas first)",
               "Kings in most of Europe; few women vote"
             ]
@@ -544,7 +544,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 5: Learning Objective K",
       "template": {
         "weak": "Industrialization changed the world a lot between 1750 and 1900.",
-        "strong": "Between 1750 and 1900 industrialization changed ______ to a **great** extent, **especially for** ______, **because** ______, **but** ______ **kept going**."
+        "strong": "Between 1750 and 1900 industrialization changed ______ to a ______ extent, **because** ______, **but** ______ **kept going**."
       }
     },
     {

@@ -99,9 +99,9 @@ window.BEHISTORICAL_LESSON = {
         title: "Moving: Rails, Steam, and Wire",
         bullets: [
           "**Rails:** Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran in 1853. The first railroad across the United States was finished in 1869.",
-          "**Steam:** on the main emigrant route, from Liverpool to New York, a voyage took more than 40 days on average in 1853, when emigrant ships still went under sail, and about 16 by 1869, as steamships took over.",
+          "**Steam:** on the main emigrant route, from Liverpool to New York, the average voyage, counting every emigrant ship, took more than 40 days in 1853, when they still went under sail, and about 16 by 1869, as steamships took over; a steamship alone crossed in about 12 to 14.",
           "**Wire:** by the 1840s a telegraph message could travel along a wire in minutes (Morse's line, 1844). From 1866 cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay.",
-          "**Trade and migration:** in 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913, just after this unit's period, only 15.6 percent more. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and from 1846 to 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean."
+          "**Trade and migration:** in 1870 wheat cost 57.6 percent more in Liverpool than in Chicago; by 1913, just after this unit's period, only 15.6 percent more. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and from 1846 to 1940, a span that runs past this unit, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean."
         ],
         image: {
           title: "The Great Eastern Carries the Atlantic Cable, 1866",
@@ -116,7 +116,7 @@ window.BEHISTORICAL_LESSON = {
           "**A witness:** in 1898 the naturalist Alfred Russel Wallace wrote that his century \"may be best compared with the whole preceding historical period.\" Then: \"this is only one side of the shield.\"",
           "**The old makers kept making:** China's share of the world's manufactured goods fell from about a third in 1750 to about 6 percent in 1900, but in 1908, in one province of northern India, about a million people still lived from handloom weaving.",
           "**Most people still farmed:** India's census of 1901 found about two-thirds of the people living by farming; in the United States in 1900, about two in five workers still farmed.",
-          "**The gains went to some:** Egypt's army factories had mostly closed by the mid-1840s, while Japan's railways and mills lasted. Landed families kept power (Lord Salisbury, a marquess, was Britain's prime minister in 1900), and in the 1840s a baby born in Manchester could expect to live only about 25 to 28 years."
+          "**The gains went to some:** Egypt's army factories had mostly closed by the mid-1840s, while Japan's railways and mills lasted. Landed families kept power (Lord Salisbury, a marquess, was Britain's prime minister in 1900), and in the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole."
         ],
         image: {
           title: "A Weaver at His Loom, about 1840",
@@ -129,7 +129,7 @@ window.BEHISTORICAL_LESSON = {
         title: "The Other Revolution: Ideas and Nations",
         bullets: [
           "**The ideas:** Enlightenment thinkers used reason and evidence to question old authorities, including religion used as a power of government. In 1689 John Locke argued that people are born with natural rights to \"lives, liberties and estates,\" and that government is a social contract resting on consent.",
-          "**The ideas came first:** the American Revolution began in 1775, the French in 1789, the Haitian in 1791, and the wars for independence in Spanish America in 1810, while factories were still almost all in Britain.",
+          "**The ideas came first:** the American Revolution began in 1775, the French in 1789, the Haitian in 1791, and the wars for independence in Spanish America in 1810 (Spain had lost almost all its American colonies by 1826), while factories were still almost all in Britain.",
           "**New nation-states and nationalism:** the revolutions built the United States, Haiti and the new countries of Spanish America. Nationalism joined most of Italy into one kingdom in 1861 and the German states into an empire in 1871, and pulled Greeks and other Balkan peoples away from the Ottoman Empire.",
           "**Where they met, and what kept going:** railways and iron helped Prussia win the wars that united Germany; Meiji Japan built industry to make the nation strong, and Britain's Chartists demanded the vote. In 1900 kings and emperors still ruled most of Europe, and women could vote in national elections almost nowhere."
         ],
@@ -194,7 +194,7 @@ window.BEHISTORICAL_LESSON = {
     questions: [
       "In the first passage, what does Wallace claim about how much his century changed? Quote the phrase that shows how big he thinks the change was, then explain in your own words what it means.",
       "In the second passage, what does Wallace claim about who gained from the new wealth? Using the lesson, explain one piece of evidence that supports him and one that does not.",
-      "Wallace wrote in 1898, as a famous scientist who wanted to change how land was owned. How might his point of view shape what he chose to call successes and failures? Then explain how one claim of his relates to one piece of evidence from another Unit 5 topic."
+      "Wallace wrote in 1898, as a famous scientist who wanted to change how land was owned. How might his point of view shape what he chose to call successes and failures? Next, pick one claim of his. Explain how it relates to one piece of evidence from another Unit 5 topic."
     ]
   },
 

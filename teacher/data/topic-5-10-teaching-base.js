@@ -76,7 +76,7 @@ window.BEHISTORICAL_TEACHING = {
       { label: 'II', title: 'Making: factories and coal', kc: 'KC-5.1', points: [
         '1780s: Watt and Boulton engines turn wheels; mills go where coal goes',
         'About 1900: coal about half the world\'s energy',
-        'Cheaper, more varied goods: yarn a third of its 1780s price by 1815; Sunlight soap 1884',
+        'Cheaper, more varied goods: coarse yarn a third of its 1780s price by 1815, after rising prices; Sunlight soap 1884',
         'Britain under 2 percent (1750) to about a fifth (1860); Europe and US over four-fifths by 1900',
         'Living standards "for some": under 15 percent, 1780s to 1850s; faster after about 1860'
       ] },
@@ -150,7 +150,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'trade', label: 'Trade and Migration', range: '26-28', minutes: 2, teacher: 'Wheat prices and tens of millions moving.', students: 'One number for each.', slide: 10 },
     { id: 'wallace', label: 'A Witness, 1898', range: '28-30', minutes: 2, teacher: 'Wallace\'s claim of enormous change.', students: 'Is he right?', slide: 11 },
     { id: 'reach', label: 'How Far It Reached', range: '30-33', minutes: 3, teacher: 'The old makers; the farmers.', students: 'One limit.', slide: 12 },
-    { id: 'gains', label: 'Gains for Some', range: '33-35', minutes: 2, teacher: 'Egypt and Japan; the ladder; Wallace tested.', students: 'Which part of Wallace holds up?', slide: 13 },
+    { id: 'gains', label: 'Gains for Some', range: '33-35', minutes: 2, teacher: 'Egypt and Japan; the ladder; test Wallace.', students: 'Which part of Wallace holds up?', slide: 13 },
     { id: 'ideas', label: 'The Ideas', range: '35-37', minutes: 2, teacher: 'The Enlightenment, retrieved.', students: 'Name two ideas.', slide: 14 },
     { id: 'order', label: 'Ideas Came First', range: '37-39', minutes: 2, teacher: 'The order of events.', students: 'Which came first?', slide: 15 },
     { id: 'nations', label: 'New Nation-States', range: '39-41', minutes: 2, teacher: 'The revolutions and what they built.', students: 'Name one new country.', slide: 16 },
@@ -192,7 +192,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'CED pp. 109 to 110. Learning objective K: explain the extent to which industrialization brought change from 1750 to 1900. The CED lists six "Review: Unit 5 Key Concepts" under it: KC-5.1 (industrial capitalism, standards of living for some, more available, affordable and varied goods); KC-5.1.IV (railroads, steamships and the telegraph in interior regions globally, with increased trade and migration); KC-5.3 (an intense period of revolution from the 18th century, leading to new nation-states); KC-5.3.I.A (Enlightenment philosophies: reason, empiricism, religion\'s role in public life, natural rights and the social contract); KC-5.3.I (Enlightenment thought often preceded revolutions); KC-5.3.II.i (nationalism a major force shaping states and empires).',
           'The CED prints no thematic focus, no illustrative examples and no sample activity for 5.10. It lists one resource, the Classroom Resources "Review Essay: Teaching the Great Divergence," which this deck does not use: its subject is 5.4\'s shares, used here as evidence.',
-          'Every case in this deck was taught in 5.1 to 5.9, with the numbers those topics teach. The one new source is Alfred Russel Wallace\'s The Wonderful Century (1898), and two new figures for farming in 1900 (India\'s 1901 census; the United States).',
+          'Most cases in this deck were taught in 5.1 to 5.9, with the numbers those topics teach. New in 5.10: Alfred Russel Wallace\'s The Wonderful Century (1898); Hatton\'s Liverpool to New York crossing times (2023); Showalter on Prussia\'s railways (1975); Ratingen (1784); and two farming figures for 1900 (India\'s 1901 census; Lebergott for the United States).',
           'Three myths, corrected on the retelling slide: "everything changed"; "nothing really changed"; "industry caused the revolutions."',
           'Every picture in this deck is a real historical object, verified for an earlier Unit 5 topic. None is AI-generated.'
         ],
@@ -376,15 +376,15 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The College Board\'s words: standards of living rose "for some."',
       template: {
         date: '1750 to 1900',
-        before: { tag: '1750', items: ['Goods made by hand', 'Britain: under 2% of world goods'] },
-        after: { tag: 'Changed', items: ['Yarn a third of its 1780s price, 1815', 'Branded goods: Sunlight soap, 1884', 'Europe and US: over four-fifths, 1900'] },
+        before: { tag: '1750', items: ['Goods made by hand', 'Britain: under 2% of manufacturing'] },
+        after: { tag: 'Changed', items: ['Coarse yarn: a third of 1780s real price, 1815', 'Branded goods: Sunlight soap, 1884', 'Europe and US: four-fifths of manufacturing, 1900'] },
         continued: { tag: 'For whom?', items: ['Working families: under 15% better, 1780s to 1850s', 'Faster after 1860, and unequal'] }
       },
       notes: {
         minutes: 2,
         keys: [
           'More available, affordable, varied (KC-5.1)',
-          'Yarn about a third of its 1780s price by 1815',
+          'Coarse yarn: a third of 1780s price, 1815',
           'Sunlight soap: wrapped and branded, 1884',
           'Europe and US: over four-fifths by 1900',
           'Living standards: slow, then faster after 1860'
@@ -441,7 +441,7 @@ window.BEHISTORICAL_TEACHING = {
         right: { name: 'Migration' },
         rows: [
           { label: 'What moved', left: 'Wheat from the middle of North America to British workers', right: 'People, by train and steamship' },
-          { label: 'How much', left: 'Liverpool\'s wheat cost 57.6% more than Chicago\'s in 1870; 15.6% more in 1913', right: 'About 55 million Europeans, 1850 to 1914; more than 29 million Indians and 19 million Chinese, 1846 to 1940' },
+          { label: 'How much', left: 'Liverpool\'s wheat cost 57.6% more than Chicago\'s in 1870; 15.6% more in 1913 (after this unit)', right: 'About 55 million Europeans, 1850 to 1914; more than 29 million Indians and 19 million Chinese, 1846 to 1940 (runs past this unit)' },
           { label: 'Where to', left: 'Across the Atlantic', right: 'The Americas and Australia; Southeast Asia and the Indian Ocean' }
         ]
       },
@@ -496,14 +496,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'reach', kind: 'split-mirror', eyebrow: 'IV · How Far It Reached · 2',
       kc: 'Unit 5: Learning Objective K', title: 'The change did not reach everyone.',
-      footer: 'Wood was still the world\'s largest energy source until about 1900.',
+      footer: 'Coal passed wood as the world\'s largest energy source only between 1900 and 1910.',
       template: {
         left: { name: 'The old makers kept making' },
-        right: { name: 'Most people still farmed' },
+        right: { name: 'Farming kept going' },
         rows: [
           { label: 'Where', left: 'China and India', right: 'India and the United States' },
-          { label: 'The change', left: 'China\'s share of the world\'s goods: about a third (1750) to about 6% (1900)', right: 'Factories and railways spread' },
-          { label: 'Kept going', left: '1908: about a million people in one Indian province still live from the handloom', right: 'India, 1901: about two-thirds farm. US, 1900: about two in five workers farm' }
+          { label: 'The change', left: 'China\'s share of manufactured goods: about a third (1750) to about 6% (1900)', right: 'Factories and railways spread' },
+          { label: 'Kept going', left: '1908: about a million people in one Indian province still live from the handloom', right: 'India, 1901: about two-thirds farm. Even in the US, 1900: about two in five workers still farm' }
         ]
       },
       notes: {
@@ -517,7 +517,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'The old makers: India, China and the Middle East kept making goods, much of it by hand, but a shrinking share. China\'s share fell from about a third in 1750 to about 6 percent in 1900 (5.4, Bairoch). In 1908, in one province of northern India (the United Provinces), about a million people still lived from handloom weaving (5.4).',
-          'Most people still farmed: the Census of India, 1901 (Risley and Gait\'s report) found agriculture the livelihood of nearly two-thirds of the population; in the United States in 1900, about two in five workers were in farming (Lebergott\'s estimates). Until about 1900, wood and other things that grow were still the world\'s largest source of energy (5.5).',
+          'Most people still farmed: the Census of India, 1901 (Risley and Gait\'s report) found agriculture the livelihood of nearly two-thirds of the population; in the United States in 1900, about two in five workers were in farming (Lebergott\'s estimates). Wood and other things that grow gave about as much energy as coal until about 1900; coal passed them between 1900 and 1910 (5.5).',
         ],
         ask: 'Does a shrinking share mean the old makers stopped working?',
         listenFor: 'No: they kept making, but the rest of the world\'s production grew much faster.',
@@ -529,12 +529,12 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'Unit 5: Learning Objective K', title: 'The gains went to some.',
       footer: 'Wallace in 1898: wealth grew "without any corresponding increase in the well-being of the whole people."',
       template: {
-        caption: 'Still poor in 1890: lodgers in a New York tenement',
+        caption: 'Still poor, about 1890: lodgers in a New York tenement',
         steps: [
           { label: 'States', text: 'Egypt\'s army factories mostly closed by the mid-1840s; Japan\'s railways and mills lasted.' },
           { label: 'The top', text: 'Landed families kept power: Lord Salisbury, a marquess, prime minister in 1900.' },
           { label: 'Health', text: 'Manchester, 1840s: a baby could expect about **25 to 28** years; England and Wales, about **40 to 42**.' },
-          { label: 'Wallace tested', key: true, text: 'Living standards did rise, slowly, then faster after about 1860. Unequal, but not nothing.' }
+          { label: 'Test Wallace', key: true, text: 'Living standards rose slowly, then faster after 1860. Support or not?' }
         ]
       },
       notes: {
@@ -595,7 +595,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         periods: [
           { label: 'Ideas', when: '1687 to 1780s', text: 'Newton, Locke, Voltaire, Rousseau, Montesquieu, the Encyclopédie.', note: 'Read in coffeehouses and salons, across Europe and the Atlantic.' },
-          { label: 'Revolutions', when: '1775 to 1826', text: 'America 1775, France 1789, Haiti 1791, Spanish America 1810.', note: 'Factories still almost all in Britain.' },
+          { label: 'Revolutions', when: '1775 to 1826', text: 'America 1775, France 1789, Haiti 1791, Spanish America 1810.', note: 'When they began, factories were almost all in Britain.' },
           { label: 'Factories spread', when: '1780s to 1900', text: 'A few copies abroad (Ratingen, 1784); the US, Belgium; Russia and Japan mostly after 1870.', note: 'Topic 5.4.' }
         ]
       },
@@ -611,7 +611,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.3.I: the rise and diffusion of Enlightenment thought that questioned established traditions often preceded revolutions and rebellions against existing governments.',
           'The order: the ideas (Newton 1687, Locke 1689, Montesquieu 1748, the Encyclopédie 1751 to 1772, Rousseau 1762); the revolutions (American 1775, French 1789, Haitian 1791, Spanish American 1810) (5.1, 5.2); and factory methods leaving Britain (Slater\'s mill in Rhode Island from 1793, Cockerill at Seraing from 1817, Russia and Japan mostly after 1870) (5.4).',
-          'So the Atlantic revolutions began while factories were still almost all in Britain (a copy of Arkwright\'s mill at Ratingen, Germany, 1784, was one of the very few abroad). Its causes, 5.2 taught, were a grievance, the words to name it, and a chance to act. The ideas gave revolutionaries their words; they did not cause the revolutions by themselves.'
+          'So the Atlantic revolutions began while factories were still almost all in Britain (a copy of Arkwright\'s mill at Ratingen, Germany, 1784, was one of the very few abroad). Their causes, 5.2 taught, were a grievance, the words to name it, and a chance to act. The ideas gave revolutionaries their words; they did not cause the revolutions by themselves.'
         ],
         ask: 'Can industry be the cause of the French Revolution? Use the dates.',
         listenFor: 'No: France\'s revolution began in 1789, while factories were still almost all in Britain, from debt, grievances and ideas.',
@@ -720,9 +720,9 @@ window.BEHISTORICAL_TEACHING = {
         columns: [{ name: 'In 1750' }, { name: 'By 1900' }, { name: 'Kept going' }],
         rows: [
           { label: 'Making', cells: ['By hand, mostly in Asia', 'Coal, factories; Europe and US over four-fifths', 'Old makers kept making by hand'] },
-          { label: 'Moving', cells: ['Horse and sail', 'Rails, steam, telegraph; trade, migration', 'The trains carried farm crops'] },
+          { label: 'Moving', cells: ['Horse and sail', 'Rails, steam, telegraph; trade, migration', 'Farmers still grew the wheat the trains carried'] },
           { label: 'Living', cells: ['Rank by birth and land', 'Cheaper goods; better, for some', 'Most still farmed; many poor'] },
-          { label: 'Ruling', cells: ['Kings by God\'s will', 'New nations, nationalism (ideas first)', 'Kings in most of Europe; few women vote'] }
+          { label: 'Ruling', cells: ['Most rulers: God and birth', 'New nations, nationalism (ideas first)', 'Kings in most of Europe; few women vote'] }
         ],
         result: { label: 'So', text: 'Deep change, uneven reach.' }
       },
@@ -750,21 +750,21 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Take a side. Name a change, a continuity, for whom, and why.',
       template: {
         weak: 'Industrialization changed the world a lot between 1750 and 1900.',
-        strong: 'Between 1750 and 1900 industrialization changed ______ to a **great** extent, **especially for** ______, **because** ______, **but** ______ **kept going**.'
+        strong: 'Between 1750 and 1900 industrialization changed ______ to a ______ extent, **because** ______, **but** ______ **kept going**.'
       },
       notes: {
         minutes: 3,
         keys: [
           'Weak: no side, no evidence, no limit, no reason',
-          'Frame: great extent, for whom, because, but',
-          'Students may flip "great" to "limited"',
+          'Frame: a side (how much), because, but',
+          'Students choose the side: great, limited, or mixed',
           'Pairs fill it aloud, then trade and sharpen',
           'No finished thesis on the board'
         ],
         land: [
           'This slide stays in the lesson shape because it carries the thesis move Checkpoint 2 asks for, as 4.8\'s does (PRESENTATION-AUTHORING section 7, rule 7).',
           'The weak thesis takes no measurable side, names no change, no place or people, no continuity and no reason. It fits any century, which is why it earns no credit.',
-          'The frame is not a model answer. A student may write "a limited extent" and swap the halves; both are defensible with evidence. Have pairs fill it aloud with cases they choose, then trade and say what would make the partner\'s stronger. The First & 10 gives the criteria for a strong thesis and prints no finished one.'
+          'The frame is not a model answer. The extent is left blank on purpose: a student may write "great", "limited" or "great in some ways and limited in others"; both are defensible with evidence. Have pairs fill it aloud with cases they choose, then trade and say what would make the partner\'s stronger. The First & 10 gives the criteria for a strong thesis and prints no finished one.'
         ],
         ask: 'Why is "changed the world a lot" not a thesis?',
         listenFor: 'It does not say how much, what changed, for whom, what kept going, or why.'

@@ -260,7 +260,12 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // Jeff's standing rule of 2026-10-12. Topic 5.10's rewrite, "How Much Changed?",
 // had two passes there; its third runs now, and this pin moves again once that
 // pass's fixes land. Against the blob e1d2719a only the 5.9 and 5.10 entries changed.
-const APPROVED_UNIT5_REWRITE_BLOB = '39898dd5738da3f751f3cc456ad8f4bd690ff6a3';
+// 2026-11-17, after Topic 5.10's third review pass (docs/TOPIC-5-10-CLAIM-LEDGER.md):
+// the Wallace paragraph no longer prints the answer to the Primary Source questions, the
+// energy sentence matches coal's "about half" by 1900, the crossing times say they count
+// every emigrant ship, the 1846 to 1940 span says it runs past the unit, and China's share is
+// of manufactured goods. Against the provisional blob 39898dd5 only the 5.10 entry changed.
+const APPROVED_UNIT5_REWRITE_BLOB = 'fe67539a281961ef69bc52bad2c8d226e4388e6b';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

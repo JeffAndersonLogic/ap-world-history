@@ -185,7 +185,7 @@ Each finding is weighed on its own; the reviewer does not have the last word.
 
 ### Pass 3 (2026-11-17), fresh reviewers, after the pass 2 fixes
 
-**Resume here:** pass 3 was launched on 2026-11-17 on a packet captured from `main` plus this topic
+Pass 3 was launched on 2026-11-17 on a packet captured from `main` plus this topic
 (`node scripts/capture-topic-for-review.js 5.10`, fallback fonts), after Jeff chose to ship only 5.9 and
 5.10 from `claude/topic-5-10-build` and to finish this topic's loop first. Passes 1 and 2 ran on
 2026-11-08 and every finding was fixed; the fresh full pass the stop rule requires after those fixes had
@@ -210,21 +210,21 @@ one-line hand-off); no worked Skill Builder answer printed.
    him and one that does not; the First & 10 ("So Wallace was partly right: the gains were unequal, but they
    were not nothing"), slide 13 ("Wallace tested ... Unequal, but not nothing") and the deep reading
    ("partly right and partly too far") give the verdict, and the AP Thinking callout then asks the question
-   the paragraph has answered. `PENDING`
+   the paragraph has answered. **FIXED: the paraphrase ("In other words ...") and the verdict ("So Wallace was partly right ...") are gone from the First & 10, which now says "Test his claim against that evidence"; the deep reading gives the evidence without the verdict; slide 13's "Wallace tested" row is now "Test Wallace: Living standards rose slowly, then faster after 1860. Support or not?". The AP Thinking callout now asks a question the page leaves open.**
 2. **Energy contradiction**: "By about 1900, coal supplied about half of all the energy used in the world"
    (F10 section 2, lecture card 1, slide 7, deep reading) against "until about 1900, wood and other things
    that grow were still the world's largest source of energy" (F10 section 4, slide 12, deep reading).
-   `PENDING`
+   **FIXED (a wording fix; both facts were nearly right): Topic 5.5's ledger (Our World in Data, from Smil) puts coal at about 47 percent in 1900, passing wood and other plant fuels between 1900 and 1910. The F10, the deep reading, slide 12's footer and its notes now say plant fuels gave about as much energy as coal until about 1900 and coal passed them between 1900 and 1910.**
 3. **Slide 20's thesis frame with slide 19's table is a copyable Checkpoint 2 thesis**: the frame
    pre-chooses "to a great extent" and "especially for", and slide 19's rows fill every blank; "AP-SIZED" is
-   jargon. `PENDING`
+   jargon. **FIXED: the frame leaves the extent blank ("to a ______ extent") and drops "especially for"; the notes say students choose great, limited or mixed. "AP-SIZED" is the shared Sharpen template's label on every deck: ADJACENT, reported, not changed here.**
 4. **Slide 19 cells no student surface teaches**: MOVING, kept going, "The trains carried farm crops" (the
    reading presents the wheat trade as change); RULING, 1750, "Kings by God's will" (the reading says most
-   rulers claimed God and birth). `PENDING`
+   rulers claimed God and birth). **FIXED: Moving, kept going, is now "Farmers still grew the wheat the trains carried" (the reading's wheat and its "most people still farmed"); Ruling, 1750, is "Most rulers: God and birth". "Rank by birth and land" stays: 5.9 teaches it (the landed families) and 5.10's reading calls it the ladder of rank.**
 5. **Dense prompts and an unseen date**: Primary Source Q3 asks three things; Skill Practice item 3 packs two
    statistics into one parenthesis; Checkpoint 1 step 3 asks three things in one step; slide 12's row labels;
    Target 2 and Checkpoint 1 step 4 say "1775 to 1826" but the lesson page's cards show revolution dates only
-   to 1810. `PENDING`
+   to 1810. **FIXED in part: Primary Source Q3 split into two sentences ("Next, pick one claim of his ..."); Checkpoint 1 step 3 lettered (a), (b), (c); the lecture card on the ideas now shows 1826 ("Spain had lost almost all its American colonies by 1826"). Not changed, as wording preferences: Skill Practice item 3 (one comparison, kept whole because the comparison is the evidence) and slide 12's row labels.**
 
 #### Pass 3, history on the student surfaces (top model), 4 findings
 
@@ -236,14 +236,14 @@ credits against the Library of Congress. Canvas text not yet written for this to
 1. **Facts tagged to a topic that never taught them**: the India 1901 census and the US 1900 farm share
    sit under "(Topic 5.5)", and Ratingen (1784) under "(Topic 5.4)"; neither topic carries them. The deep
    reading says "every number here is the one its own topic teaches". Checkpoint 2 relies on the tags. The
-   figures themselves are right (LVR Industriemuseum, Ratingen 1783/84). `PENDING`
+   figures themselves are right (LVR Industriemuseum, Ratingen 1783/84). **FIXED: "(Topic 5.5)" now sits only on what 5.5 teaches (the energy sentence and the crossing-time comparison); Ratingen is untagged and 5.4 is named only for Slater, Cockerill and Russia and Japan; the deep reading's How to Use This says "most numbers ... a few, such as the farm figures and the Liverpool crossing times, are new in this topic". Also fixed nearby: Cockerill's 1817 works "in what is today Belgium" (as corrected in 5.4).**
 2. **Atlantic voyage times disagree with Topic 5.5**: 5.10's "more than 40 days in 1853 ... about 16 by
    1869" is Hatton's average of all emigrant voyages, sail and steam together (Hatton, "Time on the
    Crossing", IZA DP 16274, 2024); 5.5 teaches about 12 days by steamship in the 1860s; nothing says the
-   two measure different things. `PENDING`
+   two measure different things. **FIXED: the F10, the lecture card and the deep reading say the 16 days counts every emigrant ship, and that a steamship alone crossed in about 12 to 14 (5.5; Hatton's 14 for steamships in the notes).**
 3. **Lecture card 3 gives Manchester's 25 to 28 years without the national 40 to 42**, the comparison 5.9
-   says is the evidence. `PENDING`
-4. **Deep reading 04: "Its causes, Topic 5.2 showed"**: the pronoun reads as industry's causes. `PENDING`
+   says is the evidence. **FIXED: the lecture card adds "against about 40 to 42 for England and Wales as a whole".**
+4. **Deep reading 04: "Its causes, Topic 5.2 showed"**: the pronoun reads as industry's causes. **FIXED: "Their causes".**
 
 #### Pass 3, history on the deck, notes and picture credits (top model), 8 findings
 
@@ -254,17 +254,34 @@ days; 1869: 16.0). Not reachable: the Illustrated London News issue date for the
 (plausible; its own caption confirms the subject).
 
 1. **Slide 12: column "Most people still farmed" over "US, 1900: about two in five workers farm"**: two in
-   five is not most. `PENDING`
+   five is not most. **FIXED: the column is "Farming kept going", and the US row says "Even in the US, 1900: about two in five workers still farm".**
 2. **Slides 6, 8, 12 (and F10 line 79): Bairoch's shares called "the world's goods"**; they are shares of
-   manufacturing output. `PENDING`
+   manufacturing output. **FIXED: "manufactured goods" or "manufacturing" on slides 6, 8 and 12 (the shorter word where the box is tight), in the deep reading's thesis and section 03, and in the F10's section 4.**
 3. **Slide 15: "Factories still almost all in Britain" over the whole 1775 to 1826 box**; Slater (1793) and
-   Cockerill (1817) fall inside it; the readings say "began while". `PENDING`
+   Cockerill (1817) fall inside it; the readings say "began while". **FIXED: the slide 15 note now reads "When they began, factories were almost all in Britain." (A first draft of this disposition called it unneeded; that was wrong, and it was corrected before commit.) The same slide's notes had the "Its causes" pronoun slip: now "Their causes".**
 4. **Slide 8: "Yarn a third of its 1780s price, 1815"** drops "coarsest" and "after rising prices"; read as
-   a money price it overstates the fall. `PENDING`
-5. **Slide 10: 1913 and 1846 to 1940 figures projected without saying they run past 1900.** `PENDING`
+   a money price it overstates the fall. **FIXED: "Coarse yarn: a third of 1780s real price, 1815" on slide 8; the key reads "Coarse yarn: a third of 1780s price, 1815" (the deck's short-key rule); the deep reading's card says "the coarsest cotton yarn ... after rising prices".**
+5. **Slide 10: 1913 and 1846 to 1940 figures projected without saying they run past 1900.** **FIXED: "(after this unit)" on the 1913 figure and "(runs past this unit)" on 1846 to 1940, on the slide; the F10 and lesson data say the same for 1846 to 1940.**
 6. **Slide 13 caption "Still poor in 1890"**: the photograph is dated 1889 (MoMA 51194; ICP); 1890 is the
-   book. `PENDING`
+   book. **FIXED: "Still poor, about 1890".**
 7. **Slide 1 Teacher Preflight note "the one new source is Wallace ... and two new figures for farming"**:
-   Hatton's crossing times and Showalter are also new to 5.10. `PENDING`
+   Hatton's crossing times and Showalter are also new to 5.10. **FIXED: the Preflight note lists what is new in 5.10 (Wallace; Hatton; Showalter; Ratingen; the two farming figures).**
 8. **Slide 17: the Key Concept band shows "KC-5.3.II.I"**; the code is KC-5.3.II.i. The band's uppercase
-   styling, so any deck with a lowercase code is affected. `PENDING`
+   styling, so any deck with a lowercase code is affected. **FIXED in the shared slide template: the Key Concept code is no longer forced to capitals (`text-transform:none` on `.bhkc-code`), so KC-5.3.II.i prints as written. Codes that are already capitals look the same; the change came from `claude/topic-5-10-build`, where it had been made for the same reason.**
+
+## The loop stops here, on the three-pass safety valve
+
+Pass 3 is the third full pass and it found supported defects (17: 5 page truth, 4 on the student
+surfaces, 8 on the deck), so the stop rule's safety valve applies: everything it found is fixed or
+answered above, and the loop stops. The trend was down to small items: no wrong date, no myth and no
+misquotation in pass 3; the findings were near-model answers to the Wallace questions, which topic a fact
+is credited to, two figures that measure different things, and slide labels. No row is NEEDS JEFF. Every
+row carries VERIFIED, NARROWED or REMOVED. The First & 10 fingerprint was moved after these fixes
+(`scripts/test/readings-golden.js`, note dated 2026-11-17).
+
+**Brought in with 5.9 and 5.10:** the shared road-map spacing fix (`ol.bht-rm{gap:0}` in
+`assets/js/behistorical-slide-templates.js`) from the build branch, because the browser test showed the
+5.9 and 5.10 road maps running off the board without it.
+
+**Adjacent, not changed here:** the "AP-SIZED" label is built into the shared Sharpen slide template
+and appears on every deck that has a Sharpen slide; a fourteen-year-old may not know what it means.

@@ -356,11 +356,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Ships changed too. On the main emigrant route, from Liverpool, Britain's chief emigrant port, to New York, a voyage took more than 40 days on average in 1853, when emigrant ships still went under sail; by 1869, as steamships took over, it took about 16. And news stopped waiting for ships. By the 1840s a telegraph message could travel along a wire in minutes (Samuel Morse's line from Washington to Baltimore opened in 1844); from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
+            "html": "Ships changed too. On the main emigrant route, from Liverpool, Britain's chief emigrant port, to New York, the average voyage, counting every emigrant ship, took more than 40 days in 1853, when they still went under sail; by 1869, as steamships took over, it took about 16 (a steamship alone crossed in about 12 to 14, Topic 5.5). And news stopped waiting for ships. By the 1840s a telegraph message could travel along a wire in minutes (Samuel Morse's line from Washington to Baltimore opened in 1844); from 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 a cable reached Bombay, in India."
           },
           {
             "type": "p",
-            "html": "So trade and <span class=\"kt\">migration</span>, people moving to live in a new place, grew. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913, just after this unit's period, it cost only 15.6 percent more, because trains and steamships carried North American wheat to British workers. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and between 1846 and 1940 more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean (Topic 5.5)."
+            "html": "So trade and <span class=\"kt\">migration</span>, people moving to live in a new place, grew. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913, just after this unit's period, it cost only 15.6 percent more, because trains and steamships carried North American wheat to British workers. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914, and between 1846 and 1940, a span that runs past this unit, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean (Topic 5.5)."
           }
         ],
         "callout": {
@@ -375,15 +375,15 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1898 the naturalist Alfred Russel Wallace, famous for working out the theory of evolution by natural selection on his own, separately from Charles Darwin (their papers were read together in 1858), looked back over his own century. He wrote that \"not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period.\" In other words: this one century changed as much as all of history before it. Is he right? He went on: \"this is only one side of the shield.\" Put each change beside its limits."
+            "html": "In 1898 the naturalist Alfred Russel Wallace, famous for working out the theory of evolution by natural selection on his own, separately from Charles Darwin (their papers were read together in 1858), looked back over his own century. He wrote that \"not only is our century superior to any that have gone before it, but that it may be best compared with the whole preceding historical period.\" Is he right? He went on: \"this is only one side of the shield.\" Put each change beside its limits."
           },
           {
             "type": "p",
-            "html": "<strong>The old makers kept making.</strong> India, China and the Middle East did not stop working. Their share of the world's goods shrank, and China's fell from about a third in 1750 to about 6 percent in 1900. But in 1908, in just one province of northern India, about a million people still lived from weaving cloth on handlooms (Topic 5.4)."
+            "html": "<strong>The old makers kept making.</strong> India, China and the Middle East did not stop working. Their share of the world's manufactured goods shrank, and China's fell from about a third in 1750 to about 6 percent in 1900. But in 1908, in just one province of northern India, about a million people still lived from weaving cloth on handlooms (Topic 5.4)."
           },
           {
             "type": "p",
-            "html": "<strong>Most people still farmed.</strong> In India, the census of 1901 found about two-thirds of the people living by farming. Even in the industrial United States, about two in five workers still farmed in 1900. And until about 1900, wood and other things that grow were still the world's largest source of energy (Topic 5.5)."
+            "html": "<strong>Most people still farmed.</strong> In India, the census of 1901 found about two-thirds of the people living by farming. Even in the industrial United States, about two in five workers still farmed in 1900. And wood and other things that grow gave about as much of the world's energy as coal until about 1900; coal passed them only between 1900 and 1910 (Topic 5.5)."
           },
           {
             "type": "p",
@@ -391,7 +391,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The gains went to some.</strong> Industry rebuilt the ladder of rank instead of ending it: landed families kept much of their power, and in 1900 Britain's prime minister, Lord Salisbury, was a marquess. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole (Topic 5.9). Wallace went further. He wrote of \"the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people.\" Historians since have found that working families' living standards did rise, slowly before the 1850s and faster after about 1860. So Wallace was partly right: the gains were unequal, but they were not nothing."
+            "html": "<strong>The gains went to some.</strong> Industry rebuilt the ladder of rank instead of ending it: landed families kept much of their power, and in 1900 Britain's prime minister, Lord Salisbury, was a marquess. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole (Topic 5.9). Wallace went further. He wrote of \"the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people.\" Historians since have found that working families' living standards did rise, slowly before the 1850s and faster after about 1860. Test his claim against that evidence."
           }
         ],
         "callout": {

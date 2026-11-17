@@ -45,7 +45,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `The College Board asks you to explain the <em>extent</em> to which industrialization brought change from 1750 to 1900. "Extent" means how much, so this is a measurement: how big the change was, how far it reached, and what kept going beside it. The evidence is the whole unit's, and every number here is the one its own topic teaches. The skill is argumentation: explaining how pieces of evidence relate.`,
+    intro: `The College Board asks you to explain the <em>extent</em> to which industrialization brought change from 1750 to 1900. "Extent" means how much, so this is a measurement: how big the change was, how far it reached, and what kept going beside it. The evidence is the whole unit's, and most numbers here are the ones their own topics teach; a few, such as the farm figures and the Liverpool crossing times, are new in this topic. The skill is argumentation: explaining how pieces of evidence relate.`,
     steps: [
       `<b>01 Making:</b> coal, factories, cheaper goods, and who gained.`,
       `<b>02 Moving:</b> railroads, steamships and the telegraph, and why they reached further.`,
@@ -65,7 +65,7 @@ module.exports = {
       name: 'Making: Factories and Coal',
       navLabel: 'Making',
       dates: '1750 to 1900 &nbsp;·&nbsp; Britain, Europe, the United States',
-      thesis: `Industry changed how goods were made and what they cost, and moved the making of the world's goods from Asia to Europe and the United States. The gains in living standards were real, slow at first, and unequal.`,
+      thesis: `Industry changed how goods were made and what they cost, and moved the making of the world's manufactured goods from Asia to Europe and the United States. The gains in living standards were real, slow at first, and unequal.`,
       parts: [
         {
           heading: 'The starting line',
@@ -175,15 +175,15 @@ module.exports = {
         {
           heading: 'The old makers, and the farmers',
           blocks: [
-            { p: `India, China and the Middle East did not stop working. Their share of the world's goods shrank, and China's fell from about a third in 1750 to about <span class="num">6 percent</span> in 1900, partly because the rest of the world's production grew much faster. But in <span class="num">1908</span>, in just one province of northern India, about a million people still lived from weaving cloth on handlooms.` },
-            { p: `And most people still farmed. In India, the census of <span class="num">1901</span> found about two-thirds of the people living by farming. Even in the industrial United States, about two in five workers still farmed in 1900. Until about 1900, wood and other things that grow were still the world's largest source of energy.` }
+            { p: `India, China and the Middle East did not stop working. Their share of the world's manufactured goods shrank, and China's fell from about a third in 1750 to about <span class="num">6 percent</span> in 1900, partly because the rest of the world's production grew much faster. But in <span class="num">1908</span>, in just one province of northern India, about a million people still lived from weaving cloth on handlooms.` },
+            { p: `And most people still farmed. In India, the census of <span class="num">1901</span> found about two-thirds of the people living by farming. Even in the industrial United States, about two in five workers still farmed in 1900. Wood and other things that grow gave about as much of the world's energy as coal until about 1900; coal passed them only between 1900 and 1910.` }
           ]
         },
         {
           heading: 'Gains for some',
           blocks: [
             { p: `Only a few states built industry, and not all of it lasted: Muhammad Ali's Egypt built factories for its army, and most had closed by the mid-<span class="num">1840s</span>, while Meiji Japan built railways and mills that lasted (Topic 5.6). Inside industrial countries, the ladder of rank was rebuilt, not ended: landed families kept much of their power, and in 1900 Britain's prime minister, Lord Salisbury, was a marquess. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole, averages pulled down by the many babies who died (Topic 5.9).` },
-            { p: `Wallace went further. "One of the most prominent features of our century," he wrote, "has been the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people." Test it. The gains were unequal, as he says. But historians find that working families' living standards did rise, slowly to the 1850s and faster after about 1860. Wallace is partly right and partly too far.` },
+            { p: `Wallace went further. "One of the most prominent features of our century," he wrote, "has been the enormous and continuous growth of wealth, without any corresponding increase in the well-being of the whole people." Test it against the evidence: historians find that working families' living standards did rise, slowly to the 1850s and faster after about 1860, while the gains stayed unequal.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -221,7 +221,7 @@ module.exports = {
         {
           heading: 'The ideas came first',
           blocks: [
-            { p: `The College Board says Enlightenment thought "often preceded" revolutions. The dates show it. The American Revolution began in <span class="num">1775</span>, the French in <span class="num">1789</span>, the Haitian in <span class="num">1791</span>, and the wars for independence in Spanish America in <span class="num">1810</span>. Factory methods, meanwhile, were only beginning to leave Britain: a copy of Arkwright's mill opened at Ratingen, in Germany, in 1784, Samuel Slater's spinning mill in Rhode Island was begun in 1793, John Cockerill's works in Belgium in 1817, and the big growth in Russia and Japan came mostly after 1870 (Topic 5.4). So the Atlantic revolutions were not industry's. Its causes, Topic 5.2 showed, were a grievance, the words to name it, and a chance to act.` },
+            { p: `The College Board says Enlightenment thought "often preceded" revolutions. The dates show it. The American Revolution began in <span class="num">1775</span>, the French in <span class="num">1789</span>, the Haitian in <span class="num">1791</span>, and the wars for independence in Spanish America in <span class="num">1810</span>. Factory methods, meanwhile, were only beginning to leave Britain: a copy of Arkwright's mill opened at Ratingen, in Germany, in 1784, and, as Topic 5.4 shows, Samuel Slater's spinning mill in Rhode Island was begun in 1793, John Cockerill's works in what is today Belgium in 1817, and the big growth in Russia and Japan came mostly after 1870. So the Atlantic revolutions were not industry's. Their causes, Topic 5.2 showed, were a grievance, the words to name it, and a chance to act.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -298,7 +298,7 @@ module.exports = {
       {
         category: 'Continuity and Change',
         title: 'Making',
-        body: `Changed: coal about half the world's energy by about 1900; cotton yarn about a third of its 1780s price by 1815; Europe and the United States more than four-fifths of the world's manufactured goods by 1900. Limit: living standards rose "for some," slowly to the 1850s, faster after about 1860.`
+        body: `Changed: coal about half the world's energy by about 1900; the coarsest cotton yarn about a third of its 1780s price by 1815, after rising prices; Europe and the United States more than four-fifths of the world's manufactured goods by 1900. Limit: living standards rose "for some," slowly to the 1850s, faster after about 1860.`
       },
       {
         category: 'Continuity and Change',
