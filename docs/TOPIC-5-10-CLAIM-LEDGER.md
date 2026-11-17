@@ -225,3 +225,22 @@ one-line hand-off); no worked Skill Builder answer printed.
    statistics into one parenthesis; Checkpoint 1 step 3 asks three things in one step; slide 12's row labels;
    Target 2 and Checkpoint 1 step 4 say "1775 to 1826" but the lesson page's cards show revolution dates only
    to 1810. `PENDING`
+
+#### Pass 3, history on the student surfaces (top model), 4 findings
+
+Held up: the CED wording; every Wallace quotation (Internet Archive, Cornell copy of the 1898 Dodd, Mead
+edition); Bairoch, coal, the wheat gap, migration; railway, telegraph and cable dates; Locke, Voltaire,
+Salisbury, New Zealand, Italy and Germany, the revolution dates, the Chartist convention; three picture
+credits against the Library of Congress. Canvas text not yet written for this topic.
+
+1. **Facts tagged to a topic that never taught them**: the India 1901 census and the US 1900 farm share
+   sit under "(Topic 5.5)", and Ratingen (1784) under "(Topic 5.4)"; neither topic carries them. The deep
+   reading says "every number here is the one its own topic teaches". Checkpoint 2 relies on the tags. The
+   figures themselves are right (LVR Industriemuseum, Ratingen 1783/84). `PENDING`
+2. **Atlantic voyage times disagree with Topic 5.5**: 5.10's "more than 40 days in 1853 ... about 16 by
+   1869" is Hatton's average of all emigrant voyages, sail and steam together (Hatton, "Time on the
+   Crossing", IZA DP 16274, 2024); 5.5 teaches about 12 days by steamship in the 1860s; nothing says the
+   two measure different things. `PENDING`
+3. **Lecture card 3 gives Manchester's 25 to 28 years without the national 40 to 42**, the comparison 5.9
+   says is the evidence. `PENDING`
+4. **Deep reading 04: "Its causes, Topic 5.2 showed"**: the pronoun reads as industry's causes. `PENDING`
