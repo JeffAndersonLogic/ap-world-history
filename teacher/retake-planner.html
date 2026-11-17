@@ -3,28 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<!-- This page reaches nothing. It loads its own stylesheet, its two brand fonts and two
-     scripts, all from this site, and makes no other request: no analytics, no AI service,
-     no database. The Canvas file
+<!-- This page reaches nothing. It loads its own stylesheet and two scripts and makes no
+     other request: no fonts, no analytics, no AI service, no database. The Canvas file
      and the question map are read inside this tab and are gone when it closes.
      scripts/test/retake-planner-page.test.js fails the push if a request leaves. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; frame-src 'none'; object-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="noindex">
-<title>Retake Planner | ANDERSONLOGIC ai</title>
+<title>Retake Planner | BeHistorical</title>
 <link rel="stylesheet" href="retake-planner.css">
 <link rel="icon" href="data:,">
 </head>
 <body>
 <header class="topbar">
   <div class="wrap">
-    <span class="brand"><span class="al-wordmark" aria-label="ANDERSONLOGIC ai">ANDERSON<i>LOGIC</i> <span class="ai">ai</span></span><span class="product">Retake Planner</span></span>
+    <strong>Retake Planner <span>· BeHistorical</span></strong>
     <a href="index.html">Teacher Command Center</a>
   </div>
 </header>
 <div class="wrap">
   <section class="hero" aria-label="About this page">
     <div>
-      <span class="eyebrow">Teacher tools · Any course on Canvas New Quizzes</span>
+      <span class="eyebrow">BeHistorical · AP World History</span>
       <h1>Retake Planner</h1>
       <p>Which learning targets each student missed on a test, so a retake or test correction can ask <em>new</em> questions on those targets instead of the ones the student has already seen. It reads results; it does not grade. Canvas holds every grade.</p>
     </div>
@@ -98,7 +97,7 @@
     </section>
   </div>
 </main>
-<footer><div class="wrap">Retake Planner by <span class="al-wordmark">ANDERSON<i>LOGIC</i> <span class="ai">ai</span></span>. It reads results to plan retakes. Nothing on this page is used for a grade, and nothing on it leaves this computer unless you copy or download it yourself.</div></footer>
+<footer><div class="wrap">Retake Planner reads results to plan retakes. Nothing on this page is used for a grade, and nothing on it leaves this computer unless you copy or download it yourself.</div></footer>
 <script src="retake-planner-engine.js"></script>
 <script src="retake-planner-app.js"></script>
 </body>

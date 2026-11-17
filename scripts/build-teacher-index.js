@@ -72,9 +72,7 @@ const TOOLS = [
   // Jeff, 2026-11-17: which learning targets each student missed on a unit or era
   // test, so a retake asks new questions on them. Reads a Canvas export and a private
   // question map in the tab; never used for a grade.
-  // Branded ANDERSONLOGIC ai rather than BeHistorical (Jeff, 2026-11-17): it works for
-  // any course on Canvas New Quizzes.
-  { kind: 'primary', label: 'Retake Planner', desc: 'By ANDERSONLOGIC ai. Drop in a Canvas quiz report and its question map to see which learning targets each student missed, so retakes ask new questions. Stays on your computer.', href: 'retake-planner.html' },
+  { kind: 'primary', label: 'Retake Planner', desc: 'Drop in a Canvas quiz report and its question map to see which learning targets each student missed, so retakes ask new questions. Stays on your computer.', href: 'retake-planner.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Explore every Teaching OS layout, including 10 new reasoning templates, with examples and slide data to copy.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
 ];
