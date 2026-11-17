@@ -244,3 +244,27 @@ credits against the Library of Congress. Canvas text not yet written for this to
 3. **Lecture card 3 gives Manchester's 25 to 28 years without the national 40 to 42**, the comparison 5.9
    says is the evidence. `PENDING`
 4. **Deep reading 04: "Its causes, Topic 5.2 showed"**: the pronoun reads as industry's causes. `PENDING`
+
+#### Pass 3, history on the deck, notes and picture credits (top model), 8 findings
+
+Held up: no wrong date, misquotation or picture mismatch; the CED entry; the Wallace quotations (1898
+Dodd, Mead scan, p. 343); the Thévenin etching (Cleveland 2015.21), the Yokohama print (Library of
+Congress, Kunisada, ca. 1872), the Currier & Ives attribution (NGA 66574); Hatton's tables (1853: 41.7
+days; 1869: 16.0). Not reachable: the Illustrated London News issue date for the Great Eastern engraving
+(plausible; its own caption confirms the subject).
+
+1. **Slide 12: column "Most people still farmed" over "US, 1900: about two in five workers farm"**: two in
+   five is not most. `PENDING`
+2. **Slides 6, 8, 12 (and F10 line 79): Bairoch's shares called "the world's goods"**; they are shares of
+   manufacturing output. `PENDING`
+3. **Slide 15: "Factories still almost all in Britain" over the whole 1775 to 1826 box**; Slater (1793) and
+   Cockerill (1817) fall inside it; the readings say "began while". `PENDING`
+4. **Slide 8: "Yarn a third of its 1780s price, 1815"** drops "coarsest" and "after rising prices"; read as
+   a money price it overstates the fall. `PENDING`
+5. **Slide 10: 1913 and 1846 to 1940 figures projected without saying they run past 1900.** `PENDING`
+6. **Slide 13 caption "Still poor in 1890"**: the photograph is dated 1889 (MoMA 51194; ICP); 1890 is the
+   book. `PENDING`
+7. **Slide 1 Teacher Preflight note "the one new source is Wallace ... and two new figures for farming"**:
+   Hatton's crossing times and Showalter are also new to 5.10. `PENDING`
+8. **Slide 17: the Key Concept band shows "KC-5.3.II.I"**; the code is KC-5.3.II.i. The band's uppercase
+   styling, so any deck with a lowercase code is affected. `PENDING`
