@@ -5,8 +5,8 @@
  * The Retake Planner teacher page in Chromium.
  *
  * What it proves:
- *   - the page asks nothing of any host: the only requests are its own four files and
- *     its two brand fonts, all on this site, and its security policy refuses anything else (a fetch from the page is
+ *   - the page asks nothing of any host: the only requests are its own four files, its
+ *     two brand fonts and its logo images, all on this site, and its security policy refuses anything else (a fetch from the page is
  *     blocked, which the test proves by trying one);
  *   - the invented demo loads, matches every question and counts every student;
  *   - two files chosen through the file picker, in either order and in the
@@ -192,9 +192,11 @@ function assert(cond, msg) { if (!cond) throw new Error(msg); }
     fx.people.forEach(p => assert(text.includes(p), p + ' missing'));
   });
 
-  await check('the page reaches nothing but its own files and brand fonts', async () => {
+  await check('the page reaches nothing but its own files, brand fonts and logo', async () => {
     const own = new Set(['/teacher/retake-planner.html', '/teacher/retake-planner.css', '/teacher/retake-planner-engine.js', '/teacher/retake-planner-app.js',
-      '/assets/fonts/andersonlogic/manrope-latin-var.woff2', '/assets/fonts/andersonlogic/inter-latin-var.woff2']);
+      '/assets/fonts/andersonlogic/manrope-latin-var.woff2', '/assets/fonts/andersonlogic/inter-latin-var.woff2',
+      '/assets/images/brand/andersonlogic/al-logo-mark.png', '/assets/images/brand/andersonlogic/al-logo-wordmark.png',
+      '/assets/images/brand/andersonlogic/al-logo-lockup.png', '/assets/images/brand/andersonlogic/al-favicon.png']);
     const stray = requests.filter(u => !u.startsWith('data:') && !u.startsWith('blob:') && !own.has(u.replace(origin, '')));
     assert(!stray.length, 'unexpected requests: ' + stray.join(', '));
     // Negative control: a fetch from the page is refused by its policy and recorded.
@@ -205,10 +207,17 @@ function assert(cond, msg) { if (!cond) throw new Error(msg); }
     await page.evaluate(() => { window.__csp.length = 0; });
   });
 
-  await check('the brand shows: the ANDERSONLOGIC ai wordmark, and its fonts really load', async () => {
-    const mark = await page.locator('.topbar .al-wordmark').innerText();
-    assert(/^ANDERSONLOGIC ai$/.test(mark.replace(/\s+/g, ' ').trim()), 'wordmark: ' + mark);
-    assert(await page.locator('.topbar .al-wordmark i').innerText() === 'LOGIC', 'LOGIC is the italic part');
+  await check('the brand shows: the ANDERSONLOGIC ai logo images load, and its fonts really load', async () => {
+    // A logo that fails to load still occupies its box and reads its alt text, so "the
+    // img is there" proves nothing; a loaded image has a natural width.
+    const logos = await page.evaluate(() => [...document.querySelectorAll('.topbar img, .hero-logo')].map(i => ({ alt: i.alt, ok: i.complete && i.naturalWidth > 0 })));
+    assert(logos.length === 3, 'mark, wordmark and lockup: ' + logos.length);
+    assert(logos.every(l => l.ok), 'an image did not load: ' + JSON.stringify(logos));
+    assert(logos.some(l => l.alt === 'ANDERSONLOGIC ai'), 'the wordmark image names the brand for a screen reader');
+    const broken = await page.evaluate(() => new Promise(res => { const i = new Image(); i.onload = i.onerror = () => res(i.naturalWidth); i.src = 'data:image/png;base64,AAAA'; }));
+    assert(broken === 0, 'negative control: an image that fails must show a natural width of 0');
+    const footer = (await page.locator('footer .al-wordmark').innerText()).replace(/\s+/g, ' ').trim();
+    assert(footer === 'ANDERSONLOGIC ai', 'footer wordmark: ' + footer);
     assert(!/BeHistorical/.test(await page.locator('body').innerText()), 'no BeHistorical branding left on the page');
     // document.fonts.check() answers true for a face that does not exist at all, so it
     // proves nothing; the list of faces whose files actually loaded does.

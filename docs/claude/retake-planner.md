@@ -23,6 +23,13 @@ the top of `retake-planner.css`. Manrope and Inter are served from `assets/fonts
 (OFL, licences beside them), never from Google, because the page's policy allows no other host.
 Gold is never text on a light surface; `--gold-ink` is.
 
+The **logo** (supplied by Jeff, 2026-11-17) sits in the top bar (the "A" mark and the wordmark)
+and the dark banner (the full stacked logo with the tagline), and the mark is the tab icon. The
+web files in `assets/images/brand/andersonlogic/` are cut from the original in AndersonLogic-OS
+`02_BRAND/Logos/` with its black panel made transparent. They are white and gold, so they go on
+dark grounds only; the footer, on a light ground, keeps the text wordmark. The browser test checks
+that each logo image actually loaded, not just that its tag is there.
+
 ## Two files, both read in the tab
 
 1. **The Canvas results**: New Quizzes, Reports, Student Analysis, Export CSV. Canvas does not
