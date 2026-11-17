@@ -192,3 +192,7 @@ Each finding is weighed on its own; the reviewer does not have the last word.
 not run. Three reviewers: history on the student surfaces (top model), history on the deck, notes and
 picture credits (top model), and page truth, readability, CED alignment and ownership (cheaper model).
 Findings go below as `PENDING` before any fix (standing rule of 2026-11-16).
+
+**Interrupted (2026-11-17):** all three pass 3 reviewers were cut off by the account's usage limit before
+reporting (it resets at 04:00 UTC). Their work is saved; they are resumed, not relaunched, once the limit
+resets. No finding has been reported yet, so nothing below is `PENDING` and nothing has been fixed.
