@@ -208,3 +208,12 @@ room's decisions. No new myth class appeared after pass 1. Nothing systemic rema
 fix: the story, the sources and the renderer held throughout. Every finding was fixed; none was rejected.
 
 **Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS JEFF.
+
+## Correction before shipping (2026-11-17)
+
+Found by the Unit 5 by Region review (pass 2, reviewer E; `docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`): the
+deep reading said "about four in ten women with a recorded job were servants". Burnette's 40 percent
+(the row above) is the wider census group, domestic service, which counts washerwomen and charwomen;
+servants alone were about a third (Burnett: 905,000 domestic servants among about 2.8 million employed
+women and girls in 1851). **NARROWED**: "about four in ten ... worked in domestic service, most of them as
+servants (about one in three were servants alone)". No other surface carries the figure as "servants".
