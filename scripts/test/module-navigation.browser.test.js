@@ -30,6 +30,7 @@ const server = http.createServer((req, res) => {
     let text = body.toString('utf8');
     if (mutation === 'controls') text = text.replace('  updateModuleNav();', '  /* negative control: no navigation */');
     if (mutation === 'draft') text = text.replace(/    BHDraftStore\.set\((?:draftKey\(t\.id\)|`foundations-topic-\$\{t.id\}`), t.value \|\| ''\);/, '    /* negative control: discard pending draft */');
+    if (mutation === 'reading') text = text.replace('  flushModuleReading();', '  /* negative control: discard pending reading answers */');
     assert.notEqual(text, body.toString('utf8'), 'negative control must alter its subject');
     body = Buffer.from(text);
   }
@@ -70,6 +71,35 @@ async function pendingDraft(page) {
   });
 }
 function saved(value) { assert.equal(value, 'Geography shapes trade routes and access to resources.', 'immediate navigation must preserve the newest draft'); }
+async function pendingReading(page, origin, file) {
+  await page.goto(`${origin}/${file}`, { waitUntil: 'domcontentloaded' });
+  await page.evaluate(() => {
+    // Each run starts with a clean reading answer, including the negative run.
+    for (const key of Object.keys(localStorage)) if (key.startsWith('behistorical-first10-')) localStorage.removeItem(key);
+    openModule('first10');
+  });
+  await page.waitForFunction(() => {
+    function find(doc) {
+      // The textarea appears before the end-of-page capture script runs.
+      // Its confidence row proves that script has initialized, not just parsed.
+      if (doc.querySelector('#bh-conf-row-0')) return true;
+      return [...doc.querySelectorAll('iframe')].some(f => { try { return f.contentDocument && find(f.contentDocument); } catch (_) { return false; } });
+    }
+    return find(document.getElementById('pop-body'));
+  });
+  return page.evaluate(() => {
+    function find(doc) {
+      const box = doc.querySelector('.q-textarea,.qta');
+      if (box) return box;
+      for (const f of doc.querySelectorAll('iframe')) { try { const t = f.contentDocument && find(f.contentDocument); if (t) return t; } catch (_) {} }
+    }
+    const t = find(document.getElementById('pop-body'));
+    t.value = 'Trade connected coastal cities and brought new sources of wealth.';
+    t.dispatchEvent(new Event('input', { bubbles: true }));
+    moduleStep(1);
+    return Object.keys(localStorage).filter(k => k.startsWith('behistorical-first10-')).some(k => (localStorage.getItem(k) || '').includes('Trade connected coastal cities'));
+  });
+}
 async function layout(page) {
   const result = await page.evaluate(() => {
     const panel = document.querySelector('#pop-modal .pop-panel');
@@ -106,8 +136,13 @@ async function layout(page) {
       await page.goto(`${origin}/${file}`, { waitUntil: 'domcontentloaded' });
       assert.throws(() => saved(null), /newest draft/);
       assert.notEqual(await pendingDraft(page), 'Geography shapes trade routes and access to resources.', 'draft negative control must expose data loss');
+      mutation = 'reading';
+      assert.equal(await pendingReading(page, origin, file), false, 'reading negative control must expose data loss');
     }
     mutation = '';
+    for (const file of [sample[0], sample[3]]) {
+      assert.equal(await pendingReading(page, origin, file), true, `${file}: immediate navigation must preserve embedded reading answers`);
+    }
     for (const file of pages) {
       await page.goto(`${origin}/${file}`, { waitUntil: 'domcontentloaded' });
       const sequence = await page.locator('#module-grid .module-card').evaluateAll(cards => cards.filter(c => /openModule\('/.test(c.getAttribute('onclick'))).map(c => ({ label: c.querySelector('.module-label').textContent, title: c.querySelector('h3').textContent })));

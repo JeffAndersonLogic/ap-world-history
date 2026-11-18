@@ -2133,6 +2133,7 @@ function bhCloseModal(modalId){
 function openModule(id) {
   const m = modules.find(x => x.id === id);
   if (!m || m.jump || m.link) return;
+  flushModuleReading();
   byId('pop-body').querySelectorAll('textarea.response-area').forEach(t => {
     if (!t._draftTimer) return;
     clearTimeout(t._draftTimer);
@@ -2154,6 +2155,18 @@ function closeModule(){bhCloseModal('pop-modal');}
 // Same pop-out sequence contract as the unit renderer; jump/link cards retain
 // their destinations. Injected here so every Foundations shell receives it.
 let currentModuleId = null;
+function flushModuleReading() {
+  if (currentModuleId !== 'first10') return;
+  // Run the nested reading's existing save before its iframe is replaced.
+  function flush(frame) {
+    try {
+      const win = frame.contentWindow;
+      win.document.querySelectorAll('iframe').forEach(flush);
+      win.dispatchEvent(new win.Event('beforeunload'));
+    } catch (_) { /* Only same-origin, loaded readings are accessible. */ }
+  }
+  byId('pop-body').querySelectorAll('iframe').forEach(flush);
+}
 function moduleSequence() {
   return modules.filter(m => !m.jump && !m.link && typeof m.render === 'function');
 }

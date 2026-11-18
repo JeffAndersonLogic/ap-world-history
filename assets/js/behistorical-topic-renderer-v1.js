@@ -2467,6 +2467,7 @@ function jumpToSection(selector) { const el = document.querySelector(selector); 
 function openModule(id) {
   const mod = window.BEHISTORICAL_MODULES.find(m => m.id === id);
   if (!mod || mod.jump || mod.link) return;
+  flushModuleReading();
   // Flush pending keystrokes before replacing their controls, so an immediate
   // Next -> Previous cannot reload an older draft during the autosave delay.
   byId('pop-body').querySelectorAll('textarea.response-area').forEach(t => {
@@ -2492,6 +2493,19 @@ function closeModule() { bhCloseModal('pop-modal'); }
 // Walk the pop-outs in their displayed order. Content Delivery and scenario
 // cards have their own jump/link destinations, not dialog bodies.
 let currentModuleId = null;
+function flushModuleReading() {
+  if (currentModuleId !== 'first10') return;
+  // Removing an iframe does not fire its beforeunload handler. Ask the reading
+  // (inside its capture wrapper) to run its existing save before replacing it.
+  function flush(frame) {
+    try {
+      const win = frame.contentWindow;
+      win.document.querySelectorAll('iframe').forEach(flush);
+      win.dispatchEvent(new win.Event('beforeunload'));
+    } catch (_) { /* Only same-origin, loaded readings are accessible. */ }
+  }
+  byId('pop-body').querySelectorAll('iframe').forEach(flush);
+}
 function moduleSequence() {
   return window.BEHISTORICAL_MODULES.filter(m => !m.jump && !m.link && typeof m.render === 'function');
 }
