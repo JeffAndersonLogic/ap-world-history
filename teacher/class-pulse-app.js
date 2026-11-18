@@ -86,6 +86,7 @@
     service: (() => { try { const v = localStorage.getItem('class-pulse-service'); return H && H.SERVICES.some(x => x.id === v) ? v : 'claude-for-teachers'; } catch (_) { return 'claude-for-teachers'; } })(),
     live: null,        // { auth, api, roster } once My class is chosen
     scene: 0,          // which part of Class view the projector shows (SCENES below)
+    modelPart: 0,      // which paragraph of the model answer it shows, one at a time
     bundleSaid: ''     // what happened to the last pasted Reader result, kept across redraws
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
@@ -1225,13 +1226,22 @@
       out.revisit = { n: c.ci + 1, text: c.text, short: d.weakest.t.P + d.weakest.t.N, read: d.weakest.t.read, P: d.weakest.t.P, N: d.weakest.t.N, strong: (ruled && ruled.D) || '' };
     }
     // Only while the model answer's own part is on screen, and only if it is switched on.
+    // One paragraph at a time (2026-11-18, Jeff): only the paragraph on screen is sent,
+    // with the criterion it meets when there is one paragraph per criterion.
     if (scene === 'model' && S.cvModel === 'show') {
-      const paras = modelText().split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
-      const mark = paras.length === d.cols.length && d.weakest ? d.weakest.t.c.ci : -1;
-      out.model = paras.map((text, i) => ({ text, hot: i === mark }));
+      const paras = modelParas(), match = paras.length === d.cols.length;
+      const mark = match && d.weakest ? d.weakest.t.c.ci : -1;
+      const part = Math.max(0, Math.min(paras.length - 1, S.modelPart));
+      out.model = paras.length ? [{ text: paras[part], hot: part === mark, n: part + 1, crit: match ? d.cols[part].text : '' }] : [];
+      out.modelPart = paras.length ? part : 0;
+      out.modelParts = paras.length;
     }
     return out;
   }
+  const modelParas = () => modelText().split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+  // How many paragraphs Next steps through before it stops, on the model answer only.
+  const modelParts = () => (SCENES[S.scene][0] === 'model' && S.cvModel === 'show' ? modelParas().length : 0);
+  const sceneLabel = () => SCENES[S.scene][1] + (modelParts() > 1 ? ', part ' + (Math.min(S.modelPart, modelParts() - 1) + 1) + ' of ' + modelParts() : '');
   function pushProjector() {
     renderScenes();
     if (chan && D) chan.postMessage({ type: 'state', state: projectorState() });
@@ -1241,15 +1251,24 @@
     const box = $('#proj-scenes'); if (!box) return;
     box.innerHTML = SCENES.map(([, label], i) => `<button class="btn" type="button" data-scene="${i}" aria-pressed="${i === S.scene}">${i + 1}. ${label}</button>`).join('');
     const open = projSeen && Date.now() - projSeen < 15000;
-    $('#proj-status').textContent = (open ? 'The projector screen is open and showing: ' : 'Not open yet. When it opens it will show: ') + SCENES[S.scene][1] + ', ' + CP_NAME[S.cvCp] + '.' +
+    $('#proj-status').textContent = (open ? 'The projector screen is open and showing: ' : 'Not open yet. When it opens it will show: ') + sceneLabel() + ', ' + CP_NAME[S.cvCp] + '.' +
+      (modelParts() > 1 ? ' Next shows the model answer one paragraph at a time.' : '') +
       (S.scene === 5 && S.cvModel !== 'show' ? ' Model answer is set to Hide above, so the screen says so instead of showing it.' : '') +
       (S.scene === 5 && S.cvModel === 'show' && !modelText().trim() ? ' No model answer is loaded for this checkpoint on this computer yet.' : '');
   }
   function setScene(i) {
-    S.scene = Math.max(0, Math.min(SCENES.length - 1, Number(i) || 0));
+    const next = Math.max(0, Math.min(SCENES.length - 1, Number(i) || 0));
+    if (next !== S.scene) S.modelPart = 0;
+    S.scene = next;
     pushProjector();
   }
-  function stepScene(d) { setScene(S.scene + d); }
+  // On the model answer, Next and Back move through its paragraphs first.
+  function stepScene(d) {
+    const parts = modelParts(), at = Math.min(S.modelPart, Math.max(0, parts - 1));
+    if (parts > 1 && d > 0 && at < parts - 1) { S.modelPart = at + 1; pushProjector(); return; }
+    if (parts > 1 && d < 0 && at > 0) { S.modelPart = at - 1; pushProjector(); return; }
+    setScene(S.scene + d);
+  }
   function openProjector() {
     projWin = window.open('class-pulse-projector.html', 'class-pulse-projector', 'popup=yes,width=1280,height=720');
     if (!projWin) { $('#proj-status').textContent = 'The browser blocked the new window. Allow pop-ups for this page and press the button again.'; setTab('class'); return; }
@@ -1271,12 +1290,12 @@
   function remoteSay(t) { $('#proj-ipad-status').textContent = t; }
   function sendRemoteState() {
     if (!remote || !remoteReady) return;
-    remote.publish({ type: 'state', index: remoteIndex(), count: (S.cvCp === 'cp2' ? 'CP2' : 'CP1') + ' · ' + (S.scene + 1) + ' of ' + SCENES.length, title: SCENES[S.scene][1] });
+    remote.publish({ type: 'state', index: remoteIndex(), count: (S.cvCp === 'cp2' ? 'CP2' : 'CP1') + ' · ' + (S.scene + 1) + ' of ' + SCENES.length, title: sceneLabel() });
   }
   function remoteGoto(index) {
     const i = Math.max(0, Math.min(SCENES.length * 2 - 1, Number(index) || 0));
     const cp = i >= SCENES.length ? 'cp2' : 'cp1';
-    if (cp !== S.cvCp) { S.cvCp = cp; $$('#cv-cp button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === cp)); if (S.tab === 'class') renderClass(); }
+    if (cp !== S.cvCp) { S.cvCp = cp; S.modelPart = 0; $$('#cv-cp button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === cp)); if (S.tab === 'class') renderClass(); }
     setScene(i % SCENES.length);
   }
   function renderRemote() {
@@ -1374,7 +1393,7 @@
   seg('#names', 'names', renderAll);
   seg('#sort', 'sort', renderLive);
   seg('#cmetric', 'cmetric', renderCourse);
-  seg('#cv-cp', 'cvCp', () => { renderClass(); pushProjector(); });
+  seg('#cv-cp', 'cvCp', () => { S.modelPart = 0; renderClass(); pushProjector(); });
   seg('#cv-mis', 'cvMis', () => { renderClass(); pushProjector(); });
   seg('#cv-model-show', 'cvModel', () => { renderClass(); pushProjector(); });
   $('#cv-session').addEventListener('click', e => {
