@@ -1,6 +1,6 @@
 const byId=id=>document.getElementById(id);
 
-// �� BEGIN INLINED COACH PROMPT BUILDER ��������������������������������������
+// ── BEGIN INLINED COACH PROMPT BUILDER ──────────────────────────────────────
 //
 // Derived from assets/js/behistorical-coach-prompt.js by
 // scripts/build-coach-prompt.js. Do not hand-edit: validate.js re-derives
@@ -82,7 +82,7 @@ const byId=id=>document.getElementById(id);
     return m ? (UNIT_PERIODS[Number(m[1])] || '') : '';
   }
 
-  // �� AP skill normalization �������������������������������������������������
+  // ── AP skill normalization ─────────────────────────────────────────────────
   //
   // The skillBuilder labels and the reading badges are hand-authored prose, so
   // the same skill arrives as 'CCOT', 'Continuity & Change', 'Continuity and
@@ -282,9 +282,9 @@ const byId=id=>document.getElementById(id);
   if (typeof module !== 'undefined' && module.exports) module.exports = API;
   if (typeof window !== 'undefined') window.BH_COACH = API;
 })();
-// �� END INLINED COACH PROMPT BUILDER ����������������������������������������
+// ── END INLINED COACH PROMPT BUILDER ────────────────────────────────────────
 
-// �� BEGIN INLINED CLASSROOM CONFIG ������������������������������������������
+// ── BEGIN INLINED CLASSROOM CONFIG ──────────────────────────────────────────
 //
 // Derived from assets/js/behistorical-classroom.js by
 // scripts/build-classroom-config.js. Do not hand-edit: the offline suite
@@ -349,9 +349,9 @@ const byId=id=>document.getElementById(id);
     currentClassroom: currentClassroom
   };
 })(window);
-// �� END INLINED CLASSROOM CONFIG ��������������������������������������������
+// ── END INLINED CLASSROOM CONFIG ────────────────────────────────────────────
 
-// �� BEGIN INLINED SAVE HEALTH �����������������������������������������������
+// ── BEGIN INLINED SAVE HEALTH ───────────────────────────────────────────────
 //
 // Derived from assets/js/behistorical-save-health.js by
 // scripts/build-save-health.js. Do not hand-edit: validate.js re-derives
@@ -422,7 +422,7 @@ const byId=id=>document.getElementById(id);
   // accounting for that.
   var FLUSH_INTERVAL_MS = 5000;
 
-  // �� The sync projection �����������������������������������������������������
+  // ── The sync projection ─────────────────────────────────────────────────────
   //
   // THE POLICY IS PART OF THE NUMBER, so it is recorded beside it.
   //
@@ -866,9 +866,9 @@ const byId=id=>document.getElementById(id);
     STORAGE_KEY: KEY
   };
 })(typeof window !== 'undefined' ? window : globalThis);
-// �� END INLINED SAVE HEALTH �������������������������������������������������
+// ── END INLINED SAVE HEALTH ─────────────────────────────────────────────────
 
-// �� BEGIN INLINED SYNC ������������������������������������������������������
+// ── BEGIN INLINED SYNC ──────────────────────────────────────────────────────
 //
 // Derived from scripts/lib/sync-config.js and assets/js/behistorical-sync.js by
 // scripts/build-sync.js. Do not hand-edit: the offline suite re-derives this
@@ -1016,7 +1016,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     recoverKeep: 3
   };
 
-  // �� Small pure helpers ����������������������������������������������������
+  // ── Small pure helpers ────────────────────────────────────────────────────
 
   // cyrb53. Not for security: it only has to make two different answers very
   // unlikely to look the same, and to keep the baseline from being a copy.
@@ -1039,7 +1039,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
 
   // text and confidence together, because a changed confidence is a change.
   function valueHash(text, confidence) {
-    return hash(String(text || '') + '?' + cleanConfidence(confidence));
+    return hash(String(text || '') + '␟' + cleanConfidence(confidence));
   }
 
   // '1.4' and 'Topic 1.4' and '5.10' to the rules' shape. 'f3' is already one.
@@ -1127,7 +1127,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     return out;
   }
 
-  // �� The engine ������������������������������������������������������������
+  // ── The engine ────────────────────────────────────────────────────────────
   //
   // opts.topicKey   the topic, in any spelling normaliseTopic accepts
   // opts.slots()    [{ id, text, confidence }], non-empty answers only
@@ -1269,7 +1269,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       writeJson(storage, RECOVER_PREFIX + topic, all);
     }
 
-    // �� State ��������������������������������������������������������������
+    // ── State ──────────────────────────────────────────────────────────────
     function computeState() {
       var snap = snapshot();
       var problems = [];
@@ -1330,7 +1330,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       return s;
     }
 
-    // �� Reconcile: the decision rule, applied to every slot �����������������
+    // ── Reconcile: the decision rule, applied to every slot ─────────────────
     function applyDecision(id, action, local, saved) {
       if (action === 'restore' || action === 'adopt') {
         if (action === 'adopt') recoverKeepCopy(id, local);
@@ -1393,7 +1393,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
         });
     }
 
-    // �� Failure handling ����������������������������������������������������
+    // ── Failure handling ────────────────────────────────────────────────────
     function backoff(failures) {
       return Math.min(cfg.backoffMaxMs, cfg.backoffBaseMs * Math.pow(2, Math.max(0, failures - 1)));
     }
@@ -1453,7 +1453,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
         .then(function () { emit(); schedule(); });
     }
 
-    // �� Writing �������������������������������������������������������������
+    // ── Writing ─────────────────────────────────────────────────────────────
     function dueAt(id) {
       var rec = info[id] || { lastWriteAt: 0, nextTryAt: 0 };
       var gap = flushing ? cfg.minGapMs : cfg.windowMs;
@@ -1537,7 +1537,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
         });
     }
 
-    // �� Conflicts the student settles ���������������������������������������
+    // ── Conflicts the student settles ───────────────────────────────────────
     function resolve(id, choice) {
       var c = conflicts[id];
       if (!c) return;
@@ -1559,7 +1559,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       schedule();
     }
 
-    // �� Lifecycle �����������������������������������������������������������
+    // ── Lifecycle ───────────────────────────────────────────────────────────
     function onAuth(next) {
       setUser(next);
       if (!user) { emit(); return; }
@@ -1696,7 +1696,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     };
   }
 
-  // �� Turning it on ���������������������������������������������������������
+  // ── Turning it on ─────────────────────────────────────────────────────────
   //
   // `enabled` is the switch for everyone. `pilot` is the switch for one browser:
   // with pilot true and enabled false, opening a lesson with ?sync=on turns the
@@ -1722,7 +1722,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     return pilotOn(cfg, storage, search);
   }
 
-  // �� On-page controls ������������������������������������������������������
+  // ── On-page controls ──────────────────────────────────────────────────────
   var STYLE_ID = 'bh-sync-style';
   var ROOT_ID = 'bh-sync';
 
@@ -1777,7 +1777,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       doc.body.appendChild(dialog);
     }
 
-    var GLYPHS = { saving: '.', saved: '�', device: '	', problem: '!' };
+    var GLYPHS = { saving: '…', saved: '✓', device: '○', problem: '!' };
     var actionMode = '';
 
     function showConflict() {
@@ -1833,7 +1833,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     };
   }
 
-  // �� Lazy transport ��������������������������������������������������������
+  // ── Lazy transport ────────────────────────────────────────────────────────
   // A student whose backup is off, or who never opens a lesson with it on, never
   // downloads the transport and never contacts Google.
   function lazyTransport(url, cfg) {
@@ -1939,7 +1939,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
   global.BHSync = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);
-// �� END INLINED SYNC ��������������������������������������������������������
+// ── END INLINED SYNC ────────────────────────────────────────────────────────
 
 // Bold first, then italics: once **strong** is consumed the only asterisks left
 // are single ones, so [^*]+ cannot reach across a bold marker and swallow it.
@@ -2070,7 +2070,7 @@ const _videos=T.videos||[];
 if(_videoGrid&&!_videos.length){_videoGrid.innerHTML='';_videoGrid.hidden=true;}
 else if(_videoGrid){_videoGrid.hidden=false;_videoGrid.innerHTML=`<article class="foundation-card video-intro" style="grid-column:1/-1"><h3>Video Clips</h3><p>Optional reinforcement for this topic. Your teacher may play one of these in class, and you can watch them on your own any time you want another pass at the material. Watch for the guiding question under each clip rather than taking down everything.</p></article>`+_videos.map(v=>`<article class="video-card"><div class="video-thumb" ${v.youtubeId?`style="background-image:linear-gradient(rgba(26,28,29,.25),rgba(26,28,29,.55)),url('https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg');background-size:cover;background-position:center"`:''}><span>Video Clip</span></div><h3>${v.title}</h3><p>${v.prompt}</p><a class="btn" href="${v.url}" target="_blank" rel="noopener">Open Video</a></article>`).join('');}
 function jumpToSection(selector){const el=document.querySelector(selector);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
-// �� Modal focus management ����������������������������������������������������
+// ── Modal focus management ────────────────────────────────────────────────────
 //
 // Mirrors assets/js/behistorical-topic-renderer-v1.js. Adding .show made a
 // dialog visible and did nothing else, so a keyboard or screen-reader user was
@@ -2192,7 +2192,7 @@ function closeLectureModal(){bhCloseModal('lecture-modal');}
 // where the page just scrolled. preventScroll because the smooth scroll to the
 // section heading below is the one that should be visible.
 function closeLectureToModules(){closeLectureModal();const first=document.querySelector('#module-grid .module-card');if(first)first.focus({preventScroll:true});jumpToSection('#modules');}
-// �� Lightbox ������������������������������������������������������������������
+// ── Lightbox ──────────────────────────────────────────────────────────────────
 //
 // Every Foundations shell already carried the #lightbox markup, including a
 // Close button calling closeLightbox(), but this renderer never defined it and
@@ -2247,7 +2247,7 @@ function renderSkill(){return `<article class="foundation-card"><h3>${T.skill.ti
 function renderCheckpoint1(){return `<article class="dark-callout"><h3>${T.checkpoint.title}</h3><p>${T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Exit Ticket</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Strong Response Checklist</h3><ul>${T.checkpoint.checklist.map(x=>`<li>${x}</li>`).join('')}</ul></article>${draft(`${T.id}-checkpoint`,T.checkpoint.prompt)}${independentCheckpointNote()}`}
 function renderCheckpoint2(){return `<article class="dark-callout"><h3>Synthesis Checkpoint</h3><p>${T.exitTicket||T.checkpoint.prompt}</p></article><article class="foundation-card"><h3>Build Your Synthesis</h3><p>Use evidence from at least two modules to answer the synthesis prompt above. Connect the themes you studied today to the bigger picture of AP World History.</p></article>${draft(`${T.id}-checkpoint2`,T.exitTicket||T.checkpoint.prompt)}${coachBridge(`${T.id}-checkpoint2`,'Checkpoint 2')}`}
 
-// �� The AI Coach bridge, Foundations side ������������������������������������
+// ── The AI Coach bridge, Foundations side ────────────────────────────────────
 //
 // Foundations had no way to reach Socrates from either checkpoint. Both
 // checkpoints rendered a draft box and stopped, so on these six topics two of
@@ -2373,7 +2373,7 @@ function copyFoundationsCoachPrompt(id){
     .catch(()=>{if(resultEl)resultEl.textContent='Copy failed. Select and copy the prompt text above manually.';});
 }
 function renderBeInTheRoomPlaceholder(){return `<article class="foundation-card"><h3>BeInTheRoom</h3><p>This immersive experience for ${T.title} is coming soon.</p></article>`;}
-// �� Confidence ����������������������������������������������������������������
+// ── Confidence ────────────────────────────────────────────────────────────────
 //
 // Mirrors the unit renderer. A separate key prefix, not a suffix on the draft
 // key, because collectLessonWork() sweeps everything under
@@ -2463,7 +2463,7 @@ const BHDraftStore=(function(){
 const BH_NO_STORAGE_NOTE='This browser will not let the page save drafts. Your typing stays until you close the tab, so gather and copy your work into Canvas before you leave.';
 function loadDrafts(){document.querySelectorAll('textarea.response-area').forEach(t=>{if(t.id===WORK_EXPORT_ID)return;const saved=BHDraftStore.get(`foundations-topic-${t.id}`);if(saved)t.value=saved})}
 
-// �� Autosave and Copy All My Work ���������������������������������������������
+// ── Autosave and Copy All My Work ─────────────────────────────────────────────
 //
 // Mirrors the same block in assets/js/behistorical-topic-renderer-v1.js. The two
 // renderers cannot share it without adding a script tag to every shell, and the
@@ -2549,7 +2549,7 @@ function escapeWorkHtml(v){return String(v==null?'':v).replace(/&/g,'&amp;').rep
 function plainPrompt(v){return String(v||'').replace(/\*\*(.*?)\*\*/g,'$1').trim();}
 function paragraphsHtml(t){return String(t).split(/\n{2,}/).map(b=>'<p>'+escapeWorkHtml(b.trim()).replace(/\n/g,'<br>')+'</p>').join('');}
 
-// �� Record manifest �����������������������������������������������������������
+// ── Record manifest ───────────────────────────────────────────────────────────
 //
 // Mirrors the unit renderer's footer so one parser reads both. See the long
 // comment in assets/js/behistorical-topic-renderer-v1.js for why the format is
@@ -2794,7 +2794,7 @@ function renderWorkExportPanel(){
 renderWorkExportPanel();
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&BHModalStack.length){bhCloseModal(BHModalStack[BHModalStack.length-1].el.id);}if(byId('lecture-modal').classList.contains('show')){if(e.key==='ArrowRight'){e.preventDefault();lectureStep(1);}else if(e.key==='ArrowLeft'){e.preventDefault();lectureStep(-1);}}});
 
-// �� Student response backup (off unless switched on) ��������������������������
+// ── Student response backup (off unless switched on) ──────────────────────────
 // See the same block in assets/js/behistorical-topic-renderer-v1.js. The engine
 // is the inlined sync block above; this supplies the slots and where each one is
 // kept on this device. mount() does nothing unless the backup is on, see

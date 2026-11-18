@@ -290,7 +290,7 @@
 }
 
 .source-links a::after {
-  content: " ?";
+  content: " ↗";
 }
 
 .source-integrity {

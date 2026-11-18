@@ -35,7 +35,7 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 // bare checkout; browser needs playwright-core and a Chromium binary.
 const SUITES = {
   offline: [
-    ['scripts/test/unit45-atlases.test.js', 'Units 4-5 atlases: content, geography, hub integration, and negative controls'],
+    ['scripts/test/unit45-atlases.test.js', 'Units 4–5 atlases: content, geography, hub integration, and negative controls'],
     ['scripts/test/unit3-atlas.test.js', 'Unit 3 atlas: reviewed evidence, geographic scope, and visual-only hub'],
     ['scripts/test/unit1-atlas.test.js', 'Unit 1 atlas: regional coverage and visual-only hub'],
     ['scripts/test/unit2-atlas.test.js', 'Unit 2 atlas: visual-only content, canonical sources, and hub integration'],
@@ -88,7 +88,7 @@ const SUITES = {
     ['scripts/test/class-pulse-submit.test.js', 'Class Pulse Submit: off as shipped, receipt fingerprint, kept out of Canvas, restored with the answer'],
     ['scripts/test/class-pulse-reader.test.js', 'Class Pulse Reader: one answer at a time, one retry, stops on a usage limit, keeps nothing'],
     ['scripts/test/class-pulse-page.test.js', 'Class Pulse teacher page: every topic\'s criteria, no network, projector safe, every student counted'],
-    ['scripts/test/unit45-atlases.browser.test.js', 'Units 4-5 atlases: all views, keyboard, responsive hubs, and negative controls'],
+    ['scripts/test/unit45-atlases.browser.test.js', 'Units 4–5 atlases: all views, keyboard, responsive hubs, and negative controls'],
     ['scripts/test/unit3-atlas.browser.test.js', 'Unit 3 atlas: direct clicks, keyboard, touch, and responsive hub'],
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
     ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
@@ -205,7 +205,7 @@ if (names.includes('browser')) {
 }
 
 for (const suite of names) {
-  console.log(`\n${C}${W}�� ${suite} ${X}${D}(${SUITES[suite].length} checks)${X}`);
+  console.log(`\n${C}${W}── ${suite} ${X}${D}(${SUITES[suite].length} checks)${X}`);
   if (suite === 'browser') {
     console.log(`${D}chromium: ${childEnv.PW_CHROME || 'not found, tests will report it'}${X}`);
   }
@@ -233,7 +233,7 @@ const failed = results.filter(r => r.state === 'FAIL');
 const skipped = results.filter(r => r.state === 'SKIP');
 const passed = results.filter(r => r.state === 'PASS');
 
-console.log(`\n${'�'.repeat(60)}`);
+console.log(`\n${'─'.repeat(60)}`);
 console.log(
   `${W}Summary${X}  |  ${G}${passed.length} passed${X}` +
   (skipped.length ? `, ${Y}${skipped.length} skipped${X}` : '') +
@@ -246,7 +246,7 @@ if (skipped.length) {
 }
 
 if (failed.length) {
-  for (const f of failed) console.log(`${R}  ? ${f.rel} (exit ${f.code})${X}`);
+  for (const f of failed) console.log(`${R}  ✗ ${f.rel} (exit ${f.code})${X}`);
   process.exit(1);
 }
 
