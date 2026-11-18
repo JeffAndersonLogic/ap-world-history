@@ -54,4 +54,19 @@ function resolveTeacherSurface(today, schedule, interactiveTopics, rosTopics) {
   return { kind: 'none', date: today, cohort: cohort, topic: topic };
 }
 
-module.exports = { resolveTeacherSurface };
+/**
+ * The briefing link for a teacher surface, or '' when it has none.
+ *
+ * Every Teaching OS page (topic-X-X-os.html) opens straight to its briefing
+ * at #briefing, which is the link co-teachers share. The 1.7 command center
+ * and the Run of Show pages have no briefing, so they get no link. Kept here
+ * beside the router, and stringified the same way, so the AP World Command
+ * Center and the JeffOS dashboard (through teacher-today-manifest.js) apply
+ * one rule rather than two.
+ */
+function teacherBriefingHref(href) {
+  href = String(href || '');
+  return href.slice(-8) === '-os.html' ? href + '#briefing' : '';
+}
+
+module.exports = { resolveTeacherSurface, teacherBriefingHref };

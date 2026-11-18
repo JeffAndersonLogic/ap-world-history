@@ -406,6 +406,10 @@ function resolveTeacherSurface(today, schedule, interactiveTopics, rosTopics) {
   }
   return { kind: 'none', date: today, cohort: cohort, topic: topic };
 }
+function teacherBriefingHref(href) {
+  href = String(href || '');
+  return href.slice(-8) === '-os.html' ? href + '#briefing' : '';
+}
 (function(){
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
@@ -447,11 +451,10 @@ function resolveTeacherSurface(today, schedule, interactiveTopics, rosTopics) {
     box.innerHTML = head
       + '<p>' + esc(lessonTitle || 'Teaching OS') + '</p>'
       + '<a class="tc-today-open" href="' + esc(found.href) + '">Open Topic ' + esc(found.topic) + ' Teaching OS &rarr;</a>'
-      /* Every Teaching OS page (topic-X-X-os.html) opens straight to its
-         briefing at #briefing, which is the link co-teachers share. The 1.7
-         command center has no briefing, so it gets no link. */
-      + (found.href.slice(-8) === '-os.html'
-        ? '<a class="tc-today-brief" href="' + esc(found.href) + '#briefing">Read today&rsquo;s briefing</a>'
+      /* teacherBriefingHref (teacher-today.js) decides which surfaces have a
+         briefing; the JeffOS dashboard runs the same function. */
+      + (teacherBriefingHref(found.href)
+        ? '<a class="tc-today-brief" href="' + esc(teacherBriefingHref(found.href)) + '">Read today&rsquo;s briefing</a>'
         : '');
   } else if (found.kind === 'runofshow') {
     box.innerHTML = head

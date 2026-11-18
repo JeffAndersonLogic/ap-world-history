@@ -29,8 +29,8 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..', '..');
-const { resolveTeacherSurface } = require('../lib/teacher-today.js');
-const { TOOLS, INTERACTIVE_TOPICS } = require('../build-teacher-index.js');
+const { resolveTeacherSurface, teacherBriefingHref } = require('../lib/teacher-today.js');
+const { TOOLS, INTERACTIVE_TOPICS, MANIFEST_OUT } = require('../build-teacher-index.js');
 const { TOPICS: ROS_TOPICS } = require('../build-run-of-show.js');
 
 const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
@@ -181,6 +181,59 @@ for (const t of rosOnly) {
     !hasBrandWordmark(page.replace('behistorical-wordmark-on-dark.png', 'old-wordmark.png')));
   ok('control: replacing the brand globe with the old map is caught',
     !hasBrandGlobe(page.replace('behistorical-globe.png', 'map.svg')));
+}
+
+// 8. The briefing rule. Teaching OS pages have a #briefing; the 1.7 command
+//    center and the Run of Show pages do not, so they must get no link.
+{
+  ok('a Teaching OS page gets its #briefing link',
+    teacherBriefingHref('topic-4-8-os.html') === 'topic-4-8-os.html#briefing');
+  ok('the 1.7 command center gets no briefing link', teacherBriefingHref('command-center-topic-1-7.html') === '');
+  ok('a Run of Show page gets no briefing link', teacherBriefingHref('run-of-show-topic-1-4.html') === '');
+  ok('no surface at all gets no briefing link', teacherBriefingHref(undefined) === '');
+}
+
+// 9. teacher/teacher-today-manifest.js is what the JeffOS Command Center reads
+//    to show this same Today card. Before it existed the dashboard routed from
+//    the Run of Show manifest alone and offered the Run of Show index on every
+//    Teaching OS day. So it must carry the same registry and run the same
+//    decision as this page, on every scheduled date.
+{
+  const rel = 'teacher/' + MANIFEST_OUT;
+  const text = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+  const loadManifest = src => {
+    const box = { window: {} };
+    vm.runInContext(src, vm.createContext(box), { filename: rel });
+    return box.window.BEHISTORICAL_TEACHER_TODAY;
+  };
+  const m = loadManifest(text);
+  ok('the manifest defines window.BEHISTORICAL_TEACHER_TODAY', !!(m && typeof m.resolve === 'function'));
+  ok('the manifest embeds this exact router and briefing rule, not copies',
+    text.includes(String(resolveTeacherSurface)) && text.includes(String(teacherBriefingHref)));
+  const sameRegistry = mm => JSON.stringify(mm.interactive.map(t => ({ key: t.key, out: t.out }))) === JSON.stringify(INTERACTIVE_TOPICS) &&
+    JSON.stringify(mm.runOfShow) === JSON.stringify(rosTopics);
+  ok('the manifest carries the same lesson and Run of Show registry as this page', sameRegistry(m));
+  ok('every lesson in the manifest carries its library title',
+    m.interactive.every(t => t.title), m.interactive.filter(t => !t.title).map(t => t.key).join(', ') || 'all titled');
+
+  const agrees = mm => (schedule.days || []).every(d => {
+    const a = resolve(d.date), b = mm.resolve(d.date, schedule, mm.interactive, mm.runOfShow);
+    return a.kind === b.kind && a.href === b.href && mm.briefing(b.href) === teacherBriefingHref(a.href);
+  });
+  ok('the manifest routes every scheduled date exactly as this page does', agrees(m),
+    (schedule.days || []).length + ' date(s)');
+
+  // Negative controls: a manifest that lost a lesson, or whose router fell
+  // back to Run of Show first, is caught by the checks above.
+  const dropped = loadManifest(text.replace('{"key":"4.8","out":"topic-4-8-os.html"', '{"key":"9.9","out":"topic-4-8-os.html"'));
+  ok('control: a manifest missing a scheduled lesson is caught', !sameRegistry(dropped) && !agrees(dropped));
+  const flipped = loadManifest(text.replace("[['interactive', interactiveTopics || []], ['runofshow', rosTopics || []]]",
+    "[['runofshow', rosTopics || []], ['interactive', interactiveTopics || []]]"));
+  const flippedBoth = flipped.resolve('2026-09-16', schedule,
+    [{ key: '2.1', out: 'topic-2-1-os.html' }], [{ key: '2.1', out: 'run-of-show-topic-2-1.html' }]);
+  ok('control: a manifest router that prefers Run of Show is caught',
+    !text.includes("[['runofshow'") && flippedBoth.kind === 'runofshow' &&
+    !fs.readFileSync(path.join(ROOT, rel), 'utf8').includes(String(flipped.resolve)));
 }
 
 console.log('');
