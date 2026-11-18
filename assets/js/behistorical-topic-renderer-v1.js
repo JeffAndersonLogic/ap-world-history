@@ -34,7 +34,7 @@ const CHECKPOINT_MS = {};
 const SUBMIT_IDS = ['checkpoint-one-response', 'checkpoint-two-response'];
 const SUBMIT_SUFFIX = '-submitted';
 
-// ── BEGIN INLINED COACH PROMPT BUILDER ──────────────────────────────────────
+// �� BEGIN INLINED COACH PROMPT BUILDER ��������������������������������������
 //
 // Derived from assets/js/behistorical-coach-prompt.js by
 // scripts/build-coach-prompt.js. Do not hand-edit: validate.js re-derives
@@ -116,7 +116,7 @@ const SUBMIT_SUFFIX = '-submitted';
     return m ? (UNIT_PERIODS[Number(m[1])] || '') : '';
   }
 
-  // ── AP skill normalization ─────────────────────────────────────────────────
+  // �� AP skill normalization �������������������������������������������������
   //
   // The skillBuilder labels and the reading badges are hand-authored prose, so
   // the same skill arrives as 'CCOT', 'Continuity & Change', 'Continuity and
@@ -316,9 +316,9 @@ const SUBMIT_SUFFIX = '-submitted';
   if (typeof module !== 'undefined' && module.exports) module.exports = API;
   if (typeof window !== 'undefined') window.BH_COACH = API;
 })();
-// ── END INLINED COACH PROMPT BUILDER ────────────────────────────────────────
+// �� END INLINED COACH PROMPT BUILDER ����������������������������������������
 
-// ── BEGIN INLINED CLASSROOM CONFIG ──────────────────────────────────────────
+// �� BEGIN INLINED CLASSROOM CONFIG ������������������������������������������
 //
 // Derived from assets/js/behistorical-classroom.js by
 // scripts/build-classroom-config.js. Do not hand-edit: the offline suite
@@ -383,9 +383,9 @@ const SUBMIT_SUFFIX = '-submitted';
     currentClassroom: currentClassroom
   };
 })(window);
-// ── END INLINED CLASSROOM CONFIG ────────────────────────────────────────────
+// �� END INLINED CLASSROOM CONFIG ��������������������������������������������
 
-// ── BEGIN INLINED SAVE HEALTH ───────────────────────────────────────────────
+// �� BEGIN INLINED SAVE HEALTH �����������������������������������������������
 //
 // Derived from assets/js/behistorical-save-health.js by
 // scripts/build-save-health.js. Do not hand-edit: validate.js re-derives
@@ -456,7 +456,7 @@ const SUBMIT_SUFFIX = '-submitted';
   // accounting for that.
   var FLUSH_INTERVAL_MS = 5000;
 
-  // ── The sync projection ─────────────────────────────────────────────────────
+  // �� The sync projection �����������������������������������������������������
   //
   // THE POLICY IS PART OF THE NUMBER, so it is recorded beside it.
   //
@@ -900,9 +900,9 @@ const SUBMIT_SUFFIX = '-submitted';
     STORAGE_KEY: KEY
   };
 })(typeof window !== 'undefined' ? window : globalThis);
-// ── END INLINED SAVE HEALTH ─────────────────────────────────────────────────
+// �� END INLINED SAVE HEALTH �������������������������������������������������
 
-// ── BEGIN INLINED SYNC ──────────────────────────────────────────────────────
+// �� BEGIN INLINED SYNC ������������������������������������������������������
 //
 // Derived from scripts/lib/sync-config.js and assets/js/behistorical-sync.js by
 // scripts/build-sync.js. Do not hand-edit: the offline suite re-derives this
@@ -1050,7 +1050,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     recoverKeep: 3
   };
 
-  // ── Small pure helpers ────────────────────────────────────────────────────
+  // �� Small pure helpers ����������������������������������������������������
 
   // cyrb53. Not for security: it only has to make two different answers very
   // unlikely to look the same, and to keep the baseline from being a copy.
@@ -1073,7 +1073,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
 
   // text and confidence together, because a changed confidence is a change.
   function valueHash(text, confidence) {
-    return hash(String(text || '') + '␟' + cleanConfidence(confidence));
+    return hash(String(text || '') + '?' + cleanConfidence(confidence));
   }
 
   // '1.4' and 'Topic 1.4' and '5.10' to the rules' shape. 'f3' is already one.
@@ -1161,7 +1161,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     return out;
   }
 
-  // ── The engine ────────────────────────────────────────────────────────────
+  // �� The engine ������������������������������������������������������������
   //
   // opts.topicKey   the topic, in any spelling normaliseTopic accepts
   // opts.slots()    [{ id, text, confidence }], non-empty answers only
@@ -1303,7 +1303,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       writeJson(storage, RECOVER_PREFIX + topic, all);
     }
 
-    // ── State ──────────────────────────────────────────────────────────────
+    // �� State ��������������������������������������������������������������
     function computeState() {
       var snap = snapshot();
       var problems = [];
@@ -1364,7 +1364,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       return s;
     }
 
-    // ── Reconcile: the decision rule, applied to every slot ─────────────────
+    // �� Reconcile: the decision rule, applied to every slot �����������������
     function applyDecision(id, action, local, saved) {
       if (action === 'restore' || action === 'adopt') {
         if (action === 'adopt') recoverKeepCopy(id, local);
@@ -1427,7 +1427,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
         });
     }
 
-    // ── Failure handling ────────────────────────────────────────────────────
+    // �� Failure handling ����������������������������������������������������
     function backoff(failures) {
       return Math.min(cfg.backoffMaxMs, cfg.backoffBaseMs * Math.pow(2, Math.max(0, failures - 1)));
     }
@@ -1487,7 +1487,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
         .then(function () { emit(); schedule(); });
     }
 
-    // ── Writing ─────────────────────────────────────────────────────────────
+    // �� Writing �������������������������������������������������������������
     function dueAt(id) {
       var rec = info[id] || { lastWriteAt: 0, nextTryAt: 0 };
       var gap = flushing ? cfg.minGapMs : cfg.windowMs;
@@ -1571,7 +1571,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
         });
     }
 
-    // ── Conflicts the student settles ───────────────────────────────────────
+    // �� Conflicts the student settles ���������������������������������������
     function resolve(id, choice) {
       var c = conflicts[id];
       if (!c) return;
@@ -1593,7 +1593,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       schedule();
     }
 
-    // ── Lifecycle ───────────────────────────────────────────────────────────
+    // �� Lifecycle �����������������������������������������������������������
     function onAuth(next) {
       setUser(next);
       if (!user) { emit(); return; }
@@ -1730,7 +1730,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     };
   }
 
-  // ── Turning it on ─────────────────────────────────────────────────────────
+  // �� Turning it on ���������������������������������������������������������
   //
   // `enabled` is the switch for everyone. `pilot` is the switch for one browser:
   // with pilot true and enabled false, opening a lesson with ?sync=on turns the
@@ -1756,7 +1756,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     return pilotOn(cfg, storage, search);
   }
 
-  // ── On-page controls ──────────────────────────────────────────────────────
+  // �� On-page controls ������������������������������������������������������
   var STYLE_ID = 'bh-sync-style';
   var ROOT_ID = 'bh-sync';
 
@@ -1811,7 +1811,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       doc.body.appendChild(dialog);
     }
 
-    var GLYPHS = { saving: '…', saved: '✓', device: '○', problem: '!' };
+    var GLYPHS = { saving: '.', saved: '�', device: '	', problem: '!' };
     var actionMode = '';
 
     function showConflict() {
@@ -1867,7 +1867,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     };
   }
 
-  // ── Lazy transport ────────────────────────────────────────────────────────
+  // �� Lazy transport ��������������������������������������������������������
   // A student whose backup is off, or who never opens a lesson with it on, never
   // downloads the transport and never contacts Google.
   function lazyTransport(url, cfg) {
@@ -1973,7 +1973,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
   global.BHSync = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);
-// ── END INLINED SYNC ────────────────────────────────────────────────────────
+// �� END INLINED SYNC ��������������������������������������������������������
 
 function sanitizeImageUrl(url) {
   const value = String(url || '').trim();
@@ -2089,14 +2089,14 @@ function applyKeyConceptLabels() {
   (L.successCriteria || []).forEach((item, i) => { if (match.sc[i]) item.kc = match.sc[i]; });
 }
 
-// ── Boot ──────────────────────────────────────────────────────────────────────
+// �� Boot ����������������������������������������������������������������������
 
 if (L) {
   applyKeyConceptLabels();
   document.title = `BeHistorical | AP World ${L.meta.topic} ${L.meta.title}`;
   byId('lesson-title').textContent = `${L.meta.topic}, ${L.meta.title}`;
   byId('lesson-subtitle').textContent = L.meta.subtitle;
-  byId('footer-topic-label').textContent = `${L.meta.topic}, ${L.meta.title} · Think Like a Historian.`;
+  byId('footer-topic-label').textContent = `${L.meta.topic}, ${L.meta.title} � Think Like a Historian.`;
   byId('lecture-title').textContent = L.lecture.title || 'Concept Cards';
   byId('lecture-intro').textContent = L.lecture.intro || 'Use these cards from the main page. Each card opens a projection-friendly pop-up with enlarged content and a related visual.';
 
@@ -2136,7 +2136,7 @@ if (L) {
   loadAllDrafts();
 }
 
-// ── College Board Framework ───────────────────────────────────────────────────
+// �� College Board Framework ���������������������������������������������������
 
 function normalizedKeyConcepts() {
   return (L.collegeBoardKeyConcepts || []).reduce((cards, kc) => {
@@ -2180,7 +2180,7 @@ function renderCollegeBoardFramework() {
     </div>`;
 }
 
-// ── Concept cards ─────────────────────────────────────────────────────────────
+// �� Concept cards �������������������������������������������������������������
 
 function renderLectureCards() {
   byId('main-lecture-grid').innerHTML = lectureSegments().map((seg, i) => `
@@ -2192,7 +2192,7 @@ function renderLectureCards() {
     </article>`).join('');
 }
 
-// ── Class Presentation ──────────────────────────────────────────────────────────
+// �� Class Presentation ����������������������������������������������������������
 
 // The slide deck actually taught in class, distinct from a video clip: this is
 // not outside supplementary media, it is the primary artifact for a student who
@@ -2225,7 +2225,7 @@ function renderClassPresentation() {
     </article>`);
 }
 
-// ── Deep reading ──────────────────────────────────────────────────────────────
+// �� Deep reading ��������������������������������������������������������������
 
 // The optional push-further layer under Content Delivery, for a topic whose
 // modules assume more background than its First & 10 has room to carry. Mirrors
@@ -2258,7 +2258,7 @@ function renderDeepReading() {
     </article>`);
 }
 
-// ── Video clips ───────────────────────────────────────────────────────────────
+// �� Video clips ���������������������������������������������������������������
 
 // Video clips are an optional resource, not part of the ten-module path and not
 // part of the lecture deck. Only some topics have one, so the block introduces
@@ -2313,7 +2313,7 @@ function syncVideosButton(hasVideos) {
   if (cards) cards.after(btn); else nav.appendChild(btn);
 }
 
-// ── Module grid ───────────────────────────────────────────────────────────────
+// �� Module grid ���������������������������������������������������������������
 
 function defaultModules() {
   return [
@@ -2350,7 +2350,7 @@ function renderModuleGrid() {
     </article>`).join('');
 }
 
-// ── Modal focus management ────────────────────────────────────────────────────
+// �� Modal focus management ����������������������������������������������������
 //
 // Adding .show made a dialog visible and did nothing else, so a keyboard or
 // screen-reader user was left behind the overlay: the reading cursor stayed on
@@ -2385,7 +2385,8 @@ function bhTrapTab(event) {
   const first = items[0];
   const last = items[items.length - 1];
   const active = document.activeElement;
-  const outside = !top.contains(active);
+  // The dialog itself receives initial focus, before its first tab stop.
+  const outside = active === top || !top.contains(active);
 
   if (event.shiftKey && (active === first || outside)) {
     event.preventDefault();
@@ -2458,7 +2459,7 @@ function bhCloseModal(modalId) {
   if (launcher && launcher.focus && launcher.getClientRects().length) launcher.focus();
 }
 
-// ── Modal controls ────────────────────────────────────────────────────────────
+// �� Modal controls ������������������������������������������������������������
 
 function openLinkedModule(url) { window.open(url, '_blank'); }
 function jumpToSection(selector) { const el = document.querySelector(selector); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
@@ -2466,9 +2467,20 @@ function jumpToSection(selector) { const el = document.querySelector(selector); 
 function openModule(id) {
   const mod = window.BEHISTORICAL_MODULES.find(m => m.id === id);
   if (!mod || mod.jump || mod.link) return;
+  // Flush pending keystrokes before replacing their controls, so an immediate
+  // Next -> Previous cannot reload an older draft during the autosave delay.
+  byId('pop-body').querySelectorAll('textarea.response-area').forEach(t => {
+    if (!t._draftTimer) return;
+    clearTimeout(t._draftTimer);
+    t._draftTimer = null;
+    BHDraftStore.set(draftKey(t.id), t.value || '');
+  });
+  currentModuleId = id;
   byId('pop-eyebrow').textContent = mod.label;
   byId('pop-title').textContent = mod.title;
   byId('pop-body').innerHTML = mod.render();
+  updateModuleNav();
+  byId('pop-modal').querySelector('.pop-panel').scrollTop = 0;
   byId('pop-modal').classList.add('show');
   loadAllDrafts();
   refreshSubmitStatus();
@@ -2477,7 +2489,40 @@ function openModule(id) {
 
 function closeModule() { bhCloseModal('pop-modal'); }
 
-// ── Lecture deck navigation ───────────────────────────────────────────────────
+// Walk the pop-outs in their displayed order. Content Delivery and scenario
+// cards have their own jump/link destinations, not dialog bodies.
+let currentModuleId = null;
+function moduleSequence() {
+  return window.BEHISTORICAL_MODULES.filter(m => !m.jump && !m.link && typeof m.render === 'function');
+}
+function updateModuleNav() {
+  const header = byId('pop-modal').querySelector('.pop-header');
+  if (!byId('module-nav')) {
+    header.insertAdjacentHTML('beforeend', `<nav class="module-nav" id="module-nav" aria-label="Module navigation">
+      <button class="btn module-nav-button" id="module-prev" type="button" onclick="moduleStep(-1)"><span aria-hidden="true">&#8592;</span> Previous</button>
+      <span class="module-nav-status" id="module-nav-status" aria-live="polite"></span>
+      <button class="btn module-nav-button" id="module-next" type="button" onclick="moduleStep(1)">Next <span aria-hidden="true">&#8594;</span></button>
+    </nav>`);
+  }
+  const sequence = moduleSequence();
+  const index = sequence.findIndex(m => m.id === currentModuleId);
+  for (const [id, step, label] of [['module-prev', -1, 'Previous'], ['module-next', 1, 'Next']]) {
+    const button = byId(id);
+    const target = sequence[index + step];
+    button.disabled = !target;
+    button.setAttribute('aria-label', target ? `${label} module: ${target.label}, ${target.title}` : `${label} module`);
+    button.title = target ? `${target.label}: ${target.title}` : `No ${label.toLowerCase()} module`;
+  }
+  byId('module-nav-status').textContent = sequence[index].label;
+}
+function moduleStep(delta) {
+  const sequence = moduleSequence();
+  const index = sequence.findIndex(m => m.id === currentModuleId);
+  const next = sequence[index + delta];
+  if (index >= 0 && next) openModule(next.id);
+}
+
+// �� Lecture deck navigation ���������������������������������������������������
 //
 // The deck is a sequence, so it gets sequence controls: prev/next arrows, a
 // "Card 3 of 8" counter, and the left/right arrow keys. Without them a teacher
@@ -2572,7 +2617,7 @@ function openLectureModal(i) {
 
 function closeLectureModal() { bhCloseModal('lecture-modal'); }
 
-// ── Module render functions ───────────────────────────────────────────────────
+// �� Module render functions ���������������������������������������������������
 
 function renderMap() {
   // Embedded map path (topic 1.3 only). The embedded page has its own scratch
@@ -2613,13 +2658,13 @@ function renderMapKey() {
     </div>` : '';
 }
 
-// ── First & 10, questions feed the MagicSchool bridge ───────────────────────
+// �� First & 10, questions feed the MagicSchool bridge �����������������������
 //
 // Student flow:
 //   1. Read the First & 10 narrative
 //   2. Answer the three historical thinking questions (each gets its own textarea)
 //   3. Click "Build My AI Coach Prompt", answers package into one MagicSchool prompt
-//   4. Copy prompt → Open AI Coach → coaching conversation → move to lecture
+//   4. Copy prompt  Open AI Coach  coaching conversation  move to lecture
 //
 // The old "one thing I noticed / one question I still have" fields are removed.
 // The three First & 10 questions ARE the bridge. Nothing sits separately.
@@ -2679,7 +2724,7 @@ function renderFirst10() {
     `;
 }
 
-// ── BeSurreal ─────────────────────────────────────────────────────────────────
+// �� BeSurreal �����������������������������������������������������������������
 
 // The 10-module standard documents beSurreal as title/desc/intro/detail/prompt,
 // and that is how Units 3, 4, 5 and part of 8 are authored. Older topics carry a
@@ -2719,7 +2764,7 @@ function renderBeSurreal() {
     </article>`;
 }
 
-// ── Skill Builder ─────────────────────────────────────────────────────────────
+// �� Skill Builder �������������������������������������������������������������
 
 function renderSkill() {
   const s = L.skillBuilder || {};
@@ -2741,7 +2786,7 @@ function renderSkill() {
     ${draftBlock('skill-builder-response', s.prompt, 'AP Skill Builder')}`;
 }
 
-// ── Checkpoints, with MagicSchool bridge ────────────────────────────────────
+// �� Checkpoints, with MagicSchool bridge ������������������������������������
 
 function renderCheckpoint(cp, id) {
   if (!cp) return '<p>Checkpoint data not found.</p>';
@@ -2845,7 +2890,7 @@ function coachedCheckpointBridge(id, msUrl, canvasNote) {
 }
 
 
-// ── Checkpoint prompt build and copy ──────────────────────────────────────────
+// �� Checkpoint prompt build and copy ������������������������������������������
 //
 // Mirrors the First & 10 bridge: Build packages the drafted response into a
 // coaching prompt and shows it in the preview, Copy sends what the preview
@@ -2918,7 +2963,7 @@ function copyCheckpointPrompt(responseId) {
     .catch(() => { if (resultEl) resultEl.textContent = 'Copy failed. Select and copy the prompt text above manually.'; });
 }
 
-// ── Evidence Lab ──────────────────────────────────────────────────────────────
+// �� Evidence Lab ��������������������������������������������������������������
 
 // An evidence card only gets an "Open source/image" link when there is somewhere
 // real to send the student. Two cards have nowhere: one with an empty `url`,
@@ -2968,7 +3013,7 @@ function renderEvidence() {
     ${draftBlock('evidence-response', lab.prompt, 'Evidence Lab')}`;
 }
 
-// ── Primary Source ────────────────────────────────────────────────────────────
+// �� Primary Source ������������������������������������������������������������
 
 function renderPrimarySource() {
   const s = L.primarySource || {};
@@ -2997,7 +3042,7 @@ function renderPrimarySource() {
     ${draftBlock('primary-source-response', responsePrompt, 'Primary Source')}`;
 }
 
-// ── Shared response/draft blocks ──────────────────────────────────────────────
+// �� Shared response/draft blocks ����������������������������������������������
 
 function draftBlock(id, prompt, responseType) {
   rememberPrompt(id, prompt);
@@ -3027,7 +3072,7 @@ function responseBlock(id, prompt, responseType, terms = []) {
     </div>`;
 }
 
-// ── Class Pulse submission (off unless switched on) ───────────────────────────
+// �� Class Pulse submission (off unless switched on) ���������������������������
 //
 // A student presses Submit on a checkpoint to say "this is my finished answer".
 // That is the only signal Class Pulse reads, because a backup snapshot can be
@@ -3077,7 +3122,7 @@ function submittedAnswer(id) {
 
 // The coaching note, added 2026-11-07 (Jeff). Copying the AI Coach prompt for a
 // checkpoint leaves a mark on this device, and a Submit made after it says so in
-// the receipt: "Submitted Nov 7, 9:14 AM · AI Coach prompt copied · fingerprint
+// the receipt: "Submitted Nov 7, 9:14 AM � AI Coach prompt copied � fingerprint
 // k2j3h4". Class Pulse reads that phrase to compare coached and uncoached answers.
 // It records only that the prompt was copied, never the conversation, which stays
 // in MagicSchool, so it is worded as what it is. It needs no new slot and no rules
@@ -3122,8 +3167,8 @@ function submitCheckpoint(id) {
   // look sees the same words the receipt was made from.
   BHDraftStore.set(draftKey(id), (byId(id) || {}).value || answer.text);
   const when = new Date().toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
-  const coached = BHDraftStore.get(coachKey(id)) ? ` · ${COACH_NOTE}` : '';
-  BHDraftStore.set(submitKey(id), `Submitted ${when}${coached} · fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}`);
+  const coached = BHDraftStore.get(coachKey(id)) ? ` � ${COACH_NOTE}` : '';
+  BHDraftStore.set(submitKey(id), `Submitted ${when}${coached} � fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}`);
   updateSubmitStatus(id);
 }
 
@@ -3166,7 +3211,7 @@ function updateSubmitStatus(id) {
     status.textContent = 'Not submitted yet. Submit when this is your finished answer.';
   } else if (state === 'submitted') {
     btn.textContent = 'Submitted';
-    status.textContent = receipt.text.replace(/\s*·\s*fingerprint.*$/, '') + '. You can still edit it, and if you do, submit again.';
+    status.textContent = receipt.text.replace(/\s*�\s*fingerprint.*$/, '') + '. You can still edit it, and if you do, submit again.';
   } else {
     btn.textContent = 'Submit again';
     status.textContent = 'You changed this after submitting. Submit again so your teacher sees this version.';
@@ -3189,7 +3234,7 @@ document.addEventListener('input', function (event) {
   if (t && SUBMIT_IDS.indexOf(t.id) !== -1) updateSubmitStatus(t.id);
 });
 
-// ── Draft / save / copy / self-check ─────────────────────────────────────────
+// �� Draft / save / copy / self-check �����������������������������������������
 
 // Draft storage that cannot throw.
 //
@@ -3265,7 +3310,7 @@ function draftKey(id) {
   return `behistorical-draft-${topic}-${id}`;
 }
 
-// ── Confidence ────────────────────────────────────────────────────────────────
+// �� Confidence ����������������������������������������������������������������
 //
 // A separate key prefix, not a suffix on the draft key, because
 // collectLessonWork() sweeps every key beginning `behistorical-draft-<topic>-`
@@ -3343,7 +3388,7 @@ function loadAllDrafts() {
   });
 }
 
-// ── Autosave and Copy All My Work ─────────────────────────────────────────────
+// �� Autosave and Copy All My Work ���������������������������������������������
 //
 // Draft boxes are localStorage-only by design, which is right for scratch
 // thinking. What was wrong is that persistence depended on the student pressing
@@ -3495,7 +3540,7 @@ function paragraphsHtml(text) {
   ).join('');
 }
 
-// ── Record manifest ───────────────────────────────────────────────────────────
+// �� Record manifest �����������������������������������������������������������
 //
 // The paste is the only evidence that reaches the teacher, and until now a
 // truncated, half-empty or hand-edited one was indistinguishable from a good
@@ -3884,7 +3929,7 @@ function selfCheck(id) {
   byId(id + '-result').textContent = `Self-check: ${text.split(/\s+/).filter(Boolean).length} words; evidence terms found: ${found.length ? found.join(', ') : 'none yet'}.`;
 }
 
-// ── Lightbox ──────────────────────────────────────────────────────────────────
+// �� Lightbox ������������������������������������������������������������������
 
 function openLightbox(i) { const img = L.images[i]; openImageUrl(evidenceImageUrl(i), `${img.title}, ${img.caption}`, `evidence-${String(i + 1).padStart(2, '0')}`); }
 function openMapLightbox() { openImageUrl(mediaImageUrl(L.map.url, 'map'), `${L.map.title}, ${L.map.caption}`, 'map'); }
@@ -3901,7 +3946,7 @@ function openImageUrl(url, caption, fallbackId) {
 }
 function closeLightbox() { bhCloseModal('lightbox'); }
 
-// ── Keyboard escape and lecture deck keys ─────────────────────────────────────
+// �� Keyboard escape and lecture deck keys �������������������������������������
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && BHModalStack.length) {
@@ -3916,13 +3961,13 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'ArrowLeft') { e.preventDefault(); lectureStep(-1); }
 });
 
-// ── Save Your Work panel ──────────────────────────────────────────────────────
+// �� Save Your Work panel ������������������������������������������������������
 // Injected after the module grid so all 77 lesson shells get it without editing
 // any of them. Runs last, once every function above is defined.
 
 if (L) renderWorkExportPanel();
 
-// ── Student response backup (off unless switched on) ──────────────────────────
+// �� Student response backup (off unless switched on) ��������������������������
 // The engine, its states and its on-page controls are in the inlined sync block
 // above. This is the part only the renderer can supply: which slots the lesson
 // has (the same list Gather All My Work reads, so every save path is covered
@@ -3998,3 +4043,4 @@ if (L && window.BHSync) {
     transportUrl: BH_SYNC_SELF ? new URL('behistorical-sync-transport.js', BH_SYNC_SELF).href : ''
   });
 }
+
