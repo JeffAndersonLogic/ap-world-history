@@ -72,14 +72,15 @@
       case 'model': {
         if (!s.model) return [el(doc, 'h1', 'pj-h', 'A model answer'), el(doc, 'p', 'pj-body', 'Not shown yet.')];
         if (!s.model.length) return [el(doc, 'h1', 'pj-h', 'A model answer'), el(doc, 'p', 'pj-body', 'No model answer is loaded for this checkpoint.')];
-        // One paragraph at a time, under the criterion it meets (2026-11-18, Jeff): the
-        // whole answer at once was more than a wall can hold at a size the back row reads.
-        const m = s.model[0], parts = s.modelParts || 1, part = s.modelPart || 0;
+        // One slide per criterion (2026-11-18, Jeff): this slide is sent its own
+        // paragraph only, under the criterion it meets. The dots show which of the
+        // checkpoint's model slides this is.
+        const m = s.model[0], of = s.modelOf || 1, at = (s.modelN || 1) - 1;
         return [el(doc, 'h1', 'pj-h', 'A model answer'),
           m.crit ? el(doc, 'p', 'pj-crit-label', null, [el(doc, 'b', null, 'Criterion ' + m.n), el(doc, 'span', null, m.crit)]) : null,
           m.hot ? el(doc, 'p', 'pj-flag', 'The criterion we are revisiting') : null,
-          el(doc, 'p', 'pj-body pj-model' + (m.hot ? ' pj-hot' : ''), m.text),
-          parts > 1 ? el(doc, 'div', 'pj-dots', null, Array.from({ length: parts }, (_, i) => el(doc, 'i', i === part ? 'on' : null)).concat([el(doc, 'span', null, 'Part ' + (part + 1) + ' of ' + parts)])) : null];
+          m.text ? el(doc, 'p', 'pj-body pj-model' + (m.hot ? ' pj-hot' : ''), m.text) : el(doc, 'p', 'pj-body', 'The model answer has no paragraph for this slide.'),
+          of > 1 ? el(doc, 'div', 'pj-dots', null, Array.from({ length: of }, (_, i) => el(doc, 'i', i === at ? 'on' : null)).concat([el(doc, 'span', null, 'Criterion ' + (at + 1) + ' of ' + of)])) : null];
       }
       default:
         return [el(doc, 'div', 'pj-hold', null, [(() => { const i = doc.createElement('img'); i.src = '../assets/images/brand/class-pulse-logo.png'; i.alt = ''; i.width = 2000; i.height = 2000; return i; })(),
@@ -97,8 +98,7 @@
     stage.appendChild(inner);
     doc.getElementById('pj-topic').textContent = s.topic;
     doc.getElementById('pj-cp').textContent = s.checkpoint;
-    doc.getElementById('pj-step').textContent = (s.index + 1) + ' of ' + s.count + ' · ' + s.label +
-      (s.scene === 'model' && s.modelParts > 1 ? ', part ' + ((s.modelPart || 0) + 1) + ' of ' + s.modelParts : '');
+    doc.getElementById('pj-step').textContent = (s.index + 1) + ' of ' + s.count + ' · ' + s.label;
     fit(doc);
   }
 

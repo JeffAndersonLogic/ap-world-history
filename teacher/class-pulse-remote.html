@@ -40,24 +40,30 @@ p.note{font-size:.8rem;color:#c3bcb1;line-height:1.5;margin:0}
 <script>
 (function(){
 'use strict';
-/* The same parts, in the same order, as SCENES in class-pulse-app.js. A number is all
-   that travels: checkpoint (0 or 1) times six, plus the part. */
-const SCENES=['Title only','The question','How the class did','What to revisit','Wrong ideas','Model answer'];
+/* The same parts, in the same order, as scenesFor in class-pulse-app.js: five fixed
+   parts, then one model answer slide per criterion. A number is all that travels:
+   checkpoint (0 or 1) times STRIDE, plus the part. STRIDE must match REMOTE_STRIDE in
+   class-pulse-app.js. The laptop's count ends with how many parts each checkpoint has
+   ("CP1 · 6 of 8 |8,8"), which is how this page knows how many model slides to offer;
+   until it says, it offers three, as most topics have. */
+const SCENES=['Title only','The question','How the class did','What to revisit','Wrong ideas'],STRIDE=13;
 const session=(new URLSearchParams(location.search).get('session')||'').replace(/[^a-f0-9]/gi,'');
 const status=document.getElementById('status');
-let index=0,seen=0,helloTimer=null,tries=0;
+let index=0,seen=0,helloTimer=null,tries=0,totals='';
 function say(t,ok){status.textContent=t;status.className='status'+(ok?' ok':'');}
 function paint(){document.querySelectorAll('[data-i]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.i)===index)));}
-[0,1].forEach(cp=>{document.getElementById('grid'+(cp+1)).innerHTML=SCENES.map((s,i)=>'<button class="btn" type="button" data-i="'+(cp*6+i)+'" aria-pressed="false">'+(i+1)+'. '+s+'</button>').join('');});
+function label(i){return i<SCENES.length?SCENES[i]:'Model answer, criterion '+(i-SCENES.length+1);}
+function grids(t){if(t===totals)return;totals=t;const n=(t||'8,8').split(',').map(Number);[0,1].forEach(cp=>{const k=Math.max(SCENES.length+1,Math.min(STRIDE,n[cp]||8));document.getElementById('grid'+(cp+1)).innerHTML=Array.from({length:k},(_,i)=>'<button class="btn" type="button" data-i="'+(cp*STRIDE+i)+'" aria-pressed="false">'+(i+1)+'. '+label(i)+'</button>').join('');});paint();}
+grids('8,8');
 if(session.length<20){say('Scan the QR code on the Class Pulse page');document.getElementById('now').textContent='This page needs a live session.';return;}
-function go(i){index=Math.max(0,Math.min(11,i));paint();relay.publish({type:'goto',index:index});}
-function handle(m){if(!m||m.sender!=='host'||m.type!=='state')return;seen=Date.now();clearTimeout(helloTimer);index=Number(m.index)||0;paint();document.getElementById('now').textContent=m.title||SCENES[index%6];document.getElementById('count').textContent=m.count||'';say('Connected to the classroom laptop',true);}
+function go(i){index=Math.max(0,Math.min(STRIDE*2-1,i));paint();relay.publish({type:'goto',index:index});}
+function handle(m){if(!m||m.sender!=='host'||m.type!=='state')return;seen=Date.now();clearTimeout(helloTimer);index=Number(m.index)||0;const c=String(m.count||'').split(' |');grids(c[1]||'8,8');paint();document.getElementById('now').textContent=m.title||label(index%STRIDE);document.getElementById('count').textContent=c[0];say('Connected to the classroom laptop',true);}
 function findLaptop(){clearTimeout(helloTimer);tries=0;say('Finding the classroom laptop…');const attempt=async()=>{const sent=await relay.publish({type:'hello'});if(seen&&Date.now()-seen<3000)return;if(!sent)return;tries++;if(tries>=5){say('The laptop has not replied. Keep Class Pulse open there, then tap Retry.');return;}helloTimer=setTimeout(attempt,Math.min(15000,3000*Math.pow(2,tries-1)));};attempt();}
 const relay=BHRemoteFirebase.connect({session:session,sender:'ipad',onmessage:handle,onready:findLaptop,onstatus(kind,message){if(kind==='ready')return;clearTimeout(helloTimer);say(message);}});
-/* On the model answer the laptop steps through its paragraphs, so Next and Back there
-   are a button press rather than a number, and the laptop decides where that lands. */
-document.getElementById('next').addEventListener('click',()=>{if(index%6===5)relay.publish({type:'next',index:index});else go(index+1);});
-document.getElementById('back').addEventListener('click',()=>{if(index%6===5)relay.publish({type:'prev',index:index});else go(index%6===0?index:index-1);});
+/* Next and Back are a button press rather than a number, and the laptop moves one
+   slide, exactly as its own Next and Back and the arrow keys do. */
+document.getElementById('next').addEventListener('click',()=>{relay.publish({type:'next',index:index});});
+document.getElementById('back').addEventListener('click',()=>{relay.publish({type:'prev',index:index});});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-i]');if(b)go(Number(b.dataset.i));});
 document.getElementById('retry').addEventListener('click',()=>{clearTimeout(helloTimer);relay.retry();});
 setInterval(()=>{if(document.visibilityState==='visible'&&seen)relay.publish({type:'ping'});},300000);

@@ -839,16 +839,23 @@ there greyed out, which read as broken.
 **The projector screen.** `teacher/class-pulse-projector.html` is a second window for the
 wall. It has no network (`connect-src 'none'`) and no data of its own: it draws the state
 the Class Pulse page on the same computer sends over a BroadcastChannel, one part at a
-time (title, the question, how the class did, what to revisit, wrong ideas, model answer).
-`projectorState()` builds that message from class totals, so Class view's rule (no name,
-no "Student 01", no student's words) is a property of what is sent. The model answer is in
-the message only while its own part is showing. Arrow keys and a clicker work on either
+time (title, the question, how the class did, what to revisit, wrong ideas, then one
+model answer slide per criterion: "Model answer, criterion 1", "criterion 2" and so on,
+three for most checkpoints and four or five for some in Units 5, 8 and 9; Jeff,
+2026-11-18, replacing one model answer part that Next stepped through paragraph by
+paragraph while the count stood still). `projectorState()` builds that message from class
+totals, so Class view's rule (no name, no "Student 01", no student's words) is a property
+of what is sent. The model answer is in the message only on its own slides, and each
+slide is sent only its own criterion's paragraph. Arrow keys and a clicker work on either
 window; the projector never steps itself.
 
 **The iPad as its remote** reuses the Teaching OS remote session (`remote-firebase.js`,
 `remoteSessions` in the rules, unchanged). The session document accepts a button name and
-a number, so all that travels is which part to show: checkpoint (0 or 1) times six, plus
-the part. `teacher/class-pulse-remote.html` is the iPad page. The QR library is vendored
+a number, so all that travels is which part to show: checkpoint (0 or 1) times 13
+(`REMOTE_STRIDE`, the five fixed parts plus the engine's limit of eight criteria), plus
+the part. The laptop's count ends with how many parts each checkpoint has
+(`CP1 · 6 of 8 |8,8`), so the iPad offers one button per model answer slide, and its Next
+and Back always move exactly one slide. `teacher/class-pulse-remote.html` is the iPad page. The QR library is vendored
 in `teacher/vendor/` because the page's policy allows scripts only from this site and
 Google's sign-in hosts. The remote has not been run on a real iPad or the school network.
 

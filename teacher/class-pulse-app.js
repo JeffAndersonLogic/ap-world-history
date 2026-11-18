@@ -85,8 +85,7 @@
     source: 'demo',   // 'demo' (invented students) or 'live' (my class, from the database)
     service: (() => { try { const v = localStorage.getItem('class-pulse-service'); return H && H.SERVICES.some(x => x.id === v) ? v : 'claude-for-teachers'; } catch (_) { return 'claude-for-teachers'; } })(),
     live: null,        // { auth, api, roster } once My class is chosen
-    scene: 0,          // which part of Class view the projector shows (SCENES below)
-    modelPart: 0,      // which paragraph of the model answer it shows, one at a time
+    scene: 0,          // which part of Class view the projector shows (scenesFor below)
     bundleSaid: ''     // what happened to the last pasted Reader result, kept across redraws
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
@@ -1195,7 +1194,18 @@
   // the screen chooses to draw: projectorState() builds the whole message from class
   // totals, and the model answer is put in it only while its own part is showing, so
   // a projector opened early has nothing to reveal.
-  const SCENES = [['hold', 'Title only'], ['question', 'The question'], ['results', 'How the class did'], ['revisit', 'What to revisit'], ['mis', 'Wrong ideas'], ['model', 'Model answer']];
+  // The model answer is one slide per criterion (2026-11-18, Jeff): "Model answer,
+  // criterion 1", "criterion 2" and so on, each a slide of its own with its own button
+  // here and on the iPad and its own number in the count, so Next always moves to the
+  // next slide and the teacher can jump straight to the criterion being revisited. It
+  // replaced one Model answer slide that Next stepped through paragraph by paragraph
+  // while the count stood still. A checkpoint has as many model slides as criteria,
+  // three for most topics, four or five for some in Units 5, 8 and 9.
+  const SCENES = [['hold', 'Title only'], ['question', 'The question'], ['results', 'How the class did'], ['revisit', 'What to revisit'], ['mis', 'Wrong ideas']];
+  const criteriaCount = cp => (D && D.contracts[cp] ? D.contracts[cp].criteria.length : 3);
+  const scenesFor = cp => SCENES.concat(Array.from({ length: criteriaCount(cp) }, (_, i) => ['model', 'Model answer, criterion ' + (i + 1), i]));
+  const scenes = () => scenesFor(S.cvCp);
+  const atScene = () => scenes()[Math.min(S.scene, scenes().length - 1)];
   const chan = typeof BroadcastChannel === 'function' ? new BroadcastChannel('class-pulse-projector') : null;
   let projWin = null, projSeen = 0;
   function classData(cp) {
@@ -1213,9 +1223,9 @@
       mis: [...mis.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(x => x[0]) };
   }
   function projectorState() {
-    const cp = S.cvCp, contract = D.contracts[cp], d = classData(cp), scene = SCENES[S.scene][0];
+    const cp = S.cvCp, contract = D.contracts[cp], d = classData(cp), list = scenes(), index = Math.min(S.scene, list.length - 1), at = list[index], scene = at[0];
     const out = {
-      v: 1, scene, index: S.scene, count: SCENES.length, label: SCENES[S.scene][1],
+      v: 1, scene, index, count: list.length, label: at[1],
       topic: 'Topic ' + title(S.topic), checkpoint: CP_NAME[cp], prompt: contract.prompt,
       inCount: d.inCount, n: D.students.length, read: d.read,
       criteria: d.tallies.map(t => ({ n: t.c.ci + 1, text: t.c.text, D: t.D, P: t.P, N: t.N, read: t.read, hot: !!(d.weakest && d.weakest.t === t) })),
@@ -1225,50 +1235,46 @@
       const c = d.weakest.t.c, ruled = contract.criteria[c.ci] && contract.criteria[c.ci].rubric;
       out.revisit = { n: c.ci + 1, text: c.text, short: d.weakest.t.P + d.weakest.t.N, read: d.weakest.t.read, P: d.weakest.t.P, N: d.weakest.t.N, strong: (ruled && ruled.D) || '' };
     }
-    // Only while the model answer's own part is on screen, and only if it is switched on.
-    // One paragraph at a time (2026-11-18, Jeff): only the paragraph on screen is sent,
-    // with the criterion it meets when there is one paragraph per criterion.
+    // Only on a model answer slide, only if it is switched on, and only that slide's
+    // own paragraph: criterion 2's slide is sent criterion 2's paragraph and no other.
     if (scene === 'model' && S.cvModel === 'show') {
-      const paras = modelParas(), match = paras.length === d.cols.length;
+      const paras = modelParas(), i = at[2], match = paras.length === d.cols.length;
       const mark = match && d.weakest ? d.weakest.t.c.ci : -1;
-      const part = Math.max(0, Math.min(paras.length - 1, S.modelPart));
-      out.model = paras.length ? [{ text: paras[part], hot: part === mark, n: part + 1, crit: match ? d.cols[part].text : '' }] : [];
-      out.modelPart = paras.length ? part : 0;
-      out.modelParts = paras.length;
+      out.modelN = i + 1;
+      out.modelOf = d.cols.length;
+      // When the paragraphs do not line up with the criteria the slide cannot say which
+      // criterion a paragraph meets, so it shows the paragraph alone, and the last slide
+      // carries any paragraphs left over rather than dropping them.
+      const text = match ? paras[i] : (i === d.cols.length - 1 ? paras.slice(i) : [paras[i]]).filter(Boolean).join('\n\n');
+      out.model = paras.length ? [{ text: text || '', hot: i === mark, n: i + 1, crit: match ? d.cols[i].text : '' }] : [];
     }
     return out;
   }
   const modelParas = () => modelText().split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
-  // How many paragraphs Next steps through before it stops, on the model answer only.
-  const modelParts = () => (SCENES[S.scene][0] === 'model' && S.cvModel === 'show' ? modelParas().length : 0);
-  const sceneLabel = () => SCENES[S.scene][1] + (modelParts() > 1 ? ', part ' + (Math.min(S.modelPart, modelParts() - 1) + 1) + ' of ' + modelParts() : '');
+  const sceneLabel = () => atScene()[1];
   function pushProjector() {
+    S.scene = Math.min(S.scene, scenes().length - 1); // a checkpoint or topic with fewer criteria
     renderScenes();
     if (chan && D) chan.postMessage({ type: 'state', state: projectorState() });
     sendRemoteState();
   }
   function renderScenes() {
     const box = $('#proj-scenes'); if (!box) return;
-    box.innerHTML = SCENES.map(([, label], i) => `<button class="btn" type="button" data-scene="${i}" aria-pressed="${i === S.scene}">${i + 1}. ${label}</button>`).join('');
-    const open = projSeen && Date.now() - projSeen < 15000;
+    box.innerHTML = scenes().map(([, label], i) => `<button class="btn" type="button" data-scene="${i}" aria-pressed="${i === S.scene}">${i + 1}. ${label}</button>`).join('');
+    const open = projSeen && Date.now() - projSeen < 15000, onModel = atScene()[0] === 'model';
+    const paras = modelParas().length, crits = criteriaCount(S.cvCp);
     $('#proj-status').textContent = (open ? 'The projector screen is open and showing: ' : 'Not open yet. When it opens it will show: ') + sceneLabel() + ', ' + CP_NAME[S.cvCp] + '.' +
-      (modelParts() > 1 ? ' Next shows the model answer one paragraph at a time.' : '') +
-      (S.scene === 5 && S.cvModel !== 'show' ? ' Model answer is set to Hide above, so the screen says so instead of showing it.' : '') +
-      (S.scene === 5 && S.cvModel === 'show' && !modelText().trim() ? ' No model answer is loaded for this checkpoint on this computer yet.' : '');
+      (onModel && S.cvModel !== 'show' ? ' Model answer is set to Hide above, so the screen says so instead of showing it.' : '') +
+      (onModel && S.cvModel === 'show' && !paras ? ' No model answer is loaded for this checkpoint on this computer yet.' : '') +
+      (onModel && S.cvModel === 'show' && paras && paras !== crits ? ` This model answer has ${paras} ${paras === 1 ? 'paragraph' : 'paragraphs'} but ${CP_NAME[S.cvCp]} has ${crits} criteria, so the screen cannot label which criterion each one meets. Write one paragraph per criterion.` : '');
   }
   function setScene(i) {
-    const next = Math.max(0, Math.min(SCENES.length - 1, Number(i) || 0));
-    if (next !== S.scene) S.modelPart = 0;
-    S.scene = next;
+    S.scene = Math.max(0, Math.min(scenes().length - 1, Number(i) || 0));
     pushProjector();
   }
-  // On the model answer, Next and Back move through its paragraphs first.
-  function stepScene(d) {
-    const parts = modelParts(), at = Math.min(S.modelPart, Math.max(0, parts - 1));
-    if (parts > 1 && d > 0 && at < parts - 1) { S.modelPart = at + 1; pushProjector(); return; }
-    if (parts > 1 && d < 0 && at > 0) { S.modelPart = at - 1; pushProjector(); return; }
-    setScene(S.scene + d);
-  }
+  // Next and Back are always one slide, everywhere: these buttons, the keys on either
+  // window, a clicker, and the iPad.
+  function stepScene(d) { setScene(S.scene + d); }
   function openProjector() {
     projWin = window.open('class-pulse-projector.html', 'class-pulse-projector', 'popup=yes,width=1280,height=720');
     if (!projWin) { $('#proj-status').textContent = 'The browser blocked the new window. Allow pop-ups for this page and press the button again.'; setTab('class'); return; }
@@ -1283,20 +1289,25 @@
   // The iPad as the remote, through the same Firebase session the Teaching OS decks
   // use (remote-firebase.js; firestore.rules, remoteSessions). The session document
   // accepts a button name and a number and nothing else, so all that travels is which
-  // part to show: index = checkpoint (0 or 1) times six, plus the part. This page
-  // answers with the same number and the part's name. No student work can pass.
+  // part to show: index = checkpoint (0 or 1) times REMOTE_STRIDE, plus the part. This
+  // page answers with the same number, the part's name, and a count that ends with how
+  // many parts each checkpoint has ("CP1 · 6 of 8 |8,8"), so the iPad can show one
+  // button per model answer slide. No student work can pass.
+  // REMOTE_STRIDE is the five fixed parts plus the engine's limit of eight criteria; it
+  // must match class-pulse-remote.html, which class-pulse-page.test.js checks.
+  const REMOTE_STRIDE = 13;
   let remote = null, remoteSession = '', remoteReady = false;
-  const remoteIndex = () => (S.cvCp === 'cp2' ? SCENES.length : 0) + S.scene;
+  const remoteIndex = () => (S.cvCp === 'cp2' ? REMOTE_STRIDE : 0) + S.scene;
   function remoteSay(t) { $('#proj-ipad-status').textContent = t; }
   function sendRemoteState() {
     if (!remote || !remoteReady) return;
-    remote.publish({ type: 'state', index: remoteIndex(), count: (S.cvCp === 'cp2' ? 'CP2' : 'CP1') + ' · ' + (S.scene + 1) + ' of ' + SCENES.length, title: sceneLabel() });
+    remote.publish({ type: 'state', index: remoteIndex(), count: (S.cvCp === 'cp2' ? 'CP2' : 'CP1') + ' · ' + (S.scene + 1) + ' of ' + scenes().length + ' |' + scenesFor('cp1').length + ',' + scenesFor('cp2').length, title: sceneLabel() });
   }
   function remoteGoto(index) {
-    const i = Math.max(0, Math.min(SCENES.length * 2 - 1, Number(index) || 0));
-    const cp = i >= SCENES.length ? 'cp2' : 'cp1';
-    if (cp !== S.cvCp) { S.cvCp = cp; S.modelPart = 0; $$('#cv-cp button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === cp)); if (S.tab === 'class') renderClass(); }
-    setScene(i % SCENES.length);
+    const i = Math.max(0, Math.min(REMOTE_STRIDE * 2 - 1, Number(index) || 0));
+    const cp = i >= REMOTE_STRIDE ? 'cp2' : 'cp1';
+    if (cp !== S.cvCp) { S.cvCp = cp; $$('#cv-cp button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === cp)); if (S.tab === 'class') renderClass(); }
+    setScene(i % REMOTE_STRIDE);
   }
   function renderRemote() {
     const qr = $('#proj-qr'), link = $('#proj-ipad-link');
@@ -1322,7 +1333,7 @@
         remoteSay('iPad connected.'); $('#proj-qr').hidden = true;
         if (m.type === 'next') stepScene(1);
         else if (m.type === 'prev') stepScene(-1);
-        else if (m.type === 'start') remoteGoto(S.cvCp === 'cp2' ? SCENES.length : 0);
+        else if (m.type === 'start') remoteGoto(S.cvCp === 'cp2' ? REMOTE_STRIDE : 0);
         else if (m.type === 'goto') remoteGoto(m.index);
         else sendRemoteState(); // hello and ping: say where we are
       }
@@ -1393,7 +1404,7 @@
   seg('#names', 'names', renderAll);
   seg('#sort', 'sort', renderLive);
   seg('#cmetric', 'cmetric', renderCourse);
-  seg('#cv-cp', 'cvCp', () => { S.modelPart = 0; renderClass(); pushProjector(); });
+  seg('#cv-cp', 'cvCp', () => { renderClass(); pushProjector(); });
   seg('#cv-mis', 'cvMis', () => { renderClass(); pushProjector(); });
   seg('#cv-model-show', 'cvModel', () => { renderClass(); pushProjector(); });
   $('#cv-session').addEventListener('click', e => {

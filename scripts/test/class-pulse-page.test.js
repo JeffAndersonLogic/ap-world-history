@@ -293,9 +293,13 @@ async function suite(browser) {
   await pj.waitForFunction(() => /Topic 2\.3/.test(document.getElementById('pj-topic').textContent), null, { timeout: 8000 }).catch(() => {});
   check('the projector screen opens on the title alone', /Topic 2\.3/.test(await pj.$eval('#pj-stage', e => e.textContent)) && !/How the class did/.test(await pj.$eval('#pj-stage', e => e.textContent)));
   const seenText = [];
-  for (let i = 1; i < 6; i++) {
+  // One slide per criterion for the model answer (2026-11-18, Jeff): Topic 2.3's
+  // Checkpoint 1 has three criteria, so five fixed parts and three model slides.
+  const sceneLabels = await s.p.$$eval('#proj-scenes button', bs => bs.map(b => b.textContent));
+  check('the model answer is one slide per criterion, each with its own button', JSON.stringify(sceneLabels.slice(5)) === JSON.stringify(['6. Model answer, criterion 1', '7. Model answer, criterion 2', '8. Model answer, criterion 3']) && sceneLabels.length === 8, sceneLabels.join(' | '));
+  for (let i = 1; i < 8; i++) {
     await s.p.click(`#proj-scenes [data-scene="${i}"]`);
-    await pj.waitForFunction(n => document.getElementById('pj-step').textContent.startsWith((n + 1) + ' of 6'), i, { timeout: 4000 }).catch(() => {});
+    await pj.waitForFunction(n => document.getElementById('pj-step').textContent.startsWith((n + 1) + ' of 8'), i, { timeout: 4000 }).catch(() => {});
     seenText.push(await pj.$eval('body', e => e.textContent));
   }
   const sentStates = await s.p.evaluate(() => window.__pj);
@@ -305,13 +309,41 @@ async function suite(browser) {
   check('nothing sent to the projector holds a student name', sentStates.length >= 5 && shownNames.every(nm => !sentAll.includes(nm)) && !/Student \d\d/.test(sentAll) && shownNames.every(nm => !drawn.includes(nm)), shownNames.find(nm => sentAll.includes(nm)) || '');
   check('or a student\'s words', !leak(sentAll) && !leak(drawn));
   check('the model answer is sent only while its own part is showing', sentStates.filter(x => x.model).length > 0 && sentStates.every(x => !x.model || x.scene === 'model') && sentStates.filter(x => x.scene !== 'model').every(x => !JSON.stringify(x).includes('File one.')) && /File one\./.test(seenText[4]), sentStates.map(x => x.scene + ':' + !!x.model).join(','));
+  const own = [['File one.', 'File two.', 'File three.'], [4, 5, 6]];
+  const onlyOwn = own[1].every((at, k) => own[0].every((para, j) => seenText[at].includes(para) === (j === k)));
+  const modelSent = sentStates.filter(x => x.model && x.model.length);
+  check('each model answer slide shows only its own paragraph, under its own criterion', onlyOwn && /Criterion 1/.test(seenText[4]) && /Criterion 3 of 3/.test(seenText[6]) && /8 of 8 · Model answer, criterion 3/.test(seenText[6]), own[1].map(at => seenText[at].slice(0, 200)).join(' | '));
+  check('and is sent only its own paragraph', modelSent.length >= 3 && modelSent.every(x => own[0].filter(para => JSON.stringify(x).includes(para)).length === 1), modelSent.map(x => x.label + ':' + x.model[0].text).join(' | '));
+  await pj.keyboard.press('ArrowRight');
+  await pj.waitForTimeout(300);
+  check('Next on the last model slide stays there', /8 of 8/.test(await pj.$eval('#pj-step', e => e.textContent)), await pj.$eval('#pj-step', e => e.textContent));
+  await pj.keyboard.press('ArrowLeft');
+  await s.p.waitForFunction(() => document.querySelector('#proj-scenes [data-scene="6"]').getAttribute('aria-pressed') === 'true', null, { timeout: 4000 }).catch(() => {});
+  check('an arrow key on the projector window steps it from the teacher\'s page', (await s.p.$eval('#proj-scenes [data-scene="6"]', b => b.getAttribute('aria-pressed'))) === 'true' && /7 of 8 · Model answer, criterion 2/.test(await pj.$eval('#pj-step', e => e.textContent)));
+  await s.p.click('#proj-scenes [data-scene="5"]');
   await pj.keyboard.press('ArrowLeft');
   await s.p.waitForFunction(() => document.querySelector('#proj-scenes [data-scene="4"]').getAttribute('aria-pressed') === 'true', null, { timeout: 4000 }).catch(() => {});
-  check('an arrow key on the projector window steps it from the teacher\'s page', (await s.p.$eval('#proj-scenes [data-scene="4"]', b => b.getAttribute('aria-pressed'))) === 'true' && /5 of 6/.test(await pj.$eval('#pj-step', e => e.textContent)));
+  check('Back from the first model slide is one slide back, to Wrong ideas', /5 of 8 · Wrong ideas/.test(await pj.$eval('#pj-step', e => e.textContent)), await pj.$eval('#pj-step', e => e.textContent));
   const pjCsp = await pj.$eval('meta[http-equiv="Content-Security-Policy"]', m => m.content);
   check('the projector screen cannot reach the network at all', /connect-src 'none'/.test(pjCsp) && await pj.evaluate(() => fetch('https://example.com/').then(() => false, () => true)));
   check('the projector screen raises no script error', pjErrors.length === 0, pjErrors.join(' | '));
+  // A checkpoint with five criteria gets five model slides, and moving to one with
+  // fewer brings the screen back onto a slide that exists.
+  await choose(s.p, '5.3');
+  await s.p.click('#cv-cp [data-v="cp2"]');
+  const five = await s.p.$$eval('#proj-scenes button', bs => bs.map(b => b.textContent));
+  check('a checkpoint with five criteria has five model answer slides', five.length === 10 && five[9] === '10. Model answer, criterion 5', five.join(' | '));
+  await s.p.click('#proj-scenes [data-scene="9"]');
+  await s.p.click('#cv-cp [data-v="cp1"]');
+  await pj.waitForFunction(() => /^8 of 8/.test(document.getElementById('pj-step').textContent), null, { timeout: 4000 }).catch(() => {});
+  check('switching to a checkpoint with fewer criteria lands on its last slide', /^8 of 8 · Model answer, criterion 3/.test(await pj.$eval('#pj-step', e => e.textContent)) && (await s.p.$eval('#proj-scenes [data-scene="7"]', b => b.getAttribute('aria-pressed'))) === 'true', await pj.$eval('#pj-step', e => e.textContent));
   await pj.close();
+  // The iPad numbers each part checkpoint * stride + part, so both pages must agree on
+  // the stride. Read through the test server, so a negative control can change one.
+  const served = f => new Promise((ok, no) => http.get(`http://127.0.0.1:${server.address().port}/${f}`, r => { let b = ''; r.on('data', d => { b += d; }); r.on('end', () => ok(b)); }).on('error', no));
+  const appStride = (/const REMOTE_STRIDE = (\d+);/.exec(await served('teacher/class-pulse-app.js')) || [])[1];
+  const remoteStride = (/STRIDE=(\d+);/.exec(await served('teacher/class-pulse-remote.html')) || [])[1];
+  check('the iPad remote and the page use the same numbering', !!appStride && appStride === remoteStride && Number(appStride) >= 5 + 8, appStride + ' vs ' + remoteStride);
   check('Class view raises no script error', s.errors.length === 0, s.errors.join(' | '));
   await s.context.close();
 
@@ -692,6 +724,9 @@ async function suite(browser) {
     { name: 'auto-pull reads the saved readings again', file: 'teacher/class-pulse-app.js', from: "const ratings = base ? base.ratings : await L.api.ratings(S.topic);", to: 'const ratings = await L.api.ratings(S.topic);', expect: /saved readings again/ },
     { name: 'the Pull button makes a quick check too', file: 'teacher/class-pulse-app.js', from: "const base = quick && S.liveCache && S.liveCache.key === cacheKey ? S.liveCache : null;", to: "const base = S.liveCache && S.liveCache.key === cacheKey ? S.liveCache : null;", expect: /Pull button still makes a full pull|next pull shows the saved levels/ },
     { name: 'the projector is sent the class list', file: 'teacher/class-pulse-app.js', from: "inCount: d.inCount, n: D.students.length, read: d.read,", to: "inCount: d.inCount, n: D.students.length, read: d.read, who: D.students.map(st => st.name),", expect: /sent to the projector holds a student name/ },
+    { name: 'every model slide is sent the whole answer', file: 'teacher/class-pulse-app.js', from: "const text = match ? paras[i] :", to: "const text = match ? paras.join('\\n\\n') :", expect: /only its own paragraph/ },
+    { name: 'the model answer is one slide again', file: 'teacher/class-pulse-app.js', from: "Array.from({ length: criteriaCount(cp) }, (_, i) =>", to: "Array.from({ length: 1 }, (_, i) =>", expect: /one slide per criterion/ },
+    { name: 'the iPad numbers the parts differently', file: 'teacher/class-pulse-remote.html', from: "STRIDE=13;", to: "STRIDE=6;", expect: /same numbering/ },
     { name: 'the projector is sent the model answer early', file: 'teacher/class-pulse-app.js', from: "if (scene === 'model' && S.cvModel === 'show') {", to: "if (S.cvModel === 'show') {", expect: /only while its own part is showing/ },
     { name: 'the projector keeps quoted words', file: 'teacher/class-pulse-app.js', from: "const word = unquoted(m);", to: "const word = m;", expect: /what is sent to the projector/ },
     { name: 'copying real answers is open without approval', file: 'teacher/class-pulse-handoff.js', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: "if (true)", expect: /stays locked/ },
