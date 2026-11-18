@@ -2171,12 +2171,16 @@ function moduleSequence() {
   return modules.filter(m => !m.jump && !m.link && typeof m.render === 'function');
 }
 function updateModuleNav() {
-  const header = byId('pop-modal').querySelector('.pop-header');
+  const panel = byId('pop-modal').querySelector('.pop-panel');
   if (!byId('module-nav')) {
-    header.insertAdjacentHTML('beforeend', `<nav class="module-nav" id="module-nav" aria-label="Module navigation">
-      <button class="btn module-nav-button" id="module-prev" type="button" onclick="moduleStep(-1)"><span aria-hidden="true">&#8592;</span> Previous</button>
+    const frame = document.createElement('div');
+    frame.className = 'module-frame';
+    panel.before(frame);
+    frame.appendChild(panel);
+    frame.insertAdjacentHTML('beforeend', `<nav class="module-nav" id="module-nav" aria-label="Module navigation">
+      <button class="module-nav-button" id="module-prev" type="button" onclick="moduleStep(-1)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M15 5H9l-7 7 7 7h6l-7-7z"/></svg></button>
       <span class="module-nav-status" id="module-nav-status" aria-live="polite"></span>
-      <button class="btn module-nav-button" id="module-next" type="button" onclick="moduleStep(1)">Next <span aria-hidden="true">&#8594;</span></button>
+      <button class="module-nav-button" id="module-next" type="button" onclick="moduleStep(1)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 5h6l7 7-7 7H9l7-7z"/></svg></button>
     </nav>`);
   }
   const sequence = moduleSequence();
