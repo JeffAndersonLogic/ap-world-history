@@ -1238,7 +1238,7 @@
     // Only on a model answer slide, only if it is switched on, and only that slide's
     // own paragraph: criterion 2's slide is sent criterion 2's paragraph and no other.
     if (scene === 'model' && S.cvModel === 'show') {
-      const paras = modelParas(), i = at[2], match = paras.length === d.cols.length;
+      const paras = modelParas(), i = at[2] || 0, match = paras.length === d.cols.length;
       const mark = match && d.weakest ? d.weakest.t.c.ci : -1;
       out.modelN = i + 1;
       out.modelOf = d.cols.length;
