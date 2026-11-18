@@ -593,7 +593,7 @@
   }
   function renderAfterSession() {
     const box = $('#after-session'); if (!box) return;
-    if (S.source !== 'live') { box.innerHTML = '<p class="small">In My class, answers submitted after you mark a feedback session on Class view are counted here.</p>'; return; }
+    if (S.source !== 'live') { box.innerHTML = '<p class="small">In My class, answers submitted after you mark a feedback session on the Projector tab are counted here.</p>'; return; }
     const parts = CPS.map(cp => {
       const late = D.students.filter(st => afterSession(st, cp));
       return late.length ? `<li><b>${CP_NAME[cp]}:</b> ${late.length} (${late.map(st => esc(shown(st))).join(', ')})</li>` : '';
