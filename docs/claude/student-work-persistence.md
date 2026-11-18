@@ -861,3 +861,34 @@ controls), `class-pulse-handoff.test.js` (partial readings, the bundle), and
 the projector's messages, with their negative controls). `class-pulse-reader.test.js`, in
 the browser suite, runs the Reader against a stand-in for Claude. `class-pulse-submit.test.js`
 covers Gather submitting.
+
+### Old work through Topic 4.6 counts as submitted, added 2026-11-17
+
+**What it does.** For every topic through 4.6, an answer in the backup with **no Submit
+receipt at all** counts as submitted, and looks exactly like one: it waits for a reading,
+goes out with the one copy to the Reader, and takes a saved reading like any other. From
+Topic 4.7 on, nothing changed: only a receipt counts. The cutoff is `RECOVER_THROUGH` in
+`teacher/class-pulse-live.js`, a fixed rule rather than a switch, so it can never reach a
+new topic by being left on.
+
+**Why.** Before 2026-11-16, Gather All My Work sent work to Canvas without writing a
+receipt (see "Canvas and Submit were two separate acts" above), so students who turned in
+everything sat in "Writing saved, never submitted" and their work could never be read. Jeff
+chose a one-time recovery over matching each answer against a Canvas download and over
+asking students to Gather again (AndersonLogic-OS `04_PRODUCTS/BeHistorical/Decisions.md`,
+2026-11-17). 4.7 is left alone at his direction, although one class took it before the fix
+reached students.
+
+**What it cannot tell you.** A recovered answer is the last thing the backup saved, which
+may differ from the student's Canvas paste or be unfinished. Nothing marks it, by Jeff's
+choice; the row carries `recovered: true` for tests only. An answer **changed after its
+Submit** is never recovered, because that student did press Submit, on different words.
+A student with nothing in the backup stays in "Nothing in the backup". Nothing is written to
+the student's records: the teacher's saved readings are what persist, and one stops
+counting if the student later edits that answer, as it always has.
+
+**Checks.** `class-pulse-page.test.js`: the cutoff's topic list, a never-submitted 4.6
+answer waiting and sent to the Reader, a changed one staying changed, the count, and (in the
+example class, which works on 4.7) a never-submitted 4.7 answer still saved but not
+submitted, with three negative controls. `class-pulse-live.test.js` (rules suite, needs the
+emulator) carries the same 4.6 and 4.7 cases against the real rules.

@@ -966,7 +966,7 @@
     ['recheck', 'Read, part needs a second look', 'One or more criteria came back in a form that did not pass the checks, so they show as Can\'t tell. These answers go out again the next time you copy everything waiting.'],
     ['wait', 'Submitted, waiting for a reading', 'Submitted and not read yet. Nothing reads these by itself: open Read the work, copy everything waiting, and paste the result back.'],
     ['changed', 'Changed after submitting', 'The writing is different from what the student submitted, so it is not counted. It counts again when they press Submit again, or Gather All My Work.'],
-    ['draft', 'Writing saved, never submitted', 'There is writing in the backup, but the student never pressed Submit or Gather All My Work on this checkpoint. Work turned in to Canvas before 2026-11-16 can look like this.'],
+    ['draft', 'Writing saved, never submitted', 'There is writing in the backup, but the student never pressed Submit or Gather All My Work on this checkpoint. On Topic 4.7, work turned in to Canvas before 2026-11-16 can look like this. Through Topic 4.6, saved writing counts as submitted, so nobody is here.'],
     ['none', 'Nothing in the backup', 'No writing for this checkpoint. Either it is not started, or it was written on a device where the student is not signed in to the backup, in which case it exists only in their Canvas paste.']
   ];
   function bucketOf(st, cp) {

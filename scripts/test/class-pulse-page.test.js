@@ -86,7 +86,12 @@ export async function signOut() { user = null; cbs.forEach(f => f(user)); }`;
 const ANA = 'Akbar used the mansabdar system to give officials land revenue he could take back.';
 const ANA2 = 'Plantations needed year-round labor, so slavery became hereditary and tied to race.';
 const BEN2 = 'The mita sent workers to Potosi.';
-function liveStore(multi) {
+// The example class works on Topic 4.7, where only a Submit receipt counts. Topics
+// through 4.6 recover saved writing (RECOVER_THROUGH, 2026-11-17); their own section
+// below uses liveStore(false, '4.6').
+const LIVE_TOPIC = '4.7';
+function liveStore(multi, topic) {
+  const key = (topic || LIVE_TOPIC).replace('.', '-');
   const P = 'projects/behistoric/databases/(default)/documents/tenants/zcs/';
   const docs = new Map(), commits = [], requests = [];
   const put = (name, fields, when) => docs.set(P + name, { name: P + name, fields, updateTime: when || new Date().toISOString() });
@@ -96,7 +101,7 @@ function liveStore(multi) {
   put('rosters/teach1', { classLabel: t(multi ? 'G4, S1' : 'G4') });
   [['ana1', 'Ana Ruiz', 'G4'], ['ben1', 'Ben Cole', 'S1'], ['cal1', 'Cal Ito', 'S1']].forEach(([u, l, sec]) =>
     put('rosters/teach1/students/' + u, multi ? { label: t(l), section: t(sec) } : { label: t(l) }));
-  const ans = (u, slot, text, c, when) => put(`responses/${u}__3-2__${slot}`, { studentId: t(u), topicKey: t('3-2'), slotId: t(slot), text: t(text), confidence: c ? { integerValue: String(c) } : t('') }, when);
+  const ans = (u, slot, text, c, when) => put(`responses/${u}__${key}__${slot}`, { studentId: t(u), topicKey: t(key), slotId: t(slot), text: t(text), confidence: c ? { integerValue: String(c) } : t('') }, when);
   ans('ana1', 'checkpoint-one-response', ANA, 4);
   ans('ana1', 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:14 AM · fingerprint ' + Sync.valueHash(ANA, '4'));
   ans('ben1', 'checkpoint-one-response', 'The devshirme took boys, and I changed this after submitting.', 3);
@@ -432,6 +437,7 @@ async function suite(browser) {
   patches = kept1;
   await L.p.waitForTimeout(300);
   check('nothing is asked of Google until My class is chosen', !store.googleLoaded && store.requests.length === 0);
+  await choose(L.p, LIVE_TOPIC);
   await L.p.click('#source [data-v="live"]');
   await L.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
   await L.p.click('#live-signin');
@@ -442,7 +448,7 @@ async function suite(browser) {
   const cells = await L.p.$$eval('#heat tbody tr', trs => trs.map(tr => [...tr.querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' ')));
   check('a submitted answer with no saved rating shows as not read yet', /^b-wait b-wait b-wait$/.test(cells[0] || ''), cells.join(' | '));
   check('an answer changed after Submit shows as changed, never as a level', /^b-changed b-changed b-changed$/.test(cells[1] || ''), cells[1]);
-  check('a draft never submitted shows as saved, never submitted', /^b-draft b-draft b-draft$/.test(cells[2] || ''), cells[2]);
+  check('on 4.7, a draft never submitted shows as saved, never submitted', /^b-draft b-draft b-draft$/.test(cells[2] || ''), cells[2]);
   // Where everyone is (2026-11-16): one box per student per checkpoint, adding up to the class.
   const ledger = await L.p.$$eval('#ledger .ledger-row', rows => rows.map(r => ({ cp: r.dataset.cp, boxes: [...r.querySelectorAll('.ledger-box')].map(b => b.querySelector('span').textContent + '=' + b.querySelector('b').textContent), sum: [...r.querySelectorAll('.ledger-box b')].reduce((a, b) => a + Number(b.textContent), 0), of: r.querySelector('.ledger-sum').textContent })));
   check('the count puts every student in exactly one box for each checkpoint', ledger.length === 2 && ledger.every(r => r.sum === 3 && r.of === 'of 3'), JSON.stringify(ledger));
@@ -485,6 +491,7 @@ async function suite(browser) {
   patches = kept2.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: true, reference: 'Dan Layton, email of 2026-11-05', services: ['claude-for-teachers'] };", to: "const APPROVAL = { realWork: true, reference: 'Test approval, not real', services: ['claude-for-teachers', 'chatgpt-for-teachers'] };" }]);
   const A = await open(browser, 1280, ctx => fakeGoogle(ctx, store2));
   patches = kept2;
+  await choose(A.p, LIVE_TOPIC);
   await A.p.click('#source [data-v="live"]');
   await A.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
   await A.p.click('#live-signin');
@@ -506,7 +513,7 @@ async function suite(browser) {
   const cardState = await A.p.$eval('#paste-batches .batch-top .small', x => x.textContent).catch(() => '');
   check('after a paste in My class, the batch card shows what was saved', /Saved 1 rating/.test(cardSaid) && /1 of 1 read and saved/.test(cardState), cardSaid + ' | ' + cardState);
   const saved = JSON.stringify(store2.commits);
-  check('a pasted reply is saved to the database for that student', store2.commits.length === 1 && /ana1__3-2__checkpoint-one-response/.test(saved) && /"codes":\{"stringValue":"D+"\}/.test(saved), saved.slice(0, 160));
+  check('a pasted reply is saved to the database for that student', store2.commits.length === 1 && /ana1__4-7__checkpoint-one-response/.test(saved) && /"codes":\{"stringValue":"D+"\}/.test(saved), saved.slice(0, 160));
   check('with no student name in what is saved', !/Ana|Ruiz/.test(saved.replace(/ana1/g, '')));
   check('and the service it was pasted into', /"reader":\{"stringValue":"chatgpt-for-teachers-pasted"\}/.test(saved));
   await A.p.click('#tab-live');
@@ -544,7 +551,7 @@ async function suite(browser) {
   await A.p.waitForFunction(() => /^Saved/.test(document.getElementById('bundle-said').textContent), null, { timeout: 8000 }).catch(() => {});
   const bundleSaid = await A.p.$eval('#bundle-said', e => e.textContent);
   const bundleSaved = JSON.stringify(store2.commits.slice(before));
-  check('the Reader\'s result is saved for each student it read', /Saved 2 readings/.test(bundleSaid) && /ana1__3-2__checkpoint-two-response/.test(bundleSaved) && /ben1__3-2__checkpoint-two-response/.test(bundleSaved), bundleSaid);
+  check('the Reader\'s result is saved for each student it read', /Saved 2 readings/.test(bundleSaid) && /ana1__4-7__checkpoint-two-response/.test(bundleSaved) && /ben1__4-7__checkpoint-two-response/.test(bundleSaved), bundleSaid);
   check('and records that it came through the Reader', /"reader":\{"stringValue":"claude-for-teachers-reader"\}/.test(bundleSaved));
   check('a quote in capitals is matched to the student\'s own words', bundleSaved.includes(ANA2.slice(0, 16)) && !bundleSaved.includes(ANA2.slice(0, 16).toUpperCase()));
   const led2 = await A.p.$$eval('#ledger .ledger-row[data-cp="cp2"] .ledger-box', bs => bs.map(b => b.querySelector('span').textContent + '=' + b.querySelector('b').textContent));
@@ -563,6 +570,7 @@ async function suite(browser) {
     const store4 = liveStore();
     const Q = await open(browser, 1280, async ctx => { await ctx.clock.install(); await fakeGoogle(ctx, store4); });
     const wait = ms => new Promise(r => setTimeout(r, ms));
+    await choose(Q.p, LIVE_TOPIC);
     await Q.p.click('#source [data-v="live"]');
     await Q.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
     await Q.p.click('#live-signin');
@@ -579,10 +587,10 @@ async function suite(browser) {
     check('the page says it checked, not pulled', /checked for new submissions .* \(0 new to read\)/.test(await Q.p.$eval('#live-status', e => e.textContent)), await Q.p.$eval('#live-status', e => e.textContent));
     // Ben submits again with his new words: his receipt changes, so his answer is read.
     const P = store4.P, NEW = 'The devshirme took boys, and I changed this after submitting.';
-    store4.docs.set(P + 'responses/ben1__3-2__checkpoint-one-response-submitted', { name: P + 'responses/ben1__3-2__checkpoint-one-response-submitted', fields: { text: { stringValue: 'Submitted Oct 31, 9:40 AM · fingerprint ' + Sync.valueHash(NEW, '3') } }, updateTime: new Date().toISOString() });
+    store4.docs.set(P + 'responses/ben1__4-7__checkpoint-one-response-submitted', { name: P + 'responses/ben1__4-7__checkpoint-one-response-submitted', fields: { text: { stringValue: 'Submitted Oct 31, 9:40 AM · fingerprint ' + Sync.valueHash(NEW, '3') } }, updateTime: new Date().toISOString() });
     reqs = await tick();
     const read = reqs.filter(r => /^GET responses\/.*-response$/.test(r));
-    check('a changed receipt gets its answer read, and only that one', read.length === 1 && /ben1__3-2__checkpoint-one-response$/.test(read[0]), read.join(' ; '));
+    check('a changed receipt gets its answer read, and only that one', read.length === 1 && /ben1__4-7__checkpoint-one-response$/.test(read[0]), read.join(' ; '));
     const benRow = await Q.p.$$eval('#heat tbody tr', trs => [...trs[1].querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' '));
     check('and the student shows as submitted on the grid', /^b-wait b-wait b-wait$/.test(benRow), benRow);
     const before = store4.requests.length;
@@ -594,10 +602,45 @@ async function suite(browser) {
     await Q.context.close();
   }
 
+  // The one-time recovery (2026-11-17): through Topic 4.6, saved writing with no
+  // Submit receipt counts as submitted and looks it; 4.7 on is the section above.
+  section('Old work through 4.6 is recovered');
+  {
+    const Live = require(path.join(ROOT, 'teacher', 'class-pulse-live.js'));
+    const cut = ['1.1', '3.2', '4.6', 'Topic 4.6', '4.7', '4.8', '5.1', '10.1', 'f3'].map(t => t + '=' + Live.recovered(t)).join(' ');
+    check('recovery covers every topic through 4.6 and nothing after', cut === '1.1=true 3.2=true 4.6=true Topic 4.6=true 4.7=false 4.8=false 5.1=false 10.1=false f3=false', cut);
+    const store5 = liveStore(false, '4.6');
+    const O = await open(browser, 1280, ctx => fakeGoogle(ctx, store5));
+    await choose(O.p, '4.6');
+    await O.p.click('#source [data-v="live"]');
+    await O.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
+    await O.p.click('#live-signin');
+    await O.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
+    await O.p.waitForTimeout(300);
+    const rows = await O.p.$$eval('#heat tbody tr', trs => trs.map(tr => [...tr.querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' ')));
+    check('on 4.6, writing never submitted is recovered and waits for a reading like any other', /^b-wait b-wait b-wait$/.test(rows[2] || ''), rows.join(' | '));
+    check('on 4.6, an answer changed after Submit stays changed', /^b-changed b-changed b-changed$/.test(rows[1] || ''), rows[1]);
+    check('on 4.6, a submitted answer is unaffected', /^b-wait b-wait b-wait$/.test(rows[0] || ''), rows[0]);
+    const led = await O.p.$$eval('#ledger .ledger-row[data-cp="cp1"] .ledger-box', bs => bs.map(b => b.querySelector('span').textContent + '=' + b.querySelector('b').textContent));
+    check('on 4.6, the count puts the recovered student with the submitted ones', led.includes('Submitted, waiting for a reading=2') && led.includes('Changed after submitting=1') && !led.some(x => /^Writing saved, never submitted=[1-9]/.test(x)), led.join(' | '));
+    const cp2 = await O.p.$$eval('#ledger .ledger-row[data-cp="cp2"] .ledger-box', bs => bs.map(b => b.querySelector('span').textContent + '=' + b.querySelector('b').textContent));
+    check('on 4.6, a student with nothing in the backup is still counted as nothing', cp2.includes('Nothing in the backup=1'), cp2.join(' | '));
+    const title = await O.p.$eval('#heat tbody tr:nth-child(3) .cell', c => c.getAttribute('title')).catch(() => '');
+    check('the recovered answer looks exactly like a submitted one', title === 'Submitted, waiting for a reading', title);
+    await O.p.click('#tab-read');
+    await O.p.waitForFunction(() => document.getElementById('bundle-text').value.length > 0, null, { timeout: 8000 }).catch(() => {});
+    const sent = await O.p.$eval('#bundle-text', t => t.value).catch(() => '');
+    check('and goes out to the Reader with the one copy', sent.includes('Half an') && !sent.includes('I changed this after submitting'), sent.slice(0, 120));
+    check('the badge counts it among the answers waiting', (await O.p.$eval('#read-badge', b => b.textContent).catch(() => '')) === '4');
+    check('recovery raises no script error', O.errors.length === 0, O.errors.join(' | '));
+    await O.context.close();
+  }
+
   section('All of the teacher\'s classes');
   {
     const store3 = liveStore(true);
     const M = await open(browser, 1280, ctx => fakeGoogle(ctx, store3));
+    await choose(M.p, LIVE_TOPIC);
     await M.p.click('#source [data-v="live"]');
     await M.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
     await M.p.click('#live-signin');
@@ -670,6 +713,9 @@ async function suite(browser) {
     { name: 'the session time is ignored', file: 'teacher/class-pulse-app.js', from: 'return !!(at && Date.parse(t) > Date.parse(at));', to: 'return false;', expect: /counts the answer submitted after it/ },
     { name: 'every answer counts as after the session', file: 'teacher/class-pulse-app.js', from: 'return !!(at && Date.parse(t) > Date.parse(at));', to: 'return !!at;', expect: /names who submitted after the session/ },
     { name: 'the coaching note is never read', file: 'teacher/class-pulse-live.js', from: "coached: state === 'verified-submission' && receiptCoached(receiptText),", to: 'coached: false,', expect: /coaching note splits/ },
+    { name: 'the recovery is switched off', file: 'teacher/class-pulse-live.js', from: "const fromBackup = recover && !!text && !print;", to: 'const fromBackup = false;', expect: /writing never submitted is recovered/ },
+    { name: 'the recovery reaches 4.7', file: 'teacher/class-pulse-live.js', from: "const RECOVER_THROUGH = '4.6';", to: "const RECOVER_THROUGH = '4.7';", expect: /on 4\.7, a draft never submitted/ },
+    { name: 'an answer changed after Submit is recovered', file: 'teacher/class-pulse-live.js', from: "const fromBackup = recover && !!text && !print;", to: 'const fromBackup = recover && !!text;', expect: /changed after Submit stays changed/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];
   let controlFailures = 0;
