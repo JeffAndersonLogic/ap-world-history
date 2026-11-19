@@ -27,7 +27,11 @@
 #pop-modal .pop-header>.btn{margin-top:0}
 /* Dark frame rails keep the controls centered while only the module body scrolls. */
 .module-frame{position:relative;width:min(1284px,100%);min-width:0;padding:0 52px;background:var(--blackened-steel);border:1px solid rgba(201,164,106,.18);border-radius:26px;box-shadow:0 30px 90px rgba(0,0,0,.3)}
-#pop-modal .module-frame>.pop-panel{width:100%;min-width:0;box-shadow:none}
+#pop-modal .module-frame>.pop-panel{width:100%;min-width:0;box-shadow:none;overflow-wrap:anywhere}
+#pop-modal .map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#pop-modal .map-grid>*{min-width:0}
+#pop-modal fieldset{min-inline-size:0}
+@media(max-width:920px){#pop-modal .map-grid{grid-template-columns:minmax(0,1fr)}}
 .module-nav{position:absolute;inset:0;pointer-events:none}
 .module-nav-button{position:absolute;top:50%;left:4px;transform:translateY(-50%);width:44px;height:44px;min-height:44px;padding:9px;display:flex;align-items:center;justify-content:center;border:2px solid #737873;border-radius:50%;background:var(--charcoal-steel);color:#9b9c8e;cursor:pointer;pointer-events:auto;transition:color .18s ease,border-color .18s ease,background .18s ease}
 .module-nav-button svg{display:block;fill:currentColor;flex:none}
