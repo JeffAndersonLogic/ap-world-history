@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull two earlier topics back from memory.",
       "template": {
         "questions": [
@@ -36,8 +36,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective A"
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "How did knowledge from older worlds let European ships cross the ocean and come back?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Getting home was the hard part"
+          },
+          {
+            "label": "II",
+            "text": "Borrowed tools"
+          },
+          {
+            "label": "III",
+            "text": "New ships"
+          },
+          {
+            "label": "IV",
+            "text": "Learn the wind"
+          },
+          {
+            "label": "V",
+            "text": "The ocean goes both ways"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: the whole chain",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Checkpoint 1 · Evidence Lab · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read for the chain.",
       "subtitle": "Borrowed tools, new ships, learn the wind, the ocean goes both ways. Mark where each tool came from.",
       "action": {
@@ -47,7 +84,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "What Was Already True",
+      "eyebrow": "I · Getting Home Was the Hard Part",
       "title": "One ocean ran on a schedule. The other did not.",
       "footer": "Getting there was never the hard part. Getting home was.",
       "kc": "KC-4.1.II.A",
@@ -84,7 +121,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-subtitle",
-      "eyebrow": "Off the Coast of Northwest Africa, 1400s",
+      "eyebrow": "I · Getting Home · Off the Coast of Northwest Africa, 1400s",
       "title": "",
       "kc": "KC-4.1.II.A",
       "template": {
@@ -98,7 +135,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "grid",
-      "eyebrow": "Borrowed Tools",
+      "eyebrow": "II · Borrowed Tools",
       "title": "Most of Europe's sea tools came from older worlds.",
       "footer": "Classical, Islamic, Asian: the three worlds the College Board names.",
       "kc": "KC-4.1.II",
@@ -123,7 +160,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "diffusion-path",
-      "eyebrow": "How Knowledge Traveled",
+      "eyebrow": "II · Borrowed Tools · How Knowledge Traveled",
       "title": "Greek astronomy took the long way to Portugal.",
       "footer": "Knowledge moved with **people**: translators, scholars and merchants.",
       "kc": "KC-4.1.II",
@@ -154,7 +191,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "Toledo, Spain, 1100s and 1200s",
+      "eyebrow": "II · Borrowed Tools · Toledo, Spain, 1100s and 1200s",
       "title": "Knowledge moved with people.",
       "subtitle": "Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin.",
       "kc": "KC-4.1.II",
@@ -168,7 +205,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "Off West Africa, 1480s",
+      "eyebrow": "II · Borrowed Tools · Off West Africa, 1480s",
       "title": "A borrowed instrument becomes a new tool.",
       "subtitle": "The mariner's astrolabe: measure the noon sun, check the chart, know your latitude.",
       "kc": "KC-4.1.II.A",
@@ -183,7 +220,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "annotated",
-      "eyebrow": "New Ships",
+      "eyebrow": "III · New Ships",
       "title": "Three ships, three jobs.",
       "footer": "Because each design solved a different problem: exploring, surviving long voyages, or carrying goods cheaply.",
       "kc": "KC-4.1.II.A",
@@ -220,7 +257,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "The One Thing Nobody Could Borrow",
+      "eyebrow": "IV · Learn the Wind · The One Thing Nobody Could Borrow",
       "title": "The Atlantic's winds turn in a wheel.",
       "kc": "KC-4.1.II.A",
       "template": {
@@ -247,7 +284,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-subtitle",
-      "eyebrow": "The Volta do Mar",
+      "eyebrow": "IV · Learn the Wind · The Volta do Mar",
       "title": "",
       "kc": "KC-4.1.II.A",
       "template": {
@@ -262,7 +299,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-route",
-      "eyebrow": "The Payoff",
+      "eyebrow": "V · The Ocean Goes Both Ways",
       "title": "The ocean became a road both ways.",
       "footer": "New patterns: goods and people move by sea between Europe and Asia, and across the Atlantic. Why they sailed is Topic 4.2.",
       "kc": "Unit 4: Learning Objective A",
@@ -306,7 +343,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "Calicut, India, May 1498",
+      "eyebrow": "V · Both Ways · Calicut, India, May 1498",
       "title": "A new route into a busy ocean.",
       "subtitle": "Da Gama's ships anchored among traders who had sailed these waters for centuries.",
       "kc": "Unit 4: Learning Objective A",
@@ -319,34 +356,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "The Twist",
-      "title": "A combination, not a European invention.",
-      "footer": "Europe faced a harder ocean and solved it by combining knowledge from older worlds.",
-      "kc": "KC-4.1.II",
-      "template": {
-        "rows": [
-          {
-            "myth": "Europeans invented the tools of ocean travel.",
-            "evidence": "Compass from China; astrolabe from Greek and Islamic astronomy; lateen sail from the Roman Mediterranean.",
-            "source": "Topic 4.1"
-          },
-          {
-            "myth": "Europe got the lateen sail from Arab sailors.",
-            "evidence": "It sailed the Mediterranean in Roman times, before Islam.",
-            "source": "Nautical archaeology"
-          },
-          {
-            "myth": "In the early 1400s, Europe had the biggest ships.",
-            "evidence": "The biggest ships and longest voyages were in China and the Indian Ocean.",
-            "source": "Topic 2.3"
-          }
-        ]
-      }
-    },
-    {
       "kind": "cause-chain",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "How older knowledge opened the oceans.",
       "footer": "Borrowed tools. New ships. Learn the wind. Now the ocean goes both ways.",
       "kc": "Unit 4: Learning Objective A",
@@ -383,53 +394,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "Context, cause, mechanism, effect.",
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 06, 07, 10",
+      "title": "Now you trace the chain.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
-        "weak": "Technology caused European exploration.",
-        "strong": "**Borrowed tools** like the compass and astrolabe, **new ships** like the caravel, and **knowledge of the Atlantic's winds** let ships sail out and come home, **so** new sea routes linked Europe with Africa, Asia and the Americas."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Describe the context first.",
-      "subtitle": "Where did the tools come from, and what older world were they part of?",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-1-technological-innovations.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1",
-      "title": "Three tools, three problems solved.",
-      "subtitle": "On your own. Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-1-technological-innovations.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Build one claim from two real objects.",
-      "subtitle": "What does each object show, and what problem did it help solve? Name one limit.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-1-technological-innovations.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "From borrowed knowledge to a two-way ocean.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-1-technological-innovations.html#modules"
+        "modules": [
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "Three tools, three problems. On your own, no coach.",
+            "url": "../unit-4/lesson-4-1-technological-innovations.html#modules"
+          },
+          {
+            "code": "Module 07",
+            "name": "Evidence Lab",
+            "note": "One claim from two real objects.",
+            "url": "../unit-4/lesson-4-1-technological-innovations.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-1-technological-innovations.html#modules"
+          }
+        ]
       }
     },
     {

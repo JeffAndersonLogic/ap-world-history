@@ -402,14 +402,14 @@
       "placements": [
         {
           "topic": "5.1",
-          "teacherSlide": 7,
+          "teacherSlide": 8,
           "phase": "answers",
           "template": "frame-pair",
           "purpose": "Identify the named writer while preserving the existing political claims, source passage and reasoning prompts."
         },
         {
           "topic": "5.1",
-          "teacherSlide": 8,
+          "teacherSlide": 9,
           "phase": "locke",
           "template": "source-quote",
           "purpose": "Identify the named writer while preserving the existing political claims, source passage and reasoning prompts."
@@ -440,7 +440,7 @@
       "placements": [
         {
           "topic": "5.1",
-          "teacherSlide": 7,
+          "teacherSlide": 8,
           "phase": "answers",
           "template": "frame-pair",
           "purpose": "Identify the named writer while preserving the existing political claims, source passage and reasoning prompts."

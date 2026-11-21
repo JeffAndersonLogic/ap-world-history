@@ -27,20 +27,20 @@
  *
  * Added 2026-10-29 at Jeff's request, each on the slide and template he chose:
  *
- * - ships (slide 11, annotated): "4.1 - Caravel, Carruck, and Fluyt.jpg", AI
+ * - ships (slide 12, annotated): "4.1 - Caravel, Carruck, and Fluyt.jpg", AI
  *   (C2PA, generator mark bottom right). The three ships side by side off a
  *   walled port. Its printed captions misspell "Portuguese" ("Portuguesa
  *   Caravel"), so cropBottom hides them with the generator mark and the pins
  *   name the ships instead. Fault named in the note: the caravel and carrack
  *   fly today's green and red Portuguese flag, adopted in 1911. The Dutch
  *   fluyt's orange, white and blue flag is right for about 1600.
- * - payoff (slide 14, frame-route): "4.1 - Columbus Dias da Gama.png", a
+ * - payoff (slide 15, frame-route): "4.1 - Columbus Dias da Gama.png", a
  *   BeHistorical instructional map (not AI) with the three outward routes
  *   already drawn. The view crops off its header, which says "Topic 4.2", and
  *   its footer; path:false keeps the template from drawing a fourth line. The
  *   pins sit on the map's own numbered circles, so the numbers follow the map
  *   (Dias, da Gama, Columbus), not the calendar.
- * - close (slide 23, frame-question): "4.1 - Landing Slide.jpg", AI (C2PA,
+ * - close (slide 19, frame-question): "4.1 - Landing Slide.jpg", AI (C2PA,
  *   generator mark bottom right, outside the crop). A pilot holds up a ring
  *   instrument on a caravel's deck, a compass box and chart beside him.
  */

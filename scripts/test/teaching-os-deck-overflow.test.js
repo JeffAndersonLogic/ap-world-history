@@ -103,6 +103,23 @@ const VIEWPORTS = [
 ];
 
 const results = [];
+// Optional review artifacts, not assertions. CI already preserves this directory.
+// Only pending photo placements need these shots; the normal sweep stays unchanged.
+const reviewDir = process.env.BH_PRESENTATION_SHOTS_DIR || process.env.BH_ATLAS_SHOTS_DIR;
+const pendingPhotos = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/presentation-image-ledger.json'), 'utf8')).images
+  .filter(im => im.status === 'prepared-awaiting-browser-review');
+async function photoShot(page, topic, audience, index, width) {
+  if (!reviewDir) return;
+  const names = pendingPhotos.filter(im => im.placements.some(p => p.topic === topic))
+    .map(im => path.basename(im.path));
+  if (!names.length) return;
+  const visible = await page.locator('#stage img').evaluateAll((imgs, names) =>
+    imgs.some(im => names.some(n => decodeURIComponent(im.src).endsWith('/' + n))), names);
+  if (!visible) return;
+  await page.locator('#stage img').evaluateAll(imgs => Promise.all(imgs.map(im => im.decode().catch(() => {}))));
+  fs.mkdirSync(reviewDir, { recursive: true });
+  await page.screenshot({ path: path.join(reviewDir, `presentation-${topic}-${audience}-${index + 1}-${width}.png`) });
+}
 function check(name, pass, detail) {
   results.push({ name, pass });
   console.log(`  ${pass ? 'PASS' : 'FAIL'}  ${name}${detail ? '  (' + detail + ')' : ''}`);
@@ -199,6 +216,7 @@ function shellFor(key) {
             imgs: [...stage.querySelectorAll('img')].filter(im => im.naturalWidth > 0).length
           };
         }));
+        await photoShot(page, deck.key, 'student', i, vp.width);
         if (i < total - 1) { await page.click('#next').catch(() => {}); await page.waitForTimeout(90); }
       }
 
@@ -227,6 +245,17 @@ function shellFor(key) {
         `${withImages} of ${total} slide(s) carry a decoded image`);
 
       check(`${label}: no page errors`, errors.length === 0, errors.slice(0, 2).join(' | ') || 'clean');
+      if (reviewDir && pendingPhotos.some(im => im.placements.some(p => p.topic === deck.key))) {
+        await page.goto(`${origin}/teacher/topic-${deck.key.replace('.', '-')}-os.html?mode=project`, { waitUntil: 'networkidle' });
+        await page.waitForFunction(() => window.BEHISTORICAL_TEACHING);
+        const count = await page.evaluate(() => window.BEHISTORICAL_TEACHING.slides.length);
+        await page.evaluate(() => localStorage.setItem(window.BEHISTORICAL_TEACHING.projection.storageKey, '0'));
+        await page.reload({ waitUntil: 'networkidle' });
+        for (let i = 0; i < count; i++) {
+          await photoShot(page, deck.key, 'teacher', i, vp.width);
+          if (i < count - 1) await page.keyboard.press('ArrowRight');
+        }
+      }
       await page.close();
     }
   }

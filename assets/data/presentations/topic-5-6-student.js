@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -46,8 +46,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Why did a few governments build industry themselves, and what happened when they did?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "The exception: a few states built industry"
+          },
+          {
+            "label": "II",
+            "text": "Egypt builds for an army"
+          },
+          {
+            "label": "III",
+            "text": "Egypt: it worked, then it stopped"
+          },
+          {
+            "label": "IV",
+            "text": "Japan: pressure, then reform"
+          },
+          {
+            "label": "V",
+            "text": "Japan builds, sells and grows strong"
+          },
+          {
+            "label": "VI",
+            "text": "The pattern and the difference"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: two states, one pattern",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read, and build two chains.",
       "subtitle": "One chain for Egypt and one for Japan, with the same four links: the threat, the decision, the strategy, the result.",
       "action": {
@@ -57,7 +98,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "The Exception",
+      "eyebrow": "I · The Exception",
       "title": "Most factories were private. A few states built their own.",
       "footer": "Two of the clearest cases: Egypt under Muhammad Ali, and Japan in the Meiji era.",
       "kc": "KC-5.1.V.C",
@@ -85,7 +126,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Egypt · The Ruler",
+      "eyebrow": "II · Egypt Builds · The Ruler",
       "title": "A governor who wanted power of his own.",
       "footer": "The cause: a ruler who wanted an army like Napoleon's, strong enough to keep Egypt for his family.",
       "kc": "KC-5.1.V.C",
@@ -121,7 +162,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "Egypt · The Strategy",
+      "eyebrow": "II · Egypt Builds · The Strategy",
       "title": "Crops paid for factories. Factories supplied an army.",
       "footer": "Who paid in the end? Egypt's peasants, with their crops and their labor.",
       "kc": "KC-5.1.V.C",
@@ -144,7 +185,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Egypt · The Result",
+      "eyebrow": "III · Egypt's Result · It Worked, Then It Stopped",
       "title": "It worked. Then it stopped.",
       "footer": "By the mid-1840s, about a decade after their peak, most of the new factories had failed.",
       "kc": "KC-5.1.V.C",
@@ -185,7 +226,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-rank",
-      "eyebrow": "Egypt · Weigh the Causes",
+      "eyebrow": "III · Egypt's Result · Weigh the Causes",
       "title": "Why did most of Egypt's factories close?",
       "kc": "KC-5.1.V.C",
       "template": {
@@ -211,29 +252,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1",
-      "title": "Why did Muhammad Ali build factories, and what happened to them?",
-      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-6-industrialization-government-and-society.html#modules"
-      }
-    },
-    {
-      "kind": "sentence-frame",
-      "eyebrow": "Making Connections 5.A · Model",
-      "title": "Find the pattern, then the difference.",
-      "footer": "A pattern is what two cases share. The difference is what the pattern does not explain.",
-      "template": {
-        "frame": "Both {{case A}} and {{case B}} {{did the same things}}. That is the pattern. But {{case A}} {{had one result}}, while {{case B}} {{had another}}, because {{a reason}}.",
-        "exampleLabel": "An everyday case",
-        "example": "Both **two friends** trained for a 5K race, **running every morning on the same phone plan**. That is the pattern. But **one finished the race**, while **the other was hurt in the second week**, because **she skipped stretching**."
-      }
-    },
-    {
       "kind": "story-scene",
-      "eyebrow": "Japan · The Threat",
+      "eyebrow": "IV · Japan Reforms · The Threat",
       "title": "Ships that changed a government.",
       "footer": "The cause: U.S. and European influence pressed on Japan.",
       "kc": "KC-5.2.II.A",
@@ -269,7 +289,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "A Voice from 1868",
+      "eyebrow": "IV · Japan Reforms · A Voice from 1868",
       "title": "What did Japan's new leaders promise?",
       "footer": "The Charter Oath, issued in April 1868 in the name of the fifteen-year-old emperor, Meiji.",
       "kc": "KC-5.2.II.A",
@@ -285,7 +305,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Japan · Reform First",
+      "eyebrow": "IV · Japan Reforms · Reform First",
       "title": "Japan changed itself before it built factories.",
       "footer": "Reform made industry possible, and paid for it.",
       "kc": "KC-5.2.II.A",
@@ -321,7 +341,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Japan · Build It, Then Sell It",
+      "eyebrow": "V · Japan Builds · Build It, Then Sell It",
       "title": "The state started key industries. Private companies built on them.",
       "footer": "Business families such as Mitsui and Mitsubishi grew into huge business groups: the zaibatsu.",
       "kc": "KC-5.2.II.A",
@@ -357,7 +377,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Japan · A Regional Power",
+      "eyebrow": "V · Japan Builds · A Regional Power",
       "title": "Forty years after Perry, Japan beat China.",
       "kc": "KC-5.2.II.A",
       "template": {
@@ -386,18 +406,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Find the pattern across Egypt and Japan.",
-      "subtitle": "Making Connections 5.A: line up the links, name what both share, then name the difference the pattern does not explain.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-6-industrialization-government-and-society.html#modules"
+      "kind": "sentence-frame",
+      "eyebrow": "VI · Pattern and Difference · 5.A, Model",
+      "title": "Find the pattern, then the difference.",
+      "footer": "A pattern is what two cases share. The difference is what the pattern does not explain.",
+      "template": {
+        "frame": "Both {{case A}} and {{case B}} {{did the same things}}. That is the pattern. But {{case A}} {{had one result}}, while {{case B}} {{had another}}, because {{a reason}}.",
+        "exampleLabel": "An everyday case",
+        "example": "Both **Maya** and **Jordan** **trained for a 5K, running every morning on the same plan**. That is the pattern. But **Maya finished the race**, while **Jordan was hurt in the second week**, because **Jordan skipped stretching**."
       }
     },
     {
       "kind": "split-venn",
-      "eyebrow": "Making Connections 5.A · The Pattern",
+      "eyebrow": "VI · Pattern and Difference · 5.A, The Pattern",
       "title": "Two states, one pattern.",
       "footer": "Both aimed at the same goal: a state strong enough to defend itself, with an army to match.",
       "kc": "KC-5.1.V.C",
@@ -428,7 +449,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "Making Connections 5.A · The Difference",
+      "eyebrow": "VI · Pattern and Difference · 5.A, The Difference",
       "title": "Same pattern, different results.",
       "footer": "Japan had to accept low tariffs too, so outside pressure alone does not explain the difference.",
       "template": {
@@ -463,33 +484,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Japan just copied the West.",
-            "evidence": "Its leaders chose what to borrow and from whom: a French silk mill, British railway engineers.",
-            "source": "KC-5.2.II.A"
-          },
-          {
-            "myth": "Muhammad Ali was building an Egyptian nation.",
-            "evidence": "He was an Ottoman governor from an Albanian family whose court spoke Turkish, building power for his family.",
-            "source": "KC-5.1.V.C"
-          },
-          {
-            "myth": "One cause explains Egypt's result.",
-            "evidence": "Historians weigh European pressure, missing coal, drafted workers and new managers, and still disagree.",
-            "source": "KC-5.1.V.C"
-          }
-        ]
-      }
-    },
-    {
       "kind": "split-scenes",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Two states built industry. Japan's grew. Egypt's mostly closed.",
       "footer": "With your notes closed, redraw both chains, then name the pattern and the difference.",
       "template": {
@@ -532,7 +528,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · AP Synthesis",
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective G",
       "template": {
@@ -549,23 +545,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab · Optional",
-      "title": "Two sources, one link in a chain.",
-      "subtitle": "Choose at least two cards. For each: what kind of source it is, which link in which chain it shows, and one thing it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-6-industrialization-government-and-society.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "How did outside pressure lead to Japan's industry and power, and what pattern does Japan share with Egypt?",
-      "subtitle": "Trace Japan's chain from Perry to regional power, with evidence for each link, including what happened to the state's businesses after 1880. Then name one link Japan shares with Egypt and one difference in the results. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-6-industrialization-government-and-society.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you connect the two chains.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Find the pattern across Egypt and Japan, then the difference.",
+            "url": "../unit-5/lesson-5-6-industrialization-government-and-society.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "Egypt's strategy. On your own, no coach.",
+            "url": "../unit-5/lesson-5-6-industrialization-government-and-society.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Japan's chain and the pattern, with Socrates.",
+            "url": "../unit-5/lesson-5-6-industrialization-government-and-society.html#modules"
+          }
+        ]
       }
     },
     {

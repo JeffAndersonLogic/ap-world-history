@@ -62,6 +62,7 @@ const MONTESQUIEU={url:local('5.1 Montesquieu.jpg'),alt:'Detail of an anonymous 
 const s=by('answers'),old=s.template;
 s.kind='frame-pair';
 s.template={
+  pictureHeight:300,
   panels:[{tag:'John Locke',visual:LOCKE},{tag:'Montesquieu',visual:MONTESQUIEU}],
   rows:old.branches.map(b=>({label:b.label,text:b.note+'. '+b.items.join(' · ')})),
   provesLabel:old.claimLabel,proves:old.claim
