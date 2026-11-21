@@ -31,7 +31,16 @@
  *      prompt asks for the thinking the unit actually assesses, and the prompt
  *      carries no form control: the eBook collects nothing, and the ten lesson
  *      modules stay the only route to Canvas. The rendered chapter must show
- *      it, so a renderer that drops the field fails here too.
+ *      it, so a renderer that drops the field fails here too;
+ *   8. every quotation inside a "What the College Board says" box (a note of
+ *      kind 'cb') is word for word in the CED source, so the box that tells a
+ *      student "this is what the course requires" cannot misquote it, and no
+ *      <br> runs two items together (one paragraph per item, via `paras`).
+ *
+ * And per rendered volume: every regional chapter shows its reading time,
+ * Part Two lists every region, and each chapter ends with links onward (next
+ * region, all regions, contents), because on a phone the opener's links are
+ * dozens of screens above the last card.
  *
  * And per unit: **every Key Concept in the CED unit is taught by at least one
  * regional chapter**, so the regional retelling cannot quietly drop the part
@@ -80,6 +89,41 @@ function strings(value, out = []) {
   if (typeof value === 'string') out.push(value);
   else if (Array.isArray(value)) value.forEach(v => strings(v, out));
   else if (value && typeof value === 'object') Object.values(value).forEach(v => strings(v, out));
+  return out;
+}
+
+/** The CED unit as one searchable string: every Key Concept, learning
+ *  objective and example, with spacing and quote marks normalized. */
+function cedText(ced) {
+  return norm(strings(ced).join(' \n '));
+}
+function norm(text) {
+  return String(text).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/[\u2018\u2019]/g, "'")
+    .replace(/[\u201c\u201d]/g, '"').replace(/\s+/g, ' ').trim();
+}
+
+/** Quoted fragments in a College Board box that are not in the CED. A quote
+ *  cut with an ellipsis is checked piece by piece. */
+function misquotes(note, cedFull) {
+  const bodies = Array.isArray(note.paras) ? note.paras : [note.html || ''];
+  const bad = [];
+  for (const body of bodies) {
+    for (const m of norm(body).matchAll(/"([^"]+)"/g)) {
+      for (const raw of m[1].split(/\s*(?:\.\.\.|\u2026)\s*/)) {
+        const piece = raw.replace(/^[\s,.;:]+|[\s,.;:]+$/g, '');
+        if (piece.length >= 8 && !cedFull.includes(piece)) bad.push(piece.slice(0, 70));
+      }
+    }
+  }
+  return bad;
+}
+
+/** Every note in a chapter's story sections. */
+function notes(mod) {
+  const out = [];
+  for (const e of mod.empires || []) for (const part of e.parts || []) for (const b of part.blocks || []) {
+    if (b.note) out.push(b.note);
+  }
   return out;
 }
 
@@ -155,6 +199,38 @@ function checkRegion(mod, fileBase, ced, volumeKeys) {
     }
   }
 
+  const cedFull = cedText(ced);
+  for (const note of notes(mod).filter(n => n.kind === 'cb')) {
+    for (const piece of misquotes(note, cedFull)) {
+      problems.push(`College Board box quotes words that are not in the CED source: "${piece}"`);
+    }
+    if (/<br\b/i.test([note.html || ''].concat(note.paras || []).join(' '))) {
+      problems.push('College Board box joins items with <br>; give each item its own paragraph (paras)');
+    }
+  }
+
+  return problems;
+}
+
+/**
+ * Problems with one rendered volume's Part Two: reading times, the list of
+ * regions under the part intro, and the links at the end of each chapter.
+ */
+function checkRenderedRegions(html, regionKeys) {
+  const problems = [];
+  if (/fifteen-minute read/i.test(html)) problems.push('a typed reading time ("fifteen-minute read") is back; reading time is measured');
+  for (const key of regionKeys) {
+    const start = html.indexOf(`<section class="eb-chapter eb-chapter-region" id="chapter-${key}">`);
+    if (start < 0) { problems.push(`${key}: no regional chapter section in the volume`); continue; }
+    const end = html.indexOf('\n  </section>\n', html.indexOf('<nav class="eb-chapter-end"', start) > 0 ? html.indexOf('<nav class="eb-chapter-end"', start) : start);
+    const section = html.slice(start, end < 0 ? undefined : end);
+    if (!/About \d+ minutes to read/.test(section.slice(0, 600))) problems.push(`${key}: the opener shows no reading time`);
+    const nav = /<nav class="eb-chapter-end"[\s\S]*?<\/nav>/.exec(section);
+    if (!nav) problems.push(`${key}: the chapter has no links at its end`);
+    else if (!/href="#contents"/.test(nav[0]) || !/href="#part-/.test(nav[0])) problems.push(`${key}: the end links miss the contents or the region list`);
+    const list = /<ol class="eb-part-regions">[\s\S]*?<\/ol>/.exec(html);
+    if (!list || !list[0].includes(`href="#chapter-${key}"`)) problems.push(`${key}: Part Two's region list does not link it`);
+  }
   return problems;
 }
 
@@ -175,7 +251,7 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
 {
   const fakeCed = {
     topics: {
-      '9.1': { reasoningProcess: 'Causation', keyConcepts: [{ code: 'KC-A' }, { code: 'KC-B' }] },
+      '9.1': { reasoningProcess: 'Causation', keyConcepts: [{ code: 'KC-A', text: 'States expanded their territory by conquest.' }, { code: 'KC-B' }] },
       '9.2': { reasoningProcess: 'Continuity and Change', keyConcepts: [{ code: 'KC-C' }] }
     }
   };
@@ -184,7 +260,7 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     topicKey: 'r9-north', slug: 'region-9-north', unit: '9', region: 'North',
     titleHtml: 'The <em>North</em>', deck: 'A deck.',
     topics: ['9.1'], ced: ['KC-A', 'KC-B', 'KC-C'],
-    empires: [{ id: 'a', parts: [{ heading: 'h', blocks: [{ p: 'See <a href="#chapter-t9-1">Topic 9.1</a>.' }] }] }],
+    empires: [{ id: 'a', parts: [{ heading: 'h', blocks: [{ p: 'See <a href="#chapter-t9-1">Topic 9.1</a>.' }, { note: { kind: 'cb', label: 'What the College Board says', paras: ['"States expanded their territory ... conquest."'] } }] }] }],
     closing: {
       heading: 'At a glance', intro: 'i',
       argue: { move: 'Causation', prompt: 'Why did it happen?' },
@@ -211,7 +287,10 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     ['a blank Argue it prompt', m => { m.closing.argue.prompt = ' '; }, /no Argue it prompt/],
     // The renderer skips a closing with no cards, prompt included: the
     // rendered-output check must notice the prompt never reached the page.
-    ['an Argue it prompt the renderer never shows', m => { m.closing.pairs = []; }, /does not appear in the rendered chapter/]
+    ['an Argue it prompt the renderer never shows', m => { m.closing.pairs = []; }, /does not appear in the rendered chapter/],
+    ['a College Board box that misquotes the CED', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', html: '"Rulers used many different methods"' } }); }, /not in the CED source/],
+    ['a College Board box quote cut with an ellipsis, one half invented', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', html: '"States expanded ... and nobody ever objected"' } }); }, /not in the CED source/],
+    ['a College Board box that joins items with <br>', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', html: 'one<br>two' } }); }, /<br>/]
   ];
   for (const [name, mutate, expect] of controls) {
     const m = good();
@@ -225,7 +304,22 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
   const partial = good(); partial.ced = ['KC-A', 'KC-C'];
   if (uncovered(fakeCed, [partial]).join() !== 'KC-B') fail('coverage control: a dropped Key Concept was not reported');
 
-  console.log(`  negative controls: ${controls.length + 2} broken fixtures, each caught`);
+  // The rendered-volume check, on a fixture page and three broken copies.
+  const page = '<p class="eb-part-intro">x</p>\n<ol class="eb-part-regions"><li><a href="#chapter-r9-north">North</a></li></ol>\n' +
+    '  <section class="eb-chapter eb-chapter-region" id="chapter-r9-north">\n<div class="eb-chapter-label">Unit 9 by Region &nbsp;·&nbsp; About 20 minutes to read</div>\n' +
+    'body\n    <nav class="eb-chapter-end" aria-label="After North"><a href="#part-by-region">All regions</a> <a href="#contents">Back to contents</a></nav>\n  </section>\n';
+  if (checkRenderedRegions(page, ['r9-north']).length) fail(`rendered fixture should pass and did not: ${checkRenderedRegions(page, ['r9-north']).join('; ')}`);
+  const pageControls = [
+    ['a chapter with no end links', page.replace(/<nav[\s\S]*?<\/nav>/, ''), /no links at its end/],
+    ['no reading time', page.replace('About 20 minutes to read', ''), /no reading time/],
+    ['a region missing from the list', page.replace('<li><a href="#chapter-r9-north">North</a></li>', ''), /region list does not link it/],
+    ['a typed reading time', page.replace('x</p>', 'about a fifteen-minute read</p>'), /typed reading time/]
+  ];
+  for (const [name, broken, expect] of pageControls) {
+    if (!checkRenderedRegions(broken, ['r9-north']).some(p => expect.test(p))) fail(`negative control did not fail on ${name}`);
+  }
+
+  console.log(`  negative controls: ${controls.length + pageControls.length + 2} broken fixtures, each caught`);
 }
 
 // ── the real chapters ───────────────────────────────────────────────────────
@@ -257,6 +351,10 @@ for (const volume of VOLUMES) {
       checked++;
       for (const p of checkRegion(mod, base, ced, volumeKeys)) fail(`${base}.js: ${p}`);
     }
+    const out = path.join(ROOT, 'ebook', volume.outputFile ? path.basename(volume.outputFile) : `${volume.id}.html`);
+    if (fs.existsSync(out)) {
+      for (const p of checkRenderedRegions(fs.readFileSync(out, 'utf8'), unitMods.map(([, m]) => m.topicKey))) fail(`${path.relative(ROOT, out)}: ${p}`);
+    } else fail(`${volume.id}: rendered volume ${path.relative(ROOT, out)} not found`);
     const gaps = uncovered(ced, unitMods.map(([, m]) => m));
     if (gaps.length) {
       fail(`Unit ${unit}: no regional chapter teaches ${gaps.join(', ')}. Every Key Concept in the CED unit must be in at least one region's story.`);

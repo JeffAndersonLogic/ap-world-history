@@ -17,7 +17,7 @@
  * and keep their narrowings ("most taxes" in silver; the silver drop not named as the cause of the
  * Ming fall; no blanket ban on Manchu and Han marriage; Japan never "closed"). Left out on
  * purpose: Korea and the Ryukyu kingdom (the CED names neither), Tokugawa domestic politics, Qing
- * frontier wars, and KC-4.3.II.A.i, which the CED words as Indian Ocean trade and the South and
+ * frontier wars, and KC-4.3.II.A.iii, which the CED words as Indian Ocean trade and the South and
  * Southeast Asia chapter carries.
  *
  * Plain-language pass (2026-11-16): sentences cut to one idea each, and the College Board's own
@@ -90,7 +90,7 @@ module.exports = {
               html: `Do not write that Portugal "colonized" China. On land, Portugal faced a state with armies and income many times larger than its own. Macau was a permission, not a conquest.`
             } },
             { note: {
-              kind: 'howknow',
+              kind: 'cb',
               label: CB,
               html: `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation." The compass and gunpowder are China's part of that sentence.`
             } }
@@ -144,9 +144,14 @@ module.exports = {
             { p: `American crops reached China in the 1500s too. The <span class="kt">sweet potato</span> came by more than one route. One route probably ran overland into Yunnan, in the southwest, in the 1560s and 1570s. On another, the plant crossed the Pacific to the Spanish Philippines, and Chinese merchants carried it on to Fujian. Officials there promoted it in <span class="num">1594</span>, a famine year. Maize came too.` },
             { p: `Both crops grew on dry hills and uplands, where rice paddies could not be built. So over the next two centuries, peasant farming itself spread onto new ground (<a href="#chapter-t4-3">Topic 4.3</a>).` },
             { note: {
-              kind: 'howknow',
+              kind: 'cb',
               label: CB,
-              html: `On Manila (<a href="#chapter-t4-2">Topic 4.2</a>): voyages "across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade."<br>On silver (<a href="#chapter-t4-5">Topic 4.5</a>): silver from Spain's colonies was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."<br>On the silk families (<a href="#chapter-t4-5">Topic 4.5</a>): "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased." Silk in China is one of the College Board's examples.<br>On new crops (<a href="#chapter-t4-3">Topic 4.3</a>): "American foods became staple crops in various parts of Europe, Asia, and Africa."`
+              paras: [
+                `On Manila (<a href="#chapter-t4-2">Topic 4.2</a>): voyages "across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade."`,
+                `On silver (<a href="#chapter-t4-5">Topic 4.5</a>): silver from Spain's colonies was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."`,
+                `On the silk families (<a href="#chapter-t4-5">Topic 4.5</a>): "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased." Silk in China is one of the College Board's examples.`,
+                `On new crops (<a href="#chapter-t4-3">Topic 4.3</a>): "American foods became staple crops in various parts of Europe, Asia, and Africa."`
+              ]
             } }
           ]
         }
@@ -195,9 +200,13 @@ module.exports = {
             { p: `China received the Jesuits differently. The Italian Jesuit <b>Matteo Ricci</b> lived in Beijing from <span class="num">1601</span>. The Jesuits won a place at the emperor's court by teaching astronomy and mathematics and by living as Confucian scholars.` },
             { p: `So the same faith met two different receptions. New contacts carried Christianity to new places, and they also set off religious conflict. East Asia shows both: a welcome at court in Beijing, and a ban in Japan (<a href="#chapter-t4-5">Topic 4.5</a>).` },
             { note: {
-              kind: 'howknow',
+              kind: 'cb',
               label: CB,
-              html: `On Shimabara (<a href="#chapter-t4-6">Topic 4.6</a>): "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."<br>On Japan's orders (<a href="#chapter-t4-4">Topic 4.4</a>): "Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies."<br>On Christianity (<a href="#chapter-t4-5">Topic 4.5</a>): contact between the hemispheres "expanded the reach" of existing religions and "contributed to religious conflicts."`
+              paras: [
+                `On Shimabara (<a href="#chapter-t4-6">Topic 4.6</a>): "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."`,
+                `On Japan's orders (<a href="#chapter-t4-4">Topic 4.4</a>): "Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies."`,
+                `On Christianity (<a href="#chapter-t4-5">Topic 4.5</a>): contact between the hemispheres "expanded the reach" of existing religions and "contributed to religious conflicts."`
+              ]
             } }
           ]
         }
@@ -254,9 +263,14 @@ module.exports = {
             { p: `Under the Qing, American crops spread across the hills. China's population roughly doubled across the 1700s, with much of that growth after <span class="num">1750</span>. Peace inside China was one cause. Farming land that rice could not use was another (<a href="#chapter-t4-3">Topic 4.3</a>).` },
             { p: `Much stayed the same. A Jiangnan silk family still worked at home and paid most of its taxes in silver. The Qing changed who sat at the top, not the farms and workshops underneath.` },
             { note: {
-              kind: 'howknow',
+              kind: 'cb',
               label: CB,
-              html: `On the banners (<a href="#chapter-t4-7">Topic 4.7</a>): conquests helped form new elites, "including in China with the transition to the Qing Dynasty."<br>On Han officials (<a href="#chapter-t4-7">Topic 4.7</a>): the power of existing elites "fluctuated" (went up and down) as they faced "increasingly powerful monarchs and leaders."<br>On the queue (<a href="#chapter-t4-7">Topic 4.7</a>): some states "suppressed diversity or limited certain groups’ roles in society, politics, or the economy."<br>On the population (<a href="#chapter-t4-3">Topic 4.3</a>): "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops."`
+              paras: [
+                `On the banners (<a href="#chapter-t4-7">Topic 4.7</a>): conquests helped form new elites, "including in China with the transition to the Qing Dynasty."`,
+                `On Han officials (<a href="#chapter-t4-7">Topic 4.7</a>): the power of existing elites "fluctuated" (went up and down) as they faced "increasingly powerful monarchs and leaders."`,
+                `On the queue (<a href="#chapter-t4-7">Topic 4.7</a>): some states "suppressed diversity or limited certain groups’ roles in society, politics, or the economy."`,
+                `On the population (<a href="#chapter-t4-3">Topic 4.3</a>): "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops."`
+              ]
             } }
           ]
         }

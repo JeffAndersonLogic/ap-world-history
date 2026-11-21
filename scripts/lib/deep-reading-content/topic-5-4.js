@@ -210,7 +210,7 @@ module.exports = {
         {
           heading: 'A share is not an amount',
           blocks: [
-            { p: `Imagine a pizza that grows much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in <span class="num">1900</span> than in <span class="num">1750</span>. So a region's share can fall even while it keeps making goods, because the total grows faster. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share.` },
+            { p: `Imagine a pizza that grows much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in <span class="num">1900</span> than in <span class="num">1750</span>. So a region's share can fall even while it keeps making goods, because the total grows faster. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share. He estimated that China's output per person fell after about <span class="num">1830</span> too, though other historians think China's hand weaving held up better than he allowed.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',

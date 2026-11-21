@@ -1,13 +1,14 @@
 # Unit 5 by Region: Claim and Review Ledger
 
-**Resume here:** the review loop is finished (stopped at its three-pass safety valve; every
-finding fixed or answered). What remains is verification and the report. Not on `main`: waiting for
-Jeff's "ship it".
+**Resume here:** shipped to `main` on 2026-11-16 (merge `86e09b5`) after three review passes, the
+last one not clean. Since 2026-11-21 the chapters are being rewritten in plain language with Unit 4's,
+on branch `claude/ebook-regional-reading-status-n1uc9j`; see "Plain-language and accuracy pass
+(2026-11-21)" at the end of this file.
 
 Part Two of the Unit 5 eBook volume (`ebook/unit-5.html`), regional chapters generated from
 `scripts/lib/region-content/unit-5-*.js`. Built under Jeff's standing rule of 2026-10-12: story and
 reading approval are delegated to the independent reviewer loop. Reviewer findings are written here
-as `PENDING`, and pushed, before any fix (standing rule of 2026-11-16). Nothing here is on `main`
+as `PENDING`, and pushed, before any fix (standing rule of 2026-11-16). Nothing reaches `main`
 until Jeff says "ship it".
 
 **The CED decides scope; scholarship decides truth.** The chapters retell

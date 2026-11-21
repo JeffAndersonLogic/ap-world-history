@@ -133,9 +133,21 @@ function withPrefix(prefix, id) {
   return prefix ? `${prefix}-${id}` : id;
 }
 
+/**
+ * A callout. `kind: 'cb'` is the "What the College Board says" box the regional
+ * chapters close each section with: the course's own words, set apart from
+ * "How we know" (evidence) so a student can tell the requirement from the
+ * proof at a glance. `paras` gives a note several paragraphs, one per College
+ * Board item, instead of items run together with <br>. Both are new on
+ * 2026-11-21 and optional, so every existing note renders exactly as before.
+ */
+const NOTE_KINDS = { misconception: 'misconception', cb: 'cb' };
 function renderNote(note) {
-  const kind = note.kind === 'misconception' ? 'misconception' : 'howknow';
-  return `      <aside class="dr-note ${kind}"><b>${esc(note.label)}</b><p>${note.html}</p></aside>\n`;
+  const kind = NOTE_KINDS[note.kind] || 'howknow';
+  const body = Array.isArray(note.paras)
+    ? note.paras.map(p => `<p>${p}</p>`).join('')
+    : `<p>${note.html}</p>`;
+  return `      <aside class="dr-note ${kind}"><b>${esc(note.label)}</b>${body}</aside>\n`;
 }
 
 function renderPart(part) {

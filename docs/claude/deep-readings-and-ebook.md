@@ -178,6 +178,19 @@ and re-pasting the Canvas link every time one lands. It is generated from the
 same `VOLUMES` list, so it cannot list a volume that does not exist or miss one
 that does.
 
+**Part Two, By Region (Units 4 and 5), has its own furniture, all generated.**
+Since 2026-11-21: the part intro lists every regional chapter with its reading time; each
+regional chapter shows "About N minutes to read" in its opener and ends with a `<nav
+class="eb-chapter-end">` (next region, all regions, contents), because on a phone the opener's
+links are dozens of screens above the last card; and a part may carry a `teacherNote`, the one
+place a teacher is told when Part Two is for. **Reading time is measured, never typed**:
+`readingMinutes()` in `ebook-page.js` counts the rendered chapter at 150 words a minute and rounds
+up to five. The old "about a fifteen-minute read" sat on chapters of about 3,000 words. A note of
+`kind: 'cb'` is the "What the College Board says" box, styled apart from "How we know" so the
+requirement is never mistaken for the evidence, and `paras` gives it one paragraph per item.
+`region-chapters.test.js` holds every quotation in a `cb` box to the CED source word for word,
+refuses `<br>` in one, and checks the rendered navigation, each with negative controls.
+
 ### eBook accessibility
 
 The eBook is the surface a student reads at length, on a phone, on a projector,

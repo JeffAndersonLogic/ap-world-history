@@ -212,27 +212,81 @@ function readAlongside(chapter, topicKeys) {
   return links.length ? `Read alongside ${links.join(', ')} &nbsp;·&nbsp; ` : '';
 }
 
-function renderRegionChapter(chapter, topicKeys) {
+/**
+ * Reading time, measured from the chapter as rendered rather than declared.
+ *
+ * Until 2026-11-21 every regional chapter promised "about a fifteen-minute
+ * read" in its part intro while running about 3,000 words, which is closer to
+ * twenty minutes for a steady reader and longer for a struggling one. A typed
+ * number is a promise nothing checks; this one moves when the chapter does.
+ * 150 words a minute is a steady ninth-grade pace for study reading, rounded
+ * up to the next five minutes so it never undersells the job.
+ */
+const WORDS_PER_MINUTE = 150;
+function readingMinutes(chapter) {
+  const text = stripTags(renderChapterBody(chapter, { idPrefix: chapter.topicKey }))
+    .replace(/&[a-z#0-9]+;/gi, ' ');
+  const words = text.split(/\s+/).filter(w => /[A-Za-z0-9]/.test(w)).length;
+  return Math.max(5, Math.ceil(words / WORDS_PER_MINUTE / 5) * 5);
+}
+
+/**
+ * The end of a regional chapter: where to go next. A student on a phone who
+ * has just finished "East Asia at a Glance" is often fifty screens from the
+ * contents, and the opener's links are as far above. So the chapter ends with
+ * the next region, the list of all regions, and the contents. A <nav>, which
+ * the narration module never reads aloud.
+ */
+function regionEndNav(chapter, next, partId) {
+  const links = [];
+  if (next) links.push(`<a href="#chapter-${esc(next.topicKey)}">Next region: ${esc(next.region)}</a>`);
+  if (partId) links.push(`<a href="#part-${esc(partId)}">All regions</a>`);
+  links.push(`<a href="#contents">Back to contents</a>`);
+  return `    <nav class="eb-chapter-end" aria-label="After ${esc(chapter.region)}">${links.join('\n      ')}</nav>\n`;
+}
+
+function renderRegionChapter(chapter, topicKeys, next, partId) {
   return (
     `  <section class="eb-chapter eb-chapter-region" id="chapter-${esc(chapter.topicKey)}">\n` +
     `    <header class="eb-chapter-head">\n` +
-    `      <div class="eb-chapter-label">${esc(tocLabel(chapter))}</div>\n` +
+    `      <div class="eb-chapter-label">${esc(tocLabel(chapter))} &nbsp;·&nbsp; About ${readingMinutes(chapter)} minutes to read</div>\n` +
     `      <h2>${chapter.titleHtml}</h2>\n` +
     `      <p class="eb-chapter-deck">${chapter.deck}</p>\n` +
-    `      <p class="eb-chapter-return">${readAlongside(chapter, topicKeys)}<a href="#contents">Back to contents</a></p>\n` +
+    `      <p class="eb-chapter-return">${readAlongside(chapter, topicKeys)}${partId ? `<a href="#part-${esc(partId)}">All regions</a> &nbsp;·&nbsp; ` : ''}<a href="#contents">Back to contents</a></p>\n` +
     `    </header>\n` +
     renderChapterBody(chapter, { idPrefix: chapter.topicKey, listen: true, listenScope: chapter.region }) +
+    regionEndNav(chapter, next, partId) +
     `  </section>\n`
   );
 }
 
-/** A part divider: Part One, By Topic. Only volumes that declare parts get them. */
-function renderPart(part) {
+/**
+ * A part divider: Part One, By Topic. Only volumes that declare parts get them.
+ *
+ * A part that holds regional chapters lists them, with their reading time,
+ * because the hub's "Read Unit N by Region" button lands here: before
+ * 2026-11-21 it landed on a paragraph that linked no region, with the first
+ * one dozens of screens below on a phone. A `teacherNote` on the part is the
+ * one place a teacher is told when Part Two is meant to be used.
+ */
+function renderPart(part, regions) {
+  const list = (regions || []).length
+    ? `    <ol class="eb-part-regions">\n` +
+      regions.map(c =>
+        `      <li><a href="#chapter-${esc(c.topicKey)}">${esc(c.region)}</a> <span class="eb-part-time">about ${readingMinutes(c)} minutes</span></li>\n`
+      ).join('') +
+      `    </ol>\n`
+    : '';
+  const teacher = part.teacherNote
+    ? `    <aside class="eb-part-teacher"><b>For teachers</b><p>${part.teacherNote}</p></aside>\n`
+    : '';
   return (
     `  <section class="eb-part" id="part-${esc(part.id)}">\n` +
     `    <div class="eb-part-label">${esc(part.label)}</div>\n` +
     `    <h2>${esc(part.title)}</h2>\n` +
     `    <p class="eb-part-intro">${part.intro}</p>\n` +
+    list +
+    teacher +
     `  </section>\n`
   );
 }
@@ -284,10 +338,26 @@ function renderEbook(volume, entries) {
   }
   // Walked as entries rather than chapters so a part divider lands in place.
   // A pending topic has no body, exactly as before parts existed.
+  // Each part knows the regional chapters under it (for its list), and each
+  // regional chapter knows the next one and its part (for its end links).
+  const regionsUnder = new Map();
+  const partOf = new Map();
+  const nextRegion = new Map();
+  let currentPart = null;
+  let previous = null;
+  for (const entry of entries) {
+    if (entry.part) { currentPart = entry.part; regionsUnder.set(currentPart, []); previous = null; continue; }
+    if (!entry.chapter || !isRegion(entry.chapter)) continue;
+    if (currentPart) { regionsUnder.get(currentPart).push(entry.chapter); partOf.set(entry.chapter, currentPart.id); }
+    if (previous) nextRegion.set(previous, entry.chapter);
+    previous = entry.chapter;
+  }
   const body = entries.map(entry => {
-    if (entry.part) return renderPart(entry.part);
+    if (entry.part) return renderPart(entry.part, regionsUnder.get(entry.part));
     if (!entry.chapter) return '';
-    return isRegion(entry.chapter) ? renderRegionChapter(entry.chapter, topicKeys) : renderChapter(entry.chapter);
+    return isRegion(entry.chapter)
+      ? renderRegionChapter(entry.chapter, topicKeys, nextRegion.get(entry.chapter), partOf.get(entry.chapter))
+      : renderChapter(entry.chapter);
   }).join('');
   const chapterCount = chapters.length;
   const sectionCount = chapters.reduce((sum, c) => sum + (c.empires || []).length, 0);

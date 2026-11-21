@@ -195,10 +195,42 @@ a.eb-toc-part-link:focus-visible{outline-color:var(--gold)}
 .eb-chapter-deck em{font-style:italic}
 .eb-chapter-return{
   margin-top:1rem; padding-top:.8rem; border-top:1px solid var(--rule-soft);
-  font-family:var(--font-ui); font-size:.68rem; letter-spacing:.06em;
+  font-family:var(--font-ui); font-size:.76rem; letter-spacing:.04em; line-height:1.9;
 }
-.eb-chapter-return a{color:var(--oxidized);text-decoration:none;font-weight:600}
-.eb-chapter-return a:hover,.eb-chapter-return a:focus-visible{text-decoration:underline}
+/* Each link is at least 24px tall, the WCAG 2.5.8 target size; at the old
+   .68rem inline size they measured 52 by 12 on a phone. */
+.eb-chapter-return a,.eb-chapter-end a,.eb-part-regions a{
+  display:inline-block; min-height:24px; padding:.3rem 0;
+  color:var(--oxidized); text-decoration:none; font-weight:600;
+}
+.eb-chapter-return a:hover,.eb-chapter-return a:focus-visible,
+.eb-chapter-end a:hover,.eb-chapter-end a:focus-visible,
+.eb-part-regions a:hover,.eb-part-regions a:focus-visible{text-decoration:underline}
+
+/* The end of a regional chapter: next region, all regions, contents. */
+.eb-chapter-end{
+  display:flex; flex-wrap:wrap; gap:.2rem 1.4rem; margin:1.6rem 0 0;
+  padding:.8rem 1rem; background:var(--clean); border:1px solid var(--rule);
+  border-left:4px solid var(--gold); font-family:var(--font-ui); font-size:.82rem;
+}
+.eb-chapter-end a:first-child{font-weight:700}
+
+/* Part Two's list of regions, under its intro. */
+ol.eb-part-regions{
+  list-style:none; margin:1.1rem 0 0; padding:0; max-width:64ch;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr)); gap:.4rem .9rem;
+}
+ol.eb-part-regions li{
+  background:var(--clean); border:1px solid var(--rule); border-left:4px solid var(--gold);
+  padding:.35rem .8rem; font-family:var(--font-ui); font-size:.88rem;
+}
+.eb-part-time{display:block;font-size:.72rem;color:var(--gunmetal)}
+.eb-part-teacher{
+  margin:1.2rem 0 0; max-width:64ch; padding:.8rem 1rem; background:var(--tint);
+  border:1px solid var(--rule); border-left:4px solid var(--steel);
+}
+.eb-part-teacher b{display:block;font-family:var(--font-ui);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--steel);margin-bottom:.35rem}
+.eb-part-teacher p{font-size:.88rem;line-height:1.65;margin:0}
 /* Links inside a chapter's prose, which the regional chapters (Unit 4 by Region)
    were the first to use: without this they rendered in the browser's default blue,
    then purple once visited. Oxidized is the light-surface link colour (7.9:1 on
@@ -227,7 +259,7 @@ a.eb-toc-part-link:focus-visible{outline-color:var(--gold)}
   ol.eb-toc > li.eb-toc-part{background:#fff;border-top:2pt solid #000}
   .eb-toc-part-label,.eb-toc-part-title{color:#000}
   .eb-part{break-before:page}
-  .eb-chapter-return{display:none}
+  .eb-chapter-return,.eb-chapter-end{display:none}
 }
 
 /* ── library page ───────────────────────────────────────────────────────── */

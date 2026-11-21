@@ -221,3 +221,10 @@ Pass 3, reviewer J, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-
 Liège was in the United Kingdom of the Netherlands; Belgium became independent in 1830. "In Belgium,
 John Cockerill ... 1817" is **NARROWED** to "In what is today Belgium" in the deep reading, the First &
 10 (paragraph and takeaway) and the lesson data.
+
+2026-11-21, adjacent finding carried from the Unit 5 by Region ledger: the deep reading named a
+per-person fall in Bairoch's estimates for India only, though Bairoch's per-capita industrialization
+index falls for China too (about 6 in 1830 to 3 by 1880 and 1900, against India's 6 to 1; Bairoch
+1982, via Kennedy 1987). **ADDED** to the "share" paragraph, with the hedge the regional chapter
+carries: "though other historians think China's hand weaving held up better than he allowed." Deep
+reading only; the First & 10 makes no per-person claim.
