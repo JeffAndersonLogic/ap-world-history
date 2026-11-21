@@ -16,10 +16,26 @@
  * Wall version: By what right? The answer kept growing.
  * Retelling slide: the cause chain (phase 'retell').
  *
- * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
- * 2026-11-23 and 2026-11-24).
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * Class dates: Green Monday 2026-11-30, Silver Tuesday 2026-12-01.
+ * Required modules, from the schedule (Jeff, 2026-11-08, under his rule of
+ * 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen): 02 First
+ * & 10, 05 Skill Builder, 06 Checkpoint 1 and 10 Checkpoint 2. The deck
+ * predated that rule and launched 07 Evidence Lab with Checkpoint 1 optional;
+ * the Evidence Lab is now the early-finisher option.
+ *
+ * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
+ * topic; slides that only point to a module are cut; the lecture tells the
+ * story). The briefing opens on the outline below, a road map before the
+ * First & 10 shows students the same six section headers, every story slide's
+ * eyebrow names its section, minute counts are off the projected slides, the
+ * myths moved to the outline's Watch for list and the retelling slide's notes,
+ * and one Work Time slide replaced Myth and Evidence and the four module launch
+ * slides (Skill Builder, Checkpoint 1, Evidence Lab, Checkpoint 2). No story
+ * slide changed. 28 slides to 25. The deck had no Sharpen slide: Find the
+ * Claim (slide 20) is the 3.A model inside the story, not a pointer to a
+ * module, so it stays. Both learning objectives are still carried by their
+ * bands: A on What Changed (slide 11), B on What Changed by 1900, What Stayed
+ * (slide 22).
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -43,11 +59,94 @@ window.BEHISTORICAL_TEACHING = {
     should: [
       'Give religion its two parts: the Enlightenment questioned religion as a government power (Calas, toleration), and religious faith drove the reform movements (the Quakers, Lucretia Mott) (KC-5.3.I.A, KC-5.3.I.C).',
       'Introduce nationalism in one beat: if a state belongs to its people, which people? The nation (KC-5.3.II.i).',
-      'Correct three myths: "the Enlightenment caused the revolutions," "the Enlightenment was against religion," and "rights reached everyone in 1789."'
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Enlightenment caused the revolutions," "the Enlightenment was against religion," and "rights reached everyone in 1789."'
     ],
     could: [
-      'Point students who want more depth to the eBook chapter, "By What Right?"',
-      'Use the Primary Source (the Seneca Falls declaration) as an extension for early finishers.'
+      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the Primary Source (the Seneca Falls declaration) as an extension.',
+      'Point students who want more depth to the eBook chapter, "By What Right?"'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes or the First & 10 "By What Right?"; nothing is new.
+  // Required modules are the schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'The old answer', points: [
+        'Who does a state belong to? About 1750: the king',
+        'God: divine right (Louis XIV, Topic 3.2)',
+        'Tradition: in most countries one church was the law',
+        'Birth: nobles born to privilege, serfs born to work',
+        'This is the "before": name it to explain the change'
+      ] },
+      { label: 'II', title: 'Reason and the new answers', kc: 'KC-5.3.I.A', points: [
+        'Newton, 1687: a few laws explain planets and a falling apple',
+        'Locke: the mind starts as "white paper" = empiricism',
+        'Same method turned on government, religion, society',
+        'Natural rights (Locke), social contract (Locke, Rousseau), limits on power (Montesquieu)',
+        'Locke: no rule "without his own consent," against divine right',
+        'Calas, 1762: Voltaire and toleration; faith forced by the state, not faith itself',
+        'Legitimate = rightful: the question changed before the kings did (LO A)'
+      ] },
+      { label: 'III', title: 'The ideas travel, before the revolutions', kc: 'KC-5.3.I · KC-5.3.II.i', points: [
+        'Print, salons, coffeehouses, letters across Europe and the Atlantic',
+        'The Encyclopédie, 1751 to 1772: banned in 1759, kept coming; reprinted in Italy',
+        'Questioned tradition in every part of life, even fan-making',
+        'Ideas came before 1775, 1789, 1791, 1810: "often preceded"',
+        'Came before, not caused: 5.2 owns the causes',
+        'Which people? The nation (1789, Article 3): nationalism'
+      ] },
+      { label: 'IV', title: 'Over time: pressing the words further', kc: 'KC-5.3.I.C', points: [
+        'The words were bigger than the men who wrote them',
+        'Left out: women, enslaved Africans, peasants and serfs',
+        'Reform driven by Enlightenment ideas and religious faith',
+        'Abolition: the 1787 society (nine Quakers); Equiano, 1789',
+        'Britain 1807 and 1834; France 1848; Brazil 1888, last',
+        'Serfs freed: Austria 1848; Russia 1861, "from above"',
+        'The vote widens: France 1848, all men; Britain 1832, 1867, 1884'
+      ] },
+      { label: 'V', title: 'Women\'s demands', kc: 'KC-5.3.IV.B', points: [
+        'De Gouges, 1791: rewrites the declaration for women; executed 1793',
+        'Wollstonecraft, 1792: women can reason, so educate them',
+        'Mott refused a seat in London, 1840, because she was a woman',
+        'Seneca Falls, 1848: "all men and women are created equal"; they demand the vote',
+        'Feminism challenged political and gender hierarchies'
+      ], skill: 'You model 3.A out loud on Montesquieu with the frame: "___ claims that ___, arguing against ___." Then the room describes de Gouges\'s claim beside Article 1 of 1789. Students practice it on new sources in the Skill Builder.' },
+      { label: 'VI', title: 'What changed by 1900, what stayed', kc: 'Learning Objective B', points: [
+        'The ideas changed fast; the world changed slowly',
+        'Changed: "the people" claimed as the source of power',
+        'Changed: slavery ended across the Americas; serfdom ended; more men vote',
+        'Stayed: kings and emperors on most thrones',
+        'Stayed: other forced labor; women vote almost nowhere (New Zealand, 1893, first)'
+      ] }
+    ],
+    wrap: { title: 'Put it together', columns: ['Changed', 'Stayed the same'], rows: [
+      { label: 'Who rules, by what right', cells: ['Reason, natural rights and consent; "the people" become the nation', 'Kings and emperors on most thrones in 1900'] },
+      { label: 'Religion and the state', cells: ['Toleration: no faith forced by the state', 'Most people kept their faith'] },
+      { label: 'Who was free', cells: ['Slavery ended across the Americas; serfdom ended; more men vote', 'Other forced labor in many places'] },
+      { label: 'Women', cells: ['De Gouges, Wollstonecraft and Seneca Falls demand equal rights and the vote', 'Women vote almost nowhere by 1900'] }
+    ] },
+    vocabulary: [
+      { term: 'Divine Right', def: 'The idea that a king\'s power comes from God, so no one can take it away (Louis XIV, Topic 3.2).' },
+      { term: 'Empiricism', def: 'Learning from evidence and experience, instead of accepting what authorities say.' },
+      { term: 'Natural Rights', def: 'Rights people are born with, to "lives, liberties and estates." No government gives them, and none may take them away.' },
+      { term: 'Social Contract', def: 'Government as an agreement: people give some of their freedom to a government so that it will protect their rights.' },
+      { term: 'Separation of Powers', def: 'Making the laws, carrying them out and judging, held by different people, so that liberty is safe.' },
+      { term: 'Religious Toleration', def: 'No government should force a faith on anyone or punish people for their beliefs.' },
+      { term: 'Deism', def: 'The belief that God created the world and then let it run by natural laws.' },
+      { term: 'Salon', def: 'A conversation gathering in Paris, often run by women, where the new ideas traveled.' },
+      { term: 'Nationalism', def: 'Loyalty to your nation, a people who see themselves as one, above a king or an empire.' },
+      { term: 'Abolition', def: 'Ending slavery.' },
+      { term: 'Serfdom', def: 'A system in which peasants were bound to the land and owed labor to a lord.' },
+      { term: 'Suffrage', def: 'The right to vote.' },
+      { term: 'Feminism', def: 'The claim that women and men should have equal rights.' }
+    ],
+    watch: [
+      { myth: '"The Enlightenment caused the revolutions."', fix: 'It came first and gave revolutionaries words ("often preceded"); taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter."' },
+      { myth: '"The Enlightenment was against religion."', fix: 'Most writers believed in God. They questioned faith forced by the state, and faith, with natural rights, drove abolition. But some, such as Holbach, were atheists.' },
+      { myth: '"Rights reached everyone in 1789."', fix: 'Slavery lasted in Brazil to 1888; women voted almost nowhere in 1900. But do not swing to "nothing changed."' }
     ]
   },
 
@@ -55,31 +154,28 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, both objectives, owns and bridge-only, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.8, 3.2 and 4.6. Bridge to the question.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over the air-pump experiment.', students: 'Predict what is new in the room.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "By What Right?" in class.', students: 'Keep two lists: changes and continuities.', slide: 4 },
-    { id: 'oldanswer', label: 'The Old Answer', range: '17-18', minutes: 1, teacher: 'God, tradition, birth.', students: 'Name where each authority came from.', slide: 5 },
-    { id: 'method', label: 'A New Way of Knowing', range: '18-20', minutes: 2, teacher: 'Reason and evidence, first for nature, then for people.', students: 'Say what empiricism means.', slide: 6 },
-    { id: 'answers', label: 'The New Answers', range: '20-22', minutes: 2, teacher: 'Natural rights, the social contract, limits on power.', students: 'Match each idea to its writer.', slide: 7 },
-    { id: 'locke', label: 'Locke\'s Claim', range: '22-24', minutes: 2, teacher: 'Read Locke and find the claim.', students: 'Say the claim in your own words.', slide: 8 },
-    { id: 'calas', label: 'Religion and the State', range: '24-26', minutes: 2, teacher: 'The Calas case and toleration.', students: 'Say what Voltaire questioned and what he did not.', slide: 9 },
-    { id: 'legitimate', label: 'What Changed', range: '26-27', minutes: 1, teacher: 'What made a ruler legitimate, before and after.', students: 'Sort change and continuity.', slide: 10 },
-    { id: 'spread', label: 'The Ideas Travel', range: '27-29', minutes: 2, teacher: 'The Encyclopédie, reprinted and explaining everything.', students: 'Say what the two pages prove.', slide: 11 },
-    { id: 'before', label: 'Before the Revolutions', range: '29-30', minutes: 1, teacher: 'The ideas came first.', students: 'Read the timeline left to right.', slide: 12 },
-    { id: 'nation', label: 'The People Become a Nation', range: '30-32', minutes: 2, teacher: 'From "the people" to nationalism.', students: 'Answer: which people?', slide: 13 },
-    { id: 'turn', label: 'The Words Were Bigger', range: '32-33', minutes: 1, teacher: 'The writers did not mean everyone. The words did.', students: 'Say who was left out.', slide: 14 },
-    { id: 'abolition', label: 'Abolition', range: '33-35', minutes: 2, teacher: 'Ideas and faith together, over a century.', students: 'Name what drove the movement.', slide: 15 },
-    { id: 'serfs', label: 'Serfs and Voters', range: '35-36', minutes: 1, teacher: 'Serfdom ends; the vote widens, in steps.', students: 'Say how slow each change was.', slide: 16 },
-    { id: 'women', label: 'Women Demand Their Rights', range: '36-38', minutes: 2, teacher: 'De Gouges, Wollstonecraft, Seneca Falls.', students: 'Name what each woman demanded.', slide: 17 },
-    { id: 'seneca', label: 'Seneca Falls, 1848', range: '38-40', minutes: 2, teacher: 'Read the declaration\'s first truth.', students: 'Find the two added words.', slide: 18 },
-    { id: 'claim', label: 'Find the Claim', range: '40-42', minutes: 2, teacher: 'Model 3.A on Wollstonecraft.', students: 'Fill the frame aloud.', slide: 19 },
-    { id: 'pair', label: 'Same Words, Wider Claim', range: '42-44', minutes: 2, teacher: 'De Gouges beside the 1789 article she rewrote.', students: 'Describe her claim.', slide: 20 },
-    { id: 'skill', label: 'Skill Builder', range: '44-52', minutes: 8, teacher: 'Module 05: Claims and Evidence in Sources 3.A.', students: 'Find and describe three claims.', slide: 21 },
-    { id: 'stayed', label: 'What Changed by 1900, What Stayed', range: '52-54', minutes: 2, teacher: 'The ideas changed fast; the world changed slowly.', students: 'Name the biggest continuity.', slide: 22 },
-    { id: 'myths', label: 'Myth and Evidence', range: '54-56', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 23 },
-    { id: 'retell', label: 'By What Right?', range: '56-60', minutes: 4, teacher: 'Students redraw the chain from memory, with what stayed underneath.', students: 'Retell the whole topic.', slide: 24 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: the ideas as the context of the revolutions.', students: 'Work without the coach.', slide: 25 },
-    { id: 'evidence', label: 'Evidence Lab', range: '60-67', minutes: 7, teacher: 'Module 07: two sources, two claims.', students: 'Observe, then infer, then name a limit.', slide: 26 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '67-79', minutes: 12, teacher: 'Module 10: what the Enlightenment changed over time, and what stayed. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 27 },
-    { id: 'close', label: 'Landing Sentence', range: '79-81', minutes: 2, teacher: 'Land the answer and hand off to 5.2.', students: 'Say the topic in one sentence.', slide: 28 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the six sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "By What Right?" in class.', students: 'Keep two lists: changes and continuities.', slide: 5 },
+    { id: 'oldanswer', label: 'The Old Answer', range: '18-19', minutes: 1, teacher: 'God, tradition, birth.', students: 'Name where each authority came from.', slide: 6 },
+    { id: 'method', label: 'A New Way of Knowing', range: '19-21', minutes: 2, teacher: 'Reason and evidence, first for nature, then for people.', students: 'Say what empiricism means.', slide: 7 },
+    { id: 'answers', label: 'The New Answers', range: '21-23', minutes: 2, teacher: 'Natural rights, the social contract, limits on power.', students: 'Match each idea to its writer.', slide: 8 },
+    { id: 'locke', label: 'Locke\'s Claim', range: '23-25', minutes: 2, teacher: 'Read Locke and find the claim.', students: 'Say the claim in your own words.', slide: 9 },
+    { id: 'calas', label: 'Religion and the State', range: '25-27', minutes: 2, teacher: 'The Calas case and toleration.', students: 'Say what Voltaire questioned and what he did not.', slide: 10 },
+    { id: 'legitimate', label: 'What Changed', range: '27-28', minutes: 1, teacher: 'What made a ruler legitimate, before and after.', students: 'Sort change and continuity.', slide: 11 },
+    { id: 'spread', label: 'The Ideas Travel', range: '28-30', minutes: 2, teacher: 'The Encyclopédie, reprinted and explaining everything.', students: 'Say what the two pages prove.', slide: 12 },
+    { id: 'before', label: 'Before the Revolutions', range: '30-31', minutes: 1, teacher: 'The ideas came first.', students: 'Read the timeline left to right.', slide: 13 },
+    { id: 'nation', label: 'The People Become a Nation', range: '31-33', minutes: 2, teacher: 'From "the people" to nationalism.', students: 'Answer: which people?', slide: 14 },
+    { id: 'turn', label: 'The Words Were Bigger', range: '33-34', minutes: 1, teacher: 'The writers did not mean everyone. The words did.', students: 'Say who was left out.', slide: 15 },
+    { id: 'abolition', label: 'Abolition', range: '34-36', minutes: 2, teacher: 'Ideas and faith together, over a century.', students: 'Name what drove the movement.', slide: 16 },
+    { id: 'serfs', label: 'Serfs and Voters', range: '36-37', minutes: 1, teacher: 'Serfdom ends; the vote widens, in steps.', students: 'Say how slow each change was.', slide: 17 },
+    { id: 'women', label: 'Women Demand Their Rights', range: '37-39', minutes: 2, teacher: 'De Gouges, Wollstonecraft, Seneca Falls.', students: 'Name what each woman demanded.', slide: 18 },
+    { id: 'seneca', label: 'Seneca Falls, 1848', range: '39-41', minutes: 2, teacher: 'Read the declaration\'s first truth.', students: 'Find the two added words.', slide: 19 },
+    { id: 'claim', label: 'Find the Claim', range: '41-43', minutes: 2, teacher: 'Model 3.A on Montesquieu.', students: 'Fill the frame aloud.', slide: 20 },
+    { id: 'pair', label: 'Same Words, Wider Claim', range: '43-45', minutes: 2, teacher: 'De Gouges beside the 1789 article she rewrote.', students: 'Describe her claim.', slide: 21 },
+    { id: 'stayed', label: 'What Changed by 1900, What Stayed', range: '45-47', minutes: 2, teacher: 'The ideas changed fast; the world changed slowly.', students: 'Name the biggest continuity.', slide: 22 },
+    { id: 'retell', label: 'By What Right?', range: '47-51', minutes: 4, teacher: 'Students redraw the chain from memory, with what stayed underneath; correct the three myths here.', students: 'Retell the whole topic.', slide: 23 },
+    { id: 'worktime', label: 'Work Time', range: '51-81', minutes: 30, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder on three new sources, Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 24 },
+    { id: 'close', label: 'Landing Sentence', range: '81-83', minutes: 2, teacher: 'Land the answer and hand off to 5.2.', students: 'Say the topic in one sentence.', slide: 25 }
   ],
 
   quickLaunch: [
@@ -96,17 +192,26 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'By what right? The answer kept growing.',
       subtitle: 'Continuity and Change, with Claims and Evidence in Sources 3.A. What changed in how people thought about power, how far the new rights reached by 1900, and what stayed the same?',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: by what right? The answer kept growing',
+          'Two objectives: the ideas (A), their effects to 1900 (B)',
+          'Came before the revolutions, not caused them',
+          'Teach what stayed as hard as what changed',
+          '3.A: find the claim, say it, say what it opposes',
+          'Revolutions and their causes belong to 5.2',
+          'Three myths: outline Watch for list'
+        ],
         land: [
           'CED pp. 98 to 99. Two learning objectives. A (Cultural Developments and Interactions): explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900. B (Social Interactions and Organization): explain how the Enlightenment affected societies over time. The reasoning process is Continuity and Change (p. 95); the suggested skill is 3.A, identify and describe a claim and/or argument in a text-based or non-text-based source.',
           'Key Concepts. LO A: KC-5.3.I.A (new ways of understanding and empiricist approaches to the natural world and human relationships; religion\'s role in public life reexamined; reason; new political ideas about the individual, natural rights and the social contract); KC-5.3.I (the rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions); KC-5.3.II.i (nationalism became a major force shaping states and empires). LO B: KC-5.3.I.C (Enlightenment ideas and religious ideals influenced reform movements that expanded rights: suffrage, the abolition of slavery, the end of serfdom); KC-5.3.IV.B (demands for women\'s suffrage and an emergent feminism challenged political and gender hierarchies).',
-          'The CED\'s illustrative examples, printed beside LO B under "Demands": Wollstonecraft\'s Vindication; de Gouges\'s Declaration of the Rights of Woman and of the Female Citizen; the Seneca Falls Conference (1848) organized by Stanton and Mott. All three are used, slides 17 to 20, as sources with claims in them. The CED gives 5.1 no sample activity.',
-          'Owns: the ideas, their spread, nationalism introduced, the reform movements and women\'s demands. Bridge only: the revolutions and their documents (5.2): the dates, two lines from the 1789 declaration (Article 3 on the nation, slide 13, and Article 1, the line de Gouges rewrote, slide 20), Nariño. Not taught: Adam Smith and free trade (5.7), reforms that answered industry (5.8).',
-          'Three myths, on slide 23: "the Enlightenment caused the revolutions"; "the Enlightenment was against religion"; "rights reached everyone in 1789."',
+          'The CED\'s illustrative examples, printed beside LO B under "Demands": Wollstonecraft\'s Vindication; de Gouges\'s Declaration of the Rights of Woman and of the Female Citizen; the Seneca Falls Conference (1848) organized by Stanton and Mott. All three are used, slides 18 to 21, as sources with claims in them. The CED gives 5.1 no sample activity.',
+          'Owns: the ideas, their spread, nationalism introduced, the reform movements and women\'s demands. Bridge only: the revolutions and their documents (5.2): the dates, two lines from the 1789 declaration (Article 3 on the nation, slide 14, and Article 1, the line de Gouges rewrote, slide 21), Nariño. Not taught: Adam Smith and free trade (5.7), reforms that answered industry (5.8).',
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (23) if they come up: "the Enlightenment caused the revolutions"; "the Enlightenment was against religion"; "rights reached everyone in 1789."',
           'Every picture is a real object of the period from the Metropolitan Museum of Art\'s open-access collection, public domain: Valentine Green\'s mezzotint of Joseph Wright\'s air-pump experiment (1769); the title page of the Encyclopédie\'s second edition, printed at Lucca, Italy (1758); a plate of a fan-maker\'s workshop from its picture volumes (Paris, 1762 to 1772); a pottery jug printed with "Am not I a man and a brother", a version of the 1787 motto (about 1820); and Samuel Jennings\'s study for Liberty Displaying the Arts and Sciences (about 1791 to 1792). None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -115,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull it back from memory.',
       template: {
         questions: [
@@ -127,11 +232,17 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          'Recall: 4.8 work, Louis XIV, 4.6 pushback',
+          'Bridge: who do these states belong to?',
+          'Prompt 2 returns on slide 6, prompt 3 on 15'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: millions of enslaved Africans forced onto plantations; Andean men drafted for the mine at Potosí; peasants and artisans working more for buyers far away. From God, divine right. The Fronde, the Pueblo Revolt, Cossack revolts, the Marathas, Ana Nzinga, Metacom\'s War, Maroon communities.',
           'The bridge is 4.8\'s hand-off in the unit story map, word for word.',
-          'Prompt 2 returns on slide 5 (the old answer). Prompt 3 returns on slide 14: people who were left out pushed back with the new words.'
+          'Prompt 2 returns on slide 6 (the old answer). Prompt 3 returns on slide 15: people who were left out pushed back with the new words.'
         ],
         ask: 'Louis XIV said God gave him his power. What would you need to prove him wrong?',
         listenFor: 'A different source of power, or evidence that his claim does not hold. That is today\'s question.',
@@ -144,6 +255,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'How did a new way of thinking change the answer, and how far did the new rights reach by 1900?',
       notes: {
         minutes: 1,
+        keys: [
+          'Real print: the air-pump experiment, 1769',
+          'The method: finding out by experiment',
+          'The question is both objectives',
+          'Predict what is new in the room'
+        ],
         land: [
           'The picture is a real print: Valentine Green\'s mezzotint (London, 1769) of Joseph Wright of Derby\'s painting An Experiment on a Bird in the Air Pump (1768, National Gallery, London). A traveling lecturer pumps the air out of a glass globe with a bird inside to show that living things need air; a family watches by candlelight, some fascinated, two girls upset. Metropolitan Museum of Art 49.95.14, public domain.',
           'Why open here: the picture is the Enlightenment\'s method, finding out by experiment, shown to ordinary people in a home. Wright painted scenes like this because science lectures were a popular entertainment.',
@@ -154,13 +271,52 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'Who does a state belong to? How did a new way of thinking change the answer, and how far did the new rights reach by 1900?',
+        stops: [
+          { label: 'I', text: 'The old answer' },
+          { label: 'II', text: 'Reason and the new answers' },
+          { label: 'III', text: 'The ideas travel, before the revolutions' },
+          { label: 'IV', text: 'Over time: pressing the words further' },
+          { label: 'V', text: 'Women\'s demands' },
+          { label: 'VI', text: 'What changed by 1900, what stayed' },
+          { label: '✓', text: 'Put it together: by what right?', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Six sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the six headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to VI), so the class can see where it is all period.',
+          'The question at the top is the topic question: sections I to III are the new way of thinking (LO A), sections IV to VI how far the new rights reached by 1900 (LO B).'
+        ],
+        ask: 'Which do you expect to change faster, the ideas or the world?',
+        listenFor: 'Any reasoned guess; return to it at section VI.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read with two lists in mind.',
       subtitle: 'What changed in how people thought about power, and who gained rights? What stayed the same?',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-5/first-and-10-topic-5-1-enlightenment-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Keep two lists: changes and continuities',
+          'Follow the ideas past 1789 into the 1800s',
+          'Q2: de Gouges\'s claim (3.A); Q3: LO B',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "By What Right?" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who keep both lists, and who follow the ideas past 1789 into the 1800s.',
@@ -171,7 +327,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'oldanswer', kind: 'story-steps', eyebrow: 'The Old Answer · About 1750',
+      phase: 'oldanswer', kind: 'story-steps', eyebrow: 'I · The Old Answer · About 1750',
       title: 'Power came from God, tradition and birth.',
       template: {
         steps: [
@@ -182,6 +338,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'God: divine right, Louis XIV (3.2)',
+          'Tradition: one official church in most states',
+          'Birth: noble privilege, serfs bound to land',
+          'Keep it short: the "before"'
+        ],
         land: [
           'Context for KC-5.3.I: the "established traditions" the ideas questioned. No Key Concept band: this is what came before.',
           'God: divine right, Louis XIV in Topic 3.2. Tradition: an official church in most European states, Catholic in France and Spain, Anglican in England; Protestants in France had lost their legal toleration in 1685. Birth: nobles with legal privileges, such as exemption from some taxes in France; serfs bound to their lord\'s land across much of central and eastern Europe.',
@@ -193,7 +355,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'method', kind: 'cause-chain', eyebrow: 'A New Way of Knowing',
+      phase: 'method', kind: 'cause-chain', eyebrow: 'II · New Answers · A New Way of Knowing',
       kc: 'KC-5.3.I.A', title: 'Reason and evidence, first for nature, then for people.',
       footer: 'Learning from evidence and experience instead of authority: empiricism.',
       template: {
@@ -207,6 +369,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Newton, 1687: laws tested against observation',
+          'Locke: the mind starts as "white paper"',
+          'Empiricism: knowledge from experience and evidence',
+          'Same method, pointed at government and society'
+        ],
         land: [
           'KC-5.3.I.A: Enlightenment philosophies "applied new ways of understanding and empiricist approaches to both the natural world and human relationships" and "emphasized the importance of reason."',
           'Newton, Principia (1687): laws of motion and universal gravitation, worked out with mathematics and tested against astronomers\' observations. Locke, An Essay Concerning Human Understanding (published December 1689, dated 1690), Book II, chapter 1: "Let us then suppose the mind to be, as we say, white paper, void of all characters." Empiricism: knowledge from experience and evidence.',
@@ -218,7 +386,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'answers', kind: 'branch-tree', eyebrow: 'The New Answers',
+      phase: 'answers', kind: 'branch-tree', eyebrow: 'II · New Answers · Rights, Consent, Limits',
       kc: 'KC-5.3.I.A', title: 'Start with the individual, not the king.',
       footer: 'New political ideas about the individual, natural rights and the social contract.',
       template: {
@@ -232,6 +400,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Natural rights: Locke, "lives, liberties and estates"',
+          'Social contract: consent; Rousseau, "born free"',
+          'Limits on power: Montesquieu, split three powers',
+          'Consent is the direct challenge to divine right',
+          'The philosophers did not all agree'
+        ],
         land: [
           'KC-5.3.I.A: "Philosophers developed new political ideas about the individual, natural rights, and the social contract."',
           'Natural rights: Locke, Second Treatise of Government (1689), §123, the "mutual preservation of their lives, liberties and estates, which I call by the general name, property"; government exists to protect them.',
@@ -245,7 +420,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'locke', kind: 'source-quote', eyebrow: 'Claims and Evidence in Sources 3.A',
+      phase: 'locke', kind: 'source-quote', eyebrow: 'II · New Answers · Claims and Evidence in Sources 3.A',
       kc: 'KC-5.3.I.A', title: 'Find Locke\'s claim.',
       template: {
         quote: 'Men being ... by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent.',
@@ -254,6 +429,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          '"This estate" = being free and equal, not land',
+          'Claim: rightful only with the people\'s consent',
+          'Argues against divine right and inherited power',
+          'Published 1689, after the Glorious Revolution'
+        ],
         land: [
           'Second Treatise, §95, word for word from the 1690-dated text (Project Gutenberg #7370); the cut is "as has been said,". "This estate" means this condition, being free and equal, not land.',
           'The claim, in a student\'s words: government is rightful only when the people it rules have agreed to it. What it argues against: divine right and inherited power.',
@@ -265,7 +446,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'calas', kind: 'case-file', eyebrow: 'Religion and the State · Toulouse, 1762',
+      phase: 'calas', kind: 'case-file', eyebrow: 'II · New Answers · Religion and the State · Toulouse, 1762',
       kc: 'KC-5.3.I.A', title: 'Should a government force a faith?',
       template: {
         tag: 'Case',
@@ -281,6 +462,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Calas: Protestant, wrongly accused, executed 1762',
+          'Voltaire: Treatise on Tolerance, 1763; cleared 1765',
+          'Toleration: no faith forced, no belief punished',
+          'Questioned state-enforced faith, not faith itself',
+          'Deists and believers; few atheists'
+        ],
         land: [
           'KC-5.3.I.A: Enlightenment philosophies "reexamined the role that religion played in public life."',
           'Jean Calas, a Protestant cloth merchant of Toulouse, was accused of killing his son Marc-Antoine to stop him becoming a Catholic; the son had most likely taken his own life. The Parlement of Toulouse condemned Calas and he was broken on the wheel and executed on 10 March 1762. Voltaire took up the case, published the Treatise on Tolerance in 1763, and the judgment was overturned; Calas was declared innocent on 9 March 1765 (Musée protestant; Universalis).',
@@ -292,7 +480,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'legitimate', kind: 'continuity-change', eyebrow: 'What Changed',
+      phase: 'legitimate', kind: 'continuity-change', eyebrow: 'II · New Answers · What Changed',
       kc: 'Unit 5: Learning Objective A', title: 'The question changed before the kings did.',
       footer: 'What changed first was what made a ruler rightful.',
       template: {
@@ -303,6 +491,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Legitimate = rightful',
+          'Changed: what made a ruler rightful',
+          'Continued: kings still ruled almost everywhere',
+          'The question changed before the kings did'
+        ],
         land: [
           'The continuity-and-change point of LO A: by 1789 the ideas had changed what many educated people believed a government owed them, while almost every state was still a monarchy.',
           'Legitimate means rightful. A ruler can have power without being legitimate; the Enlightenment changed what made power rightful.'
@@ -313,7 +507,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'spread', kind: 'frame-pair', eyebrow: 'The Ideas Travel',
+      phase: 'spread', kind: 'frame-pair', eyebrow: 'III · The Ideas Travel · The Encyclopédie',
       kc: 'KC-5.3.I', title: 'A book that tried to explain everything.',
       template: {
         panels: [
@@ -328,6 +522,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Diffusion: copied in Lucca, Italy, 1758',
+          'Explained crafts as well as government',
+          'Banned in 1759; volumes kept coming',
+          'Also salons, coffeehouses, letters',
+          'Kant, 1784: "Dare to know"'
+        ],
         land: [
           'KC-5.3.I: "The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life."',
           'Left: the title page of volume 1 of the second edition, printed at Lucca, Italy, in 1758, with added notes by Ottaviano Diodati (Metropolitan Museum of Art, Watson Library, Bequest of Marianne Khuner). A copy printed outside France, while the Paris edition was still coming out: evidence of diffusion.',
@@ -341,7 +542,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'before', kind: 'timeline', eyebrow: 'The Ideas Came First',
+      phase: 'before', kind: 'timeline', eyebrow: 'III · The Ideas Travel · The Ideas Came First',
       kc: 'KC-5.3.I', title: 'The ideas came before the revolutions.',
       footer: '"Often preceded": the ideas gave revolutionaries their words. Topic 5.2 is the rest of the story.',
       template: {
@@ -358,6 +559,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          '"Often preceded": preceded, not caused',
+          'Nariño: the declaration printed in Bogotá',
+          'Coming first does not prove causing',
+          'Causes of the revolutions belong to 5.2'
+        ],
         land: [
           'KC-5.3.I: Enlightenment thought "often preceded revolutions and rebellions against existing governments." Preceded, not caused.',
           'Nariño, from the reading: Antonio Nariño printed a Spanish translation of the French Declaration of the Rights of Man in Bogotá (dated 1793 by most accounts, 1794 by some), was arrested on 29 August 1794, and later became one of the leaders of New Granada\'s independence (he led the state of Cundinamarca from 1811 and was a prisoner from 1814 to 1820). It shows the ideas moving across the Atlantic before Spanish America\'s wars.',
@@ -369,7 +576,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'nation', kind: 'cause-chain', eyebrow: 'The People Become a Nation',
+      phase: 'nation', kind: 'cause-chain', eyebrow: 'III · The Ideas Travel · The People Become a Nation',
       kc: 'KC-5.3.II.i', title: 'If a state belongs to its people, which people?',
       footer: 'Nationalism: loyalty to your nation above a king or an empire.',
       template: {
@@ -383,6 +590,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Which people? The nation',
+          '1789, Article 3: sovereignty "in the nation"',
+          'Sovereignty = the highest power in a state',
+          'Nationalism builds states, strains empires',
+          'Name it here; 5.2 teaches it'
+        ],
         land: [
           'KC-5.3.II.i: "Nationalism also became a major force shaping the historical development of states and empires." The CED prints it on the 5.1 page.',
           'The 1789 Declaration of the Rights of Man and of the Citizen, Article 3: "The principle of all sovereignty resides essentially in the nation" (Avalon Project translation). Sovereignty is the highest power in a state. One line only: the declaration is 5.2\'s document.',
@@ -394,7 +608,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'turn', kind: 'claim-evidence', eyebrow: 'The Turn',
+      phase: 'turn', kind: 'claim-evidence', eyebrow: 'IV · Over Time · The Turn',
       title: 'The words were bigger than the men who wrote them.',
       footer: 'Anyone could ask the philosophers\' own question: by what right am I left out?',
       template: {
@@ -408,10 +622,17 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'The hinge from LO A to LO B',
+          'Locke "owned shares," did not run the trade',
+          'Rousseau: women\'s education planned around men',
+          'Left out: women, enslaved Africans, peasants, serfs',
+          'Written words could be used by the left out'
+        ],
         land: [
           'This is the hinge from LO A to LO B. No Key Concept band: it sets up KC-5.3.I.C and IV.B.',
           'Locke: the National Portrait Gallery notes he "owned shares in the Royal African Company," which held the English slave-trade monopoly; he held them in the 1670s, probably partly as payment for his work for the Carolina proprietors (Glausser 1990). Say "owned shares," not "ran the slave trade."',
-          'Rousseau, Emile, Book V (Foxley translation): "A woman\'s education must therefore be planned in relation to man. To be pleasing in his sight, to win his respect and love ..." Wollstonecraft answers Rousseau on slide 17 and in the Evidence Lab.',
+          'Rousseau, Emile, Book V (Foxley translation): "A woman\'s education must therefore be planned in relation to man. To be pleasing in his sight, to win his respect and love ..." Wollstonecraft answers Rousseau on slide 18 and in the Evidence Lab.',
           '"Most" is deliberate: some Enlightenment writers argued for women\'s rights (Condorcet, 1790) and against slavery (Condorcet, Raynal\'s History of the Two Indies).'
         ],
         ask: 'Who was left out of "all men"?',
@@ -420,7 +641,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'abolition', kind: 'story-scene', eyebrow: 'Over Time · Abolition',
+      phase: 'abolition', kind: 'story-scene', eyebrow: 'IV · Over Time · Abolition',
       kc: 'KC-5.3.I.C', title: 'Ideas and faith together, for a century.',
       template: {
         caption: 'A jug printed with the abolitionists\' motto, about 1820',
@@ -433,6 +654,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Two engines: natural rights and faith',
+          '1787 society: twelve men, nine Quakers',
+          'Equiano, 1789: his life story, toured Britain',
+          'Britain 1807, 1834; France 1848; Brazil 1888',
+          'A century, country by country',
+          'Limit: white abolitionists chose how to picture Africans'
+        ],
         land: [
           'KC-5.3.I.C: "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in ... the abolition of slavery." Two engines: natural rights, and faith (the Quakers held that slavery was a sin).',
           '1787: the Society for Effecting the Abolition of the Slave Trade, founded in London on 22 May 1787 by twelve men, nine of them Quakers, with Thomas Clarkson and Granville Sharp. Its seal showed a kneeling African man in chains and the words "Am I not a man and a brother?"; Josiah Wedgwood made it into a medallion worn on bracelets and hairpins. 1789: Olaudah Equiano, The Interesting Narrative, London; he toured Britain selling it and speaking against the trade. Britain: the Slave Trade Act of 1807; the Slavery Abolition Act of 1833, in force on 1 August 1834, with an "apprenticeship" until 1838. France: the decree of 27 April 1848. Brazil: the Lei Áurea, 13 May 1888, the last in the Americas.',
@@ -445,7 +674,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'serfs', kind: 'ledger', eyebrow: 'Over Time · Serfs and Voters',
+      phase: 'serfs', kind: 'ledger', eyebrow: 'IV · Over Time · Serfs and Voters',
       kc: 'KC-5.3.I.C', title: 'Rights reached further, in steps.',
       template: {
         rows: [
@@ -459,6 +688,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Austria 1848: labor dues to lords end',
+          'Russia 1861: about 23 million serfs freed',
+          'Alexander II: "from above," not "from below"',
+          'France 1848: all adult men vote',
+          'Britain: 1832, 1867, 1884, in steps',
+          'Not always reformers: some rulers feared revolt'
+        ],
         land: [
           'KC-5.3.I.C: reform movements "contributed to the expansion of rights, as seen in expanded suffrage ... and the end of serfdom."',
           'Austria: Hans Kudlich\'s motion of 26 July 1848 became law on 7 September 1848, ending peasants\' subordination to their lords and their labor dues; landlords were compensated for some dues (Habsburger.net). Russia: the Emancipation Manifesto, 19 February (3 March) 1861; about 23 million serfs on private estates (Yale Law Library: "some 23 million" of 67 million people). Former serfs had to pay for land over decades.',
@@ -471,7 +708,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'women', kind: 'story-steps', eyebrow: 'Over Time · Women\'s Demands',
+      phase: 'women', kind: 'story-steps', eyebrow: 'V · Women\'s Demands · 1791 to 1848',
       kc: 'KC-5.3.IV.B', title: 'Women pressed the words too.',
       template: {
         steps: [
@@ -483,6 +720,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'All three CED examples are here',
+          'De Gouges, 1791; guillotined 1793',
+          'Wollstonecraft, 1792: educate women to reason',
+          'London, 1840: women refused seats',
+          'Seneca Falls, July 1848: equality and the vote',
+          'Feminism: equal rights for women and men'
+        ],
         land: [
           'KC-5.3.IV.B: "Demands for women\'s suffrage and an emergent feminism challenged political and gender hierarchies." The CED\'s three examples are all here.',
           'De Gouges: the Declaration of the Rights of Woman and of the Female Citizen, September 1791; guillotined on 3 November 1793 by order of the Revolutionary Tribunal. Wollstonecraft: A Vindication of the Rights of Woman, London, 1792. Stanton and Mott met at the World Anti-Slavery Convention in London, June 1840, where the convention refused to seat women delegates. Mott was a delegate of the Philadelphia Female Anti-Slavery Society and a Quaker minister; Stanton was not a delegate but attended with her husband, Henry B. Stanton, who was; the women sat apart, behind a curtain (National Park Service). Seneca Falls: 19 and 20 July 1848, the Wesleyan Chapel.',
@@ -494,7 +739,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'seneca', kind: 'source-quote', eyebrow: 'Seneca Falls, New York · July 1848',
+      phase: 'seneca', kind: 'source-quote', eyebrow: 'V · Women\'s Demands · Seneca Falls, New York, July 1848',
       kc: 'KC-5.3.IV.B', title: 'Two words added.',
       template: {
         quote: 'We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights.',
@@ -503,10 +748,17 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Modeled on the Declaration of Independence',
+          'Two words added: "and women"',
+          'It demanded the vote; the only split resolution',
+          '100 signers: 68 women, 32 men',
+          '"Endowed by their Creator": faith and reason'
+        ],
         land: [
           'Text from the National Park Service, Women\'s Rights National Historical Park. The 1776 sentence reads "that all men are created equal." Elizabeth Cady Stanton drafted the declaration with members of the M\'Clintock family (National Park Service), modeled on the Declaration of Independence.',
           'It demanded the vote: "He has never permitted her to exercise her inalienable right to the elective franchise." The resolution for the vote was the only one not passed unanimously (Britannica); Frederick Douglass spoke for it. One hundred people signed, 68 women and 32 men (NPS; Britannica).',
-          'Notice "endowed by their Creator": the claim rests on faith as well as reason, like the reform movements on slide 15.'
+          'Notice "endowed by their Creator": the claim rests on faith as well as reason, like the reform movements on slide 16.'
         ],
         ask: 'What is the claim, and what is it arguing against?',
         listenFor: 'Women are equal to men and have the same rights, including the vote; it argues against laws that gave rights only to men.',
@@ -514,7 +766,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'claim', kind: 'sentence-frame', eyebrow: 'Claims and Evidence in Sources 3.A · Model',
+      phase: 'claim', kind: 'sentence-frame', eyebrow: 'V · Women\'s Demands · Claims and Evidence 3.A, Model',
       title: 'Find the claim. Say it. Say what it argues against.',
       footer: 'A claim is what the writer wants you to believe.',
       template: {
@@ -524,6 +776,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Identify the claim, then describe it',
+          'Read Montesquieu aloud, build the line together',
+          'Own words, plus what it argues against',
+          'Copying the quotation is not describing'
+        ],
         land: [
           'The suggested skill, 3.A: identify and describe a claim and/or argument in a source. Identify: find it. Describe: put it in your own words, with what it is for and against.',
           'The source sentence, The Spirit of the Laws, Book XI, chapter 6, in Thomas Nugent\'s English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." Read it aloud, then build the model line with the room. Montesquieu\'s own example of all the powers held together was the Ottoman sultan; he called Europe\'s monarchies, France included, moderate because their kings left judging to the courts. Montesquieu was chosen because the First & 10 question, the Skill Builder practice and both checkpoints ask about other writers, so the model gives away none of their answers.',
@@ -535,7 +793,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'pair', kind: 'balance', eyebrow: 'Claims and Evidence in Sources 3.A · Practice',
+      phase: 'pair', kind: 'balance', eyebrow: 'V · Women\'s Demands · Claims and Evidence 3.A, Practice',
       kc: 'KC-5.3.IV.B', title: 'Same words, a wider claim.',
       template: {
         job: 'Born free and equal',
@@ -546,9 +804,16 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Describe her claim aloud, with the frame',
+          'Same rights for women as for men',
+          'Against a declaration for men only',
+          'Keeps the old words, changes who they cover',
+          'First & 10 Q2: take answers aloud'
+        ],
         land: [
           '1789, Article 1, Avalon Project translation. De Gouges, article premier: "La Femme naît libre et demeure égale à l\'homme en droits," translated literally; the published translation by Levy, Applewhite and Johnson (1979) reads "Woman is born free and lives equal to man in her rights."',
-          'Have students describe her claim aloud with the frame from slide 19. One strong answer, for the teacher: de Gouges claims that women have the same rights as men, arguing against a declaration that gave rights only to men. She keeps the old words and changes who they cover.',
+          'Have students describe her claim aloud with the frame from slide 20. One strong answer, for the teacher: de Gouges claims that women have the same rights as men, arguing against a declaration that gave rights only to men. She keeps the old words and changes who they cover.',
           'This is First & 10 question 02, which students have already answered, so take answers aloud.'
         ],
         ask: 'Use the frame: describe de Gouges\'s claim.',
@@ -557,23 +822,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Find the claim.',
-      subtitle: 'Claims and Evidence in Sources 3.A: find it, say it in your own words, and say what it argues against.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
-      notes: {
-        minutes: 8,
-        land: [
-          'The Skill Builder practices the CED\'s suggested skill, 3.A.',
-          'It models the move on Montesquieu (Book XI, chapter 6), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. Students choose two of the three; for each they identify the claim, describe it in their own words, and say what it argues against.',
-          'Strong answers: Rousseau claims people are born free but held down by unjust governments and customs, against the idea that rulers\' power is natural; Kant claims people should think for themselves instead of obeying authorities, against relying on priests, books and rulers to think for you; the motto claims an enslaved African is a full human being and a brother, against treating people as property.'
-        ],
-        ask: 'After students have written: which claim was hardest to say in your own words, and why?',
-        listenFor: 'Debrief only after the module: Rousseau, because "chains" is a metaphor you have to explain.'
-      }
-    },
-    {
-      phase: 'stayed', kind: 'continuity-change', eyebrow: 'What Changed by 1900, What Stayed',
+      phase: 'stayed', kind: 'continuity-change', eyebrow: 'VI · What Changed by 1900, What Stayed',
       kc: 'Unit 5: Learning Objective B', title: 'The ideas changed fast. The world changed slowly.',
       template: {
         date: '1750 to 1900',
@@ -583,6 +832,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'LO B: change was slow and uneven',
+          'Changed: the people, slavery, serfdom, men\'s vote',
+          'Stayed: kings, other forced labor, women\'s vote',
+          'New Zealand, 1893: first, all adult women',
+          'Defend the biggest continuity'
+        ],
         land: [
           'The reasoning move for LO B: the Enlightenment affected societies over time, but the change was slow and uneven.',
           'Women\'s votes: New Zealand, on 19 September 1893, became the first self-governing country where all adult women could vote in national elections (the Isle of Man had let some property-owning women vote in 1881) (NZHistory). Britain followed fully in 1928, the United States in 1920.',
@@ -594,29 +850,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence is more interesting than the myths.',
-      template: {
-        rows: [
-          { myth: 'The Enlightenment caused the revolutions.', evidence: 'It came first and gave revolutionaries words. Taxes, debt, war and slavery mattered too.', source: 'KC-5.3.I; Topic 5.2' },
-          { myth: 'The Enlightenment was against religion.', evidence: 'Most writers believed in God. They questioned faith forced by the state, and faith, with natural rights, drove abolition.', source: 'KC-5.3.I.A, I.C' },
-          { myth: 'Rights reached everyone in 1789.', evidence: 'Slavery lasted in Brazil to 1888; women voted almost nowhere in 1900.', source: 'Topic 5.1' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        land: [
-          'Row 1: the CED says "often preceded," not "caused." Do not swing to "ideas did not matter": revolutionaries quoted them.',
-          'Row 2: Voltaire attacked the power of the Church but believed in a creator; the Quakers and evangelicals such as William Wilberforce led abolition. Do not swing to "everyone was religious": some writers, such as Holbach, were atheists.',
-          'Row 3: the 1789 declaration excluded women from citizenship and France restored slavery in its colonies in 1802. Do not swing to "nothing changed": the claim that rights belong to people by birth was new, and it was used.'
-        ],
-        ask: 'Which myth is hardest to correct without making a new mistake?',
-        listenFor: 'Any, with the opposite mistake named: "caused" versus "did not matter"; "against religion" versus "everyone was devout"; "everyone got rights" versus "nothing changed."'
-      }
-    },
-    {
-      retelling: true, phase: 'retell', kind: 'cause-chain', eyebrow: 'The Whole Topic',
+      retelling: true, phase: 'retell', kind: 'cause-chain', eyebrow: 'Put It Together · The Whole Topic',
       title: 'By what right?',
       footer: 'What stayed by 1900: kings and emperors on most thrones, other forced labor, and women\'s votes almost nowhere.',
       template: {
@@ -630,60 +864,55 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Show it, hide it, redraw from memory',
+          'Old answer, question, new answer, over time',
+          'One piece of evidence under each box',
+          'First three boxes: LO A; last box: LO B',
+          'Then the line for what stayed',
+          'Myths: correct each, name the opposite mistake'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one piece of evidence under each box and the line for what stayed underneath.',
           'The first three boxes are LO A (the intellectual and ideological context: KC-5.3.I.A, I, II.i); the last box and the footer are LO B (the Enlightenment\'s effects over time: KC-5.3.I.C, IV.B). The slide carries no single Key Concept band because it spans all five.',
-          'Push for named evidence: divine right; Newton and Locke; Calas; the Encyclopédie; 1789 and the nation; the 1787 society and Brazil 1888; Russia 1861; Seneca Falls.'
+          'Push for named evidence: divine right; Newton and Locke; Calas; the Encyclopédie; 1789 and the nation; the 1787 society and Brazil 1888; Russia 1861; Seneca Falls.',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time. "The Enlightenment caused the revolutions": the CED says "often preceded," not "caused"; the ideas came first and gave revolutionaries words, and taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter": revolutionaries quoted them. "The Enlightenment was against religion": Voltaire attacked the power of the Church but believed in a creator, and Quakers and evangelicals such as William Wilberforce led abolition. But do not swing to "everyone was religious": some writers, such as Holbach, were atheists. "Rights reached everyone in 1789": the 1789 declaration excluded women from citizenship, France restored slavery in its colonies in 1802, Brazil ended slavery only in 1888, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and it was used.'
         ],
         ask: 'Redraw it without looking, with one piece of evidence under each box, and the line for what stayed.',
         listenFor: 'The old answer, God, tradition and birth, was challenged by the question "by what right?", answered with reason, natural rights and consent, and pressed further over a century by abolition, the end of serfdom, wider voting and women\'s demands, while kings, other forced labor and men-only voting lasted to 1900.'
       }
     },
     {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'The ideas behind the revolutions.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      title: 'Now you do the history.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
+      template: {
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Find the claim in two of three new sources.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' }
+        ]
+      },
       notes: {
-        minutes: 0,
-        land: [
-          'Checkpoint 1 is not required for 5.1. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It assesses Learning Targets 1 and 2 (LO A): one new political idea and the old answer it challenged, and how the ideas spread and came before the revolutions. Give feedback in the room: on an alternating block nothing carries over.'
+        minutes: 30,
+        keys: [
+          'All three required today, in order',
+          'Skill Builder: claim, own words, what it opposes',
+          'Checkpoint 1: no coach, feedback in the room',
+          'Checkpoint 2: a movement, its drivers, what stayed',
+          'Checkpoint 2 unfinished = homework',
+          'Early finishers: Evidence Lab'
         ],
-        ask: 'Name one new idea, the old idea it challenged, and how it spread.',
-        listenFor: 'The social contract, against divine right, spread in print and salons before 1789.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Two sources, two claims.',
-      subtitle: 'Choose two cards. For each: what kind of source it is, what it claims, and what it cannot tell you.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
-      notes: {
-        minutes: 7,
         land: [
-          'Six cards: the air-pump mezzotint (1769), the Encyclopédie title page (Lucca, 1758), the abolitionist jug (about 1820), and three short verified excerpts: Locke (1689), Wollstonecraft (1792) and the Seneca Falls declaration (1848).',
-          'The skill is 3.A in a non-text source as well as a text: the jug claims something too. Observation before inference: what the object shows, then what it claims or suggests, then what it cannot tell you.',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
-        ],
-        ask: 'What does the jug claim, without a single sentence of argument?',
-        listenFor: 'That an enslaved African man is a man and a brother, a full human being, so slavery is wrong.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'What did the Enlightenment change over time, and what stayed?',
-      subtitle: 'One reform movement, the ideas or faith that drove it, how far it got by 1900, and what had still not changed. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
-      notes: {
-        minutes: 12,
-        land: [
-          'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 assesses Learning Target 3 (LO B): choose one reform movement (abolition, the end of serfdom, the right to vote, or women\'s rights), explain how Enlightenment ideas or religious ideals pushed it forward, what it had changed by 1900, and what had still not changed. That is the over-time objective the old lesson never assessed.',
-          'Socrates is told the skill is Continuity and Change, so it will push for what stayed the same as well as what changed.'
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today, from the schedule (Jeff, 2026-11-08, under his rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen). Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.A. It models the move on Montesquieu (Book XI, chapter 6), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. Students choose two of the three; for each they identify the claim, describe it in their own words, and say what it argues against. Strong answers: Rousseau claims people are born free but held down by unjust governments and customs, against the idea that rulers\' power is natural; Kant claims people should think for themselves instead of obeying authorities, against relying on priests, books and rulers to think for you; the motto claims an enslaved African is a full human being and a brother, against treating people as property.',
+          'Checkpoint 1 (Module 06), with no coach, assesses Learning Targets 1 and 2 (LO A): one new political idea and the old answer it challenged, and how the ideas spread and came before the revolutions. Give feedback in the room: on an alternating block nothing carries over.',
+          'Checkpoint 2 (Module 10) assesses Learning Target 3 (LO B): choose one reform movement (abolition, the end of serfdom, the right to vote, or women\'s rights), explain how Enlightenment ideas or religious ideals pushed it forward, what it had changed by 1900, and what had still not changed. That is the over-time objective the old lesson never assessed. Socrates is told the skill is Continuity and Change, so it will push for what stayed the same as well as what changed. The revised answer in the box is what goes to Canvas.',
+          'Early finishers: the Evidence Lab (Module 07). Six cards: the air-pump mezzotint (1769), the Encyclopédie title page (Lucca, 1758), the abolitionist jug (about 1820), and three short verified excerpts: Locke (1689), Wollstonecraft (1792) and the Seneca Falls declaration (1848). It is 3.A in a non-text source as well as a text: observe what the object shows, then what it claims, then what it cannot tell you. Every picture in it is a real historical object; none is AI-generated.',
+          'If a student needs the claim shape, give it aloud (it is the frame from slide 20): "___ claims that ___, arguing against ___." It is a frame, not a model answer; do not write a finished claim on the board.'
         ],
         ask: 'Does your answer have a movement, what drove it, a change by 1900, and a continuity?',
-        listenFor: 'Abolition: natural rights and Quaker faith; Britain 1834 to Brazil 1888; but other forced labor went on. Women\'s rights: Seneca Falls borrowed the Declaration\'s words; but by 1900 women voted almost nowhere.'
+        listenFor: 'Skill Builder: Rousseau\'s "chains" is a metaphor you have to explain. Checkpoint 1: the social contract, against divine right, spread in print and salons before 1789. Checkpoint 2: abolition, natural rights and Quaker faith, Britain 1834 to Brazil 1888, but other forced labor went on; or women\'s rights, Seneca Falls borrowed the Declaration\'s words, but by 1900 women voted almost nowhere.'
       }
     },
     {
@@ -692,6 +921,14 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: people turn the words into revolutions.',
       notes: {
         minutes: 2,
+        keys: [
+          'Real study: Jennings, about 1791 to 1792',
+          'Read it as a source: learning and liberty free',
+          'Limit: freedom shown as a gift handed down',
+          'Slavery still legal in most American states',
+          'Say the topic in one sentence',
+          'Hand off to 5.2: words become revolutions'
+        ],
         land: [
           'The picture: Samuel Jennings, study for Liberty Displaying the Arts and Sciences, or The Genius of America Encouraging the Emancipation of the Blacks, about 1791 to 1792 (Metropolitan Museum of Art 2016.50, public domain). Jennings, a Philadelphia-born painter working in London, offered the finished painting to the Library Company of Philadelphia, whose directors were mostly Quakers and abolitionists. Liberty, surrounded by books, a globe, a lyre and an artist\'s palette, holds out a book toward kneeling Black men and women; a broken chain lies at her feet, and freed people celebrate in the distance. The Met calls it the first known painting by an American-born artist about slavery and its abolition.',
           'Read it as a source with a claim (3.A): learning and liberty will free the enslaved. And name its limit: a white artist shows freedom as a gift handed down to kneeling Black people, and when it was painted slavery was still legal in most American states.',

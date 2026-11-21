@@ -35,11 +35,29 @@
  * Retelling slide: the four rows, pressure, call and effect (phase 'retell').
  *
  * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
- * 2026-11-23 and 2026-11-24).
+ * 2026-11-23 and 2026-11-24), so the architecture test cannot compare Work
+ * Time with the schedule yet: keep outline.required and the launch pad equal.
  * Required modules: 02 First & 10, 05 Skill Builder, 06 Checkpoint 1,
  * 10 Checkpoint 2 (Jeff's rule of 2026-10-23: 02, 06 and 10 on every topic,
  * plus at least one chosen; 05 practises the CED's suggested skill, 2.B, on
- * the CED's own sample activity).
+ * the CED's own sample activity). The Work Time launch pad carries 05, 06 and
+ * 10 in that order. The Evidence Lab (07), optional when the deck was built,
+ * is the early-finisher option.
+ *
+ * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
+ * topic; slides that only point to a module are cut; the lecture tells the
+ * story). The briefing opens on the outline below, a road map before the
+ * First & 10 shows students the same five section headers, every story slide's
+ * eyebrow names its section, minute counts are off the projected slides, the
+ * myths moved to the outline's Watch for list and the retelling slide's notes,
+ * and one Work Time slide replaced Myth and Evidence and the four module launch
+ * slides (Checkpoint 1, Skill Builder, Evidence Lab, Checkpoint 2). No story
+ * slide changed. 25 slides to 22. The deck had no Sharpen slide: Source a
+ * Source (slide 12) is the 2.B model inside the story, not a pointer to a
+ * module, so it stays, in section III after the Manifesto is sourced. The
+ * topic has one learning objective (I): the synthesis slide (close-retell,
+ * slide 20) carries its band and answers it, and stays after the retelling
+ * slide and before Work Time.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -54,22 +72,98 @@ window.BEHISTORICAL_TEACHING = {
 
   priorities: {
     must: [
-      'Teach every row as a cause, a call for change and an effect: workers, thinkers, reformers and governments, the Ottoman and Qing courts (the retelling slide, 21).',
-      'Teach KC-5.1.V.A as organizing for conditions, hours and wages, and as movements and parties "promoting alternative visions of society" (slides 6 to 8).',
-      'Teach KC-5.3.IV.A.ii with its cause, "discontent with established power structures," and Marx in his own words (slides 9 and 10).',
+      'Teach every row as a cause, a call for change and an effect: workers, thinkers, reformers and governments, the Ottoman and Qing courts (the retelling slide, 19).',
+      'Teach KC-5.1.V.A as organizing for conditions, hours and wages, and as movements and parties "promoting alternative visions of society" (slides 7 to 9).',
+      'Teach KC-5.3.IV.A.ii with its cause, "discontent with established power structures," and Marx in his own words (slides 10 and 11).',
       'Teach KC-5.1.V.D as three kinds of reformer and four kinds of reform, with Bismarck as a government reforming to beat its critics (slides 13 and 14).',
-      'Teach KC-5.1.V.B with both halves: outside pressure caused the Ottoman and Qing reforms, and people inside resisted them (slides 16 to 19).',
-      'Model 2.B: who made it, why, for whom, when, and how that shapes what it says (slides 5, 12 and 15).'
+      'Teach KC-5.1.V.B with both halves: outside pressure caused the Ottoman and Qing reforms, and people inside resisted them (slides 15 to 18).',
+      'Model 2.B: who made it, why, for whom, when, and how that shapes what it says (slides 6 and 12; students practice it in the Skill Builder at Work Time, slide 21).'
     ],
     should: [
-      'Quote the Manifesto in its 1888 English, "Working Men of All Countries, Unite!", which renders the German "Proletarians of all countries, unite!"; "Workers of the world, unite!" is a later popular version (slide 9).',
-      'Say that the Chartists lost every petition and still won most of their points later (slide 7).',
-      'Correct three myths: "after 1824, unions could do as they liked," "Marx\'s revolution came in the 1800s," "China and the Ottoman Empire refused to change" (slide 20).'
+      'Quote the Manifesto in its 1888 English, "Working Men of All Countries, Unite!", which renders the German "Proletarians of all countries, unite!"; "Workers of the world, unite!" is a later popular version (slide 10).',
+      'Say that the Chartists lost every petition and still won most of their points later (slide 8).',
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "after 1824, unions could do as they liked," "Marx\'s revolution came in the 1800s," "China and the Ottoman Empire refused to change."'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "Calls for Change."',
-      'Use the Primary Source, The Communist Manifesto, as an extension for early finishers.',
+      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the Primary Source, The Communist Manifesto, as an extension.',
       'For a class that is ahead: Bismarck banned the socialists and then insured their voters. Was his insurance a victory for workers or for Bismarck? (slide 14).'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes, the First & 10 "Calls for Change" or
+  // docs/TOPIC-5-8-STORY-DRAFT.md; nothing is new. Required modules follow
+  // Jeff's rule of 2026-10-23; the topic is not on the schedule yet.
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'The pressure: one city, two pictures', points: [
+        'Manchester, the great cotton town',
+        'Engels, 1845: a "coal-black, foul-smelling" river; workers\' streets hidden from the well-off',
+        'His father a partner in a cotton-spinning firm near Manchester',
+        'A directory, early 1850s: tall chimneys show "activity, enterprise, and wealth"',
+        'Neither true nor false: each tells part of the truth',
+        'The pressure: industry made some rich and left many in crowded, unhealthy streets',
+        'The CED\'s sample activity; 5.9 takes the city apart'
+      ] },
+      { label: 'II', title: 'Workers organized', kc: 'KC-5.1.V.A', points: [
+        'At first a crime: the Combination Acts, 1799 and 1800',
+        '1824 repeal; an 1825 law limits what unions can do',
+        'Tolpuddle, 1834: seven years\' transportation for a union oath; pardoned 1836',
+        'Ten hours for mill women and youths, 1847; Trades Union Congress, 1868; legal standing, 1871',
+        'Chartists, 1838 to 1848: three petitions rejected; five of six points law later',
+        'Parties: Germany\'s banned 1878 to 1890, yet most votes in 1890; Labour, 1900 to 1906; AFL, 1886',
+        'Many wanted "alternative visions of society"'
+      ] },
+      { label: 'III', title: 'Thinkers imagined a different society', kc: 'KC-5.3.IV.A.ii', points: [
+        'Cause: discontent with established power structures',
+        'Owen\'s followers call their ideas socialism, late 1820s (New Lanark: shorter hours, a school)',
+        'Socialism: land and factories owned and run in common',
+        'The Manifesto, 1848: "the history of class struggles"; two hostile camps',
+        'Communism: workers overthrow owners; a society with no classes',
+        'By 1900: the Erfurt program, 1891; May Day, 1890; no lasting revolution'
+      ], skill: 'You model 2.B Sourcing and Situation on the Manifesto (who wrote it, for whom, and why: slide 10), then out loud with the frame "___ says ___, because of its maker\'s point of view, purpose, audience or situation: ___" on an everyday case, a company\'s cafeteria brochure (slide 12). Then the room says it for Engels. Students practice it on Engels and the directory in the Skill Builder.' },
+      { label: 'IV', title: 'Reformers fixed the worst of it', kc: 'KC-5.1.V.D', points: [
+        'Three kinds of reformer: governments, organizations, individuals',
+        'Reform: fix, not overthrow',
+        'Political: Reform Acts, 1867 and 1884; no woman voted nationally until 1918',
+        'Social: Factory Act, 1833 (no children under nine in mills); Mines Act, 1842',
+        'Educational: Education Acts, 1870 and 1880 (attendance required)',
+        'Urban: the Great Stink, 1858; Bazalgette\'s sewers',
+        'Bismarck bans the socialists (1878), then insures workers (1883 to 1889), partly to win them away'
+      ] },
+      { label: 'V', title: 'Old empires modernized, and met resistance', kc: 'KC-5.1.V.B', points: [
+        'A different cause: the power of the industrial states',
+        'Ottoman: Selim III\'s New Order, overthrown 1807; Janissaries destroyed, 1826',
+        'Tanzimat from 1839; equality in 1856, resented by many Muslims',
+        'Constitution, 1876; Abdulhamid II shuts parliament, 1878',
+        'Qing Self-Strengthening from the 1860s: Jiangnan, 1865; Fuzhou, 1866',
+        'Woren objects, 1867; Japan defeats the new navy, 1894 to 1895',
+        'The Hundred Days, 1898, stopped by Cixi'
+      ] }
+    ],
+    wrap: { title: 'Put it together', columns: ['The pressure', 'The call', 'What happened'], rows: [
+      { label: 'Workers', cells: ['Long hours, low pay, no vote', 'Unions, the Charter, parties', 'Unions legal by 1871; more men vote; the Charter refused'] },
+      { label: 'Thinkers', cells: ['Discontent with who held power', 'Socialism; Marx\'s communism', 'Marx shapes workers\' parties; no revolution by 1900'] },
+      { label: 'Reformers and governments', cells: ['Mills, mines, cities; workers\' pressure', 'Reform laws, sewers, Bismarck\'s insurance', 'More men vote; fewer child workers; schools'] },
+      { label: 'Ottoman and Qing courts', cells: ['The industrial powers\' armies and trade', 'Tanzimat; Self-Strengthening', 'Arsenals and reforms, resisted from inside (1878, 1898)'] }
+    ] },
+    vocabulary: [
+      { term: 'Labor Union', def: 'A group of workers who bargain with their employer together (in Britain, a trade union).' },
+      { term: 'Strike', def: 'Stopping work together, when bargaining fails.' },
+      { term: 'Chartists', def: 'A movement of working people, from 1838, named for a People\'s Charter of six demands; the first was a vote for every man over 21.' },
+      { term: 'Socialism', def: 'The idea that land, factories and the other things a society uses to make wealth should be owned and run in common, for everyone, not by private owners for profit.' },
+      { term: 'Communism', def: 'Marx\'s end point: workers overthrow the owners, end private ownership of factories and land, and build a society with no classes.' },
+      { term: 'Reform', def: 'A change to a law or a system to fix a problem without overthrowing it.' },
+      { term: 'Tanzimat', def: 'Turkish for "reorganization": the Ottoman reforms announced in 1839, promising safety of life, honor and property, fair taxes and regular military service.' },
+      { term: 'Self-Strengthening', def: 'Qing China\'s program from the 1860s: learning Western ways of making weapons and ships while keeping China\'s own system of rule.' }
+    ],
+    watch: [
+      { myth: '"After 1824, unions could do as they liked."', fix: 'An 1825 law limited them; legal standing came in 1871, and picketing was legal only from 1875. But do not swing to "unions stayed a crime": from 1824 workers could form them, and they grew.' },
+      { myth: '"Marx\'s revolution came in the 1800s."', fix: 'No communist party ruled a country until the twentieth century; by 1900 his ideas lived in parties. But do not swing to "Marx changed nothing before 1900": Germany\'s Social Democrats adopted a program based on his ideas in 1891.' },
+      { myth: '"China and the Ottoman Empire refused to change."', fix: 'Both governments built arsenals, factories and schools; the resistance came from inside. But do not swing to "the reforms simply worked": Selim III was overthrown, the parliament was shut in 1878, and the reforms of 1898 were stopped.' }
     ]
   },
 
@@ -77,28 +171,25 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the objective, owns and bridge-only, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 5.7, 5.3 and 5.6. Bridge to the question.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over Kennington Common, 1848.', students: 'Predict who called for change.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-19', minutes: 14, teacher: 'Module 02: students read "Calls for Change" in class.', students: 'Build four rows as they read.', slide: 4 },
-    { id: 'pressure', label: 'One City, Two Pictures', range: '19-21', minutes: 2, teacher: 'Engels and the directory: the pressure, and the skill.', students: 'Say who wrote each, and why.', slide: 5 },
-    { id: 'crime', label: 'At First, a Crime', range: '21-23', minutes: 2, teacher: 'Britain, 1799 to 1871.', students: 'Name the turning points.', slide: 6 },
-    { id: 'charter', label: 'The Charter', range: '23-25', minutes: 2, teacher: 'The Chartists, 1838 to 1848, and what came later.', students: 'Say what they lost, and what they won later.', slide: 7 },
-    { id: 'parties', label: 'Parties in Different Countries', range: '25-27', minutes: 2, teacher: 'Germany, Britain, the United States.', students: 'Read down the lanes.', slide: 8 },
-    { id: 'manifesto', label: 'Marx in His Own Words', range: '27-29', minutes: 2, teacher: 'The Manifesto, 1848.', students: 'Notice, then source it.', slide: 9 },
-    { id: 'socialism', label: 'Socialism and Communism', range: '29-31', minutes: 2, teacher: 'Owen and Marx: what they shared, where they differed.', students: 'Place each idea in the Venn.', slide: 10 },
-    { id: 'cp1', label: 'Checkpoint 1', range: '31-39', minutes: 8, teacher: 'Module 06: workers and new ideas, on their own.', students: 'Work without the coach.', slide: 11 },
-    { id: 'model', label: 'Source a Source', range: '39-41', minutes: 2, teacher: 'Model 2.B on an everyday case.', students: 'Say the sourcing sentence.', slide: 12 },
-    { id: 'reforms', label: 'Four Kinds of Reform', range: '41-44', minutes: 3, teacher: 'Political, social, educational, urban.', students: 'Name who pushed each.', slide: 13 },
-    { id: 'bismarck', label: 'A Government Reforms', range: '44-46', minutes: 2, teacher: 'Bismarck, 1878 to 1889.', students: 'Explain his motive.', slide: 14 },
-    { id: 'skill', label: 'Skill Builder', range: '46-54', minutes: 8, teacher: 'Module 05: Sourcing and Situation 2.B, Engels and the directory.', students: 'Source two descriptions of Manchester.', slide: 15 },
-    { id: 'outside', label: 'A Different Pressure', range: '54-55', minutes: 1, teacher: 'The industrial powers and the old empires.', students: 'Name the new cause.', slide: 16 },
-    { id: 'ottoman', label: 'The Ottoman Empire', range: '55-57', minutes: 2, teacher: 'Reform and resistance, 1790s to 1878.', students: 'Name who resisted.', slide: 17 },
-    { id: 'qing', label: 'Qing China', range: '57-59', minutes: 2, teacher: 'Self-Strengthening and resistance, 1860s to 1898.', students: 'Name who resisted.', slide: 18 },
-    { id: 'compare', label: 'Same Pressure, Two Empires', range: '59-61', minutes: 2, teacher: 'The shared pattern.', students: 'Say the claim.', slide: 19 },
-    { id: 'myths', label: 'Myth and Evidence', range: '61-63', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 20 },
-    { id: 'retell', label: 'Four Rows', range: '63-66', minutes: 3, teacher: 'Students redraw the table.', students: 'Retell the whole topic.', slide: 21 },
-    { id: 'synthesis', label: 'Say It in One Sentence', range: '66-67', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 22 },
-    { id: 'evidence', label: 'Evidence Lab', range: 'Optional', minutes: 0, teacher: 'Optional, Module 07: two sources, one row.', students: 'Observe, infer, source.', slide: 23 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '67-79', minutes: 12, teacher: 'Module 10: reforms, old empires, causes and effects. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 24 },
-    { id: 'close', label: 'Landing Sentence', range: '79-80', minutes: 1, teacher: 'Land the answer and hand off to 5.9.', students: 'Say the topic in one sentence.', slide: 25 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the five sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-20', minutes: 14, teacher: 'Module 02: students read "Calls for Change" in class.', students: 'Build four rows as they read.', slide: 5 },
+    { id: 'pressure', label: 'One City, Two Pictures', range: '20-22', minutes: 2, teacher: 'Engels and the directory: the pressure, and the skill.', students: 'Say who wrote each, and why.', slide: 6 },
+    { id: 'crime', label: 'At First, a Crime', range: '22-24', minutes: 2, teacher: 'Britain, 1799 to 1871.', students: 'Name the turning points.', slide: 7 },
+    { id: 'charter', label: 'The Charter', range: '24-26', minutes: 2, teacher: 'The Chartists, 1838 to 1848, and what came later.', students: 'Say what they lost, and what they won later.', slide: 8 },
+    { id: 'parties', label: 'Parties in Different Countries', range: '26-28', minutes: 2, teacher: 'Germany, Britain, the United States.', students: 'Read down the lanes.', slide: 9 },
+    { id: 'manifesto', label: 'Marx in His Own Words', range: '28-30', minutes: 2, teacher: 'The Manifesto, 1848.', students: 'Notice, then source it.', slide: 10 },
+    { id: 'socialism', label: 'Socialism and Communism', range: '30-32', minutes: 2, teacher: 'Owen and Marx: what they shared, where they differed.', students: 'Place each idea in the Venn.', slide: 11 },
+    { id: 'model', label: 'Source a Source', range: '32-34', minutes: 2, teacher: 'Model 2.B on an everyday case.', students: 'Say the sourcing sentence.', slide: 12 },
+    { id: 'reforms', label: 'Four Kinds of Reform', range: '34-37', minutes: 3, teacher: 'Political, social, educational, urban.', students: 'Name who pushed each.', slide: 13 },
+    { id: 'bismarck', label: 'A Government Reforms', range: '37-39', minutes: 2, teacher: 'Bismarck, 1878 to 1889.', students: 'Explain his motive.', slide: 14 },
+    { id: 'outside', label: 'A Different Pressure', range: '39-40', minutes: 1, teacher: 'The industrial powers and the old empires.', students: 'Name the new cause.', slide: 15 },
+    { id: 'ottoman', label: 'The Ottoman Empire', range: '40-42', minutes: 2, teacher: 'Reform and resistance, 1790s to 1878.', students: 'Name who resisted.', slide: 16 },
+    { id: 'qing', label: 'Qing China', range: '42-44', minutes: 2, teacher: 'Self-Strengthening and resistance, 1860s to 1898.', students: 'Name who resisted.', slide: 17 },
+    { id: 'compare', label: 'Same Pressure, Two Empires', range: '44-46', minutes: 2, teacher: 'The shared pattern.', students: 'Say the claim.', slide: 18 },
+    { id: 'retell', label: 'Four Rows', range: '46-49', minutes: 3, teacher: 'Students redraw the table; correct the three myths here.', students: 'Retell the whole topic.', slide: 19 },
+    { id: 'synthesis', label: 'Say It in One Sentence', range: '49-50', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 20 },
+    { id: 'worktime', label: 'Work Time', range: '50-80', minutes: 30, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder, Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 21 },
+    { id: 'close', label: 'Landing Sentence', range: '80-81', minutes: 1, teacher: 'Land the answer and hand off to 5.9.', students: 'Say the topic in one sentence.', slide: 22 }
   ],
 
   quickLaunch: [
@@ -115,18 +206,26 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.',
       subtitle: 'Causation, with Sourcing and Situation 2.B. Why did people in industrial societies call for change between 1750 and 1900, and what did their calls change?',
       notes: {
         minutes: 2,
+        keys: [
+          'Objective I: causes and effects of calls for change',
+          'Causation; skill 2.B, sourcing a source',
+          'Four Key Concepts: unions, Marx, reforms, Ottoman and Qing',
+          'No illustrative examples; sample activity is the Skill Builder',
+          'Haymarket, Pullman: American examples; park them',
+          'Three myths: outline Watch for list'
+        ],
         land: [
           'CED p. 107. One learning objective, I (Social Interactions and Organization): explain the causes and effects of calls for changes in industrial societies from 1750 to 1900. The reasoning process is Causation (p. 96); the suggested skill is 2.B, explain the point of view, purpose, historical situation, and/or audience of a source.',
           'Key Concepts: KC-5.1.V.D (governments, organizations, and individuals promoted political, social, educational, and urban reforms); KC-5.1.V.A (workers organized, often in unions, for conditions, hours and wages; movements and parties promoted alternative visions of society); KC-5.3.IV.A.ii (discontent with established power structures encouraged ideologies, including Marx\'s, and socialism and communism); KC-5.1.V.B (the Ottoman and Qing governments sought to modernize their economies and militaries in response to industrializing states, and were often resisted from inside).',
-          'The CED gives no illustrative examples for 5.8; every example is the build\'s choice. Its sample activity (p. 97) pairs Engels\'s Manchester with a Manchester business directory; the Skill Builder uses it (slide 15).',
+          'The CED gives no illustrative examples for 5.8; every example is the build\'s choice. Its sample activity (p. 97) pairs Engels\'s Manchester with a Manchester business directory; the Skill Builder uses it (Work Time, slide 21).',
           'Owns: unions, movements and parties; Marx, socialism and communism; reforms of four kinds; the Ottoman and Qing reforms and their resistance. Bridge only: the factory (5.3); "for some" (5.7, the hand-off in); Egypt and Meiji Japan (5.6, the comparison); the city\'s crisis and the classes (5.9, the hand-off out); abolition (5.1); the Opium Wars and the Taiping Rebellion (Unit 6); communist states (Unit 7).',
           'The old 5.8 taught American strikes and abolition and had nothing on Marx or the Ottoman and Qing reforms. If a student raises Haymarket or Pullman, say they are American examples of the same pattern and park them.',
-          'Three myths, on slide 20: "after 1824, unions could do as they liked"; "Marx\'s revolution came in the 1800s"; "China and the Ottoman Empire refused to change."'
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (19) if they come up: "after 1824, unions could do as they liked"; "Marx\'s revolution came in the 1800s"; "China and the Ottoman Empire refused to change."'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Industrial capitalism and the power of industrial states caused calls for change: workers organized, Marx and the socialists imagined a different society, governments and others reformed, and the Ottoman and Qing courts modernized against resistance from inside.',
@@ -134,7 +233,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull it back from memory.',
       template: {
         questions: [
@@ -146,6 +245,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'No notes, no books: retrieval, then the bridge',
+          'Two or three answers each, then move',
+          '5.7: many workers stayed poor; growers shared little',
+          '5.3: one building, mill hours, an overseer',
+          '5.6: armies to match stronger powers'
+        ],
         land: [
           'No notes, no books: retrieval first, then the bridge. Take two or three answers to each, then move.',
           'From 5.7: many city workers stayed poor, and many who grew the cotton, palm oil and tea did not share the gains.',
@@ -163,6 +269,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'A Chartist meeting on Kennington Common, London, 10 April 1848.',
       notes: {
         minutes: 1,
+        keys: [
+          'Real daguerreotype: Kennington Common, 10 April 1848',
+          'Chartists sending their third petition for the vote',
+          'Do not explain the Chartists yet',
+          'Ask what they see: crowd, mostly men, chimney'
+        ],
         land: [
           'The picture is real: a daguerreotype (an early photograph) by William Edward Kilburn of the Chartists\' meeting on Kennington Common, 10 April 1848, held to send their third petition for the vote to Parliament. It is one of a pair that Prince Albert bought in 1848; the Royal Collection holds them.',
           'Do not explain the Chartists yet. Ask the room what they see: a crowd, mostly men, a factory chimney behind.'
@@ -173,13 +285,52 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 14 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'Why did people call for change, and what did their calls change?',
+        stops: [
+          { label: 'I', text: 'The pressure: one city, two pictures' },
+          { label: 'II', text: 'Workers organized' },
+          { label: 'III', text: 'Thinkers imagined a different society' },
+          { label: 'IV', text: 'Reformers fixed the worst of it' },
+          { label: 'V', text: 'Old empires modernized, and met resistance' },
+          { label: '✓', text: 'Put it together: four rows, one story', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Five sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section',
+          'II to V are the four rows'
+        ],
+        land: [
+          'Read the five headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s, and every story slide\'s eyebrow names its section (I to V), so the class can see where it is all period.',
+          'The question at the top is the topic question. Section I is the pressure; sections II to V are the four rows students build as they read: for each, the pressure, the call for change and what happened.'
+        ],
+        ask: 'Which row do you expect to have the most mixed result?',
+        listenFor: 'Any reasoned guess; return to it at the retelling slide.'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read, and build four rows.',
       subtitle: 'Workers, thinkers, reformers and governments, and the Ottoman and Qing courts: for each, the pressure, what they wanted, and what happened.',
-      big: '14',
       action: { label: 'Open First & 10', url: '../unit-5/first-and-10-topic-5-8-reactions-to-industrial-economy-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 14,
+        keys: [
+          'Read "Calls for Change" in class',
+          'Seven short sections, three questions',
+          'Circulate: four rows filling up',
+          'Each row a cause, a call, an effect',
+          'Not just names'
+        ],
         land: [
           'Students read "Calls for Change" in class: seven short sections, one quotation each from Engels, the directory, the Manifesto and Woren, and three questions.',
           'Circulate. Check that the four rows are being filled with a cause, a call and an effect, not just names.'
@@ -190,7 +341,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'pressure', kind: 'split-mirror', eyebrow: 'The Pressure · Sourcing',
+      phase: 'pressure', kind: 'split-mirror', eyebrow: 'I · The Pressure · Sourcing',
       title: 'One city, two pictures.',
       footer: 'Same city. Before you judge either one, ask: who wrote it, why, and for whom?',
       template: {
@@ -203,6 +354,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'CED sample activity: Engels and the directory',
+          'The pressure: some rich, many in unhealthy streets',
+          'Engels, 1845; his father a cotton-firm partner',
+          'Directory: Whellan and Co., copy dated 1853',
+          'Neither "true" nor "false": each tells part',
+          '5.9 takes the city apart'
+        ],
         land: [
           'This is the CED\'s sample activity for 5.8 (p. 97), and the pressure behind every row: industry made some rich and left many in crowded, unhealthy streets. Topic 5.9 takes that city apart.',
           'Engels, The Condition of the Working Class in England in 1844, published in Germany in 1845; the quotations are from the English translation of 1887 ("The Great Towns"). His father was a partner in Ermen and Engels, cotton spinners near Manchester.',
@@ -210,12 +369,12 @@ window.BEHISTORICAL_TEACHING = {
           'Do not let students call one "true" and one "false." Both are telling part of the truth; the skill is explaining why each tells the part it tells.'
         ],
         ask: 'What would you need to know about each writer before you trusted it?',
-        listenFor: 'Who they were, why they wrote, and who would read it. Hold the answers for the Skill Builder (slide 15).',
+        listenFor: 'Who they were, why they wrote, and who would read it. Hold the answers for the Skill Builder (Work Time, slide 21).',
         ap: 'Sourcing and Situation 2.B (point of view, purpose, audience); the cause of the calls for change.'
       }
     },
     {
-      phase: 'crime', kind: 'timeline', eyebrow: 'Workers · At First, a Crime', kc: 'KC-5.1.V.A',
+      phase: 'crime', kind: 'timeline', eyebrow: 'II · Workers · At First, a Crime', kc: 'KC-5.1.V.A',
       title: 'From a crime to a legal standing.',
       footer: 'Workers organized to improve conditions, limit hours and raise wages.',
       template: {
@@ -232,6 +391,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Organized for conditions, hours, wages',
+          '1799 and 1800: Combination Acts ban combining',
+          '1824 repeal; 1825 act limits unions',
+          'Tolpuddle, 1834: transportation; pardoned 1836',
+          '1847: ten hours for mill women, youths',
+          'TUC 1868; legal standing 1871'
+        ],
         land: [
           'KC-5.1.V.A: "many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages."',
           'The Combination Acts of 1799 and 1800 voided agreements "for obtaining an advance of wages" or "lessening or altering their ... usual hours." Repealed in 1824; the 1825 act limited what unions could lawfully do.',
@@ -244,7 +411,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'charter', kind: 'story-scene', eyebrow: 'Workers · A Movement for the Vote', kc: 'KC-5.1.V.A',
+      phase: 'charter', kind: 'story-scene', eyebrow: 'II · Workers · A Movement for the Vote', kc: 'KC-5.1.V.A',
       title: 'The Charter: lost at the time, won later.',
       template: {
         caption: 'The Chartists\' convention, London, 1839',
@@ -257,6 +424,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Six points; first, a vote for every man over 21',
+          'Petitions 1839, 1842, 1848: all rejected',
+          'Later: five of six points became law',
+          'Never: a Parliament elected every year',
+          'Picture: the 1839 Convention etching'
+        ],
         land: [
           'The six points (London Museum): a vote for every man over 21, equal districts, no property requirement for members of Parliament, a Parliament elected every year, the secret ballot, and pay for members.',
           'The first petition (1839) had over 1.2 million signatures; the Chartists\' own newspaper, the Northern Star, counted about 3.3 million for the 1842 petition. All three were rejected.',
@@ -269,7 +443,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'parties', kind: 'timeline-lanes', eyebrow: 'Workers · In Different Countries', kc: 'KC-5.1.V.A',
+      phase: 'parties', kind: 'timeline-lanes', eyebrow: 'II · Workers · In Different Countries', kc: 'KC-5.1.V.A',
       title: 'Unions and parties spread.',
       footer: 'Many wanted more than pay: "alternative visions of society."',
       template: {
@@ -283,6 +457,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Parties "promoting alternative visions of society"',
+          'Germany: socialists banned 1878 to 1890',
+          'February 1890: most votes, only 35 seats',
+          'Britain: Labour committee 1900; Labour Party 1906',
+          'United States: AFL, 1886, skilled workers'
+        ],
         land: [
           'KC-5.1.V.A: "Workers\' movements and political parties emerged in different areas, promoting alternative visions of society."',
           'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875 (not on the slide). The Anti-Socialist Law of October 1878 banned socialist meetings and newspapers until it lapsed in September 1890. In the election of February 1890, while still banned, the party won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images); in October 1890 it renamed itself the Social Democratic Party. It became the largest party in seats in 1912.',
@@ -295,7 +476,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'manifesto', kind: 'source-quote', eyebrow: 'Thinkers · In Their Own Words', kc: 'KC-5.3.IV.A.ii',
+      phase: 'manifesto', kind: 'source-quote', eyebrow: 'III · Thinkers · In Their Own Words', kc: 'KC-5.3.IV.A.ii',
       title: 'Marx and Engels, 1848.',
       footer: 'Who wrote this, for whom, and what picture of society did they want readers to see?',
       template: {
@@ -305,11 +486,19 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Discontent with power structures encouraged new ideologies',
+          'Written for the Communist League, February 1848',
+          'Two hostile camps: owners and wage workers',
+          '"Abolition of private property"',
+          'Source it: the same Engels as Manchester',
+          'Purpose: win workers to a revolutionary movement'
+        ],
         land: [
           'KC-5.3.IV.A.ii: "Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism."',
           'Written for the Communist League, a small group of radicals in London, and printed in German in London in February 1848. The English translation of 1888 is by Samuel Moore, with Engels.',
           'Marx: industry was splitting society "into two great hostile camps," the bourgeoisie (owners) and the proletariat (wage workers); "the theory of the Communists may be summed up in the single sentence: Abolition of private property." The ending: "The proletarians have nothing to lose but their chains. They have a world to win. Working Men of All Countries, Unite!"',
-          'Source it: the same Engels who wrote about Manchester\'s streets (slide 5). Purpose: to win workers to a revolutionary movement. Audience: workers and radicals in many countries.'
+          'Source it: the same Engels who wrote about Manchester\'s streets (slide 6). Purpose: to win workers to a revolutionary movement. Audience: workers and radicals in many countries.'
         ],
         ask: 'Why does this source start with all of history, not with factories?',
         listenFor: 'To show that class conflict is the pattern, and that the workers\' turn is coming.',
@@ -317,7 +506,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'socialism', kind: 'split-venn', eyebrow: 'Thinkers · Two Words', kc: 'KC-5.3.IV.A.ii',
+      phase: 'socialism', kind: 'split-venn', eyebrow: 'III · Thinkers · Two Words', kc: 'KC-5.3.IV.A.ii',
       title: 'Socialism and communism.',
       footer: 'By 1900: Marx shaped parties that ran in elections; no workers\' revolution won lasting power.',
       template: {
@@ -327,6 +516,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Owen: New Lanark, shorter hours, a school',
+          '"Socialist" first in English, 1827, his followers',
+          'Engels: 1847 socialism middle-class, communism working-class',
+          'By 1900: Erfurt program, 1891; May Day, 1890',
+          'No communist party ruled before the 1900s',
+          'Paris Commune, 1871: crushed in about ten weeks'
+        ],
         land: [
           'Robert Owen managed the New Lanark mills from 1800, shortened working hours and opened a school for workers\' children in 1816. The word "socialist" first appeared in English in 1827 among his followers; in the 1830s "socialism" and "Owenism" were used interchangeably.',
           'Engels, 1888 preface: "in 1847, socialism was a middle-class movement, communism a working-class movement," which is why the book was not called a socialist manifesto.',
@@ -338,23 +535,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · 8 Minutes',
-      title: 'Why did workers organize, and what did Marx imagine?',
-      subtitle: 'Explain one cause that led workers to organize, one thing they wanted and one effect, what discontent led socialists and Marx to want, and one thing his ideas did or did not do by 1900. On your own: no coach.',
-      big: '8',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
-      notes: {
-        minutes: 8,
-        land: [
-          'Checkpoint 1 assesses Learning Targets 1 and 2 (KC-5.1.V.A and KC-5.3.IV.A.ii). Students work without the coach.'
-        ],
-        ask: 'Which effect did you choose, and was it a win or a loss?',
-        listenFor: 'A specific effect with a date: 1871, 1847, 1867, or the Charter refused.',
-        ap: 'KC-5.1.V.A and KC-5.3.IV.A.ii; Causation.'
-      }
-    },
-    {
-      phase: 'model', kind: 'sentence-frame', eyebrow: 'Sourcing and Situation 2.B · Model',
+      phase: 'model', kind: 'sentence-frame', eyebrow: 'III · Thinkers · Sourcing and Situation 2.B, Model',
       title: 'How do you source a source?',
       footer: 'Four questions: who made it, why, for whom, and when. Then say how one shapes what it says.',
       template: {
@@ -364,6 +545,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Skill 2.B: point of view, purpose, situation, audience',
+          'Not naming the four',
+          'Explain how one shapes what it says',
+          'Run the cafeteria case aloud',
+          'Then students say it for Engels'
+        ],
         land: [
           'Skill 2.B: "Explain the point of view, purpose, historical situation, and/or audience of a source." The move is not naming the four; it is explaining how one of them shapes what the source says.',
           'Run the cafeteria case aloud, then ask students to say it for Engels.'
@@ -374,7 +562,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'reforms', kind: 'ledger', eyebrow: 'Reformers · Four Kinds', kc: 'KC-5.1.V.D',
+      phase: 'reforms', kind: 'ledger', eyebrow: 'IV · Reformers · Four Kinds', kc: 'KC-5.1.V.D',
       title: 'Fixing the worst of it.',
       footer: 'Who pushed each: governments, organizations, or individuals?',
       template: {
@@ -389,6 +577,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Governments, organizations, individuals; four kinds of reform',
+          'Political: 1867 and 1884; no women until 1918',
+          'Social: Factory Act 1833; Mines Act 1842',
+          'Educational: school boards 1870; attendance required 1880',
+          'Urban: Great Stink 1858; sewers done 1875',
+          'The city\'s crisis is 5.9\'s'
+        ],
         land: [
           'KC-5.1.V.D: "some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms."',
           'Political: the 1867 act added about 938,000 voters, many of them working men in towns; 1884 added many in the countryside; no woman voted in a British national election until 1918.',
@@ -402,7 +598,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'bismarck', kind: 'cause-chain', eyebrow: 'Reformers · A Government Reforms', kc: 'KC-5.1.V.D',
+      phase: 'bismarck', kind: 'cause-chain', eyebrow: 'IV · Reformers · A Government Reforms', kc: 'KC-5.1.V.D',
       title: 'Ban the meetings, then insure the workers.',
       footer: 'Reform could answer workers, and also be a weapon against their party.',
       template: {
@@ -416,6 +612,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Sickness 1883, accident 1884, old age 1889',
+          'Cure discontent "not only through the repression"',
+          '"Dissatisfied workers are just what they need"',
+          'Keep "in part": a Christian duty too'
+        ],
         land: [
           'Sickness insurance, May 1883; accident insurance, July 1884; old-age and disability insurance, June 1889.',
           'The emperor\'s message of November 1881, Bismarck\'s program: cure discontent "not only through the repression of Social Democratic excesses" but by "the consistent and positive promotion of workers\' welfare." Bismarck to the Reichstag, March 1884: the socialist leaders need "dissatisfied classes"; "dissatisfied workers are just what they need."',
@@ -427,24 +629,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder · 8 Minutes',
-      title: 'Source two descriptions of Manchester.',
-      subtitle: 'Engels and the directory: who made each, what each says, its purpose and audience, how one of those explains the difference, and which you think is more accurate.',
-      big: '8',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
-      notes: {
-        minutes: 8,
-        land: [
-          'The CED\'s own sample activity for 5.8 (p. 97): "discuss the differences in the descriptions; how the point of view, purpose, and intended audience of the authors might explain the differences; and which description they believe is the most accurate and why."',
-          'Both sources are printed in the Skill Builder; students need nothing else.'
-        ],
-        ask: 'Which is more accurate, and what would you need to check it?',
-        listenFor: 'Each is accurate about part of the city; a census, a health report or a worker\'s own account would help.',
-        ap: 'Sourcing and Situation 2.B.'
-      }
-    },
-    {
-      phase: 'outside', kind: 'story-steps', eyebrow: 'The Old Empires · A Different Pressure', kc: 'KC-5.1.V.B',
+      phase: 'outside', kind: 'story-steps', eyebrow: 'V · The Old Empires · A Different Pressure', kc: 'KC-5.1.V.B',
       title: 'The pressure came from outside.',
       footer: 'Like Egypt and Japan in Topic 5.6, both tried to modernize from the top.',
       template: {
@@ -457,6 +642,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Ottoman, Qing: reform and modernize, often resisted',
+          'A different cause: the industrial states\' power',
+          'Not factory conditions at home',
+          'Opium Wars are 6.5\'s: the cause only'
+        ],
         land: [
           'KC-5.1.V.B: "In response to the expansion of industrializing states, some governments in Asia and Africa, including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries. Reform efforts were often resisted by some members of government or established elite groups."',
           'The cause is different from the first three rows: not factory conditions at home but the power of the industrial states. The Opium Wars are 6.5\'s; name them as the cause only.'
@@ -467,7 +658,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'ottoman', kind: 'story-scene', eyebrow: 'The Old Empires · The Ottoman Empire', kc: 'KC-5.1.V.B',
+      phase: 'ottoman', kind: 'story-scene', eyebrow: 'V · The Old Empires · The Ottoman Empire', kc: 'KC-5.1.V.B',
       title: 'Reform, and the people who fought it.',
       template: {
         caption: 'The Imperial Fez Factory, Istanbul, 1880s',
@@ -480,6 +671,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Selim III\'s New Order; overthrown May 1807',
+          '1826: Mahmud II destroys the Janissaries',
+          'Gülhane, 1839: security, fair taxes, conscription, all subjects',
+          '1856 equality resented by many Muslims',
+          'Fez factory machines about 1850; telegraph 1855',
+          'Constitution 1876; parliament dissolved February 1878'
+        ],
         land: [
           'Selim III\'s New Order: "a new infantry ... with European-style uniforms, imported rifles, and French instructors" (Todorova). The course says "guns": infantry of the 1790s mostly carried muskets. The Janissaries and important conservative ulema opposed it; a revolt overthrew him in May 1807.',
           'June 1826: Mahmud II destroyed the Janissary corps and built a new army along European lines.',
@@ -492,7 +691,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'qing', kind: 'story-scene', eyebrow: 'The Old Empires · Qing China', kc: 'KC-5.1.V.B',
+      phase: 'qing', kind: 'story-scene', eyebrow: 'V · The Old Empires · Qing China', kc: 'KC-5.1.V.B',
       title: 'Self-Strengthening, and its limits.',
       template: {
         caption: 'Li Hongzhang, a Self-Strengthening leader, right, with Ulysses S. Grant, 1879',
@@ -505,6 +704,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Aim: Chinese essence, technology from abroad',
+          'Language school 1862, Jiangnan 1865, Fuzhou 1866',
+          'Woren, 1867: overruled; about 30 admitted',
+          '1898: Cixi\'s coup; six reformers executed',
+          'Not "Cixi spent the navy\'s money" (Elman)',
+          'Photograph: Li and Grant, 1879'
+        ],
         land: [
           'Self-Strengthening, after the Taiping Rebellion and the Opium Wars: the Zongli Yamen (1861, Prince Gong); the Tongwen Guan language school (1862); the Jiangnan Arsenal, Shanghai (1865, Zeng Guofan and Li Hongzhang); the Fuzhou navy yard (1866, Zuo Zongtang); the China Merchants\' Steam Navigation Company (1872, Li). The aim (Columbia, Asia for Educators): keep "the strong essence of Chinese civilization while adding superior technology from abroad."',
           '1867: Woren, Grand Secretary and the emperor\'s tutor, to the throne (Huters\'s translation): "establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems." The court overruled him; about 98 applied and about 30 were admitted (Zhao; Lei). This is the BeInTheRoom.',
@@ -518,7 +725,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'compare', kind: 'balance', eyebrow: 'The Old Empires · Compare', kc: 'KC-5.1.V.B',
+      phase: 'compare', kind: 'balance', eyebrow: 'V · The Old Empires · Compare', kc: 'KC-5.1.V.B',
       title: 'Same pressure, two empires.',
       template: {
         job: 'Reform',
@@ -529,6 +736,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'The comparison is the CED sentence itself',
+          'Both sought to reform; both were resisted',
+          'Against 5.6: Japan went furthest',
+          'In 1895 Japan defeated China'
+        ],
         land: [
           'The comparison is the CED sentence itself: "sought to reform and modernize ... often resisted by some members of government or established elite groups."',
           'Against 5.6: Japan\'s reforms went furthest, and in 1895 Japan defeated China.'
@@ -539,30 +752,8 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence is more interesting than the myths.',
-      template: {
-        rows: [
-          { myth: 'After 1824, unions could do as they liked.', evidence: 'An 1825 law limited them. Legal standing came in 1871; picketing was legal only from 1875.', source: 'Union laws, 1825, 1871, 1875' },
-          { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.', source: 'German socialist program, 1891' },
-          { myth: 'China and the Ottoman Empire refused to change.', evidence: 'Both governments built arsenals, factories and schools. Resistance came from inside.', source: 'Tanzimat; Self-Strengthening' }
-        ]
-      },
-      notes: {
-        minutes: 2,
-        land: [
-          'Each myth flattens a mixed effect into a single one. The correction keeps the history\'s "and": allowed and limited; influential and unrealized; reformed and resisted.',
-          'If it comes up: "Workers of the world, unite!" is not a myth but a later popular English version of the German "Proletarians of all countries, unite!"; the 1888 English reads "Working Men of All Countries, Unite!"'
-        ],
-        ask: 'Which myth is the most tempting, and why?',
-        listenFor: 'Any, with the reason it flattens the story.',
-        ap: 'Causation: effects are rarely all one thing.'
-      }
-    },
-    {
       retelling: true,
-      phase: 'retell', kind: 'split-matrix', eyebrow: 'The Whole Topic',
+      phase: 'retell', kind: 'split-matrix', eyebrow: 'Put It Together · The Whole Topic',
       title: 'Four rows, one story.',
       template: {
         columns: [ { name: 'The pressure' }, { name: 'The call' }, { name: 'What happened' } ],
@@ -576,9 +767,21 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Redraw it from memory: four rows, three columns',
+          'First three rows feed each other',
+          'Fourth row: same pattern, different cause',
+          'Myths flatten a mixed effect: keep the "and"',
+          'Fix each myth without the opposite mistake'
+        ],
         land: [
           'The retelling slide. Students redraw it from memory: four rows, three columns.',
-          'Reading down the first three rows shows the calls feeding each other: workers\' discontent, Marx\'s ideas, governments\' answers. The fourth row repeats the pattern with a different cause.'
+          'Reading down the first three rows shows the calls feeding each other: workers\' discontent, Marx\'s ideas, governments\' answers. The fourth row repeats the pattern with a different cause.',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list). Each myth flattens a mixed effect into a single one. The correction keeps the history\'s "and": allowed and limited; influential and unrealized; reformed and resisted.',
+          '"After 1824, unions could do as they liked": an 1825 law limited them, legal standing came only in 1871 (slide 7), and picketing was legal only from 1875. Do not swing to the opposite mistake, that unions stayed a crime: from 1824 workers could form them, and they grew into the Trades Union Congress (1868).',
+          '"Marx\'s revolution came in the 1800s": no communist party ruled a country until the twentieth century, and the Paris Commune of 1871 was crushed within about ten weeks (slide 11). Do not swing to the opposite mistake, that Marx changed nothing before 1900: his ideas lived in parties, and Germany\'s Social Democrats adopted a program based on them in 1891.',
+          '"China and the Ottoman Empire refused to change": both governments built arsenals, factories and schools (the Tanzimat and Self-Strengthening, slides 16 and 17), and the resistance came from inside. Do not swing to the opposite mistake, that the reforms simply worked: Selim III was overthrown in 1807, Abdulhamid II shut the parliament in 1878, and Cixi stopped the reforms of 1898.',
+          'If it comes up: "Workers of the world, unite!" is not a myth but a later popular English version of the German "Proletarians of all countries, unite!"; the 1888 English reads "Working Men of All Countries, Unite!"'
         ],
         ask: 'Which row\'s effect was the most mixed?',
         listenFor: 'Any, with both halves of the effect.',
@@ -586,7 +789,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis', kc: 'Unit 5: Learning Objective I',
+      phase: 'synthesis', kind: 'close-retell', eyebrow: 'Put It Together · AP Synthesis', kc: 'Unit 5: Learning Objective I',
       title: 'Say it in one sentence.',
       template: {
         frame: 'Low pay led workers to form ___; anger at who held power led thinkers like ___ to imagine a new society; governments passed ___; outside powers pushed old empires to ___, against ___ inside.',
@@ -595,8 +798,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Objective I, answered in one sentence',
+          'Fill it from memory',
+          'Then one example for each part'
+        ],
         land: [
-          'The objective answered: the causes and effects of calls for change, 1750 to 1900.'
+          'The objective answered: the causes and effects of calls for change, 1750 to 1900.',
+          'Students fill it from memory, then add one example for each part.'
         ],
         ask: 'Which part of your sentence is a cause, and which an effect?',
         listenFor: 'Causes: long hours, anger, outside pressure. Effects: unions, ideas, reforms, modernization and resistance.',
@@ -604,33 +813,36 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab · Optional',
-      title: 'Two sources, one row.',
-      subtitle: 'Choose at least two cards. For each: what kind of source it is, which row it is evidence for, and how its maker\'s point of view or purpose shapes what it shows.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      title: 'Now you source it.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
+      template: {
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Source two descriptions of Manchester.', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'Workers and Marx. On your own, no coach.', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Who reformed, who resisted, and why?', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' }
+        ]
+      },
       notes: {
-        minutes: 0,
-        land: [
-          'Optional. Six real objects: the Kennington Common daguerreotype, the 1839 Convention etching, the 1843 Punch cartoon, the fez factory and the engineering students (Abdulhamid II\'s albums), and the Grant and Li photograph. No AI picture.'
+        minutes: 30,
+        keys: [
+          'All three required today, in order',
+          'Skill Builder: Engels and the directory, the CED activity',
+          'Checkpoint 1: workers and Marx, no coach',
+          'Checkpoint 2: reforms, old empires, cause and effect',
+          'Checkpoint 2 unfinished = homework',
+          'Early finishers: Evidence Lab'
         ],
-        ask: 'Whose album were the Ottoman photographs made for, and why does that matter?',
-        listenFor: 'The sultan\'s: they show the empire as its government wanted it seen.',
-        ap: 'Sourcing and Situation 2.B.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'Who reformed, who resisted, and why?',
-      subtitle: 'Explain one reform and who pushed it, why Bismarck gave workers insurance, what pushed the Ottoman or Qing government to modernize and who resisted, and one cause, call and effect in a sentence. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
-      notes: {
-        minutes: 12,
         land: [
-          'Checkpoint 2 assesses Learning Targets 3 and 4 (KC-5.1.V.D and KC-5.1.V.B) and the learning objective, and declares Causation.'
+          'This one slide replaces five (Checkpoint 1, the Skill Builder, Myth and Evidence, the Evidence Lab and Checkpoint 2, 2026-11-08). Modules 05, 06 and 10 are all required today (Jeff\'s rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen; 05 practices the CED\'s suggested skill, 2.B). Each button opens its module.',
+          'The Skill Builder (Module 05) is the CED\'s own sample activity for 5.8 (p. 97): "discuss the differences in the descriptions; how the point of view, purpose, and intended audience of the authors might explain the differences; and which description they believe is the most accurate and why." Both sources are printed in the Skill Builder; students need nothing else. For Engels and the directory, students say who made each, what each says, its purpose and audience, how one of those explains the difference, and which they think is more accurate. If a student needs the frame, give it aloud (slide 12): "___ says ___, because of its maker\'s point of view, purpose, audience or situation: ___." Ask which is more accurate, and what they would need to check it; listen for: each is accurate about part of the city, and a census, a health report or a worker\'s own account would help.',
+          'Checkpoint 1 (Module 06), with no coach, assesses Learning Targets 1 and 2 (KC-5.1.V.A and KC-5.3.IV.A.ii): one cause that led workers to organize, one thing they wanted and one effect; what discontent led socialists and Marx to want, and one thing his ideas did or did not do by 1900. Give feedback in the room. Ask which effect they chose, and whether it was a win or a loss; listen for a specific effect with a date: 1871, 1847, 1867, or the Charter refused.',
+          'Checkpoint 2 (Module 10) assesses Learning Targets 3 and 4 (KC-5.1.V.D and KC-5.1.V.B) and the learning objective, and declares Causation: one reform and who pushed it, why Bismarck gave workers insurance, what pushed the Ottoman or Qing government to modernize and who resisted, and one cause, call and effect in a sentence. Draft, coach, revise. If it is not finished in class, it is homework.',
+          'Early finishers: the Evidence Lab (Module 07, optional when the deck was built, now the early-finisher option). Six real objects: the Kennington Common daguerreotype, the 1839 Convention etching, the 1843 Punch cartoon, the fez factory and the engineering students (Abdulhamid II\'s albums), and the Grant and Li photograph. No AI picture. Students choose at least two cards and say, for each, what kind of source it is, which row it is evidence for, and how its maker\'s point of view or purpose shapes what it shows. Ask whose album the Ottoman photographs were made for: the sultan\'s, so they show the empire as its government wanted it seen. Or the Primary Source, The Communist Manifesto, as an extension.'
         ],
         ask: 'What is the cause in your last sentence, and what is the effect?',
-        listenFor: 'A named cause, a named call for change and a named effect.',
-        ap: 'KC-5.1.V.D, KC-5.1.V.B and learning objective I; Causation.'
+        listenFor: 'Checkpoint 2: a named cause, a named call for change and a named effect.',
+        ap: 'Skill Builder: Sourcing and Situation 2.B. Checkpoint 1: KC-5.1.V.A and KC-5.3.IV.A.ii. Checkpoint 2: KC-5.1.V.D, KC-5.1.V.B and learning objective I; Causation.'
       }
     },
     {
@@ -639,6 +851,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Students of the Ottoman Imperial School of Military Engineering, Istanbul, 1880s. Next, Topic 5.9: the society industry made.',
       notes: {
         minutes: 1,
+        keys: [
+          'Real photograph: Ottoman engineering students, 1880s',
+          'The new officer, as the government wanted it seen',
+          'Hand-off to 5.9: what society had industry made?'
+        ],
         land: [
           'The photograph, by Abdullah Frères for Sultan Abdulhamid II\'s albums (1880 to 1893), shows the new kind of officer the reforms were meant to make, as the government wanted it seen.',
           'Hand-off to 5.9: industry had changed who worked, where people lived and how families got by. What kind of society had it made?'

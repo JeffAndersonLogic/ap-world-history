@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull it back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Why did a new way of making things begin in Britain, and what did the factory change?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Before factories"
+          },
+          {
+            "label": "II",
+            "text": "What nature gave"
+          },
+          {
+            "label": "III",
+            "text": "What people built"
+          },
+          {
+            "label": "IV",
+            "text": "How the factors combined"
+          },
+          {
+            "label": "V",
+            "text": "The factory: one place, one job each"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: coal, water, and one roof",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read and sort the causes.",
       "subtitle": "For each cause, decide: did nature give it, or did people build it? Then find the two things the factory changed.",
       "action": {
@@ -56,7 +93,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "Before Factories · 1750",
+      "eyebrow": "I · Before Factories · 1750",
       "title": "The work came to people's homes.",
       "footer": "Power came from muscles, horses, wind and water wheels.",
       "template": {
@@ -83,7 +120,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The Causes",
+      "eyebrow": "I · Before Factories · The Causes",
       "title": "Seven causes, two kinds.",
       "footer": "Sort every cause today into one of these two branches.",
       "kc": "Unit 5: Learning Objective D",
@@ -113,7 +150,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-chain",
-      "eyebrow": "What Nature Gave · Coal, Iron, Timber",
+      "eyebrow": "II · What Nature Gave · Coal, Iron, Timber",
       "title": "Not enough wood. Plenty of coal.",
       "footer": "A shortage of wood helped push Britain toward coal, which it had in plenty.",
       "kc": "KC-5.1.I.A",
@@ -146,7 +183,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "What Nature Gave · Water",
+      "eyebrow": "II · What Nature Gave · Water",
       "title": "Water moved coal and turned wheels.",
       "footer": "Before railways, the cheapest way to move something heavy was to float it.",
       "kc": "KC-5.1.I.A",
@@ -174,7 +211,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "compounding-stairs",
-      "eyebrow": "What People Built · Food and Towns",
+      "eyebrow": "III · What People Built · Food and Towns",
       "title": "Food, then people, then towns.",
       "kc": "KC-5.1.I.A",
       "template": {
@@ -200,7 +237,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "What People Built · Laws, Resources, Money",
+      "eyebrow": "III · What People Built · Laws, Resources, Money",
       "title": "Three things made the risk worth taking.",
       "kc": "KC-5.1.I.A",
       "template": {
@@ -231,7 +268,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "How the Factors Combined",
+      "eyebrow": "IV · How the Factors Combined",
       "title": "Five factors, one canal.",
       "footer": "Cheap coal made Manchester a better place for mills, and the mills made the town grow faster still.",
       "kc": "KC-5.1.I.A",
@@ -278,7 +315,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "sentence-frame",
-      "eyebrow": "Developments and Processes 1.B · Model",
+      "eyebrow": "IV · How the Factors Combined · Explain a Process, Model",
       "title": "Explain a process: the factor, the “which meant,” the “so.”",
       "footer": "Every arrow in a process needs words: which meant, so, and then.",
       "template": {
@@ -289,7 +326,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation-remove",
-      "eyebrow": "Developments and Processes 1.B · Practice",
+      "eyebrow": "IV · How the Factors Combined · Explain a Process, Practice",
       "title": "Take one away.",
       "footer": "Pick one. Say it as a process: the factor, which meant, so.",
       "kc": "KC-5.1.I.A",
@@ -319,18 +356,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Explain a process, step by step.",
-      "subtitle": "Developments and Processes 1.B: name the factor, explain how it worked, and say what it led to.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-3-industrial-revolution-begins.html#modules"
-      }
-    },
-    {
       "kind": "case-file",
-      "eyebrow": "The Factory · One Place",
+      "eyebrow": "V · The Factory · One Place",
       "title": "The work moved from homes to one building.",
       "kc": "KC-5.1.I.C",
       "template": {
@@ -360,7 +387,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "The Factory · One Job Each",
+      "eyebrow": "V · The Factory · One Job Each",
       "title": "Each step had its own machine and its own workers.",
       "footer": "One power source turns every machine, through shafts and belts overhead.",
       "kc": "KC-5.1.I.C",
@@ -412,7 +439,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "The Factory · Why One Job Each",
+      "eyebrow": "V · The Factory · Why One Job Each",
       "title": "Ten men, eighteen steps, forty-eight thousand pins.",
       "kc": "KC-5.1.I.C",
       "template": {
@@ -423,7 +450,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "The Factory · Home and Mill",
+      "eyebrow": "V · The Factory · Home and Mill",
       "title": "What the factory changed.",
       "footer": "Two changes: one place, and one job each.",
       "kc": "KC-5.1.I.C",
@@ -459,33 +486,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence is more interesting than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Britain had coal, so it industrialized.",
-            "evidence": "Coal was one of seven causes. China had coal too. Farms, towns, laws, cotton and capital mattered as well.",
-            "source": "KC-5.1.I.A"
-          },
-          {
-            "myth": "Cromford was the first factory.",
-            "evidence": "Earlier mills, such as a Derby silk mill of the 1720s, had some of its features. UNESCO calls the valley the birth of the factory system.",
-            "source": "KC-5.1.I.C"
-          },
-          {
-            "myth": "The steam engine started it.",
-            "evidence": "Cromford ran on water. Steam engines that drove factory machines came later, in Topic 5.5.",
-            "source": "KC-5.1.I.C"
-          }
-        ]
-      }
-    },
-    {
       "kind": "equation",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Coal, water, and one roof.",
       "footer": "Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.",
       "template": {
@@ -527,7 +529,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "close-retell",
-      "eyebrow": "AP Synthesis",
+      "eyebrow": "Put It Together · AP Synthesis",
       "title": "Say it in one sentence.",
       "template": {
         "frame": "Britain's ___ and ___ made fuel and transport cheap; a shortage of ___ pushed it to coal. Farms, towns, laws, ___ and money made mills pay. The factory put work in one ___, one ___ each.",
@@ -543,33 +545,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "How did the environment, and what people built, cause industrialization?",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-3-industrial-revolution-begins.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Two sources: a cause, or a change.",
-      "subtitle": "Choose two cards. For each: what kind of source it is, what it shows about a cause of industrialization or about the factory system, and what it cannot tell you.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-3-industrial-revolution-begins.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "What did the factory system change about how work was done?",
-      "subtitle": "Describe the putting-out system; explain how Cromford gathered production in one place, how a mill split the work into steps, and why Smith's pin workshop shows that splitting work made more goods; and connect the factory to one environmental factor. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-3-industrial-revolution-begins.html#modules"
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "title": "Now you explain the process.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
+      "template": {
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Explain a factor as a process: which meant, so.",
+            "url": "../unit-5/lesson-5-3-industrial-revolution-begins.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-5/lesson-5-3-industrial-revolution-begins.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "What the factory changed, with Socrates.",
+            "url": "../unit-5/lesson-5-3-industrial-revolution-begins.html#modules"
+          }
+        ]
       }
     },
     {
