@@ -9,3 +9,4 @@ The originals stay untouched in their own folders, because the slide decks use t
 | --- | --- | --- |
 | `unit-5/storming-of-the-bastille-thevenin-1790-card.jpg` | `assets/images/topics/5-2/storming-of-the-bastille-thevenin-1790.jpg` | Paper margin trimmed |
 | `unit-5/currier-ives-across-the-continent-1868-card.jpg` | `assets/images/topics/5-5/currier-ives-across-the-continent-1868.jpg` | Paper margin and title trimmed |
+| `unit-5/riis-bayard-street-lodgers-five-cents-a-spot-1890-card.jpg` | `assets/images/topics/5-9/riis-bayard-street-lodgers-five-cents-a-spot-1890.jpg` | Thin white scan edge trimmed |
