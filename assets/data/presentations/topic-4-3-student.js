@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull the last topic back from memory.",
       "template": {
         "questions": [
@@ -45,8 +45,45 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "What caused the Columbian Exchange, and what did it do on each side of the ocean?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Two worlds, then a road between them"
+          },
+          {
+            "label": "II",
+            "text": "Going west by accident"
+          },
+          {
+            "label": "III",
+            "text": "Going west on purpose"
+          },
+          {
+            "label": "IV",
+            "text": "Going west by force"
+          },
+          {
+            "label": "V",
+            "text": "Going east"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: what crossed, and what it did",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read with two questions in mind.",
       "subtitle": "For everything that crosses: how did it cross, and what did it do to the people at the other end?",
       "action": {
@@ -56,7 +93,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "Before 1492",
+      "eyebrow": "I · Two Worlds, Then a Road · Before 1492",
       "title": "Two worlds, each with what the other lacked.",
       "footer": "Ocean had kept the two halves of the world apart since the end of the last Ice Age.",
       "kc": "KC-4.1.V",
@@ -88,7 +125,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "branch-tree",
-      "eyebrow": "The Cause",
+      "eyebrow": "I · Two Worlds, Then a Road · The Cause",
       "title": "Ships crossed and came back. Three ways things crossed with them.",
       "kc": "KC-4.1.V",
       "template": {
@@ -126,7 +163,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Tenochtitlan · 1520",
+      "eyebrow": "II · Going West by Accident · Tenochtitlan, 1520",
       "title": "A sickness of pustules, told by those who lived through it.",
       "kc": "KC-4.1.V.A",
       "template": {
@@ -160,7 +197,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "equation",
-      "eyebrow": "The Mechanism",
+      "eyebrow": "II · Going West by Accident · Why So Deadly",
       "title": "Why these diseases were so deadly here.",
       "footer": "It is a myth that Indigenous Americans were born weak. Both reasons are about history, not bodies.",
       "kc": "KC-4.1.V.A",
@@ -199,7 +236,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "How Many",
+      "eyebrow": "II · Going West by Accident · How Many",
       "title": "One region, estimated honestly.",
       "kc": "KC-4.1.V.A",
       "template": {
@@ -229,7 +266,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Going West on Purpose · A Source",
+      "eyebrow": "III · Going West on Purpose · A Source",
       "title": "",
       "kc": "KC-4.1.V.C",
       "template": {
@@ -244,7 +281,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Going West on Purpose",
+      "eyebrow": "III · Going West on Purpose · Horses",
       "title": "Plains peoples made horses their own",
       "kc": "KC-4.1.V.C",
       "template": {
@@ -281,7 +318,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Going West by Force",
+      "eyebrow": "IV · Going West by Force · Rice and Okra",
       "title": "Foods carried by people who did not choose to cross.",
       "kc": "KC-4.1.V.C",
       "template": {
@@ -311,7 +348,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Cash Crops",
+      "eyebrow": "IV · Going West by Force · Cash Crops",
       "title": "Sugar remade whole societies",
       "kc": "KC-4.1.V.B",
       "template": {
@@ -358,7 +395,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-scenes",
-      "eyebrow": "Going East",
+      "eyebrow": "V · Going East · Staple Crops",
       "title": "American crops reached the far side of Afro-Eurasia.",
       "kc": "KC-4.1.V.B",
       "template": {
@@ -396,7 +433,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Going East · The Effect",
+      "eyebrow": "V · Going East · The Effect",
       "title": "American crops helped feed more people",
       "footer": "More crops and better nutrition helped populations grow, alongside other causes.",
       "kc": "KC-4.1.V.D",
@@ -432,7 +469,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-full",
-      "eyebrow": "The Whole Exchange on One Map",
+      "eyebrow": "Put It Together · The Whole Exchange on One Map",
       "title": "What the ships carried, and which way.",
       "template": {
         "visual": {
@@ -442,33 +479,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The evidence tells a more useful story than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "Indigenous Americans were born weak, so they were doomed no matter what.",
-            "evidence": "Nobody had had these diseases before, so nobody was immune, and war, forced labor and hunger made them far deadlier.",
-            "source": "David S. Jones, 2003"
-          },
-          {
-            "myth": "Disease caused African slavery in the Americas.",
-            "evidence": "Europeans grew sugar with enslaved workers on Madeira before 1492, and chose to bring that system across.",
-            "source": "Madeira's sugar, 1400s; Topic 4.4"
-          },
-          {
-            "myth": "The exchange was equal, the same both ways.",
-            "evidence": "Catastrophe in the Americas; new staple crops and better nutrition in Afro-Eurasia.",
-            "source": "Smallpox, 1520; sweet potatoes, Fujian, 1594"
-          }
-        ]
-      }
-    },
-    {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "What crossed, and what it did.",
       "template": {
         "columns": [
@@ -509,53 +521,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "A cause, then one effect in each hemisphere, each with a named example and the people it affected.",
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 05, 06, 08, 10",
+      "title": "Now you find the evidence.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
-        "weak": "The Columbian Exchange was a trade of plants and animals.",
-        "strong": "**Ships crossing and coming back** carried smallpox **by accident** and horses **on purpose**: **horses** let the **Comanche** build a new life on the Plains, while **sweet potatoes** fed **farmers in southern China** in famine years."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "What did the writer use to prove it?",
-      "subtitle": "Find the claim a source makes, and two pieces of evidence it gives to support it.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-3-columbian-exchange.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "The cargo nobody chose.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-3-columbian-exchange.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Build one claim from two sources, one each way.",
-      "subtitle": "One card about what crossed to the Americas, one about the American crops. Name one limit.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-3-columbian-exchange.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "What crossed, and what it did.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-3-columbian-exchange.html#modules"
+        "modules": [
+          {
+            "code": "Module 05",
+            "name": "Skill Builder",
+            "note": "Find the claim and evidence in the Qing note.",
+            "url": "../unit-4/lesson-4-3-columbian-exchange.html#modules"
+          },
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-3-columbian-exchange.html#modules"
+          },
+          {
+            "code": "Module 08",
+            "name": "Primary Source",
+            "note": "The Nahua account of smallpox, 1520.",
+            "url": "../unit-4/lesson-4-3-columbian-exchange.html#modules"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-3-columbian-exchange.html#modules"
+          }
+        ]
       }
     },
     {

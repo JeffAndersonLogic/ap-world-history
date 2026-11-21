@@ -12,8 +12,25 @@
  * Wall version: The ships carried more than anyone meant them to.
  * Retelling slide: the two-way exchange (phase 'exchange').
  *
- * Class dates: not yet scheduled (the schedule ends at 4.2). Required modules:
- * 02 First & 10, 05 Skill Builder, 07 Evidence Lab, 10 Checkpoint 2.
+ * Class dates: Green Tuesday 2026-11-03, Silver Wednesday 2026-11-04.
+ * Required modules, from the schedule (Jeff's Unit 4 module review,
+ * 2026-10-23): 02 First & 10, 05 Skill Builder, 06 Checkpoint 1, 08 Primary
+ * Source (the Nahua smallpox account) and 10 Checkpoint 2. The deck predated
+ * that review: it marked Checkpoint 1 optional and launched the Evidence Lab,
+ * which is now optional (an early-finisher choice).
+ *
+ * Outline format, 2026-11-21 (Jeff, 2026-11-08: the 4.4 outline is the
+ * standard for every topic; slides that only point to a module are cut; the
+ * lecture tells the story. Jeff asked for 4.3 on 2026-11-21). The briefing
+ * opens on the outline below, a road map before the First & 10 shows students
+ * the same five section headers, every story slide's eyebrow names its section
+ * (the map slide sits under "Put it together" with the retelling slide),
+ * minute counts are off the projected slides, the myths moved to the outline's
+ * Watch for list and the retelling slide's notes, and one Work Time slide
+ * replaced Myth and Evidence, Sharpen the Claim and the four module launch
+ * slides. Sharpen did not stay: it carried no learning objective and no CED
+ * sample activity, only a weak and strong claim, so its frame moved into the
+ * Work Time notes, given aloud. No story slide changed. 24 slides to 20.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -34,13 +51,90 @@ window.BEHISTORICAL_TEACHING = {
       'Land the spine with the exchange slide: west, catastrophe and land remade; east, new staple crops and better nutrition.'
     ],
     should: [
-      'Correct three myths: "no immunity, so doomed," "disease caused African slavery," and "the exchange was equal both ways."',
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "no immunity, so doomed," "disease caused African slavery," and "the exchange was equal both ways."',
       'Model 3.B once on Acosta: his claim, and the hides he counts to prove it.',
       'Name cash crops grown on plantations with coerced labor (KC-4.1.V.B, second sentence): the old pages never did.'
     ],
     could: [
-      'Use the BeInTheRoom Replanting Council as an extension for students who finish early.',
+      'Send students who finish Work Time early to the Evidence Lab (Module 07), or use the BeInTheRoom Replanting Council as an extension.',
       'Point students who want more depth to the eBook chapter, "The Exchange Nobody Negotiated."'
+    ]
+  },
+
+  // The teaching outline, shown first in the Briefing (teacher/teaching-os-shared.js).
+  // Section headers match the road-map slide. Every point is from this deck's
+  // own slides and notes or the First & 10 "What the Ships Carried"; nothing is
+  // new. Required modules are the schedule's (assets/data/announcements-schedule.js).
+  outline: {
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '08 Primary Source', '10 Checkpoint 2'],
+    sections: [
+      { label: 'I', title: 'Two worlds, then a road between them', kc: 'KC-4.1.V', points: [
+        'Ocean kept the halves apart about 11,000 years',
+        'Americas: maize, potatoes, cassava; no horses, cattle or pigs',
+        'Afro-Eurasia: wheat, sugarcane, farm animals; smallpox and measles',
+        'The cause: ships crossed AND came back, as Europeans built colonies',
+        'Three ways across: on purpose, by accident, by force',
+        'From the 1560s, a second road: Mexico to Manila',
+        'Alfred Crosby named it in 1972'
+      ] },
+      { label: 'II', title: 'Going west by accident', kc: 'KC-4.1.V.A', points: [
+        'The CED\'s word: "unintentional." Germs, plus vectors (rats, mosquitoes)',
+        'Tenochtitlan, 1520: Spaniards driven out in June; smallpox that autumn, sixty days',
+        'Many starved: no one well enough to cook; Cuitláhuac dies',
+        'The epidemic came before the 1521 siege',
+        'Why so deadly: (1) nobody had had it; (2) war, forced labor, hunger',
+        'Never "born weak"',
+        'Central Mexico lost about two-thirds to nine-tenths (an estimate; historians argue)'
+      ] },
+      { label: 'III', title: 'Going west on purpose', kc: 'KC-4.1.V.C', points: [
+        '1493: horses, cattle, pigs, wheat, sugarcane on Columbus\'s second voyage',
+        'Cattle multiplied: herds "by thousands" on Santo Domingo',
+        'One fleet, 1587: almost 100,000 hides',
+        'Horses came back; Plains peoples chose them',
+        'Comanche, early 1700s: bison, trade and power on horseback',
+        'Not every effect was a disaster'
+      ], skill: 'You model claims and evidence (3.B) out loud on Acosta: the claim (Spanish cattle multiplied enormously), then the evidence he gives (herds "by thousands"; almost 100,000 hides in one fleet). He counted hides, not cattle, and it still supports him. Students do it themselves on the Qing sweet potato note in the Skill Builder and on the Nahua account in the Primary Source.' },
+      { label: 'IV', title: 'Going west by force', kc: 'KC-4.1.V.C · KC-4.1.V.B', points: [
+        'Enslaved Africans, carried against their will',
+        'African rice and okra on the same ships; okra in Brazil by the 1650s',
+        'Grown in garden plots; entered cooking across the Americas',
+        'Sugar: a cash crop on plantations, worked by coerced labor',
+        'In the 1600s, overwhelmingly enslaved Africans; sugar shipped mostly to Europe',
+        'Tobacco: the same pattern',
+        'The labor systems themselves are 4.4'
+      ] },
+      { label: 'V', title: 'Going east', kc: 'KC-4.1.V.B · KC-4.1.V.D', points: [
+        'American foods became staples in Europe, Asia and Africa',
+        'England, 1597: maize as "Turkie Corne"',
+        'Taiwan, 1740s: sweet potato, "foreign tuber," a help in bad harvests',
+        'Fujian, 1594: officials promote sweet potatoes in a famine year',
+        'Cassava from Brazil to the mouth of the Congo',
+        'Grew where old crops struggled: more kinds of food, a fallback',
+        'Helped populations grow (helped, not caused)'
+      ] }
+    ],
+    wrap: { title: 'Put it together', columns: ['What crossed', 'What it did'], rows: [
+      { label: 'West, by accident', cells: ['Smallpox, measles, malaria; rats and mosquitoes', 'Catastrophic deaths in many areas, made worse by war, forced labor and hunger'] },
+      { label: 'West, on purpose', cells: ['Horses, pigs, cattle, wheat, sugarcane', 'Land remade; Plains peoples on horseback; sugar plantations'] },
+      { label: 'West, by force', cells: ['Enslaved Africans, with African rice and okra', 'Coerced labor on plantations; African foods in cooking across the Americas'] },
+      { label: 'East', cells: ['Maize, potatoes, cassava, sweet potatoes', 'New staple crops; better nutrition; more people'] }
+    ] },
+    vocabulary: [
+      { term: 'Columbian Exchange', def: 'The movement of plants, animals and diseases between the two halves of the world after 1492.' },
+      { term: 'Disease vector', def: 'An animal that carries a disease from one person to another, like a mosquito, or a rat and its fleas.' },
+      { term: 'Smallpox', def: 'An Afro-Eurasian disease that covered people in sores. It reached the Caribbean in 1518 and Mexico in 1520.' },
+      { term: 'Epidemic', def: 'A disease that spreads to many people in one place at the same time.' },
+      { term: 'Immunity', def: 'Protection from a disease, usually from surviving it as a child.' },
+      { term: 'Plantation', def: 'A huge farm growing one crop to sell.' },
+      { term: 'Cash crop', def: 'A crop grown to sell rather than to eat at home, such as sugar or tobacco.' },
+      { term: 'Coerced labor', def: 'People forced to work.' },
+      { term: 'Staple crop', def: 'One of the main foods people eat every day.' },
+      { term: 'Nutrition', def: 'How well food feeds the body.' }
+    ],
+    watch: [
+      { myth: '"They had no immunity, so they were doomed" (born weak).', fix: 'Nobody had had these diseases, and war, forced labor and hunger made them deadlier. But disease was still the largest single factor.' },
+      { myth: '"Disease caused African slavery."', fix: 'Madeira grew sugar with enslaved workers before 1492, and Europeans chose to bring that system across. Disease did empty land of workers.' },
+      { myth: '"The exchange was equal both ways."', fix: 'Catastrophe west, better nutrition east. But not every effect in the Americas was a disaster: the Comanche and the horse.' }
     ]
   },
 
@@ -48,27 +142,23 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the objective, the owns and bridge-only split, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.2 and 2.6. Bridge to what the ships carried.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question.', students: 'Predict an answer.', slide: 3 },
-    { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "What the Ships Carried" in class.', students: 'For everything that crosses: how, and what it did.', slide: 4 },
-    { id: 'apart', label: 'Two Worlds Apart', range: '17-19', minutes: 2, teacher: 'What each side had and lacked.', students: 'Say why the connection mattered.', slide: 5 },
-    { id: 'cause', label: 'How Things Crossed', range: '19-21', minutes: 2, teacher: 'On purpose, by accident, by force.', students: 'Sort examples into the three.', slide: 6 },
-    { id: 'tenochtitlan', label: 'Tenochtitlan, 1520', range: '21-24', minutes: 3, teacher: 'The Codex picture and the Nahua account.', students: 'Notice, then infer.', slide: 7 },
-    { id: 'why', label: 'Why So Deadly', range: '24-27', minutes: 3, teacher: 'Two reasons, both needed.', students: 'Give both reasons.', slide: 8 },
-    { id: 'numbers', label: 'How Many', range: '27-28', minutes: 1, teacher: 'One regional estimate, stated as an estimate.', students: 'Say what kind of number it is.', slide: 9 },
-    { id: 'acosta', label: 'Acosta\'s Cattle', range: '28-31', minutes: 3, teacher: 'Model 3.B: claim and evidence.', students: 'Find the claim and the number.', slide: 10 },
-    { id: 'horses', label: 'Horses on the Plains', range: '31-32', minutes: 1, teacher: 'An effect that was an opportunity.', students: 'Name who used it.', slide: 11 },
-    { id: 'force', label: 'Rice and Okra', range: '32-34', minutes: 2, teacher: 'The foods enslaved Africans carried.', students: 'Say how these crossed.', slide: 12 },
-    { id: 'sugar', label: 'Sugar and the Plantation', range: '34-37', minutes: 3, teacher: 'Cash crops, coerced labor, exported to Europe.', students: 'Notice who works and who owns.', slide: 13 },
-    { id: 'east', label: 'Going East', range: '37-40', minutes: 3, teacher: 'Maize in England, sweet potatoes in Taiwan.', students: 'Say what the names and notes show.', slide: 14 },
-    { id: 'nutrition', label: 'Better Nutrition', range: '40-42', minutes: 2, teacher: 'Why these crops fed more people.', students: 'Connect the crop to the people.', slide: 15 },
-    { id: 'map', label: 'Which Way', range: '42-43', minutes: 1, teacher: 'The whole exchange on one map.', students: 'Trace one arrow each way.', slide: 16 },
-    { id: 'myths', label: 'Myth and Evidence', range: '43-46', minutes: 3, teacher: 'Immunity, slavery, equal exchange.', students: 'Correct each myth.', slide: 17 },
-    { id: 'exchange', label: 'What Crossed, What It Did', range: '46-51', minutes: 5, teacher: 'Students redraw the exchange from memory.', students: 'Retell the whole topic.', slide: 18 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '51-53', minutes: 2, teacher: 'Model one causal claim about both hemispheres.', students: 'Upgrade a weak claim.', slide: 19 },
-    { id: 'skill', label: 'Skill Builder', range: '53-60', minutes: 7, teacher: 'Module 05: Claims and Evidence in Sources.', students: 'Find the claim and two pieces of evidence.', slide: 20 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: why the diseases were so deadly.', students: 'Work without the coach.', slide: 21 },
-    { id: 'evidence', label: 'Evidence Lab', range: '60-68', minutes: 8, teacher: 'Module 07: one claim from two sources, one each way.', students: 'Observe, then infer, then name a limit.', slide: 22 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '68-78', minutes: 10, teacher: 'Module 10: the cause, one effect each way. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 23 },
-    { id: 'close', label: 'Landing Sentence', range: '78-80', minutes: 2, teacher: 'Land the answer and hand off to 4.4.', students: 'Say the topic in one sentence.', slide: 24 }
+    { id: 'roadmap', label: 'Road Map', range: '5-6', minutes: 1, teacher: 'Show the five sections of today\'s story before the reading.', students: 'See where the story is going.', slide: 4 },
+    { id: 'first10', label: 'First & 10', range: '6-18', minutes: 12, teacher: 'Module 02: students read "What the Ships Carried" in class.', students: 'For everything that crosses: how, and what it did.', slide: 5 },
+    { id: 'apart', label: 'Two Worlds Apart', range: '18-20', minutes: 2, teacher: 'What each side had and lacked.', students: 'Say why the connection mattered.', slide: 6 },
+    { id: 'cause', label: 'How Things Crossed', range: '20-22', minutes: 2, teacher: 'On purpose, by accident, by force.', students: 'Sort examples into the three.', slide: 7 },
+    { id: 'tenochtitlan', label: 'Tenochtitlan, 1520', range: '22-25', minutes: 3, teacher: 'The Codex picture and the Nahua account.', students: 'Notice, then infer.', slide: 8 },
+    { id: 'why', label: 'Why So Deadly', range: '25-28', minutes: 3, teacher: 'Two reasons, both needed.', students: 'Give both reasons.', slide: 9 },
+    { id: 'numbers', label: 'How Many', range: '28-29', minutes: 1, teacher: 'One regional estimate, stated as an estimate.', students: 'Say what kind of number it is.', slide: 10 },
+    { id: 'acosta', label: 'Acosta\'s Cattle', range: '29-32', minutes: 3, teacher: 'Model 3.B: claim and evidence.', students: 'Find the claim and the number.', slide: 11 },
+    { id: 'horses', label: 'Horses on the Plains', range: '32-33', minutes: 1, teacher: 'An effect that was an opportunity.', students: 'Name who used it.', slide: 12 },
+    { id: 'force', label: 'Rice and Okra', range: '33-35', minutes: 2, teacher: 'The foods enslaved Africans carried.', students: 'Say how these crossed.', slide: 13 },
+    { id: 'sugar', label: 'Sugar and the Plantation', range: '35-38', minutes: 3, teacher: 'Cash crops, coerced labor, exported to Europe.', students: 'Notice who works and who owns.', slide: 14 },
+    { id: 'east', label: 'Going East', range: '38-41', minutes: 3, teacher: 'Maize in England, sweet potatoes in Taiwan.', students: 'Say what the names and notes show.', slide: 15 },
+    { id: 'nutrition', label: 'Better Nutrition', range: '41-43', minutes: 2, teacher: 'Why these crops fed more people.', students: 'Connect the crop to the people.', slide: 16 },
+    { id: 'map', label: 'Which Way', range: '43-44', minutes: 1, teacher: 'The whole exchange on one map.', students: 'Trace one arrow each way.', slide: 17 },
+    { id: 'exchange', label: 'What Crossed, What It Did', range: '44-49', minutes: 5, teacher: 'Students redraw the exchange from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 18 },
+    { id: 'worktime', label: 'Work Time', range: '49-85', minutes: 36, teacher: 'Modules 05, 06, 08 and 10, in that order: the Skill Builder (3.B), Checkpoint 1 with no coach, the Nahua account, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Primary Source, Checkpoint 2.', slide: 19 },
+    { id: 'close', label: 'Landing Sentence', range: '85-87', minutes: 2, teacher: 'Land the answer and hand off to 4.4.', students: 'Say the topic in one sentence.', slide: 20 }
   ],
 
   quickLaunch: [
@@ -86,7 +176,7 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight',
       title: 'The ships carried more than anyone meant them to.',
       subtitle: 'Causation, with Claims and Evidence in Sources 3.B. What crossed, how it crossed, and what it did on each side of the ocean.',
       notes: {
@@ -97,7 +187,7 @@ window.BEHISTORICAL_TEACHING = {
           'CED word: "unintentional" (germs by accident)',
           'Deaths: two reasons, never genetics',
           'Save slavery, silver, casta for later topics',
-          'Three myths to correct'
+          'Three myths: outline Watch for list'
         ],
         land: [
           'CED pp. 81 and 82. Learning Objective D: explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres. The story answers both halves: why things crossed, and what they did at each end.',
@@ -105,7 +195,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED\'s illustrative examples (optional): horses, pigs, cattle; okra and rice. All five are in this deck because each carries a Key Concept sentence.',
           'Owns: the exchange, disease and its catastrophic effects, crops and animals both ways, foods carried by enslaved Africans, cash crops on plantations, nutrition in Afro-Eurasia.',
           'Bridge only: the labor systems and slavery themselves (4.4); silver and Potosí (4.5, not mentioned); casta (4.7, not mentioned); the conquests (only the Tenochtitlan epidemic and its timing).',
-          'Three myths: "they had no immunity, so they were doomed" (the deaths had social causes too, Jones 2003); "disease caused African slavery" (Madeira had slave-worked sugar before 1492); "the exchange was equal both ways."',
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (18) if they come up: "they had no immunity, so they were doomed" (the deaths had social causes too, Jones 2003); "disease caused African slavery" (Madeira had slave-worked sugar before 1492); "the exchange was equal both ways."',
           'Every picture in this deck is a real historical object. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -114,7 +204,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · No Notes',
       title: 'Pull the last topic back from memory.',
       template: {
         questions: [
@@ -164,10 +254,41 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
+      phase: 'roadmap', kind: 'road-map', eyebrow: 'Today\'s Road Map',
+      title: 'Where we are going today.',
+      template: {
+        question: 'What caused the Columbian Exchange, and what did it do on each side of the ocean?',
+        stops: [
+          { label: 'I', text: 'Two worlds, then a road between them' },
+          { label: 'II', text: 'Going west by accident' },
+          { label: 'III', text: 'Going west on purpose' },
+          { label: 'IV', text: 'Going west by force' },
+          { label: 'V', text: 'Going east' },
+          { label: '✓', text: 'Put it together: what crossed, and what it did', key: true }
+        ],
+        thenLabel: 'Then',
+        then: 'Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2'
+      },
+      notes: {
+        minutes: 1,
+        keys: [
+          'The whole day before the reading',
+          'Five sections, then put it together',
+          'Same headers as your outline',
+          'Each story slide names its section'
+        ],
+        land: [
+          'Read the five headers aloud before the First & 10, so students know the story\'s shape before they meet its details. The headers are the briefing outline\'s and follow the reading\'s own sections, and every story slide\'s eyebrow names its section (I to V), so the class can see where it is all period.',
+          'The question at the top is the topic question. Section I is the cause; II to IV are what crossed west (by accident, on purpose, by force) and V is what crossed east, each with what it did. The map and the exchange slide put it together.'
+        ],
+        ask: 'Which section do you expect did the most harm?',
+        listenFor: 'Any reasoned guess; return to it at the exchange slide (by accident, west).'
+      }
+    },
+    {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10',
       title: 'Read with two questions in mind.',
       subtitle: 'For everything that crosses: how did it cross, and what did it do to the people at the other end?',
-      big: '12',
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-3-columbian-exchange-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
@@ -187,7 +308,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'apart', kind: 'split-mirror', eyebrow: 'Before 1492',
+      phase: 'apart', kind: 'split-mirror', eyebrow: 'I · Two Worlds, Then a Road · Before 1492',
       kc: 'KC-4.1.V', title: 'Two worlds, each with what the other lacked.',
       footer: 'Ocean had kept the two halves of the world apart since the end of the last Ice Age.',
       template: {
@@ -219,7 +340,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cause', kind: 'branch-tree', eyebrow: 'The Cause',
+      phase: 'cause', kind: 'branch-tree', eyebrow: 'I · Two Worlds, Then a Road · The Cause',
       kc: 'KC-4.1.V', title: 'Ships crossed and came back. Three ways things crossed with them.',
       template: {
         claimLabel: 'The cause',
@@ -253,7 +374,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'tenochtitlan', kind: 'story-scene', eyebrow: 'Tenochtitlan · 1520',
+      phase: 'tenochtitlan', kind: 'story-scene', eyebrow: 'II · Going West by Accident · Tenochtitlan, 1520',
       kc: 'KC-4.1.V.A', title: 'A sickness of pustules, told by those who lived through it.',
       template: {
         visual: { url: '../assets/images/topics/4-3/florentine-codex-smallpox-healer.jpg', alt: 'Ink drawing from the Florentine Codex: on the left a Nahua healer speaks with a man covered in spots; on the right three people covered in spots lie wrapped on mats', credit: 'Florentine Codex, Book 12, about 1577 · Public domain', position: '100% 50%' },
@@ -279,7 +400,8 @@ window.BEHISTORICAL_TEACHING = {
           'The text is from the same chapter (Book 12, ch. 29), in James Lockhart\'s translation: the sickness began in Tepeilhuitl, which Sahagún says is "at the end of September"; it "lasted a full sixty days"; "many just starved to death; starvation reigned, and no one took care of others any longer"; and "the Mexica warriors were greatly weakened by it."',
           'Timeline: the Spaniards were driven out on 30 June 1520. Smallpox had come to the coast with the Narváez expedition in the spring of 1520; a story that names one enslaved man as the carrier is disputed, so do not teach it.',
           'Cuitláhuac ruled about eighty days and died late in 1520, most likely of smallpox; sources disagree on the month. The siege began in May 1521 and the city fell on 13 August 1521.',
-          'The old 4.3 reading said the epidemic struck "as Cortés\'s army was besieging the city." It did not; the Spaniards had been driven out.'
+          'The old 4.3 reading said the epidemic struck "as Cortés\'s army was besieging the city." It did not; the Spaniards had been driven out.',
+          'Students read this account in full themselves in the Primary Source (Module 08) during Work Time.'
         ],
         ask: 'Look at the people lying under blankets. What does the account say killed many of them besides the disease?',
         listenFor: 'Hunger: nobody was well enough to cook or care for them.',
@@ -287,7 +409,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'why', kind: 'equation', eyebrow: 'The Mechanism',
+      phase: 'why', kind: 'equation', eyebrow: 'II · Going West by Accident · Why So Deadly',
       kc: 'KC-4.1.V.A', title: 'Why these diseases were so deadly here.',
       footer: 'It is a myth that Indigenous Americans were born weak. Both reasons are about history, not bodies.',
       template: {
@@ -320,7 +442,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'numbers', kind: 'case-file', eyebrow: 'How Many',
+      phase: 'numbers', kind: 'case-file', eyebrow: 'II · Going West by Accident · How Many',
       kc: 'KC-4.1.V.A', title: 'One region, estimated honestly.',
       template: {
         tag: 'Estimate', place: 'Central Mexico', date: '1519 to 1595',
@@ -352,7 +474,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'acosta', kind: 'source-quote', eyebrow: 'Going West on Purpose · A Source',
+      phase: 'acosta', kind: 'source-quote', eyebrow: 'III · Going West on Purpose · A Source',
       kc: 'KC-4.1.V.C',
       template: {
         quote: 'These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain [Mexico] 64,350.',
@@ -381,7 +503,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'horses', kind: 'diffusion-path', eyebrow: 'Going West on Purpose',
+      phase: 'horses', kind: 'diffusion-path', eyebrow: 'III · Going West on Purpose · Horses',
       kc: 'KC-4.1.V.C', title: 'Horses came back, and Plains peoples remade their lives around them.',
       template: {
         stops: [
@@ -409,7 +531,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'force', kind: 'case-file', eyebrow: 'Going West by Force',
+      phase: 'force', kind: 'case-file', eyebrow: 'IV · Going West by Force · Rice and Okra',
       kc: 'KC-4.1.V.C', title: 'Foods carried by people who did not choose to cross.',
       template: {
         tag: 'By force', place: 'West Africa to Brazil and the Caribbean', date: '1500s to 1700s',
@@ -444,7 +566,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'sugar', kind: 'story-scene', eyebrow: 'Cash Crops',
+      phase: 'sugar', kind: 'story-scene', eyebrow: 'IV · Going West by Force · Cash Crops',
       kc: 'KC-4.1.V.B', title: 'Sugar: one plant that remade whole societies.',
       template: {
         visual: { url: '../assets/images/topics/4-3/frans-post-sugar-works-detail-1660s.jpg', alt: 'Detail of a painting of a Brazilian sugar plantation: Black workers at an open drying platform and at the arches of the furnace house, a man leading oxen with a cart, and a large house with a lookout on the hill above', credit: 'Frans Post, Brazilian Landscape (detail), 1660s · National Gallery of Ireland · Public domain' },
@@ -479,7 +601,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'east', kind: 'split-scenes', eyebrow: 'Going East',
+      phase: 'east', kind: 'split-scenes', eyebrow: 'V · Going East · Staple Crops',
       kc: 'KC-4.1.V.B', title: 'American crops reached the far side of Afro-Eurasia.',
       template: {
         left: {
@@ -515,7 +637,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'nutrition', kind: 'cause-chain', eyebrow: 'Going East · The Effect',
+      phase: 'nutrition', kind: 'cause-chain', eyebrow: 'V · Going East · The Effect',
       kc: 'KC-4.1.V.D', title: 'Why American crops meant better nutrition.',
       footer: 'Over two centuries, these crops helped populations grow in China and Europe, and fed many in parts of Africa.',
       template: {
@@ -547,7 +669,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'map', kind: 'frame-full', eyebrow: 'The Whole Exchange on One Map',
+      phase: 'map', kind: 'frame-full', eyebrow: 'Put It Together · The Whole Exchange on One Map',
       title: 'What the ships carried, and which way.',
       template: {
         visual: { url: '../assets/images/topics/4-3/columbian-exchange-map.png', alt: 'Map titled The Columbian Exchange: what crossed the ocean after 1492, and which way it went. Dashed or dotted arrows go west across the southern Atlantic, where ships rode the trade winds. Arrow 1, animals and crops: horses, pigs, cattle, wheat, fruit trees and sugar, from Europe to the Caribbean. Arrow 2, disease by accident: smallpox, measles and malaria, carried with mosquitoes and rats, to Tenochtitlan, where smallpox struck in autumn 1520. Arrow 3, by force: enslaved Africans, who also brought rice and okra, from West Africa to Brazil. Solid arrows go east across the northern Atlantic, on the westerlies. Arrow 4, American foods: maize, potatoes, cassava, tomatoes and cacao, to Europe, where the potato was a main food in Ireland by the 1700s, and cassava from Brazil to the mouth of the Congo. Arrow 5, plantation cash crops grown with coerced labor, sent mostly to Europe and the Middle East. Fujian, China: sweet potato promoted, 1594. A causation strip underneath: European colonization connects the Eastern and Western Hemispheres after 1492; in the Americas, disease devastates Indigenous populations in many areas and Old World animals and crops reshape land and diets; in Afro-Eurasia, American crops become staple foods and improve nutrition across Europe, Asia and Africa. Arrows show direction, not single voyages; coastlines are simplified; sweet potatoes reached China from the Philippines, a route not drawn.' }
@@ -573,34 +695,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Three things people get wrong.',
-      footer: 'The evidence tells a more useful story than the myths.',
-      template: {
-        rows: [
-          { myth: 'Indigenous Americans were born weak, so they were doomed no matter what.', evidence: 'Nobody had had these diseases before, so nobody was immune, and war, forced labor and hunger made them far deadlier.', source: 'David S. Jones, 2003' },
-          { myth: 'Disease caused African slavery in the Americas.', evidence: 'Europeans grew sugar with enslaved workers on Madeira before 1492, and chose to bring that system across.', source: 'Madeira\'s sugar, 1400s; Topic 4.4' },
-          { myth: 'The exchange was equal, the same both ways.', evidence: 'Catastrophe in the Americas; new staple crops and better nutrition in Afro-Eurasia.', source: 'Smallpox, 1520; sweet potatoes, Fujian, 1594' }
-        ]
-      },
-      notes: {
-        minutes: 3,
-        keys: [
-          'Myth 1: "born weak" → exposure plus colonization',
-          'Myth 2: disease caused slavery → Madeira first',
-          'Myth 3: equal → catastrophe west, nutrition east'
-        ],
-        land: [
-          'Row 1: Jones (2003) argues that the genetic reading of "no immunity" is unsupported and risks "supporting racial theories." The old 4.3 pages said "zero immunity" and "no evolved defenses."',
-          'Row 2: Madeira grew sugar with enslaved workers, including Canary Islanders and Africans, from the mid-1400s; São Tomé, settled by Portugal from the 1480s, followed. Disease emptied land of workers; people decided who would be enslaved. The unit story map allows this chain only in this qualified form, and 4.4 owns the labor systems.',
-          'Row 3: the effects were unequal. The catastrophe fell on the Americas; the nutritional gains went mostly to Afro-Eurasia.'
-        ],
-        ask: 'If disease alone did not cause African slavery, what else did?',
-        listenFor: 'Choices: Europeans already used enslaved Africans on island plantations and brought that system with them.'
-      }
-    },
-    {
-      retelling: true, phase: 'exchange', kind: 'split-matrix', eyebrow: 'The Whole Topic',
+      retelling: true, phase: 'exchange', kind: 'split-matrix', eyebrow: 'Put It Together · The Whole Topic',
       title: 'What crossed, and what it did.',
       template: {
         columns: [{ name: 'West, to the Americas' }, { name: 'East, to Afro-Eurasia' }],
@@ -617,121 +712,52 @@ window.BEHISTORICAL_TEACHING = {
           'Show it, hide it, redraw from memory',
           'Columns = the two hemispheres',
           'Rows 1 and 2 = causes; row 3 = effects',
-          'Spine cell: west, by accident'
+          'Spine cell: west, by accident',
+          'Correct the three myths here'
         ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the six cells from memory.',
           'The two columns are the two hemispheres the learning objective names. Rows 1 and 2 are the causes (what crossed, and how); row 3 is the effects.',
-          'Row 1, east: some historians argue syphilis crossed from the Americas to Europe; the question is still debated, and the CED does not name it. If a student asks, say so.'
+          'Row 1, east: some historians argue syphilis crossed from the Americas to Europe; the question is still debated, and the CED does not name it. If a student asks, say so.',
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-21, and are in the outline\'s Watch for list), naming the opposite mistake each time.',
+          '"No immunity, so doomed" (or "born weak"): nobody had had these diseases, and war, forced labor and hunger made them far deadlier (Jones 2003, who warns that the genetic reading risks "supporting racial theories"; the old 4.3 pages said "zero immunity"). But do not swing to "disease hardly mattered": it was the largest single factor in the deaths, never the only one.',
+          '"Disease caused African slavery": Madeira grew sugar with enslaved workers, including Canary Islanders and Africans, from the mid-1400s, and São Tomé followed from the 1480s; Europeans chose to bring that system across. But disease did empty land of workers. The unit story map allows the chain only in that qualified form, and 4.4 owns the labor systems.',
+          '"The exchange was equal both ways": the catastrophe fell on the Americas, and the nutritional gains went mostly to Afro-Eurasia. But not every effect in the Americas was a disaster: Plains peoples such as the Comanche built new lives on horseback.'
         ],
         ask: 'Which cell is the spine of the topic?',
         listenFor: 'West, by accident: the deadliest cargo was the one nobody chose.'
       }
     },
     {
-      phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      footer: 'A cause, then one effect in each hemisphere, each with a named example and the people it affected.',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 08, 10',
+      title: 'Now you find the evidence.',
+      footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
-        weak: 'The Columbian Exchange was a trade of plants and animals.',
-        strong: '**Ships crossing and coming back** carried smallpox **by accident** and horses **on purpose**: **horses** let the **Comanche** build a new life on the Plains, while **sweet potatoes** fed **farmers in southern China** in famine years.'
+        modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'Find the claim and evidence in the Qing note.', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
+          { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
+          { code: 'Module 08', name: 'Primary Source', note: 'The Nahua account of smallpox, 1520.', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
+          { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' }
+        ]
       },
       notes: {
-        minutes: 2,
+        minutes: 36,
         keys: [
-          '"Trade" implies both sides chose it',
-          'Strong = cause plus effect each side',
-          'Name the example and the people',
-          'Students write their own pair'
+          'All four required today, in order',
+          'Skill Builder: claim, then two pieces of evidence',
+          'Checkpoint 1: no coach',
+          'Primary Source: the Nahua account, claim and evidence',
+          'Checkpoint 2: cause, one effect each side',
+          'Unfinished = homework; early finishers: Evidence Lab'
         ],
         land: [
-          'The weak claim calls it "a trade," as if both sides chose it, and gives no cause and no effect.',
-          'The strong claim names the cause, one thing that crossed by accident and one on purpose, and one effect in each hemisphere with the people it affected: the shape Checkpoint 2 asks for.',
-          'Have students write their own with a different pair, for example African rice or okra in Brazil, and cassava near the mouth of the Congo.'
-        ],
-        ask: 'Why is "trade" the wrong word for the Columbian Exchange?',
-        listenFor: 'Because much of it was not chosen: the germs crossed by accident and enslaved people by force.'
-      }
-    },
-    {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'What did the writer use to prove it?',
-      subtitle: 'Find the claim a source makes, and two pieces of evidence it gives to support it.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
-      notes: {
-        minutes: 7,
-        keys: [
-          'Skill 3.B: find claim and evidence',
-          'Modeled on Acosta, practiced on the Qing note',
-          'Evidence must come from the source'
-        ],
-        land: [
-          'The Skill Builder practices the CED\'s suggested skill, 3.B: identify the evidence used in a source to support an argument.',
-          'It models Acosta (the slide students just saw), then gives the Qing album\'s note on sweet potatoes and asks for the claim, two pieces of evidence, and how one supports the claim. Its claim: the sweet potato is a real help in bad harvest years. Its evidence: it can be eaten raw, cooked or as flour; it is planted very widely; settlers and Indigenous people rely on it.',
-          'Push students to name evidence the source itself gives, not facts they know from elsewhere.'
-        ],
-        ask: 'Is that evidence in the source, or something you knew already?',
-        listenFor: 'A detail quoted or paraphrased from the source itself.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
-      title: 'The cargo nobody chose.',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
-      notes: {
-        minutes: 0,
-        keys: [
-          'Optional: early finishers or diagnostic',
-          'Disease, vector, both reasons',
-          'Give feedback in the room'
-        ],
-        land: [
-          'Checkpoint 1 is not required for 4.3. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It asks for a disease, a disease vector, and the two reasons. Give feedback in the room: on an alternating block nothing carries over.'
-        ],
-        ask: 'Name a disease, a disease vector, and both reasons it was so deadly.',
-        listenFor: 'Smallpox, rats or mosquitoes, nobody had had it, and war or forced labor or hunger.'
-      }
-    },
-    {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
-      title: 'Build one claim from two sources, one each way.',
-      subtitle: 'One card about what crossed to the Americas, one about the American crops. Name one limit.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
-      notes: {
-        minutes: 8,
-        keys: [
-          'One claim, two sources, one each way',
-          'Five real historical objects',
-          'Observe → infer → name a limit'
-        ],
-        land: [
-          'Five real objects: the Codex smallpox page, Post\'s sugar plantation, Guamán Poma\'s July harvest (1615), Gerard\'s "Turkie Corne" (1597) and the Qing sweet potato page (1740s).',
-          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you (a herbal shows a plant, not who ate it; Post painted for European buyers).',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
-        ],
-        ask: 'What does the source show before you tell me what it means?',
-        listenFor: 'A concrete detail, then the inference, then a limit.'
-      }
-    },
-    {
-      phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'What crossed, and what it did.',
-      subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
-      action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
-      notes: {
-        minutes: 10,
-        keys: [
-          'Cause first',
-          'One on purpose, one by accident',
-          'One effect each hemisphere, with people',
-          'Revised answer goes to Canvas',
-          'Unfinished = homework'
-        ],
-        land: [
-          'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for the cause, one thing that crossed on purpose and one by accident, one effect in the Americas (an Afro-Eurasian animal or crop, or rice or okra) and one in Afro-Eurasia (an American crop), each with the people affected. That is Learning Objective D, KC-4.1.V, and V.B, V.C or V.D depending on the examples a student picks. V.A is Checkpoint 1\'s and the First & 10\'s.',
-          'Socrates is told the skill is Causation, so it will push for the cause before the effects.'
+          'This one slide replaces six (Myth and Evidence, Sharpen the Claim, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-21). Modules 05, 06, 08 and 10 are all required today, from the schedule (Jeff\'s Unit 4 module review, 2026-10-23); the deck predated that review, marked Checkpoint 1 optional and launched the Evidence Lab instead of the Primary Source. Each button opens its module.',
+          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.B: identify the evidence used in a source to support an argument. It models Acosta (slide 11), then gives the Qing album\'s note on sweet potatoes and asks for the claim, two pieces of evidence, and how one supports the claim. Its claim: the sweet potato is a real help in bad harvest years. Its evidence: it can be eaten raw, cooked or as flour; it is planted very widely; settlers and Indigenous people rely on it. Push students to name evidence the source itself gives, not facts they know from elsewhere.',
+          'Checkpoint 1 (Module 06), with no coach, asks for a disease and a disease vector and how they crossed, then the two reasons the diseases were so deadly: nobody had had them before, and war, forced labor or hunger. Listen for smallpox, rats or mosquitoes, by accident on ships, and both reasons. Give feedback in the room: on an alternating block nothing carries over.',
+          'The Primary Source (Module 08) is the Nahua account behind slide 8, from Book 12 of the Florentine Codex (chapter 29, in James Lockhart\'s translation): 3.B applied. Students find the account\'s claim and two pieces of evidence; explain how "many just starved to death" and "no one took care of others any longer" show that people died of more than the disease itself; and say how an account told by Nahua elders decades after 1520, written down under a Spanish friar\'s direction, might shape what it includes and leaves out.',
+          'Checkpoint 2 (Module 10) asks for the cause, one thing that crossed on purpose and one by accident, one effect in the Americas (an Afro-Eurasian animal or crop, or rice or okra) and one in Afro-Eurasia (an American crop), each with the people affected. That is Learning Objective D, KC-4.1.V, and V.B, V.C or V.D depending on the examples a student picks. V.A is Checkpoint 1\'s and the First & 10\'s. Socrates is told the skill is Causation, so it will push for the cause before the effects. The revised answer in the box is what goes to Canvas.',
+          'If a student needs the claim shape, give it aloud (it was the Sharpen slide): a cause, then one effect in each hemisphere, each with a named example and the people it affected. "The Columbian Exchange was a trade of plants and animals" is the weak version: "trade" implies both sides chose it, and much of it was not chosen. The strong version, said aloud: ships crossing and coming back carried smallpox by accident and horses on purpose; horses let the Comanche build a new life on the Plains, while sweet potatoes fed farmers in southern China in famine years. Students write their own with a different pair, for example African rice or okra in Brazil, and cassava near the mouth of the Congo.',
+          'Early finishers: the Evidence Lab (Module 07), one claim from two sources, one each way. Five real objects (none AI-generated): the Codex smallpox page, Post\'s sugar plantation, Guamán Poma\'s July harvest (1615), Gerard\'s "Turkie Corne" (1597) and the Qing sweet potato page (1740s). Observe, then infer, then name a limit (a herbal shows a plant, not who ate it; Post painted for European buyers). Or the BeInTheRoom Replanting Council as an extension.'
         ],
         ask: 'Does your answer have a cause, an effect in each hemisphere, and the people affected?',
         listenFor: 'Ships crossing and coming back; a named example west and a named example east; who it affected.'

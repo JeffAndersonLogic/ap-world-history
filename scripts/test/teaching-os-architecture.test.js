@@ -376,7 +376,7 @@ for (const deck of DECKS) {
 // section 7, "The lesson shape", is the rule in prose.
 console.log('\n  The lesson shape: outline, road map, story, Work Time\n');
 const OUTLINE_OWED = new Set([
-  '2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '3.1', '3.2', '3.3', '3.4', '4.1', '4.2', '4.3'
+  '2.1', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '3.1', '3.2', '3.3', '3.4', '4.1', '4.2'
 ]);
 function loadSchedule() {
   const sandbox = { window: {} };
