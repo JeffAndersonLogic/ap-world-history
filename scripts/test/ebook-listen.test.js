@@ -557,6 +557,41 @@ const tick = page => page.waitForTimeout(30);
     check('starting a second section cancels the first, page-wide',
       crossSection.cancelled && crossSection.playing === 1 && crossSection.second,
       JSON.stringify(crossSection));
+
+    // Every section, read to the end, must keep its numbers whole. A splitter
+    // that cuts at every full stop reads "Topic 4.5" as "Topic 4." and then
+    // "5", which is what the Unit 4 regional chapters did 51 times on main
+    // until 2026-11-21. Also: no utterance that is only punctuation.
+    const spoken = await page.evaluate(async () => {
+      const out = [];
+      const plays = Array.from(document.querySelectorAll('.bh-listen-play'));
+      for (const play of plays) {
+        window.__speech.spoken.length = 0;
+        play.click();
+        await new Promise(r => setTimeout(r, 5));
+        window.__drain();
+        out.push(window.__speech.spoken.map(s => s.text));
+      }
+      return out;
+    });
+    const broken = [];
+    const blips = [];
+    for (const section of spoken) {
+      for (let i = 0; i < section.length; i++) {
+        const t = section[i];
+        if (!/[A-Za-z0-9]/.test(t)) blips.push(t);
+        // One or two digits before the stop: a topic or decimal number cut in
+        // half. Four digits is a year ending a sentence, which is fine.
+        const cut = /(?:^|\D)\d{1,2}\. \d/;
+        if (cut.test(t)) broken.push(t.slice(Math.max(0, t.search(cut) - 20)).slice(0, 50));
+        if (i + 1 < section.length && /(?:^|\D)\d{1,2}\.$/.test(t) && /^\d/.test(section[i + 1])) {
+          broken.push(`${t.slice(-25)} | ${section[i + 1].slice(0, 20)}`);
+        }
+      }
+    }
+    check('narration keeps decimal and topic numbers whole',
+      spoken.length > 0 && broken.length === 0, `${broken.length}: ${broken.slice(0, 3).join(' ; ')}`);
+    check('no utterance is punctuation alone', blips.length === 0, JSON.stringify(blips.slice(0, 5)));
   }
 
   // ── 10. the library page has none of this ─────────────────────────────────

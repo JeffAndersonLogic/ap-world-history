@@ -134,13 +134,21 @@
     function flush() {
       var text = clean(buffer.join(''));
       buffer.length = 0;
-      if (text) chunks.push(text);
+      /* A run with no letter or digit in it (a lone bracket or full stop left
+         between two inline elements) is not something a student can hear as
+         words, and spoken alone it is a blip of silence or the word "period". */
+      if (text && /[A-Za-z0-9]/.test(text)) chunks.push(text);
     }
 
     function walk(node) {
       for (var n = node.firstChild; n; n = n.nextSibling) {
         if (n.nodeType === 3) { buffer.push(n.nodeValue); continue; }
         if (n.nodeType !== 1) continue;
+        /* A line break is a boundary the author drew on purpose. Read as
+           inline it joins the last word of one line to the first of the next
+           with no pause, which is how a list set with <br> came out as one
+           run-on sentence. */
+        if (n.tagName === 'BR') { flush(); continue; }
         if (skipped(n)) continue;
         if (isInline(n)) { walk(n); } else { flush(); walk(n); flush(); }
       }
@@ -204,7 +212,7 @@
    */
   function splitLong(text) {
     if (text.length <= MAX_CHUNK) return [text];
-    var parts = text.match(/[^.!?]+(?:[.!?]+|$)\s*/g) || [text];
+    var parts = sentences(text);
     var out = [];
     var current = '';
     for (var i = 0; i < parts.length; i++) {
@@ -219,6 +227,35 @@
     }
     if (current) out.push(current);
     return out;
+  }
+
+  /**
+   * The sentences of a run of text, cut only where a sentence really ends.
+   *
+   * A full stop is a sentence end only when a space or the end of the text
+   * follows it, and the word before it is not an abbreviation. The first rule
+   * is what keeps "Topic 4.5" and "1.5 million" whole: cutting at every full
+   * stop turned them into "Topic 4." and "5", spoken as two sentences or across
+   * two utterances, 51 times in the Unit 4 regional chapters alone. The second
+   * keeps "c. 1450" and "St. Petersburg" in one piece.
+   */
+  var ABBREVIATIONS = /(?:^|[\s(])(?:c|ca|St|Mr|Mrs|Dr|vs|etc|e\.g|i\.e|U\.S|[A-Z])\.$/;
+
+  function sentences(text) {
+    var out = [];
+    var start = 0;
+    var re = /[.!?]+(?=\s|$)/g;
+    var m;
+    while ((m = re.exec(text))) {
+      var end = m.index + m[0].length;
+      if (m[0] === '.' && ABBREVIATIONS.test(text.slice(start, end))) continue;
+      var piece = text.slice(start, end).trim();
+      if (piece) out.push(piece);
+      start = end;
+    }
+    var rest = text.slice(start).trim();
+    if (rest) out.push(rest);
+    return out.length ? out : [text];
   }
 
   /* ── voice selection ─────────────────────────────────────────────────────
