@@ -110,39 +110,50 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "branch-tree",
+      "kind": "frame-pair",
       "eyebrow": "The New Answers",
       "title": "Start with the individual, not the king.",
       "footer": "New political ideas about the individual, natural rights and the social contract.",
       "kc": "KC-5.3.I.A",
       "template": {
-        "claimLabel": "The new answer",
-        "claim": "Power must be **rightful and limited**.",
-        "branches": [
+        "panels": [
+          {
+            "tag": "John Locke",
+            "visual": {
+              "url": "../assets/images/topics/5-1/5.1%20-%20Locke.jpg",
+              "alt": "Painted bust of John Locke with long grey hair, wearing a white shirt and brown robe against a dark oval background",
+              "credit": "Godfrey Kneller, John Locke, 1697 · Hermitage · Public domain painting",
+              "ratio": 0.8646748681898067,
+              "fit": "contain"
+            }
+          },
+          {
+            "tag": "Montesquieu",
+            "visual": {
+              "url": "../assets/images/topics/5-1/5.1%20Montesquieu.jpg",
+              "alt": "Detail of an anonymous painted portrait of Montesquieu in left profile, with curled grey hair and a golden-brown draped garment",
+              "credit": "Anonymous, Montesquieu, 18th century · Versailles · Public domain painting",
+              "ratio": 0.8272827282728272,
+              "fit": "contain"
+            }
+          }
+        ],
+        "rows": [
           {
             "label": "Natural rights",
-            "note": "Born with rights no government gives",
-            "items": [
-              "Locke, 1689",
-              "\"lives, liberties and estates\""
-            ]
+            "text": "Born with rights no government gives. Locke, 1689 · \"lives, liberties and estates\""
           },
           {
             "label": "Social contract",
-            "note": "Government is an agreement",
-            "items": [
-              "Locke: consent",
-              "Rousseau, 1762"
-            ]
+            "text": "Government is an agreement. Locke: consent · Rousseau, 1762"
           },
           {
             "label": "Limits on power",
-            "note": "Split power among different hands",
-            "items": [
-              "Montesquieu, 1748"
-            ]
+            "text": "Split power among different hands. Montesquieu, 1748"
           }
-        ]
+        ],
+        "provesLabel": "The new answer",
+        "proves": "Power must be **rightful and limited**."
       }
     },
     {
@@ -157,7 +168,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "work": "Second Treatise of Government, section 95",
           "year": "London, 1689"
         },
-        "notice": "What does Locke say every person is born? What does a government need before it can rule them?"
+        "notice": "What does Locke say every person is born? What does a government need before it can rule them?",
+        "visual": {
+          "url": "../assets/images/topics/5-1/5.1%20-%20Locke.jpg",
+          "alt": "Painted bust of John Locke with long grey hair, wearing a white shirt and brown robe against a dark oval background",
+          "credit": "Godfrey Kneller, John Locke, 1697 · Hermitage · Public domain painting",
+          "ratio": 0.8646748681898067,
+          "fit": "contain"
+        }
       }
     },
     {
