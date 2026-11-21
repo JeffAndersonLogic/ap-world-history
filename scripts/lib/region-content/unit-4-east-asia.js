@@ -69,7 +69,7 @@ module.exports = {
           blocks: [
             { p: `The <span class="kt">Ming dynasty</span> had ruled China since <span class="num">1368</span>. In the early 1400s, the Ming admiral <b>Zheng He</b> led large fleets as far as East Africa. Then, after <span class="num">1433</span>, the court stopped sending them.` },
             { p: `China did not stop trading. But the Ming wanted to decide who came and went on its coasts, so it restricted private overseas trade by its own people. Chinese merchants kept sailing across Southeast Asia anyway, often against the law.` },
-            { p: `The court allowed official foreign trade mainly through the <span class="kt">tribute system</span>. A foreign ruler sent envoys to honor the emperor as the ruler above him. In return, the envoys received gifts and were allowed to trade.` }
+            { p: `The court allowed official foreign trade mainly through the <span class="kt">tribute system</span>. A foreign ruler sent envoys to bow to the emperor and accept, at least in ceremony, that he ranked above their own ruler. In return, the envoys received gifts and were allowed to trade.` }
           ]
         },
         {
@@ -185,7 +185,7 @@ module.exports = {
           blocks: [
             { p: `Nagasaki was the main port where Portuguese and Chinese ships traded. Between <span class="num">1633</span> and <span class="num">1639</span>, the shogun's senior councilors sent five sets of orders to their two magistrates there. The <span class="num">1635</span> orders begin: "Japanese ships are strictly forbidden to leave for foreign countries." The third article says: "If any Japanese returns from overseas after residing there, he must be put to death." Other orders say every incoming ship must be searched for Christians.` },
             { p: `In <span class="num">1637</span> and <span class="num">1638</span>, peasants at <b>Shimabara</b>, near Nagasaki, rose up against their lords. Many of the rebels were Christian. Through years of famine, those lords had piled heavy taxes of their own on them. The lords were also enforcing the shogunate's ban on Christianity. The rising was local resistance to a government that was pulling power into its own hands (<a href="#chapter-t4-6">Topic 4.6</a>). The shogunate crushed it, and later executed the Shimabara lord for his misrule.` },
-            { p: `In <span class="num">1639</span> the councilors banned Portuguese ships outright. The order gives the reason: the Portuguese "have secretly transported those who are going to propagate that religion." In other words, they had been sneaking in missionaries to spread Christianity.` },
+            { p: `In <span class="num">1639</span> the councilors banned Portuguese ships outright. The order gives the reason: the Portuguese "have secretly transported those who are going to propagate that religion." In other words, the shogunate accused them of sneaking in missionaries to spread Christianity.` },
             { p: `The Dutch stayed, because they came to trade, not to preach. After <span class="num">1639</span> they were the only Europeans allowed to trade in Japan. From <span class="num">1641</span> they were moved to <b>Dejima</b>, a small artificial island in Nagasaki harbor, under Japanese watch. Chinese merchants kept trading at Nagasaki. Japan had chosen a <span class="kt">restrictive trade policy</span>: limits on who could trade, where, and in what (<a href="#chapter-t4-4">Topic 4.4</a>).` },
             { note: {
               kind: 'misconception',
@@ -309,9 +309,14 @@ module.exports = {
         body: `The banners, the Manchu army that conquered China, became a privileged elite. Han men had to wear the queue from 1645, and Han officials shared top posts with Manchus. Peasant families worked more for faraway buyers.`
       },
       {
-        category: 'Intellectual and technological',
+        category: 'Intellectual',
+        title: 'Confucian learning held, and European astronomy got a hearing',
+        body: `Confucian teaching stayed at the center of Chinese government under the Ming and the Qing. Jesuits won a place at the Chinese court through their skill in astronomy. The Japanese bans on Christianity show rulers judging foreign ideas by the danger they saw in them.`
+      },
+      {
+        category: 'Technological',
         title: 'Chinese tools on other people\'s ships',
-        body: `The compass and gunpowder, both Chinese, were among the tools Europeans built into ocean-going ships. Confucian learning continued, and Jesuits brought European astronomy to the court. The unit asks for no new East Asian inventions, so this card is short.`
+        body: `The compass and gunpowder were both first used in China. Europeans built them into the ships and guns that reached East Asia's coasts. In this unit, East Asia's technology story is what it had already given the world.`
       },
       {
         category: 'Economic',
