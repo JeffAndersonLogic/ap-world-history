@@ -322,3 +322,22 @@ li.eb-lib-pending .eb-sec-n{color:var(--iron)}
 @media print{
   .eb-lib-open:hover{background:none}
 }
+
+/* ── reading sizes inside eBook chapters (2026-11-21) ─────────────────────
+   The Unit 5 stress test measured the text a student is told to act on set
+   smaller than the story: mistake boxes 13.6px, At a Glance cards 13.4px,
+   glossary definitions 13.1px, box labels 9.6px, "Nothing here is handed in"
+   11.5px, Listen buttons 28px tall. In the eBook, where these are read at
+   length on phones, they come up to near body size. The standalone deep
+   readings keep their own sizes. */
+.eb-chapter .dr-note p{font-size:.95rem;line-height:1.7}
+.eb-chapter .dr-note > b{font-size:.72rem}
+.eb-chapter .dr-note.argue p{font-size:1rem}
+.eb-chapter .dr-note.argue p.dr-argue-how{font-size:.82rem}
+.eb-chapter .dr-pair p{font-size:.95rem}
+.eb-chapter .dr-pair .cat{font-size:.72rem}
+.eb-chapter .dr-pair h3{font-size:1rem}
+.eb-chapter .dr-terms dt{font-size:.95rem}
+.eb-chapter .dr-terms dd{font-size:.92rem}
+.eb-chapter .dr-part > h3,.eb-chapter .dr-terms h3{font-size:.74rem}
+.eb-chapter .bh-listen-btn{font-size:.74rem;min-height:36px}
