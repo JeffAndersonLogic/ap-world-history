@@ -1139,6 +1139,10 @@ window.BEHISTORICAL_SCHEDULE = {
     // rule of 2026-10-23 (02, 06 and 10 on every topic, plus at least one
     // chosen). The 5.1 to 5.3 builds predated that rule and chose 07 Evidence
     // Lab instead of 06; the Evidence Lab is now the early-finisher option.
+    // Jeff's Unit 5 module review (2026-11-21) then chose each topic's extra
+    // module: 5.1 keeps 05; 5.2 adds 09 (the Saint-Domingue Constitution); 5.3
+    // swaps 05 for 09 (the Mill Partners), because its Skill Builder repeated
+    // the Checkpoints.
 
     /* ---- Topic 5.1, The Enlightenment ------ */
     {
@@ -1161,14 +1165,14 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-12-02',
       cohort: 'green',
       topic: '5.2',
-      modules: ['02', '05', '06', '10'],
+      modules: ['02', '05', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.'
     },
     {
       date: '2026-12-03',
       cohort: 'silver',
       topic: '5.2',
-      modules: ['02', '05', '06', '10'],
+      modules: ['02', '05', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.'
     },
 
@@ -1181,7 +1185,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-12-04',
       cohort: 'green',
       topic: '5.3',
-      modules: ['02', '05', '06', '10'],
+      modules: ['02', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
       homeworkDue: 'Tuesday, December 8'
     },
@@ -1189,7 +1193,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-12-07',
       cohort: 'silver',
       topic: '5.3',
-      modules: ['02', '05', '06', '10'],
+      modules: ['02', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
       homeworkDue: 'Wednesday, December 9'
     },

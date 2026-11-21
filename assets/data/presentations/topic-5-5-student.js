@@ -83,7 +83,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "thenLabel": "Then",
-        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+        "then": "Checkpoint 1 · BeInTheRoom · Checkpoint 2"
       }
     },
     {
@@ -529,22 +529,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "launch-pad",
-      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "eyebrow": "Work Time · Modules 06, 09, 10",
       "title": "Now you explain the process.",
       "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
         "modules": [
           {
-            "code": "Module 05",
-            "name": "Skill Builder",
-            "note": "Explain two technologies, step by step.",
-            "url": "../unit-5/lesson-5-5-technology-of-industrialization.html#modules"
-          },
-          {
             "code": "Module 06",
             "name": "Checkpoint 1",
             "note": "On your own, no coach.",
             "url": "../unit-5/lesson-5-5-technology-of-industrialization.html#modules"
+          },
+          {
+            "code": "Module 09",
+            "name": "BeInTheRoom",
+            "note": "The Five Technologies, 1900.",
+            "url": "../beintheroom/unit-5/the-five-technologies.html"
           },
           {
             "code": "Module 10",

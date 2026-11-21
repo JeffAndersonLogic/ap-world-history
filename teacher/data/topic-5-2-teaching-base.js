@@ -21,7 +21,9 @@
  *
  * Class dates: Green Wednesday 2026-12-02, Silver Thursday 2026-12-03.
  * Required modules, from the schedule: 02 First & 10, 05 Skill Builder,
- * 06 Checkpoint 1 and 10 Checkpoint 2 (Jeff, 2026-11-08, applying his rule of
+ * 06 Checkpoint 1, 09 BeInTheRoom (the Saint-Domingue Constitution, added by
+ * Jeff's Unit 5 module review, 2026-11-21) and 10 Checkpoint 2. Before that
+ * review the set was 02, 05, 06 and 10 (Jeff, 2026-11-08, applying his rule of
  * 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen). The
  * deck predated that and launched 07 Evidence Lab with Checkpoint 1 optional;
  * the Evidence Lab is now the early-finisher option.
@@ -78,7 +80,7 @@ window.BEHISTORICAL_TEACHING = {
   // docs/TOPIC-5-2-STORY-DRAFT.md; nothing is new. Required modules are the
   // schedule's (assets/data/announcements-schedule.js).
   outline: {
-    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '09 BeInTheRoom', '10 Checkpoint 2'],
     sections: [
       { label: 'I', title: 'The recipe: grievance, words, a chance', kc: 'Learning Objective C', points: [
         'Many people read Locke and went on obeying their kings',
@@ -183,7 +185,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'break', label: 'Nation Against Empire', range: '42-44', minutes: 2, teacher: 'Nationalism pulls peoples away from an empire, and the empire answers.', students: 'Say why Ottomanism failed.', slide: 22 },
     { id: 'retell', label: 'How Revolutions Made Nations', range: '44-48', minutes: 4, teacher: 'Students redraw the chain from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 23 },
     { id: 'synthesis', label: 'Say It in One Sentence', range: '48-49', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 24 },
-    { id: 'worktime', label: 'Work Time', range: '49-83', minutes: 34, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder (3.C), Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 25 },
+    { id: 'worktime', label: 'Work Time', range: '49-83', minutes: 34, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder (3.C), Checkpoint 1 with no coach, the Saint-Domingue Constitution, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, BeInTheRoom, Checkpoint 2.', slide: 25 },
     { id: 'close', label: 'Landing Sentence', range: '83-85', minutes: 2, teacher: 'Land the answer and hand off to 5.3.', students: 'Say the topic in one sentence.', slide: 26 }
   ],
 
@@ -291,7 +293,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '✓', text: 'Put it together: how revolutions made nations', key: true }
         ],
         thenLabel: 'Then',
-        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+        then: 'Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2'
       },
       notes: {
         minutes: 1,
@@ -936,35 +938,38 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 09, 10',
       title: 'Now you do the history.',
       footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
         modules: [
           { code: 'Module 05', name: 'Skill Builder', note: 'Compare two sources, and say why they differ.', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
           { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Saint-Domingue Constitution, 1801.', url: '../beintheroom/unit-5/the-saint-domingue-constitution.html' },
           { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules' }
         ]
       },
       notes: {
         minutes: 34,
         keys: [
-          'All three required today, in order',
+          'All four required today, in order',
           'Skill Builder: compare two sources, then the "because"',
           'Checkpoint 1: no coach',
+          'BeInTheRoom: one Haitian cause, one effect',
           'Checkpoint 2: nationalism joins states and pulls peoples away',
           'Checkpoint 2 unfinished = homework',
           'Early finishers: Evidence Lab'
         ],
         land: [
-          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today, after the First & 10, from the schedule: Jeff set them on 2026-11-08, applying his rule of 2026-10-23 (02, 06 and 10 on every topic, plus at least one chosen). The deck predated that and launched the Evidence Lab with Checkpoint 1 optional. Each button opens its module.',
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06, 09 and 10 are all required today, after the First & 10, from the schedule: Jeff set 05, 06 and 10 on 2026-11-08, applying his rule of 2026-10-23 (02, 06 and 10 on every topic, plus at least one chosen), and his Unit 5 module review of 2026-11-21 added the BeInTheRoom. The deck predated the first change and launched the Evidence Lab with Checkpoint 1 optional. Each button opens its module. Four modules is a full Work Time: Checkpoint 2 finishes at home if it must, as on 4.5.',
           'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.C, compare the arguments of two sources. It models the comparison on the 1789 declaration and Toussaint\'s 1793 proclamation, the pair on slide 16, then has students choose a pair, the Declaration of Independence with the Letter from Jamaica or with the 1789 declaration, and write three sentences: each argument in their own words, one way the two agree and one way they differ, and what caused the difference. Circulate for the "because": the difference explained by what caused each document.',
           'Checkpoint 1 (Module 06), with no coach, is the diagnostic for Targets 1 and 2: one revolution\'s grievance, words and chance; what it created, and how it helped another revolution start or win, or was helped by one; and liberalism or democracy as a new idea about government. Give feedback in the room: on an alternating block nothing carries over.',
+          'The Saint-Domingue Constitution (Module 09) puts students on the council in Port-Républicain in spring 1801, deciding how work on the land is organized and how the colony stands with France. Its reflection asks for one cause of the Haitian Revolution (a grievance, the words people claimed, or a chance to act), one effect in Saint-Domingue or beyond it, and how the council\'s choice could have changed what happened next: Learning Objective C on KC-5.3.III.B, run through Causation. It was chosen in the 2026-11-21 review because no other module makes students reason about the Haitian Revolution\'s causes and effects.',
           'Checkpoint 2 (Module 10): draft, Socrates, revise. It assesses Target 3 (KC-5.3.II.ii and II.iii) and declares Causation. A strong answer explains the nation as shared language, religion, customs and homeland; names how a government used shared loyalty (France 1793; Ottomanism as an attempt to hold back nationalism); names a unification (Italy 1861 and 1870, or Germany 1871) and a people pulled away from the Ottoman Empire (Greece 1830, or Serbia, Montenegro and Romania 1878); and says how: nationalists wanted one state with borders to match the nation. The Ottoman Empire itself lasted to 1922; avoid "nationalism broke the Ottoman Empire apart" for this period. The revised answer in the box is what goes to Canvas; if it is not finished in class, it is homework.',
           'Early finishers: the Evidence Lab (Module 07). Its six cards are three real objects (the "No Stamp Act" teapot, Thévenin\'s 1790 Bastille etching, the 1802 French print of Toussaint) and three verified excerpts (the Declaration of Independence, Toussaint\'s 1793 proclamation, and Bismarck\'s 1862 "iron and blood" remarks). For two cards, students say what kind of source it is, what it shows about a cause or an effect of the revolutions, and what it cannot tell them: the Toussaint print is a French printmaker\'s view, not a Haitian one. The Primary Source (Module 08, the Letter from Jamaica) is an extension.'
         ],
         ask: 'What caused the difference you found? And in Checkpoint 2, what is the cause, and what are its two effects?',
-        listenFor: 'Skill Builder: each document\'s argument tied to its grievance or its moment. Checkpoint 2: nationalism as the cause; unification and peoples leaving an empire as the effects.'
+        listenFor: 'Skill Builder: each document\'s argument tied to its grievance or its moment. BeInTheRoom: a cause from the grievance, the words or the chance, and an effect such as Haiti\'s independence in 1804. Checkpoint 2: nationalism as the cause; unification and peoples leaving an empire as the effects.'
       }
     },
     {

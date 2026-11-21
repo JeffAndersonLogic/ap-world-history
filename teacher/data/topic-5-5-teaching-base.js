@@ -26,9 +26,12 @@
  *
  * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
  * 2026-11-23 and 2026-11-24).
- * Required modules: 02 First & 10, 05 Skill Builder, 06 Checkpoint 1 and
- * 10 Checkpoint 2 (Jeff's rule of 2026-10-23: 02, 06 and 10 on every topic,
- * plus at least one chosen; 05 practises the CED's suggested skill, 1.B). The
+ * Required modules: 02 First & 10, 06 Checkpoint 1, 09 BeInTheRoom (the Five
+ * Technologies, the CED's own sample activity) and 10 Checkpoint 2. Jeff's
+ * Unit 5 module review, 2026-11-21, swapped it in for 05 Skill Builder, which
+ * overlapped both Checkpoints; before that the set was 02, 05, 06 and 10
+ * (Jeff's rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one
+ * chosen; 05 practises the CED's suggested skill, 1.B). The
  * topic is not on the schedule yet, so the architecture test cannot compare
  * the Work Time slide with it: keep outline.required and the launch pad equal
  * by hand, and match the schedule when the class dates are set. The deck
@@ -76,7 +79,7 @@ window.BEHISTORICAL_TEACHING = {
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "More Power, Longer Reach."',
-      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the Primary Source (Jevons on coal, 1865) as an extension.',
+      'Send students who finish Work Time early to the Skill Builder (Module 05) or the Evidence Lab (Module 07), or to the Primary Source (Jevons on coal, 1865) as an extension.',
       'For a class that is ahead: why did electricity take so long to change factories? (slide 12 notes).'
     ]
   },
@@ -87,7 +90,7 @@ window.BEHISTORICAL_TEACHING = {
   // docs/TOPIC-5-5-STORY-DRAFT.md; nothing is new. Required modules follow
   // Jeff's rule of 2026-10-23 (the topic is not on the schedule yet).
   outline: {
-    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    required: ['02 First & 10', '06 Checkpoint 1', '09 BeInTheRoom', '10 Checkpoint 2'],
     sections: [
       { label: 'I', title: 'Before: energy in 1750', kc: 'KC-5.1.I.B', points: [
         'Energy from what grows, blows and flows',
@@ -188,7 +191,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'rank', label: 'Rank the Five', range: '42-45', minutes: 3, teacher: 'The CED\'s ranking, quick version.', students: 'Rank and defend number one.', slide: 17 },
     { id: 'retell', label: 'More Power, Longer Reach', range: '45-49', minutes: 4, teacher: 'Students redraw the chain; correct the three myths here if they come up.', students: 'Retell the whole topic.', slide: 18 },
     { id: 'synthesis', label: 'Say It in One Sentence', range: '49-50', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 19 },
-    { id: 'worktime', label: 'Work Time', range: '50-80', minutes: 30, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder on two technologies, Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 20 },
+    { id: 'worktime', label: 'Work Time', range: '50-80', minutes: 30, teacher: 'Modules 06, 09 and 10, in that order: Checkpoint 1 with no coach, the Five Technologies ranking in full, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Checkpoint 1, BeInTheRoom, Checkpoint 2.', slide: 20 },
     { id: 'close', label: 'Landing Sentence', range: '80-82', minutes: 2, teacher: 'Land the answer and hand off to 5.6.', students: 'Say the topic in one sentence.', slide: 21 }
   ],
 
@@ -298,7 +301,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '✓', text: 'Put it together: more power, new methods, longer reach', key: true }
         ],
         thenLabel: 'Then',
-        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+        then: 'Checkpoint 1 · BeInTheRoom · Checkpoint 2'
       },
       notes: {
         minutes: 1,
@@ -799,13 +802,13 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 06, 09, 10',
       title: 'Now you explain the process.',
       footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
         modules: [
-          { code: 'Module 05', name: 'Skill Builder', note: 'Explain two technologies, step by step.', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' },
           { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Five Technologies, 1900.', url: '../beintheroom/unit-5/the-five-technologies.html' },
           { code: 'Module 10', name: 'Checkpoint 2', note: 'Reach to trade and migration, with Socrates.', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' }
         ]
       },
@@ -813,22 +816,23 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 30,
         keys: [
           'All three required today, in order',
-          'Skill Builder: "which made it possible to"',
           'Checkpoint 1: no coach, feedback in the room',
+          'Five Technologies: rank, defend number one in writing',
           'Checkpoint 2: reach to trade or migration, with a number',
           'Checkpoint 2 unfinished = homework',
-          'Early finishers: Evidence Lab'
+          'Early finishers: Skill Builder or Evidence Lab'
         ],
         land: [
-          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today (Jeff\'s rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen; 05 practises the CED\'s suggested skill, 1.B). The topic is not on the schedule yet: when it is, match these buttons to the day\'s required modules. Each button opens its module.',
-          'The Skill Builder (Module 05) practices the CED\'s suggested skill, 1.B Developments and Processes. It models the frame on an everyday example and asks students to explain two technologies step by step: one that unlocked energy or was a new method, and one that reached the interior. Circulate for the "which made it possible to": a real effect, not a second name or date. Ask "Read me your which made it possible to step," and listen for a change in what people could make or where they could reach, not another invention. If a student needs the frame, give it aloud (slide 11): "Before, ___. Then ___ ___, which made it possible to ___. As a result, ___." (the problem, the new technology and what it did, what it made possible, what followed). It is a frame, not a model answer; do not write a finished history answer on the board.',
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 06, 09 and 10 are all required today (Jeff\'s rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen; his Unit 5 module review of 2026-11-21 chose the BeInTheRoom, the CED\'s own sample activity, over the Skill Builder, which overlapped both Checkpoints). The topic is not on the schedule yet: when it is, match these buttons to the day\'s required modules. Each button opens its module.',
+          'The Five Technologies (Module 09) is the full version of slide 17\'s quick ranking: students are at a science magazine office in New York in December 1900, choose the measure that matters (the power it added, how far it carried goods, people and news, or how much more the world could make), and choose number one. Its reflection asks for the full ranking, number one defended with one piece of evidence, how it made one other technology on the list possible, and what it changed: 1.B and Causation, in writing. Slide 17 was the warm-up said aloud; do not run the ranking twice in full, and let students change their mind from the slide.',
+          'Early finishers, optional: the Skill Builder (Module 05) practices the CED\'s suggested skill, 1.B Developments and Processes. It models the frame on an everyday example and asks students to explain two technologies step by step: one that unlocked energy or was a new method, and one that reached the interior. Circulate for the "which made it possible to": a real effect, not a second name or date. Ask "Read me your which made it possible to step," and listen for a change in what people could make or where they could reach, not another invention. If a student needs the frame, give it aloud (slide 11): "Before, ___. Then ___ ___, which made it possible to ___. As a result, ___." (the problem, the new technology and what it did, what it made possible, what followed). It is a frame, not a model answer; do not write a finished history answer on the board.',
           'Checkpoint 1 (Module 06), with no coach, is the diagnostic. It assesses Target 1: how a machine unlocked fossil-fuel energy, and how one method of the second industrial revolution changed what could be made. Give feedback in the room. Ask which machine they explained and what it made possible; listen for a machine, a fuel, a new method, and what each made possible.',
           'Checkpoint 2 (Module 10) asks students to choose one of railroads, steamships or the telegraph: explain what it did that older ways could not, how it reached an interior region, and how that led to more trade or more migration, with a number; then name the other effect, and connect railroads or steamships back to coal, steam or steel. It assesses Target 2 (KC-5.1.IV) and the learning objective, as a chain of causes, and declares Causation: draft, Socrates, revise. If it is not finished in class, it is homework. Ask where in the answer the cause is and where the effect is; listen for the technology and its power as the cause, trade or migration as the effect, with the link between them explained.',
           'A strong Checkpoint 2 answer: before steam, heavy goods moved cheaply only by water, and news moved as fast as a ship; railroads, built of iron and later steel and pulled by coal-burning steam engines, reached the interiors of continents, like the line across the United States finished in 1869; steamships crossed the Atlantic in under two weeks, where emigrants from Norway had taken about 53 days under sail; the telegraph sent news in minutes; so farmers in the middle of North America could sell wheat in Britain, and the price gap between Chicago and Liverpool fell from 57.6 percent in 1870 to 15.6 percent in 1913; cheaper, faster journeys also helped about 55 million Europeans move to the Americas and Australia between 1850 and 1914.',
           'Early finishers: the Evidence Lab (Module 07, optional when the deck was built, now the early-finisher option), or the Primary Source (Jevons on coal, 1865) as an extension. The Evidence Lab cards pair real objects (an engraving of a Newcomen engine, a diagram of a Bessemer converter, an oil rig, the Great Eastern with the Atlantic cable, the 1868 Across the Continent print) with scholars\' figures on energy and migration. Students choose at least two cards and say what kind of source each is (an engraving for a book, a print made to sell, a photograph, a newspaper picture), which link in the chain it shows, and one thing it cannot tell them: how common the thing was, since one engine, one rig or one ship is a case, not a measure of how much changed.'
         ],
         ask: 'Where in your answer is the cause, and where is the effect?',
-        listenFor: 'Skill Builder: a real "which made it possible to," such as Watt\'s engine letting mills leave the rivers. Checkpoint 1: a machine, a fuel, a new method, and what each made possible. Checkpoint 2: the technology and its power as the cause; trade or migration as the effect, with the link between them explained.'
+        listenFor: 'Five Technologies: a number one defended with evidence and tied to another technology, such as the steam engine making the railroad possible. Checkpoint 1: a machine, a fuel, a new method, and what each made possible. Checkpoint 2: the technology and its power as the cause; trade or migration as the effect, with the link between them explained.'
       }
     },
     {

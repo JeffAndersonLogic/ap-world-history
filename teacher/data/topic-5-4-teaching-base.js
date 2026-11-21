@@ -28,7 +28,8 @@
  * 10 on every topic, plus at least one chosen): 02 First & 10, 05 Skill
  * Builder, 06 Checkpoint 1 and 10 Checkpoint 2. The build had chosen 02, 05,
  * 07 and 10, with Checkpoint 1 optional; the Evidence Lab is now the
- * early-finisher option.
+ * early-finisher option. Jeff's Unit 5 module review, 2026-11-21, added 09
+ * BeInTheRoom (the Great Exhibition): required now 02, 05, 06, 09 and 10.
  *
  * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
  * topic; slides that only point to a module are cut; the lecture tells the
@@ -82,7 +83,7 @@ window.BEHISTORICAL_TEACHING = {
   // docs/TOPIC-5-4-STORY-DRAFT.md; nothing is new. Required modules are Jeff's
   // list of 2026-11-08; the topic is not on the schedule yet.
   outline: {
-    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '09 BeInTheRoom', '10 Checkpoint 2'],
     sections: [
       { label: 'I', title: 'Who made the world\'s goods in 1750', kc: 'KC-5.1.II.B', points: [
         'Almost everything made by hand, at home or in workshops',
@@ -175,7 +176,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'why', label: 'Why the Share Fell', range: '38-41', minutes: 3, teacher: 'India\'s cloth trade turns around.', students: 'Trace the chain.', slide: 15 },
     { id: 'retell', label: 'Who Made the World\'s Goods?', range: '41-45', minutes: 4, teacher: 'Students redraw the change and the continuity; correct the three myths here.', students: 'Retell the whole topic.', slide: 16 },
     { id: 'synthesis', label: 'Say It in One Sentence', range: '45-46', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 17 },
-    { id: 'worktime', label: 'Work Time', range: '46-82', minutes: 36, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder, Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 18 },
+    { id: 'worktime', label: 'Work Time', range: '46-82', minutes: 36, teacher: 'Modules 05, 06, 09 and 10, in that order: the Skill Builder, Checkpoint 1 with no coach, the Great Exhibition, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, BeInTheRoom, Checkpoint 2.', slide: 18 },
     { id: 'close', label: 'Landing Sentence', range: '82-84', minutes: 2, teacher: 'Land the answer and hand off to 5.5.', students: 'Say the topic in one sentence.', slide: 19 }
   ],
 
@@ -285,7 +286,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '✓', text: 'Put it together: who made the world\'s goods?', key: true }
         ],
         thenLabel: 'Then',
-        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+        then: 'Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2'
       },
       notes: {
         minutes: 1,
@@ -721,36 +722,39 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 09, 10',
       title: 'Now you find the pattern.',
       footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
         modules: [
           { code: 'Module 05', name: 'Skill Builder', note: 'Find a pattern, and say it in one sentence.', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
           { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Great Exhibition, 1851.', url: '../beintheroom/unit-5/the-great-exhibition.html' },
           { code: 'Module 10', name: 'Checkpoint 2', note: 'What changed, what continued, with Socrates.', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' }
         ]
       },
       notes: {
         minutes: 36,
         keys: [
-          'All three required today, in order',
+          'All four required today, in order',
           'Skill Builder: the pattern after "so"',
           'Checkpoint 1: no coach',
+          'Great Exhibition: one change, one continuity',
           'Checkpoint 2: the shares, and what continued',
           'Checkpoint 2 unfinished = homework',
           'Early finishers: Evidence Lab'
         ],
         land: [
-          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today (Jeff, 2026-11-08, under his rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen). Each button opens its module.',
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06, 09 and 10 are all required today (Jeff, 2026-11-08, under his rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen; his Unit 5 module review of 2026-11-21 added the BeInTheRoom). Each button opens its module. Four modules is a full Work Time: Checkpoint 2 finishes at home if it must, as on 4.5.',
           'The Skill Builder (Module 05) practices the CED\'s suggested skill, 5.A Making Connections. It models the frame on an everyday example and asks students to find a pattern across three cases of the factory\'s spread, then a pattern in the shares. Circulate for the "so the pattern is": a shared feature, not a list. Ask "Read me your pattern sentence," and listen for a shared feature named after "so," not another case. If a student needs the frame, give it aloud (slide 11): "In ___, ___ and ___, ___, so the pattern is ___."',
           'Checkpoint 1 (Module 06), with no coach, is the diagnostic. It assesses Target 1: where the methods spread, what carried them, and the pattern. Give feedback in the room. Ask which carrier was hardest to find evidence for; listen for a destination, a carrier and a pattern.',
+          'The Great Exhibition (Module 09) is set in the Crystal Palace, London, in 1851, where machines and hand-made goods stood in one building (the scenario the opening slide points to). Students choose where their report begins (the British spinning machines and power looms, India\'s hand-made cloth, or the machines visitors came to see) and what to take home. Its reflection asks for one change and one continuity in how or where the world\'s goods were made, and whether the student\'s choice fits the pattern of how the factory methods spread: Continuity and Change with 5.A, on both Key Concepts.',
           'Checkpoint 2 (Module 10) asks students to explain how the share of the world\'s manufacturing changed from 1750 to 1900, with two numbers; explain one cause of the change; and explain what continued in India or China, with evidence. It assesses Target 2 (KC-5.1.II.B) and declares Continuity and Change: draft, Socrates, revise. If it is not finished in class, it is homework.',
           'A strong Checkpoint 2 answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, almost all by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where it paid a tax of only 2½ percent, so that by about 1830 India bought more cotton cloth than it sold; but India kept making goods, with hand weavers still at work (about a million in one province in 1908) and Bombay\'s shipyards building teak warships; so the share changed, while production continued.',
           'Early finishers: the Evidence Lab (Module 07, required when the deck was built, now the early-finisher option). The cards pair real objects and verified excerpts; see the lesson\'s Evidence Lab. Students choose at least two cards and say what kind of source each is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell them: whether it is typical, because one mill, one ship or one weaver is a case, not a share. Or the Primary Source as an extension.'
         ],
         ask: 'Where in your answer is the change, and where is the continuity?',
-        listenFor: 'Checkpoint 2: the change in shares and in how goods were made; the continuity in who kept making them.'
+        listenFor: 'Great Exhibition: a change such as machine-made cloth, a continuity such as India\'s hand weavers. Checkpoint 2: the change in shares and in how goods were made; the continuity in who kept making them.'
       }
     },
     {
