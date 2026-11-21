@@ -19,7 +19,7 @@
  *   2. every Key Concept code it claims to teach (`ced`) is a real code in the
  *      CED source for its unit, so a mistyped or invented code fails here;
  *   3. every topic it says it draws on (`topics`) is a topic in the CED and a
- *      chapter in the same volume, so "Read alongside" never links nowhere;
+ *      chapter in the same volume, so "Draws on" never links nowhere;
  *   4. every in-chapter link of the form #chapter-<key> lands on a chapter in
  *      the same volume, and every topic it links is one it declares;
  *   5. its closing cards cover all six sides of a region's story: political,

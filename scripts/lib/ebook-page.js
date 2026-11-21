@@ -209,7 +209,10 @@ function readAlongside(chapter, topicKeys) {
     if (!key) throw new Error(`regional chapter ${chapter.slug} names Topic ${code}, which is not a chapter in this volume`);
     return `<a href="#chapter-${esc(key)}">Topic ${esc(code)}</a>`;
   });
-  return links.length ? `Read alongside ${links.join(', ')} &nbsp;·&nbsp; ` : '';
+  // "Draws on", not "Read alongside": Part Two is for after the topics are
+  // taught (its teacher note says so), and the old label told a student the
+  // opposite (Unit 5 stress test, 2026-11-21).
+  return links.length ? `Draws on ${links.join(', ')} &nbsp;·&nbsp; ` : '';
 }
 
 /**
