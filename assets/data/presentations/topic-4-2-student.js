@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady · No Notes",
       "title": "Pull the last topic back from memory.",
       "template": {
         "questions": [
@@ -36,8 +36,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective B"
     },
     {
+      "kind": "road-map",
+      "eyebrow": "Today's Road Map",
+      "title": "Where we are going today.",
+      "template": {
+        "question": "Why did rulers pay for ocean voyages, and what did they get?",
+        "stops": [
+          {
+            "label": "I",
+            "text": "Why a sea route would pay"
+          },
+          {
+            "label": "II",
+            "text": "How rulers backed voyages"
+          },
+          {
+            "label": "III",
+            "text": "Portugal, step by step"
+          },
+          {
+            "label": "IV",
+            "text": "Spain goes west"
+          },
+          {
+            "label": "V",
+            "text": "The northern crossings"
+          },
+          {
+            "label": "VI",
+            "text": "The pattern"
+          },
+          {
+            "label": "✓",
+            "text": "Put it together: who paid, what they wanted, what they got",
+            "key": true
+          }
+        ],
+        "thenLabel": "Then",
+        "then": "Checkpoint 1 · BeInTheRoom · Checkpoint 2"
+      }
+    },
+    {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 · First & 10",
       "title": "Read for three questions.",
       "subtitle": "For every state: who paid, what did they want, and what did they get?",
       "action": {
@@ -47,7 +88,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-steps",
-      "eyebrow": "The Economic Cause",
+      "eyebrow": "I · Why a Sea Route Would Pay · The Economic Cause",
       "title": "Every middleman took a cut.",
       "kc": "Unit 4: Learning Objective C",
       "template": {
@@ -74,7 +115,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "The Role of States",
+      "eyebrow": "II · How Rulers Backed Voyages · The Role of States",
       "title": "Two ways a ruler backed a voyage.",
       "footer": "Either way, the ruler set the terms and claimed the results.",
       "kc": "KC-4.1.III",
@@ -111,7 +152,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Portugal · Step by Step",
+      "eyebrow": "III · Portugal, Step by Step · 1415 to 1511",
       "title": "Each return made the next voyage easier to pay for.",
       "footer": "Spacing is true to scale: nearly a century, step by step.",
       "kc": "KC-4.1.III.A",
@@ -152,7 +193,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "Calicut, India, May 1498",
+      "eyebrow": "III · Portugal, Step by Step · Calicut, May 1498",
       "title": "Newcomers in a busy ocean.",
       "subtitle": "Da Gama came for pepper, and found a market that had been trading for centuries.",
       "kc": "KC-4.1.III.A",
@@ -166,7 +207,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "What Portugal Got",
+      "eyebrow": "III · Portugal, Step by Step · What Portugal Got",
       "title": "A trading-post empire.",
       "subtitle": "Portugal held ports, not lands: forts from Elmina to Goa and Malacca, and a pepper trade the crown ran from Lisbon.",
       "kc": "KC-4.1.III.A",
@@ -181,7 +222,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Spain · The Contract",
+      "eyebrow": "IV · Spain Goes West · The Contract",
       "title": "What two rulers promised a sailor.",
       "kc": "KC-4.1.III.B",
       "template": {
@@ -211,7 +252,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Spain · The Effect",
+      "eyebrow": "IV · Spain Goes West · The Effect",
       "title": "Interest in ocean trade grew fast.",
       "footer": "Three ships in 1492, at least seventeen in 1493.",
       "kc": "KC-4.1.III.B",
@@ -252,7 +293,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "Rivals · 1494",
+      "eyebrow": "IV · Spain Goes West · Tordesillas, 1494",
       "title": "Two crowns split the claims.",
       "visual": {
         "url": "../assets/images/topics/4-2/treaty-of-tordesillas.png",
@@ -263,7 +304,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-matrix",
-      "eyebrow": "The Northern Crossings",
+      "eyebrow": "V · The Northern Crossings · England, France, the Dutch",
       "title": "Looking for another way to Asia.",
       "footer": "None found a route to Asia. North America and Arctic ice blocked every way through.",
       "kc": "KC-4.1.III.C",
@@ -313,7 +354,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "map",
-      "eyebrow": "The Whole Topic on One Map",
+      "eyebrow": "VI · The Pattern · The Whole Topic on One Map",
       "title": "Three ways to Asia, and who paid.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-2.svg",
@@ -324,7 +365,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "compounding-snowball",
-      "eyebrow": "The Pattern",
+      "eyebrow": "VI · The Pattern · Every Voyage That Paid",
       "title": "Every voyage that paid brought more ships.",
       "footer": "Rulers backed the voyages. Voyages paid back. More ships sailed.",
       "kc": "KC-4.1.III",
@@ -351,33 +392,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "myth-evidence",
-      "eyebrow": "Myth and Evidence",
-      "title": "Three things people get wrong.",
-      "footer": "The real causes are more useful than the myths.",
-      "template": {
-        "rows": [
-          {
-            "myth": "The Ottomans closed the spice road in 1453, so Europe had to go by sea.",
-            "evidence": "The trade through Egypt and Venice kept running, and Portugal's voyages had begun decades earlier.",
-            "source": "A. H. Lybyer, 1915"
-          },
-          {
-            "myth": "Prince Henry ran a school of navigation at Sagres.",
-            "evidence": "He paid for voyages. No record from his time describes a school; the story was written down centuries later.",
-            "source": "Historians of Henry"
-          },
-          {
-            "myth": "Magellan sailed around the world.",
-            "evidence": "He was killed in the Philippines in 1521. Elcano brought the last ship home in 1522.",
-            "source": "Pigafetta's journal of the voyage"
-          }
-        ]
-      }
-    },
-    {
       "kind": "split-matrix",
-      "eyebrow": "The Whole Topic",
+      "eyebrow": "Put It Together · The Whole Topic",
       "title": "Who paid, what they wanted, what they got.",
       "template": {
         "columns": [
@@ -424,53 +440,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "Who paid, what they wanted, what it caused, and how it connects.",
+      "kind": "launch-pad",
+      "eyebrow": "Work Time · Modules 06, 09, 10",
+      "title": "Now you do the history.",
+      "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
-        "weak": "Europeans explored for God, glory, and gold.",
-        "strong": "**Portugal's crown** backed voyages around Africa to reach Asia's spices without the middlemen, and **because Portugal already held that route**, Spain's rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Connect one state's voyage to another's decision.",
-      "subtitle": "What did one state do, and how did it change what another state paid for?",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-2-exploration.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
-      "title": "The role of states.",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-2-exploration.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
-      "title": "Build one claim from two sources.",
-      "subtitle": "What does each source show about who paid and what they wanted? Name one limit.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-2-exploration.html#modules"
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Two voyages, two sponsors, cause and effect.",
-      "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-4-2-exploration.html#modules"
+        "modules": [
+          {
+            "code": "Module 06",
+            "name": "Checkpoint 1",
+            "note": "On your own, no coach.",
+            "url": "../unit-4/lesson-4-2-exploration.html#modules"
+          },
+          {
+            "code": "Module 09",
+            "name": "BeInTheRoom",
+            "note": "The Santa Fe Bargain, April 1492.",
+            "url": "../beintheroom/unit-4/the-santa-fe-bargain.html"
+          },
+          {
+            "code": "Module 10",
+            "name": "Checkpoint 2",
+            "note": "Draft, work with Socrates, revise.",
+            "url": "../unit-4/lesson-4-2-exploration.html#modules"
+          }
+        ]
       }
     },
     {

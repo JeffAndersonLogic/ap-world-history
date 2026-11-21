@@ -17,12 +17,12 @@
  * Both are AI Historical Reconstructions he uploaded (C2PA, generator mark
  * bottom right), labeled from `ai: true`, never evidence:
  *
- * - posts (slide 9, frame-letterbox): "4.2 - Trading Post Empire.jpg", a
+ * - posts (slide 10, frame-letterbox): "4.2 - Trading Post Empire.jpg", a
  *   fortified port with a Portuguese fort, a busy quay and carracks at anchor
  *   among local boats. The grid's four facts move to the subtitle and the
  *   note. Fault named in the note: the fort flies today's green and red flag,
  *   adopted in 1911.
- * - close (slide 23, frame-stepin): "4.2 - Landing Slide.jpg", a Lisbon-style
+ * - close (slide 19, frame-stepin): "4.2 - Landing Slide.jpg", a Lisbon-style
  *   quay where clerks weigh pepper and write it into a ledger. The ship's name
  *   and the "India - Pimenta" sacks are invented by the generator; the note
  *   says so. The step-in panel covers the right of the picture, where the
@@ -43,7 +43,7 @@ set('calicut',AI('topics/4-1/'+encodeURIComponent('4.1 - Arriving at Calicut 149
 
 const note=(s,lines)=>{if(s&&s.notes)s.notes.land=(s.notes.land||[]).concat(lines);};
 
-// Teacher slide 9: the trading-post empire as a scene.
+// Teacher slide 10: the trading-post empire as a scene.
 const posts=by('posts');
 if(posts){
   posts.kind='frame-letterbox';
@@ -59,7 +59,7 @@ if(posts){
   ]);
 }
 
-// Teacher slide 23: the landing sentence, stepped into on the quay.
+// Teacher slide 19: the landing sentence, stepped into on the quay.
 const close=by('close');
 if(close){
   close.kind='frame-stepin';
@@ -72,7 +72,7 @@ if(close){
   note(close,['Historical Reconstruction, AI generated. It sets the scene; it is not evidence. The ship\'s name and the "India - Pimenta" (pepper) labels on the sacks are invented by the generator.']);
 }
 
-// Teacher slide 12: show the treaty's geography without changing its story or notes.
+// Teacher slide 13: show the treaty's geography without changing its story or notes.
 const treaty=by('line');
 if(treaty){
   treaty.kind='map';
