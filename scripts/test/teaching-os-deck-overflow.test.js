@@ -104,13 +104,13 @@ const VIEWPORTS = [
 
 const results = [];
 // Optional review artifacts, not assertions. CI already preserves this directory.
-// Only pending photo placements need these shots; the normal sweep stays unchanged.
+// The ledger selects photo placements for these shots; the normal sweep stays unchanged.
 const reviewDir = process.env.BH_PRESENTATION_SHOTS_DIR || process.env.BH_ATLAS_SHOTS_DIR;
-const pendingPhotos = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/presentation-image-ledger.json'), 'utf8')).images
-  .filter(im => im.status === 'prepared-awaiting-browser-review');
+const reviewPhotos = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/presentation-image-ledger.json'), 'utf8')).images
+  .filter(im => im.reviewArtifacts === true);
 async function photoShot(page, topic, audience, index, width) {
   if (!reviewDir) return;
-  const names = pendingPhotos.filter(im => im.placements.some(p => p.topic === topic))
+  const names = reviewPhotos.filter(im => im.placements.some(p => p.topic === topic))
     .map(im => path.basename(im.path));
   if (!names.length) return;
   const visible = await page.locator('#stage img').evaluateAll((imgs, names) =>
@@ -245,7 +245,7 @@ function shellFor(key) {
         `${withImages} of ${total} slide(s) carry a decoded image`);
 
       check(`${label}: no page errors`, errors.length === 0, errors.slice(0, 2).join(' | ') || 'clean');
-      if (reviewDir && pendingPhotos.some(im => im.placements.some(p => p.topic === deck.key))) {
+      if (reviewDir && reviewPhotos.some(im => im.placements.some(p => p.topic === deck.key))) {
         await page.goto(`${origin}/teacher/topic-${deck.key.replace('.', '-')}-os.html?mode=project`, { waitUntil: 'networkidle' });
         await page.waitForFunction(() => window.BEHISTORICAL_TEACHING);
         const count = await page.evaluate(() => window.BEHISTORICAL_TEACHING.slides.length);

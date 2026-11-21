@@ -390,7 +390,7 @@
       "classification": "historical-portrait-reproduction",
       "sourceRef": "0d909e82c929fcf881d0c6fe9c6f70974d6e6724",
       "sourcePr": 175,
-      "status": "prepared-awaiting-browser-review",
+      "status": "placed",
       "dimensions": {
         "width": 984,
         "height": 1138
@@ -419,7 +419,8 @@
       "limits": "Historical painted portrait, not an AI reconstruction. Original painting is public domain; uploader supplied no reproduction download source. No claim about an exact reproduction license or AI provenance metadata is inferred from absence of C2PA. Portrait is not evidence for the political argument and is not added to Evidence Lab.",
       "metadataCheck": {
         "c2paMarkerPresent": false
-      }
+      },
+      "reviewArtifacts": true
     },
     {
       "path": "assets/images/topics/5-1/5.1 Montesquieu.jpg",
@@ -428,7 +429,7 @@
       "classification": "historical-portrait-reproduction",
       "sourceRef": "0d909e82c929fcf881d0c6fe9c6f70974d6e6724",
       "sourcePr": 175,
-      "status": "prepared-awaiting-browser-review",
+      "status": "placed",
       "dimensions": {
         "width": 752,
         "height": 909
@@ -450,7 +451,8 @@
       "limits": "Historical painted portrait, not an AI reconstruction. Original painting is public domain; uploader supplied no reproduction download source. No claim about an exact reproduction license or AI provenance metadata is inferred from absence of C2PA. Portrait is not evidence for the political argument and is not added to Evidence Lab.",
       "metadataCheck": {
         "c2paMarkerPresent": false
-      }
+      },
+      "reviewArtifacts": true
     },
     {
       "path": "assets/images/topics/5-1/5.1 Hobbes.jpg",

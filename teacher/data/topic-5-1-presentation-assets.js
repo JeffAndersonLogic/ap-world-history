@@ -51,7 +51,7 @@ setTemplate('close',{visual:Object.assign({},LIBERTY,{tagPos:'bl',fit:'contain'}
 
 /* PR #175, reviewed 2026-11-20: portrait references serve existing claims only.
  * Hobbes is held: no Hobbes beat exists in the approved story. No Evidence Lab change.
- * Prepared placements require browser/layout verification before publication. */
+ * CI preserves teacher and student screenshots for layout review. */
 (function(){
 'use strict';
 const T=window.BEHISTORICAL_TEACHING;if(!T)return;
@@ -71,4 +71,6 @@ s.notes.land.push('Portrait references added from PR #175, reviewed 2026-11-20. 
 s.notes.land.push('Locke matches Godfrey Kneller\'s 1697 Hermitage portrait, documented in the National Portrait Gallery iconography catalogue: https://www.npg.org.uk/collections/search/personExtended/mp02773/john-locke?tab=iconography . Montesquieu matches a detail of the anonymous 18th-century Versailles portrait, MV 2976 / INV 9443 / LP 4053, catalogued by the French Ministry of Culture: https://pop.culture.gouv.fr/notice/joconde/000PE006017 . Use the catalogue\'s broad century, not an unsupported exact date. The uploader did not supply the reproduction download sources; do not invent them. No reconstruction or Evidence Lab assignment.');
 const q=by('locke');q.template=Object.assign({},q.template,{visual:LOCKE});
 q.notes.land.push('The Kneller portrait identifies the writer only. The unchanged Second Treatise passage, attribution and notice question remain the evidence for the claim. Portrait provenance and reproduction limits are recorded on the preceding slide.');
+by('preflight').notes.land=by('preflight').notes.land.map(text=>text.replace('Every picture is a real object of the period from the Metropolitan Museum of Art', 'The original five pictures are real objects of the period from the Metropolitan Museum of Art'));
+by('preflight').notes.land.push('Two additional historical portrait references identify Locke and Montesquieu; their credits, catalogue records and limits are in the New Answers notes. The portraits do not establish their political arguments. Hobbes is held because he has no beat in the approved story.');
 })();
