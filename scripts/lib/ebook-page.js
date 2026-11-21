@@ -253,6 +253,8 @@ function renderRegionChapter(chapter, topicKeys, next, partId) {
     `      <h2>${chapter.titleHtml}</h2>\n` +
     `      <p class="eb-chapter-deck">${chapter.deck}</p>\n` +
     `      <p class="eb-chapter-return">${readAlongside(chapter, topicKeys)}${partId ? `<a href="#part-${esc(partId)}">All regions</a> &nbsp;·&nbsp; ` : ''}<a href="#contents">Back to contents</a></p>\n` +
+    // Filled by behistorical-listen.js with "Listen to the whole chapter".
+    `      <div class="bh-listen-chapter" data-listen-chapter="${esc(chapter.region)}" data-no-narrate></div>\n` +
     `    </header>\n` +
     renderChapterBody(chapter, { idPrefix: chapter.topicKey, listen: true, listenScope: chapter.region }) +
     regionEndNav(chapter, next, partId) +

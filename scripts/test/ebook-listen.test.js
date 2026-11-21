@@ -594,6 +594,69 @@ const tick = page => page.waitForTimeout(30);
     check('no utterance is punctuation alone', blips.length === 0, JSON.stringify(blips.slice(0, 5)));
   }
 
+  // ── 9b. a hub link lands on its target ────────────────────────────────────
+  //
+  // The unit hubs link ebook/unit-N.html#part-by-region. With smooth scrolling
+  // the browser's glide ended thousands of pixels short once the page finished
+  // laying out (23,651px on a phone, 2026-11-21); listen.js now re-lands on
+  // the target after layout settles. Checked on every volume with a Part Two.
+  for (const vol of require(path.join(ROOT, 'scripts', 'build-ebook.js')).VOLUMES
+    .filter(v => (v.contents || []).some(e => e.part && e.part.id === 'by-region'))) {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(url(vol.outputFile) + '#part-by-region', { waitUntil: 'load' });
+    await page.waitForTimeout(1200);
+    const top = await page.evaluate(() => Math.round(document.getElementById('part-by-region').getBoundingClientRect().top));
+    check(`${vol.outputFile}#part-by-region lands on Part Two on a phone`, Math.abs(top) <= 4, `target top ${top}px`);
+    await page.setViewportSize({ width: 1280, height: 900 });
+  }
+
+  // ── 9c. "Listen to the whole chapter" reads every section in order ────────
+  //
+  // Asked for by the phone-and-Listen persona in the Unit 5 stress test
+  // (2026-11-21): narration stopped at the end of each section and the next
+  // Listen button was a long scroll away. The chapter button chains the
+  // chapter's sections; Stop, or any other Listen press, ends the chain.
+  for (const vol of require(path.join(ROOT, 'scripts', 'build-ebook.js')).VOLUMES
+    .filter(v => (v.contents || []).some(e => e.region))) {
+    await page.goto(url(vol.outputFile), { waitUntil: 'load' });
+    const chained = await page.evaluate(async () => {
+      const btn = document.querySelector('.bh-listen-chapter-btn');
+      if (!btn) return { error: 'no chapter button' };
+      const chapter = btn.closest('section');
+      const expected = Array.from(chapter.querySelectorAll('[data-listenable="true"]')).map(s => s.id);
+      const order = [];
+      btn.click();
+      for (let guard = 0; guard < 50; guard++) {
+        await new Promise(r => setTimeout(r, 5));
+        const on = document.querySelector('.bh-listen[data-state="playing"]');
+        if (!on) break;
+        const id = on.closest('[data-listenable]').id;
+        if (order[order.length - 1] !== id) order.push(id);
+        window.__drain();
+      }
+      return { expected, order, buttons: document.querySelectorAll('.bh-listen-chapter-btn').length,
+        chapters: document.querySelectorAll('.eb-chapter-region').length };
+    });
+    check(`${vol.outputFile}: every regional chapter has a whole-chapter Listen button`,
+      chained.buttons > 0 && chained.buttons === chained.chapters, JSON.stringify({ b: chained.buttons, c: chained.chapters }));
+    check(`${vol.outputFile}: the whole-chapter button reads every section in order`,
+      !chained.error && chained.order.length > 1 && chained.order.join() === chained.expected.join(),
+      chained.error || `${chained.order.length} of ${chained.expected.length}`);
+
+    // Stop ends the chain: after Stop, finishing nothing starts the next section.
+    const stopped = await page.evaluate(async () => {
+      const btn = document.querySelectorAll('.bh-listen-chapter-btn')[1] || document.querySelector('.bh-listen-chapter-btn');
+      btn.click();
+      await new Promise(r => setTimeout(r, 10));
+      const on = document.querySelector('.bh-listen[data-state="playing"]');
+      on.querySelector('.bh-listen-stop').click();
+      window.__drain();
+      await new Promise(r => setTimeout(r, 10));
+      return document.querySelectorAll('.bh-listen[data-state="playing"]').length;
+    });
+    check(`${vol.outputFile}: Stop ends a whole-chapter reading`, stopped === 0, `${stopped} playing after Stop`);
+  }
+
   // ── 10. the library page has none of this ─────────────────────────────────
   console.log(`\n${LIBRARY}`);
   await page.goto(url(LIBRARY), { waitUntil: 'load' });

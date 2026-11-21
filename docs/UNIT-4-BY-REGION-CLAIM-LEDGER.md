@@ -291,3 +291,67 @@ the difference? ... has worked out the numbers for the 1590s."
   has no contents link; cross-region links land on chapter tops.
 - **Developer-only:** the East Asia module header says KC-4.3.II.A.i is "Left out on purpose" while the
   module claims and quotes it (probably meant A.iii).
+
+## Plain-language and accuracy pass (2026-11-21, Jeff: "do unit 4 and 5 together", target 8.5 from every persona)
+
+The merged pass the five-persona panel agreed on (2026-11-17): the East Asia method applied to the
+other five chapters, and the panel's accuracy and consistency findings fixed in the same edit. One
+rewriter per chapter, briefed with the shared rules (one idea per sentence; College Board words in one
+`cb` box per section, quoted word for word; mistake boxes after the claim they correct; six closing
+cards in a fixed order; shared accounts of silver and of Portugal's motives). Not yet independently
+reviewed: the reviewer loop that follows starts with the items marked **NEW FACT** below.
+
+| Chapter | Story sentence average | Over 25 words | Grade (story) | Whole chapter, words |
+|---|---|---|---|---|
+| East Asia (2026-11-16) | 12.6 | 4 | 6.5 | about 3,200 |
+| South and Southeast Asia | 20.8 to 12.4 | 25 to 1 | 10.8 to 6.2 | 2,887 to 3,342 |
+| Middle East | 20.1 to 12.5 | 31 to 0 | 9.6 to 6.3 | 3,036 to 2,713 |
+| Sub-Saharan Africa | 20.7 to 11.4 | 27 to 0 | 10.5 to 6.1 | 2,942 to 3,108 |
+| Europe | 20.3 to 13.2 | 26 to 1 | 9.9 to 6.3 | 2,985 to 3,195 |
+| Americas | 19.5 to 12.2 | 31 to 0 | 10.9 to 7.2 | 3,231 to 3,026 |
+
+Story prose shrank in every chapter; whole-chapter length held near 3,000 words because the College
+Board's words now sit in boxes (about 350 to 540 words a chapter). The reading time on the page is
+measured, 20 to 25 minutes.
+
+**Panel findings, how each was closed.**
+
+1. *Three causes for silver:* every chapter now gives East Asia's chain (already worth more in China,
+   because the Ming had given up paper money; the Single Whip then made most taxes payable in silver;
+   China mined little). South and Southeast Asia and the Americas rewritten; no superlative.
+2. *Illustrative examples as CED content (Middle East):* every "the CED's" and "the CED names" is gone
+   from the story; each example is labelled one of the College Board's examples in the box.
+   **Adjacent, not changed here:** Topic 4.7's deep reading (line 135) still says "The College Board
+   names 'the varying status of different classes of women within the Ottoman Empire'", the same error.
+3. *"Songhai's side" pointed at nothing:* Sub-Saharan Africa now gives Songhai's own decisions. **NEW
+   FACT:** Askia Ishaq II emptied Gao and offered tribute in gold and captives if the Moroccans would
+   leave; al-Mansur refused and sent a harder commander; Ishaq was deposed and died in exile; Askia
+   Nuh fought on from Dendi through much of the 1590s (Gomez 2018, p. 365; Levtzion, Cambridge History
+   of Africa 4, pp. 165 to 166, both via secondary summaries). The Swahili towns asked Oman for help:
+   **NEW FACT**, Africa names Pate (EBSCO; Cambridge History of Africa 4, pp. 529 to 530, via a
+   summary), the Middle East names no town; Swahili towns helped Portugal back into Mombasa 1728 to
+   1729.
+4. *Portugal's motive told two ways:* all chapters now give profit from cutting out the middlemen, West
+   African gold, and the crusading motive from Ceuta (1415), as Topic 4.2 does.
+5. *Truncated CED quotations:* KC-4.1.IV now quoted whole (Middle East); the Topic 4.7 sentence ending
+   "roles in society, politics, or the economy." quoted whole (South and Southeast Asia).
+6. *Judgment calls:* Europe's "dominated the ocean routes" narrowed (Atlantic trade; in Asia some ports
+   and some sea lanes held by force while Asian merchants kept much of the trade). Madeira: "sugar
+   plantations worked by enslaved people reached Atlantic islands before the Americas" (Madeira before
+   1492, then São Tomé), the same in Africa and the Americas. Diu 1509: **NEW FACT**, Gujarat's governor
+   Malik Ayaz made his own peace, returned the Portuguese prisoners from Chaul (1508), and put off a fort;
+   Portugal built one only by treaty in the 1530s (Bassein 1534) (Wikipedia, "Battle of Diu" and "Malik
+   Ayyaz"; Winter, Indian Historical Review 2024, summary only). East Asia: tribute now "accept, at least
+   in ceremony"; the 1639 charge attributed to the shogunate.
+
+**Other rewordings a reviewer should look at first:** Europe, Ambon 1623 now "ten English company men
+and ten others" with the charge and the confessions taken under torture (Topic 4.5), and "leading
+Englishmen, most of them nobles" for 1688; Middle East, "At its heart, the fight was about which route"
+for the Portuguese and Ottoman contest; Americas, "about one-seventh" for the mit'a and "helped feed"
+for American crops (ledger hedges restored).
+
+**Dropped with their details (all listed in each module's header):** among them Dias 1488, the Royal
+African Company 1672, Mombasa sacked 1505 and 1528, Magellan's landing 1521 and crossing, Tordesillas in
+the Americas chapter (kept in South and Southeast Asia), the 1494 to 1696 Pueblo and Palmares detail,
+Matteo Ricci 1601 (East Asia keeps it), Ptolemy, Murad IV's tobacco ban, Shivaji 1664, Makassar 1667 to
+1669. Ambon now lives only in Europe, which South and Southeast Asia links.

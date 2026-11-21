@@ -99,7 +99,7 @@ function cedText(ced) {
 }
 function norm(text) {
   return String(text).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/[\u2018\u2019]/g, "'")
-    .replace(/[\u201c\u201d]/g, '"').replace(/\s+/g, ' ').trim();
+    .replace(/[\u201c\u201d]/g, '"').replace(/\s*[\u2013\u2014]\s*/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 /** Quoted fragments in a College Board box that are not in the CED. A quote

@@ -297,6 +297,26 @@ function renderComparisons(closing, prefix, listen, scope) {
   );
 }
 
+/**
+ * "The story in short": the whole chapter in about five plain sentences, at
+ * its top. Asked for by the English-learner persona in the Unit 5 stress test
+ * (2026-11-21): a student who reads slowly holds the map before the detail,
+ * and can retell the chapter from it. Narrated, unlike the how-to, because it
+ * is the chapter's content in miniature. Optional, so every chapter without
+ * the field renders exactly as before.
+ */
+function renderInShort(sentences, prefix, listen, scope) {
+  if (!Array.isArray(sentences) || !sentences.length) return '';
+  const items = sentences.map(s => `      <li>${s}</li>\n`).join('');
+  return (
+    `  <section class="dr-inshort" id="${esc(withPrefix(prefix, 'inshort'))}"${listenAttrs(listen, scope, 'The story in short')}>\n` +
+    `    <h2>The story in short</h2>\n` +
+    listenMount(listen, '    ') +
+    `    <ol>\n${items}    </ol>\n` +
+    `  </section>\n`
+  );
+}
+
 function renderHowTo(howTo, prefix) {
   if (!howTo) return '';
   const steps = (howTo.steps || [])
@@ -348,6 +368,7 @@ function renderChapterBody(topic, opts) {
     // the audio equivalent of reading the manual before the book. It stays
     // fully on the page, in text, where it is quicker to scan than to hear.
     renderHowTo(topic.howTo, prefix) +
+    renderInShort(topic.inShort, prefix, listen, scope) +
     (topic.empires || []).map((empire, i) => renderEmpire(empire, i, prefix, listen, scope)).join('') +
     renderComparisons(topic.closing, prefix, listen, scope)
   );

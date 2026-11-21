@@ -182,6 +182,13 @@ textarea:focus-visible,
 .dr-note.cb b{color:var(--steel)}
 .dr-note.cb p + p{margin-top:.6rem}
 .dr-note.cb a{color:var(--oxidized)}
+/* "The story in short", at the top of a regional chapter: five numbered plain
+   sentences on clean paper with a steel edge, larger than body notes because
+   it is meant to be read first and slowly. */
+.dr-inshort{background:var(--clean);border:1px solid var(--rule);border-left:5px solid var(--steel);padding:1.1rem 1.3rem;margin:1.1rem 0 .4rem;max-width:68ch}
+.dr-inshort h2{font-family:var(--font-display);font-size:1.05rem;letter-spacing:.04em;color:var(--steel);margin:0 0 .5rem}
+.dr-inshort ol{margin:.4rem 0 0 1.3rem;padding:0}
+.dr-inshort li{font-size:1rem;line-height:1.7;margin:.25rem 0}
 .dr-note.argue{background:var(--clean);border:1px solid var(--rule);border-left:4px solid var(--bronze);max-width:72ch;margin-top:1.6rem}
 .dr-note.argue b{color:var(--bronze)}
 .dr-note.argue p{font-size:.95rem}
@@ -240,6 +247,16 @@ textarea:focus-visible,
 /* State is carried by the button labels and by the status text. This border is
    a second, redundant signal, never the only one: 1.4.1 is not satisfied by a
    colour change and neither is a projector at the back of a classroom. */
+/* While a section is being read, its controls stay on screen as the student
+   scrolls through it (sticky inside its own section), so Pause and Stop are
+   never a long scroll back up on a phone. */
+/* The mount, not the control, is what sticks: sticky holds an element inside
+   its parent's box, and the control's parent is the mount itself. */
+.bh-listen-mount:has(> .bh-listen[data-state="playing"]),.bh-listen-mount:has(> .bh-listen[data-state="paused"]){position:sticky;top:0;z-index:30}
+.bh-listen[data-state="playing"],.bh-listen[data-state="paused"]{box-shadow:0 2px 6px rgba(26,28,29,.12)}
+.bh-listen-chapter:empty{display:none}
+.bh-listen-chapter{margin-top:.9rem}
+.bh-listen-chapter-btn{min-height:36px;padding:.5rem 1rem;border-color:var(--bronze);color:var(--oxidized);font-weight:700}
 .bh-listen[data-state="playing"]{border-left-color:var(--oxidized);background:#f7f1e3}
 .bh-listen[data-state="paused"]{border-left-color:var(--iron);background:#f7f1e3}
 

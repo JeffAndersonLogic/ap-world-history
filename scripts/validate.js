@@ -863,6 +863,7 @@ section('eBook narration is generated and shared');
       try { mod = require(modFile); } catch (e) { continue; }
       expected += (mod.empires || []).length;
       if (mod.closing && (mod.closing.pairs || []).length) expected += 1;
+      if (Array.isArray(mod.inShort) && mod.inShort.length) expected += 1;   // "The story in short"
     }
 
     const marked = (src.match(/data-listenable="true"/g) || []).length;

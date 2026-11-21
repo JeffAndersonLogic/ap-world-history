@@ -50,6 +50,39 @@
 (function () {
   'use strict';
 
+  /* ── landing on a link target ────────────────────────────────────────────
+   *
+   * Not narration, but this is the one script an eBook volume loads, so it
+   * lives here, above the early return a browser with no speech engine takes.
+   * The hub's "Read Unit N by Region" button links ebook/unit-N.html#part-by-
+   * region. With smooth scrolling on, the browser starts gliding toward the
+   * target before the page has finished laying out (fonts swap in, the Listen
+   * controls are built), and the glide ends tens of thousands of pixels from
+   * where the target now is: measured 2026-11-21, 23,651px short on a phone.
+   * So once layout settles the target is scrolled to again, instantly. Only
+   * on load and only for a fragment that names a real element; a student who
+   * has already started scrolling is left alone. */
+  (function settleHash() {
+    var id = decodeURIComponent((location.hash || '').slice(1));
+    if (!id) return;
+    var moved = false;
+    function stop() { moved = true; }
+    window.addEventListener('wheel', stop, { passive: true, once: true });
+    window.addEventListener('touchstart', stop, { passive: true, once: true });
+    window.addEventListener('keydown', stop, { once: true });
+    function land() {
+      var el = !moved && document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
+    function settle() {
+      land();
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { setTimeout(land, 50); });
+      setTimeout(land, 400);
+    }
+    if (document.readyState === 'complete') settle();
+    else window.addEventListener('load', settle, { once: true });
+  })();
+
   /* The four supported rates, and the only four. A free-form number box invites
      0.1x, which sounds like a fault rather than a setting. */
   var RATES = [0.75, 1, 1.25, 1.5];
@@ -404,11 +437,18 @@
   var active = null;      // the entry currently playing or paused
   var session = 0;        // bumped by every start and every stop
 
-  function start(entry) {
+  /* "Listen to the whole chapter": the sections still to come, in order. Set
+     only by the chapter button, cleared by Stop and by any other Listen press,
+     so a student who starts one section by hand gets exactly one section. */
+  var chain = [];
+
+  function start(entry, keepChain) {
     var chunks = collect(entry.section);
     if (!chunks.length) return;               // nothing to read, so nothing to do
 
+    var queued = keepChain ? chain : [];
     stop();                                   // cancels whatever else was talking
+    chain = queued;
     session++;
     var token = session;
 
@@ -426,7 +466,7 @@
   function speakNext(token) {
     if (token !== session || !active) return;
 
-    if (active.index >= active.chunks.length) { finish(token); return; }
+    if (active.index >= active.chunks.length) { finish(token, true); return; }
 
     var utterance = new Utterance(active.chunks[active.index]);
     utterance.rate = rate;
@@ -480,15 +520,26 @@
     }
   }
 
-  function finish(token) {
+  function finish(token, natural) {
     if (token !== session) return;
     var entry = active;
     active = null;
     session++;
     if (entry) setState(entry, 'idle');
+    /* A section that reached its end, in a chapter being read through, hands
+       on to the next section, and the page follows so the words being spoken
+       are the words on screen. An error ends the chain instead. */
+    if (natural && chain.length) {
+      var next = chain.shift();
+      try { next.section.scrollIntoView({ block: 'start' }); } catch (e) { /* still read it */ }
+      start(next, true);
+      return;
+    }
+    chain = [];
   }
 
   function stop() {
+    chain = [];
     session++;
     var entry = active;
     active = null;
@@ -653,12 +704,47 @@
     }
   }
 
+  /**
+   * "Listen to the whole chapter", in a regional chapter's opener: plays every
+   * narrated section of that chapter in order, so a student listening on a
+   * phone does not have to find the next Listen button five times. The
+   * renderer leaves an empty [data-listen-chapter] slot; nothing is built
+   * where there is no slot, and each section keeps its own controls, which
+   * show the state while the chapter plays.
+   */
+  function buildChapterButtons() {
+    var slots = document.querySelectorAll('[data-listen-chapter]');
+    for (var i = 0; i < slots.length; i++) {
+      (function (slot) {
+        var chapter = slot.closest('section') || document;
+        var own = [];
+        for (var j = 0; j < entries.length; j++) {
+          if (chapter.contains(entries[j].section)) own.push(entries[j]);
+        }
+        if (!own.length) return;
+        var name = slot.getAttribute('data-listen-chapter') || 'this chapter';
+        var btn = el('button', 'bh-listen-btn bh-listen-chapter-btn');
+        btn.type = 'button';
+        btn.appendChild(document.createTextNode('Listen to the whole chapter'));
+        btn.appendChild(hidden(': ' + name));
+        btn.addEventListener('click', function () {
+          chain = own.slice(1);
+          own[0].section.scrollIntoView({ block: 'start' });
+          start(own[0], true);
+        });
+        slot.appendChild(btn);
+      })(slots[i]);
+    }
+  }
+
   function init() {
     var sections = document.querySelectorAll('[data-listenable]');
     for (var i = 0; i < sections.length; i++) {
       entries.push(buildControls(sections[i], i));
     }
     if (!entries.length) return;
+
+    buildChapterButtons();
 
     /* Speech outlives the document in several browsers, so a student who clicks
        a chapter link mid-paragraph would otherwise be followed to the next page
