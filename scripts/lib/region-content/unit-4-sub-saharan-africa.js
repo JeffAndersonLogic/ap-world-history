@@ -64,6 +64,15 @@
  * quotations, about 3,530. Cut as secondary: the Portuguese name São Jorge da Mina, gold
  * bought at Arguin, the Senegal coast purchases of the 1450s, the Dutch Cape station
  * (1652), and the Swahili towns' help to Portugal at Mombasa (1728 to 1729).
+ *
+ * Review pass 1 (2026-11-22, ledger D4 to D9, G7): da Gama rounded the Cape late in 1497 and
+ * reached Malindi in April 1498; the Moroccan army left late in 1590, fought in March 1591, and
+ * "many" of its men carried firearms; Hispaniola's sugar mills (from the late 1510s) come before
+ * Brazil, and free settlers worked Madeira's cane beside the enslaved; KC-4.1.IV.D.ii is quoted
+ * whole with the CED's own dash; KC-4.1.IV dropped (the chapter never teaches the silver flow;
+ * five other chapters claim it); KC-4.2 is now quoted in section 2's box, with one added sentence
+ * on Indian weavers making cloth for sale in Africa (manufacturing), beside the labor, family and
+ * environmental changes the chapter already teaches.
  */
 
 const CB = 'What the College Board says';
@@ -92,7 +101,6 @@ module.exports = {
     'KC-4.2.II',
     'KC-4.2.II.C',
     'KC-4.1.IV.D.i',
-    'KC-4.1.IV',
     'KC-4.2.III.C',
     'KC-4.2',
     'KC-4.3.III.ii',
@@ -125,7 +133,7 @@ module.exports = {
             { p: `Religion was another reason. In <span class="num">1415</span> Portugal captured <b>Ceuta</b> (a Muslim port in North Africa). That attack carried on the long wars of Iberia's Christian kingdoms against Muslim powers. <a href="#r4-europe-edge">The Europe chapter</a> tells that story.` },
             { p: `So Prince Henry and other royals paid for voyages down the coast. Sometimes they gave merchants the right to make them instead. This was <span class="kt">state-supported exploration</span>: voyages that a ruler paid for or allowed. Light ships called caravels carried each voyage farther. So did sailors' growing knowledge of Atlantic winds.` },
             { p: `The trade in people began early. In the 1440s, Portuguese crews raided the Saharan coast for captives. That was the beginning of the Atlantic slave trade. From the late 1440s they also bought captives at Arguin (an island off that coast).` },
-            { p: `In <span class="num">1482</span> Portugal built a fortress on the Gold Coast to buy gold. It is known as <b>Elmina</b>. In <span class="num">1498</span> Vasco da Gama sailed around Africa and up its east coast. At the Swahili town of <b>Malindi</b>, he hired a pilot who knew the way to India.` }
+            { p: `In <span class="num">1482</span> Portugal built a fortress on the Gold Coast to buy gold. It is known as <b>Elmina</b>. Late in <span class="num">1497</span> Vasco da Gama sailed around the southern tip of Africa. In April <span class="num">1498</span> he reached the Swahili town of <b>Malindi</b> on the east coast. There he hired a pilot who knew the way to India.` }
           ]
         },
         {
@@ -187,9 +195,9 @@ module.exports = {
         {
           heading: 'How the Atlantic trade grew',
           blocks: [
-            { p: `Sugar plantations worked by enslaved people reached Atlantic islands before the Americas. Before <span class="num">1492</span>, enslaved workers grew sugar on Portugal's island of Madeira. Some were Canary Islanders and some were Africans. São Tomé came next. Portugal settled that island in the 1480s and 1490s. Then plantations crossed to Brazil in the 1500s. From the 1640s they spread to English and French islands in the Caribbean.` },
+            { p: `Sugar plantations worked by enslaved people reached Atlantic islands before the Americas. Before <span class="num">1492</span>, enslaved workers grew sugar on Portugal's island of Madeira. Some were Canary Islanders and some were Africans. Free settlers worked the cane beside them. São Tomé came next. Portugal settled that island in the 1480s and 1490s. Then plantations crossed to the Americas. From the late 1510s, enslaved Africans worked Spanish sugar mills on the Caribbean island of Hispaniola. Brazil's plantations grew far larger later in the 1500s. From the 1640s they spread to English and French islands in the Caribbean.` },
             { p: `Sugar and later tobacco needed huge numbers of workers. Historians estimate that about <span class="num">278,000</span> Africans were forced onto ships for the Americas in the whole 1500s. From <span class="num">1701</span> to <span class="num">1750</span> alone, the number was more than <span class="num">2.5 million</span>.` },
-            { p: `This was the <span class="kt">Atlantic trading system</span>. It moved goods, wealth and people. Into Africa went guns, iron, alcohol, cloth and cowrie shells, which were used as money. Much of the cloth was Indian cotton. Out of Africa went gold and ivory, and more and more captives.` },
+            { p: `This was the <span class="kt">Atlantic trading system</span>. It moved goods, wealth and people. Into Africa went guns, iron, alcohol, cloth and cowrie shells, which were used as money. Much of the cloth was Indian cotton. Weavers in India made more and more cloth for sale in Africa. Out of Africa went gold and ivory, and more and more captives.` },
             { p: `Most captives were taken inside Africa by war, raids and kidnapping. African rulers and merchants sold them at the coast. In Angola, Portugal's own wars took captives too. Portugal founded its port of <b>Luanda</b> there in <span class="num">1576</span>. It became one of the busiest slave ports of the Atlantic.` },
             { p: `Many captives died on the crossing of the Atlantic. That crossing is called the <span class="kt">Middle Passage</span>. <a href="#r4-americas-plantations">The Americas chapter</a> tells about the plantations that bought them.` }
           ]
@@ -208,9 +216,10 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Older kinds of slavery in Africa went on, but plantations made the Atlantic slave trade much larger, and it changed African families.`,
+                `In short: Older kinds of slavery in Africa went on, but plantations made the Atlantic slave trade much larger, and it changed work and families in Africa.`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes."`,
+                `<a href="#chapter-t4-8">Topic 4.8</a>: "Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes."`,
                 `<a href="#chapter-t4-8">Topic 4.8</a>: "Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons."`
@@ -240,7 +249,7 @@ module.exports = {
           heading: 'Songhai against Morocco',
           blocks: [
             { p: `The <b>Songhai Empire</b> ruled along the middle Niger River, from cities such as Gao and Timbuktu. It controlled the routes that carried gold north. It also controlled the Sahara's salt mines. <b>Ahmad al-Mansur</b> was the sultan (Muslim ruler) of Morocco, and he wanted that wealth. The two states had quarreled over the salt mine at Taghaza in the 1580s.` },
-            { p: `In <span class="num">1591</span> al-Mansur sent about 4,000 men with firearms across the desert. Songhai's ruler was <b>Askia Ishaq II</b>. He met them at <b>Tondibi</b>. His army was larger, but it had no firearms, and Morocco's guns broke it. <a href="#r4-middle-east-pushback">The Middle East chapter</a> tells Morocco's side.` },
+            { p: `Late in <span class="num">1590</span> al-Mansur sent an army of about 4,000 men across the desert. Many of them carried firearms. Songhai's ruler was <b>Askia Ishaq II</b>. In March <span class="num">1591</span> he met them at <b>Tondibi</b>. His army was larger, but it had no firearms, and Morocco's guns broke it. <a href="#r4-middle-east-pushback">The Middle East chapter</a> tells Morocco's side.` },
             { p: `Ishaq emptied the capital city of Gao. Then he offered tribute (regular payments to a stronger ruler) in gold and enslaved people if the Moroccans went home. Al-Mansur refused and sent a tougher commander.` },
             { p: `Ishaq soon lost his throne and was killed in exile. But some Songhai fighters would not give in. They moved down the Niger to Dendi. From there, Askia Nuh fought the Moroccans through much of the 1590s. He fought a guerrilla war (a war of small raids and ambushes).` },
             { p: `Morocco held Timbuktu and Gao, but Songhai broke into smaller states. The gold kept flowing to other buyers, including European traders on the coast.` }
@@ -278,7 +287,6 @@ module.exports = {
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
                 `An optional College Board example: Morocco's conflict with the Songhai Empire.`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British."`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver ..."`,
                 `<a href="#chapter-t4-6">Topic 4.6</a>: "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."`,
                 `An optional College Board example: Ana Nzinga's resistance as ruler of Ndongo and Matamba.`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence."`,
@@ -341,7 +349,7 @@ module.exports = {
                 `<a href="#chapter-t4-3">Topic 4.3</a>: "Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons."`,
                 `An optional College Board example: okra and rice, two foods brought by enslaved Africans.`,
                 `<a href="#chapter-t4-3">Topic 4.3</a>: "European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria."`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of labor ... and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices."`
               ]
             } }
@@ -388,7 +396,7 @@ module.exports = {
       {
         category: 'Technological',
         title: 'Guns won battles, and forts let Europeans hold parts of the coast',
-        body: `In 1591 about 4,000 Moroccans with firearms beat Songhai's larger army at Tondibi. Asante bought European guns as it rose around 1700. Forts such as Elmina (1482) held the shore, but European power reached little farther.`
+        body: `In 1591 a Moroccan army of about 4,000, many of them armed with guns, beat Songhai's larger army at Tondibi. Asante bought European guns as it rose around 1700. Forts such as Elmina (1482) held the shore, but European power reached little farther.`
       },
       {
         category: 'Economic',

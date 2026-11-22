@@ -50,6 +50,14 @@
  * Diu section and to the Sub-Saharan Africa chapter's Swahili towns); the six closing cards
  * rewritten as one claim plus dated evidence, each fact on the card of its own kind. No date
  * dropped. Hürrem is now dated to the 1500s (she married Suleiman, who reigned 1520 to 1566).
+ *
+ * Review pass 1 (2026-11-22, ledger D1 to D5, G15b, G15c): the lands of Islam in 1450 now reach
+ * from West Africa to Southeast Asia, with this chapter following Morocco to Persia; the Toledan
+ * Tables (about 1080) are Muslim work, updated in the 1270s by Jewish astronomers for Alfonso X,
+ * and Zacuto's tables (1496) are based on that later version; the cash-crop sentence no longer
+ * implies other crops went to the Middle East; the Moroccan army left late in 1590, fought in
+ * March 1591, and "many" of its men, not all, carried firearms; the Morocco and Songhai example
+ * now sits in section 2's box under its own Key Concept (KC-4.3.III.ii).
  */
 
 const CB = 'What the College Board says';
@@ -96,10 +104,10 @@ module.exports = {
         {
           heading: 'A world of scholars and sailors',
           blocks: [
-            { p: `In 1450 the lands of Islam stretched from Morocco to Persia. Muslim scholars called this world <span class="kt">Dar al-Islam</span> (Arabic for "the house of Islam"). It was not one state. It was many lands joined by Islamic law, the Arabic language and trade.` },
+            { p: `In 1450 the lands of Islam reached from West Africa to Southeast Asia. They included the East African coast, Central Asia and much of India. This chapter follows the lands from Morocco to Persia. Muslim scholars called this world <span class="kt">Dar al-Islam</span> (Arabic for "the house of Islam"). It was not one state. It was many lands joined by Islamic law, the Arabic language and trade.` },
             { p: `One example of its learning is the <span class="kt">astrolabe</span>. This tool measures how high the sun or a star stands in the sky. The idea was Greek, but astronomers in the Islamic world made it precise. It reached Europe through Muslim Spain. In the 1100s and 1200s, Christian and Jewish translators in the Spanish city of Toledo turned Arabic science books into Latin.` },
             { p: `By the 1480s, Portuguese pilots (the sailors who guided ships) used a heavy sea astrolabe. With it they measured the sun's height at noon. A pilot then turned that reading into a <span class="kt">latitude</span> (how far north or south of the equator the ship was).` },
-            { p: `For that, a pilot needed <span class="kt">astronomical charts</span>. These were tables of where the sun stands each day. Muslim and Jewish astronomers in Toledo built such tables around <span class="num">1080</span>. The tables of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>, grew from theirs.` }
+            { p: `For that, a pilot needed <span class="kt">astronomical charts</span>. These were tables of where the sun stands each day. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. In the <span class="num">1270s</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They were based on that later version.` }
           ]
         },
         {
@@ -177,6 +185,7 @@ module.exports = {
                 `In short: Quarrels over trade led to wars, but the old Asian trade of the Indian Ocean went on.`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
                 `An optional College Board example: the rivalry between Muslim and European powers in the Indian Ocean.`,
+                `An optional College Board example: the Moroccan conflict with the Songhai Empire. <a href="#r4-middle-east-pushback">Section 4</a> of this chapter tells it.`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants."`,
                 `An optional College Board example: Gujarati merchants.`
               ]
@@ -266,7 +275,7 @@ module.exports = {
           heading: 'Morocco crosses the Sahara',
           blocks: [
             { p: `Morocco lies in the far west of North Africa. The Ottomans never ruled it. <b>Ahmad al-Mansur</b> became Morocco's sultan in <span class="num">1578</span>. He wanted the riches to the south. The <b>Songhai Empire</b> controlled West Africa's gold trade and the Sahara's salt mines. In the 1580s the two states quarreled over the salt mine at Taghaza.` },
-            { p: `Al-Mansur sent about four thousand men with firearms across the desert. In <span class="num">1591</span> they defeated the Songhai army at <b>Tondibi</b>. Gold and salt were a large part of the reason. It was another quarrel over trade that turned into war (<a href="#chapter-t4-5">Topic 4.5</a>).` },
+            { p: `Late in <span class="num">1590</span>, al-Mansur sent an army of about four thousand men across the desert. Many of them carried firearms. In March <span class="num">1591</span> they defeated the Songhai army at <b>Tondibi</b>. Gold and salt were a large part of the reason. It was another quarrel over trade that turned into war (<a href="#chapter-t4-5">Topic 4.5</a>).` },
             { p: `Winning did not bring Morocco the gold. Al-Mansur seems to have believed that Songhai owned the gold mines. It did not. His pashas (governors) ruled Timbuktu, but Morocco never controlled the gold supply. Much of the gold went to other buyers, including Europeans on the coast. <a href="#r4-sub-saharan-africa-kingdoms">The Sub-Saharan Africa chapter</a> tells what Songhai did next.` }
           ]
         },
@@ -295,14 +304,13 @@ module.exports = {
         {
           heading: 'New goods in old markets',
           blocks: [
-            { p: `The Columbian Exchange reached these lands too. It was the movement of plants, animals and diseases between the Americas and the rest of the world. In the Americas, plantations (large farms) grew cash crops with forced labor. Cash crops are crops grown to sell. Most were sold in Europe and the Middle East (<a href="#chapter-t4-3">Topic 4.3</a>). Most sugar, though, went to Europe.` },
+            { p: `The Columbian Exchange reached these lands too. It was the movement of plants, animals and diseases between the Americas and the rest of the world. In the Americas, plantations (large farms) grew cash crops with forced labor. Cash crops are crops grown to sell. Most American sugar and tobacco went to Europe. Some reached the Middle East too.` },
             { p: `Tobacco arrived in Ottoman cities around 1600, and Ottoman farmers soon grew their own. <span class="kt">Maize</span> (corn) also came from the Americas. Farmers began to grow it as a food crop in Ottoman lands such as the Balkans (southeastern Europe) and Egypt.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
                 `In short: Old elites rose or fell under stronger rulers, regional trade kept going, and American crops spread.`,
-                `An optional College Board example: the Moroccan conflict with the Songhai Empire (<a href="#chapter-t4-5">Topic 4.5</a>).`,
                 `<a href="#chapter-t4-7">Topic 4.7</a>: "The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders."`,
                 `An optional College Board example: Ottoman timars.`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."`,
@@ -347,7 +355,7 @@ module.exports = {
       {
         category: 'Intellectual',
         title: 'Science from the Islamic world helped Europeans find their way at sea.',
-        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Zacuto's sun tables, printed in Portugal in 1496, grew from tables made in Toledo around 1080.`
+        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made sun tables around 1080, and Jewish astronomers updated them in the 1270s. Zacuto's tables (printed in Portugal in 1496) were based on that later version.`
       },
       {
         category: 'Technological',

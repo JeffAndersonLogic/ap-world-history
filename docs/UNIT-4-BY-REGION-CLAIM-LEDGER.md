@@ -370,16 +370,16 @@ pushed, before any fix.
 - G1. East Asia, Political card: "After 1639 only the Dutch could trade in Japan" contradicts the
   chapter's own Chinese merchants at Nagasaki. **FIXED:** "After 1639 the Dutch were the only Europeans allowed to trade in Japan".
 - G4. Americas, story in short: "Spain forced Indigenous men to work its silver mines" generalizes
-  Potosí's mit'a to all mining (Zacatecas relied largely on paid labor). PENDING
+  Potosí's mit'a to all mining (Zacatecas relied largely on paid labor). **FIXED:** "At Potosí, Spain forced Indigenous men to work its silver mine".
 - G7. Europe claims KC-4.2 (environmental processes not taught); Sub-Saharan Africa lists KC-4.2
-  but neither quotes nor teaches it. Europe **FIXED** (now teaches the livestock half from Topic 4.3); Sub-Saharan Africa PENDING
+  but neither quotes nor teaches it. Europe **FIXED** (now teaches the livestock half from Topic 4.3); Sub-Saharan Africa **FIXED** (KC-4.2 quoted whole in section 2's box; manufacturing taught: "Weavers in India made more and more cloth for sale in Africa", Riello 2013, to be confirmed by the next pass)
 - G10. Europe, Argue it and section 2 lead: "kings and queens" charter companies, but the Dutch
   Republic chartered the VOC. **FIXED:** "a project of rulers and states"; Argue it asks about "Europe's rulers"; "official grants of special rights".
 - G15b. Middle East, section 4 box: the Morocco and Songhai example stands without its Key Concept
-  (quoted only in section 2). PENDING
+  (quoted only in section 2). **FIXED:** the Morocco and Songhai example moved into section 2's box under KC-4.3.III.ii, pointing to section 4.
 - G15c. Europe and Middle East: Zacuto's tables "grew out of" Muslim and Jewish astronomy in Toledo;
   the Alfonsine tables were compiled largely by Jewish and Christian scholars on the Toledan Tables.
-  Europe **FIXED** (Toledan Tables c. 1080 by Muslim astronomers, updated in the 1270s by Jewish astronomers for Alfonso X, Zacuto built on that version); Middle East PENDING
+  Europe **FIXED** (Toledan Tables c. 1080 by Muslim astronomers, updated in the 1270s by Jewish astronomers for Alfonso X, Zacuto built on that version); Middle East **FIXED** (D1)
 - Not verified by the reviewer: the slave-trade figures (278,000 in the 1500s; more than 2.5 million
   1701 to 1750) and the Morga 1609 quotation. To check.
 
@@ -393,24 +393,24 @@ Giráldez 1995); the Slave Voyages figures; Virginia 1662; the Pueblo Revolt; Ja
   contradicts Angola, where Portugal's own wars took captives (Ndongo, 1617 to 1621). **FIXED:** "On most of Africa's coasts ... In Angola, Portugal's own wars took captives too."
 - B2. Americas: "Disease was killing the workers Spain needed. So Spain reused an Inca labor duty"
   makes disease the cause; the encomienda rewarded conquerors and Toledo's draft served the mercury
-  process (Bakewell 1977). PENDING
+  process (Bakewell 1977). **FIXED:** "Spain rewarded its conquerors with the work of Indigenous communities"; "The new mercury method needed many workers. So in the 1570s Francisco de Toledo turned the mit'a into a draft" (Bakewell 1977).
 - B3. Europe: the Dutch "looked for a Northwest Passage"; the VOC hired Hudson in 1609 for the
   northeast route and he turned west against instructions; Topic 4.2 says so. **FIXED:** "Most looked for a Northwest Passage ... In 1609 a Dutch company sent Henry Hudson to find a route north of Russia. Ice stopped him, and he turned west against his orders."
 - B4. Americas: Madeira's workers "were enslaved people" reads as all; Vieira finds slaves beside
-  paid settlers and sharecroppers, Greenfield the reverse. PENDING
+  paid settlers and sharecroppers, Greenfield the reverse. **FIXED:** "Many of its workers were enslaved ... Free settlers also grew cane, some for wages and some for a share of the crop" (Vieira); Sub-Saharan Africa matched ("Free settlers worked the cane beside them").
 - B5. Americas: Comanche horse culture "By the 1700s" is too early; first in Spanish records 1706, the
-  culture built during the century (NPS; Hämäläinen 2003). PENDING
+  culture built during the century (NPS; Hämäläinen 2003). **FIXED:** "During the 1700s, Plains nations such as the Comanche built" (story and card).
 - B6. Europe: pepper passed through "Mamluk Egypt or Ottoman lands" in the 1400s; Syria was Mamluk
   until 1516, Baghdad Ottoman from 1534. **FIXED:** "through Egypt or Syria. The Mamluk sultans ruled both."
 - B7. Americas and Topic 4.7: casta "favored those born in Spain"; casta ranked ancestry, and the
-  crown's appointments, not casta, favored peninsulares. PENDING
-- B8. Americas: story in short, forced silver-mine labor generalized (G4). PENDING
+  crown's appointments, not casta, favored peninsulares. **FIXED:** "People of Spanish ancestry stood at the top. Among them, the crown favored those born in Spain for its top posts." Topic 4.7 is being fixed to match.
+- B8. Americas: story in short, forced silver-mine labor generalized (G4). **FIXED** with G4.
 - B9. Europe, glossary: "Three wars at sea" defines the Anglo-Dutch Wars as three; there were four.
   **FIXED:** glossary "Wars at sea between England and the Dutch. The first three, from 1652 to 1674, were fought largely over trade."
 - B10. Europe and Americas: silver dearer in China for one cause; East Asia gives two (paper money
-  given up; a growing economy that ran on silver). Europe **FIXED**; Americas PENDING
+  given up; a growing economy that ran on silver). Europe and Americas **FIXED**
 - B11. Europe: KC-4.1.II.A shown with " ... " where the CED has a dash (no words left out); Americas:
-  KC-4.1.IV.D.ii cut drops "including enslaved persons". Europe **FIXED** (the CED's dash kept inside the quotation); Americas PENDING
+  KC-4.1.IV.D.ii cut drops "including enslaved persons". Europe and Americas **FIXED** (the CED's dash kept inside the quotation)
 
 **Reviewer D (history: Middle East, Sub-Saharan Africa).** Verified sound: the Afonso quotation
 (Madureira, in Thornton 2023, p. 203); Montagu's letter of 1 April 1717; Tondibi; Ottoman aid to the
@@ -418,24 +418,24 @@ Mamluks before 1509 (Oxford Research Encyclopedia); the 1538 siege; the slave-tr
 
 - D1. Middle East: the Toledo tables "around 1080" by "Muslim and Jewish astronomers", Zacuto's
   "grew from theirs"; the Toledan Tables (c. 1080) were Muslim work, the Alfonsine Tables (1270s) were
-  by Jewish astronomers for Alfonso X, and Zacuto built on the Alfonsine (G15c). PENDING
+  by Jewish astronomers for Alfonso X, and Zacuto built on the Alfonsine (G15c). **FIXED:** the Toledan Tables (around 1080) by Muslim astronomers; updated in the 1270s by Jewish astronomers for Alfonso X; Zacuto's 1496 tables based on that later version (story and card).
 - D2. Middle East: "In 1450 the lands of Islam stretched from Morocco to Persia" leaves out India,
   Central Asia, Southeast Asia, the Swahili coast and West Africa, which the course's own chapters
-  name. PENDING
+  name. **FIXED:** "In 1450 the lands of Islam reached from West Africa to Southeast Asia. They included the East African coast, Central Asia and much of India. This chapter follows the lands from Morocco to Persia."
 - D3. Middle East: "Most sugar, though, went to Europe" implies the other cash crops went to the
   Middle East; Topic 4.5: "Sugar and tobacco went to Europe"; the Topic 4.3 link does not tell it.
-  PENDING
+  **FIXED:** "Most American sugar and tobacco went to Europe. Some reached the Middle East too"; the Topic 4.3 link removed from the story.
 - D4. Sub-Saharan Africa: "In 1591 al-Mansur sent"; the army left Marrakesh in October 1590 and
-  fought at Tondibi on 13 March 1591. PENDING
+  fought at Tondibi on 13 March 1591. **FIXED:** "Late in 1590 al-Mansur sent an army ... In March 1591 he met them at Tondibi."
 - D5. Both: "about 4,000 men with firearms" reads as all armed with guns; about 1,500 to 2,500
-  arquebusiers, 1,500 cavalry, cannon. PENDING
-- D6. Sub-Saharan Africa: KC-4.1.IV.D.ii cut drops "including enslaved persons" (B11). PENDING
+  arquebusiers, 1,500 cavalry, cannon. **FIXED** in both chapters and the card: "about 4,000 ... Many of them carried firearms."
+- D6. Sub-Saharan Africa: KC-4.1.IV.D.ii cut drops "including enslaved persons" (B11). **FIXED:** KC-4.1.IV.D.ii quoted whole with the CED's dash.
 - D7. Sub-Saharan Africa: plantations "crossed to Brazil in the 1500s" skips Hispaniola's sugar mills
-  of about 1515 to 1520 (the 1522 Wolof revolt); the Americas chapter keeps "first great". PENDING
+  of about 1515 to 1520 (the 1522 Wolof revolt); the Americas chapter keeps "first great". **FIXED:** "From the late 1510s, enslaved Africans worked Spanish sugar mills on the Caribbean island of Hispaniola. Brazil's plantations grew far larger later in the 1500s."
 - D8. Sub-Saharan Africa: quotes KC-4.1.IV's "global flow of silver", which the chapter never
-  teaches. PENDING
+  teaches. **FIXED:** Sub-Saharan Africa no longer claims or quotes KC-4.1.IV (five chapters teach it).
 - D9. Sub-Saharan Africa: "In 1498 Vasco da Gama sailed around Africa and up its east coast"; he
-  rounded the Cape in November 1497 and reached Malindi in April 1498. PENDING
+  rounded the Cape in November 1497 and reached Malindi in April 1498. **FIXED:** "Late in 1497 Vasco da Gama sailed around the southern tip of Africa. In April 1498 he reached ... Malindi".
 
 **Reviewer A (history: East Asia, South and Southeast Asia).** Verified sound: all 31 CED quotations;
 Morga (Stanley's 1868 Hakluyt translation); the 1635 Nagasaki order (Columbia); Coen 1614; and the

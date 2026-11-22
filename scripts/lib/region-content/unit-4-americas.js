@@ -58,6 +58,15 @@
  * into a "How we know" box, with the tribute records they were built from (Topic 4.3). Added
  * from Topic 4.5: Vodou "in the 1700s". Metacom's war now says the other Native nations
  * joined him. Closing cards rewritten as a claim plus dated evidence.
+ *
+ * Review pass 1 (2026-11-22, ledger G4, B2, B4, B5, B7, B8, B10, B11): forced mine labor is
+ * Potosí's mit'a, not all silver mining; section 2's thesis no longer makes disease the cause of
+ * the labor systems (the encomienda rewarded conquerors; Toledo's draft served the mercury
+ * method, after Bakewell 1977); Madeira's enslaved workers worked beside free settlers; the
+ * Comanche horse culture is built "during the 1700s"; casta ranks ancestry, and the crown's
+ * appointments, not casta, favored peninsulares; silver was dearer in China for two reasons (paper
+ * money given up; a growing economy that ran on silver); KC-4.1.IV.D.ii quoted whole with the
+ * CED's own dash.
  */
 
 const CB = 'What the College Board says';
@@ -74,7 +83,7 @@ module.exports = {
   inShort: [
     `In 1492 a Spanish voyage joined the Americas to Afro-Eurasia, and new diseases killed millions of Indigenous people.`,
     `Plants and animals crossed both ways: horses and sugar came west, and maize and potatoes went east.`,
-    `Spain forced Indigenous men to work its silver mines, and much of that silver ended up in China.`,
+    `At Potosí, Spain forced Indigenous men to work its silver mine, and much of the silver ended up in China.`,
     `Sugar planters bought millions of enslaved Africans, who became most of the people in much of the Caribbean.`,
     `Christianity spread and blended with older faiths, and Indigenous and enslaved people resisted, sometimes winning lasting terms.`
   ],
@@ -147,7 +156,7 @@ module.exports = {
           blocks: [
             { p: `Historians call this two-way movement of plants, animals and diseases the ${KT('Columbian Exchange')}. Disease crossed by accident, but much else crossed on purpose. On his second voyage, in ${N('1493')}, Columbus brought horses, cattle, pigs, wheat and sugarcane.` },
             { p: `Enslaved Africans were carried across the ocean by force. They brought foods such as okra and rice. They grew them in garden plots to feed themselves.` },
-            { p: `By the 1700s, Plains nations such as the <b>Comanche</b> had built a new way of life around hunting bison on horseback. It was a new Indigenous culture, not an old one.` },
+            { p: `During the 1700s, Plains nations such as the <b>Comanche</b> built a new way of life around hunting bison on horseback. It was a new Indigenous culture, not an old one.` },
             { p: `Crops also went east. Maize, potatoes and cassava became ${KT('staple crops')} (main everyday foods) in parts of Europe, Asia and Africa. They grew where older crops could not, so they helped feed growing populations.` },
             { p: `Sugar became the great ${KT('cash crop')} (a crop grown to sell). It grew on ${KT('plantations')}. A plantation is a large farm that grows one cash crop with forced labor.` },
             { note: {
@@ -185,7 +194,7 @@ module.exports = {
       name: 'Silver, Land and Forced Work',
       navLabel: 'Silver and labor',
       dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Encomienda, Potosí, the galleons, casta',
-      thesis: `Disease was killing the workers Spain needed. So Spain reused an Inca labor duty and brought in new kinds of forced work. Much of the silver ended up in China.`,
+      thesis: `Spain rewarded its conquerors with the work of Indigenous communities. To mine silver at Potosí, it turned an old Inca labor duty into a forced draft. Much of the silver ended up in China.`,
       parts: [
         {
           heading: 'Paying conquerors with other people\'s work',
@@ -198,7 +207,7 @@ module.exports = {
           heading: 'A mountain of silver',
           blocks: [
             { p: `In ${N('1545')}, an Andean miner named Diego Gualpa found silver at <b>Potosí</b>, high in the Andes Mountains. We know this from his own later account. Spanish colonists claimed the mountain. In ${N('1546')} miners found silver at Zacatecas in Mexico. From the 1570s, Potosí also used a way to separate silver from rock with mercury (a liquid metal). It was first worked out in Mexico.` },
-            { p: `The Inca had required communities to send people in turns to work for the state. This rotating duty was the ${KT('mit’a')}. In the 1570s Francisco de Toledo turned it into a draft for the Potosí mine. A draft forces people to serve. Toledo was the viceroy of Peru (the king's governor there).` },
+            { p: `The Inca had required communities to send people in turns to work for the state. This rotating duty was the ${KT('mit’a')}. The new mercury method needed many workers. So in the 1570s Francisco de Toledo turned the mit’a into a draft for the Potosí mine. A draft forces people to serve. Toledo was the viceroy of Peru (the king's governor there).` },
             { p: `Each year, about one-seventh of the adult men of the highland districts had to go. By ${N('1578')}, the draft took more than ${N('14,000')} men. The idea of a turn of service continued, but the master and the danger changed. Many men never came home from the mines.` }
           ]
         },
@@ -207,14 +216,14 @@ module.exports = {
           blocks: [
             { p: `Spain ran this trade by the rules of ${KT('mercantilism')}. This was the idea that a kingdom grows strong by gathering gold and silver. In this view, a kingdom should also keep its colonies' trade for itself.` },
             { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. Much of it ended up in China, for three reasons.` },
-            { p: `First, silver was already worth more in China than in Europe. That was because the Ming government (China's rulers) had given up paper money. Then a tax reform called the Single Whip made most taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this from China's side.` },
+            { p: `First, silver was already worth more in China than in Europe, for two reasons. The Ming government (China's rulers) had given up paper money. And China's growing economy ran on silver. Then a tax reform called the Single Whip made most taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this from China's side.` },
             { p: `In ${N('1571')} Spain founded Manila, in the Philippines. From then on, ${KT('Manila galleons')} (large Spanish ships) carried silver across the Pacific from Acapulco in Mexico to Manila. There, Chinese merchants traded silk and porcelain for it.` }
           ]
         },
         {
           heading: 'A new top class, ranked by birth',
           blocks: [
-            { p: `Spanish America ranked people by their ancestry (their family line). Historians call this ranking the ${KT('casta')} system. Among people counted as Spanish, it favored those born in Spain. They were called ${KT('peninsulares')}. They almost always held the post of viceroy, and many top posts in government and the Church. They were a new political elite (a small ruling group).` },
+            { p: `Spanish America ranked people by their ancestry (their family line). Historians call this ranking the ${KT('casta')} system. People of Spanish ancestry stood at the top. Among them, the crown favored those born in Spain for its top posts. They were called ${KT('peninsulares')}. They almost always held the post of viceroy, and many top posts in government and the Church. They were a new political elite (a small ruling group).` },
             { p: `${KT('Creoles')} were people of Spanish ancestry born in the Americas. They grew rich from mines, estates and trade. They were a new economic elite.` },
             { p: `Below them came people of mixed ancestry, such as ${KT('mestizos')} (people with Spanish and Indigenous parents). Indigenous people kept their own town governments and paid tribute. People of African ancestry were ranked lowest, whether free or enslaved.` },
             { p: `But casta was never one fixed ladder. Official records used only a few labels. How a person was recorded could change with their wealth, work and reputation. A rich mestizo might be recorded as Spanish. The ranking also worked differently from region to region.` },
@@ -235,7 +244,7 @@ module.exports = {
       terms: [
         ['Encomienda', `A colonist's right to demand labor and tribute from one Indigenous community.`],
         ['Mit’a', `The Inca duty to work for the state in turns. In the 1570s Spain made it a draft for the Potosí mine.`],
-        ['Casta', `The ranking of people in Spanish America by ancestry. It favored people born in Spain for top posts.`]
+        ['Casta', `The ranking of people in Spanish America by ancestry. People of Spanish ancestry stood at the top.`]
       ]
     },
 
@@ -259,7 +268,7 @@ module.exports = {
         {
           heading: 'A system from the Atlantic islands',
           blocks: [
-            { p: `What these empires often fought over was sugar. The sugar plantation was not invented in the Americas. Before ${N('1492')}, Portugal grew sugar on the island of Madeira. Its workers were enslaved people, including Canary Islanders and Africans.` },
+            { p: `What these empires often fought over was sugar. The sugar plantation was not invented in the Americas. Before ${N('1492')}, Portugal grew sugar on the island of Madeira. Many of its workers were enslaved people, including Canary Islanders and Africans. Free settlers also grew cane, some for wages and some for a share of the crop.` },
             { p: `Then Portugal did the same on São Tomé. São Tomé is an island in the Gulf of Guinea. It was settled in the 1480s and 1490s. What the Americas added was land. <a href="#r4-sub-saharan-africa-slave-trade">The Sub-Saharan Africa chapter</a> tells how plantations reached the Atlantic islands.` },
             { p: `Brazil became the first great American sugar economy in the 1500s. The Caribbean followed in the 1600s. Brazil's early mills used Indigenous workers. During the 1600s, almost all of their workers came to be enslaved Africans.` },
             { p: `Disease had killed many Indigenous workers. But people, not disease, chose to bring the island system across the ocean. In the English Chesapeake (Virginia and Maryland), tobacco planters first used ${KT('indentured servants')}. Most were poor Europeans. They worked four to seven years to pay for their voyage. From the late 1600s, planters turned more and more to enslaved Africans.` }
@@ -293,7 +302,7 @@ module.exports = {
                 `<a href="#chapter-t4-8">Topic 4.8</a>: "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. ... plantations expanded, and the Atlantic slave trade developed and intensified."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons."`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of labor ... and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`
               ]
             } }
           ]
@@ -385,7 +394,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Disease, slavery and casta changed who lived in the Americas and how they were ranked.',
-        body: `Central Mexico fell from about 6.3 million people in 1548 to about 1.1 million in 1605 (Cook and Borah's estimate). On Barbados, enslaved Africans outnumbered Europeans by the late 1600s. Casta favored people born in Spain for top posts.`
+        body: `Central Mexico fell from about 6.3 million people in 1548 to about 1.1 million in 1605 (Cook and Borah's estimate). On Barbados, enslaved Africans outnumbered Europeans by the late 1600s. Casta ranked people by ancestry, and the crown gave many top posts to people born in Spain.`
       },
       {
         category: 'Intellectual',
@@ -395,7 +404,7 @@ module.exports = {
       {
         category: 'Technological',
         title: 'Ships, mercury and horses changed what people could do.',
-        body: `From 1571, Manila galleons carried silver across the Pacific from Acapulco to Manila. From the 1570s, Potosí used mercury to separate silver from rock. By the 1700s, the Comanche hunted bison on horseback.`
+        body: `From 1571, Manila galleons carried silver across the Pacific from Acapulco to Manila. From the 1570s, Potosí used mercury to separate silver from rock. During the 1700s, the Comanche built a way of life around hunting bison on horseback.`
       },
       {
         category: 'Economic',
