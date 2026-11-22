@@ -382,3 +382,57 @@ pushed, before any fix.
   PENDING (reviewer could not open a source)
 - Not verified by the reviewer: the slave-trade figures (278,000 in the 1500s; more than 2.5 million
   1701 to 1750) and the Morga 1609 quotation. To check.
+
+**Reviewer B (history: Europe, Americas).** Verified sound: all 42 CED quotations; 1517; the compass
+by about 1100; Zacuto 1496; Elmina, Goa, Malacca, Hormuz; Mun and 1664; the 1651 Navigation Act;
+Amboyna (10 English, 9 Japanese, 1 Portuguese); the Calico Acts; the Fronde; 1649 and Razin; the 1711
+Senate; Cook and Borah; Gualpa's 1572 account; the mit'a figures; four-fifths of silver (Flynn and
+Giráldez 1995); the Slave Voyages figures; Virginia 1662; the Pueblo Revolt; Jamaica; Stono; Palmares.
+
+- B1. Europe: "On Africa's coasts, though, African rulers and merchants decided who and what was sold"
+  contradicts Angola, where Portugal's own wars took captives (Ndongo, 1617 to 1621). PENDING
+- B2. Americas: "Disease was killing the workers Spain needed. So Spain reused an Inca labor duty"
+  makes disease the cause; the encomienda rewarded conquerors and Toledo's draft served the mercury
+  process (Bakewell 1977). PENDING
+- B3. Europe: the Dutch "looked for a Northwest Passage"; the VOC hired Hudson in 1609 for the
+  northeast route and he turned west against instructions; Topic 4.2 says so. PENDING
+- B4. Americas: Madeira's workers "were enslaved people" reads as all; Vieira finds slaves beside
+  paid settlers and sharecroppers, Greenfield the reverse. PENDING
+- B5. Americas: Comanche horse culture "By the 1700s" is too early; first in Spanish records 1706, the
+  culture built during the century (NPS; Hämäläinen 2003). PENDING
+- B6. Europe: pepper passed through "Mamluk Egypt or Ottoman lands" in the 1400s; Syria was Mamluk
+  until 1516, Baghdad Ottoman from 1534. PENDING
+- B7. Americas and Topic 4.7: casta "favored those born in Spain"; casta ranked ancestry, and the
+  crown's appointments, not casta, favored peninsulares. PENDING
+- B8. Americas: story in short, forced silver-mine labor generalized (G4). PENDING
+- B9. Europe, glossary: "Three wars at sea" defines the Anglo-Dutch Wars as three; there were four.
+  PENDING
+- B10. Europe and Americas: silver dearer in China for one cause; East Asia gives two (paper money
+  given up; a growing economy that ran on silver). PENDING
+- B11. Europe: KC-4.1.II.A shown with " ... " where the CED has a dash (no words left out); Americas:
+  KC-4.1.IV.D.ii cut drops "including enslaved persons". PENDING
+
+**Reviewer D (history: Middle East, Sub-Saharan Africa).** Verified sound: the Afonso quotation
+(Madureira, in Thornton 2023, p. 203); Montagu's letter of 1 April 1717; Tondibi; Ottoman aid to the
+Mamluks before 1509 (Oxford Research Encyclopedia); the 1538 siege; the slave-trade figures.
+
+- D1. Middle East: the Toledo tables "around 1080" by "Muslim and Jewish astronomers", Zacuto's
+  "grew from theirs"; the Toledan Tables (c. 1080) were Muslim work, the Alfonsine Tables (1270s) were
+  by Jewish astronomers for Alfonso X, and Zacuto built on the Alfonsine (G15c). PENDING
+- D2. Middle East: "In 1450 the lands of Islam stretched from Morocco to Persia" leaves out India,
+  Central Asia, Southeast Asia, the Swahili coast and West Africa, which the course's own chapters
+  name. PENDING
+- D3. Middle East: "Most sugar, though, went to Europe" implies the other cash crops went to the
+  Middle East; Topic 4.5: "Sugar and tobacco went to Europe"; the Topic 4.3 link does not tell it.
+  PENDING
+- D4. Sub-Saharan Africa: "In 1591 al-Mansur sent"; the army left Marrakesh in October 1590 and
+  fought at Tondibi on 13 March 1591. PENDING
+- D5. Both: "about 4,000 men with firearms" reads as all armed with guns; about 1,500 to 2,500
+  arquebusiers, 1,500 cavalry, cannon. PENDING
+- D6. Sub-Saharan Africa: KC-4.1.IV.D.ii cut drops "including enslaved persons" (B11). PENDING
+- D7. Sub-Saharan Africa: plantations "crossed to Brazil in the 1500s" skips Hispaniola's sugar mills
+  of about 1515 to 1520 (the 1522 Wolof revolt); the Americas chapter keeps "first great". PENDING
+- D8. Sub-Saharan Africa: quotes KC-4.1.IV's "global flow of silver", which the chapter never
+  teaches. PENDING
+- D9. Sub-Saharan Africa: "In 1498 Vasco da Gama sailed around Africa and up its east coast"; he
+  rounded the Cape in November 1497 and reached Malindi in April 1498. PENDING
