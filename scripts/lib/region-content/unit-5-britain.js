@@ -9,12 +9,31 @@
  * city that could not keep up (KC-5.1.VI.A to C), and the people who pressed for change:
  * abolitionists, Wollstonecraft, unions, Chartists, reformers, Owen and Marx (KC-5.3.I.C,
  * KC-5.3.IV.B, KC-5.1.V.A, KC-5.1.V.D, KC-5.3.IV.A.ii). Facts come from the Topic 5.1, 5.3, 5.4,
- * 5.5, 5.7 and 5.8 chapters and their claim ledgers, and from the reviewed rebuild of 5.9 on
- * claude/topic-5-10-build (see docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md), keeping their narrowings
- * (coal one cause of seven; "some" capital from slavery; Cromford not the first factory; Watt did
- * not invent the steam engine; "partly" Smith's ideas; crime charged, not crime counted). Left
- * out on purpose: Britain's empire, which is Unit 6, and Ireland beyond the famine of 1845.
+ * 5.5, 5.7, 5.8 and 5.9 chapters and their claim ledgers (see docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md),
+ * keeping their narrowings: among the factors behind the Industrial Revolution the College Board
+ * names seven (an open list, and Britain is not said to have "all seven", since its timber was
+ * scarce); "some" capital from slavery; Cromford not the first factory, with machines for the
+ * earlier steps only from 1775; Watt did not invent the steam engine; "partly" Smith's ideas;
+ * crime charged, not crime counted; women servants "about one in three". Left out on purpose:
+ * Britain's empire, which is Unit 6, and Ireland beyond the famine of 1845.
+ *
+ * Plain-language and accuracy pass (2026-11-21, after the Unit 5 five-persona baseline): one idea
+ * per sentence and per paragraph, and definitions in parentheses or their own sentence, never
+ * between commas. Every College Board quotation moved out of the story into one "What the College
+ * Board says" box per section: an "In short" sentence, then each Key Concept sentence whole and
+ * word for word from scripts/lib/ced-source/unit-5.js, then each illustrative example labelled "An
+ * optional College Board example". The seven factors are explained one by one in the story and
+ * numbered in the section 01 box. Corn Laws chronology as Topic 5.7 (the 1815 ban, a sliding tariff
+ * from 1828, repeal voted in 1846 with the duty cut in steps to 1849). The crime box restores Topic
+ * 5.9's logic (the figures count people charged). Added "The story in short" (inShort) and six
+ * closing cards in the fixed order. Cut to bring the chapter near its reading time: the enclosure
+ * act count, Manchester's 1801 figure, the yarn price, coal tonnages, Jevons, Bridgewater's canal,
+ * the ban on skilled workers leaving, the London railway share boom, Lever's dates before 1929,
+ * the 1833 mill survey, Snow's map, Manchester's life expectancy, the Trades Union Congress and
+ * the 1871 union law, the Chartists' signatures, Bazalgette's sewers, and Marx's years in London.
  */
+
+const CB = 'What the College Board says';
 
 module.exports = {
   topicKey: 'r5-britain',
@@ -22,7 +41,14 @@ module.exports = {
   unit: '5',
   region: 'Britain',
   titleHtml: '<em>Britain</em>',
-  deck: `From 1750 to 1900, Britain became the world's first industrial country. Follow why it happened there, what the factory and the steam engine changed, how Britain chose free trade, who got rich and who did the work, and the people who pushed back.`,
+  deck: `From 1750 to 1900, Britain became the world's first industrial country. Read why it happened there and what factories changed. Then see how Britain chose free trade, who did the work, and who pushed back.`,
+  inShort: [
+    `Britain had a strong mix of the causes of industry: water, coal, food, towns, laws, cotton and money.`,
+    `Factories brought workers to machines, and steam engines let the machines run on coal.`,
+    `Britain chose free trade, and new laws let many people invest in one company.`,
+    `Industry made new classes, split women's lives by class, and crowded cities full of disease.`,
+    `Reformers ended the slave trade, workers organized, and Parliament passed reforms step by step.`
+  ],
   topics: ['5.1', '5.3', '5.4', '5.5', '5.7', '5.8', '5.9'],
   ced: [
     'KC-5.1.I.A',
@@ -52,45 +78,63 @@ module.exports = {
       name: 'Why Britain First',
       navLabel: 'Why Britain',
       dates: '1700s to 1801 &nbsp;·&nbsp; Coal, water, food, law, cotton, and money',
-      thesis: `In 1750 almost everything in Britain was made by hand, as it was everywhere. Over the next century Britain built a new way of making things, because what its land gave and what its people built came together there first.`,
+      thesis: `In 1750 almost everything in Britain was made by hand, as it was everywhere. Then Britain found a new way of making things. Its land and its people gave it the right mix of causes first.`,
       parts: [
         {
           heading: 'Made by hand',
           blocks: [
-            { p: `In 1750 most thread and cloth in Britain were made in homes. Under the <span class="kt">putting-out system</span>, a merchant brought raw wool or cotton to country families, who spun and wove it on their own wheels and looms, and paid them for each piece. Power came from muscles, horses, wind and water. Britain was a small country: by one historian's estimate, it made under 2 percent of the world's manufactured goods, and much of the world's cotton cloth came from India (see <a href="#chapter-r5-south-southeast-asia">South and Southeast Asia</a>).` },
-            { p: `Among the factors behind the <span class="kt">Industrial Revolution</span>, the College Board names seven: "Proximity to waterways; access to rivers and canals," the "Geographical distribution of coal, iron, and timber," "Urbanization," "Improved agricultural productivity," "Legal protection of private property," "Access to foreign resources" and "Accumulation of capital." Britain had all seven (<a href="#chapter-t5-3">Topic 5.3</a>).` }
+            { p: `In 1750 most cloth in Britain was made in homes. A merchant brought raw wool or cotton to country families. They spun and wove it, and he paid them for each piece. This was the <span class="kt">putting-out system</span>. Britain then made under 2 percent of the world's manufactured goods, by one historian's estimate. Much of the world's cotton cloth came from India, as <a href="#r5-south-southeast-asia-cloth">the South and Southeast Asia chapter</a> tells.` },
+            { p: `Then came the <span class="kt">Industrial Revolution</span>: the change from making goods by hand to making them by machine. Among its causes, the College Board names seven. Two came from the land, and five were built by people.` }
           ]
         },
         {
           heading: 'What the land gave',
           blocks: [
-            { p: `By the 1600s most of Britain's old forests had been cut down, and wood, the old fuel, was expensive. Britain did have huge beds of coal, much of it near the surface and near rivers or the sea, so Britons burned coal instead. In <span class="num">1709</span>, at Coalbrookdale beside the River Severn, Abraham Darby made iron with <span class="kt">coke</span>, a fuel made by baking coal, instead of with charcoal made from wood.` },
-            { p: `Coal and iron are heavy, and in the 1700s moving them by water was far cheaper than by cart. Britain had a long coast and rivers boats could use, and people dug <span class="kt">canals</span> where there were none. The Duke of Bridgewater's canal opened in <span class="num">1761</span> from his coal mines at Worsley to the edge of Manchester, and the price of coal in Manchester soon fell by about half.` },
+            { p: `The first factor is water. Coal and iron are heavy, and in the 1700s a boat moved them far more cheaply than a cart. Britain had a long coast and rivers boats could use. Where there was no river, people dug a <span class="kt">canal</span> (a waterway dug by hand).` },
+            { p: `The second factor is where coal, iron and timber (wood) were found. By the 1600s most of Britain's old forests had been cut down, so wood was expensive. But Britain had huge beds of coal, much of it near rivers or the sea, so Britons burned coal instead. Historians argue how much the wood shortage caused this switch.` },
+            { p: `In <span class="num">1709</span> Abraham Darby made iron with <span class="kt">coke</span> (a fuel made by baking coal). Before, ironmakers had used charcoal made from wood.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Britain industrialized because it had coal. Coal was one of the seven factors the College Board names, and China had coal too. Say what coal made cheaper, and name the other factors that made it worth using.`
+              html: `Do not give coal as the only cause. Coal is part of one of the seven factors, and China had coal too. Say what coal made cheaper, and name other factors that made it worth using.`
             } }
           ]
         },
         {
           heading: 'What people built',
           blocks: [
-            { p: `British farmers planted turnips and clover instead of leaving fields empty to rest, and grew more food on the same land. Landowners also fenced the old shared village fields into private farms, a change called <span class="kt">enclosure</span>; Parliament passed more than three thousand enclosure acts between <span class="num">1750</span> and <span class="num">1819</span>, and historians still argue how much enclosure added to the harvest. Larger harvests helped feed a growing population: about 8 million in <span class="num">1761</span>, about 10.5 million in <span class="num">1801</span>. A smaller share of them farmed, and many moved to towns. Manchester grew from about 23,000 people in <span class="num">1773</span> to 70,409 in <span class="num">1801</span>.` },
-            { p: `The law protected what an investor built. A law of <span class="num">1624</span> let the crown give an inventor the sole right to use a new invention for up to fourteen years, a <span class="kt">patent</span>, and in <span class="num">1769</span> Richard Arkwright patented a spinning machine. The raw material came from abroad: by the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America, and after the 1790s more and more of it came from the United States. And there was <span class="kt">capital</span>, money saved from trade, including the Atlantic trade in enslaved people and the sugar they grew, that merchants and landowners were ready to risk on mills.` },
+            { p: `The third factor is better farming. Farmers planted turnips and clover in place of leaving fields empty to rest, so the same land grew more food. Landowners also fenced shared village fields into private farms. This was <span class="kt">enclosure</span>. Historians still argue how much it added to the harvest.` },
+            { p: `The fourth factor is <span class="kt">urbanization</span> (the growth of towns). Larger harvests helped feed more people: about 8 million in <span class="num">1761</span> and about 10.5 million in <span class="num">1801</span>. A smaller share of them farmed, and many moved to towns. Manchester had about 23,000 people in <span class="num">1773</span>.` },
+            { p: `The fifth factor is the law. A law of <span class="num">1624</span> let the crown give an inventor a <span class="kt">patent</span>. A patent was the sole right to use a new invention, for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a spinning machine.` },
+            { p: `The sixth factor is resources from abroad. Cotton does not grow in Britain. By the 1780s most of the cotton spun in Manchester was grown by enslaved people in the Caribbean and South America. After the 1790s, more and more came from the United States.` },
+            { p: `The seventh factor is <span class="kt">capital</span>: money used to build something that makes more money. Merchants and landowners had saved money from trade. Part of that trade was in enslaved people and the sugar they grew. Some savers were ready to risk their money on mills.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the slave trade paid for the Industrial Revolution. Historians still argue about how much of Britain's capital came from slavery, so say "some" or "part." What they agree on is that most of the cotton itself was grown by enslaved people.`
+              html: `Do not write that the slave trade paid for the whole Industrial Revolution. Historians still argue how much capital came from slavery, so say "some" or "part." They agree that most of the cotton was grown by enslaved people.`
+            } },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: several causes came together to start the Industrial Revolution.`,
+                `<a href="#chapter-t5-3">Topic 5.3</a>: "A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including:" the seven below.`,
+                `1. "Proximity to waterways; access to rivers and canals": boats carry heavy goods cheaply.`,
+                `2. "Geographical distribution of coal, iron, and timber": where these were found.`,
+                `3. "Urbanization": the growth of towns.`,
+                `4. "Improved agricultural productivity": more food from the same land.`,
+                `5. "Legal protection of private property": laws, such as patents, that protect what people own.`,
+                `6. "Access to foreign resources": goods from abroad, such as cotton.`,
+                `7. "Accumulation of capital": saved money ready to invest.`
+              ]
             } }
           ]
         }
       ],
       terms: [
-        ['Putting-out system', `Making goods at home: a merchant gives families raw materials and pays them for each piece.`],
-        ['Coke', `A fuel made by baking coal, used to make iron from 1709.`],
-        ['Enclosure', `Fencing off shared village fields into private farms, often by act of Parliament.`],
-        ['Capital', `Money used to build something that makes more money, such as a mill and its machines.`]
+        ['Putting-out system', `Making goods at home for a merchant, who pays for each piece.`],
+        ['Enclosure', `Fencing shared village fields into private farms.`],
+        ['Capital', `Money used to build something that makes more money.`]
       ]
     },
 
@@ -101,45 +145,53 @@ module.exports = {
       accent: 'rust',
       name: 'The Factory and the Engine',
       navLabel: 'Factory and steam',
-      dates: '1712 to 1900 &nbsp;·&nbsp; Cromford, Watt, coal, and the railway',
-      thesis: `The factory brought workers to the machines and gave each worker one small job. The steam engine then let factories run on coal, wherever coal could be carried, and Britain became the world's workshop.`,
+      dates: '1712 to 1860 &nbsp;·&nbsp; Cromford, Watt, coal, and the railway',
+      thesis: `The factory brought workers to the machines and gave each one a small job. Then the steam engine let factories run on coal. Britain became the world's workshop.`,
       parts: [
         {
           heading: 'One place, one job each',
           blocks: [
-            { p: `In <span class="num">1771</span> Arkwright and his partners built a cotton-spinning mill at Cromford, in Derbyshire, turned by a water wheel. It did not send cotton out to spinners' homes. Everyone came to one building, at the hours the mill set, under the eye of an overseer, and most of the workers were women and children, some as young as seven. This was the <span class="kt">factory system</span>. In the College Board's words, it "concentrated production in a single location and led to an increasing degree of specialization of labor."` },
-            { p: `Cromford began with spinning machines. After <span class="num">1775</span>, when Arkwright patented machines for the earlier steps, cotton was combed straight, drawn out, twisted and spun, each step after cleaning on its own machine and tended by workers who did that job and no other. Adam Smith showed why this mattered in <span class="num">1776</span>, with a workshop where ten men splitting the steps of pin making "could make among them upwards of forty-eight thousand pins in a day" (<a href="#chapter-t5-3">Topic 5.3</a>). Small, simple jobs could be learned fast, so a mill could hire workers with no training.` },
+            { p: `In <span class="num">1771</span> Arkwright and his partners built a cotton-spinning mill at Cromford, turned by a water wheel. Everyone came to one building, at the hours the mill set, under an overseer. Most workers were women and children, some as young as seven. This was the <span class="kt">factory system</span>.` },
+            { p: `Inside, the work was split into steps. Workers cleaned the raw cotton. Then it was combed straight, drawn out, twisted and spun into thread. Cromford began with spinning machines only. In <span class="num">1775</span> Arkwright patented machines for the earlier steps. After that, every step except cleaning had its own machine.` },
+            { p: `Each machine was tended by workers who did that one job and no other. This is <span class="kt">specialization of labor</span>. Adam Smith showed why it mattered. In <span class="num">1776</span> he described ten men who split up the steps of making pins. Together they could make "upwards of forty-eight thousand pins in a day" (<a href="#chapter-t5-3">Topic 5.3</a>).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not call Cromford the first factory, or say the steam engine started the factory system. A silk mill at Derby had some of the same features in the 1720s, and Cromford ran on water.`
+              html: `Do not call Cromford the first factory. A silk mill at Derby had some of the same features in the 1720s. And steam did not start the factory system: Cromford ran on water.`
             } }
           ]
         },
         {
           heading: 'Steam and coal',
           blocks: [
-            { p: `The steam engine began as a pump. In <span class="num">1712</span> Thomas Newcomen set one up to pump water out of a flooded coal mine, but it burned a great deal of coal. James Watt found how to save most of it with a separate chamber to cool the steam, patented in <span class="num">1769</span>, and in the 1780s Watt and his partner Matthew Boulton built engines that turned a wheel. A mill no longer had to sit beside a fast river. It could run on coal, and cotton mills crowded into towns such as Manchester (<a href="#chapter-t5-5">Topic 5.5</a>).` },
-            { p: `Engines needed coal, and coal mines needed engines to pump them dry, so each made the other grow. Britain mined about 65 million tons of coal in <span class="num">1854</span> and about 225 million in <span class="num">1900</span>. In <span class="num">1865</span> the economist William Stanley Jevons wrote that "with coal almost any feat is possible or easy." The College Board's name for this is the <span class="kt">fossil fuels revolution</span>, which "greatly increased the energy available to human societies."` },
-            { p: `In <span class="num">1830</span> the Liverpool and Manchester Railway opened, the world's first railway between two cities, its trains pulled by steam locomotives. Cotton landed at Liverpool could now reach Manchester's mills by rail.` }
+            { p: `The steam engine began as a pump. In <span class="num">1712</span> Thomas Newcomen used one to pump water out of a coal mine, but it burned a lot of coal. James Watt found how to save most of it, and patented his idea in <span class="num">1769</span>. In the 1780s Watt and Matthew Boulton built engines that turned a wheel.` },
+            { p: `Now a mill did not need a fast river. It could run on coal, and cotton mills crowded into towns such as Manchester (<a href="#chapter-t5-5">Topic 5.5</a>). Engines needed coal, and mines needed engines to pump them dry, so each made the other grow. Coal and oil are called fossil fuels. This change is the <span class="kt">fossil fuels revolution</span>.` },
+            { p: `In <span class="num">1830</span> the Liverpool and Manchester Railway opened, the first railway between two cities. Steam locomotives carried cotton from the port to the mills.` }
           ]
         },
         {
           heading: 'The workshop of the world',
           blocks: [
-            { p: `Machines made goods faster and more cheaply than hands could. By <span class="num">1815</span> even the coarsest cotton yarn cost about a third of its early 1780s price, even after rising prices are counted. By the historian Paul Bairoch's estimates, Britain's share of the world's manufactured goods rose from under 2 percent in <span class="num">1750</span> to about a fifth by <span class="num">1860</span> (<a href="#chapter-t5-4">Topic 5.4</a>). A Manchester business directory of the 1850s called the town "the 'workshop of the world'." Britain tried to keep its machines at home, banning skilled textile workers from leaving until <span class="num">1824</span>, but the methods left anyway (see <a href="#chapter-r5-europe">Europe</a> and <a href="#chapter-r5-americas">the Americas</a>).` },
+            { p: `Machines made goods faster and more cheaply than hands could. The historian Paul Bairoch estimated Britain's share of the world's manufactured goods. It rose from under 2 percent in <span class="num">1750</span> to about a fifth by <span class="num">1860</span> (<a href="#chapter-t5-4">Topic 5.4</a>). These are rough estimates, good for showing the size of the change.` },
+            { p: `Until <span class="num">1824</span> Britain banned skilled textile workers from leaving the country. But the methods left anyway, as <a href="#r5-europe-industry">the Europe chapter</a> tells.` },
             { note: {
-              kind: 'howknow',
-              label: 'How we know',
-              html: `Nobody counted every piece of cloth in the world. Bairoch's shares are careful estimates built from what is known about people and their work, and historians who use them say they are rough. Use them to show the size of the change, never as exact amounts.`
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: factories and steam power made Britain the world's leading maker.`,
+                `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "The fossil fuels revolution greatly increased the energy available to human societies."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
+                `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution."`
+              ]
             } }
           ]
         }
       ],
       terms: [
-        ['Factory system', `Making goods by bringing workers and machines together in one building, around one source of power.`],
-        ['Specialization of labor', `Splitting work into steps, with each worker doing one step over and over.`],
-        ['Fossil fuels revolution', `The great increase in energy that came when machines let people use coal and, later, oil.`]
+        ['Factory system', `Bringing workers and machines together in one building.`],
+        ['Specialization of labor', `Each worker doing one step of a job over and over.`],
+        ['Fossil fuels revolution', `The great rise in energy from coal and, later, oil.`]
       ]
     },
 
@@ -151,45 +203,60 @@ module.exports = {
       name: 'Free Trade and Big Business',
       navLabel: 'Free trade',
       dates: '1776 to 1900 &nbsp;·&nbsp; Smith, the Corn Laws, and limited liability',
-      thesis: `Britain gave up the old rules of trade and chose free trade, partly persuaded by Adam Smith. New laws let thousands of people invest in one company. Goods grew cheaper, but living standards rose slowly at first, and not for everyone.`,
+      thesis: `Britain gave up its old trade rules for free trade, partly persuaded by Adam Smith. New laws let many people invest in one company. Goods grew cheaper, but life got better slowly, and not for everyone.`,
       parts: [
         {
           heading: 'Smith against the old rules',
           blocks: [
-            { p: `Under <span class="kt">mercantilism</span>, governments controlled trade with <span class="kt">tariffs</span> (taxes on imported goods), bans and monopolies (a sole right to a trade), such as the East India Company's sole right to British trade with India and China. In <span class="num">1776</span> Adam Smith, a Scottish thinker who had been a professor at Glasgow, attacked "the mercantile system" in The Wealth of Nations. "The tailor does not attempt to make his own shoes, but buys them of the shoemaker," he wrote, and what is sensible for a family "can scarce be folly in that of a great kingdom" (<a href="#chapter-t5-7">Topic 5.7</a>).` }
+            { p: `Under <span class="kt">mercantilism</span>, a country tried to grow strong by selling more than it bought. Governments controlled trade with <span class="kt">tariffs</span> (taxes on imported goods), bans and monopolies. A monopoly is the sole right to a trade.` },
+            { p: `In <span class="num">1776</span> the Scottish thinker Adam Smith attacked this system in The Wealth of Nations. "The tailor does not attempt to make his own shoes, but buys them of the shoemaker," he wrote. A country, he argued, should also buy what others make more cheaply.` },
+            { p: `Later writers called ideas like Smith's <span class="kt">laissez-faire</span> (French for roughly "let them do it"). It means letting people trade freely. It fits <span class="kt">capitalism</span>, where private owners run businesses for profit. Smith still wanted government to defend the country and run the courts (<a href="#chapter-t5-7">Topic 5.7</a>).` }
           ]
         },
         {
           heading: 'The Corn Laws',
           blocks: [
-            { p: `Britain's <span class="kt">Corn Laws</span> ("corn" meant grain) kept cheap foreign grain out: a law of <span class="num">1815</span> banned foreign wheat until British prices rose very high. High grain prices kept landowners' rents high, and landowners filled Parliament. In <span class="num">1838</span> Manchester's factory owners and merchants began the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright, saying cheap bread would help workers. Many <span class="kt">Chartists</span>, workers campaigning for the vote (section 05), feared that cheaper bread would only let employers pay lower wages: to them, "cheap bread" really meant cheap labor.` },
-            { p: `In <span class="num">1845</span> a disease destroyed much of Ireland's potato crop, and famine began. Prime Minister Robert Peel decided the Corn Laws had to go, and Parliament repealed them in <span class="num">1846</span>. By <span class="num">1860</span> Britain had ended its tariffs on imported factory goods. It had become a free trade country, and it stayed one through 1900. In the College Board's words, Western European countries adopted free trade "partly in response to the growing acceptance of Adam Smith's theories."` },
+            { p: `Britain's <span class="kt">Corn Laws</span> kept cheap foreign grain out. ("Corn" meant grain.) A law of <span class="num">1815</span> banned foreign wheat until British prices were very high. From <span class="num">1828</span> a sliding tariff replaced the ban. The tax was highest when British prices were low.` },
+            { p: `High grain prices kept landowners' rents high, and landowners filled <span class="kt">Parliament</span> (Britain's lawmaking assembly). In <span class="num">1838</span> Manchester's factory owners and merchants began the Anti-Corn Law League. Cheap bread, they said, would help workers. Many workers who wanted the vote feared it would only let employers pay lower wages.` },
+            { p: `In <span class="num">1845</span> disease destroyed much of Ireland's potato crop, and famine began. Prime Minister Robert Peel decided the Corn Laws must go. In <span class="num">1846</span> Parliament voted to repeal (end) them, and the grain tax fell in steps until <span class="num">1849</span>. By <span class="num">1860</span> Britain had also ended its tariffs on imported factory goods. It had chosen <span class="kt">free trade</span>.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: "partly"',
-              html: `The League's campaign was paid for by manufacturers who wanted cheap food and open markets, and the Irish famine helped decide Peel. Ideas, interests and a crisis worked together, which is why "partly" is the right word.`
+              html: `Manufacturers who wanted cheap food and open markets paid for the League. The Irish famine helped decide Peel. Ideas, interests and a crisis worked together, so Smith's ideas were only part of the cause.`
             } }
           ]
         },
         {
           heading: 'New tools for business',
           blocks: [
-            { p: `Most businesses belonged to a family or a few partners, and if a partnership failed, each partner could lose his house to pay its debts. Railways cost far more than that, so each railway company needed its own act of Parliament to raise money from many investors; in a railway share boom of the mid-1840s, many of them lost their savings. Then a law of <span class="num">1855</span> let larger companies limit what their owners could lose to the money they had put in, <span class="kt">limited liability</span>, and a law of <span class="num">1856</span> let almost any group of seven or more people register such a company, with no special act. People with modest savings could now buy shares without risking their homes, and sell them again on the London stock exchange.` },
-            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants such as coconut and palm kernels. It came in wrapped bars with a brand name, advertised to every household. In <span class="num">1890</span> the business became Lever Brothers, Limited, and from <span class="num">1894</span> it sold shares to the public. It grew into one of the "large-scale transnational businesses" the College Board names, Unilever, though that company was not formed until <span class="num">1929</span>.` }
+            { p: `Most businesses belonged to a family or a few partners. If a partnership failed, each partner could lose his house to pay its debts. Railways cost far more, so each railway company needed its own act of Parliament to raise money from many investors.` },
+            { p: `Investors bought <span class="kt">shares</span>. A share is a small part of a company, and its owner gets part of the profits. People traded shares on the London <span class="kt">stock exchange</span> (a market for shares). A law of <span class="num">1855</span> gave larger companies <span class="kt">limited liability</span>: an owner could lose only the money he put in, not his house. From <span class="num">1856</span> almost any group of seven or more people could form such a company.` },
+            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. His business later became part of Unilever. Unilever was <span class="kt">transnational</span>: it worked across the borders of many countries. But it was not formed until <span class="num">1929</span>.` }
           ]
         },
         {
           heading: 'Cheaper goods, for some',
           blocks: [
-            { p: `The College Board says industrial capitalism "led to increased standards of living for some." The words "for some" matter. One careful estimate finds that British working families' <span class="kt">standard of living</span> rose by less than 15 percent from the 1780s to the 1850s. Most historians agree it grew much faster from about <span class="num">1860</span> to <span class="num">1900</span>.` }
+            { p: `Factory goods kept getting cheaper. But did working families live better? A family's <span class="kt">standard of living</span> is how well it lives. One careful estimate finds that working families' standard rose by less than 15 percent from the 1780s to the 1850s. Most historians agree it grew much faster from about <span class="num">1860</span> to <span class="num">1900</span>.` },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: Britain chose free trade, big companies grew, and goods got cheaper, but life improved only for some.`,
+                `<a href="#chapter-t5-7">Topic 5.7</a>: "Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets."`,
+                `<a href="#chapter-t5-7">Topic 5.7</a>: "The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance."`,
+                `<a href="#chapter-t5-7">Topic 5.7</a>: "The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods."`,
+                `An optional College Board example: "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo".`,
+                `An optional College Board example: "Limited-liability corporations".`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Mercantilism', `The idea that a country grows strong by selling more than it buys and controlling its trade.`],
-        ['Corn Laws', `British laws, from 1815, that kept cheap foreign grain out; repealed in 1846.`],
-        ['Free trade', `Letting goods cross a country's borders without heavy tariffs.`],
-        ['Limited liability', `A rule that a company's owners can lose only the money they put in.`]
+        ['Mercantilism', `Making a country strong by controlling trade and selling more than it buys.`],
+        ['Corn Laws', `British laws that kept out foreign grain: a ban from 1815, a sliding tariff from 1828, repealed in 1846.`],
+        ['Limited liability', `A rule that owners can lose only the money they put in.`]
       ]
     },
 
@@ -201,40 +268,49 @@ module.exports = {
       name: 'New Classes, Crowded Cities',
       navLabel: 'Classes and cities',
       dates: '1832 to 1900 &nbsp;·&nbsp; Two classes, two lives for women, one city',
-      thesis: `Industry made a middle class and a working class bigger than ever, split women's lives by class, and packed people into towns faster than anyone could build homes, sewers and water pipes for them.`,
+      thesis: `Industry made a middle class and a working class bigger than ever. It split women's lives by class. And it packed people into towns faster than anyone could build homes and sewers.`,
       parts: [
         {
           heading: 'Two new classes, and the old one',
           blocks: [
-            { p: `The <span class="kt">middle class</span> ran from factory owners, merchants and bankers to engineers, doctors, managers and clerks. Their place came from money they made and education they paid for, not from land or titles. The <span class="kt">industrial working class</span> owned no land and no tools and lived on wages, at the hours the employer set. The College Board puts it simply: "New social classes, including the middle class and the industrial working class, developed." In <span class="num">1832</span> the Reform Act gave the vote in the towns to men who occupied property worth ten pounds a year, in effect most middle-class men.` },
-            { p: `The old landed families did not disappear. They kept their land, their titles and much of their power: from <span class="num">1895</span> to <span class="num">1902</span> Britain's prime minister was Lord Salisbury, a marquess (a high rank of noble) and a great landowner.` }
+            { p: `The <span class="kt">middle class</span> ran from factory owners and bankers to doctors and clerks. Their place came from money and education, not land or titles. In <span class="num">1832</span> the Reform Act gave the vote to most middle-class men in the towns. The <span class="kt">industrial working class</span> owned no land or tools. They lived on wages, at the hours the employer set.` },
+            { p: `The old landed families kept their land, titles and much of their power. From <span class="num">1895</span> to <span class="num">1902</span> the prime minister was Lord Salisbury. He was a great landowner.` }
           ]
         },
         {
           heading: 'Women\'s two lives',
           blocks: [
-            { p: `In working-class families one wage was rarely enough, so women and often children earned too. A survey of <span class="num">1833</span> found women and girls a majority of the workers in Britain's cotton, flax and silk mills. The largest single job for women was domestic service: in the census of <span class="num">1851</span>, the government's count of the people, about one in three women with a recorded job was a domestic servant in someone else's house, and about four in ten worked in domestic service if washerwomen and charwomen are counted.` },
-            { p: `In middle-class families the husband's earnings were enough, and the wife was increasingly expected to stay out of paid work and run the home, an ideal historians call <span class="kt">separate spheres</span>. Isabella Beeton's best-selling Book of Household Management (<span class="num">1861</span>) compared the mistress of a house to "the commander of an army." Her household ran on servants, most of them working-class women. The College Board's sentence is that middle-class women were "increasingly limited to roles in the household." Married women's property passed to their husbands until laws of <span class="num">1870</span> and <span class="num">1882</span>, and no woman could vote for Parliament.` }
+            { p: `In working-class families one wage was rarely enough, so women and often children earned too. Many worked in mills. Even more worked as servants in other people's houses. The <span class="kt">census</span> of <span class="num">1851</span> (the government's count of the people) shows that about one in three women with a recorded job was a servant.` },
+            { p: `In middle-class families the husband's pay was enough. The wife was more and more expected to stay home, run the house and raise the children. Historians call this ideal <span class="kt">separate spheres</span>. Isabella Beeton's best-selling book of <span class="num">1861</span> compared the mistress of a house to "the commander of an army." Such a household ran on servants, most of them working-class women.` }
           ]
         },
         {
           heading: 'A city that could not keep up',
           blocks: [
-            { p: `Manchester had more than 300,000 people by <span class="num">1851</span>, and that year's census found, for the first time, more than half the people of England and Wales living in towns. Houses were split into rooms, and whole families lived in one room or a damp cellar. The new streets had no sewers and no clean water. Friedrich Engels described Manchester's river Irk in <span class="num">1845</span> as "coal-black, foul-smelling ... full of debris and refuse."` },
-            { p: `Cholera, a disease spread through water fouled with human waste, killed about 53,000 people registered in England and Wales in <span class="num">1848</span> and <span class="num">1849</span>. In <span class="num">1854</span> the London doctor John Snow mapped deaths around one water pump in Soho and compared households served by two different water companies, and argued that the water carried the disease; many doctors were not persuaded for years. In the 1840s a baby born in Manchester could expect to live only about 25 to 28 years, against about 40 to 42 for England and Wales as a whole. These are the challenges the College Board lists: "pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure."` },
+            { p: `Manchester had more than 300,000 people by <span class="num">1851</span>. That year, for the first time, more than half the people of England and Wales lived in towns. Whole families lived in one room or a damp cellar, and many wages barely paid the rent. Streets had no sewers or clean water. In <span class="num">1845</span> Friedrich Engels called Manchester's river Irk "coal-black, foul-smelling".` },
+            { p: `<span class="kt">Cholera</span> is a disease spread by dirty water. In <span class="num">1848</span> and <span class="num">1849</span> about 53,000 cholera deaths were recorded in England and Wales. In <span class="num">1854</span> the doctor John Snow argued that water carried it, but many doctors were not persuaded for years (<a href="#chapter-t5-9">Topic 5.9</a>).` },
             { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not write that crime exploded. The number of people charged with serious crimes in England and Wales rose to peaks in hard years such as <span class="num">1842</span> and <span class="num">1848</span>, then fell, and new police forces caught and charged more people. Say "more people were charged with crimes."`
+              kind: 'howknow',
+              label: 'How we know: counting crime',
+              html: `Charges for serious crimes in England and Wales peaked in hard years such as <span class="num">1842</span> and <span class="num">1848</span>, then fell. These figures count people charged, not crimes done, and new police forces charged more people. You may write "increased crime," but say how it was measured.`
+            } },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: industry made new classes, split women's lives by class, and grew cities faster than they could cope.`,
+                `<a href="#chapter-t5-9">Topic 5.9</a>: "New social classes, including the middle class and the industrial working class, developed."`,
+                `<a href="#chapter-t5-9">Topic 5.9</a>: "While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development."`,
+                `<a href="#chapter-t5-9">Topic 5.9</a>: "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth."`
+              ]
             } }
           ]
         }
       ],
       terms: [
-        ['Middle class', `Owners, merchants, bankers, professionals and clerks, whose rank came from money and education.`],
+        ['Middle class', `Owners, professionals and clerks, whose rank came from money and education.`],
         ['Industrial working class', `People with no land or tools who lived on wages.`],
-        ['Separate spheres', `The idea that men belonged in work and politics and women in the home.`],
-        ['Cholera', `A disease of the gut spread by water fouled with human waste.`]
+        ['Separate spheres', `The idea that men belonged at work and women at home.`]
       ]
     },
 
@@ -246,39 +322,52 @@ module.exports = {
       name: 'The People Who Pushed Back',
       navLabel: 'Calls for change',
       dates: '1787 to 1906 &nbsp;·&nbsp; Abolitionists, Chartists, reformers, Owen and Marx',
-      thesis: `The new words about rights, and old religious faith, pushed reformers to end the slave trade and demand votes. Workers organized, governments passed reforms, and in London two German writers predicted a revolution that never came to Britain.`,
+      thesis: `Faith and new ideas about rights pushed reformers to end the slave trade. Workers organized, and Parliament passed reforms. Two German writers in London predicted a revolution that never came to Britain.`,
       parts: [
         {
           heading: 'Abolition and Wollstonecraft',
           blocks: [
-            { p: `In <span class="num">1787</span> twelve men in London, nine of them <span class="kt">Quakers</span>, a Christian group that had come to see slavery as a sin, founded a society to abolish the slave trade. Olaudah Equiano, who had been enslaved, published his life story in <span class="num">1789</span> and spoke against the trade across Britain. Britain banned the slave trade in <span class="num">1807</span>, and in <span class="num">1834</span> began ending slavery in most of its empire, though freed people had to keep working for their former owners as unpaid "apprentices" until <span class="num">1838</span> (<a href="#chapter-t5-1">Topic 5.1</a>).` },
-            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated to think for themselves: "I do not wish them to have power over men; but over themselves." The College Board lists her book as an optional example beside its sentence that "Demands for women's suffrage and an emergent feminism challenged political and gender hierarchies." Her book belongs to the feminism: it asked for women's education and independence, not yet the vote.` }
+            { p: `In <span class="num">1787</span> twelve men in London founded a society to end the slave trade. Nine were <span class="kt">Quakers</span> (members of a Christian group that had come to see slavery as a sin). Britain banned the slave trade in <span class="num">1807</span>. In <span class="num">1834</span> it began ending slavery in most of its empire, though freed people had to keep working for their former owners, unpaid, until <span class="num">1838</span> (<a href="#chapter-t5-1">Topic 5.1</a>).` },
+            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked for education and independence, not yet the vote. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` }
           ]
         },
         {
           heading: 'Workers organize',
           blocks: [
-            { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> made it illegal for workers to combine to demand higher wages. Parliament repealed them in <span class="num">1824</span>, and skilled workers built lasting <span class="kt">labor unions</span>; in <span class="num">1868</span> unions met in Manchester as the first Trades Union Congress, and a law of <span class="num">1871</span> gave unions legal standing. Workers also wanted the vote. In <span class="num">1838</span> the <span class="kt">Chartists</span> published a People's Charter demanding, among six points, a vote for every man over 21 and a secret ballot. Over 1.2 million people signed their first petition in <span class="num">1839</span>. Parliament rejected it, and two more, but five of the six points later became law. In <span class="num">1900</span> unions and socialists founded a committee to elect working men to Parliament; in <span class="num">1906</span> it won 29 seats and became the Labour Party (<a href="#chapter-t5-8">Topic 5.8</a>).` }
+            { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> banned workers from joining together to demand higher wages. Parliament repealed them in <span class="num">1824</span>. Skilled workers then built lasting <span class="kt">labor unions</span> (groups of workers who bargain with employers together).` },
+            { p: `Workers also wanted <span class="kt">suffrage</span> (the right to vote). In <span class="num">1838</span> the <span class="kt">Chartists</span> demanded a vote for every man over 21 and a secret ballot. Parliament rejected their petitions, but five of their six points later became law. In <span class="num">1906</span> a committee of unions and socialists won 29 seats and became the Labour Party (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         },
         {
           heading: 'Reformers and Parliament',
           blocks: [
-            { p: `The College Board names four kinds of reform, "political, social, educational, and urban," and Britain had all four. Political: Reform Acts in <span class="num">1867</span> and <span class="num">1884</span> gave the vote to many working men. Social: the Factory Act of <span class="num">1833</span> banned children under nine from most textile mills, the Mines Act of <span class="num">1842</span> stopped women, girls and boys under ten from working inside mines, and a law of <span class="num">1847</span> limited women and young people in textile mills to ten hours a day. Educational: from <span class="num">1870</span> elected school boards built elementary schools where church schools fell short, and from <span class="num">1880</span> every local authority had to require children to attend. Urban: after the "Great Stink" of the River Thames in <span class="num">1858</span>, the engineer Joseph Bazalgette built London 82 miles of large brick sewers, completed in <span class="num">1875</span>.` }
-          ]
-        },
-        {
-          heading: 'Owen, Marx, and a revolution that did not come',
-          blocks: [
-            { p: `Robert Owen, who ran the New Lanark cotton mills in Scotland from <span class="num">1800</span>, shortened hours and opened a school for workers' children, and in the late 1820s his followers began to call their ideas <span class="kt">socialism</span>: land and factories owned and run in common, for everyone. Karl Marx and Friedrich Engels wrote the Communist Manifesto for a small group of radicals in London, and it was printed there in <span class="num">1848</span>. Marx lived in London from <span class="num">1849</span> until he died in <span class="num">1883</span>, and wrote the first volume of Capital there. Yet no workers' revolution came to Britain. Workers won unions, votes and laws instead (see <a href="#chapter-r5-europe">Europe</a> for where Marx's ideas built a mass party).` }
+            { p: `Parliament passed four kinds of reform. Political: Reform Acts in <span class="num">1867</span> and <span class="num">1884</span> gave many working men the vote, though no woman could vote for Parliament. Social: the Factory Act of <span class="num">1833</span> banned children under nine from most textile mills. Educational: from <span class="num">1870</span>, elected school boards built elementary schools. Urban: after the Thames's "Great Stink" of <span class="num">1858</span>, London built new sewers.` },
+            { p: `Robert Owen ran cotton mills in Scotland. He shortened hours and opened a school for workers' children. His followers called their ideas <span class="kt">socialism</span>: land and factories owned in common. In <span class="num">1848</span> Karl Marx and Friedrich Engels printed the Communist Manifesto in London. It predicted that workers would overthrow the owners and build <span class="kt">communism</span> (a society without classes).` },
+            { p: `No workers' revolution came to Britain. Workers won unions, votes and laws instead. <a href="#r5-europe-workers">The Europe chapter</a> tells how Marx's ideas built a mass party in Germany.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that the Chartists won nothing. Parliament rejected their petitions, but five of their six points later became law.`
+            } },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: reformers fought slavery and asked for rights, workers organized, and new ideas such as socialism spread.`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies."`,
+                `An optional College Board example: "Mary Wollstonecraft’s A Vindication of the Rights of Woman".`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society."`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms."`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism."`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Abolition', `Ending slavery, or the slave trade, by law.`],
-        ['Labor union', `A group of workers who bargain with their employer together.`],
         ['Chartists', `A British workers' movement, from 1838, that demanded the vote for every man.`],
-        ['Socialism', `The idea that the means of making wealth should be owned and run in common.`]
+        ['Socialism', `The idea that land and factories should be owned and run in common.`]
       ]
     }
   ],
@@ -289,33 +378,38 @@ module.exports = {
     intro: `The same story, gathered by its sides for review.`,
     argue: {
       move: 'Causation',
-      prompt: `The College Board lists seven factors behind the Industrial Revolution. Using this chapter, argue which one or two mattered most in making Britain the first industrial country, and explain how they worked together with at least one other factor.`
+      prompt: `Among the causes of the Industrial Revolution, the College Board names seven. Using this chapter, argue which one or two did the most to make Britain the first industrial country. Explain how they worked with at least one other factor.`
     },
     pairs: [
       {
         category: 'Political',
-        title: 'Votes came in steps',
-        body: `The Reform Act of 1832 gave the vote to most middle-class men in the towns, and the acts of 1867 and 1884 to many working men. The Chartists' petitions were refused, but most of their points later became law. No woman could vote for Parliament by 1900.`
+        title: 'Britain widened the vote in steps, and only for men.',
+        body: `The Reform Act of 1832 gave the vote to most middle-class men in the towns. Acts of 1867 and 1884 gave it to many working men, but no woman could vote for Parliament by 1900.`
       },
       {
         category: 'Religious',
-        title: 'Faith drove reform',
-        body: `Quakers founded the antislavery society of 1787, and Britain banned the slave trade in 1807 and began ending slavery in most of its empire in 1834. Churches ran many schools until elected school boards filled the gaps after 1870.`
+        title: 'Religious faith drove the fight against the slave trade.',
+        body: `Nine of the twelve founders of the 1787 antislavery society were Quakers. Britain banned the slave trade in 1807 and began ending slavery in 1834.`
       },
       {
         category: 'Social',
-        title: 'A new ladder, with old families still on top',
-        body: `A middle class rose by money and education and a working class lived on wages. Working-class women and children earned; middle-class women were increasingly kept to the home. Cities grew faster than housing and sewers, and cholera followed.`
+        title: 'Industry made new classes and split women\'s lives by class.',
+        body: `In 1851 about one in three women with a recorded job was a servant. Middle-class wives were expected to stay home, as Beeton's book of 1861 shows.`
       },
       {
-        category: 'Intellectual and technological',
-        title: 'Steam, and new ideas about society',
-        body: `Darby's coke iron (1709), Arkwright's mill (1771), Watt's engines and the first intercity railway (1830) changed how things were made and moved. Smith argued for free trade, Wollstonecraft for women's education, and Owen and Marx for owning the means of making wealth in common.`
+        category: 'Intellectual',
+        title: 'New ideas questioned how trade and society should work.',
+        body: `Adam Smith attacked the old trade rules in 1776, and Mary Wollstonecraft argued for women's education in 1792. Marx and Engels printed the Communist Manifesto in London in 1848.`
+      },
+      {
+        category: 'Technological',
+        title: 'Machines and steam changed how goods were made and moved.',
+        body: `Arkwright's water-powered mill at Cromford opened in 1771. From the 1780s Watt's engines let mills run on coal, and the first railway between two cities opened in 1830.`
       },
       {
         category: 'Economic',
-        title: 'From under 2 percent to a fifth',
-        body: `By estimate, Britain's share of the world's manufactured goods rose from under 2 percent in 1750 to about a fifth by 1860. It repealed the Corn Laws in 1846, adopted free trade, and let ordinary investors form limited companies from 1855 and 1856. Living standards rose slowly to the 1850s, then faster.`
+        title: 'Britain became the world\'s workshop and chose free trade.',
+        body: `By Bairoch's estimates, Britain's share of world manufacturing rose from under 2 percent in 1750 to about a fifth by 1860. Parliament voted to repeal the Corn Laws in 1846.`
       }
     ]
   }
