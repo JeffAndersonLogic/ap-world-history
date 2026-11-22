@@ -97,7 +97,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Enlightenment was against religion. Most of its writers believed in God. What they questioned was religion used as a power of government.`
+              html: `Do not write that the Enlightenment was against religion. Most of its writers believed in God. Many doubted miracles and church teachings, and a few rejected God. Above all they attacked the church's power over government and law.`
             } }
           ]
         },
@@ -340,7 +340,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Marx's revolution came in the 1800s. No revolution like the one he predicted won lasting power in an industrial country before 1900.`
+              html: `Do not write that Marx's revolution came in the 1800s. In <span class="num">1871</span> workers took over Paris and ran it as the Paris Commune. Marx praised it as a workers' government. The French army crushed it within about ten weeks. No revolution like the one he predicted won lasting power in an industrial country before 1900.`
             } }
           ]
         },
@@ -392,13 +392,13 @@ module.exports = {
       },
       {
         category: 'Religious',
-        title: 'Enlightenment writers questioned religion\'s power over government, not belief itself.',
+        title: 'Enlightenment writers attacked the church\'s power over government, and some doubted its teachings.',
         body: `Voltaire defended Jean Calas, a Protestant executed in 1762, and argued for religious toleration. Most Enlightenment writers still believed in God.`
       },
       {
         category: 'Social',
-        title: 'Old ranks of birth and sex were challenged, and some of them fell.',
-        body: `France ended the nobles' special privileges in 1789, and Russia freed more than 20 million serfs in 1861. Olympe de Gouges claimed equal rights for women in 1791.`
+        title: 'Old ranks of birth fell in France and Russia, and women claimed equal rights.',
+        body: `France ended the nobles' special privileges in 1789, and Russia freed more than 20 million serfs in 1861. Olympe de Gouges claimed equal rights for women in 1791, but women could vote almost nowhere by 1900.`
       },
       {
         category: 'Intellectual',

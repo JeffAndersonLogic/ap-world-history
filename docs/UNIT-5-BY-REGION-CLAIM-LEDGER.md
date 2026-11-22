@@ -608,28 +608,28 @@ written here as PENDING, and pushed, before any fix.
 **Reviewer G (CED and consistency, all twelve chapters), Unit 5 items:**
 
 - G2. Britain: the law factor narrowed to patents; the CED factor is legal protection of private
-  property in general. PENDING
+  property in general. **FIXED:** "Another factor is the legal protection of private property. Owners could count on the law to protect what they owned and earned"; the 1624 law now "banned most monopolies but still let the crown give an inventor a patent"; box gloss "laws that protect what people own, including new inventions".
 - G3. South and Southeast Asia, Social card: McKeown's departure counts given as people who "moved",
-  with no return hedge; the Chinese figure is Southeast Asia only. PENDING
-- G5. Europe, section 5 dates line promises "the Commune", which the chapter never tells. PENDING
+  with no return hedge; the Chinese figure is Southeast Asia only. **FIXED:** story and card now give McKeown's figures as counted departures ("mostly to Southeast Asia"), and the card adds "Many later went home."
+- G5. Europe, section 5 dates line promises "the Commune", which the chapter never tells. **FIXED:** the Commune is now told (Topic 5.8's wording): workers ran Paris in 1871, Marx praised it, the army crushed it within about ten weeks.
 - G6. Britain claims and quotes KC-5.1.IV (railroads, steamships, telegraph, interiors, trade and
-  migration) but teaches one railway only. PENDING
+  migration) but teaches one railway only. **FIXED:** a new paragraph from Topic 5.10: emigrant ships Liverpool to New York, more than 40 days under sail in 1853, about 16 by steam in 1869; Atlantic cables from 1866; Topic 5.10 added to `topics`.
 - G7. East Asia quotes KC-5.1.VI.B whole but teaches only working women; Americas claims KC-5.3.I.A
-  (empiricism, religion) and KC-5.3.IV.A.i (democracy, liberalism) beyond what it teaches. PENDING
+  (empiricism, religion) and KC-5.3.IV.A.i (democracy, liberalism) beyond what it teaches. **FIXED:** East Asia no longer claims KC-5.1.I.C or KC-5.1.VI.B and no longer quotes them (Britain teaches both); Americas no longer claims KC-5.3.I.A (Europe teaches it) and now defines liberalism ("Liberals wanted a written constitution, an elected assembly and protected rights").
 - G8. East Asia, Technological card: "Both states bought Western machines and hired foreign experts"
-  is supported for Japan only. PENDING
+  is supported for Japan only. **FIXED:** card title now "Both states set out to build modern weapons and machines."
 - G9. Americas, Religious card: "Faith fed ... the first rising in Mexico"; the chapter shows only
-  that Hidalgo was a priest. PENDING
+  that Hidalgo was a priest. **FIXED:** "Faith fed the fight against slavery, and a priest led Mexico's first rising."
 - G11. Britain, section 5 dates line: "Two German writers in London predicted"; in 1848 Marx wrote in
-  Brussels and the Manifesto was printed in London. PENDING
+  Brussels and the Manifesto was printed in London. **FIXED:** "Two German writers predicted a workers' revolution in a book printed in London. It never came to Britain."
 - G12. Britain and Europe: "&quot;" in two box labels. REJECTED: an artifact of the review packet's
   text extraction; the page renders a quotation mark (the label is escaped once, correctly).
 - G13. Britain, Religious card: faith as the sole driver of abolition; the story says faith and new
-  ideas about rights. PENDING
+  ideas about rights. **FIXED:** "Religious faith, with new ideas about rights, drove the fight against the slave trade."
 - G14. Europe, Social card: "Old ranks of birth and sex ... some of them fell" can be read to include
-  sex. PENDING
+  sex. **FIXED:** "Old ranks of birth fell in France and Russia, and women claimed equal rights", with "but women could vote almost nowhere by 1900" from the chapter's own section 05.
 - G15a. Britain: the story numbers farming third and towns fourth; the CED and the box list
-  urbanization third. PENDING
+  urbanization third. **FIXED:** ordinals after the second factor replaced by "Another factor", so the story no longer numbers against the box.
 - Not verified by the reviewer: the Beinin and Madureira quotations, Bismarck's 1884 words, and
   "minutes" for the 1870 London to Bombay cable. To check.
 
@@ -641,15 +641,15 @@ Roy on handloom share; McKeown's counts; the Meiji, treaty and mill dates.
 - F1. South and Southeast Asia: "Its writers first asked for equal rights ... The revolution of 1896
   went further" with "during a revolution ... Spain executed Rizal" makes Rizal read as a leader; the
   Katipunan began the revolution, Rizal disowned it and was shot for rebellion on 30 December 1896.
-  PENDING
+  **FIXED:** "In 1896 a secret society, the Katipunan, began a revolution for independence. Rizal did not lead it. But Spain convicted him of rebellion and shot him in December 1896"; the mistake box and Political card match.
 - F2. East Asia, Intellectual card: "Japan made it national policy" contradicts the chapter's own 1898
-  Guangxu decree. PENDING
+  Guangxu decree. **FIXED:** "Both governments set out to learn from the West, but only Japan kept at it", with "China's 1898 reform policy was stopped three months later."
 - F3. South and Southeast Asia, Political card: "As the Mughal Empire broke up after 1750" reads as
-  the breakup beginning then (it began after 1707). PENDING
+  the breakup beginning then (it began after 1707). **FIXED:** "The Mughal Empire was already breaking up by 1750. Over the next century the British East India Company came to rule much of India."
 - F4. East Asia: KC-5.1.I.C (specialization of labor) and KC-5.1.VI.B (middle-class women) claimed
-  and quoted, half taught (same as G7). PENDING
+  and quoted, half taught (same as G7). **FIXED** with G7.
 - F5. South and Southeast Asia: KC-5.3.II.ii's government half ("harnessed by governments") not
-  taught. PENDING
+  taught. **FIXED:** South and Southeast Asia no longer claims or quotes KC-5.3.II.ii (Europe and the Middle East teach it).
 
 **Reviewer C (history: Britain, Europe).** Verified sound: every CED quotation; Bismarck's 1884
 words (GHDI); the Statute of Monopolies; Bairoch; Manchester; the 1851 census; cholera deaths;
@@ -657,22 +657,22 @@ railway lengths; Witte, Otto, Benz, BASF, Bessemer; the 1890 vote; the insurance
 
 - C1. Britain: "She asked for education and independence, not yet the vote" is false; Vindication ch.
   9 says women "ought to have representatives"; and the chapter gives no British suffrage demand for
-  KC-5.3.IV.B. PENDING
+  KC-5.3.IV.B. **FIXED:** "She asked mostly for education and independence. She also wrote, briefly, that women \"ought to have representatives\" in government." The chapter's women's-suffrage evidence also includes the Reform Acts line ("no woman could vote for Parliament").
 - C2. Europe, Religious card and section 01 box: "questioned religion's power over government, not
   belief itself" overcorrects; deists rejected miracles and revelation, d'Holbach argued atheism (SEP,
-  "Enlightenment"). Same in Topic 5.1. PENDING
+  "Enlightenment"). Same in Topic 5.1. **FIXED:** box: "Many doubted miracles and church teachings, and a few rejected God. Above all they attacked the church's power over government and law"; card title "attacked the church's power over government, and some doubted its teachings". Topic 5.1 is being fixed to match.
 - C3. Britain: the only transnational business example is Unilever "not formed until 1929"; Lever
-  Brothers itself made soap in Australia (1895) and the United States (1898) before 1900. PENDING
+  Brothers itself made soap in Australia (1895) and the United States (1898) before 1900. **FIXED:** NEW FACT (reviewer C's sources, Graces Guide; Manchester UP): "In the late 1890s his company, Lever Brothers, opened soap works in Australia and the United States. It had become transnational ... In 1929 it joined Dutch firms to form Unilever."
 - C4. Britain: KC-5.1.IV and the internal-combustion half of KC-5.1.I.B claimed, not taught (G6).
-  PENDING
-- C5. Europe: the Commune promised in the dates line and never told (G5). PENDING
+  **FIXED** for KC-5.1.IV with G6. KC-5.1.I.B: **ANSWERED**, the chapter quotes and teaches the fossil-fuels sentence; the internal-combustion sentence is taught in the Europe chapter.
+- C5. Europe: the Commune promised in the dates line and never told (G5). **FIXED** with G5.
 - C6. Britain: "In 1854 ... Snow argued that water carried it"; he argued it in 1849 and traced the
-  Broad Street pump in 1854. PENDING
+  Broad Street pump in 1854. **FIXED:** "In 1849 the doctor John Snow argued that dirty water carried it. In 1854 he traced a London outbreak to one water pump, but many doctors were not persuaded for years." Topic 5.9 is being fixed to match.
 - C7. Britain: "A law of 1624 let the crown give an inventor a patent"; the statute banned most
-  monopolies and kept patents for inventions (G2 overlaps). PENDING
+  monopolies and kept patents for inventions (G2 overlaps). **FIXED** with G2.
 - C8. Britain: "repealed them in 1824. Skilled workers then built lasting labor unions" drops the
-  1825 Act and squeezes decades (lasting national unions from 1851); contradicts Topic 5.8. PENDING
-- C9. Britain: farming third and towns fourth, the box the other way (G15a). PENDING
+  1825 Act and squeezes decades (lasting national unions from 1851); contradicts Topic 5.8. **FIXED:** "Parliament repealed them in 1824, but a law of 1825 limited what workers' groups could do. By the 1850s skilled workers had built lasting national labor unions."
+- C9. Britain: farming third and towns fourth, the box the other way (G15a). **FIXED** with G15a.
 
 **Reviewer E (history: Americas, Middle East).** Verified sound: every CED quotation; the Gülhane
 quotations (Inalcik, ed. Hurewitz 1975); Bolívar (Bertrand translation); Beinin's four causes
@@ -682,15 +682,15 @@ dates.
 
 - E1. Middle East: "the first reforms answered lost wars against Russia and against Napoleon's army";
   Selim's reforms began 1792 to 1793, before the 1798 invasion, and the French surrendered in 1801;
-  Topic 5.8 names Russia only. PENDING
+  Topic 5.8 names Russia only. **FIXED:** "So the first reforms answered a lost war against Russia. Napoleon's easy victory in Egypt then showed what a modern European army could do, and that added to the pressure."
 - E2. Middle East: Muhammad Ali "kept cheap British cloth out" against "In 1838 English cotton cloth
   sold in Egypt for less than cloth from Egypt's own new mills"; the 1838 figures compare the English
   price in Egypt with the Egyptian mills' cost (Overton 1971, via JEEH 2024); protection was a limit,
-  not a ban. Same in Topics 5.4 and 5.6. PENDING
-- E3. Americas, Religious card: faith and Hidalgo's rising (G9). PENDING
+  not a ban. Same in Topics 5.4 and 5.6. **FIXED:** "used his control of trade to limit cheap British cloth"; "In 1838 English cotton cloth could be bought in Egypt for less than it cost Egypt's own mills to make the same cloth" (card to match). Topics 5.4 and 5.6 are being fixed to match.
+- E3. Americas, Religious card: faith and Hidalgo's rising (G9). **FIXED** with G9.
 - E4. Americas, story in short: "When Napoleon invaded Spain in 1808, most of Spanish America broke
-  away" squeezes 1808 to 1826. PENDING
+  away" squeezes 1808 to 1826. **FIXED:** "After Napoleon invaded Spain in 1808, most of Spanish America broke away by 1826."
 - E5. Americas, Social card: "from Chile in 1823" makes Chile first; Haiti ended slavery 1793 to
-  1804. PENDING
-- E6. Americas: KC-5.3.I.A first sentence and "liberalism" in KC-5.3.IV.A.i untaught (G7). PENDING
-- E7. Middle East: KC-5.1.IV claimed, but Suez and a coastal cable are not interior regions. PENDING
+  1804. **FIXED:** "Slavery ended in Haiti through its revolution. Then it ended country by country, from Chile in 1823 to Brazil in 1888."
+- E6. Americas: KC-5.3.I.A first sentence and "liberalism" in KC-5.3.IV.A.i untaught (G7). **FIXED** with G7.
+- E7. Middle East: KC-5.1.IV claimed, but Suez and a coastal cable are not interior regions. **FIXED:** the Middle East no longer claims or quotes KC-5.1.IV (four other chapters teach it); its box "In short" no longer says "steamships and telegraphs joined far places".

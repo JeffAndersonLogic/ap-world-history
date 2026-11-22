@@ -55,9 +55,7 @@ module.exports = {
     'KC-5.1.III.B',
     'KC-5.2.II.A',
     'KC-5.1.V.C',
-    'KC-5.1.I.D',
-    'KC-5.1.I.C',
-    'KC-5.1.VI.B'
+    'KC-5.1.I.D'
   ],
 
   empires: [
@@ -292,11 +290,9 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Japan's government started industry on purpose, factory methods spread to Japan, and women in working families earned wages.`,
+                `In short: Japan's government started industry on purpose, and factory methods spread to Japan.`,
                 `<a href="#chapter-t5-6">Topic 5.6</a>: "As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization."`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
-                `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
-                `<a href="#chapter-t5-9">Topic 5.9</a>: "While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development."`
               ]
             } }
           ]
@@ -337,12 +333,12 @@ module.exports = {
       },
       {
         category: 'Intellectual',
-        title: 'Both governments set out to learn from the West, and Japan made it national policy.',
-        body: `In 1867 China's Tongwen Guan added astronomy and mathematics. Japan's Charter Oath of 1868 promised to seek knowledge "throughout the world," and Japan began a national school system in 1872.`
+        title: 'Both governments set out to learn from the West, but only Japan kept at it.',
+        body: `In 1867 China's Tongwen Guan added astronomy and mathematics. Japan's Charter Oath of 1868 promised to seek knowledge "throughout the world," and Japan began a national school system in 1872. China's 1898 reform policy was stopped three months later.`
       },
       {
         category: 'Technological',
-        title: 'Both states bought Western machines and hired foreign experts.',
+        title: 'Both states set out to build modern weapons and machines.',
         body: `China built the Jiangnan Arsenal (1865) and the Fuzhou navy yard (1866) to make weapons and ships. Japan's first railway (1872) was built with British engineers, and the Tomioka Silk Mill (1872) used French machines.`
       },
       {

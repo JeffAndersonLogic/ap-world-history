@@ -49,7 +49,7 @@ module.exports = {
     `Industry made new classes, split women's lives by class, and crowded cities full of disease.`,
     `Reformers ended the slave trade, workers organized, and Parliament passed reforms step by step.`
   ],
-  topics: ['5.1', '5.3', '5.4', '5.5', '5.7', '5.8', '5.9'],
+  topics: ['5.1', '5.3', '5.4', '5.5', '5.7', '5.8', '5.9', '5.10'],
   ced: [
     'KC-5.1.I.A',
     'KC-5.1.I.B',
@@ -103,11 +103,11 @@ module.exports = {
         {
           heading: 'What people built',
           blocks: [
-            { p: `The third factor is better farming. Farmers planted turnips and clover in place of leaving fields empty to rest, so the same land grew more food. Landowners also fenced shared village fields into private farms. This was <span class="kt">enclosure</span>. Historians still argue how much it added to the harvest.` },
-            { p: `The fourth factor is <span class="kt">urbanization</span> (the growth of towns). Larger harvests helped feed more people: about 8 million in <span class="num">1761</span> and about 10.5 million in <span class="num">1801</span>. A smaller share of them farmed, and many moved to towns. Manchester had about 23,000 people in <span class="num">1773</span>.` },
-            { p: `The fifth factor is the law. A law of <span class="num">1624</span> let the crown give an inventor a <span class="kt">patent</span>. A patent was the sole right to use a new invention, for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a spinning machine.` },
-            { p: `The sixth factor is resources from abroad. Cotton does not grow in Britain. By the 1780s most of the cotton spun in Manchester was grown by enslaved people in the Caribbean and South America. After the 1790s, more and more came from the United States.` },
-            { p: `The seventh factor is <span class="kt">capital</span>: money used to build something that makes more money. Merchants and landowners had saved money from trade. Part of that trade was in enslaved people and the sugar they grew. Some savers were ready to risk their money on mills.` },
+            { p: `Another factor is better farming. Farmers planted turnips and clover in place of leaving fields empty to rest, so the same land grew more food. Landowners also fenced shared village fields into private farms. This was <span class="kt">enclosure</span>. Historians still argue how much it added to the harvest.` },
+            { p: `Another factor is <span class="kt">urbanization</span> (the growth of towns). Larger harvests helped feed more people: about 8 million in <span class="num">1761</span> and about 10.5 million in <span class="num">1801</span>. A smaller share of them farmed, and many moved to towns. Manchester had about 23,000 people in <span class="num">1773</span>.` },
+            { p: `Another factor is the legal protection of private property. Owners could count on the law to protect what they owned and earned. A law of <span class="num">1624</span> banned most monopolies but still let the crown give an inventor a <span class="kt">patent</span>. A patent was the sole right to use a new invention, for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a spinning machine.` },
+            { p: `Another factor is resources from abroad. Cotton does not grow in Britain. By the 1780s most of the cotton spun in Manchester was grown by enslaved people in the Caribbean and South America. After the 1790s, more and more came from the United States.` },
+            { p: `The last factor is <span class="kt">capital</span>: money used to build something that makes more money. Merchants and landowners had saved money from trade. Part of that trade was in enslaved people and the sugar they grew. Some savers were ready to risk their money on mills.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -123,7 +123,7 @@ module.exports = {
                 `2. "Geographical distribution of coal, iron, and timber": where these were found.`,
                 `3. "Urbanization": the growth of towns.`,
                 `4. "Improved agricultural productivity": more food from the same land.`,
-                `5. "Legal protection of private property": laws, such as patents, that protect what people own.`,
+                `5. "Legal protection of private property": laws that protect what people own, including new inventions.`,
                 `6. "Access to foreign resources": goods from abroad, such as cotton.`,
                 `7. "Accumulation of capital": saved money ready to invest.`
               ]
@@ -166,7 +166,8 @@ module.exports = {
           blocks: [
             { p: `The steam engine began as a pump. In <span class="num">1712</span> Thomas Newcomen used one to pump water out of a coal mine, but it burned a lot of coal. James Watt found how to save most of it, and patented his idea in <span class="num">1769</span>. In the 1780s Watt and Matthew Boulton built engines that turned a wheel.` },
             { p: `Now a mill did not need a fast river. It could run on coal, and cotton mills crowded into towns such as Manchester (<a href="#chapter-t5-5">Topic 5.5</a>). Engines needed coal, and mines needed engines to pump them dry, so each made the other grow. Coal and oil are called fossil fuels. This change is the <span class="kt">fossil fuels revolution</span>.` },
-            { p: `In <span class="num">1830</span> the Liverpool and Manchester Railway opened, the first railway between two cities. Steam locomotives carried cotton from the port to the mills.` }
+            { p: `In <span class="num">1830</span> the Liverpool and Manchester Railway opened, the first railway between two cities. Steam locomotives carried cotton from the port to the mills.` },
+            { p: `Steam also crossed oceans. In <span class="num">1853</span> most emigrant ships from Liverpool to New York still used sails, and the voyage took more than 40 days. By <span class="num">1869</span> steamships made it in about 16. From <span class="num">1866</span> telegraph cables under the Atlantic carried messages in minutes. Goods, people and news now moved farther and faster than ever before (<a href="#chapter-t5-10">Topic 5.10</a>).` }
           ]
         },
         {
@@ -231,7 +232,7 @@ module.exports = {
           blocks: [
             { p: `Most businesses belonged to a family or a few partners. If a partnership failed, each partner could lose his house to pay its debts. Railways cost far more, so each railway company needed its own act of Parliament to raise money from many investors.` },
             { p: `Investors bought <span class="kt">shares</span>. A share is a small part of a company, and its owner gets part of the profits. People traded shares on the London <span class="kt">stock exchange</span> (a market for shares). A law of <span class="num">1855</span> gave larger companies <span class="kt">limited liability</span>: an owner could lose only the money he put in, not his house. From <span class="num">1856</span> almost any group of seven or more people could form such a company.` },
-            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. His business later became part of Unilever. Unilever was <span class="kt">transnational</span>: it worked across the borders of many countries. But it was not formed until <span class="num">1929</span>.` }
+            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. By <span class="num">1886</span> he had registered the Sunlight name in the United States. In the late 1890s his company, Lever Brothers, opened soap works in Australia and the United States. It had become <span class="kt">transnational</span>: it worked across the borders of many countries. In <span class="num">1929</span> it joined Dutch firms to form Unilever.` }
           ]
         },
         {
@@ -288,7 +289,7 @@ module.exports = {
           heading: 'A city that could not keep up',
           blocks: [
             { p: `Manchester had more than 300,000 people by <span class="num">1851</span>. That year, for the first time, more than half the people of England and Wales lived in towns. Whole families lived in one room or a damp cellar, and many wages barely paid the rent. Streets had no sewers or clean water. In <span class="num">1845</span> Friedrich Engels called Manchester's river Irk "coal-black, foul-smelling".` },
-            { p: `<span class="kt">Cholera</span> is a disease spread by dirty water. In <span class="num">1848</span> and <span class="num">1849</span> about 53,000 cholera deaths were recorded in England and Wales. In <span class="num">1854</span> the doctor John Snow argued that water carried it, but many doctors were not persuaded for years (<a href="#chapter-t5-9">Topic 5.9</a>).` },
+            { p: `<span class="kt">Cholera</span> is a disease spread by dirty water. In <span class="num">1848</span> and <span class="num">1849</span> about 53,000 cholera deaths were recorded in England and Wales. In <span class="num">1849</span> the doctor John Snow argued that dirty water carried it. In <span class="num">1854</span> he traced a London outbreak to one water pump, but many doctors were not persuaded for years (<a href="#chapter-t5-9">Topic 5.9</a>).` },
             { note: {
               kind: 'howknow',
               label: 'How we know: counting crime',
@@ -322,19 +323,19 @@ module.exports = {
       name: 'The People Who Pushed Back',
       navLabel: 'Calls for change',
       dates: '1787 to 1906 &nbsp;·&nbsp; Abolitionists, Chartists, reformers, Owen and Marx',
-      thesis: `Faith and new ideas about rights pushed reformers to end the slave trade. Workers organized, and Parliament passed reforms. Two German writers in London predicted a revolution that never came to Britain.`,
+      thesis: `Faith and new ideas about rights pushed reformers to end the slave trade. Workers organized, and Parliament passed reforms. Two German writers predicted a workers' revolution in a book printed in London. It never came to Britain.`,
       parts: [
         {
           heading: 'Abolition and Wollstonecraft',
           blocks: [
             { p: `In <span class="num">1787</span> twelve men in London founded a society to end the slave trade. Nine were <span class="kt">Quakers</span> (members of a Christian group that had come to see slavery as a sin). Britain banned the slave trade in <span class="num">1807</span>. In <span class="num">1834</span> it began ending slavery in most of its empire, though freed people had to keep working for their former owners, unpaid, until <span class="num">1838</span> (<a href="#chapter-t5-1">Topic 5.1</a>).` },
-            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked for education and independence, not yet the vote. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` }
+            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked mostly for education and independence. She also wrote, briefly, that women "ought to have representatives" in government. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` }
           ]
         },
         {
           heading: 'Workers organize',
           blocks: [
-            { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> banned workers from joining together to demand higher wages. Parliament repealed them in <span class="num">1824</span>. Skilled workers then built lasting <span class="kt">labor unions</span> (groups of workers who bargain with employers together).` },
+            { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> banned workers from joining together to demand higher wages. Parliament repealed them in <span class="num">1824</span>, but a law of <span class="num">1825</span> limited what workers' groups could do. By the 1850s skilled workers had built lasting national <span class="kt">labor unions</span> (groups of workers who bargain with employers together).` },
             { p: `Workers also wanted <span class="kt">suffrage</span> (the right to vote). In <span class="num">1838</span> the <span class="kt">Chartists</span> demanded a vote for every man over 21 and a secret ballot. Parliament rejected their petitions, but five of their six points later became law. In <span class="num">1906</span> a committee of unions and socialists won 29 seats and became the Labour Party (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         },
@@ -388,7 +389,7 @@ module.exports = {
       },
       {
         category: 'Religious',
-        title: 'Religious faith drove the fight against the slave trade.',
+        title: 'Religious faith, with new ideas about rights, drove the fight against the slave trade.',
         body: `Nine of the twelve founders of the 1787 antislavery society were Quakers. Britain banned the slave trade in 1807 and began ending slavery in 1834.`
       },
       {

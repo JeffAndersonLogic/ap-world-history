@@ -169,6 +169,16 @@ function checkRegion(mod, fileBase, ced, volumeKeys) {
     else if (!volumeKeys.has(topicKeyOf(code))) problems.push(`topics names ${code}, which has no chapter in this volume`);
   }
 
+  // A College Board box may quote the CED's own dash inside quotation marks:
+  // a verbatim quotation is not running prose, and replacing the dash with
+  // " ... " reads as words left out (pass 1 reviewers, 2026-11-22). Only the
+  // quoted words are exempt; a dash anywhere else still fails.
+  const cbQuotes = new Set();
+  for (const note of notes(mod).filter(n => n.kind === 'cb')) {
+    for (const para of note.paras || []) cbQuotes.add(para);
+  }
+  const outsideQuotes = text => text.replace(/"[^"]*"/g, '""').replace(/\u201c[^\u201d]*\u201d/g, '""');
+
   for (const text of strings(mod)) {
     for (const m of text.matchAll(/href="#chapter-([a-z0-9-]+)"/g)) {
       const key = m[1];
@@ -178,9 +188,10 @@ function checkRegion(mod, fileBase, ced, volumeKeys) {
         problems.push(`links Topic ${t[1]}.${t[2]} but does not list it in topics`);
       }
     }
-    if (DASH.test(text)) {
-      const at = text.search(DASH);
-      problems.push(`em or en dash in prose: "...${text.slice(Math.max(0, at - 30), at + 10)}..."`);
+    const checked = cbQuotes.has(text) ? outsideQuotes(text) : text;
+    if (DASH.test(checked)) {
+      const at = checked.search(DASH);
+      problems.push(`em or en dash in prose: "...${checked.slice(Math.max(0, at - 30), at + 10)}..."`);
     }
   }
 
@@ -303,6 +314,7 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     ['a link to a chapter that does not exist', m => { m.deck = '<a href="#chapter-t9-8">x</a>'; }, /not a chapter in this volume/],
     ['a linked topic it does not declare', m => { m.deck = '<a href="#chapter-t9-2">x</a>'; }, /does not list it in topics/],
     ['an em dash in prose', m => { m.deck = 'one — two'; }, /em or en dash/],
+    ['an em dash in a College Board box outside the quotation', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', paras: ['In short: one — two.'] } }); }, /em or en dash/],
     ['a missing closing category', m => { m.closing.pairs.pop(); }, /no economic card/],
     ['a slug that does not match its file', m => { m.slug = 'region-9-south'; }, /slug/],
     ['no ced codes at all', m => { m.ced = []; }, /no ced codes/],

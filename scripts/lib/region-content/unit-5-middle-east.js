@@ -54,7 +54,6 @@ module.exports = {
     'KC-5.1.V.B',
     'KC-5.1.V.C',
     'KC-5.1.II.B',
-    'KC-5.1.IV',
     'KC-5.3.II.i',
     'KC-5.3.II.ii',
     'KC-5.3.II.iii'
@@ -90,7 +89,7 @@ module.exports = {
           blocks: [
             { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt. It easily defeated Egypt's rulers, the <span class="kt">Mamluks</span>. The Mamluks were a class of soldier-lords. The French left in <span class="num">1801</span>. But they had shown what a modern European army could do.` },
             { p: `In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries. Then he built a new army along European lines (<a href="#chapter-t5-8">Topic 5.8</a>).` },
-            { p: `So the first reforms answered lost wars against Russia and against Napoleon's army. Later in the century, the pressure came more and more from industrial states. Selim's fall also shows something that came back again and again. Powerful old groups fought reform.` },
+            { p: `So the first reforms answered a lost war against Russia. Napoleon's easy victory in Egypt then showed what a modern European army could do, and that added to the pressure. Later in the century, the pressure came more and more from industrial states. Selim's fall also shows something that came back again and again. Powerful old groups fought reform.` },
             { note: {
               kind: 'cb',
               label: CB,
@@ -130,7 +129,7 @@ module.exports = {
           heading: 'Crops paid for factories',
           blocks: [
             { p: `His government took control of Egypt's farming. It told peasants what to plant. It bought their crops at low prices and sold them abroad at higher prices. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. The first monopolies were on grain and other crops. From <span class="num">1820</span> the most important crop was a new one, <span class="kt">long-staple cotton</span>. Its long fibers make strong, fine thread.` },
-            { p: `The money from these crop monopolies paid for factories. From the late 1810s, the government built cotton mills and works for weapons, sugar and other goods. It bought European machines and hired European experts. By the early 1830s about 30 cotton mills employed about 30,000 workers. Many of them made cloth and uniforms for the army. Muhammad Ali kept cheap British cloth out of Egypt to protect the mills.` },
+            { p: `The money from these crop monopolies paid for factories. From the late 1810s, the government built cotton mills and works for weapons, sugar and other goods. It bought European machines and hired European experts. By the early 1830s about 30 cotton mills employed about 30,000 workers. Many of them made cloth and uniforms for the army. Muhammad Ali used his control of trade to limit cheap British cloth in Egypt, to protect the mills.` },
             { p: `The workers did not choose these jobs. They were drafted, just as Egyptian peasants had long been forced to dig canals. From <span class="num">1822</span> peasants were drafted into the army too. Forcing people to serve in the army is called <span class="kt">conscription</span>. By the early 1830s the army had about 130,000 soldiers. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences.` },
             { p: `This is <span class="kt">state-sponsored industry</span>: industry that a government plans, pays for and protects. In Egypt the government also owned the factories (<a href="#chapter-t5-6">Topic 5.6</a>).` }
           ]
@@ -291,7 +290,7 @@ module.exports = {
           heading: 'Cotton out, cloth in',
           blocks: [
             { p: `The region had long made and traded goods. It also sold raw cotton to Britain's new mills. In the mid-1780s about a quarter of the raw cotton Britain imported came from the Ottoman Empire. It was shipped from the port of Smyrna (<a href="#chapter-t5-3">Topic 5.3</a>).` },
-            { p: `But machines made cloth more cheaply than hands could. In <span class="num">1838</span> English cotton cloth sold in Egypt for less than cloth from Egypt's own new mills. The world was also making far more goods, and factories in Europe made most of the new ones.` }
+            { p: `But machines made cloth more cheaply than hands could. In <span class="num">1838</span> English cotton cloth could be bought in Egypt for less than it cost Egypt's own mills to make the same cloth. The world was also making far more goods, and factories in Europe made most of the new ones.` }
           ]
         },
         {
@@ -316,9 +315,8 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: the Middle East kept making goods but made a smaller share of the world's total, and steamships and telegraphs joined far places.`,
+                `In short: the Middle East kept making goods, but it made a smaller share of the world's total.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
                 `An optional College Board example: "Textile production in India and Egypt".`
               ]
             } }
@@ -370,7 +368,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'The region kept making goods, but its share of world manufacturing fell.',
-        body: `Egypt's crop monopolies paid for about 30 state cotton mills, and most had failed by the mid-1840s. In 1838 English cloth sold in Egypt for less than cloth from Egypt's own mills. Yet the handlooms of Aleppo and Damascus held steady from 1860 to 1914.`
+        body: `Egypt's crop monopolies paid for about 30 state cotton mills, and most had failed by the mid-1840s. In 1838 English cloth cost less in Egypt than Egypt's own mills paid to make it. Yet the handlooms of Aleppo and Damascus held steady from 1860 to 1914.`
       }
     ]
   }

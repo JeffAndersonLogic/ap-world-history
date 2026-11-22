@@ -41,7 +41,7 @@ module.exports = {
   inShort: [
     `Thirteen British colonies broke away over taxes, used Enlightenment words, and became the United States.`,
     `Enslaved people in Saint-Domingue rose up in 1791 and founded Haiti, a free country, in 1804.`,
-    `When Napoleon invaded Spain in 1808, most of Spanish America broke away, and creoles took the top places.`,
+    `After Napoleon invaded Spain in 1808, most of Spanish America broke away by 1826.`,
     `Enslaved people, abolitionists and women then demanded that the new words about rights cover them too.`,
     `Factories, railroads and millions of migrants made the United States the world's largest maker of goods by 1900.`
   ],
@@ -49,7 +49,6 @@ module.exports = {
   ced: [
     'KC-5.3',
     'KC-5.3.I',
-    'KC-5.3.I.A',
     'KC-5.3.I.B',
     'KC-5.3.I.C',
     'KC-5.3.III.B',
@@ -208,7 +207,7 @@ module.exports = {
           heading: 'Mexico\'s two risings',
           blocks: [
             { p: `In Mexico, a priest named Miguel Hidalgo called on Native and <span class="kt">mestizo</span> villagers to rise in <span class="num">1810</span>. (A mestizo is a person of mixed Native and European descent.) But royalist troops (soldiers loyal to Spain's king) defeated his army. Hidalgo was captured and executed in <span class="num">1811</span>.` },
-            { p: `Mexico won independence only in <span class="num">1821</span>, and conservative creoles led it. Spain had a new liberal government from 1820, and these creoles did not want to live under it. Agustín de Iturbide was a creole officer who had fought the rebels for years. In 1821 he joined the rebel leader Vicente Guerrero. In <span class="num">1822</span> Iturbide made himself emperor of Mexico.` }
+            { p: `Mexico won independence only in <span class="num">1821</span>, and conservative creoles led it. Spain had a new liberal government from 1820, and these creoles did not want to live under it. Liberals wanted a written constitution, an elected assembly and protected rights. Agustín de Iturbide was a creole officer who had fought the rebels for years. In 1821 he joined the rebel leader Vicente Guerrero. In <span class="num">1822</span> Iturbide made himself emperor of Mexico.` }
           ]
         },
         {
@@ -375,13 +374,13 @@ module.exports = {
       },
       {
         category: 'Religious',
-        title: 'Faith fed the fight against slavery and the first rising in Mexico.',
+        title: 'Faith fed the fight against slavery, and a priest led Mexico\'s first rising.',
         body: `Quakers had come to see slavery as a sin, and many abolitionists drew on faith as well as Enlightenment ideas. In 1810 a priest, Miguel Hidalgo, led Mexico's first rising.`
       },
       {
         category: 'Social',
         title: 'Rights reached more people slowly, and city life grew harder.',
-        body: `Slavery ended country by country, from Chile in 1823 to Brazil in 1888. In 1848 the Seneca Falls meeting demanded the vote for women. In 1890 Riis wrote that three in four New Yorkers lived in tenements.`
+        body: `Slavery ended in Haiti through its revolution. Then it ended country by country, from Chile in 1823 to Brazil in 1888. In 1848 the Seneca Falls meeting demanded the vote for women. In 1890 Riis wrote that three in four New Yorkers lived in tenements.`
       },
       {
         category: 'Intellectual',

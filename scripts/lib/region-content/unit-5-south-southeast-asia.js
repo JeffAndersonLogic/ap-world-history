@@ -53,7 +53,6 @@ module.exports = {
     'KC-5.1.II.B',
     'KC-5.1.IV',
     'KC-5.1.III.B',
-    'KC-5.3.II.ii',
     'KC-5.3.II.iii'
   ],
 
@@ -237,7 +236,7 @@ module.exports = {
           heading: 'Millions on the move',
           blocks: [
             { p: `Steamships carried people as well as goods. They made long journeys faster and cheaper, so <span class="kt">migration</span> grew. Migration means people moving to live in a new place.` },
-            { p: `Many of the migrants came from India. Between <span class="num">1846</span> and <span class="num">1940</span>, more than 29 million Indians moved to Southeast Asia and the lands around the Indian Ocean. More than 19 million Chinese made the same kinds of journeys. The historian Adam McKeown counted them from passenger lists and port records.` },
+            { p: `Many of the migrants came from India. Between <span class="num">1846</span> and <span class="num">1940</span>, more than 29 million departures of Indians were counted, to Southeast Asia and the lands around the Indian Ocean. More than 19 million departures of Chinese were counted, mostly to Southeast Asia. The historian Adam McKeown counted them from passenger lists and port records.` },
             { p: `His count runs past 1900, because the movement went on. Many of the migrants later went home. Why they moved, and the work they found, is Unit 6.` }
           ]
         },
@@ -252,11 +251,11 @@ module.exports = {
           heading: 'The Propaganda Movement',
           blocks: [
             { p: `In the 1880s and 1890s, Filipino writers began the <span class="kt">Propaganda Movement</span>. Many of them were students in Europe. Here "propaganda" meant spreading their ideas. They asked for equal rights with Spaniards.` },
-            { p: `The best-known writer was José Rizal. In <span class="num">1887</span> he published a novel, Noli Me Tángere ("Touch Me Not"). It attacked the abuses of Spanish rule and of the friars. In <span class="num">1896</span>, during a revolution against Spanish rule, Spain executed Rizal (<a href="#chapter-t5-2">Topic 5.2</a>).` },
+            { p: `The best-known writer was José Rizal. In <span class="num">1887</span> he published a novel, Noli Me Tángere ("Touch Me Not"). It attacked the abuses of Spanish rule and of the friars. In <span class="num">1896</span> a secret society, the Katipunan, began a revolution for independence. Rizal did not lead it. But Spain convicted him of rebellion and shot him in December <span class="num">1896</span> (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Propaganda Movement demanded independence from the start. Its writers first asked for equal rights within Spain's empire. The revolution of 1896 went further.`
+              html: `Do not write that the Propaganda Movement demanded independence from the start. Its writers asked for equal rights within Spain's empire, not independence. A separate secret society, the Katipunan, began the revolution for independence in 1896.`
             } },
             { p: `These writers wanted people across many islands to see themselves as one people: Filipinos. That feeling is called <span class="kt">nationalism</span>. It is a sense that people who share a language, religion, social customs and territory form one nation. It is also loyalty to that nation.` },
             { p: `Nationalists often wanted their nation to have its own state, with its own borders. <a href="#r5-europe-nations">The Europe chapter</a> tells how nationalism helped join Italy and Germany into new states.` },
@@ -264,8 +263,7 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: people began to see themselves as one nation, and some nationalists wanted that nation to have its own state.`,
-                `<a href="#chapter-t5-2">Topic 5.2</a>: "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity."`,
+                `In short: some nationalists wanted their nation to have its own state.`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions."`,
                 `An optional College Board example: "Propaganda Movement in the Philippines".`
               ]
@@ -294,7 +292,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'Europeans made the rules in India and the Philippines',
-        body: `As the Mughal Empire broke up after 1750, the British East India Company came to rule much of India. Spain ruled the Philippines from the 1500s. In 1896, during a revolution against its rule, Spain executed José Rizal.`
+        body: `The Mughal Empire was already breaking up by 1750. Over the next century the British East India Company came to rule much of India. Spain ruled the Philippines from the 1500s, and in 1896 it shot José Rizal during the Katipunan's revolution.`
       },
       {
         category: 'Religious',
@@ -304,7 +302,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Most people still worked the land and the loom, and millions moved',
-        body: `India's census of 1901 found about two-thirds of the people living by farming. In 1908 about a million people in one province still lived from handloom weaving. Between 1846 and 1940, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the Indian Ocean lands.`
+        body: `India's census of 1901 found about two-thirds of the people living by farming. In 1908 about a million people in one province still lived from handloom weaving. From 1846 to 1940, McKeown counted more than 29 million departures of Indians and more than 19 million of Chinese, mostly to Southeast Asia. Many later went home.`
       },
       {
         category: 'Intellectual',
