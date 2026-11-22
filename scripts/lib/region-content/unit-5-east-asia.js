@@ -4,17 +4,35 @@
  * Unit 5 by region: East Asia (Qing China and Japan).
  * One continuous story of China and Japan from 1750 to 1900, told in four sections: China as the
  * world's largest maker and the defeats that made reform urgent (KC-5.1.II.B), Self-Strengthening,
- * its opponents and its end in 1898, with HSBC as the bank of the treaty-port trade (KC-5.1.V.B,
+ * its opponents and its end in 1898, with HSBC as the bank of the China trade (KC-5.1.V.B,
  * KC-5.1.III.B), Japan forced open and reformed by the Meiji government (KC-5.2.II.A), and Japan's
  * state-started industry, the women who worked it, and its rise to regional power (KC-5.1.V.C,
- * KC-5.1.I.D, KC-5.1.I.C, KC-5.1.VI.B, KC-5.2.II.A). Facts come from the Topic 5.4, 5.6, 5.7 and
- * 5.8 chapters and their claim ledgers, and from the reviewed rebuild of 5.9 (women in Japan's
- * factories, 1900), keeping their narrowings (Cixi's spending did not empty the navy's purse; the
- * "Chinese learning as the essence" slogan is from the 1890s; Taiwan "a colony of its own", not
- * "its first"; Korea not a colony until 1910). Left out on purpose: the Opium Wars and the Taiping
- * Rebellion beyond a sentence each, and the treaty ports, which are Unit 6's; Korea, which the
- * Unit 5 CED does not name except through the war of 1894 and 1895.
+ * KC-5.1.I.D, KC-5.1.I.C, KC-5.1.VI.B). Facts come from the Topic 5.4, 5.6, 5.7 and 5.8 chapters
+ * and their claim ledgers, and from the reviewed rebuild of 5.9 (women in Japan's factories,
+ * 1900), keeping their narrowings (Bairoch's shares are estimates; Cixi's spending did not empty
+ * the navy's purse, and for 1894 Elman points to a navy split into rival regional fleets and less
+ * well-trained crews; the Meiji state built the first railway and model factories and took over
+ * shipyards and mines begun under the shogun; Taiwan "a colony of its own", not "its first"; Korea
+ * not a colony until 1910). Left out on purpose: the Opium Wars and the Taiping Rebellion beyond a
+ * sentence each, and the treaty ports, which are Unit 6's; Korea, which the Unit 5 CED does not
+ * name except through the war of 1894 and 1895.
+ *
+ * Plain-language and accuracy pass (2026-11-21): sentences cut to one idea each, definitions moved
+ * out from between commas into parentheses or their own sentences, and every College Board
+ * quotation moved out of the story into one "What the College Board says" box per section. Each box
+ * opens "In short:", then quotes every Key Concept sentence whole, word for word from
+ * scripts/lib/ced-source/unit-5.js (KC-5.2.II.A is no longer cut before "and led to the growing
+ * regional power of Japan in the Meiji Era"), and labels HSBC "An optional College Board example".
+ * Added: "The story in short" (inShort), a "How we know" box on Bairoch's estimates (from Topic
+ * 5.4), a "Common mistake" box on Japan copying the West (from Topic 5.6), and the Meiji chronology separated by date: the shogun's resignation in late 1867,
+ * the civil war won by 1869, the domains abolished in 1871, the conscription law of 1873 and the
+ * sword ban of 1876 (Wikipedia, "Boshin War", "Imperial Japanese Army" and "Haitō Edict"; the
+ * dates are standard). Dropped to fit the length: the Dent and Company sentence. Topic 5.3 is now
+ * listed, because KC-5.1.I.C, which the chapter teaches through Japan's mills, is a Topic 5.3
+ * Key Concept.
  */
+
+const CB = 'What the College Board says';
 
 module.exports = {
   topicKey: 'r5-east-asia',
@@ -22,8 +40,15 @@ module.exports = {
   unit: '5',
   region: 'East Asia',
   titleHtml: 'East <em>Asia</em>',
-  deck: `From 1750 to 1900, China went from the world's largest maker to a defeated empire trying to reform, and Japan went from a country forced to open its ports to a regional power with a colony of its own. Follow both governments as they tried to borrow the strength of industrial states without giving up their own way of ruling.`,
-  topics: ['5.4', '5.6', '5.7', '5.8', '5.9'],
+  deck: `From 1750 to 1900, China went from the world's largest maker to a defeated empire trying to reform. Japan went from a country forced to open its ports to a regional power with a colony of its own.`,
+  inShort: [
+    `In 1750 China made about a third of the world's manufactured goods, by hand.`,
+    `Factories in Europe and the United States then made far more, and China lost wars to Britain and France.`,
+    `Qing officials borrowed Western weapons and learning, but powerful people at court fought the changes.`,
+    `American warships pushed Japan to open its ports, and in 1868 a new government began to remake the country.`,
+    `Japan's state started factories and then sold them, and in 1895 Japan defeated China.`
+  ],
+  topics: ['5.3', '5.4', '5.6', '5.7', '5.8', '5.9'],
   ced: [
     'KC-5.1.II.B',
     'KC-5.1.V.B',
@@ -44,36 +69,51 @@ module.exports = {
       name: 'The World\'s Largest Maker',
       navLabel: 'Qing China',
       dates: '1750 to 1864 &nbsp;·&nbsp; Silk, porcelain, cloth, and two lost wars',
-      thesis: `In 1750 China made more of the world's manufactured goods than any other country, by hand. Over the next century its share shrank as machines elsewhere made more, and lost wars showed the Qing court how far behind its weapons had fallen.`,
+      thesis: `In 1750 China made more of the world's manufactured goods than any other country, by hand. Then machines elsewhere made far more, and China's share shrank. Lost wars showed the Qing court how far behind its weapons had fallen.`,
       parts: [
         {
           heading: 'Made in China',
           blocks: [
-            { p: `In 1750 the <span class="kt">Qing dynasty</span>, Manchu emperors ruling from Beijing, governed the largest population on earth. Chinese silk, porcelain and cotton cloth filled China's own huge markets and traveled abroad. The economic historian Paul Bairoch estimated that around 1750 China made about a third of all the world's manufactured goods, more than all of Europe together (<a href="#chapter-t5-4">Topic 5.4</a>).` }
+            { p: `In 1750 the <span class="kt">Qing dynasty</span> ruled China. The Qing were Manchu emperors who ruled the largest population on earth from Beijing.` },
+            { p: `Chinese silk, porcelain and cotton cloth filled China's own huge markets and also traveled abroad. The economic historian Paul Bairoch estimated that around 1750 China made about a third of all the world's manufactured goods. That was more than all of Europe together (<a href="#chapter-t5-4">Topic 5.4</a>).` }
           ]
         },
         {
           heading: 'A share, not an amount',
           blocks: [
-            { p: `By <span class="num">1900</span>, in Bairoch's estimates, China's share had fallen to about 6 percent. China did not stop making things. Farm families kept weaving cloth at home, more and more of it from cheaper machine-made thread. But the world was making far more goods, and factories in Europe and the United States made most of the new ones. The College Board's words are that "Middle Eastern and Asian countries continued to produce manufactured goods," while "these regions' share in global manufacturing declined."` },
+            { p: `A <span class="kt">share</span> is a part of a whole. By <span class="num">1900</span>, in Bairoch's estimates, China's share of the world's manufactured goods had fallen to about 6 percent.` },
+            { p: `China did not stop making things. Farm families kept weaving cloth at home. More and more of it was woven from cheaper machine-made thread. But the world was now making far more goods. Factories in Europe and the United States made most of the new ones.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that China "stopped manufacturing." Its share fell mostly because the world's total grew far faster. Bairoch thought China's own output also fell after about 1830, though other historians think hand weaving held up better than he allowed. Bairoch's figures are estimates: use them for the size of the change, never as exact amounts.`
+              html: `Do not write that China "stopped manufacturing." Its share fell mostly because the world's total grew far faster. Bairoch thought China's own output also fell after about 1830. Other historians think hand weaving held up better than he allowed.`
+            } },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: estimates',
+              html: `Nobody counted every piece of cloth in the world in 1750. Bairoch built his shares from what is known about population and work, and published them in 1982. Historians who use them say they are rough. Use them to show the size of the change, never as exact amounts.`
             } }
           ]
         },
         {
           heading: 'Defeat and rebellion',
           blocks: [
-            { p: `Britain defeated China in the Opium War of <span class="num">1839</span> to <span class="num">1842</span>, and Britain and France defeated it again from <span class="num">1856</span> to <span class="num">1860</span>, while the Taiping Rebellion tore through the country until <span class="num">1864</span>. How those wars opened China to foreign trade is Unit 6. What matters here is what the court learned: its armies and ships could not match those of industrial states (<a href="#chapter-t5-8">Topic 5.8</a>).` }
+            { p: `Britain defeated China in the Opium War of <span class="num">1839</span> to <span class="num">1842</span>. Britain and France defeated it again from <span class="num">1856</span> to <span class="num">1860</span>. At the same time, a huge rebellion tore through China until <span class="num">1864</span>. It was called the Taiping Rebellion.` },
+            { p: `How those wars opened China to foreign trade is a Unit 6 story. What matters here is what the court learned. Its armies and ships could not match those of the industrial states.` },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: the share of world manufacturing made in Europe and the United States rose, while Asia's fell, though Asia kept making goods.`,
+                `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Qing dynasty', `The Manchu dynasty that ruled China from 1644 to 1912.`],
-        ['Manufacturing', `Making goods, such as cloth, tools and pots, by hand or by machine.`],
-        ['Share', `A part of a whole; here, the part of all the world's manufactured goods made in one country.`]
+        ['Qing dynasty', `The Manchu family of emperors that ruled China from 1644 to 1912.`],
+        ['Share', `A part of a whole. Here it means the part of all the world's manufactured goods made in one country.`]
       ]
     },
 
@@ -85,41 +125,57 @@ module.exports = {
       name: 'Self-Strengthening, and Its Critics',
       navLabel: 'Self-Strengthening',
       dates: '1861 to 1898 &nbsp;·&nbsp; Arsenals, a school, a bank, and a coup',
-      thesis: `Qing officials borrowed Western weapons, ships and learning while keeping China's own system of rule. Each step met opponents at court, and in 1898 the opponents won.`,
+      thesis: `Qing officials borrowed Western weapons, ships and learning, but kept China's own system of rule. Each step met opponents at court, and in 1898 the opponents won.`,
       parts: [
         {
           heading: 'Arsenals and shipyards',
           blocks: [
-            { p: `In <span class="num">1861</span> Prince Gong set up an office for foreign affairs, and officials such as Zeng Guofan, Li Hongzhang and Zuo Zongtang began what was called <span class="kt">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal, a factory for weapons and ships, in Shanghai (<span class="num">1865</span>), a navy yard at Fuzhou (<span class="num">1866</span>) and a steamship company (<span class="num">1872</span>). The College Board says some governments, "including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries."` }
+            { p: `In <span class="num">1861</span> Prince Gong set up an office for foreign affairs. Officials such as Zeng Guofan, Li Hongzhang and Zuo Zongtang then began a program called <span class="kt">Self-Strengthening</span>. Its aim was to learn Western ways of making weapons and ships while China kept its own system of rule.` },
+            { p: `In <span class="num">1865</span> they built the Jiangnan Arsenal in Shanghai. An <span class="kt">arsenal</span> is a factory for weapons. This one made ships too. They built a navy yard at Fuzhou in <span class="num">1866</span>. In <span class="num">1872</span> they started a steamship company (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         },
         {
           heading: 'A school, and its enemies',
           blocks: [
-            { p: `In <span class="num">1862</span> the court opened the Tongwen Guan in Beijing to train translators. In <span class="num">1867</span> Prince Gong asked to add astronomy and mathematics, taught partly by Western teachers, and to invite young scholars who had passed the civil service examinations. "Western learning is something urgently in need of study," his memorial said. Woren, a senior Confucian scholar and the emperor's tutor, objected: "establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems." The court backed the prince, but of about 98 who applied, only about 30 were admitted, and few were the young officials the plan had hoped for. The College Board's sentence fits: "Reform efforts were often resisted by some members of government or established elite groups."` }
+            { p: `In <span class="num">1862</span> the court opened the Tongwen Guan in Beijing. It was a school to train translators. In <span class="num">1867</span> Prince Gong asked to add astronomy and mathematics. Western teachers would teach some of the classes. He also wanted to invite young scholars who had passed the civil service examinations.` },
+            { p: `He made his case in a <span class="kt">memorial</span> (a formal written request to the emperor). "Western learning is something urgently in need of study," it said.` },
+            { p: `Woren objected. He was a senior Confucian scholar and the emperor's tutor. Confucian teaching put moral order and right conduct at the center of good government. Woren wrote: "establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems."` },
+            { p: `The court backed the prince. But of about 98 people who applied, only about 30 were admitted. Few of them were the young officials the plan had hoped for.` }
           ]
         },
         {
           heading: 'A bank for the China trade',
           blocks: [
-            { p: `Foreign merchants trading with China needed banks. In March <span class="num">1865</span> the bank known today as HSBC opened in Hong Kong, as the Hongkong and Shanghai Banking Company, started by a Scot working for a shipping company with a committee of merchant firms. It opened in Shanghai a month later and in London that July, and by <span class="num">1900</span> it worked in 16 countries and territories. The College Board names it among the "large-scale transnational businesses that relied on new practices in banking and finance." One firm on its first committee, Dent and Company, had grown rich selling opium into China (<a href="#chapter-t5-7">Topic 5.7</a>).` }
+            { p: `Foreign merchants trading with China needed banks. In March <span class="num">1865</span> the bank known today as HSBC opened in Hong Kong. Its first name was the Hongkong and Shanghai Banking Company. A Scot working for a shipping company started it with a committee of merchant firms.` },
+            { p: `HSBC was itself a bank. It lent money to traders and changed one currency into another for them. It opened in Shanghai a month later and in London that July. By <span class="num">1900</span> it worked in 16 countries and territories. A business like this, working in many countries, is a <span class="kt">transnational business</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` }
           ]
         },
         {
           heading: '1895 and 1898',
           blocks: [
-            { p: `In <span class="num">1894</span> and <span class="num">1895</span> Japan defeated China's new navy (section 04). In June <span class="num">1898</span> the young Guangxu Emperor declared reform national policy and issued decree after decree. In September the Empress Dowager Cixi and officials who opposed the reforms seized power, confined the emperor, and executed six reformers.` },
+            { p: `In <span class="num">1894</span> and <span class="num">1895</span> Japan defeated China's new navy.` },
+            { p: `In June <span class="num">1898</span> the young Guangxu Emperor declared reform the national policy. He issued decree after decree. A <span class="kt">decree</span> is an order from a ruler that has the force of law.` },
+            { p: `In September the Empress Dowager Cixi acted against the reforms. She was the widow of an earlier emperor. With officials who opposed the reforms, she seized power. They confined the emperor and executed six reformers.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money, though tight funding did limit the fleet. He points instead to a navy split into rival regional fleets and to crews less well trained than Japan's by 1894.`
+              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money. Tight funding did limit the fleet. For 1894 he points instead to a navy split into rival regional fleets, and to crews less well trained than Japan's.`
+            } },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: as industrial states grew stronger, the Qing tried to modernize, some powerful people fought it, and big businesses grew across borders.`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In response to the expansion of industrializing states, some governments in Asia and Africa, including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries. Reform efforts were often resisted by some members of government or established elite groups."`,
+                `<a href="#chapter-t5-7">Topic 5.7</a>: "The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance."`,
+                `An optional College Board example: "Hong Kong and Shanghai Banking Corporation (HSBC)".`
+              ]
             } }
           ]
         }
       ],
       terms: [
         ['Self-Strengthening', `Qing reforms from the 1860s that borrowed Western weapons and machines.`],
-        ['Memorial', `A formal written request or argument sent by an official to the emperor.`],
         ['Transnational business', `A company that works in more than one country.`]
       ]
     },
@@ -132,32 +188,52 @@ module.exports = {
       name: 'Japan Remakes Its Government',
       navLabel: 'Meiji reforms',
       dates: '1853 to 1877 &nbsp;·&nbsp; Warships, treaties, and the Meiji Restoration',
-      thesis: `American warships and unequal treaties showed Japan's leaders how weak the country was. A new government overthrew the shogun and changed Japan itself before it built industry.`,
+      thesis: `American warships and unequal treaties showed Japan's leaders how weak the country was. A new government took power in 1868. It changed Japan itself before it built industry.`,
       parts: [
         {
           heading: 'Ships and treaties',
           blocks: [
-            { p: `In <span class="num">1853</span> an American naval officer, Commodore Matthew Perry, sailed warships into Edo Bay, near today's Tokyo, and demanded that Japan open its ports to trade. Japan had no navy that could stop him. Treaties in <span class="num">1854</span> and <span class="num">1858</span> opened Japanese ports to Americans and Europeans, let foreigners accused of crimes in Japan be tried in their own countries' courts, and took away Japan's control of its own trade: from <span class="num">1866</span> its taxes on most imports were held to about 5 percent. A treaty like this, forced on a weaker country, is an <span class="kt">unequal treaty</span>.` }
+            { p: `In <span class="num">1853</span> Commodore Matthew Perry sailed American warships into Edo Bay. Edo is today's Tokyo. Perry demanded that Japan open its ports to trade. Japan had no navy that could stop him.` },
+            { p: `Treaties in <span class="num">1854</span> and <span class="num">1858</span> opened Japanese ports to Americans and Europeans. Foreigners accused of crimes in Japan would be tried in their own countries' courts. Japan also lost control of its own trade. From <span class="num">1866</span> its <span class="kt">tariffs</span> (taxes on imported goods) were held to about 5 percent on most imports.` },
+            { p: `A treaty like this is an <span class="kt">unequal treaty</span>. A stronger country forces it on a weaker one, and only the stronger side gains rights.` }
           ]
         },
         {
           heading: 'The Meiji Restoration',
           blocks: [
-            { p: `Some samurai blamed the <span class="kt">shogun</span>, the military ruler who governed in the emperor's name, for giving in. In <span class="num">1868</span> a group of young samurai overthrew him and governed in the name of the fifteen-year-old emperor, Meiji: the <span class="kt">Meiji Restoration</span>. That April the new government's Charter Oath promised: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." Its slogan was "Rich country, strong army."` },
-            { p: `The College Board connects the two steps: "The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization."` }
+            { p: `Since 1603 Japan had been run by a <span class="kt">shogun</span> (a military ruler who governed in the emperor's name). Some <span class="kt">samurai</span> blamed the shogun for giving in to the foreigners. The samurai were Japan's warrior class, born to their rank.` },
+            { p: `In late <span class="num">1867</span> the last shogun handed his powers back to the emperor. Early in <span class="num">1868</span> a group of young samurai took control of the court. They governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class="kt">Meiji Restoration</span>. Supporters of the old shogun fought back, but the new government won that civil war by <span class="num">1869</span>.` },
+            { p: `In April <span class="num">1868</span> the new government issued the Charter Oath. It promised: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." The government's slogan was "Rich country, strong army."` }
           ]
         },
         {
           heading: 'Reform first',
           blocks: [
-            { p: `In <span class="num">1871</span> the Meiji leaders abolished the domains of the old lords and made one central state. The samurai lost their privileges, and men of every class were drafted into a national army. A national school system began in <span class="num">1872</span>, and a new land tax, paid in money instead of rice, gave the government money to spend. From <span class="num">1871</span> to <span class="num">1873</span> a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked. Some samurai rebelled against losing their place, and in <span class="num">1877</span> the new army of drafted commoners crushed the last great revolt (<a href="#chapter-t5-6">Topic 5.6</a>).` }
+            { p: `Next the Meiji leaders changed Japan itself. Before, local lords had ruled their own lands, called <span class="kt">domains</span>. In <span class="num">1871</span> the leaders abolished the domains and made one central state.` },
+            { p: `A national school system began in <span class="num">1872</span>. A law of <span class="num">1873</span> made army service a duty for men of every class, not only samurai. A new land tax, paid in money instead of rice, gave the government money to spend.` },
+            { p: `The samurai lost their special rights step by step. In <span class="num">1876</span> they lost even the right to wear swords in public. Some samurai rebelled. In <span class="num">1877</span> the new army of drafted commoners crushed the last great revolt (<a href="#chapter-t5-6">Topic 5.6</a>).` },
+            { p: `From <span class="num">1871</span> to <span class="num">1873</span> a group of Japan's leaders toured the United States and Europe to study how those countries worked. This trip is called the Iwakura Mission.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that Japan simply copied the West. Its leaders chose what to borrow. The Charter Oath says their aim was to strengthen imperial rule.`
+            } },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: pressure from the United States and Europe pushed Japan to reform, and the reforms helped Japan build industry and grow strong in its region.`,
+                `<a href="#chapter-t5-6">Topic 5.6</a>: "The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization and led to the growing regional power of Japan in the Meiji Era."`
+              ]
+            } }
           ]
         }
       ],
       terms: [
         ['Unequal treaty', `A treaty forced on a weaker country that gives the stronger side rights it does not give back.`],
         ['Shogun', `The military ruler who governed Japan in the emperor's name until 1868.`],
-        ['Meiji Restoration', `The 1868 overthrow of the shogun by samurai who governed in the name of the emperor, Meiji.`]
+        ['Samurai', `Japan's warrior class, who were born to their rank.`],
+        ['Meiji Restoration', `The 1868 takeover by young samurai who governed in the name of the emperor, Meiji.`]
       ]
     },
 
@@ -169,34 +245,59 @@ module.exports = {
       name: 'Japan Builds, Then Sells',
       navLabel: 'Japan\'s industry',
       dates: '1872 to 1900 &nbsp;·&nbsp; Railways, silk, cotton, and a war with China',
-      thesis: `Japan's government built the first railway and model factories itself, took over shipyards and mines, then sold most of its factories and mines to private companies. The strength it built made Japan a regional power.`,
+      thesis: `Japan's government built the first railway and model factories, and took over shipyards and mines. Then it sold most of its factories and mines to private companies. The strength Japan built made it a regional power.`,
       parts: [
         {
           heading: 'The state builds',
           blocks: [
-            { p: `The government built Japan's first railway, from Tokyo to Yokohama, which opened in <span class="num">1872</span> with British engineers. The same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine so the method could spread. It built telegraph lines and factories for weapons and goods such as cement and glass, and took over shipyards and mines begun under the shogun. Farmers paid for much of it through the land tax. This is <span class="kt">state-sponsored industry</span>, one of the College Board's "state-sponsored visions of industrialization."` }
+            { p: `The government built Japan's first railway, from Tokyo to Yokohama. It opened in <span class="num">1872</span>, built with British engineers.` },
+            { p: `The same year the government opened the Tomioka Silk Mill. It had French machines and a French engineer named Paul Brunat. He taught Japanese workers to reel silk by machine. To reel silk is to unwind the thread from silkworm cocoons. Most of the workers were young women. The plan was for the method to spread to other mills.` },
+            { p: `The government also built telegraph lines and factories for weapons and for goods such as cement and glass. It took over shipyards and mines that had been begun under the shogun. Farmers paid for much of it through the land tax.` },
+            { p: `This is <span class="kt">state-sponsored industry</span>: industry that a government plans, pays for and protects. <a href="#r5-middle-east-egypt">The Middle East chapter</a> tells how Egypt's ruler tried the same thing earlier, and why most of his factories failed.` }
           ]
         },
         {
           heading: 'Then the state sells',
           blocks: [
-            { p: `Running so many businesses cost more than the government could afford, and in <span class="num">1880</span> it decided to sell most of them. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups, the <span class="kt">zaibatsu</span>: Mitsubishi bought the Nagasaki shipyard in <span class="num">1887</span>, and Mitsui took over the Miike coal mine, the country's largest, in <span class="num">1889</span>. Private companies built more. The Osaka Spinning Company opened in <span class="num">1883</span> with British spinning machines driven by steam, and ran day and night (<a href="#chapter-t5-4">Topic 5.4</a>). The College Board names Japan among the places the new methods "spread to."` }
+            { p: `Running so many businesses cost more than the government could afford. In <span class="num">1880</span> it decided to sell most of them.` },
+            { p: `Business families such as Mitsui and Mitsubishi bought them. These families grew into huge business groups called <span class="kt">zaibatsu</span>. Mitsubishi bought the Nagasaki shipyard in <span class="num">1887</span>. In <span class="num">1889</span> Mitsui took over the Miike coal mine. It was the largest coal mine in the country.` },
+            { p: `Private companies built more. The Osaka Spinning Company opened in <span class="num">1883</span>. Its spinning machines came from Britain and were driven by steam, and it ran day and night. Like Britain's factories, mills like this brought many workers and machines together in one place (<a href="#chapter-t5-4">Topic 5.4</a>).` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that Japan's government built all of its industry. The state started key industries and then sold most of its factories and mines. Private companies carried them on and built much more.`
+            } }
           ]
         },
         {
           heading: 'The women in the mills',
           blocks: [
-            { p: `As in Britain, the first factory workers were often young women. In <span class="num">1900</span> women made up about 62 percent of the workers in Japan's private factories, most of them in textile mills. Their wages helped their farm families, a case of the College Board's point that women in working families "held wage-earning jobs to supplement their families' income."` }
+            { p: `As in Britain, many of the first factory workers were young women. In <span class="num">1900</span> women made up about 62 percent of the workers in Japan's private factories. Most of them worked in textile mills. Their wages helped support their farm families (<a href="#chapter-t5-9">Topic 5.9</a>).` }
+          ]
+        },
+        {
+          heading: 'Winning back its courts',
+          blocks: [
+            { p: `Japan wanted to end the foreign courts on its soil. So it rewrote its laws on French and German models. In <span class="num">1894</span> Britain agreed to end its courts in Japan from <span class="num">1899</span>. Other countries followed. Japan won back full control of its tariffs only in <span class="num">1911</span>.` }
           ]
         },
         {
           heading: 'A regional power',
           blocks: [
-            { p: `To win back its own courts, Japan rewrote its laws on French and German models, and in <span class="num">1894</span> Britain agreed to end the foreign courts in Japan from <span class="num">1899</span>; other countries followed. Japan won back full control of its tariffs only in <span class="num">1911</span>. In <span class="num">1894</span> and <span class="num">1895</span> Japan fought China over Korea and won. In the Treaty of Shimonoseki, China recognized Korea's independence, gave the island of Taiwan to Japan, and agreed to pay an <span class="kt">indemnity</span> of 200 million taels of silver (a tael is a Chinese measure of silver). Within a week Russia, Germany and France demanded that Japan give back the Liaodong Peninsula, which it had also won, and Japan gave in, which angered its leaders. Still, Japan, forced open forty years before, was now what the College Board calls a growing "regional power," with a colony of its own. What empires did with that power is Unit 6.` },
+            { p: `In <span class="num">1894</span> and <span class="num">1895</span> Japan fought China over Korea, and Japan won. In the Treaty of Shimonoseki, China recognized Korea's independence. China also gave the island of Taiwan to Japan.` },
+            { p: `China agreed to pay an <span class="kt">indemnity</span> (money a defeated country must pay the winner). It was 200 million taels of silver (a tael is a Chinese measure of silver).` },
+            { p: `Within a week, Russia, Germany and France demanded that Japan give back the Liaodong Peninsula in northeast China, which Japan had also won. Japan gave in, and its leaders were angry.` },
+            { p: `Still, about forty years after Perry, Japan was a growing <span class="kt">regional power</span>. It now had a colony of its own: Taiwan. A colony is a land ruled by another country. What empires did with power like this is Unit 6.` },
             { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not write that Japan's government built all of its industry. The state started key industries and then sold most of its factories and mines; private companies carried them on and built much more.`
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: Japan's government started industry on purpose, factory methods spread to Japan, and women in working families earned wages.`,
+                `<a href="#chapter-t5-6">Topic 5.6</a>: "As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization."`,
+                `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
+                `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
+                `<a href="#chapter-t5-9">Topic 5.9</a>: "While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development."`
+              ]
             } }
           ]
         }
@@ -204,8 +305,8 @@ module.exports = {
       terms: [
         ['State-sponsored industry', `Industry that a government plans, pays for and protects.`],
         ['Zaibatsu', `A huge Japanese family business group that owned many companies.`],
-        ['Regional power', `A state strong enough to win wars and gain land in its own part of the world.`],
-        ['Indemnity', `Money a defeated country is made to pay the winner.`]
+        ['Indemnity', `Money a defeated country is made to pay the winner.`],
+        ['Regional power', `A state strong enough to win wars and gain land in its own part of the world.`]
       ]
     }
   ],
@@ -213,36 +314,41 @@ module.exports = {
   closing: {
     heading: 'East Asia at a Glance',
     navLabel: 'At a glance',
-    intro: `The same story, gathered by its sides for review.`,
+    intro: `The same story, sorted by its sides for review.`,
     argue: {
       move: 'Causation',
-      prompt: `Both Qing China and Meiji Japan tried to borrow the strength of industrial states, yet in 1895 Japan defeated China. Using this chapter, argue what caused Japan's reforms to make it a regional power while China's did not, and explain why the cause you chose mattered most.`
+      prompt: `Qing China and Meiji Japan both tried to borrow the strength of industrial states. Yet in 1895 Japan defeated China. Why did Japan's reforms make it a regional power when China's did not? Make a claim, support it with two pieces of evidence from this chapter, and explain why your cause mattered most.`
     },
     pairs: [
       {
         category: 'Political',
-        title: 'One government replaced, one held on',
-        body: `Japan's samurai overthrew the shogun in 1868 and built a central state in 1871. In China, the Qing kept their own system of rule while borrowing Western weapons, and in 1898 Cixi ended the Guangxu Emperor's reforms.`
+        title: 'Japan replaced its government, while the Qing court held on and stopped reform.',
+        body: `In 1868 young samurai took power in the emperor's name, and in 1871 they abolished the domains. In China, Cixi and her allies ended the Guangxu Emperor's reforms in September 1898.`
       },
       {
         category: 'Religious',
-        title: 'Confucian order against "schemes and stratagems"',
-        body: `Woren argued in 1867 that a country rests on "propriety and righteousness," the Confucian values he defended, not on Western learning, and fewer young officials joined the Tongwen Guan than the plan had hoped. Japan's Charter Oath of 1868 promised instead to seek knowledge "throughout the world."`
+        title: 'In China, Confucian values were used to argue against Western learning.',
+        body: `In 1867 the Confucian scholar Woren wrote that a country rests on "propriety and righteousness," not on "schemes and stratagems." Only about 30 of about 98 applicants were admitted to the new classes.`
       },
       {
         category: 'Social',
-        title: 'Samurai lose their place, young women go to the mills',
-        body: `Japan's samurai lost their privileges in the 1870s and commoners were drafted. Young women reeled silk at Tomioka (1872), and by 1900 women were about 62 percent of private factory workers.`
+        title: 'Japan\'s samurai lost their place, and young women went to work in the mills.',
+        body: `A law of 1873 made army service a duty for men of every class, and in 1876 samurai lost the right to wear swords. By 1900 women were about 62 percent of Japan's private factory workers.`
       },
       {
-        category: 'Intellectual and technological',
-        title: 'Borrowed machines, borrowed teachers',
-        body: `China built an arsenal at Shanghai (1865), a navy yard at Fuzhou (1866) and a school for Western learning. Japan hired British engineers for its first railway (1872) and a French engineer for Tomioka, and sent the Iwakura Mission to study the West.`
+        category: 'Intellectual',
+        title: 'Both governments set out to learn from the West, and Japan made it national policy.',
+        body: `In 1867 China's Tongwen Guan added astronomy and mathematics. Japan's Charter Oath of 1868 promised to seek knowledge "throughout the world," and Japan began a national school system in 1872.`
+      },
+      {
+        category: 'Technological',
+        title: 'Both states bought Western machines and hired foreign experts.',
+        body: `China built the Jiangnan Arsenal (1865) and the Fuzhou navy yard (1866) to make weapons and ships. Japan's first railway (1872) was built with British engineers, and the Tomioka Silk Mill (1872) used French machines.`
       },
       {
         category: 'Economic',
-        title: 'From a third of the world\'s manufactured goods to 6 percent',
-        body: `China's share of world manufacturing fell, by estimate, from about a third in 1750 to about 6 percent in 1900. Japan's state built industry, decided in 1880 to sell it, and sold key works to Mitsubishi (1887) and Mitsui (1889). HSBC (1865) financed the China trade.`
+        title: 'China\'s share of world manufacturing fell, while Japan\'s state started industries and sold them.',
+        body: `By Bairoch's estimates, China's share fell from about a third in 1750 to about 6 percent in 1900. Japan decided in 1880 to sell most of its works: Mitsubishi bought the Nagasaki shipyard in 1887 and Mitsui the Miike mine in 1889.`
       }
     ]
   }
