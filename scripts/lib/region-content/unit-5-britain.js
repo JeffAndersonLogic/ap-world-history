@@ -31,6 +31,14 @@
  * the ban on skilled workers leaving, the London railway share boom, Lever's dates before 1929,
  * the 1833 mill survey, Snow's map, Manchester's life expectancy, the Trades Union Congress and
  * the 1871 union law, the Chartists' signatures, Bazalgette's sewers, and Marx's years in London.
+ *
+ * Review pass 2 (2026-11-22, reviewer M): the 1869 crossing is the steamship average, about 14 days,
+ * and the 1853 figure an all-ship average (Hatton, IZA DP 16274, 2023, Tables 1 and 2). KC-5.1.I.B
+ * and KC-5.1.II.B are quoted whole: Benz's oil-burning engine of 1886 (his patent, DRP 37435,
+ * January 1886; also told in the Europe chapter) teaches the internal combustion engine and oil, and
+ * India's falling share (Bairoch 1982, as the South and Southeast Asia chapter) teaches the second
+ * sentence. The Political card names the vote for Parliament; the Municipal Franchise Act of 1869
+ * let some women (unmarried ratepayers) vote in town elections.
  */
 
 const CB = 'What the College Board says';
@@ -165,25 +173,27 @@ module.exports = {
           heading: 'Steam and coal',
           blocks: [
             { p: `The steam engine began as a pump. In <span class="num">1712</span> Thomas Newcomen used one to pump water out of a coal mine, but it burned a lot of coal. James Watt found how to save most of it, and patented his idea in <span class="num">1769</span>. In the 1780s Watt and Matthew Boulton built engines that turned a wheel.` },
-            { p: `Now a mill did not need a fast river. It could run on coal, and cotton mills crowded into towns such as Manchester (<a href="#chapter-t5-5">Topic 5.5</a>). Engines needed coal, and mines needed engines to pump them dry, so each made the other grow. Coal and oil are called fossil fuels. This change is the <span class="kt">fossil fuels revolution</span>.` },
+            { p: `Now a mill did not need a fast river. It could run on coal, and cotton mills crowded into towns such as Manchester (<a href="#chapter-t5-5">Topic 5.5</a>). Engines needed coal, and mines needed engines to pump them dry, so each made the other grow.` },
+            { p: `Later, a new kind of engine used oil. In <span class="num">1886</span> Carl Benz in Germany patented a car whose engine burned a fuel made from oil. It was an <span class="kt">internal combustion engine</span>, which burns its fuel inside the engine. <a href="#r5-europe-industry">The Europe chapter</a> tells that story. Coal and oil are called fossil fuels. Machines that burned them gave people far more energy than ever before. This change is the <span class="kt">fossil fuels revolution</span>.` },
             { p: `In <span class="num">1830</span> the Liverpool and Manchester Railway opened, the first railway between two cities. Steam locomotives carried cotton from the port to the mills.` },
-            { p: `Steam also crossed oceans. In <span class="num">1853</span> most emigrant ships from Liverpool to New York still used sails, and the voyage took more than 40 days. By <span class="num">1869</span> steamships made it in about 16. From <span class="num">1866</span> telegraph cables under the Atlantic carried messages in minutes. Goods, people and news now moved farther and faster than ever before (<a href="#chapter-t5-10">Topic 5.10</a>).` }
+            { p: `Steam also crossed oceans. In <span class="num">1853</span> emigrant ships from Liverpool to New York still used sails, and the average voyage took more than 40 days. By <span class="num">1869</span> almost all went by steam. A steamship made it in about 14 days. From <span class="num">1866</span> telegraph cables under the Atlantic carried messages in minutes. Goods, people and news now moved farther and faster than ever before (<a href="#chapter-t5-10">Topic 5.10</a>).` }
           ]
         },
         {
           heading: 'The workshop of the world',
           blocks: [
             { p: `Machines made goods faster and more cheaply than hands could. The historian Paul Bairoch estimated Britain's share of the world's manufactured goods. It rose from under 2 percent in <span class="num">1750</span> to about a fifth by <span class="num">1860</span> (<a href="#chapter-t5-4">Topic 5.4</a>). These are rough estimates, good for showing the size of the change.` },
+            { p: `India and the Middle East kept making goods, but their shares of the world's total fell. By Bairoch's estimates, India's share fell from about a quarter in <span class="num">1750</span> to under 2 percent by <span class="num">1900</span>. <a href="#r5-south-southeast-asia-rails">The South and Southeast Asia chapter</a> tells that story.` },
             { p: `Until <span class="num">1824</span> Britain banned skilled textile workers from leaving the country. But the methods left anyway, as <a href="#r5-europe-industry">the Europe chapter</a> tells.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: factories and steam power made Britain the world's leading maker.`,
+                `In short: factories and steam power made Britain the world's leading maker, while Asian and Middle Eastern makers kept working but lost share.`,
                 `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "The fossil fuels revolution greatly increased the energy available to human societies."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
-                `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution."`
+                `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`
               ]
             } }
           ]
@@ -384,8 +394,8 @@ module.exports = {
     pairs: [
       {
         category: 'Political',
-        title: 'Britain widened the vote in steps, and only for men.',
-        body: `The Reform Act of 1832 gave the vote to most middle-class men in the towns. Acts of 1867 and 1884 gave it to many working men, but no woman could vote for Parliament by 1900.`
+        title: 'Britain widened the vote for Parliament in steps, and only for men.',
+        body: `The Reform Act of 1832 gave the vote to most middle-class men in the towns. Acts of 1867 and 1884 gave it to many working men, but no woman could vote for Parliament by 1900. From 1869 some women could vote in town elections.`
       },
       {
         category: 'Religious',

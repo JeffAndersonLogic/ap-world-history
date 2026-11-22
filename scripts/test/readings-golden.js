@@ -298,7 +298,14 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // candidates won the most votes, about 20 percent. Against the blob fe67539a only those
 // sentences in 5.1, 5.2, 5.6 and 5.8 changed; every other Unit 5 reading is byte-for-byte
 // unchanged.
-const APPROVED_UNIT5_REWRITE_BLOB = '51676d1a327ab1060fa95ba52f17c6d9d35f763b';
+// 2026-11-22, Unit 5 by Region review pass 2 (docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md, M1 and M2,
+// carried to the topics): in 5.4, "the number of handlooms in ... Aleppo and Damascus held steady
+// from 1860 to 1914" now first gives Aleppo's steep fall (about 40,000 handlooms in the 1700s,
+// about 5,000 from 1838 to 1850; Pamuk and Williamson 2009, citing Issawi); in 5.5, the 1860s
+// steamship crossing from England is "about two weeks", not "about 12 days" (Hatton 2023, Table
+// 2: steamship averages of 14 to 16 days). Against the blob 51676d1a only those two sentences
+// changed.
+const APPROVED_UNIT5_REWRITE_BLOB = '8863cbc41e9ae447878da43f12012daa8cc43632';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

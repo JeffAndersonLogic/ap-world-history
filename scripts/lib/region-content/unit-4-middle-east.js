@@ -58,6 +58,18 @@
  * implies other crops went to the Middle East; the Moroccan army left late in 1590, fought in
  * March 1591, and "many" of its men, not all, carried firearms; the Morocco and Songhai example
  * now sits in section 2's box under its own Key Concept (KC-4.3.III.ii).
+ *
+ * Review pass 2 (2026-11-22, ledger I1 to I6, J4, Q3, Q8): guns are said to have mattered more
+ * in battle, not to have won the Ottomans more wars (the Long War of 1593 to 1606 was a
+ * stalemate; Pamuk on the cash cost of paid infantry); Morocco took plunder and caravans of gold
+ * to Marrakesh in the 1590s but never won the gold trade; the lateen sail sails much closer to
+ * the wind than a square sail (Topic 4.1's wording), not against it; KC-4.1.II.A is printed with
+ * the CED's dash and KC-4.3.I.B with its curly apostrophe; the mistake box names the kamal only,
+ * since quadrant use at sea is disputed (this supersedes the note above on wooden quadrants);
+ * the Alfonsine work is dated about 1263 to 1272, not "the 1270s"; and KC-4.1.IV is now quoted
+ * whole and taught whole: the English East India Company's 1600 charter and monopoly at Hormuz,
+ * and Persia's silk sold to Europe for silver, much of it American, much of which went on to
+ * India (Rudolph Matthee, The Politics of Trade in Safavid Iran: Silk for Silver, 1600 to 1730).
  */
 
 const CB = 'What the College Board says';
@@ -107,19 +119,19 @@ module.exports = {
             { p: `In 1450 the lands of Islam reached from West Africa to Southeast Asia. They included the East African coast, Central Asia and much of India. This chapter follows the lands from Morocco to Persia. Muslim scholars called this world <span class="kt">Dar al-Islam</span> (Arabic for "the house of Islam"). It was not one state. It was many lands joined by Islamic law, the Arabic language and trade.` },
             { p: `One example of its learning is the <span class="kt">astrolabe</span>. This tool measures how high the sun or a star stands in the sky. The idea was Greek, but astronomers in the Islamic world made it precise. It reached Europe through Muslim Spain. In the 1100s and 1200s, Christian and Jewish translators in the Spanish city of Toledo turned Arabic science books into Latin.` },
             { p: `By the 1480s, Portuguese pilots (the sailors who guided ships) used a heavy sea astrolabe. With it they measured the sun's height at noon. A pilot then turned that reading into a <span class="kt">latitude</span> (how far north or south of the equator the ship was).` },
-            { p: `For that, a pilot needed <span class="kt">astronomical charts</span>. These were tables of where the sun stands each day. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. In the <span class="num">1270s</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They were based on that later version.` }
+            { p: `For that, a pilot needed <span class="kt">astronomical charts</span>. These were tables of where the sun stands each day. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. From about <span class="num">1263</span> to <span class="num">1272</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They were based on that later version.` }
           ]
         },
         {
           heading: 'Sails, winds and pilots',
           blocks: [
-            { p: `The triangular <span class="kt">lateen sail</span> lets a ship sail against the wind. Its oldest evidence is from the Roman Mediterranean, though its first use is debated. It was common across Islamic seas. The first Portuguese caravels (small exploring ships) used it.` },
+            { p: `The triangular <span class="kt">lateen sail</span> lets a ship sail much closer to the wind than a square sail does. This means it can head more nearly into the wind. Its oldest evidence is from the Roman Mediterranean, though its first use is debated. It was common across Islamic seas. The first Portuguese caravels (small exploring ships) used it.` },
             { p: `Arab and other Indian Ocean sailors planned their voyages around the <span class="kt">monsoon</span>. The monsoon is a wind that reverses twice a year on schedule. They measured the stars with the <span class="kt">kamal</span>. This was a wooden card on a knotted string.` },
             { p: `At the East African trading town of Malindi, Vasco da Gama hired a pilot who knew the way to India. In May <span class="num">1498</span> he reached the Indian port of Calicut (<a href="#chapter-t4-2">Topic 4.2</a>).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Arabs invented the lateen sail. Its oldest evidence is centuries older than Islam. At sea, Indian Ocean pilots mostly used the kamal and wooden quadrants (tools for measuring a star's height). The astrolabe was mainly a tool for astronomers on land.`
+              html: `Do not write that Arabs invented the lateen sail. Its oldest evidence is centuries older than Islam. At sea, Indian Ocean pilots measured the stars with the kamal. The astrolabe was mainly a tool for astronomers on land.`
             } },
             { note: {
               kind: 'cb',
@@ -127,7 +139,7 @@ module.exports = {
               paras: [
                 `In short: Europe's ocean voyages used older knowledge, much of it from the Islamic world.`,
                 `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."`,
-                `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns ... all of which made transoceanic travel and trade possible."`,
+                `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible."`,
                 `An optional College Board example: the lateen sail and astronomical charts.`
               ]
             } }
@@ -137,7 +149,7 @@ module.exports = {
       terms: [
         ['Dar al-Islam', 'Arabic for "the house of Islam": the lands under Islamic law and Muslim rulers.'],
         ['Astronomical charts', 'Tables of where the sun stands each day. Pilots used them to find a latitude.'],
-        ['Lateen sail', 'A triangular sail that lets a ship sail against the wind.']
+        ['Lateen sail', 'A triangular sail that lets a ship sail much closer to the wind than a square sail does.']
       ]
     },
 
@@ -244,7 +256,7 @@ module.exports = {
               label: CB,
               paras: [
                 `In short: The Ottomans made room for different peoples when that helped the state, and Africa's old slave trades went on.`,
-                `<a href="#chapter-t4-7">Topic 4.7</a>: "Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups' roles in society, politics, or the economy."`,
+                `<a href="#chapter-t4-7">Topic 4.7</a>: "Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy."`,
                 `An optional College Board example: the expulsion of Jews from Spain and Portugal and their acceptance in the Ottoman Empire.`,
                 `An optional College Board example: the varying status of different classes of women within the Ottoman Empire.`,
                 `<a href="#chapter-t4-8">Topic 4.8</a>: "Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated."`,
@@ -276,14 +288,14 @@ module.exports = {
           blocks: [
             { p: `Morocco lies in the far west of North Africa. The Ottomans never ruled it. <b>Ahmad al-Mansur</b> became Morocco's sultan in <span class="num">1578</span>. He wanted the riches to the south. The <b>Songhai Empire</b> controlled West Africa's gold trade and the Sahara's salt mines. In the 1580s the two states quarreled over the salt mine at Taghaza.` },
             { p: `Late in <span class="num">1590</span>, al-Mansur sent an army of about four thousand men across the desert. Many of them carried firearms. In March <span class="num">1591</span> they defeated the Songhai army at <b>Tondibi</b>. Gold and salt were a large part of the reason. It was another quarrel over trade that turned into war (<a href="#chapter-t4-5">Topic 4.5</a>).` },
-            { p: `Winning did not bring Morocco the gold. Al-Mansur seems to have believed that Songhai owned the gold mines. It did not. His pashas (governors) ruled Timbuktu, but Morocco never controlled the gold supply. Much of the gold went to other buyers, including Europeans on the coast. <a href="#r4-sub-saharan-africa-kingdoms">The Sub-Saharan Africa chapter</a> tells what Songhai did next.` }
+            { p: `Winning brought Morocco plunder. In the 1590s, caravans carried gold back to Marrakesh (al-Mansur's capital). But Morocco did not win the gold trade. Al-Mansur seems to have believed that Songhai owned the gold mines. It did not. His pashas (governors) ruled Timbuktu, but Morocco never controlled the gold supply. Much of the gold went to other buyers, including Europeans on the coast. <a href="#r4-sub-saharan-africa-kingdoms">The Sub-Saharan Africa chapter</a> tells what Songhai did next.` }
           ]
         },
         {
           heading: 'From cavalry to tax farms',
           blocks: [
             { p: `Guns also weakened an old Ottoman elite. The core of the army had been cavalry (soldiers on horseback). Each of these horsemen was called a <span class="kt">sipahi</span>. A sipahi held a <span class="kt">timar</span>. A timar was the right to collect the taxes of a piece of land. In return, the sipahi rode to war.` },
-            { p: `From the late 1500s, foot soldiers with guns won more and more wars. They had to be paid in cash. So the state turned more and more timar land into <span class="kt">tax farms</span>. A tax farm was the right to collect a district's taxes. The state sold it to the highest bidder. From <span class="num">1695</span>, tax farms were sold for life.` },
+            { p: `From the late 1500s, foot soldiers with guns mattered more and more in battle. Unlike the sipahis, they had to be paid in cash. So the state turned more and more timar land into <span class="kt">tax farms</span>. A tax farm was the right to collect a district's taxes. The state sold it to the highest bidder. From <span class="num">1695</span>, tax farms were sold for life.` },
             { p: `The sipahis lost their importance, though the timar system was not ended by law until <span class="num">1831</span>. Tax farmers and powerful families in the provinces (the regions of the empire) rose in their place (<a href="#chapter-t4-7">Topic 4.7</a>).` },
             { note: {
               kind: 'misconception',
@@ -296,7 +308,8 @@ module.exports = {
           heading: 'Persia and Oman drive out the Portuguese',
           blocks: [
             { p: `Persia's Safavid kings were called <span class="kt">shahs</span>. In <span class="num">1605</span> Shah Abbas I moved Armenians by force to <span class="kt">New Julfa</span>. This new town stood just outside Isfahan, his capital. Its merchants traded from India to the Mediterranean. They worked through family firms (businesses run by families). This was an old way of doing business.` },
-            { p: `In <span class="num">1622</span> Shah Abbas took Hormuz from the Portuguese. Ships of the English East India Company (a company of English merchants) helped him.` },
+            { p: `Persia sold much of its silk to Europe, and it was paid largely in silver. Much of that silver came from Spain's colonies in the Americas. A large part of it then went on east to India, to pay for Indian goods.` },
+            { p: `In <span class="num">1622</span> Shah Abbas took Hormuz from the Portuguese. Ships of the English East India Company helped him. In <span class="num">1600</span> England's crown had given this company a charter (an official license). The charter gave it a <span class="kt">monopoly</span> (the sole right) on English trade with Asia.` },
             { p: `<b>Oman</b> was an Arabian state at the mouth of the Persian Gulf. In <span class="num">1650</span> it drove the Portuguese from its port of <b>Muscat</b>. Some Swahili towns (Muslim trading towns on the East African coast) asked Oman for help against the Portuguese. The Omanis were merchants as well as fighters.` },
             { p: `Fort Jesus was Portugal's fortress in the Swahili town of <b>Mombasa</b>. Omani forces put it under siege in <span class="num">1696</span>. They took it in <span class="num">1698</span>. <a href="#r4-sub-saharan-africa-kingdoms">The Sub-Saharan Africa chapter</a> tells the Swahili towns' side.` }
           ]
@@ -310,10 +323,10 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Old elites rose or fell under stronger rulers, regional trade kept going, and American crops spread.`,
+                `In short: Old elites rose or fell under stronger rulers, chartered companies and American silver moved goods, regional trade kept going, and American crops spread.`,
                 `<a href="#chapter-t4-7">Topic 4.7</a>: "The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders."`,
                 `An optional College Board example: Ottoman timars.`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."`,
                 `An optional College Board example: Omani merchants (<a href="#chapter-t4-4">Topic 4.4</a>).`,
                 `<a href="#chapter-t4-3">Topic 4.3</a>: "American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."`
               ]
@@ -355,12 +368,12 @@ module.exports = {
       {
         category: 'Intellectual',
         title: 'Science from the Islamic world helped Europeans find their way at sea.',
-        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made sun tables around 1080, and Jewish astronomers updated them in the 1270s. Zacuto's tables (printed in Portugal in 1496) were based on that later version.`
+        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made sun tables around 1080, and Jewish astronomers updated them from about 1263 to 1272. Zacuto's tables (printed in Portugal in 1496) were based on that later version.`
       },
       {
         category: 'Technological',
         title: 'Sails, star tools and guns changed how people traveled and fought.',
-        body: `The lateen sail was used on the first Portuguese caravels, and Portuguese pilots used a sea astrolabe by the 1480s. Moroccan firearms won at Tondibi in 1591. From the late 1500s, Ottoman foot soldiers with guns won more and more wars, so cavalry mattered less.`
+        body: `The lateen sail was used on the first Portuguese caravels, and Portuguese pilots used a sea astrolabe by the 1480s. Moroccan firearms won at Tondibi in 1591. From the late 1500s, foot soldiers with guns mattered more and more in Ottoman armies, so cavalry mattered less.`
       },
       {
         category: 'Economic',

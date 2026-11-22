@@ -30,6 +30,11 @@
  * dates are standard). Dropped to fit the length: the Dent and Company sentence. Topic 5.3 is now
  * listed, because KC-5.1.I.C, which the chapter teaches through Japan's mills, is a Topic 5.3
  * Key Concept.
+ *
+ * Review loop pass 2 (2026-11-22, findings N5, Q7): the Intellectual card no longer says "only
+ * Japan kept at it" (Self-Strengthening went on for decades; the 1898 reforms were stopped after
+ * about three months), and the Religious card names Woren, the emperor's tutor, instead of
+ * generalizing his argument to "In China".
  */
 
 const CB = 'What the College Board says';
@@ -323,7 +328,7 @@ module.exports = {
       },
       {
         category: 'Religious',
-        title: 'In China, Confucian values were used to argue against Western learning.',
+        title: 'At the Qing court, the emperor\'s tutor used Confucian values to argue against Western learning.',
         body: `In 1867 the Confucian scholar Woren wrote that a country rests on "propriety and righteousness," not on "schemes and stratagems." Only about 30 of about 98 applicants were admitted to the new classes.`
       },
       {
@@ -333,8 +338,8 @@ module.exports = {
       },
       {
         category: 'Intellectual',
-        title: 'Both governments set out to learn from the West, but only Japan kept at it.',
-        body: `In 1867 China's Tongwen Guan added astronomy and mathematics. Japan's Charter Oath of 1868 promised to seek knowledge "throughout the world," and Japan began a national school system in 1872. China's 1898 reform policy was stopped three months later.`
+        title: 'Both governments set out to learn from the West, and Japan went further.',
+        body: `In 1867 China's Tongwen Guan added astronomy and mathematics, and Self-Strengthening went on for decades. Japan's Charter Oath of 1868 promised to seek knowledge "throughout the world," and Japan began a national school system in 1872. China's 1898 reforms were stopped after about three months.`
       },
       {
         category: 'Technological',

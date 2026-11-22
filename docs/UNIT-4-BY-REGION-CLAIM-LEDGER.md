@@ -470,20 +470,20 @@ and 1721; the Nahmias press, 1493; malikâne, 1695; Alfonsine observations 1263 
 - I1. Middle East: "From the late 1500s, foot soldiers with guns won more and more wars", and the
   Technological card "Ottoman foot soldiers with guns won more and more wars"; read as Ottoman
   victories, false (Long War stalemate 1593 to 1606; Vienna 1683; Karlowitz 1699). The point is that
-  battles turned on paid infantry, which needed cash (Pamuk, LSE GEHN). PENDING.
+  battles turned on paid infantry, which needed cash (Pamuk, LSE GEHN). **FIXED:** "From the late 1500s, foot soldiers with guns mattered more and more in battle. Unlike the sipahis, they had to be paid in cash"; card: "mattered more and more in Ottoman armies, so cavalry mattered less." Topic 4.7's similar line ("wars were won more and more by infantry") changed to "mattered more and more in battle".
 - I2. Middle East: "Winning did not bring Morocco the gold" is too absolute: Morocco took plunder and
-  caravans of gold to Marrakesh in the 1590s; it never controlled the supply. PENDING.
+  caravans of gold to Marrakesh in the 1590s; it never controlled the supply. **FIXED:** "Winning brought Morocco plunder. In the 1590s, caravans carried gold back to Marrakesh (al-Mansur's capital). But Morocco did not win the gold trade."
 - I3. Middle East, story and glossary: the lateen "lets a ship sail against the wind"; no sail sails
   straight into the wind; Topic 4.1 says "much closer to the wind than a square sail" (Campbell,
-  JWH 1995). PENDING.
+  JWH 1995). **FIXED:** "lets a ship sail much closer to the wind than a square sail does" (Topic 4.1's wording), story and glossary; the Europe glossary changed to match.
 - I4. KC-4.1.II.A quotation: South and Southeast Asia drops "all of which", so the quoted sentence
   no longer parses; both chapters replace the CED's dash with " ... ". Middle East prints "groups'"
-  with a straight apostrophe in KC-4.3.I.B. PENDING.
+  with a straight apostrophe in KC-4.3.I.B. **FIXED:** KC-4.1.II.A quoted with the CED's dash and "all of which" in both chapters; "groups’" with the CED's apostrophe.
 - I5. Middle East mistake box: "Indian Ocean pilots mostly used the kamal and wooden quadrants";
-  quadrant use at sea is disputed (arXiv 2209.02371; King); Topic 4.1 names the kamal only. PENDING.
+  quadrant use at sea is disputed (arXiv 2209.02371; King); Topic 4.1 names the kamal only. **FIXED:** "At sea, Indian Ocean pilots measured the stars with the kamal." The quadrant claim is gone.
 - I6. South and Southeast Asia: "Mughal armies fought him from the 1660s"; fighting began in 1657
   (Junnar and Ahmednagar raids; Nasiri Khan sent by Aurangzeb); the big campaigns came in the
-  1660s. PENDING.
+  1660s. **FIXED:** "He first raided Mughal lands in 1657. The largest Mughal campaigns against him came in the 1660s."
 
 **Reviewer J (history: Sub-Saharan Africa, Europe), 5 findings.** Verified sound: every CED
 quotation; Afonso I's 1526 letter (Thornton 2023, p. 203); Mun's quotation; Fort Jesus 1593 to 1596
@@ -497,35 +497,35 @@ and 1698 (UNESCO); all eleven cross-region links; shared facts with the other ch
 - J3. Sub-Saharan Africa, story and Religious card: "Henrique became a bishop in 1518"; he was
   named titular bishop of Utica in 1518 and consecrated about 1520 to 1521 (DACB). **FIXED** in the story and on the Religious card: "In 1518 the pope named Afonso's son Henrique a bishop."
 - J4. Europe (and the Middle East chapter and both Intellectual cards): "In the 1270s Jewish
-  astronomers updated them for Alfonso X"; the work ran 1263 to 1272 (Library of Congress). **FIXED** in Europe (story and Intellectual card: "from 1263 to 1272"). Middle East part PENDING.
+  astronomers updated them for Alfonso X"; the work ran 1263 to 1272 (Library of Congress). **FIXED** in Europe (story and Intellectual card: "from 1263 to 1272"). **FIXED** in the Middle East story and Intellectual card: "From about 1263 to 1272".
 - J5. Sub-Saharan Africa (and the Americas chapter, Topic 4.6 line 275): "Several of the rebels
   came from Kongo" states Thornton's reading as fact; the 1739 account says "the Kingdom of Angola"
-  and Portuguese speakers. **FIXED** in Sub-Saharan Africa: "A report written that year said some of the colony's enslaved people came from 'the Kingdom of Angola' and spoke Portuguese. Historians read that as Kongo. So several of the rebels probably came from Kongo." Topic 4.6 story and teacher note fixed to match. Americas part PENDING.
+  and Portuguese speakers. **FIXED** in Sub-Saharan Africa: "A report written that year said some of the colony's enslaved people came from 'the Kingdom of Angola' and spoke Portuguese. Historians read that as Kongo. So several of the rebels probably came from Kongo." Topic 4.6 story and teacher note fixed to match. Americas: **FIXED:** "Several of the rebels probably came from the Catholic kingdom of Kongo."
 
 **Reviewer Q (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every box
 quotation is word for word apart from Q8; no optional example presented as required; all links.
 
 - Q1. Americas, "Where the silver went": promises "three reasons", numbers only "First", nests "two
-  reasons" inside it; a reader counts four. PENDING.
+  reasons" inside it; a reader counts four. **FIXED:** no count or numbering; the shared order: worth more in China because the Ming had given up paper money and the economy ran on silver; then the Single Whip made most taxes payable in silver; and China mined little of its own.
 - Q2. KC-4.1.III.B (Spanish voyages "dramatically increased European interest in transoceanic
   travel and trade") is claimed in Americas, East Asia, Europe and South and Southeast Asia; none
-  states the effect. **FIXED** in Europe: "Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent voyages of their own." Other chapters PENDING.
+  states the effect. **FIXED** in Europe: "Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent voyages of their own." South and Southeast Asia: **FIXED** by dropping the claim and its quotation (never taught there). East Asia: **FIXED** by dropping the claim and its quotation. Americas: **FIXED** by teaching it: "Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent ships across the northern Atlantic."
 - Q3. Middle East claims KC-4.1.IV and teaches only its regional-markets sentence (no silver flows,
-  no chartered monopoly companies). PENDING.
+  no chartered monopoly companies). **FIXED** by teaching it: the English East India Company's 1600 charter and monopoly on English trade with Asia (Britannica); Persian silk sold to Europe for silver, largely American, much of it passing on to India (Matthee, Silk for Silver, 1999). The box quotes KC-4.1.IV whole.
 - Q4. Europe: "Almost every tool on a European ship came from somewhere else" is contradicted by the
   chapter's own new ship designs. **FIXED:** "Many of the tools European sailors used came from somewhere else" (section thesis "Many of their tools").
 - Q5. East Asia mistake box: "Do not give a silver shortage as the cause of the Ming's fall"
-  overcorrects; should be "the only cause". PENDING.
+  overcorrects; should be "the only cause". **FIXED:** "Do not give a silver shortage as the only cause of the Ming's fall. Silver imports seem to have fallen in the early 1640s. Historians disagree whether they also fell in the 1630s, and how much any fall hurt."
 - Q6. East Asia, Shimabara: the heavy taxes were the Shimabara lord's (Matsukura); "a government
-  that was taking more power for itself" blurs the actor. PENDING.
-- Q8. KC-4.1.II.A dash printed as " ... " (same as I4). PENDING, with I4.
+  that was taking more power for itself" blurs the actor. **FIXED:** "The heavy taxes they rose against were their local lords' taxes, not the shogun's. At Shimabara the lord was Matsukura Katsuie... The ban on Christianity was the shogunate's, and the local lords enforced it"; the shogunate crushed the rising and later executed Matsukura.
+- Q8. KC-4.1.II.A dash printed as " ... " (same as I4). **FIXED** with I4.
 - Q9. Sub-Saharan Africa, story and Social card: more women than men in West Central Africa stated
   as settled; it is an estimate. **FIXED:** "Historians estimate that this left parts of Africa with more women than men"; card and How we know box to match.
 - Q10. Americas: "an epidemic killed the Inca emperor"; Huayna Capac's cause of death is probable,
-  not certain. PENDING.
+  not certain. **FIXED:** "That war came after the Inca emperor Huayna Capac died, probably in an epidemic."
 - Q14. Europe: "The most important was the potato" is an unsupported superlative (maize). **FIXED:** "Maize became a staple in parts of southern Europe. In the north the most important was the potato."
 - Q15. East Asia and South and Southeast Asia claim KC-4.1.VI but cut its syncretism half and do
-  not teach it. PENDING.
+  not teach it. South and Southeast Asia: **FIXED** by teaching it: "On Java, many Muslims also kept older beliefs, such as faith in local spirits. Beliefs that mix different traditions in this way are called syncretic" (Ricklefs, Mystic Synthesis in Java, 2006); KC-4.1.VI quoted whole. East Asia: **ANSWERED:** it quotes KC-4.1.VI only to "contributed to religious conflicts ..." with the cut shown, and teaches that half; the syncretism half is taught in the Americas, Sub-Saharan Africa and South and Southeast Asia chapters.
 
 **Reviewer H (history: East Asia, the Americas): no supported defects.** Verified sound: all 36 CED
 quotations; optional examples; links; Morga 1609 (Blair and Robertson, vol. 16); the 1635 and 1639

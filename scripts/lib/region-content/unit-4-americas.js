@@ -67,6 +67,13 @@
  * appointments, not casta, favored peninsulares; silver was dearer in China for two reasons (paper
  * money given up; a growing economy that ran on silver); KC-4.1.IV.D.ii quoted whole with the
  * CED's own dash.
+ *
+ * Review pass 2 (2026-11-22, ledger Q1, Q2, Q10, J5): "Where the silver went" no longer numbers
+ * its reasons; it gives the shared account in order (already worth more in China, because paper
+ * money was given up and the economy ran on silver; then the Single Whip; then little mining). The
+ * story now states KC-4.1.III.B's effect (Spain's voyages made other Europeans far more interested
+ * in ocean travel and trade). Huayna Capac died "probably" in an epidemic. The Stono rebels
+ * "probably" came from Kongo, as the Sub-Saharan Africa chapter and Topic 4.6 now say.
  */
 
 const CB = 'What the College Board says';
@@ -127,7 +134,7 @@ module.exports = {
           heading: 'Voyages across the ocean',
           blocks: [
             { p: `In ${N('1450')}, tens of millions of people lived in the Americas. Historians call them ${KT('Indigenous')} peoples. Indigenous means the first people to live in a place. In ${N('1492')} the rulers of Spain paid for a voyage by <b>Christopher Columbus</b>. He wrongly believed that Asia lay a few thousand miles to the west. He reached the Caribbean instead.` },
-            { p: `England, France and the Dutch also sent ships across the northern Atlantic. They hoped to find a sea route to Asia. <b>John Cabot</b> sailed for England in ${N('1497')}. <b>Jacques Cartier</b> sailed for France in the 1530s, and <b>Henry Hudson</b> for the Dutch in ${N('1609')}. Land and Arctic ice blocked every route. Instead, the sailors found cod and a fur trade with Indigenous nations. <a href="#r4-europe-crowns">The Europe chapter</a> has more on these voyages.` }
+            { p: `Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent ships across the northern Atlantic. They hoped to find a sea route to Asia. <b>John Cabot</b> sailed for England in ${N('1497')}. <b>Jacques Cartier</b> sailed for France in the 1530s, and <b>Henry Hudson</b> for the Dutch in ${N('1609')}. Land and Arctic ice blocked every route. Instead, the sailors found cod and a fur trade with Indigenous nations. <a href="#r4-europe-crowns">The Europe chapter</a> has more on these voyages.` }
           ]
         },
         {
@@ -137,7 +144,7 @@ module.exports = {
             { p: `Many of these diseases first spread where people lived close to herd animals. The Americas had few herd animals. So their people had never met these germs.` },
             { p: `Most European adults had ${KT('acquired immunity')} to smallpox. They had caught it as children and survived, so their bodies could fight it off. Nobody in the Americas had had that chance. So smallpox struck people of every age at once. Often no one was left healthy enough to plant, cook or nurse the sick.` },
             { p: `Smallpox spread through Tenochtitlan in ${N('1520')}. Tenochtitlan was the capital of the Mexica (Aztecs). In ${N('1521')} Spanish forces and many thousands of Indigenous allies overthrew the Mexica. The ${KT('epidemic')} (a fast-spreading outbreak of disease) had helped them.` },
-            { p: `In the 1530s the Spanish took over the Inca empire. A war over the throne had already split it. That war came after an epidemic killed the Inca emperor.` },
+            { p: `In the 1530s the Spanish took over the Inca empire. A war over the throne had already split it. That war came after the Inca emperor Huayna Capac died, probably in an epidemic.` },
             { p: `In many regions, the population fell by half to ninety percent or more within about a century. War, forced labor and hunger made every epidemic deadlier.` },
             { note: {
               kind: 'howknow',
@@ -215,8 +222,8 @@ module.exports = {
           heading: 'Where the silver went',
           blocks: [
             { p: `Spain ran this trade by the rules of ${KT('mercantilism')}. This was the idea that a kingdom grows strong by gathering gold and silver. In this view, a kingdom should also keep its colonies' trade for itself.` },
-            { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. Much of it ended up in China, for three reasons.` },
-            { p: `First, silver was already worth more in China than in Europe, for two reasons. The Ming government (China's rulers) had given up paper money. And China's growing economy ran on silver. Then a tax reform called the Single Whip made most taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this from China's side.` },
+            { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. Much of it ended up in China.` },
+            { p: `Silver was already worth more in China than in Europe. That was because the Ming government (China's rulers) had given up paper money, and China's growing economy ran on silver. Then a tax reform called the Single Whip made most taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this from China's side.` },
             { p: `In ${N('1571')} Spain founded Manila, in the Philippines. From then on, ${KT('Manila galleons')} (large Spanish ships) carried silver across the Pacific from Acapulco in Mexico to Manila. There, Chinese merchants traded silk and porcelain for it.` }
           ]
         },
@@ -347,7 +354,7 @@ module.exports = {
           blocks: [
             { p: `Enslaved people resisted every day, and sometimes they organized. In Brazil, people who escaped slavery built <b>Palmares</b>. A community like this is called a ${KT('maroon community')}. Palmares's fortified towns drove back Portuguese and Dutch attacks for most of the 1600s. It fell in the 1690s.` },
             { p: `In Jamaica, the colony could not defeat the Maroons. In ${N('1739')} it signed treaties that recognized their freedom. In return, the Maroons had to send back runaways.` },
-            { p: `That same year, enslaved people at the Stono River in South Carolina seized guns. They marched toward Spanish Florida, which promised freedom to runaways who became Catholic. Several of the rebels came from Catholic Kongo. The colony's militia (its armed colonists) broke the march. In ${N('1740')} the colony made its slave laws harsher.` },
+            { p: `That same year, enslaved people at the Stono River in South Carolina seized guns. They marched toward Spanish Florida, which promised freedom to runaways who became Catholic. Several of the rebels probably came from the Catholic kingdom of Kongo. The colony's militia (its armed colonists) broke the march. In ${N('1740')} the colony made its slave laws harsher.` },
             { p: `By 1750, the Pueblo towns, the Plains nations, the Nahua Christians and the Jamaica Maroons were all still there. Colonial rule did not always win.` },
             { note: {
               kind: 'cb',

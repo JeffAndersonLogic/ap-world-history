@@ -1184,7 +1184,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In India, hand weaving shrank, but it did not die. Weavers kept working cloth on <span class=\"kt\">handloom</span>s, looms worked by hand and foot, and many switched to cheaper machine-spun thread so they could keep weaving. In 1908, in just one province of northern India, about a million people still lived from handloom weaving. In China, farm families kept weaving cloth at home, more and more of it from cheaper machine-made thread. In the Ottoman Empire, the number of handlooms in the Syrian cities of Aleppo and Damascus held steady from 1860 to 1914."
+            "html": "In India, hand weaving shrank, but it did not die. Weavers kept working cloth on <span class=\"kt\">handloom</span>s, looms worked by hand and foot, and many switched to cheaper machine-spun thread so they could keep weaving. In 1908, in just one province of northern India, about a million people still lived from handloom weaving. In China, farm families kept weaving cloth at home, more and more of it from cheaper machine-made thread. In the Ottoman Empire, the Syrian city of Aleppo had about 40,000 handlooms in the 1700s and only about 5,000 from 1838 to 1850. After that steep fall, the number of handlooms in Aleppo and Damascus held steady from 1860 to 1914."
           },
           {
             "type": "p",
@@ -1420,7 +1420,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average for the whole trip to America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
+            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average for the whole trip to America. By steamship, the Atlantic crossing from England took about two weeks in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
           },
           {
             "type": "p",

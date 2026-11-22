@@ -708,16 +708,16 @@ Meiji reforms, Shimonoseki.
 
 - N1. Europe: "In February 1890 socialist candidates won ... The Reichstag did not renew the law,
   and it ended that September" reads as vote causing non-renewal; the Reichstag rejected renewal
-  on 25 January 1890, before the 20 February election (GHDI). PENDING.
-- N2. Europe claims KC-5.1.III.A, quotes the Adam Smith cause, and never teaches it. PENDING.
+  on 25 January 1890, before the 20 February election (GHDI). **FIXED:** "On 25 January 1890 the Reichstag voted against renewing the law. On 20 February socialist candidates won more votes than any other party, about 20 percent. The law ended on 30 September."
+- N2. Europe claims KC-5.1.III.A, quotes the Adam Smith cause, and never teaches it. **FIXED:** Britain's move to free trade "partly persuaded by Adam Smith's case for free trade"; Jean-Baptiste Say spread Smith's ideas in France; Michel Chevalier, who helped prepare the 1860 treaty, was a free trader too.
 - N3. Europe claims KC-5.1.IV (railroads, steamships, telegraph, increased trade and migration),
-  teaches railways only, no trade or migration effect. PENDING.
-- N4. Europe claims KC-5.1.V.A (labor unions) and never mentions unions. PENDING.
+  teaches railways only, no trade or migration effect. **FIXED:** the Trans-Siberian "carried peasant settlers east to farm Siberia. Over the next twenty years they came in the millions. Trains also carried Siberian wheat west to sell"; steamships and the telegraph named, with a link phrase to the Britain chapter's factory section. (The fixer's 1906 to 1914 settler figure and 1896 to 1913 grain figure were cut as outside the unit.)
+- N4. Europe claims KC-5.1.V.A (labor unions) and never mentions unions. **FIXED:** labor unions defined and taught ("groups of workers who bargain with employers together for higher wages, shorter hours and better conditions"); many of the groups banned in 1878 were unions; France made unions legal in 1884.
 - N5. East Asia, Intellectual card: "only Japan kept at it" overstated; Qing Western learning
   continued (Tongwen Guan, Jiangnan translations, students sent to Europe, Imperial University of
-  Peking, 1898, the one edict not repealed). PENDING.
+  Peking, 1898, the one edict not repealed). **FIXED:** card: "Both governments set out to learn from the West, and Japan went further"; body adds that Self-Strengthening went on for decades and China's 1898 reforms were stopped after about three months.
 - N6. Europe, Social card: "Old ranks of birth fell in France and Russia"; Russia freed serfs but
-  kept the nobility as a legal estate until 1917. PENDING.
+  kept the nobility as a legal estate until 1917. **FIXED:** "France ended noble privilege, Russia freed its serfs, and women claimed equal rights."
 
 **Reviewer P (history: the Americas, South and Southeast Asia), 3 findings, no historical errors.**
 Verified sound: every CED quotation; every link; Bolívar's Jamaica Letter (Bertrand); the India
@@ -739,11 +739,10 @@ dates; Slater and Belper; Davar's mill; the Propaganda Movement, the Katipunan a
 **Reviewer Q (CED and consistency, all twelve chapters), Unit 5 items.**
 
 - Q7. East Asia, Intellectual card "only Japan kept at it" (same as N5); also the Religious card
-  generalizes Woren's argument to "In China". PENDING, with N5.
+  generalizes Woren's argument to "In China". **FIXED** with N5; Religious card: "At the Qing court, the emperor's tutor used Confucian values to argue against Western learning."
 - Q11. Unit 5 Middle East glossary: Mamluks "ruled Egypt until Napoleon's invasion" contradicts
-  Unit 4 (Ottoman Egypt from 1517); they kept real power under Ottoman governors. PENDING.
-- Q12. Europe, Social card "Old ranks of birth fell in France and Russia" (same as N6). PENDING,
-  with N6.
+  Unit 4 (Ottoman Egypt from 1517); they kept real power under Ottoman governors. **FIXED:** "Egypt had been an Ottoman province since 1517. But the Mamluks had stayed powerful there under the sultan's governors"; glossary to match.
+- Q12. Europe, Social card "Old ranks of birth fell in France and Russia" (same as N6). **FIXED** with N6.
 - Q13. Britain and Europe box headings show "&quot;". **REJECTED:** an artifact of the review
   packet's text extraction. The page escapes the quotation marks as `&quot;`, which the browser
   shows as ordinary quotation marks; the extractor now decodes it.
@@ -756,14 +755,14 @@ Beinin (MERIP 1981); the Gülhane text (Hurewitz 1975); Selim III to the 1878 su
 - M1. Middle East, section 05 and mistake box: "What changed was the region's share" overcorrects;
   textile makers fell steeply in number before 1860 (Aleppo about 40,000 looms in the 1700s, about
   5,125 in 1838 to 1850; Damascus 34,000 to 12,000), then held steady (Pamuk and Williamson, NBER
-  WP 14763, 2009, p. 7, citing Issawi). PENDING.
+  WP 14763, 2009, p. 7, citing Issawi). **FIXED:** heading "Fewer makers, a smaller share"; Aleppo about 40,000 handlooms in the 1700s, about 5,000 from 1838 to 1850, steady from 1860 to 1914; the mistake box keeps "did not stop making goods" and says many makers did lose their work. Topic 5.4 (deep reading, First & 10, lesson data) now gives the fall too.
 - M2. Britain: "By 1869 steamships made it in about 16 [days]"; 16 is the all-ship emigrant average
   in 1869; steamships alone averaged about 14 (Hatton, IZA DP 16274, 2023, Tables 1 and 2). Topic
-  5.5 says "about 12 days in the 1860s". PENDING.
+  5.5 says "about 12 days in the 1860s". **FIXED:** "By 1869 almost all went by steam. A steamship made it in about 14 days" (Hatton, Table 2: 14.0 days, 197 of 213 voyages). Topic 5.5's "about 12 days in the 1860s" (sourced to one Allan Line run to Quebec) now says "about two weeks" on the deep reading, First & 10, lesson data and slide, with Hatton in the teacher note.
 - M3. Middle East: the 1804 Serbian rising presented as a nationalist break; it began against the
   renegade Janissary commanders (dahije), at first on the sultan's side, and only later became a
-  fight for self-rule. PENDING.
+  fight for self-rule. **FIXED:** "At first they fought rebel Janissary commanders who had seized power in Serbia, and they said they fought for the sultan. The rising soon became a fight to rule themselves."
 - M4. Britain, Political card heading "Britain widened the vote in steps, and only for men"; some
-  women gained local votes from 1869. Narrow to the vote for Parliament. PENDING.
+  women gained local votes from 1869. Narrow to the vote for Parliament. **FIXED:** "Britain widened the vote for Parliament in steps, and only for men"; body: "From 1869 some women could vote in town elections."
 - M5. Britain claims KC-5.1.I.B and KC-5.1.II.B but quotes and teaches one sentence of each.
-  PENDING.
+  **FIXED:** both Key Concepts quoted whole and taught: Benz's 1886 oil-burning internal combustion engine and the fossil fuels revolution; India's share falling from about a quarter in 1750 to under 2 percent by 1900 (Bairoch), with link phrases to the Europe and South and Southeast Asia sections.

@@ -10,12 +10,12 @@
  * The Key Concepts that drive it are KC-4.3.II.A.i (trading posts and restrictive policies),
  * KC-4.1.IV (silver), KC-4.2.II.A (peasant and artisan labor), KC-4.1.V.D (American crops),
  * KC-4.2.III.A and KC-4.3.I.B (the Qing), with shorter threads for KC-4.1.II (the compass),
- * KC-4.1.III.A and B (Portugal reaching Macau, the Pacific voyages to Manila), KC-4.1.VI
- * (Christianity), KC-4.2.II (peasant farming spreading uphill, Topic 4.8), KC-4.2.III.B (Han
+ * KC-4.1.III.A (Portugal reaching Macau), KC-4.1.VI (Christianity's spread and the conflict it
+ * brought; the syncretism half is cut with an ellipsis and taught in other chapters), KC-4.2.II (peasant farming spreading uphill, Topic 4.8), KC-4.2.III.B (Han
  * officials sharing power) and KC-4.3.III.iii (Shimabara and resistance to the queue order). Facts
  * come from the Topic 4.1, 4.3, 4.4, 4.5 and 4.7 chapters and their claim ledgers, plus a few
  * reviewer-checked additions, and keep their narrowings ("most taxes" in silver; the silver drop
- * not named as the cause of the Ming fall; no blanket ban on Manchu and Han marriage; Japan never
+ * not named as the only cause of the Ming fall; no blanket ban on Manchu and Han marriage; Japan never
  * "closed"). Left out on purpose: Korea and the Ryukyu kingdom (the CED names neither), Tokugawa
  * domestic politics, Qing frontier wars, and KC-4.3.II.A.iii, which the CED words as Indian Ocean
  * trade and the South and Southeast Asia chapter carries.
@@ -38,6 +38,13 @@
  * Closing cards rewritten as claim plus dated evidence. Cut: the Willow Palisade (a second example
  * of limits on the Han, undated), and the Macau and Dejima glossary entries (both defined in the
  * story). No date was dropped; every hedge stays.
+ *
+ * Review pass 2 (2026-11-22, ledger Q2, Q5, Q6, Q15): KC-4.1.III.B left `ced` and its box (this
+ * chapter never stated the effect; the Europe and Americas chapters teach it). The Ming mistake box
+ * now says "the only cause" and carries Topic 4.5's hedge on the silver evidence. Shimabara now
+ * names the actors: the heavy taxes were the local lords' (Matsukura Katsuie at Shimabara); the ban
+ * on Christianity was the shogunate's, and the shogunate crushed the rising. KC-4.1.VI stays quoted
+ * only to its conflict half, with the cut shown.
  */
 
 const CB = 'What the College Board says';
@@ -60,7 +67,6 @@ module.exports = {
   ced: [
     'KC-4.1.II',
     'KC-4.1.III.A',
-    'KC-4.1.III.B',
     'KC-4.1.IV',
     'KC-4.1.V.D',
     'KC-4.1.VI',
@@ -179,7 +185,6 @@ module.exports = {
               label: CB,
               paras: [
                 `In short: Silver tied world trade to China, Chinese families made more silk, and American crops spread.`,
-                `<a href="#chapter-t4-2">Topic 4.2</a>: "Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased."`,
                 `An optional College Board example: silk in China.`,
@@ -218,8 +223,8 @@ module.exports = {
           blocks: [
             { p: `Nagasaki was the main port where Portuguese and Chinese ships traded. Between <span class="num">1633</span> and <span class="num">1639</span>, the shogun's senior councilors sent five sets of orders to their two governors there. The <span class="num">1635</span> orders begin: "Japanese ships are strictly forbidden to leave for foreign countries."` },
             { p: `The third article says: "If any Japanese returns from overseas after residing there, he must be put to death." Other orders say every incoming ship must be searched for Christians.` },
-            { p: `In <span class="num">1637</span> and <span class="num">1638</span>, peasants rose up against their lords at <b>Shimabara</b>, near Nagasaki. Many of the rebels were Christian. Through years of famine, those lords had charged them heavy taxes of their own. The lords were also enforcing the shogunate's ban on Christianity.` },
-            { p: `The rising was local resistance to a government that was taking more power for itself. The shogunate crushed it. Later it executed the Shimabara lord for ruling badly.` },
+            { p: `In <span class="num">1637</span> and <span class="num">1638</span>, peasants rose up at <b>Shimabara</b>, near Nagasaki, and on the nearby Amakusa islands. Many of the rebels were Christian. The heavy taxes they rose against were their local lords' taxes, not the shogun's. At Shimabara the lord was <b>Matsukura Katsuie</b>. He kept charging heavy taxes through years of famine.` },
+            { p: `The ban on Christianity was the shogunate's, and the local lords enforced it. So the rising was also local resistance to a central government that was taking more power for itself. The shogunate sent a huge army and crushed it. Later it executed Matsukura for ruling badly.` },
             { p: `In <span class="num">1639</span> the councilors banned Portuguese ships outright. The order gives the reason: the Portuguese "have secretly transported those who are going to propagate that religion." In other words, the shogunate accused them of sneaking in missionaries to spread Christianity.` },
             { p: `The Dutch stayed, because they came to trade, not to preach. After <span class="num">1639</span> they were the only Europeans allowed to trade in Japan. From <span class="num">1641</span> they were moved to <b>Dejima</b>, under Japanese watch. Dejima was a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki.` },
             { p: `Japan had chosen a <span class="kt">restrictive trade policy</span>: limits on who could trade, where, and in what.` },
@@ -251,7 +256,7 @@ module.exports = {
       ],
       terms: [
         ['Tokugawa shogunate', `The military government that ruled Japan from 1603.`],
-        ['Shimabara Rebellion', `A rising of peasants near Nagasaki in 1637 and 1638. Heavy taxes and famine drove it, and many rebels were Christian.`],
+        ['Shimabara Rebellion', `A rising of peasants near Nagasaki in 1637 and 1638. Their local lords' heavy taxes and famine drove it, and many rebels were Christian.`],
         ['Restrictive trade policy', `A government's limits on who may trade, where, and in what.`]
       ]
     },
@@ -273,7 +278,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not give a silver shortage as the cause of the Ming's fall. Historians disagree about when silver imports fell in the last Ming years. They also disagree about how much any fall hurt.`
+              html: `Do not give a silver shortage as the only cause of the Ming's fall. Silver imports seem to have fallen in the early 1640s. Historians disagree whether they also fell in the 1630s, and how much any fall hurt. The Ming also faced rebellions.`
             } }
           ]
         },

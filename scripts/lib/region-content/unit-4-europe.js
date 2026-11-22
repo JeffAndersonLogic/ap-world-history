@@ -123,7 +123,7 @@ module.exports = {
         ] }
       ],
       terms: [
-        ['Lateen sail', 'A triangular sail that helps a ship sail against the wind.'],
+        ['Lateen sail', 'A triangular sail that lets a ship sail much closer to the wind than a square sail does.'],
         ['Caravel', 'A small, shallow Portuguese ship built to explore unknown coasts.'],
         ['Volta do mar', 'The route home through the open Atlantic, on westerly winds.']
       ]

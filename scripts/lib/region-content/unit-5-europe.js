@@ -30,6 +30,14 @@
  * finance minister 1892 to 1903 (foreign loans for railways and industry). The Enlightenment mistake
  * box now warns against a single cause, not against the causal claim. See the "Plain-language and
  * accuracy pass (2026-11-21)" section of docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md.
+ *
+ * Review loop pass 2 (2026-11-22, findings N1 to N4, N6, Q12): the Anti-Socialist Law told in
+ * order (renewal voted down 25 January 1890, election 20 February, law lapsed 30 September;
+ * Wikipedia, "Anti-Socialist Laws"); labor unions taught (many of the banned groups were unions;
+ * France made unions legal in 1884); Smith's followers on the Continent (Jean-Baptiste Say;
+ * Michel Chevalier, a free trader, helped prepare the 1860 treaty; Wikipedia biographies); the
+ * Trans-Siberian's settlers and grain (Wikipedia, "Trans-Siberian Railway", Effects); the Social
+ * card no longer says ranks of birth "fell" in Russia, whose nobility stayed a legal estate.
  */
 
 const CB = 'What the College Board says';
@@ -274,7 +282,9 @@ module.exports = {
           blocks: [
             { p: `Russia's big growth came mostly after 1870. In the early 1870s a Welsh engineer named John Hughes built ironworks in the coal country of the southern Russian Empire, in today's eastern Ukraine.` },
             { p: `Russia's government pushed industry on purpose. From <span class="num">1892</span> to <span class="num">1903</span>, Sergei Witte was Russia's minister of finance. His government borrowed large sums from foreign lenders. It spent the money on railways and new industry. Russia's industry grew fastest in the 1890s.` },
-            { p: `Russia's railways grew from 27 kilometers in <span class="num">1840</span> to more than 53,000 in <span class="num">1900</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and Witte pushed it forward. By <span class="num">1904</span> trains could cross to the Pacific, reaching lands far from any sea.` }
+            { p: `Russia's railways grew from 27 kilometers in <span class="num">1840</span> to more than 53,000 in <span class="num">1900</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and Witte pushed it forward. By <span class="num">1904</span> trains could cross to the Pacific, reaching lands far from any sea.` },
+            { p: `Once it opened, the railway carried peasant settlers east to farm Siberia. Over the next twenty years they came in the millions. Trains also carried Siberian wheat west to sell.` },
+            { p: `Steamships and the telegraph moved people and news across the oceans too. <a href="#r5-britain-factory">The Britain chapter</a> tells that story.` }
           ]
         },
         {
@@ -289,14 +299,15 @@ module.exports = {
         {
           heading: 'Free trade, for a while',
           blocks: [
-            { p: `Under <span class="kt">mercantilism</span>, governments guarded trade with <span class="kt">tariffs</span> (taxes on imported goods). In the 1800s Western Europe moved toward <span class="kt">free trade</span>, with low tariffs or none. <a href="#r5-britain-free-trade">The Britain chapter</a> tells how Britain led.` },
-            { p: `In <span class="num">1860</span> Britain and France cut tariffs on each other's goods in the Cobden-Chevalier Treaty. In the 1860s similar treaties lowered tariffs across much of Western Europe.` },
+            { p: `Under <span class="kt">mercantilism</span>, governments guarded trade with <span class="kt">tariffs</span> (taxes on imported goods). In the 1800s Western Europe moved toward <span class="kt">free trade</span>, with low tariffs or none. <a href="#r5-britain-free-trade">The Britain chapter</a> tells how Britain led, partly persuaded by Adam Smith's case for free trade.` },
+            { p: `Smith's ideas won followers on the Continent too. In France the economist Jean-Baptiste Say spread Smith's ideas and argued for free trade.` },
+            { p: `In <span class="num">1860</span> Britain and France cut tariffs on each other's goods in the Cobden-Chevalier Treaty. Michel Chevalier, the French economist who helped prepare it, was a free trader too. In the 1860s similar treaties lowered tariffs across much of Western Europe.` },
             { p: `Then some countries turned back. From <span class="num">1879</span> Germany put tariffs on imported grain, to protect its farmers from cheap American and Russian grain. It also taxed imported iron, to protect its factories after a long business slump that began in <span class="num">1873</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Industry spread beyond northwestern Europe, new engines burned coal and oil, and trade became freer.`,
+                `In short: Industry spread beyond northwestern Europe, new engines burned coal and oil, railways opened inland lands, and Smith's ideas helped make trade freer.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "The “second industrial revolution” led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century."`,
@@ -334,9 +345,10 @@ module.exports = {
         {
           heading: 'Germany\'s workers\' party',
           blocks: [
-            { p: `German workers founded parties in <span class="num">1863</span> and <span class="num">1869</span>, and the two united in <span class="num">1875</span>. In <span class="num">1878</span> Bismarck, now the German Empire's <span class="kt">chancellor</span> (chief minister), pushed through the Anti-Socialist Law. It banned socialist groups, meetings and newspapers. But socialists could still run for the <span class="kt">Reichstag</span> (Germany's parliament) as individual candidates.` },
-            { p: `In February <span class="num">1890</span> socialist candidates won more votes than any other party, about 20 percent. The Reichstag did not renew the law, and it ended that September. Then the party took a new name, the <span class="kt">Social Democratic Party</span>. In <span class="num">1891</span> it adopted a program based on Marx's ideas, while it kept winning seats in elections.` },
-            { p: `In <span class="num">1889</span> socialist parties from many countries called on workers everywhere to march on May 1, <span class="num">1890</span>, for an eight-hour day.` },
+            { p: `German workers founded parties in <span class="num">1863</span> and <span class="num">1869</span>, and the two united in <span class="num">1875</span>. Many workers also joined <span class="kt">labor unions</span>. These are groups of workers who bargain with employers together for higher wages, shorter hours and better conditions.` },
+            { p: `In <span class="num">1878</span> Bismarck, now the German Empire's <span class="kt">chancellor</span> (chief minister), pushed through the Anti-Socialist Law. It banned socialist groups, meetings and newspapers. Many of the banned groups were unions. But socialists could still run for the <span class="kt">Reichstag</span> (Germany's parliament) as individual candidates.` },
+            { p: `On 25 January <span class="num">1890</span> the Reichstag voted against renewing the law. On 20 February socialist candidates won more votes than any other party, about 20 percent. The law ended on 30 September. That October the party took a new name, the <span class="kt">Social Democratic Party</span>. In <span class="num">1891</span> it adopted a program based on Marx's ideas, while it kept winning seats in elections.` },
+            { p: `Unions grew in other countries too. France made them legal in <span class="num">1884</span>. In <span class="num">1889</span> socialist parties from many countries called on workers everywhere to march on May 1, <span class="num">1890</span>, for an eight-hour day.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -397,7 +409,7 @@ module.exports = {
       },
       {
         category: 'Social',
-        title: 'Old ranks of birth fell in France and Russia, and women claimed equal rights.',
+        title: 'France ended noble privilege, Russia freed its serfs, and women claimed equal rights.',
         body: `France ended the nobles' special privileges in 1789, and Russia freed more than 20 million serfs in 1861. Olympe de Gouges claimed equal rights for women in 1791, but women could vote almost nowhere by 1900.`
       },
       {

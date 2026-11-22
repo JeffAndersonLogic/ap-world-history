@@ -74,6 +74,16 @@
  * the story). Box text grew because whole Key Concept sentences replace
  * fragments, so the chapter is about as long as before (3,342 to about 3,430
  * rendered words) while the story shrank (1,919 to 1,871).
+ *
+ * Review pass 2 (2026-11-22, ledger I4, I6, Q2, Q8, Q15): KC-4.1.II.A is quoted whole, with
+ * "all of which" and the CED's own dash; Shivaji's first raid on Mughal lands is dated 1657,
+ * with the largest Mughal campaigns in the 1660s; KC-4.1.III.B is no longer claimed or quoted
+ * here (the chapter never taught its effect on European interest; the Americas, East Asia and
+ * Europe chapters still claim it), so the Manila section now carries KC-4.1.IV only; and
+ * KC-4.1.VI is now quoted whole, with its syncretism half taught by one sentence on Java
+ * (M. C. Ricklefs, Mystic Synthesis in Java, 2006: Javanese Muslims of the 1600s and 1700s
+ * kept faith in local spiritual forces), which supersedes the note above that religion is
+ * taught only as spread and conflict.
  */
 
 const CB = 'What the College Board says';
@@ -98,7 +108,6 @@ module.exports = {
     'KC-4.1.II.A',
     'KC-4.1.III',
     'KC-4.1.III.A',
-    'KC-4.1.III.B',
     'KC-4.1.IV',
     'KC-4.1.IV.C',
     'KC-4.1.VI',
@@ -161,7 +170,7 @@ module.exports = {
               paras: [
                 `In short: state-backed voyages used older Asian and Islamic knowledge of the seas, and fights over trade followed.`,
                 `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."`,
-                `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns ... made transoceanic travel and trade possible."`,
+                `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible."`,
                 `<a href="#chapter-t4-2">Topic 4.2</a>: "New state-supported transoceanic maritime exploration occurred in this period."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
@@ -200,7 +209,7 @@ module.exports = {
             { p: `Portugal's main tool was the <span class="kt">cartaz</span> (a pass that merchant ships bought from the Portuguese). A ship with a pass had to stop at a Portuguese port and pay duties (taxes on goods) there. Portuguese patrols could seize a ship that sailed without one.` },
             { p: `The cartaz changed who taxed the ocean. It did not change who traded on it. Gujarati merchants kept shipping cloth, often by buying a pass and sailing on. Javanese merchants kept carrying rice to Malacca, whoever held it. Much of the ocean's business stayed <span class="kt">intra-Asian trade</span>: trade between Asian ports, in Asian goods.` },
             { p: `Muslim powers kept fighting. <b>Aceh</b> (a Muslim kingdom on the island of Sumatra) fought the Portuguese again and again for more than a century, from about <span class="num">1520</span>. It shipped its pepper straight to the Red Sea. By the middle of the 1500s, large amounts of spices again reached the Mediterranean that way.` },
-            { p: `Religion traveled too. Asian merchants and teachers kept spreading Islam in Southeast Asia. In Goa, the Portuguese set up an Inquisition (a church court) in <span class="num">1560</span>. It tried converts accused of secretly keeping Jewish, Hindu or Muslim practices.` }
+            { p: `Religion traveled too. Asian merchants and teachers kept spreading Islam in Southeast Asia. On Java, many Muslims also kept older beliefs, such as faith in local spirits. Beliefs that mix different traditions in this way are called <span class="kt">syncretic</span>. In Goa, the Portuguese set up an Inquisition (a church court) in <span class="num">1560</span>. It tried converts accused of secretly keeping Jewish, Hindu or Muslim practices.` }
           ]
         },
         {
@@ -214,20 +223,20 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: rival European states built sea empires, but Asian merchants kept trading, and faiths spread and clashed.`,
+                `In short: rival European states built sea empires, but Asian merchants kept trading, and faiths spread, clashed and mixed.`,
                 `<a href="#chapter-t4-2">Topic 4.2</a>: "Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire."`,
-                `<a href="#chapter-t4-2">Topic 4.2</a>: "Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants."`,
                 `An optional College Board example: Gujarati and Javanese merchants.`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts ..."`
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices."`
               ]
             } }
           ]
         }
       ],
       terms: [
+        ['Syncretic', 'Mixing beliefs and practices from different religions or traditions.'],
         ['Trading-post empire', 'A chain of fortified ports with almost no land behind them.'],
         ['Cartaz', 'A pass Portugal sold to merchant ships. It made them stop and pay duties at a Portuguese port.'],
         ['Manila galleons', 'The Spanish ships that carried American silver from Acapulco to Manila, from 1571.']
@@ -264,7 +273,7 @@ module.exports = {
             { p: `Akbar's great-grandson <b>Aurangzeb</b> ruled from <span class="num">1658</span> to <span class="num">1707</span>. In <span class="num">1679</span> he brought back the jizya. He also favored a stricter reading of Islamic law. Yet he still employed many Hindu officers. A ruler's welcome was a choice, and the next ruler could take it back.` },
             { p: `Aurangzeb also wanted the whole <b>Deccan</b> (the high plateau of central India). Earlier Mughal armies had met a tough enemy there. In India some enslaved Africans served as soldiers, and a few rose high. One of them became that enemy.` },
             { p: `<b>Malik Ambar</b> was born in Ethiopia and sold as a boy. He rose to rule the Deccan kingdom of Ahmadnagar as regent (ruling for its young king). He fought the Mughals until he died in <span class="num">1626</span>.` },
-            { p: `Later, <b>Shivaji</b> built a kingdom for the <span class="kt">Marathas</span> (a people of the western Deccan). He began in the 1640s, from hill forts. His soldiers raided, cut supply lines and went back to their forts. Mughal armies fought him from the 1660s. In <span class="num">1674</span> he was crowned king.` },
+            { p: `Later, <b>Shivaji</b> built a kingdom for the <span class="kt">Marathas</span> (a people of the western Deccan). He began in the 1640s, from hill forts. His soldiers raided, cut supply lines and went back to their forts. He first raided Mughal lands in <span class="num">1657</span>. The largest Mughal campaigns against him came in the 1660s. In <span class="num">1674</span> he was crowned king.` },
             { p: `In <span class="num">1681</span> Aurangzeb moved his court south. By <span class="num">1687</span> he had conquered the Deccan kingdoms of Bijapur and Golconda. Shivaji's son had become the next Maratha king. In <span class="num">1689</span> Aurangzeb executed him. But Aurangzeb never defeated the Marathas. He died in the Deccan in <span class="num">1707</span>.` },
             { p: `After his death, Maratha power spread across much of India, while the emperors in Delhi grew weaker. The long war was not the only cause of that decline, but it was one. It cost the empire money, soldiers and decades of its emperor's attention (<a href="#chapter-t4-6">Topic 4.6</a>).` },
             { note: {

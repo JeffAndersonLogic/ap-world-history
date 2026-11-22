@@ -31,6 +31,14 @@
  * meeting again until 1908 (Britannica, "Abdulhamid II"). Added: "The story in short" (inShort) and
  * six closing cards in the fixed order; topic 5.1 joins `topics` because the CED prints
  * KC-5.3.II.i on the 5.1 page. No date was dropped.
+ *
+ * Review pass 2 (2026-11-22, reviewers M and Q): Egypt Ottoman from 1517, as the Unit 4 Middle East
+ * chapter says, with the Mamluks still powerful under Ottoman governors and dominant by the 1700s.
+ * The 1804 Serbian rising began against the rebel Janissary commanders (the dahije), in the sultan's
+ * name, and only later sought self-rule. Section 05 no longer says only the share changed: Aleppo's
+ * handlooms fell from about 40,000 in the 1700s to an average of 5,125 in 1838 to 1850, then held
+ * steady with Damascus's from 1860 to 1914 (Pamuk and Williamson, NBER WP 14763, 2009, citing
+ * Issawi 1988, p. 374).
  */
 
 const CB = 'What the College Board says';
@@ -47,7 +55,7 @@ module.exports = {
     `In Egypt, Muhammad Ali used money from crops to build state factories that supplied his army.`,
     `European powers stopped his army in <span class="num">1840</span>, and most of his factories failed by the mid-1840s.`,
     `The Ottoman government reformed laws and taxes and offered equal citizenship, but the sultan suspended the constitution in <span class="num">1878</span>.`,
-    `Balkan nations broke away, and the region kept making goods while its share of the world's goods shrank.`
+    `Balkan nations broke away. The region kept making goods with fewer makers, and its share of the world's goods shrank.`
   ],
   topics: ['5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.8'],
   ced: [
@@ -87,7 +95,7 @@ module.exports = {
         {
           heading: 'Napoleon in Egypt, and the end of the Janissaries',
           blocks: [
-            { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt. It easily defeated Egypt's rulers, the <span class="kt">Mamluks</span>. The Mamluks were a class of soldier-lords. The French left in <span class="num">1801</span>. But they had shown what a modern European army could do.` },
+            { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt. Egypt had been an Ottoman province since <span class="num">1517</span>. But the <span class="kt">Mamluks</span> had stayed powerful there under the sultan's governors. They were a class of soldier-lords, and by the 1700s they held most of the real power. Napoleon's army easily defeated them. The French left in <span class="num">1801</span>. But they had shown what a modern European army could do.` },
             { p: `In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries. Then he built a new army along European lines (<a href="#chapter-t5-8">Topic 5.8</a>).` },
             { p: `So the first reforms answered a lost war against Russia. Napoleon's easy victory in Egypt then showed what a modern European army could do, and that added to the pressure. Later in the century, the pressure came more and more from industrial states. Selim's fall also shows something that came back again and again. Powerful old groups fought reform.` },
             { note: {
@@ -104,7 +112,7 @@ module.exports = {
       terms: [
         ['Sultan', `The ruler of the Ottoman Empire.`],
         ['Janissaries', `The Ottoman Empire's old army corps, destroyed in 1826.`],
-        ['Mamluks', `The class of soldier-lords who ruled Egypt until Napoleon's invasion and Muhammad Ali.`]
+        ['Mamluks', `A class of soldier-lords. After Egypt became Ottoman in 1517, they stayed powerful there under the sultan's governors, until Napoleon's invasion and Muhammad Ali.`]
       ]
     },
 
@@ -248,7 +256,7 @@ module.exports = {
         {
           heading: 'One after another',
           blocks: [
-            { p: `The Serbs rose up first, in <span class="num">1804</span>. After years of fighting, they won the right to rule themselves. From <span class="num">1830</span> Serbia governed itself under its own prince, though it still stayed inside the empire.` },
+            { p: `The Serbs rose up first, in <span class="num">1804</span>. At first they fought rebel Janissary commanders who had seized power in Serbia, and they said they fought for the sultan. The rising soon became a fight to rule themselves. After years of fighting, they won that right. From <span class="num">1830</span> Serbia governed itself under its own prince, though it still stayed inside the empire.` },
             { p: `The Greeks rose up in <span class="num">1821</span>. In <span class="num">1830</span> Britain, France and Russia declared Greece an independent state. In <span class="num">1832</span> Greece became a kingdom under a Bavarian prince.` },
             { p: `In <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as fully independent (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { p: `Did Ottomanism hold the empire together? Greece had already left in 1830, before the decree of 1856 and the law of 1869. Then, in 1878, Ottomanism did not stop Serbia, Montenegro and Romania from leaving.` },
@@ -284,7 +292,7 @@ module.exports = {
       name: 'Makers Lose Ground, and a Canal Opens',
       navLabel: 'Cloth and Suez',
       dates: '1780s to 1914 &nbsp;·&nbsp; Raw cotton, cheap cloth, handlooms, and the Suez Canal',
-      thesis: `Cheap machine-made cloth from Europe undercut the region's own makers. They kept working, but their share of the world's goods shrank. Then a canal and a cable put the region on the fastest route to Asia.`,
+      thesis: `Cheap machine-made cloth from Europe undercut the region's own makers. Many lost their work, and the region's share of the world's goods shrank. Then a canal and a cable put the region on the fastest route to Asia.`,
       parts: [
         {
           heading: 'Cotton out, cloth in',
@@ -294,14 +302,15 @@ module.exports = {
           ]
         },
         {
-          heading: 'Still making, a smaller share',
+          heading: 'Fewer makers, a smaller share',
           blocks: [
-            { p: `The region's makers did not stop. In the Syrian cities of Aleppo and Damascus, the number of <span class="kt">handlooms</span> held steady from <span class="num">1860</span> to <span class="num">1914</span>. A handloom is a loom worked by hand and foot, with no engine (<a href="#chapter-t5-4">Topic 5.4</a>).` },
-            { p: `What changed was the region's <span class="kt">share</span>. That is the part of all the world's manufactured goods made in one region. The region still made goods, but it made a smaller part of the world's total.` },
+            { p: `Many of the region's makers lost their work. A <span class="kt">handloom</span> is a loom worked by hand and foot, with no engine. By one estimate, the Syrian city of Aleppo had about 40,000 handlooms in the 1700s. From <span class="num">1838</span> to <span class="num">1850</span> it had about 5,000.` },
+            { p: `But the makers did not stop. In Aleppo and Damascus, the number of handlooms held steady from <span class="num">1860</span> to <span class="num">1914</span> (<a href="#chapter-t5-4">Topic 5.4</a>).` },
+            { p: `The region's <span class="kt">share</span> fell too. That is the part of all the world's manufactured goods made in one region. The region still made goods, but it made a much smaller part of the world's total.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Middle East stopped making goods. Its makers kept working. Its share of the world's manufacturing is what fell.`
+              html: `Do not write that the Middle East stopped making goods. Many makers did lose their work, and Aleppo's handlooms fell steeply before 1860. But others kept working, and their numbers held steady after 1860. The region's share of world manufacturing fell too.`
             } }
           ]
         },
@@ -315,7 +324,7 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: the Middle East kept making goods, but it made a smaller share of the world's total.`,
+                `In short: the Middle East kept making goods with fewer makers, and it made a smaller share of the world's total.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`,
                 `An optional College Board example: "Textile production in India and Egypt".`
               ]
@@ -367,8 +376,8 @@ module.exports = {
       },
       {
         category: 'Economic',
-        title: 'The region kept making goods, but its share of world manufacturing fell.',
-        body: `Egypt's crop monopolies paid for about 30 state cotton mills, and most had failed by the mid-1840s. In 1838 English cloth cost less in Egypt than Egypt's own mills paid to make it. Yet the handlooms of Aleppo and Damascus held steady from 1860 to 1914.`
+        title: 'The region kept making goods, but with fewer makers and a falling share of world manufacturing.',
+        body: `Egypt's crop monopolies paid for about 30 state cotton mills, and most had failed by the mid-1840s. In 1838 English cloth cost less in Egypt than Egypt's own mills paid to make it. Aleppo had about 40,000 handlooms in the 1700s and about 5,000 from 1838 to 1850. After 1860 the handlooms of Aleppo and Damascus held steady.`
       }
     ]
   }

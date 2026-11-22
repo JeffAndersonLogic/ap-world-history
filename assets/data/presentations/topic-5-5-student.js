@@ -388,7 +388,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "After",
-            "left": "Steam, England to America: about 12 days (crossing only, 1860s)",
+            "left": "Steam, England to America: about two weeks (crossing only, 1860s)",
             "right": "A message along a wire: minutes"
           },
           {
