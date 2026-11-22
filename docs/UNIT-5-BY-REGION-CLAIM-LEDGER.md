@@ -694,3 +694,27 @@ dates.
   1804. **FIXED:** "Slavery ended in Haiti through its revolution. Then it ended country by country, from Chile in 1823 to Brazil in 1888."
 - E6. Americas: KC-5.3.I.A first sentence and "liberalism" in KC-5.3.IV.A.i untaught (G7). **FIXED** with G7.
 - E7. Middle East: KC-5.1.IV claimed, but Suez and a coastal cable are not interior regions. **FIXED:** the Middle East no longer claims or quotes KC-5.1.IV (four other chapters teach it); its box "In short" no longer says "steamships and telegraphs joined far places".
+
+### Pass 2 (2026-11-22), seven fresh reviewers
+
+Letters continue after the 2026-11-16 passes (M to P here; Q is the CED and consistency reviewer
+for both units).
+
+**Reviewer N (history: Europe, East Asia), 6 findings.** Verified sound: every CED quotation; every
+cross-region link; Bismarck 1884 (GHDI); Elman 2004 on the Summer Palace and the navy; HSBC in 16
+countries by 1900; 62 percent women in Japan's private factories, 1900 (Tsurumi); Locke, the
+Declaration, de Gouges, Kant, Calas; railway figures (Mitchell); Bairoch shares; the 1866 tariff,
+Meiji reforms, Shimonoseki.
+
+- N1. Europe: "In February 1890 socialist candidates won ... The Reichstag did not renew the law,
+  and it ended that September" reads as vote causing non-renewal; the Reichstag rejected renewal
+  on 25 January 1890, before the 20 February election (GHDI). PENDING.
+- N2. Europe claims KC-5.1.III.A, quotes the Adam Smith cause, and never teaches it. PENDING.
+- N3. Europe claims KC-5.1.IV (railroads, steamships, telegraph, increased trade and migration),
+  teaches railways only, no trade or migration effect. PENDING.
+- N4. Europe claims KC-5.1.V.A (labor unions) and never mentions unions. PENDING.
+- N5. East Asia, Intellectual card: "only Japan kept at it" overstated; Qing Western learning
+  continued (Tongwen Guan, Jiangnan translations, students sent to Europe, Imperial University of
+  Peking, 1898, the one edict not repealed). PENDING.
+- N6. Europe, Social card: "Old ranks of birth fell in France and Russia"; Russia freed serfs but
+  kept the nobility as a legal estate until 1917. PENDING.

@@ -457,3 +457,47 @@ standard dates from Macau 1557 to Malacca 1641.
   overcorrects into a sole cause. **FIXED:** "Much of the fighting was over who would rule and tax the Deccan."
 - A8. East Asia quotes KC-4.1.V.B's first sentence only, without an ellipsis, and claims the code;
   South and Southeast Asia claims KC-4.2.II.B, teaching only the Indian Ocean export half. **FIXED:** East Asia no longer claims or quotes KC-4.1.V.B (four chapters teach it); South and Southeast Asia now teaches the household half of KC-4.2.II.B (Topic 4.4, Heywood).
+
+### Pass 2 (2026-11-22), seven fresh reviewers
+
+Pass 1 found about 75 items across both units, so a second pass was run. Letters continue from pass
+1 (H to J here; Q is the CED and consistency reviewer for both units).
+
+**Reviewer I (history: South and Southeast Asia, Middle East), 6 findings.** Verified sound: Akbar's
+1564 jizya repeal and Aurangzeb's 1679 return; Coen's 1614 letter (Colenbrander); Calico Acts 1700
+and 1721; the Nahmias press, 1493; malikâne, 1695; Alfonsine observations 1263 to 1272.
+
+- I1. Middle East: "From the late 1500s, foot soldiers with guns won more and more wars", and the
+  Technological card "Ottoman foot soldiers with guns won more and more wars"; read as Ottoman
+  victories, false (Long War stalemate 1593 to 1606; Vienna 1683; Karlowitz 1699). The point is that
+  battles turned on paid infantry, which needed cash (Pamuk, LSE GEHN). PENDING.
+- I2. Middle East: "Winning did not bring Morocco the gold" is too absolute: Morocco took plunder and
+  caravans of gold to Marrakesh in the 1590s; it never controlled the supply. PENDING.
+- I3. Middle East, story and glossary: the lateen "lets a ship sail against the wind"; no sail sails
+  straight into the wind; Topic 4.1 says "much closer to the wind than a square sail" (Campbell,
+  JWH 1995). PENDING.
+- I4. KC-4.1.II.A quotation: South and Southeast Asia drops "all of which", so the quoted sentence
+  no longer parses; both chapters replace the CED's dash with " ... ". Middle East prints "groups'"
+  with a straight apostrophe in KC-4.3.I.B. PENDING.
+- I5. Middle East mistake box: "Indian Ocean pilots mostly used the kamal and wooden quadrants";
+  quadrant use at sea is disputed (arXiv 2209.02371; King); Topic 4.1 names the kamal only. PENDING.
+- I6. South and Southeast Asia: "Mughal armies fought him from the 1660s"; fighting began in 1657
+  (Junnar and Ahmednagar raids; Nasiri Khan sent by Aurangzeb); the big campaigns came in the
+  1660s. PENDING.
+
+**Reviewer J (history: Sub-Saharan Africa, Europe), 5 findings.** Verified sound: every CED
+quotation; Afonso I's 1526 letter (Thornton 2023, p. 203); Mun's quotation; Fort Jesus 1593 to 1596
+and 1698 (UNESCO); all eleven cross-region links; shared facts with the other chapters.
+
+- J1. Europe, story and glossary: three Anglo-Dutch wars "largely over trade"; the third (1672 to
+  1674) followed the secret Treaty of Dover and was part of Louis XIV's Dutch War (Britannica,
+  "Dutch War"). Same in Topic 4.5 (story line 137, glossary line 156). PENDING.
+- J2. Sub-Saharan Africa, Technological card: "European power reached little farther" than the
+  forts contradicts the chapter's own Portuguese wars inland from Luanda against Ndongo. PENDING.
+- J3. Sub-Saharan Africa, story and Religious card: "Henrique became a bishop in 1518"; he was
+  named titular bishop of Utica in 1518 and consecrated about 1520 to 1521 (DACB). PENDING.
+- J4. Europe (and the Middle East chapter and both Intellectual cards): "In the 1270s Jewish
+  astronomers updated them for Alfonso X"; the work ran 1263 to 1272 (Library of Congress). PENDING.
+- J5. Sub-Saharan Africa (and the Americas chapter, Topic 4.6 line 275): "Several of the rebels
+  came from Kongo" states Thornton's reading as fact; the 1739 account says "the Kingdom of Angola"
+  and Portuguese speakers. PENDING.
