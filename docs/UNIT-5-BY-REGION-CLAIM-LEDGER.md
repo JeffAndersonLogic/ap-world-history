@@ -735,3 +735,15 @@ dates; Slater and Belper; Davar's mill; the Propaganda Movement, the Katipunan a
   to state borders), and the box "In short" ("some nationalists wanted their nation to have its own
   state") can read as contradicting the chapter's mistake box (the Propaganda writers sought equal
   rights inside Spain's empire). PENDING.
+
+**Reviewer Q (CED and consistency, all twelve chapters), Unit 5 items.**
+
+- Q7. East Asia, Intellectual card "only Japan kept at it" (same as N5); also the Religious card
+  generalizes Woren's argument to "In China". PENDING, with N5.
+- Q11. Unit 5 Middle East glossary: Mamluks "ruled Egypt until Napoleon's invasion" contradicts
+  Unit 4 (Ottoman Egypt from 1517); they kept real power under Ottoman governors. PENDING.
+- Q12. Europe, Social card "Old ranks of birth fell in France and Russia" (same as N6). PENDING,
+  with N6.
+- Q13. Britain and Europe box headings show "&quot;". **REJECTED:** an artifact of the review
+  packet's text extraction. The page escapes the quotation marks as `&quot;`, which the browser
+  shows as ordinary quotation marks; the extractor now decodes it.

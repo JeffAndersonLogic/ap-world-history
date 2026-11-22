@@ -501,3 +501,28 @@ and 1698 (UNESCO); all eleven cross-region links; shared facts with the other ch
 - J5. Sub-Saharan Africa (and the Americas chapter, Topic 4.6 line 275): "Several of the rebels
   came from Kongo" states Thornton's reading as fact; the 1739 account says "the Kingdom of Angola"
   and Portuguese speakers. PENDING.
+
+**Reviewer Q (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every box
+quotation is word for word apart from Q8; no optional example presented as required; all links.
+
+- Q1. Americas, "Where the silver went": promises "three reasons", numbers only "First", nests "two
+  reasons" inside it; a reader counts four. PENDING.
+- Q2. KC-4.1.III.B (Spanish voyages "dramatically increased European interest in transoceanic
+  travel and trade") is claimed in Americas, East Asia, Europe and South and Southeast Asia; none
+  states the effect. PENDING.
+- Q3. Middle East claims KC-4.1.IV and teaches only its regional-markets sentence (no silver flows,
+  no chartered monopoly companies). PENDING.
+- Q4. Europe: "Almost every tool on a European ship came from somewhere else" is contradicted by the
+  chapter's own new ship designs. PENDING.
+- Q5. East Asia mistake box: "Do not give a silver shortage as the cause of the Ming's fall"
+  overcorrects; should be "the only cause". PENDING.
+- Q6. East Asia, Shimabara: the heavy taxes were the Shimabara lord's (Matsukura); "a government
+  that was taking more power for itself" blurs the actor. PENDING.
+- Q8. KC-4.1.II.A dash printed as " ... " (same as I4). PENDING, with I4.
+- Q9. Sub-Saharan Africa, story and Social card: more women than men in West Central Africa stated
+  as settled; it is an estimate. PENDING.
+- Q10. Americas: "an epidemic killed the Inca emperor"; Huayna Capac's cause of death is probable,
+  not certain. PENDING.
+- Q14. Europe: "The most important was the potato" is an unsupported superlative (maize). PENDING.
+- Q15. East Asia and South and Southeast Asia claim KC-4.1.VI but cut its syncretism half and do
+  not teach it. PENDING.
