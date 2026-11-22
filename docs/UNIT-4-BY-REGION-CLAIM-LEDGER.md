@@ -436,3 +436,24 @@ Mamluks before 1509 (Oxford Research Encyclopedia); the 1538 siege; the slave-tr
   teaches. PENDING
 - D9. Sub-Saharan Africa: "In 1498 Vasco da Gama sailed around Africa and up its east coast"; he
   rounded the Cape in November 1497 and reached Malindi in April 1498. PENDING
+
+**Reviewer A (history: East Asia, South and Southeast Asia).** Verified sound: all 31 CED quotations;
+Morga (Stanley's 1868 Hakluyt translation); the 1635 Nagasaki order (Columbia); Coen 1614; and the
+standard dates from Macau 1557 to Malacca 1641.
+
+- A1. East Asia, mistake box (and Topic 4.5): "Silver imports did drop in the 1630s and 1640s" states
+  a disputed drop as settled; research had imports rising in the late 1630s, von Glahn's table puts
+  the fall in the early 1640s (Atwell, JWH 16:4, 2005). PENDING
+- A2. East Asia, How we know: the 1590s Canton and Spain ratios are Chuan Han-sheng's (1969), cited by
+  Flynn and Giráldez 2002, p. 392; von Glahn is credited there with the early-1500s ratios. PENDING
+- A3. East Asia: "In 1644 the Manchus conquered China" squeezes a conquest that ran to 1683. PENDING
+- A4. South and Southeast Asia, story in short: "From 1498 Portugal used warships and forts to tax";
+  forts and passes came from 1503 on. PENDING
+- A5. South and Southeast Asia (and Europe, Americas): silver dearer in China for one cause (B10).
+  PENDING
+- A6. South and Southeast Asia and Europe (and Topic 4.5): "In 1700 and 1721, England passed laws";
+  the 1721 Calico Act was Great Britain's. PENDING
+- A7. South and Southeast Asia, mistake box: "The war was over who would rule and tax the Deccan"
+  overcorrects into a sole cause. PENDING
+- A8. East Asia quotes KC-4.1.V.B's first sentence only, without an ellipsis, and claims the code;
+  South and Southeast Asia claims KC-4.2.II.B, teaching only the Indian Ocean export half. PENDING
