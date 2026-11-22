@@ -134,7 +134,7 @@ module.exports = {
           heading: 'Europe\'s rivals: spices and shipping',
           blocks: [
             { p: `The European companies fought each other too. The Dutch and English East India companies competed for the spice islands of Southeast Asia, and in <span class="num">1623</span> VOC officials on the island of Ambon arrested and executed ten English company men, along with nine Japanese soldiers in VOC service and a Portuguese man, accusing them, on confessions taken under torture, of plotting to seize the Dutch fort; historians still argue over whether any plot existed. The English called it the Amboyna massacre, and it embittered relations for decades.` },
-            { p: `At home, England and the Dutch Republic fought three wars at sea, in <span class="num">1652</span> to <span class="num">1654</span>, <span class="num">1665</span> to <span class="num">1667</span> and <span class="num">1672</span> to <span class="num">1674</span>, largely over trade and shipping. The Navigation Act of <span class="num">1651</span>, which shut Dutch ships out of England's trade, was one cause of the first. Mercantilism and the rivalry were the same story: if one country's gain is another's loss, trade is a kind of war.` },
+            { p: `At home, England and the Dutch Republic fought three wars at sea, in <span class="num">1652</span> to <span class="num">1654</span>, <span class="num">1665</span> to <span class="num">1667</span> and <span class="num">1672</span> to <span class="num">1674</span>. Trade and shipping drove the first two. In the third, England fought as France's ally in Louis XIV's attack on the Dutch Republic. The Navigation Act of <span class="num">1651</span>, which shut Dutch ships out of England's trade, was one cause of the first. Mercantilism and the rivalry were the same story: if one country's gain is another's loss, trade is a kind of war.` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
@@ -153,7 +153,7 @@ module.exports = {
         ['Diu, 1509', 'The sea battle in which the Portuguese defeated a fleet of Mamluk Egypt and Gujarat.'],
         ['Tondibi, 1591', 'The battle in which a Moroccan army with firearms defeated the Songhai Empire, after a dispute over gold and salt.'],
         ['Amboyna, 1623', 'The execution of English East India Company men by VOC officials on Ambon, in the rivalry over the spice islands.'],
-        ['Anglo-Dutch Wars', 'Wars at sea between England and the Dutch Republic; the first three, 1652 to 1674, were fought largely over trade and shipping (a fourth followed in 1780).']
+        ['Anglo-Dutch Wars', 'Wars at sea between England and the Dutch Republic; the first three ran from 1652 to 1674. Trade rivalry drove the first two; in the third, England fought as France\'s ally (a fourth followed in 1780).']
       ]
     },
 

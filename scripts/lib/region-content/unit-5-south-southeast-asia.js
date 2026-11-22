@@ -90,7 +90,7 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: India was one of the world's great makers in 1750. The College Board asks you to explain how its share of world manufacturing then fell.`,
+                `In short: Middle Eastern and Asian countries kept making goods, but their share of world manufacturing fell. India's cloth making is one optional example.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`,
                 `An optional College Board example: "Textile production in India and Egypt".`
               ]
@@ -259,11 +259,12 @@ module.exports = {
             } },
             { p: `These writers wanted people across many islands to see themselves as one people: Filipinos. That feeling is called <span class="kt">nationalism</span>. It is a sense that people who share a language, religion, social customs and territory form one nation. It is also loyalty to that nation.` },
             { p: `Nationalists often wanted their nation to have its own state, with its own borders. <a href="#r5-europe-nations">The Europe chapter</a> tells how nationalism helped join Italy and Germany into new states.` },
+            { p: `In the Philippines, the two groups wanted different things. The Propaganda writers asked for equal rights inside Spain's empire. The Katipunan fought for something more. It wanted the islands to become their own independent state.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: some nationalists wanted their nation to have its own state.`,
+                `In short: nationalists often linked their nation to a state with its own borders. In the Philippines, the Katipunan fought for that state. The Propaganda writers asked for equal rights inside Spain's empire instead.`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions."`,
                 `An optional College Board example: "Propaganda Movement in the Philippines".`
               ]

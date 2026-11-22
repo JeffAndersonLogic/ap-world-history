@@ -727,14 +727,14 @@ dates; Slater and Belper; Davar's mill; the Propaganda Movement, the Katipunan a
 
 - P1. Americas claims KC-5.1.I.B but quotes only its first sentence and never ties a machine to a
   fossil fuel (mills on water, coal for furnaces, oil as kerosene); KC-5.1.V.A is claimed without
-  its second sentence (workers' movements and parties), which is not taught. PENDING.
+  its second sentence (workers' movements and parties), which is not taught. **FIXED:** both Key Concepts kept and quoted whole. I.B taught: "Early American trains burned wood in their steam engines. By 1880 coal made up more than 90 percent of the fuel American railroads burned. In 1885 coal passed wood as the country's largest source of energy" (White, A History of the American Locomotive; US EIA). V.A taught: "The Knights of Labor was founded in 1869. It hoped that businesses owned by their own workers would one day replace wage work" (Britannica).
 - P2. South and Southeast Asia, box "In short": "The College Board asks you to explain how its
   [India's] share of world manufacturing then fell" makes an optional example (Indian textiles)
-  sound required; the Key Concept says "Middle Eastern and Asian countries". PENDING.
+  sound required; the Key Concept says "Middle Eastern and Asian countries". **FIXED:** "Middle Eastern and Asian countries kept making goods, but their share of world manufacturing fell. India's cloth making is one optional example."
 - P3. South and Southeast Asia: the Philippine case is never tied to KC-5.3.II.iii (nation linked
   to state borders), and the box "In short" ("some nationalists wanted their nation to have its own
   state") can read as contradicting the chapter's mistake box (the Propaganda writers sought equal
-  rights inside Spain's empire). PENDING.
+  rights inside Spain's empire). **FIXED:** new paragraph: the Propaganda writers asked for equal rights inside Spain's empire; the Katipunan wanted the islands to become their own independent state. Box "In short": "Nationalists often linked their nation to a state with its own borders. In the Philippines, the Katipunan fought for that state..."
 
 **Reviewer Q (CED and consistency, all twelve chapters), Unit 5 items.**
 

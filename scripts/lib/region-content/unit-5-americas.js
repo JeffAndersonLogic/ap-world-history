@@ -310,6 +310,7 @@ module.exports = {
           heading: 'Oil, rails, steel and power',
           blocks: [
             { p: `In <span class="num">1859</span> Edwin Drake struck oil at Titusville, Pennsylvania. For the rest of the 1800s, most oil became <span class="kt">kerosene</span> (a fuel for lamps). In <span class="num">1869</span> the first railroad across the United States was finished at Promontory Summit, Utah. Now trains could reach farms and mines in the <span class="kt">interior</span> (the middle of the continent), where no river went.` },
+            { p: `Coal and oil are called <span class="kt">fossil fuels</span>. Early American trains burned wood in their steam engines. By <span class="num">1880</span> coal made up more than 90 percent of the fuel American railroads burned. In <span class="num">1885</span> coal passed wood as the country's largest source of energy.` },
             { p: `After 1850 came new methods. Historians call this the second industrial revolution. <span class="kt">Steel</span> (iron with a small, measured amount of carbon) became cheap. Coal heated the furnaces that made it. The United States made about 69,000 tons of steel in <span class="num">1870</span> and about 10 million tons in <span class="num">1900</span>. In <span class="num">1882</span> Thomas Edison's Pearl Street Station in New York began selling electric power (<a href="#chapter-t5-5">Topic 5.5</a>).` },
             { p: `By <span class="num">1900</span> the United States made more of the world's manufactured goods than any other country.` }
           ]
@@ -332,18 +333,19 @@ module.exports = {
               html: `Riis wanted to shock readers into supporting reform. He chose his scenes for that purpose. So his photographs and counts are strong evidence of crowding. His opinions of the people in them are evidence of his own point of view.`
             } },
             { p: `Workers organized. The American Federation of Labor was founded in <span class="num">1886</span>, with Samuel Gompers as president. It joined <span class="kt">labor unions</span> of skilled workers. They wanted higher wages, shorter hours and better conditions (<a href="#chapter-t5-8">Topic 5.8</a>).` },
+            { p: `An older workers' group wanted a different kind of society. The Knights of Labor was founded in <span class="num">1869</span>. It hoped that businesses owned by their own workers would one day replace wage work.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: industry spread to the United States, bringing new fuels, unions and crowded cities.`,
+                `In short: industry spread to the United States, bringing coal and oil, unions and crowded cities.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
                 `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: The College Board says the "second industrial revolution" "led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions' share of global manufacturing during the first Industrial Revolution."`,
-                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages."`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society."`,
                 `<a href="#chapter-t5-9">Topic 5.9</a>: "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth."`
               ]
             } }

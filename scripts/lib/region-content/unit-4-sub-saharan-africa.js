@@ -146,7 +146,7 @@ module.exports = {
           heading: 'Kongo and its Christian king',
           blocks: [
             { p: `<b>Kongo</b> was then the strongest state in west-central Africa. Its king was baptized in <span class="num">1491</span>. His son <b>Afonso I</b> ruled from about <span class="num">1509</span> to the early 1540s. Afonso made Christianity the religion of the court.` },
-            { p: `Afonso asked Portugal for priests and teachers, and he sent young nobles to study there. His own son Henrique became a bishop in <span class="num">1518</span>. Later, Kongo artists cast brass crucifixes in their own style, with Kongo meanings.` },
+            { p: `Afonso asked Portugal for priests and teachers, and he sent young nobles to study there. In <span class="num">1518</span> the pope named Afonso's son Henrique a bishop. Later, Kongo artists cast brass crucifixes in their own style, with Kongo meanings.` },
             { p: `Trade made the king stronger. Imported goods came through him, and he gave them to nobles in return for their loyalty.` },
             { p: `The trade also took people. Kongo had slavery of its own. Afonso sold foreign war captives, and he ran a slave market in his capital. But custom protected free-born Kongo people from sale abroad.` },
             { p: `In <span class="num">1526</span> Afonso complained to Portugal's king. He wrote that thieves were seizing free people and selling them to Portuguese traders. In Luís Madureira's translation, they took "our native-born countrymen and the children of our nobles and vassals as well as relatives of ours."` },
@@ -205,12 +205,12 @@ module.exports = {
         {
           heading: 'What the trade did to the people who stayed',
           blocks: [
-            { p: `About two of every three captives carried across the Atlantic were male. European buyers paid more for young men. African sellers often kept women and children, whom African buyers valued. So parts of Africa were left with more women than men, especially West Central Africa.` },
+            { p: `About two of every three captives carried across the Atlantic were male. European buyers paid more for young men. African sellers often kept women and children, whom African buyers valued. Historians estimate that this left parts of Africa with more women than men, especially West Central Africa.` },
             { p: `Historians argue that this changed family life there. In their view, women did more of the farming, and more women and girls were enslaved inside Africa. Some argue that more men took several wives. This is called <span class="kt">polygyny</span>. Others find that evidence thin. Some regions lost people. States that sold captives grew richer.` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
-              html: `The Trans-Atlantic Slave Trade Database counts the men, women and children on many voyages. The family changes are built from those counts, observers' reports and later counts of Angola's people. So they are stated as arguments.`
+              html: `The Trans-Atlantic Slave Trade Database counts the men, women and children on many voyages. The imbalance and the family changes are worked out from those counts, observers' reports and later counts of Angola's people. So they are stated as estimates and arguments.`
             } },
             { note: {
               kind: 'cb',
@@ -333,7 +333,7 @@ module.exports = {
           blocks: [
             { p: `In the Americas, Africans, Indigenous Americans and Europeans lived side by side, usually because some were forced to. Their cultures mixed. New <span class="kt">creole languages</span> grew up, such as Haitian Creole and Papiamentu. Most of their words came from a European language. Much of their grammar and sound shows the influence of African languages. Exactly how they formed is still debated.` },
             { p: `Faith mixed too. In the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built <b>Vodou</b>. It joined West and Central African religions with Catholic saints. A faith that blends parts of different religions is called <span class="kt">syncretic</span>.` },
-            { p: `Kongo's Christianity crossed the ocean with its people. In <span class="num">1739</span> enslaved people rose up at Stono, in South Carolina. Several of the rebels came from Kongo. <a href="#r4-americas-resistance">The Americas chapter</a> tells that revolt.` },
+            { p: `Kongo's Christianity crossed the ocean with its people. In <span class="num">1739</span> enslaved people rose up at Stono, in South Carolina. A report written that year said some of the colony's enslaved people came from "the Kingdom of Angola" and spoke Portuguese. Historians read that as Kongo. So several of the rebels probably came from Kongo. <a href="#r4-americas-resistance">The Americas chapter</a> tells that revolt.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -381,12 +381,12 @@ module.exports = {
       {
         category: 'Religious',
         title: 'Christianity, Islam and new blended faiths all shaped the region',
-        body: `Kongo's king was baptized in 1491, and Afonso I's son Henrique became a bishop in 1518. In the 1700s, enslaved Africans in Saint-Domingue built Vodou from African religions and Catholic saints.`
+        body: `Kongo's king was baptized in 1491, and in 1518 the pope named Afonso I's son Henrique a bishop. In the 1700s, enslaved Africans in Saint-Domingue built Vodou from African religions and Catholic saints.`
       },
       {
         category: 'Social',
         title: 'The Atlantic trade changed who was enslaved and who was left behind',
-        body: `Household slavery went on beside the Atlantic trade. About two of every three Atlantic captives were male, so in parts of West Central Africa women came to outnumber men.`
+        body: `Household slavery went on beside the Atlantic trade. About two of every three Atlantic captives were male, so historians estimate that women came to outnumber men in parts of West Central Africa.`
       },
       {
         category: 'Intellectual',
@@ -396,7 +396,7 @@ module.exports = {
       {
         category: 'Technological',
         title: 'Guns won battles, and forts let Europeans hold parts of the coast',
-        body: `In 1591 a Moroccan army of about 4,000, many of them armed with guns, beat Songhai's larger army at Tondibi. Asante bought European guns as it rose around 1700. Forts such as Elmina (1482) held the shore, but European power reached little farther.`
+        body: `In 1591 a Moroccan army of about 4,000, many of them armed with guns, beat Songhai's larger army at Tondibi. Asante bought European guns as it rose around 1700. Forts such as Elmina (1482) held the shore. Portuguese armies pushed far inland in only a few places, such as Angola.`
       },
       {
         category: 'Economic',

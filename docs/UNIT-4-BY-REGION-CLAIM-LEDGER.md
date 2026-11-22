@@ -491,16 +491,16 @@ and 1698 (UNESCO); all eleven cross-region links; shared facts with the other ch
 
 - J1. Europe, story and glossary: three Anglo-Dutch wars "largely over trade"; the third (1672 to
   1674) followed the secret Treaty of Dover and was part of Louis XIV's Dutch War (Britannica,
-  "Dutch War"). Same in Topic 4.5 (story line 137, glossary line 156). PENDING.
+  "Dutch War"). Same in Topic 4.5 (story line 137, glossary line 156). **FIXED** in Europe: "The first two were fought largely over trade and shipping. In the third, England fought as France's ally in Louis XIV's attack on the Dutch" (glossary to match). Topic 4.5 story and glossary fixed to match.
 - J2. Sub-Saharan Africa, Technological card: "European power reached little farther" than the
-  forts contradicts the chapter's own Portuguese wars inland from Luanda against Ndongo. PENDING.
+  forts contradicts the chapter's own Portuguese wars inland from Luanda against Ndongo. **FIXED:** "Forts such as Elmina (1482) held the shore. Portuguese armies pushed far inland in only a few places, such as Angola."
 - J3. Sub-Saharan Africa, story and Religious card: "Henrique became a bishop in 1518"; he was
-  named titular bishop of Utica in 1518 and consecrated about 1520 to 1521 (DACB). PENDING.
+  named titular bishop of Utica in 1518 and consecrated about 1520 to 1521 (DACB). **FIXED** in the story and on the Religious card: "In 1518 the pope named Afonso's son Henrique a bishop."
 - J4. Europe (and the Middle East chapter and both Intellectual cards): "In the 1270s Jewish
-  astronomers updated them for Alfonso X"; the work ran 1263 to 1272 (Library of Congress). PENDING.
+  astronomers updated them for Alfonso X"; the work ran 1263 to 1272 (Library of Congress). **FIXED** in Europe (story and Intellectual card: "from 1263 to 1272"). Middle East part PENDING.
 - J5. Sub-Saharan Africa (and the Americas chapter, Topic 4.6 line 275): "Several of the rebels
   came from Kongo" states Thornton's reading as fact; the 1739 account says "the Kingdom of Angola"
-  and Portuguese speakers. PENDING.
+  and Portuguese speakers. **FIXED** in Sub-Saharan Africa: "A report written that year said some of the colony's enslaved people came from 'the Kingdom of Angola' and spoke Portuguese. Historians read that as Kongo. So several of the rebels probably came from Kongo." Topic 4.6 story and teacher note fixed to match. Americas part PENDING.
 
 **Reviewer Q (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every box
 quotation is word for word apart from Q8; no optional example presented as required; all links.
@@ -509,20 +509,28 @@ quotation is word for word apart from Q8; no optional example presented as requi
   reasons" inside it; a reader counts four. PENDING.
 - Q2. KC-4.1.III.B (Spanish voyages "dramatically increased European interest in transoceanic
   travel and trade") is claimed in Americas, East Asia, Europe and South and Southeast Asia; none
-  states the effect. PENDING.
+  states the effect. **FIXED** in Europe: "Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent voyages of their own." Other chapters PENDING.
 - Q3. Middle East claims KC-4.1.IV and teaches only its regional-markets sentence (no silver flows,
   no chartered monopoly companies). PENDING.
 - Q4. Europe: "Almost every tool on a European ship came from somewhere else" is contradicted by the
-  chapter's own new ship designs. PENDING.
+  chapter's own new ship designs. **FIXED:** "Many of the tools European sailors used came from somewhere else" (section thesis "Many of their tools").
 - Q5. East Asia mistake box: "Do not give a silver shortage as the cause of the Ming's fall"
   overcorrects; should be "the only cause". PENDING.
 - Q6. East Asia, Shimabara: the heavy taxes were the Shimabara lord's (Matsukura); "a government
   that was taking more power for itself" blurs the actor. PENDING.
 - Q8. KC-4.1.II.A dash printed as " ... " (same as I4). PENDING, with I4.
 - Q9. Sub-Saharan Africa, story and Social card: more women than men in West Central Africa stated
-  as settled; it is an estimate. PENDING.
+  as settled; it is an estimate. **FIXED:** "Historians estimate that this left parts of Africa with more women than men"; card and How we know box to match.
 - Q10. Americas: "an epidemic killed the Inca emperor"; Huayna Capac's cause of death is probable,
   not certain. PENDING.
-- Q14. Europe: "The most important was the potato" is an unsupported superlative (maize). PENDING.
+- Q14. Europe: "The most important was the potato" is an unsupported superlative (maize). **FIXED:** "Maize became a staple in parts of southern Europe. In the north the most important was the potato."
 - Q15. East Asia and South and Southeast Asia claim KC-4.1.VI but cut its syncretism half and do
   not teach it. PENDING.
+
+**Reviewer H (history: East Asia, the Americas): no supported defects.** Verified sound: all 36 CED
+quotations; optional examples; links; Morga 1609 (Blair and Robertson, vol. 16); the 1635 and 1639
+orders (Lu translation; Columbia Asia for Educators); Toledo's mit'a, about 14,000 men from 1578;
+the banners 75 percent Han in 1648; Chuan Han-sheng's ratios; the 1567 opening; the sweet potato;
+Shimabara; Ricci; 1679; Taiwan 1683; the Pueblo Revolt; the Jamaica treaties; Stono and the 1740
+law; Virginia 1662; Dutch Brazil; Palmares; Sahagún. (Reviewer Q's items in these two chapters
+stand on their own.)
