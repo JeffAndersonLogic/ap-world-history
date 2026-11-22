@@ -632,3 +632,65 @@ written here as PENDING, and pushed, before any fix.
   urbanization third. PENDING
 - Not verified by the reviewer: the Beinin and Madureira quotations, Bismarck's 1884 words, and
   "minutes" for the 1870 London to Bombay cable. To check.
+
+**Reviewer F (history: East Asia, South and Southeast Asia).** Verified sound: every CED quotation;
+Bairoch's shares; HSBC (1865, Hong Kong, Shanghai, London); Tongwen Guan 30 of 98; 62 percent women
+in private factories 1900 (Tsurumi); the 1815 and 1832 cloth figures (Lajpat Rai); the 1870 cable;
+Roy on handloom share; McKeown's counts; the Meiji, treaty and mill dates.
+
+- F1. South and Southeast Asia: "Its writers first asked for equal rights ... The revolution of 1896
+  went further" with "during a revolution ... Spain executed Rizal" makes Rizal read as a leader; the
+  Katipunan began the revolution, Rizal disowned it and was shot for rebellion on 30 December 1896.
+  PENDING
+- F2. East Asia, Intellectual card: "Japan made it national policy" contradicts the chapter's own 1898
+  Guangxu decree. PENDING
+- F3. South and Southeast Asia, Political card: "As the Mughal Empire broke up after 1750" reads as
+  the breakup beginning then (it began after 1707). PENDING
+- F4. East Asia: KC-5.1.I.C (specialization of labor) and KC-5.1.VI.B (middle-class women) claimed
+  and quoted, half taught (same as G7). PENDING
+- F5. South and Southeast Asia: KC-5.3.II.ii's government half ("harnessed by governments") not
+  taught. PENDING
+
+**Reviewer C (history: Britain, Europe).** Verified sound: every CED quotation; Bismarck's 1884
+words (GHDI); the Statute of Monopolies; Bairoch; Manchester; the 1851 census; cholera deaths;
+railway lengths; Witte, Otto, Benz, BASF, Bessemer; the 1890 vote; the insurance laws.
+
+- C1. Britain: "She asked for education and independence, not yet the vote" is false; Vindication ch.
+  9 says women "ought to have representatives"; and the chapter gives no British suffrage demand for
+  KC-5.3.IV.B. PENDING
+- C2. Europe, Religious card and section 01 box: "questioned religion's power over government, not
+  belief itself" overcorrects; deists rejected miracles and revelation, d'Holbach argued atheism (SEP,
+  "Enlightenment"). Same in Topic 5.1. PENDING
+- C3. Britain: the only transnational business example is Unilever "not formed until 1929"; Lever
+  Brothers itself made soap in Australia (1895) and the United States (1898) before 1900. PENDING
+- C4. Britain: KC-5.1.IV and the internal-combustion half of KC-5.1.I.B claimed, not taught (G6).
+  PENDING
+- C5. Europe: the Commune promised in the dates line and never told (G5). PENDING
+- C6. Britain: "In 1854 ... Snow argued that water carried it"; he argued it in 1849 and traced the
+  Broad Street pump in 1854. PENDING
+- C7. Britain: "A law of 1624 let the crown give an inventor a patent"; the statute banned most
+  monopolies and kept patents for inventions (G2 overlaps). PENDING
+- C8. Britain: "repealed them in 1824. Skilled workers then built lasting labor unions" drops the
+  1825 Act and squeezes decades (lasting national unions from 1851); contradicts Topic 5.8. PENDING
+- C9. Britain: farming third and towns fourth, the box the other way (G15a). PENDING
+
+**Reviewer E (history: Americas, Middle East).** Verified sound: every CED quotation; the Gülhane
+quotations (Inalcik, ed. Hurewitz 1975); Bolívar (Bertrand translation); Beinin's four causes
+(MERIP 1981); 55 million Europeans (Hatton and Williamson); Aleppo and Damascus handlooms (Pamuk and
+Williamson); Toussaint, May 1794; the wheat gap; Manhattan; Riis; Seneca Falls; abolition and Haiti
+dates.
+
+- E1. Middle East: "the first reforms answered lost wars against Russia and against Napoleon's army";
+  Selim's reforms began 1792 to 1793, before the 1798 invasion, and the French surrendered in 1801;
+  Topic 5.8 names Russia only. PENDING
+- E2. Middle East: Muhammad Ali "kept cheap British cloth out" against "In 1838 English cotton cloth
+  sold in Egypt for less than cloth from Egypt's own new mills"; the 1838 figures compare the English
+  price in Egypt with the Egyptian mills' cost (Overton 1971, via JEEH 2024); protection was a limit,
+  not a ban. Same in Topics 5.4 and 5.6. PENDING
+- E3. Americas, Religious card: faith and Hidalgo's rising (G9). PENDING
+- E4. Americas, story in short: "When Napoleon invaded Spain in 1808, most of Spanish America broke
+  away" squeezes 1808 to 1826. PENDING
+- E5. Americas, Social card: "from Chile in 1823" makes Chile first; Haiti ended slavery 1793 to
+  1804. PENDING
+- E6. Americas: KC-5.3.I.A first sentence and "liberalism" in KC-5.3.IV.A.i untaught (G7). PENDING
+- E7. Middle East: KC-5.1.IV claimed, but Suez and a coastal cable are not interior regions. PENDING
