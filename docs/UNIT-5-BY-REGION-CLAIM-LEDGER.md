@@ -597,3 +597,38 @@ box; six closing cards in one order; cross-region references written as phrases 
 Comparison reasoning process, and the CED rule holds; prompts ask comparative questions as Causation
 or Continuity and Change instead. **Deferred:** a locator map per chapter (Reyes, Okafor), pending the
 second panel.
+
+## Review loop after the plain-language pass (from 2026-11-22). Rule: run fresh passes until one is clean.
+
+Seven fresh reviewers a pass across both units (see the Unit 4 ledger for the brief). Findings are
+written here as PENDING, and pushed, before any fix.
+
+### Pass 1 (2026-11-22)
+
+**Reviewer G (CED and consistency, all twelve chapters), Unit 5 items:**
+
+- G2. Britain: the law factor narrowed to patents; the CED factor is legal protection of private
+  property in general. PENDING
+- G3. South and Southeast Asia, Social card: McKeown's departure counts given as people who "moved",
+  with no return hedge; the Chinese figure is Southeast Asia only. PENDING
+- G5. Europe, section 5 dates line promises "the Commune", which the chapter never tells. PENDING
+- G6. Britain claims and quotes KC-5.1.IV (railroads, steamships, telegraph, interiors, trade and
+  migration) but teaches one railway only. PENDING
+- G7. East Asia quotes KC-5.1.VI.B whole but teaches only working women; Americas claims KC-5.3.I.A
+  (empiricism, religion) and KC-5.3.IV.A.i (democracy, liberalism) beyond what it teaches. PENDING
+- G8. East Asia, Technological card: "Both states bought Western machines and hired foreign experts"
+  is supported for Japan only. PENDING
+- G9. Americas, Religious card: "Faith fed ... the first rising in Mexico"; the chapter shows only
+  that Hidalgo was a priest. PENDING
+- G11. Britain, section 5 dates line: "Two German writers in London predicted"; in 1848 Marx wrote in
+  Brussels and the Manifesto was printed in London. PENDING
+- G12. Britain and Europe: "&quot;" in two box labels. REJECTED: an artifact of the review packet's
+  text extraction; the page renders a quotation mark (the label is escaped once, correctly).
+- G13. Britain, Religious card: faith as the sole driver of abolition; the story says faith and new
+  ideas about rights. PENDING
+- G14. Europe, Social card: "Old ranks of birth and sex ... some of them fell" can be read to include
+  sex. PENDING
+- G15a. Britain: the story numbers farming third and towns fourth; the CED and the box list
+  urbanization third. PENDING
+- Not verified by the reviewer: the Beinin and Madureira quotations, Bismarck's 1884 words, and
+  "minutes" for the 1870 London to Bombay cable. To check.

@@ -355,3 +355,30 @@ African Company 1672, Mombasa sacked 1505 and 1528, Magellan's landing 1521 and 
 the Americas chapter (kept in South and Southeast Asia), the 1494 to 1696 Pueblo and Palmares detail,
 Matteo Ricci 1601 (East Asia keeps it), Ptolemy, Murad IV's tobacco ban, Shivaji 1664, Makassar 1667 to
 1669. Ambon now lives only in Europe, which South and Southeast Asia links.
+
+## Review loop after the plain-language pass (from 2026-11-22). Rule: run fresh passes until one is clean.
+
+Seven fresh reviewers a pass across both units: six history reviewers (two chapters each, web
+sources) and one CED, readability and consistency reviewer across all twelve chapters. Brief: the
+course's review template adapted for regional chapters. Findings are written here as PENDING, and
+pushed, before any fix.
+
+### Pass 1 (2026-11-22)
+
+**Reviewer G (CED and consistency, all twelve chapters), Unit 4 items:**
+
+- G1. East Asia, Political card: "After 1639 only the Dutch could trade in Japan" contradicts the
+  chapter's own Chinese merchants at Nagasaki. PENDING
+- G4. Americas, story in short: "Spain forced Indigenous men to work its silver mines" generalizes
+  Potosí's mit'a to all mining (Zacatecas relied largely on paid labor). PENDING
+- G7. Europe claims KC-4.2 (environmental processes not taught); Sub-Saharan Africa lists KC-4.2
+  but neither quotes nor teaches it. PENDING
+- G10. Europe, Argue it and section 2 lead: "kings and queens" charter companies, but the Dutch
+  Republic chartered the VOC. PENDING
+- G15b. Middle East, section 4 box: the Morocco and Songhai example stands without its Key Concept
+  (quoted only in section 2). PENDING
+- G15c. Europe and Middle East: Zacuto's tables "grew out of" Muslim and Jewish astronomy in Toledo;
+  the Alfonsine tables were compiled largely by Jewish and Christian scholars on the Toledan Tables.
+  PENDING (reviewer could not open a source)
+- Not verified by the reviewer: the slave-trade figures (278,000 in the 1500s; more than 2.5 million
+  1701 to 1750) and the Morga 1609 quotation. To check.
