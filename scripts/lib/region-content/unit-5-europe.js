@@ -4,18 +4,35 @@
  * Unit 5 by region: Europe (the Continent and Russia).
  * One continuous story of continental Europe from 1750 to 1900, told in five sections: the
  * Enlightenment's new answer to "by what right?" (KC-5.3.I.A, KC-5.3.I), the French Revolution,
- * its declaration and its nation in arms (KC-5.3, KC-5.3.I.B, KC-5.3.IV.B, KC-5.3.II.ii), the
+ * its declaration and its nation in arms (KC-5.3, KC-5.3.I.B, KC-5.3.II.ii, KC-5.3.IV.B), the
  * liberals of 1830 and 1848, the end of serfdom and the unification of Italy and Germany
- * (KC-5.3.IV.A.i, KC-5.3.I.C, KC-5.3.II.i, KC-5.3.II.iii), industry crossing the Channel to
- * Belgium, the German states and Russia, with the second industrial revolution and the tariff
- * story (KC-5.1.I.D, KC-5.1.I.E, KC-5.1.I.B, KC-5.1.IV, KC-5.1.III.A), and Marx's party and
- * Bismarck's answer to it (KC-5.3.IV.A.ii, KC-5.1.V.A, KC-5.1.V.D). Facts come from the Topic
- * 5.1, 5.2, 5.4, 5.5, 5.7 and 5.8 chapters and their claim ledgers, keeping their narrowings
- * (the Enlightenment not against religion; the ideas came before the revolutions but did not
- * cause them alone; Bismarck's words as the record reports them; no communist revolution won
- * before 1900). Britain has its own chapter. The Balkans are told with the Ottoman Empire in the
- * Middle East chapter, because that is the empire they left.
+ * (KC-5.3.IV.A.i, KC-5.3.I.C, KC-5.3.II.i, KC-5.3.II.iii), industry spreading to Belgium, the
+ * German states and Russia, with the second industrial revolution and the tariff story
+ * (KC-5.1.I.D, KC-5.1.I.B, KC-5.1.I.E, KC-5.1.IV, KC-5.1.III.A), and Marx's party and Bismarck's
+ * answer to it (KC-5.3.IV.A.ii, KC-5.1.V.A, KC-5.1.V.D). Facts come from the Topic 5.1, 5.2, 5.4,
+ * 5.5, 5.7 and 5.8 chapters and their claim ledgers, keeping their narrowings (the Enlightenment
+ * not against religion; the ideas came before the revolutions but were not their only cause;
+ * Seraing "in what is today Belgium"; the Manifesto's first section, not its first line;
+ * Germany's two 1879 tariffs for two reasons; Alexander II's words as reported; Bismarck's motive
+ * "in part"; no Marxist revolution won before 1900). Britain has its own chapter. The Balkans are
+ * told with the Ottoman Empire in the Middle East chapter, because that is the empire they left.
+ *
+ * Plain-language and accuracy pass (2026-11-21, after the Unit 5 baseline panel): sentences cut
+ * to one idea each and definitions moved out from between commas; the College Board's words
+ * moved out of the story into one "What the College Board says" box per section (an "In short"
+ * line, each Key Concept sentence whole or cut with " ... ", each optional example labelled),
+ * quoted from scripts/lib/ced-source/unit-5.js; a "The story in short" list; a "How we know" box
+ * (Alexander II's reported words); six closing cards, one per side. Four claims added or sharpened
+ * on the panel's findings: the Civil Code of 1804 (the Napoleonic Code) named as part of the law
+ * Napoleon's armies carried; the Anti-Socialist Law of 1878 banned socialist groups, meetings and
+ * newspapers but not socialist candidates for the Reichstag; the Bessemer process (1856, from Topic
+ * 5.5) named as the new steel method; and the Russian state's part in industry under Sergei Witte,
+ * finance minister 1892 to 1903 (foreign loans for railways and industry). The Enlightenment mistake
+ * box now warns against a single cause, not against the causal claim. See the "Plain-language and
+ * accuracy pass (2026-11-21)" section of docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md.
  */
+
+const CB = 'What the College Board says';
 
 module.exports = {
   topicKey: 'r5-europe',
@@ -23,7 +40,14 @@ module.exports = {
   unit: '5',
   region: 'Europe',
   titleHtml: '<em>Europe</em>, the Continent and Russia',
-  deck: `From 1750 to 1900, the European continent was remade twice: first by writers who asked what gives a ruler the right to rule, and by the revolution in France that followed, and then by factories, railways and the workers' parties they produced. Follow both, from Paris to the Ruhr to the coal country of southern Russia.`,
+  deck: `From 1750 to 1900, the European continent was remade twice. First came new ideas about who has the right to rule, and a revolution in France. Then came factories, railways and workers' parties. Follow both, from Paris to the coal country of the southern Russian Empire.`,
+  inShort: [
+    `Around 1750, writers began to ask what gives a king the right to rule.`,
+    `In 1789 France's revolution gave power to the nation, and Napoleon's armies carried its laws abroad.`,
+    `In the 1800s liberals demanded constitutions, rulers freed the serfs, and Italy and Germany were unified.`,
+    `Industry spread from Britain to Belgium, the German states and later Russia, following coal and railways.`,
+    `Marx's ideas shaped Germany's workers' party, and Bismarck answered it with bans and with insurance.`
+  ],
   topics: ['5.1', '5.2', '5.4', '5.5', '5.7', '5.8'],
   ced: [
     'KC-5.3.I',
@@ -55,19 +79,21 @@ module.exports = {
       name: 'By What Right?',
       navLabel: 'The Enlightenment',
       dates: '1687 to 1784 &nbsp;·&nbsp; Reason, rights, and the people',
-      thesis: `In 1750 most of Europe's rulers said their power came from God. A group of writers asked every old authority what gave it the right to rule, and answered with reason, natural rights and the consent of the people.`,
+      thesis: `In 1750 most rulers said their power came from God. Writers began to ask what gave any ruler the right to rule.`,
       parts: [
         {
           heading: 'The old answer',
           blocks: [
-            { p: `In 1750 a European state belonged, in its rulers' telling, to the king, because God had put him there: <span class="kt">divine right</span>. In most countries one church was the official church, and the law favored it over every other. Nobles were born into privileges, such as freedom from some taxes, and across much of central and eastern Europe peasants were <span class="kt">serfs</span>, bound to work their lord's land.` }
+            { p: `In 1750 most European kings said that God had given them their power: <span class="kt">divine right</span>. In most countries one church was the official church, and the law favored it over every other. Nobles were born with special rights (privileges), such as freedom from some taxes. In much of central and eastern Europe, peasants were <span class="kt">serfs</span>, bound to work their lord's land.` }
           ]
         },
         {
           heading: 'Reason, first for nature, then for people',
           blocks: [
-            { p: `In <span class="num">1687</span> the English scientist Isaac Newton showed that a few laws of motion and gravity, worked out with mathematics, explained both the planets and a falling apple. Many readers took the lesson that the world runs by laws a human mind can discover. Then they turned the same method on people. In <span class="num">1689</span> the English philosopher John Locke argued that people are born with <span class="kt">natural rights</span> to their "lives, liberties and estates," and that government is a <span class="kt">social contract</span>: no one may be "subjected to the political power of another, without his own consent."` },
-            { p: `French writers carried the questions further. Montesquieu argued in <span class="num">1748</span> that liberty is safest when the powers to make laws, carry them out and judge are held by different people, the <span class="kt">separation of powers</span>. Jean-Jacques Rousseau opened the first chapter of The Social Contract (<span class="num">1762</span>) with "Man is born free; and everywhere he is in chains." Voltaire campaigned for Jean Calas, a Protestant executed in <span class="num">1762</span> for killing his son to stop him from becoming a Catholic, a crime he most likely did not commit, and argued for <span class="kt">religious toleration</span>. In the College Board's words, these thinkers "reexamined the role that religion played in public life and emphasized the importance of reason."` },
+            { p: `In <span class="num">1687</span> the English scientist Isaac Newton published laws of motion and gravity that explained both the planets and a falling apple. Many readers took a lesson: the world runs by laws that a human mind can discover.` },
+            { p: `Then writers turned the same method on people. In <span class="num">1689</span> the English philosopher John Locke argued that people are born with <span class="kt">natural rights</span>. These are rights to their "lives, liberties and estates" (property). Government, he said, rests on a <span class="kt">social contract</span>: people accept it so that it will protect their rights. No one may be "subjected to the political power of another, without his own consent."` },
+            { p: `French writers pushed the questions further. In <span class="num">1748</span> Montesquieu argued for the <span class="kt">separation of powers</span>. One group makes the laws, another carries them out, and a third judges. Liberty, he said, is safest when power is divided.` },
+            { p: `Voltaire fought for <span class="kt">religious toleration</span> (freedom to hold any faith without punishment). In <span class="num">1762</span> a French court executed a Protestant named Jean Calas for killing his son to stop him from becoming a Catholic. Calas most likely did not commit the crime, and Voltaire campaigned to clear his name.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -78,13 +104,22 @@ module.exports = {
         {
           heading: 'The ideas travel',
           blocks: [
-            { p: `From <span class="num">1751</span> to <span class="num">1772</span>, Denis Diderot and his partners published the Encyclopédie in Paris, which tried to explain everything by reason. The French government banned it in <span class="num">1759</span>, and it was printed anyway. The ideas also traveled in newspapers, in letters, and in the Paris conversation gatherings called <span class="kt">salons</span>, often run by women. In <span class="num">1784</span> the German philosopher Immanuel Kant summed up the attitude: "Dare to know." The College Board's words are that Enlightenment thought "often preceded revolutions and rebellions against existing governments" (<a href="#chapter-t5-1">Topic 5.1</a>).` }
+            { p: `From <span class="num">1751</span> to <span class="num">1772</span>, Denis Diderot and his partners published the Encyclopédie in Paris. It tried to explain everything by reason. The ideas also traveled in letters and in <span class="kt">salons</span>. Salons were conversation gatherings in Paris homes, often run by women.` },
+            { p: `In <span class="num">1784</span> the German philosopher Immanuel Kant summed it up: "Dare to know." Questions like these often came before revolts against kings (<a href="#chapter-t5-1">Topic 5.1</a>).` },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: Enlightenment thinkers used reason to question old authority, and their ideas often came before revolutions.`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments."`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Divine right', `The claim that a king's power comes from God, so no one may question or remove him.`],
-        ['Natural rights', `Rights people are born with, such as life, liberty and property, which no government gives or may take.`],
+        ['Natural rights', `Rights people are born with, such as life, liberty and property. No government gives them or may take them.`],
         ['Social contract', `The idea that people accept a government so that it will protect their rights.`],
         ['Separation of powers', `Dividing the powers to make laws, carry them out and judge, so no one holds them all.`]
       ]
@@ -98,39 +133,58 @@ module.exports = {
       name: 'France Remakes Itself',
       navLabel: 'French Revolution',
       dates: '1788 to 1815 &nbsp;·&nbsp; Debt, a declaration, the Terror, and Napoleon',
-      thesis: `A nearly bankrupt king called an assembly to raise taxes, and its commoners took power in the name of the nation. France wrote down rights, ended its monarchy, and then fell to a general who carried its laws across Europe.`,
+      thesis: `A nearly bankrupt king called an assembly to raise taxes, and its commoners took power. France wrote down rights and ended its monarchy. Then a general took over and carried its laws abroad.`,
       parts: [
         {
-          heading: 'The bill comes due',
+          heading: 'Debt and bread',
           blocks: [
-            { p: `France had spent heavily helping the Americans win their revolution (<a href="#chapter-r5-americas">the Americas</a>), on top of older war debts, and by <span class="num">1788</span> King Louis XVI's government was nearly bankrupt. To raise taxes, he called the <span class="kt">Estates-General</span>, an assembly of the clergy, the nobles and everyone else, which had not met since <span class="num">1614</span>. The clergy and nobles paid little in taxes; the <span class="kt">Third Estate</span>, most of the people, paid most of them, and after a bad harvest in <span class="num">1788</span> the price of bread soared. In June <span class="num">1789</span> the Third Estate declared itself the National Assembly, and on 14 July a Paris crowd stormed the Bastille, a royal fortress, to seize its gunpowder.` }
+            { p: `France had spent heavily to help the Americans win their revolution. <a href="#r5-americas-united-states">The Americas chapter</a> tells that war. Older war debts added to the cost. By <span class="num">1788</span> King Louis XVI's government was nearly bankrupt.` },
+            { p: `To raise taxes, the king called the <span class="kt">Estates-General</span>. This old assembly had three parts: the clergy, the nobles and everyone else. The clergy and nobles paid little in taxes. The <span class="kt">Third Estate</span> (most of the people) paid most of them. After a bad harvest in <span class="num">1788</span>, the price of bread soared.` },
+            { p: `In June <span class="num">1789</span> the Third Estate declared itself the National Assembly. On 14 July a Paris crowd stormed the Bastille (a royal fortress) to seize its gunpowder.` }
           ]
         },
         {
           heading: 'The words',
           blocks: [
-            { p: `In August <span class="num">1789</span> the Assembly ended the nobles' special privileges and adopted the Declaration of the Rights of Man and of the Citizen. Its first article: "Men are born and remain free and equal in rights." Its third: "The principle of all sovereignty resides essentially in the nation." The College Board names this declaration among the "revolutionary documents" through which Enlightenment ideas "influenced resistance to existing political authority" (<a href="#chapter-t5-2">Topic 5.2</a>).` },
-            { p: `The words were wider than the men who wrote them meant. In <span class="num">1791</span> Olympe de Gouges rewrote the declaration as the Declaration of the Rights of Woman and of the Female Citizen: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in <span class="num">1793</span>. The College Board lists her declaration as an optional example of the demands that "challenged political and gender hierarchies."` }
+            { p: `In August <span class="num">1789</span> the Assembly ended the nobles' special privileges. It adopted the Declaration of the Rights of Man and of the Citizen. Article 1 says: "Men are born and remain free and equal in rights."` },
+            { p: `Article 3 says: "The principle of all sovereignty resides essentially in the nation." <span class="kt">Sovereignty</span> (the highest power in a state) belonged to the nation, not the king.` },
+            { p: `The words reached further than the men who wrote them meant. In <span class="num">1791</span> Olympe de Gouges rewrote the declaration for women. Her Declaration of the Rights of Woman and of the Female Citizen said: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in <span class="num">1793</span>.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not give the Enlightenment as the only cause of the revolution. Its ideas gave the revolutionaries their words. Debt, taxes, privilege and the price of bread mattered too. Name more than one cause.`
+            } }
           ]
         },
         {
           heading: 'A republic, a nation in arms, an emperor',
           blocks: [
-            { p: `France abolished its monarchy in <span class="num">1792</span> and executed the king in January <span class="num">1793</span>. At war with much of Europe, the government ordered in <span class="num">1793</span> that "all Frenchmen are in permanent requisition for the service of the armies": young men would fight, married men make weapons, women make tents and work in hospitals. Here a government used loyalty to the <span class="kt">nation</span>, what the College Board calls a "new sense of commonality" that was "sometimes harnessed by governments to foster a sense of unity." Afraid of enemies at home, it also began the Terror (<span class="num">1793</span> to <span class="num">1794</span>), killing thousands. France abolished slavery in its colonies in <span class="num">1794</span>.` },
-            { p: `In <span class="num">1799</span> the general Napoleon Bonaparte took power, and in <span class="num">1804</span> he crowned himself emperor. He brought back slavery in some French colonies, such as Guadeloupe, in <span class="num">1802</span>. His armies carried the revolution's laws, such as the end of noble privilege, across Europe, and also made many Europeans hate French rule. In <span class="num">1808</span> he invaded Spain, which gave Spanish America's colonists their chance to break away (<a href="#chapter-r5-americas">the Americas</a>).` },
+            { p: `France ended its monarchy in <span class="num">1792</span> and became a <span class="kt">republic</span> (a state with no king). It executed the king in January <span class="num">1793</span>.` },
+            { p: `At war with much of Europe, the government ordered in <span class="num">1793</span> that "all Frenchmen are in permanent requisition for the service of the armies." Young men would fight, married men would make weapons, and women would make tents and work in hospitals. The government was using the people's loyalty to the nation to fight a war.` },
+            { p: `This loyalty is called <span class="kt">nationalism</span>. Nationalism is a sense that people who share a language, religion, social customs and territory form one nation, and loyalty to that nation.` },
+            { p: `Afraid of enemies at home, the government also began the Terror (<span class="num">1793</span> to <span class="num">1794</span>), killing thousands. In <span class="num">1794</span> France abolished slavery in its colonies. Enslaved people in its colony of Saint-Domingue had already risen up in <span class="num">1791</span>, as <a href="#r5-americas-haiti">the Americas chapter</a> tells.` },
+            { p: `In <span class="num">1799</span> the general Napoleon Bonaparte took power. In <span class="num">1802</span> he brought slavery back in some French colonies, such as Guadeloupe, and in <span class="num">1804</span> he crowned himself emperor.` },
+            { p: `That year France also got a new <span class="kt">Civil Code</span> (the Napoleonic Code). It wrote some of the revolution's changes into law, such as the end of noble privilege. Napoleon's armies carried the revolution's laws, this code among them, across Europe. They also made many Europeans hate French rule.` },
+            { p: `In <span class="num">1808</span> Napoleon invaded Spain. That gave Spanish America's colonists their chance to break away, which <a href="#r5-americas-spanish-america">the Americas chapter</a> tells.` },
             { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not write that the Enlightenment caused the revolution. The ideas gave revolutionaries their words, but debt, taxes, privilege and the price of bread caused it too. Name more than one cause.`
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: France's revolution put Enlightenment ideas into law and used the people's loyalty to the nation.`,
+                `<a href="#chapter-t5-2">Topic 5.2</a>: "The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world."`,
+                `<a href="#chapter-t5-2">Topic 5.2</a>: "The ideas of Enlightenment philosophers, as reflected in revolutionary documents ... including ... the French “Declaration of the Rights of Man and of the Citizen” during the French Revolution ... influenced resistance to existing political authority, often in pursuit of independence and democratic ideals."`,
+                `<a href="#chapter-t5-2">Topic 5.2</a>: "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Demands for women's suffrage and an emergent feminism challenged political and gender hierarchies."`,
+                `An optional College Board example: "Olympe de Gouges's Declaration of the Rights of Woman and of the Female Citizen".`
+              ]
             } }
           ]
         }
       ],
       terms: [
-        ['Estates-General', `France's old assembly of clergy, nobles and commoners, called in 1788 for the first time since 1614.`],
+        ['Estates-General', `France's old assembly of clergy, nobles and commoners. The king called it in 1788 for the first time since 1614.`],
         ['Third Estate', `Everyone in France who was not clergy or noble: most of the people.`],
-        ['Sovereignty', `The highest power in a state.`],
-        ['The Terror', `The years 1793 to 1794, when France's revolutionary government executed thousands it called enemies.`]
+        ['Nationalism', `A sense that people who share a language, religion, social customs and territory form one nation, and loyalty to that nation.`]
       ]
     },
 
@@ -142,38 +196,57 @@ module.exports = {
       name: 'Liberals, Serfs, and Nations',
       navLabel: 'Nations',
       dates: '1830 to 1871 &nbsp;·&nbsp; 1848, the end of serfdom, Italy and Germany',
-      thesis: `After Napoleon fell, kings came back, but the revolution's ideas did not go away. Liberals rose in 1830 and 1848, rulers freed the serfs, and nationalists joined Italy and Germany into new states.`,
+      thesis: `After Napoleon, kings came back, but the revolution's ideas stayed. Liberals rose up, rulers freed the serfs, and nationalists built Italy and Germany.`,
       parts: [
         {
           heading: '1830 and 1848',
           blocks: [
-            { p: `The revolutions left new answers to how a country should be run. <span class="kt">Liberalism</span> held that a written constitution and an elected parliament should limit the government and protect each person's rights, such as a free press; many liberals still wanted only men with property to vote. <span class="kt">Democracy</span> pushed for the vote to reach all men. In the College Board's words, "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism."` },
-            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>; in 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds demanded constitutions, parliaments and wider voting. In <span class="num">1848</span> France gave the vote to all adult men, and France ended slavery in its colonies for good. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
+            { p: `The revolutions left new answers to an old question: how should a country be run? <span class="kt">Liberals</span> wanted a <span class="kt">constitution</span> (basic laws that even the government must follow). They wanted an elected <span class="kt">parliament</span> (a lawmaking assembly) to limit the government.` },
+            { p: `They wanted rights such as a free press protected, but many wanted only men with property to vote. <span class="kt">Democracy</span> (rule by the people) pushed for the vote to reach all men.` },
+            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>. In 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds demanded constitutions and wider <span class="kt">suffrage</span> (the right to vote). That year France gave the vote to all adult men and ended slavery in its colonies for good. Most of the uprisings were crushed within two years, but the demands did not go away.` }
           ]
         },
         {
           heading: 'The end of serfdom',
           blocks: [
-            { p: `In <span class="num">1848</span> the Austrian Empire freed its peasants from the forced labor they owed their lords. In <span class="num">1861</span> Tsar Alexander II of Russia freed more than 20 million serfs. He had reportedly told Russian nobles in <span class="num">1856</span> that it was better to end serfdom "from above" than to wait for it to end "from below," and Russia's defeat in the Crimean War pushed him too. The freed serfs had to pay for their land over many years. The College Board counts "the end of serfdom" among the expansions of rights of this period (<a href="#chapter-t5-1">Topic 5.1</a>).` },
+            { p: `In <span class="num">1848</span> the Austrian Empire freed its peasants from the forced labor they owed their lords. In <span class="num">1861</span> Tsar Alexander II of Russia freed more than 20 million serfs. In <span class="num">1856</span> he had reportedly told Russian nobles that it was better to end serfdom "from above" than to wait for it to end "from below." He meant that the government should end it before the serfs ended it themselves.` },
+            { p: `Russia's defeat in the Crimean War pushed him too. The freed serfs had to pay for their land over many years.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: "reportedly"',
+              html: `Alexander's words come from reports of his speech to the nobles of Moscow in March 1856. Historians quote them as his reported words, so write that he reportedly said them.`
+            } },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that every expansion of rights came from reformers below. Some came from revolutions; some came from rulers like Alexander II, who feared what would happen if they did not act.`
+              html: `Do not write that every expansion of rights was won by ordinary people pushing up. Some came from rulers like Alexander II, who feared what would happen if they did not act.`
             } }
           ]
         },
         {
           heading: 'Nationalism joins states',
           blocks: [
-            { p: `<span class="kt">Nationalism</span> put loyalty to the nation, a people who shared a language, customs and a homeland, above loyalty to a king or an empire. Italy was split into several states, some ruled by Austria. Count Cavour, chief minister of the Italian kingdom of Piedmont-Sardinia, and the soldier Giuseppe Garibaldi, whose volunteers took Sicily and Naples in <span class="num">1860</span>, joined most of Italy into one kingdom in <span class="num">1861</span>; Rome was added in <span class="num">1870</span>.` },
-            { p: `Germany was split into more than thirty states. In <span class="num">1848</span> German liberals met at Frankfurt to unite them under an elected parliament, and failed. In <span class="num">1862</span> Otto von Bismarck, chief minister of Prussia, the largest German state, told its lawmakers that the great questions were decided not "by speeches and majority resolutions" but "by iron and blood." After wars against Denmark, Austria and France, the German Empire was proclaimed on 18 January <span class="num">1871</span>, in the Hall of Mirrors at Versailles. These are the College Board's nationalists who "sought unification of fragmented regions" (<a href="#chapter-t5-2">Topic 5.2</a>).` }
+            { p: `Nationalism could also join small states into one: <span class="kt">unification</span>. Italy was split into several states, some ruled by Austria. Count Cavour was chief minister of the Italian kingdom of Piedmont-Sardinia. The soldier Giuseppe Garibaldi led volunteers who took Sicily and Naples in <span class="num">1860</span>. Nationalists like these joined most of Italy into one kingdom in <span class="num">1861</span>, and Rome was added in <span class="num">1870</span>.` },
+            { p: `Germany was split into more than thirty states. In <span class="num">1848</span> German liberals met at Frankfurt to unite them under an elected parliament, and failed. In <span class="num">1862</span> Otto von Bismarck, chief minister of Prussia (the largest German state), told its lawmakers something different. Great questions were decided not "by speeches and majority resolutions" but "by iron and blood." He meant armies and war.` },
+            { p: `After wars against Denmark, Austria and France, the German Empire was proclaimed on 18 January <span class="num">1871</span> at Versailles. Nationalism also pulled peoples out of empires. <a href="#r5-middle-east-nations">The Middle East chapter</a> tells how Balkan peoples left the Ottoman Empire.` },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: Anger at kings produced new ideologies, reforms widened rights, and nationalists joined divided lands.`,
+                `<a href="#chapter-t5-2">Topic 5.2</a>: "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Nationalism also became a major force shaping the historical development of states and empires."`,
+                `<a href="#chapter-t5-2">Topic 5.2</a>: "Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions."`,
+                `An optional College Board example: "German and Italian unifications".`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Liberalism', `In the 1800s, the belief that a constitution and an elected parliament should limit government and protect individual rights.`],
-        ['Democracy', `Rule by the people; in the 1800s, the push to give all men the vote.`],
-        ['Nationalism', `Loyalty to a nation, a people who share a language, customs and homeland, above a king or an empire.`],
+        ['Liberalism', `In the 1800s, the belief that a constitution and an elected parliament should limit government and protect each person's rights.`],
+        ['Suffrage', `The right to vote.`],
         ['Unification', `Joining several states into one.`]
       ]
     },
@@ -183,41 +256,61 @@ module.exports = {
       id: 'industry',
       num: '04',
       accent: 'oxide',
-      name: 'Industry Crosses the Channel',
+      name: 'Industry Spreads Across the Continent',
       navLabel: 'Industry spreads',
-      dates: '1817 to 1904 &nbsp;·&nbsp; Coal, railways, chemicals, and tariffs',
-      thesis: `Factory methods left Britain in the heads of skilled people, then in machines and money. On the Continent they took root where coal lay, and after 1850 German firms became leaders in new industries such as chemical dyes.`,
+      dates: '1817 to 1904 &nbsp;·&nbsp; Coal, railways, steel, chemicals, and tariffs',
+      thesis: `Factory methods spread from Britain to the coalfields of the Continent, and later to Russia. After 1850 came cheap steel, new chemicals and new engines.`,
       parts: [
         {
           heading: 'Coal and railways',
           blocks: [
-            { p: `Britain banned the export of textile machines and the emigration of skilled textile workers, but the methods left anyway. In <span class="num">1817</span> John Cockerill, son of an English machine maker, began building machines at Seraing, near Liège, in what is today Belgium, on one of the richest coalfields on the Continent. Factories grew where coal lay, as in Britain: around Liège, in the Ruhr valley of the German states, and in northern France. The first steam railway in the German states, from Nuremberg to Fürth, opened in <span class="num">1835</span> with an English locomotive, and Germany's railways grew from 469 kilometers in <span class="num">1840</span> to more than 51,000 in <span class="num">1900</span> (<a href="#chapter-t5-4">Topic 5.4</a>; railway figures, <a href="#chapter-t5-5">Topic 5.5</a>).` }
+            { p: `Britain tried to keep its factory methods at home, but they left anyway. <a href="#r5-britain-factory">The Britain chapter</a> tells how they began.` },
+            { p: `In <span class="num">1817</span> John Cockerill began building machines at Seraing, near Liège, in what is today Belgium. His father was an English machine maker. Liège sat on one of the Continent's richest <span class="kt">coalfields</span> (areas with large beds of coal underground). Factories grew where coal lay, as in Britain: around Liège, in the Ruhr valley of the German states, and in northern France.` },
+            { p: `Germany had 469 kilometers of railway in <span class="num">1840</span> and more than 51,000 in <span class="num">1900</span> (<a href="#chapter-t5-5">Topic 5.5</a>).` }
           ]
         },
         {
           heading: 'Russia comes later',
           blocks: [
-            { p: `Russia had 27 kilometers of railway in <span class="num">1840</span> and more than 53,000 in <span class="num">1900</span>. In the early 1870s a Welsh engineer, John Hughes, built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine; the town that grew up around them was named Yuzovka after him (today Donetsk). Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and by <span class="num">1904</span> trains could cross to the Pacific (<a href="#chapter-t5-5">Topic 5.5</a>). The College Board names Russia among the places where the new methods "spread," with "other parts of Europe," the United States and Japan (<a href="#chapter-t5-4">Topic 5.4</a>).` }
+            { p: `Russia's big growth came mostly after 1870. In the early 1870s a Welsh engineer named John Hughes built ironworks in the coal country of the southern Russian Empire, in today's eastern Ukraine.` },
+            { p: `Russia's government pushed industry on purpose. From <span class="num">1892</span> to <span class="num">1903</span>, Sergei Witte was Russia's minister of finance. His government borrowed large sums from foreign lenders. It spent the money on railways and new industry. Russia's industry grew fastest in the 1890s.` },
+            { p: `Russia's railways grew from 27 kilometers in <span class="num">1840</span> to more than 53,000 in <span class="num">1900</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and Witte pushed it forward. By <span class="num">1904</span> trains could cross to the Pacific, reaching lands far from any sea.` }
           ]
         },
         {
           heading: 'The second industrial revolution',
           blocks: [
-            { p: `After 1850 came new methods "in the production of steel, chemicals, electricity, and precision machinery," in the College Board's words. German chemical companies such as BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes, and in <span class="num">1897</span> BASF began selling indigo blue made in a factory instead of from a plant. By 1914 Germany made most of the world's dyes. In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany, and in <span class="num">1886</span> Carl Benz patented a car driven by a small engine burning a fuel made from oil, an <span class="kt">internal combustion engine</span>. Its big changes came after 1900.` }
+            { p: `After 1850 the <span class="kt">second industrial revolution</span> brought new methods in steel, chemicals, electricity and precision machinery. <span class="kt">Steel</span> (iron with a little carbon) is stronger and tougher than ordinary iron. Before the 1850s it was slow and costly to make in large amounts.` },
+            { p: `In <span class="num">1856</span> the English inventor Henry Bessemer found a faster way, the <span class="kt">Bessemer process</span>. Air blown through melted iron burned out carbon and other impurities, and the burning kept the metal hot. Cheap steel became rails, bridges, ships and machines.` },
+            { p: `German chemical firms led the world. BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes. By 1914 Germany made most of the world's dyes.` },
+            { p: `In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany. In <span class="num">1886</span> Carl Benz patented a car with a small engine that burned a fuel made from oil. Both were <span class="kt">internal combustion engines</span>, which burn fuel inside the engine. Their big changes came after 1900.` }
           ]
         },
         {
           heading: 'Free trade, for a while',
           blocks: [
-            { p: `In <span class="num">1860</span> Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods, and in the 1860s similar treaties lowered tariffs across much of Western Europe. Then some countries turned back. From <span class="num">1879</span> Germany put tariffs back on imported grain, to protect its farmers from cheap grain from America and Russia, and on iron, to protect its factories after a long slump that began in <span class="num">1873</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` }
+            { p: `Under <span class="kt">mercantilism</span>, governments guarded trade with <span class="kt">tariffs</span> (taxes on imported goods). In the 1800s Western Europe moved toward <span class="kt">free trade</span>, with low tariffs or none. <a href="#r5-britain-free-trade">The Britain chapter</a> tells how Britain led.` },
+            { p: `In <span class="num">1860</span> Britain and France cut tariffs on each other's goods in the Cobden-Chevalier Treaty. In the 1860s similar treaties lowered tariffs across much of Western Europe.` },
+            { p: `Then some countries turned back. From <span class="num">1879</span> Germany put tariffs on imported grain, to protect its farmers from cheap American and Russian grain. It also taxed imported iron, to protect its factories after a long business slump that began in <span class="num">1873</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: Industry spread beyond northwestern Europe, new engines burned coal and oil, and trade became freer.`,
+                `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "The “second industrial revolution” led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
+                `<a href="#chapter-t5-7">Topic 5.7</a>: "Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith's theories of laissez-faire capitalism and free markets."`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Coalfield', `A region with large beds of coal under the ground.`],
-        ['Second industrial revolution', `The new methods in steel, chemicals, electricity and precision machinery after about 1850.`],
+        ['Second industrial revolution', `New methods in steel, chemicals, electricity and precision machinery after about 1850.`],
         ['Internal combustion engine', `An engine that burns its fuel inside the cylinder, like a car engine.`],
-        ['Tariff', `A tax on goods brought in from another country.`]
+        ['Free trade', `Trade between countries with low tariffs (import taxes) or none.`]
       ]
     },
 
@@ -229,43 +322,55 @@ module.exports = {
       name: 'Marx\'s Party and Bismarck\'s Answer',
       navLabel: 'Workers and reform',
       dates: '1848 to 1900 &nbsp;·&nbsp; Socialists, the Commune, and insurance',
-      thesis: `Marx predicted that workers would overthrow the owners. In Germany his ideas shaped a workers' party that won more votes than any other, and the government answered with both bans and benefits. No such revolution won before 1900.`,
+      thesis: `Marx predicted a workers' revolution. In Germany his ideas shaped a party that won the most votes in 1890. The government answered with bans and benefits.`,
       parts: [
         {
           heading: 'The Manifesto',
           blocks: [
-            { p: `In <span class="num">1848</span> two Germans, Karl Marx and Friedrich Engels, published the Communist Manifesto. Its first section begins: "The history of all hitherto existing society is the history of class struggles." Industry, they argued, was splitting society into owners, the bourgeoisie, and wage workers, the proletarians, and the workers would one day overthrow the owners, end private property in the means of production, and build a society without classes: <span class="kt">communism</span>. The College Board names "those espoused by Karl Marx, and the ideas of socialism and communism" among the ideologies of this age (<a href="#chapter-t5-8">Topic 5.8</a>).` }
+            { p: `In <span class="num">1848</span> the German writers Karl Marx and Friedrich Engels published the Communist Manifesto. Its first section begins: "The history of all hitherto existing society is the history of class struggles."` },
+            { p: `Industry, they argued, was splitting society into factory owners (the <span class="kt">bourgeoisie</span>) and wage workers (the <span class="kt">proletarians</span>). One day the workers would overthrow the owners. They would end private ownership of the <span class="kt">means of production</span> (the land, factories and machines that make wealth). They would build a society without classes: <span class="kt">communism</span>.` }
           ]
         },
         {
           heading: 'Germany\'s workers\' party',
           blocks: [
-            { p: `German workers founded parties in <span class="num">1863</span> and <span class="num">1869</span>, and they united in <span class="num">1875</span>. Bismarck, now the German Empire's chancellor, banned socialist meetings and newspapers in <span class="num">1878</span>. In February <span class="num">1890</span>, still banned, the party won more votes than any other, about 20 percent; the ban lapsed that year, and the party renamed itself the <span class="kt">Social Democratic Party</span>. In <span class="num">1891</span> it adopted a program based on Marx's ideas, while it went on winning seats in elections. In the College Board's words, "Workers' movements and political parties emerged in different areas, promoting alternative visions of society."` },
-            { p: `In <span class="num">1871</span> workers and radicals in Paris set up their own government, the Paris Commune, which Marx praised. It was crushed within about ten weeks. In <span class="num">1889</span> socialist parties from many countries met in Paris and called on workers everywhere to march on May 1, <span class="num">1890</span>, for an eight-hour day.` },
+            { p: `German workers founded parties in <span class="num">1863</span> and <span class="num">1869</span>, and the two united in <span class="num">1875</span>. In <span class="num">1878</span> Bismarck, now the German Empire's <span class="kt">chancellor</span> (chief minister), pushed through the Anti-Socialist Law. It banned socialist groups, meetings and newspapers. But socialists could still run for the <span class="kt">Reichstag</span> (Germany's parliament) as individual candidates.` },
+            { p: `In February <span class="num">1890</span> socialist candidates won more votes than any other party, about 20 percent. The Reichstag did not renew the law, and it ended that September. Then the party took a new name, the <span class="kt">Social Democratic Party</span>. In <span class="num">1891</span> it adopted a program based on Marx's ideas, while it kept winning seats in elections.` },
+            { p: `In <span class="num">1889</span> socialist parties from many countries called on workers everywhere to march on May 1, <span class="num">1890</span>, for an eight-hour day.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Marx's revolution came in the 1800s. No communist party ruled a country until the twentieth century (Unit 7).`
+              html: `Do not write that Marx's revolution came in the 1800s. No revolution like the one he predicted won lasting power in an industrial country before 1900.`
             } }
           ]
         },
         {
-          heading: 'Bismarck reforms to beat his critics',
+          heading: 'Bismarck reforms to weaken his critics',
           blocks: [
-            { p: `Bismarck also tried another weapon. The Reichstag, Germany's parliament, passed <span class="kt">social insurance</span>: health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span>. In <span class="num">1884</span> Bismarck told the Reichstag that the socialists' leaders needed "dissatisfied classes": "dissatisfied workers are just what they need." Reform could answer workers and weaken their party at the same time.` }
+            { p: `The Reichstag also passed <span class="kt">social insurance</span> (government payments to workers who are sick, injured or old). Health insurance came in <span class="num">1883</span> and accident insurance in <span class="num">1884</span>. Insurance for old age and disability followed in <span class="num">1889</span>.` },
+            { p: `In <span class="num">1884</span> Bismarck told the Reichstag that the socialists' leaders needed "dissatisfied classes": "dissatisfied workers are just what they need." Insurance was meant, in part, to make workers less dissatisfied, and so to weaken their party.` }
           ]
         },
         {
           heading: 'What stayed by 1900',
           blocks: [
-            { p: `By <span class="num">1900</span>, kings and emperors still ruled most of Europe, many of them sharing power with elected parliaments. Many countries let some or all men vote, but women could vote in national elections almost nowhere. The question the Enlightenment taught, by what right?, was still being asked.` }
+            { p: `By <span class="num">1900</span> kings and emperors still ruled most of Europe, many of them sharing power with elected parliaments. Many countries let some or all men vote, but women could vote in national elections almost nowhere. The Enlightenment's question was still being asked: by what right does anyone rule?` },
+            { note: {
+              kind: 'cb',
+              label: CB,
+              paras: [
+                `In short: Anger at those in power produced Marx's ideas and workers' parties, and some governments answered with reform.`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism."`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers' movements and political parties emerged in different areas, promoting alternative visions of society."`,
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms."`
+              ]
+            } }
           ]
         }
       ],
       terms: [
-        ['Communism', `Marx's classless society, with no private ownership of the means of production, to be won by workers' revolution.`],
-        ['Proletarians', `Marx's word for wage workers.`],
-        ['Social Democratic Party', `Germany's workers' party, named in 1890, which adopted a Marxist program in 1891.`],
+        ['Communism', `Marx's society without classes, with no private ownership of the means of production, to be won by workers' revolution.`],
+        ['Social Democratic Party', `Germany's workers' party, named in 1890, with a program based on Marx's ideas from 1891.`],
         ['Social insurance', `Government-run payments to workers who are sick, injured or old.`]
       ]
     }
@@ -277,33 +382,38 @@ module.exports = {
     intro: `The same story, gathered by its sides for review.`,
     argue: {
       move: 'Continuity and Change',
-      prompt: `Between 1750 and 1900, writers, revolutionaries, nationalists and workers all challenged the kings who ruled the European continent. By 1900, how much had changed about who held power and why? Make a claim, then support it with at least one change and one continuity from this chapter.`
+      prompt: `Between 1750 and 1900, writers, revolutionaries, nationalists and workers all challenged the kings of the European continent. By 1900, how much had changed about who held power, and why? Make a claim. Then support it with at least one change and one continuity from this chapter.`
     },
     pairs: [
       {
         category: 'Political',
-        title: 'Kings stayed, but had to answer',
-        body: `France's revolution of 1789 put sovereignty in the nation and ended its monarchy in 1792; Napoleon then crowned himself. Liberals rose in 1830 and 1848, Italy (1861) and Germany (1871) were unified, and by 1900 many monarchs shared power with elected parliaments.`
+        title: 'Revolutions and unification remade Europe\'s states, but kings kept much of their power.',
+        body: `France ended its monarchy in 1792. Italy was unified in 1861 and Germany in 1871. Yet in 1900 kings and emperors still ruled most of Europe.`
       },
       {
         category: 'Religious',
-        title: 'Religion questioned as a power of government',
-        body: `Enlightenment writers, most of them believers, argued that no government should force a faith on anyone; Voltaire's campaign for Calas made the case. They reexamined religion's role in public life rather than rejecting it.`
+        title: 'Enlightenment writers questioned religion\'s power over government, not belief itself.',
+        body: `Voltaire defended Jean Calas, a Protestant executed in 1762, and argued for religious toleration. Most Enlightenment writers still believed in God.`
       },
       {
         category: 'Social',
-        title: 'Serfs freed, workers organized',
-        body: `Noble privilege ended in France in 1789. Austria freed its peasants in 1848 and Russia its serfs in 1861. Germany's workers built the Social Democratic Party, and Bismarck answered with insurance (1883 to 1889). De Gouges demanded rights for women in 1791; few won them by 1900.`
+        title: 'Old ranks of birth and sex were challenged, and some of them fell.',
+        body: `France ended the nobles' special privileges in 1789, and Russia freed more than 20 million serfs in 1861. Olympe de Gouges claimed equal rights for women in 1791.`
       },
       {
-        category: 'Intellectual and technological',
-        title: 'Reason, then coal and chemistry',
-        body: `Locke, Montesquieu, Rousseau, Voltaire and the Encyclopédie asked what makes power rightful; Marx and Engels later asked who should own the factories. Coal, railways, BASF's dyes and Otto's and Benz's engines carried industry across the Continent.`
+        category: 'Intellectual',
+        title: 'New ideas asked what gives a ruler the right to rule, and later who should own the factories.',
+        body: `Locke argued in 1689 for natural rights and government by consent. Marx and Engels's Communist Manifesto (1848) called history a story of class struggles.`
+      },
+      {
+        category: 'Technological',
+        title: 'Railways and new methods carried industry across the Continent.',
+        body: `Germany's railways grew from 469 kilometers in 1840 to more than 51,000 in 1900. Bessemer's process (1856) made steel cheap.`
       },
       {
         category: 'Economic',
-        title: 'Industry followed the coal',
-        body: `Factories grew on the coalfields of Belgium, the Ruhr and northern France, and after 1870 in southern Russia. Railways reached tens of thousands of kilometers by 1900. Tariffs fell in the 1860s, and Germany raised them again from 1879.`
+        title: 'Industry grew on the coalfields, and countries argued over free trade.',
+        body: `Factories grew on the coalfields around Liège, in the Ruhr and in northern France. Tariffs fell after the Cobden-Chevalier Treaty of 1860, and Germany raised them again from 1879.`
       }
     ]
   }

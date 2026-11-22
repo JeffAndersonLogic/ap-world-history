@@ -657,6 +657,42 @@ const tick = page => page.waitForTimeout(30);
     check(`${vol.outputFile}: Stop ends a whole-chapter reading`, stopped === 0, `${stopped} playing after Stop`);
   }
 
+  // ── 9d. a folded College Board box is read only once it is opened ─────────
+  //
+  // Since 2026-11-21 a "What the College Board says" box shows its plain
+  // "In short" sentence and folds the exact wording behind a <details>. What
+  // is not on the screen is not read; open it and it is.
+  {
+    const vol = require(path.join(ROOT, 'scripts', 'build-ebook.js')).VOLUMES
+      .find(v => (v.contents || []).some(e => e.region));
+    await page.goto(url(vol.outputFile), { waitUntil: 'load' });
+    const folded = await page.evaluate(async () => {
+      const box = document.querySelector('details.dr-note.cb');
+      if (!box) return { error: 'no folded box' };
+      const section = box.closest('[data-listenable]');
+      const quote = box.querySelector('.cb-body p').textContent.trim().slice(0, 40);
+      const short = box.querySelector('.cb-short').textContent.trim().slice(0, 30);
+      async function read() {
+        window.__reset();
+        section.querySelector('.bh-listen-play').click();
+        await new Promise(r => setTimeout(r, 10));
+        const out = [];
+        for (let i = 0; i < 2000 && window.__speech.current; i++) { out.push(window.__speech.current.text); window.__finish(); }
+        section.querySelector('.bh-listen-stop').click();
+        return out.join(' ');
+      }
+      const closed = await read();
+      box.open = true;
+      const opened = await read();
+      box.open = false;
+      return { closedHasShort: closed.includes(short), closedHasQuote: closed.includes(quote),
+        openedHasQuote: opened.includes(quote), saysShow: /Show the exact words/.test(closed) };
+    });
+    check('a closed College Board box: its "In short" sentence is read, its exact wording is not',
+      !folded.error && folded.closedHasShort && !folded.closedHasQuote && !folded.saysShow, JSON.stringify(folded));
+    check('an opened College Board box: its exact wording is read', !folded.error && folded.openedHasQuote, JSON.stringify(folded));
+  }
+
   // ── 10. the library page has none of this ─────────────────────────────────
   console.log(`\n${LIBRARY}`);
   await page.goto(url(LIBRARY), { waitUntil: 'load' });

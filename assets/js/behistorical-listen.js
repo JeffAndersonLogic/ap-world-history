@@ -147,6 +147,12 @@
     if (SKIP_TAGS[el.tagName]) return true;
     if (el.hasAttribute('data-no-narrate')) return true;
     if (el.hasAttribute('hidden')) return true;
+    /* A closed <details> (the folded "What the College Board says" box): its
+       summary is on the page and is read; the rest is not on screen, so it is
+       not read either, until the student opens it. Computed style cannot tell
+       us this, because the hidden children keep their own display value. */
+    var parent = el.parentElement;
+    if (parent && parent.tagName === 'DETAILS' && !parent.open && el.tagName !== 'SUMMARY') return true;
     if (el.getAttribute('aria-hidden') === 'true') return true;
     var cs = window.getComputedStyle(el);
     /* Off-screen and collapsed content is not on the page for a reading

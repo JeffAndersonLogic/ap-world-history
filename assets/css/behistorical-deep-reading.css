@@ -182,6 +182,17 @@ textarea:focus-visible,
 .dr-note.cb b{color:var(--steel)}
 .dr-note.cb p + p{margin-top:.6rem}
 .dr-note.cb a{color:var(--oxidized)}
+details.dr-note.cb > summary{list-style:none;cursor:pointer}
+details.dr-note.cb > summary::-webkit-details-marker{display:none}
+details.dr-note.cb > summary b{display:block}
+details.dr-note.cb .cb-short{margin:0}
+details.dr-note.cb .cb-more{display:inline-block;margin-top:.5rem;min-height:24px;padding:.2rem 0;font-family:var(--font-ui);font-size:.74rem;font-weight:700;letter-spacing:.04em;color:var(--oxidized);text-decoration:underline;text-underline-offset:.18em}
+details.dr-note.cb .cb-more::before{content:"\25B8\00a0"}
+details.dr-note.cb[open] .cb-more::before{content:"\25BE\00a0"}
+details.dr-note.cb[open] .cb-more{font-size:0}
+details.dr-note.cb[open] .cb-more::after{content:"Hide the exact words";font-size:.74rem}
+details.dr-note.cb .cb-body{margin-top:.6rem;padding-top:.6rem;border-top:1px solid #c9cdcf}
+@media print{details.dr-note.cb .cb-more{display:none}}
 /* "The story in short", at the top of a regional chapter: five numbered plain
    sentences on clean paper with a steel edge, larger than body notes because
    it is meant to be read first and slowly. */

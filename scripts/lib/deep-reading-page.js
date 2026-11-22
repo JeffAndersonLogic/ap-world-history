@@ -144,10 +144,34 @@ function withPrefix(prefix, id) {
 const NOTE_KINDS = { misconception: 'misconception', cb: 'cb' };
 function renderNote(note) {
   const kind = NOTE_KINDS[note.kind] || 'howknow';
+  if (kind === 'cb' && Array.isArray(note.paras) && note.paras.length > 1 && /^In short:/.test(note.paras[0])) {
+    return renderCollegeBoardBox(note);
+  }
   const body = Array.isArray(note.paras)
     ? note.paras.map(p => `<p>${p}</p>`).join('')
     : `<p>${note.html}</p>`;
   return `      <aside class="dr-note ${kind}"><b>${esc(note.label)}</b>${body}</aside>\n`;
+}
+
+/**
+ * A College Board box whose first paragraph is a plain "In short:" sentence
+ * folds the exact wording behind a native <details>. The plain sentence is
+ * always on the page; the whole Key Concept sentences, word for word, are one
+ * tap away. Quoting them whole (the 2026-11-21 panel's demand) added 350 to
+ * 650 words a chapter, and the readers who most need a short chapter are the
+ * ones the quotations help least, while the exam crammer and the teacher who
+ * want the exact words get them by opening the box. Native <details> needs no
+ * script, is keyboard operable, and announces its state; the narration module
+ * skips a closed box's contents and reads them once it is opened.
+ */
+function renderCollegeBoardBox(note) {
+  const [short, ...rest] = note.paras;
+  return (
+    `      <details class="dr-note cb">` +
+    `<summary><b>${esc(note.label)}</b><p class="cb-short">${short}</p>` +
+    `<span class="cb-more" data-no-narrate>Show the exact words</span></summary>` +
+    `<div class="cb-body">${rest.map(p => `<p>${p}</p>`).join('')}</div></details>\n`
+  );
 }
 
 function renderPart(part) {

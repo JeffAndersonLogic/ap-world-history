@@ -227,7 +227,11 @@ function readAlongside(chapter, topicKeys) {
  */
 const WORDS_PER_MINUTE = 150;
 function readingMinutes(chapter) {
-  const text = stripTags(renderChapterBody(chapter, { idPrefix: chapter.topicKey }))
+  // A folded College Board box counts its plain "In short" sentence, not the
+  // exact wording behind the tap: that is reference a student opens when they
+  // need it, not part of the read. The label says "to read" and means it.
+  const text = stripTags(renderChapterBody(chapter, { idPrefix: chapter.topicKey })
+    .replace(/<div class="cb-body">[\s\S]*?<\/div><\/details>/g, '</details>'))
     .replace(/&[a-z#0-9]+;/gi, ' ');
   const words = text.split(/\s+/).filter(w => /[A-Za-z0-9]/.test(w)).length;
   return Math.max(5, Math.ceil(words / WORDS_PER_MINUTE / 5) * 5);
