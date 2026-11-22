@@ -718,3 +718,20 @@ Meiji reforms, Shimonoseki.
   Peking, 1898, the one edict not repealed). PENDING.
 - N6. Europe, Social card: "Old ranks of birth fell in France and Russia"; Russia freed serfs but
   kept the nobility as a legal estate until 1917. PENDING.
+
+**Reviewer P (history: the Americas, South and Southeast Asia), 3 findings, no historical errors.**
+Verified sound: every CED quotation; every link; Bolívar's Jamaica Letter (Bertrand); the India
+cloth-trade figures, 1815 and 1832 (Montgomery Martin via Lajpat Rai); the 1813 duty table; HSBC's
+London office, 1865; the 1870 Bombay cable; Riis's tenement definition; Seneca Falls; abolition
+dates; Slater and Belper; Davar's mill; the Propaganda Movement, the Katipunan and Rizal.
+
+- P1. Americas claims KC-5.1.I.B but quotes only its first sentence and never ties a machine to a
+  fossil fuel (mills on water, coal for furnaces, oil as kerosene); KC-5.1.V.A is claimed without
+  its second sentence (workers' movements and parties), which is not taught. PENDING.
+- P2. South and Southeast Asia, box "In short": "The College Board asks you to explain how its
+  [India's] share of world manufacturing then fell" makes an optional example (Indian textiles)
+  sound required; the Key Concept says "Middle Eastern and Asian countries". PENDING.
+- P3. South and Southeast Asia: the Philippine case is never tied to KC-5.3.II.iii (nation linked
+  to state borders), and the box "In short" ("some nationalists wanted their nation to have its own
+  state") can read as contradicting the chapter's mistake box (the Propaganda writers sought equal
+  rights inside Spain's empire). PENDING.
