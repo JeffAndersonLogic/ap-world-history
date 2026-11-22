@@ -23,6 +23,14 @@
  * predated that rule and launched 07 Evidence Lab with Checkpoint 1 optional;
  * the Evidence Lab is now the early-finisher option.
  *
+ * Exam-writing spine, 2026-11-22 (Jeff): from 5.1 onward every topic requires
+ * 02, 05, 06, 08 and 10. The Skill Builder now ends with a thesis and carries
+ * a Writing Move box; the Primary Source asks three separate short-answer
+ * parts, (a), (b) and (c), each on one task verb. BeInTheRoom is no longer
+ * required on a regular topic (Jeff is weighing it for capstone topics once
+ * the scenarios are rebuilt); it stays available where a scenario exists.
+ * Decision record: AndersonLogic-OS 04_PRODUCTS/BeHistorical/Decisions.md.
+ *
  * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
  * topic; slides that only point to a module are cut; the lecture tells the
  * story). The briefing opens on the outline below, a road map before the
@@ -62,7 +70,7 @@ window.BEHISTORICAL_TEACHING = {
       'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Enlightenment caused the revolutions," "the Enlightenment was against religion," and "rights reached everyone in 1789."'
     ],
     could: [
-      'Send students who finish Work Time early to the Evidence Lab (Module 07), or to the Primary Source (the Seneca Falls declaration) as an extension.',
+      'Send students who finish Work Time early to the Evidence Lab (Module 07).',
       'Point students who want more depth to the eBook chapter, "By What Right?"'
     ]
   },
@@ -72,7 +80,7 @@ window.BEHISTORICAL_TEACHING = {
   // own slides and notes or the First & 10 "By What Right?"; nothing is new.
   // Required modules are the schedule's (assets/data/announcements-schedule.js).
   outline: {
-    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '10 Checkpoint 2'],
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '08 Primary Source', '10 Checkpoint 2'],
     sections: [
       { label: 'I', title: 'The old answer', points: [
         'Who does a state belong to? About 1750: the king',
@@ -174,7 +182,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'pair', label: 'Same Words, Wider Claim', range: '43-45', minutes: 2, teacher: 'De Gouges beside the 1789 article she rewrote.', students: 'Describe her claim.', slide: 21 },
     { id: 'stayed', label: 'What Changed by 1900, What Stayed', range: '45-47', minutes: 2, teacher: 'The ideas changed fast; the world changed slowly.', students: 'Name the biggest continuity.', slide: 22 },
     { id: 'retell', label: 'By What Right?', range: '47-51', minutes: 4, teacher: 'Students redraw the chain from memory, with what stayed underneath; correct the three myths here.', students: 'Retell the whole topic.', slide: 23 },
-    { id: 'worktime', label: 'Work Time', range: '51-81', minutes: 30, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder on three new sources, Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 24 },
+    { id: 'worktime', label: 'Work Time', range: '51-81', minutes: 30, teacher: 'Modules 05, 06, 08 and 10, in that order: the Skill Builder on three new sources, ending in a thesis, Checkpoint 1 with no coach, the Primary Source as three short answers, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Primary Source, Checkpoint 2.', slide: 24 },
     { id: 'close', label: 'Landing Sentence', range: '81-83', minutes: 2, teacher: 'Land the answer and hand off to 5.2.', students: 'Say the topic in one sentence.', slide: 25 }
   ],
 
@@ -285,7 +293,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '✓', text: 'Put it together: by what right?', key: true }
         ],
         thenLabel: 'Then',
-        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+        then: 'Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2'
       },
       notes: {
         minutes: 1,
@@ -883,36 +891,40 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 08, 10',
       title: 'Now you do the history.',
       footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
         modules: [
-          { code: 'Module 05', name: 'Skill Builder', note: 'Find the claim in two of three new sources.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
+          { code: 'Module 05', name: 'Skill Builder', note: 'Find the claim, then write your own thesis.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
           { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
+          { code: 'Module 08', name: 'Primary Source', note: 'Seneca Falls, 1848: three short answers.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' },
           { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-5/lesson-5-1-enlightenment.html#modules' }
         ]
       },
       notes: {
         minutes: 30,
         keys: [
-          'All three required today, in order',
-          'Skill Builder: claim, own words, what it opposes',
+          'All four required today, in order',
+          'Skill Builder: find claims, then a thesis',
           'Checkpoint 1: no coach, feedback in the room',
+          'Primary Source: (a), (b), (c), one answer each',
           'Checkpoint 2: a movement, its drivers, what stayed',
           'Checkpoint 2 unfinished = homework',
           'Early finishers: Evidence Lab'
         ],
         land: [
-          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06 and 10 are all required today, from the schedule (Jeff, 2026-11-08, under his rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen). Each button opens its module.',
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06, 08 and 10 are all required today, from the schedule (Jeff\'s exam-writing spine of 2026-11-22: 02, 05, 06, 08 and 10 on every topic from 5.1 on). Each button opens its module. Four modules is a full Work Time: Checkpoint 2 finishes at home if it must.',
           'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.A. It models the move on Montesquieu (Book XI, chapter 6), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. Students choose two of the three; for each they identify the claim, describe it in their own words, and say what it argues against. Strong answers: Rousseau claims people are born free but held down by unjust governments and customs, against the idea that rulers\' power is natural; Kant claims people should think for themselves instead of obeying authorities, against relying on priests, books and rulers to think for you; the motto claims an enslaved African is a full human being and a brother, against treating people as property.',
+          'The Skill Builder now ends with the first Writing Move of the year: Thesis. Its box opens expanded and teaches the move in four steps, with a model on a Unit 4 question (the Columbian Exchange), so it shows the move without answering today\'s question. Students then write a thesis of one or two sentences answering "How did Enlightenment ideas affect societies from 1750 to 1900?" Circulate for the two failures the box names: repeating the question, and a claim with no reasons. Ask: "What are your two reasons? Point to them." The thesis is a plan for Checkpoint 2, which asks the same objective (LO B) through one reform movement.',
+          'The Primary Source (Module 08), the Seneca Falls declaration, is now short-answer practice in the exam\'s form: (a) identify and describe the claim in Passage 1; (b) explain how the writers used the words of 1776 to make a new demand (the two added words are "and women"); (c) explain one thing Passages 2 and 3 show had not changed by 1848 ("he" is man, or men; women still could not vote or help make the laws they lived under). Its Writing Move box, Short-Answer Parts, opens expanded: find the verb, answer in the first sentence, add one specific piece of evidence, and for explain add the because. Ask: "Which part is a describe and which an explain, and what does each one need?"',
           'Checkpoint 1 (Module 06), with no coach, assesses Learning Targets 1 and 2 (LO A): one new political idea and the old answer it challenged, and how the ideas spread and came before the revolutions. Give feedback in the room: on an alternating block nothing carries over.',
           'Checkpoint 2 (Module 10) assesses Learning Target 3 (LO B): choose one reform movement (abolition, the end of serfdom, the right to vote, or women\'s rights), explain how Enlightenment ideas or religious ideals pushed it forward, what it had changed by 1900, and what had still not changed. That is the over-time objective the old lesson never assessed. Socrates is told the skill is Continuity and Change, so it will push for what stayed the same as well as what changed. The revised answer in the box is what goes to Canvas.',
           'Early finishers: the Evidence Lab (Module 07). Six cards: the air-pump mezzotint (1769), the Encyclopédie title page (Lucca, 1758), the abolitionist jug (about 1820), and three short verified excerpts: Locke (1689), Wollstonecraft (1792) and the Seneca Falls declaration (1848). It is 3.A in a non-text source as well as a text: observe what the object shows, then what it claims, then what it cannot tell you. Every picture in it is a real historical object; none is AI-generated.',
           'If a student needs the claim shape, give it aloud (it is the frame from slide 20): "___ claims that ___, arguing against ___." It is a frame, not a model answer; do not write a finished claim on the board.'
         ],
         ask: 'Does your answer have a movement, what drove it, a change by 1900, and a continuity?',
-        listenFor: 'Skill Builder: Rousseau\'s "chains" is a metaphor you have to explain. Checkpoint 1: the social contract, against divine right, spread in print and salons before 1789. Checkpoint 2: abolition, natural rights and Quaker faith, Britain 1834 to Brazil 1888, but other forced labor went on; or women\'s rights, Seneca Falls borrowed the Declaration\'s words, but by 1900 women voted almost nowhere.'
+        listenFor: 'Thesis: a claim someone could argue with and two reasons, not a repeat of the question. Primary Source: three separate answers, each doing what its verb asks. Skill Builder: Rousseau\'s "chains" is a metaphor you have to explain. Checkpoint 1: the social contract, against divine right, spread in print and salons before 1789. Checkpoint 2: abolition, natural rights and Quaker faith, Britain 1834 to Brazil 1888, but other forced labor went on; or women\'s rights, Seneca Falls borrowed the Declaration\'s words, but by 1900 women voted almost nowhere.'
       }
     },
     {

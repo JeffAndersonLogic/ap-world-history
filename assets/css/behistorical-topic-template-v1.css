@@ -324,6 +324,51 @@
   text-transform: uppercase;
 }
 
+/* The Writing Move box (renderWritingMove in the topic renderer): one move of
+   AP free-response writing, taught inside Module 05 or 08. Same parchment and
+   bronze edge as the source-integrity note, so it reads as guidance, not a task. */
+.writing-move {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border-left: 6px solid var(--burnished-bronze);
+  border-radius: 14px;
+  background: #f6efe3;
+}
+
+.writing-move summary {
+  cursor: pointer;
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.writing-move-label {
+  display: block;
+  color: var(--oxidized-brown);
+  font-family: "Montserrat", Inter, Arial, sans-serif;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.writing-move-steps,
+.writing-move-avoid { margin: 6px 0 10px; padding-left: 1.3rem; }
+.writing-move-steps li,
+.writing-move-avoid li { margin-bottom: 4px; }
+
+.writing-move-example {
+  margin: 10px 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fffaf1;
+  border: 1px solid rgba(107, 62, 31, .25);
+}
+.writing-move-example p { margin: 0 0 8px; }
+.writing-move-example p:last-child { margin-bottom: 0; }
+.writing-move-avoid-label,
+.writing-move-exam { margin: 6px 0; }
+
 @media (max-width: 760px) {
   .evidence-entry-grid { grid-template-columns: 1fr; }
   .ap-alignment { border-radius: 14px; }

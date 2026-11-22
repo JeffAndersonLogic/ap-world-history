@@ -2830,7 +2830,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `5.1`  **Full title:** The Enlightenment
 
-**Required:** 4 of 10 modules, 02, 05, 06, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 08, 10
 
 **Assign to, one row per section:**
 
@@ -2869,6 +2869,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: By What Right?</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Find the Claim.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> One new Enlightenment idea, the old answer it challenged, how the ideas spread before the Atlantic revolutions, and how the people became the nation.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> The Declaration of Sentiments, Seneca Falls, 1848.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> One reform movement, what drove it, how far it got by 1900, and what had still not changed.</li>
                 </ul>
             </td>
@@ -2883,7 +2884,6 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Seneca Falls, New York, July 20, 1848.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, decide what claim the source makes or what it shows about Enlightenment ideas and their effects. An object can make a claim too, without a single sentence of argument.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> The Declaration of Sentiments, Seneca Falls, 1848.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Paris, 1788 to 1789. A publisher must decide what a pamphlet on natural rights will claim, whose voices it will print, and who will get to read it, when the people paying for it, the writers, and the people the words leave out all want different things.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
@@ -2919,7 +2919,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
@@ -2955,7 +2955,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `5.2`  **Full title:** Nationalism and Revolutions
 
-**Required:** 5 of 10 modules, 02, 05, 06, 09, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 08, 10
 
 **Assign to, one row per section:**
 
@@ -2994,7 +2994,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: How Revolutions Made Nations</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Compare Two Sources.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> One revolution's grievance, words, and chance, what it created, and how it was linked to another revolution.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. The revolution has ended slavery in the colony, and France still claims it. A council must write a constitution that protects that freedom, keeps people fed and the colony defended, and decides how far to stand against France.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Simón Bolívar, the Letter from Jamaica, 1815.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> What a nation is, how governments used shared loyalty, one country nationalism joined together, and one people it pulled away from an empire.</li>
                 </ul>
             </td>
@@ -3009,7 +3009,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Les Cayes, Haiti, March 1816.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a cause or an effect of the revolutions, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Simón Bolívar, the Letter from Jamaica, 1815.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. The revolution has ended slavery in the colony, and France still claims it. A council must write a constitution that protects that freedom, keeps people fed and the colony defended, and decides how far to stand against France.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -3080,7 +3080,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `5.3`  **Full title:** The Industrial Revolution Begins
 
-**Required:** 4 of 10 modules, 02, 06, 09, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 08, 10
 
 **Assign to, one row per section:**
 
@@ -3117,8 +3117,9 @@ block so the short name can be written from them, not guessed at here.
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Coal, Water, and One Roof</em>, plus all three check questions inside the reading.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Explain a Process, Step by Step.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Two things nature gave Britain and two things people built, what each made cheaper or possible, and how two of them worked together.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Nottingham, early 1771. At Richard Arkwright's partners' table, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Adam Smith and Andrew Ure on Dividing the Work.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> How the factory gathered production in one place, how it split the work into specialized jobs, and why that made more goods.</li>
                 </ul>
             </td>
@@ -3132,9 +3133,8 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Cromford, Derbyshire, 1772.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Explain a Process, Step by Step.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a cause of industrialization or about the factory system, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Adam Smith and Andrew Ure on Dividing the Work.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Nottingham, early 1771. At Richard Arkwright's partners' table, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -3167,7 +3167,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>

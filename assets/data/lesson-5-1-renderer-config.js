@@ -102,12 +102,27 @@
       { label: 'Describe it in your own words', text: 'Montesquieu claims that people stay free only when no one person or group holds all the power.' },
       { label: 'Say what it argues against', text: 'Montesquieu is arguing against letting any one ruler or group hold all these powers at once. His own example of that was the Ottoman sultan. Use this frame: "[The writer] claims that [the claim in your own words], arguing against [the older idea]."' }
     ],
-    prompt: 'Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of the first chapter of his book on the social contract: "Man is born free; and everywhere he is in chains." (2) Immanuel Kant, 1784, in his essay "What Is Enlightenment?", giving the Enlightenment its motto: "Dare to know," which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: "Am I not a man and a brother?" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.',
+    prompt: 'Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of the first chapter of his book on the social contract: "Man is born free; and everywhere he is in chains." (2) Immanuel Kant, 1784, in his essay "What Is Enlightenment?", giving the Enlightenment its motto: "Dare to know," which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: "Am I not a man and a brother?" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against. Then make a claim of your own. Using the Writing Move box above, write a thesis of one or two sentences that answers: How did Enlightenment ideas affect societies from 1750 to 1900? Make a claim someone could argue with, and give two reasons.',
+    // The exam-writing spine (Jeff, 2026-11-22): the thesis is introduced
+    // here, where students have just found other writers' claims. The model
+    // thesis is on a Unit 4 question, so it teaches the move without
+    // answering this one. Box text: scripts/lib/writing-moves.js.
+    writingMove: {
+      id: 'thesis',
+      intro: true,
+      example: {
+        question: 'Explain how the Columbian Exchange affected societies in the Americas from 1492 to 1750.',
+        weak: 'The Columbian Exchange affected societies in the Americas in many ways.',
+        strong: 'The Columbian Exchange devastated Indigenous societies, because smallpox and other diseases from across the Atlantic killed a large share of their people, and it remade the economies that followed, because Europeans set up sugar plantations worked by enslaved Africans.',
+        why: 'The weaker one only repeats the question. The stronger one makes a claim a historian could argue with (devastated, remade) and previews two reasons, disease and the plantation economy, so a reader knows what the paragraphs will prove. That preview is the line of reasoning.'
+      }
+    },
     criteria: [
       'I identified the claim in each source.',
       'I described it in my own words, not by copying the quotation.',
       'I said what older idea or practice it argues against.',
-      'I used two of the three sources.'
+      'I used two of the three sources.',
+      'My thesis answers the question with a claim someone could argue with, and gives two reasons.'
     ]
   };
 

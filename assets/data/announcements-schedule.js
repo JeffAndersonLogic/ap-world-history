@@ -1143,20 +1143,29 @@ window.BEHISTORICAL_SCHEDULE = {
     // module: 5.1 keeps 05; 5.2 adds 09 (the Saint-Domingue Constitution); 5.3
     // swaps 05 for 09 (the Mill Partners), because its Skill Builder repeated
     // the Checkpoints.
+    // Superseded 2026-11-22 (Jeff, the exam-writing spine): from 5.1 onward
+    // every topic requires 02 First & 10, 05 Skill Builder, 06 Checkpoint 1,
+    // 08 Primary Source and 10 Checkpoint 2, so students practice the writing
+    // moves and the source-based short answers the May 2027 exam requires.
+    // BeInTheRoom (09) is no longer required on a regular topic: Jeff is
+    // weighing it for the capstone topics once the scenarios are rebuilt, and
+    // until then it is an optional activity where a scenario exists. The
+    // Evidence Lab stays the early-finisher option. Decision recorded in
+    // AndersonLogic-OS 04_PRODUCTS/BeHistorical/Decisions.md.
 
     /* ---- Topic 5.1, The Enlightenment ------ */
     {
       date: '2026-11-30',
       cohort: 'green',
       topic: '5.1',
-      modules: ['02', '05', '06', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.1 module you did not complete in class.'
     },
     {
       date: '2026-12-01',
       cohort: 'silver',
       topic: '5.1',
-      modules: ['02', '05', '06', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.1 module you did not complete in class.'
     },
 
@@ -1165,14 +1174,14 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-12-02',
       cohort: 'green',
       topic: '5.2',
-      modules: ['02', '05', '06', '09', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.'
     },
     {
       date: '2026-12-03',
       cohort: 'silver',
       topic: '5.2',
-      modules: ['02', '05', '06', '09', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.'
     },
 
@@ -1185,7 +1194,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-12-04',
       cohort: 'green',
       topic: '5.3',
-      modules: ['02', '06', '09', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
       homeworkDue: 'Tuesday, December 8'
     },
@@ -1193,7 +1202,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-12-07',
       cohort: 'silver',
       topic: '5.3',
-      modules: ['02', '06', '09', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
       homeworkDue: 'Wednesday, December 9'
     },

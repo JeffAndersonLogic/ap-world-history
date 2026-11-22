@@ -26,7 +26,17 @@
  * the Evidence Lab is now the early-finisher option. Jeff's Unit 5 module
  * review, 2026-11-21, swapped the Skill Builder for 09 BeInTheRoom (the Mill
  * Partners): the Skill Builder repeated Checkpoints 1 and 2 almost word for
- * word. Required now: 02, 06, 09 and 10; the Skill Builder is optional.
+ * word. Required then: 02, 06, 09 and 10; the Skill Builder was optional.
+ *
+ * Exam-writing spine, 2026-11-22 (Jeff): from 5.1 onward every topic requires
+ * 02, 05, 06, 08 and 10. The Skill Builder now ends with a thesis and carries
+ * a Writing Move box; the Primary Source asks three separate short-answer
+ * parts, (a), (b) and (c), each on one task verb. BeInTheRoom is no longer
+ * required on a regular topic (Jeff is weighing it for capstone topics once
+ * the scenarios are rebuilt); it stays available where a scenario exists.
+ * Decision record: AndersonLogic-OS 04_PRODUCTS/BeHistorical/Decisions.md.
+ * The Skill Builder's second part, which repeated Checkpoint 2, is now a
+ * thesis rep, so the module no longer repeats the Checkpoints.
  *
  * Outline format, 2026-11-08 (Jeff: the 4.4 outline is the standard for every
  * topic; slides that only point to a module are cut; the lecture tells the
@@ -67,7 +77,7 @@ window.BEHISTORICAL_TEACHING = {
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "Coal, Water, and One Roof."',
-      'Send students who finish Work Time early to the Skill Builder (Module 05) or the Evidence Lab (Module 07), or to the Primary Source (Smith\'s pin workshop and Ure\'s definition of a factory) as an extension.',
+      'Send students who finish Work Time early to the Mill Partners (Module 09) or the Evidence Lab (Module 07).',
       'For a class that is ahead: Kenneth Pomeranz\'s argument about why China, which also had coal, did not industrialize first (slide 19 notes).'
     ]
   },
@@ -78,7 +88,7 @@ window.BEHISTORICAL_TEACHING = {
   // docs/TOPIC-5-3-STORY-DRAFT.md; nothing is new. Required modules are the
   // schedule's (assets/data/announcements-schedule.js).
   outline: {
-    required: ['02 First & 10', '06 Checkpoint 1', '09 BeInTheRoom', '10 Checkpoint 2'],
+    required: ['02 First & 10', '05 Skill Builder', '06 Checkpoint 1', '08 Primary Source', '10 Checkpoint 2'],
     sections: [
       { label: 'I', title: 'Before factories', kc: 'Learning Objective D', points: [
         'Putting-out: a merchant brings wool or cotton to country homes',
@@ -185,7 +195,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'homemill', label: 'Home and Mill', range: '41-43', minutes: 2, teacher: 'The two changes, compared.', students: 'Pick the biggest change.', slide: 18 },
     { id: 'retell', label: 'Coal, Water, and One Roof', range: '43-46', minutes: 3, teacher: 'Students redraw the equation from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 19 },
     { id: 'synthesis', label: 'Say It in One Sentence', range: '46-47', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 20 },
-    { id: 'worktime', label: 'Work Time', range: '47-83', minutes: 36, teacher: 'Modules 06, 09 and 10, in that order: Checkpoint 1 with no coach, the Mill Partners, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Checkpoint 1, BeInTheRoom, Checkpoint 2.', slide: 21 },
+    { id: 'worktime', label: 'Work Time', range: '47-83', minutes: 36, teacher: 'Modules 05, 06, 08 and 10, in that order: the Skill Builder (1.B), ending in a thesis, Checkpoint 1 with no coach, the Primary Source as three short answers, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Primary Source, Checkpoint 2.', slide: 21 },
     { id: 'close', label: 'Landing Sentence', range: '83-85', minutes: 2, teacher: 'Land the answer and hand off to 5.4.', students: 'Say the topic in one sentence.', slide: 22 }
   ],
 
@@ -294,7 +304,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '✓', text: 'Put it together: coal, water, and one roof', key: true }
         ],
         thenLabel: 'Then',
-        then: 'Checkpoint 1 · BeInTheRoom · Checkpoint 2'
+        then: 'Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2'
       },
       notes: {
         minutes: 1,
@@ -832,34 +842,37 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 06, 09, 10',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 08, 10',
       title: 'Now you explain the process.',
       footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
         modules: [
+          { code: 'Module 05', name: 'Skill Builder', note: 'One factor as a process, then a thesis.', url: '../unit-5/lesson-5-3-industrial-revolution-begins.html#modules' },
           { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-3-industrial-revolution-begins.html#modules' },
-          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Mill Partners, 1771.', url: '../beintheroom/unit-5/the-mill-partners.html' },
+          { code: 'Module 08', name: 'Primary Source', note: 'Smith and Ure: three short answers.', url: '../unit-5/lesson-5-3-industrial-revolution-begins.html#modules' },
           { code: 'Module 10', name: 'Checkpoint 2', note: 'What the factory changed, with Socrates.', url: '../unit-5/lesson-5-3-industrial-revolution-begins.html#modules' }
         ]
       },
       notes: {
         minutes: 36,
         keys: [
-          'All three required today, in order',
+          'All four required today, in order',
+          'Skill Builder: one process, then a thesis',
           'Checkpoint 1: no coach',
-          'Mill Partners: where to build, how to split work',
+          'Primary Source: (a), (b), (c), one answer each',
           'Checkpoint 2: the factory\'s two changes',
           'Checkpoint 2 unfinished = homework',
-          'Early finishers: Skill Builder or Evidence Lab'
+          'Early finishers: Mill Partners, or Evidence Lab'
         ],
         land: [
-          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 06, 09 and 10 are all required today, from the schedule (Jeff\'s rule of 2026-10-23: 02, 06 and 10 on every topic, plus at least one chosen; his Unit 5 module review of 2026-11-21 chose the BeInTheRoom over the Skill Builder, which repeated the Checkpoints). Each button opens its module.',
-          'The Mill Partners (Module 09) puts students in Nottingham in 1771, deciding where to build a mill (beside the water at Cromford, in Nottingham with horses, or near Manchester), how to organize the work, and how to pay for and protect it. Its reflection asks how one thing nature gave Britain and one thing people built helped cause industrial production to grow, and whether the student\'s choices show the factory system gathering production in one place and specializing the work: 1.B and Causation on KC-5.1.I.A and KC-5.1.I.C.',
-          'Early finishers, optional: the Skill Builder (Module 05) practices the CED\'s suggested skill, 1.B Developments and Processes. It models the frame on an everyday example, a new bus line, and asks students to explain one factor people built as a process, then to explain the factory system the same way. Circulate for the connecting words, "which meant" and "so": ask "Read me your which meant," and listen for a mechanism, not a repeat of the factor. If a student needs the frame, give it aloud (slide 13): "The factor, which meant ___, so ___."',
+          'This one slide replaces five (Myth and Evidence, and the Skill Builder, Checkpoint 1, Evidence Lab and Checkpoint 2 launch slides, 2026-11-08). Modules 05, 06, 08 and 10 are all required today, from the schedule (Jeff\'s exam-writing spine of 2026-11-22: 02, 05, 06, 08 and 10 on every topic from 5.1 on). His Unit 5 review of 2026-11-21 had swapped the Skill Builder for the Mill Partners because the Skill Builder repeated the Checkpoints; its repeating half is now a thesis, and the Mill Partners is optional. Each button opens its module. Four modules is a full Work Time: Checkpoint 2 finishes at home if it must.',
+          'Optional now, for early finishers: the Mill Partners (Module 09) puts students in Nottingham in 1771, deciding where to build a mill (beside the water at Cromford, in Nottingham with horses, or near Manchester), how to organize the work, and how to pay for and protect it. Its reflection asks how one thing nature gave Britain and one thing people built helped cause industrial production to grow, and whether the student\'s choices show the factory system gathering production in one place and specializing the work: 1.B and Causation on KC-5.1.I.A and KC-5.1.I.C.',
+          'The Skill Builder (Module 05), required again, practices the CED\'s suggested skill, 1.B Developments and Processes. It models the frame on an everyday example, a new bus line, and asks students to explain one factor people built as a process, then to write a thesis answering "How did environmental factors help cause industrialization in Britain from 1750 to 1900?" (the Writing Move box is folded; its model is on a Unit 4 question about maritime empires). Listen for a claim and two reasons, such as coal and iron lying close together, and rivers and canals. Circulate for the connecting words, "which meant" and "so": ask "Read me your which meant," and listen for a mechanism, not a repeat of the factor. If a student needs the frame, give it aloud (slide 13): "The factor, which meant ___, so ___."',
           'Checkpoint 1 (Module 06), with no coach, is the diagnostic. It assesses Target 1: two environmental factors and two factors people built, each with what it made cheaper or possible, and one way two of them worked together. Give feedback in the room. Ask which factor was hardest to explain as a process; listen for a factor, a "which meant" and a "so."',
           'Checkpoint 2 (Module 10) asks students to describe the putting-out system; explain how Cromford gathered production in one place, how a mill split the work into steps, and why Smith\'s pin workshop shows that splitting work made more goods; and connect the factory to one environmental factor. It assesses Target 2 (KC-5.1.I.C) and declares Causation: draft, Socrates, revise. If it is not finished in class, it is homework.',
           'A strong Checkpoint 2 answer: before, under putting-out, work was spread across many homes; Cromford (1771) brought workers to water-powered machines in one building, at the mill\'s hours; inside, the work was split into steps (carding, drawing, roving, spinning), each with its own machine and workers; Smith\'s ten men made about forty-eight thousand pins a day by splitting the work, where Smith thought ten men working separately, without training, might not make twenty each; so the factory made more goods with less skilled, cheaper labor.',
-          'Early finishers: the Evidence Lab (Module 07, required when the deck was built, now the early-finisher option). Its cards are four real objects (de Loutherbourg\'s Coalbrookdale by Night, 1801; the cotton plant engraved after Merian, 1807; Allom\'s mule-spinning room, 1834; the power-loom weaving shed, 1835) and two verified excerpts (Smith\'s pin workshop, 1776; the patent clause of the Statute of Monopolies, 1624). Students choose two cards and say what kind of source each is, what it shows about a cause or about the factory system, and what it cannot tell them: the mill engravings were made to show the industry at its best, so they leave out noise, heat and danger. Or the Primary Source (Smith\'s pin workshop and Ure\'s definition of a factory) as an extension.'
+          'Early finishers: the Evidence Lab (Module 07, required when the deck was built, now the early-finisher option). Its cards are four real objects (de Loutherbourg\'s Coalbrookdale by Night, 1801; the cotton plant engraved after Merian, 1807; Allom\'s mule-spinning room, 1834; the power-loom weaving shed, 1835) and two verified excerpts (Smith\'s pin workshop, 1776; the patent clause of the Statute of Monopolies, 1624). Students choose two cards and say what kind of source each is, what it shows about a cause or about the factory system, and what it cannot tell them: the mill engravings were made to show the industry at its best, so they leave out noise, heat and danger.',
+          'The Primary Source (Module 08), Smith\'s pin workshop and Ure\'s definition of a factory, is short-answer practice: (a) describe what splitting the work did, with Smith\'s numbers (ten men, about forty-eight thousand pins a day; working separately, perhaps not twenty each); (b) explain one way Ure\'s factory differs from Smith\'s workshop (machines driven continuously by one central power, where Smith describes hand work); (c) explain how one place and split-up work let a mill make more goods. Ask: "Which part is your describe, and did you give details, not just a name?"'
         ],
         ask: 'What is the cause in your answer, and what is the effect?',
         listenFor: 'Mill Partners: water at Cromford, and one step for each worker, tied to a factor. Checkpoint 2: the factory system (one place, one job each) as the cause; more goods, made faster by workers with less training, as the effect.'

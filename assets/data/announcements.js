@@ -2316,6 +2316,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
+        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -2344,6 +2345,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
+        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -2372,7 +2374,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '09', title: 'BeInTheRoom' },
+        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -2401,7 +2403,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '09', title: 'BeInTheRoom' },
+        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -2427,8 +2429,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       modules: [
         { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '09', title: 'BeInTheRoom' },
+        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -2454,8 +2457,9 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       modules: [
         { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
         { number: '06', title: 'Checkpoint 1' },
-        { number: '09', title: 'BeInTheRoom' },
+        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [

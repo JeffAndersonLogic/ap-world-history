@@ -2782,6 +2782,43 @@ function renderBeSurreal() {
     </article>`;
 }
 
+// ── Writing Move ──────────────────────────────────────────────────────────────
+// The exam-writing spine (Jeff, 2026-11-22). A Skill Builder or Primary Source
+// that declares `writingMove: { id, intro, example }` gets a box teaching one
+// move of AP free-response writing. What the move IS (its name, definition,
+// steps and mistakes) comes from window.BEHISTORICAL_WRITING_MOVES, generated
+// by scripts/build-writing-moves.js from the same file Yukichi, the writing
+// coach, is built from, so the lesson and the coach use the same words. The
+// topic supplies only `intro` (true the first time a move is taught: the box
+// opens expanded) and an optional `example` ({ question, weak, strong, why }).
+// A topic with no writingMove renders exactly as before.
+// scripts/test/writing-moves.test.js fails the push if a page declares a move
+// without loading assets/data/writing-moves.js, so a missing definition is
+// caught there; the fallback below only keeps the module usable if it slips.
+function renderWritingMove(wm) {
+  if (!wm || !wm.id) return '';
+  const all = window.BEHISTORICAL_WRITING_MOVES || {};
+  const m = all[wm.id];
+  if (!m) { console.warn(`Writing move "${wm.id}" is not defined; load assets/data/writing-moves.js`); return ''; }
+  const ex = wm.example;
+  return `
+    <details class="writing-move"${wm.intro ? ' open' : ''}>
+      <summary><span class="writing-move-label">Writing Move</span>${m.name}</summary>
+      <p>${m.what}</p>
+      <ol class="writing-move-steps">${m.steps.map(s => `<li>${s}</li>`).join('')}</ol>
+      ${ex ? `
+        <div class="writing-move-example">
+          <p class="writing-move-question"><strong>Practice question:</strong> ${ex.question}</p>
+          <p><strong>Weaker:</strong> ${ex.weak}</p>
+          <p><strong>Stronger:</strong> ${ex.strong}</p>
+          <p><strong>Why it is stronger:</strong> ${ex.why}</p>
+        </div>` : ''}
+      <p class="writing-move-avoid-label"><strong>Watch out for</strong></p>
+      <ul class="writing-move-avoid">${m.avoid.map(a => `<li>${a}</li>`).join('')}</ul>
+      ${m.onTheExam ? `<p class="writing-move-exam"><strong>On the AP Exam:</strong> ${m.onTheExam}</p>` : ''}
+    </details>`;
+}
+
 // ── Skill Builder ─────────────────────────────────────────────────────────────
 
 function renderSkill() {
@@ -2794,6 +2831,7 @@ function renderSkill() {
       <div class="skill-steps">
         ${(s.steps || []).map(step => `<div class="skill-step"><strong>${step.label}</strong>${step.text}</div>`).join('')}
       </div>
+      ${renderWritingMove(s.writingMove)}
       <div class="question"><strong>Skill Practice</strong><br>${s.prompt}</div>
       ${(s.criteria || []).length ? `
         <div class="ap-quality-check">
@@ -3057,6 +3095,7 @@ function renderPrimarySource() {
         ${(s.questions || []).map(q => `<div class="question">${q}</div>`).join('')}
       </aside>
     </div>
+    ${renderWritingMove(s.writingMove)}
     ${draftBlock('primary-source-response', responsePrompt, 'Primary Source')}`;
 }
 

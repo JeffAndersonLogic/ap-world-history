@@ -78,12 +78,26 @@
       { label: "Say what that led to", text: "Add \"so\" and the result. Example: \"so more students signed up for the after-school club.\"" },
       { label: "Put it together", text: "A new bus line opened near the school, which meant students who lived farther away could get there easily, so more students signed up for the after-school club. Use this frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\"" }
     ],
-    prompt: "Now do it yourself, twice. First, choose ONE thing people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. Explain it as a process with the frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\" Second, explain the factory system as a process in two or three sentences: what changed about where the work was done, what changed about how it was divided, and what that led to.",
+    prompt: "Now do it yourself, twice. First, choose ONE thing people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. Explain it as a process with the frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\" Second, write a thesis of one or two sentences that answers: How did environmental factors help cause industrialization in Britain from 1750 to 1900? Make a claim someone could argue with, and give two reasons. Your reasons are the start of a line of reasoning, the same chain you just practiced. Open the Writing Move box above if you need the steps.",
+    // The exam-writing spine (Jeff, 2026-11-22). The second part used to
+    // explain the factory system as a process, which repeated Checkpoint 2
+    // (why Jeff's Unit 5 review of 2026-11-21 had made this module optional).
+    // It is now a thesis rep, so the module practices a move no checkpoint
+    // does. The model is on a Unit 4 question, so it does not answer this one.
+    writingMove: {
+      id: 'thesis',
+      example: {
+        question: 'Explain why European states were able to build maritime empires from 1450 to 1750.',
+        weak: 'Europeans built maritime empires because they explored the world.',
+        strong: 'European states were able to build maritime empires because new technology, such as the caravel and the magnetic compass from China, let their ships cross open oceans, and because rulers paid for voyages in hope of new trade, wealth, and converts.',
+        why: 'The weaker one goes in a circle: exploring is part of building the empire, not a reason for it. The stronger one gives two reasons, technology and rulers\' support, each with evidence, and each one could become a paragraph.'
+      }
+    },
     criteria: [
       "I named one factor people built, with a detail from the lesson.",
       "I used \"which meant\" to say what it made cheaper or possible.",
       "I used \"so\" to say what it led to.",
-      "I explained the factory system as a process: where the work was done, how it was divided, and what that led to."
+      "My thesis answers the question with a claim someone could argue with, and gives two reasons."
     ]
   };
 

@@ -66,6 +66,7 @@ const SUITES = {
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
+    ['scripts/test/writing-moves.test.js', 'Writing moves and Yukichi: generated files reproduce, CED citations resolve, no point language, pages load the data'],
     ['scripts/test/readings-parse.test.js', '77 reading script blocks are valid JavaScript'],
     ['scripts/test/ap-practice-units12.test.js', 'Units 1-2 AP practice rigor and CED alignment'],
     ['scripts/test/ced-source.test.js', 'the story starts from the CED: lesson data, contracts, story maps and story drafts match the College Board source'],

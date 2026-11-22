@@ -213,11 +213,18 @@ window.BEHISTORICAL_LESSON = {
     intro: "In 1815 the fight for independence in Spanish America was going badly. Simón Bolívar, a creole from Caracas who had led the patriots of Venezuela, was beaten and in exile on the British island of Jamaica. In September he wrote a long letter in answer to a British resident of the island, arguing that Spanish America would win its independence and asking what kind of government it should have. These are three short passages. (\"The Peninsula\" means Spain; \"Costa Firme\" means the northern coast of South America, where Venezuela is; \"wholly representative\" means a government chosen entirely by the people's votes.)",
     attribution: "Simón Bolívar, \"Reply of a South American to a Gentleman of This Island [Jamaica],\" Kingston, 6 September 1815, translated by Lewis Bertrand, Selected Writings of Bolívar (1951)",
     text: "<strong>Passage 1.</strong> The hatred that the Peninsula has inspired in us is greater than the ocean between us.<br><br><strong>Passage 2.</strong> We have been harassed by a conduct which has not only deprived us of our rights but has kept us in a sort of permanent infancy with regard to public affairs.<br><br><strong>Passage 3.</strong> Events in Costa Firme have proved that institutions which are wholly representative are not suited to our character, customs, and present knowledge.",
+    // The exam-writing spine (Jeff, 2026-11-22): the passages are unchanged;
+    // the questions are reshaped into the exam's short-answer form, three
+    // separate parts, each built on one task verb (CED p. 200), each answered
+    // on its own. Writing Move box text: scripts/lib/writing-moves.js.
+    skill: 'Claims and Evidence in Sources (3.C), practiced as a short-answer question',
     questions: [
-      "Identify Bolívar's argument in Passages 1 and 2 in your own words. What grievance against Spain does Passage 2 name?",
-      "In Passage 3, what kind of government does Bolívar doubt Spanish America is ready for? What does that tell you about the kind of government he wanted instead?",
-      "The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" Compare that argument with Passages 1 and 3: explain one way the two documents agree and one way they differ, and what caused the difference."
-    ]
+      "(a) Identify the grievance against Spain that Bolívar names in Passage 2, and describe it in your own words.",
+      "(b) Explain what Passage 3 suggests about the kind of government Bolívar wanted for Spanish America.",
+      "(c) The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" Explain ONE way Bolívar's argument in Passage 3 differs from that claim, and what caused the difference."
+    ],
+    responsePrompt: "Answer each part on its own, labeled (a), (b), and (c). (a) Identify and describe Bolívar's grievance in Passage 2. (b) Explain what Passage 3 suggests about the government he wanted. (c) Explain ONE way Passage 3 differs from the Declaration of Independence, and what caused the difference.",
+    writingMove: { id: 'saq' }
   },
 
   beSurreal: {

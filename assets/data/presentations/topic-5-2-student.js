@@ -82,7 +82,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "thenLabel": "Then",
-        "then": "Skill Builder · Checkpoint 1 · BeInTheRoom · Checkpoint 2"
+        "then": "Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2"
       }
     },
     {
@@ -665,7 +665,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "launch-pad",
-      "eyebrow": "Work Time · Modules 05, 06, 09, 10",
+      "eyebrow": "Work Time · Modules 05, 06, 08, 10",
       "title": "Now you do the history.",
       "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
@@ -673,7 +673,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "code": "Module 05",
             "name": "Skill Builder",
-            "note": "Compare two sources, and say why they differ.",
+            "note": "Compare two sources, then write a thesis.",
             "url": "../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules"
           },
           {
@@ -683,10 +683,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "url": "../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules"
           },
           {
-            "code": "Module 09",
-            "name": "BeInTheRoom",
-            "note": "The Saint-Domingue Constitution, 1801.",
-            "url": "../beintheroom/unit-5/the-saint-domingue-constitution.html"
+            "code": "Module 08",
+            "name": "Primary Source",
+            "note": "The Letter from Jamaica: three short answers.",
+            "url": "../unit-5/lesson-5-2-nationalism-and-revolutions.html#modules"
           },
           {
             "code": "Module 10",

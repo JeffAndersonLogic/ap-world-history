@@ -218,11 +218,27 @@ window.BEHISTORICAL_LESSON = {
     intro: "In July 1848, about 300 people met in Seneca Falls, New York, for a women's rights convention organized by Elizabeth Cady Stanton, Lucretia Mott (a Quaker minister), and three other women. Stanton, with members of the M'Clintock family, drafted a Declaration of Sentiments that copied the form of the Declaration of Independence of 1776, and 100 women and men signed it. These are three short passages. (\"Self-evident\" means so clearly true it needs no proof; \"inalienable\" means it cannot be taken away; \"the elective franchise\" means the right to vote.)",
     attribution: "Declaration of Sentiments, Women's Rights Convention, Seneca Falls, New York, July 1848 (text from the National Park Service)",
     text: "<strong>Passage 1.</strong> We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.<br><br><strong>Passage 2.</strong> He has never permitted her to exercise her inalienable right to the elective franchise.<br><br><strong>Passage 3.</strong> He has compelled her to submit to laws, in the formation of which she had no voice.",
+    // The exam-writing spine (Jeff, 2026-11-22): the passages are unchanged;
+    // the questions are reshaped into the exam's short-answer form, three
+    // separate parts, each built on one task verb (CED p. 200), each answered
+    // on its own. Writing Move box text: scripts/lib/writing-moves.js.
+    skill: 'Claims and Evidence in Sources (3.A), practiced as a short-answer question',
     questions: [
-      "Identify the claim in the first passage and describe it in your own words. Which two words did the writers add to the Declaration of Independence's \"all men are created equal\"?",
-      "Who is \"he\" in the second and third passages, and what are the writers arguing against?",
-      "The declaration borrowed the words of 1776 to make a new demand. Use it to explain one way the Enlightenment's ideas affected society over time, and one thing it shows had not yet changed by 1848."
-    ]
+      "(a) Identify the claim the writers make in Passage 1, and describe it in your own words.",
+      "(b) Explain how the writers used the words of the 1776 Declaration of Independence to make a new demand. Include the two words they added to \"all men are created equal.\"",
+      "(c) Explain ONE thing Passages 2 and 3 show had not yet changed for women by 1848. Start by saying who \"he\" is."
+    ],
+    responsePrompt: "Answer each part on its own, labeled (a), (b), and (c). (a) Identify and describe the claim in Passage 1. (b) Explain how the writers used the words of 1776 to make a new demand. (c) Explain ONE thing Passages 2 and 3 show had not yet changed by 1848.",
+    writingMove: {
+      id: 'saq',
+      intro: true,
+      example: {
+        question: '(a) Describe the claim in this line by Montesquieu (1748): "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty."',
+        weak: 'Montesquieu talks about liberty and power.',
+        strong: 'Montesquieu claims that people stay free only when the power to make laws and the power to carry them out are held by different people, so that no one ruler holds both.',
+        why: 'The verb is describe, so the answer has to give the claim\'s important details, not just its topic. The weaker one names the topic. The stronger one says what Montesquieu wants you to believe, in the student\'s own words.'
+      }
+    }
   },
 
   beSurreal: {

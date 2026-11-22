@@ -82,7 +82,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "thenLabel": "Then",
-        "then": "Skill Builder · Checkpoint 1 · Checkpoint 2"
+        "then": "Skill Builder · Checkpoint 1 · Primary Source · Checkpoint 2"
       }
     },
     {
@@ -642,7 +642,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "launch-pad",
-      "eyebrow": "Work Time · Modules 05, 06, 10",
+      "eyebrow": "Work Time · Modules 05, 06, 08, 10",
       "title": "Now you do the history.",
       "footer": "In this order. Checkpoint 2 not finished in class? It is homework.",
       "template": {
@@ -650,13 +650,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "code": "Module 05",
             "name": "Skill Builder",
-            "note": "Find the claim in two of three new sources.",
+            "note": "Find the claim, then write your own thesis.",
             "url": "../unit-5/lesson-5-1-enlightenment.html#modules"
           },
           {
             "code": "Module 06",
             "name": "Checkpoint 1",
             "note": "On your own, no coach.",
+            "url": "../unit-5/lesson-5-1-enlightenment.html#modules"
+          },
+          {
+            "code": "Module 08",
+            "name": "Primary Source",
+            "note": "Seneca Falls, 1848: three short answers.",
             "url": "../unit-5/lesson-5-1-enlightenment.html#modules"
           },
           {

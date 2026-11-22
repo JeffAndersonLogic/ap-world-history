@@ -42,6 +42,7 @@
     "build:readings": "node scripts/build-unit-readings.js",
     "extract:readings": "node scripts/extract-unit-content.js",
     "build:socrates": "node scripts/build-socrates.js",
+    "build:writing-moves": "node scripts/build-writing-moves.js",
     "eval:socrates": "node scripts/test/socrates-eval.js",
     "eval:teach-me": "node scripts/test/socrates-eval.js --suite teach-me",
     "eval:turns": "node scripts/test/socrates-turns.js",

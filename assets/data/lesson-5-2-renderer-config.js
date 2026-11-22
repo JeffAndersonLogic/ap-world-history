@@ -105,12 +105,24 @@
       { label: "Say how they agree and differ", text: "They agree that liberty and equality belong to people by right. They differ in who claims them: the French Assembly wrote the words for France, while Toussaint claimed them for enslaved people in a French colony, and called them to fight for them." },
       { label: "Explain the difference", text: "The difference comes from each grievance. The Assembly was answering privilege in France. Toussaint was answering slavery in Saint-Domingue, which the Assembly's declaration had left in place. Use this frame: \"Both [Source A] and [Source B] argue that [what they share], but [how they differ], because [what caused each one].\"" }
     ],
-    prompt: "Now do it yourself. Choose ONE pair. Pair 1: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and Simón Bolívar's Letter from Jamaica (1815), \"institutions which are wholly representative are not suited to our character, customs, and present knowledge.\" Pair 2: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and the Declaration of the Rights of Man and of the Citizen (1789), \"The principle of all sovereignty resides essentially in the nation.\" (Sovereignty means the highest power in a state.) Write three sentences: say each source's argument in your own words, say one way they agree and one way they differ, and explain what caused the difference.",
+    prompt: "Now do it yourself. Choose ONE pair. Pair 1: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and Simón Bolívar's Letter from Jamaica (1815), \"institutions which are wholly representative are not suited to our character, customs, and present knowledge.\" Pair 2: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and the Declaration of the Rights of Man and of the Citizen (1789), \"The principle of all sovereignty resides essentially in the nation.\" (Sovereignty means the highest power in a state.) Write three sentences: say each source's argument in your own words, say one way they agree and one way they differ, and explain what caused the difference. Then write a thesis of one or two sentences that answers: What caused the revolutions of 1750 to 1900? Make a claim someone could argue with, and give two reasons. Open the Writing Move box above if you need the steps.",
+    // The exam-writing spine (Jeff, 2026-11-22): second thesis rep, box folded.
+    // The model is on a Unit 3 question, so it does not answer this one.
+    writingMove: {
+      id: 'thesis',
+      example: {
+        question: 'Explain how rulers of land-based empires made their power look legitimate from 1450 to 1750.',
+        weak: 'Rulers made their power look legitimate in different ways.',
+        strong: 'Rulers of land-based empires made their power look legitimate through religion, as when Louis XIV claimed to rule by divine right, and through monumental buildings, such as the Taj Mahal and the palace at Versailles, that made a ruler\'s power impossible to miss.',
+        why: 'The weaker one names no way at all. The stronger one answers with two reasons, religion and monumental buildings, and gives an example of each, so the line of reasoning is clear before the first paragraph begins.'
+      }
+    },
     criteria: [
       "I said each source's argument in my own words.",
       "I named one way the two sources agree.",
       "I named one way they differ.",
-      "I explained what caused the difference, using what I know about each revolution."
+      "I explained what caused the difference, using what I know about each revolution.",
+      "My thesis answers the question with a claim someone could argue with, and gives two reasons."
     ]
   };
 

@@ -171,11 +171,18 @@ window.BEHISTORICAL_LESSON = {
     intro: "Two writers of the time described how splitting work into steps changed how things were made. Adam Smith, a Scottish thinker, wrote The Wealth of Nations in 1776, five years after Arkwright's mill opened at Cromford. He described how a pin workshop divided its work. Andrew Ure, a Scottish scientist who admired factories, wrote The Philosophy of Manufactures in 1835, when steam engines drove many cotton mills. He defined what a factory is.",
     attribution: "Passages 1 and 2: Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, 1776, Book I, chapter 1. Passage 3: Andrew Ure, The Philosophy of Manufactures, London, 1835, p. 13",
     text: "<strong>Passage 1, Smith (1776).</strong> One man draws out the wire; another straights it; a third cuts it; a fourth points it; a fifth grinds it at the top for receiving the head ... and the important business of making a pin is, in this manner, divided into about eighteen distinct operations.<br><br><strong>Passage 2, Smith (1776).</strong> I have seen a small manufactory of this kind, where ten men only were employed ... Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty, perhaps not one pin in a day.<br><br><strong>Passage 3, Ure (1835).</strong> The term Factory, in technology, designates the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power.<br><br><em>Words to know: a manufactory is a workshop; wrought means worked; straights means straightens; assiduous means careful and hard-working; impelled means driven; a central power is one engine or water wheel driving every machine.</em>",
+    // The exam-writing spine (Jeff, 2026-11-22): the passages are unchanged;
+    // the questions are reshaped into the exam's short-answer form, three
+    // separate parts, each built on one task verb (CED p. 200), each answered
+    // on its own. Writing Move box text: scripts/lib/writing-moves.js.
+    skill: 'Developments and Processes (1.B), practiced as a short-answer question',
     questions: [
-      "In your own words, explain what Smith describes in Passages 1 and 2. How many pins could ten men make in a day by splitting the work, and how many does Smith think each could make working separately, without having learned the trade?",
-      "In Passage 3, Ure defines a factory. His definition names \"a system of productive machines\" and \"a central power.\" Does Smith describe either of these in Passages 1 and 2? What does that tell you about how a factory differs from Smith's workshop?",
-      "Using both writers, explain the factory system as a process: how did gathering workers in one place and splitting the work into steps let a mill make more goods?"
-    ]
+      "(a) Describe what Smith says happened when ten men split the work of making pins (Passages 1 and 2). Use his numbers.",
+      "(b) Explain ONE way the factory Ure defines in Passage 3 differs from Smith's pin workshop.",
+      "(c) Explain how gathering workers in one place and splitting the work into steps let a mill make more goods."
+    ],
+    responsePrompt: "Answer each part on its own, labeled (a), (b), and (c). (a) Describe what Smith says splitting the work did, with his numbers. (b) Explain ONE way Ure's factory differs from Smith's workshop. (c) Explain how one place and split-up work let a mill make more goods.",
+    writingMove: { id: 'saq' }
   },
 
   beSurreal: {
