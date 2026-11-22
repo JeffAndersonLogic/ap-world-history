@@ -35,7 +35,14 @@
  *   8. every quotation inside a "What the College Board says" box (a note of
  *      kind 'cb') is word for word in the CED source, so the box that tells a
  *      student "this is what the course requires" cannot misquote it, and no
- *      <br> runs two items together (one paragraph per item, via `paras`).
+ *      <br> runs two items together (one paragraph per item, via `paras`);
+ *   9. since the 2026-11-21 plain-language pass, the shape a reader can rely on
+ *      from chapter to chapter: exactly six closing cards in one order
+ *      (Political, Religious, Social, Intellectual, Technological, Economic),
+ *      so a jigsaw group can lay any two chapters side by side; a "story in
+ *      short" of four to six sentences, none over 20 words; and every College
+ *      Board box opening with a plain "In short:" sentence, which is what lets
+ *      the renderer fold the exact wording behind a tap.
  *
  * And per rendered volume: every regional chapter shows its reading time,
  * Part Two lists every region, and each chapter ends with links onward (next
@@ -199,10 +206,27 @@ function checkRegion(mod, fileBase, ced, volumeKeys) {
     }
   }
 
+  const cats6 = ((mod.closing && mod.closing.pairs) || []).map(p => String(p.category || ''));
+  const ORDER = ['Political', 'Religious', 'Social', 'Intellectual', 'Technological', 'Economic'];
+  if (cats6.join('|') !== ORDER.join('|')) {
+    problems.push(`closing cards must be exactly ${ORDER.join(', ')}, in that order (found ${cats6.join(', ') || 'none'})`);
+  }
+  if (!Array.isArray(mod.inShort) || mod.inShort.length < 4 || mod.inShort.length > 6) {
+    problems.push('no "story in short" (inShort) of four to six sentences');
+  } else {
+    for (const line of mod.inShort) {
+      const n = String(line).replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
+      if (n > 20) problems.push(`a "story in short" sentence runs ${n} words (20 at most): "${String(line).slice(0, 50)}..."`);
+    }
+  }
+
   const cedFull = cedText(ced);
   for (const note of notes(mod).filter(n => n.kind === 'cb')) {
     for (const piece of misquotes(note, cedFull)) {
       problems.push(`College Board box quotes words that are not in the CED source: "${piece}"`);
+    }
+    if (!Array.isArray(note.paras) || !/^In short:/.test(note.paras[0] || '')) {
+      problems.push('College Board box does not open with a plain "In short:" sentence (paras[0])');
     }
     if (/<br\b/i.test([note.html || ''].concat(note.paras || []).join(' '))) {
       problems.push('College Board box joins items with <br>; give each item its own paragraph (paras)');
@@ -260,7 +284,8 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     topicKey: 'r9-north', slug: 'region-9-north', unit: '9', region: 'North',
     titleHtml: 'The <em>North</em>', deck: 'A deck.',
     topics: ['9.1'], ced: ['KC-A', 'KC-B', 'KC-C'],
-    empires: [{ id: 'a', parts: [{ heading: 'h', blocks: [{ p: 'See <a href="#chapter-t9-1">Topic 9.1</a>.' }, { note: { kind: 'cb', label: 'What the College Board says', paras: ['"States expanded their territory ... conquest."'] } }] }] }],
+    inShort: ['One.', 'Two.', 'Three.', 'Four.', 'Five.'],
+    empires: [{ id: 'a', parts: [{ heading: 'h', blocks: [{ p: 'See <a href="#chapter-t9-1">Topic 9.1</a>.' }, { note: { kind: 'cb', label: 'What the College Board says', paras: ['In short: states grew.', '"States expanded their territory ... conquest."'] } }] }] }],
     closing: {
       heading: 'At a glance', intro: 'i',
       argue: { move: 'Causation', prompt: 'Why did it happen?' },
@@ -288,9 +313,14 @@ const fail = msg => { failures++; console.error(`  FAIL ${msg}`); };
     // The renderer skips a closing with no cards, prompt included: the
     // rendered-output check must notice the prompt never reached the page.
     ['an Argue it prompt the renderer never shows', m => { m.closing.pairs = []; }, /does not appear in the rendered chapter/],
-    ['a College Board box that misquotes the CED', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', html: '"Rulers used many different methods"' } }); }, /not in the CED source/],
-    ['a College Board box quote cut with an ellipsis, one half invented', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', html: '"States expanded ... and nobody ever objected"' } }); }, /not in the CED source/],
-    ['a College Board box that joins items with <br>', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', html: 'one<br>two' } }); }, /<br>/]
+    ['a College Board box that misquotes the CED', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', paras: ['In short: x.', '"Rulers used many different methods"'] } }); }, /not in the CED source/],
+    ['a College Board box quote cut with an ellipsis, one half invented', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', paras: ['In short: x.', '"States expanded ... and nobody ever objected"'] } }); }, /not in the CED source/],
+    ['a College Board box that joins items with <br>', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', paras: ['In short: one<br>two'] } }); }, /<br>/],
+    ['a College Board box with no plain "In short" sentence', m => { m.empires[0].parts[0].blocks.push({ note: { kind: 'cb', label: 'x', paras: ['"States expanded their territory by conquest."'] } }); }, /In short/],
+    ['closing cards out of order', m => { m.closing.pairs.reverse(); }, /in that order/],
+    ['two sides merged on one card', m => { m.closing.pairs.splice(3, 2, { category: 'Intellectual and technological', title: 't', body: 'b' }); }, /in that order/],
+    ['no story in short', m => { delete m.inShort; }, /story in short/],
+    ['a story-in-short sentence that is too long', m => { m.inShort[0] = 'one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twentyone.'; }, /20 at most/]
   ];
   for (const [name, mutate, expect] of controls) {
     const m = good();

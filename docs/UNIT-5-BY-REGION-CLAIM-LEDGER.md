@@ -544,3 +544,56 @@ naming the only phrases that changed.
 four in ten" women servants in 1851, which this build's reviewers narrowed to about one in three (four
 in ten with washerwomen and charwomen). Topic 5.4 claims a per-person fall in output for India but not
 for China, which Bairoch also estimates.
+
+## Plain-language and accuracy pass (2026-11-21 to 22, Jeff: target 8.5 from every persona)
+
+**Baseline panel (2026-11-21), before any rewrite:** Ana (English learner, reading IEP) 5, Jordan
+(exam crammer) 7.5, Dev (dyslexic, phone, Listen) 5.5, Dr. Okafor (hostile AP Reader) 7.5, Ms. Reyes
+(second-classroom teacher) 7. Consensus 5 of 5: one merged pass, plain language plus a CED-quotation
+pass, each section ending in a College Board box (plain "In short" sentence, whole Key Concept
+sentences, optional examples labelled the same way every time). Full findings kept in the session
+scratchpad; the ones acted on are below.
+
+**What changed in all six chapters.** Story prose cut to one idea a sentence (averages about 20 words
+to about 11; story grade about 10 to about 5 to 7; no sentence over 30 words outside a quotation);
+definitions moved out of commas into parentheses or their own sentences, idioms removed, every course
+word defined; a five-sentence "story in short" at the top; one College Board box per section, its
+exact wording folded behind "Show the exact words"; at least one How we know and one Common mistake
+box; six closing cards in one order; cross-region references written as phrases that read well aloud.
+
+**Panel findings fixed, by chapter (NEW FACT = verified by the rewriter on the web, reviewer first):**
+
+- *Britain:* the seven factors explained one by one, the CED sentence quoted whole in the box; Corn
+  Laws 1815, sliding tariff 1828, repeal voted 1846 with the duty falling to 1849 (Topic 5.7);
+  Unilever an optional example; three cut Key Concept sentences now whole; crime figures count people
+  charged (Topic 5.9). **Adjacent:** Topic 5.9 says "Snow showed the route was the water", stronger
+  than this ledger's pass 1 narrowing (A5).
+- *Europe:* NEW FACT, the Civil Code of 1804 named as what Napoleon's armies carried; NEW FACT, the
+  Anti-Socialist Law (1878) banned groups, meetings and papers but not candidates, so "socialist
+  candidates won more votes than any other party, about 20 percent" in February 1890, and the law
+  lapsed that September; NEW FACT, the Bessemer process (1856); NEW FACT, Witte as finance minister
+  1892 to 1903, foreign borrowing for railways and industry (Malik, Bankers and Bolsheviks, 2018).
+  Mistake box: "not the only cause". **Adjacent:** Topic 5.8 (line 137) and its ledger (row 466) say
+  the party won "while still banned".
+- *Americas:* NEW FACT, Hidalgo defeated and executed in 1811, independence in 1821 under conservative
+  creoles and Iturbide, emperor 1822 (Library of Congress exhibit); NEW FACT, the Portuguese court in
+  Rio from 1808, Pedro's declaration in 1822; How we know boxes on Toussaint's change of side and on
+  Riis. **Adjacent:** Topic 5.2 tells Mexico without its outcome and keeps the overcorrecting box "Do
+  not write that the Enlightenment caused the revolutions."
+- *Middle East:* the stitched 64-word quotation gone, the drivers stated plainly; the fez factory in
+  time order; the Balkans as a dated sequence, NEW FACT Serbia's self-rule from 1830 (Leovac, Belleten);
+  NEW FACT the constitution suspended, parliament next met 1908 (Britannica); the Social card about
+  labor.
+- *East Asia:* KC-5.2.II.A quoted whole; HSBC an optional example, described as a bank; NEW FACT the
+  Meiji dates separated (power returned late 1867, court taken early 1868, civil war won 1869, domains
+  abolished 1871, conscription law 1873 with exemptions, sword ban 1876). **Adjacent:** Topic 5.6 (lines
+  204 and 210) has the same compressed 1868 and 1871 sentences.
+- *South and Southeast Asia:* NEW FACT India's first cotton mill British-owned near Calcutta about 1818;
+  Bombay's industry begins with Davar's mill of 1854 (the claims row above, "From 1854 Indian owners
+  built ... first in Bombay", is superseded); "bought British machine-made cloth" for "most of its";
+  section dates match their content; the Philippines joined to the India story.
+
+**Not adopted:** a Comparison "Argue it" (Jordan, Okafor, Reyes). Unit 5's CED gives no topic the
+Comparison reasoning process, and the CED rule holds; prompts ask comparative questions as Causation
+or Continuity and Change instead. **Deferred:** a locator map per chapter (Reyes, Okafor), pending the
+second panel.

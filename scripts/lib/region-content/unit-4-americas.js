@@ -43,9 +43,26 @@
  * the Pueblo revolts of 1694 and 1696, Metacom's raids on English towns, the Palmares treaty
  * (1678) with Ganga Zumba and Zumbi, and the name of South Carolina's 1740 law. See
  * docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md.
+ *
+ * Second polish (2026-11-21, the addendum to the plain-language brief): history and claims
+ * unchanged. Every "What the College Board says" box now opens with an "In short:" sentence,
+ * then gives whole Key Concept sentences word for word (a cut shown with " ... "), then each
+ * illustrative example group in its own paragraph headed "An optional College Board example:".
+ * No Key Concept sentence appears in more than one box, and only sentences this chapter
+ * teaches are quoted. Added `inShort` (five sentences). Definitions moved out from between
+ * commas into parentheses or their own short sentences (Indigenous, disease vector, endemic,
+ * epidemic, tribute, friar, draft, viceroy, casta, peninsulares, creoles, mestizos, shares,
+ * maroon community, militia); idioms removed ("struck silver", "beat back", "the last word");
+ * topic links moved out of the story into the boxes; cross-region references written as
+ * phrases that read well aloud. Cook and Borah's central Mexico figures moved from the story
+ * into a "How we know" box, with the tribute records they were built from (Topic 4.3). Added
+ * from Topic 4.5: Vodou "in the 1700s". Metacom's war now says the other Native nations
+ * joined him. Closing cards rewritten as a claim plus dated evidence.
  */
 
 const CB = 'What the College Board says';
+const N = n => `<span class="num">${n}</span>`;
+const KT = t => `<span class="kt">${t}</span>`;
 
 module.exports = {
   topicKey: 'r4-americas',
@@ -53,7 +70,14 @@ module.exports = {
   unit: '4',
   region: 'The Americas',
   titleHtml: 'The <em>Americas</em>',
-  deck: `Between 1450 and 1750, the Americas were joined to the rest of the world. For the people already here, it began as a catastrophe. Colonies grew rich on silver, sugar and forced labor. Yet Indigenous Americans, Africans and Europeans together made the new societies, and people under colonial rule pushed back.`,
+  deck: `Between 1450 and 1750, the Americas were joined to the rest of the world. For the people already here, it began as a catastrophe. Colonies grew rich on silver, sugar and forced labor. Yet Indigenous Americans, Africans and Europeans together made the new societies. And people under colonial rule resisted.`,
+  inShort: [
+    `In 1492 a Spanish voyage joined the Americas to Afro-Eurasia, and new diseases killed millions of Indigenous people.`,
+    `Plants and animals crossed both ways: horses and sugar came west, and maize and potatoes went east.`,
+    `Spain forced Indigenous men to work its silver mines, and much of that silver ended up in China.`,
+    `Sugar planters bought millions of enslaved Africans, who became most of the people in much of the Caribbean.`,
+    `Christianity spread and blended with older faiths, and Indigenous and enslaved people resisted, sometimes winning lasting terms.`
+  ],
   topics: ['4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8'],
   ced: [
     'KC-4.1',
@@ -93,37 +117,55 @@ module.exports = {
         {
           heading: 'Voyages across the ocean',
           blocks: [
-            { p: `In <span class="num">1450</span>, tens of millions of people lived in the Americas. In <span class="num">1492</span> the rulers of Spain paid for a voyage by <b>Christopher Columbus</b> (<a href="#chapter-t4-2">Topic 4.2</a>). He believed, wrongly, that Asia lay a few thousand miles west. He reached the Caribbean instead.` },
-            { p: `England, France and the Dutch sent ships across the northern Atlantic, hoping to find a sea route to Asia. <b>John Cabot</b> sailed for England in <span class="num">1497</span>, <b>Jacques Cartier</b> for France in the 1530s, and <b>Henry Hudson</b> for the Dutch in <span class="num">1609</span>. Land and Arctic ice blocked every route. Instead, they found cod and a fur trade with Indigenous nations (see <a href="#r4-europe-crowns">Europe</a>).` }
+            { p: `In ${N('1450')}, tens of millions of people lived in the Americas. Historians call them ${KT('Indigenous')} peoples. Indigenous means the first people to live in a place. In ${N('1492')} the rulers of Spain paid for a voyage by <b>Christopher Columbus</b>. He wrongly believed that Asia lay a few thousand miles to the west. He reached the Caribbean instead.` },
+            { p: `England, France and the Dutch also sent ships across the northern Atlantic. They hoped to find a sea route to Asia. <b>John Cabot</b> sailed for England in ${N('1497')}. <b>Jacques Cartier</b> sailed for France in the 1530s, and <b>Henry Hudson</b> for the Dutch in ${N('1609')}. Land and Arctic ice blocked every route. Instead, the sailors found cod and a fur trade with Indigenous nations. <a href="#r4-europe-crowns">The Europe chapter</a> has more on these voyages.` }
           ]
         },
         {
           heading: 'The germs that did the most damage',
           blocks: [
-            { p: `The ships carried <span class="kt">disease vectors</span>: living things, such as rats and mosquitoes, that spread disease. They also brought diseases that were <span class="kt">endemic</span> in Afro-Eurasia, which means always present there: <b>smallpox</b>, <b>measles</b> and, most likely, <b>malaria</b>. Many of these diseases first spread where people lived close to herd animals, and the Americas had few herds. So its people had never met these germs.` },
-            { p: `Most European adults had <span class="kt">acquired immunity</span> to smallpox. They had caught it as children and survived. Nobody in the Americas had had that chance. So smallpox struck people of every age at once. Often no one was left healthy enough to plant, cook or nurse the sick.` },
-            { p: `Smallpox swept through Tenochtitlan, the Mexica (Aztec) capital, in <span class="num">1520</span>. In <span class="num">1521</span> Spanish forces and many thousands of Indigenous allies, helped by the epidemic, overthrew the Mexica. In the 1530s the Spanish took over the Inca empire. A war over the throne had already split it, after an epidemic killed its emperor.` },
-            { p: `In many regions, the population fell by half to ninety percent or more within about a century. The historians Sherburne Cook and Woodrow Borah estimated that central Mexico fell from about <span class="num">6.3 million</span> people in <span class="num">1548</span> to about <span class="num">1.1 million</span> in <span class="num">1605</span>. Other estimates differ, but nearly all show a catastrophe. War, forced labor and hunger made every epidemic deadlier.` },
+            { p: `The ships carried ${KT('disease vectors')}. A disease vector is a living thing that spreads disease, such as a rat or a mosquito. The ships also brought diseases that were ${KT('endemic')} in Afro-Eurasia (Africa, Europe and Asia). Endemic means always present in a place. These diseases included <b>smallpox</b>, <b>measles</b> and, most likely, <b>malaria</b>.` },
+            { p: `Many of these diseases first spread where people lived close to herd animals. The Americas had few herd animals. So their people had never met these germs.` },
+            { p: `Most European adults had ${KT('acquired immunity')} to smallpox. They had caught it as children and survived, so their bodies could fight it off. Nobody in the Americas had had that chance. So smallpox struck people of every age at once. Often no one was left healthy enough to plant, cook or nurse the sick.` },
+            { p: `Smallpox spread through Tenochtitlan in ${N('1520')}. Tenochtitlan was the capital of the Mexica (Aztecs). In ${N('1521')} Spanish forces and many thousands of Indigenous allies overthrew the Mexica. The ${KT('epidemic')} (a fast-spreading outbreak of disease) had helped them.` },
+            { p: `In the 1530s the Spanish took over the Inca empire. A war over the throne had already split it. That war came after an epidemic killed the Inca emperor.` },
+            { p: `In many regions, the population fell by half to ninety percent or more within about a century. War, forced labor and hunger made every epidemic deadlier.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know',
+              html: `Population figures for this period are estimates, not counts. The historians Sherburne Cook and Woodrow Borah built theirs from Spanish tribute records (lists of what each town had to pay). They estimated that central Mexico fell from about ${N('6.3 million')} people in ${N('1548')} to about ${N('1.1 million')} in ${N('1605')}. Other historians give other numbers. But even the lowest estimates that historians trust describe a catastrophe.`
+            } },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Indigenous Americans were biologically weaker. Immunity to smallpox comes from surviving it. The pattern ran both ways: in West Africa, malaria and yellow fever killed Europeans in huge numbers, while local people had long lived with them.`
+              html: `Do not write that Indigenous Americans were biologically weaker. Immunity to smallpox comes from surviving it. The pattern ran both ways. In West Africa, malaria and yellow fever killed Europeans in huge numbers, while local people had long lived with them.`
             } }
           ]
         },
         {
           heading: 'Animals, crops and sugar',
           blocks: [
-            { p: `Historians call this two-way movement of plants, animals and diseases the <span class="kt">Columbian Exchange</span>. Disease crossed by accident, but much else crossed on purpose. On his second voyage, in <span class="num">1493</span>, Columbus brought horses, cattle, pigs, wheat and sugarcane. Enslaved Africans, carried across the ocean by force, brought foods such as okra and rice. They grew them in garden plots to feed themselves (<a href="#chapter-t4-3">Topic 4.3</a>).` },
+            { p: `Historians call this two-way movement of plants, animals and diseases the ${KT('Columbian Exchange')}. Disease crossed by accident, but much else crossed on purpose. On his second voyage, in ${N('1493')}, Columbus brought horses, cattle, pigs, wheat and sugarcane.` },
+            { p: `Enslaved Africans were carried across the ocean by force. They brought foods such as okra and rice. They grew them in garden plots to feed themselves.` },
             { p: `By the 1700s, Plains nations such as the <b>Comanche</b> had built a new way of life around hunting bison on horseback. It was a new Indigenous culture, not an old one.` },
-            { p: `Crops also went east. Maize, potatoes and cassava became <span class="kt">staple crops</span>, the main everyday foods, in parts of Europe, Asia and Africa. They grew where older crops could not, so they helped feed growing populations. Sugar became the great <span class="kt">cash crop</span>, a crop grown to sell. It grew on <span class="kt">plantations</span>, large farms that grow one cash crop with forced labor.` },
+            { p: `Crops also went east. Maize, potatoes and cassava became ${KT('staple crops')} (main everyday foods) in parts of Europe, Asia and Africa. They grew where older crops could not, so they helped feed growing populations.` },
+            { p: `Sugar became the great ${KT('cash crop')} (a crop grown to sell). It grew on ${KT('plantations')}. A plantation is a large farm that grows one cash crop with forced labor.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
+                `In short: ocean voyages joined the two hemispheres, and the plants, animals and diseases that crossed changed life on both sides.`,
+                `<a href="#chapter-t4-8">Topic 4.8</a>: "The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world."`,
+                `<a href="#chapter-t4-2">Topic 4.2</a>: "New state-supported transoceanic maritime exploration occurred in this period."`,
+                `<a href="#chapter-t4-2">Topic 4.2</a>: "Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade."`,
                 `<a href="#chapter-t4-2">Topic 4.2</a>: "Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia."`,
-                `<a href="#chapter-t4-3">Topic 4.3</a>: "Some of these diseases substantially reduced the indigenous populations, with catastrophic effects in many areas."`,
-                `<a href="#chapter-t4-3">Topic 4.3</a>: "Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons." Horses, okra and rice are among the College Board's examples.`
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "The new connections between the Eastern and Western Hemispheres resulted in the exchange of new plants, animals, and diseases, known as the Columbian Exchange."`,
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria. Some of these diseases substantially reduced the indigenous populations, with catastrophic effects in many areas."`,
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."`,
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons."`,
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops."`,
+                `An optional College Board example: horses, pigs and cattle (domesticated animals Europeans brought).`,
+                `An optional College Board example: okra and rice (foods enslaved Africans brought).`
               ]
             } }
           ]
@@ -143,43 +185,48 @@ module.exports = {
       name: 'Silver, Land and Forced Work',
       navLabel: 'Silver and labor',
       dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Encomienda, Potosí, the galleons, casta',
-      thesis: `Disease was killing the workers Spain needed. So Spain reused an Inca labor duty and brought in new kinds of forced work. Much of their silver ended up in China.`,
+      thesis: `Disease was killing the workers Spain needed. So Spain reused an Inca labor duty and brought in new kinds of forced work. Much of the silver ended up in China.`,
       parts: [
         {
           heading: 'Paying conquerors with other people\'s work',
           blocks: [
-            { p: `Colonial economies in the Americas rested mainly on farming, with mining beside it (<a href="#chapter-t4-4">Topic 4.4</a>). The Spanish crown rewarded conquerors with the <span class="kt">encomienda</span>. This was the right to demand labor and tribute, or payments of goods, from one Indigenous community. In return, the holder was supposed to protect its people and have them taught Christianity.` },
-            { p: `The friar Bartolomé de las Casas campaigned against the encomienda, and the New Laws of <span class="num">1542</span> restricted it. As it declined, the <span class="kt">hacienda</span> grew. This was a large estate. Its Indigenous and mixed-race workers were often paid wages, and debt sometimes tied them to it.` }
+            { p: `Colonial economies in the Americas depended mainly on farming. Mining was also important. The Spanish crown rewarded conquerors with the ${KT('encomienda')}. It was the right to demand labor and tribute (payments of goods) from one Indigenous community. In return, the colonist who held it was supposed to protect its people and have them taught Christianity.` },
+            { p: `Bartolomé de las Casas campaigned against the encomienda. He was a friar (a member of a Catholic religious order). The New Laws of ${N('1542')} limited the encomienda. As it declined, the ${KT('hacienda')} grew. A hacienda was a large estate. Its Indigenous and mixed-race workers were often paid wages. Sometimes debt kept them from leaving.` }
           ]
         },
         {
           heading: 'A mountain of silver',
           blocks: [
-            { p: `In <span class="num">1545</span>, by his own later account, an Andean miner named Diego Gualpa found silver at <b>Potosí</b>, high in the Andes. Spanish colonists claimed the mountain. In <span class="num">1546</span> miners struck silver at Zacatecas in Mexico. From the 1570s, a way of refining silver with mercury, worked out in Mexico, was used at Potosí too.` },
-            { p: `The Inca had required communities to send people, in turns, to work for the state. This rotating duty was the <span class="kt">mit’a</span>. In the 1570s Francisco de Toledo, the viceroy (the king's governor) of Peru, turned it into a draft for Potosí. Each year, about one-seventh of the adult men of the highland districts had to go: more than <span class="num">14,000</span> men by <span class="num">1578</span>. The idea of a turn of service continued. The master and the danger changed. Many men never came home from the mines.` }
+            { p: `In ${N('1545')}, an Andean miner named Diego Gualpa found silver at <b>Potosí</b>, high in the Andes Mountains. We know this from his own later account. Spanish colonists claimed the mountain. In ${N('1546')} miners found silver at Zacatecas in Mexico. From the 1570s, Potosí also used a way to separate silver from rock with mercury (a liquid metal). It was first worked out in Mexico.` },
+            { p: `The Inca had required communities to send people in turns to work for the state. This rotating duty was the ${KT('mit’a')}. In the 1570s Francisco de Toledo turned it into a draft for the Potosí mine. A draft forces people to serve. Toledo was the viceroy of Peru (the king's governor there).` },
+            { p: `Each year, about one-seventh of the adult men of the highland districts had to go. By ${N('1578')}, the draft took more than ${N('14,000')} men. The idea of a turn of service continued, but the master and the danger changed. Many men never came home from the mines.` }
           ]
         },
         {
           heading: 'Where the silver went',
           blocks: [
-            { p: `Spain ran this trade by the rules of <span class="kt">mercantilism</span>. This was the idea that a kingdom grows strong by gathering gold and silver. In this view, a kingdom should also keep its colonies' trade for itself (<a href="#chapter-t4-5">Topic 4.5</a>).` },
-            { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. Much of it ended up in China. Silver was already worth more in China than in Europe, because the Ming government had given up paper money. Then a tax reform, the Single Whip, made most taxes payable in silver, which added to the demand. And China mined little silver of its own (see <a href="#r4-east-asia-silver">East Asia</a>).` },
-            { p: `In <span class="num">1571</span> Spain founded Manila, in the Philippines. From then on, <span class="kt">Manila galleons</span>, large Spanish ships, carried silver across the Pacific from Acapulco in Mexico to Manila. There, Chinese merchants traded silk and porcelain for it.` }
+            { p: `Spain ran this trade by the rules of ${KT('mercantilism')}. This was the idea that a kingdom grows strong by gathering gold and silver. In this view, a kingdom should also keep its colonies' trade for itself.` },
+            { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. Much of it ended up in China, for three reasons.` },
+            { p: `First, silver was already worth more in China than in Europe. That was because the Ming government (China's rulers) had given up paper money. Then a tax reform called the Single Whip made most taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this from China's side.` },
+            { p: `In ${N('1571')} Spain founded Manila, in the Philippines. From then on, ${KT('Manila galleons')} (large Spanish ships) carried silver across the Pacific from Acapulco in Mexico to Manila. There, Chinese merchants traded silk and porcelain for it.` }
           ]
         },
         {
-          heading: 'A new top, ranked by birth',
+          heading: 'A new top class, ranked by birth',
           blocks: [
-            { p: `Spanish America ranked people by their ancestry, which historians call the <span class="kt">casta</span> system (<a href="#chapter-t4-7">Topic 4.7</a>). Among people counted as Spanish, it favored those born in Spain. These <span class="kt">peninsulares</span> almost always held the post of viceroy, and many top posts in government and the Church. They were a new political elite. <span class="kt">Creoles</span>, of Spanish ancestry but born in the Americas, grew rich from mines, estates and trade. They were a new economic elite.` },
-            { p: `Below them came people of mixed ancestry, such as <span class="kt">mestizos</span>, with Spanish and Indigenous parents. Indigenous people kept their own town governments and paid tribute. People of African ancestry, free and enslaved, were ranked lowest.` },
-            { p: `But casta was never one fixed ladder. Official records used only a few labels. How a person was recorded could change with their wealth, work and reputation. A prosperous mestizo might be recorded as Spanish. The ranking also worked differently from region to region.` },
+            { p: `Spanish America ranked people by their ancestry (their family line). Historians call this ranking the ${KT('casta')} system. Among people counted as Spanish, it favored those born in Spain. They were called ${KT('peninsulares')}. They almost always held the post of viceroy, and many top posts in government and the Church. They were a new political elite (a small ruling group).` },
+            { p: `${KT('Creoles')} were people of Spanish ancestry born in the Americas. They grew rich from mines, estates and trade. They were a new economic elite.` },
+            { p: `Below them came people of mixed ancestry, such as ${KT('mestizos')} (people with Spanish and Indigenous parents). Indigenous people kept their own town governments and paid tribute. People of African ancestry were ranked lowest, whether free or enslaved.` },
+            { p: `But casta was never one fixed ladder. Official records used only a few labels. How a person was recorded could change with their wealth, work and reputation. A rich mestizo might be recorded as Spanish. The ranking also worked differently from region to region.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `<a href="#chapter-t4-4">Topic 4.4</a>: colonial economies "utilized existing labor systems, including the Incan mit’a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems."`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories." Silver from Spain's colonies was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."`,
-                `<a href="#chapter-t4-7">Topic 4.7</a>: conquests and new trade "contributed to the formation of new political and economic elites," including "in the Americas with the rise of the Casta system."`
+                `In short: the colonies used old and new kinds of forced labor, their silver flowed to Asia, and new elites rose, ranked by birth.`,
+                `<a href="#chapter-t4-4">Topic 4.4</a>: "Newly developed colonial economies in the Americas largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."`,
+                `<a href="#chapter-t4-7">Topic 4.7</a>: "Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system."`
               ]
             } }
           ]
@@ -187,8 +234,8 @@ module.exports = {
       ],
       terms: [
         ['Encomienda', `A colonist's right to demand labor and tribute from one Indigenous community.`],
-        ['Mit’a', `The Inca duty to work for the state in turns, made a draft for the Potosí mine in the 1570s.`],
-        ['Casta', `The ranking of people in Spanish America by ancestry, favoring those born in Spain for top posts.`]
+        ['Mit’a', `The Inca duty to work for the state in turns. In the 1570s Spain made it a draft for the Potosí mine.`],
+        ['Casta', `The ranking of people in Spanish America by ancestry. It favored people born in Spain for top posts.`]
       ]
     },
 
@@ -200,27 +247,29 @@ module.exports = {
       name: 'The Plantation Atlantic',
       navLabel: 'Plantations',
       dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Sugar, tobacco, slavery, new peoples',
-      thesis: `Sugar drew Europe's rival empires into the Americas. Planters chose to work their plantations with enslaved Africans, bought by the million. That choice changed who lived here.`,
+      thesis: `Sugar drew Europe's rival empires into the Americas. Planters chose to work their plantations with enslaved Africans, and they bought millions of them. That choice changed who lived here.`,
       parts: [
         {
           heading: 'Rival empires',
           blocks: [
-            { p: `European kingdoms were rivals for power, wealth and religion. The English and French built colonies in North America and the Caribbean in the early 1600s. Jamestown, England's first lasting colony, was founded in <span class="num">1607</span> by the Virginia Company. It was a <span class="kt">joint-stock company</span>: many investors bought shares and split the profits and losses. The Dutch West India Company held part of Brazil's sugar coast from <span class="num">1630</span> to <span class="num">1654</span>.` }
+            { p: `European kingdoms were rivals for power, wealth and religion. The English and French built colonies in North America and the Caribbean in the early 1600s. England's first lasting colony was Jamestown. The Virginia Company founded it in ${N('1607')}.` },
+            { p: `The Virginia Company was a ${KT('joint-stock company')}. Many investors bought shares (small parts of the company). They split the profits and the losses. The Dutch West India Company held part of Brazil's sugar coast from ${N('1630')} to ${N('1654')}.` }
           ]
         },
         {
           heading: 'A system from the Atlantic islands',
           blocks: [
-            { p: `What these empires often fought over was sugar. The sugar plantation was not invented in the Americas. Before <span class="num">1492</span>, Portugal grew sugar with enslaved workers, including Canary Islanders and Africans, on the island of Madeira. Then it did the same on São Tomé, an island in the Gulf of Guinea settled in the 1480s and 1490s (see <a href="#r4-sub-saharan-africa-slave-trade">Sub-Saharan Africa</a>). What the Americas added was land.` },
-            { p: `Brazil became the first great American sugar economy in the 1500s, and the Caribbean followed in the 1600s. Brazil's early mills used Indigenous workers. During the 1600s, their workers became overwhelmingly enslaved Africans.` },
-            { p: `Disease had killed many Indigenous workers. But people, not disease, chose to bring the island system across. In the English Chesapeake, tobacco planters first used <span class="kt">indentured servants</span>. Most were poor Europeans who worked four to seven years to pay for their voyage. From the late 1600s, they turned more and more to enslaved Africans.` }
+            { p: `What these empires often fought over was sugar. The sugar plantation was not invented in the Americas. Before ${N('1492')}, Portugal grew sugar on the island of Madeira. Its workers were enslaved people, including Canary Islanders and Africans.` },
+            { p: `Then Portugal did the same on São Tomé. São Tomé is an island in the Gulf of Guinea. It was settled in the 1480s and 1490s. What the Americas added was land. <a href="#r4-sub-saharan-africa-slave-trade">The Sub-Saharan Africa chapter</a> tells how plantations reached the Atlantic islands.` },
+            { p: `Brazil became the first great American sugar economy in the 1500s. The Caribbean followed in the 1600s. Brazil's early mills used Indigenous workers. During the 1600s, almost all of their workers came to be enslaved Africans.` },
+            { p: `Disease had killed many Indigenous workers. But people, not disease, chose to bring the island system across the ocean. In the English Chesapeake (Virginia and Maryland), tobacco planters first used ${KT('indentured servants')}. Most were poor Europeans. They worked four to seven years to pay for their voyage. From the late 1600s, planters turned more and more to enslaved Africans.` }
           ]
         },
         {
           heading: 'Slavery for life',
           blocks: [
-            { p: `Plantations bought enslaved Africans in ever larger numbers, above all for sugar. The Trans-Atlantic Slave Trade Database estimates that about <span class="num">278,000</span> Africans were forced onto ships bound for the Americas in the whole 1500s. From <span class="num">1701</span> to <span class="num">1750</span> alone, it was more than <span class="num">2.5 million</span>.` },
-            { p: `They were held in <span class="kt">chattel slavery</span>: owned as property for life, with their children born enslaved. A Virginia law of <span class="num">1662</span> made the children of enslaved women enslaved too. Colonial laws also tied slavery to race.` },
+            { p: `Plantations bought enslaved Africans in ever larger numbers, above all for sugar. The Trans-Atlantic Slave Trade Database estimates that about ${N('278,000')} Africans were forced onto ships bound for the Americas in the whole 1500s. From ${N('1701')} to ${N('1750')} alone, it was more than ${N('2.5 million')}.` },
+            { p: `They were held in ${KT('chattel slavery')}. They were owned as property for life, and their children were born enslaved. A Virginia law of ${N('1662')} made the children of enslaved women enslaved too. Colonial laws also tied slavery to race.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -232,14 +281,19 @@ module.exports = {
         {
           heading: 'A world made by everyone',
           blocks: [
-            { p: `Plantations anchored the <span class="kt">Atlantic trading system</span>, which moved goods, wealth and people. Sugar and tobacco went to Europe. Guns, alcohol and cloth went to Africa. Enslaved Africans were forced west.` },
+            { p: `Plantations were at the center of the ${KT('Atlantic trading system')}. This system moved goods, wealth and people. Sugar and tobacco went to Europe. Guns, alcohol and cloth went to Africa. Enslaved Africans were forced west.` },
             { p: `In the colonies, Africans, Indigenous Americans and Europeans lived side by side, usually because some were forced to. All of them shaped the cultures that grew there, from cooking to music. The mixing happened under force, not between equals. But no single people made the result.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `<a href="#chapter-t4-4">Topic 4.4</a>: "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British." "The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes."`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons," and "the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`
+                `In short: plantations in rival European colonies needed workers, and that demand drove the Atlantic slave trade and changed who lived in the Americas.`,
+                `<a href="#chapter-t4-4">Topic 4.4</a>: "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade."`,
+                `<a href="#chapter-t4-8">Topic 4.8</a>: "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. ... plantations expanded, and the Atlantic slave trade developed and intensified."`,
+                `<a href="#chapter-t4-4">Topic 4.4</a>: "The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of labor ... and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`
               ]
             } }
           ]
@@ -260,36 +314,42 @@ module.exports = {
       name: 'Faith and Pushback',
       navLabel: 'Faith and resistance',
       dates: 'c. 1530 to 1750 &nbsp;·&nbsp; Missions, blending, revolts, maroons',
-      thesis: `Christianity spread, but the people who took it up also changed it. Where colonies pushed hardest, people pushed back, and sometimes they won terms that lasted.`,
+      thesis: `Christianity spread, but the people who took it up also changed it. Where colonies pushed hardest, people resisted. Sometimes they won terms that lasted.`,
       parts: [
         {
           heading: 'Spread, clash, blend',
           blocks: [
-            { p: `Missionaries spread Christianity through Spanish and Portuguese America, and it brought conflict too. From around 1610, priests in Peru led campaigns to root out Andean religion. They destroyed sacred objects and punished religious leaders.` },
-            { p: `Faiths also blended, which historians call <span class="kt">syncretism</span>. At Tepeyac, a hill near Mexico City, Nahua and Spanish Christians honored the Virgin of Guadalupe by the 1550s. The friar Bernardino de Sahagún wrote that the Nahua had once honored a goddess there, Tonantzin. Historians argue about that link. But Nahua Christians made Mary their own. In French Saint-Domingue (today's Haiti), enslaved Africans built Vodou from African religions and Catholic saints.` }
+            { p: `Missionaries spread Christianity through Spanish and Portuguese America. It brought conflict too. From around 1610, priests in Peru led campaigns to end Andean religion. They destroyed sacred objects and punished religious leaders.` },
+            { p: `Faiths also blended. Historians call this ${KT('syncretism')}. At Tepeyac (a hill near Mexico City), Nahua and Spanish Christians honored the Virgin of Guadalupe by the 1550s. The Nahua were the Indigenous people of central Mexico. The friar Bernardino de Sahagún wrote that they had once honored a goddess named Tonantzin there. Historians argue about that link. But Nahua Christians made Mary their own.` },
+            { p: `In the 1700s, enslaved Africans in French Saint-Domingue (today's Haiti) built a religion called Vodou. It joined African religions with Catholic saints.` }
           ]
         },
         {
           heading: 'The Pueblo Revolt and Metacom\'s War',
           blocks: [
-            { p: `As colonies expanded, local people resisted (<a href="#chapter-t4-6">Topic 4.6</a>). From <span class="num">1598</span> Spain ruled New Mexico, among the Pueblo peoples, and demanded harvests and unpaid labor. In <span class="num">1675</span> the governor arrested forty-seven Pueblo religious leaders as sorcerers. One of them, <b>Popé</b>, helped plan a rising to strike every Spanish settlement at once.` },
-            { p: `The <span class="kt">Pueblo Revolt</span> began on August 10, <span class="num">1680</span>. The Pueblos killed about 400 colonists and drove the rest south to El Paso. For twelve years they ruled themselves. Spain returned from <span class="num">1692</span>. But it did not bring back the encomienda, and friars pressed far less hard against Pueblo religion.` },
-            { p: `In New England, colonists kept taking Wampanoag land. In <span class="num">1675</span> the Wampanoag leader <b>Metacom</b>, called King Philip by the English, went to war with other Native nations. But the colonists had more people and Native allies of their own. <span class="kt">Metacom's War</span> ended with his death in <span class="num">1676</span>. Many captives were sold into slavery in the Caribbean. The Native nations of southern New England lost their independence.` }
+            { p: `As colonies expanded, local people resisted. Spain ruled New Mexico from ${N('1598')}. It demanded harvests and unpaid labor from the Pueblo peoples who lived there. In ${N('1675')} the governor arrested forty-seven Pueblo religious leaders as sorcerers (people accused of harmful magic). <b>Popé</b> was one of them. He helped plan a rising to strike every Spanish settlement at once.` },
+            { p: `The ${KT('Pueblo Revolt')} began on August 10, ${N('1680')}. The Pueblos killed about 400 colonists and drove the rest south to El Paso. For twelve years they ruled themselves. Spain returned from ${N('1692')}. But it did not bring back the encomienda, and friars put far less pressure on Pueblo religion.` },
+            { p: `In New England, colonists kept taking Wampanoag land. In ${N('1675')} the Wampanoag leader <b>Metacom</b> went to war, and other Native nations joined him. The English called him King Philip. But the colonists had more people, and Native allies of their own.` },
+            { p: `${KT('Metacom\'s War')} ended with his death in ${N('1676')}. Many captives were sold into slavery in the Caribbean. The Native nations of southern New England lost their independence.` }
           ]
         },
         {
           heading: 'Enslaved people organize',
           blocks: [
-            { p: `Enslaved people resisted every day, and sometimes they organized. In Brazil, people who escaped slavery built <b>Palmares</b>, a <span class="kt">maroon community</span>. Its fortified towns beat back Portuguese and Dutch attacks for most of the 1600s, until it fell in the 1690s. In Jamaica, the colony could not defeat the Maroons. In <span class="num">1739</span> it signed treaties that recognized their freedom, if they returned runaways.` },
-            { p: `That same year, enslaved people at the Stono River in South Carolina seized guns and marched toward Spanish Florida. Several came from Catholic Kongo. Florida promised freedom to runaways who became Catholic. The militia broke the march, and in <span class="num">1740</span> the colony tightened its slave laws.` },
-            { p: `By 1750, the Pueblo towns, the Plains nations, the Nahua Christians and the Jamaica Maroons were all still there. Colonial rule did not always have the last word.` },
+            { p: `Enslaved people resisted every day, and sometimes they organized. In Brazil, people who escaped slavery built <b>Palmares</b>. A community like this is called a ${KT('maroon community')}. Palmares's fortified towns drove back Portuguese and Dutch attacks for most of the 1600s. It fell in the 1690s.` },
+            { p: `In Jamaica, the colony could not defeat the Maroons. In ${N('1739')} it signed treaties that recognized their freedom. In return, the Maroons had to send back runaways.` },
+            { p: `That same year, enslaved people at the Stono River in South Carolina seized guns. They marched toward Spanish Florida, which promised freedom to runaways who became Catholic. Several of the rebels came from Catholic Kongo. The colony's militia (its armed colonists) broke the march. In ${N('1740')} the colony made its slave laws harsher.` },
+            { p: `By 1750, the Pueblo towns, the Plains nations, the Nahua Christians and the Jamaica Maroons were all still there. Colonial rule did not always win.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `<a href="#chapter-t4-5">Topic 4.5</a>: new contacts "expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices."`,
-                `<a href="#chapter-t4-6">Topic 4.6</a>: "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level." The Pueblo Revolts and Metacom's War are among the College Board's examples.`,
-                `<a href="#chapter-t4-6">Topic 4.6</a>: "Enslaved persons challenged existing authorities in the Americas through organized resistance." Maroon societies in the Caribbean and Brazil, and resistance in North America, are among the College Board's examples.`
+                `In short: contact spread Christianity and caused religious conflict and blending, and colonial rule met resistance from Indigenous and enslaved people.`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices."`,
+                `<a href="#chapter-t4-6">Topic 4.6</a>: "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."`,
+                `<a href="#chapter-t4-6">Topic 4.6</a>: "Enslaved persons challenged existing authorities in the Americas through organized resistance."`,
+                `An optional College Board example: the Pueblo Revolts and Metacom's War (King Philip's War), for local resistance.`,
+                `An optional College Board example: Maroon societies in the Caribbean and Brazil, and resistance of enslaved persons in North America.`
               ]
             } }
           ]
@@ -297,7 +357,7 @@ module.exports = {
       ],
       terms: [
         ['Syncretism', `The blending of two or more religions into new beliefs and practices.`],
-        ['Pueblo Revolt', `The rising of the Pueblo towns of New Mexico in 1680, which drove the Spanish out for twelve years.`],
+        ['Pueblo Revolt', `The rising of the Pueblo towns of New Mexico in 1680. It drove the Spanish out for twelve years.`],
         ['Maroon community', `A community of people who escaped slavery, usually in hard-to-reach country.`]
       ]
     }
@@ -309,38 +369,38 @@ module.exports = {
     intro: `The region's story, sorted for review.`,
     argue: {
       move: 'Causation',
-      prompt: `Disease did the most damage, yet people made choices too. Explain how disease and human choices together changed who lived and worked in the Americas. Use one piece of evidence about disease and one about a labor system.`
+      prompt: `Disease did the most damage, but people also made choices. Explain how disease and human choices together changed who lived and worked in the Americas. Use one piece of evidence about disease and one about a labor system.`
     },
     pairs: [
       {
         category: 'Political',
-        title: 'Rival empires ruled, and local people pushed back',
-        body: `Spain, Portugal, England, France and the Dutch built rival empires here. The Pueblo Revolt of 1680 won twelve years of self-rule. Metacom's War ended in defeat in 1676.`
+        title: 'European empires took over large parts of the Americas, and local people resisted.',
+        body: `Spanish forces and Indigenous allies overthrew the Mexica in 1521. In 1680 the Pueblo Revolt drove Spain out of New Mexico for twelve years. Metacom's War ended in defeat in 1676.`
       },
       {
         category: 'Religious',
-        title: 'Christianity spread, clashed with older faiths and blended',
-        body: `Priests in Peru attacked Andean religion from about 1610. Nahua Christians made the Virgin of Guadalupe their own, and enslaved Africans in Saint-Domingue built Vodou.`
+        title: 'Christianity spread, clashed with older faiths and blended with them.',
+        body: `From about 1610, priests in Peru destroyed Andean sacred objects. By the 1550s, Nahua Christians honored the Virgin of Guadalupe at Tepeyac. In the 1700s, enslaved Africans in Saint-Domingue built Vodou.`
       },
       {
         category: 'Social',
-        title: 'Disease, slavery and casta remade colonial society',
-        body: `Disease cut many Indigenous populations by half to ninety percent or more. Enslaved Africans became most of the people in the Caribbean. Casta ranked people by ancestry, though how a person was recorded could change.`
+        title: 'Disease, slavery and casta changed who lived in the Americas and how they were ranked.',
+        body: `Central Mexico fell from about 6.3 million people in 1548 to about 1.1 million in 1605 (Cook and Borah's estimate). On Barbados, enslaved Africans outnumbered Europeans by the late 1600s. Casta favored people born in Spain for top posts.`
       },
       {
         category: 'Intellectual',
-        title: 'The big ideas were arguments about empire',
-        body: `Las Casas argued that the encomienda was unjust, and the New Laws of 1542 restricted it. Mercantilism, the idea that a kingdom grows strong by gathering silver, shaped Spain's colonial rule.`
+        title: 'The big ideas were arguments about empire.',
+        body: `Las Casas argued that the encomienda was unjust, and the New Laws of 1542 limited it. Mercantilism (the idea that a kingdom grows strong by gathering gold and silver) shaped Spain's colonial trade.`
       },
       {
         category: 'Technological',
-        title: 'Ships, mercury and horses changed what was possible',
-        body: `Ocean-crossing ships, such as the Manila galleons, linked the Americas to the world. Mercury refining made the silver mines produce more, and the Comanche built a new way of life on horseback.`
+        title: 'Ships, mercury and horses changed what people could do.',
+        body: `From 1571, Manila galleons carried silver across the Pacific from Acapulco to Manila. From the 1570s, Potosí used mercury to separate silver from rock. By the 1700s, the Comanche hunted bison on horseback.`
       },
       {
         category: 'Economic',
-        title: 'Silver, sugar and forced labor built the colonial economies',
-        body: `Colonies ran on the mit’a, the encomienda, the hacienda, indentured servitude and chattel slavery. By one estimate, Spanish America produced about four-fifths of the world's silver, much of it ending up in China.`
+        title: 'Silver, sugar and forced labor built the colonial economies.',
+        body: `Silver was found at Potosí in 1545, and by 1578 the mit’a draft sent more than 14,000 men there. By one estimate, Spanish America produced about four-fifths of the world's silver. Brazil was the first great American sugar economy, in the 1500s.`
       }
     ]
   }
