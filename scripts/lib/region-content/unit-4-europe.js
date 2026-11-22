@@ -31,8 +31,20 @@
  * Single Whip made most taxes payable in silver; China mined little); "the first of the
  * Anglo-Dutch Wars" kept. Cut for length: Ptolemy's Geography (and its date, c. 1400), the
  * Senegal-coast purchases of the 1450s, Nunn and Qian's potato estimate (1700 to 1900), Matteo
- * Ricci in Beijing (1601), the fluyt, and Bayezid II by name (the Middle East tells his side). Topic 4.8 added to
- * `topics` because the box quotes KC-4.2, which the CED prints on that page. See
+ * Ricci in Beijing (1601), the fluyt, and Bayezid II by name (the Middle East tells his side).
+ * Topic 4.8 added to `topics` because the box quotes KC-4.2, which the CED prints on that page.
+ *
+ * Second polish (2026-11-21), to the addendum of the Unit 5 persona panel: every College Board
+ * box now opens with an "In short" sentence, quotes whole Key Concept sentences, and gives each
+ * group of illustrative examples its own "An optional College Board example" paragraph; a
+ * five-sentence `inShort` opens the chapter; definitions set between commas moved into
+ * parentheses or their own sentences, and idioms replaced; paragraphs held near 70 words;
+ * cross-region references written as phrases that read well aloud; Thomas Mun's rule moved into
+ * a "How we know" box (dated from the Topic 4.5 ledger: written in the 1620s or 1630s, printed
+ * 1664); mercantilism restated as the Topic 4.5 ledger narrows it (more gold and silver coming
+ * in than going out, not gold "piled up"); the six closing cards rewritten as a claim plus dated
+ * evidence. No story fact or date was cut in this polish; the trims came from the thesis lines, the
+ * deck, glossary entries, box wording and the closing cards. See
  * docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md.
  */
 
@@ -44,7 +56,14 @@ module.exports = {
   unit: '4',
   region: 'Europe',
   titleHtml: '<em>Europe</em>',
-  deck: `In <span class="num">1450</span> Europe sat at the far edge of a trading world centered on Asia. By <span class="num">1750</span> European ships carried the Atlantic trade, and European states ruled large parts of the Americas. In Asia, though, Europeans held only some ports, and some sea lanes, by force. They stayed buyers there, paying mostly in silver.`,
+  deck: `In <span class="num">1450</span> Europe sat at the far edge of a trading world centered on Asia. By <span class="num">1750</span> its ships carried the Atlantic trade, and its states ruled large parts of the Americas. In Asia, though, Europeans stayed buyers, paying mostly in silver.`,
+  inShort: [
+    `In <span class="num">1450</span> Europe bought Asian spices through a long chain of middlemen.`,
+    `With borrowed tools and new knowledge of the winds, Portugal and Spain sent voyages across the oceans.`,
+    `Rival European states built forts, colonies and armed trading companies, and fought over trade.`,
+    `Europeans carried the Atlantic trade, but in Asia they paid for goods mostly with American silver.`,
+    `At home, American crops fed more people, and stronger kings faced resistance from nobles and peasants.`
+  ],
   topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8'],
   ced: [
     'KC-4.2',
@@ -78,30 +97,35 @@ module.exports = {
       name: 'At the Edge of Someone Else\'s World',
       navLabel: 'Borrowed tools',
       dates: 'c. 1400 to 1500 &nbsp;·&nbsp; Middlemen, crusade, and borrowed knowledge',
-      thesis: `Europe sat at the far end of trade routes that other people ran. Its rulers wanted to reach the source of the goods by sea, using tools that came mostly from the Classical, Islamic and Asian worlds.`,
+      thesis: `Europe's rulers wanted to reach Asia's goods by sea. Most of their tools came from the Classical, Islamic and Asian worlds.`,
       parts: [
         { heading: 'Why Europeans looked to the sea', blocks: [
-          { p: `In the 1400s the richest trade in the world crossed the Indian Ocean and the Middle East. Pepper cost little on India's Malabar coast. On its way to Europe it passed through Red Sea or Persian Gulf ports, then Mamluk Egypt or Ottoman lands. Last, <b>Venetian</b> merchants sold it in Europe. Each trader in that chain, each middleman, took a cut.` },
-          { p: `So a kingdom that reached India by sea could skip the middlemen and keep their profits (<a href="#chapter-t4-2">Topic 4.2</a>). Portugal also wanted West African gold, which crossed the Sahara by camel.` },
-          { p: `Religion pushed the same way. Portugal's ocean venture began in <span class="num">1415</span>, when it captured <b>Ceuta</b>, a Muslim port in North Africa. That attack was a crusade. It grew out of the <span class="kt">Reconquista</span>, the long wars in which Christian kingdoms took Spain and Portugal from Muslim rulers.` },
-          { note: { kind: 'misconception', label: 'Common mistake to avoid', html: `Do not write that the Ottomans closed the trade routes after taking Constantinople in <span class="num">1453</span>. Spice prices did not jump. The main spice route ran through Mamluk Egypt, which the Ottomans took only in <span class="num">1517</span>. And Portugal's voyages had begun decades before <span class="num">1453</span>.` } }
+          { p: `In the 1400s the richest trade in the world crossed the Indian Ocean and the Middle East. Pepper cost little on India's Malabar coast. On its way to Europe it passed through Red Sea or Persian Gulf ports, then Mamluk Egypt or Ottoman lands. Last, <b>Venetian</b> merchants sold it in Europe.` },
+          { p: `Each trader in that chain was a <span class="kt">middleman</span>. A middleman buys goods and sells them again at a higher price. A kingdom that reached India by sea could skip the middlemen and keep their profits. Portugal also wanted West African gold, which crossed the Sahara by camel.` },
+          { p: `Religion gave Portugal a second reason. Its ocean venture began in <span class="num">1415</span>, when it captured <b>Ceuta</b> (a Muslim port in North Africa). That attack was a crusade (a war fought in the name of Christianity). It grew out of the <span class="kt">Reconquista</span>. In those long wars, Christian kingdoms took Spain and Portugal from Muslim rulers.` },
+          { note: { kind: 'misconception', label: 'Common mistake to avoid', html: `Do not write that the Ottomans closed the trade routes after taking Constantinople in <span class="num">1453</span>. The main spice route ran through Mamluk Egypt, which the Ottomans took only in <span class="num">1517</span>. And Portugal's voyages had begun decades earlier.` } }
         ] },
         { heading: 'Tools from elsewhere', blocks: [
-          { p: `Almost every tool on a European ship came from somewhere else (<a href="#chapter-t4-1">Topic 4.1</a>). The magnetic compass was first used at sea in China, by about <span class="num">1100</span>. How it reached Europe is still debated. The <span class="kt">lateen sail</span> is a triangular sail that helps a ship work against the wind. It was common across the Mediterranean and the seas of the Islamic world. The astrolabe measures how high the sun stands. It was a Greek idea that astronomers in the Islamic world made precise.` },
-          { p: `Pilots also used tables of where the sun stood each day. The tables of <b>Abraham Zacuto</b>, printed in Portugal in <span class="num">1496</span>, grew out of the work of Muslim and Jewish astronomers in Toledo, in Spain. Shipbuilders added new designs. The small, shallow <span class="kt">caravel</span> explored unknown coasts, and the big <span class="kt">carrack</span> carried cargo and cannon.` }
+          { p: `Almost every tool on a European ship came from somewhere else. The magnetic compass was first used at sea in China, by about <span class="num">1100</span>. How it reached Europe is still debated. The <span class="kt">lateen sail</span> is a triangular sail that helps a ship work against the wind. It was common across the Mediterranean and the seas of the Islamic world.` },
+          { p: `The astrolabe measures how high the sun stands. It was a Greek idea that astronomers in the Islamic world made precise. Pilots also used tables of where the sun stood each day. The tables of <b>Abraham Zacuto</b> were printed in Portugal in <span class="num">1496</span>. They grew out of the work of Muslim and Jewish astronomers in the Spanish city of Toledo.` },
+          { p: `Shipbuilders added new designs. The small, shallow <span class="kt">caravel</span> explored unknown coasts. The big <span class="kt">carrack</span> carried cargo and cannon.` }
         ] },
         { heading: 'The wind was the breakthrough', blocks: [
-          { p: `The last piece was knowledge of the ocean itself. Off West Africa the wind blows from the northeast. It carried ships south easily but blocked them on the way home. Over decades, Portuguese sailors found the answer, called the <span class="kt">volta do mar</span>, or "turn of the sea." A ship heading home sailed far out into the open Atlantic. There it caught westerly winds that carried it back to Portugal. Columbus later used the same winds to cross the Atlantic and return.` },
+          { p: `The last piece was knowledge of the ocean itself. Off West Africa the wind blows from the northeast. It carried ships south easily but blocked them on the way home.` },
+          { p: `Over decades, Portuguese sailors found the answer. It is called the <span class="kt">volta do mar</span>, which means "turn of the sea." A ship heading home sailed far out into the open Atlantic. There it caught westerly winds that carried it back to Portugal. Columbus later used the same winds to cross the Atlantic and return.` },
           { note: { kind: 'cb', label: CB, paras: [
+            `In short: Europe's voyages depended on tools, ships and wind knowledge, much of it learned from other worlds.`,
             `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."`,
-            `<a href="#chapter-t4-1">Topic 4.1</a>: these developments included "new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns". The caravel, the carrack, the lateen sail and the compass are among the College Board's examples.`
+            `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns ... all of which made transoceanic travel and trade possible."`,
+            `An optional College Board example: new ship designs such as the caravel and the carrack.`,
+            `An optional College Board example: the lateen sail, the compass and astronomical charts.`
           ] } }
         ] }
       ],
       terms: [
         ['Lateen sail', 'A triangular sail that helps a ship sail against the wind.'],
         ['Caravel', 'A small, shallow Portuguese ship built to explore unknown coasts.'],
-        ['Volta do mar', 'The Portuguese route home through the open Atlantic, riding the westerly winds.']
+        ['Volta do mar', 'The route home through the open Atlantic, on westerly winds.']
       ]
     },
 
@@ -113,34 +137,41 @@ module.exports = {
       name: 'Crowns Go to Sea',
       navLabel: 'Crowns at sea',
       dates: '1415 to 1610 &nbsp;·&nbsp; Portugal, Spain, and the northern latecomers',
-      thesis: `Ocean exploration was a project of kings and queens. Portugal took decades of small steps, Spain bet on one daring crossing, and the northern kingdoms tried the Arctic.`,
+      thesis: `Ocean exploration was a project of kings and queens. Portugal took small steps, Spain risked one bold crossing, and the northern kingdoms tried the Arctic.`,
       parts: [
         { heading: 'Portugal, step by step', blocks: [
-          { p: `A voyage to find a new route might find nothing. So rulers paid for exploring, or licensed captains in return for a share (<a href="#chapter-t4-2">Topic 4.2</a>). Portugal's <b>Prince Henry</b> paid for voyages down the African coast for decades.` },
-          { p: `In the 1440s Portuguese crews raided the Saharan coast for captives and sold them in Portugal, the beginning of the Atlantic slave trade. From the late 1440s they also bought gold and captives at Arguin, an island off that coast.` },
-          { p: `In <span class="num">1488</span> <b>Bartolomeu Dias</b> sailed around the southern tip of Africa. In <span class="num">1498</span> <b>Vasco da Gama</b> reached Calicut, a rich port in India (see <a href="#r4-south-southeast-asia-ocean">South and Southeast Asia</a>). Calicut's merchants had no use for the cloth and beads he carried. Yet the pepper he brought home was worth far more than the voyage cost. Europe had little that Asia wanted, but the profit on Asian goods kept the trade going.` },
-          { p: `Portugal could not compete on goods, so it competed with guns. It built a <span class="kt">trading-post empire</span>: forts in ports, with almost no land behind them (<a href="#chapter-t4-4">Topic 4.4</a>). It built Elmina on the Gold Coast in <span class="num">1482</span>. It took Goa in <span class="num">1510</span>, Malacca in <span class="num">1511</span> and Hormuz in <span class="num">1515</span>. Portugal profited by buying goods where they were made. It also sold the <span class="kt">cartaz</span>, a pass that merchant ships had to buy.` },
-          { p: `The cartaz changed who taxed the ocean. It did not change who traded on it. Gujarati merchants from western India, for example, often bought a pass and sailed on (see <a href="#r4-south-southeast-asia-iberians">South and Southeast Asia</a>). And the strongest Asian states, Ming China and Tokugawa Japan, set their own terms for European traders (see <a href="#r4-east-asia-ming">East Asia</a>).` }
+          { p: `A voyage to find a new route might find nothing. So rulers paid for exploring, or licensed captains in return for a share of the profit (<a href="#chapter-t4-2">Topic 4.2</a>). Portugal's <b>Prince Henry</b> paid for voyages down the African coast for decades.` },
+          { p: `In the 1440s Portuguese crews raided the Saharan coast for captives and sold them in Portugal. It was the beginning of the Atlantic slave trade. From the late 1440s they also bought gold and captives at Arguin (an island off that coast).` },
+          { p: `In <span class="num">1488</span> <b>Bartolomeu Dias</b> sailed around the southern tip of Africa. In <span class="num">1498</span> <b>Vasco da Gama</b> reached Calicut (a rich port in India). Calicut's merchants did not want the cloth and beads he carried. Yet the pepper he brought home was worth far more than the voyage cost. Europe had little that Asia wanted, but the profit on Asian goods kept the trade going.` },
+          { p: `Portugal could not compete on goods, so it competed with guns. It built a <span class="kt">trading-post empire</span>: forts in ports, with almost no land behind them. It built Elmina on the Gold Coast of Africa in <span class="num">1482</span>. It took Goa in <span class="num">1510</span>, Malacca in <span class="num">1511</span> and Hormuz in <span class="num">1515</span>. Portugal profited by buying goods where they were made.` },
+          { p: `Portugal also sold the <span class="kt">cartaz</span> (a pass that merchant ships had to buy). The cartaz changed who taxed the ocean. It did not change who traded on it. Gujarati merchants from western India often bought a pass and sailed on. Ming China and Tokugawa Japan were strong enough to set their own terms for European traders.` },
+          { p: `<a href="#r4-south-southeast-asia-iberians">The South and Southeast Asia chapter</a> tells how Asian merchants dealt with the pass. <a href="#r4-east-asia-ming">The East Asia chapter</a> tells how China set its terms.` }
         ] },
         { heading: 'Spain\'s year, 1492', blocks: [
-          { p: `In January <span class="num">1492</span> <b>Ferdinand and Isabella</b>, Spain's monarchs, took Granada, the last Muslim kingdom in Spain. In March they ordered every Jew who would not become Christian to leave. Tens of thousands left, and many others converted and stayed. In <span class="num">1497</span> Portugal, pressed by Spain, had most of its Jews baptized by force (<a href="#chapter-t4-7">Topic 4.7</a>). Many exiles found refuge in the Ottoman Empire (see <a href="#r4-middle-east-peoples">The Middle East</a>).` },
-          { p: `That spring the same monarchs agreed to back <b>Christopher Columbus</b>, who believed Asia lay a few thousand miles west. He reached the Caribbean in October. In <span class="num">1494</span> the <span class="kt">Treaty of Tordesillas</span> drew a line through the Atlantic. New lands west of it went to Spain, and lands east of it to Portugal. From <span class="num">1519</span> to <span class="num">1522</span> a Spanish expedition, begun by Ferdinand Magellan and finished by Juan Sebastián Elcano, sailed around the world.` }
+          { p: `Spain's <span class="kt">monarchs</span> (its king and queen) were <b>Ferdinand and Isabella</b>. In January <span class="num">1492</span> they took Granada (the last Muslim kingdom in Spain). In March they ordered every Jew who would not become Christian to leave. Tens of thousands left, and many others converted and stayed. In <span class="num">1497</span> Portugal, under pressure from Spain, had most of its Jews baptized by force (<a href="#chapter-t4-7">Topic 4.7</a>).` },
+          { p: `Many exiles found refuge in the Ottoman Empire. <a href="#r4-middle-east-peoples">The Middle East chapter</a> tells where they settled.` },
+          { p: `That spring the same monarchs agreed to pay for a voyage by <b>Christopher Columbus</b>. He believed Asia lay a few thousand miles west. He reached the Caribbean in October. In <span class="num">1494</span> the <span class="kt">Treaty of Tordesillas</span> drew a line through the Atlantic. New lands west of it went to Spain, and lands east of it went to Portugal.` },
+          { p: `From <span class="num">1519</span> to <span class="num">1522</span> a Spanish expedition crossed the Pacific and sailed around the world. Ferdinand Magellan began it, and Juan Sebastián Elcano finished it.` }
         ] },
         { heading: 'The latecomers go north', blocks: [
-          { p: `England, France and the Dutch ignored the treaty. At first, rather than fight Portugal for the route around Africa, they looked for a <span class="kt">Northwest Passage</span> over North America to Asia. <b>John Cabot</b> sailed for England in <span class="num">1497</span> and reached North America. <b>Jacques Cartier</b> explored the St. Lawrence River for France in the 1530s. In <span class="num">1609</span> <b>Henry Hudson</b>, sailing for the Dutch, went up the river now named for him.` },
-          { p: `Land and Arctic ice blocked every northern passage. But the voyages found cod off Newfoundland, and beaver furs traded by Indigenous nations. From the 1590s English and Dutch fleets also took Portugal's own route around Africa, and soon fought Portugal for it.` },
+          { p: `England, France and the Dutch ignored the treaty. At first they did not fight Portugal for the route around Africa. Instead they looked for a <span class="kt">Northwest Passage</span> over North America to Asia. <b>John Cabot</b> sailed for England in <span class="num">1497</span> and reached North America. <b>Jacques Cartier</b> explored the St. Lawrence River for France in the 1530s. In <span class="num">1609</span> <b>Henry Hudson</b> sailed for the Dutch. He went up the river now named for him.` },
+          { p: `Land and Arctic ice blocked every northern passage. But the voyages found cod off Newfoundland, and beaver furs traded by Indigenous nations. From the 1590s English and Dutch fleets also took Portugal's own route around Africa. Soon they fought Portugal for it.` },
           { note: { kind: 'cb', label: CB, paras: [
+            `In short: Rulers paid for ocean voyages, which built trading posts and sent explorers looking for new routes to Asia.`,
             `<a href="#chapter-t4-2">Topic 4.2</a>: "New state-supported transoceanic maritime exploration occurred in this period."`,
-            `<a href="#chapter-t4-2">Topic 4.2</a>: Portugal's skill at sea "resulted in the construction of a global trading-post empire." Spain's voyages "dramatically increased European interest in transoceanic travel and trade." Crossings under English, French and Dutch sponsorship were made "often with the goal of finding alternative sailing routes to Asia."`,
-            `<a href="#chapter-t4-4">Topic 4.4</a>: the new trading posts "proved profitable for the rulers and merchants involved in new global trade networks."`,
-            `<a href="#chapter-t4-7">Topic 4.7</a>: some states "suppressed diversity". The expulsion of Jews from Spain and Portugal is one of the College Board's examples.`
+            `<a href="#chapter-t4-2">Topic 4.2</a>: "Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire."`,
+            `<a href="#chapter-t4-2">Topic 4.2</a>: "Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade."`,
+            `<a href="#chapter-t4-2">Topic 4.2</a>: "Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia."`,
+            `<a href="#chapter-t4-4">Topic 4.4</a>: "Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks."`,
+            `<a href="#chapter-t4-7">Topic 4.7</a>: "In other cases, states suppressed diversity or limited certain groups' roles in society, politics, or the economy."`,
+            `An optional College Board example: the expulsion of Jews from Spain and Portugal, and their welcome in the Ottoman Empire.`
           ] } }
         ] }
       ],
       terms: [
-        ['Trading-post empire', 'A chain of forts in ports, built to control and tax trade, not to rule land.'],
+        ['Trading-post empire', 'A chain of forts in ports, built to control trade, not to rule land.'],
         ['Cartaz', 'A pass Portugal made Indian Ocean merchant ships buy.'],
-        ['Treaty of Tordesillas', 'The 1494 line through the Atlantic that split new lands between Spain and Portugal.']
+        ['Treaty of Tordesillas', 'The 1494 line that split new lands between Spain and Portugal.']
       ]
     },
 
@@ -152,38 +183,41 @@ module.exports = {
       name: 'Companies, Silver and Rivals',
       navLabel: 'Trade wars',
       dates: 'c. 1550 to 1750 &nbsp;·&nbsp; Mercantilism, joint-stock companies, and wars over trade',
-      thesis: `By <span class="num">1600</span> the race was crowded. Rulers saw trade as a contest that one kingdom won only when another lost. They built companies that could fight, and they paid for Asia's goods with American silver.`,
+      thesis: `By <span class="num">1600</span> many European states competed at sea. They built companies that could fight, and they paid for Asia's goods with American silver.`,
       parts: [
         { heading: 'Rivals in politics, faith and money', blocks: [
-          { p: `The Reformation of the early 1500s, part of Unit 3, had split western Christianity into Catholic and Protestant churches. So Protestant England and the Dutch fought Catholic Spain over religion as well as wealth. The <b>Dutch Republic</b>, at war with Spain for its independence from <span class="num">1568</span>, also took Portugal's forts at Elmina in <span class="num">1637</span> and Malacca in <span class="num">1641</span>. England and France planted colonies in North America and the Caribbean.` },
-          { p: `Faith traveled outward on the ships (<a href="#chapter-t4-5">Topic 4.5</a>). Catholic missionaries spread Christianity through the Americas and the Philippines, and Kongo's kings took up the faith themselves. Many converts blended it with older beliefs into new mixed, or <span class="kt">syncretic</span>, practices (see <a href="#r4-americas-resistance">The Americas</a>). Contact brought religious conflict too: Japan's shoguns banned Christianity in <span class="num">1614</span>.` }
+          { p: `In the early 1500s the Reformation split western Christianity into Catholic and Protestant churches. (Unit 3 tells that story.) So Protestant England and the Dutch fought Catholic Spain over faith as well as wealth. The <b>Dutch Republic</b> fought Spain for its independence from <span class="num">1568</span>. The Dutch also took Portugal's forts at Elmina in <span class="num">1637</span> and Malacca in <span class="num">1641</span>. England and France founded colonies in North America and the Caribbean.` },
+          { p: `Missionaries sailed on the same ships (<a href="#chapter-t4-5">Topic 4.5</a>). Catholic missionaries spread Christianity through the Americas and the Philippines. Kongo's kings took up the faith themselves. Many converts blended it with older beliefs into <span class="kt">syncretic</span> practices (practices that mix different faiths). Contact brought religious conflict too. Japan's shoguns banned Christianity in <span class="num">1614</span>. <a href="#r4-americas-resistance">The Americas chapter</a> tells how converts there blended the faiths.` }
         ] },
         { heading: 'Mercantilism and the company that could fight', blocks: [
-          { p: `European rulers shared a set of ideas now called <span class="kt">mercantilism</span>. A kingdom's strength, they believed, is the gold and silver it holds. One kingdom's gain in trade is another's loss. So a kingdom should sell more than it buys, tax foreign goods, and keep its colonies' trade for itself.` },
-          { p: `The London merchant <b>Thomas Mun</b> put it this way. England "must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value." By "strangers" he meant foreigners. England's Navigation Act of <span class="num">1651</span> let goods from Asia, Africa and the Americas into England only in English ships. It was aimed at Dutch shippers.` },
-          { p: `To carry out these ideas, rulers chartered <span class="kt">joint-stock companies</span>. These sold shares to many investors, who split the profits and losses of risky voyages. Elizabeth I chartered the English East India Company in <span class="num">1600</span>. In <span class="num">1602</span> the Dutch chartered the <span class="kt">VOC</span>, the Dutch East India Company. Its charter let it build forts, keep soldiers and make war.` },
-          { p: `A contest over trade could become a war. The Dutch and English companies fought over the spice islands of Southeast Asia. In <span class="num">1623</span>, on the island of Ambon, VOC officials executed ten English company men and ten others. The charge was a plot to seize the Dutch fort, and the confessions were taken under torture. In Europe, the Navigation Act was one cause of the first of the <span class="kt">Anglo-Dutch Wars</span>. England and the Dutch fought three wars at sea between <span class="num">1652</span> and <span class="num">1674</span>, largely over trade and shipping.` }
+          { p: `European rulers shared a set of ideas now called <span class="kt">mercantilism</span>. A kingdom grows strong, they believed, when more gold and silver flow in than flow out. One kingdom's gain in trade is another's loss. So a kingdom should sell more than it buys. It should tax foreign goods and keep its colonies' trade for itself.` },
+          { note: { kind: 'howknow', label: 'How we know', html: `We have the mercantilists' own words. Thomas Mun was a London merchant. In the 1620s or 1630s he wrote that England "must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value." By "strangers" he meant foreigners. His son printed the book in <span class="num">1664</span>.` } },
+          { p: `Laws put the ideas to work. England's Navigation Act of <span class="num">1651</span> let goods from Asia, Africa and the Americas into England only in English ships. It was aimed at Dutch shippers.` },
+          { p: `Rulers also gave out <span class="kt">charters</span> (royal grants of special rights) to <span class="kt">joint-stock companies</span>. These companies sold <span class="kt">shares</span> (small parts of the company) to many investors. The investors split the profits and losses of risky voyages. Elizabeth I chartered the English East India Company in <span class="num">1600</span>. In <span class="num">1602</span> the Dutch chartered the Dutch East India Company (the <span class="kt">VOC</span>). Its charter let it build forts, keep soldiers and make war.` },
+          { p: `A contest over trade could become a war. The Dutch and English companies fought over the spice islands of Southeast Asia. In <span class="num">1623</span>, on the island of Ambon, VOC officials executed ten English company men and ten others. The charge was a plot to seize the Dutch fort. The confessions were taken under torture.` },
+          { p: `In Europe, the Navigation Act was one cause of the first of the <span class="kt">Anglo-Dutch Wars</span>. England and the Dutch fought three wars at sea between <span class="num">1652</span> and <span class="num">1674</span>, largely over trade and shipping.` }
         ] },
         { heading: 'Carriers in the Atlantic, customers in Asia', blocks: [
-          { p: `In the Atlantic, European ships carried the trade. On Africa's coasts, though, African rulers and merchants decided who and what was sold (see <a href="#r4-sub-saharan-africa-slave-trade">Sub-Saharan Africa</a>). Plantation sugar and tobacco, grown with forced labor, went mostly to Europe. Guns and cloth went to Africa, and enslaved Africans to the Americas. Silver crossed to Seville.` },
-          { p: `In Asia, Europeans were buyers of pepper, cotton cloth, silk and porcelain. They paid largely in silver from Potosí in the Andes and Zacatecas in Mexico, because Asian buyers wanted few European goods.` },
-          { p: `Much of that silver ended up in China. Silver was already worth more in China than in Europe, because the Ming had given up paper money. Then a reform called the Single Whip made most Chinese taxes payable in silver, which added to the demand. And China mined little silver of its own (see <a href="#r4-east-asia-silver">East Asia</a>).` },
-          { p: `European ships also earned money carrying goods between Asian ports. But Asian merchants kept much of that trade in their own hands. Europeans held some Asian ports, and controlled some sea lanes, by force. They did not take over Asia's trade.` },
+          { p: `In the Atlantic, European ships carried the trade. On Africa's coasts, though, African rulers and merchants decided who and what was sold. Plantation sugar and tobacco, grown with forced labor, went mostly to Europe. Guns and cloth went to Africa, and enslaved Africans to the Americas. Silver crossed to Seville. <a href="#r4-sub-saharan-africa-slave-trade">The Sub-Saharan Africa chapter</a> tells the African side of this trade.` },
+          { p: `In Asia, Europeans were buyers of pepper, cotton cloth, silk and porcelain. They paid largely in silver from Potosí in the Andes and Zacatecas in Mexico. Asian buyers wanted few European goods.` },
+          { p: `Much of that silver ended up in China. Silver was already worth more in China than in Europe, because the Ming had given up paper money. Then a reform called the Single Whip made most Chinese taxes payable in silver, which added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this side.` },
+          { p: `European ships also carried goods between Asian ports. But Asian merchants still carried much of that trade. Europeans held some Asian ports and sea lanes by force. They did not take over Asia's trade.` },
           { note: { kind: 'misconception', label: 'Common mistake to avoid', html: `Do not write that Europe controlled the world economy by <span class="num">1750</span>. Indian cotton cloth sold so well in England that English laws of <span class="num">1700</span> and <span class="num">1721</span> restricted it, to protect England's own weavers.` } },
           { note: { kind: 'cb', label: CB, paras: [
+            `In short: Rival states competed with trade laws, companies and wars, and paid for Asian goods with American silver.`,
             `<a href="#chapter-t4-4">Topic 4.4</a>: "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British."`,
-            `<a href="#chapter-t4-5">Topic 4.5</a>: rulers used mercantilist policies "to expand and control their economies and claim overseas territories", and joint-stock companies "to compete against one another in global trade."`,
+            `<a href="#chapter-t4-5">Topic 4.5</a>: "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade."`,
             `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
             `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons."`,
-            `<a href="#chapter-t4-5">Topic 4.5</a>: silver from Spain's colonies bought "Asian goods for the Atlantic markets" and satisfied "Chinese demand for silver."`,
-            `<a href="#chapter-t4-5">Topic 4.5</a>: contact "expanded the reach" of existing religions and "contributed to religious conflicts and the development of syncretic belief systems and practices."`
+            `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."`,
+            `<a href="#chapter-t4-5">Topic 4.5</a>: "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices."`
           ] } }
         ] }
       ],
       terms: [
-        ['Mercantilism', 'The belief that a state grows strong by piling up gold and silver and selling more than it buys.'],
-        ['VOC', 'The Dutch East India Company (1602), allowed to build forts and make war.'],
-        ['Anglo-Dutch Wars', 'Wars at sea between England and the Dutch Republic; the first three, 1652 to 1674, were fought largely over trade (a fourth followed in 1780).']
+        ['Mercantilism', 'The belief that a state grows strong when more gold and silver flow in than flow out.'],
+        ['Joint-stock company', 'A company that sells shares to many investors, who split its profits and losses.'],
+        ['Anglo-Dutch Wars', 'Three wars at sea between England and the Dutch, 1652 to 1674, fought largely over trade.']
       ]
     },
 
@@ -195,25 +229,30 @@ module.exports = {
       name: 'Fields, Looms and Kings',
       navLabel: 'Europe at home',
       dates: 'c. 1550 to 1750 &nbsp;·&nbsp; New food, more work, and the power of monarchs',
-      thesis: `The ocean trade changed Europe at home. New crops fed more people, and families worked harder for faraway buyers. Monarchs took power from nobles and peasants, who pushed back.`,
+      thesis: `At home, new crops fed more people and families worked harder. Monarchs took power from nobles and peasants, who resisted.`,
       parts: [
         { heading: 'New food, more work', blocks: [
           { p: `Ships coming back across the Atlantic carried plants Europe had never seen (<a href="#chapter-t4-3">Topic 4.3</a>). The most important was the <span class="kt">potato</span>. On cool, damp ground it gives more food per acre than wheat or rye. It spread across northern Europe, most widely in the 1700s, and helped Europe's population grow.` },
-          { p: `Even so, most Europeans still lived by farming, as most people everywhere did. What changed was how much people worked, and for whom. Under the <span class="kt">putting-out system</span>, merchants brought raw wool or flax to families in the countryside. The families spun and wove it into cloth at home and were paid by the piece. Women and girls did much of the spinning. The work was old. What was new was how much of it there was, and how far away its buyers were.` }
+          { p: `Even so, most Europeans still lived by farming, as most people everywhere did. What changed was how much people worked, and for whom. Under the <span class="kt">putting-out system</span>, merchants brought raw wool or flax to families in the countryside. The families spun and wove it into cloth at home. They were paid by the piece.` },
+          { p: `Women and girls did much of the spinning. The work was old. What was new was how much of it there was, and how far away its buyers were.` }
         ] },
         { heading: 'Kings against nobles and peasants', blocks: [
-          { p: `As rulers gathered power, people pushed back (<a href="#chapter-t4-6">Topic 4.6</a>). In France in <span class="num">1648</span>, while <b>Louis XIV</b> was still a boy, the crown kept raising taxes for a war. The judges of the Parlement of Paris, France's highest court, refused them. When a judge was arrested, Paris put up barricades, and later great nobles rose too. These revolts, the <span class="kt">Fronde</span>, collapsed by <span class="num">1653</span>, because the rebels wanted different things.` },
-          { p: `The Fronde marked Louis XIV for life. As an adult he ruled the provinces through royal officials. In <span class="num">1682</span> he moved his court to Versailles, where great nobles competed for offices and pensions under his eye. They kept their titles, land and freedom from the main tax, but lost the power to defy the king.` },
-          { p: `Russia's path was harsher. The Law Code of <span class="num">1649</span> finished binding peasants to their lords' land as <span class="kt">serfs</span>. Many fled south to the <b>Cossacks</b>, free frontier fighters on the Don River. In <span class="num">1670</span> the Cossack <b>Stepan Razin</b> led a revolt up the Volga River, and peasants joined by the tens of thousands. The tsar's army crushed it, and Razin was executed in <span class="num">1671</span>.` },
-          { p: `The tsars also squeezed the <span class="kt">boyars</span>, Russia's great noble families. <b>Peter the Great</b> replaced their council with a Senate he appointed, in <span class="num">1711</span>. His Table of Ranks of <span class="num">1722</span> made a man's place depend on the rank he earned in state service, not on his birth.` },
-          { p: `England went the other way. In <span class="num">1688</span> leading Englishmen, most of them nobles, invited the Dutch prince William of Orange to bring an army, and King James II fled. Parliament, the assembly of nobles and landowners, gave the crown to William and Mary and limited it in the Bill of Rights of <span class="num">1689</span>. So old elites lost power in France and Russia, and won it in England.` },
+          { p: `As rulers gathered power, people resisted (<a href="#chapter-t4-6">Topic 4.6</a>). In France in <span class="num">1648</span>, <b>Louis XIV</b> was still a boy. The crown kept raising taxes for a war. The judges of the Parlement of Paris (France's highest court) refused them. When a judge was arrested, Paris put up barricades. Later, great nobles rose too. These revolts are called the <span class="kt">Fronde</span>. They collapsed by <span class="num">1653</span>, because the rebels wanted different things.` },
+          { p: `The Fronde shaped how Louis XIV ruled for the rest of his life. As an adult he ruled the provinces through royal officials. In <span class="num">1682</span> he moved his court to Versailles. There great nobles competed for offices and yearly payments, where the king could watch them. They kept their titles, land and freedom from the main tax. They lost the power to defy the king.` },
+          { p: `Russia's path was harsher. The Law Code of <span class="num">1649</span> finished binding peasants to their lords' land as <span class="kt">serfs</span> (peasants not free to leave). Many fled south to the <b>Cossacks</b> (free frontier fighters on the Don River). In <span class="num">1670</span> the Cossack <b>Stepan Razin</b> led a revolt up the Volga River. Peasants joined by the tens of thousands. The tsar's army crushed it, and Razin was executed in <span class="num">1671</span>.` },
+          { p: `The tsars also weakened the <span class="kt">boyars</span> (Russia's great noble families). In <span class="num">1711</span> <b>Peter the Great</b> replaced their council with a Senate he appointed. His Table of Ranks of <span class="num">1722</span> made a man's place depend on the rank he earned in state service, not on his birth.` },
+          { p: `In England the old elites won. In <span class="num">1688</span> leading Englishmen, most of them nobles, invited the Dutch prince William of Orange to bring an army. King James II fled. <span class="kt">Parliament</span> (the assembly of nobles and landowners) gave the crown to William and Mary. It limited their power in the Bill of Rights of <span class="num">1689</span>. So old elites lost power in France and Russia, and gained it in England.` },
           { note: { kind: 'cb', label: CB, paras: [
+            `In short: American crops fed Europe, people worked harder, and stronger kings met resistance and changed the power of nobles.`,
             `<a href="#chapter-t4-3">Topic 4.3</a>: "American foods became staple crops in various parts of Europe, Asia, and Africa."`,
             `<a href="#chapter-t4-3">Topic 4.3</a>: "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops."`,
-            `<a href="#chapter-t4-8">Topic 4.8</a>: the world's productive systems "continued to be heavily centered on agriculture".`,
-            `<a href="#chapter-t4-5">Topic 4.5</a>: "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased." Wool and linen in western Europe is one of the College Board's examples.`,
-            `<a href="#chapter-t4-6">Topic 4.6</a>: "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level." The Fronde and the Cossack revolts are among the College Board's examples.`,
-            `<a href="#chapter-t4-7">Topic 4.7</a>: the power of existing elites "fluctuated" as they faced "increasingly powerful monarchs and leaders." The Russian boyars and the European nobility are among the College Board's examples.`
+            `<a href="#chapter-t4-8">Topic 4.8</a>: "Although the world's productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes."`,
+            `<a href="#chapter-t4-5">Topic 4.5</a>: "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased."`,
+            `<a href="#chapter-t4-6">Topic 4.6</a>: "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."`,
+            `<a href="#chapter-t4-7">Topic 4.7</a>: "The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders."`,
+            `An optional College Board example: wool and linen in western Europe.`,
+            `An optional College Board example: the Fronde and the Cossack revolts.`,
+            `An optional College Board example: the Russian boyars and the European nobility.`
           ] } }
         ] }
       ],
@@ -231,15 +270,15 @@ module.exports = {
     intro: `The six sides of Europe's story from <span class="num">1450</span> to <span class="num">1750</span>, gathered for review.`,
     argue: {
       move: 'Causation',
-      prompt: `Why did Europe's kings and queens, and not only its merchants, pay for ocean voyages and back armed trading companies? Give two causes. Support each one with evidence from this chapter.`
+      prompt: `Why did Europe's kings and queens, and not only its merchants, pay for ocean voyages and charter armed trading companies? Give two causes. Support each one with evidence from this chapter.`
     },
     pairs: [
-      { category: 'Political', title: 'Rival crowns built sea empires and fought their own nobles.', body: `Portugal and Spain, then England, France and the Dutch, paid for voyages and built sea empires. At home, the Fronde collapsed, Razin's revolt was crushed, and Louis XIV and Peter the Great curbed their nobles. England's Parliament instead limited the crown in <span class="num">1688</span> and <span class="num">1689</span>.` },
-      { category: 'Religious', title: 'Faith pushed Europeans outward and divided the rivals.', body: `Portugal's expansion began with a crusading attack on Ceuta in <span class="num">1415</span>. Spain expelled Jews who would not convert in <span class="num">1492</span>, and Portugal forced baptisms in <span class="num">1497</span>. Missionaries carried Catholic Christianity overseas.` },
-      { category: 'Social', title: 'New crops fed more people, families worked harder, and Russian peasants lost their freedom.', body: `American crops, the potato above all, helped Europe's population grow. Country families worked harder under the putting-out system, with women and girls doing much of the spinning. Russia's Law Code of <span class="num">1649</span> bound peasants to the land as serfs.` },
-      { category: 'Intellectual', title: 'Navigators built on borrowed learning, and rulers followed one theory of trade.', body: `Pilots used the astrolabe, a Greek idea made precise in the Islamic world, and printed tables of the sun such as Zacuto's. Rulers followed mercantilism, summed up in Thomas Mun's rule: sell more to foreigners than you buy from them.` },
-      { category: 'Technological', title: 'Borrowed tools and a discovery about wind made ocean voyages possible.', body: `The compass, the lateen sail and the astrolabe went onto new ships, the caravel and the carrack. The breakthrough was the volta do mar, the route home through the open Atlantic.` },
-      { category: 'Economic', title: 'Europeans carried the Atlantic trade but stayed buyers in Asia.', body: `Europeans went to sea to cut out the middlemen, then ran their empires with mercantilist laws and joint-stock companies. In Asia they paid mostly in silver, because they had few goods Asian buyers wanted.` }
+      { category: 'Political', title: 'Rival crowns built sea empires abroad and fought over power with nobles at home.', body: `Portugal took Malacca in <span class="num">1511</span>, and the Dutch took it from Portugal in <span class="num">1641</span>. Louis XIV moved his court to Versailles in <span class="num">1682</span>, and Peter the Great's Table of Ranks of <span class="num">1722</span> tied rank to state service. In England, the Bill of Rights of <span class="num">1689</span> limited the crown instead.` },
+      { category: 'Religious', title: 'Faith pushed Europeans outward and decided who could stay at home.', body: `Portugal's expansion began with a crusading attack on Ceuta in <span class="num">1415</span>. In <span class="num">1492</span> Spain ordered Jews who would not become Christian to leave, and in <span class="num">1497</span> Portugal forced most of its Jews into baptism. Japan's shoguns banned Christianity in <span class="num">1614</span>.` },
+      { category: 'Social', title: 'New crops fed more people, families worked harder, and Russian peasants lost their freedom.', body: `The potato spread across northern Europe, most widely in the 1700s, and helped the population grow. Under the putting-out system, women and girls did much of the spinning. Russia's Law Code of <span class="num">1649</span> bound peasants to their lords' land as serfs.` },
+      { category: 'Intellectual', title: 'Navigators built on learning from other worlds, and rulers shared one theory of trade.', body: `Zacuto's tables of the sun, printed in <span class="num">1496</span>, grew from the work of Muslim and Jewish astronomers. In the 1620s or 1630s Thomas Mun wrote the mercantilist rule: sell more to foreigners than you buy from them.` },
+      { category: 'Technological', title: 'Borrowed tools, new ships and a discovery about the winds made ocean voyages possible.', body: `The compass was first used at sea in China by about <span class="num">1100</span>. The caravel explored coasts, and the carrack carried cargo and cannon. The volta do mar brought ships home from West Africa, and Dias sailed around Africa's tip in <span class="num">1488</span>.` },
+      { category: 'Economic', title: 'Europeans carried the Atlantic trade but stayed buyers in Asia.', body: `The English East India Company (<span class="num">1600</span>) and the VOC (<span class="num">1602</span>) sold shares to pay for risky voyages. In Asia, Europeans paid mostly in American silver, and much of it ended up in China. English laws of <span class="num">1700</span> and <span class="num">1721</span> restricted Indian cotton cloth to protect English weavers.` }
     ]
   }
 };
