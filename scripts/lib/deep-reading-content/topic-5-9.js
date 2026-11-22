@@ -213,7 +213,7 @@ module.exports = {
           heading: 'Cholera',
           blocks: [
             { p: `Cholera, a disease of the gut that spreads through water fouled with human waste, reached Britain in <span class="num">1831</span>. In <span class="num">1848</span> and <span class="num">1849</span> about <span class="num">53,000</span> cholera deaths were registered in England and Wales. These were <span class="kt">public health</span> crises: disasters for a whole population, not only for the sick.` },
-            { p: `In <span class="num">1854</span> the London physician John Snow mapped the cholera deaths around Broad Street in Soho and traced them to one public water pump. His map, printed in a report of <span class="num">1855</span>, marks each death with a small black bar; the bars stack up around the pump. A cartoon in <em>Punch</em> two years earlier, "A Court for King Cholera" (<span class="num">1852</span>), had blamed crowding and filth. Snow showed the route was the water.` }
+            { p: `In <span class="num">1849</span> the London physician John Snow argued that dirty water carried cholera. In <span class="num">1854</span> he mapped the cholera deaths around Broad Street in Soho and traced them to one public water pump. His map, printed in a report of <span class="num">1855</span>, marks each death with a small black bar; the bars stack up around the pump. A cartoon in <em>Punch</em> two years earlier, "A Court for King Cholera" (<span class="num">1852</span>), had blamed crowding and filth. Snow's evidence pointed to the water, but many doctors were not persuaded for years.` }
           ]
         },
         {
@@ -230,7 +230,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Standards of living are the objective's second half. <em>Use cholera or life expectancy as your detail, and say what caused it.</em>`,
-        limit: `Snow's map shows how cholera spread; London's new sewers, the answer to it, are Topic 5.8's.`,
+        limit: `Snow's map is evidence of how cholera spread; London's new sewers, the answer to it, are Topic 5.8's.`,
         comparison: `Against the middle class of section 01: comfortable families moved to cleaner streets and suburbs, away from the smoke.`
       },
       terms: [

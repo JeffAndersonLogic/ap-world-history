@@ -114,7 +114,7 @@ window.BEHISTORICAL_TEACHING = {
         'Tolpuddle, 1834: seven years\' transportation for a union oath; pardoned 1836',
         'Ten hours for mill women and youths, 1847; Trades Union Congress, 1868; legal standing, 1871',
         'Chartists, 1838 to 1848: three petitions rejected; five of six points law later',
-        'Parties: Germany\'s banned 1878 to 1890, yet most votes in 1890; Labour, 1900 to 1906; AFL, 1886',
+        'Parties: Germany\'s socialist groups banned 1878 to 1890, but not candidates, who won the most votes in 1890; Labour, 1900 to 1906; AFL, 1886',
         'Many wanted "alternative visions of society"'
       ] },
       { label: 'III', title: 'Thinkers imagined a different society', kc: 'KC-5.3.IV.A.ii', points: [
@@ -466,7 +466,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'KC-5.1.V.A: "Workers\' movements and political parties emerged in different areas, promoting alternative visions of society."',
-          'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875 (not on the slide). The Anti-Socialist Law of October 1878 banned socialist meetings and newspapers until it lapsed in September 1890. In the election of February 1890, while still banned, the party won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images); in October 1890 it renamed itself the Social Democratic Party. It became the largest party in seats in 1912.',
+          'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875 (not on the slide). The Anti-Socialist Law of October 1878 banned socialist groups, meetings and newspapers until it lapsed in September 1890; it did not ban candidates. In the election of February 1890 socialist candidates won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images); in October 1890 it renamed itself the Social Democratic Party. It became the largest party in seats in 1912.',
           'Britain: the Labour Representation Committee, February 1900; 29 seats and the name Labour Party in 1906.',
           'United States: the American Federation of Labor, December 1886, Samuel Gompers its first president: skilled workers\' unions for wages, hours and conditions.'
         ],

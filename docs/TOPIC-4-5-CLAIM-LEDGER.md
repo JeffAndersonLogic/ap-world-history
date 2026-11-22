@@ -390,3 +390,10 @@ caption. No claim changed.
 | The coin's hole was punched later, and the coin cannot say by whom or why | Deck 14 keys and LAND | Visible in the photograph; the Evidence Lab caption likewise only describes it. | VERIFIED |
 | The 1792 U.S. dollar was set to the value of the Spanish milled dollar; foreign silver coins were legal money in the U.S. until 1857 | Deck 14 LAND (if asked) | Coinage Act of 1792, section 9 ("of the value of a Spanish milled dollar as the same is now current"); Act of 21 February 1857 ended the legal-tender status of foreign coins. Marked as after the unit. | VERIFIED |
 | "The first global currency" | Deck 14 AVOID | Not claimed; the note tells the teacher not to state it as settled fact. | REMOVED |
+
+## Corrections from the Unit 4 by Region review (2026-11-22)
+
+Pass 1, reviewer A, of the Unit 4 by Region build (`docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md`):
+
+- **A1.** The deep reading's "Use this" limit said "a drop in silver imports in the 1630s and 1640s", stating a disputed drop as settled. Research has imports rising in the late 1630s, and von Glahn's table puts the fall in the early 1640s (Atwell, Journal of World History 16:4, 2005). **NARROWED**: imports seem to have fallen in the early 1640s; historians disagree whether they fell in the 1630s too, and how much any drop hurt the late Ming. Deep reading only; no other surface carries the claim.
+- **A6.** The section 04 misconception box said "In 1700 and 1721 English laws" restricted Indian cotton cloth. The 1721 Calico Act was passed by Great Britain (the Union of 1707). **NARROWED** on the deep reading: an English law of 1700, and a law of 1721 passed by Great Britain. The row above ("English laws of 1700 and 1721") is superseded by this wording. The same slip in the Topic 9.7 deep reading's comparison line ("England banned", with stale cross-references to Topics 4.6 and 4.8) was corrected to "England in 1700, and Great Britain in 1721" and "Topic 4.5".

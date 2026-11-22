@@ -115,7 +115,7 @@ module.exports = {
           heading: 'Crops paid for factories',
           blocks: [
             { p: `His government took control of Egypt's farming. It told peasants what crops to plant, bought the crops at low prices, and sold them abroad at higher ones. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. From <span class="num">1820</span> a new crop, long-staple cotton, earned a great deal of money.` },
-            { p: `With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar and other goods. It bought machines in Europe and hired European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. To protect the mills, Muhammad Ali kept cheap British cloth out of Egypt.` },
+            { p: `With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar and other goods. It bought machines in Europe and hired European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. He controlled Egypt's trade, so he could limit how much cheap British cloth came in, to protect the mills.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the mills and their workers',
@@ -201,13 +201,13 @@ module.exports = {
         {
           heading: 'A new government',
           blocks: [
-            { p: `Some samurai blamed the shogun, the military ruler who governed Japan in the emperor's name, for giving in. In <span class="num">1868</span> a group of young samurai overthrew him and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class="kt">Meiji Restoration</span>. In April 1868 the new government issued the Charter Oath, which promised: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." The government's slogan was "Rich country, strong army."` }
+            { p: `Some samurai blamed the shogun, the military ruler who governed Japan in the emperor's name, for giving in. Late in <span class="num">1867</span> the last shogun handed his powers back to the emperor. Early in <span class="num">1868</span> a group of young samurai took control of the court and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class="kt">Meiji Restoration</span>. In April 1868 the new government issued the Charter Oath, which promised: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." By <span class="num">1869</span> it had won a civil war against the shogun's supporters. The government's slogan was "Rich country, strong army."` }
           ]
         },
         {
           heading: 'Reform first',
           blocks: [
-            { p: `The Meiji leaders changed Japan itself. In <span class="num">1871</span> they abolished the domains of the old lords and made one central state. The samurai lost their privileges, and men of every class were drafted into a national army. A national school system began in <span class="num">1872</span>. A new land tax, paid in money instead of rice, gave the government money to spend. From 1871 to 1873 a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked.` }
+            { p: `The Meiji leaders changed Japan itself. In <span class="num">1871</span> they abolished the domains of the old lords and made one central state. A national school system began in <span class="num">1872</span>. A conscription law of <span class="num">1873</span> drafted men of every class into a national army, though it excused many men. The samurai lost their privileges step by step. In <span class="num">1876</span> they lost the right to wear swords in public. A new land tax, paid in money instead of rice, gave the government money to spend. From 1871 to 1873 a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked.` }
           ]
         }
       ],

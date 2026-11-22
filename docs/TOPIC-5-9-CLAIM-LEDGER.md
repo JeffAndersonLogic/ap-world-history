@@ -217,3 +217,7 @@ deep reading said "about four in ten women with a recorded job were servants". B
 servants alone were about a third (Burnett: 905,000 domestic servants among about 2.8 million employed
 women and girls in 1851). **NARROWED**: "about four in ten ... worked in domestic service, most of them as
 servants (about one in three were servants alone)". No other surface carries the figure as "servants".
+
+## Correction from the Unit 5 by Region review (2026-11-22)
+
+Adjacent finding from the 2026-11-21 pass (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`, Britain): "Snow showed the route was the water" was stronger than the regional ledger's pass 1 narrowing (C6). In 1849 Snow argued that dirty water carried cholera; in 1854 he traced a London outbreak to one pump; many doctors were not persuaded for years. **NARROWED** on the deep reading (section 04 paragraph and its "Use this" limit), the Primary Source prompt in the renderer config ("traced a cholera outbreak to one water pump, adding to his argument"), and the teacher note on slide 14.

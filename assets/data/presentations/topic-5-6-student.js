@@ -174,7 +174,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "word": "Foreign machines",
-            "note": "European machines and experts; drafted workers; British cloth kept out"
+            "note": "European machines and experts; drafted workers; British cloth limited"
           }
         ],
         "result": {
@@ -316,12 +316,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "The old lords' domains are **abolished**: one central state."
           },
           {
-            "label": "Army",
-            "text": "Samurai lose their privileges; men of **every class** are drafted."
-          },
-          {
             "label": "1872",
             "text": "A national **school system** begins."
+          },
+          {
+            "label": "1873",
+            "text": "Men of **every class** are drafted, with many exemptions; by **1876** samurai lose the right to wear swords."
           },
           {
             "label": "Tax",

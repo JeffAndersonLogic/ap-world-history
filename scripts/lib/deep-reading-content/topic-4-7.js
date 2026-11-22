@@ -132,7 +132,7 @@ module.exports = {
         {
           heading: 'Ottoman women, by class',
           blocks: [
-            { p: `The College Board names "the varying status of different classes of women within the Ottoman Empire." The key word is varying.` },
+            { p: `One of the College Board's optional examples is "the varying status of different classes of women within the Ottoman Empire." The key word is varying.` },
             { p: `At the very top, women of the sultan's family held real power. Hürrem began as an enslaved woman in the palace and became the wife of Sultan Suleiman. She paid for a mosque complex in Istanbul, designed by the architect Sinan, with a school, a soup kitchen for the poor and, by <span class="num">1551</span>, a hospital. In the next century Kösem ruled as regent for her young son Murad IV and later her grandson Mehmed IV, and was a powerful adviser to her grown son Ibrahim, at times between <span class="num">1623</span> and <span class="num">1651</span>, when she was killed in a struggle at the palace.` },
             { p: `In the towns, ordinary Muslim women owned property and went to the Islamic court to claim inheritances, debts and dowries, and to settle divorces. In one Anatolian city in the early 1600s, women took part in about four in ten of the property transactions recorded in its court. But the law still treated them unequally: a daughter inherited half what a son did, and a woman's word in court counted for less than a man's.` },
             { p: `And many women were enslaved, as servants and concubines in wealthy households, with almost no say over their own lives. In one painting in this lesson, a wealthy mother receives guests in her bedroom while an enslaved woman prepares drinks in the corner: a wealthy woman and an enslaved woman in one room.` }
@@ -203,14 +203,14 @@ module.exports = {
       name: 'A New Top in the Americas',
       navLabel: 'Casta',
       dates: '1500s to 1700s &nbsp;·&nbsp; Spanish America',
-      thesis: `Conquest in the Americas threw together Spaniards, Indigenous peoples and Africans, and their children. Spanish colonial society ranked them by ancestry, which historians call the <span class="kt">casta</span> system, and among people counted as Spanish it favored those born in Spain. Conquest put a new elite on top.`,
+      thesis: `Conquest in the Americas threw together Spaniards, Indigenous peoples and Africans, and their children. Spanish colonial society ranked them by ancestry, which historians call the <span class="kt">casta</span> system. Separately, the crown gave its highest offices to men born in Spain. Conquest put a new elite on top.`,
       parts: [
         {
           heading: 'The ranking',
           blocks: [
-            { p: `At the top were <span class="kt">peninsulares</span>, people born in Spain. The viceroys who ruled New Spain and Peru for the king were almost always Spanish-born, and Spanish-born men held many of the highest posts in the government and the Church. This was a new political elite, made by conquest.` },
-            { p: `Next came <span class="kt">creoles</span>, people of Spanish ancestry born in the Americas. Silver mines, great estates and trade, the new global economy of Topics 4.4 and 4.5, made many creole families very rich: a new economic elite. They resented the newcomers from Spain who got the highest jobs, a resentment that would matter a great deal later.` },
-            { p: `Below them came people of mixed ancestry, such as <span class="kt">mestizos</span> (Spanish and Indigenous) and mulattos (Spanish and African). Indigenous people lived under their own town governments and paid tribute to the crown. People of African ancestry were at the bottom: some were free, and many were enslaved. Even enslaved people had some standing in Spanish law: they could marry, go to court, and sometimes buy their freedom.` }
+            { p: `People of Spanish ancestry stood at the top of the casta ranking. Among them, the crown favored <span class="kt">peninsulares</span>, people born in Spain. The viceroys who ruled New Spain and Peru for the king were almost always Spanish-born, and Spanish-born men held many of the highest posts in the government and the Church. This was a new political elite, made by conquest.` },
+            { p: `<span class="kt">Creoles</span> were people of Spanish ancestry born in the Americas. Silver mines, great estates and trade, the new global economy of Topics 4.4 and 4.5, made many creole families very rich: a new economic elite. They resented the newcomers from Spain who got the highest jobs, a resentment that would matter a great deal later.` },
+            { p: `Below people of Spanish ancestry came people of mixed ancestry, such as <span class="kt">mestizos</span> (Spanish and Indigenous) and mulattos (Spanish and African). Indigenous people lived under their own town governments and paid tribute to the crown. People of African ancestry were at the bottom: some were free, and many were enslaved. Even enslaved people had some standing in Spanish law: they could marry, go to court, and sometimes buy their freedom.` }
           ]
         },
         {

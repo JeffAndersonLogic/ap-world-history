@@ -166,7 +166,16 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // says many Christians and Jews also took cases to the Islamic court (4.7 ledger,
 // row narrowed). The fingerprint moved from 5080ceb... and only that 4.7 sentence
 // changed.
-const APPROVED_UNIT4_REWRITE_BLOB = 'cfc26f66d0ccf4e4a559e04573aa23ab0943f6e9';
+// 2026-11-22: one 4.7 correction, raised by the Unit 4 by Region review (pass 1,
+// reviewer B, finding B7; docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md). The casta paragraph
+// put birthplace inside the casta ranking. Casta ranked ancestry; the crown's
+// appointments, separately, favored men born in Spain. The only phrases that changed:
+// "Among people counted as Spanish, birthplace mattered too. At the top were
+// peninsulares" now reads "People of Spanish ancestry were at the top. Among them,
+// birthplace mattered too, because the king gave the highest offices to peninsulares",
+// and "Next came creoles" now reads "Creoles were". The fingerprint moved from
+// cfc26f6... and only that 4.7 paragraph changed.
+const APPROVED_UNIT4_REWRITE_BLOB = 'a3a1a99ca41809317cfcaeeabdbfe7abed6fff69';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;
@@ -272,7 +281,24 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // energy sentence matches coal's "about half" by 1900, the crossing times say they count
 // every emigrant ship, the 1846 to 1940 span says it runs past the unit, and China's share is
 // of manufactured goods. Against the provisional blob 39898dd5 only the 5.10 entry changed.
-const APPROVED_UNIT5_REWRITE_BLOB = 'fe67539a281961ef69bc52bad2c8d226e4388e6b';
+// 2026-11-22: corrections raised by the Unit 5 by Region review (pass 1 and the 2026-11-21
+// pass; docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md), each fixed on every surface that carried it.
+// The only phrases that changed: in 5.1, "What they questioned was not faith itself, but
+// religion used as a power of government" (C2, an overcorrection) now says deists rejected
+// miracles and revelation, a few writers such as d'Holbach argued there is no God, and above
+// all they attacked the church's power over government and law; in 5.2, Hidalgo's call to rise
+// gains two sentences, his defeat and execution in 1811 and independence in 1821 under
+// conservative creoles led by Iturbide; in 5.6, "kept cheap British cloth out of Egypt" (E2)
+// now says he controlled Egypt's trade and could limit how much came in, "In 1868 ... overthrew
+// the shogun" now separates the shogun's handing back of power late in 1867 from the young
+// samurai taking the court early in 1868 and adds the civil war won by 1869, and the 1871
+// sentence no longer folds in the 1873 conscription law (with its exemptions) or the 1876 loss
+// of the right to wear swords; in 5.8, "while it was still banned, it won more votes" now says
+// the law banned socialist groups, meetings and newspapers but not candidates, and socialist
+// candidates won the most votes, about 20 percent. Against the blob fe67539a only those
+// sentences in 5.1, 5.2, 5.6 and 5.8 changed; every other Unit 5 reading is byte-for-byte
+// unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = '51676d1a327ab1060fa95ba52f17c6d9d35f763b';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

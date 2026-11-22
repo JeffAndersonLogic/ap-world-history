@@ -316,7 +316,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "ledger",
       "eyebrow": "III · New Elites at the Top · Spanish America",
-      "title": "A new top, ranked by birthplace and ancestry.",
+      "title": "A new top: ranked by ancestry, with offices by birthplace.",
       "kc": "KC-4.2.III.A",
       "template": {
         "rows": [

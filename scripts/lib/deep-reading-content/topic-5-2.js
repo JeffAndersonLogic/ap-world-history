@@ -71,7 +71,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Enlightenment caused the revolutions. The College Board says Enlightenment ideas "influenced resistance" and that "discontent with monarchist and imperial rule" pushed people toward new kinds of government. The ideas were one cause. Name the others.`
+              html: `Do not write that the Enlightenment was the only cause of the revolutions. The College Board says Enlightenment ideas "influenced resistance" and that "discontent with monarchist and imperial rule" pushed people toward new kinds of government. The ideas were one cause. Name the others.`
             } }
           ]
         },
@@ -224,7 +224,7 @@ module.exports = {
         {
           heading: 'The chance',
           blocks: [
-            { p: `In <span class="num">1808</span> Napoleon invaded Spain and forced its king from the throne, putting his own brother in his place. Spanish America suddenly had no rightful king to obey. In <span class="num">1810</span> creole leaders set up governments of their own, in Caracas and in Buenos Aires, at first in the name of the captive king, and many soon moved to full independence. In Mexico a priest, Miguel Hidalgo, called on Native and mestizo villagers to rise up.` }
+            { p: `In <span class="num">1808</span> Napoleon invaded Spain and forced its king from the throne, putting his own brother in his place. Spanish America suddenly had no rightful king to obey. In <span class="num">1810</span> creole leaders set up governments of their own, in Caracas and in Buenos Aires, at first in the name of the captive king, and many soon moved to full independence. In Mexico a priest, Miguel Hidalgo, called on Native and mestizo villagers to rise up. He was defeated and executed in <span class="num">1811</span>. Mexico won its independence in <span class="num">1821</span>, led by conservative creoles under Agustín de Iturbide.` }
           ]
         },
         {

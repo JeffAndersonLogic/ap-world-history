@@ -290,3 +290,8 @@ The Busbecq and Montagu texts, every picture record and the key dates were check
 ### Outcome
 
 The loop stopped on the three-pass safety valve: 25, 17 and 10 supported defects. They fell in size as well as number, and the third pass found no CED alignment or story-map ownership defect and no near-model answer. Every finding was fixed; none was rejected.
+
+## Corrections from the Unit 4 by Region review (2026-11-22)
+
+- **B7** (pass 1, reviewer B; `docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md`). The casta section said the ranking "among people counted as Spanish ... favored those born in Spain". Casta ranked ancestry; the crown's appointments, separately, favored peninsulares (in law both were "españoles"; Handbook of Texas, "Peninsular"). **NARROWED** on the deep reading (section 04 thesis and ranking paragraphs), the First & 10 (casta paragraph), the lesson data (concept card), and the teacher deck (outline bullets, the casta slide title "ranked by ancestry, with offices by birthplace", and its keys).
+- The deep reading's Ottoman women section opened "The College Board names 'the varying status of different classes of women within the Ottoman Empire'", which presents an illustrative example as required content. The CED lists it among its optional illustrative examples. **NARROWED**: "One of the College Board's optional examples is ..."; the teacher note on the women slide now says "One of the CED's optional examples" too.

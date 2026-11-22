@@ -377,3 +377,10 @@ Pass 2, reviewer G, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-
   years their leaders were claiming liberty and equality for themselves".
 - The misconception box said French officials freed enslaved people in 1793 "to keep their side's
   soldiers". **NARROWED**: "to win them as soldiers against Spain and Britain".
+
+## Corrections from the Unit 5 by Region review (2026-11-22)
+
+Adjacent findings from the 2026-11-21 pass (`docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`, Americas):
+
+- The Mexico story stopped at Hidalgo's call to rise. **ADDED** on the deep reading and the First & 10: Hidalgo was defeated and executed in 1811, and Mexico won independence in 1821, led by conservative creoles under Agustín de Iturbide (Library of Congress exhibit; Iturbide made himself emperor in 1822, in the teacher note only).
+- The misconception box "Do not write that the Enlightenment caused the revolutions" overcorrected: the box itself says the ideas were one cause. **NARROWED**: "was the only cause of the revolutions". The teacher myth label is now "the Enlightenment alone caused the revolutions" wherever it appears (outline, Watch for list, the avoid line, and the retelling slide's notes).

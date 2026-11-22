@@ -94,7 +94,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "They asked it about religion, too. In 1762 a Protestant merchant in the French city of Toulouse, Jean Calas, was tortured and executed after being wrongly accused of killing his son to stop him from becoming a Catholic. The writer Voltaire, one of the most famous in Europe, campaigned for three years to clear his name, and in 1763 he published a <em>Treatise on Tolerance</em>. His argument was <span class=\"kt\">religious toleration</span>: no government should force a faith on anyone or punish people for their beliefs. Most of these writers still believed in God. Some were followers of <span class=\"kt\">deism</span>, the belief that God created the world and then let it run by natural laws. What they questioned was not faith itself, but religion used as a power of government."
+            "html": "They asked it about religion, too. In 1762 a Protestant merchant in the French city of Toulouse, Jean Calas, was tortured and executed after being wrongly accused of killing his son to stop him from becoming a Catholic. The writer Voltaire, one of the most famous in Europe, campaigned for three years to clear his name, and in 1763 he published a <em>Treatise on Tolerance</em>. His argument was <span class=\"kt\">religious toleration</span>: no government should force a faith on anyone or punish people for their beliefs. Most of these writers still believed in God. Some were followers of <span class=\"kt\">deism</span>, the belief that God created the world and then let it run by natural laws. Deists rejected miracles and revelation (truths God makes known, as in the Bible). A few writers, like Baron d'Holbach, argued that there is no God. Above all, they attacked the church's power over government and law."
           }
         ],
         "callout": {
@@ -669,7 +669,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The chance.</strong> Here is another link in the chain. In 1808 Napoleon invaded Spain and forced its king from the throne. Spanish America suddenly had no king to obey. In 1810 creole leaders formed governments of their own in Caracas and Buenos Aires, and in Mexico a priest, Miguel Hidalgo, called on Native and mestizo villagers to rise up."
+            "html": "<strong>The chance.</strong> Here is another link in the chain. In 1808 Napoleon invaded Spain and forced its king from the throne. Spanish America suddenly had no king to obey. In 1810 creole leaders formed governments of their own in Caracas and Buenos Aires, and in Mexico a priest, Miguel Hidalgo, called on Native and mestizo villagers to rise up. Hidalgo was defeated and executed in 1811. Mexico won its independence in 1821, led by conservative creoles under Agustín de Iturbide."
           },
           {
             "type": "p",
@@ -1575,7 +1575,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. In the 1820s he also sent Egyptian students to Europe to learn its sciences. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
+            "html": "With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. In the 1820s he also sent Egyptian students to Europe to learn its sciences. He controlled Egypt's trade, so he could limit how much cheap British cloth came in, to protect the new mills."
           }
         ],
         "callout": {
@@ -1621,11 +1621,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1868 a group of young samurai overthrew the shogun and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class=\"kt\">Meiji Restoration</span>. In April 1868 the new government made a promise, the Charter Oath: \"Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.\" The government\'s slogan was \"Rich country, strong army.\""
+            "html": "Late in 1867 the last shogun handed his powers back to the emperor. Early in 1868 a group of young samurai took control of the court and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class=\"kt\">Meiji Restoration</span>. In April 1868 the new government made a promise, the Charter Oath: \"Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.\" By 1869 it had won a civil war against the shogun's supporters. The government\'s slogan was \"Rich country, strong army.\""
           },
           {
             "type": "p",
-            "html": "The Meiji leaders changed Japan itself first. In 1871 they abolished the lands of the old lords and made one central state. The samurai lost their special rights, and men of every class were drafted into a national army. A national school system began in 1872. A new land tax, paid in money instead of rice, gave the government money to spend. From 1871 to 1873 a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked."
+            "html": "The Meiji leaders changed Japan itself first. In 1871 they abolished the lands of the old lords and made one central state. A national school system began in 1872. A law of 1873 drafted men of every class into a national army, though it excused many men. The samurai lost their special rights step by step. In 1876 they lost the right to wear swords in public. A new land tax, paid in money instead of rice, gave the government money to spend. From 1871 to 1873 a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked."
           }
         ],
         "callout": {
@@ -2054,7 +2054,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Later in the century, workers built political parties. In Germany, two workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, but the party survived. In February 1890, while it was still banned, it won more votes than any other party; that autumn the ban ended and it renamed itself the Social Democratic Party. In Britain, unions and socialists set up a committee in 1900 to elect working men to Parliament; in 1906 it became the Labour Party. In the United States, the American Federation of Labor, founded in 1886, organized skilled workers for better wages and hours."
+            "html": "Later in the century, workers built political parties. In Germany, two workers' parties united in 1875. From 1878 to 1890 a law banned socialist groups, meetings, and newspapers, but the party survived. The law did not ban socialist candidates. In February 1890 they won more votes than any other party, about 20 percent. That autumn the law ended, and the party renamed itself the Social Democratic Party. In Britain, unions and socialists set up a committee in 1900 to elect working men to Parliament; in 1906 it became the Labour Party. In the United States, the American Federation of Labor, founded in 1886, organized skilled workers for better wages and hours."
           },
           {
             "type": "p",

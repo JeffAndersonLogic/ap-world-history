@@ -342,3 +342,8 @@ Pass 2, reviewer F, of the Unit 5 by Region build (`docs/UNIT-5-BY-REGION-CLAIM-
 "Man is born free; and everywhere he is in chains" opens Book I, Chapter 1 of The Social Contract, after
 a short introduction, not the book itself. **NARROWED** on the deep reading, the First & 10, the lesson
 data, the Skill Builder prompt and the teacher note: "opened the first chapter of".
+
+## Corrections from the Unit 5 by Region review (2026-11-22)
+
+- **C2** (pass 1, reviewer C; `docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`). "What they questioned was not faith itself, but religion used as a power of government" overcorrected the myth that the Enlightenment was against religion. Most of its writers believed in God, but deists rejected miracles and revelation and a few, like d'Holbach (The System of Nature, 1770), argued for atheism; above all they attacked the church's power over government and law (Stanford Encyclopedia of Philosophy, "Enlightenment"). **NARROWED** on the First & 10, the deep reading's misconception box, the lesson data, and the teacher deck (outline bullet, myth fix, the Calas slide's "proves" line, keys and LAND note).
+- The deep reading's misconception box "Do not write that the Enlightenment caused the revolutions" now reads "was the only cause of the revolutions", matching its own next sentence (taxes, debt, war, slavery and colonial grievances "caused them too") and the same fix in Topic 5.2. The teacher myth label is now "the Enlightenment alone caused the revolutions"; the CED's "often preceded" note stands.

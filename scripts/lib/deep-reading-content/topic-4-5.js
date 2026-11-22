@@ -195,7 +195,7 @@ module.exports = {
       ],
       useThis: {
         tool: `A tax as demand. <em>When China's government required most taxes in silver, every household needed silver, so silver bought more in China than elsewhere, and merchants carried it there from both sides of the world: a tax law in China decided where a mountain's silver in the Andes would end up.</em>`,
-        limit: `The flow rose and fell. Historians argue over how much a drop in silver imports in the 1630s and 1640s hurt the late Ming, so do not claim it caused the dynasty's fall.`,
+        limit: `The flow rose and fell. Silver imports seem to have fallen in the early 1640s. Historians disagree whether they fell in the 1630s too, and how much any drop hurt the late Ming, so do not claim it caused the dynasty's fall.`,
         comparison: `Against <em>Song paper money</em> in Topic 1.1: both are Chinese governments solving the problem of money for a huge economy. The Song printed paper; the Ming, after paper failed, came to rely on silver, much of it from mines on the other side of the world.`
       },
       terms: [
@@ -239,7 +239,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Europeans paid for Asian goods with better European products. For most of this period they had few goods Asian buyers wanted, and paid largely in American silver. In <span class="num">1700</span> and <span class="num">1721</span> English laws even restricted Indian cotton cloth to protect England's own weavers.`
+              html: `Do not write that Europeans paid for Asian goods with better European products. For most of this period they had few goods Asian buyers wanted, and paid largely in American silver. An English law of <span class="num">1700</span> even restricted Indian cotton cloth to protect England's own weavers. A law of <span class="num">1721</span>, passed by Great Britain, went further.`
             } }
           ]
         }

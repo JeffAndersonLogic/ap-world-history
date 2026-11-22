@@ -228,3 +228,7 @@ index falls for China too (about 6 in 1830 to 3 by 1880 and 1900, against India'
 1982, via Kennedy 1987). **ADDED** to the "share" paragraph, with the hedge the regional chapter
 carries: "though other historians think China's hand weaving held up better than he allowed." Deep
 reading only; the First & 10 makes no per-person claim.
+
+## Correction from the Unit 5 by Region review (2026-11-22)
+
+**E2** (pass 1, reviewer E; `docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`). "In 1838 English cotton cloth sold in Egypt for less than cloth from Egypt's own new mills" (row above) misstated the source: the 1838 figures compare the price of English cloth in Egypt (7.5 piastres a yard) with what the same cloth cost Egypt's mills to make (8.7), not two selling prices (Overton 1971, pp. 89 to 93, via Ahmeti and Rizaj, Journal of European Economic History, 2024). **NARROWED** on the deep reading ("could be bought in Egypt for less than it cost Egypt's own new mills to make the same cloth") and the teacher LAND note on the Egypt case.

@@ -147,7 +147,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "How the Casta Ranking Sorted People",
         bullets: [
-          "In Spanish America, colonial society ranked people by their ancestry, the **casta** system, and among people counted as Spanish it favored those born in Spain. At the top were **peninsulares**, people born in Spain: the viceroys who ruled for the king were almost always Spanish-born. Next were **creoles**, people of Spanish ancestry born in the Americas, many of them rich from silver mines, huge estates, and trade.",
+          "In Spanish America, colonial society ranked people by their ancestry, the **casta** system. Separately, the crown gave its highest offices to **peninsulares**, people born in Spain: the viceroys who ruled for the king were almost always Spanish-born. **Creoles** were people of Spanish ancestry born in the Americas, many of them rich from silver mines, huge estates, and trade.",
           "Below them came people of mixed ancestry, such as mestizos and mulattos; Indigenous people, who had their own town governments and paid tribute to the crown; and people of African ancestry, some free and many enslaved.",
           "In the 1700s, artists painted sets of **casta paintings** that showed every mix of parents as a labeled family, as if society were a neat chart. Most of their many labels never appeared in official records, and how a person was recorded could change with wealth, job, and reputation. But ancestry still opened or closed doors, and the top belonged to people whose families came from Spain."
         ],

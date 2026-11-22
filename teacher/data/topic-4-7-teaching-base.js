@@ -102,8 +102,8 @@ window.BEHISTORICAL_TEACHING = {
           'Continuity: the exams, Confucian officials, Han scholars in most jobs'
         ] },
         { name: 'Spanish America', points: [
-          'Casta: ranked by ancestry and birthplace',
-          'Peninsulares (born in Spain) get the highest offices',
+          'Casta: ranked by ancestry',
+          'The crown gives peninsulares (born in Spain) the highest offices',
           'Creoles, rich from silver, land and trade, resent them',
           'Casta paintings are an elite\'s ideal chart, not a census'
         ] }
@@ -502,7 +502,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'Find the woman in the painting with the most say over her own life, and the woman with the least.',
         listenFor: 'The wealthy mother in the bed, with her visitors around her; the enslaved woman making sherbet at the lower left.',
-        ap: 'KC-4.3.I.B. The CED\'s example: the varying status of different classes of women within the Ottoman Empire.'
+        ap: 'KC-4.3.I.B. One of the CED\'s optional examples: the varying status of different classes of women within the Ottoman Empire.'
       }
     },
     {
@@ -561,7 +561,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'casta', kind: 'ledger', eyebrow: 'III · New Elites at the Top · Spanish America',
-      kc: 'KC-4.2.III.A', title: 'A new top, ranked by birthplace and ancestry.',
+      kc: 'KC-4.2.III.A', title: 'A new top: ranked by ancestry, with offices by birthplace.',
       template: {
         rows: [
           { name: 'Peninsulares', mark: 'P', tool: 'Born in Spain:', result: 'the highest offices, such as viceroy.' },
@@ -576,7 +576,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         keys: [
-          'Ranked by ancestry and birthplace',
+          'Casta ranked ancestry; the crown\'s offices favored birthplace',
           'Peninsulares: the highest offices',
           'Creoles: rich, a new economic elite, resentful',
           'Indigenous towns paid tribute',

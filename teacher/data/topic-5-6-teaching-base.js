@@ -103,7 +103,7 @@ window.BEHISTORICAL_TEACHING = {
         'Muhammad Ali: Ottoman officer, Albanian family; governor 1805, rules alone 1811',
         'His aim: hold Egypt for his family, even against the sultan, with an army like Napoleon\'s',
         'A state monopoly: buy crops cheap, sell cotton abroad (long-staple cotton from 1820)',
-        'From 1819, factories with European machines and experts; British cloth kept out',
+        'From 1819, factories with European machines and experts; British cloth limited',
         'Early 1830s: about 30 cotton mills, about 30,000 drafted workers',
         'Peasants drafted into the army from 1822: about 130,000 soldiers. The peasants paid'
       ] },
@@ -120,10 +120,10 @@ window.BEHISTORICAL_TEACHING = {
         '1853: Perry\'s warships in Edo Bay; Japan has no navy to stop him',
         'Treaties of 1854 and 1858: ports opened, foreigners tried in their own courts, trade control lost',
         'Unequal treaties; some samurai blame the shogun',
-        '1868: young samurai overthrow the shogun and rule in the teenage emperor\'s name',
+        'Late 1867: the shogun hands power back; early 1868: young samurai take the court and rule in the teenage emperor\'s name',
         'Charter Oath: seek knowledge worldwide "to strengthen the foundations of imperial rule"',
         'The slogan: "Rich country, strong army"',
-        'Reform first: domains abolished (1871), a draft of every class, schools (1872), a land tax paid in money'
+        'Reform first: domains abolished (1871), schools (1872), a draft of every class (1873, with exemptions), a land tax paid in money'
       ] },
       { label: 'V', title: 'Japan builds, sells and grows strong', kc: 'KC-5.2.II.A', points: [
         '1872: the state\'s railway, Tokyo to Yokohama, with British engineers',
@@ -154,7 +154,7 @@ window.BEHISTORICAL_TEACHING = {
       { term: 'Monopoly', def: 'When only one buyer or seller is allowed. Muhammad Ali\'s government bought Egypt\'s crops cheap and sold them abroad.' },
       { term: 'Conscription', def: 'Forcing people to serve. Egypt drafted peasants into its army and mills; Japan drafted men of every class.' },
       { term: 'Unequal Treaty', def: 'A treaty forced on a weaker country, giving the stronger side rights it does not give back.' },
-      { term: 'Meiji Restoration', def: 'In 1868 young samurai overthrew the shogun and governed in the name of the fifteen-year-old emperor, Meiji.' },
+      { term: 'Meiji Restoration', def: 'Late in 1867 the last shogun handed power back to the emperor; early in 1868 young samurai took control of the court and governed in the name of the fifteen-year-old emperor, Meiji.' },
       { term: 'Zaibatsu', def: 'Huge business groups, such as Mitsui and Mitsubishi, that grew after buying the state\'s industries.' },
       { term: 'Regional Power', def: 'A state strong enough to win wars and gain land in its own part of the world.' },
       { term: 'Pattern', def: 'When the same links show up in different cases.' }
@@ -406,7 +406,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         terms: [
           { word: 'Control of farming', note: 'the state buys crops cheap and sells cotton abroad (long-staple cotton from 1820)' },
-          { word: 'Foreign machines', note: 'European machines and experts; drafted workers; British cloth kept out' }
+          { word: 'Foreign machines', note: 'European machines and experts; drafted workers; British cloth limited' }
         ],
         result: { word: 'Factories for an army', note: 'by the early 1830s, about 30 cotton mills with about 30,000 workers, and an army of about 130,000' }
       },
@@ -416,14 +416,14 @@ window.BEHISTORICAL_TEACHING = {
           'The CED\'s example: Muhammad Ali\'s cotton textile industry',
           'State monopoly: buy crops cheap, sell cotton abroad',
           'About 30 cotton mills, about 30,000 workers',
-          'Workers drafted; British cloth kept out',
+          'Workers drafted; British cloth limited',
           'Army of about 130,000; factories served it',
           'Peasants paid, with crops and labor'
         ],
         land: [
           'KC-5.1.V.C, with the CED\'s example: "Muhammad Ali\'s development of a cotton textile industry in Egypt."',
           'Control of farming: "the peasants were told what crops to plant ... The government bought directly from the peasants and sold directly to the buyer" (LoC Country Study). Panza and Williamson (Economic History Review, 2015): "the state purchased agricultural commodities (cotton and wheat) at low prices." A monopoly: one buyer. Long-staple cotton was introduced in 1820 (Roger Owen, British Academy).',
-          'Factories: Joel Beinin (MERIP, 1981): "Beginning in 1819 his regime built European style factories," with textiles "the leading element"; "By the early 1830s 30 cotton mills were in operation with a labor force of 30,000." The Country Study: "Workers were drafted into factories to weave on government looms," with "foreign advisers and imported machinery," protected by embargoes on "cheap British textiles." Many mills made cloth for army uniforms (OER Project).',
+          'Factories: Joel Beinin (MERIP, 1981): "Beginning in 1819 his regime built European style factories," with textiles "the leading element"; "By the early 1830s 30 cotton mills were in operation with a labor force of 30,000." The Country Study: "Workers were drafted into factories to weave on government looms," with "foreign advisers and imported machinery," protected by embargoes on "cheap British textiles." Say "limited", not "kept out": the protection came through his control of Egypt\'s trade, not a total ban. Many mills made cloth for army uniforms (OER Project).',
           'The army: Khaled Fahmy (International Review of Social History, 1998): the first order to draft Egyptian peasants came in early 1822, and the army reached "130,000 troops less than ten years later." He writes that the schools, factories and hospitals "were all founded to serve it."'
         ],
         ask: 'Follow the money: where did it start, and where did it end up?',
@@ -514,13 +514,13 @@ window.BEHISTORICAL_TEACHING = {
           '1853: Perry\'s warships; Japan has no navy',
           '1854, 1858: ports opened, foreign courts',
           'Japan loses control of its own trade',
-          'Samurai blame the shogun; overthrow him, 1868',
+          'Shogun hands power back, 1867; samurai take court, 1868',
           'Real Japanese broadsheet of Perry\'s ship'
         ],
         land: [
           'KC-5.2.II.A begins here: "The expansion of U.S. and European influence in Asia led to internal reform in Japan."',
           'Columbia University\'s Asia for Educators: in 1853 Perry\'s squadron entered the bay near Edo (Tokyo); "It was clear that Commodore Perry could impose his demands by force. The Japanese had no navy with which to defend themselves." The 1854 treaty allowed "trade at two ports"; the 1858 treaty "opened more ports." The treaties "limited its control over its own foreign trade and required that crimes concerning foreigners in Japan be tried not in Japanese but in Western courts." Britain, Russia, France and the Netherlands made treaties too. A tariff convention of 1866 set import duties at a uniform 5 percent (Japan Customs); Japan won back full control of its tariffs only in 1911.',
-          'Some samurai blamed the shogun for giving in, and in 1868 they overthrew him (slide 12).',
+          'Some samurai blamed the shogun for giving in. Late in 1867 he handed his powers back to the emperor, and early in 1868 they took control of the court (slide 12).',
           'The picture is a real Japanese broadsheet: "United States of North America: Perry arrives in Uraga, Sōshū Province," woodblock print (Library of Congress, no known restrictions). It shows Perry\'s steamship, an American sailor, a strip of coast labeled Shimoda and Izu, and the crests of the lords ordered to guard the coast. The Library dates it only to between 1850 and 1900; a later pencil note on the back of its mount gives the date of Perry\'s arrival, 8 July 1853. It is the right-hand sheet of a two-sheet print; the Library says the left sheet has a map of the Sagami (Sōshū) coast.'
         ],
         ask: 'Which of the treaty terms would anger you most if you were a samurai?',
@@ -540,13 +540,13 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         keys: [
-          '1868: young samurai overthrow the shogun',
+          '1868: young samurai take control of the court',
           'Charter Oath, in the teenage emperor\'s name',
           'Learn from the world, for Japan\'s own purpose',
           'Slogan: "Rich country, strong army"'
         ],
         land: [
-          'In 1868 a group of young samurai overthrew the shogun and governed in the name of the teenage emperor: the Meiji Restoration. In April 1868 they issued the Charter Oath, five short articles (Columbia, Asia for Educators: written by "a group of the young samurai," in the name of the Emperor Meiji, "who was only 15 years old at the time").',
+          'Late in 1867 the last shogun, Tokugawa Yoshinobu, handed his powers back to the emperor; early in 1868 a group of young samurai took control of the court and governed in the name of the teenage emperor: the Meiji Restoration. They had won the civil war against the shogun\'s supporters by 1869. In April 1868 they issued the Charter Oath, five short articles (Columbia, Asia for Educators: written by "a group of the young samurai," in the name of the Emperor Meiji, "who was only 15 years old at the time").',
           'Article 5, in Akihiko Tanaka\'s translation ("The World and Japan" database, GRIPS and the University of Tokyo). Other translations read "foundation" or, in the official English translation of the emperor\'s 1946 rescript, printed in Foreign Relations of the United States, 1946, vol. VIII, "to promote the prosperity of the Empire." The full Oath is the lesson\'s Primary Source.',
           'Read it as a decision: learn from the world, but for Japan\'s own purpose. The new government\'s slogan was "Rich country, strong army" (fukoku kyōhei).'
         ],
@@ -562,8 +562,8 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: '1871', text: 'The old lords\' domains are **abolished**: one central state.' },
-          { label: 'Army', text: 'Samurai lose their privileges; men of **every class** are drafted.' },
           { label: '1872', text: 'A national **school system** begins.' },
+          { label: '1873', text: 'Men of **every class** are drafted, with many exemptions; by **1876** samurai lose the right to wear swords.' },
           { label: 'Tax', key: true, text: 'A **land tax paid in money** gives the government money to spend.' }
         ]
       },
@@ -572,13 +572,13 @@ window.BEHISTORICAL_TEACHING = {
         keys: [
           'KC-5.2.II.A\'s middle link: reform supported industry',
           '1871: domains abolished, one central state',
-          'Draft of every class; schools from 1872',
+          'Schools 1872; draft of every class 1873; swords banned 1876',
           'Land tax in money paid for industry',
           'Real photograph: the Iwakura Mission'
         ],
         land: [
           'KC-5.2.II.A\'s middle link: "internal reform in Japan that supported industrialization." Ask how each reform supported industry.',
-          'Columbia, Asia for Educators: "in 1871 these domains were abolished and transformed into prefectures of a unified central state"; "The samurai lost their class privileges"; "a national army based on universal conscription"; "in 1872 the government established a national system to educate the entire population"; "A national land tax system was established that required payment in money instead of rice ... This gave the government money to spend to build up the strength of the nation."',
+          'Columbia, Asia for Educators: "in 1871 these domains were abolished and transformed into prefectures of a unified central state"; "The samurai lost their class privileges"; "a national army based on universal conscription"; "in 1872 the government established a national system to educate the entire population"; "A national land tax system was established that required payment in money instead of rice ... This gave the government money to spend to build up the strength of the nation." Keep the dates apart (2026-11-22): the conscription law came in 1873, with many exemptions, and samurai lost the right to wear swords in public in 1876; do not fold them into 1871.',
           'Links to industry: one central state could plan for the whole country; schools trained workers and engineers; the land tax paid for the railways and factories on slide 14; men freed from class rules could choose new work.',
           'The picture is a real photograph: five leaders of the Iwakura Mission, which toured the United States and Europe from December 1871 to September 1873 to study how they worked. Iwakura Tomomi, in the center, wears Japanese dress; the others wear Western suits (public domain, mirrored from Wikimedia Commons).'
         ],

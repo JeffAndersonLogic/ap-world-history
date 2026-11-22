@@ -22,7 +22,8 @@
  *
  *   1. "Came before," not "caused." The CED says Enlightenment thought "often
  *      preceded" revolutions, and 5.2 owns their causes.
- *   2. Religion in both directions: questioned as a power of government, and
+ *   2. Religion in both directions: its power over government and law
+ *      attacked (most writers still believed in God), and
  *      a driver of reform.
  *   3. Continuity as hard as change. Section 05 ends on what had still not
  *      changed by 1900.
@@ -79,7 +80,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Enlightenment was against religion. Most of its writers believed in God, and some were <b>deists</b>, who believed God made the world and then let it run by natural laws. What they questioned was religion used as a power of government (section 02).`
+              html: `Do not write that the Enlightenment was against religion. Most of its writers believed in God. Some were <b>deists</b>, who believed God made the world and then let it run by natural laws; deists rejected miracles and revelation. A few, like Baron d'Holbach, argued that there is no God. Above all, they attacked the church's power over government and law (section 02).`
             } }
           ]
         },
@@ -176,7 +177,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Enlightenment caused the revolutions. The ideas came first and gave revolutionaries words to explain what they wanted, but taxes, debt, war, slavery and colonial grievances caused them too. Topic 5.2 is about those causes.`
+              html: `Do not write that the Enlightenment was the only cause of the revolutions. The ideas came first and gave revolutionaries words to explain what they wanted, but taxes, debt, war, slavery and colonial grievances caused them too. Topic 5.2 is about those causes.`
             } }
           ]
         },

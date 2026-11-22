@@ -155,7 +155,7 @@
       url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png",
       caption: "A cartoon by John Leech in the London magazine Punch, 25 September 1852, read mostly by comfortable middle-class families. Cholera had killed about 53,000 people in England and Wales in 1848 and 1849.",
-      prompt: "NOTICE how many people share the court and what the children are playing on. INFER what the cartoonist thinks causes cholera. Two years later John Snow showed that cholera spreads through dirty water: what did the cartoon get right, and what did it miss?"
+      prompt: "NOTICE how many people share the court and what the children are playing on. INFER what the cartoonist thinks causes cholera. Two years later John Snow traced a cholera outbreak to one water pump, adding to his argument that dirty water carried the disease: what did the cartoon get right, and what did it miss?"
     },
     {
       title: "John Snow's Cholera Map, 1854",
