@@ -747,3 +747,23 @@ dates; Slater and Belper; Davar's mill; the Propaganda Movement, the Katipunan a
 - Q13. Britain and Europe box headings show "&quot;". **REJECTED:** an artifact of the review
   packet's text extraction. The page escapes the quotation marks as `&quot;`, which the browser
   shows as ordinary quotation marks; the extractor now decodes it.
+
+**Reviewer M (history: Britain, the Middle East), 5 findings.** Verified sound: all 36 CED
+quotations; links; Bairoch 1750 and 1860; Feinstein; Smith's pin and tailor; Corn Laws; limited
+liability 1855 and 1856; Engels; cholera and Snow; the 1787 society; Wollstonecraft; Chartists;
+Beinin (MERIP 1981); the Gülhane text (Hurewitz 1975); Selim III to the 1878 suspension; Suez.
+
+- M1. Middle East, section 05 and mistake box: "What changed was the region's share" overcorrects;
+  textile makers fell steeply in number before 1860 (Aleppo about 40,000 looms in the 1700s, about
+  5,125 in 1838 to 1850; Damascus 34,000 to 12,000), then held steady (Pamuk and Williamson, NBER
+  WP 14763, 2009, p. 7, citing Issawi). PENDING.
+- M2. Britain: "By 1869 steamships made it in about 16 [days]"; 16 is the all-ship emigrant average
+  in 1869; steamships alone averaged about 14 (Hatton, IZA DP 16274, 2023, Tables 1 and 2). Topic
+  5.5 says "about 12 days in the 1860s". PENDING.
+- M3. Middle East: the 1804 Serbian rising presented as a nationalist break; it began against the
+  renegade Janissary commanders (dahije), at first on the sultan's side, and only later became a
+  fight for self-rule. PENDING.
+- M4. Britain, Political card heading "Britain widened the vote in steps, and only for men"; some
+  women gained local votes from 1869. Narrow to the vote for Parliament. PENDING.
+- M5. Britain claims KC-5.1.I.B and KC-5.1.II.B but quotes and teaches one sentence of each.
+  PENDING.
