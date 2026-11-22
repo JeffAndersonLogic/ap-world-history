@@ -368,18 +368,18 @@ pushed, before any fix.
 **Reviewer G (CED and consistency, all twelve chapters), Unit 4 items:**
 
 - G1. East Asia, Political card: "After 1639 only the Dutch could trade in Japan" contradicts the
-  chapter's own Chinese merchants at Nagasaki. PENDING
+  chapter's own Chinese merchants at Nagasaki. **FIXED:** "After 1639 the Dutch were the only Europeans allowed to trade in Japan".
 - G4. Americas, story in short: "Spain forced Indigenous men to work its silver mines" generalizes
   Potosí's mit'a to all mining (Zacatecas relied largely on paid labor). PENDING
 - G7. Europe claims KC-4.2 (environmental processes not taught); Sub-Saharan Africa lists KC-4.2
-  but neither quotes nor teaches it. PENDING
+  but neither quotes nor teaches it. Europe **FIXED** (now teaches the livestock half from Topic 4.3); Sub-Saharan Africa PENDING
 - G10. Europe, Argue it and section 2 lead: "kings and queens" charter companies, but the Dutch
-  Republic chartered the VOC. PENDING
+  Republic chartered the VOC. **FIXED:** "a project of rulers and states"; Argue it asks about "Europe's rulers"; "official grants of special rights".
 - G15b. Middle East, section 4 box: the Morocco and Songhai example stands without its Key Concept
   (quoted only in section 2). PENDING
 - G15c. Europe and Middle East: Zacuto's tables "grew out of" Muslim and Jewish astronomy in Toledo;
   the Alfonsine tables were compiled largely by Jewish and Christian scholars on the Toledan Tables.
-  PENDING (reviewer could not open a source)
+  Europe **FIXED** (Toledan Tables c. 1080 by Muslim astronomers, updated in the 1270s by Jewish astronomers for Alfonso X, Zacuto built on that version); Middle East PENDING
 - Not verified by the reviewer: the slave-trade figures (278,000 in the 1500s; more than 2.5 million
   1701 to 1750) and the Morga 1609 quotation. To check.
 
@@ -390,27 +390,27 @@ Senate; Cook and Borah; Gualpa's 1572 account; the mit'a figures; four-fifths of
 Giráldez 1995); the Slave Voyages figures; Virginia 1662; the Pueblo Revolt; Jamaica; Stono; Palmares.
 
 - B1. Europe: "On Africa's coasts, though, African rulers and merchants decided who and what was sold"
-  contradicts Angola, where Portugal's own wars took captives (Ndongo, 1617 to 1621). PENDING
+  contradicts Angola, where Portugal's own wars took captives (Ndongo, 1617 to 1621). **FIXED:** "On most of Africa's coasts ... In Angola, Portugal's own wars took captives too."
 - B2. Americas: "Disease was killing the workers Spain needed. So Spain reused an Inca labor duty"
   makes disease the cause; the encomienda rewarded conquerors and Toledo's draft served the mercury
   process (Bakewell 1977). PENDING
 - B3. Europe: the Dutch "looked for a Northwest Passage"; the VOC hired Hudson in 1609 for the
-  northeast route and he turned west against instructions; Topic 4.2 says so. PENDING
+  northeast route and he turned west against instructions; Topic 4.2 says so. **FIXED:** "Most looked for a Northwest Passage ... In 1609 a Dutch company sent Henry Hudson to find a route north of Russia. Ice stopped him, and he turned west against his orders."
 - B4. Americas: Madeira's workers "were enslaved people" reads as all; Vieira finds slaves beside
   paid settlers and sharecroppers, Greenfield the reverse. PENDING
 - B5. Americas: Comanche horse culture "By the 1700s" is too early; first in Spanish records 1706, the
   culture built during the century (NPS; Hämäläinen 2003). PENDING
 - B6. Europe: pepper passed through "Mamluk Egypt or Ottoman lands" in the 1400s; Syria was Mamluk
-  until 1516, Baghdad Ottoman from 1534. PENDING
+  until 1516, Baghdad Ottoman from 1534. **FIXED:** "through Egypt or Syria. The Mamluk sultans ruled both."
 - B7. Americas and Topic 4.7: casta "favored those born in Spain"; casta ranked ancestry, and the
   crown's appointments, not casta, favored peninsulares. PENDING
 - B8. Americas: story in short, forced silver-mine labor generalized (G4). PENDING
 - B9. Europe, glossary: "Three wars at sea" defines the Anglo-Dutch Wars as three; there were four.
-  PENDING
+  **FIXED:** glossary "Wars at sea between England and the Dutch. The first three, from 1652 to 1674, were fought largely over trade."
 - B10. Europe and Americas: silver dearer in China for one cause; East Asia gives two (paper money
-  given up; a growing economy that ran on silver). PENDING
+  given up; a growing economy that ran on silver). Europe **FIXED**; Americas PENDING
 - B11. Europe: KC-4.1.II.A shown with " ... " where the CED has a dash (no words left out); Americas:
-  KC-4.1.IV.D.ii cut drops "including enslaved persons". PENDING
+  KC-4.1.IV.D.ii cut drops "including enslaved persons". Europe **FIXED** (the CED's dash kept inside the quotation); Americas PENDING
 
 **Reviewer D (history: Middle East, Sub-Saharan Africa).** Verified sound: the Afonso quotation
 (Madureira, in Thornton 2023, p. 203); Montagu's letter of 1 April 1717; Tondibi; Ottoman aid to the
@@ -443,17 +443,17 @@ standard dates from Macau 1557 to Malacca 1641.
 
 - A1. East Asia, mistake box (and Topic 4.5): "Silver imports did drop in the 1630s and 1640s" states
   a disputed drop as settled; research had imports rising in the late 1630s, von Glahn's table puts
-  the fall in the early 1640s (Atwell, JWH 16:4, 2005). PENDING
+  the fall in the early 1640s (Atwell, JWH 16:4, 2005). **FIXED:** "Historians disagree about when silver imports fell in the last Ming years. They also disagree about how much any fall hurt." Topic 4.5 is being fixed to match.
 - A2. East Asia, How we know: the 1590s Canton and Spain ratios are Chuan Han-sheng's (1969), cited by
-  Flynn and Giráldez 2002, p. 392; von Glahn is credited there with the early-1500s ratios. PENDING
-- A3. East Asia: "In 1644 the Manchus conquered China" squeezes a conquest that ran to 1683. PENDING
+  Flynn and Giráldez 2002, p. 392; von Glahn is credited there with the early-1500s ratios. **FIXED:** the 1590s ratios now credited to Chuan Han-sheng, "and later historians have used them".
+- A3. East Asia: "In 1644 the Manchus conquered China" squeezes a conquest that ran to 1683. **FIXED:** "In 1644 the Manchus took Beijing and began to conquer China"; "Conquering the rest of China took decades. The last Ming loyalists, on the island of Taiwan, surrendered in 1683."
 - A4. South and Southeast Asia, story in short: "From 1498 Portugal used warships and forts to tax";
-  forts and passes came from 1503 on. PENDING
+  forts and passes came from 1503 on. **FIXED:** "From the early 1500s Portugal used warships and forts to tax part of that trade".
 - A5. South and Southeast Asia (and Europe, Americas): silver dearer in China for one cause (B10).
-  PENDING
+  **FIXED** in South and Southeast Asia and Europe: "because the Ming had given up paper money, and China's growing economy ran on silver" (East Asia already said so).
 - A6. South and Southeast Asia and Europe (and Topic 4.5): "In 1700 and 1721, England passed laws";
-  the 1721 Calico Act was Great Britain's. PENDING
+  the 1721 Calico Act was Great Britain's. **FIXED** in both chapters and both Economic cards: England in 1700, Great Britain in 1721. Topic 4.5 is being fixed to match.
 - A7. South and Southeast Asia, mistake box: "The war was over who would rule and tax the Deccan"
-  overcorrects into a sole cause. PENDING
+  overcorrects into a sole cause. **FIXED:** "Much of the fighting was over who would rule and tax the Deccan."
 - A8. East Asia quotes KC-4.1.V.B's first sentence only, without an ellipsis, and claims the code;
-  South and Southeast Asia claims KC-4.2.II.B, teaching only the Indian Ocean export half. PENDING
+  South and Southeast Asia claims KC-4.2.II.B, teaching only the Indian Ocean export half. **FIXED:** East Asia no longer claims or quotes KC-4.1.V.B (four chapters teach it); South and Southeast Asia now teaches the household half of KC-4.2.II.B (Topic 4.4, Heywood).

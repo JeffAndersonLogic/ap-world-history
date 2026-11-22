@@ -87,7 +87,7 @@ module.exports = {
   deck: `From 1450 to 1750, the Indian Ocean's old trading world met Portuguese warships, Spanish silver and armed Dutch and English companies. On land, the Mughals ruled a great empire.`,
   inShort: [
     `Long before 1500, Asian, African and Arab merchants ran a busy trade across the Indian Ocean.`,
-    `From 1498 Portugal used warships and forts to tax part of that trade, but merchants kept sailing.`,
+    `From the early 1500s Portugal used warships and forts to tax part of that trade, but merchants kept sailing.`,
     `From 1571 Spain carried American silver across the Pacific to Manila, where Chinese merchants traded for it.`,
     `On land, the Mughal emperor Akbar welcomed Hindus, but Aurangzeb later limited their place and fought the Marathas.`,
     `After 1600, armed Dutch and English companies fought for the spice trade and bought India's cotton cloth with silver.`
@@ -131,7 +131,7 @@ module.exports = {
             { p: `Gujarat's harbors lay in western India. <b>Calicut</b> sat on India's Malabar coast, where pepper grew. <b>Malacca</b> guarded the strait between the Indian Ocean and the South China Sea. No single state ruled the water.` },
             { p: `<b>Gujarati</b> merchants carried India's cotton cloth to buyers from East Africa to Southeast Asia. <b>Javanese</b> merchants carried rice and spices to Malacca. Cloves and nutmeg came from the <span class="kt">spice islands</span>. These were small islands in eastern Indonesia.` },
             { p: `Islam had traveled these routes with merchants and teachers. By 1500 many port rulers in Southeast Asia and East Africa were Muslims, Malacca's ruler among them. No Muslim army had conquered them.` },
-            { p: `The ocean also carried people as cargo. Enslaved East Africans were shipped to Arabia, Persia and India. This trade was old, and it went on through the whole period.` }
+            { p: `The ocean also carried people as cargo. Enslaved East Africans were shipped to Arabia, Persia and India. This trade was old, and it went on through the whole period. Inside Africa, too, slavery went on in its older forms. Many enslaved people there were taken into households, where they worked, served or married.` }
           ]
         },
         {
@@ -208,7 +208,7 @@ module.exports = {
           blocks: [
             { p: `Spain reached Asia the other way, across the Pacific. In <span class="num">1565</span> a Spanish expedition came to the Philippines to stay. It also found a sailing route back across the Pacific, from Asia to Mexico. In <span class="num">1571</span> Spain founded <b>Manila</b>.` },
             { p: `From then on, the <span class="kt">Manila galleons</span> carried American silver from Acapulco in Mexico to Manila. Merchants from Fujian in southern China sailed in with silk and porcelain. They took the silver home.` },
-            { p: `Why did China want silver so much? Silver was already worth more in China than in Europe, because the Ming government had given up paper money. Then a tax reform called the <span class="kt">Single Whip</span> made most Chinese taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this story from China.` },
+            { p: `Why did China want silver so much? Silver was already worth more in China than in Europe. That was because the Ming had given up paper money, and China's growing economy ran on silver. Then a tax reform called the <span class="kt">Single Whip</span> made most Chinese taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this story from China.` },
             { p: `Manila became a Chinese trading city under a Spanish flag. Chinese merchants and craftsmen there far outnumbered the Spanish. Christianity spread through much of the Philippines after <span class="num">1565</span>. But in the southern islands of Mindanao and Sulu, Muslim sultans resisted Spanish rule.` },
             { note: {
               kind: 'cb',
@@ -270,7 +270,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not tell this as a simple war of Hindus against Muslims. Aurangzeb's officers included many Hindus. The war was over who would rule and tax the Deccan.`
+              html: `Do not tell this as a simple war of Hindus against Muslims. Aurangzeb's officers included many Hindus. Much of the fighting was over who would rule and tax the Deccan.`
             } },
             { note: {
               kind: 'cb',
@@ -329,7 +329,7 @@ module.exports = {
           blocks: [
             { p: `On India's coasts, the companies came to buy. Weavers in Gujarat, in Bengal and on the Coromandel coast in the southeast made cotton cloth. Their buyers were in Asia, Africa and Europe. In the 1600s the companies bought much more of it, often paying weavers in advance. Women and girls did much of the spinning at home.` },
             { p: `This was <span class="kt">peasant and artisan labor</span>: farm and craft work done in homes and workshops. The work was old. What was new was how much of it there was, and how far away the buyers were.` },
-            { p: `The companies paid largely in American silver, because Europe had few goods that Asian buyers wanted. In <span class="num">1700</span> and <span class="num">1721</span>, England passed laws restricting Indian cotton cloth, to protect its own weavers. Much of the cloth that European ships carried to West Africa was Indian cotton too, as <a href="#r4-sub-saharan-africa-slave-trade">the Sub-Saharan Africa chapter</a> tells.` },
+            { p: `The companies paid largely in American silver, because Europe had few goods that Asian buyers wanted. England passed a law restricting Indian cotton cloth in <span class="num">1700</span>, to protect its own weavers. Great Britain passed another in <span class="num">1721</span>. Much of the cloth that European ships carried to West Africa was Indian cotton too, as <a href="#r4-sub-saharan-africa-slave-trade">the Sub-Saharan Africa chapter</a> tells.` },
             { p: `By <span class="num">1750</span> the companies held forts and trading houses along India's coasts. But Asian states still ruled most of the land, and Asian weavers and merchants still made and carried most of the goods. The companies' conquest of large parts of India came later, after this unit's period ends.` },
             { note: {
               kind: 'cb',
@@ -390,7 +390,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'Old trade kept flowing, with new carriers and more work',
-        body: `From 1571 the Manila galleons carried American silver to Manila, where Chinese merchants traded silk for it. Gujarati and Javanese merchants kept intra-Asian trade going under the cartaz. In 1700 and 1721 England restricted Indian cotton cloth to protect its own weavers.`
+        body: `From 1571 the Manila galleons carried American silver to Manila, where Chinese merchants traded silk for it. Gujarati and Javanese merchants kept intra-Asian trade going under the cartaz. To protect local weavers, England restricted Indian cotton cloth in 1700, and Great Britain did so again in 1721.`
       }
     ]
   }

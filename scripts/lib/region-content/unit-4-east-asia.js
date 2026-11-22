@@ -8,7 +8,7 @@
  * Tokugawa Japan bans Christianity and confines the Dutch to Dejima, and the Manchu conquest makes
  * a new Qing elite over a Han majority while the farms, the silk and the population keep growing.
  * The Key Concepts that drive it are KC-4.3.II.A.i (trading posts and restrictive policies),
- * KC-4.1.IV (silver), KC-4.2.II.A (peasant and artisan labor), KC-4.1.V.B and V.D (American crops),
+ * KC-4.1.IV (silver), KC-4.2.II.A (peasant and artisan labor), KC-4.1.V.D (American crops),
  * KC-4.2.III.A and KC-4.3.I.B (the Qing), with shorter threads for KC-4.1.II (the compass),
  * KC-4.1.III.A and B (Portugal reaching Macau, the Pacific voyages to Manila), KC-4.1.VI
  * (Christianity), KC-4.2.II (peasant farming spreading uphill, Topic 4.8), KC-4.2.III.B (Han
@@ -54,7 +54,7 @@ module.exports = {
     `Silver was worth more in China than in Europe, and most Chinese taxes came to be paid in silver.`,
     `So silver flowed in from Japan and the Americas, and China paid with silk and porcelain.`,
     `Japan's rulers banned Christianity and Portuguese ships, and kept Dutch traders on one small island.`,
-    `In 1644 the Manchus conquered China and ruled the Han, while American crops fed more people.`
+    `From 1644 the Manchus conquered China over decades and ruled the Han, while American crops fed more people.`
   ],
   topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8'],
   ced: [
@@ -62,7 +62,6 @@ module.exports = {
     'KC-4.1.III.A',
     'KC-4.1.III.B',
     'KC-4.1.IV',
-    'KC-4.1.V.B',
     'KC-4.1.V.D',
     'KC-4.1.VI',
     'KC-4.2.II',
@@ -150,7 +149,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know',
-              html: `How big was the price difference? The historian Richard von Glahn has worked out the numbers for the 1590s. At the southern Chinese port of Canton (Guangzhou), one ounce of gold traded for about six ounces of silver. In Spain, the same ounce of gold cost about thirteen ounces of silver. So silver bought about twice as much gold in China. A merchant who carried silver to China made money on the silver itself.`
+              html: `How big was the price difference? The historian Chuan Han-sheng worked out numbers for the 1590s, and later historians have used them. At the southern Chinese port of Canton (Guangzhou), one ounce of gold traded for about six ounces of silver. In Spain, the same ounce of gold cost about thirteen ounces of silver. So silver bought about twice as much gold in China. A merchant who carried silver to China made money on the silver itself.`
             } }
           ]
         },
@@ -184,7 +183,6 @@ module.exports = {
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased."`,
                 `An optional College Board example: silk in China.`,
-                `<a href="#chapter-t4-3">Topic 4.3</a>: "American foods became staple crops in various parts of Europe, Asia, and Africa."`,
                 `<a href="#chapter-t4-8">Topic 4.8</a>: "Traditional peasant agriculture increased and changed in nature ..."`
               ]
             } }
@@ -266,16 +264,16 @@ module.exports = {
       name: 'The Manchus Take China',
       navLabel: 'The Qing',
       dates: '1636 to 1750 &nbsp;·&nbsp; Conquest, a new elite, and more people',
-      thesis: `In 1644 the Manchus took China. They were a small people from north of the Great Wall. They kept the Chinese way of governing, put a new elite on top, and limited the Han majority. Underneath, farms and workshops kept going, and the population grew.`,
+      thesis: `In 1644 the Manchus took Beijing and began to conquer China. They were a small people from north of the Great Wall. They kept the Chinese way of governing, put a new elite on top, and limited the Han majority. Underneath, farms and workshops kept going, and the population grew.`,
       parts: [
         {
           heading: 'The fall of the Ming',
           blocks: [
-            { p: `In its last years the Ming faced rebellions. In <span class="num">1644</span> rebels led by <b>Li Zicheng</b> captured Beijing, and the last Ming emperor killed himself. The <b>Manchus</b> then took the city and began to rule China. Their ruler Hong Taiji had already named their dynasty the <span class="kt">Qing</span> in <span class="num">1636</span>.` },
+            { p: `In its last years the Ming faced rebellions. In <span class="num">1644</span> rebels led by <b>Li Zicheng</b> captured Beijing, and the last Ming emperor killed himself. The <b>Manchus</b> then took the city and began to rule China. Their ruler Hong Taiji had already named their dynasty the <span class="kt">Qing</span> in <span class="num">1636</span>. Conquering the rest of China took decades. The last Ming loyalists, on the island of Taiwan, surrendered in <span class="num">1683</span>.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not give a silver shortage as the cause of the Ming's fall. Silver imports did drop in the 1630s and 1640s, but historians argue over how much that hurt.`
+              html: `Do not give a silver shortage as the cause of the Ming's fall. Historians disagree about when silver imports fell in the last Ming years. They also disagree about how much any fall hurt.`
             } }
           ]
         },
@@ -338,7 +336,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'East Asian states set the terms for Europeans, and a conquest changed who ruled China.',
-        body: `From 1557 Ming officials let the Portuguese settle at Macau, under Chinese authority. After 1639 only the Dutch could trade in Japan, and from 1641 they were kept on Dejima. In 1644 the Manchus took Beijing and kept China's exams and law codes.`
+        body: `From 1557 Ming officials let the Portuguese settle at Macau, under Chinese authority. After 1639 the Dutch were the only Europeans allowed to trade in Japan, and from 1641 they were kept on Dejima. In 1644 the Manchus took Beijing and kept China's exams and law codes.`
       },
       {
         category: 'Religious',
