@@ -11,7 +11,7 @@
  * Topic 5.1, 5.2, 5.3, 5.4, 5.5, 5.6 and 5.8 chapters and their claim ledgers, keeping their
  * narrowings ("many" machines turned by animals, not all; Selim's army dated to the decade; the
  * crop monopolies, grain first and cotton from 1820, paid for the factories; the fez factory opened
- * by Mahmud II's government in the 1830s and fitted with steam about 1850; the first parliament in
+ * by Mahmud II's government in the 1830s and fitted with steam from the 1840s; the first parliament in
  * March 1877; historians weigh Egypt's failure differently). Left out on purpose: Persia and
  * Arabia, which the Unit 5 CED does not name, and the debts and occupation of Egypt after 1875,
  * which are Unit 6.
@@ -39,6 +39,15 @@
  * handlooms fell from about 40,000 in the 1700s to an average of 5,125 in 1838 to 1850, then held
  * steady with Damascus's from 1860 to 1914 (Pamuk and Williamson, NBER WP 14763, 2009, citing
  * Issawi 1988, p. 374).
+ *
+ * Review pass 3 (2026-11-23, reviewers W and X): the French army in Egypt surrendered to British and
+ * Ottoman forces in 1801 and went home on British ships (it did not simply leave). The fez factory's
+ * steam engines and machines are dated "from the 1840s" (Ergün and Ciritci 2026, 1843 to 1851; TDV
+ * Islam Ansiklopedisi, "Feshane", 1849 to 1851), not "around 1850". The Balkan independences of
+ * 1878 now carry their cause beside nationalism: Russia's war of 1877 to 1878, in which Romania,
+ * Serbia and Montenegro fought on Russia's side, and the Congress of Berlin (1878), where Europe's
+ * powers recognized the three as independent (Britannica, "Russo-Turkish wars" and "Congress of
+ * Berlin"). The handloom count from 1860 to 1914 is marked as running past the unit.
  */
 
 const CB = 'What the College Board says';
@@ -95,7 +104,7 @@ module.exports = {
         {
           heading: 'Napoleon in Egypt, and the end of the Janissaries',
           blocks: [
-            { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt. Egypt had been an Ottoman province since <span class="num">1517</span>. But the <span class="kt">Mamluks</span> had stayed powerful there under the sultan's governors. They were a class of soldier-lords, and by the 1700s they held most of the real power. Napoleon's army easily defeated them. The French left in <span class="num">1801</span>. But they had shown what a modern European army could do.` },
+            { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt. Egypt had been an Ottoman province since <span class="num">1517</span>. But the <span class="kt">Mamluks</span> had stayed powerful there under the sultan's governors. They were a class of soldier-lords, and by the 1700s they held most of the real power. Napoleon's army easily defeated them. In <span class="num">1801</span> the French army in Egypt surrendered to British and Ottoman forces. British ships carried it home. But the French had shown what a modern European army could do.` },
             { p: `In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries. Then he built a new army along European lines (<a href="#chapter-t5-8">Topic 5.8</a>).` },
             { p: `So the first reforms answered a lost war against Russia. Napoleon's easy victory in Egypt then showed what a modern European army could do, and that added to the pressure. Later in the century, the pressure came more and more from industrial states. Selim's fall also shows something that came back again and again. Powerful old groups fought reform.` },
             { note: {
@@ -195,7 +204,7 @@ module.exports = {
           blocks: [
             { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span>. The word means "reorganization." It began with a <span class="kt">decree</span> (an official order from the ruler). The decree promised "perfect security for life, honor, and property." It also promised regular taxes and regular military service.` },
             { p: `The decree said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." In plain words, every subject of the sultan, Muslim or not, would get these protections.` },
-            { p: `The state kept building. It added an ironworks in <span class="num">1843</span>. Around <span class="num">1850</span> the fez factory got steam engines and machines from Britain and Belgium. Telegraph lines followed from <span class="num">1855</span>.` }
+            { p: `The state kept building. It added an ironworks in <span class="num">1843</span>. From the 1840s the fez factory got steam engines and machines from Britain and Belgium. Telegraph lines followed from <span class="num">1855</span>.` }
           ]
         },
         {
@@ -245,7 +254,7 @@ module.exports = {
       name: 'The Balkan Nations Leave',
       navLabel: 'Balkan nations',
       dates: '1804 to 1878 &nbsp;·&nbsp; Serbia, Greece, Montenegro and Romania',
-      thesis: `Nationalism pulled the Christian peoples of the Balkans away from the empire, one after another. Ottomanism did not stop them.`,
+      thesis: `Nationalism pulled the Christian peoples of the Balkans away from the empire, one after another. Wars and Europe's strongest states helped decide when each one left. Ottomanism did not stop them.`,
       parts: [
         {
           heading: 'A new loyalty',
@@ -258,7 +267,8 @@ module.exports = {
           blocks: [
             { p: `The Serbs rose up first, in <span class="num">1804</span>. At first they fought rebel Janissary commanders who had seized power in Serbia, and they said they fought for the sultan. The rising soon became a fight to rule themselves. After years of fighting, they won that right. From <span class="num">1830</span> Serbia governed itself under its own prince, though it still stayed inside the empire.` },
             { p: `The Greeks rose up in <span class="num">1821</span>. In <span class="num">1830</span> Britain, France and Russia declared Greece an independent state. In <span class="num">1832</span> Greece became a kingdom under a Bavarian prince.` },
-            { p: `In <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as fully independent (<a href="#chapter-t5-2">Topic 5.2</a>).` },
+            { p: `In <span class="num">1877</span> Russia went to war with the empire, and it won in <span class="num">1878</span>. Romania, Serbia and Montenegro fought on Russia's side.` },
+            { p: `Then Europe's powers met at the Congress of Berlin in <span class="num">1878</span>. There they recognized Serbia, Montenegro and Romania as fully independent (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { p: `Did Ottomanism hold the empire together? Greece had already left in 1830, before the decree of 1856 and the law of 1869. Then, in 1878, Ottomanism did not stop Serbia, Montenegro and Romania from leaving.` },
             { note: {
               kind: 'misconception',
@@ -291,7 +301,7 @@ module.exports = {
       accent: 'gold',
       name: 'Makers Lose Ground, and a Canal Opens',
       navLabel: 'Cloth and Suez',
-      dates: '1780s to 1914 &nbsp;·&nbsp; Raw cotton, cheap cloth, handlooms, and the Suez Canal',
+      dates: '1780s to 1900s &nbsp;·&nbsp; Raw cotton, cheap cloth, handlooms, and the Suez Canal',
       thesis: `Cheap machine-made cloth from Europe undercut the region's own makers. Many lost their work, and the region's share of the world's goods shrank. Then a canal and a cable put the region on the fastest route to Asia.`,
       parts: [
         {
@@ -305,7 +315,7 @@ module.exports = {
           heading: 'Fewer makers, a smaller share',
           blocks: [
             { p: `Many of the region's makers lost their work. A <span class="kt">handloom</span> is a loom worked by hand and foot, with no engine. By one estimate, the Syrian city of Aleppo had about 40,000 handlooms in the 1700s. From <span class="num">1838</span> to <span class="num">1850</span> it had about 5,000.` },
-            { p: `But the makers did not stop. In Aleppo and Damascus, the number of handlooms held steady from <span class="num">1860</span> to <span class="num">1914</span> (<a href="#chapter-t5-4">Topic 5.4</a>).` },
+            { p: `But the makers did not stop. In Aleppo and Damascus, the number of handlooms held steady from <span class="num">1860</span> to <span class="num">1914</span> (<a href="#chapter-t5-4">Topic 5.4</a>). The years after 1900 run past the end of this unit.` },
             { p: `The region's <span class="kt">share</span> fell too. That is the part of all the world's manufactured goods made in one region. The region still made goods, but it made a much smaller part of the world's total.` },
             { note: {
               kind: 'misconception',
@@ -352,7 +362,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'Ottoman rulers rebuilt their state, but they could not hold all their peoples.',
-        body: `Mahmud II destroyed the Janissaries in 1826, and the Tanzimat began in 1839. A constitution came in 1876, and Abdulhamid II suspended it in 1878. Greece became independent in 1830, and Serbia, Montenegro and Romania in 1878.`
+        body: `Mahmud II destroyed the Janissaries in 1826, and the Tanzimat began in 1839. A constitution came in 1876, and Abdulhamid II suspended it in 1878. Greece became independent in 1830. Serbia, Montenegro and Romania followed in 1878, after Russia defeated the empire.`
       },
       {
         category: 'Religious',
@@ -372,12 +382,12 @@ module.exports = {
       {
         category: 'Technological',
         title: 'The region imported machines, and new transport put it on a world route.',
-        body: `Egypt's mills used European machines, but with almost no coal many were turned by animals. Around 1850 the Ottoman fez factory got steam engines, and telegraph lines came from 1855. The Suez Canal (1869) served steamships, and a Red Sea cable reached Bombay in 1870.`
+        body: `Egypt's mills used European machines, but with almost no coal many were turned by animals. From the 1840s the Ottoman fez factory got steam engines, and telegraph lines came from 1855. The Suez Canal (1869) served steamships, and a Red Sea cable reached Bombay in 1870.`
       },
       {
         category: 'Economic',
         title: 'The region kept making goods, but with fewer makers and a falling share of world manufacturing.',
-        body: `Egypt's crop monopolies paid for about 30 state cotton mills, and most had failed by the mid-1840s. In 1838 English cloth cost less in Egypt than Egypt's own mills paid to make it. Aleppo had about 40,000 handlooms in the 1700s and about 5,000 from 1838 to 1850. After 1860 the handlooms of Aleppo and Damascus held steady.`
+        body: `Egypt's crop monopolies paid for about 30 state cotton mills, and most had failed by the mid-1840s. In 1838 English cloth cost less in Egypt than Egypt's own mills paid to make it. Aleppo had about 40,000 handlooms in the 1700s and about 5,000 from 1838 to 1850. From 1860 to 1914 the handlooms of Aleppo and Damascus held steady, a trend that ran past this unit's end.`
       }
     ]
   }

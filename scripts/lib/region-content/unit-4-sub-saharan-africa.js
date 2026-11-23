@@ -73,6 +73,15 @@
  * five other chapters claim it); KC-4.2 is now quoted in section 2's box, with one added sentence
  * on Indian weavers making cloth for sale in Africa (manufacturing), beside the labor, family and
  * environmental changes the chapter already teaches.
+ *
+ * Review pass 3 (2026-11-23, ledger S1, S3, S7, X2, X6a): Afonso's 1526 letter now has the
+ * Portuguese traders carrying people away and thieves seizing and selling them to the traders,
+ * as Topics 4.4 and 4.8 tell it; the story in short says Portugal ruled land only in a few places,
+ * such as Angola; Asante is the region's main power by 1750, not "through the 1700s"; the
+ * Religious card no longer claims Islam, which the chapter barely shows; KC-4.1.V.C and V.A are
+ * quoted with " ... " to the parts this chapter teaches (foods brought by enslaved Africans;
+ * mosquitoes and malaria), since the Americas chapter teaches the rest; the inland spread of
+ * cassava and maize is marked as partly after this unit.
  */
 
 const CB = 'What the College Board says';
@@ -86,7 +95,7 @@ module.exports = {
   deck: `From 1450 to 1750, most of Africa south of the Sahara stayed under African rulers. The big change came by sea. European ships tied Africa's Atlantic coast to a new ocean trade. It made some African states stronger, and it carried millions of Africans into slavery in the Americas. On the east coast, Portugal forced its way into the old Indian Ocean trade of the Swahili towns.`,
   inShort: [
     `Portugal's rulers paid for voyages down Africa's coast and built forts to trade for gold and captives.`,
-    `Kongo and other strong African states traded with Portugal, and Portugal could not rule them.`,
+    `Strong African states such as Kongo traded with Portugal, which ruled land only in a few places, like Angola.`,
     `Plantations in the Americas made the Atlantic slave trade grow, and it changed African families.`,
     `States fought over trade: Morocco beat Songhai, Njinga resisted Portugal, Asante rose, and Oman drove Portugal from Mombasa.`,
     `American crops fed Africans, and Africans carried foods and faiths that mixed with others in the Americas.`
@@ -149,7 +158,7 @@ module.exports = {
             { p: `Afonso asked Portugal for priests and teachers, and he sent young nobles to study there. In <span class="num">1518</span> the pope named Afonso's son Henrique a bishop. Later, Kongo artists cast brass crucifixes in their own style, with Kongo meanings.` },
             { p: `Trade made the king stronger. Imported goods came through him, and he gave them to nobles in return for their loyalty.` },
             { p: `The trade also took people. Kongo had slavery of its own. Afonso sold foreign war captives, and he ran a slave market in his capital. But custom protected free-born Kongo people from sale abroad.` },
-            { p: `In <span class="num">1526</span> Afonso complained to Portugal's king. He wrote that thieves were seizing free people and selling them to Portuguese traders. In Luís Madureira's translation, they took "our native-born countrymen and the children of our nobles and vassals as well as relatives of ours."` },
+            { p: `In <span class="num">1526</span> Afonso complained to Portugal's king. He wrote that Portuguese traders were carrying away free people. Thieves seized them and sold them to the traders. In Luís Madureira's translation, the traders carried away "our native-born countrymen and the children of our nobles and vassals as well as relatives of ours."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -270,7 +279,7 @@ module.exports = {
           blocks: [
             { p: `In Kongo, the trade that had made the king stronger began to hurt the kingdom. Kongo fought civil wars in the 1600s. The historian Linda Heywood argues that the wars broke down the protection of free-born Kongo people. Far more were sold abroad.` },
             { p: `Inland from the Gold Coast, the trade built a state instead. Around <span class="num">1700</span>, several Akan states joined under one ruler to form the forest kingdom of <b>Asante</b>. Its ruler was called the Asantehene. Asante controlled gold. It bought guns from Dutch and English traders and paid partly with war captives.` },
-            { p: `In <span class="num">1701</span> Asante defeated Denkyira at <b>Feyiase</b>. Denkyira had been the leading power in the region. Through the 1700s, Asante became the region's main power.` }
+            { p: `In <span class="num">1701</span> Asante defeated Denkyira at <b>Feyiase</b>. Denkyira had been the leading power in the region. By <span class="num">1750</span>, Asante had become the region's main power.` }
           ]
         },
         {
@@ -317,7 +326,7 @@ module.exports = {
         {
           heading: 'American crops in Africa',
           blocks: [
-            { p: `Portuguese traders brought <span class="kt">cassava</span> (an American root crop) from Brazil to the mouth of the Congo River. <b>Maize</b> (corn) also came from the Americas. By the 1600s both grew on the West and West Central African coasts, especially in Kongo and Angola. Over the next two centuries they spread inland.` },
+            { p: `Portuguese traders brought <span class="kt">cassava</span> (an American root crop) from Brazil to the mouth of the Congo River. <b>Maize</b> (corn) also came from the Americas. By the 1600s both grew on the West and West Central African coasts, especially in Kongo and Angola. Over the next two centuries, partly after this unit ends, they spread inland.` },
             { p: `Cassava grows in poor soil and survives drought and locusts. It can stay in the ground until people need it. Where farmers grew these crops, people ate better. But the crops also helped the slave trade. Maize and cassava fed the captives on slave ships.` }
           ]
         },
@@ -346,9 +355,9 @@ module.exports = {
                 `In short: American crops fed people in Africa, enslaved Africans brought foods and faiths to the Americas, and the cultures mixed.`,
                 `<a href="#chapter-t4-3">Topic 4.3</a>: "American foods became staple crops in various parts of Europe, Asia, and Africa."`,
                 `<a href="#chapter-t4-3">Topic 4.3</a>: "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops."`,
-                `<a href="#chapter-t4-3">Topic 4.3</a>: "Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons."`,
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "... while other foods were brought by African enslaved persons."`,
                 `An optional College Board example: okra and rice, two foods brought by enslaved Africans.`,
-                `<a href="#chapter-t4-3">Topic 4.3</a>: "European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria."`,
+                `<a href="#chapter-t4-3">Topic 4.3</a>: "European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes ... and the spread of diseases that were endemic in the Eastern Hemisphere, including ... malaria."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices."`
               ]
@@ -376,11 +385,11 @@ module.exports = {
       {
         category: 'Political',
         title: 'African rulers kept most of Africa and fought hard to hold it',
-        body: `Njinga ruled Ndongo and Matamba from 1624 to 1663 and fought Portugal for years. In 1701 Asante defeated Denkyira at Feyiase and became the region's main power.`
+        body: `Njinga ruled Ndongo and Matamba from 1624 to 1663 and fought Portugal for years. In 1701 Asante defeated Denkyira at Feyiase, and by 1750 it was the region's main power.`
       },
       {
         category: 'Religious',
-        title: 'Christianity, Islam and new blended faiths all shaped the region',
+        title: 'Kongo made Christianity its own, and African faiths helped form new religions in the Americas',
         body: `Kongo's king was baptized in 1491, and in 1518 the pope named Afonso I's son Henrique a bishop. In the 1700s, enslaved Africans in Saint-Domingue built Vodou from African religions and Catholic saints.`
       },
       {

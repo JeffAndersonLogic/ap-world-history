@@ -799,19 +799,19 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
 
 - W1. Middle East: Serbia, Montenegro and Romania "recognized as fully independent" in 1878, with
   no cause given, so nationalism reads as the sole cause; Russia's war of 1877 to 1878 and the
-  Congress of Berlin did it. Same in Topic 5.2 (line 291). PENDING.
+  Congress of Berlin did it. Same in Topic 5.2 (line 291). **FIXED:** "In 1877 Russia went to war with the empire, and it won in 1878. Romania, Serbia and Montenegro fought on Russia's side. Then Europe's powers met at the Congress of Berlin in 1878. There they recognized Serbia, Montenegro and Romania as fully independent"; thesis and card to match. Topic 5.2's copy goes to the topic helper.
 - W2. South and Southeast Asia claims KC-5.1.III.B (transnational businesses multiplied, relying on
-  new banking and finance practices) and teaches neither part. PENDING.
+  new banking and finance practices) and teaches neither part. **FIXED** by dropping the claim and its quotation here; Britain (limited liability, the stock exchange, Lever Brothers) and East Asia (HSBC) teach and claim KC-5.1.III.B.
 - W3. Middle East: "The French left in 1801" sounds voluntary; their army surrendered to British
-  and Ottoman forces. Same in Topic 5.6 (line 110). PENDING.
+  and Ottoman forces. Same in Topic 5.6 (line 110). **FIXED:** "In 1801 the French army in Egypt surrendered to British and Ottoman forces. British ships carried it home."
 - W4. South and Southeast Asia, section 02 box: the optional example "Shipbuilding in India and
   Southeast Asia" sits under the rising-West sentence; the CED lists it under Asia's falling
-  share. PENDING.
+  share. **FIXED:** the example now says the College Board lists it under the falling share of Middle Eastern and Asian countries (CED unit-5.js line 141).
 - W5. Middle East, story and Technological card: the fez factory's steam engines "around 1850";
   steam machinery came from 1843, Belgian machines 1843 to 1851 (History of Istanbul). Same in
-  Topic 5.8 (line 265). PENDING.
+  Topic 5.8 (line 265). **FIXED:** "From the 1840s the fez factory got steam engines and machines from Britain and Belgium" (story and card).
 - W6. South and Southeast Asia: "From 1865 an overland telegraph line joined London and India"; it
-  used the 1864 Persian Gulf submarine cable. PENDING.
+  used the 1864 Persian Gulf submarine cable. **FIXED:** "It ran mostly over land, with an undersea cable in the Persian Gulf" (Encyclopaedia Iranica).
 
 **Reviewer X (CED and consistency, all twelve chapters), Unit 5 items.**
 
@@ -819,12 +819,12 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
   teaches only steel and electricity. PENDING.
 - X5b. Europe quotes KC-5.3.IV.B ("Demands for women's suffrage") but describes no demand for the
   vote; Britain quotes KC-5.1.IV whole ("interior regions globally") and shows no interior.
-  PENDING.
+  Britain: **FIXED** with U7. Europe part PENDING.
 - X6b. Facts after 1900 not marked as later: Britain's Labour Party (1906) in a section dated "1787
   to 1906" and Unilever (1929); Americas' wheat gap "by 1913" and 55 million Europeans to 1914;
   Middle East's handlooms "steady from 1860 to 1914"; Europe's dyes "By 1914", the Trans-Siberian
   "By 1904" and settlers "over the next twenty years"; South and Southeast Asia's Roy "1890s to the
-  1930s" and the 1908 handloom count. PENDING.
+  1930s" and the 1908 handloom count. Britain (Labour Party 1906 "after this unit ends"; section dated "1787 to 1900"; Unilever "long after"), Middle East (handlooms and section dates) and South and Southeast Asia (Roy, 1908, mills "by 1900"): **FIXED**, marked as later. Europe and Americas PENDING.
 
 **Reviewer U (history: Britain, East Asia), 7 findings.** Verified sound: all 33 CED quotations (by
 script, with a negative control); Bairoch's shares; Hatton's crossing times; Feinstein; 62 percent
@@ -834,20 +834,20 @@ Arkwright, Newcomen and Watt; Corn Laws; cholera deaths; Engels; the Charter Oat
 - U1. East Asia: "It changed Japan itself before it built industry" ("Reform first") makes reform
   and state industry a sequence; the government took the shogun's shipyards in 1868, railway work
   began in April 1870 (Morel), and the railway, Tomioka and the school system all came in 1872
-  (JRTR, "Dawn of Japanese Railways"; Topic 5.6). PENDING.
+  (JRTR, "Dawn of Japanese Railways"; Topic 5.6). **FIXED:** "A new government took power in 1868. It changed Japan itself. In the same years it began to build industry"; heading "Reforming Japan itself" (id unchanged).
 - U2. East Asia mistake box: for 1894 Elman "points instead to a navy split into rival regional
   fleets, and to crews less well trained"; the training diagnosis is his for 1884 to 1885 (p.
   317); for the Yalu (pp. 319 to 320) he cites Japan's leadership, faster ships, quick-firing guns
-  and China's shell shortage; the no-unified-fleet half is supported. Same in Topic 5.8. PENDING.
+  and China's shell shortage; the no-unified-fleet half is supported. Same in Topic 5.8. **FIXED:** "For 1894 he points instead to China's fleets, which were never under one command. Japan also had faster ships, quick-firing guns and better naval leadership. Some Chinese ships were short of shells." Topic 5.8's copy goes to the topic helper.
 - U3. Britain claims KC-5.3.IV.B (demands for women's suffrage) and teaches only Wollstonecraft's
   aside; the Political card's "From 1869 some women could vote in town elections" is not in the
-  chapter body. PENDING.
+  chapter body. **FIXED** by teaching it: Mill presented the women's petition in 1866 (about 1,500 signatures); Parliament refused his 1867 proposal; from 1869 some women who paid local taxes could vote in town elections (History of Parliament; UK Parliament Living Heritage).
 - U4. Britain: "Railways cost far more, so each railway company needed its own act of Parliament";
   every railway needed an act, for compulsory land purchase, incorporation, limited liability and
-  capital (Business History, 2022). PENDING.
+  capital (Business History, 2022). **FIXED:** "Every railway company needed its own act of Parliament. The act let it raise money from many investors and buy the land for its line, even from owners who refused to sell."
 - U5. East Asia, story and Social card: the 1873 conscription law as service for "men of every
-  class" drops Topic 5.6's "though it excused many men". PENDING.
+  class" drops Topic 5.6's "though it excused many men". **FIXED:** "But the law excused many men" (story and Social card).
 - U6. Britain, story and mistake box: the Chartists' "five of their six points later became law"
-  drops Topic 5.8's "one only roughly" and the 1918 date. PENDING.
+  drops Topic 5.8's "one only roughly" and the 1918 date. **FIXED:** "five of their six points later became law, one only roughly. Every man over 21 got the vote only in 1918, after this unit ends."
 - U7. Britain claims KC-5.1.IV and shows no interior regions (same as X5b's Britain part).
-  PENDING.
+  **FIXED** by narrowing KC-5.1.IV with " ... " to the trade-and-migration part the chapter teaches.

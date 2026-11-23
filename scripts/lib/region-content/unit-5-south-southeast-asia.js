@@ -7,7 +7,7 @@
  * (KC-5.1.II.B), the cloth trade turning around under cheaper machine goods and the trade rules
  * of the people in power, with Bombay's teak ships (KC-5.1.II.B), railways, cables, banks and
  * Indian mills reaching India while the handloom and the farm carried on (KC-5.1.IV,
- * KC-5.1.III.B, KC-5.1.II.B), and the steamships' migrants and the Filipino writers who imagined
+ * KC-5.1.II.B), and the steamships' migrants and the Filipino writers who imagined
  * a nation under European rule (KC-5.1.IV, KC-5.3.II.ii, KC-5.3.II.iii). Facts come from the
  * Topic 5.2, 5.3, 5.4, 5.5 and 5.7 chapters and their claim ledgers, and from the reviewed rebuild
  * of 5.10 (India's census of 1901), keeping their narrowings (a falling share is not a stop; no
@@ -30,6 +30,16 @@
  * to the India story through the steamships and through European rule, and its dates run to 1940
  * with the migration count. Nationalism uses the shared definition from KC-5.3.II.ii. Added "The
  * story in short" (inShort) and six closing cards in the fixed order.
+ *
+ * Review pass 3 (2026-11-23, reviewers W and X): KC-5.1.III.B left `ced` and its quotation and HSBC
+ * example left the section 03 box, because this chapter showed one bank but taught neither the
+ * spread of transnational businesses nor the new banking and finance practices; the Britain chapter
+ * (limited liability, the stock exchange, Lever Brothers) and the East Asia chapter (HSBC) still
+ * claim it. The HSBC paragraph stays as story. The section 02 box now says the shipbuilding example
+ * is listed under the falling Middle Eastern and Asian share (CED Topic 5.4). The 1865 London to
+ * India telegraph ran mostly over land but used the 1864 Persian Gulf cable (Encyclopaedia Iranica,
+ * "Indo-European Telegraph Department"). Roy's 1890s to 1930s and the 1908 count are marked as
+ * running past the unit.
  */
 
 const CB = 'What the College Board says';
@@ -52,7 +62,6 @@ module.exports = {
   ced: [
     'KC-5.1.II.B',
     'KC-5.1.IV',
-    'KC-5.1.III.B',
     'KC-5.3.II.iii'
   ],
 
@@ -148,7 +157,7 @@ module.exports = {
               paras: [
                 `In short: steam-powered factories in Europe and the United States won a bigger share of the world's manufacturing.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution."`,
-                `An optional College Board example: "Shipbuilding in India and Southeast Asia".`
+                `An optional College Board example: "Shipbuilding in India and Southeast Asia". The College Board lists it under the falling share of Middle Eastern and Asian countries (section 01), not under this sentence.`
               ]
             } }
           ]
@@ -176,7 +185,7 @@ module.exports = {
           blocks: [
             { p: `India's first passenger train ran from Bombay to Thane in <span class="num">1853</span>. A railway could reach farms and towns where no river went.` },
             { p: `The Suez Canal opened in Egypt in <span class="num">1869</span>. It made the sea voyage from Europe to India much shorter. It mostly served steamships, because sailing ships found the Red Sea's winds hard to sail against.` },
-            { p: `News sped up, too. A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. From <span class="num">1865</span> an overland telegraph line joined London and India. Its messages passed through many relay stations and took days. In <span class="num">1870</span> an undersea cable through the Red Sea reached Bombay. Now a message between London and Bombay took minutes (<a href="#chapter-t5-5">Topic 5.5</a>).` },
+            { p: `News sped up, too. A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. From <span class="num">1865</span> a telegraph line joined London and India. It ran mostly over land, with an undersea cable in the Persian Gulf. Its messages passed through many relay stations and took days. In <span class="num">1870</span> an undersea cable through the Red Sea reached Bombay. Now a message between London and Bombay took minutes (<a href="#chapter-t5-5">Topic 5.5</a>).` },
             { p: `Banks followed the trade. The bank known today as HSBC opened in Hong Kong in <span class="num">1865</span>. That July it opened in London, to change money for clients in China and India. HSBC was a <span class="kt">transnational business</span> (one that works across the borders of many countries). It was itself a bank. It lent money and changed money for traders (<a href="#chapter-t5-7">Topic 5.7</a>).` }
           ]
         },
@@ -184,7 +193,7 @@ module.exports = {
           heading: 'New mills',
           blocks: [
             { p: `Machines came to India itself. India's first cotton mill was British-owned. It opened near Calcutta around <span class="num">1818</span>. Bombay's mill industry began later. In <span class="num">1854</span> the Bombay businessman Cowasji Davar founded a cotton mill there. It began spinning in <span class="num">1856</span>.` },
-            { p: `More mills followed. By the early 1900s India had about 200 cotton mills, and many were Indian-owned. Together they had about five million <span class="kt">spindles</span>. A spindle is the part of a spinning machine that twists fiber into thread.` },
+            { p: `More mills followed. By 1900 India had nearly 200 cotton mills, and many were Indian-owned. Together they had about five million <span class="kt">spindles</span>. A spindle is the part of a spinning machine that twists fiber into thread.` },
             { p: `The mills spun thread for India's own handloom weavers. They also spun yarn to sell in China. Yarn is thread made for weaving.` }
           ]
         },
@@ -192,7 +201,7 @@ module.exports = {
           heading: 'Old work',
           blocks: [
             { p: `India's hand weaving shrank, but it did not die. A <span class="kt">handloom</span> is a loom worked by hand and foot, with no engine. Many weavers switched to cheaper machine-spun thread so they could keep weaving. Some of that thread came from India's new mills.` },
-            { p: `The economic historian Tirthankar Roy studied these weavers. He finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s. In <span class="num">1908</span>, in one province of northern India alone, about a million people still lived from handloom weaving.` },
+            { p: `The economic historian Tirthankar Roy studied these weavers. He finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s. Most of those years come after this unit ends, about 1900. In <span class="num">1908</span>, just after the unit's end, about a million people in one province of northern India still lived from handloom weaving.` },
             { p: `Most Indians still farmed. A <span class="kt">census</span> is an official count of the people. India's census of <span class="num">1901</span> found that about two-thirds of the people lived by farming.` },
             { p: `Still, India's place in the world had changed. A <span class="kt">share</span> is a part of a whole. By Bairoch's estimates, India's share of the world's manufactured goods fell from about a quarter in 1750 to under 2 percent by <span class="num">1900</span>. His estimates suggest that India also made less per person. It lost ground, not only share.` },
             { note: {
@@ -204,10 +213,8 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: railways, steamships and the telegraph reached inland and led to more trade and migration, and big businesses grew across borders.`,
+                `In short: railways, steamships and the telegraph reached inland and led to more trade and migration.`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
-                `<a href="#chapter-t5-7">Topic 5.7</a>: "The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance."`,
-                `An optional College Board example: "Hong Kong and Shanghai Banking Corporation (HSBC)".`
               ]
             } }
           ]
@@ -303,7 +310,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Most people still worked the land and the loom, and millions moved',
-        body: `India's census of 1901 found about two-thirds of the people living by farming. In 1908 about a million people in one province still lived from handloom weaving. From 1846 to 1940, McKeown counted more than 29 million departures of Indians and more than 19 million of Chinese, mostly to Southeast Asia. Many later went home.`
+        body: `India's census of 1901 found about two-thirds of the people living by farming. In 1908, just after this unit ends, about a million people in one province still lived from handloom weaving. From 1846 to 1940, McKeown counted more than 29 million departures of Indians and more than 19 million of Chinese, mostly to Southeast Asia. Many later went home.`
       },
       {
         category: 'Intellectual',
@@ -318,7 +325,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'India went from selling cloth to buying it, but kept making goods',
-        body: `By Bairoch's estimates, India's share of the world's manufactured goods fell from about a quarter around 1750 to under 2 percent by 1900. From about 1830 India bought more cotton cloth than it sold, and British cloth entered India at a tariff of only 2½ percent. Bombay's mill industry began in 1854, and by the early 1900s India had about 200 cotton mills.`
+        body: `By Bairoch's estimates, India's share of the world's manufactured goods fell from about a quarter around 1750 to under 2 percent by 1900. From about 1830 India bought more cotton cloth than it sold, and British cloth entered India at a tariff of only 2½ percent. Bombay's mill industry began in 1854, and by 1900 India had nearly 200 cotton mills.`
       }
     ]
   }

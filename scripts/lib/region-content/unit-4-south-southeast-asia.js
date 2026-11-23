@@ -84,6 +84,15 @@
  * (M. C. Ricklefs, Mystic Synthesis in Java, 2006: Javanese Muslims of the 1600s and 1700s
  * kept faith in local spiritual forces), which supersedes the note above that religion is
  * taught only as spread and conflict.
+ *
+ * Review pass 3 (2026-11-23, ledger R1, R2, R4, X3): the section 01 thesis now gives Portugal's
+ * motives as profit and crusade, not "little to sell" alone; Akbar won "much of" Rajput support,
+ * and Mewar's resistance until its 1615 peace is named; carracks are named as Portugal's ship
+ * design, and the KC-4.1.II.A quotation is narrowed (" ... ") past "new tools", which this chapter
+ * does not teach; and the cartaz paragraph now says who profited (customs at Goa, Hormuz and
+ * Malacca were the main income of Portugal's government in Asia; in the 1580s over 85 percent of
+ * the viceroy's revenue, per Wikipedia, "Portuguese India"; M. N. Pearson argues forced customs gave most of the Estado's revenue). KC-4.3.II.A.i stays
+ * quoted to its first sentence only; the East Asia chapter teaches the restrictive-policies one.
  */
 
 const CB = 'What the College Board says';
@@ -131,7 +140,7 @@ module.exports = {
       name: 'An Ocean Already Full',
       navLabel: 'The ocean in 1500',
       dates: 'c. 1450 to 1509 &nbsp;·&nbsp; Monsoon ports, da Gama, and Diu',
-      thesis: `In 1498 Portugal entered a trade that Asian, African and Arab merchants had run for centuries. It had little to sell, so it came back ready to fight.`,
+      thesis: `In 1498 Portugal entered a trade that Asian, African and Arab merchants had run for centuries. It came for profit and partly as a crusade. It had little that Asian buyers wanted, and it soon used force.`,
       parts: [
         {
           heading: 'The ocean before the Portuguese',
@@ -155,7 +164,7 @@ module.exports = {
         {
           heading: 'Diu, 1509',
           blocks: [
-            { p: `Portuguese ships carried heavy guns. Most Indian Ocean merchant ships were not built to fight them (<a href="#chapter-t4-1">Topic 4.1</a>). Portugal tried to take the spice trade by force.` },
+            { p: `Portugal sailed to India in big new ships called carracks, which carried cargo and heavy guns. Most Indian Ocean merchant ships were not built to fight them (<a href="#chapter-t4-1">Topic 4.1</a>). Portugal tried to take the spice trade by force.` },
             { p: `In <span class="num">1509</span> a joint fleet met the Portuguese off the Gujarat port of <b>Diu</b>. Mamluk Egypt sent warships. The sultan (Muslim ruler) of Gujarat sent ships too, and so did the Hindu ruler of Calicut. The Portuguese won.` },
             { p: `But Portugal did not take Diu. <b>Malik Ayaz</b> governed the port for Gujarat. He let the Portuguese trade there, but he put off their demands for a fort for as long as he governed. Portugal built one only in the 1530s, by a treaty with Gujarat's sultan.` },
             { p: `Diu was an early battle in a long rivalry. Muslim powers and Portugal fought over whose ships would carry the spices. <a href="#r4-middle-east-spicewar">The Middle East chapter</a> tells how Egypt and the Ottomans fought it.` },
@@ -170,7 +179,7 @@ module.exports = {
               paras: [
                 `In short: state-backed voyages used older Asian and Islamic knowledge of the seas, and fights over trade followed.`,
                 `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."`,
-                `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible."`,
+                `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included ... innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible."`,
                 `<a href="#chapter-t4-2">Topic 4.2</a>: "New state-supported transoceanic maritime exploration occurred in this period."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
@@ -206,7 +215,7 @@ module.exports = {
         {
           heading: 'The cartaz, and the merchants who kept sailing',
           blocks: [
-            { p: `Portugal's main tool was the <span class="kt">cartaz</span> (a pass that merchant ships bought from the Portuguese). A ship with a pass had to stop at a Portuguese port and pay duties (taxes on goods) there. Portuguese patrols could seize a ship that sailed without one.` },
+            { p: `Portugal's main tool was the <span class="kt">cartaz</span> (a pass that merchant ships bought from the Portuguese). A ship with a pass had to stop at a Portuguese port and pay duties (taxes on goods) there. Portuguese patrols could seize a ship that sailed without one. Duties at ports such as Goa, Hormuz and Malacca became the main income of Portugal's government in Asia.` },
             { p: `The cartaz changed who taxed the ocean. It did not change who traded on it. Gujarati merchants kept shipping cloth, often by buying a pass and sailing on. Javanese merchants kept carrying rice to Malacca, whoever held it. Much of the ocean's business stayed <span class="kt">intra-Asian trade</span>: trade between Asian ports, in Asian goods.` },
             { p: `Muslim powers kept fighting. <b>Aceh</b> (a Muslim kingdom on the island of Sumatra) fought the Portuguese again and again for more than a century, from about <span class="num">1520</span>. It shipped its pepper straight to the Red Sea. By the middle of the 1500s, large amounts of spices again reached the Mediterranean that way.` },
             { p: `Religion traveled too. Asian merchants and teachers kept spreading Islam in Southeast Asia. On Java, many Muslims also kept older beliefs, such as faith in local spirits. Beliefs that mix different traditions in this way are called <span class="kt">syncretic</span>. In Goa, the Portuguese set up an Inquisition (a church court) in <span class="num">1560</span>. It tried converts accused of secretly keeping Jewish, Hindu or Muslim practices.` }
@@ -258,7 +267,7 @@ module.exports = {
           blocks: [
             { p: `The Mughal dynasty began in <span class="num">1526</span>, when Babur (a prince from Central Asia) won a battle at Panipat. Its emperors were Muslims. Most of their subjects were Hindus.` },
             { p: `<b>Akbar</b> ruled from <span class="num">1556</span> to <span class="num">1605</span>. He made room for Hindus on purpose. In <span class="num">1564</span> he ended the <span class="kt">jizya</span> (a tax that non-Muslims paid under Islamic rule). From <span class="num">1562</span> he married daughters of the <b>Rajputs</b> (Hindu warrior kings of northwestern India). He made Rajput princes some of his highest commanders.` },
-            { p: `Akbar was not only being generous. He needed Rajput armies and Hindu loyalty, and he got both (<a href="#chapter-t4-7">Topic 4.7</a>). He also invited Jesuits (Catholic priests) from Goa to his court to debate religion.` }
+            { p: `Akbar was not only being generous. He needed Rajput armies and Hindu loyalty, and he won much of both (<a href="#chapter-t4-7">Topic 4.7</a>). Not every Rajput king joined him. Mewar fought on, and it made peace with the Mughals only in <span class="num">1615</span>, ten years after Akbar died. He also invited Jesuits (Catholic priests) from Goa to his court to debate religion.` }
           ]
         },
         {

@@ -10,8 +10,8 @@
  * KC-5.1.I.D, KC-5.1.I.C, KC-5.1.VI.B). Facts come from the Topic 5.4, 5.6, 5.7 and 5.8 chapters
  * and their claim ledgers, and from the reviewed rebuild of 5.9 (women in Japan's factories,
  * 1900), keeping their narrowings (Bairoch's shares are estimates; Cixi's spending did not empty
- * the navy's purse, and for 1894 Elman points to a navy split into rival regional fleets and less
- * well-trained crews; the Meiji state built the first railway and model factories and took over
+ * the navy's purse, and for 1894 Elman points to fleets never under one command, Japan's faster
+ * ships, quick-firing guns and better naval leadership, and Chinese ships short of shells; the Meiji state built the first railway and model factories and took over
  * shipyards and mines begun under the shogun; Taiwan "a colony of its own", not "its first"; Korea
  * not a colony until 1910). Left out on purpose: the Opium Wars and the Taiping Rebellion beyond a
  * sentence each, and the treaty ports, which are Unit 6's; Korea, which the Unit 5 CED does not
@@ -30,6 +30,11 @@
  * dates are standard). Dropped to fit the length: the Dent and Company sentence. Topic 5.3 is now
  * listed, because KC-5.1.I.C, which the chapter teaches through Japan's mills, is a Topic 5.3
  * Key Concept.
+ *
+ * Review loop pass 3 (2026-11-23, findings U1, U2, U5): reform and the first state industries are
+ * told as happening in the same years, not in sequence (the shogun's shipyards taken in 1868, the
+ * railway, Tomioka and the schools all in 1872; Topic 5.6); Elman's 1894 diagnosis follows Modern
+ * Asian Studies 38:2 (2004), pp. 317 to 320; the 1873 conscription law "excused many men", as Topic 5.6.
  *
  * Review loop pass 2 (2026-11-22, findings N5, Q7): the Intellectual card no longer says "only
  * Japan kept at it" (Self-Strengthening went on for decades; the 1898 reforms were stopped after
@@ -162,7 +167,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money. Tight funding did limit the fleet. For 1894 he points instead to a navy split into rival regional fleets, and to crews less well trained than Japan's.`
+              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money. Tight funding did limit the fleet. For 1894 he points instead to China's fleets, which were never under one command. Japan also had faster ships, quick-firing guns and better naval leadership. Some Chinese ships were short of shells.`
             } },
             { note: {
               kind: 'cb',
@@ -191,7 +196,7 @@ module.exports = {
       name: 'Japan Remakes Its Government',
       navLabel: 'Meiji reforms',
       dates: '1853 to 1877 &nbsp;·&nbsp; Warships, treaties, and the Meiji Restoration',
-      thesis: `American warships and unequal treaties showed Japan's leaders how weak the country was. A new government took power in 1868. It changed Japan itself before it built industry.`,
+      thesis: `American warships and unequal treaties showed Japan's leaders how weak the country was. A new government took power in 1868. It changed Japan itself. In the same years it began to build industry.`,
       parts: [
         {
           heading: 'Ships and treaties',
@@ -210,10 +215,10 @@ module.exports = {
           ]
         },
         {
-          heading: 'Reform first',
+          heading: 'Reforming Japan itself',
           blocks: [
-            { p: `Next the Meiji leaders changed Japan itself. Before, local lords had ruled their own lands, called <span class="kt">domains</span>. In <span class="num">1871</span> the leaders abolished the domains and made one central state.` },
-            { p: `A national school system began in <span class="num">1872</span>. A law of <span class="num">1873</span> made army service a duty for men of every class, not only samurai. A new land tax, paid in money instead of rice, gave the government money to spend.` },
+            { p: `The Meiji leaders changed Japan itself. They began to build industry in the same years, as the next section tells. Before, local lords had ruled their own lands, called <span class="kt">domains</span>. In <span class="num">1871</span> the leaders abolished the domains and made one central state.` },
+            { p: `A national school system began in <span class="num">1872</span>. A law of <span class="num">1873</span> made army service a duty for men of every class, not only samurai. But the law excused many men. A new land tax, paid in money instead of rice, gave the government money to spend.` },
             { p: `The samurai lost their special rights step by step. In <span class="num">1876</span> they lost even the right to wear swords in public. Some samurai rebelled. In <span class="num">1877</span> the new army of drafted commoners crushed the last great revolt (<a href="#chapter-t5-6">Topic 5.6</a>).` },
             { p: `From <span class="num">1871</span> to <span class="num">1873</span> a group of Japan's leaders toured the United States and Europe to study how those countries worked. This trip is called the Iwakura Mission.` },
             { note: {
@@ -334,7 +339,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Japan\'s samurai lost their place, and young women went to work in the mills.',
-        body: `A law of 1873 made army service a duty for men of every class, and in 1876 samurai lost the right to wear swords. By 1900 women were about 62 percent of Japan's private factory workers.`
+        body: `A law of 1873 made army service a duty for men of every class, though it excused many men. In 1876 samurai lost the right to wear swords. By 1900 women were about 62 percent of Japan's private factory workers.`
       },
       {
         category: 'Intellectual',

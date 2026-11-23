@@ -39,6 +39,15 @@
  * India's falling share (Bairoch 1982, as the South and Southeast Asia chapter) teaches the second
  * sentence. The Political card names the vote for Parliament; the Municipal Franchise Act of 1869
  * let some women (unmarried ratepayers) vote in town elections.
+ *
+ * Review pass 3 (2026-11-23, findings U3, U4, U6, U7, X5b, X6b): the British demand for women's
+ * votes is told (Mill's petition of 7 June 1866, about 1,500 signatures, and his amendment of 20
+ * May 1867, refused; women ratepayers in town elections from 1869; History of Parliament and UK
+ * Parliament "Living Heritage"), so the Political card's 1869 line is now in the story. Every
+ * railway needed an act (land purchase as well as capital). The Chartists' five points carry
+ * Topic 5.8's "one only roughly" and the vote for every man over 21 in 1918. KC-5.1.IV is quoted
+ * without "in interior regions globally", which the Europe, Americas and South and Southeast Asia
+ * chapters teach. The Labour Party's 1906 seats and Unilever (1929) are marked as after the unit.
  */
 
 const CB = 'What the College Board says';
@@ -192,7 +201,7 @@ module.exports = {
                 `In short: factories and steam power made Britain the world's leading maker, while Asian and Middle Eastern makers kept working but lost share.`,
                 `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible ... which led to increased trade and migration."`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`
               ]
             } }
@@ -240,9 +249,9 @@ module.exports = {
         {
           heading: 'New tools for business',
           blocks: [
-            { p: `Most businesses belonged to a family or a few partners. If a partnership failed, each partner could lose his house to pay its debts. Railways cost far more, so each railway company needed its own act of Parliament to raise money from many investors.` },
+            { p: `Most businesses belonged to a family or a few partners. If a partnership failed, each partner could lose his house to pay its debts. Railways cost far more than a family could pay. Every railway company needed its own act of Parliament. The act let it raise money from many investors and buy the land for its line, even from owners who refused to sell.` },
             { p: `Investors bought <span class="kt">shares</span>. A share is a small part of a company, and its owner gets part of the profits. People traded shares on the London <span class="kt">stock exchange</span> (a market for shares). A law of <span class="num">1855</span> gave larger companies <span class="kt">limited liability</span>: an owner could lose only the money he put in, not his house. From <span class="num">1856</span> almost any group of seven or more people could form such a company.` },
-            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. By <span class="num">1886</span> he had registered the Sunlight name in the United States. In the late 1890s his company, Lever Brothers, opened soap works in Australia and the United States. It had become <span class="kt">transnational</span>: it worked across the borders of many countries. In <span class="num">1929</span> it joined Dutch firms to form Unilever.` }
+            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. By <span class="num">1886</span> he had registered the Sunlight name in the United States. In the late 1890s his company, Lever Brothers, opened soap works in Australia and the United States. It had become <span class="kt">transnational</span>: it worked across the borders of many countries. In <span class="num">1929</span>, long after this unit ends, it joined Dutch firms to form Unilever.` }
           ]
         },
         {
@@ -332,21 +341,22 @@ module.exports = {
       accent: 'gold',
       name: 'The People Who Pushed Back',
       navLabel: 'Calls for change',
-      dates: '1787 to 1906 &nbsp;·&nbsp; Abolitionists, Chartists, reformers, Owen and Marx',
+      dates: '1787 to 1900 &nbsp;·&nbsp; Abolitionists, Chartists, reformers, Owen and Marx',
       thesis: `Faith and new ideas about rights pushed reformers to end the slave trade. Workers organized, and Parliament passed reforms. Two German writers predicted a workers' revolution in a book printed in London. It never came to Britain.`,
       parts: [
         {
-          heading: 'Abolition and Wollstonecraft',
+          heading: 'Abolition and women\'s rights',
           blocks: [
             { p: `In <span class="num">1787</span> twelve men in London founded a society to end the slave trade. Nine were <span class="kt">Quakers</span> (members of a Christian group that had come to see slavery as a sin). Britain banned the slave trade in <span class="num">1807</span>. In <span class="num">1834</span> it began ending slavery in most of its empire, though freed people had to keep working for their former owners, unpaid, until <span class="num">1838</span> (<a href="#chapter-t5-1">Topic 5.1</a>).` },
-            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked mostly for education and independence. She also wrote, briefly, that women "ought to have representatives" in government. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` }
+            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked mostly for education and independence. She also wrote, briefly, that women "ought to have representatives" in government. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` },
+            { p: `Later, British women asked for the vote themselves. In <span class="num">1866</span> John Stuart Mill presented their petition to Parliament. About 1,500 women had signed it. In <span class="num">1867</span> Mill asked Parliament to give women the vote, and it refused. From <span class="num">1869</span> some women who paid local taxes could vote in town elections.` }
           ]
         },
         {
           heading: 'Workers organize',
           blocks: [
             { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> banned workers from joining together to demand higher wages. Parliament repealed them in <span class="num">1824</span>, but a law of <span class="num">1825</span> limited what workers' groups could do. By the 1850s skilled workers had built lasting national <span class="kt">labor unions</span> (groups of workers who bargain with employers together).` },
-            { p: `Workers also wanted <span class="kt">suffrage</span> (the right to vote). In <span class="num">1838</span> the <span class="kt">Chartists</span> demanded a vote for every man over 21 and a secret ballot. Parliament rejected their petitions, but five of their six points later became law. In <span class="num">1906</span> a committee of unions and socialists won 29 seats and became the Labour Party (<a href="#chapter-t5-8">Topic 5.8</a>).` }
+            { p: `Workers also wanted <span class="kt">suffrage</span> (the right to vote). In <span class="num">1838</span> the <span class="kt">Chartists</span> demanded a vote for every man over 21 and a secret ballot. Parliament rejected their petitions, but five of their six points later became law, one only roughly. Every man over 21 got the vote only in <span class="num">1918</span>, after this unit ends. In <span class="num">1900</span> unions and socialists formed a committee to elect workers to Parliament. In <span class="num">1906</span>, after this unit ends, it won 29 seats and became the Labour Party (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         },
         {
@@ -358,7 +368,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Chartists won nothing. Parliament rejected their petitions, but five of their six points later became law.`
+              html: `Do not write that the Chartists won nothing. Parliament rejected their petitions, but five of their six points later became law, one only roughly. The vote for every man over 21 came last, in 1918.`
             } },
             { note: {
               kind: 'cb',

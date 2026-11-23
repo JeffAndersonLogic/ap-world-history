@@ -549,20 +549,20 @@ Montagu 1717; the 1739 Stono account's wording; Heywood 2009 on Afonso's slave m
 
 - S1. Sub-Saharan Africa: Afonso's letter: "thieves were seizing free people and selling them ...
   they took 'our native-born countrymen ...'" gives the quoted words to the thieves; in the 1526
-  letter it is the merchants who carry them away (Thornton 2023; Topics 4.4 and 4.8). PENDING.
+  letter it is the merchants who carry them away (Thornton 2023; Topics 4.4 and 4.8). **FIXED:** "He wrote that Portuguese traders were carrying away free people. Thieves seized them and sold them to the traders. In Luís Madureira's translation, the traders carried away 'our native-born countrymen...'" (agrees with Topics 4.4 and 4.8).
 - S2. Middle East (story, glossary, Intellectual card) and Europe (lines 42 and 268): the Toledan
   and Alfonsine tables called tables "of where the sun stands each day"; they predicted the sun,
-  moon and planets; day-by-day solar tables for pilots came with Zacuto (1496). Europe: **FIXED:** pilots' day-by-day sun tables came from Zacuto (printed 1496), built on Toledo's tables of about 1080 that "predicted where the sun, moon and planets would be"; Intellectual card to match. Middle East part PENDING.
+  moon and planets; day-by-day solar tables for pilots came with Zacuto (1496). Europe: **FIXED:** pilots' day-by-day sun tables came from Zacuto (printed 1496), built on Toledo's tables of about 1080 that "predicted where the sun, moon and planets would be"; Intellectual card to match. Middle East part Middle East: **FIXED:** older tables "predicted where the sun, moon and planets would be" (Toledo about 1080; 1263 to 1272); Zacuto's 1496 tables "gave the sun's position for each day, which pilots needed"; glossary and card to match.
 - S3. Sub-Saharan Africa, story in short: "Portugal could not rule them" contradicts the chapter's
-  Angola wars. PENDING.
+  Angola wars. **FIXED:** "Strong African states such as Kongo traded with Portugal, which ruled land only in a few places, like Angola."
 - S4. Middle East: KC-4.1.IV's "shipping services developed by European merchants" untaught (EIC
-  help at Hormuz is military). PENDING.
+  help at Hormuz is military). **FIXED** by narrowing KC-4.1.IV to the silver-for-Asian-goods and regional-markets parts the chapter teaches (four other chapters claim the code).
 - S5. Middle East, story in short and section intro: "cavalry gave way to tax farms" squeezes
-  infantry-over-cavalry and timar-to-tax-farm, late 1500s into the 1700s. PENDING.
+  infantry-over-cavalry and timar-to-tax-farm, late 1500s into the 1700s. **FIXED:** story in short split: "From the late 1500s the Ottomans needed cash for foot soldiers with guns, so cavalry lands slowly became tax farms"; body "through the 1600s and 1700s".
 - S6. Middle East, Political card: "took ports back from Portugal"; Persia had not held Hormuz and
-  Oman had not held Mombasa. PENDING.
+  Oman had not held Mombasa. **FIXED:** "drove Portugal from key ports".
 - S7. Sub-Saharan Africa, Religious card heading "Christianity, Islam and new blended faiths all
-  shaped the region" is not backed (Islam barely shown; Vodou formed in Saint-Domingue). PENDING.
+  shaped the region" is not backed (Islam barely shown; Vodou formed in Saint-Domingue). **FIXED:** "Kongo made Christianity its own, and African faiths helped form new religions in the Americas".
 
 **Reviewer T (history: Europe, the Americas), 3 findings; the Americas chapter has none.**
 Verified sound: all 42 CED quotations (by script); links; Alfonsine Tables; Amboyna 1623; Gualpa's
@@ -583,14 +583,14 @@ orders; Chuan Han-sheng's ratios; Han bannermen 1648; Coen 1614; Calicut at Diu;
 
 - R1. South and Southeast Asia, section 01 intro: Portugal "had little to sell, so it came back
   ready to fight" gives one cause as the whole reason (the chapter's own crusading motive and plan
-  to take the spice trade by force). PENDING.
+  to take the spice trade by force). **FIXED:** "It came for profit and partly as a crusade. It had little that Asian buyers wanted, and it soon used force."
 - R2. South and Southeast Asia: Akbar "needed Rajput armies and Hindu loyalty, and he got both" is
-  too tidy; Mewar never submitted (Haldighati 1576; terms only in 1615). PENDING.
+  too tidy; Mewar never submitted (Haldighati 1576; terms only in 1615). **FIXED:** "and he won much of both. Not every Rajput king joined him. Mewar fought on, and it made peace with the Mughals only in 1615, ten years after Akbar died." Topic 4.7's copy goes to the topic helper.
 - R3. East Asia, section 01 intro: Portugal let "trade at one small port" overstates the limit;
   Macau merchants also went to the Canton fairs twice a year (World History Encyclopedia;
-  Macau Memory). PENDING.
+  Macau Memory). **FIXED:** "let them settle at one small port"; "Macau kept the Portuguese in one place that Chinese officials could watch."
 - R4. South and Southeast Asia claims KC-4.1.II.A (no ship design taught) and KC-4.3.II.A.i
-  (its second sentence on Asian restrictive trade policies neither taught nor quoted). PENDING.
+  (its second sentence on Asian restrictive trade policies neither taught nor quoted). KC-4.1.II.A: **FIXED:** "Portugal sailed to India in big new ships called carracks, which carried cargo and heavy guns" (Topic 4.1), and the quotation narrowed to ship designs and winds with the CED's dash. KC-4.3.II.A.i: **ANSWERED:** only its first sentence is quoted; East Asia teaches the second.
 
 **Reviewer X (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every CED
 quotation and topic label (by script); every cross-region link; optional examples; no
@@ -598,18 +598,18 @@ contradictions across chapters on the shared dates and figures; closing cards an
 prompts; no mistake box overcorrects.
 
 - X1. Middle East quotes KC-4.1.IV whole but teaches neither Chinese demand for silver nor
-  European shipping services (same as S4). PENDING.
+  European shipping services (same as S4). **FIXED** with S4.
 - X2. Sub-Saharan Africa quotes KC-4.1.V.C (Europeans brought Afro-Eurasian fruit trees, grains,
   sugar and animals) and KC-4.1.V.A (rats, smallpox, measles) but teaches only the enslaved
-  Africans' foods and mosquitoes and malaria. PENDING.
+  Africans' foods and mosquitoes and malaria. **FIXED** by narrowing: KC-4.1.V.C to "... while other foods were brought by African enslaved persons"; KC-4.1.V.A to mosquitoes and malaria (the Americas chapter quotes and teaches both whole).
 - X3. South and Southeast Asia quotes KC-4.3.II.A.i ("proved profitable for the rulers and
-  merchants") and never says who profited. PENDING.
+  merchants") and never says who profited. **FIXED:** "Duties at ports such as Goa, Hormuz and Malacca became the main income of Portugal's government in Asia" (Wikipedia, "Portuguese India"; Pearson).
 - X5a. Americas quotes KC-4.2.III.A whole, including the Qing clause it does not teach (East Asia
   cuts it with " ... "). **FIXED:** KC-4.2.III.A cut to "...new political and economic elites, including ... in the Americas with the rise of the Casta system."
 - X6a. Facts after 1750 not marked as later: East Asia's population growth "with much of that
   growth after 1750"; Sub-Saharan Africa's "Through the 1700s, Asante became the region's main
   power"; East Asia's section "c. 1450 to 1600" opening with Zheng He (early 1400s) without saying
-  it is background. PENDING.
+  it is background. **FIXED:** "Before 1450, in the early 1400s, the Ming admiral Zheng He..."; "Much of that growth came after 1750, when this unit ends"; "By 1750, Asante had become the region's main power" (card to match). Also marked: cassava and maize spreading inland "partly after this unit ends"; the timar's end in 1831 "long after this unit ends".
 - X7. Europe: "So old elites lost power in France and Russia, and gained it in England" is too
   tidy (the chapter's own French nobles kept titles, land and tax freedom; the CED says elite power
   "fluctuated"). **FIXED:** "So the power of old elites rose and fell. In France and Russia, nobles kept their land but lost much of their say over the ruler's policies. In England they gained more say."

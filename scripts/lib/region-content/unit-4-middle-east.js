@@ -70,6 +70,15 @@
  * whole and taught whole: the English East India Company's 1600 charter and monopoly at Hormuz,
  * and Persia's silk sold to Europe for silver, much of it American, much of which went on to
  * India (Rudolph Matthee, The Politics of Trade in Safavid Iran: Silk for Silver, 1600 to 1730).
+ *
+ * Review pass 3 (2026-11-23, ledger S2, S4 to S6, X1): the Toledan and Alfonsine tables are now
+ * tables of the sun, moon and planets, and the day-by-day sun tables pilots used come with
+ * Zacuto's tables (1496); KC-4.1.IV is now quoted with " ... " for the Chinese demand for silver
+ * and European shipping services, which this chapter does not teach (the Americas, East Asia and
+ * South and Southeast Asia chapters teach the silver half); the story in short and section 4 say
+ * the timars became tax farms slowly, through the 1600s and 1700s, and the 1831 abolition is marked
+ * as after this unit; the Political card says Persia and Oman drove Portugal from key ports, not
+ * took them back.
  */
 
 const CB = 'What the College Board says';
@@ -85,7 +94,8 @@ module.exports = {
     `Knowledge from the Islamic world, such as star tables and sailing tools, helped European ships cross the oceans.`,
     `Portugal attacked the Muslim spice trade, but the old Red Sea route recovered by the middle of the 1500s.`,
     `The Ottoman Empire ruled Muslims, Christians and Jews by making room for them, not by making them equal.`,
-    `In the late 1500s guns changed war: Morocco beat Songhai, and Ottoman cavalry gave way to tax farms.`,
+    `In 1591 Moroccan soldiers with guns beat Songhai's larger army.`,
+    `From the late 1500s the Ottomans needed cash for foot soldiers with guns, so cavalry lands slowly became tax farms.`,
     `Persia and Oman drove the Portuguese from key ports, and American crops reached the Middle East.`
   ],
   topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.7', '4.8'],
@@ -119,7 +129,7 @@ module.exports = {
             { p: `In 1450 the lands of Islam reached from West Africa to Southeast Asia. They included the East African coast, Central Asia and much of India. This chapter follows the lands from Morocco to Persia. Muslim scholars called this world <span class="kt">Dar al-Islam</span> (Arabic for "the house of Islam"). It was not one state. It was many lands joined by Islamic law, the Arabic language and trade.` },
             { p: `One example of its learning is the <span class="kt">astrolabe</span>. This tool measures how high the sun or a star stands in the sky. The idea was Greek, but astronomers in the Islamic world made it precise. It reached Europe through Muslim Spain. In the 1100s and 1200s, Christian and Jewish translators in the Spanish city of Toledo turned Arabic science books into Latin.` },
             { p: `By the 1480s, Portuguese pilots (the sailors who guided ships) used a heavy sea astrolabe. With it they measured the sun's height at noon. A pilot then turned that reading into a <span class="kt">latitude</span> (how far north or south of the equator the ship was).` },
-            { p: `For that, a pilot needed <span class="kt">astronomical charts</span>. These were tables of where the sun stands each day. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. From about <span class="num">1263</span> to <span class="num">1272</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They were based on that later version.` }
+            { p: `For that, a pilot needed a table of where the sun would be on each day. Such tables grew out of older <span class="kt">astronomical charts</span>. These were tables that predicted where the sun, moon and planets would be. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. From about <span class="num">1263</span> to <span class="num">1272</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They were based on that later version. They gave the sun's position for each day, which pilots needed.` }
           ]
         },
         {
@@ -148,7 +158,7 @@ module.exports = {
       ],
       terms: [
         ['Dar al-Islam', 'Arabic for "the house of Islam": the lands under Islamic law and Muslim rulers.'],
-        ['Astronomical charts', 'Tables of where the sun stands each day. Pilots used them to find a latitude.'],
+        ['Astronomical charts', 'Tables that predict where the sun, moon and planets will be. Day-by-day tables of the sun helped pilots find a latitude.'],
         ['Lateen sail', 'A triangular sail that lets a ship sail much closer to the wind than a square sail does.']
       ]
     },
@@ -281,7 +291,7 @@ module.exports = {
       name: 'Guns, Cash and Pushing Back',
       navLabel: 'Pushing back',
       dates: '1578 to 1750 &nbsp;·&nbsp; Morocco, the Ottoman cavalry, Persia and Oman',
-      thesis: `By the late 1500s, war depended on guns and money. Morocco sent soldiers with guns across the Sahara. The Ottoman state needed cash to pay its own soldiers with guns, so it relied less on its cavalry. Persia and Oman drove out the Portuguese.`,
+      thesis: `From the late 1500s, war depended more and more on guns and money. Morocco sent soldiers with guns across the Sahara. The Ottoman state needed cash to pay its own soldiers with guns. Over the next century and more, it slowly replaced its cavalry's land grants with tax farms. Persia and Oman drove out the Portuguese.`,
       parts: [
         {
           heading: 'Morocco crosses the Sahara',
@@ -295,8 +305,8 @@ module.exports = {
           heading: 'From cavalry to tax farms',
           blocks: [
             { p: `Guns also weakened an old Ottoman elite. The core of the army had been cavalry (soldiers on horseback). Each of these horsemen was called a <span class="kt">sipahi</span>. A sipahi held a <span class="kt">timar</span>. A timar was the right to collect the taxes of a piece of land. In return, the sipahi rode to war.` },
-            { p: `From the late 1500s, foot soldiers with guns mattered more and more in battle. Unlike the sipahis, they had to be paid in cash. So the state turned more and more timar land into <span class="kt">tax farms</span>. A tax farm was the right to collect a district's taxes. The state sold it to the highest bidder. From <span class="num">1695</span>, tax farms were sold for life.` },
-            { p: `The sipahis lost their importance, though the timar system was not ended by law until <span class="num">1831</span>. Tax farmers and powerful families in the provinces (the regions of the empire) rose in their place (<a href="#chapter-t4-7">Topic 4.7</a>).` },
+            { p: `From the late 1500s, foot soldiers with guns mattered more and more in battle. Unlike the sipahis, they had to be paid in cash. So, through the 1600s and 1700s, the state turned more and more timar land into <span class="kt">tax farms</span>. A tax farm was the right to collect a district's taxes. The state sold it to the highest bidder. From <span class="num">1695</span>, tax farms were sold for life.` },
+            { p: `The sipahis lost their importance, though the timar system was not ended by law until <span class="num">1831</span>, long after this unit ends. Tax farmers and powerful families in the provinces (the regions of the empire) rose in their place (<a href="#chapter-t4-7">Topic 4.7</a>).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -326,7 +336,7 @@ module.exports = {
                 `In short: Old elites rose or fell under stronger rulers, chartered companies and American silver moved goods, regional trade kept going, and American crops spread.`,
                 `<a href="#chapter-t4-7">Topic 4.7</a>: "The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders."`,
                 `An optional College Board example: Ottoman timars.`,
-                `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."`,
+                `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets ... Regional markets continued to flourish in Afro-Eurasia by using established commercial practices ..."`,
                 `An optional College Board example: Omani merchants (<a href="#chapter-t4-4">Topic 4.4</a>).`,
                 `<a href="#chapter-t4-3">Topic 4.3</a>: "American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."`
               ]
@@ -352,7 +362,7 @@ module.exports = {
     pairs: [
       {
         category: 'Political',
-        title: 'Muslim states stayed strong, won new lands and took ports back from Portugal.',
+        title: 'Muslim states stayed strong, won new lands and drove Portugal from key ports.',
         body: `The Ottomans took Mamluk Egypt in 1517 and fought Portugal at sea. Morocco beat Songhai at Tondibi in 1591. Persia took Hormuz in 1622, and Oman took Muscat in 1650 and Mombasa in 1698.`
       },
       {
@@ -368,7 +378,7 @@ module.exports = {
       {
         category: 'Intellectual',
         title: 'Science from the Islamic world helped Europeans find their way at sea.',
-        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made sun tables around 1080, and Jewish astronomers updated them from about 1263 to 1272. Zacuto's tables (printed in Portugal in 1496) were based on that later version.`
+        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made tables of the sun, moon and planets around 1080, and Jewish astronomers updated them from about 1263 to 1272. Zacuto's tables (printed in Portugal in 1496) were based on that later version and gave pilots the sun's position for each day.`
       },
       {
         category: 'Technological',

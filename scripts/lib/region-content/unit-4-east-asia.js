@@ -45,6 +45,10 @@
  * names the actors: the heavy taxes were the local lords' (Matsukura Katsuie at Shimabara); the ban
  * on Christianity was the shogunate's, and the shogunate crushed the rising. KC-4.1.VI stays quoted
  * only to its conflict half, with the cut shown.
+ *
+ * Review pass 3 (2026-11-23, ledger R3, X6a): Ming China let the Portuguese "settle" (not "trade")
+ * at one port, since Macau's merchants also went to the Canton fairs; Zheng He is marked as before
+ * 1450; and the population growth after 1750 is marked as after this unit ends.
  */
 
 const CB = 'What the College Board says';
@@ -88,12 +92,12 @@ module.exports = {
       name: 'China Sets the Rules',
       navLabel: 'Ming China',
       dates: 'c. 1450 to 1600 &nbsp;·&nbsp; The Ming, the compass, and Macau',
-      thesis: `Portuguese ships reached China in the 1500s and met a state far stronger than their own. Ming China let them trade at one small port, under Chinese officials, because the trade was useful to China.`,
+      thesis: `Portuguese ships reached China in the 1500s and met a state far stronger than their own. Ming China let them settle at one small port, under Chinese officials, because the trade was useful to China.`,
       parts: [
         {
           heading: 'The Ming and the sea',
           blocks: [
-            { p: `The <span class="kt">Ming dynasty</span> had ruled China since <span class="num">1368</span>. In the early 1400s, the Ming admiral <b>Zheng He</b> led large fleets as far as East Africa. Then, after <span class="num">1433</span>, the court stopped sending them.` },
+            { p: `The <span class="kt">Ming dynasty</span> had ruled China since <span class="num">1368</span>. Before 1450, in the early 1400s, the Ming admiral <b>Zheng He</b> led large fleets as far as East Africa. Then, after <span class="num">1433</span>, the court stopped sending them.` },
             { p: `China did not stop trading. But the Ming wanted to control who came and went on its coasts. So it restricted private overseas trade by its own people. Chinese merchants kept sailing across Southeast Asia anyway, often against the law.` },
             { p: `Official foreign trade went mainly through the <span class="kt">tribute system</span>. A foreign ruler sent envoys to bow to the emperor. In this way the ruler accepted, at least in ceremony, that the emperor ranked above him. In return, the envoys received gifts and were allowed to trade.` }
           ]
@@ -109,7 +113,7 @@ module.exports = {
           blocks: [
             { p: `Portugal reached India by sea in <span class="num">1498</span>. It built a <span class="kt">trading-post empire</span> (a chain of fortified ports, not conquered land). In <span class="num">1511</span> Portugal took the port of Malacca. It sits on the strait that leads into the South China Sea. From there, Portuguese ships sailed on to China. <a href="#r4-south-southeast-asia-iberians">The South and Southeast Asia chapter</a> tells how Portugal built its chain of ports.` },
             { p: `From <span class="num">1557</span>, Chinese provincial officials let Portuguese merchants settle permanently at <b>Macau</b>. Macau is a small peninsula on China's south coast. Chinese officials kept authority over the port, and the Portuguese paid them a yearly ground rent. Macau existed because China allowed it.` },
-            { p: `Why allow it? Ming law barred Chinese merchants from trading directly with Japan. In <span class="num">1567</span> the Ming eased its limits and licensed Chinese merchants to trade overseas. But the ban on Japan stayed. The Portuguese filled that gap. They carried Chinese silk to Japan and Japanese silver back to China. Macau kept that trade in one place that Chinese officials could watch.` },
+            { p: `Why allow it? Ming law barred Chinese merchants from trading directly with Japan. In <span class="num">1567</span> the Ming eased its limits and licensed Chinese merchants to trade overseas. But the ban on Japan stayed. The Portuguese filled that gap. They carried Chinese silk to Japan and Japanese silver back to China. Macau kept the Portuguese in one place that Chinese officials could watch.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -303,7 +307,7 @@ module.exports = {
         {
           heading: 'More people on more land',
           blocks: [
-            { p: `Under the Qing, American crops spread across the hills. China's population roughly doubled across the 1700s, with much of that growth after <span class="num">1750</span>. Peace inside China was one cause. Farming land that rice could not use was another.` },
+            { p: `Under the Qing, American crops spread across the hills. China's population roughly doubled across the 1700s. Much of that growth came after <span class="num">1750</span>, when this unit ends. Peace inside China was one cause. Farming land that rice could not use was another.` },
             { p: `Much stayed the same. A Jiangnan silk family still worked at home and paid most of its taxes in silver. The Qing changed who sat at the top, not the farms and workshops underneath.` },
             { note: {
               kind: 'cb',
