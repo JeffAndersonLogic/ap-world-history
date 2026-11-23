@@ -858,3 +858,22 @@ Pass 3 found 40 items, so a fourth pass was run, with the chapters paired a thir
 East Asia and Sub-Saharan Africa; AB: Unit 4 South and Southeast Asia and Europe; AC: Unit 4
 Middle East and the Americas; AD: Unit 5 Britain and the Americas; AE: Unit 5 Europe and the
 Middle East; AF: Unit 5 East Asia and South and Southeast Asia; AG: CED and consistency, all twelve.
+
+**Reviewer AE (history: Europe, the Middle East), 4 findings.** Verified sound: all 26 CED
+quotations and labels (by script); optional examples; Bismarck 1884 (GHDI); Beinin (MERIP 1981);
+Aleppo handlooms (Pamuk and Williamson); the 1838 cloth price; German railway lengths; the 1870
+Bombay cable; the New Order; the Ottoman telegraph from 1855; links; mistake boxes.
+
+- AE1. Middle East: "From 1820 the most important crop was a new one, long-staple cotton"; 1820
+  was a few trial bales; commercial planting and export began in 1821 and it became the leading
+  crop over the next few years (ALCOTEXA; Owen, British Academy). Same in Topic 5.6 (line 282).
+  PENDING.
+- AE2. Europe: KC-5.3.IV.B cut to "... an emergent feminism challenged political and gender
+  hierarchies" drops "Demands for women's suffrage", and the chapter teaches no demand for women's
+  political rights; de Gouges's Article 6 does make that demand. (Supersedes the pass 3 narrowing.)
+  PENDING.
+- AE3. Europe: "joined most of Italy into one kingdom in 1861, and Rome was added in 1870" omits
+  Venetia (1866); the card's "Italy was unified in 1861" overstates. Same in Topic 5.2 (line 284).
+  PENDING.
+- AE4. Europe quotes KC-5.1.I.B but never teaches coal-burning steam power on the Continent or the
+  fossil fuels' greater energy (the Britain chapter does). PENDING.
