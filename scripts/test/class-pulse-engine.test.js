@@ -78,6 +78,29 @@ function checkContracts(api) {
   return checked;
 }
 
+// Identical answers: the same writing, word for word, from two or more students.
+function checkIdentical(api) {
+  const copied = 'The Mughals used the mansabdar system to tie nobles to the emperor, so land could be taken back.';
+  const sub = (student, text, over = {}) => Object.assign({ student, text, completionState: 'verified-submission' }, over);
+  const groups = api.identicalAnswers([
+    sub(0, copied),
+    sub(1, '  ' + copied.replace(' so ', '\n so ') + '\n'),           // a paste with a stray line break and spaces
+    sub(2, copied.replace('Mughals', 'mughals')),                      // one capital letter different
+    sub(3, copied.replace('taken back', 'taken away')),                // one word different
+    sub(4, copied, { completionState: 'completion-unverified' }),      // saved, never submitted
+    sub(5, copied, { completionState: 'missing' }),
+    sub(6, 'Invented placeholder.', { completionState: 'synthetic-complete', placeholder: true }),
+    sub(7, 'Invented placeholder.', { completionState: 'synthetic-complete', placeholder: true }),
+    sub(8, 'Short one.'), sub(9, 'Short one.'), sub(10, 'Short one.'),
+    sub(11, '')
+  ]);
+  assert.deepEqual(groups.map(g => g.students), [[8, 9, 10], [0, 1]], 'only exact matches among submitted answers, the largest group first');
+  assert.equal(groups[1].text, copied, 'the shared writing is shown with its spacing tidied');
+  assert.equal(groups[1].words, copied.split(' ').length);
+  assert.deepEqual(api.identicalAnswers([sub(0, copied), sub(1, copied.replace('.', '!'))]), [], 'a changed punctuation mark is not a match');
+  assert.deepEqual(api.identicalAnswers([sub(0, copied)]), [], 'one student alone is not a match');
+}
+
 function checkBlindSet(set) {
   assert.equal(set.rows.length, 104, 'the Unit 3 blind set has 104 answers');
   assert.equal(new Set(set.rows.map(r => r.id)).size, set.rows.length, 'answer ids are unique');
@@ -244,6 +267,9 @@ function checkBlindSet(set) {
   assert.equal(a.criteria[0].category, 'D', 'the original proposal is kept');
   assert.throws(() => E.correction(a, 'criterion-1', 'D', ''), /reason/);
 
+  // 9. Identical answers (2026-11-23): word for word, finished work only.
+  checkIdentical(E);
+
   // Negative controls: each broken engine must turn its guarding assertion red.
   const source = fs.readFileSync(ENGINE, 'utf8');
   const controls = [
@@ -264,6 +290,14 @@ function checkBlindSet(set) {
       m => assert.deepEqual(m.contractFor(MAP, '3.1', 'cp1', R).rules, R.RULES.concat(R.TOPICS['3.1'].rules))],
     ['a blind answer carries a level', null, null,
       () => { const leaked = JSON.parse(JSON.stringify(U3)); leaked.rows[7].level = 'DPN'; checkBlindSet(leaked); }],
+    ['identical answers ignore capital letters', "function sameAnswerText(text) { return String(text == null ? '' : text).replace(/\\s+/g, ' ').trim(); }",
+      "function sameAnswerText(text) { return String(text == null ? '' : text).replace(/\\s+/g, ' ').trim().toLowerCase(); }",
+      m => checkIdentical(m)],
+    ['identical answers count unsubmitted drafts', 'if (!r || r.placeholder || eligibility(r)) continue;', 'if (!r || r.placeholder) continue;',
+      m => checkIdentical(m)],
+    ['identical answers miss a pasted line break', "function sameAnswerText(text) { return String(text == null ? '' : text).replace(/\\s+/g, ' ').trim(); }",
+      "function sameAnswerText(text) { return String(text == null ? '' : text); }",
+      m => checkIdentical(m)],
     ['sends the response key', 'response: { text: row.text }', 'response: { text: row.text, key: row.key }',
       async m => {
         let seen = null;

@@ -955,3 +955,42 @@ answer waiting and sent to the Reader, a changed one staying changed, the count,
 example class, which works on 4.7) a never-submitted 4.7 answer still saved but not
 submitted, with three negative controls. `class-pulse-live.test.js` (rules suite, needs the
 emulator) carries the same 4.6 and 4.7 cases against the real rules.
+
+### Identical answers, added 2026-11-23
+
+**What it is.** A panel on Plan next class that lists students who turned in the same
+answer to one checkpoint, word for word: which checkpoint, how many students, how many words,
+the names (with each student's class when All my classes is showing, and "across N classes"
+when they differ), a **Read it** button per student that opens the response drawer, and the
+shared answer folded under **Show the answer they share**. Jeff asked for exact matches only.
+
+**The rule.** `identicalAnswers` in `teacher/class-pulse-engine.js`. Every word, letter and
+punctuation mark must match; spacing and line breaks are ignored, because a paste can pick up
+an extra space or a line break and that is still the same writing. Capital letters count.
+Only finished, submitted work is compared (the engine's own `eligibility`), so a draft or an
+answer changed after Submit is never matched, and the demo's placeholder sentences never are.
+Groups run largest first, then longest. A group under eight words carries "A short answer, so
+this could be chance."
+
+**What it says about itself.** The panel states how many answers it compared, that an answer
+copied and then changed by even one word does not show, and that a match is a reason to look,
+not proof. It is not a grading tool: Class Pulse is formative only.
+
+**Privacy.** Names follow the names switch like the rest of the tab. Plan next class is never
+projected, and nothing here enters the projector's state. It reads the answers the page has
+already loaded and sends nothing anywhere. The class menu narrows it like everything else,
+so a match between two classes shows only under All my classes.
+
+**Why the engine and not the page.** The Reader carries the engine inlined, so this change
+rebuilt `teacher/reader/class-pulse-reader.artifact.html`. The Reader never calls
+`identicalAnswers` and its reading rules are unchanged (`VERSION` stands), so republishing the
+live Reader is optional rather than urgent; the drift check is satisfied by the rebuilt file.
+
+**Checks.** `class-pulse-engine.test.js` (offline): spacing and a pasted line break still
+match; one capital letter, one word or one punctuation mark breaks a match; drafts, missing
+answers, placeholders and a lone student never match; three negative controls (capitals
+ignored, drafts counted, line breaks not ignored). `class-pulse-page.test.js` (browser): no
+match in the example class and only submitted answers compared; a copy across two classes
+named with checkpoint, count, classes and the shared text; Read it opens the right answer; the
+panel lives only on Plan next class; it follows the names switch; choosing one class compares
+only that class; with three negative controls.

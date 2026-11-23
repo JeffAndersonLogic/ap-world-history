@@ -552,8 +552,40 @@
         (g.other.length ? `<p class="small" style="grid-column:1/-1">Not placed (not submitted, not read yet, or the tool could not tell): ${g.other.map(st => esc(shown(st))).join(', ')}</p>` : '');
     }
     renderCoached();
+    renderSame();
     renderAfterSession();
     renderScatter();
+  }
+
+  // Identical answers, added 2026-11-23 (Jeff). Which students turned in the same
+  // writing for one checkpoint, word for word (E.identicalAnswers). Exact matches
+  // only: an answer copied and then changed by one word is not caught, and the page
+  // says so. Names follow the names switch like everything else on this tab. This tab
+  // is never projected, and nothing here goes into the projector's state.
+  const SAME_SHORT = 8; // under this many words, two answers can match by chance
+  function renderSame() {
+    const box = $('#same');
+    if (!box) return;
+    if (D.kind === 'levels') { box.innerHTML = '<p class="small">This topic has invented levels but no invented writing, so there is nothing to compare. Topics 2.3 and 3.2 have writing.</p>'; return; }
+    const allClasses = S.source === 'live' && !S.liveSection && S.live && S.live.roster && (S.live.roster.sections || []).length > 1;
+    const compared = CPS.map(cp => D.rows[cp].filter(r => !r.placeholder && !E.eligibility(r)).length);
+    let h = '', found = 0;
+    CPS.forEach(cp => {
+      E.identicalAnswers(D.rows[cp]).forEach(g => {
+        found++;
+        const who = g.students.map(si => D.students[si]).filter(Boolean);
+        const sections = new Set(who.map(st => st.section).filter(Boolean));
+        h += `<div class="same-group"><p class="eyebrow">${CP_NAME[cp]} · ${who.length} students · ${g.words} ${g.words === 1 ? 'word' : 'words'}${allClasses && sections.size > 1 ? ' · across ' + sections.size + ' classes' : ''}</p>` +
+          `<ul>${who.map(st => `<li><b>${esc(shown(st))}</b>${allClasses && st.section ? ` <span class="small">${esc(st.section)}</span>` : ''} <button class="btn same-read" type="button" data-s="${st.i}" data-c="${cp}-0">Read it</button></li>`).join('')}</ul>` +
+          (g.words < SAME_SHORT ? '<p class="small">A short answer, so this could be chance.</p>' : '') +
+          `<details><summary>Show the answer they share</summary><blockquote>${esc(g.text)}</blockquote></details></div>`;
+      });
+    });
+    const n = compared[0] + compared[1];
+    const demoNote = D.kind !== 'live' && found ? '<p class="small"><b>Demo:</b> the invented answers are built from a few stock sentences, so many of them match. A real class should show far fewer.</p>' : '';
+    box.innerHTML = demoNote + (found ? h : `<p class="small">No two students turned in the same answer to either checkpoint.</p>`) +
+      `<p class="small">Compared ${compared[0]} submitted Checkpoint 1 ${compared[0] === 1 ? 'answer' : 'answers'} and ${compared[1]} Checkpoint 2 ${compared[1] === 1 ? 'answer' : 'answers'}${n ? '' : ' (nothing submitted yet)'}. ` +
+      'Exact matches only: every word, letter and punctuation mark the same, with spacing ignored. An answer copied and then changed by even one word does not show here. A match is a reason to look, not proof.</p>';
   }
 
   // Coached and not coached, added 2026-11-07 (Jeff). Splits each Checkpoint 2

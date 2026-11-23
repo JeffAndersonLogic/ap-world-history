@@ -302,6 +302,16 @@ nav.tabs button:disabled{opacity:.45;cursor:default}
 .coach-cmp tbody th small{display:block;font-weight:400;color:var(--muted);font-size:11px;margin-top:2px}
 .coach-cmp td{white-space:nowrap}
 
+/* Identical answers (Plan next class), 2026-11-23 */
+.same-group{border-top:1px solid var(--line);padding:10px 0;display:grid;gap:6px}
+.same-group:first-child{border-top:0;padding-top:4px}
+.same-group .eyebrow{margin:0}
+.same-group ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.same-group li{font-size:13px;background:var(--inset);border-radius:6px;padding:3px 4px 3px 8px;display:flex;align-items:center;gap:6px}
+.same-group .same-read{padding:2px 8px;font-size:11px}
+.same-group details summary{cursor:pointer;font-size:12px;color:var(--muted)}
+.same-group blockquote{margin:6px 0 0;padding:8px 12px;border-left:3px solid var(--rule);background:var(--inset);font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+
 /* Class view (projector), 2026-11-07: large type, readable from the back row */
 .cv{display:grid;gap:18px;margin-top:16px}
 .cv-head{display:grid;gap:8px}
