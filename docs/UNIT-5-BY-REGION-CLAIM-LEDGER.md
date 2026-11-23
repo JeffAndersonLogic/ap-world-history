@@ -877,3 +877,19 @@ Bombay cable; the New Order; the Ottoman telegraph from 1855; links; mistake box
   PENDING.
 - AE4. Europe quotes KC-5.1.I.B but never teaches coal-burning steam power on the Continent or the
   fossil fuels' greater energy (the Britain chapter does). PENDING.
+
+**Reviewer AD (history: Britain, the Americas), 4 findings.** Verified sound: all 45 CED quotations
+(by script, with a negative control); links; Bolívar (Bertrand); Hatton; Cromford's child workers;
+White on coal; Feinstein; Riis; Manchester 1773; Britain's and the Americas' dates and figures.
+
+- AD1. Britain, section 02 box: the pass 3 cut of KC-5.1.IV removes "in interior regions globally",
+  the point of the Key Concept, so the cut changes its meaning; Britain teaches no interior.
+  (Supersedes the pass 3 narrowing, U7.) PENDING.
+- AD2. Americas claims KC-5.1.II.B (US and European share rising during the first industrial
+  revolution; Asian and Middle Eastern shares falling) and teaches neither part; its only share
+  claim is for 1900. PENDING.
+- AD3. Britain: "By 1886 he had registered the Sunlight name in the United States"; filed 2 August
+  1886, registered 24 May 1887 (USPTO Reg. No. 0014441, via Justia). Same in Topic 5.7. PENDING.
+- AD4. Americas: after 1763 "the colonists no longer needed British soldiers to guard them" states
+  an interpretation as fact; Pontiac's War began in 1763 and Britain kept about 10,000 troops.
+  Same in Topic 5.2. PENDING.
