@@ -90,7 +90,10 @@ const BEN2 = 'The mita sent workers to Potosi.';
 // through 4.6 recover saved writing (RECOVER_THROUGH, 2026-11-17); their own section
 // below uses liveStore(false, '4.6').
 const LIVE_TOPIC = '4.7';
-function liveStore(multi, topic) {
+// copied: Cal, in another class, submits Ana's Checkpoint 2 word for word, with a
+// line break the paste picked up (Identical answers, 2026-11-23).
+const CAL_COPY = ANA2.replace(', so ', ',\nso ');
+function liveStore(multi, topic, copied) {
   const key = (topic || LIVE_TOPIC).replace('.', '-');
   const P = 'projects/behistoric/databases/(default)/documents/tenants/zcs/';
   const docs = new Map(), commits = [], requests = [];
@@ -115,6 +118,10 @@ function liveStore(multi, topic) {
   ans('ana1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:02 AM · AI Coach prompt copied · fingerprint ' + Sync.valueHash(ANA2, '5'), '', '2099-01-01T00:00:00Z');
   ans('ben1', 'checkpoint-two-response', 'The mita sent workers to Potosi.', 2);
   ans('ben1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:05 AM · fingerprint ' + Sync.valueHash('The mita sent workers to Potosi.', '2'), '', '2026-10-31T15:05:00Z');
+  if (copied) {
+    ans('cal1', 'checkpoint-two-response', CAL_COPY, 4);
+    ans('cal1', 'checkpoint-two-response-submitted', 'Submitted Oct 31, 10:09 AM · fingerprint ' + Sync.valueHash(CAL_COPY, '4'));
+  }
   return { P, docs, commits, requests, googleLoaded: false };
 }
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'authorization,content-type', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS' };
@@ -498,6 +505,9 @@ async function suite(browser) {
   const coachedText = await L.p.$eval('#coached', e => e.textContent).catch(() => '');
   check('the coaching note splits Checkpoint 2 into coached and not coached', /1 of 2 Checkpoint 2 submissions came after the student copied the AI Coach prompt/.test(coachedText), coachedText.slice(0, 140));
   check('and says copying the prompt is not proof of coaching', /not proof they used the coaching/.test(coachedText));
+  const sameNone = await L.p.$eval('#same', e => e.textContent).catch(() => '');
+  check('Identical answers finds no match in a class with none', /No two students turned in the same answer/.test(sameNone), sameNone.slice(0, 120));
+  check('and compares only submitted answers, never a draft or an answer changed after Submit', /Compared 1 submitted Checkpoint 1 answer and 2 Checkpoint 2 answers/.test(sameNone), sameNone.slice(0, 200));
   // The feedback session marker: Ana's Checkpoint 2 was saved after "now", Ben's before.
   await L.p.click('#tab-class');
   await L.p.click('#cv-cp [data-v="cp2"]');
@@ -691,6 +701,41 @@ async function suite(browser) {
     await M.context.close();
   }
 
+  section('Identical answers');
+  {
+    const store6 = liveStore(true, LIVE_TOPIC, true);
+    const I = await open(browser, 1280, ctx => fakeGoogle(ctx, store6));
+    await choose(I.p, LIVE_TOPIC);
+    await I.p.click('#source [data-v="live"]');
+    await I.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
+    await I.p.click('#live-signin');
+    await I.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
+    await I.p.click('#tab-pulse');
+    const groups = await I.p.$$eval('#same .same-group', gs => gs.map(g => ({ head: g.querySelector('.eyebrow').textContent, who: [...g.querySelectorAll('li b')].map(b => b.textContent), text: g.querySelector('blockquote').textContent, all: g.textContent })));
+    check('Identical answers names the students who turned in the same answer', groups.length === 1 && JSON.stringify(groups[0].who) === '["Ana Ruiz","Cal Ito"]', JSON.stringify(groups));
+    check('and says which checkpoint, how many and that they are in different classes', groups[0] && /^Checkpoint 2 · 2 students · \d+ words · across 2 classes$/.test(groups[0].head), groups[0] && groups[0].head);
+    check('and shows the shared answer, a pasted line break and all', groups[0] && groups[0].text === ANA2 && /G4/.test(groups[0].all) && /S1/.test(groups[0].all), groups[0] && groups[0].text);
+    const said = await I.p.$eval('#same', e => e.textContent);
+    check('and says a match is a reason to look, not proof, and that a changed word is missed', /A match is a reason to look, not proof/.test(said) && /changed by even one word does not show here/.test(said));
+    await I.p.click('#same .same-group li:nth-child(2) .same-read');
+    const drawer = await I.p.$eval('#dtitle', e => e.textContent).catch(() => '');
+    check('Read it opens that student\'s answer', /Cal Ito/.test(drawer), drawer);
+    await I.p.keyboard.press('Escape');
+    const outside = await I.p.evaluate(() => [...document.querySelectorAll('.same-group')].every(g => g.closest('#view-pulse')));
+    check('Identical answers appears only on Plan next class, which is never projected', outside);
+    await I.p.click('#names [data-v="anon"]').catch(() => {});
+    const anon = await I.p.$eval('#same', e => e.textContent).catch(() => '');
+    check('Identical answers follows the names switch', !/Ana Ruiz|Cal Ito/.test(anon) && /Student 01/.test(anon), anon.slice(0, 160));
+    await I.p.click('#names [data-v="names"]').catch(() => {});
+    await I.p.selectOption('#section', 'S1');
+    await I.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 2, null, { timeout: 8000 }).catch(() => {});
+    await I.p.click('#tab-pulse');
+    const s1 = await I.p.$eval('#same', e => e.textContent).catch(() => '');
+    check('choosing one class compares only that class', /No two students turned in the same answer/.test(s1), s1.slice(0, 120));
+    check('Identical answers raises no script error', I.errors.length === 0, I.errors.join(' | '));
+    await I.context.close();
+  }
+
   section('A phone');
   for (const t of ['live', 'read', 'pulse', 'class', 'course', 'student']) {
     const m = await open(browser, 390);
@@ -751,6 +796,9 @@ async function suite(browser) {
     { name: 'the recovery is switched off', file: 'teacher/class-pulse-live.js', from: "const fromBackup = recover && !!text && !print;", to: 'const fromBackup = false;', expect: /writing never submitted is recovered/ },
     { name: 'the recovery reaches 4.7', file: 'teacher/class-pulse-live.js', from: "const RECOVER_THROUGH = '4.6';", to: "const RECOVER_THROUGH = '4.7';", expect: /on 4\.7, a draft never submitted/ },
     { name: 'an answer changed after Submit is recovered', file: 'teacher/class-pulse-live.js', from: "const fromBackup = recover && !!text && !print;", to: 'const fromBackup = recover && !!text;', expect: /changed after Submit stays changed/ },
+    { name: 'identical answers are never shown', file: 'teacher/class-pulse-app.js', from: 'E.identicalAnswers(D.rows[cp]).forEach(g => {', to: '[].forEach(g => {', expect: /names the students who turned in the same answer/ },
+    { name: 'identical answers ignore the names switch', file: 'teacher/class-pulse-app.js', from: '`<ul>${who.map(st => `<li><b>${esc(shown(st))}</b>', to: '`<ul>${who.map(st => `<li><b>${esc(st.name)}</b>', expect: /follows the names switch/ },
+    { name: 'identical answers compare drafts too', file: 'teacher/class-pulse-app.js', from: 'const compared = CPS.map(cp => D.rows[cp].filter(r => !r.placeholder && !E.eligibility(r)).length);', to: 'const compared = CPS.map(cp => D.rows[cp].filter(r => r.text).length);', expect: /compares only submitted answers/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];
   let controlFailures = 0;

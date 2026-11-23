@@ -457,6 +457,29 @@ ul.plain{margin:0;padding-left:18px;display:grid;gap:4px}
     };
   }
 
+  // Identical answers, added 2026-11-23 (Jeff): which students turned in the same
+  // writing for one checkpoint, word for word. Exact only, on purpose: every word,
+  // letter and punctuation mark must match. Spacing and line breaks are the one thing
+  // ignored, because a paste can pick up an extra space or a different line break
+  // and that is still the same writing. Only finished, submitted work counts (the
+  // eligibility rule above), and the demo's placeholder sentences never do. Returns
+  // groups of two or more, the largest first, then the longest. A match is a reason
+  // for the teacher to look, never a finding: two students can honestly write the
+  // same short sentence. This runs on the teacher's page only and sends nothing.
+  function sameAnswerText(text) { return String(text == null ? '' : text).replace(/\s+/g, ' ').trim(); }
+  function identicalAnswers(rows) {
+    const groups = new Map();
+    for (const r of rows || []) {
+      if (!r || r.placeholder || eligibility(r)) continue;
+      const t = sameAnswerText(r.text);
+      if (!groups.has(t)) groups.set(t, []);
+      if (!groups.get(t).includes(r.student)) groups.get(t).push(r.student);
+    }
+    return [...groups.entries()].filter(([, who]) => who.length > 1)
+      .map(([text, students]) => ({ text, students, words: text.split(' ').length }))
+      .sort((a, b) => b.students.length - a.students.length || b.words - a.words);
+  }
+
   function correction(result, criterionId, category, note) {
     if (!result.criteria.some(c => c.criterionId === criterionId) || !BANDS.includes(category) || !bounded(note, 400) || !note.trim()) throw new Error('Correction needs criterion, category and reason');
     return { revision: result.revision, category, note, source: 'teacher-confirmed', confirmedAt: new Date().toISOString() };
@@ -464,7 +487,8 @@ ul.plain{margin:0;padding-left:18px;display:grid;gap:4px}
 
   return {
     VERSION, BANDS, SLOTS, topicsFor, contractFor, digest, revisionFor, eligibility,
-    validateOutput, readOutput, locate, CHECK_FAILED, checkFailed, OUTPUT_SCHEMA, INSTRUCTIONS, summary, aggregate, createEngine, correction
+    validateOutput, readOutput, locate, CHECK_FAILED, checkFailed, OUTPUT_SCHEMA, INSTRUCTIONS, summary, aggregate, createEngine, correction,
+    identicalAnswers
   };
 });
 </script>

@@ -443,6 +443,62 @@ runs the real requests and the engine against the emulator with the real rules.
 `firestore-rules.test.js` holds the rules. The last two need the emulator and
 SKIP without it; a SKIP is not a pass.
 
+### Looking up one student's backup, added 2026-11-17
+
+`scripts/backup-lookup.js` answers "did this student's work reach the backup?" for one
+student: whether the account has ever signed in, when it was last active, and every
+backed-up answer by topic, with a First & 10 question that never arrived named outright
+and a plain-language reading of what the pattern means. It was built for a student who
+kept losing her First & 10 answers.
+
+**It is a command and not a teacher page, on purpose.** The rules let a teacher's browser
+read only Checkpoint 1 and 2 of students on the class list, which is what Dan Layton
+approved on 2026-11-05. A page that showed First & 10 would need those rules widened,
+which is a district decision. Jeff chose (2026-11-17) the Cloud Shell route instead: it
+runs with the project owner's administrator credentials, the same access he already has
+in the Firebase console, so it needs no rules change and no new approval.
+
+**Read only, and it prints the writing only when asked, one topic at a time.** Without
+`--answers` it shows when each answer was saved, its length and its confidence, which is
+enough to diagnose. `--answers` adds the text and refuses to run without `--topic`, so a
+lookup to recover one lesson never prints a student's whole year. Nothing is saved to a
+file. Times are Indiana time; Cloud Shell's clock is UTC.
+
+**What it can say and what it cannot.** "Never signed in" is certain. A First & 10
+answer marked NOT BACKED UP is certain about the cloud and says nothing about whether
+the student typed it: the device is the only witness to that. More than one browser ID
+across a student's records means a second computer or a Chromebook whose saved data was
+wiped, because a wiped browser makes a new ID; it is the one server-side trace of the
+wipes the save counter can only see at the device. Each record keeps only the ID of its
+last write, so the count is a floor.
+
+To run it (Jeff), in Cloud Shell, the same way as the class list:
+
+1. Open **shell.cloud.google.com**, signed in with your school staff account.
+2. Paste these lines, one at a time. If the `ap-world-history` folder is already there
+   from setting up the class list, skip the first line and run `cd ap-world-history`
+   then `git pull` instead.
+
+   ```
+   git clone --depth 1 https://github.com/JeffAndersonLogic/ap-world-history.git
+   cd ap-world-history
+   npm install --no-save firebase-admin
+   gcloud config set project behistoric
+   node scripts/backup-lookup.js STUDENT-EMAIL@stumail.zcs.k12.in.us
+   ```
+
+3. To focus on one lesson, add the topic: `--topic 2.6` (Foundations: `--topic F1`).
+   To see the writing itself for that topic, add `--answers` as well.
+
+If it stops with a message about credentials or a quota project, run
+`gcloud auth application-default login`, follow the link it prints, and try again.
+
+`scripts/test/backup-lookup.test.js` is offline and in the push gate: district accounts
+only, `--answers` tied to one topic, a credentials failure never reported as "never
+signed in", only the one student's records read, the text hidden unless asked, missing
+First & 10 questions named, Indiana time, the browser count, and no write, with nine
+negative controls.
+
 ## Class Pulse submission, added 2026-10-28
 
 Class Pulse, the teacher view of Checkpoint 1 and 2 by criterion, reads only work
@@ -899,3 +955,42 @@ answer waiting and sent to the Reader, a changed one staying changed, the count,
 example class, which works on 4.7) a never-submitted 4.7 answer still saved but not
 submitted, with three negative controls. `class-pulse-live.test.js` (rules suite, needs the
 emulator) carries the same 4.6 and 4.7 cases against the real rules.
+
+### Identical answers, added 2026-11-23
+
+**What it is.** A panel on Plan next class that lists students who turned in the same
+answer to one checkpoint, word for word: which checkpoint, how many students, how many words,
+the names (with each student's class when All my classes is showing, and "across N classes"
+when they differ), a **Read it** button per student that opens the response drawer, and the
+shared answer folded under **Show the answer they share**. Jeff asked for exact matches only.
+
+**The rule.** `identicalAnswers` in `teacher/class-pulse-engine.js`. Every word, letter and
+punctuation mark must match; spacing and line breaks are ignored, because a paste can pick up
+an extra space or a line break and that is still the same writing. Capital letters count.
+Only finished, submitted work is compared (the engine's own `eligibility`), so a draft or an
+answer changed after Submit is never matched, and the demo's placeholder sentences never are.
+Groups run largest first, then longest. A group under eight words carries "A short answer, so
+this could be chance."
+
+**What it says about itself.** The panel states how many answers it compared, that an answer
+copied and then changed by even one word does not show, and that a match is a reason to look,
+not proof. It is not a grading tool: Class Pulse is formative only.
+
+**Privacy.** Names follow the names switch like the rest of the tab. Plan next class is never
+projected, and nothing here enters the projector's state. It reads the answers the page has
+already loaded and sends nothing anywhere. The class menu narrows it like everything else,
+so a match between two classes shows only under All my classes.
+
+**Why the engine and not the page.** The Reader carries the engine inlined, so this change
+rebuilt `teacher/reader/class-pulse-reader.artifact.html`. The Reader never calls
+`identicalAnswers` and its reading rules are unchanged (`VERSION` stands), so republishing the
+live Reader is optional rather than urgent; the drift check is satisfied by the rebuilt file.
+
+**Checks.** `class-pulse-engine.test.js` (offline): spacing and a pasted line break still
+match; one capital letter, one word or one punctuation mark breaks a match; drafts, missing
+answers, placeholders and a lone student never match; three negative controls (capitals
+ignored, drafts counted, line breaks not ignored). `class-pulse-page.test.js` (browser): no
+match in the example class and only submitted answers compared; a copy across two classes
+named with checkpoint, count, classes and the shared text; Read it opens the right answer; the
+panel lives only on Plan next class; it follows the names switch; choosing one class compares
+only that class; with three negative controls.
