@@ -825,3 +825,29 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
   Middle East's handlooms "steady from 1860 to 1914"; Europe's dyes "By 1914", the Trans-Siberian
   "By 1904" and settlers "over the next twenty years"; South and Southeast Asia's Roy "1890s to the
   1930s" and the 1908 handloom count. PENDING.
+
+**Reviewer U (history: Britain, East Asia), 7 findings.** Verified sound: all 33 CED quotations (by
+script, with a negative control); Bairoch's shares; Hatton's crossing times; Feinstein; 62 percent
+women in Japan's private factories, 1900 (Tsurumi); HSBC dates; Lever Brothers in the US; Darby,
+Arkwright, Newcomen and Watt; Corn Laws; cholera deaths; Engels; the Charter Oath; Shimonoseki.
+
+- U1. East Asia: "It changed Japan itself before it built industry" ("Reform first") makes reform
+  and state industry a sequence; the government took the shogun's shipyards in 1868, railway work
+  began in April 1870 (Morel), and the railway, Tomioka and the school system all came in 1872
+  (JRTR, "Dawn of Japanese Railways"; Topic 5.6). PENDING.
+- U2. East Asia mistake box: for 1894 Elman "points instead to a navy split into rival regional
+  fleets, and to crews less well trained"; the training diagnosis is his for 1884 to 1885 (p.
+  317); for the Yalu (pp. 319 to 320) he cites Japan's leadership, faster ships, quick-firing guns
+  and China's shell shortage; the no-unified-fleet half is supported. Same in Topic 5.8. PENDING.
+- U3. Britain claims KC-5.3.IV.B (demands for women's suffrage) and teaches only Wollstonecraft's
+  aside; the Political card's "From 1869 some women could vote in town elections" is not in the
+  chapter body. PENDING.
+- U4. Britain: "Railways cost far more, so each railway company needed its own act of Parliament";
+  every railway needed an act, for compulsory land purchase, incorporation, limited liability and
+  capital (Business History, 2022). PENDING.
+- U5. East Asia, story and Social card: the 1873 conscription law as service for "men of every
+  class" drops Topic 5.6's "though it excused many men". PENDING.
+- U6. Britain, story and mistake box: the Chartists' "five of their six points later became law"
+  drops Topic 5.8's "one only roughly" and the 1918 date. PENDING.
+- U7. Britain claims KC-5.1.IV and shows no interior regions (same as X5b's Britain part).
+  PENDING.
