@@ -591,3 +591,27 @@ orders; Chuan Han-sheng's ratios; Han bannermen 1648; Coen 1614; Calicut at Diu;
   Macau Memory). PENDING.
 - R4. South and Southeast Asia claims KC-4.1.II.A (no ship design taught) and KC-4.3.II.A.i
   (its second sentence on Asian restrictive trade policies neither taught nor quoted). PENDING.
+
+**Reviewer X (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every CED
+quotation and topic label (by script); every cross-region link; optional examples; no
+contradictions across chapters on the shared dates and figures; closing cards and Argue it
+prompts; no mistake box overcorrects.
+
+- X1. Middle East quotes KC-4.1.IV whole but teaches neither Chinese demand for silver nor
+  European shipping services (same as S4). PENDING.
+- X2. Sub-Saharan Africa quotes KC-4.1.V.C (Europeans brought Afro-Eurasian fruit trees, grains,
+  sugar and animals) and KC-4.1.V.A (rats, smallpox, measles) but teaches only the enslaved
+  Africans' foods and mosquitoes and malaria. PENDING.
+- X3. South and Southeast Asia quotes KC-4.3.II.A.i ("proved profitable for the rulers and
+  merchants") and never says who profited. PENDING.
+- X5a. Americas quotes KC-4.2.III.A whole, including the Qing clause it does not teach (East Asia
+  cuts it with " ... "). PENDING.
+- X6a. Facts after 1750 not marked as later: East Asia's population growth "with much of that
+  growth after 1750"; Sub-Saharan Africa's "Through the 1700s, Asante became the region's main
+  power"; East Asia's section "c. 1450 to 1600" opening with Zheng He (early 1400s) without saying
+  it is background. PENDING.
+- X7. Europe: "So old elites lost power in France and Russia, and gained it in England" is too
+  tidy (the chapter's own French nobles kept titles, land and tax freedom; the CED says elite power
+  "fluctuated"). PENDING.
+- X8. Americas, story and Political card: "Metacom's War ended with his death in 1676"; fighting
+  in Maine went on to 1678 (Treaty of Casco). PENDING.

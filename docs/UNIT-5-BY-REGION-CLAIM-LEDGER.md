@@ -812,3 +812,16 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
   Topic 5.8 (line 265). PENDING.
 - W6. South and Southeast Asia: "From 1865 an overland telegraph line joined London and India"; it
   used the 1864 Persian Gulf submarine cable. PENDING.
+
+**Reviewer X (CED and consistency, all twelve chapters), Unit 5 items.**
+
+- X4. Americas quotes KC-5.1.I.E whole (steel, chemicals, electricity, precision machinery) and
+  teaches only steel and electricity. PENDING.
+- X5b. Europe quotes KC-5.3.IV.B ("Demands for women's suffrage") but describes no demand for the
+  vote; Britain quotes KC-5.1.IV whole ("interior regions globally") and shows no interior.
+  PENDING.
+- X6b. Facts after 1900 not marked as later: Britain's Labour Party (1906) in a section dated "1787
+  to 1906" and Unilever (1929); Americas' wheat gap "by 1913" and 55 million Europeans to 1914;
+  Middle East's handlooms "steady from 1860 to 1914"; Europe's dyes "By 1914", the Trans-Siberian
+  "By 1904" and settlers "over the next twenty years"; South and Southeast Asia's Roy "1890s to the
+  1930s" and the 1908 handloom count. PENDING.
