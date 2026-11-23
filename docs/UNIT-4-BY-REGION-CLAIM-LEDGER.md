@@ -575,3 +575,19 @@ Verified sound: all 42 CED quotations (by script); links; Alfonsine Tables; Ambo
   cause as the only one; Topic 4.6 adds quarrels and Spanish help. PENDING.
 - T3. Europe: KC-4.3.I.B and KC-4.2 quotations use a straight apostrophe where the CED prints a
   curly one. PENDING.
+
+**Reviewer R (history: East Asia, South and Southeast Asia), 4 findings, no quotation errors.**
+Verified sound: all 29 CED quotations (by script); links; Morga (Stanley 1868); the 1635 and 1639
+orders; Chuan Han-sheng's ratios; Han bannermen 1648; Coen 1614; Calicut at Diu; Akbar's jizya
+1564 and Aurangzeb's 1679; Shimabara and Matsukura; "sakoku" coined 1801; the 1645 queue order.
+
+- R1. South and Southeast Asia, section 01 intro: Portugal "had little to sell, so it came back
+  ready to fight" gives one cause as the whole reason (the chapter's own crusading motive and plan
+  to take the spice trade by force). PENDING.
+- R2. South and Southeast Asia: Akbar "needed Rajput armies and Hindu loyalty, and he got both" is
+  too tidy; Mewar never submitted (Haldighati 1576; terms only in 1615). PENDING.
+- R3. East Asia, section 01 intro: Portugal let "trade at one small port" overstates the limit;
+  Macau merchants also went to the Canton fairs twice a year (World History Encyclopedia;
+  Macau Memory). PENDING.
+- R4. South and Southeast Asia claims KC-4.1.II.A (no ship design taught) and KC-4.3.II.A.i
+  (its second sentence on Asian restrictive trade policies neither taught nor quoted). PENDING.
