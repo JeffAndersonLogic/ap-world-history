@@ -2087,7 +2087,7 @@ function bhTrapTab(event){
   if(event.key!=='Tab'||!BHModalStack.length)return;
   const top=BHModalStack[BHModalStack.length-1].el,items=bhFocusable(top);
   if(!items.length){event.preventDefault();top.focus();return;}
-  const first=items[0],last=items[items.length-1],active=document.activeElement,outside=!top.contains(active);
+  const first=items[0],last=items[items.length-1],active=document.activeElement,outside=active===top||!top.contains(active);
   if(event.shiftKey&&(active===first||outside)){event.preventDefault();last.focus();}
   else if(!event.shiftKey&&(active===last||outside)){event.preventDefault();first.focus();}
 }
@@ -2130,8 +2130,76 @@ function bhCloseModal(modalId){
   const launcher=entry&&entry.launcher;
   if(launcher&&launcher.focus&&launcher.getClientRects().length)launcher.focus();
 }
-function openModule(id){const m=modules.find(x=>x.id===id);if(!m||m.jump||m.link)return;byId('pop-eyebrow').textContent=m.label;byId('pop-title').textContent=m.title;byId('pop-body').innerHTML=m.render();byId('pop-modal').classList.add('show');loadDrafts();bhOpenModal('pop-modal','pop-title');}
+function openModule(id) {
+  const m = modules.find(x => x.id === id);
+  if (!m || m.jump || m.link) return;
+  flushModuleReading();
+  byId('pop-body').querySelectorAll('textarea.response-area').forEach(t => {
+    if (!t._draftTimer) return;
+    clearTimeout(t._draftTimer);
+    t._draftTimer = null;
+    BHDraftStore.set(`foundations-topic-${t.id}`, t.value || '');
+  });
+  currentModuleId = id;
+  byId('pop-eyebrow').textContent = m.label;
+  byId('pop-title').textContent = m.title;
+  byId('pop-body').innerHTML = m.render();
+  updateModuleNav();
+  byId('pop-modal').querySelector('.pop-panel').scrollTop = 0;
+  byId('pop-modal').classList.add('show');
+  loadDrafts();
+  bhOpenModal('pop-modal', 'pop-title');
+}
 function closeModule(){bhCloseModal('pop-modal');}
+
+// Same pop-out sequence contract as the unit renderer; jump/link cards retain
+// their destinations. Injected here so every Foundations shell receives it.
+let currentModuleId = null;
+function flushModuleReading() {
+  if (currentModuleId !== 'first10') return;
+  // Run the nested reading's existing save before its iframe is replaced.
+  function flush(frame) {
+    try {
+      const win = frame.contentWindow;
+      win.document.querySelectorAll('iframe').forEach(flush);
+      win.dispatchEvent(new win.Event('beforeunload'));
+    } catch (_) { /* Only same-origin, loaded readings are accessible. */ }
+  }
+  byId('pop-body').querySelectorAll('iframe').forEach(flush);
+}
+function moduleSequence() {
+  return modules.filter(m => !m.jump && !m.link && typeof m.render === 'function');
+}
+function updateModuleNav() {
+  const panel = byId('pop-modal').querySelector('.pop-panel');
+  if (!byId('module-nav')) {
+    const frame = document.createElement('div');
+    frame.className = 'module-frame';
+    panel.before(frame);
+    frame.appendChild(panel);
+    frame.insertAdjacentHTML('beforeend', `<nav class="module-nav" id="module-nav" aria-label="Module navigation">
+      <button class="module-nav-button" id="module-prev" type="button" onclick="moduleStep(-1)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M15 5H9l-7 7 7 7h6l-7-7z"/></svg></button>
+      <span class="module-nav-status" id="module-nav-status" aria-live="polite"></span>
+      <button class="module-nav-button" id="module-next" type="button" onclick="moduleStep(1)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 5h6l7 7-7 7H9l7-7z"/></svg></button>
+    </nav>`);
+  }
+  const sequence = moduleSequence();
+  const index = sequence.findIndex(m => m.id === currentModuleId);
+  for (const [id, step, label] of [['module-prev', -1, 'Previous'], ['module-next', 1, 'Next']]) {
+    const button = byId(id);
+    const target = sequence[index + step];
+    button.disabled = !target;
+    button.setAttribute('aria-label', target ? `${label} module: ${target.label}, ${target.title}` : `${label} module`);
+    button.title = target ? `${target.label}: ${target.title}` : `No ${label.toLowerCase()} module`;
+  }
+  byId('module-nav-status').textContent = sequence[index].label;
+}
+function moduleStep(delta) {
+  const sequence = moduleSequence();
+  const index = sequence.findIndex(m => m.id === currentModuleId);
+  const next = sequence[index + delta];
+  if (index >= 0 && next) openModule(next.id);
+}
 let currentLectureIndex=0;
 function openLecture(i){currentLectureIndex=i;const seg=T.lecture[i],image=byId('lecture-modal-img'),fallbackId=`lecture-${String(i+1).padStart(2,'0')}`,fallback=foundationArtworkPath(fallbackId),source=seg.image&&(seg.image.sourceUrl||seg.image.url);byId('lecture-modal-title').textContent=seg.title;byId('lecture-modal-bullets').innerHTML=seg.bullets.map(b=>`<li>${md(b)}</li>`).join('');image.onerror=function(){useFoundationFallback(this,fallback)};image.dataset.fallback=fallback;image.src=foundationLectureImageUrl(i);image.alt=(seg.image&&seg.image.title)||`${seg.title} visual`;byId('lecture-modal-caption').innerHTML=`<strong>${(seg.image&&seg.image.title)||seg.title}</strong><br>${(seg.image&&seg.image.caption)||'Topic-specific instructional artwork.'}${source?`<br><a class="source-link" href="${source}" target="_blank" rel="noopener">Open image source</a>`:''}`;updateLectureNav();byId('lecture-modal').classList.add('show');bhOpenModal('lecture-modal','lecture-modal-title');}
 function updateLectureNav(){const total=T.lecture.length,prev=byId('lecture-prev'),next=byId('lecture-next'),status=byId('lecture-nav-status');if(prev)prev.disabled=currentLectureIndex<=0;if(next)next.disabled=currentLectureIndex>=total-1;if(status)status.textContent=`Card ${currentLectureIndex+1} of ${total}`;}
@@ -2184,7 +2252,7 @@ function renderMap(){
   const gallery=mapGallery.length?`<article class="foundation-card" style="grid-column:1/-1"><h3>${T.map.galleryTitle||'Close-Ups: One State at a Time'}</h3><p>${T.map.galleryIntro||'The map above puts every state on one frame, which is what the questions ask about. These zoom in on one at a time. Click any map to enlarge it, and zoom in to read the small place names.'}</p></article>`+mapGallery.map((m,i)=>`<figure class="foundation-card map-figure pop-half"><img src="${foundationImageUrl(m.url,'map')}" alt="${m.title}" role="button" tabindex="0" aria-label="Enlarge map: ${m.title}" onclick="openMapGalleryLightbox(${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openMapGalleryLightbox(${i})}" ${foundationFallbackAttrs('map')}><figcaption><strong>${m.title}</strong><br>${m.caption}${m.prompt?`<br><em>${m.prompt}</em>`:''}${m.sourceUrl?`<br><a class="source-link" href="${m.sourceUrl}" target="_blank" rel="noopener">Open map source</a>`:''}</figcaption></figure>`).join(''):'';
   return `<div class="pop-grid">${lead}${gallery}</div>`;
 }
-function renderFirst10(){if(first10.embedUrl){return `<div style="margin:-1.5rem"><iframe src="${first10.embedUrl}" title="First &amp; 10 Reading" style="width:100%;min-height:85vh;border:0;display:block;" loading="lazy"></iframe></div>`;}return `<article class="foundation-card reading"><h3>${first10.title}</h3>${first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</article><article class="foundation-card"><h3>First &amp; 10 Response</h3><p>${first10.prompt}</p></article>${draft(`${T.id}-first10`,first10.prompt)}`}
+function renderFirst10(){if(first10.embedUrl){return `<div><iframe src="${first10.embedUrl}" title="First &amp; 10 Reading" style="width:100%;min-height:85vh;border:0;display:block;" loading="lazy"></iframe></div>`;}return `<article class="foundation-card reading"><h3>${first10.title}</h3>${first10.paragraphs.map(p=>`<p>${p}</p>`).join('')}</article><article class="foundation-card"><h3>First &amp; 10 Response</h3><p>${first10.prompt}</p></article>${draft(`${T.id}-first10`,first10.prompt)}`}
 function renderBeSurreal(){if(!beSurreal)return `<article class="foundation-card"><h3>BeSurreal</h3><p>This module is coming soon for ${T.title}.</p></article>`;return `<article class="foundation-card besurreal-card"><h3>${beSurreal.title}</h3><p>${beSurreal.intro}</p><blockquote class="besurreal-detail"><p>${beSurreal.detail}</p></blockquote></article>${draft(`${T.id}-besurreal`,beSurreal.prompt)}`}
 // Mirrors evidenceSourceLink() in the unit renderer: no link when there is
 // nowhere real to send the student. An empty `url` is a valid authoring choice
@@ -2796,3 +2864,4 @@ if(window.BHSync){
     transportUrl:BH_SYNC_SELF?new URL('../assets/js/behistorical-sync-transport.js',BH_SYNC_SELF).href:''
   });
 }
+

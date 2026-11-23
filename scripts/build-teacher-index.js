@@ -18,7 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { renderTeacherIndex } = require('./lib/teacher-index-page');
+const { renderTeacherIndex, renderTeacherTodayManifest } = require('./lib/teacher-index-page');
 const { TOPICS: ROS_TOPICS, INDEX_OUT: ROS_INDEX_OUT } = require('./build-run-of-show.js');
 const { COHORTS } = require('./lib/cohorts.js');
 
@@ -80,7 +80,8 @@ const INTERACTIVE_TOPICS = TOOLS
   .filter(tool => tool.kind === 'lesson')
   .map(({ key, href }) => ({ key, out: href }));
 
-module.exports = { TOOLS, INTERACTIVE_TOPICS };
+const MANIFEST_OUT = 'teacher-today-manifest.js';
+module.exports = { TOOLS, INTERACTIVE_TOPICS, MANIFEST_OUT };
 if (require.main !== module) return;
 
 function sandbox() {
@@ -99,17 +100,25 @@ const rosTopics = ROS_TOPICS.map(topic => {
   return { key, out: topic.out };
 });
 
-const outPath = path.join(ROOT, 'teacher', 'index.html');
-const html = renderTeacherIndex(TOOLS, rosTopics, COHORTS, INTERACTIVE_TOPICS);
-if (CHECK) {
-  const existing = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : null;
-  if (existing !== html) {
-    console.error('DRIFT: teacher/index.html does not match declared teacher tools/topic surfaces. Run: node scripts/build-teacher-index.js');
-    process.exit(1);
+const titles = Object.fromEntries(TOOLS.filter(t => t.kind === 'lesson').map(t => [t.key, t.title || '']));
+const outputs = [
+  ['index.html', renderTeacherIndex(TOOLS, rosTopics, COHORTS, INTERACTIVE_TOPICS)],
+  [MANIFEST_OUT, renderTeacherTodayManifest(rosTopics, COHORTS, INTERACTIVE_TOPICS, titles)],
+];
+let drift = false;
+for (const [name, text] of outputs) {
+  const outPath = path.join(ROOT, 'teacher', name);
+  if (CHECK) {
+    const existing = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : null;
+    if (existing !== text) {
+      console.error(`DRIFT: teacher/${name} does not match declared teacher tools/topic surfaces. Run: node scripts/build-teacher-index.js`);
+      drift = true;
+    } else {
+      console.log(`OK: teacher/${name}`);
+    }
+  } else {
+    fs.writeFileSync(outPath, text);
+    console.log(`Wrote teacher/${name}`);
   }
-  console.log('OK: teacher/index.html');
-} else {
-  fs.writeFileSync(outPath, html);
-  console.log('Wrote teacher/index.html');
 }
-
+if (drift) process.exit(1);

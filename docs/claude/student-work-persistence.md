@@ -895,16 +895,23 @@ there greyed out, which read as broken.
 **The projector screen.** `teacher/class-pulse-projector.html` is a second window for the
 wall. It has no network (`connect-src 'none'`) and no data of its own: it draws the state
 the Class Pulse page on the same computer sends over a BroadcastChannel, one part at a
-time (title, the question, how the class did, what to revisit, wrong ideas, model answer).
-`projectorState()` builds that message from class totals, so Class view's rule (no name,
-no "Student 01", no student's words) is a property of what is sent. The model answer is in
-the message only while its own part is showing. Arrow keys and a clicker work on either
+time (title, the question, how the class did, what to revisit, wrong ideas, then one
+model answer slide per criterion: "Model answer, criterion 1", "criterion 2" and so on,
+three for most checkpoints and four or five for some in Units 5, 8 and 9; Jeff,
+2026-11-18, replacing one model answer part that Next stepped through paragraph by
+paragraph while the count stood still). `projectorState()` builds that message from class
+totals, so Class view's rule (no name, no "Student 01", no student's words) is a property
+of what is sent. The model answer is in the message only on its own slides, and each
+slide is sent only its own criterion's paragraph. Arrow keys and a clicker work on either
 window; the projector never steps itself.
 
 **The iPad as its remote** reuses the Teaching OS remote session (`remote-firebase.js`,
 `remoteSessions` in the rules, unchanged). The session document accepts a button name and
-a number, so all that travels is which part to show: checkpoint (0 or 1) times six, plus
-the part. `teacher/class-pulse-remote.html` is the iPad page. The QR library is vendored
+a number, so all that travels is which part to show: checkpoint (0 or 1) times 13
+(`REMOTE_STRIDE`, the five fixed parts plus the engine's limit of eight criteria), plus
+the part. The laptop's count ends with how many parts each checkpoint has
+(`CP1 · 6 of 8 |8,8`), so the iPad offers one button per model answer slide, and its Next
+and Back always move exactly one slide. `teacher/class-pulse-remote.html` is the iPad page. The QR library is vendored
 in `teacher/vendor/` because the page's policy allows scripts only from this site and
 Google's sign-in hosts. The remote has not been run on a real iPad or the school network.
 
@@ -917,3 +924,34 @@ controls), `class-pulse-handoff.test.js` (partial readings, the bundle), and
 the projector's messages, with their negative controls). `class-pulse-reader.test.js`, in
 the browser suite, runs the Reader against a stand-in for Claude. `class-pulse-submit.test.js`
 covers Gather submitting.
+
+### Old work through Topic 4.6 counts as submitted, added 2026-11-17
+
+**What it does.** For every topic through 4.6, an answer in the backup with **no Submit
+receipt at all** counts as submitted, and looks exactly like one: it waits for a reading,
+goes out with the one copy to the Reader, and takes a saved reading like any other. From
+Topic 4.7 on, nothing changed: only a receipt counts. The cutoff is `RECOVER_THROUGH` in
+`teacher/class-pulse-live.js`, a fixed rule rather than a switch, so it can never reach a
+new topic by being left on.
+
+**Why.** Before 2026-11-16, Gather All My Work sent work to Canvas without writing a
+receipt (see "Canvas and Submit were two separate acts" above), so students who turned in
+everything sat in "Writing saved, never submitted" and their work could never be read. Jeff
+chose a one-time recovery over matching each answer against a Canvas download and over
+asking students to Gather again (AndersonLogic-OS `04_PRODUCTS/BeHistorical/Decisions.md`,
+2026-11-17). 4.7 is left alone at his direction, although one class took it before the fix
+reached students.
+
+**What it cannot tell you.** A recovered answer is the last thing the backup saved, which
+may differ from the student's Canvas paste or be unfinished. Nothing marks it, by Jeff's
+choice; the row carries `recovered: true` for tests only. An answer **changed after its
+Submit** is never recovered, because that student did press Submit, on different words.
+A student with nothing in the backup stays in "Nothing in the backup". Nothing is written to
+the student's records: the teacher's saved readings are what persist, and one stops
+counting if the student later edits that answer, as it always has.
+
+**Checks.** `class-pulse-page.test.js`: the cutoff's topic list, a never-submitted 4.6
+answer waiting and sent to the Reader, a changed one staying changed, the count, and (in the
+example class, which works on 4.7) a never-submitted 4.7 answer still saved but not
+submitted, with three negative controls. `class-pulse-live.test.js` (rules suite, needs the
+emulator) carries the same 4.6 and 4.7 cases against the real rules.

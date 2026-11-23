@@ -61,7 +61,11 @@ jobs:
     # the Class Pulse rebuild adds a Reader test and more negative controls,
     # each of which reruns its whole suite. A limit is for a hung run, and a
     # full passing run must fit inside it with room to spare.
-    timeout-minutes: 45
+    # 60, not 45 (2026-11-17, Jeff): the Class Pulse auto-pull checks took the
+    # passing runs to about 35 and 39 of the 45 minutes. Raised before it bites,
+    # with room for the next topics' decks. A limit is for a hung run, and a full
+    # passing run must fit inside it with room to spare.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 

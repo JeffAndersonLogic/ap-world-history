@@ -322,7 +322,16 @@ The deck is built from the approved story and the First & 10 written from it: sa
 beats, same reasoning move, same examples. If the deck needs a fact the reading does not carry,
 that is fine; if it needs a different argument, the story is wrong and goes back to Jeff.
 
-Files for topic `X-Y` (copy the shape of `topic-2-6` or `topic-2-7`):
+**Build in the lesson shape, with Topic 4.4 as the model** (Jeff, 2026-11-08;
+`docs/PRESENTATION-AUTHORING.md`, section 7, The lesson shape): an `outline` the briefing opens on
+(sections, short points, a wrap table, the First & 10 vocabulary with definitions, the myths to
+watch for, the required modules); a road map before the First & 10 with the same headers; every
+story slide's eyebrow naming its section; the story slides, never trimmed to shorten the deck;
+the retelling slide; then one Work Time launch pad with the schedule's required modules. No
+slide that only points to a module, no Myth and Evidence slide, no minute count on a projected
+slide. The architecture test fails a new deck that breaks any of it.
+
+Files for topic `X-Y` (copy the shape of `topic-4-4`):
 
 - `teacher/data/topic-X-Y-teaching-base.js`, `teacher/data/topic-X-Y-presentation-assets.js`,
   `teacher/data/topic-X-Y-visual-assets.js`, `teacher/data/topic-X-Y-teaching.js`
@@ -403,6 +412,11 @@ list the dates as the one open item in the report. Never invent a school day.
      reserve) and the count of teacher-launched activities against 5 to 7, from the
      2026-09-15 decision in AndersonLogic-OS. Report them; do not enforce them: Jeff declined
      the budget checks on purpose.
+   - The `modules` list, the deck's Work Time launch pad and `outline.required` are one list
+     in three places, and the architecture test fails the deck when they disagree. Change the
+     schedule and the deck together. A deck built before its topic is on the schedule is
+     checked once the schedule lists it, so a later module review that changes the list also
+     changes the deck (4.5 to 4.8 had drifted this way before 2026-11-08).
    - If Jeff's dates were parked in a schedule comment (for example the `homeworkDue` lines on
      3.1's days), delete that comment and those lines when this topic's entries go in.
    - The previous topic's days carry a `reading` block for this topic. Adding this topic

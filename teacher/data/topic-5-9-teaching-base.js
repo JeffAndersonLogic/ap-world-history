@@ -21,9 +21,11 @@
  * slide.
  *
  * Class dates: none yet (Jeff has named no Unit 5 dates after 5.3). Required
- * modules, chosen in the build (reported for Jeff to overrule): 02 First & 10,
- * 05 Skill Builder (the CED's suggested skill, 4.B, on Riis's New York), 06
- * Checkpoint 1 and 10 Checkpoint 2. When the schedule lists 5.9, its modules
+ * modules, from Jeff's Unit 5 module review, 2026-11-21: 02 First & 10, 06
+ * Checkpoint 1, 09 BeInTheRoom (the Housing Commission, whose reflection asks
+ * for continuity and change and 4.B Contextualization on KC-5.1.VI.C) and 10
+ * Checkpoint 2. The build had chosen 05 Skill Builder in place of 09; it did
+ * 4.B on the same New York tenement, so it is now optional. When the schedule lists 5.9, its modules
  * must match outline.required and the Work Time pad (the architecture test
  * checks it).
  */
@@ -46,13 +48,13 @@ window.BEHISTORICAL_TEACHING = {
       'Land the spine with the four-row table: new classes, split homes, crowded cities, a new ladder, still a ladder.'
     ],
     should: [
-      'Model 4.B Contextualization once on John Snow\'s 1854 cholera map, then let students do Riis\'s Bayard Street room in the Skill Builder.',
+      'Model 4.B Contextualization once on John Snow\'s 1854 cholera map, then let students contextualize the Manchester cellar and the New York tenement themselves in the Housing Commission\'s reflection.',
       'Read life expectancy with care: the low city averages are pulled down by babies who died.',
       'Correct three myths on the retelling slide: "industry created social classes," "in the 1800s women stopped working," and "city workers died at 25."'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "A New Ladder."',
-      'Offer the BeInTheRoom, the 1884 Housing Commission, as an early-finisher option.'
+      'Offer the Skill Builder (Riis\'s Bayard Street room) or the Evidence Lab as early-finisher options.'
     ]
   },
 
@@ -109,7 +111,7 @@ window.BEHISTORICAL_TEACHING = {
         'Twelve people, one room "not thirteen feet either way," five cents a spot',
         'By 1900: sewers, water, police catching up (reforms are 5.8\'s)',
         'Death rates fall; wages rise faster after about 1860; many still poor'
-      ], skill: 'You model contextualization (4.B) out loud on John Snow\'s 1854 cholera map: one specific thing, then the bigger story it sits inside, then the link between them. Students do Riis\'s room themselves in the Skill Builder.' }
+      ], skill: 'You model contextualization (4.B) out loud on John Snow\'s 1854 cholera map: one specific thing, then the bigger story it sits inside, then the link between them. Students do it themselves in the Housing Commission\'s reflection.' }
     ],
     wrap: { title: 'Put it together', columns: ['Changed', 'Kept going'], rows: [
       { label: 'Who was on top', cells: ['A middle class rose by money and education; won votes in 1832', 'Landed families kept land, titles and power'] },
@@ -156,7 +158,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'context', label: 'Contextualize It', range: '41-44', minutes: 3, teacher: 'Model 4.B on Snow\'s map.', students: 'Say the bigger story.', slide: 16 },
     { id: 'by1900', label: 'By 1900', range: '44-46', minutes: 2, teacher: 'What caught up, and who was still poor.', students: 'One change, one continuity.', slide: 17 },
     { id: 'retell', label: 'A New Ladder, Still a Ladder', range: '46-51', minutes: 5, teacher: 'Students redraw the table from memory; correct the three myths here.', students: 'Retell the whole topic.', slide: 18 },
-    { id: 'worktime', label: 'Work Time', range: '51-86', minutes: 35, teacher: 'Modules 05, 06 and 10, in that order: the Skill Builder (Riis), Checkpoint 1 with no coach, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Skill Builder, Checkpoint 1, Checkpoint 2.', slide: 19 },
+    { id: 'worktime', label: 'Work Time', range: '51-86', minutes: 35, teacher: 'Modules 06, 09 and 10, in that order: Checkpoint 1 with no coach, the Housing Commission, then Checkpoint 2. Give feedback in the room; Checkpoint 2 finishes at home if needed.', students: 'Checkpoint 1, BeInTheRoom, Checkpoint 2.', slide: 19 },
     { id: 'close', label: 'Landing Sentence', range: '86-88', minutes: 2, teacher: 'Land the answer and leave the 5.10 question open.', students: 'Say the topic in one sentence.', slide: 20 }
   ],
 
@@ -267,7 +269,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '✓', text: 'Put it together: a new ladder, still a ladder', key: true }
         ],
         thenLabel: 'Then',
-        then: 'Skill Builder · Checkpoint 1 · Checkpoint 2'
+        then: 'Checkpoint 1 · BeInTheRoom · Checkpoint 2'
       },
       notes: {
         minutes: 1,
@@ -648,17 +650,17 @@ window.BEHISTORICAL_TEACHING = {
           'Modeled on Snow\'s 1854 map',
           'Bigger story: cities outgrowing their water and sewers',
           'Link: crowded streets, shared pumps',
-          'Students do Riis\'s room themselves',
-          'Skill Builder practices it next'
+          'Students contextualize it themselves later',
+          'Housing Commission reflection practices it'
         ],
         land: [
           'This is the topic\'s suggested skill, 4.B Contextualization: "Explain how a specific historical development or process is situated within a broader historical context." Model it out loud with the frame.',
-          'Three moves: name the specific thing (Snow\'s 1854 map of cholera deaths around one pump); name the bigger story (industrial cities growing faster than their water and sewers); explain the link (crowded streets shared pumps that waste could reach). The model is deliberately not about housing or Riis\'s room: students contextualize that themselves in the Skill Builder and the First & 10\'s Question 3, so do not fill in the frame for Riis aloud.',
+          'Three moves: name the specific thing (Snow\'s 1854 map of cholera deaths around one pump); name the bigger story (industrial cities growing faster than their water and sewers); explain the link (crowded streets shared pumps that waste could reach). The model is deliberately not about housing or Riis\'s room: students contextualize the city\'s housing themselves in the Housing Commission\'s reflection and the First & 10\'s Question 3, so do not fill in the frame for Riis aloud.',
           'A context is not just "before this." It has to explain why the specific thing happened.',
-          'The Skill Builder (Module 05) practices the same move on Riis\'s Bayard Street room, with a short model on an everyday example first.'
+          'The Housing Commission (Module 09) reflection practices the same move: what bigger story explains a Manchester cellar in the 1840s and a New York tenement in 1890? The Skill Builder (Module 05, optional) does it on Riis\'s Bayard Street room.'
         ],
         ask: 'What makes this a context and not just something that happened earlier?',
-        listenFor: 'The bigger story explains why the specific thing happened. (Do not fill in the frame for Riis\'s room: that is the Skill Builder.)',
+        listenFor: 'The bigger story explains why the specific thing happened. (Do not fill in the frame for Riis\'s room or the tenement: students do that in Work Time.)',
         ap: 'Contextualization 4.B, modeled once before students do it alone.'
       }
     },
@@ -726,13 +728,13 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 05, 06, 10',
+      phase: 'worktime', kind: 'launch-pad', eyebrow: 'Work Time · Modules 06, 09, 10',
       title: 'Now you do the history.',
       footer: 'In this order. Checkpoint 2 not finished in class? It is homework.',
       template: {
         modules: [
-          { code: 'Module 05', name: 'Skill Builder', note: 'Contextualize Riis\'s New York room.', url: '../unit-5/lesson-5-9-society-and-the-industrial-age.html#modules' },
           { code: 'Module 06', name: 'Checkpoint 1', note: 'On your own, no coach.', url: '../unit-5/lesson-5-9-society-and-the-industrial-age.html#modules' },
+          { code: 'Module 09', name: 'BeInTheRoom', note: 'The Housing Commission, 1884.', url: '../beintheroom/unit-5/the-housing-commission.html' },
           { code: 'Module 10', name: 'Checkpoint 2', note: 'Draft, work with Socrates, revise.', url: '../unit-5/lesson-5-9-society-and-the-industrial-age.html#modules' }
         ]
       },
@@ -740,22 +742,22 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 35,
         keys: [
           'All three required today, in order',
-          'Skill Builder: contextualize Riis\'s room',
           'Checkpoint 1: no coach',
+          'Housing Commission: compare with 1885, then contextualize',
           'Checkpoint 2 unfinished = homework',
-          'Early finishers: the Housing Commission room',
+          'Early finishers: Skill Builder or Evidence Lab',
           'Give feedback in the room'
         ],
         land: [
-          'Modules 05, 06 and 10 are required today, with the First & 10 (chosen in the build; Jeff can overrule). Each button opens its module.',
-          'The Skill Builder (Module 05) practices 4.B Contextualization: a short model on an everyday example, then Riis\'s Bayard Street room and his 1890 words. Students name the specific scene, the bigger story and the link.',
+          'Modules 06, 09 and 10 are required today, with the First & 10 (Jeff\'s Unit 5 module review, 2026-11-21, which chose the BeInTheRoom over the Skill Builder: both did 4.B on the same New York tenement). Each button opens its module.',
           'Checkpoint 1 (Module 06), with no coach, asks for one change and one continuity in who was on top, what the two new classes were, and why working-class and middle-class women\'s lives split. Give feedback in the room.',
+          'The Housing Commission (Module 09) puts students on the royal commission in London in 1884: name the cause of the slums (low and irregular wages, the cost of land and building, or authorities that did not act) and weigh the witnesses. Its reflection gives the real 1885 report (tenants too poor to pay, high ground rents, local authorities not using their powers), asks students to compare it with their answer, to say what kept going for the poorest families, and to contextualize a Manchester cellar in the 1840s and a New York tenement in 1890: Continuity and Change with 4.B, on KC-5.1.VI.C.',
           'Checkpoint 2 (Module 10) asks for three of the six urban challenges, why rapid growth caused them, one effect on standards of living, and one change and one continuity in industrial society. Socrates is told the skill is Continuity and Change, so it will push for both halves. The revised answer in the box is what goes to Canvas.',
           'If a student needs the claim shape, give it aloud: "Industry changed ___ because ___, but ___ kept going." It is a frame, not a model answer.',
-          'Early finishers: the BeInTheRoom (Module 09), the 1884 Housing Commission, or the Evidence Lab (Module 07).'
+          'Early finishers, optional: the Skill Builder (Module 05), 4.B on Riis\'s Bayard Street room and his 1890 words, with a short model on an everyday example first; or the Evidence Lab (Module 07).'
         ],
         ask: 'Does your answer say what changed, what kept going, and why?',
-        listenFor: 'Checkpoint 1: the middle class and 1832, Salisbury, and money as the reason for the split. Checkpoint 2: three challenges tied to speed, life expectancy, and a change and a continuity.'
+        listenFor: 'Housing Commission: a bigger story such as cities growing faster than they could house people. Checkpoint 1: the middle class and 1832, Salisbury, and money as the reason for the split. Checkpoint 2: three challenges tied to speed, life expectancy, and a change and a continuity.'
       }
     },
     {

@@ -382,6 +382,100 @@
       "limits": "Original source, date, photographer, reuse terms and AI/photographic origin remain unverified. Used solely to illustrate the visible hairstyle; not evidence of the 1645 order or its enforcement, the sitter's ethnicity or rank, or an image made in 1450-1750. No AI label assigned without evidence; no Evidence Lab change.",
       "resolution": "Prior provenance hold superseded for this explicitly approved, visibly qualified hairstyle-reference use only. Portrait fitted whole at inset size to respect 361x470 resolution; source metadata remains unresolved.",
       "approvedAt": "2026-11-13"
+    },
+    {
+      "path": "assets/images/topics/5-1/5.1 - Locke.jpg",
+      "blobSha": "b1b59659f94e305f90f634da9c4d7e0f13c4ae6c",
+      "reviewedAt": "2026-11-20",
+      "classification": "historical-portrait-reproduction",
+      "sourceRef": "0d909e82c929fcf881d0c6fe9c6f70974d6e6724",
+      "sourcePr": 175,
+      "status": "placed",
+      "dimensions": {
+        "width": 984,
+        "height": 1138
+      },
+      "observedSubject": "Painted grey-haired man in a brown robe and white shirt, in a dark oval field; matches Kneller's portrait of Locke.",
+      "provenance": [
+        "https://www.npg.org.uk/collections/search/personExtended/mp02773/john-locke?tab=iconography"
+      ],
+      "placements": [
+        {
+          "topic": "5.1",
+          "teacherSlide": 8,
+          "phase": "answers",
+          "template": "frame-pair",
+          "purpose": "Identify the named writer while preserving the existing political claims, source passage and reasoning prompts."
+        },
+        {
+          "topic": "5.1",
+          "teacherSlide": 9,
+          "phase": "locke",
+          "template": "source-quote",
+          "purpose": "Identify the named writer while preserving the existing political claims, source passage and reasoning prompts."
+        }
+      ],
+      "rationale": "Portrait references identify writers already named in the approved lesson; no new claims, sequence, reasoning tasks or minutes.",
+      "limits": "Historical painted portrait, not an AI reconstruction. Original painting is public domain; uploader supplied no reproduction download source. No claim about an exact reproduction license or AI provenance metadata is inferred from absence of C2PA. Portrait is not evidence for the political argument and is not added to Evidence Lab.",
+      "metadataCheck": {
+        "c2paMarkerPresent": false
+      },
+      "reviewArtifacts": true
+    },
+    {
+      "path": "assets/images/topics/5-1/5.1 Montesquieu.jpg",
+      "blobSha": "6b143f7180e7d0013a488690eb7ce61233063fa8",
+      "reviewedAt": "2026-11-20",
+      "classification": "historical-portrait-reproduction",
+      "sourceRef": "0d909e82c929fcf881d0c6fe9c6f70974d6e6724",
+      "sourcePr": 175,
+      "status": "placed",
+      "dimensions": {
+        "width": 752,
+        "height": 909
+      },
+      "observedSubject": "Painted man in left profile, curled grey hair and a golden-brown draped garment; detail matching the anonymous Versailles Montesquieu portrait.",
+      "provenance": [
+        "https://pop.culture.gouv.fr/notice/joconde/000PE006017"
+      ],
+      "placements": [
+        {
+          "topic": "5.1",
+          "teacherSlide": 8,
+          "phase": "answers",
+          "template": "frame-pair",
+          "purpose": "Identify the named writer while preserving the existing political claims, source passage and reasoning prompts."
+        }
+      ],
+      "rationale": "Portrait references identify writers already named in the approved lesson; no new claims, sequence, reasoning tasks or minutes.",
+      "limits": "Historical painted portrait, not an AI reconstruction. Original painting is public domain; uploader supplied no reproduction download source. No claim about an exact reproduction license or AI provenance metadata is inferred from absence of C2PA. Portrait is not evidence for the political argument and is not added to Evidence Lab.",
+      "metadataCheck": {
+        "c2paMarkerPresent": false
+      },
+      "reviewArtifacts": true
+    },
+    {
+      "path": "assets/images/topics/5-1/5.1 Hobbes.jpg",
+      "blobSha": "60df1c18580a243b681061086fbd18a01b1e11b8",
+      "reviewedAt": "2026-11-20",
+      "classification": "historical-portrait-reproduction",
+      "sourceRef": "0d909e82c929fcf881d0c6fe9c6f70974d6e6724",
+      "sourcePr": 175,
+      "status": "held-no-approved-story-beat",
+      "dimensions": {
+        "width": 1109,
+        "height": 1169
+      },
+      "observedSubject": "Detail of a painted balding man with long side hair, a small moustache and a white collar, matching Wright's Hobbes portrait.",
+      "provenance": [
+        "https://www.npg.org.uk/collections/search/portraitExtended/mw03164/Thomas-Hobbes"
+      ],
+      "placements": [],
+      "rationale": "Hobbes has no beat in the approved teacher presentation. Adding his political argument would change the story; hold pending a separately approved story revision.",
+      "limits": "Historical painted portrait, not an AI reconstruction. Original painting is public domain; uploader supplied no reproduction download source. No claim about an exact reproduction license or AI provenance metadata is inferred from absence of C2PA. Portrait is not evidence for the political argument and is not added to Evidence Lab.",
+      "metadataCheck": {
+        "c2paMarkerPresent": false
+      }
     }
   ]
 }

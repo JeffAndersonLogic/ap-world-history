@@ -2385,7 +2385,8 @@ function bhTrapTab(event) {
   const first = items[0];
   const last = items[items.length - 1];
   const active = document.activeElement;
-  const outside = !top.contains(active);
+  // The dialog itself receives initial focus, before its first tab stop.
+  const outside = active === top || !top.contains(active);
 
   if (event.shiftKey && (active === first || outside)) {
     event.preventDefault();
@@ -2466,9 +2467,21 @@ function jumpToSection(selector) { const el = document.querySelector(selector); 
 function openModule(id) {
   const mod = window.BEHISTORICAL_MODULES.find(m => m.id === id);
   if (!mod || mod.jump || mod.link) return;
+  flushModuleReading();
+  // Flush pending keystrokes before replacing their controls, so an immediate
+  // Next -> Previous cannot reload an older draft during the autosave delay.
+  byId('pop-body').querySelectorAll('textarea.response-area').forEach(t => {
+    if (!t._draftTimer) return;
+    clearTimeout(t._draftTimer);
+    t._draftTimer = null;
+    BHDraftStore.set(draftKey(t.id), t.value || '');
+  });
+  currentModuleId = id;
   byId('pop-eyebrow').textContent = mod.label;
   byId('pop-title').textContent = mod.title;
   byId('pop-body').innerHTML = mod.render();
+  updateModuleNav();
+  byId('pop-modal').querySelector('.pop-panel').scrollTop = 0;
   byId('pop-modal').classList.add('show');
   loadAllDrafts();
   refreshSubmitStatus();
@@ -2476,6 +2489,56 @@ function openModule(id) {
 }
 
 function closeModule() { bhCloseModal('pop-modal'); }
+
+// Walk the pop-outs in their displayed order. Content Delivery and scenario
+// cards have their own jump/link destinations, not dialog bodies.
+let currentModuleId = null;
+function flushModuleReading() {
+  if (currentModuleId !== 'first10') return;
+  // Removing an iframe does not fire its beforeunload handler. Ask the reading
+  // (inside its capture wrapper) to run its existing save before replacing it.
+  function flush(frame) {
+    try {
+      const win = frame.contentWindow;
+      win.document.querySelectorAll('iframe').forEach(flush);
+      win.dispatchEvent(new win.Event('beforeunload'));
+    } catch (_) { /* Only same-origin, loaded readings are accessible. */ }
+  }
+  byId('pop-body').querySelectorAll('iframe').forEach(flush);
+}
+function moduleSequence() {
+  return window.BEHISTORICAL_MODULES.filter(m => !m.jump && !m.link && typeof m.render === 'function');
+}
+function updateModuleNav() {
+  const panel = byId('pop-modal').querySelector('.pop-panel');
+  if (!byId('module-nav')) {
+    const frame = document.createElement('div');
+    frame.className = 'module-frame';
+    panel.before(frame);
+    frame.appendChild(panel);
+    frame.insertAdjacentHTML('beforeend', `<nav class="module-nav" id="module-nav" aria-label="Module navigation">
+      <button class="module-nav-button" id="module-prev" type="button" onclick="moduleStep(-1)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M15 5H9l-7 7 7 7h6l-7-7z"/></svg></button>
+      <span class="module-nav-status" id="module-nav-status" aria-live="polite"></span>
+      <button class="module-nav-button" id="module-next" type="button" onclick="moduleStep(1)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 5h6l7 7-7 7H9l7-7z"/></svg></button>
+    </nav>`);
+  }
+  const sequence = moduleSequence();
+  const index = sequence.findIndex(m => m.id === currentModuleId);
+  for (const [id, step, label] of [['module-prev', -1, 'Previous'], ['module-next', 1, 'Next']]) {
+    const button = byId(id);
+    const target = sequence[index + step];
+    button.disabled = !target;
+    button.setAttribute('aria-label', target ? `${label} module: ${target.label}, ${target.title}` : `${label} module`);
+    button.title = target ? `${target.label}: ${target.title}` : `No ${label.toLowerCase()} module`;
+  }
+  byId('module-nav-status').textContent = sequence[index].label;
+}
+function moduleStep(delta) {
+  const sequence = moduleSequence();
+  const index = sequence.findIndex(m => m.id === currentModuleId);
+  const next = sequence[index + delta];
+  if (index >= 0 && next) openModule(next.id);
+}
 
 // ── Lecture deck navigation ───────────────────────────────────────────────────
 //
@@ -3998,3 +4061,4 @@ if (L && window.BHSync) {
     transportUrl: BH_SYNC_SELF ? new URL('behistorical-sync-transport.js', BH_SYNC_SELF).href : ''
   });
 }
+

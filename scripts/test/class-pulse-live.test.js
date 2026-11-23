@@ -87,12 +87,15 @@ async function seedAll() {
   await seed(`tenants/zcs/rosters/${T}/students/${B}`, { label: s('Ben Cole') });
   await seed(`tenants/zcs/rosters/${T}/students/${C}`, { label: s('Cal Ito') });
   // Ana submitted and has not changed it. Ben submitted, then edited. Cal wrote and never submitted.
-  const r = (uid, slot, text, conf) => seed(`tenants/zcs/responses/${uid}__3-2__${slot}`, answer(uid, '3-2', slot, text, conf));
+  // On Topic 4.7, where only a Submit receipt counts; through 4.6 saved writing is
+  // recovered (RECOVER_THROUGH in class-pulse-live.js, 2026-11-17), so Cal also has 4.6.
+  const r = (uid, slot, text, conf) => seed(`tenants/zcs/responses/${uid}__4-7__${slot}`, answer(uid, '4-7', slot, text, conf));
   await r(A, 'checkpoint-one-response', 'Akbar used the mansabdar system.', 4);
   await r(A, 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:14 AM · fingerprint ' + Sync.valueHash('Akbar used the mansabdar system.', '4'));
   await r(B, 'checkpoint-one-response', 'The devshirme took boys, and I added this later.', 3);
   await r(B, 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:20 AM · fingerprint ' + Sync.valueHash('The devshirme took boys.', '3'));
   await r(C, 'checkpoint-one-response', 'Half an', '');
+  await seed(`tenants/zcs/responses/${C}__4-6__checkpoint-one-response`, answer(C, '4-6', 'checkpoint-one-response', 'Half an', ''));
   await r(OUT, 'checkpoint-one-response', 'Not in this class.', 2);
 }
 
@@ -108,13 +111,16 @@ async function suite(M) {
   check('an account with no class list is told so', await code(live(M, OTHER, 'other@zcs.k12.in.us').roster()) === 'no-roster');
   check('a student cannot read a class list', await code(live(M, A, 'ana@stumail.zcs.k12.in.us').roster()) !== 'ok');
 
-  const rows = roster.students ? await teacher.answers('3.2', roster.students).catch(e => ({ error: e.code })) : {};
+  const rows = roster.students ? await teacher.answers('4.7', roster.students).catch(e => ({ error: e.code })) : {};
   const by = uid => ((rows.cp1 || []).find(r => r.uid === uid) || {});
   check('a submitted, unchanged answer counts as submitted', by(A).completionState === 'verified-submission' && by(A).text === 'Akbar used the mansabdar system.' && by(A).confidence === '4', JSON.stringify(by(A)));
   check('an answer changed after Submit does not', by(B).completionState === 'completion-unverified' && by(B).changedSinceSubmit === true, JSON.stringify(by(B)));
   check('an answer never submitted does not', by(C).completionState === 'completion-unverified' && by(C).changedSinceSubmit === false, JSON.stringify(by(C)));
+  const old = roster.students ? await teacher.answers('4.6', roster.students).catch(e => ({ error: e.code })) : {};
+  const cal46 = (old.cp1 || []).find(r => r.uid === C) || {};
+  check('on 4.6, an answer never submitted is recovered as submitted', cal46.completionState === 'verified-submission' && cal46.recovered === true && cal46.text === 'Half an', JSON.stringify(cal46));
   check('a checkpoint with no answer is missing, for everyone', (rows.cp2 || []).length === 3 && rows.cp2.every(r => r.completionState === 'missing'));
-  check('a student not on the list cannot be read', await code(teacher.answers('3.2', [{ uid: OUT, label: 'x' }])) === 'denied');
+  check('a student not on the list cannot be read', await code(teacher.answers('4.7', [{ uid: OUT, label: 'x' }])) === 'denied');
 
   const criteria = [{ criterionId: 'criterion-1', category: 'D', evidence: ['mansabdar'], reason: 'r', misconceptions: [], uncertainty: [], reviewRequired: false }];
   // Twelve different ratings, so the save takes more than one request.

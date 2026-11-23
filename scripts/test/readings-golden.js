@@ -159,7 +159,14 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // the Asante kingdom rose" placed an inland forest kingdom on the coast. It now
 // reads "inland from the Gold Coast", as the 4.8 entry already said. The
 // fingerprint moved from a6badc5... and only that 4.4 sentence changed.
-const APPROVED_UNIT4_REWRITE_BLOB = '5080ceb1324c8cf71424a16934ad73f663547f5b';
+// On 2026-11-17 Jeff asked for one 4.7 correction, raised by an external review of
+// Unit 4 by Region: the leaders of Christian and Jewish communities "answered to
+// the sultan for their community's taxes and good behavior" described the later,
+// formal arrangement the 4.7 story itself warns against reading backward. It now
+// says many Christians and Jews also took cases to the Islamic court (4.7 ledger,
+// row narrowed). The fingerprint moved from 5080ceb... and only that 4.7 sentence
+// changed.
+const APPROVED_UNIT4_REWRITE_BLOB = 'cfc26f66d0ccf4e4a559e04573aa23ab0943f6e9';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

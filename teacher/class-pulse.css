@@ -42,6 +42,12 @@ button{cursor:pointer}
 .topbar .wrap{height:58px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .topbar strong{font-size:14px;font-weight:700;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .topbar strong span{color:var(--on-dark-muted);font-weight:500}
+.topbar-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.topbar-brand strong{font-family:var(--title);font-weight:400;font-size:19px;letter-spacing:.02em;line-height:1}
+.topbar-pulse{width:34px;height:34px;flex:none;object-fit:contain}
+.topbar-rule{width:1px;height:26px;background:rgba(255,255,255,.22);flex:none}
+.topbar-wordmark{height:23px;width:auto;flex:none}
+@media (max-width:520px){.topbar-rule,.topbar-wordmark{display:none}}
 .gold-pill{display:inline-flex;align-items:center;white-space:nowrap;border-radius:999px;background:var(--gold);color:#2B2216;padding:9px 15px;font-size:11px;font-weight:700;letter-spacing:.04em}
 .hero{margin-top:18px;position:relative;overflow:hidden;border-radius:26px;padding:34px 36px;color:var(--on-dark);
   background:linear-gradient(115deg,#1A1C1D 0%,#242622 56%,#161716 100%);box-shadow:var(--shadow);
