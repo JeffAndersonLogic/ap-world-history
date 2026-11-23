@@ -647,7 +647,7 @@ the South Asian, Southeast Asian and European dates.
   Malacca, whoever held it" overstates continuity; Java's rulers were hostile to Portuguese
   Malacca (Pati Unus attacked it in 1513), the Portuguese sought rice from Pegu and Ayutthaya, and
   much Javanese and Muslim shipping moved to Banten, Aceh and Johor (Wikipedia, "Capture of
-  Malacca (1511)", "Demak invasions of Malacca"; Vann, Education About Asia). PENDING.
+  Malacca (1511)", "Demak invasions of Malacca"; Vann, Education About Asia). **FIXED:** "Java's Muslim port kingdoms were hostile to Portuguese Malacca. In 1512 to 1513, Pati Unus of Demak ... sent a fleet against it, and failed. The Portuguese looked to Pegu ... and Ayutthaya ... for rice instead. Much Javanese and Muslim shipping moved to other ports, such as Banten, Aceh and Johor"; Gujarati merchants kept buying passes; card to match.
 
 **Reviewer AA (history: East Asia, Sub-Saharan Africa), 3 findings; no misquotation or factual
 error.** Verified sound: all 33 CED quotations and labels (by script, with negative controls);
@@ -671,15 +671,27 @@ cross-region links; Bismarck 1884.
 - AG1a. KC-4.1.IV's "chartered European monopoly companies" quoted but not taught in the Americas
   (same as AC3) and East Asia (same as AA3); Europe teaches charters but not "monopoly", and quotes
   the regional-markets sentence ("shipping services developed by European merchants") without
-  teaching it. PENDING.
+  teaching it. Europe: **FIXED** by teaching both: each charter gave its company "a monopoly (the sole right) on its country's trade with Asia"; "European ships also carried goods between Asian ports" while Asian merchants kept their partnerships and family firms (Topic 4.5). Americas and East Asia PENDING.
 - AG1b. Americas quotes KC-4.1.V.B whole ("exported mostly to Europe and the Middle East") and
   says only "Sugar and tobacco went to Europe". PENDING.
 - AG1d. East Asia claims KC-4.1.III.A (Portuguese maritime technology and navigation) without
   teaching it. PENDING.
 - AG2. Europe: Ceuta "That attack was a crusade" is flatter than the other chapters ("partly as a
-  crusade"; "continued the long wars of Christian Iberia"). PENDING.
+  crusade"; "continued the long wars of Christian Iberia"). **FIXED:** "Portugal's rulers saw that attack partly as a crusade" (story and Religious card).
 - AG6. Americas: Gualpa found Potosí in 1545, "We know this from his own later account"; his 1572
   statement's own count gives about 1544; 1545 is the usual date. PENDING.
 - AG7. Afonso's quotation in Madureira's wording could not be verified. **REJECTED:** reviewers S
   (pass 3) and AA (pass 4) confirmed the wording against Thornton, Afonso I Mvemba a Nzinga
   (2023), p. 203, via Gilder Lehrman's reproduction.
+
+**Pass 4 self-audit, South and Southeast Asia and Europe** (fixers now check every quotation in
+their chapters, not only the reported ones):
+
+- SELF. South and Southeast Asia: KC-4.1.II dropped (its Classical and Islamic parts are not taught
+  there; Europe, the Middle East and East Asia claim and teach it); KC-4.1.II.A's currents taught in
+  both chapters (monsoon currents; the Canary Current); KC-4.2.II.B cut to its Indian Ocean list
+  item; KC-4.3.II.A.i taught (Sofala 1505, Mozambique Island 1507; officials' private trade,
+  Subrahmanyam); KC-4.3.II.C's French company taught (1664; Pondicherry 1674, Britannica);
+  KC-4.3.I.B's Ottomans by a link phrase to the Middle East chapter; KC-4.1.IV.C's "finance
+  exploration" taught. Europe: KC-4.1.V.B's American crops in Africa and Asia taught (cassava,
+  the sweet potato). **FIXED.**

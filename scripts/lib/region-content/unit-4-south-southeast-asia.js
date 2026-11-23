@@ -113,7 +113,6 @@ module.exports = {
   ],
   topics: ['4.1', '4.2', '4.4', '4.5', '4.6', '4.7', '4.8'],
   ced: [
-    'KC-4.1.II',
     'KC-4.1.II.A',
     'KC-4.1.III',
     'KC-4.1.III.A',
@@ -145,7 +144,7 @@ module.exports = {
         {
           heading: 'The ocean before the Portuguese',
           blocks: [
-            { p: `Sailing on the Indian Ocean followed the <span class="kt">monsoon</span> (a seasonal wind). It blows one way for part of the year and the other way for the rest. So captains knew months ahead when to sail out and when to come home.` },
+            { p: `Sailing on the Indian Ocean followed the <span class="kt">monsoon</span> (a seasonal wind). It blows one way for part of the year and the other way for the rest. Many of the ocean's currents change direction with it. So captains knew months ahead when to sail out and when to come home.` },
             { p: `Gujarat's harbors lay in western India. <b>Calicut</b> sat on India's Malabar coast, where pepper grew. <b>Malacca</b> guarded the strait between the Indian Ocean and the South China Sea. No single state ruled the water.` },
             { p: `<b>Gujarati</b> merchants carried India's cotton cloth to buyers from East Africa to Southeast Asia. <b>Javanese</b> merchants carried rice and spices to Malacca. Cloves and nutmeg came from the <span class="kt">spice islands</span>. These were small islands in eastern Indonesia.` },
             { p: `Islam had traveled these routes with merchants and teachers. By 1500 many port rulers in Southeast Asia and East Africa were Muslims, Malacca's ruler among them. No Muslim army had conquered them.` },
@@ -177,11 +176,10 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: state-backed voyages used older Asian and Islamic knowledge of the seas, and fights over trade followed.`,
-                `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."`,
+                `In short: state-backed voyages used new ships and older Asian knowledge of the winds, and fights over trade followed.`,
                 `<a href="#chapter-t4-1">Topic 4.1</a>: "The developments included ... innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible."`,
                 `<a href="#chapter-t4-2">Topic 4.2</a>: "New state-supported transoceanic maritime exploration occurred in this period."`,
-                `<a href="#chapter-t4-4">Topic 4.4</a>: "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions."`,
+                `<a href="#chapter-t4-4">Topic 4.4</a>: "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the ... Indian Ocean regions."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
                 `An optional College Board example: the rivalry between Muslim and European powers in the Indian Ocean.`
               ]
@@ -207,7 +205,7 @@ module.exports = {
         {
           heading: 'Ports, not provinces',
           blocks: [
-            { p: `The Portuguese commander Afonso de Albuquerque took <b>Goa</b> in western India in <span class="num">1510</span>. By <span class="num">1530</span> Goa was the capital of Portugal's ports in Asia. Albuquerque took Malacca in <span class="num">1511</span>. In <span class="num">1515</span> he took Hormuz at the mouth of the Persian Gulf.` },
+            { p: `The Portuguese commander Afonso de Albuquerque took <b>Goa</b> in western India in <span class="num">1510</span>. By <span class="num">1530</span> Goa was the capital of Portugal's ports in Asia. Albuquerque took Malacca in <span class="num">1511</span>. In <span class="num">1515</span> he took Hormuz at the mouth of the Persian Gulf. Portugal had also set up bases on Africa's east coast, at Sofala in <span class="num">1505</span> and on Mozambique Island in <span class="num">1507</span>.` },
             { p: `Each was a <span class="kt">trading post</span>: a small fortified base where merchants bought and sold. Together they made a <span class="kt">trading-post empire</span>. This was a chain of ports with almost no land behind them. Portugal's guns could batter a harbor, but they could not conquer India's interior. Gujarat, Vijayanagara and, after <span class="num">1526</span>, the Mughals had far larger armies on land.` },
             { p: `Rivalry drove the building, with Muslim powers and with Spain. In <span class="num">1494</span> Portugal and Spain had divided their claims to new lands in the Treaty of Tordesillas (<a href="#chapter-t4-4">Topic 4.4</a>).` }
           ]
@@ -215,8 +213,8 @@ module.exports = {
         {
           heading: 'The cartaz, and the merchants who kept sailing',
           blocks: [
-            { p: `Portugal's main tool was the <span class="kt">cartaz</span> (a pass that merchant ships bought from the Portuguese). A ship with a pass had to stop at a Portuguese port and pay duties (taxes on goods) there. Portuguese patrols could seize a ship that sailed without one. Duties at ports such as Goa, Hormuz and Malacca became the main income of Portugal's government in Asia.` },
-            { p: `The cartaz changed who taxed the ocean. It did not change who traded on it. Gujarati merchants kept shipping cloth, often by buying a pass and sailing on. Javanese merchants kept carrying rice to Malacca, whoever held it. Much of the ocean's business stayed <span class="kt">intra-Asian trade</span>: trade between Asian ports, in Asian goods.` },
+            { p: `Portugal's main tool was the <span class="kt">cartaz</span> (a pass that merchant ships bought from the Portuguese). A ship with a pass had to stop at a Portuguese port and pay duties (taxes on goods) there. Portuguese patrols could seize a ship that sailed without one. Duties at ports such as Goa, Hormuz and Malacca became the main income of Portugal's government in Asia. Portuguese captains and officials also traded for their own profit.` },
+            { p: `The cartaz changed who taxed the ocean. It did not end Asian trade. Gujarati merchants kept shipping cloth, often by buying a pass and sailing on. Java's Muslim port kingdoms were hostile to Portuguese Malacca. In <span class="num">1512</span> to <span class="num">1513</span>, Pati Unus of Demak (a Muslim state on Java) sent a fleet against it, and failed. The Portuguese looked to Pegu (in Burma) and Ayutthaya (in Siam) for rice instead. Much Javanese and Muslim shipping moved to other ports, such as Banten, Aceh and Johor. Still, much of the ocean's business stayed <span class="kt">intra-Asian trade</span>: trade between Asian ports, in Asian goods.` },
             { p: `Muslim powers kept fighting. <b>Aceh</b> (a Muslim kingdom on the island of Sumatra) fought the Portuguese again and again for more than a century, from about <span class="num">1520</span>. It shipped its pepper straight to the Red Sea. By the middle of the 1500s, large amounts of spices again reached the Mediterranean that way.` },
             { p: `Religion traveled too. Asian merchants and teachers kept spreading Islam in Southeast Asia. On Java, many Muslims also kept older beliefs, such as faith in local spirits. Beliefs that mix different traditions in this way are called <span class="kt">syncretic</span>. In Goa, the Portuguese set up an Inquisition (a church court) in <span class="num">1560</span>. It tried converts accused of secretly keeping Jewish, Hindu or Muslim practices.` }
           ]
@@ -267,7 +265,7 @@ module.exports = {
           blocks: [
             { p: `The Mughal dynasty began in <span class="num">1526</span>, when Babur (a prince from Central Asia) won a battle at Panipat. Its emperors were Muslims. Most of their subjects were Hindus.` },
             { p: `<b>Akbar</b> ruled from <span class="num">1556</span> to <span class="num">1605</span>. He made room for Hindus on purpose. In <span class="num">1564</span> he ended the <span class="kt">jizya</span> (a tax that non-Muslims paid under Islamic rule). From <span class="num">1562</span> he married daughters of the <b>Rajputs</b> (Hindu warrior kings of northwestern India). He made Rajput princes some of his highest commanders.` },
-            { p: `Akbar was not only being generous. He needed Rajput armies and Hindu loyalty, and he won much of both (<a href="#chapter-t4-7">Topic 4.7</a>). Not every Rajput king joined him. Mewar fought on, and it made peace with the Mughals only in <span class="num">1615</span>, ten years after Akbar died. He also invited Jesuits (Catholic priests) from Goa to his court to debate religion.` }
+            { p: `Akbar was not only being generous. He needed Rajput armies and Hindu loyalty, and he won much of both (<a href="#chapter-t4-7">Topic 4.7</a>). Not every Rajput king joined him. Mewar fought on, and it made peace with the Mughals only in <span class="num">1615</span>, ten years after Akbar died. He also invited Jesuits (Catholic priests) from Goa to his court to debate religion. <a href="#r4-middle-east-peoples">The Middle East chapter</a> tells how the Ottomans also made room for many peoples.` }
           ]
         },
         {
@@ -324,8 +322,8 @@ module.exports = {
           heading: 'Companies built for war',
           blocks: [
             { p: `European rulers followed <span class="kt">mercantilism</span>. This was the idea that a state grows strong by collecting gold and silver. It also held that one country's gain in trade is another's loss.` },
-            { p: `To act on it, rulers chartered <span class="kt">joint-stock companies</span>. To charter a company was to give it an official license. A joint-stock company sold shares (parts of the company) to many investors, who split the profits and losses.` },
-            { p: `England chartered its East India Company in <span class="num">1600</span>. In <span class="num">1602</span> the Dutch Republic chartered the Dutch East India Company (the <b>VOC</b>). It had a <span class="kt">monopoly</span>: no other Dutch company could trade in Asia. It could also build forts, keep soldiers, make treaties and wage war.` },
+            { p: `To act on it, rulers chartered <span class="kt">joint-stock companies</span>. To charter a company was to give it an official license. A joint-stock company sold shares (parts of the company) to many investors. Their money paid for long, risky voyages, and they split the profits and losses.` },
+            { p: `England chartered its East India Company in <span class="num">1600</span>. In <span class="num">1602</span> the Dutch Republic chartered the Dutch East India Company (the <b>VOC</b>). It had a <span class="kt">monopoly</span>: no other Dutch company could trade in Asia. It could also build forts, keep soldiers, make treaties and wage war. France chartered its own East India Company in <span class="num">1664</span>, and the company founded Pondicherry in southeast India in <span class="num">1674</span>.` },
             { p: `<b>Jan Pieterszoon Coen</b> was a VOC leader in Asia. In <span class="num">1619</span> he founded <b>Batavia</b> on the island of Java as the company's headquarters there.` },
             { note: {
               kind: 'howknow',
@@ -408,7 +406,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'Old trade kept flowing, with new carriers and more work',
-        body: `From 1571 the Manila galleons carried American silver to Manila, where Chinese merchants traded silk for it. Gujarati and Javanese merchants kept intra-Asian trade going under the cartaz. To protect local weavers, England restricted Indian cotton cloth in 1700, and Great Britain did so again in 1721.`
+        body: `From 1571 the Manila galleons carried American silver to Manila, where Chinese merchants traded silk for it. Gujarati merchants often bought a cartaz and sailed on. Much Javanese and Muslim shipping moved to other ports, such as Banten, Aceh and Johor. To protect local weavers, England restricted Indian cotton cloth in 1700, and Great Britain did so again in 1721.`
       }
     ]
   }
