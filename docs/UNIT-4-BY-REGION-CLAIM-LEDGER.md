@@ -637,3 +637,14 @@ Middle East and Americas dates.
   for the voyage"). PENDING.
 - AC3. Americas quotes KC-4.1.IV's "chartered European monopoly companies" and never teaches a
   chartered company (the Middle East chapter does). PENDING.
+
+**Reviewer AB (history: South and Southeast Asia, Europe), 1 finding; Europe has none.** Verified
+sound: all 36 CED quotations and labels (by script); claims lines; optional examples; links;
+Amboyna 1623; Malik Ambar; Coen (Batavia 1619, Banda 1621, the 1614 letter); the Alfonsine tables;
+the South Asian, Southeast Asian and European dates.
+
+- AB1. South and Southeast Asia, story and Economic card: "Javanese merchants kept carrying rice to
+  Malacca, whoever held it" overstates continuity; Java's rulers were hostile to Portuguese
+  Malacca (Pati Unus attacked it in 1513), the Portuguese sought rice from Pegu and Ayutthaya, and
+  much Javanese and Muslim shipping moved to Banten, Aceh and Johor (Wikipedia, "Capture of
+  Malacca (1511)", "Demak invasions of Malacca"; Vann, Education About Asia). PENDING.
