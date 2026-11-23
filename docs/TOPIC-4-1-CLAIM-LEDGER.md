@@ -265,3 +265,7 @@ Nine places in the approved First & 10 are wrong, overclaim or read badly (pass 
 #4, #14, U6, U7; pass 2: Reviewer 3 #1, #8, #11 and Reviewer 4 #5, U). The corrections are
 written but **not applied**, because the reading is guarded by its approval fingerprint
 and changing it re-opens approval. They go in when Jeff approves them.
+
+## Check from the Unit 4 by Region review, pass 4 (2026-11-23)
+
+- **AC1** (pass 4, reviewer AC; `docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md`). The Middle East chapter said Zacuto's 1496 tables were based on the Castilian Alfonsine tables of 1263 to 1272; the Castilian original is lost, and Zacuto drew on the Parisian Alfonsine Tables of the 1320s and on medieval Hebrew astronomy (Goldstein and Chabás, Archive for History of Exact Sciences 72, 2018). Checked against every Topic 4.1 surface: no Topic 4.1 surface says that. The deep reading names Zacuto's tables with no source; the First & 10 gives a family tree ("Astronomers working for a king of Castile built new tables on them. Then ... Abraham Zacuto produced an almanac") without saying which version Zacuto used; the teacher note says "the same tradition, not the same book", through the Toledan Tables and "the tables of Alfonso X", which covers the Parisian recasting that carries Alfonso's name. **No change needed.** Topic 4.8 says only that the almanac "came from that line" (the Toledo astronomers) and is unchanged.

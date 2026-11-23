@@ -114,7 +114,7 @@ module.exports = {
         {
           heading: 'Crops paid for factories',
           blocks: [
-            { p: `His government took control of Egypt's farming. It told peasants what crops to plant, bought the crops at low prices, and sold them abroad at higher ones. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. From <span class="num">1820</span> a new crop, long-staple cotton, earned a great deal of money.` },
+            { p: `His government took control of Egypt's farming. It told peasants what crops to plant, bought the crops at low prices, and sold them abroad at higher ones. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. From <span class="num">1821</span> peasants grew a new crop for sale, long-staple cotton. Within a few years it was Egypt's main export, and it earned a great deal of money.` },
             { p: `With the money from its crop monopolies, first on grain and other crops and from the 1820s above all on cotton, the government built factories from the late 1810s: cotton mills, and works for weapons, sugar and other goods. It bought machines in Europe and hired European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. He controlled Egypt's trade, so he could limit how much cheap British cloth came in, to protect the mills.` },
             { note: {
               kind: 'howknow',
@@ -279,7 +279,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'Egypt\'s chain',
-        body: `Evidence to sort: Napoleon's invasion (1798); Muhammad Ali governor (1805), ruling alone by 1811, aiming to hold Egypt for his family; the cotton monopoly and long-staple cotton (1820); about 30 state cotton mills and 30,000 drafted workers by the early 1830s; conscription from 1822, an army of about 130,000; Syria invaded (1831); driven out (1840); the army cut to 18,000 and the 1838 treaty accepted (1841); almost no coal; most mills failed within about a decade.`
+        body: `Evidence to sort: Napoleon's invasion (1798); Muhammad Ali governor (1805), ruling alone by 1811, aiming to hold Egypt for his family; the cotton monopoly and long-staple cotton, grown for sale from 1821; about 30 state cotton mills and 30,000 drafted workers by the early 1830s; conscription from 1822, an army of about 130,000; Syria invaded (1831); driven out (1840); the army cut to 18,000 and the 1838 treaty accepted (1841); almost no coal; most mills failed within about a decade.`
       },
       {
         category: 'Causation',

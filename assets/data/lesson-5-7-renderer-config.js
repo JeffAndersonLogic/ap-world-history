@@ -48,7 +48,7 @@
       { label: "France", detail: "In the Cobden-Chevalier Treaty of 1860, Britain and France cut tariffs on each other's goods. France also passed laws in 1863 and 1867 making it easier to form a company with limited liability." },
       { label: "Germany", detail: "Before Germany became one country in 1871, the German states' customs union kept tariffs low. From 1879 the new German Empire put tariffs back on imported grain and iron to protect its farmers and factories." },
       { label: "Hong Kong and Shanghai, and Arrow 1", detail: "The bank known today as HSBC opened in Hong Kong in March 1865, as the Hongkong and Shanghai Banking Company (the Corporation from 1866), and in Shanghai a month later. In July 1865 it opened an office in London." },
-      { label: "Arrow 2 and the United States", detail: "William Lever registered the name of his Sunlight Soap in the United States in 1886. The United States raised its tariffs on factory goods in 1861 and kept them high." },
+      { label: "Arrow 2 and the United States", detail: "In 1886 William Lever applied to register the name of his Sunlight Soap in the United States. It was registered in 1887. The United States raised its tariffs on factory goods in 1861 and kept them high." },
       { label: "Reading the map", detail: "Each arrow joins two places; it is not an exact route. The map shows only the places this topic names, and the shaded regions are approximate." }
     ]
   };
@@ -87,7 +87,7 @@
       { label: "Explain how, with a detail for each side", text: "Say how the link works. Example: \"The new route brought more shoppers, about twice as many on weekends, so the mall had enough customers to open a food court.\"" },
       { label: "Say the connection in one sentence", text: "Use this frame: \"[Development A] relates to [development B] because A [caused / made possible / answered] B: [how the link works, with a detail for each].\" Example: \"The new bus route relates to the food court because it made the food court possible: more shoppers on weekends gave the mall enough customers.\"" }
     ],
-    prompt: "Now do it with the history of Topic 5.7. Choose TWO of these developments: Britain's repeal of the Corn Laws and move to free trade (1846 to 1860); limited liability (1855 and 1856); stock markets; the bank known today as HSBC (1865); Lever's Sunlight Soap (1884), its U.S. trademark (1886), and the company's sale of shares (1894); cheaper and more varied goods. First, say exactly what changed in each one. Second, choose the kind of link: did one cause the other, make it possible, or answer it? Third, explain how the link works, with a detail from the lesson for each. Fourth, write the connection in one sentence using the frame.",
+    prompt: "Now do it with the history of Topic 5.7. Choose TWO of these developments: Britain's repeal of the Corn Laws and move to free trade (1846 to 1860); limited liability (1855 and 1856); stock markets; the bank known today as HSBC (1865); Lever's Sunlight Soap (1884), its U.S. trademark (filed 1886, registered 1887), and the company's sale of shares (1894); cheaper and more varied goods. First, say exactly what changed in each one. Second, choose the kind of link: did one cause the other, make it possible, or answer it? Third, explain how the link works, with a detail from the lesson for each. Fourth, write the connection in one sentence using the frame.",
     criteria: [
       "I named two developments from Topic 5.7 and said exactly what changed in each.",
       "I chose the kind of link: caused, made possible, or answered.",
@@ -135,7 +135,7 @@
       alt: "A yellowed United States trademark filing for Lever Brothers, Limited, of Port Sunlight, England, registered May 5, 1891. Pasted in the middle is a printed advertisement headed Sunlight Soap, with a large drawing of two hands, a sign-language alphabet from A to Z with a slogan for each letter, and paragraphs of instructions for washing clothes the Sunlight way.",
       url: "../assets/images/topics/5-7/lever-sunlight-soap-trademark-1891.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2020713351/",
-      caption: "A United States trademark registration for Lever Brothers, Limited, of Port Sunlight, England, registered on May 5, 1891. This filing protected an advertising design, pictures of hands spelling out the alphabet in sign language with the word Sunlight. The company had first registered the Sunlight name in the United States in 1886. Library of Congress.",
+      caption: "A United States trademark registration for Lever Brothers, Limited, of Port Sunlight, England, registered on May 5, 1891. This filing protected an advertising design, pictures of hands spelling out the alphabet in sign language with the word Sunlight. The company had first applied to register the Sunlight name in the United States in 1886. Library of Congress.",
       prompt: "NOTICE where the company is based, where the filing was made, and what the advertisement promises about washing day. INFER what this shows about a British business selling across the ocean, and about how soap was being sold. A company's own advertisement: what can it not tell you about who could afford the soap?"
     },
     {

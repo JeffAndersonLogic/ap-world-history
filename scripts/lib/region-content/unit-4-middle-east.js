@@ -79,6 +79,19 @@
  * the timars became tax farms slowly, through the 1600s and 1700s, and the 1831 abolition is marked
  * as after this unit; the Political card says Persia and Oman drove Portugal from key ports, not
  * took them back.
+ *
+ * Review pass 4 (2026-11-23, ledger AC1): Zacuto's tables are no longer said to be based on the
+ * Castilian Alfonsine tables of 1263 to 1272, whose original is lost; they drew on the Latin
+ * Alfonsine Tables made in Paris in the 1320s and on medieval astronomy written in Hebrew
+ * (Bernard R. Goldstein and José Chabás, Archive for History of Exact Sciences 72, 2018).
+ * Self-audit of every College Board quotation: KC-4.1.II's "Asian worlds" now taught by the
+ * Chinese compass (by about 1100; known in Europe by about 1190; how it traveled is debated, as
+ * Topic 4.8 says); KC-4.1.II.A's currents added to the thesis; KC-4.3.I.B's political and military
+ * contributions taught by the boys taken from Christian families to serve as soldiers and
+ * officials; KC-4.2.II.B's household slavery inside Africa added in one sentence; KC-4.1.V.B's
+ * "staple" taught for the Balkans and, for Asia, the sweet potato in southern China; and
+ * KC-4.3.II.A.iii cut with " ... " to drop the Spanish and Dutch merchants, which the South and
+ * Southeast Asia chapter teaches.
  */
 
 const CB = 'What the College Board says';
@@ -121,15 +134,16 @@ module.exports = {
       name: 'Knowledge That Sailed West',
       navLabel: 'Knowledge',
       dates: 'Before 1450 to c. 1500 &nbsp;·&nbsp; Instruments, tables, sails and pilots',
-      thesis: `European ships crossed the oceans with knowledge built up over centuries. Much of it came from the Islamic world. Europe's part was to combine this knowledge, build new ships and learn the Atlantic's winds.`,
+      thesis: `European ships crossed the oceans with knowledge built up over centuries. Much of it came from the Islamic world. Europe's part was to combine this knowledge, build new ships and learn the Atlantic's winds and currents.`,
       parts: [
         {
           heading: 'A world of scholars and sailors',
           blocks: [
             { p: `In 1450 the lands of Islam reached from West Africa to Southeast Asia. They included the East African coast, Central Asia and much of India. This chapter follows the lands from Morocco to Persia. Muslim scholars called this world <span class="kt">Dar al-Islam</span> (Arabic for "the house of Islam"). It was not one state. It was many lands joined by Islamic law, the Arabic language and trade.` },
             { p: `One example of its learning is the <span class="kt">astrolabe</span>. This tool measures how high the sun or a star stands in the sky. The idea was Greek, but astronomers in the Islamic world made it precise. It reached Europe through Muslim Spain. In the 1100s and 1200s, Christian and Jewish translators in the Spanish city of Toledo turned Arabic science books into Latin.` },
+            { p: `Some knowledge came from farther east. Sailors in China steered by a magnetic <span class="kt">compass</span> by about <span class="num">1100</span>. Europeans knew the compass by about <span class="num">1190</span>. Historians still debate how it traveled west.` },
             { p: `By the 1480s, Portuguese pilots (the sailors who guided ships) used a heavy sea astrolabe. With it they measured the sun's height at noon. A pilot then turned that reading into a <span class="kt">latitude</span> (how far north or south of the equator the ship was).` },
-            { p: `For that, a pilot needed a table of where the sun would be on each day. Such tables grew out of older <span class="kt">astronomical charts</span>. These were tables that predicted where the sun, moon and planets would be. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. From about <span class="num">1263</span> to <span class="num">1272</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They were based on that later version. They gave the sun's position for each day, which pilots needed.` }
+            { p: `For that, a pilot needed a table of where the sun would be on each day. Such tables grew out of older <span class="kt">astronomical charts</span>. These were tables that predicted where the sun, moon and planets would be. Muslim astronomers in Toledo built such tables around <span class="num">1080</span>. From about <span class="num">1263</span> to <span class="num">1272</span>, Jewish astronomers updated them. They worked for Alfonso X, the king of Castile in Spain. Their original tables are lost. A Latin version was made in Paris in the <span class="num">1320</span>s. Abraham Zacuto's tables were printed in Portugal in <span class="num">1496</span>. They drew on the Paris tables and on astronomy written in Hebrew. They gave the sun's position for each day, which pilots needed.` }
           ]
         },
         {
@@ -208,7 +222,7 @@ module.exports = {
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
                 `An optional College Board example: the rivalry between Muslim and European powers in the Indian Ocean.`,
                 `An optional College Board example: the Moroccan conflict with the Songhai Empire. <a href="#r4-middle-east-pushback">Section 4</a> of this chapter tells it.`,
-                `<a href="#chapter-t4-4">Topic 4.4</a>: "Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants."`,
+                `<a href="#chapter-t4-4">Topic 4.4</a>: "Despite some disruption and restructuring due to the arrival of Portuguese ... merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants."`,
                 `An optional College Board example: Gujarati merchants.`
               ]
             } }
@@ -245,7 +259,7 @@ module.exports = {
           blocks: [
             { p: `The empire already ruled millions of Christians and Jews. Under an old rule of Islamic law, they were <span class="kt">protected subjects</span>. They could practice their religion. Their own leaders ran their marriages, inheritances and schools. Many also used the Islamic court when it helped them. The details differed by city and century.` },
             { p: `This was <span class="kt">accommodation</span>: making room for a group's differences. It was not equality. Christians and Jews paid a special tax called the <span class="kt">jizya</span>. In an Islamic court they generally could not testify (speak as a witness) against a Muslim. The top posts in the army and government went to Muslims.` },
-            { p: `The empire shaped these peoples, and they shaped it. The exiles brought printing. Christian and Jewish merchants carried much of the empire's trade.` }
+            { p: `The empire shaped these peoples, and they shaped it. The exiles brought printing. Christian and Jewish merchants carried much of the empire's trade. The state also took boys from Christian families, mostly in the Balkans. It raised them as Muslims to serve as soldiers and officials.` }
           ]
         },
         {
@@ -255,7 +269,7 @@ module.exports = {
             { p: `In the next century, <b>Kösem</b> governed as <span class="kt">regent</span>. A regent rules for a monarch who is too young to rule. Kösem ruled for her young son and later for her grandson.` },
             { p: `In the towns, ordinary women owned property. They went to court over inheritances, debts and divorces. Still, a daughter inherited only half what a son did. At the bottom, enslaved women served wealthy households as servants and concubines (enslaved partners). They had almost no control over their own lives.` },
             { p: `Enslaved people came from north of the Black Sea, from the Caucasus mountains, from wars and from Africa. African captives were carried north across the Sahara to the Mediterranean. Others went east across the Red Sea and the Indian Ocean to Arabia, Persia and India.` },
-            { p: `These trades were centuries old before 1500, and they went on through this period. <a href="#r4-sub-saharan-africa-slave-trade">The Sub-Saharan Africa chapter</a> tells them from Africa's side.` },
+            { p: `These trades were centuries old before 1500, and they went on through this period. Inside Africa, many enslaved people were also taken into households. <a href="#r4-sub-saharan-africa-slave-trade">The Sub-Saharan Africa chapter</a> tells them from Africa's side.` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
@@ -328,7 +342,7 @@ module.exports = {
           heading: 'New goods in old markets',
           blocks: [
             { p: `The Columbian Exchange reached these lands too. It was the movement of plants, animals and diseases between the Americas and the rest of the world. In the Americas, plantations (large farms) grew cash crops with forced labor. Cash crops are crops grown to sell. Most American sugar and tobacco went to Europe. Some reached the Middle East too.` },
-            { p: `Tobacco arrived in Ottoman cities around 1600, and Ottoman farmers soon grew their own. <span class="kt">Maize</span> (corn) also came from the Americas. Farmers began to grow it as a food crop in Ottoman lands such as the Balkans (southeastern Europe) and Egypt.` },
+            { p: `Tobacco arrived in Ottoman cities around 1600, and Ottoman farmers soon grew their own. <span class="kt">Maize</span> (corn) also came from the Americas. Farmers began to grow it as a food crop in Ottoman lands such as the Balkans (southeastern Europe) and Egypt. By the 1700s it was a staple (a main food) in parts of the Balkans. Farther east in Asia, the American sweet potato became a staple in parts of southern China.` },
             { note: {
               kind: 'cb',
               label: CB,
@@ -378,7 +392,7 @@ module.exports = {
       {
         category: 'Intellectual',
         title: 'Science from the Islamic world helped Europeans find their way at sea.',
-        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made tables of the sun, moon and planets around 1080, and Jewish astronomers updated them from about 1263 to 1272. Zacuto's tables (printed in Portugal in 1496) were based on that later version and gave pilots the sun's position for each day.`
+        body: `In the 1100s and 1200s, translators in Toledo turned Arabic science books into Latin. Muslim astronomers in Toledo made tables of the sun, moon and planets around 1080, and Jewish astronomers updated them from about 1263 to 1272. A Latin version was made in Paris in the 1320s. Zacuto's tables (printed in Portugal in 1496) drew on it and on astronomy written in Hebrew. They gave pilots the sun's position for each day.`
       },
       {
         category: 'Technological',

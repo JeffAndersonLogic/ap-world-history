@@ -125,7 +125,7 @@ window.BEHISTORICAL_TEACHING = {
         'A state belongs to its people. Which people? The nation',
         'The nation shares a language, a religion, customs and a homeland',
         'Governments use it: France calls the whole nation to war, 1793',
-        'Joins states: Italy 1861 (Rome 1870); Germany 1871, at Versailles',
+        'Joins states: Italy 1861 (Venetia 1866, Rome 1870); Germany 1871, at Versailles',
         'Bismarck, 1862: "iron and blood," not speeches; Frankfurt 1848 failed',
         'Pulls peoples away: Greece 1830; Serbia, Montenegro, Romania 1878',
         'Ottomanism: one loyalty, to the empire; it did not stop them leaving'
@@ -376,7 +376,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: 'Grievance', text: 'Britain, in debt after the Seven Years\' War, taxes the colonies: the Stamp Act, 1765.' },
           { label: 'Words', text: 'The Declaration of Independence, 4 July 1776.' },
-          { label: 'Chance', text: 'Britain is an ocean away, and since 1763 no French army next door to fear.' },
+          { label: 'Chance', text: 'Britain is an ocean away, and since 1763 no French army is next door.' },
           { label: 'Created', key: true, text: 'With French help from 1778, independence by 1783; a republic under a constitution written in 1787.' }
         ]
       },
@@ -394,7 +394,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.3.III.B: "Colonial subjects in the Americas led a series of rebellions inspired by democratic ideals. The American Revolution, and its successful establishment of a republic, the United States of America, was a model and inspiration for a number of the revolutions that followed."',
           'The picture is a real object: a pottery teapot painted "No Stamp Act," made in England between 1766 and 1775 for the American market. Metropolitan Museum of Art 27.232a, b, public domain. English potters sold protest goods to Americans; Parliament repealed the Stamp Act in 1766.',
           'Grievance: the Seven Years\' War (1756 to 1763) left Britain deep in debt; Parliament taxed the colonies with laws such as the Sugar Act (1764) and the Stamp Act (1765). The colonies had no members in Parliament: "no taxation without representation."',
-          'Chance: distance, and the end of the French threat. The Treaty of Paris of 1763 pushed France out of North America, so colonists no longer needed British troops to protect them, while Britain kept troops in America and taxed the colonists to pay for them. Created: the fighting began at Lexington and Concord in April 1775; the French alliance of February 1778 brought money, an army and a navy and helped the colonists win; the Treaty of Paris, 1783; the Constitution, signed 17 September 1787, a republic with an elected president and Congress. Avoid calling the 1778 alliance the chance that started the revolution: it came three years into the war.',
+          'Chance: distance, and the end of the French threat. The Treaty of Paris of 1763 gave Britain Canada and the land east of the Mississippi; France had already given Louisiana, west of the river, to Spain in 1762. With France gone from the east, many colonists felt they needed British troops less, while Britain kept about 10,000 troops in America and taxed the colonists to pay for them. Say "felt they needed them less", not "no longer needed them": Pontiac\'s War began in 1763. Created: the fighting began at Lexington and Concord in April 1775; the French alliance of February 1778 brought money, an army and a navy and helped the colonists win; the Treaty of Paris, 1783; the Constitution, signed 17 September 1787, a republic with an elected president and Congress. Avoid calling the 1778 alliance the chance that started the revolution: it came three years into the war.',
           'Limits, and say them: the republic kept slavery, and most states let only men with property vote.'
         ],
         ask: 'Which ingredient here is the grievance, and why is a teapot evidence of it?',
@@ -552,7 +552,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'Effects, the second half of the objective, and KC-5.3\'s chain of revolutions.',
-          'Louisiana: the BnF and recent scholarship link the failure of the 1802 expedition to the sale of Louisiana in 1803, alongside France\'s coming war with Britain. Get the order right: the sale was signed on 30 April 1803, while Leclerc\'s army was dying of yellow fever and before its final defeat at Vertières (18 November 1803); the Office of the Historian says the army "was being decimated by yellow fever." Not "because of Haiti alone": war with Britain was coming too.',
+          'Louisiana: the BnF and recent scholarship link the failure of the 1802 expedition to the sale of Louisiana in 1803, alongside France\'s coming war with Britain. Get the order right: the sale was signed on 30 April 1803, while Leclerc\'s army was dying of yellow fever and before its final defeat at Vertières (18 November 1803); the Office of the Historian says the army "was being decimated by yellow fever." Not "because of Haiti alone": war with Britain was coming too, and Napoleon needed money for it. Say these troubles "helped push him to sell".',
           'Recognition: the Office of the Historian, US Department of State: the United States recognized Haiti in 1862.',
           'The price: France\'s ordinance of 1825 set 150 million francs as the price of recognition; an 1838 treaty cut it to 90 million. Haiti paid off the indemnity by the 1880s, and loans taken to pay it ran into the twentieth century (BnF). Avoid "paid until 1947," which mixes the indemnity with later loans.',
           'Bolívar: slide 13. JSTOR Daily (citing W. F. Lewis, 1969): Pétion promised rifles, munitions, supplies, a printing press and men, on one condition, that Bolívar abolish slavery.'
@@ -792,14 +792,14 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Before', left: 'Several states, some ruled by Austria', right: 'More than thirty states' },
           { label: 'Led by', left: 'Cavour, Garibaldi, the kingdom of Piedmont', right: 'Bismarck and Prussia' },
           { label: 'How', left: 'Wars and uprisings, 1859 to 1860', right: 'Three wars, 1864 to 1871' },
-          { label: 'Result', left: 'Kingdom of Italy, 1861; Rome added, 1870', right: 'German Empire, 18 January 1871' }
+          { label: 'Result', left: 'Kingdom of Italy, 1861; Venetia, 1866; Rome, 1870', right: 'German Empire, 18 January 1871' }
         ]
       },
       notes: {
         minutes: 2,
         keys: [
           'Nationalists sought to unite fragmented regions',
-          'Italy: Piedmont, Cavour, Garibaldi; 1861, Rome 1870',
+          'Italy: Cavour, Garibaldi; 1861, Venetia 1866, Rome 1870',
           'Germany: Prussia, Bismarck, three wars; 1871',
           'Italy mixed uprisings and war; Germany from the top',
           '"Imagined": a nation is something people believe in'
@@ -965,7 +965,7 @@ window.BEHISTORICAL_TEACHING = {
           'The Skill Builder (Module 05) practices the CED\'s suggested skill, 3.C, compare the arguments of two sources. It models the comparison on the 1789 declaration and Toussaint\'s 1793 proclamation, the pair on slide 16, then has students choose a pair, the Declaration of Independence with the Letter from Jamaica or with the 1789 declaration, and write three sentences: each argument in their own words, one way the two agree and one way they differ, and what caused the difference. Circulate for the "because": the difference explained by what caused each document.',
           'Checkpoint 1 (Module 06), with no coach, is the diagnostic for Targets 1 and 2: one revolution\'s grievance, words and chance; what it created, and how it helped another revolution start or win, or was helped by one; and liberalism or democracy as a new idea about government. Give feedback in the room: on an alternating block nothing carries over.',
           'The Saint-Domingue Constitution (Module 09) puts students on the council in Port-Républicain in spring 1801, deciding how work on the land is organized and how the colony stands with France. Its reflection asks for one cause of the Haitian Revolution (a grievance, the words people claimed, or a chance to act), one effect in Saint-Domingue or beyond it, and how the council\'s choice could have changed what happened next: Learning Objective C on KC-5.3.III.B, run through Causation. It was chosen in the 2026-11-21 review because no other module makes students reason about the Haitian Revolution\'s causes and effects.',
-          'Checkpoint 2 (Module 10): draft, Socrates, revise. It assesses Target 3 (KC-5.3.II.ii and II.iii) and declares Causation. A strong answer explains the nation as shared language, religion, customs and homeland; names how a government used shared loyalty (France 1793; Ottomanism as an attempt to hold back nationalism); names a unification (Italy 1861 and 1870, or Germany 1871) and a people pulled away from the Ottoman Empire (Greece 1830, or Serbia, Montenegro and Romania 1878); and says how: nationalists wanted one state with borders to match the nation. The Ottoman Empire itself lasted to 1922; avoid "nationalism broke the Ottoman Empire apart" for this period. The revised answer in the box is what goes to Canvas; if it is not finished in class, it is homework.',
+          'Checkpoint 2 (Module 10): draft, Socrates, revise. It assesses Target 3 (KC-5.3.II.ii and II.iii) and declares Causation. A strong answer explains the nation as shared language, religion, customs and homeland; names how a government used shared loyalty (France 1793; Ottomanism as an attempt to hold back nationalism); names a unification (Italy 1861, with Venetia 1866 and Rome 1870, or Germany 1871) and a people pulled away from the Ottoman Empire (Greece 1830, or Serbia, Montenegro and Romania 1878); and says how: nationalists wanted one state with borders to match the nation. The Ottoman Empire itself lasted to 1922; avoid "nationalism broke the Ottoman Empire apart" for this period. The revised answer in the box is what goes to Canvas; if it is not finished in class, it is homework.',
           'Early finishers: the Evidence Lab (Module 07). Its six cards are three real objects (the "No Stamp Act" teapot, Thévenin\'s 1790 Bastille etching, the 1802 French print of Toussaint) and three verified excerpts (the Declaration of Independence, Toussaint\'s 1793 proclamation, and Bismarck\'s 1862 "iron and blood" remarks). For two cards, students say what kind of source it is, what it shows about a cause or an effect of the revolutions, and what it cannot tell them: the Toussaint print is a French printmaker\'s view, not a Haitian one. The Primary Source (Module 08, the Letter from Jamaica) is an extension.'
         ],
         ask: 'What caused the difference you found? And in Checkpoint 2, what is the cause, and what are its two effects?',

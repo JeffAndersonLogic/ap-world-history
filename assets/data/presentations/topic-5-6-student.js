@@ -170,7 +170,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "terms": [
           {
             "word": "Control of farming",
-            "note": "the state buys crops cheap and sells cotton abroad (long-staple cotton from 1820)"
+            "note": "the state buys crops cheap and sells cotton abroad (long-staple cotton from 1821)"
           },
           {
             "word": "Foreign machines",

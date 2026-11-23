@@ -215,7 +215,7 @@ module.exports = {
         {
           heading: 'Soap and margarine',
           blocks: [
-            { p: `In England, William Lever began selling Sunlight Soap in <span class="num">1884</span>, made with oils from tropical plants such as coconut and palm kernels. By <span class="num">1886</span> he had registered the Sunlight name in the United States, and from 1888 he built a factory town for his workers, Port Sunlight. In 1890 the business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. In the Netherlands, the Jurgens and Van den Bergh families of Oss turned butter trading into margarine factories and sold across the North Sea to England.` },
+            { p: `In England, William Lever began selling Sunlight Soap in <span class="num">1884</span>, made with oils from tropical plants such as coconut and palm kernels. In <span class="num">1886</span> he applied to register the Sunlight name as a trademark in the United States. It was registered in <span class="num">1887</span>. From 1888 he built a factory town for his workers, Port Sunlight. In 1890 the business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. In the Netherlands, the Jurgens and Van den Bergh families of Oss turned butter trading into margarine factories and sold across the North Sea to England.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the dates of Unilever',
@@ -290,7 +290,7 @@ module.exports = {
       {
         category: 'Continuity and Change',
         title: 'Business and goods',
-        body: `Evidence to sort: the VOC's shares (1602); the government's permission needed from 1720 to 1825; family partnerships; limited liability (laws of 1855 and 1856); France's laws (1863 and 1867); the railway share boom (mid-1840s); "The World's Exchanges" (1886); HSBC (1865); Sunlight Soap (1884), its U.S. trademark (1886), Port Sunlight (1888); Unilever (1929); cheaper cotton cloth; wrapped, branded soap; living standards rising little to the 1850s and faster after about 1860.`
+        body: `Evidence to sort: the VOC's shares (1602); the government's permission needed from 1720 to 1825; family partnerships; limited liability (laws of 1855 and 1856); France's laws (1863 and 1867); the railway share boom (mid-1840s); "The World's Exchanges" (1886); HSBC (1865); Sunlight Soap (1884), its U.S. trademark (filed 1886, registered 1887), Port Sunlight (1888); Unilever (1929); cheaper cotton cloth; wrapped, branded soap; living standards rising little to the 1850s and faster after about 1860.`
       },
       {
         category: 'Making Connections',

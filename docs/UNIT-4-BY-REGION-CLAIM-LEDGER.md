@@ -631,7 +631,7 @@ Middle East and Americas dates.
 - AC1. Middle East, story and Intellectual card: Zacuto's 1496 tables "were based on that later
   version" (the Castilian tables of 1263 to 1272); the Castilian original is lost, and Zacuto drew
   on the Parisian Alfonsine Tables of the 1320s and on Hebrew astronomy (Goldstein and Chabás,
-  Archive for History of Exact Sciences 72, 2018). PENDING.
+  Archive for History of Exact Sciences 72, 2018). **FIXED:** "Their original tables are lost. A Latin version was made in Paris in the 1320s. Abraham Zacuto's tables were printed in Portugal in 1496. They drew on the Paris tables and on astronomy written in Hebrew" (Goldstein and Chabás 2018); Intellectual card to match. The Europe chapter's story and card corrected the same way.
 - AC2. Americas: "Enslaved Africans ... brought foods such as okra and rice" settles a debate
   (Carney 2001; Eltis, Morgan and Richardson, AHR 2007); Topic 4.3 keeps the hedge ("often as food
   for the voyage"). **FIXED:** "African foods crossed on the same ships, often as food for the voyage. Among them were okra and rice. Enslaved people grew African foods in garden plots to feed themselves" (agrees with Topic 4.3).
@@ -656,11 +656,11 @@ Flynn and Giráldez; Afonso's letter (Thornton 2023, p. 203); East Asian and Afr
 figures.
 
 - AA1. Sub-Saharan Africa, section 02: "States that sold captives grew richer" is a flat rule the
-  chapter's own Kongo story (and the Argue it prompt) contradicts. PENDING.
+  chapter's own Kongo story (and the Argue it prompt) contradicts. **FIXED:** "Some states that sold captives grew richer. Others, such as Kongo, were later hurt by the trade."
 - AA2. Sub-Saharan Africa, Argue it and section 03: "The Atlantic trade made Asante strong" and
   "the trade built a state" give one cause as the whole; Asante grew from the Akan union under
   Osei Tutu and the Golden Stool, army reform, Feyiase and gold; the CED says trade "fostered the
-  growth". PENDING.
+  growth". **FIXED:** "Inland from the Gold Coast, trade helped a new state grow instead"; the Akan union under Osei Tutu, Okomfo Anokye and the Golden Stool, the army reform and gold taught; thesis "Asante grew strong through unity, a stronger army, gold and trade"; Argue it now begins "Trade with Europeans helped Asante grow strong" (move still Causation).
 - AA3. East Asia quotes KC-4.1.IV's "chartered European monopoly companies" and never says the
   Dutch at Hirado and Dejima were the VOC. **FIXED:** "They worked for the Dutch East India Company (VOC). The Dutch government had chartered it in 1602. The charter gave it a monopoly on Dutch trade in Asia."
 
@@ -703,3 +703,12 @@ past the unit. East Asia: KC-4.1.IV's Asian goods sold in Europe; KC-4.3.II.A.i'
 (Elmina 1482) and the profit of Macau's merchants and the crown (the Japan voyage as a crown
 concession, Boxer 1959); KC-4.2.III.B's economic elite; the Qing's end in 1912 marked as later.
 **FIXED.**
+
+**Pass 4 self-audit, the Middle East and Sub-Saharan Africa.** Middle East: KC-4.1.II's Asian
+knowledge (the compass, with Topic 4.8's hedge); KC-4.1.II.A's currents; KC-4.3.I.B's military
+contributions (the devshirme); KC-4.2.II.B's household slavery; KC-4.1.V.B's staples (maize in the
+Balkans, Stoianovich 1966; the sweet potato in southern China); KC-4.3.II.A.iii cut to its taught
+list items. Sub-Saharan Africa: the Saharan trade "to the Mediterranean"; KC-4.2.II's peasant
+agriculture clause and KC-4.3.II.A.iii's untaught list items cut; KC-4.1.V.B's staples (maize on
+the Gold Coast by about 1700, McCann); KC-4.1.IV.D.ii's Indigenous contribution (cassava flour in
+Brazil). **FIXED.**

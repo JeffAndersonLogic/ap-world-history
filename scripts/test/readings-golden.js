@@ -333,7 +333,28 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // reads ". From 1843 it got steam engines and machines from Britain, France and Belgium".
 // Against the blob 8863cbc4 only those sentences in 5.2, 5.6 and 5.8 changed; every other
 // Unit 5 reading is byte-for-byte unchanged.
-const APPROVED_UNIT5_REWRITE_BLOB = '2907e42bd901723acd847f016d9645536078f8a2';
+// 2026-11-23, Unit 5 by Region review pass 4 (docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md, AE1, AE3,
+// AD3, AD4, AG3 and AG4, carried to the topics). The only sentences that changed: in 5.2, "joined
+// most of it into one kingdom in 1861, and added Rome in 1870" (AE3) now reads "joined most of it
+// into one kingdom in 1861. Venetia was added in 1866, and Rome in 1870"; in 5.2, "Britain was an
+// ocean away, and its victory in 1763 had pushed France out of North America, so the colonists no
+// longer needed British soldiers to protect them from a French army next door" (AD4, AG3) now reads
+// "Britain was an ocean away. Its victory in 1763 took Canada and the land east of the Mississippi
+// River from France. With no French army next door, many colonists felt they needed British
+// soldiers less. Native American peoples did fight the British that same year, in Pontiac's War";
+// in 5.2, "In April 1803, with his army in Saint-Domingue dying of yellow fever and a new war with
+// Britain coming, Napoleon sold Louisiana to the United States" (AG4) now reads "In April 1803
+// Napoleon sold Louisiana to the United States. His army in Saint-Domingue was dying of yellow
+// fever. A new war with Britain was coming, and he needed money. These troubles helped push him to
+// sell"; in 5.6, "From 1820 a new crop, long-staple cotton (cotton with long fibers, which makes
+// strong, fine thread), earned a great deal of money" (AE1) now reads "From 1821 peasants grew a
+// new crop for sale: long-staple cotton. Its long fibers make strong, fine thread. Within a few
+// years it was Egypt's main export, and it earned a great deal of money"; in 5.7, "By 1886 he had
+// registered the Sunlight name in the United States, and from 1888" (AD3) now reads "In 1886 he
+// applied to register the Sunlight name as a trademark in the United States. It was registered in
+// 1887. From 1888". Against the blob 2907e42b only those sentences in 5.2, 5.6 and 5.7 changed;
+// every other Unit 5 reading is byte-for-byte unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = 'bd840abd7bbc2dbf27a431259f9ba8eb9401f54a';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

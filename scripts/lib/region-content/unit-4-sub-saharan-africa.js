@@ -82,6 +82,16 @@
  * quoted with " ... " to the parts this chapter teaches (foods brought by enslaved Africans;
  * mosquitoes and malaria), since the Americas chapter teaches the rest; the inland spread of
  * cassava and maize is marked as partly after this unit.
+ *
+ * Review pass 4 (2026-11-23, ledger AA1, AA2, and the pass 4 self-audit): states that sold
+ * captives no longer all "grew richer" (Kongo was later hurt); Asante now grows from the Akan
+ * union under Osei Tutu, Okomfo Anokye and the Golden Stool, army reform, gold and Feyiase, with
+ * trade helping (the CED's "fostered"), and the Argue it prompt says trade "helped". Self-audit:
+ * the Saharan trade reaches the Mediterranean; KC-4.2.II's untaught peasant-agriculture clause and
+ * KC-4.3.II.A.iii's Spanish and Dutch merchants and intra-Asian trade are cut with " ... " (East
+ * Asia, South and Southeast Asia teach them); cassava and maize are staples in some coastal areas by about 1700, with
+ * one sentence on staples in Europe and Asia for KC-4.1.V.B; and one sentence on Indigenous
+ * Americans teaching cassava flour, for KC-4.1.IV.D.ii's "all parties contributing".
  */
 
 const CB = 'What the College Board says';
@@ -198,7 +208,7 @@ module.exports = {
           blocks: [
             { p: `Many African societies had slavery long before 1450. Enslaved people were often war captives. Many were taken into households, where they worked, served or married. Over time, they or their children could become part of the family. Historians call this <span class="kt">household slavery</span>.` },
             { p: `That does not make it gentle. Enslaved people could still be sold. Slavery also differed from one society to the next. In some places, slave status passed from parent to child for generations. Songhai's rulers put captives to work on large farms.` },
-            { p: `Older trades in people went on too. Captives were carried north across the Sahara. Others were carried east across the Red Sea and the Indian Ocean. These trades were centuries old. <a href="#r4-middle-east-peoples">The Middle East chapter</a> tells more about them.` }
+            { p: `Older trades in people went on too. Captives were carried north across the Sahara to the Mediterranean. Others were carried east across the Red Sea and the Indian Ocean. These trades were centuries old. <a href="#r4-middle-east-peoples">The Middle East chapter</a> tells more about them.` }
           ]
         },
         {
@@ -215,7 +225,7 @@ module.exports = {
           heading: 'What the trade did to the people who stayed',
           blocks: [
             { p: `About two of every three captives carried across the Atlantic were male. European buyers paid more for young men. African sellers often kept women and children, whom African buyers valued. Historians estimate that this left parts of Africa with more women than men, especially West Central Africa.` },
-            { p: `Historians argue that this changed family life there. In their view, women did more of the farming, and more women and girls were enslaved inside Africa. Some argue that more men took several wives. This is called <span class="kt">polygyny</span>. Others find that evidence thin. Some regions lost people. States that sold captives grew richer.` },
+            { p: `Historians argue that this changed family life there. In their view, women did more of the farming, and more women and girls were enslaved inside Africa. Some argue that more men took several wives. This is called <span class="kt">polygyny</span>. Others find that evidence thin. Some regions lost people. Some states that sold captives grew richer. Others, such as Kongo, were later hurt by the trade.` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
@@ -229,7 +239,7 @@ module.exports = {
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes."`,
                 `<a href="#chapter-t4-8">Topic 4.8</a>: "Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes."`,
-                `<a href="#chapter-t4-8">Topic 4.8</a>: "Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified."`,
+                `<a href="#chapter-t4-8">Topic 4.8</a>: "... plantations expanded, and the Atlantic slave trade developed and intensified."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons."`
               ]
@@ -252,7 +262,7 @@ module.exports = {
       name: 'Kingdoms Rise, Fall and Resist',
       navLabel: 'Rivals and resisters',
       dates: 'c. 1590 to 1750 &nbsp;·&nbsp; Songhai, Njinga, Asante, Oman',
-      thesis: `Songhai fell to Morocco but fought on. Njinga fought Portugal for some thirty years, and Asante grew strong through gold and guns. On the east coast, Oman drove the Portuguese from most of the Swahili towns.`,
+      thesis: `Songhai fell to Morocco but fought on. Njinga fought Portugal for some thirty years. Asante grew strong through unity, a stronger army, gold and trade. On the east coast, Oman drove the Portuguese from most of the Swahili towns.`,
       parts: [
         {
           heading: 'Songhai against Morocco',
@@ -278,7 +288,7 @@ module.exports = {
           heading: 'Kongo weakens, Asante rises',
           blocks: [
             { p: `In Kongo, the trade that had made the king stronger began to hurt the kingdom. Kongo fought civil wars in the 1600s. The historian Linda Heywood argues that the wars broke down the protection of free-born Kongo people. Far more were sold abroad.` },
-            { p: `Inland from the Gold Coast, the trade built a state instead. Around <span class="num">1700</span>, several Akan states joined under one ruler to form the forest kingdom of <b>Asante</b>. Its ruler was called the Asantehene. Asante controlled gold. It bought guns from Dutch and English traders and paid partly with war captives.` },
+            { p: `Inland from the Gold Coast, trade helped a new state grow instead. Around <span class="num">1700</span>, several Akan states joined under one ruler, <b>Osei Tutu</b>. Together they formed the forest kingdom of <b>Asante</b>. Its ruler was called the Asantehene. Okomfo Anokye was a priest who advised Osei Tutu. He gave the union a symbol: the Golden Stool. Asante tradition holds that the stool carries the soul of the whole nation. Osei Tutu also reorganized the army. Asante controlled gold. It bought guns from Dutch and English traders and paid partly with war captives.` },
             { p: `In <span class="num">1701</span> Asante defeated Denkyira at <b>Feyiase</b>. Denkyira had been the leading power in the region. By <span class="num">1750</span>, Asante had become the region's main power.` }
           ]
         },
@@ -292,14 +302,14 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Fights over trade led to wars, trade made some African states stronger, and the Indian Ocean trade kept going.`,
+                `In short: Fights over trade led to wars, trade helped some African states grow stronger, and the Indian Ocean trade kept going.`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Economic disputes led to rivalries and conflict between states."`,
                 `An optional College Board example: Morocco's conflict with the Songhai Empire.`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British."`,
                 `<a href="#chapter-t4-6">Topic 4.6</a>: "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."`,
                 `An optional College Board example: Ana Nzinga's resistance as ruler of Ndongo and Matamba.`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence."`,
-                `<a href="#chapter-t4-4">Topic 4.4</a>: "Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants."`,
+                `<a href="#chapter-t4-4">Topic 4.4</a>: "Despite some disruption and restructuring due to the arrival of Portuguese ... merchants, existing trade networks in the Indian Ocean continued to flourish and included ... Asian merchants."`,
                 `An optional College Board example: Swahili Arab and Omani merchants in the Indian Ocean.`
               ]
             } }
@@ -326,7 +336,7 @@ module.exports = {
         {
           heading: 'American crops in Africa',
           blocks: [
-            { p: `Portuguese traders brought <span class="kt">cassava</span> (an American root crop) from Brazil to the mouth of the Congo River. <b>Maize</b> (corn) also came from the Americas. By the 1600s both grew on the West and West Central African coasts, especially in Kongo and Angola. Over the next two centuries, partly after this unit ends, they spread inland.` },
+            { p: `Portuguese traders brought <span class="kt">cassava</span> (an American root crop) from Brazil to the mouth of the Congo River. <b>Maize</b> (corn) also came from the Americas. By the 1600s both grew on the West and West Central African coasts, especially in Kongo and Angola. By about <span class="num">1700</span> they were staple foods (main foods) in some coastal areas. Over the next two centuries, partly after this unit ends, they spread inland. American crops also became staple foods in parts of Europe and Asia. Examples are maize in southern Europe and sweet potatoes in southern China.` },
             { p: `Cassava grows in poor soil and survives drought and locusts. It can stay in the ground until people need it. Where farmers grew these crops, people ate better. But the crops also helped the slave trade. Maize and cassava fed the captives on slave ships.` }
           ]
         },
@@ -341,6 +351,7 @@ module.exports = {
           heading: 'A mixed Atlantic world',
           blocks: [
             { p: `In the Americas, Africans, Indigenous Americans and Europeans lived side by side, usually because some were forced to. Their cultures mixed. New <span class="kt">creole languages</span> grew up, such as Haitian Creole and Papiamentu. Most of their words came from a European language. Much of their grammar and sound shows the influence of African languages. Exactly how they formed is still debated.` },
+            { p: `Indigenous Americans added to the mix too. In Brazil, settlers and enslaved Africans learned from them how to make flour from cassava.` },
             { p: `Faith mixed too. In the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built <b>Vodou</b>. It joined West and Central African religions with Catholic saints. A faith that blends parts of different religions is called <span class="kt">syncretic</span>.` },
             { p: `Kongo's Christianity crossed the ocean with its people. In <span class="num">1739</span> enslaved people rose up at Stono, in South Carolina. A report written that year said some of the colony's enslaved people came from "the Kingdom of Angola" and spoke Portuguese. Historians read that as Kongo. So several of the rebels probably came from Kongo. <a href="#r4-americas-resistance">The Americas chapter</a> tells that revolt.` },
             { note: {
@@ -379,7 +390,7 @@ module.exports = {
     intro: `The same story, sorted into its six sides for review.`,
     argue: {
       move: 'Causation',
-      prompt: `The Atlantic trade made Asante strong. In Kongo, the same trade first made the king stronger, then hurt the kingdom. Explain why the trade had such different effects. Use evidence about each kingdom from this chapter.`
+      prompt: `Trade with Europeans helped Asante grow strong. In Kongo, the same trade first made the king stronger, then hurt the kingdom. Explain why the trade had such different effects in the two kingdoms. Use evidence about each kingdom from this chapter.`
     },
     pairs: [
       {

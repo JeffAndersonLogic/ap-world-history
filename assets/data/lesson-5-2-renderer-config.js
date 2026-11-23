@@ -66,7 +66,7 @@
     key: [
       { label: "The four revolutions", detail: "The United States (1775 to 1783), France (1789 to 1799), Haiti (1791 to 1804), and Spanish America (1810 to 1826). In each, a grievance, the words of a document, and a chance to act came together." },
       { label: "The numbered arrows", detail: "Each arrow runs from one revolution to another, and its label names what traveled between them. Arrow 1 runs from the United States to France, arrow 2 from France to Haiti, and arrow 3 from Haiti to Spanish America. One link is not drawn: Napoleon's invasion of Spain in 1808 left Spanish America with no king to obey." },
-      { label: "New nations in Europe", detail: "Nationalism joined Italy (1861, with Rome added in 1870) and Germany (1871) together, and pulled the Balkans away from the Ottoman Empire: Greece was declared independent in 1830, and Serbia, Montenegro, and Romania in 1878." },
+      { label: "New nations in Europe", detail: "Nationalism joined Italy (1861, with Venetia added in 1866 and Rome in 1870) and Germany (1871) together, and pulled the Balkans away from the Ottoman Empire: Greece was declared independent in 1830, and Serbia, Montenegro, and Romania in 1878." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. Read the dates from earliest to latest to see the chain of revolutions, then the new nations that followed." }
     ]
   };

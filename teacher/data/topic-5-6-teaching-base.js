@@ -102,7 +102,7 @@ window.BEHISTORICAL_TEACHING = {
         '1798: Napoleon\'s army easily beats Egypt\'s rulers, the Mamluks',
         'Muhammad Ali: Ottoman officer, Albanian family; governor 1805, rules alone 1811',
         'His aim: hold Egypt for his family, even against the sultan, with an army like Napoleon\'s',
-        'A state monopoly: buy crops cheap, sell cotton abroad (long-staple cotton from 1820)',
+        'A state monopoly: buy crops cheap, sell cotton abroad (long-staple cotton from 1821)',
         'From 1819, factories with European machines and experts; British cloth limited',
         'Early 1830s: about 30 cotton mills, about 30,000 drafted workers',
         'Peasants drafted into the army from 1822: about 130,000 soldiers. The peasants paid'
@@ -405,7 +405,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Who paid in the end? Egypt\'s peasants, with their crops and their labor.',
       template: {
         terms: [
-          { word: 'Control of farming', note: 'the state buys crops cheap and sells cotton abroad (long-staple cotton from 1820)' },
+          { word: 'Control of farming', note: 'the state buys crops cheap and sells cotton abroad (long-staple cotton from 1821)' },
           { word: 'Foreign machines', note: 'European machines and experts; drafted workers; British cloth limited' }
         ],
         result: { word: 'Factories for an army', note: 'by the early 1830s, about 30 cotton mills with about 30,000 workers, and an army of about 130,000' }
@@ -422,7 +422,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'KC-5.1.V.C, with the CED\'s example: "Muhammad Ali\'s development of a cotton textile industry in Egypt."',
-          'Control of farming: "the peasants were told what crops to plant ... The government bought directly from the peasants and sold directly to the buyer" (LoC Country Study). Panza and Williamson (Economic History Review, 2015): "the state purchased agricultural commodities (cotton and wheat) at low prices." A monopoly: one buyer. Long-staple cotton was introduced in 1820 (Roger Owen, British Academy).',
+          'Control of farming: "the peasants were told what crops to plant ... The government bought directly from the peasants and sold directly to the buyer" (LoC Country Study). Panza and Williamson (Economic History Review, 2015): "the state purchased agricultural commodities (cotton and wheat) at low prices." A monopoly: one buyer. Long-staple cotton: 1820 was a trial of a few bales; peasants first grew it for sale in 1821, when 944 qantars were exported, and 222,070 qantars went abroad in 1824, so within a few years it was Egypt\'s main export (Roger Owen, British Academy, dates its introduction to 1820; Ahmeti and Rizaj, Journal of European Economic History, 2024; ALCOTEXA). Say "grown for sale from 1821", not "from 1820".',
           'Factories: Joel Beinin (MERIP, 1981): "Beginning in 1819 his regime built European style factories," with textiles "the leading element"; "By the early 1830s 30 cotton mills were in operation with a labor force of 30,000." The Country Study: "Workers were drafted into factories to weave on government looms," with "foreign advisers and imported machinery," protected by embargoes on "cheap British textiles." Say "limited", not "kept out": the protection came through his control of Egypt\'s trade, not a total ban. Many mills made cloth for army uniforms (OER Project).',
           'The army: Khaled Fahmy (International Review of Social History, 1998): the first order to draft Egyptian peasants came in early 1822, and the army reached "130,000 troops less than ten years later." He writes that the schools, factories and hospitals "were all founded to serve it."'
         ],

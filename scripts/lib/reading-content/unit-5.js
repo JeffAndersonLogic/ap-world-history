@@ -588,7 +588,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The chance.</strong> Britain was an ocean away, and its victory in 1763 had pushed France out of North America, so the colonists no longer needed British soldiers to protect them from a French army next door. Once the fighting began in 1775, France joined the war on the American side in 1778, which helped the colonists win."
+            "html": "<strong>The chance.</strong> Britain was an ocean away. Its victory in 1763 took Canada and the land east of the Mississippi River from France. With no French army next door, many colonists felt they needed British soldiers less. Native American peoples did fight the British that same year, in Pontiac's War. Once the fighting began in 1775, France joined the war on the American side in 1778, which helped the colonists win."
           },
           {
             "type": "p",
@@ -650,7 +650,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>What it created.</strong> On 1 January 1804 Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, and the first founded by people who had freed themselves from slavery. Its effects reached far. In April 1803, with his army in Saint-Domingue dying of yellow fever and a new war with Britain coming, Napoleon sold Louisiana to the United States. Countries that allowed slavery feared Haiti; the United States did not recognize it until 1862, and in 1825 France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence."
+            "html": "<strong>What it created.</strong> On 1 January 1804 Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, and the first founded by people who had freed themselves from slavery. Its effects reached far. In April 1803 Napoleon sold Louisiana to the United States. His army in Saint-Domingue was dying of yellow fever. A new war with Britain was coming, and he needed money. These troubles helped push him to sell. Countries that allowed slavery feared Haiti; the United States did not recognize it until 1862, and in 1825 France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence."
           }
         ],
         "callout": {
@@ -715,7 +715,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Through the 1800s, people who saw themselves as one nation wanted one state, with borders to match. Sometimes that meant <span class=\"kt\">unification</span>: joining many small states into one. Italy was split into several states. Italian nationalists, among them the statesman Count Cavour and the soldier Giuseppe Garibaldi, joined most of it into one kingdom in 1861, and added Rome in 1870. Germany was split into more than thirty states. In 1848, German liberals met in Frankfurt to unite Germany with an elected parliament and a constitution, and failed. Then Otto von Bismarck, the chief minister of Prussia, told Prussia's lawmakers in 1862 that the great questions of the time are not decided \"by speeches and majority resolutions,\" which had been \"the big mistake of 1848 and 1849,\" but \"by iron and blood.\" After three wars, the German Empire was proclaimed on 18 January 1871, in the Hall of Mirrors at Versailles, the palace Louis XIV built."
+            "html": "Through the 1800s, people who saw themselves as one nation wanted one state, with borders to match. Sometimes that meant <span class=\"kt\">unification</span>: joining many small states into one. Italy was split into several states. Italian nationalists, among them the statesman Count Cavour and the soldier Giuseppe Garibaldi, joined most of it into one kingdom in 1861. Venetia was added in 1866, and Rome in 1870. Germany was split into more than thirty states. In 1848, German liberals met in Frankfurt to unite Germany with an elected parliament and a constitution, and failed. Then Otto von Bismarck, the chief minister of Prussia, told Prussia's lawmakers in 1862 that the great questions of the time are not decided \"by speeches and majority resolutions,\" which had been \"the big mistake of 1848 and 1849,\" but \"by iron and blood.\" After three wars, the German Empire was proclaimed on 18 January 1871, in the Hall of Mirrors at Versailles, the palace Louis XIV built."
           },
           {
             "type": "p",
@@ -1571,7 +1571,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. From 1820 a new crop, long-staple cotton (cotton with long fibers, which makes strong, fine thread), earned a great deal of money."
+            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. From 1821 peasants grew a new crop for sale: long-staple cotton. Its long fibers make strong, fine thread. Within a few years it was Egypt's main export, and it earned a great deal of money."
           },
           {
             "type": "p",
@@ -1884,7 +1884,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Soap and margarine.</strong> In England, William Lever began selling Sunlight Soap in 1884, made with oils from tropical plants such as coconut and palm kernels. By 1886 he had registered the Sunlight name in the United States, and from 1888 he built a factory town for his workers, Port Sunlight. To pay for growth, in 1890 the business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. Across the North Sea, in the Netherlands, the Jurgens and Van den Bergh families turned butter trading into margarine factories and sold to England."
+            "html": "<strong>Soap and margarine.</strong> In England, William Lever began selling Sunlight Soap in 1884, made with oils from tropical plants such as coconut and palm kernels. In 1886 he applied to register the Sunlight name as a trademark in the United States. It was registered in 1887. From 1888 he built a factory town for his workers, Port Sunlight. To pay for growth, in 1890 the business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. Across the North Sea, in the Netherlands, the Jurgens and Van den Bergh families turned butter trading into margarine factories and sold to England."
           },
           {
             "type": "p",

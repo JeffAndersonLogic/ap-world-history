@@ -157,7 +157,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Chance",
-            "text": "Britain is an ocean away, and since 1763 no French army next door to fear."
+            "text": "Britain is an ocean away, and since 1763 no French army is next door."
           },
           {
             "label": "Created",
@@ -537,7 +537,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Result",
-            "left": "Kingdom of Italy, 1861; Rome added, 1870",
+            "left": "Kingdom of Italy, 1861; Venetia, 1866; Rome, 1870",
             "right": "German Empire, 18 January 1871"
           }
         ]

@@ -884,15 +884,15 @@ White on coal; Feinstein; Riis; Manchester 1773; Britain's and the Americas' dat
 
 - AD1. Britain, section 02 box: the pass 3 cut of KC-5.1.IV removes "in interior regions globally",
   the point of the Key Concept, so the cut changes its meaning; Britain teaches no interior.
-  (Supersedes the pass 3 narrowing, U7.) PENDING.
+  (Supersedes the pass 3 narrowing, U7.) **FIXED** by dropping KC-5.1.IV and its quotation from Britain (Europe, the Americas and South and Southeast Asia claim, quote whole and teach it); the 1830 railway, the crossings and the 1866 cable stay in the story.
 - AD2. Americas claims KC-5.1.II.B (US and European share rising during the first industrial
   revolution; Asian and Middle Eastern shares falling) and teaches neither part; its only share
-  claim is for 1900. PENDING.
+  claim is for 1900. **FIXED** by dropping KC-5.1.II.B from the Americas (Britain and South and Southeast Asia claim and teach it).
 - AD3. Britain: "By 1886 he had registered the Sunlight name in the United States"; filed 2 August
-  1886, registered 24 May 1887 (USPTO Reg. No. 0014441, via Justia). Same in Topic 5.7. PENDING.
+  1886, registered 24 May 1887 (USPTO Reg. No. 0014441, via Justia). Same in Topic 5.7. **FIXED:** "In 1886 he applied to register the Sunlight name in the United States, and it was registered in 1887." Topic 5.7 fixed to match.
 - AD4. Americas: after 1763 "the colonists no longer needed British soldiers to guard them" states
   an interpretation as fact; Pontiac's War began in 1763 and Britain kept about 10,000 troops.
-  Same in Topic 5.2. PENDING.
+  Same in Topic 5.2. **FIXED:** "With France gone as a nearby threat, many colonists felt less need for British soldiers to guard them." Topic 5.2 fixed to match.
 
 **Reviewer AF (history: East Asia, South and Southeast Asia), 1 finding; East Asia has none.**
 Verified sound: all CED quotations and labels (by script, with a negative control); claims lines;
@@ -909,14 +909,14 @@ telegraph before and after 1870; Meiji, Qing and Indian dates.
 
 - AG1c. Americas quotes KC-5.1.I.B (internal combustion engine; fossil fuels revolution), KC-5.1.IV
   (the telegraph) and KC-5.1.VI.C (pollution, poverty, crime, public health, infrastructure)
-  whole, and teaches only part of each. PENDING.
+  whole, and teaches only part of each. KC-5.1.I.B and KC-5.1.VI.C **FIXED** by dropping them from the Americas (Britain teaches both); KC-5.1.IV **FIXED** by teaching it whole: the 1861 transcontinental telegraph and Powell's 1869 expedition, sent west by train to Green River (USGS).
 - AG1e. Europe quotes KC-5.3.I.C ("Enlightenment ideas and religious ideals influenced various
   reform movements") and ties no reform to either. **FIXED** by teaching it (Europe is the only chapter that teaches the end of serfdom): liberal demands "grew from Enlightenment ideas, such as natural rights and the separation of powers"; the Quaker founders of the 1787 society, with a link phrase to the Britain chapter.
 - AG3. Americas: "Its win in 1763 had pushed France out of North America" against the same
   chapter's Louisiana sale of 1803; France lost Canada and the land east of the Mississippi.
-  PENDING.
+  **FIXED:** "Its win in 1763 had taken Canada and the land east of the Mississippi River from France."
 - AG4. Americas: "So he sold Louisiana" gives Saint-Domingue's loss and the coming war as the whole
-  cause. PENDING.
+  cause. **FIXED:** "In 1800 Spain had agreed to give Louisiana ... back to France ... Partly for these reasons, he sold Louisiana to the United States."
 - AG5. East Asia's tariffs "only in 1911" and the Middle East's parliament "did not meet again
   until 1908" are not marked as after the unit. **FIXED:** "until 1908, after this unit ends"; "only in 1911, after this unit ends".
 
@@ -929,3 +929,10 @@ rising Western share and India's fall, by link phrases. East Asia: KC-5.1.II.B's
 1874 Qing loan, the first public loan) and other transnational businesses; KC-5.1.I.D's spread.
 South and Southeast Asia: KC-5.1.II.B's rising Western share; KC-5.1.IV's increased trade taught
 and "exploration" cut as a list item; the 1901 census marked as just after the unit. **FIXED.**
+
+**Pass 4 self-audit, Britain and the Americas.** Britain: KC-5.1.II.B's US share (7 percent by
+1860, Bairoch); KC-5.1's availability and variety; KC-5.1.V.A's hours and conditions; KC-5.3.I.C
+tied to the Enlightenment (Wollstonecraft's trust in reason) and quoted whole with a linked
+sentence on serfdom's end in Europe. Americas: KC-5.3.I.C's expanded suffrage (the 1870 amendment
+and the Southern laws of the 1890s) and the same linked serfdom sentence; KC-5.1.I.D cut to its
+taught list item. All facts after 1900 marked. **FIXED.**

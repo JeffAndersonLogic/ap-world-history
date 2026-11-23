@@ -7,8 +7,7 @@
  * (KC-5.3.III.B), Spanish America, Mexico, Brazil and Bolívar's letter (KC-5.3.III.B, KC-5.3.I.B,
  * KC-5.3.IV.A.i), the words pressed further by abolition and Seneca Falls (KC-5.3.I.C,
  * KC-5.3.IV.B), and industry in the United States with its mills, oil, railroads, steel,
- * migrants, tenements and unions (KC-5.1.I.D, KC-5.1.I.C, KC-5.1.I.B, KC-5.1.I.E, KC-5.1.II.B,
- * KC-5.1.IV, KC-5.1.V.A, KC-5.1.VI.C). Facts come from the Topic 5.1, 5.2, 5.3, 5.4, 5.5, 5.7 and
+ * migrants, tenements and unions (KC-5.1.I.D, KC-5.1.I.C, KC-5.1.I.E, KC-5.1.IV, KC-5.1.V.A). Facts come from the Topic 5.1, 5.2, 5.3, 5.4, 5.5, 5.7 and
  * 5.8 chapters and their claim ledgers, and from the reviewed rebuild of 5.9 (Riis, Manhattan's
  * population), keeping their narrowings (France did not give Haiti its freedom; the 1791 rising
  * not caused by the 1789 declaration; France freed people in 1793 to win them as soldiers;
@@ -37,6 +36,22 @@
  * electricity, which this chapter teaches, and KC-5.3.I.A quoted for its second sentence only (the
  * Europe chapter teaches the whole); the 1914 migration count and the 1913 wheat gap marked as
  * running past the unit.
+ *
+ * Review pass 4 (2026-11-23, findings AD2, AD4, AG1c, AG3, AG4, and the self-audit): KC-5.1.I.B
+ * (the Britain and Europe chapters teach the internal combustion engine), KC-5.1.II.B (Britain and
+ * South and Southeast Asia teach both halves) and KC-5.1.VI.C (Britain teaches every named
+ * problem) are no longer claimed or quoted here; the oil, coal and tenement facts stay in the
+ * story. KC-5.1.IV is quoted whole and taught whole: the telegraph line to California (October
+ * 1861) and Powell's 1869 expedition, whose boats went west on the new Union Pacific to Green
+ * River (USGS, "150th Anniversary of the 1869 Powell Expedition"). The 1763 treaty took Canada and
+ * the land east of the Mississippi from France (France had given Louisiana to Spain in 1762, got it
+ * back by the treaty of 1800, and sold it in 1803), and colonists "felt less need" for British
+ * troops (Pontiac's War began in 1763). Louisiana was sold "partly" for the Saint-Domingue and war
+ * reasons. Self-audit: KC-5.3.I.C's "expanded suffrage" is taught by the Fifteenth Amendment
+ * (1870), with the Southern laws of the 1890s that limited it, and the whole quotation is kept,
+ * with one linked sentence on the end of serfdom in Europe (the Europe chapter's section 03);
+ * KC-5.1.I.D is cut to the United States, a list item (the Europe and East
+ * Asia chapters teach the others).
  */
 
 const CB = 'What the College Board says';
@@ -64,14 +79,11 @@ module.exports = {
     'KC-5.3.III.B',
     'KC-5.3.IV.A.i',
     'KC-5.3.IV.B',
-    'KC-5.1.I.B',
     'KC-5.1.I.C',
     'KC-5.1.I.D',
     'KC-5.1.I.E',
-    'KC-5.1.II.B',
     'KC-5.1.IV',
-    'KC-5.1.V.A',
-    'KC-5.1.VI.C'
+    'KC-5.1.V.A'
   ],
 
   empires: [
@@ -102,7 +114,7 @@ module.exports = {
           heading: 'The words and the chance',
           blocks: [
             { p: `On 4 July <span class="num">1776</span> the Continental Congress (the meeting of the colonies' leaders) adopted the Declaration of Independence. It said that "all men are created equal." It said governments get "their just powers from the consent of the governed." And when a government destroys people's rights, "it is the Right of the People to alter or to abolish it."` },
-            { p: `The chance came next. Britain was an ocean away. Its win in 1763 had pushed France out of North America, so the colonists no longer needed British soldiers to guard them. In <span class="num">1778</span> France joined the war on the American side. France was Britain's old rival. <a href="#r5-europe-france">The Europe chapter</a> tells how that war's cost helped bring revolution to France.` },
+            { p: `The chance came next. Britain was an ocean away. Its win in 1763 had taken Canada and the land east of the Mississippi River from France. With France gone as a nearby threat, many colonists felt less need for British soldiers to guard them. In <span class="num">1778</span> France joined the war on the American side. France was Britain's old rival. <a href="#r5-europe-france">The Europe chapter</a> tells how that war's cost helped bring revolution to France.` },
             { p: `By <span class="num">1783</span> Britain had recognized the United States. That means it accepted the country as independent. In <span class="num">1787</span> the new country wrote a <span class="kt">constitution</span> (a set of basic laws) for a <span class="kt">republic</span>. A republic is a country with no king, whose leaders are elected (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { p: `Other revolutions later looked to the American one as a model. But it was also limited. The republic kept slavery. Most states let only men who owned property vote.` },
             { note: {
@@ -178,7 +190,7 @@ module.exports = {
         {
           heading: 'What Haiti changed',
           blocks: [
-            { p: `Haiti's revolution reached far beyond the island. In <span class="num">1803</span> Napoleon's army in Saint-Domingue was dying of yellow fever, and a new war with Britain was coming. So he sold Louisiana to the United States.` },
+            { p: `Haiti's revolution reached far beyond the island. In <span class="num">1800</span> Spain had agreed to give Louisiana, west of the Mississippi, back to France. In <span class="num">1803</span> Napoleon's army in Saint-Domingue was dying of yellow fever, and a new war with Britain was coming. Partly for these reasons, he sold Louisiana to the United States.` },
             { p: `Countries that allowed slavery feared Haiti's example. The United States did not recognize Haiti until <span class="num">1862</span>. In <span class="num">1825</span> France demanded 150 million francs as the price of recognizing it. The sum was later cut to 90 million (<a href="#chapter-t5-2">Topic 5.2</a>).` },
             { note: {
               kind: 'cb',
@@ -268,7 +280,7 @@ module.exports = {
           heading: 'Slavery ends, country by country',
           blocks: [
             { p: `<span class="kt">Abolition</span> means ending slavery by law. It came slowly. Haiti's revolution had ended slavery there. Some new states ended it early: Chile in <span class="num">1823</span> and Mexico in <span class="num">1829</span>. Many kept it for decades.` },
-            { p: `Britain began ending slavery in its Caribbean colonies in <span class="num">1834</span>. France ended it in its colonies for good in <span class="num">1848</span>. Colombia ended it in <span class="num">1851</span>, and Venezuela and Peru in <span class="num">1854</span>. The United States ended it in <span class="num">1865</span>, after a civil war. Brazil was the last country in the Americas, in <span class="num">1888</span>.` },
+            { p: `Britain began ending slavery in its Caribbean colonies in <span class="num">1834</span>. France ended it in its colonies for good in <span class="num">1848</span>. Colombia ended it in <span class="num">1851</span>, and Venezuela and Peru in <span class="num">1854</span>. The United States ended it in <span class="num">1865</span>, after a civil war. In <span class="num">1870</span> a change to its Constitution barred states from denying a man the vote because of his race. In the 1890s, though, Southern states began passing laws to stop most Black men from voting. Brazil was the last country in the Americas, in <span class="num">1888</span>. In parts of Europe, other reforms ended serfdom, as <a href="#r5-europe-nations">the Europe chapter</a> tells.` },
             { p: `Many abolitionists drew on religious faith as well as Enlightenment ideas. The Quakers are one example. They were a Christian group whose members had come to see slavery as a sin (<a href="#chapter-t5-1">Topic 5.1</a>).` }
           ]
         },
@@ -320,7 +332,9 @@ module.exports = {
         {
           heading: 'Oil, rails, steel and power',
           blocks: [
-            { p: `In <span class="num">1859</span> Edwin Drake struck oil at Titusville, Pennsylvania. For the rest of the 1800s, most oil became <span class="kt">kerosene</span> (a fuel for lamps). Railroads had been reaching into the <span class="kt">interior</span> (the middle of the continent) since the 1840s. Chicago got its first line in <span class="num">1848</span>. In <span class="num">1869</span> the first railroad across the United States was finished at Promontory Summit, Utah. Now trains could cross the whole continent, to farms and mines that no boat could reach.` },
+            { p: `In <span class="num">1859</span> Edwin Drake struck oil at Titusville, Pennsylvania. For the rest of the 1800s, most oil became <span class="kt">kerosene</span> (a fuel for lamps).` },
+            { p: `Railroads had been reaching into the <span class="kt">interior</span> (the middle of the continent) since the 1840s. Chicago got its first line in <span class="num">1848</span>. In <span class="num">1861</span> a telegraph line first joined the East Coast to California. Messages now crossed the continent in minutes. In <span class="num">1869</span> the first railroad across the United States was finished at Promontory Summit, Utah. Now trains could cross the whole continent, to farms and mines that no boat could reach.` },
+            { p: `That same year, the explorer John Wesley Powell sent his boats west by train. From Green River, Wyoming, his team went down the rivers and explored the Grand Canyon.` },
             { p: `Coal and oil are called <span class="kt">fossil fuels</span>. Early American trains burned wood in their steam engines. By <span class="num">1880</span> coal made up more than 90 percent of the fuel American railroads burned. In <span class="num">1885</span> coal passed wood as the country's largest source of energy.` },
             { p: `After 1850 came new methods. Historians call this the second industrial revolution. <span class="kt">Steel</span> (iron with a small, measured amount of carbon) became cheap. Coal heated the furnaces that made it. The United States made about 69,000 tons of steel in <span class="num">1870</span> and about 10 million tons in <span class="num">1900</span>. In <span class="num">1882</span> Thomas Edison's Pearl Street Station in New York began selling electric power (<a href="#chapter-t5-5">Topic 5.5</a>).` },
             { p: `By <span class="num">1900</span> the United States made more of the world's manufactured goods than any other country.` }
@@ -349,15 +363,12 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: industry spread to the United States, bringing coal and oil, unions and crowded cities.`,
-                `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
+                `In short: industry spread to the United States, with factories, railroads, steel and unions.`,
+                `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to ... the United States ..."`,
                 `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: The College Board says the "second industrial revolution" "led to new methods in the production of steel ... electricity ... during the second half of the 19th century."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
-                `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions' share of global manufacturing during the first Industrial Revolution."`,
-                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society."`,
-                `<a href="#chapter-t5-9">Topic 5.9</a>: "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth."`
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society."`
               ]
             } }
           ]

@@ -391,7 +391,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "panels": [
           {
             "tag": "1886 · Warrington, England",
-            "text": "Lever registers **Sunlight** in the United States.",
+            "text": "Lever applies to register **Sunlight** in the United States.",
             "visual": {
               "url": "../assets/images/topics/5-7/lever-sunlight-self-washer-trademark-1886.jpg",
               "alt": "A yellowed United States trademark form headed Trade-Mark, Lever Bros., Soap for household and all other purposes, registered August 31, 1886, with a small printed label pasted in the middle reading Sunlight, the Self-Washer Tablet",

@@ -4,7 +4,7 @@
  * Unit 5 by region: Britain.
  * One continuous story of Britain from 1750 to 1900, told in five sections: why industry began
  * there (KC-5.1.I.A), the factory and the steam engine (KC-5.1.I.C, KC-5.1.I.B, with the railway
- * of KC-5.1.IV and Britain's rising share of KC-5.1.II.B), free trade and the new tools of
+ * and Britain's rising share of KC-5.1.II.B), free trade and the new tools of
  * business (KC-5.1.III.A, KC-5.1.III.B, KC-5.1), the two new classes, women's two lives and the
  * city that could not keep up (KC-5.1.VI.A to C), and the people who pressed for change:
  * abolitionists, Wollstonecraft, unions, Chartists, reformers, Owen and Marx (KC-5.3.I.C,
@@ -48,6 +48,17 @@
  * Topic 5.8's "one only roughly" and the vote for every man over 21 in 1918. KC-5.1.IV is quoted
  * without "in interior regions globally", which the Europe, Americas and South and Southeast Asia
  * chapters teach. The Labour Party's 1906 seats and Unilever (1929) are marked as after the unit.
+ *
+ * Review pass 4 (2026-11-23, findings AD1, AD3, and the self-audit): KC-5.1.IV is no longer
+ * claimed or quoted here (Britain teaches no interior region; the Europe, Americas and South and
+ * Southeast Asia chapters claim, quote and teach it), so the railway and the steamship stay in the
+ * story only. Lever applied for the US Sunlight trademark in 1886, and it was registered in 1887
+ * (USPTO Reg. No. 0014441, filed 2 August 1886, registered 24 May 1887). Self-audit: the United
+ * States' share of world manufacturing, about 7 percent by 1860 (Bairoch 1982, Tables 10 and 13,
+ * as reproduced in Kisangani's Table 2.1, University of Michigan Press), teaches the "and the U.S."
+ * of KC-5.1.II.B; goods "more plentiful and more varied" teaches KC-5.1; unions' aims teach
+ * KC-5.1.V.A; Wollstonecraft as an Enlightenment writer teaches KC-5.3.I.C, which is quoted
+ * whole, with one linked sentence on the end of serfdom in Europe (the Europe chapter's section 03).
  */
 
 const CB = 'What the College Board says';
@@ -75,7 +86,6 @@ module.exports = {
     'KC-5.1.III.A',
     'KC-5.1.III.B',
     'KC-5.1',
-    'KC-5.1.IV',
     'KC-5.1.V.A',
     'KC-5.1.V.D',
     'KC-5.1.VI.A',
@@ -191,7 +201,7 @@ module.exports = {
         {
           heading: 'The workshop of the world',
           blocks: [
-            { p: `Machines made goods faster and more cheaply than hands could. The historian Paul Bairoch estimated Britain's share of the world's manufactured goods. It rose from under 2 percent in <span class="num">1750</span> to about a fifth by <span class="num">1860</span> (<a href="#chapter-t5-4">Topic 5.4</a>). These are rough estimates, good for showing the size of the change.` },
+            { p: `Machines made goods faster and more cheaply than hands could. The historian Paul Bairoch estimated Britain's share of the world's manufactured goods. It rose from under 2 percent in <span class="num">1750</span> to about a fifth by <span class="num">1860</span> (<a href="#chapter-t5-4">Topic 5.4</a>). By his estimates, the share of the United States also rose, to about 7 percent by <span class="num">1860</span>. These are rough estimates, good for showing the size of the change.` },
             { p: `India and the Middle East kept making goods, but their shares of the world's total fell. By Bairoch's estimates, India's share fell from about a quarter in <span class="num">1750</span> to under 2 percent by <span class="num">1900</span>. <a href="#r5-south-southeast-asia-rails">The South and Southeast Asia chapter</a> tells that story.` },
             { p: `Until <span class="num">1824</span> Britain banned skilled textile workers from leaving the country. But the methods left anyway, as <a href="#r5-europe-industry">the Europe chapter</a> tells.` },
             { note: {
@@ -201,7 +211,6 @@ module.exports = {
                 `In short: factories and steam power made Britain the world's leading maker, while Asian and Middle Eastern makers kept working but lost share.`,
                 `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible ... which led to increased trade and migration."`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."`
               ]
             } }
@@ -251,13 +260,13 @@ module.exports = {
           blocks: [
             { p: `Most businesses belonged to a family or a few partners. If a partnership failed, each partner could lose his house to pay its debts. Railways cost far more than a family could pay. Every railway company needed its own act of Parliament. The act let it raise money from many investors and buy the land for its line, even from owners who refused to sell.` },
             { p: `Investors bought <span class="kt">shares</span>. A share is a small part of a company, and its owner gets part of the profits. People traded shares on the London <span class="kt">stock exchange</span> (a market for shares). A law of <span class="num">1855</span> gave larger companies <span class="kt">limited liability</span>: an owner could lose only the money he put in, not his house. From <span class="num">1856</span> almost any group of seven or more people could form such a company.` },
-            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. By <span class="num">1886</span> he had registered the Sunlight name in the United States. In the late 1890s his company, Lever Brothers, opened soap works in Australia and the United States. It had become <span class="kt">transnational</span>: it worked across the borders of many countries. In <span class="num">1929</span>, long after this unit ends, it joined Dutch firms to form Unilever.` }
+            { p: `In <span class="num">1884</span> William Lever began selling Sunlight Soap, made with oils from tropical plants. In <span class="num">1886</span> he applied to register the Sunlight name in the United States, and it was registered in <span class="num">1887</span>. In the late 1890s his company, Lever Brothers, opened soap works in Australia and the United States. It had become <span class="kt">transnational</span>: it worked across the borders of many countries. In <span class="num">1929</span>, long after this unit ends, it joined Dutch firms to form Unilever.` }
           ]
         },
         {
           heading: 'Cheaper goods, for some',
           blocks: [
-            { p: `Factory goods kept getting cheaper. But did working families live better? A family's <span class="kt">standard of living</span> is how well it lives. One careful estimate finds that working families' standard rose by less than 15 percent from the 1780s to the 1850s. Most historians agree it grew much faster from about <span class="num">1860</span> to <span class="num">1900</span>.` },
+            { p: `Machines kept improving, and factory goods grew cheaper, more plentiful and more varied. But did working families live better? A family's <span class="kt">standard of living</span> is how well it lives. One careful estimate finds that working families' standard rose by less than 15 percent from the 1780s to the 1850s. Most historians agree it grew much faster from about <span class="num">1860</span> to <span class="num">1900</span>.` },
             { note: {
               kind: 'cb',
               label: CB,
@@ -347,15 +356,15 @@ module.exports = {
         {
           heading: 'Abolition and women\'s rights',
           blocks: [
-            { p: `In <span class="num">1787</span> twelve men in London founded a society to end the slave trade. Nine were <span class="kt">Quakers</span> (members of a Christian group that had come to see slavery as a sin). Britain banned the slave trade in <span class="num">1807</span>. In <span class="num">1834</span> it began ending slavery in most of its empire, though freed people had to keep working for their former owners, unpaid, until <span class="num">1838</span> (<a href="#chapter-t5-1">Topic 5.1</a>).` },
-            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked mostly for education and independence. She also wrote, briefly, that women "ought to have representatives" in government. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` },
+            { p: `In <span class="num">1787</span> twelve men in London founded a society to end the slave trade. Nine were <span class="kt">Quakers</span> (members of a Christian group that had come to see slavery as a sin). Britain banned the slave trade in <span class="num">1807</span>. In <span class="num">1834</span> it began ending slavery in most of its empire, though freed people had to keep working for their former owners, unpaid, until <span class="num">1838</span> (<a href="#chapter-t5-1">Topic 5.1</a>). In parts of Europe, other reforms ended serfdom, as <a href="#r5-europe-nations">the Europe chapter</a> tells.` },
+            { p: `In <span class="num">1792</span> Mary Wollstonecraft published A Vindication of the Rights of Woman. Like other Enlightenment writers, she trusted reason. Women can reason, she argued, so they must be educated. "I do not wish them to have power over men; but over themselves," she wrote. She asked mostly for education and independence. She also wrote, briefly, that women "ought to have representatives" in government. Her book is early <span class="kt">feminism</span> (the belief that women should have equal rights).` },
             { p: `Later, British women asked for the vote themselves. In <span class="num">1866</span> John Stuart Mill presented their petition to Parliament. About 1,500 women had signed it. In <span class="num">1867</span> Mill asked Parliament to give women the vote, and it refused. From <span class="num">1869</span> some women who paid local taxes could vote in town elections.` }
           ]
         },
         {
           heading: 'Workers organize',
           blocks: [
-            { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> banned workers from joining together to demand higher wages. Parliament repealed them in <span class="num">1824</span>, but a law of <span class="num">1825</span> limited what workers' groups could do. By the 1850s skilled workers had built lasting national <span class="kt">labor unions</span> (groups of workers who bargain with employers together).` },
+            { p: `Laws of <span class="num">1799</span> and <span class="num">1800</span> banned workers from joining together to demand higher wages. Parliament repealed them in <span class="num">1824</span>, but a law of <span class="num">1825</span> limited what workers' groups could do. By the 1850s skilled workers had built lasting national <span class="kt">labor unions</span> (groups of workers who bargain with employers together). They pressed for higher wages, shorter hours and better working conditions.` },
             { p: `Workers also wanted <span class="kt">suffrage</span> (the right to vote). In <span class="num">1838</span> the <span class="kt">Chartists</span> demanded a vote for every man over 21 and a secret ballot. Parliament rejected their petitions, but five of their six points later became law, one only roughly. Every man over 21 got the vote only in <span class="num">1918</span>, after this unit ends. In <span class="num">1900</span> unions and socialists formed a committee to elect workers to Parliament. In <span class="num">1906</span>, after this unit ends, it won 29 seats and became the Labour Party (<a href="#chapter-t5-8">Topic 5.8</a>).` }
           ]
         },
