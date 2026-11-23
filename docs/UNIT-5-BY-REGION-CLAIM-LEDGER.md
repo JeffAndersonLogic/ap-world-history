@@ -781,17 +781,17 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
 
 - V1. Americas: "Toussaint was arrested ... His officer Jean-Jacques Dessalines fought on"; he
   submitted to Leclerc in spring 1802 and turned on the French in October 1802 (Britannica,
-  "Haitian Revolution"; BnF France Amériques). Same in Topic 5.2 (line 190). PENDING.
+  "Haitian Revolution"; BnF France Amériques). Same in Topic 5.2 (line 190). **FIXED:** "That spring Toussaint and his officer Jean-Jacques Dessalines made peace with the French ... In October Dessalines turned against the French and led the fight." Topic 5.2's copy goes to the topic helper.
 - V2. Americas: "This was feminism beginning" dates feminism's start to 1848, against de Gouges
-  (1791) and Wollstonecraft (1792) in the course; the CED says "an emergent feminism". PENDING.
+  (1791) and Wollstonecraft (1792) in the course; the CED says "an emergent feminism". **FIXED:** "Seneca Falls was part of a growing feminism"; Europe's earlier claims (de Gouges 1791, Wollstonecraft 1792) named with link phrases.
 - V3. Americas: after 1869 "trains could reach farms and mines in the interior ... where no river
   went" reads as no railroad reaching the interior before 1869 (Chicago 1848; Mississippi bridged
-  1856). PENDING.
+  1856). **FIXED:** "Railroads had been reaching into the interior (the middle of the continent) since the 1840s. Chicago got its first line in 1848"; after 1869 "trains could cross the whole continent".
 - V4. Americas: "In 1802 Napoleon brought slavery back ... He sent an army" reverses the order
   (Leclerc sailed December 1801, landed February 1802; the slavery law of 20 May 1802). Same in
-  Topic 5.2 (line 190). PENDING.
+  Topic 5.2 (line 190). **FIXED:** "In December 1801 Napoleon sent an army to retake Saint-Domingue. It landed in February 1802 ... In May a French law kept slavery in several other French colonies ... In July 1802 slavery was brought back in Guadeloupe."
 - V5. Americas claims KC-5.3.I.A but teaches only its second sentence (natural rights, social
-  contract), not its first (empiricism, religion's role in public life, reason). PENDING.
+  contract), not its first (empiricism, religion's role in public life, reason). **ANSWERED:** the chapter's `ced` array does not claim KC-5.3.I.A; its box quotes only the second sentence, taught through Locke; the Europe chapter claims and teaches the whole. The header comment now says so.
 
 **Reviewer W (history: Middle East, South and Southeast Asia), 6 findings.** Verified sound: all
 19 CED quotations (by script); links; Beinin; the Gülhane text; Smyrna cotton, 1786 (Hansard
@@ -816,15 +816,15 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
 **Reviewer X (CED and consistency, all twelve chapters), Unit 5 items.**
 
 - X4. Americas quotes KC-5.1.I.E whole (steel, chemicals, electricity, precision machinery) and
-  teaches only steel and electricity. PENDING.
+  teaches only steel and electricity. **FIXED** by narrowing KC-5.1.I.E to "led to new methods in the production of steel ... electricity ... during the second half of the 19th century" (Europe teaches chemicals and machinery).
 - X5b. Europe quotes KC-5.3.IV.B ("Demands for women's suffrage") but describes no demand for the
   vote; Britain quotes KC-5.1.IV whole ("interior regions globally") and shows no interior.
-  Britain: **FIXED** with U7. Europe part PENDING.
+  Britain: **FIXED** with U7. Europe: **FIXED** by narrowing KC-5.3.IV.B to "... an emergent feminism challenged political and gender hierarchies" (taught through de Gouges; the Americas chapter teaches the demand for the vote).
 - X6b. Facts after 1900 not marked as later: Britain's Labour Party (1906) in a section dated "1787
   to 1906" and Unilever (1929); Americas' wheat gap "by 1913" and 55 million Europeans to 1914;
   Middle East's handlooms "steady from 1860 to 1914"; Europe's dyes "By 1914", the Trans-Siberian
   "By 1904" and settlers "over the next twenty years"; South and Southeast Asia's Roy "1890s to the
-  1930s" and the 1908 handloom count. Britain (Labour Party 1906 "after this unit ends"; section dated "1787 to 1900"; Unilever "long after"), Middle East (handlooms and section dates) and South and Southeast Asia (Roy, 1908, mills "by 1900"): **FIXED**, marked as later. Europe and Americas PENDING.
+  1930s" and the 1908 handloom count. Britain (Labour Party 1906 "after this unit ends"; section dated "1787 to 1900"; Unilever "long after"), Middle East (handlooms and section dates) and South and Southeast Asia (Roy, 1908, mills "by 1900"): **FIXED**, marked as later. Europe (dyes "By 1914, after this unit ends"; the Trans-Siberian "By 1904, after this unit ends"; settlers "grew most after 1900") and Americas (55 million "runs past 1900"; the wheat gap "By 1913, after this unit ends"): **FIXED**, marked as later.
 
 **Reviewer U (history: Britain, East Asia), 7 findings.** Verified sound: all 33 CED quotations (by
 script, with a negative control); Bairoch's shares; Hatton's crossing times; Feinstein; 62 percent

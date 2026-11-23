@@ -38,6 +38,12 @@
  * Michel Chevalier, a free trader, helped prepare the 1860 treaty; Wikipedia biographies); the
  * Trans-Siberian's settlers and grain (Wikipedia, "Trans-Siberian Railway", Effects); the Social
  * card no longer says ranks of birth "fell" in Russia, whose nobility stayed a legal estate.
+ *
+ * Review loop pass 3 (2026-11-23, findings X5b, X6b): the KC-5.3.IV.B quotation narrowed to "an
+ * emergent feminism", which de Gouges teaches here (the Americas chapter teaches the demand for the
+ * vote at Seneca Falls); facts after 1900 marked as later: Germany's dyes by 1914, the
+ * Trans-Siberian's through route by 1904, and the settlers, whose peak came from 1906 to 1914
+ * (Wikipedia, "Trans-Siberian Railway": "about four million peasants arrived in Siberia").
  */
 
 const CB = 'What the College Board says';
@@ -182,7 +188,7 @@ module.exports = {
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world."`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "The ideas of Enlightenment philosophers, as reflected in revolutionary documents ... including ... the French “Declaration of the Rights of Man and of the Citizen” during the French Revolution ... influenced resistance to existing political authority, often in pursuit of independence and democratic ideals."`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity."`,
-                `<a href="#chapter-t5-1">Topic 5.1</a>: "Demands for women's suffrage and an emergent feminism challenged political and gender hierarchies."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "... an emergent feminism challenged political and gender hierarchies."`,
                 `An optional College Board example: "Olympe de Gouges's Declaration of the Rights of Woman and of the Female Citizen".`
               ]
             } }
@@ -282,8 +288,8 @@ module.exports = {
           blocks: [
             { p: `Russia's big growth came mostly after 1870. In the early 1870s a Welsh engineer named John Hughes built ironworks in the coal country of the southern Russian Empire, in today's eastern Ukraine.` },
             { p: `Russia's government pushed industry on purpose. From <span class="num">1892</span> to <span class="num">1903</span>, Sergei Witte was Russia's minister of finance. His government borrowed large sums from foreign lenders. It spent the money on railways and new industry. Russia's industry grew fastest in the 1890s.` },
-            { p: `Russia's railways grew from 27 kilometers in <span class="num">1840</span> to more than 53,000 in <span class="num">1900</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and Witte pushed it forward. By <span class="num">1904</span> trains could cross to the Pacific, reaching lands far from any sea.` },
-            { p: `Once it opened, the railway carried peasant settlers east to farm Siberia. Over the next twenty years they came in the millions. Trains also carried Siberian wheat west to sell.` },
+            { p: `Russia's railways grew from 27 kilometers in <span class="num">1840</span> to more than 53,000 in <span class="num">1900</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and Witte pushed it forward. By <span class="num">1904</span>, after this unit ends, trains could cross to the Pacific, reaching lands far from any sea.` },
+            { p: `The railway carried peasant settlers east to farm Siberia. Their numbers grew most after 1900, when this unit ends, and by 1914 millions had come. Trains also carried Siberian wheat west to sell.` },
             { p: `Steamships and the telegraph moved people and news across the oceans too. <a href="#r5-britain-factory">The Britain chapter</a> tells that story.` }
           ]
         },
@@ -292,7 +298,7 @@ module.exports = {
           blocks: [
             { p: `After 1850 the <span class="kt">second industrial revolution</span> brought new methods in steel, chemicals, electricity and precision machinery. <span class="kt">Steel</span> (iron with a little carbon) is stronger and tougher than ordinary iron. Before the 1850s it was slow and costly to make in large amounts.` },
             { p: `In <span class="num">1856</span> the English inventor Henry Bessemer found a faster way, the <span class="kt">Bessemer process</span>. Air blown through melted iron burned out carbon and other impurities, and the burning kept the metal hot. Cheap steel became rails, bridges, ships and machines.` },
-            { p: `German chemical firms led the world. BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes. By 1914 Germany made most of the world's dyes.` },
+            { p: `German chemical firms led the world. BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes. By 1914, after this unit ends, Germany made most of the world's dyes.` },
             { p: `In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany. In <span class="num">1886</span> Carl Benz patented a car with a small engine that burned a fuel made from oil. Both were <span class="kt">internal combustion engines</span>, which burn fuel inside the engine. Their big changes came after 1900.` }
           ]
         },

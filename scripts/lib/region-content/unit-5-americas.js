@@ -3,7 +3,7 @@
 /**
  * Unit 5 by region: the Americas.
  * One continuous story of the Americas from 1750 to 1900, told in five sections: the American
- * Revolution as grievance, words and chance (KC-5.3.I.A, KC-5.3.I, KC-5.3.III.B, KC-5.3), Haiti
+ * Revolution as grievance, words and chance (the second sentence of KC-5.3.I.A, KC-5.3.I, KC-5.3.III.B, KC-5.3), Haiti
  * (KC-5.3.III.B), Spanish America, Mexico, Brazil and Bolívar's letter (KC-5.3.III.B, KC-5.3.I.B,
  * KC-5.3.IV.A.i), the words pressed further by abolition and Seneca Falls (KC-5.3.I.C,
  * KC-5.3.IV.B), and industry in the United States with its mills, oil, railroads, steel,
@@ -27,6 +27,16 @@
  * conservatives) and Brazil's (the Portuguese court in Rio from 1808), and six closing cards in
  * the house order. The Enlightenment mistake box now bans a single-cause answer, not the causal
  * claim. See docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md.
+ *
+ * Review loop pass 3 (2026-11-23, findings V1 to V5, X4, X6b): Leclerc's expedition told in order
+ * (sailed December 1801, landed February 1802; the slavery law of 20 May 1802; Guadeloupe in July
+ * 1802; Toussaint arrested in June 1802); Dessalines made peace with the French in spring 1802 and
+ * turned on them in October 1802 (Britannica, "Haitian Revolution"); Seneca Falls as part of a
+ * growing feminism, after de Gouges (1791) and Wollstonecraft (1792); railroads in the interior
+ * before 1869 (Chicago's first line, 1848); the KC-5.1.I.E quotation narrowed to steel and
+ * electricity, which this chapter teaches, and KC-5.3.I.A quoted for its second sentence only (the
+ * Europe chapter teaches the whole); the 1914 migration count and the 1913 wheat gap marked as
+ * running past the unit.
  */
 
 const CB = 'What the College Board says';
@@ -155,7 +165,8 @@ module.exports = {
         {
           heading: 'Independence',
           blocks: [
-            { p: `In <span class="num">1802</span> Napoleon brought slavery back in other French colonies. He sent an army to retake Saint-Domingue. Toussaint was arrested and died in a French prison in <span class="num">1803</span>. His officer Jean-Jacques Dessalines fought on. Yellow fever and the war destroyed the French army.` },
+            { p: `In December <span class="num">1801</span> Napoleon sent an army to retake Saint-Domingue. It landed in February <span class="num">1802</span>. That spring Toussaint and his officer Jean-Jacques Dessalines made peace with the French. In May a French law kept slavery in several other French colonies.` },
+            { p: `In June the French arrested Toussaint, and he died in a French prison in <span class="num">1803</span>. In July <span class="num">1802</span> slavery was brought back in Guadeloupe. In October Dessalines turned against the French and led the fight. Yellow fever and the war destroyed the French army.` },
             { p: `On 1 January <span class="num">1804</span> Dessalines declared independence. He gave the country its old Taíno name, Haiti. Haiti was the second independent country in the Americas, after the United States. It was the first country founded by people who had freed themselves from slavery.` },
             { note: {
               kind: 'misconception',
@@ -267,7 +278,7 @@ module.exports = {
             { p: `Lucretia Mott was an American abolitionist and a Quaker minister. In <span class="num">1840</span> she went to an antislavery meeting in London. She was refused a seat because she was a woman.` },
             { p: `In July <span class="num">1848</span>, Mott and Elizabeth Cady Stanton, with three other women, organized a women's rights meeting. It met at Seneca Falls, New York. Its Declaration of Sentiments copied the Declaration of Independence and added two words: "all men and women are created equal."` },
             { p: `The declaration complained that a woman had never been "permitted ... to exercise her inalienable right to the elective franchise." The elective franchise is the right to vote. Another word for that right is <span class="kt">suffrage</span>. The resolution demanding the vote was the only one that not everyone voted for.` },
-            { p: `This was <span class="kt">feminism</span> beginning: the claim that women and men should have equal rights. It challenged who could vote and rule, and who was in charge at home. Change was slow. In <span class="num">1900</span> most American women still could not vote.` },
+            { p: `Seneca Falls was part of a growing <span class="kt">feminism</span>: the claim that women and men should have equal rights. It challenged who could vote and rule, and who was in charge at home. Women in Europe had made similar claims earlier. <a href="#r5-europe-france">The Europe chapter</a> tells of Olympe de Gouges in <span class="num">1791</span>, and <a href="#r5-britain-calls">the Britain chapter</a> tells of Mary Wollstonecraft in <span class="num">1792</span>. In the United States, change was slow. In <span class="num">1900</span> most American women still could not vote.` },
             { note: {
               kind: 'cb',
               label: CB,
@@ -309,7 +320,7 @@ module.exports = {
         {
           heading: 'Oil, rails, steel and power',
           blocks: [
-            { p: `In <span class="num">1859</span> Edwin Drake struck oil at Titusville, Pennsylvania. For the rest of the 1800s, most oil became <span class="kt">kerosene</span> (a fuel for lamps). In <span class="num">1869</span> the first railroad across the United States was finished at Promontory Summit, Utah. Now trains could reach farms and mines in the <span class="kt">interior</span> (the middle of the continent), where no river went.` },
+            { p: `In <span class="num">1859</span> Edwin Drake struck oil at Titusville, Pennsylvania. For the rest of the 1800s, most oil became <span class="kt">kerosene</span> (a fuel for lamps). Railroads had been reaching into the <span class="kt">interior</span> (the middle of the continent) since the 1840s. Chicago got its first line in <span class="num">1848</span>. In <span class="num">1869</span> the first railroad across the United States was finished at Promontory Summit, Utah. Now trains could cross the whole continent, to farms and mines that no boat could reach.` },
             { p: `Coal and oil are called <span class="kt">fossil fuels</span>. Early American trains burned wood in their steam engines. By <span class="num">1880</span> coal made up more than 90 percent of the fuel American railroads burned. In <span class="num">1885</span> coal passed wood as the country's largest source of energy.` },
             { p: `After 1850 came new methods. Historians call this the second industrial revolution. <span class="kt">Steel</span> (iron with a small, measured amount of carbon) became cheap. Coal heated the furnaces that made it. The United States made about 69,000 tons of steel in <span class="num">1870</span> and about 10 million tons in <span class="num">1900</span>. In <span class="num">1882</span> Thomas Edison's Pearl Street Station in New York began selling electric power (<a href="#chapter-t5-5">Topic 5.5</a>).` },
             { p: `By <span class="num">1900</span> the United States made more of the world's manufactured goods than any other country.` }
@@ -318,8 +329,8 @@ module.exports = {
         {
           heading: 'Migrants and wheat',
           blocks: [
-            { p: `Steamships made the Atlantic crossing faster and cheaper. About 55 million Europeans moved to the Americas and Australia between <span class="num">1850</span> and <span class="num">1914</span>. Trains and ships carried goods the other way.` },
-            { p: `In <span class="num">1870</span> wheat cost 57.6 percent more in Liverpool, England, than in Chicago. By <span class="num">1913</span> it cost only 15.6 percent more. Wheat from the middle of North America fed workers in Britain.` }
+            { p: `Steamships made the Atlantic crossing faster and cheaper. About 55 million Europeans moved to the Americas and Australia between <span class="num">1850</span> and <span class="num">1914</span>. That count runs past 1900, when this unit ends. Trains and ships carried goods the other way.` },
+            { p: `In <span class="num">1870</span> wheat cost 57.6 percent more in Liverpool, England, than in Chicago. By <span class="num">1913</span>, after this unit ends, it cost only 15.6 percent more. Wheat from the middle of North America fed workers in Britain.` }
           ]
         },
         {
@@ -342,7 +353,7 @@ module.exports = {
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
                 `<a href="#chapter-t5-3">Topic 5.3</a>: "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: The College Board says the "second industrial revolution" "led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: The College Board says the "second industrial revolution" "led to new methods in the production of steel ... electricity ... during the second half of the 19th century."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions' share of global manufacturing during the first Industrial Revolution."`,
                 `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society."`,
@@ -397,7 +408,7 @@ module.exports = {
       {
         category: 'Economic',
         title: 'The United States became the world\'s largest maker of goods.',
-        body: `After the 1790s, more and more of Britain's cotton came from US plantations worked by enslaved people. The wheat price gap between Chicago and Liverpool fell from 57.6 percent in 1870 to 15.6 percent in 1913. By 1900 the United States made more manufactured goods than any other country.`
+        body: `After the 1790s, more and more of Britain's cotton came from US plantations worked by enslaved people. The wheat price gap between Chicago and Liverpool fell from 57.6 percent in 1870 to 15.6 percent in 1913, after this unit ends. By 1900 the United States made more manufactured goods than any other country.`
       }
     ]
   }
