@@ -893,3 +893,14 @@ White on coal; Feinstein; Riis; Manchester 1773; Britain's and the Americas' dat
 - AD4. Americas: after 1763 "the colonists no longer needed British soldiers to guard them" states
   an interpretation as fact; Pontiac's War began in 1763 and Britain kept about 10,000 troops.
   Same in Topic 5.2. PENDING.
+
+**Reviewer AF (history: East Asia, South and Southeast Asia), 1 finding; East Asia has none.**
+Verified sound: all CED quotations and labels (by script, with a negative control); claims lines;
+links; Elman 2004 read in full (the mistake box is accurate); Woren's original; the Tongwen Guan
+(98 applied, 30 admitted); HSBC; Tsurumi; India's cloth-trade figures; Bairoch's shares; the
+telegraph before and after 1870; Meiji, Qing and Indian dates.
+
+- AF1. South and Southeast Asia, section 03 mistake box: "What fell was its share of the world's
+  manufactured goods. The falling share is the change" reads as "only the share fell", against
+  the chapter's own "It lost ground, not only share" and Bairoch's per-person index (7 in 1750, 2
+  in 1880; Clingingsmith and Williamson, LSE GEHN). PENDING.
