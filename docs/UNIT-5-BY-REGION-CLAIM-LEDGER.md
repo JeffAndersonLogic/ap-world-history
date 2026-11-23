@@ -766,3 +766,29 @@ Beinin (MERIP 1981); the Gülhane text (Hurewitz 1975); Selim III to the 1878 su
   women gained local votes from 1869. Narrow to the vote for Parliament. **FIXED:** "Britain widened the vote for Parliament in steps, and only for men"; body: "From 1869 some women could vote in town elections."
 - M5. Britain claims KC-5.1.I.B and KC-5.1.II.B but quotes and teaches one sentence of each.
   **FIXED:** both Key Concepts quoted whole and taught: Benz's 1886 oil-burning internal combustion engine and the fossil fuels revolution; India's share falling from about a quarter in 1750 to under 2 percent by 1900 (Bairoch), with link phrases to the Europe and South and Southeast Asia sections.
+
+### Pass 3 (2026-11-23), seven fresh reviewers
+
+Pass 2 found about 59 items, so a third pass was run, with the chapters paired differently. Letters
+R to W are the history reviewers (R: Unit 4 East Asia and South and Southeast Asia; S: Unit 4
+Middle East and Sub-Saharan Africa; T: Unit 4 Europe and the Americas; U: Unit 5 Britain and East
+Asia; V: Unit 5 Europe and the Americas; W: Unit 5 Middle East and South and Southeast Asia); X is
+the CED and consistency reviewer for all twelve.
+
+**Reviewer V (history: Europe, the Americas), 5 findings.** Verified sound: every CED quotation
+(by script); links; Bismarck 1884 (GHDI); Bolívar's Jamaica Letter; coal as more than 90 percent of
+railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
+
+- V1. Americas: "Toussaint was arrested ... His officer Jean-Jacques Dessalines fought on"; he
+  submitted to Leclerc in spring 1802 and turned on the French in October 1802 (Britannica,
+  "Haitian Revolution"; BnF France Amériques). Same in Topic 5.2 (line 190). PENDING.
+- V2. Americas: "This was feminism beginning" dates feminism's start to 1848, against de Gouges
+  (1791) and Wollstonecraft (1792) in the course; the CED says "an emergent feminism". PENDING.
+- V3. Americas: after 1869 "trains could reach farms and mines in the interior ... where no river
+  went" reads as no railroad reaching the interior before 1869 (Chicago 1848; Mississippi bridged
+  1856). PENDING.
+- V4. Americas: "In 1802 Napoleon brought slavery back ... He sent an army" reverses the order
+  (Leclerc sailed December 1801, landed February 1802; the slavery law of 20 May 1802). Same in
+  Topic 5.2 (line 190). PENDING.
+- V5. Americas claims KC-5.3.I.A but teaches only its second sentence (natural rights, social
+  contract), not its first (empiricism, religion's role in public life, reason). PENDING.

@@ -534,3 +534,11 @@ the banners 75 percent Han in 1648; Chuan Han-sheng's ratios; the 1567 opening; 
 Shimabara; Ricci; 1679; Taiwan 1683; the Pueblo Revolt; the Jamaica treaties; Stono and the 1740
 law; Virginia 1662; Dutch Brazil; Palmares; Sahagún. (Reviewer Q's items in these two chapters
 stand on their own.)
+
+### Pass 3 (2026-11-23), seven fresh reviewers
+
+Pass 2 found about 59 items, so a third pass was run, with the chapters paired differently. Letters
+R to W are the history reviewers (R: Unit 4 East Asia and South and Southeast Asia; S: Unit 4
+Middle East and Sub-Saharan Africa; T: Unit 4 Europe and the Americas; U: Unit 5 Britain and East
+Asia; V: Unit 5 Europe and the Americas; W: Unit 5 Middle East and South and Southeast Asia); X is
+the CED and consistency reviewer for all twelve.
