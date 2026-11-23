@@ -242,7 +242,7 @@ module.exports = {
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Newly developed colonial economies in the Americas largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories."`,
                 `<a href="#chapter-t4-5">Topic 4.5</a>: "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."`,
-                `<a href="#chapter-t4-7">Topic 4.7</a>: "Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system."`
+                `<a href="#chapter-t4-7">Topic 4.7</a>: "Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including ... in the Americas with the rise of the Casta system."`
               ]
             } }
           ]
@@ -346,7 +346,7 @@ module.exports = {
             { p: `As colonies expanded, local people resisted. Spain ruled New Mexico from ${N('1598')}. It demanded harvests and unpaid labor from the Pueblo peoples who lived there. In ${N('1675')} the governor arrested forty-seven Pueblo religious leaders as sorcerers (people accused of harmful magic). <b>Popé</b> was one of them. He helped plan a rising to strike every Spanish settlement at once.` },
             { p: `The ${KT('Pueblo Revolt')} began on August 10, ${N('1680')}. The Pueblos killed about 400 colonists and drove the rest south to El Paso. For twelve years they ruled themselves. Spain returned from ${N('1692')}. But it did not bring back the encomienda, and friars put far less pressure on Pueblo religion.` },
             { p: `In New England, colonists kept taking Wampanoag land. In ${N('1675')} the Wampanoag leader <b>Metacom</b> went to war, and other Native nations joined him. The English called him King Philip. But the colonists had more people, and Native allies of their own.` },
-            { p: `${KT('Metacom\'s War')} ended with his death in ${N('1676')}. Many captives were sold into slavery in the Caribbean. The Native nations of southern New England lost their independence.` }
+            { p: `In ${N('1676')} Metacom was killed, and ${KT('Metacom\'s War')} ended in southern New England. Fighting farther north, in Maine, went on until ${N('1678')}. Many captives were sold into slavery in the Caribbean. The Native nations of southern New England lost their independence.` }
           ]
         },
         {
@@ -391,7 +391,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'European empires took over large parts of the Americas, and local people resisted.',
-        body: `Spanish forces and Indigenous allies overthrew the Mexica in 1521. In 1680 the Pueblo Revolt drove Spain out of New Mexico for twelve years. Metacom's War ended in defeat in 1676.`
+        body: `Spanish forces and Indigenous allies overthrew the Mexica in 1521. In 1680 the Pueblo Revolt drove Spain out of New Mexico for twelve years. Metacom's War was crushed in southern New England in 1676.`
       },
       {
         category: 'Religious',

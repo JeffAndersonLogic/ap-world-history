@@ -552,7 +552,7 @@ Montagu 1717; the 1739 Stono account's wording; Heywood 2009 on Afonso's slave m
   letter it is the merchants who carry them away (Thornton 2023; Topics 4.4 and 4.8). PENDING.
 - S2. Middle East (story, glossary, Intellectual card) and Europe (lines 42 and 268): the Toledan
   and Alfonsine tables called tables "of where the sun stands each day"; they predicted the sun,
-  moon and planets; day-by-day solar tables for pilots came with Zacuto (1496). PENDING.
+  moon and planets; day-by-day solar tables for pilots came with Zacuto (1496). Europe: **FIXED:** pilots' day-by-day sun tables came from Zacuto (printed 1496), built on Toledo's tables of about 1080 that "predicted where the sun, moon and planets would be"; Intellectual card to match. Middle East part PENDING.
 - S3. Sub-Saharan Africa, story in short: "Portugal could not rule them" contradicts the chapter's
   Angola wars. PENDING.
 - S4. Middle East: KC-4.1.IV's "shipping services developed by European merchants" untaught (EIC
@@ -570,11 +570,11 @@ Verified sound: all 42 CED quotations (by script); links; Alfonsine Tables; Ambo
 
 - T1. Europe: "The Dutch Republic fought Spain for its independence from 1568"; the revolt began
   in 1568, the Union of Utrecht came in 1579 and the republic by about 1588. Same in Topic 4.4.
-  PENDING.
+  **FIXED:** "In 1568 the Dutch provinces revolted against Spain. By the late 1580s they had formed the Dutch Republic, which fought on for its independence." Topic 4.4 goes to the topic helper.
 - T2. Europe: the Fronde "collapsed by 1653, because the rebels wanted different things" gives one
-  cause as the only one; Topic 4.6 adds quarrels and Spanish help. PENDING.
+  cause as the only one; Topic 4.6 adds quarrels and Spanish help. **FIXED:** "They collapsed by 1653. The rebels wanted different things and quarreled with each other. Some even took help from Spain, which was at war with France."
 - T3. Europe: KC-4.3.I.B and KC-4.2 quotations use a straight apostrophe where the CED prints a
-  curly one. PENDING.
+  curly one. **FIXED:** curly apostrophes in "groups’ roles" and "world’s productive", as the CED prints them.
 
 **Reviewer R (history: East Asia, South and Southeast Asia), 4 findings, no quotation errors.**
 Verified sound: all 29 CED quotations (by script); links; Morga (Stanley 1868); the 1635 and 1639
@@ -605,13 +605,13 @@ prompts; no mistake box overcorrects.
 - X3. South and Southeast Asia quotes KC-4.3.II.A.i ("proved profitable for the rulers and
   merchants") and never says who profited. PENDING.
 - X5a. Americas quotes KC-4.2.III.A whole, including the Qing clause it does not teach (East Asia
-  cuts it with " ... "). PENDING.
+  cuts it with " ... "). **FIXED:** KC-4.2.III.A cut to "...new political and economic elites, including ... in the Americas with the rise of the Casta system."
 - X6a. Facts after 1750 not marked as later: East Asia's population growth "with much of that
   growth after 1750"; Sub-Saharan Africa's "Through the 1700s, Asante became the region's main
   power"; East Asia's section "c. 1450 to 1600" opening with Zheng He (early 1400s) without saying
   it is background. PENDING.
 - X7. Europe: "So old elites lost power in France and Russia, and gained it in England" is too
   tidy (the chapter's own French nobles kept titles, land and tax freedom; the CED says elite power
-  "fluctuated"). PENDING.
+  "fluctuated"). **FIXED:** "So the power of old elites rose and fell. In France and Russia, nobles kept their land but lost much of their say over the ruler's policies. In England they gained more say."
 - X8. Americas, story and Political card: "Metacom's War ended with his death in 1676"; fighting
-  in Maine went on to 1678 (Treaty of Casco). PENDING.
+  in Maine went on to 1678 (Treaty of Casco). **FIXED:** "In 1676 Metacom was killed, and Metacom's War ended in southern New England. Fighting farther north, in Maine, went on until 1678"; card: "crushed in southern New England in 1676".
