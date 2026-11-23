@@ -663,3 +663,23 @@ figures.
   growth". PENDING.
 - AA3. East Asia quotes KC-4.1.IV's "chartered European monopoly companies" and never says the
   Dutch at Hirado and Dejima were the VOC. PENDING.
+
+**Reviewer AG (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every
+CED quotation and label (by script; no negative control run); optional examples; about 50
+cross-region links; Bismarck 1884.
+
+- AG1a. KC-4.1.IV's "chartered European monopoly companies" quoted but not taught in the Americas
+  (same as AC3) and East Asia (same as AA3); Europe teaches charters but not "monopoly", and quotes
+  the regional-markets sentence ("shipping services developed by European merchants") without
+  teaching it. PENDING.
+- AG1b. Americas quotes KC-4.1.V.B whole ("exported mostly to Europe and the Middle East") and
+  says only "Sugar and tobacco went to Europe". PENDING.
+- AG1d. East Asia claims KC-4.1.III.A (Portuguese maritime technology and navigation) without
+  teaching it. PENDING.
+- AG2. Europe: Ceuta "That attack was a crusade" is flatter than the other chapters ("partly as a
+  crusade"; "continued the long wars of Christian Iberia"). PENDING.
+- AG6. Americas: Gualpa found Potosí in 1545, "We know this from his own later account"; his 1572
+  statement's own count gives about 1544; 1545 is the usual date. PENDING.
+- AG7. Afonso's quotation in Madureira's wording could not be verified. **REJECTED:** reviewers S
+  (pass 3) and AA (pass 4) confirmed the wording against Thornton, Afonso I Mvemba a Nzinga
+  (2023), p. 203, via Gilder Lehrman's reproduction.

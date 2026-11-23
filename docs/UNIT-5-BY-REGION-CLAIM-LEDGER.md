@@ -904,3 +904,18 @@ telegraph before and after 1870; Meiji, Qing and Indian dates.
   manufactured goods. The falling share is the change" reads as "only the share fell", against
   the chapter's own "It lost ground, not only share" and Bairoch's per-person index (7 in 1750, 2
   in 1880; Clingingsmith and Williamson, LSE GEHN). PENDING.
+
+**Reviewer AG (CED and consistency, all twelve chapters), Unit 5 items.**
+
+- AG1c. Americas quotes KC-5.1.I.B (internal combustion engine; fossil fuels revolution), KC-5.1.IV
+  (the telegraph) and KC-5.1.VI.C (pollution, poverty, crime, public health, infrastructure)
+  whole, and teaches only part of each. PENDING.
+- AG1e. Europe quotes KC-5.3.I.C ("Enlightenment ideas and religious ideals influenced various
+  reform movements") and ties no reform to either. PENDING.
+- AG3. Americas: "Its win in 1763 had pushed France out of North America" against the same
+  chapter's Louisiana sale of 1803; France lost Canada and the land east of the Mississippi.
+  PENDING.
+- AG4. Americas: "So he sold Louisiana" gives Saint-Domingue's loss and the coming war as the whole
+  cause. PENDING.
+- AG5. East Asia's tariffs "only in 1911" and the Middle East's parliament "did not meet again
+  until 1908" are not marked as after the unit. PENDING.
