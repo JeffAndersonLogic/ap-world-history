@@ -615,3 +615,25 @@ prompts; no mistake box overcorrects.
   "fluctuated"). **FIXED:** "So the power of old elites rose and fell. In France and Russia, nobles kept their land but lost much of their say over the ruler's policies. In England they gained more say."
 - X8. Americas, story and Political card: "Metacom's War ended with his death in 1676"; fighting
   in Maine went on to 1678 (Treaty of Casco). **FIXED:** "In 1676 Metacom was killed, and Metacom's War ended in southern New England. Fighting farther north, in Maine, went on until 1678"; card: "crushed in southern New England in 1676".
+
+### Pass 4 (2026-11-23), seven fresh reviewers
+
+Pass 3 found 40 items, so a fourth pass was run, with the chapters paired a third way. AA: Unit 4
+East Asia and Sub-Saharan Africa; AB: Unit 4 South and Southeast Asia and Europe; AC: Unit 4
+Middle East and the Americas; AD: Unit 5 Britain and the Americas; AE: Unit 5 Europe and the
+Middle East; AF: Unit 5 East Asia and South and Southeast Asia; AG: CED and consistency, all twelve.
+
+**Reviewer AC (history: Middle East, the Americas), 3 findings.** Verified sound: all 32 CED
+quotations and topic labels (by script); optional examples; links; Montagu's 1717 letter; Gualpa's
+1572 account; the mariner's astrolabe at sea by 1481; Ottoman help before Diu; Cook and Borah; the
+Middle East and Americas dates.
+
+- AC1. Middle East, story and Intellectual card: Zacuto's 1496 tables "were based on that later
+  version" (the Castilian tables of 1263 to 1272); the Castilian original is lost, and Zacuto drew
+  on the Parisian Alfonsine Tables of the 1320s and on Hebrew astronomy (Goldstein and Chabás,
+  Archive for History of Exact Sciences 72, 2018). PENDING.
+- AC2. Americas: "Enslaved Africans ... brought foods such as okra and rice" settles a debate
+  (Carney 2001; Eltis, Morgan and Richardson, AHR 2007); Topic 4.3 keeps the hedge ("often as food
+  for the voyage"). PENDING.
+- AC3. Americas quotes KC-4.1.IV's "chartered European monopoly companies" and never teaches a
+  chartered company (the Middle East chapter does). PENDING.

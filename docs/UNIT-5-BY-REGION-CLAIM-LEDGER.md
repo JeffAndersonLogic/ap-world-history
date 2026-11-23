@@ -851,3 +851,10 @@ Arkwright, Newcomen and Watt; Corn Laws; cholera deaths; Engels; the Charter Oat
   drops Topic 5.8's "one only roughly" and the 1918 date. **FIXED:** "five of their six points later became law, one only roughly. Every man over 21 got the vote only in 1918, after this unit ends."
 - U7. Britain claims KC-5.1.IV and shows no interior regions (same as X5b's Britain part).
   **FIXED** by narrowing KC-5.1.IV with " ... " to the trade-and-migration part the chapter teaches.
+
+### Pass 4 (2026-11-23), seven fresh reviewers
+
+Pass 3 found 40 items, so a fourth pass was run, with the chapters paired a third way. AA: Unit 4
+East Asia and Sub-Saharan Africa; AB: Unit 4 South and Southeast Asia and Europe; AC: Unit 4
+Middle East and the Americas; AD: Unit 5 Britain and the Americas; AE: Unit 5 Europe and the
+Middle East; AF: Unit 5 East Asia and South and Southeast Asia; AG: CED and consistency, all twelve.
