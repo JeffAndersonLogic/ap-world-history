@@ -542,3 +542,36 @@ R to W are the history reviewers (R: Unit 4 East Asia and South and Southeast As
 Middle East and Sub-Saharan Africa; T: Unit 4 Europe and the Americas; U: Unit 5 Britain and East
 Asia; V: Unit 5 Europe and the Americas; W: Unit 5 Middle East and South and Southeast Asia); X is
 the CED and consistency reviewer for all twelve.
+
+**Reviewer S (history: Middle East, Sub-Saharan Africa), 7 findings.** Verified sound: all 30 CED
+quotations (by script); links; New Julfa 1605 (Iranica); Ottoman timber and guns before Diu;
+Montagu 1717; the 1739 Stono account's wording; Heywood 2009 on Afonso's slave market.
+
+- S1. Sub-Saharan Africa: Afonso's letter: "thieves were seizing free people and selling them ...
+  they took 'our native-born countrymen ...'" gives the quoted words to the thieves; in the 1526
+  letter it is the merchants who carry them away (Thornton 2023; Topics 4.4 and 4.8). PENDING.
+- S2. Middle East (story, glossary, Intellectual card) and Europe (lines 42 and 268): the Toledan
+  and Alfonsine tables called tables "of where the sun stands each day"; they predicted the sun,
+  moon and planets; day-by-day solar tables for pilots came with Zacuto (1496). PENDING.
+- S3. Sub-Saharan Africa, story in short: "Portugal could not rule them" contradicts the chapter's
+  Angola wars. PENDING.
+- S4. Middle East: KC-4.1.IV's "shipping services developed by European merchants" untaught (EIC
+  help at Hormuz is military). PENDING.
+- S5. Middle East, story in short and section intro: "cavalry gave way to tax farms" squeezes
+  infantry-over-cavalry and timar-to-tax-farm, late 1500s into the 1700s. PENDING.
+- S6. Middle East, Political card: "took ports back from Portugal"; Persia had not held Hormuz and
+  Oman had not held Mombasa. PENDING.
+- S7. Sub-Saharan Africa, Religious card heading "Christianity, Islam and new blended faiths all
+  shaped the region" is not backed (Islam barely shown; Vodou formed in Saint-Domingue). PENDING.
+
+**Reviewer T (history: Europe, the Americas), 3 findings; the Americas chapter has none.**
+Verified sound: all 42 CED quotations (by script); links; Alfonsine Tables; Amboyna 1623; Gualpa's
+1572 deposition (Lane); no encomienda after 1692 (Bloom 1939); Cook and Borah; the mit'a.
+
+- T1. Europe: "The Dutch Republic fought Spain for its independence from 1568"; the revolt began
+  in 1568, the Union of Utrecht came in 1579 and the republic by about 1588. Same in Topic 4.4.
+  PENDING.
+- T2. Europe: the Fronde "collapsed by 1653, because the rebels wanted different things" gives one
+  cause as the only one; Topic 4.6 adds quarrels and Spanish help. PENDING.
+- T3. Europe: KC-4.3.I.B and KC-4.2 quotations use a straight apostrophe where the CED prints a
+  curly one. PENDING.
