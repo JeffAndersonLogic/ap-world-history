@@ -648,3 +648,18 @@ the South Asian, Southeast Asian and European dates.
   Malacca (Pati Unus attacked it in 1513), the Portuguese sought rice from Pegu and Ayutthaya, and
   much Javanese and Muslim shipping moved to Banten, Aceh and Johor (Wikipedia, "Capture of
   Malacca (1511)", "Demak invasions of Malacca"; Vann, Education About Asia). PENDING.
+
+**Reviewer AA (history: East Asia, Sub-Saharan Africa), 3 findings; no misquotation or factual
+error.** Verified sound: all 33 CED quotations and labels (by script, with negative controls);
+optional examples; links; Morga (Stanley 1868); the 1635 and 1639 orders (Lu); Chuan's ratios via
+Flynn and Giráldez; Afonso's letter (Thornton 2023, p. 203); East Asian and African dates and
+figures.
+
+- AA1. Sub-Saharan Africa, section 02: "States that sold captives grew richer" is a flat rule the
+  chapter's own Kongo story (and the Argue it prompt) contradicts. PENDING.
+- AA2. Sub-Saharan Africa, Argue it and section 03: "The Atlantic trade made Asante strong" and
+  "the trade built a state" give one cause as the whole; Asante grew from the Akan union under
+  Osei Tutu and the Golden Stool, army reform, Feyiase and gold; the CED says trade "fostered the
+  growth". PENDING.
+- AA3. East Asia quotes KC-4.1.IV's "chartered European monopoly companies" and never says the
+  Dutch at Hirado and Dejima were the VOC. PENDING.
