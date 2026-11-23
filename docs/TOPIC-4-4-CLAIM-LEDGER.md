@@ -352,3 +352,7 @@ the reviewer.
 | IO12 | Ocean: Oman's Muscat (1650) and Mombasa (1698) under Continued | NARROWED | Dates verified; now worded as Asian powers pushing back, which keeps it a continuity of Asian power. |
 | IO13 | Ocean: "merchants from ... China" before 1498 | NEEDS JEFF | Reviewer quibble: Chinese junks rarely sailed west of Malacca after 1433. Left as it stands, since Chinese merchants traded at Malacca, an Indian Ocean port; Jeff can narrow it. |
 | IO14 | Close notes: "Portugal kept Goa, Diu and Macau" | NARROWED | Now "among others." |
+
+## Correction from the Unit 4 by Region review, pass 3 (2026-11-23)
+
+- **T1** (pass 3, reviewer T; `docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md`). "The Dutch Republic fought Spain for its independence from 1568" put the republic at the start of the revolt. The revolt began in 1568; the northern provinces formed the Union of Utrecht in 1579, abjured Philip II in 1581 and were a republic by about 1588; Spain recognized Dutch independence in 1648 (Britannica, "Eighty Years' War" and "Union of Utrecht"; the Peace of Münster, 1648). **NARROWED** on the deep reading (the "political, religious, and economic rivalries" paragraph): "the Dutch rose against Spain in 1568 and won recognition of their republic in 1648". The teacher deck's LAND note on the causes slide now gives the same order with the 1579, 1581 and about-1588 steps. No other 4.4 surface carried the claim.

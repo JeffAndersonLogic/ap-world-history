@@ -470,7 +470,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'Akbar ruled 1556 to 1605. He abolished the jizya in 1564 (agrees with the 3.2 and 3.4 chapters). In 1562 he married a daughter of Raja Bharmal of Amber; the Rajput rulers of Amber became pillars of the empire. Man Singh of Amber reached a rank (mansab) of 7,000, the highest open to anyone but the emperor\'s sons (Wikipedia, "Man Singh I"; e-PG Pathshala module on the mansabdari system).',
-          'Why: Akbar needed Rajput armies and the loyalty of the Hindu majority. This is the CED\'s "utilize the ... military contributions of different ... groups" as much as "accommodate."',
+          'Why: Akbar needed Rajput armies and the loyalty of the Hindu majority, and he won much of both. Not every house joined: Mewar fought him (Rana Pratap at Haldighati, 1576) and made peace with the Mughals only in 1615, under Jahangir. This is the CED\'s "utilize the ... military contributions of different ... groups" as much as "accommodate."',
           'Aurangzeb, Akbar\'s great-grandson, reimposed the jizya in 1679 (3.4 chapter). M. Athar Ali\'s study of the Mughal nobility under Aurangzeb found that Hindus remained a large share of the high nobles, partly through Maratha recruits; the slide says only "many."',
           'The picture is the Akbarnama painting from slide 3: Rai Surjan Hada of Ranthambhor bowing to Akbar in 1569. Conquest came first; the Rajput houses that submitted were then brought into the Mughal nobility.',
           'Akbar\'s religious ideas (the Ibadat Khana, sulh-i kul) are Topic 3.3\'s setting. Use only his policies toward Hindu groups here.'

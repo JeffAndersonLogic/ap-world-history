@@ -1491,7 +1491,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In India, the Mughal emperors were Muslims ruling a mostly Hindu land. The emperor Akbar, who ruled from 1556 to 1605, did more than tolerate Hindus. He ended the jizya in 1564, married daughters of Hindu <span class=\"kt\">Rajputs</span>, the warrior kings of northwestern India, and made Rajput princes some of the highest-ranking commanders and officials in his empire. He needed their armies and their loyalty, and he got them. A century later, his great-grandson Aurangzeb brought the jizya back, in 1679, though he still employed many Hindu officers. Same empire, same groups, opposite policy. Making room for a group was a choice a ruler made, and the next ruler could unmake it."
+            "html": "In India, the Mughal emperors were Muslims ruling a mostly Hindu land. The emperor Akbar, who ruled from 1556 to 1605, did more than tolerate Hindus. He ended the jizya in 1564, married daughters of Hindu <span class=\"kt\">Rajputs</span>, the warrior kings of northwestern India, and made Rajput princes some of the highest-ranking commanders and officials in his empire. He needed their armies and their loyalty, and he won much of both. Not every Rajput king joined him. Mewar fought on, and it made peace with the Mughals only in 1615, ten years after Akbar died. A century later, his great-grandson Aurangzeb brought the jizya back, in 1679, though he still employed many Hindu officers. Same empire, same groups, opposite policy. Making room for a group was a choice a ruler made, and the next ruler could unmake it."
           },
           {
             "type": "p",

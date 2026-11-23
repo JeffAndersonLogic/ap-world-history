@@ -175,7 +175,15 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // birthplace mattered too, because the king gave the highest offices to peninsulares",
 // and "Next came creoles" now reads "Creoles were". The fingerprint moved from
 // cfc26f6... and only that 4.7 paragraph changed.
-const APPROVED_UNIT4_REWRITE_BLOB = 'a3a1a99ca41809317cfcaeeabdbfe7abed6fff69';
+// 2026-11-23: one 4.7 correction, raised by the Unit 4 by Region review (pass 3, reviewer R,
+// finding R2; docs/UNIT-4-BY-REGION-CLAIM-LEDGER.md). "He needed their armies and their
+// loyalty, and he got them" was too tidy: Mewar never submitted to Akbar (Haldighati, 1576)
+// and made peace with the Mughals only in 1615, under Jahangir. The only phrases that changed:
+// "and he got them" now reads "and he won much of both", followed by two new sentences, "Not
+// every Rajput king joined him. Mewar fought on, and it made peace with the Mughals only in
+// 1615, ten years after Akbar died." The fingerprint moved from a3a1a99... and only that 4.7
+// paragraph changed.
+const APPROVED_UNIT4_REWRITE_BLOB = '079d41a55f1b2efae5b69172127d1f65a2e9cae3';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;
@@ -305,7 +313,27 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // steamship crossing from England is "about two weeks", not "about 12 days" (Hatton 2023, Table
 // 2: steamship averages of 14 to 16 days). Against the blob 51676d1a only those two sentences
 // changed.
-const APPROVED_UNIT5_REWRITE_BLOB = '8863cbc41e9ae447878da43f12012daa8cc43632';
+// 2026-11-23, Unit 5 by Region review pass 3 (docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md, V1, V4,
+// W1, W3 and W5, carried to the topics). The only sentences that changed: in 5.2, "In 1802 he
+// brought slavery back in other French colonies, such as Guadeloupe, and sent an army to retake
+// Saint-Domingue" (V4, the order reversed) now reads "Late in 1801 he sent an army to retake
+// Saint-Domingue. It landed in February 1802. In May 1802 a French law kept slavery in colonies
+// where it had never ended, such as Martinique. In July 1802 Napoleon brought slavery back in
+// Guadeloupe", and "His officer Jean-Jacques Dessalines fought on, and yellow fever and the war
+// destroyed the French army" (V1) now reads "His officer Jean-Jacques Dessalines had given in to
+// the French in the spring of 1802. In October 1802 he turned against them, because it looked as
+// if France would bring back slavery in Saint-Domingue too. Yellow fever and the war destroyed
+// the French army"; in 5.2, "Other Balkan peoples followed, and in 1878 Serbia, Montenegro, and
+// Romania were recognized as independent" (W1, no cause) now reads "Other Balkan peoples wanted
+// their own states too, and a war gave them the chance. In 1877 Russia went to war with the
+// Ottoman Empire and won. In 1878 Europe's great powers met at the Congress of Berlin and
+// recognized Serbia, Montenegro, and Romania as independent"; in 5.6, "The French left in 1801"
+// (W3) now reads "In 1801 the French army in Egypt surrendered to British and Ottoman forces";
+// in 5.8, "; around 1850 it got steam engines and machines from Britain and Belgium" (W5) now
+// reads ". From 1843 it got steam engines and machines from Britain, France and Belgium".
+// Against the blob 8863cbc4 only those sentences in 5.2, 5.6 and 5.8 changed; every other
+// Unit 5 reading is byte-for-byte unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = '2907e42bd901723acd847f016d9645536078f8a2';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

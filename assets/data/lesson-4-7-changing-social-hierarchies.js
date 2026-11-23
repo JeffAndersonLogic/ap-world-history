@@ -121,7 +121,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Making room for a group was not only about kindness. It also paid. When Spain suppressed difference by expelling its Jews in 1492, the Ottoman sultan Bayezid II let the refugees settle in his cities, and the empire gained merchants, doctors, craftsmen, and taxpayers. Exiles from Spain set up Istanbul's first printing press.",
           "The Ottomans let Christians and Jews practice their religion and run their own marriages, inheritances, schools, and family courts through their own leaders. Many also used the Islamic court when it suited them. In return, Christians and Jews paid a special tax, the **jizya**. The state got order and money without having to run everything itself. But it was **accommodation without equality**: the top jobs went to Muslims.",
-          "In India, the emperor Akbar ended the jizya in 1564 and made Hindu **Rajput** princes some of his highest commanders. He got their armies and their loyalty. His great-grandson Aurangzeb brought the jizya back in 1679. A ruler could make room for a group, and the next ruler could take it away."
+          "In India, the emperor Akbar ended the jizya in 1564 and made Hindu **Rajput** princes some of his highest commanders. He won much of their armies and their loyalty. Not every Rajput king joined him: Mewar made peace with the Mughals only in 1615, ten years after Akbar died. His great-grandson Aurangzeb brought the jizya back in 1679. A ruler could make room for a group, and the next ruler could take it away."
         ],
         image: {
           title: "An Armenian wedding in the Ottoman Empire",

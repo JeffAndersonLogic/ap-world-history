@@ -167,7 +167,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money. Tight funding did limit the fleet. For 1894 he points instead to China's fleets, which were never under one command. Japan also had faster ships, quick-firing guns and better naval leadership. Some Chinese ships were short of shells.`
+              html: `Do not write that Cixi spent the navy's money and so China lost in 1895. It is a popular story. The historian Benjamin Elman finds that her palace spending did not empty the treasury or take all of the navy's money. Tight funding did limit the fleet. For 1894 he points instead to China's fleets, which were never under one command. Japan also had faster ships, quick-firing guns, better-trained crews and better naval leadership. Some Chinese ships were short of shells.`
             } },
             { note: {
               kind: 'cb',

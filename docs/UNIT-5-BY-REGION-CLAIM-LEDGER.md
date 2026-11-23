@@ -838,7 +838,7 @@ Arkwright, Newcomen and Watt; Corn Laws; cholera deaths; Engels; the Charter Oat
 - U2. East Asia mistake box: for 1894 Elman "points instead to a navy split into rival regional
   fleets, and to crews less well trained"; the training diagnosis is his for 1884 to 1885 (p.
   317); for the Yalu (pp. 319 to 320) he cites Japan's leadership, faster ships, quick-firing guns
-  and China's shell shortage; the no-unified-fleet half is supported. Same in Topic 5.8. **FIXED:** "For 1894 he points instead to China's fleets, which were never under one command. Japan also had faster ships, quick-firing guns and better naval leadership. Some Chinese ships were short of shells." Topic 5.8's copy goes to the topic helper.
+  and China's shell shortage; the no-unified-fleet half is supported. Same in Topic 5.8. **FIXED:** "For 1894 he points instead to China's fleets, which were never under one command. Japan also had faster ships, quick-firing guns and better naval leadership. Some Chinese ships were short of shells." Topic 5.8 fixed to match. "Better-trained crews" added back to both, since Elman also writes that "Japanese officers and sailors, in contrast, were better trained to manage their ships and guns by 1894" (p. 295).
 - U3. Britain claims KC-5.3.IV.B (demands for women's suffrage) and teaches only Wollstonecraft's
   aside; the Political card's "From 1869 some women could vote in town elections" is not in the
   chapter body. **FIXED** by teaching it: Mill presented the women's petition in 1866 (about 1,500 signatures); Parliament refused his 1867 proposal; from 1869 some women who paid local taxes could vote in town elections (History of Parliament; UK Parliament Living Heritage).

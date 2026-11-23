@@ -646,7 +646,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Then Napoleon tried to turn back the clock. In 1802 he brought slavery back in other French colonies, such as Guadeloupe, and sent an army to retake Saint-Domingue. Toussaint was captured and died in a French prison in 1803. His officer Jean-Jacques Dessalines fought on, and yellow fever and the war destroyed the French army."
+            "html": "Then Napoleon tried to turn back the clock. Late in 1801 he sent an army to retake Saint-Domingue. It landed in February 1802. In May 1802 a French law kept slavery in colonies where it had never ended, such as Martinique. In July 1802 Napoleon brought slavery back in Guadeloupe. Toussaint was captured and died in a French prison in 1803. His officer Jean-Jacques Dessalines had given in to the French in the spring of 1802. In October 1802 he turned against them, because it looked as if France would bring back slavery in Saint-Domingue too. Yellow fever and the war destroyed the French army."
           },
           {
             "type": "p",
@@ -719,7 +719,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Sometimes nationalism pulled peoples away from an empire. The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe. Serbs rebelled and won the right to rule themselves. Greeks rose up in 1821, and in 1830 Britain, France, and Russia declared Greece an independent state, to be ruled by a king. Other Balkan peoples followed, and in 1878 Serbia, Montenegro, and Romania were recognized as independent."
+            "html": "Sometimes nationalism pulled peoples away from an empire. The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe. Serbs rebelled and won the right to rule themselves. Greeks rose up in 1821, and in 1830 Britain, France, and Russia declared Greece an independent state, to be ruled by a king. Other Balkan peoples wanted their own states too, and a war gave them the chance. In 1877 Russia went to war with the Ottoman Empire and won. In 1878 Europe's great powers met at the Congress of Berlin and recognized Serbia, Montenegro, and Romania as independent."
           },
           {
             "type": "p",
@@ -1563,7 +1563,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1798 a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. The French left in 1801. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In 1805 the Ottomans named him governor of Egypt, and by 1811 he had destroyed his rivals and ruled alone."
+            "html": "In 1798 a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. In 1801 the French army in Egypt surrendered to British and Ottoman forces. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In 1805 the Ottomans named him governor of Egypt, and by 1811 he had destroyed his rivals and ruled alone."
           },
           {
             "type": "p",
@@ -2135,7 +2135,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. In the 1830s, before the Tanzimat, Sultan Mahmud II's government had opened a state fez factory in Istanbul; around 1850 it got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
+            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. In the 1830s, before the Tanzimat, Sultan Mahmud II's government had opened a state fez factory in Istanbul. From 1843 it got steam engines and machines from Britain, France and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
           }
         ],
         "callout": {

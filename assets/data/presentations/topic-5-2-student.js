@@ -605,7 +605,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "tag": "Serbia and others",
-            "text": "Serbia wins self-rule; Serbia, Montenegro and Romania recognized as independent in 1878."
+            "text": "Serbia wins self-rule; after Russia beats the Ottomans, Serbia, Montenegro and Romania win independence, 1878."
           },
           {
             "tag": "Ottomanism",

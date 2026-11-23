@@ -676,14 +676,14 @@ window.BEHISTORICAL_TEACHING = {
           '1826: Mahmud II destroys the Janissaries',
           'Gülhane, 1839: security, fair taxes, conscription, all subjects',
           '1856 equality resented by many Muslims',
-          'Fez factory machines about 1850; telegraph 1855',
+          'Fez factory steam machines from 1843; telegraph 1855',
           'Constitution 1876; parliament dissolved February 1878'
         ],
         land: [
           'Selim III\'s New Order: "a new infantry ... with European-style uniforms, imported rifles, and French instructors" (Todorova). The course says "guns": infantry of the 1790s mostly carried muskets. The Janissaries and important conservative ulema opposed it; a revolt overthrew him in May 1807.',
           'June 1826: Mahmud II destroyed the Janissary corps and built a new army along European lines.',
           'The Edict of Gülhane, 3 November 1839 (Inalcik\'s translation): "perfect security for life, honor, and property"; "a regular system of assessing taxes"; regular conscription; "The Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The 1856 decree made Muslims and non-Muslims legally equal, which "was not well perceived by many Muslims who traditionally enjoyed a superior status."',
-          'The state fez factory (Feshane) was opened under Mahmud II in the 1830s and fitted with steam engines and machines from Britain and Belgium around 1850 (TDV İslâm Ansiklopedisi: 1849 to 1851; Ergün and Ciritci, 2026: 1843 to 1851; sources disagree on when it moved to Eyüp); the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
+          'The state fez factory (Feshane) was opened under Mahmud II in the 1830s and fitted with steam engines and machines from Britain, France and Belgium from 1843 (History of Istanbul, "Industrial Organizations in Istanbul": redesigned in 1843 with steam machinery from England, France and Belgium; Ergün and Ciritci, 2026: steam engines from 1843, machines 1843 to 1851; TDV İslâm Ansiklopedisi gives 1849 to 1851 for the machines; sources disagree on when it moved to Eyüp); the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
         ],
         ask: 'Who resisted, and what were they protecting?',
         listenFor: 'The Janissaries (their place in the army), conservative scholars, Muslims who lost their higher status, the sultan (his power).',
@@ -716,7 +716,7 @@ window.BEHISTORICAL_TEACHING = {
           'Self-Strengthening, after the Taiping Rebellion and the Opium Wars: the Zongli Yamen (1861, Prince Gong); the Tongwen Guan language school (1862); the Jiangnan Arsenal, Shanghai (1865, Zeng Guofan and Li Hongzhang); the Fuzhou navy yard (1866, Zuo Zongtang); the China Merchants\' Steam Navigation Company (1872, Li). The aim (Columbia, Asia for Educators): keep "the strong essence of Chinese civilization while adding superior technology from abroad."',
           '1867: Woren, Grand Secretary and the emperor\'s tutor, to the throne (Huters\'s translation): "establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems." The court overruled him; about 98 applied and about 30 were admitted (Zhao; Lei). This is the BeInTheRoom.',
           'June to September 1898: the Guangxu Emperor\'s reform decrees; Cixi\'s coup on 21 September; the emperor confined; six reformers executed.',
-          'Do not say Cixi spent the navy\'s money and so China lost. Elman: her Summer Palace spending "did not use up the imperial treasury or leave nothing for the Chinese navy," though it limited the fleet; the deeper problems were disorganization and training.',
+          'Do not say Cixi spent the navy\'s money and so China lost. Elman: her Summer Palace spending "did not use up the imperial treasury or leave nothing for the Chinese navy," though it limited the fleet. For the 1894 battle of the Yalu he points to Qing fleets never under one command, Japan\'s faster ships, quick-firing guns and better naval leadership, and Chinese ships short of shells (his diagnosis of 1884 to 1885 was disorganization and poor training; he also notes Japanese crews were better trained by 1894, p. 295).',
           'The photograph is by Liang Shitai (See Tay), 1879, during Grant\'s tour of the world; the print is titled as taken at Tianjin.'
         ],
         ask: 'Why might borrowing machines but not ideas have limits?',

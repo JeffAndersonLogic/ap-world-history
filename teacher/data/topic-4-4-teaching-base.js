@@ -345,7 +345,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'KC-4.3.II.C names the cause in three words: political, religious and economic rivalries. The five empires are the CED\'s: Portuguese, Spanish, Dutch, French and British (England until the Union of 1707).',
-          'Political: Spain and Portugal divided their claims by the Treaty of Tordesillas (1494); the Dutch Republic fought for its independence from Spain from 1568; England and France fought each other repeatedly for colonies in the 1600s and 1700s.',
+          'Political: Spain and Portugal divided their claims by the Treaty of Tordesillas (1494); the Dutch rose against Spain in 1568 (Union of Utrecht 1579, abjuration of Philip II 1581, a republic by about 1588) and Spain recognized their independence in 1648; England and France fought each other repeatedly for colonies in the 1600s and 1700s.',
           'Religious: papal bulls of the 1450s cast Portuguese expansion as war on Muslim "Saracens" and a Christian mission; after the Reformation, Protestant England and the Dutch fought Catholic Spain (the Anglo-Spanish War, 1585 to 1604).',
           'Economic: gold from West Africa, spices from Asia, sugar from the Americas, and the profits of carrying them.',
           'Do not explain how the Dutch and English organized their trading companies. That is 4.5.'
