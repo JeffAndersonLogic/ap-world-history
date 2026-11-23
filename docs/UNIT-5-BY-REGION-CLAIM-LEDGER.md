@@ -792,3 +792,23 @@ railroad fuel by 1880 (White); 55 million Europeans (Hatton and Williamson).
   Topic 5.2 (line 190). PENDING.
 - V5. Americas claims KC-5.3.I.A but teaches only its second sentence (natural rights, social
   contract), not its first (empiricism, religion's role in public life, reason). PENDING.
+
+**Reviewer W (history: Middle East, South and Southeast Asia), 6 findings.** Verified sound: all
+19 CED quotations (by script); links; Beinin; the Gülhane text; Smyrna cotton, 1786 (Hansard
+1847); Aleppo handlooms; the 1838 cloth price; the 1870 cable; McKeown; HSBC 1865.
+
+- W1. Middle East: Serbia, Montenegro and Romania "recognized as fully independent" in 1878, with
+  no cause given, so nationalism reads as the sole cause; Russia's war of 1877 to 1878 and the
+  Congress of Berlin did it. Same in Topic 5.2 (line 291). PENDING.
+- W2. South and Southeast Asia claims KC-5.1.III.B (transnational businesses multiplied, relying on
+  new banking and finance practices) and teaches neither part. PENDING.
+- W3. Middle East: "The French left in 1801" sounds voluntary; their army surrendered to British
+  and Ottoman forces. Same in Topic 5.6 (line 110). PENDING.
+- W4. South and Southeast Asia, section 02 box: the optional example "Shipbuilding in India and
+  Southeast Asia" sits under the rising-West sentence; the CED lists it under Asia's falling
+  share. PENDING.
+- W5. Middle East, story and Technological card: the fez factory's steam engines "around 1850";
+  steam machinery came from 1843, Belgian machines 1843 to 1851 (History of Istanbul). Same in
+  Topic 5.8 (line 265). PENDING.
+- W6. South and Southeast Asia: "From 1865 an overland telegraph line joined London and India"; it
+  used the 1864 Persian Gulf submarine cable. PENDING.
