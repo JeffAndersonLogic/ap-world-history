@@ -10,7 +10,7 @@
  * The Key Concepts that drive it are KC-4.3.II.A.i (trading posts and restrictive policies),
  * KC-4.1.IV (silver), KC-4.2.II.A (peasant and artisan labor), KC-4.1.V.D (American crops),
  * KC-4.2.III.A and KC-4.3.I.B (the Qing), with shorter threads for KC-4.1.II (the compass),
- * KC-4.1.III.A (Portugal reaching Macau), KC-4.1.VI (Christianity's spread and the conflict it
+ * KC-4.1.VI (Christianity's spread and the conflict it
  * brought; the syncretism half is cut with an ellipsis and taught in other chapters), KC-4.2.II (peasant farming spreading uphill, Topic 4.8), KC-4.2.III.B (Han
  * officials sharing power) and KC-4.3.III.iii (Shimabara and resistance to the queue order). Facts
  * come from the Topic 4.1, 4.3, 4.4, 4.5 and 4.7 chapters and their claim ledgers, plus a few
@@ -49,6 +49,16 @@
  * Review pass 3 (2026-11-23, ledger R3, X6a): Ming China let the Portuguese "settle" (not "trade")
  * at one port, since Macau's merchants also went to the Canton fairs; Zheng He is marked as before
  * 1450; and the population growth after 1750 is marked as after this unit ends.
+ *
+ * Review pass 4 (2026-11-23, ledger AA3, AG1a, AG1d, and the quotation self-audit): the Dutch at
+ * Hirado and Dejima are named as the Dutch East India Company (VOC), chartered in 1602 with a
+ * monopoly on Dutch trade in Asia, for KC-4.1.IV's chartered monopoly companies. KC-4.1.III.A left
+ * `ced` and its box (Portuguese maritime technology is taught by the Europe, South and Southeast
+ * Asia and Sub-Saharan Africa chapters, not here). Self-audit additions: Portugal's African posts
+ * (Elmina, 1482) and the profits of the Macau to Japan voyage (Boxer, The Great Ship from Amacon,
+ * 1959) for KC-4.3.II.A.i; silver buying Asian goods for sale in Europe (KC-4.1.IV); the Han
+ * scholar-officials as landowners, an economic elite too (KC-4.2.III.B); the Qing's end in 1912
+ * marked as after this unit.
  */
 
 const CB = 'What the College Board says';
@@ -70,7 +80,6 @@ module.exports = {
   topics: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8'],
   ced: [
     'KC-4.1.II',
-    'KC-4.1.III.A',
     'KC-4.1.IV',
     'KC-4.1.V.D',
     'KC-4.1.VI',
@@ -111,9 +120,10 @@ module.exports = {
         {
           heading: 'Portugal at Macau',
           blocks: [
-            { p: `Portugal reached India by sea in <span class="num">1498</span>. It built a <span class="kt">trading-post empire</span> (a chain of fortified ports, not conquered land). In <span class="num">1511</span> Portugal took the port of Malacca. It sits on the strait that leads into the South China Sea. From there, Portuguese ships sailed on to China. <a href="#r4-south-southeast-asia-iberians">The South and Southeast Asia chapter</a> tells how Portugal built its chain of ports.` },
+            { p: `Portugal built trading posts on Africa's west coast, such as the fort at Elmina in <span class="num">1482</span>. It reached India by sea in <span class="num">1498</span>. It built a <span class="kt">trading-post empire</span> (a chain of fortified ports, not conquered land). In <span class="num">1511</span> Portugal took the port of Malacca. It sits on the strait that leads into the South China Sea. From there, Portuguese ships sailed on to China. <a href="#r4-south-southeast-asia-iberians">The South and Southeast Asia chapter</a> tells how Portugal built its chain of ports.` },
             { p: `From <span class="num">1557</span>, Chinese provincial officials let Portuguese merchants settle permanently at <b>Macau</b>. Macau is a small peninsula on China's south coast. Chinese officials kept authority over the port, and the Portuguese paid them a yearly ground rent. Macau existed because China allowed it.` },
             { p: `Why allow it? Ming law barred Chinese merchants from trading directly with Japan. In <span class="num">1567</span> the Ming eased its limits and licensed Chinese merchants to trade overseas. But the ban on Japan stayed. The Portuguese filled that gap. They carried Chinese silk to Japan and Japanese silver back to China. Macau kept the Portuguese in one place that Chinese officials could watch.` },
+            { p: `The trade made Macau's merchants rich. The Portuguese crown profited too. It controlled the yearly voyage to Japan and granted or sold the right to command it.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -126,7 +136,6 @@ module.exports = {
                 `In short: Asian tools helped Europeans cross oceans, and Portugal built trading posts that reached China.`,
                 `<a href="#chapter-t4-1">Topic 4.1</a>: "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."`,
                 `An optional College Board example: the compass.`,
-                `<a href="#chapter-t4-2">Topic 4.2</a>: "Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire."`,
                 `<a href="#chapter-t4-4">Topic 4.4</a>: "Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks."`
               ]
             } }
@@ -167,7 +176,7 @@ module.exports = {
           heading: 'Three roads to China',
           blocks: [
             { p: `Silver reached China by three roads. The first road started in Japan, and much of China's silver came from there. Portuguese ships carried Japanese silver through Macau, and Chinese and Japanese traders carried it too. In the decades around <span class="num">1600</span>, Japan may have sent China as much silver as the Americas did.` },
-            { p: `Over the whole period, though, more silver came from the Americas. It was mined at <b>Potosí</b> in the Andes from <span class="num">1545</span>, and at Zacatecas in Mexico from <span class="num">1546</span>. On the second road, European ships carried it across the Atlantic and then around Africa to Asia. <a href="#r4-americas-silver">The Americas chapter</a> tells who was forced to mine it.` },
+            { p: `Over the whole period, though, more silver came from the Americas. It was mined at <b>Potosí</b> in the Andes from <span class="num">1545</span>, and at Zacatecas in Mexico from <span class="num">1546</span>. On the second road, European ships carried it across the Atlantic and then around Africa to Asia. There it bought silk, porcelain and other Asian goods to sell in Europe. <a href="#r4-americas-silver">The Americas chapter</a> tells who was forced to mine it.` },
             { p: `The third road crossed the Pacific. In <span class="num">1565</span> a Spanish expedition found a sailing route back across the Pacific, from Asia to Mexico. In <span class="num">1571</span> the Spanish founded <b>Manila</b> in the Philippines. From then on, the <span class="kt">Manila galleon</span> carried silver from Acapulco in Mexico to Manila.` },
             { p: `At Manila, Chinese merchants from Fujian and nearby provinces sailed in with silk and porcelain. They wanted silver in return. Antonio de Morga was a Spanish official who had served in Manila. In a <span class="num">1609</span> book, he wrote that the Chinese took "silver and reals, for they do not like gold, nor any other goods in exchange." Reals were Spanish silver coins.` }
           ]
@@ -230,7 +239,7 @@ module.exports = {
             { p: `In <span class="num">1637</span> and <span class="num">1638</span>, peasants rose up at <b>Shimabara</b>, near Nagasaki, and on the nearby Amakusa islands. Many of the rebels were Christian. The heavy taxes they rose against were their local lords' taxes, not the shogun's. At Shimabara the lord was <b>Matsukura Katsuie</b>. He kept charging heavy taxes through years of famine.` },
             { p: `The ban on Christianity was the shogunate's, and the local lords enforced it. So the rising was also local resistance to a central government that was taking more power for itself. The shogunate sent a huge army and crushed it. Later it executed Matsukura for ruling badly.` },
             { p: `In <span class="num">1639</span> the councilors banned Portuguese ships outright. The order gives the reason: the Portuguese "have secretly transported those who are going to propagate that religion." In other words, the shogunate accused them of sneaking in missionaries to spread Christianity.` },
-            { p: `The Dutch stayed, because they came to trade, not to preach. After <span class="num">1639</span> they were the only Europeans allowed to trade in Japan. From <span class="num">1641</span> they were moved to <b>Dejima</b>, under Japanese watch. Dejima was a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki.` },
+            { p: `The Dutch stayed, because they came to trade, not to preach. They worked for the Dutch East India Company (VOC). The Dutch government had chartered it in <span class="num">1602</span>. The charter gave it a monopoly on Dutch trade in Asia. No other Dutch merchant could trade there. After <span class="num">1639</span> they were the only Europeans allowed to trade in Japan. From <span class="num">1641</span> they were moved from the port of Hirado to <b>Dejima</b>, under Japanese watch. Dejima was a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki.` },
             { p: `Japan had chosen a <span class="kt">restrictive trade policy</span>: limits on who could trade, where, and in what.` },
             { note: {
               kind: 'misconception',
@@ -291,7 +300,7 @@ module.exports = {
           blocks: [
             { p: `The Manchus were a small minority. They ruled the <b>Han Chinese</b> (China's huge ethnic majority), and they did not try to make China Manchu. They kept the Ming civil service examinations (tests for government jobs), the Confucian officials and the law codes. Han scholars still filled most government jobs.` },
             { p: `The <b>Kangxi</b> emperor (ruled <span class="num">1661</span> to <span class="num">1722</span>) presented himself as a model Confucian ruler. He also tolerated Christianity in <span class="num">1692</span>. His son Yongzheng banned it in <span class="num">1724</span>.` },
-            { p: `Han scholar-officials now shared power with the Manchus. Under <span class="kt">dual appointment</span>, many top posts in the capital went to two officials, one Manchu and one Han. That way the Manchu could watch the Han.` },
+            { p: `Han scholar-officials now shared power with the Manchus. Many came from families that owned land, so they were an economic elite too. Under <span class="kt">dual appointment</span>, many top posts in the capital went to two officials, one Manchu and one Han. That way the Manchu could watch the Han.` },
             { p: `Qing emperors also kept the biggest decisions in their own hands. Yet Kangxi tried to win over scholars still loyal to the Ming, with a special examination in <span class="num">1679</span>. The old elite's power went up and down, and the emperor made the final decisions.` }
           ]
         },
@@ -325,7 +334,7 @@ module.exports = {
         }
       ],
       terms: [
-        ['Qing dynasty', `The Manchu dynasty, named in 1636, that ruled China from 1644 to 1912.`],
+        ['Qing dynasty', `The Manchu dynasty, named in 1636, that ruled China from 1644. It lasted until 1912, long after this unit ends.`],
         ['Banners', `Hereditary military units of Manchus, Mongols and early Han allies. They conquered China and became a paid, privileged elite.`],
         ['Queue', `The Manchu hairstyle that Han men had to wear from 1645: the front of the head shaved, the rest in a long braid.`],
         ['Dual appointment', `The Qing practice of giving many top posts to one Manchu and one Han official.`]

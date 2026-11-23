@@ -867,16 +867,16 @@ Bombay cable; the New Order; the Ottoman telegraph from 1855; links; mistake box
 - AE1. Middle East: "From 1820 the most important crop was a new one, long-staple cotton"; 1820
   was a few trial bales; commercial planting and export began in 1821 and it became the leading
   crop over the next few years (ALCOTEXA; Owen, British Academy). Same in Topic 5.6 (line 282).
-  PENDING.
+  **FIXED:** "In 1821 Egypt began to grow a new crop for sale abroad, long-staple cotton ... Within a few years it was Egypt's most important crop" (ALCOTEXA; Egyptian Cotton Association).
 - AE2. Europe: KC-5.3.IV.B cut to "... an emergent feminism challenged political and gender
   hierarchies" drops "Demands for women's suffrage", and the chapter teaches no demand for women's
   political rights; de Gouges's Article 6 does make that demand. (Supersedes the pass 3 narrowing.)
-  PENDING.
+  **FIXED:** KC-5.3.IV.B quoted whole; "Her Article 6 said that all citizens, women and men, should take part in making the law, in person or through representatives."
 - AE3. Europe: "joined most of Italy into one kingdom in 1861, and Rome was added in 1870" omits
   Venetia (1866); the card's "Italy was unified in 1861" overstates. Same in Topic 5.2 (line 284).
-  PENDING.
+  **FIXED:** "Venetia was added in 1866, and Rome in 1870"; card "Most of Italy was joined into one kingdom in 1861".
 - AE4. Europe quotes KC-5.1.I.B but never teaches coal-burning steam power on the Continent or the
-  fossil fuels' greater energy (the Britain chapter does). PENDING.
+  fossil fuels' greater energy (the Britain chapter does). **FIXED** by dropping KC-5.1.I.B and its quotation from Europe (Britain and the Americas claim and teach it).
 
 **Reviewer AD (history: Britain, the Americas), 4 findings.** Verified sound: all 45 CED quotations
 (by script, with a negative control); links; Bolívar (Bertrand); Hatton; Cromford's child workers;
@@ -903,7 +903,7 @@ telegraph before and after 1870; Meiji, Qing and Indian dates.
 - AF1. South and Southeast Asia, section 03 mistake box: "What fell was its share of the world's
   manufactured goods. The falling share is the change" reads as "only the share fell", against
   the chapter's own "It lost ground, not only share" and Bairoch's per-person index (7 in 1750, 2
-  in 1880; Clingingsmith and Williamson, LSE GEHN). PENDING.
+  in 1880; Clingingsmith and Williamson, LSE GEHN). **FIXED:** "But do not write that only its share fell, either. By Bairoch's estimates, India also made fewer goods in all, and fewer per person. That fall is the change. The weaving that went on is the continuity."
 
 **Reviewer AG (CED and consistency, all twelve chapters), Unit 5 items.**
 
@@ -911,11 +911,21 @@ telegraph before and after 1870; Meiji, Qing and Indian dates.
   (the telegraph) and KC-5.1.VI.C (pollution, poverty, crime, public health, infrastructure)
   whole, and teaches only part of each. PENDING.
 - AG1e. Europe quotes KC-5.3.I.C ("Enlightenment ideas and religious ideals influenced various
-  reform movements") and ties no reform to either. PENDING.
+  reform movements") and ties no reform to either. **FIXED** by teaching it (Europe is the only chapter that teaches the end of serfdom): liberal demands "grew from Enlightenment ideas, such as natural rights and the separation of powers"; the Quaker founders of the 1787 society, with a link phrase to the Britain chapter.
 - AG3. Americas: "Its win in 1763 had pushed France out of North America" against the same
   chapter's Louisiana sale of 1803; France lost Canada and the land east of the Mississippi.
   PENDING.
 - AG4. Americas: "So he sold Louisiana" gives Saint-Domingue's loss and the coming war as the whole
   cause. PENDING.
 - AG5. East Asia's tariffs "only in 1911" and the Middle East's parliament "did not meet again
-  until 1908" are not marked as after the unit. PENDING.
+  until 1908" are not marked as after the unit. **FIXED:** "until 1908, after this unit ends"; "only in 1911, after this unit ends".
+
+**Pass 4 self-audit, Europe, the Middle East, East Asia and South and Southeast Asia.** Europe:
+KC-5.3.I.A's empiricism; KC-5.1.I.D's spread to the US and Japan; KC-5.1.I.E's electricity
+(Siemens and Halske, Berlin 1879) and precision machinery; socialism defined; KC-5.1.V.D dropped
+(Britain teaches all four kinds of reform). Middle East: KC-5.1.V.B's Qing reforms and KC-5.1.II.B's
+rising Western share and India's fall, by link phrases. East Asia: KC-5.1.II.B's Western share
+(Bairoch: about a quarter in 1750, over 80 percent by 1900); KC-5.1.III.B's new finance (HSBC's
+1874 Qing loan, the first public loan) and other transnational businesses; KC-5.1.I.D's spread.
+South and Southeast Asia: KC-5.1.II.B's rising Western share; KC-5.1.IV's increased trade taught
+and "exploration" cut as a list item; the 1901 census marked as just after the unit. **FIXED.**

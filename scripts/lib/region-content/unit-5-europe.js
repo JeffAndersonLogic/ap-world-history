@@ -8,8 +8,8 @@
  * liberals of 1830 and 1848, the end of serfdom and the unification of Italy and Germany
  * (KC-5.3.IV.A.i, KC-5.3.I.C, KC-5.3.II.i, KC-5.3.II.iii), industry spreading to Belgium, the
  * German states and Russia, with the second industrial revolution and the tariff story
- * (KC-5.1.I.D, KC-5.1.I.B, KC-5.1.I.E, KC-5.1.IV, KC-5.1.III.A), and Marx's party and Bismarck's
- * answer to it (KC-5.3.IV.A.ii, KC-5.1.V.A, KC-5.1.V.D). Facts come from the Topic 5.1, 5.2, 5.4,
+ * (KC-5.1.I.D, KC-5.1.I.E, KC-5.1.IV, KC-5.1.III.A), and Marx's party and Bismarck's answer to it
+ * (KC-5.3.IV.A.ii, KC-5.1.V.A). Facts come from the Topic 5.1, 5.2, 5.4,
  * 5.5, 5.7 and 5.8 chapters and their claim ledgers, keeping their narrowings (the Enlightenment
  * not against religion; the ideas came before the revolutions but were not their only cause;
  * Seraing "in what is today Belgium"; the Manifesto's first section, not its first line;
@@ -44,6 +44,19 @@
  * vote at Seneca Falls); facts after 1900 marked as later: Germany's dyes by 1914, the
  * Trans-Siberian's through route by 1904, and the settlers, whose peak came from 1906 to 1914
  * (Wikipedia, "Trans-Siberian Railway": "about four million peasants arrived in Siberia").
+ *
+ * Review loop pass 4 (2026-11-23, findings AE2, AE3, AE4, AG1e, and the self-audit): KC-5.3.IV.B
+ * quoted whole again, with de Gouges's Article 6 as the demand (all citizens, women and men, take
+ * part in making the law, in person or through representatives; Wikipedia, "Declaration of the
+ * Rights of Woman and of the Female Citizen"); Venetia added to Italy in 1866; KC-5.1.I.B dropped
+ * (the Britain and Americas chapters claim and teach steam, coal and the fossil fuels revolution);
+ * KC-5.3.I.C kept, because this is the only chapter that teaches the end of serfdom, with the
+ * liberals' demands tied to Enlightenment ideas and the Quakers of 1787 (from the Britain chapter)
+ * for religious ideals; self-audit: empiricism ("by observing and testing"), industry reaching the
+ * United States and Japan (links), electricity (Siemens and Halske's electric train at the Berlin
+ * trade fair of 1879; Wikipedia, "Siemens locomotive of 1879"), engines as precision machinery,
+ * socialism defined, and KC-5.1.V.D dropped (the Britain chapter claims and teaches all four kinds
+ * of reform).
  */
 
 const CB = 'What the College Board says';
@@ -75,13 +88,11 @@ module.exports = {
     'KC-5.3.IV.A.i',
     'KC-5.3.IV.A.ii',
     'KC-5.3.IV.B',
-    'KC-5.1.I.B',
     'KC-5.1.I.D',
     'KC-5.1.I.E',
     'KC-5.1.III.A',
     'KC-5.1.IV',
-    'KC-5.1.V.A',
-    'KC-5.1.V.D'
+    'KC-5.1.V.A'
   ],
 
   empires: [
@@ -104,7 +115,7 @@ module.exports = {
         {
           heading: 'Reason, first for nature, then for people',
           blocks: [
-            { p: `In <span class="num">1687</span> the English scientist Isaac Newton published laws of motion and gravity that explained both the planets and a falling apple. Many readers took a lesson: the world runs by laws that a human mind can discover.` },
+            { p: `In <span class="num">1687</span> the English scientist Isaac Newton published laws of motion and gravity that explained both the planets and a falling apple. Many readers took a lesson: the world runs by laws that people can discover by observing and testing.` },
             { p: `Then writers turned the same method on people. In <span class="num">1689</span> the English philosopher John Locke argued that people are born with <span class="kt">natural rights</span>. These are rights to their "lives, liberties and estates" (property). Government, he said, rests on a <span class="kt">social contract</span>: people accept it so that it will protect their rights. No one may be "subjected to the political power of another, without his own consent."` },
             { p: `French writers pushed the questions further. In <span class="num">1748</span> Montesquieu argued for the <span class="kt">separation of powers</span>. One group makes the laws, another carries them out, and a third judges. Liberty, he said, is safest when power is divided.` },
             { p: `Voltaire fought for <span class="kt">religious toleration</span> (freedom to hold any faith without punishment). In <span class="num">1762</span> a French court executed a Protestant named Jean Calas for killing his son to stop him from becoming a Catholic. Calas most likely did not commit the crime, and Voltaire campaigned to clear his name.` },
@@ -162,7 +173,7 @@ module.exports = {
           blocks: [
             { p: `In August <span class="num">1789</span> the Assembly ended the nobles' special privileges. It adopted the Declaration of the Rights of Man and of the Citizen. Article 1 says: "Men are born and remain free and equal in rights."` },
             { p: `Article 3 says: "The principle of all sovereignty resides essentially in the nation." <span class="kt">Sovereignty</span> (the highest power in a state) belonged to the nation, not the king.` },
-            { p: `The words reached further than the men who wrote them meant. In <span class="num">1791</span> Olympe de Gouges rewrote the declaration for women. Her Declaration of the Rights of Woman and of the Female Citizen said: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in <span class="num">1793</span>.` },
+            { p: `The words reached further than the men who wrote them meant. In <span class="num">1791</span> Olympe de Gouges rewrote the declaration for women. Her Declaration of the Rights of Woman and of the Female Citizen said: "Woman is born free and remains equal to man in rights." Her Article 6 said that all citizens, women and men, should take part in making the law, in person or through representatives. The revolutionary government executed her in <span class="num">1793</span>.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -188,7 +199,7 @@ module.exports = {
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world."`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "The ideas of Enlightenment philosophers, as reflected in revolutionary documents ... including ... the French “Declaration of the Rights of Man and of the Citizen” during the French Revolution ... influenced resistance to existing political authority, often in pursuit of independence and democratic ideals."`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity."`,
-                `<a href="#chapter-t5-1">Topic 5.1</a>: "... an emergent feminism challenged political and gender hierarchies."`,
+                `<a href="#chapter-t5-1">Topic 5.1</a>: "Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies."`,
                 `An optional College Board example: "Olympe de Gouges's Declaration of the Rights of Woman and of the Female Citizen".`
               ]
             } }
@@ -215,9 +226,10 @@ module.exports = {
         {
           heading: '1830 and 1848',
           blocks: [
-            { p: `The revolutions left new answers to an old question: how should a country be run? <span class="kt">Liberals</span> wanted a <span class="kt">constitution</span> (basic laws that even the government must follow). They wanted an elected <span class="kt">parliament</span> (a lawmaking assembly) to limit the government.` },
+            { p: `The revolutions left new answers to an old question: how should a country be run? <span class="kt">Liberals</span> wanted a <span class="kt">constitution</span> (basic laws that even the government must follow). They wanted an elected <span class="kt">parliament</span> (a lawmaking assembly) to limit the government. These demands grew from Enlightenment ideas, such as natural rights and the separation of powers.` },
             { p: `They wanted rights such as a free press protected, but many wanted only men with property to vote. <span class="kt">Democracy</span> (rule by the people) pushed for the vote to reach all men.` },
-            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>. In 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds demanded constitutions and wider <span class="kt">suffrage</span> (the right to vote). That year France gave the vote to all adult men and ended slavery in its colonies for good. Most of the uprisings were crushed within two years, but the demands did not go away.` }
+            { p: `These ideas helped set off revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>. In 1848 hard times after the bad harvests of 1845 to 1847 helped too. Crowds demanded constitutions and wider <span class="kt">suffrage</span> (the right to vote). That year France gave the vote to all adult men and ended slavery in its colonies for good. Most of the uprisings were crushed within two years, but the demands did not go away.` },
+            { p: `Religious faith moved reformers too. In <span class="num">1787</span> twelve men founded Britain's first society against the slave trade. Nine were Quakers (members of a Christian group that had come to see slavery as a sin). <a href="#r5-britain-calls">The Britain chapter</a> tells that story.` }
           ]
         },
         {
@@ -240,14 +252,14 @@ module.exports = {
         {
           heading: 'Nationalism joins states',
           blocks: [
-            { p: `Nationalism could also join small states into one: <span class="kt">unification</span>. Italy was split into several states, some ruled by Austria. Count Cavour was chief minister of the Italian kingdom of Piedmont-Sardinia. The soldier Giuseppe Garibaldi led volunteers who took Sicily and Naples in <span class="num">1860</span>. Nationalists like these joined most of Italy into one kingdom in <span class="num">1861</span>, and Rome was added in <span class="num">1870</span>.` },
+            { p: `Nationalism could also join small states into one: <span class="kt">unification</span>. Italy was split into several states, some ruled by Austria. Count Cavour was chief minister of the Italian kingdom of Piedmont-Sardinia. The soldier Giuseppe Garibaldi led volunteers who took Sicily and Naples in <span class="num">1860</span>. Nationalists like these joined most of Italy into one kingdom in <span class="num">1861</span>. Venetia was added in <span class="num">1866</span>, and Rome in <span class="num">1870</span>.` },
             { p: `Germany was split into more than thirty states. In <span class="num">1848</span> German liberals met at Frankfurt to unite them under an elected parliament, and failed. In <span class="num">1862</span> Otto von Bismarck, chief minister of Prussia (the largest German state), told its lawmakers something different. Great questions were decided not "by speeches and majority resolutions" but "by iron and blood." He meant armies and war.` },
             { p: `After wars against Denmark, Austria and France, the German Empire was proclaimed on 18 January <span class="num">1871</span> at Versailles. Nationalism also pulled peoples out of empires. <a href="#r5-middle-east-nations">The Middle East chapter</a> tells how Balkan peoples left the Ottoman Empire.` },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Anger at kings produced new ideologies, reforms widened rights, and nationalists joined divided lands.`,
+                `In short: Anger at kings produced new ideologies, ideas and faith moved reforms that widened rights, and nationalists joined divided lands.`,
                 `<a href="#chapter-t5-2">Topic 5.2</a>: "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism."`,
                 `<a href="#chapter-t5-1">Topic 5.1</a>: "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom."`,
                 `<a href="#chapter-t5-1">Topic 5.1</a>: "Nationalism also became a major force shaping the historical development of states and empires."`,
@@ -290,6 +302,7 @@ module.exports = {
             { p: `Russia's government pushed industry on purpose. From <span class="num">1892</span> to <span class="num">1903</span>, Sergei Witte was Russia's minister of finance. His government borrowed large sums from foreign lenders. It spent the money on railways and new industry. Russia's industry grew fastest in the 1890s.` },
             { p: `Russia's railways grew from 27 kilometers in <span class="num">1840</span> to more than 53,000 in <span class="num">1900</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and Witte pushed it forward. By <span class="num">1904</span>, after this unit ends, trains could cross to the Pacific, reaching lands far from any sea.` },
             { p: `The railway carried peasant settlers east to farm Siberia. Their numbers grew most after 1900, when this unit ends, and by 1914 millions had come. Trains also carried Siberian wheat west to sell.` },
+            { p: `Factory methods also spread beyond Europe, to the United States and Japan. <a href="#r5-americas-industry">The Americas chapter</a> and <a href="#r5-east-asia-japan-builds">the East Asia chapter</a> tell those stories.` },
             { p: `Steamships and the telegraph moved people and news across the oceans too. <a href="#r5-britain-factory">The Britain chapter</a> tells that story.` }
           ]
         },
@@ -299,7 +312,8 @@ module.exports = {
             { p: `After 1850 the <span class="kt">second industrial revolution</span> brought new methods in steel, chemicals, electricity and precision machinery. <span class="kt">Steel</span> (iron with a little carbon) is stronger and tougher than ordinary iron. Before the 1850s it was slow and costly to make in large amounts.` },
             { p: `In <span class="num">1856</span> the English inventor Henry Bessemer found a faster way, the <span class="kt">Bessemer process</span>. Air blown through melted iron burned out carbon and other impurities, and the burning kept the metal hot. Cheap steel became rails, bridges, ships and machines.` },
             { p: `German chemical firms led the world. BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes. By 1914, after this unit ends, Germany made most of the world's dyes.` },
-            { p: `In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany. In <span class="num">1886</span> Carl Benz patented a car with a small engine that burned a fuel made from oil. Both were <span class="kt">internal combustion engines</span>, which burn fuel inside the engine. Their big changes came after 1900.` }
+            { p: `Electricity became a new source of power. In <span class="num">1879</span> the German firm Siemens and Halske ran an electric train at a Berlin trade fair.` },
+            { p: `In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany. In <span class="num">1886</span> Carl Benz patented a car with a small engine that burned a fuel made from oil. Both were <span class="kt">internal combustion engines</span>, which burn fuel inside the engine. They were precision machinery: their metal parts had to be made to exact sizes to fit and work. Their big changes came after 1900.` }
           ]
         },
         {
@@ -313,9 +327,8 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Industry spread beyond northwestern Europe, new engines burned coal and oil, railways opened inland lands, and Smith's ideas helped make trade freer.`,
+                `In short: Industry spread beyond northwestern Europe, new methods made steel, chemicals, electricity and machines, railways opened inland lands, and Smith's ideas helped make trade freer.`,
                 `<a href="#chapter-t5-4">Topic 5.4</a>: "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan."`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "The “second industrial revolution” led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century."`,
                 `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
                 `<a href="#chapter-t5-7">Topic 5.7</a>: "Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith's theories of laissez-faire capitalism and free markets."`
@@ -345,7 +358,8 @@ module.exports = {
           heading: 'The Manifesto',
           blocks: [
             { p: `In <span class="num">1848</span> the German writers Karl Marx and Friedrich Engels published the Communist Manifesto. Its first section begins: "The history of all hitherto existing society is the history of class struggles."` },
-            { p: `Industry, they argued, was splitting society into factory owners (the <span class="kt">bourgeoisie</span>) and wage workers (the <span class="kt">proletarians</span>). One day the workers would overthrow the owners. They would end private ownership of the <span class="kt">means of production</span> (the land, factories and machines that make wealth). They would build a society without classes: <span class="kt">communism</span>.` }
+            { p: `Industry, they argued, was splitting society into factory owners (the <span class="kt">bourgeoisie</span>) and wage workers (the <span class="kt">proletarians</span>). One day the workers would overthrow the owners. They would end private ownership of the <span class="kt">means of production</span> (the land, factories and machines that make wealth). They would build a society without classes: <span class="kt">communism</span>.` },
+            { p: `Marx's ideas were one kind of <span class="kt">socialism</span>: the idea that land and factories should be owned in common, not by private owners.` }
           ]
         },
         {
@@ -377,10 +391,9 @@ module.exports = {
               kind: 'cb',
               label: CB,
               paras: [
-                `In short: Anger at those in power produced Marx's ideas and workers' parties, and some governments answered with reform.`,
+                `In short: Anger at those in power produced Marx's ideas, and workers organized in unions and parties.`,
                 `<a href="#chapter-t5-8">Topic 5.8</a>: "Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism."`,
-                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers' movements and political parties emerged in different areas, promoting alternative visions of society."`,
-                `<a href="#chapter-t5-8">Topic 5.8</a>: "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms."`
+                `<a href="#chapter-t5-8">Topic 5.8</a>: "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers' movements and political parties emerged in different areas, promoting alternative visions of society."`
               ]
             } }
           ]
@@ -406,7 +419,7 @@ module.exports = {
       {
         category: 'Political',
         title: 'Revolutions and unification remade Europe\'s states, but kings kept much of their power.',
-        body: `France ended its monarchy in 1792. Italy was unified in 1861 and Germany in 1871. Yet in 1900 kings and emperors still ruled most of Europe.`
+        body: `France ended its monarchy in 1792. Most of Italy was joined into one kingdom in 1861, and Germany was unified in 1871. Yet in 1900 kings and emperors still ruled most of Europe.`
       },
       {
         category: 'Religious',

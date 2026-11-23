@@ -40,6 +40,14 @@
  * India telegraph ran mostly over land but used the 1864 Persian Gulf cable (Encyclopaedia Iranica,
  * "Indo-European Telegraph Department"). Roy's 1890s to 1930s and the 1908 count are marked as
  * running past the unit.
+ *
+ * Review pass 4 (2026-11-23, finding AF1 and self-audit): the section 03 mistake box no longer
+ * reads as "only the share fell"; by Bairoch's estimates India also made less in all (31.2 to 9.3
+ * on his index, 1750 to 1900) and less per person (7 in 1750, 2 in 1880). Section 02 now teaches
+ * the rise of Europe's and the United States' share (Bairoch: about 23 percent in 1750, about 86
+ * percent in 1900), which its box quotes. Section 03 says trains carried inland crops to the ports
+ * and trade grew, and its KC-5.1.IV quotation leaves out the list item "exploration", which no
+ * Unit 5 region chapter teaches. The 1901 census is marked as just after the unit.
  */
 
 const CB = 'What the College Board says';
@@ -136,6 +144,7 @@ module.exports = {
           heading: 'Why',
           blocks: [
             { p: `The first cause was price. Lancashire is a county in northern England. Its steam-powered mills made cloth more cheaply than hand weavers could. Their cloth was cheaper even in India itself.` },
+            { p: `Steam-powered factories spread to other parts of Europe and to the United States too. By Bairoch's estimates, Europe and the United States made about a quarter of the world's manufactured goods in 1750. By 1900 they made over 80 percent.` },
             { p: `The second cause was the trade rules. A <span class="kt">tariff</span> is a tax on goods brought in from another country. British cotton cloth entered Company-ruled India at a tariff of only 2½ percent. Britain treated Indian cloth very differently. Around <span class="num">1813</span>, Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain.` },
             { p: `Some of India's troubles began before the factories did. The Mughal Empire broke up, and there were years of drought. Historians still argue about how much each cause mattered.` },
             { note: {
@@ -183,7 +192,7 @@ module.exports = {
         {
           heading: 'New lines',
           blocks: [
-            { p: `India's first passenger train ran from Bombay to Thane in <span class="num">1853</span>. A railway could reach farms and towns where no river went.` },
+            { p: `India's first passenger train ran from Bombay to Thane in <span class="num">1853</span>. A railway could reach farms and towns where no river went. Trains carried inland crops, such as raw cotton, to the ports. India's trade with the world grew.` },
             { p: `The Suez Canal opened in Egypt in <span class="num">1869</span>. It made the sea voyage from Europe to India much shorter. It mostly served steamships, because sailing ships found the Red Sea's winds hard to sail against.` },
             { p: `News sped up, too. A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. From <span class="num">1865</span> a telegraph line joined London and India. It ran mostly over land, with an undersea cable in the Persian Gulf. Its messages passed through many relay stations and took days. In <span class="num">1870</span> an undersea cable through the Red Sea reached Bombay. Now a message between London and Bombay took minutes (<a href="#chapter-t5-5">Topic 5.5</a>).` },
             { p: `Banks followed the trade. The bank known today as HSBC opened in Hong Kong in <span class="num">1865</span>. That July it opened in London, to change money for clients in China and India. HSBC was a <span class="kt">transnational business</span> (one that works across the borders of many countries). It was itself a bank. It lent money and changed money for traders (<a href="#chapter-t5-7">Topic 5.7</a>).` }
@@ -202,19 +211,19 @@ module.exports = {
           blocks: [
             { p: `India's hand weaving shrank, but it did not die. A <span class="kt">handloom</span> is a loom worked by hand and foot, with no engine. Many weavers switched to cheaper machine-spun thread so they could keep weaving. Some of that thread came from India's new mills.` },
             { p: `The economic historian Tirthankar Roy studied these weavers. He finds that handloom cloth held a roughly steady share of India's cloth market from the 1890s to the 1930s. Most of those years come after this unit ends, about 1900. In <span class="num">1908</span>, just after the unit's end, about a million people in one province of northern India still lived from handloom weaving.` },
-            { p: `Most Indians still farmed. A <span class="kt">census</span> is an official count of the people. India's census of <span class="num">1901</span> found that about two-thirds of the people lived by farming.` },
-            { p: `Still, India's place in the world had changed. A <span class="kt">share</span> is a part of a whole. By Bairoch's estimates, India's share of the world's manufactured goods fell from about a quarter in 1750 to under 2 percent by <span class="num">1900</span>. His estimates suggest that India also made less per person. It lost ground, not only share.` },
+            { p: `Most Indians still farmed. A <span class="kt">census</span> is an official count of the people. India's census of <span class="num">1901</span>, taken just after this unit ends, found that about two-thirds of the people lived by farming.` },
+            { p: `Still, India's place in the world had changed. A <span class="kt">share</span> is a part of a whole. By Bairoch's estimates, India's share of the world's manufactured goods fell from about a quarter in 1750 to under 2 percent by <span class="num">1900</span>. His estimates suggest that India also made less in all, and less per person. It lost ground, not only share.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that India "stopped manufacturing." India kept making cloth, by hand and in mills. What fell was its share of the world's manufactured goods. The falling share is the change. The weaving that went on is the continuity.`
+              html: `Do not write that India "stopped manufacturing." India kept making cloth, by hand and in mills. But do not write that only its share fell, either. By Bairoch's estimates, India also made fewer goods in all, and fewer per person. That fall is the change. The weaving that went on is the continuity.`
             } },
             { note: {
               kind: 'cb',
               label: CB,
               paras: [
                 `In short: railways, steamships and the telegraph reached inland and led to more trade and migration.`,
-                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration."`,
+                `<a href="#chapter-t5-5">Topic 5.5</a>: "Railroads, steamships, and the telegraph made ... development, and communication possible in interior regions globally, which led to increased trade and migration."`,
               ]
             } }
           ]
@@ -310,7 +319,7 @@ module.exports = {
       {
         category: 'Social',
         title: 'Most people still worked the land and the loom, and millions moved',
-        body: `India's census of 1901 found about two-thirds of the people living by farming. In 1908, just after this unit ends, about a million people in one province still lived from handloom weaving. From 1846 to 1940, McKeown counted more than 29 million departures of Indians and more than 19 million of Chinese, mostly to Southeast Asia. Many later went home.`
+        body: `India's census of 1901, just after this unit ends, found about two-thirds of the people living by farming. In 1908, a few years later, about a million people in one province still lived from handloom weaving. From 1846 to 1940, McKeown counted more than 29 million departures of Indians and more than 19 million of Chinese, mostly to Southeast Asia. Many later went home.`
       },
       {
         category: 'Intellectual',

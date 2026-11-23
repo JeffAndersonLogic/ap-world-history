@@ -36,6 +36,15 @@
  * railway, Tomioka and the schools all in 1872; Topic 5.6); Elman's 1894 diagnosis follows Modern
  * Asian Studies 38:2 (2004), pp. 317 to 320; the 1873 conscription law "excused many men", as Topic 5.6.
  *
+ * Review loop pass 4 (2026-11-23, finding AG5 and self-audit): the 1911 tariff date and the Qing
+ * glossary's 1912 are marked as after the unit. Section 01 now teaches the rise of Europe's and the
+ * United States' share (Bairoch: about 23 percent in 1750, about 86 percent in 1900) and that many
+ * of their factories ran on steam (KC-5.1.II.B). Section 02 adds HSBC's 1874 loan, the Qing
+ * government's first public loan (HSBC History timeline; Li Wenjie, Journal of Modern Chinese
+ * History, 2025, on the Taiwan Defense Loan), and the spread of businesses across borders with a
+ * link to Lever Brothers in the Britain chapter (KC-5.1.III.B). Section 04 says factory methods
+ * had spread to other parts of Europe, the United States and Russia (KC-5.1.I.D, quoted whole).
+ *
  * Review loop pass 2 (2026-11-22, findings N5, Q7): the Intellectual card no longer says "only
  * Japan kept at it" (Self-Strengthening went on for decades; the 1898 reforms were stopped after
  * about three months), and the Religious card names Woren, the emperor's tutor, instead of
@@ -90,7 +99,7 @@ module.exports = {
           heading: 'A share, not an amount',
           blocks: [
             { p: `A <span class="kt">share</span> is a part of a whole. By <span class="num">1900</span>, in Bairoch's estimates, China's share of the world's manufactured goods had fallen to about 6 percent.` },
-            { p: `China did not stop making things. Farm families kept weaving cloth at home. More and more of it was woven from cheaper machine-made thread. But the world was now making far more goods. Factories in Europe and the United States made most of the new ones.` },
+            { p: `China did not stop making things. Farm families kept weaving cloth at home. More and more of it was woven from cheaper machine-made thread. But the world was now making far more goods. Factories in Europe and the United States made most of the new ones. Many of those factories ran on steam power. By Bairoch's estimates, the share made in Europe and the United States rose from about a quarter in 1750 to over 80 percent by 1900.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -120,7 +129,7 @@ module.exports = {
         }
       ],
       terms: [
-        ['Qing dynasty', `The Manchu family of emperors that ruled China from 1644 to 1912.`],
+        ['Qing dynasty', `The Manchu family of emperors that ruled China from 1644 to 1912, after this unit ends.`],
         ['Share', `A part of a whole. Here it means the part of all the world's manufactured goods made in one country.`]
       ]
     },
@@ -155,7 +164,8 @@ module.exports = {
           heading: 'A bank for the China trade',
           blocks: [
             { p: `Foreign merchants trading with China needed banks. In March <span class="num">1865</span> the bank known today as HSBC opened in Hong Kong. Its first name was the Hongkong and Shanghai Banking Company. A Scot working for a shipping company started it with a committee of merchant firms.` },
-            { p: `HSBC was itself a bank. It lent money to traders and changed one currency into another for them. It opened in Shanghai a month later and in London that July. By <span class="num">1900</span> it worked in 16 countries and territories. A business like this, working in many countries, is a <span class="kt">transnational business</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` }
+            { p: `HSBC was itself a bank. It lent money to traders and changed one currency into another for them. It opened in Shanghai a month later and in London that July. By <span class="num">1900</span> it worked in 16 countries and territories. A business like this, working in many countries, is a <span class="kt">transnational business</span> (<a href="#chapter-t5-7">Topic 5.7</a>).` },
+            { p: `HSBC also did something new in China. In <span class="num">1874</span> it arranged the Qing government's first public loan. A public loan is money a government borrows from many investors at once. In these years many other large businesses also began to work across borders. <a href="#r5-britain-free-trade">The Britain chapter</a> tells of one, Lever Brothers.` }
           ]
         },
         {
@@ -269,7 +279,7 @@ module.exports = {
           blocks: [
             { p: `Running so many businesses cost more than the government could afford. In <span class="num">1880</span> it decided to sell most of them.` },
             { p: `Business families such as Mitsui and Mitsubishi bought them. These families grew into huge business groups called <span class="kt">zaibatsu</span>. Mitsubishi bought the Nagasaki shipyard in <span class="num">1887</span>. In <span class="num">1889</span> Mitsui took over the Miike coal mine. It was the largest coal mine in the country.` },
-            { p: `Private companies built more. The Osaka Spinning Company opened in <span class="num">1883</span>. Its spinning machines came from Britain and were driven by steam, and it ran day and night. Like Britain's factories, mills like this brought many workers and machines together in one place (<a href="#chapter-t5-4">Topic 5.4</a>).` },
+            { p: `Private companies built more. The Osaka Spinning Company opened in <span class="num">1883</span>. Its spinning machines came from Britain and were driven by steam, and it ran day and night. Like Britain's factories, mills like this brought many workers and machines together in one place. Factory methods had already spread from Britain to other parts of Europe, to the United States and to Russia (<a href="#chapter-t5-4">Topic 5.4</a>).` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -286,7 +296,7 @@ module.exports = {
         {
           heading: 'Winning back its courts',
           blocks: [
-            { p: `Japan wanted to end the foreign courts on its soil. So it rewrote its laws on French and German models. In <span class="num">1894</span> Britain agreed to end its courts in Japan from <span class="num">1899</span>. Other countries followed. Japan won back full control of its tariffs only in <span class="num">1911</span>.` }
+            { p: `Japan wanted to end the foreign courts on its soil. So it rewrote its laws on French and German models. In <span class="num">1894</span> Britain agreed to end its courts in Japan from <span class="num">1899</span>. Other countries followed. Japan won back full control of its tariffs only in <span class="num">1911</span>, after this unit ends.` }
           ]
         },
         {

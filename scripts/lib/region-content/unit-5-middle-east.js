@@ -10,7 +10,7 @@
  * Red Sea cable put it on the fastest route to Asia (KC-5.1.II.B, KC-5.1.IV). Facts come from the
  * Topic 5.1, 5.2, 5.3, 5.4, 5.5, 5.6 and 5.8 chapters and their claim ledgers, keeping their
  * narrowings ("many" machines turned by animals, not all; Selim's army dated to the decade; the
- * crop monopolies, grain first and cotton from 1820, paid for the factories; the fez factory opened
+ * crop monopolies, grain first and cotton from 1821, paid for the factories; the fez factory opened
  * by Mahmud II's government in the 1830s and fitted with steam from the 1840s; the first parliament in
  * March 1877; historians weigh Egypt's failure differently). Left out on purpose: Persia and
  * Arabia, which the Unit 5 CED does not name, and the debts and occupation of Egypt after 1875,
@@ -48,6 +48,13 @@
  * Serbia and Montenegro fought on Russia's side, and the Congress of Berlin (1878), where Europe's
  * powers recognized the three as independent (Britannica, "Russo-Turkish wars" and "Congress of
  * Berlin"). The handloom count from 1860 to 1914 is marked as running past the unit.
+ *
+ * Review loop pass 4 (2026-11-23, findings AE1, AG5, and the self-audit): long-staple cotton dated
+ * to 1821, when commercial planting for export began after trial bales in 1820, and called the
+ * most important crop only "within a few years" (ALCOTEXA, "History"; Egyptian Cotton Association,
+ * "History Timeline"); the parliament's return in 1908 marked as after the unit; self-audit: Qing
+ * China's reforms (KC-5.1.V.B) linked to the East Asia chapter; KC-5.1.II.B's rising share for
+ * steam-powered Europe and the United States, and India's falling share (linked), taught.
  */
 
 const CB = 'What the College Board says';
@@ -107,6 +114,7 @@ module.exports = {
             { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt. Egypt had been an Ottoman province since <span class="num">1517</span>. But the <span class="kt">Mamluks</span> had stayed powerful there under the sultan's governors. They were a class of soldier-lords, and by the 1700s they held most of the real power. Napoleon's army easily defeated them. In <span class="num">1801</span> the French army in Egypt surrendered to British and Ottoman forces. British ships carried it home. But the French had shown what a modern European army could do.` },
             { p: `In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries. Then he built a new army along European lines (<a href="#chapter-t5-8">Topic 5.8</a>).` },
             { p: `So the first reforms answered a lost war against Russia. Napoleon's easy victory in Egypt then showed what a modern European army could do, and that added to the pressure. Later in the century, the pressure came more and more from industrial states. Selim's fall also shows something that came back again and again. Powerful old groups fought reform.` },
+            { p: `China's Qing government also tried to reform its army and economy. <a href="#r5-east-asia-self-strengthening">The East Asia chapter</a> tells that story.` },
             { note: {
               kind: 'cb',
               label: CB,
@@ -145,7 +153,7 @@ module.exports = {
         {
           heading: 'Crops paid for factories',
           blocks: [
-            { p: `His government took control of Egypt's farming. It told peasants what to plant. It bought their crops at low prices and sold them abroad at higher prices. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. The first monopolies were on grain and other crops. From <span class="num">1820</span> the most important crop was a new one, <span class="kt">long-staple cotton</span>. Its long fibers make strong, fine thread.` },
+            { p: `His government took control of Egypt's farming. It told peasants what to plant. It bought their crops at low prices and sold them abroad at higher prices. When there is only one allowed buyer or seller, that is a <span class="kt">monopoly</span>. The first monopolies were on grain and other crops. In <span class="num">1821</span> Egypt began to grow a new crop for sale abroad, <span class="kt">long-staple cotton</span>. Its long fibers make strong, fine thread. Within a few years it was Egypt's most important crop.` },
             { p: `The money from these crop monopolies paid for factories. From the late 1810s, the government built cotton mills and works for weapons, sugar and other goods. It bought European machines and hired European experts. By the early 1830s about 30 cotton mills employed about 30,000 workers. Many of them made cloth and uniforms for the army. Muhammad Ali used his control of trade to limit cheap British cloth in Egypt, to protect the mills.` },
             { p: `The workers did not choose these jobs. They were drafted, just as Egyptian peasants had long been forced to dig canals. From <span class="num">1822</span> peasants were drafted into the army too. Forcing people to serve in the army is called <span class="kt">conscription</span>. By the early 1830s the army had about 130,000 soldiers. In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences.` },
             { p: `This is <span class="kt">state-sponsored industry</span>: industry that a government plans, pays for and protects. In Egypt the government also owned the factories (<a href="#chapter-t5-6">Topic 5.6</a>).` }
@@ -219,7 +227,7 @@ module.exports = {
           heading: 'A constitution, suspended',
           blocks: [
             { p: `In December <span class="num">1876</span> the empire got a <span class="kt">constitution</span>. A constitution is a set of basic laws that even the government must follow. In March <span class="num">1877</span> the first Ottoman <span class="kt">parliament</span> met. A parliament is an assembly of representatives that helps make laws.` },
-            { p: `Sultan Abdulhamid II had come to the throne in <span class="num">1876</span>. In February <span class="num">1878</span> he <span class="kt">suspended</span> the constitution, which means he stopped using it. He also dissolved the parliament (sent its members home). He never formally abolished the constitution. But the parliament did not meet again until <span class="num">1908</span>. A ruler had given the reform, and a ruler could take it away.` },
+            { p: `Sultan Abdulhamid II had come to the throne in <span class="num">1876</span>. In February <span class="num">1878</span> he <span class="kt">suspended</span> the constitution, which means he stopped using it. He also dissolved the parliament (sent its members home). He never formally abolished the constitution. But the parliament did not meet again until <span class="num">1908</span>, after this unit ends. A ruler had given the reform, and a ruler could take it away.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -308,7 +316,7 @@ module.exports = {
           heading: 'Cotton out, cloth in',
           blocks: [
             { p: `The region had long made and traded goods. It also sold raw cotton to Britain's new mills. In the mid-1780s about a quarter of the raw cotton Britain imported came from the Ottoman Empire. It was shipped from the port of Smyrna (<a href="#chapter-t5-3">Topic 5.3</a>).` },
-            { p: `But machines made cloth more cheaply than hands could. In <span class="num">1838</span> English cotton cloth could be bought in Egypt for less than it cost Egypt's own mills to make the same cloth. The world was also making far more goods, and factories in Europe made most of the new ones.` }
+            { p: `But machines made cloth more cheaply than hands could. In <span class="num">1838</span> English cotton cloth could be bought in Egypt for less than it cost Egypt's own mills to make the same cloth. The world was also making far more goods. Steam-powered factories in Europe and the United States made most of the new ones, so their share of the world's goods rose.` }
           ]
         },
         {
@@ -316,7 +324,7 @@ module.exports = {
           blocks: [
             { p: `Many of the region's makers lost their work. A <span class="kt">handloom</span> is a loom worked by hand and foot, with no engine. By one estimate, the Syrian city of Aleppo had about 40,000 handlooms in the 1700s. From <span class="num">1838</span> to <span class="num">1850</span> it had about 5,000.` },
             { p: `But the makers did not stop. In Aleppo and Damascus, the number of handlooms held steady from <span class="num">1860</span> to <span class="num">1914</span> (<a href="#chapter-t5-4">Topic 5.4</a>). The years after 1900 run past the end of this unit.` },
-            { p: `The region's <span class="kt">share</span> fell too. That is the part of all the world's manufactured goods made in one region. The region still made goods, but it made a much smaller part of the world's total.` },
+            { p: `The region's <span class="kt">share</span> fell too. That is the part of all the world's manufactured goods made in one region. The region still made goods, but it made a much smaller part of the world's total. India's share fell too, as <a href="#r5-south-southeast-asia-rails">the South and Southeast Asia chapter</a> tells.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',

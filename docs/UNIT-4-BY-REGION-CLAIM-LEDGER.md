@@ -634,9 +634,9 @@ Middle East and Americas dates.
   Archive for History of Exact Sciences 72, 2018). PENDING.
 - AC2. Americas: "Enslaved Africans ... brought foods such as okra and rice" settles a debate
   (Carney 2001; Eltis, Morgan and Richardson, AHR 2007); Topic 4.3 keeps the hedge ("often as food
-  for the voyage"). PENDING.
+  for the voyage"). **FIXED:** "African foods crossed on the same ships, often as food for the voyage. Among them were okra and rice. Enslaved people grew African foods in garden plots to feed themselves" (agrees with Topic 4.3).
 - AC3. Americas quotes KC-4.1.IV's "chartered European monopoly companies" and never teaches a
-  chartered company (the Middle East chapter does). PENDING.
+  chartered company (the Middle East chapter does). **FIXED:** "The Dutch government chartered it in 1621, as its war with Spain began again. The charter gave it a monopoly on Dutch trade with West Africa and the Americas" (Avalon Project charter; Britannica).
 
 **Reviewer AB (history: South and Southeast Asia, Europe), 1 finding; Europe has none.** Verified
 sound: all 36 CED quotations and labels (by script); claims lines; optional examples; links;
@@ -662,7 +662,7 @@ figures.
   Osei Tutu and the Golden Stool, army reform, Feyiase and gold; the CED says trade "fostered the
   growth". PENDING.
 - AA3. East Asia quotes KC-4.1.IV's "chartered European monopoly companies" and never says the
-  Dutch at Hirado and Dejima were the VOC. PENDING.
+  Dutch at Hirado and Dejima were the VOC. **FIXED:** "They worked for the Dutch East India Company (VOC). The Dutch government had chartered it in 1602. The charter gave it a monopoly on Dutch trade in Asia."
 
 **Reviewer AG (CED and consistency, all twelve chapters), Unit 4 items.** Verified sound: every
 CED quotation and label (by script; no negative control run); optional examples; about 50
@@ -671,15 +671,15 @@ cross-region links; Bismarck 1884.
 - AG1a. KC-4.1.IV's "chartered European monopoly companies" quoted but not taught in the Americas
   (same as AC3) and East Asia (same as AA3); Europe teaches charters but not "monopoly", and quotes
   the regional-markets sentence ("shipping services developed by European merchants") without
-  teaching it. Europe: **FIXED** by teaching both: each charter gave its company "a monopoly (the sole right) on its country's trade with Asia"; "European ships also carried goods between Asian ports" while Asian merchants kept their partnerships and family firms (Topic 4.5). Americas and East Asia PENDING.
+  teaching it. Europe: **FIXED** by teaching both: each charter gave its company "a monopoly (the sole right) on its country's trade with Asia"; "European ships also carried goods between Asian ports" while Asian merchants kept their partnerships and family firms (Topic 4.5). Americas and East Asia: **FIXED** with AC3 and AA3.
 - AG1b. Americas quotes KC-4.1.V.B whole ("exported mostly to Europe and the Middle East") and
-  says only "Sugar and tobacco went to Europe". PENDING.
+  says only "Sugar and tobacco went to Europe". **FIXED:** "Most American sugar was sold in Europe. Some reached the Middle East too"; "Sugar and tobacco went mostly to Europe."
 - AG1d. East Asia claims KC-4.1.III.A (Portuguese maritime technology and navigation) without
-  teaching it. PENDING.
+  teaching it. **FIXED** by dropping KC-4.1.III.A and its quotation from East Asia (Europe, South and Southeast Asia and Sub-Saharan Africa claim and teach it).
 - AG2. Europe: Ceuta "That attack was a crusade" is flatter than the other chapters ("partly as a
   crusade"; "continued the long wars of Christian Iberia"). **FIXED:** "Portugal's rulers saw that attack partly as a crusade" (story and Religious card).
 - AG6. Americas: Gualpa found Potosí in 1545, "We know this from his own later account"; his 1572
-  statement's own count gives about 1544; 1545 is the usual date. PENDING.
+  statement's own count gives about 1544; 1545 is the usual date. **FIXED:** "The usual date for his find is 1545. We know of it from his own sworn account, taken in 1572."
 - AG7. Afonso's quotation in Madureira's wording could not be verified. **REJECTED:** reviewers S
   (pass 3) and AA (pass 4) confirmed the wording against Thornton, Afonso I Mvemba a Nzinga
   (2023), p. 203, via Gilder Lehrman's reproduction.
@@ -695,3 +695,11 @@ their chapters, not only the reported ones):
   KC-4.3.I.B's Ottomans by a link phrase to the Middle East chapter; KC-4.1.IV.C's "finance
   exploration" taught. Europe: KC-4.1.V.B's American crops in Africa and Asia taught (cassava,
   the sweet potato). **FIXED.**
+
+**Pass 4 self-audit, the Americas and East Asia.** Americas: KC-4.1.III.B's later Atlantic and
+Pacific voyages, KC-4.1.V.C's fruit trees (Crosby 1972), KC-4.1.IV.C's overseas territories and
+KC-4.1.IV's goods for Atlantic markets taught; the 1500 to 1800 silver estimate marked as running
+past the unit. East Asia: KC-4.1.IV's Asian goods sold in Europe; KC-4.3.II.A.i's African posts
+(Elmina 1482) and the profit of Macau's merchants and the crown (the Japan voyage as a crown
+concession, Boxer 1959); KC-4.2.III.B's economic elite; the Qing's end in 1912 marked as later.
+**FIXED.**

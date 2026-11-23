@@ -37,7 +37,7 @@
  * Hudson's river, smallpox in the Caribbean (1518), Dine sheep herding, the encomienda's legal
  * limits, the Tepetlaoztoc complaint (1550s) and Indigenous court cases, the Seville fleets,
  * England's colonial trade laws (1660), Fujian as the merchants' home, Jamaica taken from Spain
- * (1655), the Dutch West India Company's founding (1621), Brazil's gold mining as a driver of
+ * (1655), Brazil's gold mining as a driver of
  * the slave trade, Indian cloth and the direct Brazil-Africa voyages, creole languages, the
  * "extirpate idolatry" quotation, the kachina dance ban (1661), Pope's town and the drought,
  * the Pueblo revolts of 1694 and 1696, Metacom's raids on English towns, the Palmares treaty
@@ -74,6 +74,15 @@
  * story now states KC-4.1.III.B's effect (Spain's voyages made other Europeans far more interested
  * in ocean travel and trade). Huayna Capac died "probably" in an epidemic. The Stono rebels
  * "probably" came from Kongo, as the Sub-Saharan Africa chapter and Topic 4.6 now say.
+ *
+ * Review pass 4 (2026-11-23, ledger AC2, AC3, AG1a, AG1b, AG6, and the quotation self-audit):
+ * African foods crossed "often as food for the voyage", as Topic 4.3 hedges; the Dutch West India
+ * Company is taught as a chartered monopoly company (1621) for KC-4.1.IV; sugar "went mostly to
+ * Europe" and some reached the Middle East (KC-4.1.V.B); Potosi's find is dated by "the usual
+ * date" 1545 and Gualpa's sworn account of 1572. Self-audit additions: Spain's Pacific voyages
+ * (KC-4.1.III.B), fruit tree seeds in 1493 (KC-4.1.V.C, Crosby 1972), colonies held under
+ * mercantilism (KC-4.1.IV.C), galleon silk sold in Mexico and Spain (KC-4.1.IV's Atlantic
+ * markets), and the 1500 to 1800 silver estimate marked as running past 1750.
  */
 
 const CB = 'What the College Board says';
@@ -134,7 +143,7 @@ module.exports = {
           heading: 'Voyages across the ocean',
           blocks: [
             { p: `In ${N('1450')}, tens of millions of people lived in the Americas. Historians call them ${KT('Indigenous')} peoples. Indigenous means the first people to live in a place. In ${N('1492')} the rulers of Spain paid for a voyage by <b>Christopher Columbus</b>. He wrongly believed that Asia lay a few thousand miles to the west. He reached the Caribbean instead.` },
-            { p: `Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent ships across the northern Atlantic. They hoped to find a sea route to Asia. <b>John Cabot</b> sailed for England in ${N('1497')}. <b>Jacques Cartier</b> sailed for France in the 1530s, and <b>Henry Hudson</b> for the Dutch in ${N('1609')}. Land and Arctic ice blocked every route. Instead, the sailors found cod and a fur trade with Indigenous nations. <a href="#r4-europe-crowns">The Europe chapter</a> has more on these voyages.` }
+            { p: `Spain went on to pay for more voyages across the Atlantic, and later across the Pacific. Spain's voyages made other Europeans far more interested in ocean travel and trade. England, France and the Dutch sent ships across the northern Atlantic. They hoped to find a sea route to Asia. <b>John Cabot</b> sailed for England in ${N('1497')}. <b>Jacques Cartier</b> sailed for France in the 1530s, and <b>Henry Hudson</b> for the Dutch in ${N('1609')}. Land and Arctic ice blocked every route. Instead, the sailors found cod and a fur trade with Indigenous nations. <a href="#r4-europe-crowns">The Europe chapter</a> has more on these voyages.` }
           ]
         },
         {
@@ -161,11 +170,11 @@ module.exports = {
         {
           heading: 'Animals, crops and sugar',
           blocks: [
-            { p: `Historians call this two-way movement of plants, animals and diseases the ${KT('Columbian Exchange')}. Disease crossed by accident, but much else crossed on purpose. On his second voyage, in ${N('1493')}, Columbus brought horses, cattle, pigs, wheat and sugarcane.` },
-            { p: `Enslaved Africans were carried across the ocean by force. They brought foods such as okra and rice. They grew them in garden plots to feed themselves.` },
+            { p: `Historians call this two-way movement of plants, animals and diseases the ${KT('Columbian Exchange')}. Disease crossed by accident, but much else crossed on purpose. On his second voyage, in ${N('1493')}, Columbus brought horses, cattle, pigs, wheat, sugarcane and the seeds of fruit trees.` },
+            { p: `Enslaved Africans were carried across the ocean by force. African foods crossed on the same ships, often as food for the voyage. Among them were okra and rice. Enslaved people grew African foods in garden plots to feed themselves.` },
             { p: `During the 1700s, Plains nations such as the <b>Comanche</b> built a new way of life around hunting bison on horseback. It was a new Indigenous culture, not an old one.` },
             { p: `Crops also went east. Maize, potatoes and cassava became ${KT('staple crops')} (main everyday foods) in parts of Europe, Asia and Africa. They grew where older crops could not, so they helped feed growing populations.` },
-            { p: `Sugar became the great ${KT('cash crop')} (a crop grown to sell). It grew on ${KT('plantations')}. A plantation is a large farm that grows one cash crop with forced labor.` },
+            { p: `Sugar became the great ${KT('cash crop')} (a crop grown to sell). It grew on ${KT('plantations')}. A plantation is a large farm that grows one cash crop with forced labor. Most American sugar was sold in Europe. Some reached the Middle East too.` },
             { note: {
               kind: 'cb',
               label: CB,
@@ -213,7 +222,7 @@ module.exports = {
         {
           heading: 'A mountain of silver',
           blocks: [
-            { p: `In ${N('1545')}, an Andean miner named Diego Gualpa found silver at <b>Potosí</b>, high in the Andes Mountains. We know this from his own later account. Spanish colonists claimed the mountain. In ${N('1546')} miners found silver at Zacatecas in Mexico. From the 1570s, Potosí also used a way to separate silver from rock with mercury (a liquid metal). It was first worked out in Mexico.` },
+            { p: `An Andean miner named Diego Gualpa found silver at <b>Potosí</b>, high in the Andes Mountains. The usual date for his find is ${N('1545')}. We know of it from his own sworn account, taken in ${N('1572')}. Spanish colonists claimed the mountain. In ${N('1546')} miners found silver at Zacatecas in Mexico. From the 1570s, Potosí also used a way to separate silver from rock with mercury (a liquid metal). It was first worked out in Mexico.` },
             { p: `The Inca had required communities to send people in turns to work for the state. This rotating duty was the ${KT('mit’a')}. The new mercury method needed many workers. So in the 1570s Francisco de Toledo turned the mit’a into a draft for the Potosí mine. A draft forces people to serve. Toledo was the viceroy of Peru (the king's governor there).` },
             { p: `Each year, about one-seventh of the adult men of the highland districts had to go. By ${N('1578')}, the draft took more than ${N('14,000')} men. The idea of a turn of service continued, but the master and the danger changed. Many men never came home from the mines.` }
           ]
@@ -221,10 +230,10 @@ module.exports = {
         {
           heading: 'Where the silver went',
           blocks: [
-            { p: `Spain ran this trade by the rules of ${KT('mercantilism')}. This was the idea that a kingdom grows strong by gathering gold and silver. In this view, a kingdom should also keep its colonies' trade for itself.` },
-            { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. Much of it ended up in China.` },
+            { p: `Spain ran this trade by the rules of ${KT('mercantilism')}. This was the idea that a kingdom grows strong by gathering gold and silver. In this view, a kingdom should also hold colonies and keep their trade for itself.` },
+            { p: `By one standard estimate, Spanish America produced about four-fifths of the world's silver between 1500 and 1800. (The estimate runs to 1800, after this unit ends.) Much of it ended up in China.` },
             { p: `Silver was already worth more in China than in Europe. That was because the Ming government (China's rulers) had given up paper money, and China's growing economy ran on silver. Then a tax reform called the Single Whip made most taxes payable in silver. That added to the demand. And China mined little silver of its own. <a href="#r4-east-asia-silver">The East Asia chapter</a> tells this from China's side.` },
-            { p: `In ${N('1571')} Spain founded Manila, in the Philippines. From then on, ${KT('Manila galleons')} (large Spanish ships) carried silver across the Pacific from Acapulco in Mexico to Manila. There, Chinese merchants traded silk and porcelain for it.` }
+            { p: `In ${N('1571')} Spain founded Manila, in the Philippines. From then on, ${KT('Manila galleons')} (large Spanish ships) carried silver across the Pacific from Acapulco in Mexico to Manila. There, Chinese merchants traded silk and porcelain for it. The galleons carried the silk and porcelain back to Mexico, and some went on to Spain.` }
           ]
         },
         {
@@ -269,7 +278,8 @@ module.exports = {
           heading: 'Rival empires',
           blocks: [
             { p: `European kingdoms were rivals for power, wealth and religion. The English and French built colonies in North America and the Caribbean in the early 1600s. England's first lasting colony was Jamestown. The Virginia Company founded it in ${N('1607')}.` },
-            { p: `The Virginia Company was a ${KT('joint-stock company')}. Many investors bought shares (small parts of the company). They split the profits and the losses. The Dutch West India Company held part of Brazil's sugar coast from ${N('1630')} to ${N('1654')}.` }
+            { p: `The Virginia Company was a ${KT('joint-stock company')}. Many investors bought shares (small parts of the company). They split the profits and the losses.` },
+            { p: `The Dutch West India Company was another joint-stock company. The Dutch government chartered it in ${N('1621')}, as its war with Spain began again. The charter gave it a monopoly on Dutch trade with West Africa and the Americas. No other Dutch merchant could trade there. The company held part of Brazil's sugar coast from ${N('1630')} to ${N('1654')}.` }
           ]
         },
         {
@@ -297,7 +307,7 @@ module.exports = {
         {
           heading: 'A world made by everyone',
           blocks: [
-            { p: `Plantations were at the center of the ${KT('Atlantic trading system')}. This system moved goods, wealth and people. Sugar and tobacco went to Europe. Guns, alcohol and cloth went to Africa. Enslaved Africans were forced west.` },
+            { p: `Plantations were at the center of the ${KT('Atlantic trading system')}. This system moved goods, wealth and people. Sugar and tobacco went mostly to Europe. Guns, alcohol and cloth went to Africa. Enslaved Africans were forced west.` },
             { p: `In the colonies, Africans, Indigenous Americans and Europeans lived side by side, usually because some were forced to. All of them shaped the cultures that grew there, from cooking to music. The mixing happened under force, not between equals. But no single people made the result.` },
             { note: {
               kind: 'cb',
