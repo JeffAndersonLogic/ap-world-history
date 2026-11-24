@@ -15,6 +15,12 @@ working branch that can be accessed from another AI account if necessary."**
 
 Nothing from the second branch reaches students until Jeff says "ship it".
 
+The 5.1 branch's audit is `docs/topic-audits/topic-5-1-2026-11-24.md`. Two items in it wait on Jeff
+because they change what is assessed: Checkpoint 1 never asks about reason and evidence, and
+learning target 2's nationalism wording. Its fixes touch the same 5.1 files the eBook branch's
+review touched (`scripts/lib/reading-content/unit-5.js`, `scripts/lib/deep-reading-content/topic-5-1.js`,
+`teacher/data/topic-5-1-teaching-base.js`); when the two meet, keep the 5.1 branch's text for 5.1.
+
 ## Where the eBook branch stopped
 
 - The session doing it hit a usage limit on 2026-11-23 at about 11:20 UTC, **during review pass 5**.
