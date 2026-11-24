@@ -247,7 +247,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Calas is declared innocent in **1765**."
           }
         ],
-        "proves": "The question was religion as a power of government, not faith itself."
+        "proves": "Above all, the target was the church's power over government and law."
       }
     },
     {

@@ -67,7 +67,7 @@ window.BEHISTORICAL_TEACHING = {
     should: [
       'Give religion its two parts: the Enlightenment questioned religion as a government power (Calas, toleration), and religious faith drove the reform movements (the Quakers, Lucretia Mott) (KC-5.3.I.A, KC-5.3.I.C).',
       'Introduce nationalism in one beat: if a state belongs to its people, which people? The nation (KC-5.3.II.i).',
-      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Enlightenment caused the revolutions," "the Enlightenment was against religion," and "rights reached everyone in 1789."'
+      'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Enlightenment alone caused the revolutions," "the Enlightenment was against religion," and "rights reached everyone in 1789."'
     ],
     could: [
       'Send students who finish Work Time early to the Evidence Lab (Module 07).',
@@ -95,7 +95,7 @@ window.BEHISTORICAL_TEACHING = {
         'Same method turned on government, religion, society',
         'Natural rights (Locke), social contract (Locke, Rousseau), limits on power (Montesquieu)',
         'Locke: no rule "without his own consent," against divine right',
-        'Calas, 1762: Voltaire and toleration; faith forced by the state, not faith itself',
+        'Calas, 1762: Voltaire and toleration; above all, the church\'s power over government and law',
         'Legitimate = rightful: the question changed before the kings did (LO A)'
       ] },
       { label: 'III', title: 'The ideas travel, before the revolutions', kc: 'KC-5.3.I · KC-5.3.II.i', points: [
@@ -152,8 +152,8 @@ window.BEHISTORICAL_TEACHING = {
       { term: 'Feminism', def: 'The claim that women and men should have equal rights.' }
     ],
     watch: [
-      { myth: '"The Enlightenment caused the revolutions."', fix: 'It came first and gave revolutionaries words ("often preceded"); taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter."' },
-      { myth: '"The Enlightenment was against religion."', fix: 'Most writers believed in God. They questioned faith forced by the state, and faith, with natural rights, drove abolition. But some, such as Holbach, were atheists.' },
+      { myth: '"The Enlightenment alone caused the revolutions."', fix: 'It came first and gave revolutionaries words ("often preceded"); taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter."' },
+      { myth: '"The Enlightenment was against religion."', fix: 'Most writers believed in God. Above all they attacked the church\'s power over government and law, and faith, with natural rights, drove abolition. But deists rejected miracles and revelation, and a few, such as d\'Holbach, were atheists.' },
       { myth: '"Rights reached everyone in 1789."', fix: 'Slavery lasted in Brazil to 1888; women voted almost nowhere in 1900. But do not swing to "nothing changed."' }
     ]
   },
@@ -219,7 +219,7 @@ window.BEHISTORICAL_TEACHING = {
           'Key Concepts. LO A: KC-5.3.I.A (new ways of understanding and empiricist approaches to the natural world and human relationships; religion\'s role in public life reexamined; reason; new political ideas about the individual, natural rights and the social contract); KC-5.3.I (the rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions); KC-5.3.II.i (nationalism became a major force shaping states and empires). LO B: KC-5.3.I.C (Enlightenment ideas and religious ideals influenced reform movements that expanded rights: suffrage, the abolition of slavery, the end of serfdom); KC-5.3.IV.B (demands for women\'s suffrage and an emergent feminism challenged political and gender hierarchies).',
           'The CED\'s illustrative examples, printed beside LO B under "Demands": Wollstonecraft\'s Vindication; de Gouges\'s Declaration of the Rights of Woman and of the Female Citizen; the Seneca Falls Conference (1848) organized by Stanton and Mott. All three are used, slides 18 to 21, as sources with claims in them. The CED gives 5.1 no sample activity.',
           'Owns: the ideas, their spread, nationalism introduced, the reform movements and women\'s demands. Bridge only: the revolutions and their documents (5.2): the dates, two lines from the 1789 declaration (Article 3 on the nation, slide 14, and Article 1, the line de Gouges rewrote, slide 21), Nariño. Not taught: Adam Smith and free trade (5.7), reforms that answered industry (5.8).',
-          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (23) if they come up: "the Enlightenment caused the revolutions"; "the Enlightenment was against religion"; "rights reached everyone in 1789."',
+          'Three myths, in the outline\'s Watch for list and corrected on the retelling slide (23) if they come up: "the Enlightenment alone caused the revolutions"; "the Enlightenment was against religion"; "rights reached everyone in 1789."',
           'Every picture is a real object of the period from the Metropolitan Museum of Art\'s open-access collection, public domain: Valentine Green\'s mezzotint of Joseph Wright\'s air-pump experiment (1769); the title page of the Encyclopédie\'s second edition, printed at Lucca, Italy (1758); a plate of a fan-maker\'s workshop from its picture volumes (Paris, 1762 to 1772); a pottery jug printed with "Am not I a man and a brother", a version of the 1787 motto (about 1820); and Samuel Jennings\'s study for Liberty Displaying the Arts and Sciences (about 1791 to 1792). None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -466,7 +466,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Voltaire', text: 'Campaigns three years; writes a Treatise on Tolerance, **1763**.' },
           { label: 'Result', text: 'Calas is declared innocent in **1765**.' }
         ],
-        proves: 'The question was religion as a power of government, not faith itself.'
+        proves: 'Above all, the target was the church\'s power over government and law.'
       },
       notes: {
         minutes: 2,
@@ -474,13 +474,13 @@ window.BEHISTORICAL_TEACHING = {
           'Calas: Protestant, wrongly accused, executed 1762',
           'Voltaire: Treatise on Tolerance, 1763; cleared 1765',
           'Toleration: no faith forced, no belief punished',
-          'Questioned state-enforced faith, not faith itself',
-          'Deists and believers; few atheists'
+          'Above all, attacked the church\'s power over government and law',
+          'Most believed in God; deists rejected miracles; a few atheists'
         ],
         land: [
           'KC-5.3.I.A: Enlightenment philosophies "reexamined the role that religion played in public life."',
           'Jean Calas, a Protestant cloth merchant of Toulouse, was accused of killing his son Marc-Antoine to stop him becoming a Catholic; the son had most likely taken his own life. The Parlement of Toulouse condemned Calas and he was broken on the wheel and executed on 10 March 1762. Voltaire took up the case, published the Treatise on Tolerance in 1763, and the judgment was overturned; Calas was declared innocent on 9 March 1765 (Musée protestant; Universalis).',
-          'Religious toleration: no government should force a faith or punish belief. Deism: God made the world and lets it run by natural laws. Many Enlightenment writers were deists or believers; few were atheists. What they questioned was faith enforced by the state.'
+          'Religious toleration: no government should force a faith or punish belief. Deism: God made the world and lets it run by natural laws. Most Enlightenment writers believed in God. Deists rejected miracles and revelation, and a few, such as d\'Holbach (The System of Nature, 1770), argued for atheism. Above all, they attacked the church\'s power over government and law (Stanford Encyclopedia of Philosophy, "Enlightenment").'
         ],
         ask: 'What did Voltaire question, and what did he not?',
         listenFor: 'He questioned a government punishing people for their religion; he did not ask people to give up faith.',
@@ -884,7 +884,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one piece of evidence under each box and the line for what stayed underneath.',
           'The first three boxes are LO A (the intellectual and ideological context: KC-5.3.I.A, I, II.i); the last box and the footer are LO B (the Enlightenment\'s effects over time: KC-5.3.I.C, IV.B). The slide carries no single Key Concept band because it spans all five.',
           'Push for named evidence: divine right; Newton and Locke; Calas; the Encyclopédie; 1789 and the nation; the 1787 society and Brazil 1888; Russia 1861; Seneca Falls.',
-          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time. "The Enlightenment caused the revolutions": the CED says "often preceded," not "caused"; the ideas came first and gave revolutionaries words, and taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter": revolutionaries quoted them. "The Enlightenment was against religion": Voltaire attacked the power of the Church but believed in a creator, and Quakers and evangelicals such as William Wilberforce led abolition. But do not swing to "everyone was religious": some writers, such as Holbach, were atheists. "Rights reached everyone in 1789": the 1789 declaration excluded women from citizenship, France restored slavery in its colonies in 1802, Brazil ended slavery only in 1888, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and it was used.'
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time. "The Enlightenment alone caused the revolutions": the CED says "often preceded," not "caused"; the ideas came first and gave revolutionaries words, and taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter": revolutionaries quoted them. "The Enlightenment was against religion": Voltaire attacked the power of the Church but believed in a creator, and Quakers and evangelicals such as William Wilberforce led abolition. But do not swing to "everyone was religious": some writers, such as Holbach, were atheists. "Rights reached everyone in 1789": the 1789 declaration excluded women from citizenship, France restored slavery in its colonies in 1802, Brazil ended slavery only in 1888, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and it was used.'
         ],
         ask: 'Redraw it without looking, with one piece of evidence under each box, and the line for what stayed.',
         listenFor: 'The old answer, God, tradition and birth, was challenged by the question "by what right?", answered with reason, natural rights and consent, and pressed further over a century by abolition, the end of serfdom, wider voting and women\'s demands, while kings, other forced labor and men-only voting lasted to 1900.'

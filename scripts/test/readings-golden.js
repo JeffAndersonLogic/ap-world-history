@@ -272,7 +272,15 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // energy sentence matches coal's "about half" by 1900, the crossing times say they count
 // every emigrant ship, the 1846 to 1940 span says it runs past the unit, and China's share is
 // of manufactured goods. Against the provisional blob 39898dd5 only the 5.10 entry changed.
-const APPROVED_UNIT5_REWRITE_BLOB = 'fe67539a281961ef69bc52bad2c8d226e4388e6b';
+// 2026-11-24: Topic 5.1 alone, carried from claude/ebook-regional-reading-status-n1uc9j so
+// 5.1 can be taught on 2026-11-30 without the rest of that branch (Jeff: "only finish up 5.1").
+// Correction C2 of the Unit 5 by Region review (pass 1, reviewer C;
+// docs/TOPIC-5-1-CLAIM-LEDGER.md): "What they questioned was not faith itself, but religion
+// used as a power of government" overcorrected. It now says deists rejected miracles and
+// revelation, a few writers such as d'Holbach argued there is no God, and above all they
+// attacked the church's power over government and law. Against the blob fe67539a only that
+// 5.1 paragraph changed; the branch's 5.2, 5.4, 5.5, 5.6 and 5.8 fixes are not on this pin.
+const APPROVED_UNIT5_REWRITE_BLOB = 'd019d0ae7942c24fc34f56dcf82e500ae25debf3';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
