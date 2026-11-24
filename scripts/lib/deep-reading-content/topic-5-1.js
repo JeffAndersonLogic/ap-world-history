@@ -38,7 +38,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 5.1: By What Right?',
   eyebrow: 'Topic 5.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'By What <em>Right</em>?',
-  deck: `In 1750 most rulers said their power came from God. A group of writers began asking every old authority the same question, by what right?, and answered it with reason, natural rights and the consent of the people. This chapter follows that question from the new science of the late 1600s to the reformers of the 1800s, and asks how much it had changed by 1900.`,
+  deck: `In 1750 most rulers said their power came from God. A group of writers began asking every old authority the same question: by what right? They answered it with reason, natural rights and the consent of the people. This chapter follows that question from the new science of the late 1600s to the reformers of the 1800s, and asks how much it had changed by 1900.`,
   meta: ['Five sections', 'The method, the ideas, the spread, the reformers, women\'s demands', 'Read alongside the First & 10'],
   footerNote: 'Topic 5.1 &nbsp;·&nbsp; By What Right? &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -69,7 +69,7 @@ module.exports = {
         {
           heading: 'The old answer',
           blocks: [
-            { p: `In 1750 most of Europe's rulers gave the same answer to the question "who does a state belong to?" It belonged to the king, because God had put him there. This is <span class="kt">divine right</span>, the claim Louis XIV made at Versailles (Topic 3.2). In most countries one church was the law: Catholic in France and Spain, Anglican in England. Nobles were born into privileges, such as freedom from some taxes, and across much of central and eastern Europe peasants were <span class="kt">serfs</span>, bound to work their lord's land. Authority came from God, from tradition and from birth.` }
+            { p: `In 1750 most of Europe's rulers gave the same answer to the question "who does a state belong to?" It belonged to the king, because God had put him there. This is <span class="kt">divine right</span>, the claim Louis XIV made at Versailles (Topic 3.2). In most countries the law backed one official church: Catholic in France and Spain, Anglican in England. Nobles were born into privileges, such as freedom from some taxes, and across much of central and eastern Europe peasants were <span class="kt">serfs</span>, bound to work their lord's land. Authority came from God, from tradition and from birth.` }
           ]
         },
         {
@@ -161,12 +161,12 @@ module.exports = {
       name: 'The Ideas Travel, Before the Revolutions',
       navLabel: 'The ideas travel',
       dates: '1751 to 1810 &nbsp;·&nbsp; Print, salons, letters',
-      thesis: `The ideas spread through print and conversation across Europe and the Atlantic, questioned tradition in every part of life, and came before the revolutions that began in 1775, 1789, 1791 and 1810. They gave revolutionaries their words, and they turned "the people" into the nation.`,
+      thesis: `The ideas spread through print and conversation across Europe and the Atlantic, questioned tradition in every part of life, and came before the revolutions that began in 1775, 1789, 1791 and 1810. They gave revolutionaries their words, and they led many people to see "the people" as a nation.`,
       parts: [
         {
           heading: 'Print, salons and letters',
           blocks: [
-            { p: `From <span class="num">1751</span> to <span class="num">1772</span>, Denis Diderot and his partners published the <em>Encyclopédie</em> in Paris: seventeen volumes of articles and eleven of pictures that tried to explain everything by reason, from how to make glass or mount a fan to what a government owes its people. The French government banned it in <span class="num">1759</span>, and the Pope condemned it, but the last ten volumes of articles came out together in <span class="num">1765</span>, and printers in other countries copied it: a second edition was printed in Lucca, Italy, from <span class="num">1758</span>.` },
+            { p: `From <span class="num">1751</span> to <span class="num">1772</span>, Denis Diderot and his partners published the <em>Encyclopédie</em> in Paris: seventeen volumes of articles and eleven of pictures that tried to explain everything by reason, from how to make glass or mount a fan to what a government owes its people. The French government banned it in <span class="num">1759</span>, and the Pope condemned it, but the last ten volumes of articles came out together in <span class="num">1765</span>, and printers in other countries copied it too: a second edition was printed in Lucca, Italy, from <span class="num">1758</span>.` },
             { p: `The ideas also traveled in newspapers and pamphlets, in London's coffeehouses, in letters between writers across Europe and the Americas, and in the conversation gatherings of Paris called <span class="kt">salons</span>, which were often run by women. In <span class="num">1784</span> the German philosopher Immanuel Kant summed up the attitude in a motto: "Dare to know," which he explained as having the courage to use your own understanding.` }
           ]
         },
@@ -189,7 +189,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Context, not cause. <em>Enlightenment ideas spread and came before the revolutions, so they are the intellectual and ideological context the revolutions happened in.</em>`,
+        tool: `Context, and one cause among several. <em>Enlightenment ideas spread and came before the revolutions, so they are the intellectual and ideological context the revolutions happened in. Topic 5.2 weighs them against the other causes.</em>`,
         limit: `Most people in 1789 could not read the Encyclopédie. They met the ideas, if at all, through talk, sermons, pamphlets and rumor.`,
         comparison: `Against the <em>printing press</em> of the 1400s: the technology was old by 1750. What was new was how much was printed, and the network of readers, salons and letters around it.`
       },
@@ -209,7 +209,7 @@ module.exports = {
       name: 'Pressing the Words Further',
       navLabel: 'Pressing further',
       dates: '1787 to 1888 &nbsp;·&nbsp; Abolition, serfs, voters',
-      thesis: `The words sounded like everyone, but the men who wrote them often did not mean everyone. Over the next century, reform movements driven by Enlightenment ideas and by religious faith pressed the same words until rights reached the enslaved, the serfs and many more voters, slowly and unevenly.`,
+      thesis: `The words sounded like everyone, but the men who wrote them often did not mean everyone. Over the next century, reform movements driven by Enlightenment ideas and by religious faith, and sometimes rulers who feared revolt, extended rights to the enslaved, the serfs and many more voters, slowly and unevenly.`,
       parts: [
         {
           heading: 'The words were bigger than their writers',
@@ -263,7 +263,7 @@ module.exports = {
         {
           heading: 'Three demands',
           blocks: [
-            { p: `In September <span class="num">1791</span> the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Where the declaration of <span class="num">1789</span> said "men are born and remain free and equal in rights," her first article said: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in November <span class="num">1793</span>.` },
+            { p: `In September <span class="num">1791</span> the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Where the declaration of <span class="num">1789</span> said "men are born and remain free and equal in rights," her first article said: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in November <span class="num">1793</span> for her political writings.` },
             { p: `In <span class="num">1792</span> the English writer Mary Wollstonecraft published <em>A Vindication of the Rights of Woman</em>. She quoted Rousseau, who had warned that if women were educated like men, "the less power will they have over us," and answered: "I do not wish them to have power over men; but over themselves." Her claim was that women can reason, so they must be educated to think and decide for themselves.` },
             { p: `In <span class="num">1840</span> the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London as a delegate and was refused a seat because she was a woman. Elizabeth Cady Stanton, there with her husband, a delegate, sat with Mott and the other women, apart from the men. In July <span class="num">1848</span> the two of them, with three other women, organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em>, drafted by Stanton with members of the M'Clintock family, copied the Declaration of Independence and added two words: "all men and women are created equal." It complained that a woman had never been "permitted ... to exercise her inalienable right to the elective franchise," the vote. The resolution demanding the vote was the only one not passed unanimously; one hundred women and men signed the declaration.` },
             { p: `This was <span class="kt">feminism</span> emerging: the claim that women and men should have equal rights. It challenged political hierarchy, who votes and who rules, and gender hierarchy, who is in charge at home and under the law. Under the law of the time, the Seneca Falls declaration complained, a married woman was "civilly dead."` }
@@ -277,7 +277,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that rights reached everyone in 1789. The declaration of 1789 left women out of citizenship, France brought back slavery in 1802, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and people used it.`
+              html: `Do not write that rights reached everyone in 1789. France's revolutionaries did not let women vote, France brought back slavery in 1802, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and people used it.`
             } }
           ]
         }
@@ -314,7 +314,7 @@ module.exports = {
       {
         category: 'Continuity and Change',
         title: 'Reformers pressed the words further, slowly',
-        body: `Driven by natural rights and by faith, reformers founded the London antislavery society of 1787 (nine of its twelve founders were Quakers). Britain began ending slavery in most of its empire in 1834 and Brazil, last in the Americas, in 1888. Serfdom ended in Austria in 1848 and Russia in 1861; France gave all adult men the vote in 1848. Each change took decades.`
+        body: `Driven by natural rights and by faith, reformers founded the London antislavery society of 1787 (nine of its twelve founders were Quakers). Britain began ending slavery in most of its empire in 1834, and Brazil, the last in the Americas, ended it in 1888. Serfdom ended in Austria in 1848 and Russia in 1861; France gave all adult men the vote in 1848. Each change took decades.`
       },
       {
         category: 'Claims and Evidence',

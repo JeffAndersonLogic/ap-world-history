@@ -58,7 +58,7 @@ const T=window.BEHISTORICAL_TEACHING;if(!T)return;
 const by=p=>T.slides.find(s=>s.phase===p);
 const local=n=>'../assets/images/topics/5-1/'+encodeURIComponent(n);
 const LOCKE={url:local('5.1 - Locke.jpg'),alt:'Painted bust of John Locke with long grey hair, wearing a white shirt and brown robe against a dark oval background',credit:'Godfrey Kneller, John Locke, 1697 · Hermitage · Public domain painting',ratio:984/1138,fit:'contain'};
-const MONTESQUIEU={url:local('5.1 Montesquieu.jpg'),alt:'Detail of an anonymous painted portrait of Montesquieu in left profile, with curled grey hair and a golden-brown draped garment',credit:'Anonymous, Montesquieu, 18th century · Versailles · Public domain painting',ratio:752/909,fit:'contain'};
+const MONTESQUIEU={url:local('5.1 Montesquieu.jpg'),alt:'Detail of an anonymous painted portrait of Montesquieu in left profile, with curled grey hair and a golden-brown draped garment',credit:'Anonymous, Montesquieu (detail), 18th century · Palace of Versailles · Public domain painting',ratio:752/909,fit:'contain'};
 const s=by('answers'),old=s.template;
 s.kind='frame-pair';
 s.template={

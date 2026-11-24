@@ -156,7 +156,7 @@
   lesson.evidenceLab = {
     title: 'Evidence Lab: By What Right?',
     task: 'Choose TWO cards. For each, decide what claim the source makes or what it shows about Enlightenment ideas and their effects. An object can make a claim too, without a single sentence of argument.',
-    prompt: 'For EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) identify and describe the claim it makes, or what it shows, in your own words, using one detail you can see or read, and (3) name one thing the source cannot tell you. Finish with one sentence: do your two cards show a change, a continuity, or both?'
+    prompt: 'For EACH of your two cards: (1) say what kind of source it is, who made it (if the card says), and when, (2) identify and describe the claim it makes, or what it shows, in your own words, using one detail you can see or read, and (3) name one thing the source cannot tell you. Finish with one sentence: compared with the old idea that power came from God, tradition, and birth, do your two cards show a change, a continuity, or both?'
   };
 
   lesson.images = [

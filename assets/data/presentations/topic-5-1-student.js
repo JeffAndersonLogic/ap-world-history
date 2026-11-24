@@ -107,7 +107,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Tradition",
-            "text": "In most countries one church was the law."
+            "text": "In most countries the law backed one official church."
           },
           {
             "label": "Birth",
@@ -174,7 +174,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/5-1/5.1%20Montesquieu.jpg",
               "alt": "Detail of an anonymous painted portrait of Montesquieu in left profile, with curled grey hair and a golden-brown draped garment",
-              "credit": "Anonymous, Montesquieu, 18th century · Versailles · Public domain painting",
+              "credit": "Anonymous, Montesquieu (detail), 18th century · Palace of Versailles · Public domain painting",
               "ratio": 0.8272827282728272,
               "fit": "contain"
             }
@@ -446,7 +446,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1807, 1834",
-            "text": "Britain bans the slave trade, then begins ending slavery in its empire."
+            "text": "Britain bans the slave trade, then begins ending slavery in most of its empire."
           },
           {
             "label": "1848, 1888",
@@ -508,7 +508,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "1791",
-            "text": "Olympe de Gouges rewrites France's declaration for women. She is executed in 1793."
+            "text": "Olympe de Gouges rewrites France's declaration for women. She is executed in 1793 for her political writings."
           },
           {
             "label": "1792",
@@ -678,7 +678,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
       "title": "By what right? The answer kept growing.",
-      "subtitle": "Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: people turn the words into revolutions.",
+      "subtitle": "Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: the revolutions, and everything that caused them.",
       "template": {
         "visual": {
           "url": "../assets/images/topics/5-1/liberty-arts-sciences-jennings-c1792.jpg",

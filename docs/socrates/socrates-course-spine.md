@@ -627,7 +627,7 @@ Strong answer checklist: Write a thesis with one change and one continuity. Use 
 
 ## 5.1 The Enlightenment
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Enlightenment thinkers asked every old authority a new question, by what right?, and answered it with reason, natural rights, and the consent of the people. Over the next century, the people the words left out pressed them until rights reached further.
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Enlightenment thinkers asked every old authority a new question: by what right? They answered it with reason, natural rights, and the consent of the people. Over the next century, the people the words left out pressed them until rights reached further.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective A (Learning Objective): Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900.

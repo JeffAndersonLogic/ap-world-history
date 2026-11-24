@@ -67,7 +67,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1750 most rulers had one answer: to the king, because God put him there. You met this idea, <span class=\"kt\">divine right</span>, in Topic 3.2, when Louis XIV of France claimed that his power came from God and that no one could take it away. The Church taught what was true about God and the world, and in most countries one church was the law. Nobles were born into their privileges. Peasants, many of them serfs bound to work their lord's land, were born into their work. Authority came from God, from tradition, and from birth."
+            "html": "In 1750 most rulers had one answer: to the king, because God put him there. You met this idea, <span class=\"kt\">divine right</span>, in Topic 3.2, when Louis XIV of France claimed that his power came from God and that no one could take it away. The Church taught what was true about God and the world, and in most countries the law backed one official church. Nobles were born into their privileges. Peasants, many of them serfs bound to work their lord's land, were born into their work. Authority came from God, from tradition, and from birth."
           },
           {
             "type": "p",
@@ -86,7 +86,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "The new question came from a new way of finding out what is true. In 1687 the English scientist Isaac Newton showed that a few laws, worked out with mathematics and tested against what astronomers could see, explained how the planets move and why an apple falls. You did not need an old book or a priest to tell you. You needed reason and evidence."
+            "html": "The new question came from a new way of finding out what is true. In 1687 the English scientist Isaac Newton showed that a few laws, worked out with mathematics and tested against what astronomers could see, explained how the planets move and why an apple falls. Many readers took a lesson from it: you did not need an old book or a priest to tell you. You needed reason and evidence."
           },
           {
             "type": "p",
@@ -117,7 +117,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The second was the <span class=\"kt\">social contract</span>: government is an agreement. People give some of their freedom to a government so that it will protect their rights. \"No one,\" Locke wrote, can be put under another person's power \"without his own consent.\" If a government breaks the deal and attacks the people's rights, the people may resist it. In 1762 the French-speaking writer Jean-Jacques Rousseau opened the first chapter of his own book on the social contract with a famous line: \"Man is born free; and everywhere he is in chains.\""
+            "html": "The second was the <span class=\"kt\">social contract</span>: government is an agreement. People give some of their freedom to a government so that it will protect their rights. \"No one,\" Locke wrote, can be put under another person's power \"without his own consent.\" If a government breaks the deal and attacks the people's rights, the people may resist it. In 1762 the French-speaking writer Jean-Jacques Rousseau opened the first chapter of his own book on the social contract with a famous line: \"Man is born free; and everywhere he is in chains.\" He meant that people are free by nature, but the governments of his day held them down."
           },
           {
             "type": "p",
@@ -171,16 +171,16 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Serfdom</span>, a system in which peasants were bound to the land and owed labor to a lord, ended too. In 1848 the Austrian Empire freed its peasants from the forced labor they owed their lords. In 1861 Tsar Alexander II of Russia freed more than 20 million serfs, partly, he reportedly told Russian nobles, because it was better to end serfdom \"from above\" than to wait for the serfs to end it \"from below.\""
+            "html": "<span class=\"kt\">Serfdom</span>, a system in which peasants were bound to the land and owed labor to a lord, ended too. In 1848 the Austrian Empire freed its peasants from the forced labor they owed their lords. In 1861 Tsar Alexander II of Russia freed more than 20 million serfs. Five years earlier he had reportedly told Russian nobles that it was better to end serfdom \"from above\" than to wait for the serfs to end it \"from below.\""
           },
           {
             "type": "p",
-            "html": "And <span class=\"kt\">suffrage</span>, the right to vote, widened. In 1848 France gave the vote to all adult men. Britain widened voting in steps, in 1832, 1867, and 1884. Each of these changes took decades of campaigning, met resistance, and still did not reach everyone."
+            "html": "And <span class=\"kt\">suffrage</span>, the right to vote, widened. In 1848 France gave the vote to all adult men. Britain widened voting in steps, in 1832, 1867, and 1884. These changes met resistance, and none of them reached everyone."
           }
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Change can be slow.</strong> The ideas changed quickly, in a few decades. The rights took more than a century to reach the enslaved, the serfs, and the voters, and many people were still waiting. When you explain change over time, say how fast it came, and for whom.</p>"
+          "raw": "<p><strong>Change can be slow.</strong> The ideas changed quickly, in a few decades. Spreading the rights to the enslaved, the serfs, and the voters took more than a century, and many people were still waiting. When you explain change over time, say how fast it came, and for whom.</p>"
         }
       },
       {
@@ -190,7 +190,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Women pressed the same words too, because the men who wrote about the \"rights of man\" often meant only men. In 1791 the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Its first article, translated from the French, reads: \"Woman is born free and remains equal to man in rights.\" The revolutionary government executed her in 1793."
+            "html": "Women pressed the same words too, because the men who wrote about the \"rights of man\" often meant only men. In 1791 the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Its first article, translated from the French, reads: \"Woman is born free and remains equal to man in rights.\" In 1793 the revolutionary government executed her for her political writings."
           },
           {
             "type": "p",
@@ -198,7 +198,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1840 the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London as a delegate and was refused a seat because she was a woman. Elizabeth Cady Stanton, who was there with her husband, a delegate, sat with Mott and the other women, apart from the men. In July 1848 the two of them, with three other women, organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em> borrowed the words of the Declaration of Independence and changed them: \"We hold these truths to be self-evident; that all men and women are created equal.\" It demanded the right to vote. That demand was the only resolution at the convention that did not pass unanimously, and 100 women and men signed the declaration."
+            "html": "In 1840 the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London as a delegate and was refused a seat because she was a woman. Elizabeth Cady Stanton, who was there with her husband, a delegate, sat with Mott and the other women, apart from the men. In July 1848 the two of them, with three other women, organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em> borrowed the words of the Declaration of Independence and changed them: \"We hold these truths to be self-evident; that all men and women are created equal.\" The convention also voted on resolutions. The one demanding the right to vote was the only one that did not pass unanimously. In all, 100 women and men signed the declaration."
           },
           {
             "type": "p",
@@ -214,7 +214,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "By 1789 the ideas were everywhere educated people read. In America, France, Haiti, and Spanish America, people turned them into revolutions. What caused those revolutions, and what did they create? That is Topic 5.2."
+            "html": "By 1789 educated readers across Europe and the Americas knew the ideas. In America, France, Haiti, and Spanish America, revolutionaries used them. What caused those revolutions, and what did they create? That is Topic 5.2."
           }
         ],
         "callout": {
@@ -223,7 +223,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Enlightenment thinkers used reason and evidence, first to explain nature and then to question every old authority, and they answered with new ideas: natural rights, the social contract, limits on power, and religious toleration. The ideas spread through print, salons, and letters, came before the Atlantic revolutions, and turned \"the people\" into the nation. Over the next century, reformers driven by these ideas and by religious faith pressed the words further: slavery and serfdom were abolished, voting widened, and women such as de Gouges, Wollstonecraft, Stanton, and Mott demanded equal rights. By 1900 much of the old order still stood. By what right? The answer kept growing.",
+    "takeaway": "Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Enlightenment thinkers used reason and evidence, first to explain nature and then to question every old authority, and they answered with new ideas: natural rights, the social contract, limits on power, and religious toleration. The ideas spread through print, salons, and letters, came before the Atlantic revolutions, and led many people to see \"the people\" as a nation. Over the next century, reformers driven by these ideas and by religious faith pressed the words further: slavery and serfdom were abolished, voting widened, and women such as de Gouges, Wollstonecraft, Stanton, and Mott demanded equal rights. By 1900 much of the old order still stood. By what right? The answer kept growing.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -236,8 +236,8 @@ module.exports = {
       {
         "num": "02",
         "skill": "Claims and Evidence in Sources",
-        "text": "Olympe de Gouges wrote: \"Woman is born free and remains equal to man in rights.\" Identify her claim in your own words. Then explain what older idea or document she was arguing against.",
-        "placeholder": "De Gouges's claim is that... She was arguing against..."
+        "text": "Olympe de Gouges wrote: \"Woman is born free and remains equal to man in rights.\" Identify her claim in your own words. Then explain what older document she was rewriting, and who it had left out.",
+        "placeholder": "De Gouges's claim is that... She was rewriting..."
       },
       {
         "num": "03",

@@ -280,7 +280,18 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // revelation, a few writers such as d'Holbach argued there is no God, and above all they
 // attacked the church's power over government and law. Against the blob fe67539a only that
 // 5.1 paragraph changed; the branch's 5.2, 5.4, 5.5, 5.6 and 5.8 fixes are not on this pin.
-const APPROVED_UNIT5_REWRITE_BLOB = 'd019d0ae7942c24fc34f56dcf82e500ae25debf3';
+// 2026-11-24, later the same day: the Topic 5.1 pre-teaching audit
+// (docs/topic-audits/topic-5-1-2026-11-24.md). In 5.1 only: Newton's lesson is framed as one
+// "many readers took"; Rousseau's first line gets a one-sentence gloss; "one church was the law"
+// reads "the law backed one official church"; Alexander II's 1856 words are their own sentence;
+// the voting paragraph no longer says every change "took decades of campaigning"; the callout
+// says spreading the rights took more than a century; de Gouges was executed "for her political
+// writings"; the Seneca Falls resolutions are separated from the declaration; the closing paragraph
+// no longer says the ideas were "everywhere" or that people "turned them into revolutions"; the
+// takeaway says the ideas led many people to see "the people" as a nation; question 2 asks what
+// document de Gouges was rewriting, not what she was "arguing against". Against the blob
+// d019d0ae only those 5.1 sentences changed.
+const APPROVED_UNIT5_REWRITE_BLOB = '587255eb53c21ce8d25f3aa74b1545c87141b079';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;

@@ -65,7 +65,7 @@ window.BEHISTORICAL_TEACHING = {
       'Model 3.A: find the claim in a source, say it in your own words, and say what it argues against.'
     ],
     should: [
-      'Give religion its two parts: the Enlightenment questioned religion as a government power (Calas, toleration), and religious faith drove the reform movements (the Quakers, Lucretia Mott) (KC-5.3.I.A, KC-5.3.I.C).',
+      'Give religion its two parts: the Enlightenment attacked the church\'s power over government and law (Calas, toleration) while most writers still believed in God, and religious faith drove the reform movements (the Quakers, Lucretia Mott) (KC-5.3.I.A, KC-5.3.I.C).',
       'Introduce nationalism in one beat: if a state belongs to its people, which people? The nation (KC-5.3.II.i).',
       'Correct three myths when they come up (the outline\'s Watch for list; the retelling slide\'s notes): "the Enlightenment alone caused the revolutions," "the Enlightenment was against religion," and "rights reached everyone in 1789."'
     ],
@@ -85,7 +85,7 @@ window.BEHISTORICAL_TEACHING = {
       { label: 'I', title: 'The old answer', points: [
         'Who does a state belong to? About 1750: the king',
         'God: divine right (Louis XIV, Topic 3.2)',
-        'Tradition: in most countries one church was the law',
+        'Tradition: in most countries the law backed one official church',
         'Birth: nobles born to privilege, serfs born to work',
         'This is the "before": name it to explain the change'
       ] },
@@ -271,7 +271,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         land: [
           'The picture is a real print: Valentine Green\'s mezzotint (London, 1769) of Joseph Wright of Derby\'s painting An Experiment on a Bird in the Air Pump (1768, National Gallery, London). A traveling lecturer pumps the air out of a glass globe with a bird inside to show that living things need air; a family watches by candlelight, some fascinated, two girls upset. Metropolitan Museum of Art 49.95.14, public domain.',
-          'Why open here: the picture is the Enlightenment\'s method, finding out by experiment, shown to ordinary people in a home. Wright painted scenes like this because science lectures were a popular entertainment.',
+          'Why open here: the picture is the Enlightenment\'s method, finding out by experiment, shown to ordinary people in a home. Science lectures like this one were a popular entertainment, and Wright painted several of them.',
           'The question is both learning objectives in a ninth grader\'s words: the new way of thinking is LO A, how far the rights reached is LO B.'
         ],
         ask: 'Predict: what is new about how the people in this room are finding out what is true?',
@@ -340,7 +340,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'God', text: 'Kings said God chose them: divine right.' },
-          { label: 'Tradition', text: 'In most countries one church was the law.' },
+          { label: 'Tradition', text: 'In most countries the law backed one official church.' },
           { label: 'Birth', key: true, text: 'Nobles were born to privilege; serfs were born to work.' }
         ]
       },
@@ -641,7 +641,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the hinge from LO A to LO B. No Key Concept band: it sets up KC-5.3.I.C and IV.B.',
           'Locke: the National Portrait Gallery notes he "owned shares in the Royal African Company," which held the English slave-trade monopoly; he held them in the 1670s, probably partly as payment for his work for the Carolina proprietors (Glausser 1990). Say "owned shares," not "ran the slave trade."',
           'Rousseau, Emile, Book V (Foxley translation): "A woman\'s education must therefore be planned in relation to man. To be pleasing in his sight, to win his respect and love ..." Wollstonecraft answers Rousseau on slide 18 and in the Evidence Lab.',
-          '"Most" is deliberate: some Enlightenment writers argued for women\'s rights (Condorcet, 1790) and against slavery (Condorcet, Raynal\'s History of the Two Indies).'
+          'The reading says "most" on purpose: some Enlightenment writers argued for women\'s rights (Condorcet, 1790) and against slavery (Condorcet, Raynal\'s History of the Two Indies).'
         ],
         ask: 'Who was left out of "all men"?',
         listenFor: 'Women, enslaved Africans, peasants and serfs, and often the poor.',
@@ -656,7 +656,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '1787', text: 'Twelve men in London, nine of them Quakers, found a society to end the British slave trade.' },
           { label: '1789', text: 'Olaudah Equiano, once enslaved, publishes his life story.' },
-          { label: '1807, 1834', text: 'Britain bans the slave trade, then begins ending slavery in its empire.' },
+          { label: '1807, 1834', text: 'Britain bans the slave trade, then begins ending slavery in most of its empire.' },
           { label: '1848, 1888', key: true, text: 'France ends slavery in its colonies; Brazil, last in the Americas.' }
         ]
       },
@@ -668,12 +668,12 @@ window.BEHISTORICAL_TEACHING = {
           'Equiano, 1789: his life story, toured Britain',
           'Britain 1807, 1834; France 1848; Brazil 1888',
           'A century, country by country',
-          'Limit: white abolitionists chose how to picture Africans'
+          'Limit: no enslaved person chose this picture'
         ],
         land: [
           'KC-5.3.I.C: "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in ... the abolition of slavery." Two engines: natural rights, and faith (the Quakers held that slavery was a sin).',
           '1787: the Society for Effecting the Abolition of the Slave Trade, founded in London on 22 May 1787 by twelve men, nine of them Quakers, with Thomas Clarkson and Granville Sharp. Its seal showed a kneeling African man in chains and the words "Am I not a man and a brother?"; Josiah Wedgwood made it into a medallion worn on bracelets and hairpins. 1789: Olaudah Equiano, The Interesting Narrative, London; he toured Britain selling it and speaking against the trade. Britain: the Slave Trade Act of 1807; the Slavery Abolition Act of 1833, in force on 1 August 1834, with an "apprenticeship" until 1838. France: the decree of 27 April 1848. Brazil: the Lei Áurea, 13 May 1888, the last in the Americas.',
-          'The picture: a pearlware jug, about 1820, transfer-printed with a seated African man holding a chain, a ship at sea behind him, and the motto "AM NOT I A MAN AND A BROTHER" (Metropolitan Museum of Art 2020.106, public domain). Abolitionists put the motto on everyday objects. Point out the limit: white abolitionists chose how to picture Africans, often kneeling or pleading.',
+          'The picture: a pearlware jug, about 1820, transfer-printed with a seated African man holding a chain, a ship at sea behind him, and the motto "AM NOT I A MAN AND A BROTHER" (Metropolitan Museum of Art 2020.106, public domain). Abolitionists put the motto on everyday objects. Point out the limit: the pictures the movement used, starting with the 1787 seal chosen by white abolitionists, often showed Africans kneeling or pleading, and no enslaved person chose them.',
           'The Haitian Revolution (1791) ended slavery in Saint-Domingue by force; it is 5.2\'s.'
         ],
         ask: 'What drove this movement, ideas or faith? What does the century-long timeline tell you?',
@@ -720,7 +720,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-5.3.IV.B', title: 'Women pressed the words too.',
       template: {
         steps: [
-          { label: '1791', text: 'Olympe de Gouges rewrites France\'s declaration for women. She is executed in 1793.' },
+          { label: '1791', text: 'Olympe de Gouges rewrites France\'s declaration for women. She is executed in 1793 for her political writings.' },
           { label: '1792', text: 'Mary Wollstonecraft: women can reason, so educate them to govern themselves.' },
           { label: '1840', text: 'Mott is refused a seat at a London antislavery convention because she is a woman.' },
           { label: '1848', key: true, text: 'Seneca Falls: "all men and women are created equal." They demand the vote.' }
@@ -884,7 +884,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one piece of evidence under each box and the line for what stayed underneath.',
           'The first three boxes are LO A (the intellectual and ideological context: KC-5.3.I.A, I, II.i); the last box and the footer are LO B (the Enlightenment\'s effects over time: KC-5.3.I.C, IV.B). The slide carries no single Key Concept band because it spans all five.',
           'Push for named evidence: divine right; Newton and Locke; Calas; the Encyclopédie; 1789 and the nation; the 1787 society and Brazil 1888; Russia 1861; Seneca Falls.',
-          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time. "The Enlightenment alone caused the revolutions": the CED says "often preceded," not "caused"; the ideas came first and gave revolutionaries words, and taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter": revolutionaries quoted them. "The Enlightenment was against religion": Voltaire attacked the power of the Church but believed in a creator, and Quakers and evangelicals such as William Wilberforce led abolition. But do not swing to "everyone was religious": some writers, such as Holbach, were atheists. "Rights reached everyone in 1789": the 1789 declaration excluded women from citizenship, France restored slavery in its colonies in 1802, Brazil ended slavery only in 1888, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and it was used.'
+          'Correct the three myths here if they come up (they were the Myth and Evidence slide until 2026-11-08, and are in the outline\'s Watch for list), naming the opposite mistake each time. "The Enlightenment alone caused the revolutions": the CED says "often preceded," not "caused"; the ideas came first and gave revolutionaries words, and taxes, debt, war and slavery mattered too (5.2). But do not swing to "ideas did not matter": revolutionaries quoted them. "The Enlightenment was against religion": most writers believed in God, and above all they attacked the church\'s power over government and law (Voltaire, Calas); Quakers and evangelicals such as William Wilberforce led abolition. But do not swing to "everyone was religious": deists rejected miracles and revelation, and a few, such as d\'Holbach, were atheists. "Rights reached everyone in 1789": France\'s revolutionaries did not let women vote, France restored slavery in its colonies in 1802, Brazil ended slavery only in 1888, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and it was used.'
         ],
         ask: 'Redraw it without looking, with one piece of evidence under each box, and the line for what stayed.',
         listenFor: 'The old answer, God, tradition and birth, was challenged by the question "by what right?", answered with reason, natural rights and consent, and pressed further over a century by abolition, the end of serfdom, wider voting and women\'s demands, while kings, other forced labor and men-only voting lasted to 1900.'
@@ -930,7 +930,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
       title: 'By what right? The answer kept growing.',
-      subtitle: 'Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: people turn the words into revolutions.',
+      subtitle: 'Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: the revolutions, and everything that caused them.',
       notes: {
         minutes: 2,
         keys: [
@@ -939,7 +939,7 @@ window.BEHISTORICAL_TEACHING = {
           'Limit: freedom shown as a gift handed down',
           'Slavery still legal in most American states',
           'Say the topic in one sentence',
-          'Hand off to 5.2: words become revolutions'
+          'Hand off to 5.2: the revolutions and all their causes'
         ],
         land: [
           'The picture: Samuel Jennings, study for Liberty Displaying the Arts and Sciences, or The Genius of America Encouraging the Emancipation of the Blacks, about 1791 to 1792 (Metropolitan Museum of Art 2016.50, public domain). Jennings, a Philadelphia-born painter working in London, offered the finished painting to the Library Company of Philadelphia, whose directors were mostly Quakers and abolitionists. Liberty, surrounded by books, a globe, a lyre and an artist\'s palette, holds out a book toward kneeling Black men and women; a broken chain lies at her feet, and freed people celebrate in the distance. The Met calls it the first known painting by an American-born artist about slavery and its abolition.',
