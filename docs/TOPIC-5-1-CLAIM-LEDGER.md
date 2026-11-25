@@ -347,3 +347,12 @@ data, the Skill Builder prompt and the teacher note: "opened the first chapter o
 
 - **C2** (pass 1, reviewer C; `docs/UNIT-5-BY-REGION-CLAIM-LEDGER.md`). "What they questioned was not faith itself, but religion used as a power of government" overcorrected the myth that the Enlightenment was against religion. Most of its writers believed in God, but deists rejected miracles and revelation and a few, like d'Holbach (The System of Nature, 1770), argued for atheism; above all they attacked the church's power over government and law (Stanford Encyclopedia of Philosophy, "Enlightenment"). **NARROWED** on the First & 10, the deep reading's misconception box, the lesson data, and the teacher deck (outline bullet, myth fix, the Calas slide's "proves" line, keys and LAND note).
 - The deep reading's misconception box "Do not write that the Enlightenment caused the revolutions" now reads "was the only cause of the revolutions", matching its own next sentence (taxes, debt, war, slavery and colonial grievances "caused them too") and the same fix in Topic 5.2. The teacher myth label is now "the Enlightenment alone caused the revolutions"; the CED's "often preceded" note stands.
+
+## Pre-teaching audit (2026-11-24 and 2026-11-25)
+
+`docs/topic-audits/topic-5-1-2026-11-24.md` lists every fix. Two changed what is assessed and were
+approved by Jeff on 2026-11-25: Checkpoint 1 now asks how Enlightenment writers used reason and
+evidence, not tradition (KC-5.3.I.A had gone unassessed), and learning target 2 now says nationalism
+"became a major force in the 1800s" (KC-5.3.II.i) instead of "the idea that a state belongs to its
+people became loyalty to the nation". The rows above that quote the older Checkpoint 1 wording are
+kept as the record of what it said then.

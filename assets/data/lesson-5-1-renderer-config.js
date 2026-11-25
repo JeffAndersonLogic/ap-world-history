@@ -130,13 +130,13 @@
     {
       title: 'Checkpoint 1: The Ideas Behind the Revolutions',
       subtitle: 'Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.',
-      cardDesc: 'One new Enlightenment idea, the old answer it challenged, how the ideas spread before the Atlantic revolutions, and how the people became the nation.',
+      cardDesc: 'One new Enlightenment idea, the old answer it challenged, how the ideas spread before the Atlantic revolutions, and how nationalism became a major force.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Answer in four steps. (1) Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE new Enlightenment idea: natural rights, the social contract, or religious toleration. Explain what it said and name a writer who argued it. (2) Explain how that idea challenged the old answer. (3) Explain how Enlightenment ideas spread, using one example (books such as the Encyclopédie, salons, coffeehouses, or letters), and explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810. (4) Explain how the idea that a state belongs to its people turned into loyalty to the nation, called nationalism.',
+      prompt: 'Answer in four steps. (1) Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE new Enlightenment idea: natural rights, the social contract, or religious toleration. Explain what it said and name a writer who argued it. (2) Explain how that idea challenged the old answer, and how Enlightenment writers used reason and evidence, not tradition, to decide what was true. (3) Explain how Enlightenment ideas spread, using one example (books such as the Encyclopédie, salons, coffeehouses, or letters), and explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810. (4) Explain what the French revolutionaries meant in 1789 when they wrote that sovereignty, the highest power in a state, \"resides essentially in the nation,\" and how loyalty to the nation, called nationalism, became a major force in the 1800s.',
       responseType: 'Checkpoint 1',
       terms: ['divine right', 'reason', 'evidence', 'empiricism', 'natural rights', 'social contract', 'consent', 'separation of powers', 'religious toleration', 'deism', 'Locke', 'Rousseau', 'Montesquieu', 'Voltaire', 'Calas', 'Encyclopédie', 'salon', 'print', 'came before', 'preceded', 'revolution', 'nation', 'nationalism'],
-      focus: ['Explain one new idea and name a writer who argued it.', 'Explain how it challenged the old answer: God, tradition, and birth.', 'Explain how the ideas spread, and that they came before the revolutions.', 'Explain how "the people" came to mean the nation.']
+      focus: ['Explain one new idea and name a writer who argued it.', 'Explain how it challenged the old answer, God, tradition, and birth, using reason and evidence.', 'Explain how the ideas spread, and that they came before the revolutions.', 'Explain what "sovereignty resides in the nation" meant, and how nationalism became a major force.']
     },
     {
       title: 'Checkpoint 2: What the Ideas Changed Over Time',

@@ -42,7 +42,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Cultural Developments and Interactions"
     },
     {
-      target: "I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation.",
+      target: "I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how loyalty to the nation, called nationalism, became a major force in the 1800s.",
       kc: 'KC-5.3.I',
       theme: "Cultural Developments and Interactions"
     },
@@ -55,12 +55,12 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.",
+      criteria: "I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it used reason and evidence to challenge the old answer that rulers' power came from God, tradition, and birth.",
       kc: 'KC-5.3.I.A',
       theme: "Cultural Developments and Interactions"
     },
     {
-      criteria: "I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how \"the people\" came to mean the nation.",
+      criteria: "I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain what the French revolutionaries meant in 1789 when they wrote that the highest power in a state belongs to the nation.",
       kc: 'KC-5.3.I',
       theme: "Cultural Developments and Interactions"
     },

@@ -10,14 +10,14 @@ working branch that can be accessed from another AI account if necessary."**
 
 | Branch | What it holds | State |
 |---|---|---|
-| `claude/zealous-keller-cs4c3s` | `main` plus Topic 5.1 only: the two 5.1 corrections from the Unit 5 by Region review, and a fresh 5.1 topic audit | Finished. Waits on Jeff's "ship it". 5.1 is taught Green 2026-11-30, Silver 2026-12-01. |
+| `claude/zealous-keller-cs4c3s` | `main` plus Topic 5.1 only: the two 5.1 corrections from the Unit 5 by Region review, and a fresh 5.1 topic audit | Finished; Jeff said ship it on 2026-11-25. 5.1 is taught Green 2026-11-30, Silver 2026-12-01. |
 | `claude/ebook-regional-reading-status-n1uc9j` | The Unit 4 and Unit 5 "by Region" eBook rewrite (Part Two of `ebook/unit-4.html` and `ebook/unit-5.html`) in plain language, plus four review passes and the fixes they carried into Topics 4.4 to 4.7 and 5.1 to 5.8 | **Unfinished.** 50 commits not on `main`. Not shipped. |
 
 Nothing from the second branch reaches students until Jeff says "ship it".
 
-The 5.1 branch's audit is `docs/topic-audits/topic-5-1-2026-11-24.md`. Two items in it wait on Jeff
-because they change what is assessed: Checkpoint 1 never asks about reason and evidence, and
-learning target 2's nationalism wording. Its fixes touch the same 5.1 files the eBook branch's
+The 5.1 branch's audit is `docs/topic-audits/topic-5-1-2026-11-24.md`. Its two changes to what is assessed
+(Checkpoint 1 now asks about reason and evidence; learning target 2's nationalism wording) were
+approved by Jeff on 2026-11-25 and shipped with it. Its fixes touch the same 5.1 files the eBook branch's
 review touched (`scripts/lib/reading-content/unit-5.js`, `scripts/lib/deep-reading-content/topic-5-1.js`,
 `teacher/data/topic-5-1-teaching-base.js`); when the two meet, keep the 5.1 branch's text for 5.1.
 

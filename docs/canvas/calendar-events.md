@@ -3403,7 +3403,7 @@ deleted row in the schedule and every affected date moves with it.
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can explain the new way of thinking Enlightenment writers used to question where rulers got their power, and at least one of their new ideas: natural rights, the social contract, or religious toleration.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how loyalty to the nation, called nationalism, became a major force in the 1800s.</li>
                     <li style="margin: 0 0 6px 0;">I can explain how reform movements, pushed by Enlightenment ideas, religious faith, and other causes, ended slavery and serfdom, widened the vote, and demanded women's rights between 1750 and 1900, and what had still not changed by 1900.</li>
                 </ul>
             </td>
@@ -3414,8 +3414,8 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how "the people" came to mean the nation.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it used reason and evidence to challenge the old answer that rulers' power came from God, tradition, and birth.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain what the French revolutionaries meant in 1789 when they wrote that the highest power in a state belongs to the nation.</li>
                     <li style="margin: 0 0 6px 0;">I can choose one reform movement (abolition, the end of serfdom, the right to vote, or women's rights), explain what pushed it forward (Enlightenment ideas, religious faith, or another cause) with one piece of evidence (such as the 1787 antislavery society, Russia in 1861, Olympe de Gouges, Mary Wollstonecraft, or Seneca Falls), and name what it had changed by 1900 and one thing that had not.</li>
                 </ul>
             </td>
